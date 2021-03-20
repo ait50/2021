@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.241 --> 00:00:03.590
+O texto sem formatação é ótimo,
+mas é uma linguagem humana
+
+00:00:03.623 --> 00:00:07.200
+com todas as variações
+e tudo mais.
+
+00:00:07.233 --> 00:00:10.807
+A seguir, tentaremos reduzir
+um pouco dessa complexidade.
+
+00:00:10.840 --> 00:00:12.383
+Na língua inglesa,
+
+00:00:12.416 --> 00:00:15.518
+a letra inicial da primeira palavra
+em qualquer frase
+
+00:00:15.551 --> 00:00:17.359
+aparece em maiúscula.
+
+00:00:17.392 --> 00:00:22.498
+A caixa-alta é, às vezes, usada
+para dar ênfase e por estilo.
+
+00:00:22.531 --> 00:00:25.311
+Embora isso seja conveniente
+para um leitor humano,
+
+00:00:25.344 --> 00:00:27.907
+para um algoritmo
+de aprendizado de máquina,
+
+00:00:27.940 --> 00:00:30.958
+não faz sentido
+diferenciar entre "Carro",
+
+00:00:30.991 --> 00:00:34.785
+"carro" e "CARRO", pois todas
+significam a mesma coisa.
+
+00:00:34.818 --> 00:00:39.858
+Portanto, padronizamos as letras
+para que fiquem todas iguais,
+
+00:00:39.891 --> 00:00:41.784
+geralmente minúsculas,
+
+00:00:41.817 --> 00:00:46.105
+assim cada palavra será representada
+por um token exclusivo.
+
+00:00:46.138 --> 00:00:47.922
+Aqui está um texto de exemplo,
+
+00:00:47.955 --> 00:00:50.561
+uma crítica do filme
+"O Segundo Renascer",
+
+00:00:50.594 --> 00:00:52.586
+uma história
+sobre robôs inteligentes
+
+00:00:52.619 --> 00:00:56.161
+que brigam com os humanos
+na busca de direitos.
+
+00:00:56.194 --> 00:01:00.529
+Isso mesmo, pois maltratamos
+os robôs hoje em dia.
+
+00:01:00.562 --> 00:01:04.265
+Se a crítica estiver armazenada
+em uma variável chamada "text",
+
+00:01:04.298 --> 00:01:09.449
+para convertê-la para minúsculas,
+chamamos o método lower no Python.
+
+00:01:09.482 --> 00:01:12.346
+Ela ficará assim
+depois de uma conversão.
+
+00:01:12.379 --> 00:01:15.104
+Perceba que as letras
+foram alteradas.
+
+00:01:15.137 --> 00:01:18.360
+Outras línguas podem ou não
+ter um caso parecido,
+
+00:01:18.393 --> 00:01:20.960
+mas princípios semelhantes
+podem ser aplicados.
+
+00:01:20.993 --> 00:01:23.185
+Dependendo da tarefa de PLN,
+
+00:01:23.218 --> 00:01:27.044
+podemos remover caracteres especiais
+como pontos, pontos de interrogação
+
+00:01:27.077 --> 00:01:29.437
+e de exclamação do texto
+
+00:01:29.470 --> 00:01:33.507
+e manter somente as letras
+do alfabeto e os números.
+
+00:01:33.540 --> 00:01:38.306
+Isso é muito útil ao buscarmos
+em documentos de texto
+
+00:01:38.339 --> 00:01:42.050
+e em aplicações como a classificação
+de documentos e o agrupamento,
+
+00:01:42.083 --> 00:01:45.531
+nos quais os detalhes de baixo nível
+não importam muito.
+
+00:01:45.564 --> 00:01:49.915
+Podemos usar uma expressão regular
+que identifique tudo que não for
+
+00:01:49.948 --> 00:01:52.308
+A a Z minúsculo,
+
+00:01:52.341 --> 00:01:53.587
+A a Z maiúsculo
+
+00:01:53.620 --> 00:01:55.477
+ou dígitos de 0 a 9,
+
+00:01:55.510 --> 00:01:58.387
+e os substitua por um espaço.
+
+00:01:58.420 --> 00:02:02.524
+Assim não precisaremos especificar
+todos os caracteres de pontuação,
+
+00:02:02.557 --> 00:02:05.762
+mas também podemos usar
+outras expressões regulares.
+
+00:02:05.795 --> 00:02:08.826
+A conversão de letras minúsculas
+e a remoção de pontuações
+
+00:02:08.859 --> 00:02:12.396
+são os dois passos mais comuns
+de normalização de texto.
+
+00:02:12.429 --> 00:02:16.930
+O momento de aplicar isso
+depende do objetivo final
+
+00:02:16.963 --> 00:02:19.131
+e da maneira
+como projetamos o pipeline.
+

@@ -1,0 +1,66 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.233 --> 00:00:03.010
+Entidades nomeadas
+são tipicamente sintagmas nominais
+
+00:00:03.043 --> 00:00:07.059
+referentes a algum objeto,
+pessoa ou lugar específico.
+
+00:00:07.092 --> 00:00:10.699
+Podemos usar
+a função ne_chunk
+
+00:00:10.732 --> 00:00:13.490
+para rotular entidades
+nomeadas no texto.
+
+00:00:13.523 --> 00:00:18.018
+Precisamos primeiro tokenizar
+e marcar partes do discurso.
+
+00:00:18.051 --> 00:00:20.073
+Este é um exemplo
+muito simples,
+
+00:00:20.106 --> 00:00:24.274
+mas observe como os diferentes
+tipos de entidade são reconhecidos:
+
+00:00:24.307 --> 00:00:27.834
+pessoa, organização e GPE,
+
+00:00:27.867 --> 00:00:30.746
+que representa
+a entidade geopolítica.
+
+00:00:30.779 --> 00:00:33.391
+Observe como ela identificou
+as duas palavras -
+
+00:00:33.424 --> 00:00:37.028
+Udacity e Inc -
+como uma entidade única.
+
+00:00:37.061 --> 00:00:40.733
+No geral, o desempenho
+nem sempre é ótimo,
+
+00:00:40.766 --> 00:00:44.018
+mas treinar em um corpus grande
+definitivamente ajuda.
+
+00:00:44.051 --> 00:00:47.120
+O reconhecimento de entidades
+nomeadas é usado para indexar
+
+00:00:47.153 --> 00:00:49.517
+e pesquisar artigos de notícias,
+por exemplo,
+
+00:00:49.550 --> 00:00:51.233
+em companhias de interesse.
+

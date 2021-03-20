@@ -1,0 +1,244 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.730
+Hello, and welcome back.
+
+00:00:02.730 --> 00:00:05.730
+In this notebook, we will learn how to make
+
+00:00:05.730 --> 00:00:09.824
+more complicated regular expressions using groups,
+
+00:00:09.824 --> 00:00:13.890
+the question mark, and the asterisk metacharacters.
+
+00:00:13.890 --> 00:00:18.899
+Let's see how they work. Here, we have a multiline string with
+
+00:00:18.899 --> 00:00:21.149
+the names and the heights of
+
+00:00:21.149 --> 00:00:25.559
+the four highest mountains in the world according to Wikipedia.
+
+00:00:25.559 --> 00:00:29.265
+Our goal in this lesson will be to create
+
+00:00:29.265 --> 00:00:33.899
+a regular expression that can find the names of all these mountains.
+
+00:00:33.899 --> 00:00:37.174
+The first thing to notice is that the word mountain
+
+00:00:37.174 --> 00:00:40.534
+has been abbreviated in two different ways,
+
+00:00:40.534 --> 00:00:44.309
+as Mt without a period and as Mt.
+
+00:00:44.310 --> 00:00:50.240
+with a period. Therefore, if we want to find all the names of the mountains,
+
+00:00:50.240 --> 00:00:54.125
+we need to create a regular expression that allows us to
+
+00:00:54.125 --> 00:00:58.810
+indicate that the period in the abbreviation is optional.
+
+00:00:58.810 --> 00:01:03.710
+We can do this by using the question mark metacharacter.
+
+00:01:03.710 --> 00:01:12.379
+The question mark will match zero or one repetitions of the preceding regular expression.
+
+00:01:12.379 --> 00:01:19.569
+For example, the question mark here will match Mt without a period,
+
+00:01:19.569 --> 00:01:24.774
+which corresponds to the case where there are zero repetitions of the period,
+
+00:01:24.775 --> 00:01:27.045
+and will also match Mt.
+
+00:01:27.045 --> 00:01:32.615
+with a period that corresponds to the case where there is one repetition of the period.
+
+00:01:32.614 --> 00:01:35.390
+In other words, the question mark here
+
+00:01:35.390 --> 00:01:39.655
+indicates that the period after the Mt is optional.
+
+00:01:39.655 --> 00:01:41.519
+So, if you run this code,
+
+00:01:41.519 --> 00:01:45.390
+we can see that we can match both abbreviations,
+
+00:01:45.390 --> 00:01:49.605
+both Mt without a period and Mt.
+
+00:01:49.605 --> 00:01:53.189
+with a period. So far, so good.
+
+00:01:53.189 --> 00:01:56.289
+Let's continue building our regular expression.
+
+00:01:56.290 --> 00:01:59.770
+Now, we notice that the next character after
+
+00:01:59.769 --> 00:02:03.069
+the mountain abbreviation is a whitespace character.
+
+00:02:03.069 --> 00:02:10.025
+We will therefore use a backslash s in a regular expression to match this whitespace.
+
+00:02:10.025 --> 00:02:12.189
+After the whitespace character,
+
+00:02:12.189 --> 00:02:14.155
+we have the name of the mountain.
+
+00:02:14.155 --> 00:02:19.615
+We can see that the first letter in all the names is an uppercase letter,
+
+00:02:19.615 --> 00:02:23.909
+but we'll therefore use a character set of A through
+
+00:02:23.909 --> 00:02:28.615
+Z to match any possible uppercase letter.
+
+00:02:28.615 --> 00:02:31.435
+Now comes the tricky part.
+
+00:02:31.435 --> 00:02:36.354
+We can see that all the mountain names have different lengths.
+
+00:02:36.354 --> 00:02:41.209
+However, they only contain alphanumeric characters.
+
+00:02:41.210 --> 00:02:44.000
+If you remember from our previous lesson,
+
+00:02:44.000 --> 00:02:46.878
+to match any alphanumeric character,
+
+00:02:46.878 --> 00:02:52.149
+we can use the sequence backslash w. Now,
+
+00:02:52.150 --> 00:02:54.800
+to be able to match names of any length,
+
+00:02:54.800 --> 00:02:58.265
+we will use the asterisk metacharacter.
+
+00:02:58.264 --> 00:03:01.339
+The asterisk metacharacter matches
+
+00:03:01.340 --> 00:03:06.860
+zero or more repetitions of their preceding regular expression.
+
+00:03:06.860 --> 00:03:12.680
+For example, ab asterisk will match a
+
+00:03:12.680 --> 00:03:19.890
+or a followed by any number of b's such as ab or abbbbb.
+
+00:03:20.840 --> 00:03:30.650
+Therefore, backslash w asterisk will match zero or more alphanumeric characters.
+
+00:03:30.650 --> 00:03:32.795
+So, if we run this code,
+
+00:03:32.794 --> 00:03:35.659
+we can see that we managed to match
+
+00:03:35.659 --> 00:03:40.895
+all the mountain names regardless of their length or abbreviation.
+
+00:03:40.895 --> 00:03:46.120
+Now, let's take a look at groups because they're very useful.
+
+00:03:46.120 --> 00:03:50.465
+Here, we have added a new mountain to our list,
+
+00:03:50.465 --> 00:03:55.219
+but the name of this mountain has two differences from the other ones.
+
+00:03:55.219 --> 00:04:02.800
+The first is that mountain has been abbreviated as Mnt instead of Mt,
+
+00:04:02.800 --> 00:04:08.655
+and the first letter of the name is lowercase instead of uppercase.
+
+00:04:08.655 --> 00:04:11.784
+To be able to match these new abbreviation,
+
+00:04:11.784 --> 00:04:16.324
+we will use the parenthesis metacharacters to define a group.
+
+00:04:16.324 --> 00:04:18.649
+As their name suggests,
+
+00:04:18.649 --> 00:04:23.539
+groups group together the expressions contained inside them.
+
+00:04:23.540 --> 00:04:26.669
+For example, we saw before
+
+00:04:26.668 --> 00:04:32.884
+that ab asterisk will match a or a followed by any number of b's,
+
+00:04:32.884 --> 00:04:38.839
+such as ab or abbbbb.
+
+00:04:38.839 --> 00:04:44.194
+But if we put ab inside a parenthesis to define a group,
+
+00:04:44.194 --> 00:04:52.235
+then the group ab asterisk will match zero or more repetitions of ab,
+
+00:04:52.235 --> 00:04:58.819
+such as ab, or abababab.
+
+00:04:58.819 --> 00:05:02.329
+We can repeat the contents of any group with
+
+00:05:02.329 --> 00:05:06.259
+any repeating qualifier such as the asterisk,
+
+00:05:06.259 --> 00:05:11.319
+the question mark, or curly brackets as we have seen before.
+
+00:05:11.319 --> 00:05:18.319
+We can also use the or metacharacter within a group to select between two expressions.
+
+00:05:18.319 --> 00:05:24.240
+For example, we can use the group Mt or Mnt in
+
+00:05:24.240 --> 00:05:31.975
+our regular expression to be able to match either the Mt or Mnt abbreviation.
+
+00:05:31.975 --> 00:05:37.805
+We also added lowercase letters to our previous character set
+
+00:05:37.805 --> 00:05:43.925
+to be able to match the first lowercase letter in the name of our new mountain.
+
+00:05:43.925 --> 00:05:45.845
+If we run this code,
+
+00:05:45.845 --> 00:05:52.085
+we can see that we can match all mountain names including our new mountain.
+
+00:05:52.084 --> 00:05:58.909
+I also wanted to mention that since the first letter in both abbreviations is an m,
+
+00:05:58.910 --> 00:06:03.140
+then alternatively, we could have put the m
+
+00:06:03.139 --> 00:06:09.120
+outside the group and we will get the same result as we can see here.
+

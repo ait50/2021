@@ -1,0 +1,232 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.198 --> 00:00:03.436
+Word2Vec é só um tipo
+de embedding de palavras.
+
+00:00:03.470 --> 00:00:04.571
+Recentemente,
+
+00:00:04.604 --> 00:00:08.808
+várias outras abordagens
+promissoras foram propostas.
+
+00:00:08.842 --> 00:00:12.512
+GloVe, ou "vetores globais
+para representação de palavras",
+
+00:00:12.545 --> 00:00:15.548
+é uma abordagem
+que tenta otimizar diretamente
+
+00:00:15.582 --> 00:00:17.851
+a representação de vetores
+de cada palavra,
+
+00:00:17.884 --> 00:00:20.286
+apenas usando
+estatísticas de coocorrência,
+
+00:00:20.320 --> 00:00:24.257
+diferente do Word2Vec, que configura
+uma tarefa de previsão auxiliar.
+
+00:00:24.290 --> 00:00:27.160
+Primeiro, a probabilidade
+de que a palavra "j"
+
+00:00:27.193 --> 00:00:30.397
+apareça no contexto
+da palavra "i" é computado:
+
+00:00:30.430 --> 00:00:36.069
+pj dado i para todos os pares ij
+em um certo corpus.
+
+00:00:36.102 --> 00:00:39.272
+O que queremos dizer com j
+aparece no contexto de i?
+
+00:00:39.305 --> 00:00:40.974
+Simplesmente que a palavra j
+
+00:00:41.007 --> 00:00:43.510
+está presente
+na vizinhança da palavra i,
+
+00:00:43.543 --> 00:00:46.880
+seja colada a ela
+ou a algumas palavras de distância.
+
+00:00:46.913 --> 00:00:50.984
+Nós contamos todas as ocorrências
+de i e j na nossa coleção de texto,
+
+00:00:51.017 --> 00:00:53.953
+e normalizamos a conta
+para conseguir uma probabilidade.
+
+00:00:53.987 --> 00:00:57.891
+Um vetor aleatório é inicializado
+para cada palavra,
+
+00:00:57.924 --> 00:00:59.325
+na verdade dois vetores.
+
+00:00:59.359 --> 00:01:02.662
+Um para a palavra
+quando está agindo como contexto,
+
+00:01:02.696 --> 00:01:05.665
+e um quando está agindo
+como o alvo.
+
+00:01:05.699 --> 00:01:07.300
+Até agora, tudo certo.
+
+00:01:07.334 --> 00:01:09.969
+Para cada par de palavras
+"ij",
+
+00:01:10.003 --> 00:01:13.106
+queremos que o produto escalar
+dos vetores de palavras,
+
+00:01:13.139 --> 00:01:14.941
+Wi vezes Wj,
+
+00:01:14.974 --> 00:01:18.078
+seja igual à sua probabilidade
+de coocorrência.
+
+00:01:18.111 --> 00:01:21.581
+Usando isto como nosso objetivo
+e uma função de perda adequada,
+
+00:01:21.614 --> 00:01:24.884
+podemos iterativamente otimizar
+estes vetores de palavras.
+
+00:01:24.918 --> 00:01:26.820
+O resultado é um conjunto
+de vetores
+
+00:01:26.853 --> 00:01:31.524
+que captura as similaridades
+e diferenças entre as palavras.
+
+00:01:31.558 --> 00:01:33.827
+Se olhar isto
+de outro ponto de vista,
+
+00:01:33.860 --> 00:01:37.564
+estamos fatorando a matriz
+de probabilidade de coocorrência
+
+00:01:37.597 --> 00:01:39.733
+em duas matrizes menores.
+
+00:01:39.766 --> 00:01:42.736
+Esta é a ideia principal
+do GloVe.
+
+00:01:42.769 --> 00:01:44.037
+Tudo parece bom,
+
+00:01:44.070 --> 00:01:46.973
+mas por que probabilidade
+de coocorrência?
+
+00:01:47.007 --> 00:01:50.744
+Considere duas palavras de contexto,
+"gelo" e "vapor",
+
+00:01:50.777 --> 00:01:54.214
+e duas palavras-alvo,
+"sólido" e "água".
+
+00:01:54.247 --> 00:01:58.084
+"Sólido" vai aparecer mais
+no contexto de gelo
+
+00:01:58.118 --> 00:01:59.686
+do que de vapor, certo?
+
+00:01:59.719 --> 00:02:02.055
+Mas "água" pode ocorrer
+nos dois contextos
+
+00:02:02.088 --> 00:02:03.923
+com probabilidade quase igual.
+
+00:02:03.957 --> 00:02:06.092
+Ao menos, é o que esperamos.
+
+00:02:06.126 --> 00:02:07.360
+Surpresa!
+
+00:02:07.394 --> 00:02:10.797
+É isto que as probabilidades
+de coocorrência refletem.
+
+00:02:10.830 --> 00:02:12.532
+Com um corpus grande,
+
+00:02:12.565 --> 00:02:15.969
+você vai descobrir que a proporção
+de P sólido em relação a gelo
+
+00:02:16.002 --> 00:02:19.239
+para P sólido em relação a vapor
+é muito maior que 1,
+
+00:02:19.272 --> 00:02:22.208
+enquanto a proporção
+de P água em relação a gelo
+
+00:02:22.242 --> 00:02:25.378
+e P água em relação a vapor
+é próxima de 1.
+
+00:02:25.412 --> 00:02:28.148
+E vemos que probabilidades
+de coocorrência
+
+00:02:28.181 --> 00:02:31.685
+já exibem algumas das propriedades
+que queremos capturar.
+
+00:02:31.718 --> 00:02:35.722
+Um refinamento sobre usar
+valores de probabilidades brutos
+
+00:02:35.755 --> 00:02:39.025
+é otimizar para a proporção
+de probabilidades.
+
+00:02:39.059 --> 00:02:43.596
+Existem várias sutilezas aqui,
+como o fato de que
+
+00:02:43.630 --> 00:02:47.000
+a matriz de probabilidade
+de coocorrência é enorme.
+
+00:02:47.033 --> 00:02:51.338
+E valores de probabilidade
+de coocorrência são bem baixos,
+
+00:02:51.371 --> 00:02:54.974
+então faz sentido trabalhar
+com o log destes valores.
+
+00:02:55.008 --> 00:02:58.345
+Leia o artigo
+que apresentou o GloVe
+
+00:02:58.378 --> 00:03:01.181
+para ter um melhor entendimento
+desta técnica.
+

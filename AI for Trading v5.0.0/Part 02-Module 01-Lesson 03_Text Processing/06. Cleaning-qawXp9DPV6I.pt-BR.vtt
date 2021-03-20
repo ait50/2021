@@ -1,0 +1,476 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.293 --> 00:00:03.131
+Os dados de texto,
+especialmente os da internet,
+
+00:00:03.164 --> 00:00:05.179
+quase nunca são limpos.
+
+00:00:05.212 --> 00:00:08.554
+Vejamos o catálogo de cursos
+da Udacity como um exemplo.
+
+00:00:08.587 --> 00:00:13.107
+Imagine extrair o título
+e a descrição de cada um deles.
+
+00:00:13.140 --> 00:00:14.740
+Parece simples, certo?
+
+00:00:14.773 --> 00:00:17.155
+Vamos tentar isso no Python.
+
+00:00:17.188 --> 00:00:19.779
+Acompanhe baixando e iniciando
+
+00:00:19.812 --> 00:00:21.971
+o notebook
+de processamento de texto.
+
+00:00:22.004 --> 00:00:25.404
+Podemos buscar a página
+como qualquer outro recurso on-line
+
+00:00:25.437 --> 00:00:27.588
+usando a biblioteca requests.
+
+00:00:29.005 --> 00:00:33.345
+Parece que obtivemos
+toda a fonte HTML.
+
+00:00:33.378 --> 00:00:36.652
+É disso que o navegador precisa
+para renderizar a página,
+
+00:00:36.685 --> 00:00:39.655
+mas a maior parte disso
+é inútil para nossos propósitos.
+
+00:00:39.688 --> 00:00:42.764
+Precisamos de uma maneira de extrair
+o texto sem formatação,
+
+00:00:42.797 --> 00:00:44.873
+como está no site.
+
+00:00:44.906 --> 00:00:47.803
+Que tal usarmos
+expressões regulares?
+
+00:00:47.836 --> 00:00:51.218
+Vamos definir um padrão
+para combinar as tags HTML
+
+00:00:51.251 --> 00:00:54.601
+e removê-las, substituindo
+por uma string em branco.
+
+00:00:54.634 --> 00:00:57.129
+Muito bem,
+isso fez alguma coisa.
+
+00:00:57.162 --> 00:01:01.417
+Vemos que o título da página
+foi extraído com sucesso,
+
+00:01:01.450 --> 00:01:04.156
+mas há muito JavaScript
+
+00:01:04.189 --> 00:01:06.675
+e vários outros itens
+que não precisamos.
+
+00:01:06.708 --> 00:01:07.838
+Na verdade,
+
+00:01:07.871 --> 00:01:11.196
+essa expressão regular
+não identificou algumas tags.
+
+00:01:11.229 --> 00:01:13.747
+Talvez elas estivessem aninhadas
+em outras tags,
+
+00:01:13.780 --> 00:01:17.116
+talvez precisemos contabilizar
+as tags espalhadas pelas linhas.
+
+00:01:17.149 --> 00:01:20.987
+Essa não parece ser a melhor
+abordagem para este trabalho.
+
+00:01:21.020 --> 00:01:24.275
+Precisamos de uma maneira
+de parsear o HTML,
+
+00:01:24.308 --> 00:01:28.036
+assim como um navegador web,
+e retirar os elementos relevantes.
+
+00:01:28.069 --> 00:01:30.442
+Apresentamos o BeautifulSoup,
+
+00:01:30.475 --> 00:01:33.979
+que é uma boa biblioteca Python
+que faz exatamente isso.
+
+00:01:34.012 --> 00:01:37.523
+Passamos o texto bruto da página -
+que, neste caso,
+
+00:01:37.556 --> 00:01:41.243
+contém um HTML -
+para criar um objeto soup,
+
+00:01:41.276 --> 00:01:43.732
+e então podemos extrair
+o texto sem formatação,
+
+00:01:43.765 --> 00:01:45.948
+ignorando qualquer tag HTML
+
+00:01:45.981 --> 00:01:49.059
+usando uma simples chamada
+para o método get_text.
+
+00:01:49.092 --> 00:01:51.060
+Isso cuida das tags aninhadas,
+
+00:01:51.093 --> 00:01:53.115
+das tags de quebra de linhas
+
+00:01:53.148 --> 00:01:55.331
+e de uma infinidade
+de outros casos
+
+00:01:55.364 --> 00:01:58.019
+que dificultam
+o parseamento do HTML.
+
+00:01:58.052 --> 00:02:00.963
+E também perdoa
+pequenos erros no HTML,
+
+00:02:00.996 --> 00:02:04.070
+assim como os navegadores,
+tornando-o mais robusto.
+
+00:02:04.103 --> 00:02:06.128
+Vejamos.
+
+00:02:06.161 --> 00:02:10.047
+Ficou melhor.
+
+00:02:10.823 --> 00:02:13.303
+Não vejo tags HTML,
+
+00:02:13.336 --> 00:02:17.943
+mas ainda há um monte
+de JavaScript e muitos espaços.
+
+00:02:17.976 --> 00:02:19.815
+O que mais podemos fazer?
+
+00:02:19.848 --> 00:02:23.399
+Vamos dar uma olhada
+em como a fonte HTML é estruturada.
+
+00:02:23.432 --> 00:02:25.361
+A maneira mais fácil
+de fazer isso
+
+00:02:25.394 --> 00:02:28.632
+é clicando com o botão direito
+no elemento escolhido -
+
+00:02:28.665 --> 00:02:30.327
+como este título do curso -
+
+00:02:30.360 --> 00:02:33.863
+e escolhendo "Inspecionar"
+ou "Exibir código-fonte da página".
+
+00:02:34.760 --> 00:02:37.231
+Veja onde o título
+foi colocado.
+
+00:02:37.264 --> 00:02:39.107
+Como é a maneira
+mais distinta
+
+00:02:39.140 --> 00:02:43.074
+de encontrá-lo
+na árvore do documento HTML?
+
+00:02:43.107 --> 00:02:44.985
+Temos um div pai
+
+00:02:45.018 --> 00:02:47.865
+com uma classe
+course-summary-card.
+
+00:02:47.898 --> 00:02:50.969
+Isso parece promissor.
+Vamos usar isso.
+
+00:02:51.002 --> 00:02:54.265
+O BeautifulSoup
+é realmente muito poderoso.
+
+00:02:54.298 --> 00:02:58.870
+Ele permite andar pela árvore
+ou pela DOM de formas diferentes.
+
+00:02:58.903 --> 00:03:02.129
+Aqui estamos pedindo à biblioteca
+para encontrar todos os divs
+
+00:03:02.162 --> 00:03:04.928
+com uma classe
+course-summary-card.
+
+00:03:04.961 --> 00:03:06.265
+O resultado retornado
+
+00:03:06.298 --> 00:03:09.603
+é uma lista de todos esses divs
+no documento.
+
+00:03:09.636 --> 00:03:13.114
+Vamos armazenar isso em uma variável
+e observar um dos divs.
+
+00:03:14.002 --> 00:03:16.522
+Muito bem. Percorrendo isso,
+
+00:03:16.555 --> 00:03:20.841
+vemos que o título é armazenado
+nesta tag a,
+
+00:03:20.874 --> 00:03:24.073
+que está nesta tag h3.
+
+00:03:24.106 --> 00:03:26.369
+Como extraímos este título?
+
+00:03:26.402 --> 00:03:29.778
+Uma maneira de fazer isso
+é usando um seletor de CSS.
+
+00:03:31.217 --> 00:03:34.076
+Agora podemos buscar o conteúdo
+de texto sem formatação
+
+00:03:34.109 --> 00:03:36.137
+como fizemos antes.
+
+00:03:36.170 --> 00:03:38.161
+Ótimo. Uma última coisa.
+
+00:03:38.194 --> 00:03:41.442
+Vamos retirar o espaço em branco
+de ambas as extremidades.
+
+00:03:42.122 --> 00:03:43.626
+Prontinho.
+
+00:03:43.659 --> 00:03:46.303
+Vamos retornar ao HTML
+
+00:03:46.336 --> 00:03:49.218
+para ver como podemos obter
+o texto de descrição.
+
+00:03:49.987 --> 00:03:51.641
+Aqui está.
+
+00:03:51.674 --> 00:03:57.034
+É um div com um atributo chamado
+"data-course-short-summary",
+
+00:03:57.067 --> 00:04:00.849
+mas não há nenhum valor
+ou qualquer outro atributo.
+
+00:04:00.882 --> 00:04:05.137
+Há uma maneira de selecionar
+essas tags usando CSS.
+
+00:04:05.170 --> 00:04:08.145
+Especifique o nome da tag -
+aqui é "div" -
+
+00:04:08.178 --> 00:04:11.873
+seguido pelo nome do atributo
+entre colchetes.
+
+00:04:11.906 --> 00:04:15.723
+Parece bom.
+Vamos extrair o texto e limpá-lo.
+
+00:04:16.354 --> 00:04:20.945
+Muito bem. Podemos repetir isso
+em todos os cursos.
+
+00:04:20.978 --> 00:04:24.153
+Para fazer isso,
+podemos usar um loop for simples.
+
+00:04:25.123 --> 00:04:26.984
+Parece que deu certo.
+
+00:04:27.017 --> 00:04:30.522
+Vamos armazenar esses dados
+para usarmos depois.
+
+00:04:30.555 --> 00:04:35.009
+Estamos mantendo os dados
+em uma lista chamada "courses".
+
+00:04:35.042 --> 00:04:38.960
+O que fizemos é chamado
+de "raspagem de uma página web".
+
+00:04:38.993 --> 00:04:41.145
+Embora pareça
+um pouco violento,
+
+00:04:41.178 --> 00:04:42.741
+não é.
+
+00:04:42.774 --> 00:04:45.361
+De fato,
+a raspagem é muito comum.
+
+00:04:45.394 --> 00:04:48.041
+O Google Notícias
+é um excelente exemplo.
+
+00:04:48.074 --> 00:04:53.209
+Ele retira o título e as primeiras
+frases dos artigos de notícias
+
+00:04:53.242 --> 00:04:54.738
+e os exibe.
+
+00:04:54.771 --> 00:04:57.013
+O Google
+usa uma combinação de regras
+
+00:04:57.046 --> 00:05:00.777
+e de aprendizado de máquina
+para identificar qual parte do HTML
+
+00:05:00.810 --> 00:05:02.161
+contém o título
+
+00:05:02.194 --> 00:05:06.226
+e o início do texto do artigo
+que pode ser usado como prévia.
+
+00:05:06.259 --> 00:05:08.225
+Funciona bem
+na maior parte do tempo,
+
+00:05:08.258 --> 00:05:10.674
+mas, às vezes, falha.
+
+00:05:10.707 --> 00:05:14.308
+Para este artigo
+sobre entrelaçamento quântico,
+
+00:05:14.341 --> 00:05:18.002
+a pré-visualização não parece
+coincidir com o título.
+
+00:05:18.035 --> 00:05:21.859
+Parece mais uma legenda
+para esta imagem.
+
+00:05:21.892 --> 00:05:24.625
+O que deve ter acontecido
+é que a legenda
+
+00:05:24.658 --> 00:05:27.869
+foi o primeiro texto
+da página da web,
+
+00:05:27.902 --> 00:05:30.128
+e o algoritmo do Google
+identificou isso
+
+00:05:30.161 --> 00:05:32.837
+como parte
+do artigo principal.
+
+00:05:32.870 --> 00:05:36.075
+Isso serve para mostrar
+como tarefas rotineiras
+
+00:05:36.108 --> 00:05:40.445
+de processamento de texto
+ainda não foram solucionadas.
+
+00:05:40.478 --> 00:05:43.990
+Vejamos o que acabamos
+de alcançar.
+
+00:05:44.023 --> 00:05:46.765
+Começamos buscando
+uma única página -
+
+00:05:46.798 --> 00:05:48.925
+o catálogo de cursos
+da Udacity -,
+
+00:05:48.958 --> 00:05:52.919
+tentamos alguns métodos
+para remover tags HTML
+
+00:05:52.952 --> 00:05:57.855
+e decidimos usar o BeautifulSoup
+para parsear a fonte HTML,
+
+00:05:57.888 --> 00:05:59.589
+encontrar os resumos
+dos cursos
+
+00:05:59.622 --> 00:06:03.095
+e extrair o título e a descrição
+de cada curso.
+
+00:06:03.128 --> 00:06:05.846
+Depois salvamos tudo
+em uma lista.
+
+00:06:05.879 --> 00:06:08.373
+Dependendo do que planeja fazer
+em seguida,
+
+00:06:08.406 --> 00:06:10.590
+você poderá continuar a tratar
+esses pedaços
+
+00:06:10.623 --> 00:06:12.621
+como parte
+de um único documento
+
+00:06:12.654 --> 00:06:15.733
+ou considerar cada um
+como um documento separado.
+
+00:06:15.766 --> 00:06:17.961
+Este último é útil,
+por exemplo,
+
+00:06:17.994 --> 00:06:20.674
+se quisermos agrupar
+cursos relacionados.
+
+00:06:20.707 --> 00:06:23.864
+O problema será reduzido
+ao agrupamento dos documentos.
+

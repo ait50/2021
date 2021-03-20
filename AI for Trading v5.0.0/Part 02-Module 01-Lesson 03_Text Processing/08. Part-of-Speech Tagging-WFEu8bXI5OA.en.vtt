@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.649
+Remember parts of speech from school?
+
+00:00:02.649 --> 00:00:06.910
+Nouns, pronouns, verbs, adverbs, et cetera.
+
+00:00:06.910 --> 00:00:09.269
+Identifying how words are being used in
+
+00:00:09.269 --> 00:00:13.134
+a sentence can help us better understand what is being said.
+
+00:00:13.134 --> 00:00:18.280
+It can also point out relationships between words and recognize cross references.
+
+00:00:18.280 --> 00:00:22.395
+NLTK, again, makes things pretty easy for us.
+
+00:00:22.394 --> 00:00:26.324
+You can pass in tokens or words to the POS tag function
+
+00:00:26.324 --> 00:00:31.524
+which returns a tag for each word identifying different parts of speech.
+
+00:00:31.524 --> 00:00:36.344
+Notice how it has correctly labelled the first utterance of "lie" as a verb,
+
+00:00:36.344 --> 00:00:39.394
+while marking the second one as a noun.
+
+00:00:39.395 --> 00:00:45.155
+Refer to the NLTK documentation for more details on what each tag means.
+
+00:00:45.155 --> 00:00:50.304
+One of the cool applications of part of speech tagging is parsing sentences.
+
+00:00:50.304 --> 00:00:53.655
+Here's an example from the NLTK book that uses
+
+00:00:53.655 --> 00:00:58.049
+a custom grammar to parse an ambiguous sentence.
+
+00:00:58.049 --> 00:01:02.819
+Notice how the parser returns both interpretations that are valid.
+
+00:01:02.820 --> 00:01:07.609
+It is much easier to see the difference when we visualize the parse trees.
+
+00:01:07.609 --> 00:01:11.810
+I shot an elephant in my pajamas,
+
+00:01:11.810 --> 00:01:18.969
+versus, I shot an elephant and the elephant was in my pajamas.
+
+00:01:18.969 --> 00:01:22.200
+How he got into my pajamas? I don't know.
+

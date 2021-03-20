@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.419
+Word embeddings need to have high dimensionality in
+
+00:00:03.419 --> 00:00:06.855
+order to capture sufficient variations in natural language,
+
+00:00:06.855 --> 00:00:10.050
+which makes them super hard to visualize.
+
+00:00:10.050 --> 00:00:14.475
+T-SNE, which stands for t-Distributed Stochastic Neighbor Embedding,
+
+00:00:14.474 --> 00:00:17.339
+is a dimensionality reduction technique that can map
+
+00:00:17.339 --> 00:00:20.839
+high dimensional vectors to a lower dimensional space.
+
+00:00:20.839 --> 00:00:22.094
+It's kind of like PCA,
+
+00:00:22.094 --> 00:00:25.814
+Principle Component Analysis, but with one amazing property.
+
+00:00:25.815 --> 00:00:27.839
+When performing the transformation,
+
+00:00:27.839 --> 00:00:31.364
+it tries to maintain relative distances between objects,
+
+00:00:31.364 --> 00:00:37.320
+so that similar ones stay closer together while dissimilar objects stay further apart.
+
+00:00:37.320 --> 00:00:41.664
+This makes t-SNE a great choice for visualizing word embeddings.
+
+00:00:41.664 --> 00:00:44.494
+It effectively preserves the linear substructures
+
+00:00:44.494 --> 00:00:48.390
+and relationships that have been learned by the embedding model.
+
+00:00:48.390 --> 00:00:50.895
+If we look at the larger vector space,
+
+00:00:50.895 --> 00:00:54.609
+we can discover meaningful groups of related words.
+
+00:00:54.609 --> 00:00:58.320
+Sometimes, that takes a while to realize why certain clusters are formed,
+
+00:00:58.320 --> 00:01:01.435
+but most of the groupings are very intuitive.
+
+00:01:01.435 --> 00:01:05.829
+T-SNE also works on other kinds of data, such as images.
+
+00:01:05.829 --> 00:01:08.920
+Here, we see pictures from the Caltech 101 dataset
+
+00:01:08.920 --> 00:01:12.625
+organized into clusters that roughly correspond to class labels,
+
+00:01:12.625 --> 00:01:16.599
+including airplanes with blue sky being the common theme,
+
+00:01:16.599 --> 00:01:22.609
+sailboats of different shapes and sizes, and human faces.
+
+00:01:22.609 --> 00:01:26.359
+This is a very useful tool for better understanding the representation that
+
+00:01:26.359 --> 00:01:30.310
+a network learns and for identifying any bugs or other issues.
+

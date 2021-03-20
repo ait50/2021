@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.255 --> 00:00:02.798
+Você se lembra da sintaxe
+da escola?
+
+00:00:02.831 --> 00:00:06.760
+Substantivos, pronomes,
+verbos, advérbios etc.
+
+00:00:06.793 --> 00:00:09.813
+Identificar como as palavras
+estão sendo usadas na frase
+
+00:00:09.846 --> 00:00:12.888
+nos ajuda a entender melhor
+o que está sendo dito.
+
+00:00:12.921 --> 00:00:15.792
+Isso também pode mostrar
+relações entre palavras
+
+00:00:15.825 --> 00:00:18.584
+e ajuda a reconhecer
+referências cruzadas.
+
+00:00:18.617 --> 00:00:22.128
+O NLTK, mais uma vez,
+facilita as coisas para nós.
+
+00:00:22.161 --> 00:00:26.377
+Passamos tokens ou palavras
+para a função pos_tag,
+
+00:00:26.410 --> 00:00:28.976
+que retorna uma tag
+para cada palavra
+
+00:00:29.009 --> 00:00:31.344
+e identifica diferentes
+partes do discurso.
+
+00:00:31.377 --> 00:00:36.385
+Veja como ele rotulou corretamente
+"mentir" como verbo,
+
+00:00:36.418 --> 00:00:39.256
+e marcou a segunda ocorrência
+como substantivo.
+
+00:00:39.289 --> 00:00:41.416
+Consulte a documentação
+do NLTK
+
+00:00:41.449 --> 00:00:45.056
+para mais detalhes
+sobre o significado de cada tag.
+
+00:00:45.089 --> 00:00:48.452
+Uma das aplicações da identificação
+das partes do discurso
+
+00:00:48.485 --> 00:00:50.299
+é o parseamento de sentenças.
+
+00:00:50.332 --> 00:00:52.810
+Eis um exemplo do livro NLTK
+
+00:00:52.843 --> 00:00:54.964
+que usa
+uma gramática personalizada
+
+00:00:54.997 --> 00:00:57.916
+para parsear
+uma sentença ambígua.
+
+00:00:57.949 --> 00:01:02.676
+Observe como o parseador retorna
+as duas interpretações válidas.
+
+00:01:02.709 --> 00:01:04.635
+É mais fácil
+perceber a diferença
+
+00:01:04.668 --> 00:01:07.220
+quando visualizamos
+as árvores de parseamento.
+
+00:01:07.253 --> 00:01:12.307
+"Eu atirei em um elefante
+usando pijama."
+
+00:01:12.340 --> 00:01:15.997
+em contraposição com:
+"Eu atirei em um elefante,
+
+00:01:16.030 --> 00:01:19.324
+e o elefante
+estava de pijama."
+
+00:01:19.357 --> 00:01:22.133
+Como ele entrou no meu pijama?
+Eu não sei.
+

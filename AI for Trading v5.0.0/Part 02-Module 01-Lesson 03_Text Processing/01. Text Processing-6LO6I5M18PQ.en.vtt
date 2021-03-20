@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.629
+In this lesson, you'll learn how to read text data from
+
+00:00:03.629 --> 00:00:07.330
+different sources and prepare it for feature extraction.
+
+00:00:07.330 --> 00:00:10.169
+You'll begin by cleaning it to remove irrelevant items,
+
+00:00:10.169 --> 00:00:11.869
+such as HTML tags.
+
+00:00:11.869 --> 00:00:15.584
+You will then normalize text by converting it into all lowercase,
+
+00:00:15.585 --> 00:00:18.750
+removing punctuations and extra spaces.
+
+00:00:18.750 --> 00:00:23.954
+Next, you will split the text into words or tokens and remove words that are too common,
+
+00:00:23.954 --> 00:00:25.920
+also known as stop words.
+
+00:00:25.920 --> 00:00:29.355
+Finally, you will learn how to identify different parts of speech,
+
+00:00:29.355 --> 00:00:35.424
+named entities, and convert words into canonical forms using stemming and lemmatization.
+
+00:00:35.424 --> 00:00:37.784
+After going through all these processing steps,
+
+00:00:37.784 --> 00:00:39.944
+your text may look very different,
+
+00:00:39.945 --> 00:00:42.600
+but it captures the essence of what was being
+
+00:00:42.600 --> 00:00:45.450
+conveyed in a form that is easier to work with.
+

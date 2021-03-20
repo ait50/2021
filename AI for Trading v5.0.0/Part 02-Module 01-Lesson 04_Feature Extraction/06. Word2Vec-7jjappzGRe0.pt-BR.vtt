@@ -1,0 +1,200 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.837
+Word2Vec é um dos exemplos
+mais populares
+
+00:00:03.870 --> 00:00:06.306
+de embedding de palavras
+usado na prática.
+
+00:00:06.339 --> 00:00:08.274
+Como o nome Word2Vec indica,
+
+00:00:08.308 --> 00:00:11.077
+ele transforma palavras
+em vetores.
+
+00:00:11.111 --> 00:00:15.849
+Mas o que o nome não diz é
+como a transformação acontece.
+
+00:00:15.882 --> 00:00:18.485
+A principal ideia do Word2Vec
+é esta:
+
+00:00:18.518 --> 00:00:21.488
+um modelo que seja capaz
+de prever uma palavra,
+
+00:00:21.521 --> 00:00:24.190
+tendo as palavras vizinhas a ela,
+ou vice-versa.
+
+00:00:24.224 --> 00:00:26.993
+Prever palavras vizinhas
+de uma palavra
+
+00:00:27.027 --> 00:00:30.797
+costuma capturar os significados
+contextuais das palavras muito bem.
+
+00:00:30.830 --> 00:00:34.467
+E estes são, na verdade,
+dois tipos de modelos Word2Vec:
+
+00:00:34.501 --> 00:00:36.836
+um em que você recebe
+palavras vizinhas
+
+00:00:36.870 --> 00:00:38.972
+chamado
+"Saco de Palavras Contínuo",
+
+00:00:39.005 --> 00:00:40.740
+e outro em que você recebe
+
+00:00:40.774 --> 00:00:43.176
+a palavra do meio,
+chamado "Skip-gram".
+
+00:00:43.209 --> 00:00:44.911
+No modelo Skip-gram,
+
+00:00:44.944 --> 00:00:47.180
+você escolhe qualquer palavra
+de uma oração,
+
+00:00:47.213 --> 00:00:51.851
+a converte num vetor one-hot
+e o coloca numa rede neural
+
+00:00:51.885 --> 00:00:54.421
+ou outro modelo de probabilidade
+projetado
+
+00:00:54.454 --> 00:00:57.891
+para prever as palavras em volta,
+seu contexto.
+
+00:00:57.924 --> 00:00:59.859
+Usar uma função
+de perda adequada
+
+00:00:59.893 --> 00:01:02.328
+otimiza os pesos
+ou parâmetros do modelo,
+
+00:01:02.362 --> 00:01:05.765
+e repete isto até ele aprender
+a prever palavras de contexto
+
+00:01:05.799 --> 00:01:07.400
+o melhor que puder.
+
+00:01:07.434 --> 00:01:09.869
+Veja
+uma representação intermediária,
+
+00:01:09.903 --> 00:01:12.138
+como uma camada oculta
+numa rede neural.
+
+00:01:12.172 --> 00:01:14.833
+Os outputs daquela camada
+para uma certa palavra
+
+00:01:14.866 --> 00:01:17.544
+se tornam o vetor
+de palavras correspondente.
+
+00:01:17.577 --> 00:01:22.082
+A variação do saco de palavras
+também usa uma estratégia similar.
+
+00:01:22.115 --> 00:01:25.051
+Ela produz uma representação
+de palavras bem robusta,
+
+00:01:25.085 --> 00:01:29.055
+porque o significado de cada palavra
+é distribuído pelo vetor.
+
+00:01:29.089 --> 00:01:31.424
+O tamanho do vetor
+depende de você,
+
+00:01:31.458 --> 00:01:34.794
+de como você quer ajustar
+desempenho versus complexidade.
+
+00:01:34.828 --> 00:01:37.864
+É constante, não importa
+em quantas palavras você o treine,
+
+00:01:37.897 --> 00:01:39.733
+diferente do saco de palavras,
+
+00:01:39.766 --> 00:01:42.635
+onde o tamanho cresce
+com o número de palavras distintas.
+
+00:01:42.669 --> 00:01:46.339
+E quando você pré-treina um grande
+conjunto de vetores de palavra,
+
+00:01:46.373 --> 00:01:47.974
+pode usá-los eficientemente
+
+00:01:48.008 --> 00:01:50.510
+sem ter que transformá-los
+várias vezes,
+
+00:01:50.543 --> 00:01:53.079
+apenas os armazenando
+numa tabela de pesquisa.
+
+00:01:53.113 --> 00:01:54.948
+Agora está pronto
+para ser usado
+
+00:01:54.981 --> 00:01:56.983
+em arquiteturas
+de aprendizado profundo.
+
+00:01:57.017 --> 00:01:59.786
+Por exemplo, pode ser usado
+como o vetor de input
+
+00:01:59.819 --> 00:02:01.721
+para redes
+neurais recorrentes.
+
+00:02:01.755 --> 00:02:04.157
+Também é possível usar RNNs
+
+00:02:04.190 --> 00:02:06.593
+para aprender
+melhores embeddings de palavras.
+
+00:02:06.626 --> 00:02:08.928
+Existem outras otimizações
+
+00:02:08.962 --> 00:02:11.598
+que reduzem o modelo
+e treinam complexidade,
+
+00:02:11.631 --> 00:02:13.900
+como representar
+as palavras do output
+
+00:02:13.933 --> 00:02:16.670
+usando softmax hierárquica,
+perda de computação
+
+00:02:16.703 --> 00:02:19.372
+usando
+entropia cruzada esparsa etc.
+

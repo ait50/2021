@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.669
+So far, we have considered metrics that are focused on individual documents.
+
+00:00:05.669 --> 00:00:09.404
+Given that financial documents are released periodically,
+
+00:00:09.404 --> 00:00:14.474
+it will be useful to quantify changes of these documents over time.
+
+00:00:14.474 --> 00:00:20.820
+We could simply track the readability index or negative sentiments over time.
+
+00:00:20.820 --> 00:00:25.440
+But this metrics tend to capture one specific feature of a document.
+
+00:00:25.440 --> 00:00:30.105
+It would be nice to find a way to directly compare two documents.
+
+00:00:30.105 --> 00:00:35.429
+Why is this useful? Well, a significant change in financial documents from
+
+00:00:35.429 --> 00:00:40.795
+one period to the next might indicate changes in the market or company structure,
+
+00:00:40.795 --> 00:00:45.035
+and could lead to extra risks for the underlying stock.
+
+00:00:45.034 --> 00:00:47.899
+How do we compare the two documents?
+
+00:00:47.899 --> 00:00:50.554
+This is where similarity metrics come in.
+
+00:00:50.554 --> 00:00:56.284
+This metrics convert two documents into a number representing the degree of similarity.
+
+00:00:56.284 --> 00:00:58.054
+To construct these metrics,
+
+00:00:58.054 --> 00:01:01.024
+we can use TF-IDF.
+
+00:01:01.024 --> 00:01:05.840
+We can convert a document into a list of TF-IDF weights,
+
+00:01:05.840 --> 00:01:09.034
+which converts each document into a vector.
+
+00:01:09.034 --> 00:01:11.015
+Now that we have vectors,
+
+00:01:11.015 --> 00:01:14.480
+we can use linear algebra to construct this matrix.
+
+00:01:14.480 --> 00:01:17.630
+One common metric, is the cosine similarity.
+
+00:01:17.629 --> 00:01:21.454
+Think of two documents as two vectors in space.
+
+00:01:21.454 --> 00:01:27.125
+The cosine similarity is simply the cosine of the angle between the two vectors.
+
+00:01:27.125 --> 00:01:30.109
+Mathematically, this is the dot product of
+
+00:01:30.109 --> 00:01:33.679
+the two vectors divided by the product of their length.
+
+00:01:33.680 --> 00:01:37.595
+You might ask, why do we use the angle instead of say,
+
+00:01:37.594 --> 00:01:39.739
+the distance between the two vectors?
+
+00:01:39.739 --> 00:01:44.569
+This is because the concept of length doesn't really make sense intuitively.
+
+00:01:44.569 --> 00:01:49.384
+So, using angles removes the dependence on the length of vectors.
+
+00:01:49.385 --> 00:01:53.165
+Another common metric, is the Jaccard similarity metric.
+
+00:01:53.165 --> 00:01:58.835
+We can understand it intuitively by thinking of each vector as a histogram.
+
+00:01:58.834 --> 00:02:03.214
+Here we see each vector or histogram in the same plot.
+
+00:02:03.215 --> 00:02:07.719
+Then, we construct the new histogram by comparing them.
+
+00:02:07.719 --> 00:02:10.090
+To construct the minimum histogram,
+
+00:02:10.090 --> 00:02:12.289
+we take the minimum of the two.
+
+00:02:12.289 --> 00:02:16.984
+Then, we construct the maximum histogram by comparing the two.
+
+00:02:16.985 --> 00:02:19.835
+If vectors u and v are the same,
+
+00:02:19.835 --> 00:02:23.485
+the minimum and maximum histogram will be the same.
+
+00:02:23.485 --> 00:02:26.570
+The Jaccard similarity, is simply the volume of
+
+00:02:26.569 --> 00:02:30.574
+the min histogram over the volume of the max histogram.
+
+00:02:30.574 --> 00:02:34.594
+There is another way of interpreting the Jaccard similarity.
+
+00:02:34.594 --> 00:02:37.099
+We can think of the histograms as sets.
+
+00:02:37.099 --> 00:02:40.250
+So, the volume of the minimum histogram can also be
+
+00:02:40.250 --> 00:02:44.050
+thought of as the volume of the intersection of the two sets.
+
+00:02:44.050 --> 00:02:47.540
+Similarly, the volume of the maximum histogram can be
+
+00:02:47.539 --> 00:02:50.629
+thought of as the volume of the union of the two sets.
+
+00:02:50.629 --> 00:02:55.069
+The Jaccard similarity can be rewritten as the size
+
+00:02:55.069 --> 00:02:59.900
+of the intersection of the two sets over the size of the union of the two sets.
+
+00:02:59.900 --> 00:03:04.219
+Now, there are many other similarity metrics we haven't covered.
+
+00:03:04.219 --> 00:03:06.199
+Some are based on heuristics,
+
+00:03:06.199 --> 00:03:11.209
+like the minimal number of edits to transform one document into another document.
+
+00:03:11.210 --> 00:03:14.420
+This metrics may or may not be useful,
+
+00:03:14.419 --> 00:03:17.589
+and I encourage you to explore them and experiment.
+

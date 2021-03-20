@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.399
+Token is a fancy term for a symbol.
+
+00:00:03.399 --> 00:00:08.375
+Usually, one that holds some meaning and is not typically split up any further.
+
+00:00:08.375 --> 00:00:10.865
+In case of natural language processing,
+
+00:00:10.865 --> 00:00:13.919
+our tokens are usually individual words.
+
+00:00:13.919 --> 00:00:19.634
+So tokenization is simply splitting each sentence into a sequence of words.
+
+00:00:19.635 --> 00:00:26.025
+The simplest way to do this is using the split method which returns a list of words.
+
+00:00:26.024 --> 00:00:29.584
+Note that it splits on whitespace characters by default,
+
+00:00:29.585 --> 00:00:32.840
+which includes regular spaces but also tabs,
+
+00:00:32.840 --> 00:00:34.580
+new lines, et cetera.
+
+00:00:34.579 --> 00:00:39.079
+It's also smart about ignoring two or more whitespace characters in a sequence,
+
+00:00:39.079 --> 00:00:41.375
+so it doesn't return blank strings.
+
+00:00:41.375 --> 00:00:45.469
+But you can control all this using optional parameters.
+
+00:00:45.469 --> 00:00:49.414
+So far, we've only been using Python's built-in functionality,
+
+00:00:49.414 --> 00:00:54.655
+but some of these operations are much easier to perform using a library like NLTK,
+
+00:00:54.655 --> 00:00:58.490
+which stands for natural language toolkit.
+
+00:00:58.490 --> 00:01:02.359
+The most common approach for splitting up texting NLTK is to
+
+00:01:02.359 --> 00:01:07.189
+use the word tokenized function from nltk.tokenize.
+
+00:01:07.189 --> 00:01:11.679
+This performs the same task as split but is a little smarter.
+
+00:01:11.680 --> 00:01:15.360
+Try passing in some raw text that has not been normalized.
+
+00:01:15.359 --> 00:01:19.909
+You'll notice that the punctuations are treated differently based on their position.
+
+00:01:19.909 --> 00:01:23.509
+Here, the period after the title Doctor has
+
+00:01:23.510 --> 00:01:27.645
+been retained along with Dr as a single token.
+
+00:01:27.644 --> 00:01:28.849
+As you can imagine,
+
+00:01:28.849 --> 00:01:35.269
+NLTK is using some rules or patterns to decide what to do with each punctuation.
+
+00:01:35.269 --> 00:01:38.625
+Sometimes, you may need to split text into sentences.
+
+00:01:38.625 --> 00:01:40.909
+For instance, if you want to translate it.
+
+00:01:40.909 --> 00:01:45.289
+You can achieve this with NLTK using sent tokenize.
+
+00:01:45.290 --> 00:01:49.045
+Then you can split each sentence into words if needed.
+
+00:01:49.045 --> 00:01:52.040
+NLTK provide several other tokenizers,
+
+00:01:52.040 --> 00:01:56.030
+including a regular expression base tokenizer that you can use to
+
+00:01:56.030 --> 00:02:00.155
+remove punctuation and perform tokenization in a single step,
+
+00:02:00.155 --> 00:02:04.500
+and also a tweet tokenizer that is aware of twitter handles,
+
+00:02:04.500 --> 00:02:07.120
+hash tags, and emoticons.
+
+00:02:07.120 --> 00:02:11.000
+Check out the nltk.tokenize package for more details.
+

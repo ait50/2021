@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.710
+Now that we've learned how to harvest our bag of words, what can we do with it?
+
+00:00:04.710 --> 00:00:06.794
+As a simple next step,
+
+00:00:06.794 --> 00:00:09.210
+we could categorize our bags.
+
+00:00:09.210 --> 00:00:11.865
+Not all apples are created equal.
+
+00:00:11.865 --> 00:00:14.894
+Some may be good and some may be bad.
+
+00:00:14.894 --> 00:00:19.259
+For instance, words like loss, bankruptcy,
+
+00:00:19.260 --> 00:00:23.480
+and damage are likely to indicate negative problems,
+
+00:00:23.480 --> 00:00:26.580
+so we can move them to the negative pile.
+
+00:00:26.579 --> 00:00:29.339
+Words like great, breakthrough,
+
+00:00:29.339 --> 00:00:33.149
+and innovation are associated with positive conditions,
+
+00:00:33.149 --> 00:00:36.060
+so we can move them to the positive pile.
+
+00:00:36.060 --> 00:00:41.234
+We can perform this procedure systematically using a wordlist.
+
+00:00:41.234 --> 00:00:46.744
+So, all the words matching the word list can be moved to their corresponding categories.
+
+00:00:46.744 --> 00:00:50.149
+In the end, we can get a sentiment score by
+
+00:00:50.149 --> 00:00:53.945
+computing the proportion of words matching our wordlist.
+
+00:00:53.945 --> 00:00:56.450
+In addition to positive or negative,
+
+00:00:56.450 --> 00:00:59.030
+there could also be other possible categories,
+
+00:00:59.030 --> 00:01:01.895
+like law-related or uncertain.
+
+00:01:01.895 --> 00:01:05.525
+You may even come up with other brand new categories.
+
+00:01:05.525 --> 00:01:08.109
+So, where do we find this wordlist?
+
+00:01:08.109 --> 00:01:12.384
+Researchers have compiled different wordlists for analyzing documents,
+
+00:01:12.384 --> 00:01:17.329
+and you can find some examples in the links we've included below the video.
+
+00:01:17.329 --> 00:01:23.009
+Although, the best wordlist may be ones that are tailored specifically to your needs.
+

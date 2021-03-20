@@ -1,0 +1,316 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.490
+Hello, and welcome back.
+
+00:00:02.490 --> 00:00:08.250
+In this lesson, we will learn how to use the re module to modify strings.
+
+00:00:08.250 --> 00:00:14.609
+Regex objects have the sub method that allow us to replace patterns within a string.
+
+00:00:14.609 --> 00:00:18.675
+So, let's see how this works with a simple example.
+
+00:00:18.675 --> 00:00:25.905
+Here, we have a multi-line string that contains two instances of the ampersand character.
+
+00:00:25.905 --> 00:00:31.980
+Let's suppose we wanted to replace this ampersand characters with the word, and.
+
+00:00:31.980 --> 00:00:36.344
+To do this, we first need to create a regular expression
+
+00:00:36.344 --> 00:00:41.219
+that matches all the ampersand characters in our multi-line string.
+
+00:00:41.219 --> 00:00:46.820
+We then need to save that regular expression into a regex object.
+
+00:00:46.820 --> 00:00:51.575
+Finally, which is a sub method to replace our matches.
+
+00:00:51.575 --> 00:00:54.005
+The way this method works,
+
+00:00:54.005 --> 00:00:56.570
+is that it replaces every match of
+
+00:00:56.570 --> 00:01:02.149
+the regular expression in our sample text with a raw string, and.
+
+00:01:02.149 --> 00:01:04.370
+So, if we run this code,
+
+00:01:04.370 --> 00:01:07.340
+we can see here the original text,
+
+00:01:07.340 --> 00:01:13.775
+and here the modified text without the ampersand replaced with the word, and.
+
+00:01:13.775 --> 00:01:17.600
+Being able to make these substitutions can be really
+
+00:01:17.599 --> 00:01:21.199
+useful and save you a lot of time if you're working with
+
+00:01:21.200 --> 00:01:22.760
+large documents that you need to
+
+00:01:22.760 --> 00:01:28.835
+reformat We can do more sophisticated substitutions by using groups.
+
+00:01:28.834 --> 00:01:30.709
+Let's see an example.
+
+00:01:30.709 --> 00:01:35.104
+Here, we have a multiline string with the names of four people.
+
+00:01:35.105 --> 00:01:40.070
+As you can see, some people have middle names but others do not.
+
+00:01:40.069 --> 00:01:47.149
+Let's assume we want it to replace each name with just its first and last name.
+
+00:01:47.150 --> 00:01:54.725
+For example, the name John David Smith should be replaced with just John Smith,
+
+00:01:54.724 --> 00:01:59.089
+and the name Alice Jackson should stay the same.
+
+00:01:59.090 --> 00:02:02.000
+To do this, we first need to create
+
+00:02:02.000 --> 00:02:06.215
+a regular expression that matches all the names in the list.
+
+00:02:06.215 --> 00:02:11.585
+Now, keep it in mind that we need to be able to make substitutions later.
+
+00:02:11.585 --> 00:02:15.784
+We will use groups to be able to distinguish between the first name,
+
+00:02:15.784 --> 00:02:18.764
+the middle name, and the last name.
+
+00:02:18.764 --> 00:02:22.069
+Since all names have a first name,
+
+00:02:22.069 --> 00:02:26.954
+then we can use this group to match all the first names.
+
+00:02:26.955 --> 00:02:30.860
+Remember, the plus meta-character matches
+
+00:02:30.860 --> 00:02:35.795
+one or more repetitions of the preceding regular expression.
+
+00:02:35.794 --> 00:02:38.829
+Now, not all names have middle names,
+
+00:02:38.830 --> 00:02:41.585
+so having a middle name is optional.
+
+00:02:41.585 --> 00:02:46.099
+Since the first and middle names are separated by white space,
+
+00:02:46.099 --> 00:02:50.844
+we also need to indicate that this white-space is also optional.
+
+00:02:50.844 --> 00:02:55.414
+So, to indicate that the white-space and middle name are optional,
+
+00:02:55.414 --> 00:02:59.060
+we will use the question mark meta-character after
+
+00:02:59.060 --> 00:03:04.824
+the white-space and after the second group representing the middle name.
+
+00:03:04.824 --> 00:03:07.644
+After the first or middle name,
+
+00:03:07.645 --> 00:03:12.685
+we have a white-space character that we can match with this character set.
+
+00:03:12.685 --> 00:03:15.170
+Notice that in this case,
+
+00:03:15.169 --> 00:03:18.714
+we didn't use the sequence backslash s,
+
+00:03:18.715 --> 00:03:21.344
+since this will match new lines as well,
+
+00:03:21.344 --> 00:03:23.580
+and we don't want to match those.
+
+00:03:23.580 --> 00:03:28.475
+Finally, we make a third group to match the last name.
+
+00:03:28.474 --> 00:03:30.935
+Since all names have last names,
+
+00:03:30.935 --> 00:03:33.860
+we don't need to use the question mark meta-character.
+
+00:03:33.860 --> 00:03:35.870
+So, if we run this code,
+
+00:03:35.870 --> 00:03:40.205
+we can clearly see that we can match the four names in our list.
+
+00:03:40.205 --> 00:03:44.480
+Now, the cool thing about using groups is that we can reference them
+
+00:03:44.479 --> 00:03:49.715
+individually from the match object by using the group method.
+
+00:03:49.715 --> 00:03:54.500
+The group n method selects the n group in each match.
+
+00:03:54.500 --> 00:03:58.689
+Therefore, in this particular case for each match,
+
+00:03:58.689 --> 00:04:01.514
+group one will select the first name,
+
+00:04:01.514 --> 00:04:04.349
+group two will select the middle name,
+
+00:04:04.349 --> 00:04:07.784
+and group three will select the last name.
+
+00:04:07.784 --> 00:04:13.044
+So here, we've created a loop that goes through each match,
+
+00:04:13.044 --> 00:04:14.729
+and for each match,
+
+00:04:14.729 --> 00:04:20.884
+would use the group method to selectively print out the first name using group one,
+
+00:04:20.884 --> 00:04:23.675
+the middle name using group two,
+
+00:04:23.675 --> 00:04:26.665
+and the last name using group three.
+
+00:04:26.665 --> 00:04:28.335
+If we run this code,
+
+00:04:28.334 --> 00:04:30.495
+we can see each person's first,
+
+00:04:30.495 --> 00:04:32.564
+middle, and last name.
+
+00:04:32.564 --> 00:04:37.180
+Now, we're ready to use the sub method to make our substitutions.
+
+00:04:37.180 --> 00:04:40.879
+What we want to do is to replace every match with
+
+00:04:40.879 --> 00:04:43.790
+only the first and last names or
+
+00:04:43.790 --> 00:04:48.650
+equivalently replace every match with the first and third groups.
+
+00:04:48.649 --> 00:04:53.344
+We can refer to each group in the sub method by using the backslash.
+
+00:04:53.345 --> 00:04:59.735
+For example, this backslash one refers to the first group or first name,
+
+00:04:59.735 --> 00:05:05.250
+and these backslash three refers to the third group or last name.
+
+00:05:05.250 --> 00:05:08.870
+So, this statement replaces every match of
+
+00:05:08.870 --> 00:05:14.810
+our regular expression in the sample text with groups one and three,
+
+00:05:14.810 --> 00:05:18.694
+which correspond to the first and last names.
+
+00:05:18.694 --> 00:05:20.930
+So, if we run this code,
+
+00:05:20.930 --> 00:05:28.475
+we can see that we have successfully replaced every name with the first and last name.
+
+00:05:28.475 --> 00:05:32.390
+Now, the last topic we're going to cover is Flags.
+
+00:05:32.389 --> 00:05:35.164
+We saw at the beginning of this lesson,
+
+00:05:35.165 --> 00:05:38.345
+that regular expressions are case sensitive.
+
+00:05:38.345 --> 00:05:40.760
+Therefore, we often have to use
+
+00:05:40.759 --> 00:05:45.740
+regular expressions with both uppercase and lowercase letters.
+
+00:05:45.740 --> 00:05:53.105
+However, the compile function has flags that can be used to allow for more flexibility.
+
+00:05:53.105 --> 00:06:00.905
+For example, the IGNORECASE flag can be used to perform case insensitive matching.
+
+00:06:00.904 --> 00:06:02.799
+Let's see an example.
+
+00:06:02.800 --> 00:06:07.384
+Here, we have a string that contains the name Walter
+
+00:06:07.384 --> 00:06:12.740
+written in different combinations of upper and lowercase letters.
+
+00:06:12.740 --> 00:06:16.415
+In order to be able to find these two renditions of Walter,
+
+00:06:16.415 --> 00:06:20.750
+we will probably have to use a long character set to be able to
+
+00:06:20.750 --> 00:06:25.879
+account for all possible combinations of lower and uppercase letters.
+
+00:06:25.879 --> 00:06:28.024
+However, in this case,
+
+00:06:28.024 --> 00:06:31.219
+we can use the IGNORECASE flag to
+
+00:06:31.220 --> 00:06:34.640
+indicate that we don't care about the case of the letters,
+
+00:06:34.639 --> 00:06:38.870
+We just want to find the name Walter no matter how it's written.
+
+00:06:38.870 --> 00:06:41.014
+So, if we run this code,
+
+00:06:41.014 --> 00:06:44.479
+we can clearly see that we are able to match
+
+00:06:44.480 --> 00:06:49.370
+both renditions of Walter without any fancy regular expression.
+
+00:06:49.370 --> 00:06:51.725
+We have seen a lot in this lesson,
+
+00:06:51.725 --> 00:06:55.465
+and we have just begun to scratch the surface of regular expressions.
+
+00:06:55.464 --> 00:06:57.494
+For more information on Regexes,
+
+00:06:57.495 --> 00:07:01.040
+make sure to check out the Python Regex documentation.
+

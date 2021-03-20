@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.865
+Hello and welcome back.
+
+00:00:02.865 --> 00:00:08.910
+In this notebook, we will learn how to navigate the parse tree created by BeautifulSoup.
+
+00:00:08.910 --> 00:00:12.495
+So the most straightforward way of navigating the tree
+
+00:00:12.494 --> 00:00:16.964
+is by accessing the HTML or XML tags.
+
+00:00:16.964 --> 00:00:19.875
+We can access the tags as if they were
+
+00:00:19.875 --> 00:00:24.134
+attributes of the BeautifulSoup object as shown here.
+
+00:00:24.135 --> 00:00:26.370
+So let's see an example.
+
+00:00:26.370 --> 00:00:32.579
+Let's suppose we wanted to access the head tag of our sample HTML file.
+
+00:00:32.579 --> 00:00:38.659
+First, we will create a BeautifulSoup object called page content.
+
+00:00:38.659 --> 00:00:43.939
+Then we will access the head tag as if it was an attribute of
+
+00:00:43.939 --> 00:00:49.234
+this BeautifulSoup object but using page content.head.
+
+00:00:49.234 --> 00:00:53.585
+Whenever we access a tag in this manner,
+
+00:00:53.585 --> 00:00:56.585
+we get a tag object.
+
+00:00:56.585 --> 00:01:00.844
+So let's print this tag object to see what it looks like.
+
+00:01:00.844 --> 00:01:07.414
+We can see that this tag object only has the contents of the head tag,
+
+00:01:07.415 --> 00:01:10.710
+including all of its sub-tags.
+
+00:01:10.709 --> 00:01:15.269
+We call these subtags the children of the head tag.
+
+00:01:15.269 --> 00:01:23.704
+We can access these child tags as if they were attributes of the page head tag object.
+
+00:01:23.704 --> 00:01:28.025
+For example, if we wanted to access this title tag,
+
+00:01:28.025 --> 00:01:31.835
+we would use page head.title.
+
+00:01:31.834 --> 00:01:33.754
+So if we run this code,
+
+00:01:33.754 --> 00:01:38.209
+we can see that we only get the contents of the title tag.
+
+00:01:38.209 --> 00:01:42.919
+Notice that this statement is equivalent to page
+
+00:01:42.920 --> 00:01:52.385
+content.head.title where page content is the BeautifulSoup object and not the tag object.
+
+00:01:52.385 --> 00:01:57.680
+Now notice the tag objects contain HTML tags.
+
+00:01:57.680 --> 00:02:04.205
+For example, here we see the opening and closing tags of this tag object.
+
+00:02:04.204 --> 00:02:06.189
+In most cases however,
+
+00:02:06.189 --> 00:02:12.539
+we do not want the tags but rather we only want the tags contained within the tags.
+
+00:02:12.539 --> 00:02:15.900
+For example, let's suppose we only wanted to get
+
+00:02:15.900 --> 00:02:21.314
+the text "AI for Trading" that is in between these title tags.
+
+00:02:21.314 --> 00:02:29.025
+In these cases, we can use the get_text method that's available to tag objects.
+
+00:02:29.025 --> 00:02:30.969
+So if we run this code,
+
+00:02:30.969 --> 00:02:34.254
+we can see that now we only get the text,
+
+00:02:34.254 --> 00:02:39.884
+"AI For Trading" without any HTML tags as we wanted.
+
+00:02:39.884 --> 00:02:45.469
+Now both HTML and XML tags can have attributes.
+
+00:02:45.469 --> 00:02:53.284
+For example, here we have an H1 tag that has the attribute id equal to intro.
+
+00:02:53.284 --> 00:02:56.599
+BeautifulSoup allows us to get the value of
+
+00:02:56.599 --> 00:03:00.995
+a tag's attribute by treating the tag like a dictionary.
+
+00:03:00.995 --> 00:03:02.930
+Let's see an example.
+
+00:03:02.930 --> 00:03:07.879
+Suppose we wanted to get the value of the id attribute of
+
+00:03:07.879 --> 00:03:13.039
+this H1 tag which in this case is equal to intro.
+
+00:03:13.039 --> 00:03:18.664
+To do this, we will first access the H1 tag as we have done previously.
+
+00:03:18.664 --> 00:03:22.579
+We will then get the value of the id attribute as
+
+00:03:22.580 --> 00:03:26.540
+if the tag object was a dictionary using square brackets.
+
+00:03:26.539 --> 00:03:28.489
+So if we run this code,
+
+00:03:28.490 --> 00:03:31.750
+we can see that we get the value of intro,
+
+00:03:31.750 --> 00:03:36.395
+which is indeed the value of the id attribute of the H1 tag.
+
+00:03:36.395 --> 00:03:41.000
+Now, if we look at our sample HTML file,
+
+00:03:41.000 --> 00:03:45.569
+we can see that it has two H2 tags.
+
+00:03:45.569 --> 00:03:48.644
+This one, and this one.
+
+00:03:48.645 --> 00:03:54.025
+If we try to access these H2 tags as we did before,
+
+00:03:54.025 --> 00:03:59.629
+we can see that we only get the first tag but not the second one.
+
+00:03:59.629 --> 00:04:03.889
+This is because when we access a tag as an attribute,
+
+00:04:03.889 --> 00:04:07.250
+we only get the first tag that appears in the file.
+
+00:04:07.250 --> 00:04:10.128
+In order to get all the H2 tags,
+
+00:04:10.128 --> 00:04:16.449
+we need to use the find all method which is the topic of our next lesson.
+

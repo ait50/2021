@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.690
+The processing stage begins with reading text data.
+
+00:00:03.690 --> 00:00:05.355
+Depending on your application,
+
+00:00:05.355 --> 00:00:07.890
+that can be from one of several sources.
+
+00:00:07.889 --> 00:00:12.449
+The simplest source is a plain text file on your local machine.
+
+00:00:12.449 --> 00:00:17.684
+We can read it in using Python's built in file input mechanism.
+
+00:00:17.684 --> 00:00:23.439
+Text data may also be included as part of a larger database or table.
+
+00:00:23.440 --> 00:00:28.349
+Here, we have a CSV file containing information about some news articles.
+
+00:00:28.349 --> 00:00:31.740
+We can read this in using pandas very easily.
+
+00:00:31.739 --> 00:00:35.649
+Pandas includes several useful string manipulation methods
+
+00:00:35.649 --> 00:00:38.984
+that can be applied to an entire column at once.
+
+00:00:38.984 --> 00:00:43.424
+For instance, converting all values to lowercase.
+
+00:00:43.424 --> 00:00:47.304
+Sometimes, you may have to fetch data from an online resource,
+
+00:00:47.304 --> 00:00:50.210
+such as a web service or API.
+
+00:00:50.210 --> 00:00:53.140
+In this example, we use the requests library in
+
+00:00:53.140 --> 00:00:57.204
+Python to obtain a quote of the day from a simple API,
+
+00:00:57.204 --> 00:00:59.229
+but you could also obtain tweets,
+
+00:00:59.229 --> 00:01:02.684
+reviews, comments, whatever you would like to analyze.
+
+00:01:02.685 --> 00:01:05.995
+Most APIs return JSON or XML data,
+
+00:01:05.995 --> 00:01:11.280
+so you need to be aware of the structure in order to pull out the fields that you need.
+
+00:01:11.280 --> 00:01:14.230
+Many data sets you will encounter have likely been
+
+00:01:14.230 --> 00:01:18.000
+fetched and prepared by someone else using a similar procedure.
+

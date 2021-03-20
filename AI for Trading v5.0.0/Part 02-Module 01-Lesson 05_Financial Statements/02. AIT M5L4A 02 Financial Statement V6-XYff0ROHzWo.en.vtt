@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.459
+For long-term investments, there is
+
+00:00:02.459 --> 00:00:06.585
+a lot more information about a company besides basic trading data.
+
+00:00:06.585 --> 00:00:09.089
+Things like market share,
+
+00:00:09.089 --> 00:00:12.029
+products and services, and growth potential
+
+00:00:12.029 --> 00:00:15.434
+can be important factors for long-term trends.
+
+00:00:15.435 --> 00:00:18.344
+Where could we get this information potentially?
+
+00:00:18.344 --> 00:00:20.594
+In financial reports.
+
+00:00:20.594 --> 00:00:22.099
+In the United States,
+
+00:00:22.100 --> 00:00:24.750
+we have the Security and Exchange Commission,
+
+00:00:24.750 --> 00:00:32.325
+the SEC, created to protect investors and facilitate disclosure of corporate information.
+
+00:00:32.325 --> 00:00:36.200
+By law, large publicly traded companies are
+
+00:00:36.200 --> 00:00:40.689
+required to file periodic financial reports with the SEC,
+
+00:00:40.689 --> 00:00:43.399
+and these reports must be truthful and
+
+00:00:43.399 --> 00:00:48.634
+accurate so they could be very useful for making investment decisions.
+
+00:00:48.634 --> 00:00:52.729
+The most common reports are called 10-Ks which are
+
+00:00:52.729 --> 00:00:57.464
+filed annually and 10-Qs which are filed quarterly.
+
+00:00:57.465 --> 00:01:02.040
+To be concrete, we're going to focus on the 10-Ks.
+
+00:01:02.039 --> 00:01:09.109
+10-Ks are long and detailed documents separated into four main parts.
+
+00:01:09.109 --> 00:01:12.935
+Part one is the business overview and it contains
+
+00:01:12.935 --> 00:01:17.600
+important information about risks and possible legal proceedings.
+
+00:01:17.599 --> 00:01:20.944
+Part two, business and finance.
+
+00:01:20.944 --> 00:01:23.858
+It includes discussion or market conditions,
+
+00:01:23.858 --> 00:01:27.664
+projections, and highlights of the financial report.
+
+00:01:27.665 --> 00:01:29.900
+Part three is governance.
+
+00:01:29.900 --> 00:01:34.415
+It includes information on executive board members and compensations.
+
+00:01:34.415 --> 00:01:36.590
+Finally, part four is
+
+00:01:36.590 --> 00:01:42.710
+the full financial report which contains detailed information on spendings on earnings.
+
+00:01:42.709 --> 00:01:47.375
+Allegedly, legendary investor Warren Buffett raised, on average,
+
+00:01:47.375 --> 00:01:50.530
+500 pages of these reports every day,
+
+00:01:50.530 --> 00:01:55.070
+and financial reports have probably helped him make investment decisions.
+
+00:01:55.069 --> 00:01:59.854
+Maybe we don't have the time to read like Warren Buffett, but still,
+
+00:01:59.855 --> 00:02:02.570
+with the aid of natural language processing,
+
+00:02:02.569 --> 00:02:06.794
+we can easily extract information that could be useful for trading.
+
+00:02:06.795 --> 00:02:11.205
+Luckily for us, in the US the SEC created
+
+00:02:11.205 --> 00:02:16.770
+EDGAR which stands for the Electronic Data Gathering, Analysis, and Retrieval.
+
+00:02:16.770 --> 00:02:19.400
+It's essentially a website that gives you
+
+00:02:19.400 --> 00:02:23.780
+straightforward access to all the available financial statements.
+
+00:02:23.780 --> 00:02:25.534
+In the following lessons,
+
+00:02:25.534 --> 00:02:29.419
+we will focus on particular sections of the 10-K reports.
+
+00:02:29.419 --> 00:02:32.479
+This includes: Part one,
+
+00:02:32.479 --> 00:02:36.384
+item one A that discusses business risk factors.
+
+00:02:36.384 --> 00:02:41.704
+Part two, item seven and seven A that discuss market risks.
+
+00:02:41.705 --> 00:02:46.868
+These sections I'll learn important risk factors like lawsuits, taxes,
+
+00:02:46.868 --> 00:02:49.400
+and potential changes in market supply or
+
+00:02:49.400 --> 00:02:53.550
+demand that could be useful for generating trading signals.
+

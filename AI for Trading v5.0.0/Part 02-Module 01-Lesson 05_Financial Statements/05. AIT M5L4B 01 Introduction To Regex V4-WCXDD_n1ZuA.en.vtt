@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.129
+Now that you know what 10-Ks are and how to access them,
+
+00:00:04.129 --> 00:00:08.309
+let's take a look at how we can extract useful information from them.
+
+00:00:08.310 --> 00:00:13.830
+People often read 10-Ks to find out if a company is doing well or not.
+
+00:00:13.830 --> 00:00:15.399
+Certain words or phrases,
+
+00:00:15.398 --> 00:00:20.015
+both positive or negative might indicate how well a company is doing.
+
+00:00:20.015 --> 00:00:26.560
+For example, if one spots words like bankruptcy or phrases like declining profits,
+
+00:00:26.559 --> 00:00:28.820
+this can be signs of potentially running
+
+00:00:28.820 --> 00:00:31.820
+a high risk if one were to invest in that company.
+
+00:00:31.820 --> 00:00:33.410
+On the other hand,
+
+00:00:33.409 --> 00:00:36.709
+phrases like increasing profits might indicate that
+
+00:00:36.710 --> 00:00:41.375
+the company is doing well and could potentially have favorable future performance.
+
+00:00:41.375 --> 00:00:44.884
+Going through the 10-Ks of each company and reading
+
+00:00:44.884 --> 00:00:49.820
+each section to look for a particular keywords or phrases is an important task,
+
+00:00:49.820 --> 00:00:55.009
+that fundamental discretionary investors perform to gain deeper insights into
+
+00:00:55.009 --> 00:00:57.439
+each company But this can be very time
+
+00:00:57.439 --> 00:01:01.584
+consuming if you're dealing with hundreds or even thousands of companies.
+
+00:01:01.585 --> 00:01:07.659
+In these type of situations we can employ regular expressions to do the work for us.
+
+00:01:07.659 --> 00:01:10.959
+A regular expression or regex for short,
+
+00:01:10.959 --> 00:01:16.194
+allows us to search for patterns in text in a fast and automated manner.
+
+00:01:16.194 --> 00:01:19.554
+Lets see a quick example of how one might use
+
+00:01:19.555 --> 00:01:24.130
+regular expressions and how they differ from a literal search.
+
+00:01:24.129 --> 00:01:26.545
+Suppose we wanted to search for
+
+00:01:26.545 --> 00:01:30.140
+all the phone numbers that appear in a particular document.
+
+00:01:30.140 --> 00:01:34.659
+A literal search involves listing out every possible combination in
+
+00:01:34.659 --> 00:01:40.629
+a set and then comparing each item in the document to each item in that set.
+
+00:01:40.629 --> 00:01:45.875
+In other words, a literal search only looks for exactly what you typed.
+
+00:01:45.875 --> 00:01:49.010
+For example, the literal search
+
+00:01:49.010 --> 00:01:57.325
+555-123-4567 can only search the document for this particular number and none other.
+
+00:01:57.325 --> 00:02:02.450
+This means that a literal search won't help us because we will need to
+
+00:02:02.450 --> 00:02:07.760
+know all the phone numbers in advance in order to search every possible phone number.
+
+00:02:07.760 --> 00:02:13.655
+Now let's see how regular expressions can help us get around this problem.
+
+00:02:13.655 --> 00:02:17.659
+This regular expression that you see on the screen can be used to
+
+00:02:17.659 --> 00:02:21.680
+find all the phone numbers that match this particular pattern.
+
+00:02:21.680 --> 00:02:25.655
+In this expression, the backslash D matches
+
+00:02:25.655 --> 00:02:30.560
+any single digit and the dot matches any single character.
+
+00:02:30.560 --> 00:02:34.280
+We created this regular expression by taking advantage of
+
+00:02:34.280 --> 00:02:38.360
+the fact that even though phone numbers all have different digits,
+
+00:02:38.360 --> 00:02:40.295
+they all share the same pattern.
+
+00:02:40.294 --> 00:02:44.299
+Namely, three digits followed by a character,
+
+00:02:44.300 --> 00:02:47.060
+then followed by three more digits followed by
+
+00:02:47.060 --> 00:02:50.974
+another character and then followed by four or more digits.
+
+00:02:50.974 --> 00:02:52.984
+As you can start to see,
+
+00:02:52.985 --> 00:02:55.520
+regexes can be very powerful.
+
+00:02:55.520 --> 00:02:59.540
+In fact, you will soon learn the basic tools you need to create
+
+00:02:59.539 --> 00:03:04.625
+regular expressions that can match any pattern of texts that you can imagine.
+
+00:03:04.625 --> 00:03:06.425
+In the following lessons,
+
+00:03:06.425 --> 00:03:08.689
+you will learn how to create regular expressions in
+
+00:03:08.689 --> 00:03:11.794
+Python to match different patterns of text.
+
+00:03:11.794 --> 00:03:17.394
+We will then create Regexes to find specific patterns of text in 10-Ks.
+
+00:03:17.395 --> 00:03:19.090
+In a later lesson,
+
+00:03:19.090 --> 00:03:21.920
+we will learn how to analyze those words using
+
+00:03:21.919 --> 00:03:24.500
+natural language processing to determine
+
+00:03:24.500 --> 00:03:27.620
+how well a company has been doing from there 10-Ks.
+
+00:03:27.620 --> 00:03:29.580
+So let's get started.
+

@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.019
+So what is stopping computers from becoming as capable
+
+00:00:04.019 --> 00:00:07.439
+as humans in understanding natural language?
+
+00:00:07.440 --> 00:00:12.300
+Part of the problem lies in the variability and complexity of our sentences.
+
+00:00:12.300 --> 00:00:15.210
+Consider this excerpt from a movie review.
+
+00:00:15.210 --> 00:00:18.000
+"I was lured to see this on the promise of
+
+00:00:18.000 --> 00:00:23.054
+a smart witty slice of old fashioned fun and intrigue. I was conned. "
+
+00:00:23.053 --> 00:00:24.538
+Although it starts with
+
+00:00:24.539 --> 00:00:30.059
+some potentially positive words it turns out to be a strongly negative review.
+
+00:00:30.059 --> 00:00:32.908
+Sentences like this might be somewhat entertaining for
+
+00:00:32.908 --> 00:00:37.839
+us but computers tend to make mistakes when trying to analyze them.
+
+00:00:37.840 --> 00:00:42.670
+But there is a bigger challenge that makes NLP harder than you think.
+
+00:00:42.670 --> 00:00:45.054
+Take a look at this sentence.
+
+00:00:45.054 --> 00:00:49.935
+"The sofa didn't fit through the door because it was too narrow."
+
+00:00:49.935 --> 00:00:52.164
+What does "it" refer to?
+
+00:00:52.164 --> 00:00:55.515
+Clearly "it" refers to the door.
+
+00:00:55.515 --> 00:00:58.975
+Now consider a slight variation of this sentence.
+
+00:00:58.975 --> 00:01:03.109
+"The sofa didn't fit through the door because it was too wide."
+
+00:01:03.109 --> 00:01:05.819
+What does "it" refer to in this case?
+
+00:01:05.819 --> 00:01:08.950
+Here it's the sofa. Think about it.
+
+00:01:08.950 --> 00:01:11.859
+To understand the proper meaning or semantics of
+
+00:01:11.858 --> 00:01:16.583
+the sentence you implicitly applied your knowledge about the physical world,
+
+00:01:16.584 --> 00:01:20.230
+that wide things don't fit through narrow things.
+
+00:01:20.230 --> 00:01:23.635
+You may have experienced a similar situation before.
+
+00:01:23.635 --> 00:01:28.689
+You can imagine that there are countless other scenarios in which some knowledge or
+
+00:01:28.688 --> 00:01:34.000
+context is indispensable for correctly understanding what is being said.
+

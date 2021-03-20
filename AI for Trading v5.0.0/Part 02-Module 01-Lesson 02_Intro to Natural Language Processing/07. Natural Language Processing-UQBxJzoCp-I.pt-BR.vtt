@@ -1,0 +1,72 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.321 --> 00:00:02.220
+O processamento
+de linguagem natural
+
+00:00:02.253 --> 00:00:04.687
+é um dos campos
+que mais crescem no mundo.
+
+00:00:04.720 --> 00:00:10.010
+O PLN está em vários produtos
+e serviços que usamos todos os dias.
+
+00:00:10.043 --> 00:00:11.896
+Vamos começar
+com uma visão geral
+
+00:00:11.929 --> 00:00:15.151
+de como projetar um pipeline
+de ponta a ponta do PLN.
+
+00:00:16.606 --> 00:00:18.164
+Não esse tipo de pipeline;
+
+00:00:18.197 --> 00:00:20.845
+um pipeline de processamento
+de linguagem natural,
+
+00:00:20.878 --> 00:00:23.156
+no qual começamos
+com o texto bruto
+
+00:00:23.189 --> 00:00:26.061
+em qualquer forma
+disponível, processamos
+
+00:00:26.094 --> 00:00:27.829
+extraindo recursos relevantes
+
+00:00:27.862 --> 00:00:31.502
+e construímos modelos para realizar
+várias tarefas do PLN.
+
+00:00:32.614 --> 00:00:33.845
+Pensando bem,
+
+00:00:33.878 --> 00:00:36.141
+isso é como refinar
+petróleo bruto.
+
+00:00:36.174 --> 00:00:39.653
+Veremos como esses diferentes
+estágios do pipeline
+
+00:00:39.686 --> 00:00:41.061
+dependem uns dos outros,
+
+00:00:41.094 --> 00:00:43.620
+veremos como tomar
+decisões de design,
+
+00:00:43.653 --> 00:00:45.653
+como escolher
+bibliotecas existentes
+
+00:00:45.686 --> 00:00:47.743
+e ferramentas
+para executar cada etapa.
+

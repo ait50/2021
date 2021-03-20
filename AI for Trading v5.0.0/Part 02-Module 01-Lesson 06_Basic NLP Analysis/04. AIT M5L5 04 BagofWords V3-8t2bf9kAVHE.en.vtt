@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.700
+When analyzing a financial document,
+
+00:00:02.700 --> 00:00:07.035
+we can gain deeper insights looking at the word compositions.
+
+00:00:07.035 --> 00:00:11.164
+For instance, a document filled with words like lawsuits,
+
+00:00:11.164 --> 00:00:17.684
+risks, losses, bankruptcy, might be indicative of problems within the company.
+
+00:00:17.684 --> 00:00:20.434
+How do we quantify this information?
+
+00:00:20.434 --> 00:00:24.960
+This can be done by condensing a document into a bag of words.
+
+00:00:24.960 --> 00:00:27.210
+Reviewing the bag of words concept,
+
+00:00:27.210 --> 00:00:30.839
+we can imagine a document or a sentence as shown
+
+00:00:30.839 --> 00:00:34.835
+here as an apple tree and the words as apples on the tree.
+
+00:00:34.835 --> 00:00:40.954
+That is, after all the pre-processing steps like lemmatization and stop-word removal,
+
+00:00:40.954 --> 00:00:45.320
+then we can harvest the apples into a bag of words.
+
+00:00:45.320 --> 00:00:49.070
+There is a potential issue with bag of words though.
+
+00:00:49.070 --> 00:00:52.429
+Since the bag of words ignore word orders.
+
+00:00:52.429 --> 00:00:55.655
+For example, consider the following sentence,
+
+00:00:55.655 --> 00:00:58.600
+"No employees have left the company."
+
+00:00:58.600 --> 00:01:01.500
+Now compare that to the next sentence,
+
+00:01:01.500 --> 00:01:04.394
+"The company has no employees left."
+
+00:01:04.394 --> 00:01:09.319
+These two sentences have exactly the same words in different order.
+
+00:01:09.319 --> 00:01:14.404
+So they have the same bag of words but completely opposite meaning.
+
+00:01:14.405 --> 00:01:19.325
+Another issue with bag of words is that for a long document there could be
+
+00:01:19.325 --> 00:01:24.454
+many different words which could lead to a large number of bags.
+
+00:01:24.454 --> 00:01:29.900
+These might dilute the amount of useful information in the bag of words framework.
+
+00:01:29.900 --> 00:01:34.910
+Despite these shortfalls, bag of words is useful because of its simplicity,
+
+00:01:34.909 --> 00:01:39.859
+and it's a good starting point for learning more complex analysis methods.
+

@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.365
+So, far we've talked about the simple counting of words.
+
+00:00:04.365 --> 00:00:08.804
+In any language certain words tend to be more common than others,
+
+00:00:08.804 --> 00:00:11.580
+so naturally it would be useful to reduce
+
+00:00:11.580 --> 00:00:15.254
+the importance of frequent words in our bag of words.
+
+00:00:15.255 --> 00:00:18.455
+This can be done through the re-weighing method
+
+00:00:18.454 --> 00:00:22.654
+called term frequency inverse document frequency.
+
+00:00:22.655 --> 00:00:28.855
+The idea is that we can shape the importance of repeated words within a single document,
+
+00:00:28.855 --> 00:00:34.009
+while reducing the impact of common words among a collection of documents.
+
+00:00:34.009 --> 00:00:37.114
+Let's review this concept in more detail.
+
+00:00:37.115 --> 00:00:40.100
+Normally in a bag of words,
+
+00:00:40.100 --> 00:00:44.734
+the weight is just the number of times this word appears in the document.
+
+00:00:44.734 --> 00:00:49.850
+So, the simplest term frequency or tf is just the frequency of the word
+
+00:00:49.850 --> 00:00:56.725
+w in the document d represented here as f sub wd.
+
+00:00:56.725 --> 00:01:02.554
+Here's a table that shows you what the term frequency is given a word frequency.
+
+00:01:02.554 --> 00:01:06.579
+A lot of times certain words are repeated many times,
+
+00:01:06.579 --> 00:01:10.359
+and we don't want these words to overwhelm the presence of other words,
+
+00:01:10.359 --> 00:01:14.060
+so it is useful to apply a logarithm to the equation.
+
+00:01:14.060 --> 00:01:17.090
+Now, we see that the term frequency waits
+
+00:01:17.090 --> 00:01:20.390
+for the repeated words are substantially reduced.
+
+00:01:20.390 --> 00:01:24.650
+There is another issue where we have longer documents,
+
+00:01:24.650 --> 00:01:28.475
+all the workouts are expected to be larger naturally.
+
+00:01:28.474 --> 00:01:30.890
+When analyzing financial documents,
+
+00:01:30.890 --> 00:01:34.855
+we often don't care too much about how long document is,
+
+00:01:34.855 --> 00:01:39.125
+so it's useful to normalize this term frequencies in some ways.
+
+00:01:39.125 --> 00:01:44.974
+We can do this by looking at the average word count a sub d for a document,
+
+00:01:44.974 --> 00:01:48.259
+and we can divide the term frequency by
+
+00:01:48.260 --> 00:01:51.630
+the term frequency for the average word frequency.
+
+00:01:51.629 --> 00:01:55.289
+And now the term frequency is normalized.
+
+00:01:55.290 --> 00:02:00.650
+So far the term frequency only involves a single document.
+
+00:02:00.650 --> 00:02:06.260
+We still need to reduce the impact of common words that appear in multiple documents.
+
+00:02:06.260 --> 00:02:12.230
+To do this, we include the inverse document frequency or idf.
+
+00:02:12.229 --> 00:02:17.000
+The simplest possibility for idf for a given word is
+
+00:02:17.000 --> 00:02:21.724
+just the inverse of the fraction of the documents containing that word.
+
+00:02:21.724 --> 00:02:26.269
+Suppose we have 100 documents and we have a list of words
+
+00:02:26.270 --> 00:02:31.265
+with a number of appearances given by the document frequency df.
+
+00:02:31.264 --> 00:02:35.344
+The corresponding idf is shown in the table.
+
+00:02:35.344 --> 00:02:42.009
+We see that the idf is larger for more unique words and smaller for common words.
+
+00:02:42.009 --> 00:02:48.649
+Again, it is useful to add a logarithm to reduce the impact of very large idf.
+
+00:02:48.650 --> 00:02:52.879
+Now, all the idf values are closer together.
+
+00:02:52.879 --> 00:03:00.409
+Sometimes we also add one to the idea of equation so that we avoid zero idea values.
+
+00:03:00.409 --> 00:03:02.659
+The choice is up to you.
+
+00:03:02.659 --> 00:03:06.335
+Using the tf-idf combination,
+
+00:03:06.335 --> 00:03:09.500
+we can convert a collection of documents into a collection of
+
+00:03:09.500 --> 00:03:13.865
+numbers or document vectors for further processing.
+
+00:03:13.865 --> 00:03:17.960
+Given that tf-idf is based on heuristics,
+
+00:03:17.960 --> 00:03:20.844
+there are many possible combinations we can use,
+
+00:03:20.844 --> 00:03:23.000
+and here are some examples.
+
+00:03:23.000 --> 00:03:25.189
+Which ones works the best?
+
+00:03:25.189 --> 00:03:29.469
+The only real way to find out is by experimentation.
+

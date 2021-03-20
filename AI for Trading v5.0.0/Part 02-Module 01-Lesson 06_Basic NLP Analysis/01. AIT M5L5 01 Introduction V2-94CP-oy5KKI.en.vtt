@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.240
+In this lesson, we will learn different ways of
+
+00:00:03.240 --> 00:00:06.030
+converting text in financial statements into
+
+00:00:06.030 --> 00:00:12.629
+quantitative data so that they may be used as input for developing trading strategies.
+
+00:00:12.630 --> 00:00:18.644
+We will mainly focus on three frequently used metrics for financial analysis.
+
+00:00:18.644 --> 00:00:21.089
+The first one, readability.
+
+00:00:21.089 --> 00:00:23.640
+How easy is the text for reading.
+
+00:00:23.640 --> 00:00:26.280
+The second, sentiments.
+
+00:00:26.280 --> 00:00:29.700
+How positive or negative the text is.
+
+00:00:29.699 --> 00:00:32.564
+And the third one, similarity.
+
+00:00:32.564 --> 00:00:36.449
+That describes changes of periodic documents over time.
+
+00:00:36.450 --> 00:00:38.970
+In the next three lessons,
+
+00:00:38.969 --> 00:00:42.134
+we'll we'll take a look at each of these items individually,
+
+00:00:42.134 --> 00:00:44.869
+and you will implement your own Python code to
+
+00:00:44.869 --> 00:00:48.094
+compute these variables on real 10-K documents.
+
+00:00:48.094 --> 00:00:50.670
+Are you ready? Let's get started.
+

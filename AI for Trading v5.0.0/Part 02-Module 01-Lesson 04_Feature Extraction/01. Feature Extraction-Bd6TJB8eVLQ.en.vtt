@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.275
+Once we have our text ready in a clean and normalized form,
+
+00:00:04.275 --> 00:00:08.009
+we need to transform it into features that can be used for modeling.
+
+00:00:08.009 --> 00:00:10.830
+For instance, treating each document like a bag of
+
+00:00:10.830 --> 00:00:15.155
+words allows us to compute some simple statistics that characterize it.
+
+00:00:15.154 --> 00:00:17.519
+These statistics can be improved by assigning
+
+00:00:17.519 --> 00:00:21.744
+appropriate weights towards using a TF-IDF Scheme.
+
+00:00:21.745 --> 00:00:25.050
+This enables a more accurate comparison between documents.
+
+00:00:25.050 --> 00:00:27.510
+For certain applications, we may need to find
+
+00:00:27.510 --> 00:00:30.645
+numerical representations of individual words,
+
+00:00:30.644 --> 00:00:33.405
+and for that, we can use word embeddings,
+
+00:00:33.405 --> 00:00:36.240
+which are a very efficient and powerful method.
+
+00:00:36.240 --> 00:00:38.219
+In this lesson, you will learn
+
+00:00:38.219 --> 00:00:42.000
+all these techniques for extracting relevant features from text data.
+

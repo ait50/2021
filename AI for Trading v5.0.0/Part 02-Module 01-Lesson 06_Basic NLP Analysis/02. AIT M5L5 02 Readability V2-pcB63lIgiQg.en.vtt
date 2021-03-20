@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.149
+I remember my first time reading a 10k.
+
+00:00:03.149 --> 00:00:05.790
+My immediate impression was "wow",
+
+00:00:05.790 --> 00:00:08.564
+this document is long and complicated.
+
+00:00:08.564 --> 00:00:13.859
+These extra complication exists because companies are required by law to disclose
+
+00:00:13.859 --> 00:00:18.675
+potential risks and problems in detail so that down the road,
+
+00:00:18.675 --> 00:00:21.644
+they won't be liable for deceptive reporting.
+
+00:00:21.644 --> 00:00:24.839
+The level of complexity of the texts might then
+
+00:00:24.839 --> 00:00:28.214
+be related to potential risk factors for the company.
+
+00:00:28.214 --> 00:00:31.859
+How do we quantify the complexity of a document?
+
+00:00:31.859 --> 00:00:36.060
+One way to capture the complexity of a document is by calculating
+
+00:00:36.060 --> 00:00:42.295
+readability indices that capture how easy a given text or document is for reading.
+
+00:00:42.295 --> 00:00:47.885
+The readability indices are constructed based on two heuristic observations.
+
+00:00:47.884 --> 00:00:54.739
+The first one, longer sentences tend to be less readable and the second one,
+
+00:00:54.740 --> 00:00:57.625
+longer words tend to be less readable.
+
+00:00:57.625 --> 00:01:00.710
+The length of words can be calculated by the number of
+
+00:01:00.710 --> 00:01:05.825
+syllables or roughly the number of distinct sounds in each word.
+
+00:01:05.825 --> 00:01:08.405
+With this observations in mind,
+
+00:01:08.405 --> 00:01:11.930
+we can construct two common readability indices.
+
+00:01:11.930 --> 00:01:18.775
+The first one, the Flesch-Kincaid Grade Index given by the equation here,
+
+00:01:18.775 --> 00:01:22.115
+which combines the average length of sentences
+
+00:01:22.114 --> 00:01:25.554
+and average syllable counts of all the words.
+
+00:01:25.555 --> 00:01:29.870
+The second one, the Gunning-Fog Index that
+
+00:01:29.870 --> 00:01:34.460
+combines the average length of sentences and the fraction of hard words,
+
+00:01:34.459 --> 00:01:40.224
+where hard words are defined as words having three syllables or more.
+
+00:01:40.224 --> 00:01:44.809
+These indices are constructed heuristically so that they roughly
+
+00:01:44.810 --> 00:01:50.615
+corresponds to the education level required for reading the underlying document.
+
+00:01:50.614 --> 00:01:53.569
+This readability metrics are commonly used by
+
+00:01:53.569 --> 00:01:57.694
+researchers and educators to assess reading abilities.
+
+00:01:57.694 --> 00:02:01.009
+For example, young adult novels like
+
+00:02:01.010 --> 00:02:05.615
+the Harry Potter series will have an average grade level of about eight
+
+00:02:05.614 --> 00:02:08.509
+to 10 while an academic paper in
+
+00:02:08.509 --> 00:02:14.134
+theoretical Physics could easily have grade level beyond 16.
+
+00:02:14.134 --> 00:02:16.729
+What about financial documents?
+
+00:02:16.729 --> 00:02:20.689
+You will find out as you work through our exercises.
+

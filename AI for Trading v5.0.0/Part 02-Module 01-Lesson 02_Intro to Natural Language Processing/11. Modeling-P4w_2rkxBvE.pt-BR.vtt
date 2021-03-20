@@ -1,0 +1,80 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.231 --> 00:00:04.938
+O estágio final deste processo é
+o que chamo de "modelagem".
+
+00:00:04.971 --> 00:00:06.806
+Isto inclui projetar
+um modelo,
+
+00:00:06.840 --> 00:00:10.010
+normalmente um modelo estatístico
+ou de aprendizado de máquina,
+
+00:00:10.043 --> 00:00:12.812
+ajustando seus parâmetros
+para treinar dados
+
+00:00:12.846 --> 00:00:15.215
+com um procedimento
+de otimização
+
+00:00:15.248 --> 00:00:19.986
+e usando isso para fazer previsões
+sobre dados não vistos.
+
+00:00:20.020 --> 00:00:22.756
+O legal de trabalhar
+com recursos numéricos
+
+00:00:22.789 --> 00:00:24.591
+é que eles permitem
+que você utilize
+
+00:00:24.624 --> 00:00:26.960
+qualquer modelo
+de aprendizado de máquina:
+
+00:00:26.993 --> 00:00:29.029
+máquinas
+de vetores de suporte,
+
+00:00:29.062 --> 00:00:31.131
+árvores de decisão,
+redes neurais
+
+00:00:31.164 --> 00:00:34.200
+ou o modelo customizado
+de sua escolha.
+
+00:00:34.234 --> 00:00:36.369
+Você pode até combinar
+múltiplos modelos
+
+00:00:36.403 --> 00:00:38.204
+para ter uma performance
+melhor.
+
+00:00:38.238 --> 00:00:41.241
+Você escolhe
+como utiliza o modelo.
+
+00:00:41.274 --> 00:00:43.943
+Pode implantá-lo
+como uma aplicação baseada na web,
+
+00:00:43.977 --> 00:00:46.880
+empacotá-lo
+em um aplicativo móvel útil,
+
+00:00:46.913 --> 00:00:51.284
+integrá-lo com outros produtos,
+serviços e por aí vai.
+
+00:00:51.317 --> 00:00:53.753
+As possibilidades são
+infinitas.
+

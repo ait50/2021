@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.265
+Now, let's try to use
+
+00:00:02.265 --> 00:00:07.050
+a regular expression to find this period at the end of our sentence.
+
+00:00:07.049 --> 00:00:09.059
+So, let's use a period as
+
+00:00:09.060 --> 00:00:13.620
+a regular expression and let's run this code just as we did before.
+
+00:00:13.619 --> 00:00:17.085
+We can see that something has gone wrong.
+
+00:00:17.085 --> 00:00:21.510
+The finditer method has matched every single character in
+
+00:00:21.510 --> 00:00:25.905
+our sample text including uppercase and lowercase letters,
+
+00:00:25.905 --> 00:00:30.585
+word space and the period at the end of our sentence.
+
+00:00:30.585 --> 00:00:34.350
+The reason it did that is because in regular expressions,
+
+00:00:34.350 --> 00:00:38.640
+the period is a special character known as a metacharacter.
+
+00:00:38.640 --> 00:00:42.359
+Metacharacters are used to give special instructions,
+
+00:00:42.359 --> 00:00:45.399
+and cannot be searched for directly.
+
+00:00:45.399 --> 00:00:49.975
+Here's a complete list of the Metacharacters used in regular expressions,
+
+00:00:49.975 --> 00:00:53.289
+and we will learn how to use them in later lessons.
+
+00:00:53.289 --> 00:00:57.070
+If we want to search for this metacharacters in strings,
+
+00:00:57.070 --> 00:00:59.320
+we need to escape them first.
+
+00:00:59.320 --> 00:01:01.945
+Just like with Python string literals,
+
+00:01:01.945 --> 00:01:06.109
+we can use the backslash to escape all the metacharacters.
+
+00:01:06.109 --> 00:01:10.525
+So, now let's try to find the period of the end of our sentence again,
+
+00:01:10.525 --> 00:01:13.210
+but this time we will use a backslash in
+
+00:01:13.209 --> 00:01:17.409
+our regular expression to remove the period special meaning.
+
+00:01:17.409 --> 00:01:19.030
+If we run this code,
+
+00:01:19.030 --> 00:01:21.549
+we will see that now the finditer method,
+
+00:01:21.549 --> 00:01:24.009
+only gets one match which corresponds to
+
+00:01:24.010 --> 00:01:28.020
+the period at the end of the sentence as we wanted.
+

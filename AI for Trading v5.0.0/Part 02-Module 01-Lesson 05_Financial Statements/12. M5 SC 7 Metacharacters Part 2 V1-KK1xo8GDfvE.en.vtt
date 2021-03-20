@@ -1,0 +1,385 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.309
+In this notebook, we will see a practical application of regular expressions.
+
+00:00:05.309 --> 00:00:07.549
+In particular, we will use
+
+00:00:07.549 --> 00:00:10.439
+the special sequence backslash d to
+
+00:00:10.439 --> 00:00:14.834
+create regular expressions that will allow us to look for phone numbers.
+
+00:00:14.835 --> 00:00:18.539
+We will also learn about character sets and how they
+
+00:00:18.539 --> 00:00:22.304
+can be used to search for more complicated patterns of text.
+
+00:00:22.304 --> 00:00:27.179
+Here, we have a multi line string that mimics a phone book.
+
+00:00:27.179 --> 00:00:32.954
+Let's suppose I wanted to find all the phone numbers in this multi line string.
+
+00:00:32.954 --> 00:00:35.309
+Notice that all the phone numbers have
+
+00:00:35.310 --> 00:00:40.145
+different digits and that they have different characters separating the digits.
+
+00:00:40.145 --> 00:00:42.855
+For example, here we have dashes,
+
+00:00:42.854 --> 00:00:45.294
+here we have whitespace,
+
+00:00:45.295 --> 00:00:48.730
+and here we have a parenthesis, and then a dash.
+
+00:00:48.729 --> 00:00:52.534
+Even though all these phone numbers have different digits,
+
+00:00:52.534 --> 00:00:57.013
+they all have the same pattern namely; three digits,
+
+00:00:57.014 --> 00:00:59.085
+followed by a single character,
+
+00:00:59.085 --> 00:01:01.170
+followed by three more digits,
+
+00:01:01.170 --> 00:01:03.160
+followed by a single character,
+
+00:01:03.159 --> 00:01:05.545
+followed by four more digits.
+
+00:01:05.545 --> 00:01:08.299
+But we'll take advantage of this pattern to create
+
+00:01:08.299 --> 00:01:11.719
+a regular expression that can match all these phone numbers.
+
+00:01:11.719 --> 00:01:15.109
+This regular expression takes advantage of
+
+00:01:15.109 --> 00:01:19.030
+that pattern and can match all of these phone numbers.
+
+00:01:19.030 --> 00:01:24.780
+The first three backslash d's can match any sequence of three digits.
+
+00:01:24.780 --> 00:01:28.025
+The dot can match any single character.
+
+00:01:28.025 --> 00:01:30.760
+These next three backslash d's can match,
+
+00:01:30.760 --> 00:01:33.505
+again, any sequence of three digits.
+
+00:01:33.504 --> 00:01:36.765
+This dot, again, can match any single character.
+
+00:01:36.765 --> 00:01:43.030
+Finally, the last four backslash d's can match any sequence of four digits.
+
+00:01:43.030 --> 00:01:44.960
+So, if we run this code,
+
+00:01:44.959 --> 00:01:49.864
+we can see that we've managed to match all the phone numbers in our multi line string,
+
+00:01:49.864 --> 00:01:52.640
+even though they all have different digits and
+
+00:01:52.640 --> 00:01:55.765
+different characters in-between the groups of numbers.
+
+00:01:55.765 --> 00:01:58.290
+Notice that by using the dot,
+
+00:01:58.290 --> 00:02:00.410
+we avoid the trouble of creating
+
+00:02:00.409 --> 00:02:03.379
+three different regular expressions to match
+
+00:02:03.379 --> 00:02:07.614
+the three possible characters separating the groups of numbers.
+
+00:02:07.614 --> 00:02:12.995
+Now, we can write this regular expression in a more compact form,
+
+00:02:12.995 --> 00:02:18.155
+as shown here, by using the curly bracket meta-characters.
+
+00:02:18.155 --> 00:02:22.879
+For example, these three in curly brackets specifies that
+
+00:02:22.879 --> 00:02:27.724
+exactly three copies of the previous regular expression should be matched.
+
+00:02:27.724 --> 00:02:31.414
+Therefore, this sequence backslash d,
+
+00:02:31.414 --> 00:02:36.379
+curly bracket three will match exactly three decimal digits.
+
+00:02:36.379 --> 00:02:41.995
+Similarly, this sequence will match exactly four decimal digits.
+
+00:02:41.995 --> 00:02:47.060
+Now, let's suppose I only wanted to find phone numbers in which the groups
+
+00:02:47.060 --> 00:02:52.189
+of digits were separated by either a dash or a whitespace.
+
+00:02:52.189 --> 00:02:54.064
+So, in this example,
+
+00:02:54.064 --> 00:02:57.870
+I only want to find the first three phone numbers,
+
+00:02:57.870 --> 00:03:01.400
+since these are the only ones in which all the groups of
+
+00:03:01.400 --> 00:03:06.215
+numbers are separated by either a dash or a whitespace.
+
+00:03:06.215 --> 00:03:10.474
+To do this, we can use what is known as a character set.
+
+00:03:10.474 --> 00:03:14.960
+A character set is the set of characters that you wish to match.
+
+00:03:14.960 --> 00:03:21.080
+Character sets are specified by using the square bracket meta-characters.
+
+00:03:21.080 --> 00:03:27.275
+For example, this character set will match either a dash or a whitespace.
+
+00:03:27.275 --> 00:03:30.814
+Notice that there's a whitespace after the dash.
+
+00:03:30.814 --> 00:03:33.319
+So, this regular expression will match
+
+00:03:33.319 --> 00:03:37.840
+any three digits followed by a dash or a whitespace,
+
+00:03:37.840 --> 00:03:39.969
+followed by three more digits,
+
+00:03:39.969 --> 00:03:43.009
+followed by either a dash or a whitespace,
+
+00:03:43.009 --> 00:03:45.754
+and followed by four more digits.
+
+00:03:45.754 --> 00:03:47.824
+So, if we run this code,
+
+00:03:47.824 --> 00:03:52.780
+we can see that we only match their first three phone numbers as we wanted.
+
+00:03:52.780 --> 00:03:56.469
+We didn't match the fourth phone number because
+
+00:03:56.469 --> 00:04:00.379
+even though the last group of numbers is separated by a dash,
+
+00:04:00.379 --> 00:04:02.824
+the first group of numbers is separated by
+
+00:04:02.824 --> 00:04:06.639
+a parentheses which is not in our character set.
+
+00:04:06.639 --> 00:04:12.949
+It is important to note that even though a character set can have many characters,
+
+00:04:12.949 --> 00:04:16.430
+we can only match one of those characters at a time.
+
+00:04:16.430 --> 00:04:19.910
+For example, this character set can only
+
+00:04:19.910 --> 00:04:25.320
+match either a dash or a whitespace, but not both.
+
+00:04:25.319 --> 00:04:32.889
+So, if I add a whitespace after each stash in Mr. Brown's phone number and run this code,
+
+00:04:32.889 --> 00:04:37.384
+I can see that now I get no matches even though
+
+00:04:37.384 --> 00:04:43.250
+the characters separating each group of numbers belong to our character set.
+
+00:04:43.250 --> 00:04:45.865
+Let's see another example.
+
+00:04:45.865 --> 00:04:50.769
+Now, let's suppose I only wanted to find phone numbers in which the groups of
+
+00:04:50.769 --> 00:04:56.305
+digits were separated by either a dash or a whitespace and they have area code,
+
+00:04:56.305 --> 00:04:59.764
+either 455 or 655.
+
+00:04:59.764 --> 00:05:04.870
+So, in this example, we want to match this phone number and this phone number.
+
+00:05:04.870 --> 00:05:08.199
+To do this, we can start a regular expression with
+
+00:05:08.199 --> 00:05:11.740
+a character set that has the numbers four and six.
+
+00:05:11.740 --> 00:05:15.400
+The next two numbers are going to be 55 and
+
+00:05:15.399 --> 00:05:19.404
+the rest of the regular expression is the same as we saw before.
+
+00:05:19.404 --> 00:05:21.114
+If we run this code,
+
+00:05:21.115 --> 00:05:23.350
+we can see that we can actually match
+
+00:05:23.350 --> 00:05:26.430
+the two phone numbers that we wanted with area codes
+
+00:05:26.430 --> 00:05:34.625
+455 and 655 and whose digits are separated either by a dash or a whitespace.
+
+00:05:34.625 --> 00:05:40.389
+Now, let's suppose I wanted to look for phone numbers that end on the numbers six,
+
+00:05:40.389 --> 00:05:43.050
+seven, eight or nine.
+
+00:05:43.050 --> 00:05:49.100
+To do this, we could use a character set like this that contains the numbers six,
+
+00:05:49.100 --> 00:05:51.064
+seven, eight and nine.
+
+00:05:51.064 --> 00:05:54.769
+However, there is a more compact form to do this.
+
+00:05:54.769 --> 00:05:56.924
+Within a character set,
+
+00:05:56.925 --> 00:06:00.470
+when a dash is placed between digits or letters,
+
+00:06:00.470 --> 00:06:03.620
+it is actually used to specify a range.
+
+00:06:03.620 --> 00:06:08.095
+Therefore, this character set can match either a six,
+
+00:06:08.095 --> 00:06:13.610
+a seven, an eight or nine and is equivalent to this character set.
+
+00:06:13.610 --> 00:06:16.160
+So, if we run this code,
+
+00:06:16.160 --> 00:06:20.405
+we can see that we can actually match all the phone numbers
+
+00:06:20.404 --> 00:06:25.174
+that have the last digit in the range six to nine.
+
+00:06:25.175 --> 00:06:30.199
+Notice that we didn't match the last phone number because the last digit is a four.
+
+00:06:30.199 --> 00:06:34.024
+The four is not in the range six through nine.
+
+00:06:34.024 --> 00:06:38.899
+The dash can also be used to specify a range between letters.
+
+00:06:38.899 --> 00:06:45.245
+For example, the character set a-f is the same as the character set a,
+
+00:06:45.245 --> 00:06:47.389
+b, c, d, e,
+
+00:06:47.389 --> 00:06:51.019
+f. It's also important to note that when
+
+00:06:51.019 --> 00:06:55.399
+a dash is placed at the beginning of a character set like we did in this example,
+
+00:06:55.399 --> 00:07:01.689
+the dash is taken literally and is not used to specify any range.
+
+00:07:01.689 --> 00:07:03.730
+As our last example,
+
+00:07:03.730 --> 00:07:09.814
+let's suppose I wanted to find the phone numbers that do not end on the numbers six,
+
+00:07:09.814 --> 00:07:12.469
+seven, eight or nine.
+
+00:07:12.470 --> 00:07:17.350
+In this case, we could use the character set one through five.
+
+00:07:17.350 --> 00:07:21.215
+However, we can also use the carrot.
+
+00:07:21.214 --> 00:07:24.979
+We already learned that outside of a character set,
+
+00:07:24.980 --> 00:07:27.050
+the caret matches a sequence of
+
+00:07:27.050 --> 00:07:30.875
+characters when they are located at the beginning of a string.
+
+00:07:30.875 --> 00:07:36.574
+However, when the caret appears at the beginning of a character set like here,
+
+00:07:36.574 --> 00:07:38.689
+it negates the set.
+
+00:07:38.689 --> 00:07:44.120
+These means it matches everything that is not in that character set.
+
+00:07:44.120 --> 00:07:48.110
+For example, this character set with a caret at
+
+00:07:48.110 --> 00:07:53.189
+the beginning will match any character that is not a six,
+
+00:07:53.189 --> 00:07:55.969
+a seven, or eight or a nine.
+
+00:07:55.970 --> 00:07:58.115
+So, if we run this code,
+
+00:07:58.115 --> 00:08:02.150
+we can see that we only get the last phone number because
+
+00:08:02.149 --> 00:08:08.299
+his last digit is a four and the four is not in the range six through nine.
+
+00:08:08.300 --> 00:08:11.975
+The caret also works for letters.
+
+00:08:11.975 --> 00:08:15.545
+Therefore, this character set will match
+
+00:08:15.545 --> 00:08:21.670
+any character that is not a lowercase or uppercase letter.
+

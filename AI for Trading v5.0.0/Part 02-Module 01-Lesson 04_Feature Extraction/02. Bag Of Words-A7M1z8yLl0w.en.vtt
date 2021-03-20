@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.168
+The first feature representation we'll look at is called Bag of Words.
+
+00:00:05.168 --> 00:00:11.294
+The Bag of Words model treats each document as an un-ordered collection or bag of words.
+
+00:00:11.294 --> 00:00:15.585
+Here, a document is the unit of text that you want to analyze.
+
+00:00:15.585 --> 00:00:18.000
+For instance, if you want to compare essays
+
+00:00:18.000 --> 00:00:20.820
+submitted by students to check for plagiarism,
+
+00:00:20.820 --> 00:00:23.250
+each essay would be a document.
+
+00:00:23.250 --> 00:00:26.190
+If you want to analyze the sentiment conveyed by tweets,
+
+00:00:26.190 --> 00:00:29.120
+then each tweet would be a document.
+
+00:00:29.120 --> 00:00:31.896
+To obtain a bag of words from a piece of raw text,
+
+00:00:31.896 --> 00:00:36.210
+you need to simply apply appropriate text processing steps: cleaning,
+
+00:00:36.210 --> 00:00:38.234
+normalizing, splitting into words,
+
+00:00:38.234 --> 00:00:40.380
+stemming, lemmatization, et cetera.
+
+00:00:40.380 --> 00:00:45.830
+And then treat the resulting tokens as an un-ordered collection or set.
+
+00:00:45.829 --> 00:00:49.905
+So, each document in your data set will produce a set of words.
+
+00:00:49.905 --> 00:00:53.700
+But keeping these as separate sets is very inefficient.
+
+00:00:53.700 --> 00:00:54.929
+They're of different sizes,
+
+00:00:54.929 --> 00:00:56.354
+may contain different words,
+
+00:00:56.354 --> 00:00:58.309
+and are hard to compare.
+
+00:00:58.310 --> 00:01:02.250
+Also, whatever word occurs multiple times in a document?
+
+00:01:02.250 --> 00:01:05.290
+Is there a better representation you can think of?
+
+00:01:05.290 --> 00:01:10.395
+A more useful approach is to turn each document into a vector of numbers,
+
+00:01:10.394 --> 00:01:14.579
+representing how many times each word occurs in a document.
+
+00:01:14.579 --> 00:01:17.000
+A set of documents is known as a corpus,
+
+00:01:17.000 --> 00:01:20.689
+and this gives the context for the vectors to be calculated.
+
+00:01:20.689 --> 00:01:26.569
+First, collect all the unique words present in your corpus to form your vocabulary.
+
+00:01:26.569 --> 00:01:28.852
+Arrange these words in some order,
+
+00:01:28.852 --> 00:01:32.924
+and let them form the vector element positions or columns of a table,
+
+00:01:32.924 --> 00:01:35.689
+and assume each document is a row.
+
+00:01:35.689 --> 00:01:38.625
+Then count the number of occurrences of each word in
+
+00:01:38.625 --> 00:01:43.019
+each document and enter the value in the respective column.
+
+00:01:43.019 --> 00:01:47.384
+At this stage, it is easier to think of this as a Document-Term Matrix,
+
+00:01:47.385 --> 00:01:50.835
+illustrating the relationship between documents in rows,
+
+00:01:50.834 --> 00:01:53.699
+and words or terms in columns.
+
+00:01:53.700 --> 00:01:57.329
+Each element can be interpreted as a term frequency.
+
+00:01:57.329 --> 00:02:01.129
+How frequently does that term occur in this document?
+
+00:02:01.129 --> 00:02:05.099
+Now, consider what you can do with this representation.
+
+00:02:05.099 --> 00:02:07.979
+One possibility is to compare two documents based on
+
+00:02:07.980 --> 00:02:13.110
+how many words they have in common or how similar their term frequencies are.
+
+00:02:13.110 --> 00:02:16.520
+A more mathematical way of expressing that is to
+
+00:02:16.520 --> 00:02:20.165
+compute the dot product between the two row vectors,
+
+00:02:20.164 --> 00:02:24.128
+which is the sum of the products of corresponding elements.
+
+00:02:24.128 --> 00:02:25.474
+Greater the dot product,
+
+00:02:25.474 --> 00:02:27.844
+more similar the two vectors are.
+
+00:02:27.844 --> 00:02:30.310
+The dot product has one flaw,
+
+00:02:30.310 --> 00:02:32.860
+it only captures the portions of overlap.
+
+00:02:32.860 --> 00:02:36.500
+It is not affected by other values that are not uncommon.
+
+00:02:36.500 --> 00:02:39.199
+So, pairs that are very different can end up
+
+00:02:39.199 --> 00:02:42.744
+with the same product as ones that are identical.
+
+00:02:42.745 --> 00:02:45.064
+A better measure is cosine similarity,
+
+00:02:45.064 --> 00:02:47.930
+where we divide the dot product of two vectors by
+
+00:02:47.930 --> 00:02:51.840
+the product of their magnitudes or Euclidean norms.
+
+00:02:51.840 --> 00:02:56.180
+If you think of these vectors as arrows in some n-dimensional space,
+
+00:02:56.180 --> 00:03:00.814
+then this is equal to the cosine of the angle theta between them.
+
+00:03:00.814 --> 00:03:03.889
+Identical vectors have cosine equals one.
+
+00:03:03.889 --> 00:03:06.579
+Orthogonal vectors have cosine equal zero.
+
+00:03:06.580 --> 00:03:10.310
+And for vectors that are exactly opposite, it is minus one.
+
+00:03:10.310 --> 00:03:14.569
+So, the values always range nicely between one for most similar,
+
+00:03:14.569 --> 00:03:17.000
+to minus one, most dissimilar.
+

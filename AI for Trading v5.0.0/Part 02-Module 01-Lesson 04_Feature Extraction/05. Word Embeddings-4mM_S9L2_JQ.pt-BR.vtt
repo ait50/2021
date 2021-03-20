@@ -1,0 +1,90 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.636
+O código one-hot funciona
+em algumas situações,
+
+00:00:03.670 --> 00:00:07.040
+mas falha quando temos
+um grande vocabulário,
+
+00:00:07.073 --> 00:00:09.843
+porque o tamanho
+da representação de palavras
+
+00:00:09.876 --> 00:00:11.845
+cresce com o número
+de palavras.
+
+00:00:11.878 --> 00:00:15.849
+Precisamos controlar o tamanho
+da representação de palavras,
+
+00:00:15.882 --> 00:00:19.052
+limitando-o a um vetor
+de tamanho fixo.
+
+00:00:19.085 --> 00:00:21.521
+Em outras palavras,
+queremos achar um embedding
+
+00:00:21.554 --> 00:00:23.556
+para cada palavra
+num espaço vetorial
+
+00:00:23.590 --> 00:00:26.426
+e queremos exibir
+propriedades desejadas.
+
+00:00:26.459 --> 00:00:29.429
+Por exemplo, se duas palavras
+são similares em significado,
+
+00:00:29.462 --> 00:00:31.398
+elas devem estar
+mais próximas,
+
+00:00:31.431 --> 00:00:33.767
+em comparação
+com palavras não similares.
+
+00:00:33.800 --> 00:00:35.869
+E se dois pares de palavras
+
+00:00:35.902 --> 00:00:38.304
+têm uma diferença similar
+em seus significados,
+
+00:00:38.338 --> 00:00:41.107
+eles devem estar aproximadamente
+igualmente separados
+
+00:00:41.141 --> 00:00:42.909
+no espaço de embedding.
+
+00:00:42.942 --> 00:00:46.613
+Podemos usar esta representação
+para uma variedade de propósitos,
+
+00:00:46.646 --> 00:00:49.015
+como achar sinônimos
+e analogias,
+
+00:00:49.049 --> 00:00:52.085
+identificar conceitos
+com os quais palavras são agrupadas
+
+00:00:52.118 --> 00:00:55.889
+e classificá-las como positivas,
+negativas, neutras etc.
+
+00:00:55.922 --> 00:00:57.924
+Combinando vetores
+de palavras,
+
+00:00:57.957 --> 00:01:01.695
+podemos pensar em outro jeito
+de representar documentos também.
+

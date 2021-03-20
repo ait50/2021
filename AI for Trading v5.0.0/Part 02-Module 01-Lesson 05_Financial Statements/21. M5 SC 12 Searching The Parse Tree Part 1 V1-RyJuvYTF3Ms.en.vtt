@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.835
+Hello and welcome back.
+
+00:00:02.835 --> 00:00:06.163
+In this notebook, we will begin to explore
+
+00:00:06.163 --> 00:00:10.019
+how to search the parse tree created by BeautifulSoup.
+
+00:00:10.019 --> 00:00:15.855
+Now, BeautifulSoup provides a number of methods for searching the tree,
+
+00:00:15.855 --> 00:00:21.240
+but we will only cover the find all method in these lessons.
+
+00:00:21.239 --> 00:00:23.924
+If you're interested, you can learn about
+
+00:00:23.925 --> 00:00:27.255
+other search methods in the BeautifulSoup Documentation.
+
+00:00:27.254 --> 00:00:33.274
+The find all method will search an entire document for the given filter.
+
+00:00:33.274 --> 00:00:39.920
+This filter can be a string containing the HTML or XML tag name,
+
+00:00:39.920 --> 00:00:44.800
+a tag attribute, or even a regular expression.
+
+00:00:44.799 --> 00:00:50.734
+In this notebook, we will see examples of these cases. So, let's get started.
+
+00:00:50.734 --> 00:00:56.365
+So, let's begin by using the find all method to find tags.
+
+00:00:56.365 --> 00:01:00.079
+To do this, all we have to do is to parse
+
+00:01:00.079 --> 00:01:03.769
+the name of the tag as a string to the find all method.
+
+00:01:03.770 --> 00:01:11.685
+For example, if we wanted to find all the h2 tags in our sample HTML file,
+
+00:01:11.685 --> 00:01:18.269
+all we have to do is to parse the string h2 to the find all method.
+
+00:01:18.269 --> 00:01:20.409
+So, if we run this code,
+
+00:01:20.409 --> 00:01:27.149
+we can see that the find all method returns a list with all the h2 tags that it found,
+
+00:01:27.150 --> 00:01:29.340
+in this case only two.
+
+00:01:29.340 --> 00:01:35.829
+Because our sample HTML file only has two h2 tags.
+
+00:01:35.829 --> 00:01:38.655
+Since lists are iterables,
+
+00:01:38.655 --> 00:01:45.185
+we can loop through the h2 list and print each tag as we have done here.
+
+00:01:45.185 --> 00:01:48.829
+We can also search for more than one tag at
+
+00:01:48.829 --> 00:01:53.689
+a time by parsing a list to the find all method.
+
+00:01:53.689 --> 00:01:56.090
+Let's see how this works.
+
+00:01:56.090 --> 00:02:05.555
+Let's suppose we wanted to search for all the h2 and p tags in our sample HTML file.
+
+00:02:05.555 --> 00:02:08.210
+Instead of using two statements,
+
+00:02:08.210 --> 00:02:12.025
+one for the h2 tag and one for the p tag,
+
+00:02:12.025 --> 00:02:20.105
+we can just parse a list with the strings h2 and p to the find all method.
+
+00:02:20.104 --> 00:02:22.009
+If we run this code,
+
+00:02:22.009 --> 00:02:26.424
+we can see that we get all the h2 and p tags.
+
+00:02:26.425 --> 00:02:28.875
+Now, as we saw before,
+
+00:02:28.875 --> 00:02:33.735
+HTML and XML tags can have attributes.
+
+00:02:33.735 --> 00:02:40.450
+The find all method also allows us to parse some arguments such as
+
+00:02:40.449 --> 00:02:43.344
+the attribute of a tag so that we can search
+
+00:02:43.344 --> 00:02:47.965
+the entire document for the exact tag that we're looking for.
+
+00:02:47.965 --> 00:02:49.870
+Let's see an example.
+
+00:02:49.870 --> 00:02:56.939
+Let's recall that in our sample HTML file we have two h2 tags,
+
+00:02:56.939 --> 00:02:59.650
+this one and this one.
+
+00:02:59.650 --> 00:03:06.235
+We can see that the first h2 tag has the attribute id equal
+
+00:03:06.235 --> 00:03:12.965
+to hub and the second h2 tag has the attribute id equals to know.
+
+00:03:12.965 --> 00:03:18.414
+Let's suppose we wanted to search our sample HTML file
+
+00:03:18.414 --> 00:03:25.179
+only for the h2 tags that have the attribute id equals to know.
+
+00:03:25.180 --> 00:03:33.325
+In our case, the only h2 tag with such attribute is the second tag right here.
+
+00:03:33.324 --> 00:03:42.074
+To do this, we can include the id equals know in the find all method as shown here.
+
+00:03:42.074 --> 00:03:44.194
+So, if we run this code,
+
+00:03:44.194 --> 00:03:48.189
+we can see that we only get the h2 tag that
+
+00:03:48.189 --> 00:03:52.829
+has the attribute id equals to know, just as we wanted.
+
+00:03:52.830 --> 00:03:56.725
+Another property of the find all method
+
+00:03:56.724 --> 00:04:01.164
+is that it allows us to search for tag attributes directly.
+
+00:04:01.164 --> 00:04:05.959
+For example, let's suppose we wanted to search or sample
+
+00:04:05.960 --> 00:04:12.950
+HTML file for all the tags that have the attribute id equals intro.
+
+00:04:12.949 --> 00:04:16.939
+We can do this simply by parsing the id
+
+00:04:16.939 --> 00:04:21.600
+equals intro to the find all method as shown here.
+
+00:04:21.600 --> 00:04:23.900
+So, if we run this code,
+
+00:04:23.899 --> 00:04:27.079
+we can see that we only get one match.
+
+00:04:27.079 --> 00:04:31.534
+Since the h1 tag is the only tag in our sample
+
+00:04:31.535 --> 00:04:37.400
+HTML file that has the attribute id equals intro.
+

@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.080
+Stop words are uninformative words like, is, our,
+
+00:00:04.080 --> 00:00:09.300
+the, in, at, et cetera that do not add a lot of meaning to a sentence.
+
+00:00:09.300 --> 00:00:11.890
+They are typically very commonly occurring words,
+
+00:00:11.890 --> 00:00:15.630
+and we may want to remove them to reduce the vocabulary we have to
+
+00:00:15.630 --> 00:00:20.130
+deal with and hence the complexity of later procedures.
+
+00:00:20.129 --> 00:00:24.254
+Notice that even without our and the in the sentence above,
+
+00:00:24.254 --> 00:00:28.414
+we can still infer it's positive sentiment toward dogs.
+
+00:00:28.414 --> 00:00:34.740
+You can see for yourself which words NLTK considers to be stop words in English.
+
+00:00:34.740 --> 00:00:39.554
+Note that this is based on a specific corpus or collection of text.
+
+00:00:39.554 --> 00:00:42.875
+Different corpora may have different stop words.
+
+00:00:42.875 --> 00:00:46.725
+Also, a word maybe a stop word in one application,
+
+00:00:46.725 --> 00:00:48.914
+but a useful word in another.
+
+00:00:48.914 --> 00:00:51.719
+To remove stop words from a piece of text,
+
+00:00:51.719 --> 00:00:56.839
+you can use a Python list comprehension with a filtering condition.
+
+00:00:56.840 --> 00:01:02.359
+Here, we apply stop word removal to the movie review after normalizing and tokenizing it.
+
+00:01:02.359 --> 00:01:04.635
+The result is a little hard to read,
+
+00:01:04.635 --> 00:01:07.800
+but notice how it has helped reduce the size of the input,
+
+00:01:07.799 --> 00:01:11.159
+at the same time important words have been retained.
+

@@ -1,0 +1,316 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Counting Words
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Intro to Natural Language Processing
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. NLP Overview.html">
+       01. NLP Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Structured Languages.html">
+       02. Structured Languages
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Grammar.html">
+       03. Grammar
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Unstructured Text.html">
+       04. Unstructured Text
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Counting Words.html">
+       05. Counting Words
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Context Is Everything.html">
+       06. Context Is Everything
+      </a>
+     </li>
+     <li class="">
+      <a href="07. NLP and Pipelines.html">
+       07. NLP and Pipelines
+      </a>
+     </li>
+     <li class="">
+      <a href="08. How NLP Pipelines Work.html">
+       08. How NLP Pipelines Work
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Text Processing.html">
+       09. Text Processing
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Feature Extraction.html">
+       10. Feature Extraction
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Modeling.html">
+       11. Modeling
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Counting Words
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Let's implement a simple function that is often used in Natural Language Processing: Counting word frequencies.
+         </p>
+         <p>
+          Consider this passage of text:
+         </p>
+         <blockquote>
+          <p>
+           As I was waiting, a man came out of a side room, and at a glance I was sure he must be Long John. His left leg was cut off close by the hip, and under the left shoulder he carried a crutch, which he managed with wonderful dexterity, hopping about upon it like a bird. He was very tall and strong, with a face as big as a ham—plain and pale, but intelligent and smiling. Indeed, he seemed in the most cheerful spirits, whistling as he moved about among the tables, with a merry word or a slap on the shoulder for the more favoured of his guests.
+          </p>
+         </blockquote>
+         <p>
+          —
+          <em>
+           Excerpt from Treasure Island, by Robert Louis Stevenson.
+          </em>
+         </p>
+         <p>
+          In the following coding exercise, we have provided code to load the text from a file, call the function
+          <code>
+           count_words()
+          </code>
+          to obtain word counts (which you need to implement), and print the 10 most common and least common unique words.
+         </p>
+         <p>
+          <em>
+           Complete the portions marked as TODO to count how many times each unique word occurs in the text.
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="330360-count_words-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#330360-count_words-py" id="tab-330360-count_words-py" role="tab">
+            count_words.py
+           </a>
+           <a aria-controls="330360-input-txt" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#330360-input-txt" id="tab-330360-input-txt" role="tab">
+            input.txt
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-330360-count_words-py" class="tab-pane active show" id="330360-count_words-py" role="tabpanel">
+            <pre><code></code>"""Count words."""
+
+def count_words(text):
+    """Count how many times each unique word occurs in text."""
+    counts = dict()  # dictionary of { &lt;word&gt;: &lt;count&gt; } pairs to return
+    
+    # TODO: Convert to lowercase
+    
+    # TODO: Split text into tokens (words), leaving out punctuation
+    # (Hint: Use regex to split on non-alphanumeric characters)
+    
+    # TODO: Aggregate word counts using a dictionary
+    
+    return counts
+
+
+def test_run():
+    with open("input.txt", "r") as f:
+        text = f.read()
+        counts = count_words(text)
+        sorted_counts = sorted(counts.items(), key=lambda pair: pair[1], reverse=True)
+        
+        print("10 most common words:\nWord\tCount")
+        for word, count in sorted_counts[:10]:
+            print("{}\t{}".format(word, count))
+        
+        print("\n10 least common words:\nWord\tCount")
+        for word, count in sorted_counts[-10:]:
+            print("{}\t{}".format(word, count))
+
+
+if __name__ == "__main__":
+    test_run()
+</pre>
+           </div>
+           <div aria-labelledby="tab-330360-input-txt" class="tab-pane" id="330360-input-txt" role="tabpanel">
+            <pre><code></code>As I was waiting, a man came out of a side room, and at a glance I was sure he must be Long John. His left leg was cut off close by the hip, and under the left shoulder he carried a crutch, which he managed with wonderful dexterity, hopping about upon it like a bird. He was very tall and strong, with a face as big as a ham—plain and pale, but intelligent and smiling. Indeed, he seemed in the most cheerful spirits, whistling as he moved about among the tables, with a merry word or a slap on the shoulder for the more favoured of his guests.</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Context Is Everything.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Counting Words')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

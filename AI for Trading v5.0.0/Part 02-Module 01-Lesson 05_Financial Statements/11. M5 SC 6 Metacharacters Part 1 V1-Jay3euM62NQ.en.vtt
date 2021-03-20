@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.635
+In the previous lessons,
+
+00:00:01.635 --> 00:00:06.854
+you learned how to use the backslash meta character to create special sequences.
+
+00:00:06.855 --> 00:00:10.320
+We will now look at the following metacharacters.
+
+00:00:10.320 --> 00:00:14.040
+The dot, the caret, and the dollar sign.
+
+00:00:14.039 --> 00:00:17.280
+Let's start by looking at the dot.
+
+00:00:17.280 --> 00:00:19.229
+As we saw before,
+
+00:00:19.228 --> 00:00:23.579
+the dot matches any character except newline characters.
+
+00:00:23.579 --> 00:00:25.379
+Let's see an example.
+
+00:00:25.379 --> 00:00:27.559
+Let's use the dot as
+
+00:00:27.559 --> 00:00:32.960
+a regular expression to match all the characters in this multiline string.
+
+00:00:32.960 --> 00:00:34.849
+If we run this code,
+
+00:00:34.848 --> 00:00:39.979
+we can see that we match all the characters except newline characters.
+
+00:00:39.979 --> 00:00:43.344
+Now, let's take a look at the caret.
+
+00:00:43.344 --> 00:00:48.484
+Here, we have a string that has the word "this" in two different places.
+
+00:00:48.484 --> 00:00:53.435
+The first instance of the word "this" occurs at the beginning of the string,
+
+00:00:53.435 --> 00:00:58.315
+while the second instance of the word "this" occurs towards the end of the string.
+
+00:00:58.314 --> 00:01:01.914
+If we use "this" as a regular expression,
+
+00:01:01.914 --> 00:01:06.484
+we will match both of these instances as we can see here.
+
+00:01:06.484 --> 00:01:09.879
+Now, let's suppose we only wanted to match
+
+00:01:09.879 --> 00:01:13.414
+the word "this" that is at the beginning of the string.
+
+00:01:13.415 --> 00:01:19.920
+To do this, we can add the caret before the word "this" in a regular expression.
+
+00:01:19.920 --> 00:01:22.989
+The caret is used to much a sequence of
+
+00:01:22.989 --> 00:01:27.429
+characters only when they are located at the beginning of a string.
+
+00:01:27.430 --> 00:01:30.910
+So this regular expression will only match the word
+
+00:01:30.909 --> 00:01:34.849
+"this" if it's located at the beginning of the string.
+
+00:01:34.849 --> 00:01:36.829
+If we run this code,
+
+00:01:36.829 --> 00:01:40.000
+we can see that we only get one match which
+
+00:01:40.000 --> 00:01:44.635
+corresponds to the "this" that is at the beginning of the sentence.
+
+00:01:44.635 --> 00:01:48.040
+Notice that it didn't match the second instance of
+
+00:01:48.040 --> 00:01:51.875
+the word "this" because it wasn't at the beginning of the string.
+
+00:01:51.875 --> 00:01:55.370
+Now, let's take a look at the dollar sign.
+
+00:01:55.370 --> 00:02:00.200
+Here, we have a string with the word "watch" in two different places.
+
+00:02:00.200 --> 00:02:04.579
+The first instance of the word "watch" occurs towards the beginning of
+
+00:02:04.579 --> 00:02:10.264
+the string and the second instance of the word "watch" occurs at the end of the string.
+
+00:02:10.264 --> 00:02:13.594
+If we use "watch" as a regular expression,
+
+00:02:13.594 --> 00:02:17.724
+we will match both of these instances as we can see here.
+
+00:02:17.724 --> 00:02:21.180
+Now, let's suppose we only wanted to match
+
+00:02:21.180 --> 00:02:25.099
+the word "watch" that appears at the end of our string.
+
+00:02:25.099 --> 00:02:31.989
+To do this, we can add the dollar sign after the word "watch" in our regular expression.
+
+00:02:31.990 --> 00:02:35.150
+The dollar sign is used to match a sequence of
+
+00:02:35.150 --> 00:02:39.560
+characters only when they are located at the end of a string.
+
+00:02:39.560 --> 00:02:42.979
+So this regular expression will only match
+
+00:02:42.979 --> 00:02:47.209
+the word "watch" if it is located at the end of a string.
+
+00:02:47.210 --> 00:02:49.400
+So if you run this code,
+
+00:02:49.400 --> 00:02:52.129
+we can see that we only get one match
+
+00:02:52.129 --> 00:02:56.120
+corresponding to the "watch" that is at the end of the string.
+
+00:02:56.120 --> 00:02:59.450
+Notice that it didn't match the first instance of
+
+00:02:59.449 --> 00:03:03.419
+the word "watch" because it wasn't at the end of the string.
+

@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.774
+Hello, and welcome back.
+
+00:00:02.774 --> 00:00:09.720
+In this notebook, we will take a look at the recursive argument in the FindAll method.
+
+00:00:09.720 --> 00:00:13.935
+But in order to understand how the recursive argument works,
+
+00:00:13.935 --> 00:00:17.850
+we must first take a look at some basic properties of child tags.
+
+00:00:17.850 --> 00:00:19.950
+So, let's get started.
+
+00:00:19.949 --> 00:00:23.234
+For simplicity, in the following examples,
+
+00:00:23.234 --> 00:00:28.544
+we will use a simpler HTML file named sample2.
+
+00:00:28.545 --> 00:00:33.329
+Here is what the sample2 HTML file looks like.
+
+00:00:33.329 --> 00:00:38.864
+As we can see, the HTML tag has child tags.
+
+00:00:38.865 --> 00:00:45.225
+For example, the head tag is a direct child of the HTML tag.
+
+00:00:45.225 --> 00:00:51.005
+Similarly, the title tag is a direct child of the head tag,
+
+00:00:51.005 --> 00:00:58.045
+and finally, the AI for trading string is a direct child of the title tag.
+
+00:00:58.045 --> 00:01:00.770
+BeautifulSoup provides a lot of
+
+00:01:00.770 --> 00:01:04.775
+different attributes for navigating over the tag's children.
+
+00:01:04.775 --> 00:01:07.160
+We already saw that we can access
+
+00:01:07.159 --> 00:01:11.229
+child tags as if they were attributes of the parent tag.
+
+00:01:11.230 --> 00:01:16.170
+For example, we can access the string, AI for trading,
+
+00:01:16.170 --> 00:01:23.790
+from our BeautifulSoup object by using.head.title.get_text.
+
+00:01:23.790 --> 00:01:28.040
+Another way to navigate through a tag's children is by
+
+00:01:28.040 --> 00:01:33.695
+using the.contents attribute of the tag object.
+
+00:01:33.694 --> 00:01:39.750
+The.contents attribute returns a list with all of the tag's children.
+
+00:01:39.750 --> 00:01:41.814
+Let's see an example.
+
+00:01:41.814 --> 00:01:47.929
+Let's suppose we wanted to get a list of all the children of the head tag,
+
+00:01:47.930 --> 00:01:51.910
+we can do this by accessing the head tag first
+
+00:01:51.909 --> 00:01:56.750
+and then using the.contents attribute like we've done here.
+
+00:01:56.750 --> 00:01:58.760
+If we run this code,
+
+00:01:58.760 --> 00:02:02.000
+we can see that the.contents attribute has
+
+00:02:02.000 --> 00:02:06.219
+returned a list with all the children of the head tag.
+
+00:02:06.219 --> 00:02:11.194
+Also, by counting how many elements this list has,
+
+00:02:11.194 --> 00:02:15.079
+we can see how many children a parent tag has.
+
+00:02:15.080 --> 00:02:20.630
+In this case, we can see that the head tag contains four children.
+
+00:02:20.629 --> 00:02:27.775
+Another way to navigate through a tag's children is through the.children attribute.
+
+00:02:27.775 --> 00:02:31.960
+The.children attribute works the same way as
+
+00:02:31.960 --> 00:02:37.248
+a.contents attribute except that it doesn't return a list,
+
+00:02:37.248 --> 00:02:40.655
+but rather, it returns an iterator.
+
+00:02:40.655 --> 00:02:45.305
+For example, here, we have created a for loop that
+
+00:02:45.305 --> 00:02:51.974
+iterates over the head's tag's children by using the.children attribute.
+
+00:02:51.974 --> 00:02:56.564
+Now, let's take a look at the recursive argument.
+
+00:02:56.564 --> 00:03:02.625
+If we use the FindAll method on an tag object like this,
+
+00:03:02.625 --> 00:03:08.159
+then the FindAll method will search all of the tag's children,
+
+00:03:08.159 --> 00:03:11.384
+it's children's children, and so on.
+
+00:03:11.384 --> 00:03:14.870
+However, there will be times where you only
+
+00:03:14.870 --> 00:03:18.844
+want BeautifulSoup to search a tag's direct children.
+
+00:03:18.844 --> 00:03:26.474
+To do this, we can pass the recursive=False argument to the FindAll method.
+
+00:03:26.474 --> 00:03:29.074
+Let's see how this works.
+
+00:03:29.074 --> 00:03:38.435
+Let's start by printing out our sample2.html file as we did before to see its structure.
+
+00:03:38.435 --> 00:03:44.765
+We can see that the head tag is directly beneath the html tag.
+
+00:03:44.764 --> 00:03:50.524
+We also see that the title tag is directly beneath the head tag.
+
+00:03:50.525 --> 00:03:56.205
+Even though the title tag is beneath the html tag,
+
+00:03:56.205 --> 00:04:01.719
+it is not directly below it because the head tag is in the way.
+
+00:04:01.719 --> 00:04:05.189
+Now, keeping that structure in mind,
+
+00:04:05.189 --> 00:04:13.094
+if we search the html tag for the title tag using the FindAll method,
+
+00:04:13.094 --> 00:04:17.704
+we will definitely find a match because the FindAll method is
+
+00:04:17.704 --> 00:04:22.734
+searching in all the descendants of the html tag.
+
+00:04:22.735 --> 00:04:28.189
+Now, let's restrict ourselves to only look at the direct children of
+
+00:04:28.189 --> 00:04:33.829
+the html tag by using the recursive=False argument.
+
+00:04:33.829 --> 00:04:35.599
+If we run this code,
+
+00:04:35.600 --> 00:04:36.890
+we can see that now,
+
+00:04:36.889 --> 00:04:45.610
+we get no matches because the title tag is not a direct descendant of the html tag.
+

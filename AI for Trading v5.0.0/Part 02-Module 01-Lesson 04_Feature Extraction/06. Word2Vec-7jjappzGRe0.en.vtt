@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.179
+Word2Vec is perhaps one of the most popular examples of word embeddings used in practice.
+
+00:00:06.179 --> 00:00:08.324
+As the name Word2Vec indicates,
+
+00:00:08.324 --> 00:00:11.129
+it transforms words to vectors.
+
+00:00:11.130 --> 00:00:15.894
+But what the name doesn't give away is how that transformation is performed.
+
+00:00:15.894 --> 00:00:18.519
+The core idea behind Word2Vec is this,
+
+00:00:18.519 --> 00:00:21.509
+a model that is able to predict a given word,
+
+00:00:21.510 --> 00:00:24.210
+given neighboring words, or vice versa,
+
+00:00:24.210 --> 00:00:27.000
+predict neighboring words for a given word is
+
+00:00:27.000 --> 00:00:30.804
+likely to capture the contextual meanings of words very well.
+
+00:00:30.804 --> 00:00:31.890
+And these are, in fact,
+
+00:00:31.890 --> 00:00:34.380
+two flavors of Word2Vec models,
+
+00:00:34.380 --> 00:00:38.969
+one where you are given neighboring words called continuous bag of words,
+
+00:00:38.969 --> 00:00:43.195
+and the other where you are given the middle word called Skip-gram.
+
+00:00:43.195 --> 00:00:44.939
+In the Skip-gram model,
+
+00:00:44.939 --> 00:00:47.114
+you pick any word from a sentence,
+
+00:00:47.115 --> 00:00:51.840
+convert it into a one-hot encoded vector and feed it into a neural network or
+
+00:00:51.840 --> 00:00:54.450
+some other probabilistic model that is designed to
+
+00:00:54.450 --> 00:00:57.880
+predict a few surrounding words, its context.
+
+00:00:57.880 --> 00:00:59.845
+Using a suitable loss function,
+
+00:00:59.844 --> 00:01:03.299
+optimize the weights or parameters of the model and repeat this
+
+00:01:03.299 --> 00:01:07.384
+till it learns to predict context words as best as it can.
+
+00:01:07.385 --> 00:01:12.120
+Now, take an intermediate representation like a hidden layer in a neural network.
+
+00:01:12.120 --> 00:01:17.505
+The outputs of that layer for a given word become the corresponding word vector.
+
+00:01:17.504 --> 00:01:22.039
+The Continuous Bag of Words variation also uses a similar strategy.
+
+00:01:22.040 --> 00:01:25.020
+This yields a very robust representation of words
+
+00:01:25.019 --> 00:01:29.004
+because the meaning of each word is distributed throughout the vector.
+
+00:01:29.004 --> 00:01:31.274
+The size of the word vector is up to you,
+
+00:01:31.275 --> 00:01:34.740
+how you want to tune performance versus complexity.
+
+00:01:34.739 --> 00:01:37.824
+It remains constant no matter how many words you train on,
+
+00:01:37.825 --> 00:01:39.689
+unlike Bag of Words, for instance,
+
+00:01:39.689 --> 00:01:42.599
+where the size grows with the number of unique words.
+
+00:01:42.599 --> 00:01:46.289
+And once you pre-train a large set of word vectors,
+
+00:01:46.290 --> 00:01:50.445
+you can use them efficiently without having to transform again and again,
+
+00:01:50.444 --> 00:01:53.019
+just store them in a lookup table.
+
+00:01:53.019 --> 00:01:56.789
+Finally, it is ready to be used in deep learning architectures.
+
+00:01:56.790 --> 00:02:01.645
+For example, it can be used as the input vector for recurrent neural nets.
+
+00:02:01.644 --> 00:02:06.524
+It is also possible to use RNNs to learn even better word embeddings.
+
+00:02:06.525 --> 00:02:10.379
+Some other optimizations are possible that further reduce the model and
+
+00:02:10.379 --> 00:02:15.509
+training complexity such as representing the output words using Hierarchical Softmax,
+
+00:02:15.509 --> 00:02:19.000
+computing loss using Sparse Cross Entropy, et cetera.
+

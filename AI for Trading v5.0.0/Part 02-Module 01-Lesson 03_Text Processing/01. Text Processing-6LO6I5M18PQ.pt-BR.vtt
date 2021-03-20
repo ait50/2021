@@ -1,0 +1,66 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.352 --> 00:00:03.398
+Nesta aula, você aprenderá a ler
+dados de texto
+
+00:00:03.431 --> 00:00:07.246
+de diferentes fontes e prepará-los
+para a extração de recursos.
+
+00:00:07.279 --> 00:00:10.252
+Vai limpar os dados,
+para remover itens irrelevantes -
+
+00:00:10.285 --> 00:00:11.903
+como as tags HTML -,
+
+00:00:11.936 --> 00:00:15.582
+normalizará o texto convertendo-o
+em letras minúsculas,
+
+00:00:15.615 --> 00:00:18.559
+removendo pontuações
+e espaços extras,
+
+00:00:18.592 --> 00:00:21.750
+vai dividir o texto
+em palavras ou tokens
+
+00:00:21.783 --> 00:00:25.767
+e remover palavras muito comuns,
+as "palavras de parada".
+
+00:00:25.800 --> 00:00:29.329
+Por fim, você verá como identificar
+diferentes partes do discurso -
+
+00:00:29.362 --> 00:00:30.591
+as "entidades" -
+
+00:00:30.624 --> 00:00:32.825
+e converter palavras
+em formas canônicas
+
+00:00:32.858 --> 00:00:35.249
+usando a stemização
+e a lematização.
+
+00:00:35.282 --> 00:00:37.880
+Depois de todas
+essas etapas de processamento,
+
+00:00:37.913 --> 00:00:39.952
+o texto estará
+muito diferente,
+
+00:00:39.985 --> 00:00:43.225
+mas captará a essência
+do que está sendo transmitido
+
+00:00:43.258 --> 00:00:45.445
+de uma forma
+mais fácil de trabalhar.
+

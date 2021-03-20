@@ -1,0 +1,487 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.360
+Today, I have the pleasure of interviewing Gordon Ritter,
+
+00:00:03.360 --> 00:00:07.305
+an elite by-side quantitative trader and professor who
+
+00:00:07.305 --> 00:00:11.685
+developed the backtesting project in AI for trading ND.
+
+00:00:11.685 --> 00:00:15.450
+Gordon, what first attracted you to a career in finance,
+
+00:00:15.450 --> 00:00:18.030
+and what do you find fascinating about the field?
+
+00:00:18.030 --> 00:00:21.930
+Well, I was originally attracted to a career in finance because
+
+00:00:21.930 --> 00:00:25.965
+of a totally amazing teacher I had in graduate school.
+
+00:00:25.965 --> 00:00:28.800
+His name was Robert C. Merton.
+
+00:00:28.800 --> 00:00:33.860
+Professor Merton was a professor in the Harvard Business School at the time.
+
+00:00:33.860 --> 00:00:39.905
+So he was teaching a course in continuous time finance over at Harvard Business School.
+
+00:00:39.905 --> 00:00:42.320
+I was a student not in the business school,
+
+00:00:42.320 --> 00:00:44.180
+but in the physics department at the time.
+
+00:00:44.180 --> 00:00:47.250
+I was getting my PhD in Mathematical Physics,
+
+00:00:47.250 --> 00:00:51.245
+but I audited Merton's class and I learned
+
+00:00:51.245 --> 00:00:55.835
+that some very advanced and interesting mathematics was actually involved in finance.
+
+00:00:55.835 --> 00:01:00.860
+The field is now fascinating to me as a former mathematician,
+
+00:01:00.860 --> 00:01:04.460
+a former mathematical physicist because for one thing,
+
+00:01:04.460 --> 00:01:06.770
+it's something that nearly everyone cares about.
+
+00:01:06.770 --> 00:01:09.995
+Almost everyone has some connection to the financial markets,
+
+00:01:09.995 --> 00:01:13.540
+even if it's just casually following the stock market.
+
+00:01:13.540 --> 00:01:15.980
+Yet, some of the most successful investors in
+
+00:01:15.980 --> 00:01:19.160
+history are actually mathematicians and physicists,
+
+00:01:19.160 --> 00:01:21.230
+and apply very interesting,
+
+00:01:21.230 --> 00:01:23.305
+very deep mathematics to the markets.
+
+00:01:23.305 --> 00:01:27.110
+So is the mathematical side one of the things that
+
+00:01:27.110 --> 00:01:31.685
+continues to pique your interest in the field?
+
+00:01:31.685 --> 00:01:33.140
+Yes, absolutely.
+
+00:01:33.140 --> 00:01:35.030
+We continue to find interesting
+
+00:01:35.030 --> 00:01:39.290
+and challenging mathematics problems as we go along the way.
+
+00:01:39.290 --> 00:01:43.265
+So what was your path into your current career?
+
+00:01:43.265 --> 00:01:48.755
+Well, after taking Merton's course in my last year of graduate school,
+
+00:01:48.755 --> 00:01:52.985
+I applied for quantitative positions in hedge funds.
+
+00:01:52.985 --> 00:01:59.780
+I also applied for academic post-doctoral fellowships as I wasn't entirely decided yet,
+
+00:01:59.780 --> 00:02:02.690
+but my original plan had always been to pursue a career in
+
+00:02:02.690 --> 00:02:06.935
+academia and it was hard to let go of that.
+
+00:02:06.935 --> 00:02:11.555
+So I also applied to post-doctoral fellowships,
+
+00:02:11.555 --> 00:02:16.570
+which in academia is a path towards a tenure track faculty position,
+
+00:02:16.570 --> 00:02:19.220
+and I was offered some of each kind of jobs.
+
+00:02:19.220 --> 00:02:21.200
+So I was offered some postdocs,
+
+00:02:21.200 --> 00:02:26.990
+some quantitative analyst or quantitative strategists positions in hedge funds,
+
+00:02:26.990 --> 00:02:32.180
+and I had to make an agonizing decision because I couldn't do both at the same time.
+
+00:02:32.180 --> 00:02:34.310
+In the end, I think it was the right decision,
+
+00:02:34.310 --> 00:02:36.940
+and fast forward to today,
+
+00:02:36.940 --> 00:02:40.700
+I'm fortunate enough to have a position in the industry where I get to
+
+00:02:40.700 --> 00:02:43.910
+lead a dual life as a practitioner and an academic.
+
+00:02:43.910 --> 00:02:47.270
+So this way, I think of it as the
+
+00:02:47.270 --> 00:02:51.185
+best of both worlds and I get to do something that has a big impact in industry.
+
+00:02:51.185 --> 00:02:54.290
+But I also never truly had to disconnect from the job that
+
+00:02:54.290 --> 00:02:58.040
+I had always prepared for as a young person and always thought I would do,
+
+00:02:58.040 --> 00:03:00.050
+which was the job of a professor.
+
+00:03:00.050 --> 00:03:03.680
+What advice would you give to someone just starting a career in finance,
+
+00:03:03.680 --> 00:03:07.355
+and what are some common misconceptions of people just starting out?
+
+00:03:07.355 --> 00:03:11.225
+Great question. I think if you're looking to start a career in finance,
+
+00:03:11.225 --> 00:03:14.090
+you should first of all do it because you love finance.
+
+00:03:14.090 --> 00:03:16.790
+So for example, if you find yourself reading
+
+00:03:16.790 --> 00:03:20.730
+the Journal of Finance in your spare time because maybe that's, to you,
+
+00:03:20.730 --> 00:03:25.835
+more interesting and fun than the latest video game or something else you do for fun,
+
+00:03:25.835 --> 00:03:29.855
+that would be a good indication that a career in finance is the right choice for you.
+
+00:03:29.855 --> 00:03:32.180
+One of the misconceptions of those starting out in
+
+00:03:32.180 --> 00:03:35.345
+finance and in quantitative finance in particular,
+
+00:03:35.345 --> 00:03:41.240
+is that it's easy or that various easy things have not been tried yet.
+
+00:03:41.240 --> 00:03:43.760
+In my experience, some of the best mathematical minds in
+
+00:03:43.760 --> 00:03:46.490
+finance are among some of the best mathematicians in the world.
+
+00:03:46.490 --> 00:03:48.245
+Period. Full stop.
+
+00:03:48.245 --> 00:03:50.090
+How important is knowledge in
+
+00:03:50.090 --> 00:03:54.115
+different subject areas like math and accounting, for example?
+
+00:03:54.115 --> 00:03:58.070
+Knowledge in those subject areas is very important, Liz.
+
+00:03:58.070 --> 00:03:59.930
+One that also gets overlooked,
+
+00:03:59.930 --> 00:04:02.285
+I think, is knowledge in computer science.
+
+00:04:02.285 --> 00:04:04.340
+I think knowledge of computer science is
+
+00:04:04.340 --> 00:04:06.895
+absolutely crucial in modern quantitative finance.
+
+00:04:06.895 --> 00:04:10.730
+Occasionally, I encounter someone who wants to do quantitative finance,
+
+00:04:10.730 --> 00:04:13.550
+but who has no concept of real computer programming
+
+00:04:13.550 --> 00:04:16.990
+beyond a little bit of some simple scripting language.
+
+00:04:16.990 --> 00:04:21.320
+Most of the really good quantitative traders I know would easily handle
+
+00:04:21.320 --> 00:04:26.495
+a programming interview at an elite Silicon Valley firm in Java or C++,
+
+00:04:26.495 --> 00:04:28.850
+but they chose finance because that
+
+00:04:28.850 --> 00:04:31.595
+was just what interested them and what they really love.
+
+00:04:31.595 --> 00:04:35.155
+Gordon, how important is background knowledge in accounting?
+
+00:04:35.155 --> 00:04:37.040
+Well, I think very important,
+
+00:04:37.040 --> 00:04:38.960
+and this is something that's often overlooked.
+
+00:04:38.960 --> 00:04:40.895
+You can get a PhD in accounting.
+
+00:04:40.895 --> 00:04:43.940
+If you look at many of the top business schools,
+
+00:04:43.940 --> 00:04:45.350
+such as Columbia Business School,
+
+00:04:45.350 --> 00:04:49.010
+offer a PhD in accounting where you can study value
+
+00:04:49.010 --> 00:04:53.750
+investing for five or six years and write a PhD thesis on it.
+
+00:04:53.750 --> 00:04:57.185
+This is knowledge that takes a long time to acquire.
+
+00:04:57.185 --> 00:04:59.000
+You can make a career studying it.
+
+00:04:59.000 --> 00:05:03.020
+This is important knowledge for deciding what a company is really worth.
+
+00:05:03.020 --> 00:05:05.615
+What are the best ways to develop key skills,
+
+00:05:05.615 --> 00:05:08.950
+especially if you don't have a degree from a name-brand school?
+
+00:05:08.950 --> 00:05:12.020
+I think one of the best ways to develop key skills is by trying
+
+00:05:12.020 --> 00:05:15.530
+things out on your own and finding out what works.
+
+00:05:15.530 --> 00:05:18.710
+So to take an analogy from computer science.
+
+00:05:18.710 --> 00:05:23.225
+Computer Programmers often call this hacking in the positive sense of the term,
+
+00:05:23.225 --> 00:05:26.000
+of just getting in front of a computer and writing
+
+00:05:26.000 --> 00:05:29.375
+some code and eventually learning what works and what doesn't.
+
+00:05:29.375 --> 00:05:32.600
+I think one of the purposes of our projects here is to
+
+00:05:32.600 --> 00:05:35.555
+get people to try to do that with some financial data.
+
+00:05:35.555 --> 00:05:38.810
+What do people in finance mean by market intuition,
+
+00:05:38.810 --> 00:05:40.780
+and what's the best way to develop it?
+
+00:05:40.780 --> 00:05:42.920
+I think some people coming from
+
+00:05:42.920 --> 00:05:47.060
+quantitative fields tend to think of a market as this huge dataset.
+
+00:05:47.060 --> 00:05:50.030
+In actual fact, the market is a mechanism by which
+
+00:05:50.030 --> 00:05:53.690
+trade is affected among people and corporations,
+
+00:05:53.690 --> 00:05:56.150
+which are ultimately composed of people, anyway.
+
+00:05:56.150 --> 00:05:57.530
+One starts of thinking,
+
+00:05:57.530 --> 00:05:58.880
+well, who are those people?
+
+00:05:58.880 --> 00:06:00.170
+Why are they trading?
+
+00:06:00.170 --> 00:06:03.770
+What are the economic forces driving their trading decisions?
+
+00:06:03.770 --> 00:06:06.785
+At the end of the day, if your algorithm is looking at a data point,
+
+00:06:06.785 --> 00:06:12.715
+what is the actual meaning in the real world of that piece of data?
+
+00:06:12.715 --> 00:06:15.995
+So to develop that knowledge and intuition,
+
+00:06:15.995 --> 00:06:17.525
+I think you have to do two things.
+
+00:06:17.525 --> 00:06:19.040
+So on the one hand,
+
+00:06:19.040 --> 00:06:21.980
+you should study finance and economics.
+
+00:06:21.980 --> 00:06:27.425
+For example, a PhD in finance or accounting or financial economics is great for that,
+
+00:06:27.425 --> 00:06:29.930
+or if you don't have time to get a PhD,
+
+00:06:29.930 --> 00:06:31.960
+at very least study those things on your own.
+
+00:06:31.960 --> 00:06:34.955
+On the other hand, I think you have to also watch the markets for
+
+00:06:34.955 --> 00:06:37.550
+a long time to see how those theories of
+
+00:06:37.550 --> 00:06:40.480
+economic behavior are actually put into practice.
+
+00:06:40.480 --> 00:06:43.415
+So it's not an easy or a short path,
+
+00:06:43.415 --> 00:06:47.630
+which is why I also say it has to be something that you love intrinsically.
+
+00:06:47.630 --> 00:06:50.600
+What general practices, attitudes,
+
+00:06:50.600 --> 00:06:53.980
+or habits are most important to being successful in your field?
+
+00:06:53.980 --> 00:06:57.600
+Well, I view investing as a science.
+
+00:06:57.600 --> 00:07:02.180
+So I think if you look at good scientists in any field of science,
+
+00:07:02.180 --> 00:07:06.070
+and in particular in the science of investing, well,
+
+00:07:06.070 --> 00:07:08.450
+they should be skeptical and they should
+
+00:07:08.450 --> 00:07:11.930
+be very rigorous in applying the scientific method.
+
+00:07:11.930 --> 00:07:14.300
+Experiments should be clear about
+
+00:07:14.300 --> 00:07:18.350
+what models or what hypotheses those experiments are testing.
+
+00:07:18.350 --> 00:07:23.860
+The experimental results need to be analyzed using proper statistical methods.
+
+00:07:23.860 --> 00:07:28.550
+Beyond that, I think I can best answer this with an anecdote or an example.
+
+00:07:28.550 --> 00:07:31.130
+So one of the best quantitative traders I've ever
+
+00:07:31.130 --> 00:07:34.835
+known was someone who did not have a PhD,
+
+00:07:34.835 --> 00:07:37.460
+but he loves to take things apart and understand
+
+00:07:37.460 --> 00:07:40.040
+how they work using scientific principles.
+
+00:07:40.040 --> 00:07:44.285
+He can fix almost anything with a circuit in it from a toaster to an airplane,
+
+00:07:44.285 --> 00:07:49.265
+and he in fact, he used to work as an engineer on something involving satellites.
+
+00:07:49.265 --> 00:07:53.405
+It's almost impossible to convince him of something that is in fact false,
+
+00:07:53.405 --> 00:07:55.880
+and he tries to see the world as it really is,
+
+00:07:55.880 --> 00:07:58.670
+not as what we would want it to be.
+
+00:07:58.670 --> 00:08:00.890
+That comes through in building models.
+
+00:08:00.890 --> 00:08:02.600
+Because if you fit something,
+
+00:08:02.600 --> 00:08:05.090
+just some training data and it appears to fit very well,
+
+00:08:05.090 --> 00:08:08.450
+we'd all like to believe that we found the next great model,
+
+00:08:08.450 --> 00:08:11.030
+but it may simply have been overfit.
+
+00:08:11.030 --> 00:08:15.130
+So what has to come into play is a desire to see things as they are.
+
+00:08:15.130 --> 00:08:18.620
+What do you find most rewarding about working in your field?
+
+00:08:18.620 --> 00:08:21.260
+The thing I love most about working in finance is that
+
+00:08:21.260 --> 00:08:24.170
+the work itself is intellectual and fun,
+
+00:08:24.170 --> 00:08:27.050
+while at the same time having real-world consequences
+
+00:08:27.050 --> 00:08:30.635
+that I can see quickly having an impact in the real world.
+
+00:08:30.635 --> 00:08:34.100
+Another thing I really like is just the people that you meet along the way.
+
+00:08:34.100 --> 00:08:35.840
+A lot of interesting,
+
+00:08:35.840 --> 00:08:38.510
+curious characters in the best possible sense.
+
+00:08:38.510 --> 00:08:40.685
+Thanks Gordon so much for talking with me.
+
+00:08:40.685 --> 00:08:42.500
+I look forward to talking to you again.
+
+00:08:42.500 --> 00:08:45.600
+Well, thank you for having me. It's been a lot of fun.
+

@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.640
+Hello and welcome back.
+
+00:00:02.640 --> 00:00:07.410
+In this notebook, we will see how to parse an HTML file.
+
+00:00:07.410 --> 00:00:10.320
+In order to parse an HTML file,
+
+00:00:10.320 --> 00:00:14.580
+we need to parse the file into the BeautifulSoup constructor.
+
+00:00:14.580 --> 00:00:19.320
+We can parse our file to the BeautifulSoup constructor either
+
+00:00:19.320 --> 00:00:24.045
+as a string or as an open file handle as we have done here.
+
+00:00:24.045 --> 00:00:29.460
+The BeautifulSoup constructor will return a BeautifulSoup object.
+
+00:00:29.460 --> 00:00:33.120
+These BeautifulSoup object represents the document as
+
+00:00:33.119 --> 00:00:37.244
+a whole and can be searched using various methods.
+
+00:00:37.244 --> 00:00:41.189
+We will see how to do this in the following lessons.
+
+00:00:41.189 --> 00:00:47.089
+For now, let's print the BeautifulSoup object to see what it looks like.
+
+00:00:47.090 --> 00:00:51.170
+As we can see, the BeautifulSoup object holds
+
+00:00:51.170 --> 00:00:55.340
+the entire contents of our sample HTML file.
+
+00:00:55.340 --> 00:01:01.400
+However, it is not printed in a nice format and it is very hard to read.
+
+00:01:01.399 --> 00:01:06.920
+Luckily, the BeautifulSoup object has the "prettify" method that
+
+00:01:06.920 --> 00:01:13.379
+allows the BeautifulSoup object to be printed with all the tags nicely indented.
+
+00:01:16.069 --> 00:01:18.219
+In the next lesson,
+
+00:01:18.219 --> 00:01:23.189
+we will see how to access the information contained in each tag.
+

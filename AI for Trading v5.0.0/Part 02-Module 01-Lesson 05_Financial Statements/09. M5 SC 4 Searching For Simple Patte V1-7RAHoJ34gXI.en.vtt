@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.649
+In the previous lessons,
+
+00:00:01.649 --> 00:00:05.970
+we saw how we can match letters, words, and metacharacters.
+
+00:00:05.969 --> 00:00:09.869
+In this notebook, we will see how we can use regular expressions to
+
+00:00:09.869 --> 00:00:14.684
+perform more complex pattern matching using metacharacters.
+
+00:00:14.685 --> 00:00:19.065
+The first metacharacter we're going to look at is the backslash.
+
+00:00:19.065 --> 00:00:24.179
+We already saw that the backslash can be used to escape all the metacharacters.
+
+00:00:24.179 --> 00:00:27.300
+However, the backslash can also be followed by
+
+00:00:27.300 --> 00:00:30.905
+various characters to signal various spatial sequences.
+
+00:00:30.905 --> 00:00:35.770
+Here's a list of the special sequences we're going to look at in this notebook.
+
+00:00:35.770 --> 00:00:40.230
+So, let's start by looking at the special sequence backslash
+
+00:00:40.229 --> 00:00:44.959
+d. This sequence can match any decimal digit;
+
+00:00:44.960 --> 00:00:49.195
+that means it can find any number from zero to nine.
+
+00:00:49.195 --> 00:00:51.280
+Let's see how this works.
+
+00:00:51.280 --> 00:00:56.225
+Let's suppose we wanted to find all the numbers in this sentence.
+
+00:00:56.225 --> 00:01:01.594
+To do this, we will just use the backslash d as a regular expression.
+
+00:01:01.594 --> 00:01:03.469
+If we run this code,
+
+00:01:03.469 --> 00:01:06.049
+we can see that all the matches found by
+
+00:01:06.049 --> 00:01:11.575
+the finditer method correspond to decimal digits between zero and nine.
+
+00:01:11.575 --> 00:01:14.365
+Conversely, if we wanted to find
+
+00:01:14.364 --> 00:01:18.640
+all the characters in a sentence that are not decimal digits,
+
+00:01:18.640 --> 00:01:23.079
+then we will use a regular expression backslash capital
+
+00:01:23.079 --> 00:01:29.275
+D. The backslash capital D will match any character that is not a number.
+
+00:01:29.275 --> 00:01:31.105
+So if we run this code,
+
+00:01:31.105 --> 00:01:35.590
+we can see that none of the matches are decimal digits.
+
+00:01:35.590 --> 00:01:42.310
+We can also see that the backslash capital D is able to match all characters,
+
+00:01:42.310 --> 00:01:49.385
+including uppercase and lowercase letters as well as whitespace and the period.
+
+00:01:49.385 --> 00:01:53.635
+Now let's take a look at this special sequence backslash
+
+00:01:53.635 --> 00:01:58.615
+s. This sequence can match any whitespace character.
+
+00:01:58.614 --> 00:02:02.454
+This includes spaces, new lines,
+
+00:02:02.454 --> 00:02:04.579
+and tabs among others.
+
+00:02:04.579 --> 00:02:06.730
+So, let's see how this works.
+
+00:02:06.730 --> 00:02:12.775
+Let's suppose we wanted to find all the whitespace characters in this multiline string.
+
+00:02:12.775 --> 00:02:18.670
+To do this, we will use the backslash s as a regular expression.
+
+00:02:18.669 --> 00:02:20.319
+If we run this code,
+
+00:02:20.319 --> 00:02:25.754
+we can see that all the matches correspond only to whitespace characters,
+
+00:02:25.754 --> 00:02:29.055
+such as new lines, tabs,
+
+00:02:29.055 --> 00:02:36.500
+whitespace, form feeds, carriage returns, and vertical tabs.
+
+00:02:36.500 --> 00:02:41.014
+Conversely, if we wanted to find all the characters
+
+00:02:41.014 --> 00:02:45.158
+in a multiline string that are not whitespace characters,
+
+00:02:45.158 --> 00:02:49.239
+we will use backslash capital S instead.
+
+00:02:49.240 --> 00:02:56.030
+The backslash capital S will match any character that is not a whitespace character.
+
+00:02:56.030 --> 00:02:57.814
+So if we run this code,
+
+00:02:57.814 --> 00:03:02.930
+we can see that none of the batches correspond to whitespace characters.
+
+00:03:02.930 --> 00:03:08.900
+We can also see that the backslash capital S can match all characters,
+
+00:03:08.900 --> 00:03:14.760
+including periods, numbers, uppercase, and lowercase letters.
+
+00:03:14.759 --> 00:03:18.044
+Now let's take a look at the special sequence
+
+00:03:18.044 --> 00:03:25.514
+backslash w. This sequence can match any alphanumeric character and the underscore.
+
+00:03:25.514 --> 00:03:32.649
+This includes all uppercase and lowercase letters as well as the numbers zero to nine.
+
+00:03:32.650 --> 00:03:34.900
+So, let's see how this works.
+
+00:03:34.900 --> 00:03:40.960
+Let's suppose we wanted to find all the alphanumeric characters in this multiline string.
+
+00:03:40.960 --> 00:03:46.570
+To do this, we will use backslash w as a regular expression.
+
+00:03:46.569 --> 00:03:48.504
+If we run this code,
+
+00:03:48.504 --> 00:03:53.409
+we can see that all the matches correspond to alphanumeric characters,
+
+00:03:53.409 --> 00:03:56.784
+including the underscore in the email address.
+
+00:03:56.784 --> 00:04:00.639
+Conversely, if we wanted to find all the characters in
+
+00:04:00.639 --> 00:04:04.889
+a multiline string that are not alphanumeric characters,
+
+00:04:04.889 --> 00:04:08.875
+we will use backslash capital W instead.
+
+00:04:08.875 --> 00:04:15.430
+The backslash capital W will match any character that is not an alphanumeric character.
+
+00:04:15.430 --> 00:04:17.064
+So, we run this code,
+
+00:04:17.064 --> 00:04:19.969
+we can see that none of the matches are letters,
+
+00:04:19.970 --> 00:04:22.205
+or numbers, or underscores.
+
+00:04:22.204 --> 00:04:28.294
+We also see that backslash capital W is able to match all whitespace characters,
+
+00:04:28.295 --> 00:04:33.520
+like we see here, and even the @ symbol in the email address.
+

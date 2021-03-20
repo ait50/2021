@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.585
+One-hot encoding usually works in some situations
+
+00:00:03.585 --> 00:00:07.075
+but breaks down when we have a large vocabulary to deal with,
+
+00:00:07.075 --> 00:00:11.879
+because the size of our ward representation grows with the number of words.
+
+00:00:11.880 --> 00:00:14.460
+What we need as a way to control the size of
+
+00:00:14.460 --> 00:00:19.089
+our word representation by limiting it to a fixed-size vector.
+
+00:00:19.089 --> 00:00:22.440
+In other words, we want to find an embedding for each word in
+
+00:00:22.440 --> 00:00:26.620
+some vector space and we wanted to exhibit some desired properties.
+
+00:00:26.620 --> 00:00:29.460
+For example, if two words are similar in meaning,
+
+00:00:29.460 --> 00:00:33.719
+they should be closer to each other compared to words that are not.
+
+00:00:33.719 --> 00:00:38.304
+And if two pairs of words have a similar difference in their meanings,
+
+00:00:38.304 --> 00:00:42.905
+they should be approximately equally separated in the embedded space.
+
+00:00:42.905 --> 00:00:45.870
+We could use such a representation for a variety of
+
+00:00:45.869 --> 00:00:49.019
+purposes like finding synonyms and analogies,
+
+00:00:49.020 --> 00:00:52.095
+identifying concepts around which words are clustered,
+
+00:00:52.094 --> 00:00:54.060
+classifying words as positive,
+
+00:00:54.060 --> 00:00:55.890
+negative, neutral, et cetera.
+
+00:00:55.890 --> 00:00:57.780
+By combining word vectors,
+
+00:00:57.780 --> 00:01:01.259
+we can come up with another way of representing documents as well.
+

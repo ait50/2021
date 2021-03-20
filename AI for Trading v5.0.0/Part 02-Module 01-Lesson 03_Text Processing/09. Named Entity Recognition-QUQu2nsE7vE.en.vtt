@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.240
+Named entities are typically noun phrases that
+
+00:00:03.240 --> 00:00:07.044
+refer to some specific object, person, or place.
+
+00:00:07.044 --> 00:00:13.609
+You can use the ne_chunk function to label named entities in text.
+
+00:00:13.609 --> 00:00:18.125
+Note that you have to first tokenize and tag parts of speech.
+
+00:00:18.125 --> 00:00:20.010
+This is a very simple example,
+
+00:00:20.010 --> 00:00:25.295
+but notice how the different entity types are also recognized: person,
+
+00:00:25.295 --> 00:00:30.830
+organization, and GPE, which stands for geopolitical entity.
+
+00:00:30.829 --> 00:00:33.469
+Also note how it identified the two words,
+
+00:00:33.469 --> 00:00:37.024
+Udacity and Inc, together as a single entity.
+
+00:00:37.024 --> 00:00:40.159
+Out in the wild, performance is not always
+
+00:00:40.159 --> 00:00:44.139
+great but training on a large corpus definitely helps.
+
+00:00:44.140 --> 00:00:48.649
+Named entity recognition is often used to index and search for news articles,
+
+00:00:48.649 --> 00:00:51.250
+for example, on companies of interest.
+

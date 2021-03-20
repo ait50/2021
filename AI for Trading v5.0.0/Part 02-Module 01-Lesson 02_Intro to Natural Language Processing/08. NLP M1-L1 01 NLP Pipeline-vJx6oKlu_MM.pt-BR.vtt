@@ -1,0 +1,98 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.236 --> 00:00:03.346
+Vamos observar
+um pipeline comum do PLN.
+
+00:00:03.379 --> 00:00:05.637
+Ele é composto de três etapas:
+
+00:00:05.670 --> 00:00:08.276
+processamento de texto,
+extração de recursos
+
+00:00:08.309 --> 00:00:09.673
+e modelagem.
+
+00:00:09.706 --> 00:00:12.611
+Cada estágio transforma o texto
+de alguma forma
+
+00:00:12.644 --> 00:00:15.787
+e produz o resultado
+necessário para o próximo estágio.
+
+00:00:15.820 --> 00:00:20.241
+O objetivo do processamento
+é pegar o texto bruto de input,
+
+00:00:20.274 --> 00:00:22.434
+limpá-lo, normalizá-lo
+
+00:00:22.467 --> 00:00:26.932
+e convertê-lo em uma forma adequada
+para a extração de recursos.
+
+00:00:26.965 --> 00:00:28.108
+Da mesma forma,
+
+00:00:28.141 --> 00:00:32.171
+o próximo estágio extrairá e
+produzirá representações de recursos
+
+00:00:32.204 --> 00:00:35.627
+que sejam apropriadas
+para o tipo de modelo usado
+
+00:00:35.660 --> 00:00:38.723
+e para a tarefa do PLN
+que tentaremos realizar.
+
+00:00:38.756 --> 00:00:40.770
+Para um pipeline desse tipo,
+
+00:00:40.803 --> 00:00:43.617
+o fluxo de trabalho
+pode não ser perfeitamente linear.
+
+00:00:43.650 --> 00:00:47.303
+Imagine implementar funções
+de processamento de texto,
+
+00:00:47.336 --> 00:00:50.025
+realizar a extração
+de recursos simples
+
+00:00:50.058 --> 00:00:53.048
+e projetar um modelo
+estatístico de linha de base.
+
+00:00:53.081 --> 00:00:55.904
+Talvez não fiquemos
+satisfeitos com os resultados,
+
+00:00:55.937 --> 00:00:58.905
+então devemos repensar
+os recursos necessários,
+
+00:00:58.938 --> 00:01:00.289
+e isso, por sua vez,
+
+00:01:00.322 --> 00:01:02.904
+pode mudar
+as rotinas de processamento.
+
+00:01:02.937 --> 00:01:05.712
+Lembre-se de que esta é
+uma visão simplificada
+
+00:01:05.745 --> 00:01:07.723
+do processamento
+de linguagem natural.
+
+00:01:07.756 --> 00:01:10.764
+O aplicativo pode exigir
+etapas adicionais.
+

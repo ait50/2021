@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.600
+Hi, and welcome to term two of AI for trading.
+
+00:00:03.600 --> 00:00:08.144
+We're so glad that you're here because we have so much exciting stuff to share with you.
+
+00:00:08.144 --> 00:00:11.669
+Let's take a moment and recap what you learned in term one.
+
+00:00:11.669 --> 00:00:13.814
+In the first term of this program,
+
+00:00:13.814 --> 00:00:17.535
+you focused on developing domain knowledge and quantitative finance.
+
+00:00:17.535 --> 00:00:20.579
+You learned about market mechanics and financial data.
+
+00:00:20.579 --> 00:00:23.219
+You learned about influential trading strategies,
+
+00:00:23.219 --> 00:00:25.140
+such as those based on momentum,
+
+00:00:25.140 --> 00:00:27.030
+meaner version, and breakouts.
+
+00:00:27.030 --> 00:00:30.825
+You learned how to conduct original research to generate all those strategies,
+
+00:00:30.824 --> 00:00:31.919
+and how to evaluate
+
+00:00:31.920 --> 00:00:34.260
+whether these strategies are promising candidates
+
+00:00:34.259 --> 00:00:36.629
+to be added into an optimized portfolio.
+
+00:00:36.630 --> 00:00:41.955
+You also applied risk factor models to control major sources of risk,
+
+00:00:41.954 --> 00:00:47.210
+thereby allowing your chosen alpha factors to drive the returns of the portfolio.
+
+00:00:47.210 --> 00:00:51.020
+Finally, you used portfolio optimization to combine
+
+00:00:51.020 --> 00:00:55.020
+alpha factors and risk factors into an optimal portfolio,
+
+00:00:55.020 --> 00:00:59.750
+the way an orchestra conductor combines various instruments into a musical masterpiece.
+
+00:00:59.750 --> 00:01:02.240
+This knowledge will serve you well as
+
+00:01:02.240 --> 00:01:06.129
+a foundation for your future exploration of quantitative investing.
+
+00:01:06.129 --> 00:01:11.619
+To apply AI in financial trading or really any type of modeling in any field,
+
+00:01:11.620 --> 00:01:14.405
+you need domain knowledge to be successful.
+
+00:01:14.405 --> 00:01:18.650
+This is particularly important in finance due to the nature of the data.
+
+00:01:18.650 --> 00:01:21.230
+The signal to noise ratio is very low.
+
+00:01:21.230 --> 00:01:23.650
+The depth, and the data, and time can be low.
+
+00:01:23.650 --> 00:01:27.170
+There's only one actual instantiation of events.
+
+00:01:27.170 --> 00:01:30.439
+Applying AI and machine learning models out of the box
+
+00:01:30.439 --> 00:01:33.469
+without understanding the underlying phenomenon and data,
+
+00:01:33.469 --> 00:01:35.959
+is likely to generate strategies that may work
+
+00:01:35.959 --> 00:01:38.899
+very well when tested on data from the past,
+
+00:01:38.900 --> 00:01:41.795
+but will not work well on unseen future data.
+
+00:01:41.795 --> 00:01:44.329
+For those familiar with this terminology,
+
+00:01:44.329 --> 00:01:46.719
+the strategies are likely to be overfit.
+
+00:01:46.719 --> 00:01:49.939
+With better knowledge of the underlying phenomenon,
+
+00:01:49.939 --> 00:01:54.230
+you are less likely to develop a strategy that is based on random noise,
+
+00:01:54.230 --> 00:01:57.140
+and more likely to develop a strategy that is based
+
+00:01:57.140 --> 00:02:00.790
+on a legitimate source of this pricing in the market
+

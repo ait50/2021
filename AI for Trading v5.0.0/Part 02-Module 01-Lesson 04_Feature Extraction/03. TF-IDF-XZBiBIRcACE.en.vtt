@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.149
+One limitation of the bag-of-words approach is
+
+00:00:03.149 --> 00:00:06.509
+that it treats every word as being equally important,
+
+00:00:06.509 --> 00:00:11.640
+whereas intuitively, we know that some words occur frequently within a corpus.
+
+00:00:11.640 --> 00:00:14.655
+For example, when looking at financial documents,
+
+00:00:14.654 --> 00:00:17.684
+cost or price may be a pretty common term.
+
+00:00:17.684 --> 00:00:23.146
+We can compensate for this by counting the number of documents in which each word occurs,
+
+00:00:23.146 --> 00:00:25.269
+this can be called document frequency,
+
+00:00:25.269 --> 00:00:30.714
+and then dividing the term frequencies by the document frequency of that term.
+
+00:00:30.714 --> 00:00:33.030
+This gives us a metric that is proportional to
+
+00:00:33.030 --> 00:00:35.804
+the frequency of occurrence of a term in a document,
+
+00:00:35.804 --> 00:00:40.024
+but inversely proportional to the number of documents it appears in.
+
+00:00:40.024 --> 00:00:43.754
+It highlights the words that are more unique to a document,
+
+00:00:43.755 --> 00:00:46.484
+and thus better for characterizing it.
+
+00:00:46.484 --> 00:00:48.719
+You may have heard of, or used,
+
+00:00:48.719 --> 00:00:51.185
+the TF-IDF transform before.
+
+00:00:51.185 --> 00:00:53.475
+It's simply the product of two words,
+
+00:00:53.475 --> 00:00:55.810
+very similar to what we've seen so far,
+
+00:00:55.810 --> 00:01:00.094
+a term frequency and an inverse document frequency.
+
+00:01:00.094 --> 00:01:06.638
+The most commonly used form of TF-IDF defines term frequency as the raw count of a term,
+
+00:01:06.638 --> 00:01:08.530
+t, in a document, d,
+
+00:01:08.530 --> 00:01:11.530
+divided by the total number of terms in d,
+
+00:01:11.530 --> 00:01:14.129
+and inverse document frequency as
+
+00:01:14.129 --> 00:01:18.220
+the logarithm of the total number of documents in the collection,
+
+00:01:18.221 --> 00:01:22.385
+d, divided by the number of documents where t is present.
+
+00:01:22.385 --> 00:01:25.410
+Several variations exist that try to normalize,
+
+00:01:25.409 --> 00:01:27.224
+or smooth the resulting values,
+
+00:01:27.224 --> 00:01:30.909
+or prevent edge cases such as divide-by-zero errors.
+
+00:01:30.909 --> 00:01:34.229
+Overall, TF-IDF is an innovative approach to assigning
+
+00:01:34.230 --> 00:01:38.000
+weights to words that signify their relevance in documents.
+

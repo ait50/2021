@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.230
+Natural language processing is one of the fastest growing fields in the world.
+
+00:00:04.230 --> 00:00:09.845
+NLP Is making its way into a number of products and services that we use every day.
+
+00:00:09.845 --> 00:00:15.830
+Let's begin with an overview of how to design an end-to-end NLP pipeline.
+
+00:00:15.830 --> 00:00:18.059
+Not that kind of pipeline;
+
+00:00:18.059 --> 00:00:20.820
+a natural language processing pipeline,
+
+00:00:20.820 --> 00:00:23.144
+where you start with raw text,
+
+00:00:23.144 --> 00:00:26.054
+in whatever form it is available, process it,
+
+00:00:26.054 --> 00:00:32.265
+extract relevant features, and build models to accomplish various NLP tasks.
+
+00:00:32.265 --> 00:00:33.865
+Now that I think about it,
+
+00:00:33.865 --> 00:00:35.940
+that is kind of like refining crude oil.
+
+00:00:35.939 --> 00:00:41.094
+Anyways, you'll learn how these different stages in the pipeline depend on each other.
+
+00:00:41.094 --> 00:00:43.604
+You'll also learn how to make design decisions,
+
+00:00:43.604 --> 00:00:45.674
+how to choose existing libraries,
+
+00:00:45.674 --> 00:00:47.489
+and tools to perform each step.
+

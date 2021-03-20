@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.299
+In this notebook, you will learn how to find letters
+
+00:00:03.299 --> 00:00:06.884
+and words in a string using regular expressions.
+
+00:00:06.884 --> 00:00:10.650
+Throughout this lessons, we will use the re module
+
+00:00:10.650 --> 00:00:15.285
+from Python's standard library to work with regular expressions.
+
+00:00:15.285 --> 00:00:19.440
+The re module not only contains functions that allow us to
+
+00:00:19.440 --> 00:00:23.355
+check if a given regular expression matches a particular string,
+
+00:00:23.355 --> 00:00:28.789
+but also contains functions that allow us to modify strings in various ways.
+
+00:00:28.789 --> 00:00:32.960
+Let's begin by learning how to use a regular expression to
+
+00:00:32.960 --> 00:00:37.509
+find all the locations of the letter a in this sentence,
+
+00:00:37.509 --> 00:00:40.460
+Alice and Walter are walking to the store.
+
+00:00:40.460 --> 00:00:42.230
+So in this example,
+
+00:00:42.229 --> 00:00:45.469
+our regular expression is just going to be the letter a.
+
+00:00:45.469 --> 00:00:51.289
+So we begin by creating a raw string that contains our regular expression,
+
+00:00:51.289 --> 00:00:53.765
+in this case just the letter a.
+
+00:00:53.765 --> 00:00:58.759
+We're going to pass that to the compile function of the re module.
+
+00:00:58.759 --> 00:01:03.394
+This function will convert this raw string into
+
+00:01:03.395 --> 00:01:08.990
+a regular expression object which we'll save in this regex variable.
+
+00:01:08.989 --> 00:01:12.049
+Once we have a regular expression object,
+
+00:01:12.049 --> 00:01:18.649
+we can search for the regular expression in our sample text by using the finditer method.
+
+00:01:18.650 --> 00:01:25.025
+Now, I should mention that the re module contains various matching methods.
+
+00:01:25.025 --> 00:01:29.359
+However, we'll only be using the finditer method throughout
+
+00:01:29.359 --> 00:01:35.030
+these lessons because it is very fast and allows us to get useful information as well,
+
+00:01:35.030 --> 00:01:37.099
+as we will see in a minute.
+
+00:01:37.099 --> 00:01:41.509
+Now, the finditer method returns an iterator.
+
+00:01:41.510 --> 00:01:46.705
+This means that we can loop through it to print other matches.
+
+00:01:46.704 --> 00:01:49.185
+This is what we have done here.
+
+00:01:49.185 --> 00:01:51.135
+So if we run this code,
+
+00:01:51.135 --> 00:01:55.060
+we can see each match found by the finditer method.
+
+00:01:55.060 --> 00:01:59.120
+We can see that each match has a span.
+
+00:01:59.120 --> 00:02:06.515
+The span just indicates the start and end indices of the corresponding matches.
+
+00:02:06.515 --> 00:02:10.219
+For example, if we look at the first match,
+
+00:02:10.219 --> 00:02:15.039
+we see that this span goes from indices six through seven.
+
+00:02:15.039 --> 00:02:21.574
+Therefore, it will print indices six through seven of the sample text.
+
+00:02:21.574 --> 00:02:26.209
+We can see that it corresponds to an a as it should be.
+
+00:02:26.210 --> 00:02:32.780
+Notice however, that even though the first letter in our sample text is an a,
+
+00:02:32.780 --> 00:02:37.009
+the finditer method didn't return a match for it.
+
+00:02:37.009 --> 00:02:41.489
+This is because regular expressions are case-sensitive.
+
+00:02:41.490 --> 00:02:47.045
+Therefore, in order to match this uppercase a at the beginning of our sentence,
+
+00:02:47.044 --> 00:02:51.514
+we need to use an uppercase a as a regular expression.
+
+00:02:51.514 --> 00:02:54.139
+So, if we run this code,
+
+00:02:54.139 --> 00:02:57.904
+notice that now the finditer method only returned
+
+00:02:57.905 --> 00:03:03.245
+one match because there is only one uppercase a in our sample text.
+
+00:03:03.245 --> 00:03:04.759
+In the same way,
+
+00:03:04.759 --> 00:03:08.405
+we can also search for whole words in our sentence.
+
+00:03:08.405 --> 00:03:14.090
+Here for example, we're searching for the word walking in our sample texts.
+
+00:03:14.090 --> 00:03:15.800
+When we run this code,
+
+00:03:15.800 --> 00:03:20.330
+we see that we only get one match corresponding to the word walking,
+
+00:03:20.330 --> 00:03:26.865
+and that the span of the match is between indices 21 and 28 of the sample text.
+
+00:03:26.865 --> 00:03:32.540
+Therefore, if we print the sample text between those span indices,
+
+00:03:32.539 --> 00:03:36.304
+we see that we indeed get the word walking.
+
+00:03:36.305 --> 00:03:38.705
+One thing to keep in mind,
+
+00:03:38.705 --> 00:03:42.260
+is that when searching for words or groups of letters,
+
+00:03:42.259 --> 00:03:44.495
+the order of the letters matters.
+
+00:03:44.495 --> 00:03:48.860
+For example, if we were to use this regular expression,
+
+00:03:48.860 --> 00:03:52.190
+we wouldn't find any matches, even though,
+
+00:03:52.189 --> 00:03:56.180
+the same group of letters are contained in the word walking.
+
+00:03:56.180 --> 00:03:58.415
+At this point, you might be thinking,
+
+00:03:58.414 --> 00:04:02.090
+that regular expressions work just like a literal search,
+
+00:04:02.090 --> 00:04:05.680
+so that there's nothing special about them. You're right.
+
+00:04:05.680 --> 00:04:07.995
+However, in the next section,
+
+00:04:07.995 --> 00:04:10.830
+we will begin learning about meta-characters.
+
+00:04:10.830 --> 00:04:12.625
+Later, in this lesson,
+
+00:04:12.625 --> 00:04:17.329
+you will learn how to combine them to create more complicated regular expressions,
+
+00:04:17.329 --> 00:04:21.209
+that allow us to find complex patterns of text.
+

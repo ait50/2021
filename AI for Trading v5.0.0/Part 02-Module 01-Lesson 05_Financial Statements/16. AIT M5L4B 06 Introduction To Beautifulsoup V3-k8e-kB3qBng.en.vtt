@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.695
+In the previous lessons,
+
+00:00:01.695 --> 00:00:04.980
+you learned how to create regular expressions and
+
+00:00:04.980 --> 00:00:08.910
+use them to find a specific patterns of text in documents.
+
+00:00:08.910 --> 00:00:11.025
+In some cases however,
+
+00:00:11.025 --> 00:00:14.190
+the text you want to analyze maybe already formatted as
+
+00:00:14.189 --> 00:00:18.059
+a website rather than in a plain text document.
+
+00:00:18.059 --> 00:00:22.769
+In principle, you could say the HTML contents of the website into
+
+00:00:22.769 --> 00:00:27.960
+a document first and then use regexs to parse out the HTML data.
+
+00:00:27.960 --> 00:00:30.990
+But in general, this is a very difficult thing to
+
+00:00:30.989 --> 00:00:34.244
+do especially if you're starting from scratch.
+
+00:00:34.244 --> 00:00:36.629
+Luckily, Python already has
+
+00:00:36.630 --> 00:00:40.530
+a library that allows you to pull data directly from websites.
+
+00:00:40.530 --> 00:00:45.140
+This library is called Beautiful Soup and it can be used to extract
+
+00:00:45.140 --> 00:00:50.179
+the information you need from a particular section or sections of a website.
+
+00:00:50.179 --> 00:00:53.269
+Beautiful Soup is particularly useful when
+
+00:00:53.270 --> 00:00:57.890
+the original document is formatted at HTML or XML.
+
+00:00:57.890 --> 00:01:02.450
+For example, suppose we had a website that looks like this.
+
+00:01:02.450 --> 00:01:06.760
+Let's assume the information we wanted was in this section.
+
+00:01:06.760 --> 00:01:09.849
+With the aid of the requests library,
+
+00:01:09.849 --> 00:01:14.090
+we can connect to this website and get the HTML data.
+
+00:01:14.090 --> 00:01:16.579
+Once we have the HTML data,
+
+00:01:16.579 --> 00:01:22.984
+we can use Beautiful Soup to extract only the text in this section and save it to a file.
+
+00:01:22.984 --> 00:01:27.635
+While Beautiful Soup is very powerful and can be used to extract data
+
+00:01:27.635 --> 00:01:32.290
+directly from 10-Ks that are in HTML or XML format,
+
+00:01:32.290 --> 00:01:36.020
+there are a couple of problems you might face in doing so.
+
+00:01:36.019 --> 00:01:39.229
+The first problem is that Beautiful Soup works
+
+00:01:39.230 --> 00:01:43.115
+best when you have perfectly formatted HTML.
+
+00:01:43.114 --> 00:01:46.729
+If your HTML document has missing information or
+
+00:01:46.730 --> 00:01:51.885
+mistakes then this can result in Beautiful Soup returning the wrong text.
+
+00:01:51.885 --> 00:01:55.500
+The second problem you might face is that you might not find
+
+00:01:55.500 --> 00:01:59.375
+the 10-Ks case in HTML or XML format.
+
+00:01:59.375 --> 00:02:05.995
+This is because a lot of older 10-Ks can only be found in text format, therefore,
+
+00:02:05.995 --> 00:02:09.455
+you won't be able to use Beautiful Soup in these older 10-Ks
+
+00:02:09.455 --> 00:02:13.675
+because they're not formatted in HTML or XML.
+
+00:02:13.675 --> 00:02:17.990
+In the next lesson, we will learn how to use Beautiful Soup to extract
+
+00:02:17.990 --> 00:02:22.320
+data from different sections of a website. Let's get started.
+

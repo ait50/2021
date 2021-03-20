@@ -1,0 +1,448 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.940
+We'd like to introduce you to Justin.
+
+00:00:01.940 --> 00:00:06.419
+A quant who has worked at places like Blackrock scientific active equity team.
+
+00:00:06.419 --> 00:00:08.535
+An elite team of data driven quants.
+
+00:00:08.535 --> 00:00:12.000
+Justin helped us develop the program and drew upon his background in
+
+00:00:12.000 --> 00:00:15.599
+natural language processing to design the first project in term two.
+
+00:00:15.599 --> 00:00:18.239
+So, Justin, how did you get into quantitating?
+
+00:00:18.239 --> 00:00:20.399
+I started off working for a consulting firm.
+
+00:00:20.399 --> 00:00:22.259
+I used some of the risk model tools like
+
+00:00:22.260 --> 00:00:25.875
+MSCI Barra to analyze client equity portfolios for style risks.
+
+00:00:25.875 --> 00:00:28.035
+From there, I went to Barclay's Global Investors,
+
+00:00:28.035 --> 00:00:31.214
+a predecessor of Blackrock in their scientific active equity group.
+
+00:00:31.214 --> 00:00:35.685
+Could you describe the process that quants go through in generating Alpha?
+
+00:00:35.685 --> 00:00:37.155
+Do you start with the data?
+
+00:00:37.155 --> 00:00:38.640
+Do you start with the model?
+
+00:00:38.640 --> 00:00:40.125
+Do you start with an idea?
+
+00:00:40.125 --> 00:00:41.954
+Quants follow the scientific method.
+
+00:00:41.954 --> 00:00:44.739
+So, first we need to have a thorough understanding of finance,
+
+00:00:44.740 --> 00:00:48.240
+of how companies work and what can affect the company's performance.
+
+00:00:48.240 --> 00:00:50.359
+From there, we form a hypothesis.
+
+00:00:50.359 --> 00:00:53.240
+Then we use tools and data to test that hypothesis.
+
+00:00:53.240 --> 00:00:57.109
+It's important to start with the idea first instead of just jumping into the data,
+
+00:00:57.109 --> 00:00:58.729
+otherwise we'd be data mining.
+
+00:00:58.729 --> 00:01:03.409
+Patterns in data may form due to random chance or real underlying phenomenon,
+
+00:01:03.409 --> 00:01:07.295
+but strategies based on the former will not work well on unseen future data.
+
+00:01:07.295 --> 00:01:09.379
+We also read lots of economic,
+
+00:01:09.379 --> 00:01:12.024
+accounting literature, and attend financial seminars.
+
+00:01:12.025 --> 00:01:14.930
+So, you built one of the projects in term two.
+
+00:01:14.930 --> 00:01:16.660
+What are students going to do in the project?
+
+00:01:16.659 --> 00:01:18.899
+What were the main things you wanted them to learn?
+
+00:01:18.900 --> 00:01:21.109
+My main goal was for students to practice
+
+00:01:21.109 --> 00:01:24.049
+several fundamental natural language processing techniques and to
+
+00:01:24.049 --> 00:01:27.545
+see an example of a practical way that can be applied to make stock picks.
+
+00:01:27.545 --> 00:01:29.810
+The project is based on the stock selection model
+
+00:01:29.810 --> 00:01:32.030
+from an academic paper called lazy prices.
+
+00:01:32.030 --> 00:01:33.844
+Elements which I've used in practice.
+
+00:01:33.844 --> 00:01:36.260
+Students use NLP techniques to scrape
+
+00:01:36.260 --> 00:01:39.410
+text information from companies annual financial styling
+
+00:01:39.409 --> 00:01:42.170
+and analyze them to produce a signal that indicate
+
+00:01:42.170 --> 00:01:45.265
+whether the company's stock price will appreciate or depreciate.
+
+00:01:45.265 --> 00:01:46.905
+That sounds really cool.
+
+00:01:46.905 --> 00:01:48.650
+It sounds like one example of a way
+
+00:01:48.650 --> 00:01:51.455
+new techniques are being used in quantitative finance.
+
+00:01:51.454 --> 00:01:56.230
+How else are AI and machine learning being applied in quantitative finance?
+
+00:01:56.230 --> 00:01:58.370
+AI and machine learning models are tools that
+
+00:01:58.370 --> 00:02:00.910
+quants can use to enhance their existing research method.
+
+00:02:00.909 --> 00:02:04.204
+There's a lot of alternative data such as credit card transactions,
+
+00:02:04.204 --> 00:02:07.609
+satellite images, and environmental social governance data.
+
+00:02:07.609 --> 00:02:09.590
+I'd say a major source to opportunity and
+
+00:02:09.590 --> 00:02:12.180
+active application in finance is with text data.
+
+00:02:12.180 --> 00:02:14.365
+Whether it's news, social media,
+
+00:02:14.365 --> 00:02:16.310
+financial reports and earnings calls.
+
+00:02:16.310 --> 00:02:21.064
+The reason is that ideal data set is one that can have broad coverage of many stocks.
+
+00:02:21.064 --> 00:02:25.000
+Price volume, and fundamental data fit this criteria and so does texts.
+
+00:02:25.000 --> 00:02:26.900
+So, natural language processing is one of
+
+00:02:26.900 --> 00:02:30.140
+the main applications in research and strategy phase of investment,
+
+00:02:30.139 --> 00:02:32.509
+where quants process data to generate
+
+00:02:32.509 --> 00:02:35.449
+Alpha signals that can be fed into portfolio optimization.
+
+00:02:35.449 --> 00:02:39.424
+For example, quants have known and tried various ways to measure attentional bias.
+
+00:02:39.425 --> 00:02:42.160
+That is when certain stocks are mentioned more frequently in the news.
+
+00:02:42.159 --> 00:02:45.829
+This tends to increase trading activity and volatility for those stocks.
+
+00:02:45.830 --> 00:02:47.840
+One way to measure this is by calculating
+
+00:02:47.840 --> 00:02:50.284
+the skewness of volatility on price volume data.
+
+00:02:50.284 --> 00:02:52.549
+Another way is to directly measure the level of
+
+00:02:52.550 --> 00:02:55.265
+news reporting on each stock using natural language processing.
+
+00:02:55.264 --> 00:02:59.089
+There's also research into processing satellite images to generate signals.
+
+00:02:59.090 --> 00:03:01.879
+I would point out that for Alpha signals to be most useful,
+
+00:03:01.879 --> 00:03:04.879
+they would ideally generate signals for a broad set of companies.
+
+00:03:04.879 --> 00:03:07.250
+This is still a challenge when it comes to satellite data.
+
+00:03:07.250 --> 00:03:09.409
+For example, there's been work done to track
+
+00:03:09.409 --> 00:03:12.590
+parking lots and estimate the performance of retail companies.
+
+00:03:12.590 --> 00:03:17.210
+But an ideal Alpha signal is one that would apply broadly across sectors and industries.
+
+00:03:17.210 --> 00:03:19.909
+Another part of the quant workflow where AI is being
+
+00:03:19.909 --> 00:03:22.520
+used is to enhance the alpha combination stage.
+
+00:03:22.520 --> 00:03:24.740
+Traditionally, quants domain knowledge and
+
+00:03:24.740 --> 00:03:27.335
+research to propose combinations between signals.
+
+00:03:27.335 --> 00:03:32.270
+You may hear of these as conditional factors and we often refer to these as interactions.
+
+00:03:32.270 --> 00:03:36.439
+Quants can also train a model to find these complex interactions among factors.
+
+00:03:36.439 --> 00:03:40.055
+There's also been research into applying reinforcement learning to finance.
+
+00:03:40.055 --> 00:03:41.870
+I should point out that at the moment,
+
+00:03:41.870 --> 00:03:43.340
+reinforcement learning is showing
+
+00:03:43.340 --> 00:03:46.715
+more promise in trade execution not an Alpha generation.
+
+00:03:46.715 --> 00:03:49.219
+It sounds like there's a lot of opportunity to
+
+00:03:49.219 --> 00:03:52.099
+utilize new techniques and analyze new data sources.
+
+00:03:52.099 --> 00:03:55.984
+What are some of the challenges of applying AI to quantitative investment?
+
+00:03:55.985 --> 00:03:57.785
+Well, as I mentioned before,
+
+00:03:57.784 --> 00:03:59.599
+AI and machine learning are just some of
+
+00:03:59.599 --> 00:04:02.930
+the many tools available to understand and predict company performance.
+
+00:04:02.930 --> 00:04:04.865
+In some ways, when you have a hammer,
+
+00:04:04.865 --> 00:04:06.439
+everything looks like a nail.
+
+00:04:06.439 --> 00:04:11.150
+Well-established economic methods are still the best tools for certain tasks.
+
+00:04:11.150 --> 00:04:13.159
+There are definitely some important challenges to
+
+00:04:13.159 --> 00:04:15.395
+consider when applying AI techniques and trading.
+
+00:04:15.395 --> 00:04:18.710
+In finance, the signal-to-noise ratio is incredibly low.
+
+00:04:18.709 --> 00:04:21.439
+Financial data have relatively little depth and time.
+
+00:04:21.439 --> 00:04:24.589
+Some data, especially newer alternative data,
+
+00:04:24.589 --> 00:04:26.419
+just have not been collected for very long.
+
+00:04:26.420 --> 00:04:28.939
+So only a few years worth of data exist.
+
+00:04:28.939 --> 00:04:30.680
+There are challenges unique to time
+
+00:04:30.680 --> 00:04:34.220
+series analysis and that there's only ever one instantiation of time.
+
+00:04:34.220 --> 00:04:36.635
+There's directionality of time.
+
+00:04:36.634 --> 00:04:39.004
+Financial time series are non-stationary.
+
+00:04:39.004 --> 00:04:42.324
+It's very easy to produce models that are over fit to the training data.
+
+00:04:42.324 --> 00:04:45.574
+So, it's critically important to take steps to avoid over-fitting.
+
+00:04:45.574 --> 00:04:48.245
+Since there's such a huge risk of over-fitting,
+
+00:04:48.245 --> 00:04:52.720
+a key challenge is to develop models that are as simple as possible but not simpler.
+
+00:04:52.720 --> 00:04:55.340
+Finally, it's typically very important to be able to
+
+00:04:55.339 --> 00:04:58.250
+explain why a strategy works to managers investors.
+
+00:04:58.250 --> 00:05:01.774
+Investors may not be comfortable investing in a black box strategy.
+
+00:05:01.774 --> 00:05:05.060
+For this reason, being able to interpret models is very
+
+00:05:05.060 --> 00:05:08.735
+important and it rains a limitation of many AI tools.
+
+00:05:08.735 --> 00:05:12.080
+With all the advances seen in AI and machine learning,
+
+00:05:12.079 --> 00:05:13.909
+where do humans fit into all of this?
+
+00:05:13.910 --> 00:05:16.235
+Is there's still a need for human intuition?
+
+00:05:16.235 --> 00:05:18.259
+Yes. We still need human intuition and
+
+00:05:18.259 --> 00:05:21.094
+domain expertise to do a sanity check on our models.
+
+00:05:21.095 --> 00:05:22.970
+For instance, your team may have
+
+00:05:22.970 --> 00:05:25.985
+several models such as outputting signals for every stock.
+
+00:05:25.985 --> 00:05:29.855
+It's good practice for quants to quality check a handful of the outputs.
+
+00:05:29.855 --> 00:05:31.939
+For instance, we typically look at
+
+00:05:31.939 --> 00:05:34.639
+the top 15 and bottom 15 stocks that are ranked by
+
+00:05:34.639 --> 00:05:37.759
+the model and make sure that the model's output makes sense.
+
+00:05:37.759 --> 00:05:40.789
+Some checks may include watching out for stocks where there may be
+
+00:05:40.790 --> 00:05:44.350
+a bio target or that may be exposed to future litigation.
+
+00:05:44.350 --> 00:05:46.895
+Remember that we use AI and models
+
+00:05:46.894 --> 00:05:49.699
+when it's possible to automate some of the data processing.
+
+00:05:49.699 --> 00:05:51.589
+But there's always going to be information that
+
+00:05:51.589 --> 00:05:53.959
+can't be distilled and fed directly into the model.
+
+00:05:53.959 --> 00:05:57.109
+That's why it's important for quants to have a good understanding of how
+
+00:05:57.110 --> 00:06:01.699
+financial markets work and still follow financial news very closely.
+
+00:06:01.699 --> 00:06:05.014
+Also, a model is only as good as the data is fed into it.
+
+00:06:05.014 --> 00:06:08.014
+A great deal of work goes into the quality assurance of the data.
+
+00:06:08.014 --> 00:06:10.159
+In fact, there are entire teams that are
+
+00:06:10.160 --> 00:06:13.189
+dedicated to quality checking the data on a daily basis,
+
+00:06:13.189 --> 00:06:15.694
+because this is so critical to a firm's performance.
+
+00:06:15.694 --> 00:06:19.430
+In order for a quant to effectively apply AI to generate Alpha,
+
+00:06:19.430 --> 00:06:23.764
+it's also important for them to have a sound understanding of the data of the model.
+
+00:06:23.764 --> 00:06:25.594
+At least for the foreseeable future,
+
+00:06:25.595 --> 00:06:29.960
+human intuition is critical to the success of an AI based investment strategy.
+
+00:06:29.959 --> 00:06:32.344
+Well, this has really been great.
+
+00:06:32.345 --> 00:06:34.415
+Thank you so much for your time.
+
+00:06:34.415 --> 00:06:35.825
+One last question.
+
+00:06:35.824 --> 00:06:39.319
+What advice would you give to someone just entering the field?
+
+00:06:39.319 --> 00:06:41.300
+I would say, try to develop
+
+00:06:41.300 --> 00:06:45.125
+a broad understanding of as many different models and tools available as you can.
+
+00:06:45.125 --> 00:06:48.620
+Deepen your understanding of the application of the models by developing
+
+00:06:48.620 --> 00:06:52.865
+personal projects and be able to communicate the steps you took when developing.
+
+00:06:52.865 --> 00:06:56.810
+A key part of our role as quants is not only in building the strategies,
+
+00:06:56.810 --> 00:07:00.750
+but in understanding them and communicating how they work.
+

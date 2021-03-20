@@ -1,0 +1,256 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.184 --> 00:00:02.767
+Para simplificar ainda mais
+os dados de texto,
+
+00:00:02.800 --> 00:00:05.703
+vejamos maneiras de normalizar
+diferentes variações
+
+00:00:05.736 --> 00:00:08.055
+e modificações de palavras.
+
+00:00:08.088 --> 00:00:12.951
+A stemização é o processo de reduzir
+a palavra à sua raiz.
+
+00:00:12.984 --> 00:00:16.679
+Por exemplo, "ramificação",
+"ramificado" e "ramos"
+
+00:00:16.712 --> 00:00:19.125
+podem ser reduzidos a "ramo",
+
+00:00:19.158 --> 00:00:22.885
+afinal, elas transmitem
+a ideia de algo separado
+
+00:00:22.918 --> 00:00:25.644
+em vários caminhos
+ou ramificações.
+
+00:00:25.677 --> 00:00:28.317
+Isso ajuda a reduzir
+a complexidade
+
+00:00:28.350 --> 00:00:32.390
+e retém a essência do significado
+conduzido pelas palavras.
+
+00:00:32.423 --> 00:00:35.879
+A stemização deve ser
+uma operação rápida e bruta,
+
+00:00:35.912 --> 00:00:40.448
+realizada ao aplicar uma regra de
+pesquisa e substituição de estilo.
+
+00:00:40.481 --> 00:00:45.799
+Por exemplo, os sufixos "ing"
+e "ed" podem ser removidos
+
+00:00:45.832 --> 00:00:48.917
+e o "ies" pode ser substituído
+por "y" etc.
+
+00:00:48.950 --> 00:00:52.924
+Isso pode resultar
+em palavras-raízes incompletas,
+
+00:00:52.957 --> 00:00:54.252
+mas tudo bem,
+
+00:00:54.285 --> 00:00:56.294
+contanto que todas
+as formas da palavra
+
+00:00:56.327 --> 00:00:58.381
+sejam reduzidas
+ao mesmo radical,
+
+00:00:58.414 --> 00:01:01.845
+captando a ideia
+subjacente comum.
+
+00:01:01.878 --> 00:01:05.522
+O NLTK tem alguns stemizadores
+para escolhermos,
+
+00:01:05.555 --> 00:01:08.307
+incluindo o PorterStemmer,
+que usamos aqui,
+
+00:01:08.340 --> 00:01:09.705
+o SnowballStemmer
+
+00:01:09.738 --> 00:01:12.752
+e outros stemizadores
+específicos do idioma.
+
+00:01:12.785 --> 00:01:16.127
+Basta passarmos
+uma palavra por vez.
+
+00:01:16.160 --> 00:01:20.255
+Veja que já removemos
+as palavras de parada.
+
+00:01:20.288 --> 00:01:23.519
+Algumas das conversões
+são realmente muito boas,
+
+00:01:23.552 --> 00:01:26.344
+como "started",
+que foi reduzido a "start".
+
+00:01:26.377 --> 00:01:29.864
+Outras, como "people",
+que perdeu o "e" do final,
+
+00:01:29.897 --> 00:01:33.443
+são resultado da aplicação
+de regras muito simplistas.
+
+00:01:33.476 --> 00:01:36.968
+A lematização é outra técnica
+usada para reduzir palavras
+
+00:01:37.001 --> 00:01:39.824
+para uma forma normalizada,
+mas, neste caso,
+
+00:01:39.857 --> 00:01:42.611
+a transformação
+usa um dicionário
+
+00:01:42.644 --> 00:01:46.350
+para mapear diferentes variantes
+de uma palavra até a raiz.
+
+00:01:46.383 --> 00:01:50.087
+Com essa abordagem, podemos
+reduzir inflexões não-triviais
+
+00:01:50.120 --> 00:01:54.840
+como "is, was, were"
+para a raiz "be".
+
+00:01:54.873 --> 00:01:57.431
+O lematizador padrão no NLTK
+
+00:01:57.464 --> 00:02:01.814
+usa o banco de dados WordNet
+para reduzir palavras para a raiz.
+
+00:02:01.847 --> 00:02:04.824
+Vamos tentar.
+Assim como na stemização,
+
+00:02:04.857 --> 00:02:07.879
+inicializamos uma instância
+do WordNetLemmatizer,
+
+00:02:07.912 --> 00:02:11.672
+passando palavras individuais
+ao seu método lemmatize.
+
+00:02:12.993 --> 00:02:14.640
+O que aconteceu aqui?
+
+00:02:14.673 --> 00:02:19.399
+Parece que só a palavra
+"ones" foi reduzida para "one",
+
+00:02:19.432 --> 00:02:21.550
+todas as outras
+estão inalteradas.
+
+00:02:21.583 --> 00:02:23.607
+Se lermos as palavras
+com atenção,
+
+00:02:23.640 --> 00:02:27.648
+veremos que "ones" é o único
+substantivo plural aqui.
+
+00:02:27.681 --> 00:02:31.438
+Na verdade, é exatamente
+por isso que foi alterado.
+
+00:02:31.471 --> 00:02:34.548
+Um lematizador precisa saber
+ou supor
+
+00:02:34.581 --> 00:02:38.644
+a parte do discurso de cada palavra
+que tenta transformar.
+
+00:02:38.677 --> 00:02:42.272
+Neste caso, o WordNetLemmatizer
+usa substantivos como padrão,
+
+00:02:42.305 --> 00:02:46.547
+mas podemos sobrescrever isso
+especificando o parâmetro pos.
+
+00:02:46.580 --> 00:02:49.222
+Vamos passar "V", de "verbo".
+
+00:02:49.855 --> 00:02:53.437
+Desta vez, as duas formas verbais
+"boring" e "started"
+
+00:02:53.470 --> 00:02:54.821
+foram convertidas.
+
+00:02:54.854 --> 00:02:57.852
+Ótimo.
+Note que existem outros verbos,
+
+00:02:57.885 --> 00:03:00.172
+mas já estão na forma de raiz.
+
+00:03:00.205 --> 00:03:03.285
+Observe como passamos
+o output da etapa anterior
+
+00:03:03.318 --> 00:03:05.500
+de lematização do substantivo.
+
+00:03:05.533 --> 00:03:09.021
+Essa maneira de encadear
+procedimentos é muito comum.
+
+00:03:09.054 --> 00:03:10.493
+Vamos recapitular.
+
+00:03:10.526 --> 00:03:12.955
+Como vimos
+nos exemplos anteriores,
+
+00:03:12.988 --> 00:03:17.993
+a stemização, às vezes,
+resulta em palavras incompletas.
+
+00:03:18.026 --> 00:03:22.338
+A lematização é semelhante
+à stemização, com uma diferença:
+
+00:03:22.371 --> 00:03:25.778
+a forma final também é
+uma palavra significativa.
+
+00:03:25.811 --> 00:03:30.659
+Dito isto, a stemização não precisa
+de um dicionário como a lematização.
+
+00:03:30.692 --> 00:03:32.930
+Dependendo das restrições,
+
+00:03:32.963 --> 00:03:36.799
+a stemização talvez seja
+a opção que usa menos a memória.
+

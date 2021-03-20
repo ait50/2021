@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.766
+In order to further simplify text data,
+
+00:00:02.766 --> 00:00:07.980
+let's look at some ways to normalize different variations and modifications of words.
+
+00:00:07.980 --> 00:00:12.810
+Stemming is the process of reducing a word to its stem or root form.
+
+00:00:12.810 --> 00:00:15.000
+For instance, branching, branched,
+
+00:00:15.000 --> 00:00:19.280
+branches et cetera, can all be reduced to branch.
+
+00:00:19.280 --> 00:00:22.200
+After all, they conveyed the idea of something
+
+00:00:22.199 --> 00:00:25.695
+separating into multiple paths or branches.
+
+00:00:25.695 --> 00:00:29.160
+Again, this helps reduce complexity while retaining
+
+00:00:29.160 --> 00:00:32.743
+the essence of meaning that is carried by words.
+
+00:00:32.743 --> 00:00:36.330
+Stemming is meant to be a fast and crude operation carried
+
+00:00:36.329 --> 00:00:40.524
+out by applying very simple search and replace style rules.
+
+00:00:40.524 --> 00:00:45.810
+For example, the suffixes 'ing' and 'ed' can be dropped off,
+
+00:00:45.810 --> 00:00:49.135
+'ies' can be replaced by 'y' et cetera.
+
+00:00:49.134 --> 00:00:52.927
+This may result in stem words that are not complete words,
+
+00:00:52.927 --> 00:00:58.274
+but that's okay, as long as all forms of that word are reduced to the same stem.
+
+00:00:58.274 --> 00:01:01.545
+Thus, capturing the common underlying idea.
+
+00:01:01.545 --> 00:01:05.430
+NLTK has a few different stemmers for you to choose from,
+
+00:01:05.430 --> 00:01:08.595
+including PorterStemmer that we use here,
+
+00:01:08.594 --> 00:01:12.632
+SnowballStemmer, and other language-specific stemmers.
+
+00:01:12.632 --> 00:01:16.284
+You simply need to pass in one word at a time.
+
+00:01:16.284 --> 00:01:19.789
+Note that here, we have already removed stop words.
+
+00:01:19.790 --> 00:01:23.558
+Some of the conversions are actually pretty good,
+
+00:01:23.558 --> 00:01:26.295
+like started, reduced to start.
+
+00:01:26.295 --> 00:01:29.670
+Others, like people, losing the 'e' at the end are
+
+00:01:29.670 --> 00:01:33.159
+a result of applying very simplistic rules.
+
+00:01:33.159 --> 00:01:38.686
+Lemmatization is another technique used to reduce words to a normalized form,
+
+00:01:38.686 --> 00:01:39.750
+but in this case,
+
+00:01:39.750 --> 00:01:42.644
+the transformation actually uses a dictionary
+
+00:01:42.644 --> 00:01:46.454
+to map different variants of a word back to its root.
+
+00:01:46.454 --> 00:01:51.030
+With this approach, we are able to reduce non-trivial inflections such as is,
+
+00:01:51.030 --> 00:01:54.439
+was, were, back to the root 'be'.
+
+00:01:54.439 --> 00:01:57.849
+The default lemmatizer in NLTK uses
+
+00:01:57.849 --> 00:02:03.409
+the Wordnet database to reduce words to the root form. Let's try it out.
+
+00:02:03.409 --> 00:02:04.750
+Just like in stemming,
+
+00:02:04.750 --> 00:02:07.831
+you initialize an instance of WordNetLemmatizer
+
+00:02:07.831 --> 00:02:12.240
+and pass in individual words to its lemmatize method.
+
+00:02:12.240 --> 00:02:14.830
+What happened here?
+
+00:02:14.830 --> 00:02:19.300
+It seems that only the word ones got reduced to one,
+
+00:02:19.300 --> 00:02:21.640
+all the others are unchanged.
+
+00:02:21.639 --> 00:02:23.679
+If you read the words carefully,
+
+00:02:23.680 --> 00:02:27.775
+you'll see that ones is the only plural noun here.
+
+00:02:27.775 --> 00:02:31.110
+In fact, that's exactly why it got transformed.
+
+00:02:31.110 --> 00:02:34.565
+A lemmatizer needs to know or make an assumption
+
+00:02:34.564 --> 00:02:38.495
+about the part of speech for each word it's trying to transform.
+
+00:02:38.495 --> 00:02:42.370
+In this case, WordNetLemmatizer defaults to nouns,
+
+00:02:42.370 --> 00:02:46.569
+but we can override that by specifying the PoS parameter.
+
+00:02:46.569 --> 00:02:49.954
+Let's pass in 'v' for verbs.
+
+00:02:49.955 --> 00:02:54.580
+This time, the two verb forms 'boring' and 'started' got converted.
+
+00:02:54.580 --> 00:02:57.825
+Great. Note that there are other verbs,
+
+00:02:57.824 --> 00:03:00.299
+but they are already in the root form.
+
+00:03:00.300 --> 00:03:05.265
+Also, note how we passed in the output from the previous noun lemmatization step.
+
+00:03:05.264 --> 00:03:10.439
+This way of chaining procedures is very common. Let's recap.
+
+00:03:10.439 --> 00:03:12.944
+As we saw in the previous examples,
+
+00:03:12.944 --> 00:03:18.334
+stemming sometimes results in stems that are not complete words in English.
+
+00:03:18.335 --> 00:03:22.502
+Lemmatization is similar to stemming with one difference,
+
+00:03:22.502 --> 00:03:25.645
+the final form is also a meaningful word.
+
+00:03:25.645 --> 00:03:30.570
+That said, stemming does not need a dictionary like lemmatization does.
+
+00:03:30.569 --> 00:03:32.924
+So depending on the constraints you have,
+
+00:03:32.925 --> 00:03:37.000
+stemming maybe a less memory intensive option for you to consider.
+

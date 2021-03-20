@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.980
+The final stage in this process is what I like to call modeling.
+
+00:00:04.980 --> 00:00:06.850
+This includes designing a model,
+
+00:00:06.849 --> 00:00:10.035
+usually a statistical or a machine learning model,
+
+00:00:10.035 --> 00:00:15.240
+fitting its parameters to training data using an optimization procedure,
+
+00:00:15.240 --> 00:00:20.009
+and then using it to make predictions about unseen data.
+
+00:00:20.010 --> 00:00:23.220
+The nice thing about working with numerical features is that
+
+00:00:23.219 --> 00:00:26.984
+it allows you to utilize pretty much any machine learning model.
+
+00:00:26.984 --> 00:00:30.089
+This includes support vector machines, decision trees,
+
+00:00:30.089 --> 00:00:34.229
+neural networks, or any custom model of your choice.
+
+00:00:34.229 --> 00:00:38.069
+You could even combine multiple models to get better performance.
+
+00:00:38.070 --> 00:00:41.234
+How you utilize the model is up to you.
+
+00:00:41.234 --> 00:00:43.950
+You can deploy it as a web-based application,
+
+00:00:43.950 --> 00:00:46.875
+package it up into a handy mobile app,
+
+00:00:46.875 --> 00:00:49.335
+integrate it with other products,
+
+00:00:49.335 --> 00:00:51.274
+services, and so on.
+
+00:00:51.274 --> 00:00:53.219
+The possibilities are endless.
+

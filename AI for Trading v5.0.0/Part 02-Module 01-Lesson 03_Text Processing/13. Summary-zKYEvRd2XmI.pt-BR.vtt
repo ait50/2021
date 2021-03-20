@@ -1,0 +1,65 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.221 --> 00:00:03.720
+Cobrimos uma série de etapas
+de processamento de texto.
+
+00:00:03.753 --> 00:00:07.556
+Vamos resumir um típico
+fluxo de trabalho.
+
+00:00:07.589 --> 00:00:10.094
+Começando com uma frase
+de texto sem formatação,
+
+00:00:10.127 --> 00:00:13.239
+primeiro a normalizamos,
+convertendo para minúsculas
+
+00:00:13.272 --> 00:00:15.124
+e removendo as pontuações,
+
+00:00:15.157 --> 00:00:19.421
+e então dividimos em palavras
+usando um tokenizer.
+
+00:00:19.454 --> 00:00:21.859
+Em seguida, removemos
+as palavras de parada
+
+00:00:21.892 --> 00:00:24.989
+para reduzir o vocabulário
+com que trabalharemos.
+
+00:00:25.022 --> 00:00:26.523
+Dependendo da aplicação,
+
+00:00:26.556 --> 00:00:29.358
+podemos optar por aplicar
+uma combinação de stemização
+
+00:00:29.391 --> 00:00:34.011
+e lematização para reduzir
+as palavras à sua forma raiz.
+
+00:00:34.044 --> 00:00:35.755
+É comum aplicar ambas,
+
+00:00:35.788 --> 00:00:38.507
+a lematização primeiro
+e depois a stemização.
+
+00:00:38.540 --> 00:00:41.572
+Esse procedimento converte
+uma frase de linguagem natural
+
+00:00:41.605 --> 00:00:44.197
+em uma sequência
+de tokens normalizados
+
+00:00:44.230 --> 00:00:46.633
+que podemos usar
+na análise posterior.
+

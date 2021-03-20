@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.084
+Hello and welcome.
+
+00:00:02.084 --> 00:00:03.690
+The following lessons,
+
+00:00:03.690 --> 00:00:08.175
+we will learn how to create basic regular expressions in Python.
+
+00:00:08.175 --> 00:00:10.740
+As mentioned in the previous lesson,
+
+00:00:10.740 --> 00:00:14.339
+regular expressions or regexes as for short,
+
+00:00:14.339 --> 00:00:18.120
+allows us search for patterns of text in documents.
+
+00:00:18.120 --> 00:00:21.914
+But before we dive in and start creating our regular expressions,
+
+00:00:21.914 --> 00:00:24.644
+let's take a quick look at raw strings
+
+00:00:24.644 --> 00:00:28.439
+since we will be using them to create our regular expressions.
+
+00:00:28.440 --> 00:00:31.600
+First, let's remember that in Python,
+
+00:00:31.600 --> 00:00:36.829
+strings can be specified using either double quotes or single quotes.
+
+00:00:36.829 --> 00:00:41.104
+Special characters within these strings such as new lines
+
+00:00:41.104 --> 00:00:45.769
+or tabs are specified by using the backslash character.
+
+00:00:45.770 --> 00:00:52.085
+For example, here we have a string that has both a new line and a tab.
+
+00:00:52.085 --> 00:00:55.115
+When we print this string with the print function,
+
+00:00:55.115 --> 00:00:58.275
+we can see that the print function puts out,
+
+00:00:58.274 --> 00:01:08.114
+"Hello world," but has interpreted the \n as a newline character and the \t as a tab.
+
+00:01:08.114 --> 00:01:10.554
+In some cases however,
+
+00:01:10.555 --> 00:01:15.290
+you may want the print function to interpret the strings literally.
+
+00:01:15.290 --> 00:01:18.980
+What that means is that you do not want the characters
+
+00:01:18.980 --> 00:01:23.245
+following a backslash to be interpreted as special characters.
+
+00:01:23.245 --> 00:01:30.045
+We can do this by adding an r before the beginning of the string as we have done here.
+
+00:01:30.045 --> 00:01:35.224
+Strings that are preceded with an r are known as raw strings.
+
+00:01:35.224 --> 00:01:39.664
+So now, if we print the same string we had before,
+
+00:01:39.665 --> 00:01:45.245
+but now as a raw string because we have added the r before the beginning of the string,
+
+00:01:45.245 --> 00:01:49.204
+we can see that now the print function prints Hello world,
+
+00:01:49.204 --> 00:01:53.525
+but it doesn't print a new line or a tab anymore.
+
+00:01:53.525 --> 00:02:00.109
+But rather, it prints out the \n and \t literally.
+
+00:02:00.109 --> 00:02:05.375
+We will be using raw strings to create our regular expressions because
+
+00:02:05.375 --> 00:02:08.240
+regular expressions themselves also use
+
+00:02:08.240 --> 00:02:12.165
+the backslash to indicate their own special characters.
+
+00:02:12.164 --> 00:02:15.104
+Therefore, by using raw strings,
+
+00:02:15.104 --> 00:02:21.669
+we avoid the problem of Python interpreting our special characters in the wrong way.
+

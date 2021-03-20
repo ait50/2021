@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.639
+What makes it so hard for computers to understand us?
+
+00:00:04.639 --> 00:00:07.080
+One drawback of human languages,
+
+00:00:07.080 --> 00:00:09.599
+or feature depending on how you look at it,
+
+00:00:09.599 --> 00:00:12.750
+is the lack of a precisely defined structure.
+
+00:00:12.750 --> 00:00:15.990
+To understand how that makes things difficult let's
+
+00:00:15.990 --> 00:00:19.879
+first take a look at some languages that are more structured.
+
+00:00:19.879 --> 00:00:23.750
+Mathematics, for instance, uses a structured language.
+
+00:00:23.750 --> 00:00:30.809
+When I write y equals 2x plus 5 there is no ambiguity in what I want to convey.
+
+00:00:30.809 --> 00:00:36.899
+I'm saying that the variable y is related to the variable x as two times x plus five.
+
+00:00:36.899 --> 00:00:40.679
+Formal logic also uses a structure language.
+
+00:00:40.679 --> 00:00:49.426
+For example, consider the expression parent(x,y) and parent(x,z) implies sibling(y, z).
+
+00:00:49.426 --> 00:00:55.545
+This statement is asserting that if x is a parent of y and x is a parent of z,
+
+00:00:55.545 --> 00:00:58.535
+then y and z are siblings.
+
+00:00:58.534 --> 00:01:02.288
+A set of structure languages that may be more
+
+00:01:02.289 --> 00:01:06.359
+familiar to you are scripting and programming languages.
+
+00:01:06.358 --> 00:01:08.640
+Consider this SQL statement.
+
+00:01:08.640 --> 00:01:14.394
+SELECT name, email FROM users WHERE name LIKE A%.
+
+00:01:14.394 --> 00:01:17.500
+We are asking the database to return the names and
+
+00:01:17.500 --> 00:01:22.805
+e-mail addresses of all users whose names begin with an A.
+
+00:01:22.805 --> 00:01:25.299
+These languages are designed to be as
+
+00:01:25.299 --> 00:01:30.000
+unambiguous as possible and are suitable for computers to process.
+

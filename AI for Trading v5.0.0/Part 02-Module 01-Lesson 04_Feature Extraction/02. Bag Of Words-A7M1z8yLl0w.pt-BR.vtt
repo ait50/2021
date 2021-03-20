@@ -1,0 +1,251 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.347 --> 00:00:02.858
+A primeira representação
+de recurso que veremos
+
+00:00:02.891 --> 00:00:04.882
+se chama "Saco de Palavras".
+
+00:00:04.915 --> 00:00:07.745
+O modelo saco de palavras
+trata cada documento
+
+00:00:07.778 --> 00:00:11.528
+como uma coleção desordenada
+ou como um saco de palavras.
+
+00:00:11.561 --> 00:00:15.644
+O documento é a unidade de texto
+que analisaremos.
+
+00:00:15.677 --> 00:00:19.244
+Por exemplo, se quisermos
+comparar trabalhos de alunos
+
+00:00:19.277 --> 00:00:20.925
+para verificar o plágio,
+
+00:00:20.958 --> 00:00:23.059
+cada trabalho
+seria um documento.
+
+00:00:23.092 --> 00:00:26.221
+Se quisermos analisar o sentimento
+transmitido pelos tuítes,
+
+00:00:26.254 --> 00:00:28.853
+então cada tuíte
+seria um documento.
+
+00:00:28.886 --> 00:00:32.007
+Para obtermos um saco de palavras
+de um texto bruto,
+
+00:00:32.040 --> 00:00:35.468
+precisamos aplicar as etapas
+de processamento de texto -
+
+00:00:35.501 --> 00:00:38.202
+limpeza, normalização,
+dividir em palavras,
+
+00:00:38.235 --> 00:00:40.500
+stemização, lematização etc. -
+
+00:00:40.533 --> 00:00:42.684
+e tratar os tokens resultantes
+
+00:00:42.717 --> 00:00:45.788
+como uma coleção
+ou um conjunto desordenado.
+
+00:00:45.821 --> 00:00:49.941
+Cada documento no conjunto de dados
+produzirá um conjunto de palavras.
+
+00:00:49.974 --> 00:00:53.401
+Manter isso como conjuntos separados
+é muito ineficiente,
+
+00:00:53.434 --> 00:00:56.554
+pois têm tamanhos diferentes,
+podem ter palavras diferentes
+
+00:00:56.587 --> 00:00:58.407
+e são difíceis
+de serem comparados.
+
+00:00:58.440 --> 00:01:02.083
+Além disso, e se a palavra ocorrer
+várias vezes em um documento?
+
+00:01:02.116 --> 00:01:05.596
+Você consegue imaginar
+uma representação melhor?
+
+00:01:05.629 --> 00:01:07.020
+Uma abordagem mais útil
+
+00:01:07.053 --> 00:01:10.349
+será transformar cada documento
+em um vetor de números,
+
+00:01:10.382 --> 00:01:14.228
+representando quantas vezes
+cada palavra ocorre em um documento.
+
+00:01:14.261 --> 00:01:17.015
+Um conjunto de documentos
+é conhecido como "corpus",
+
+00:01:17.048 --> 00:01:20.724
+e isso fornece o contexto
+para os vetores serem calculados.
+
+00:01:20.757 --> 00:01:24.260
+Primeiro, colete as palavras únicas
+presentes no corpus
+
+00:01:24.293 --> 00:01:26.284
+para formar o vocabulário.
+
+00:01:26.317 --> 00:01:28.700
+Organize essas palavras
+em alguma ordem,
+
+00:01:28.733 --> 00:01:31.487
+e deixe-as formar as posições
+dos elementos vetoriais
+
+00:01:31.520 --> 00:01:33.012
+ou colunas de uma tabela,
+
+00:01:33.045 --> 00:01:35.627
+e assuma que cada documento
+é uma linha.
+
+00:01:35.660 --> 00:01:39.531
+Conte o número de ocorrências
+de cada palavra em cada documento
+
+00:01:39.564 --> 00:01:42.908
+e insira o valor
+na respectiva coluna.
+
+00:01:42.941 --> 00:01:47.431
+Nesta fase, veja isso como
+uma matriz de termos do documento,
+
+00:01:47.464 --> 00:01:50.853
+ilustrando a relação
+entre os documentos em linhas
+
+00:01:50.886 --> 00:01:53.612
+e as palavras ou termos
+em colunas.
+
+00:01:53.645 --> 00:01:57.300
+Cada elemento pode ser interpretado
+como uma frequência de termo.
+
+00:01:57.333 --> 00:02:00.837
+Com que frequência esse termo
+ocorre neste documento?
+
+00:02:00.870 --> 00:02:05.004
+Pense no que você pode fazer
+com esta representação.
+
+00:02:05.037 --> 00:02:07.358
+Uma possibilidade é comparar
+dois documentos
+
+00:02:07.391 --> 00:02:13.334
+a partir das palavras em comum
+ou da semelhança das frequências.
+
+00:02:13.367 --> 00:02:16.043
+Uma maneira mais matemática
+de expressar isso
+
+00:02:16.076 --> 00:02:20.180
+é calculando o produto escalar
+entre os dois vetores de linha,
+
+00:02:20.213 --> 00:02:23.728
+que é a soma dos produtos
+dos elementos correspondentes.
+
+00:02:23.761 --> 00:02:25.573
+Quanto maior
+for o produto escalar,
+
+00:02:25.606 --> 00:02:27.732
+mais semelhantes
+serão os dois vetores.
+
+00:02:28.385 --> 00:02:30.187
+O produto escalar
+tem uma falha,
+
+00:02:30.220 --> 00:02:32.843
+ele apenas captura
+as partes da sobreposição,
+
+00:02:32.876 --> 00:02:36.219
+não é afetado por outros valores
+que não são comuns.
+
+00:02:36.252 --> 00:02:40.299
+Então pares muito diferentes
+podem acabar com o mesmo produto
+
+00:02:40.332 --> 00:02:42.475
+que os que são idênticos.
+
+00:02:42.508 --> 00:02:45.059
+Uma medida melhor
+é a semelhança de cosseno,
+
+00:02:45.092 --> 00:02:47.740
+na qual dividimos
+o produto escalar de dois vetores
+
+00:02:47.773 --> 00:02:51.643
+pelo produto das magnitudes
+ou normas euclidianas.
+
+00:02:51.676 --> 00:02:54.123
+Se pensarmos nesses vetores
+como setas
+
+00:02:54.156 --> 00:02:56.233
+em um espaço n-dimensional,
+
+00:02:56.266 --> 00:03:01.011
+então isso será igual ao cosseno
+do ângulo - teta - entre eles.
+
+00:03:01.044 --> 00:03:03.996
+Vetores idênticos
+têm cosseno igual a 1,
+
+00:03:04.029 --> 00:03:06.643
+vetores ortogonais
+têm cosseno igual a 0
+
+00:03:06.676 --> 00:03:10.446
+e nos vetores que são exatamente
+opostos ele é igual a -1.
+
+00:03:10.479 --> 00:03:14.439
+Então, os valores sempre variam
+entre 1, para o mais similar,
+
+00:03:14.472 --> 00:03:16.966
+e -1,
+para os mais dissimilares.
+

@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.469
+The languages we use to communicate with each other also have defined grammatical rules.
+
+00:00:06.469 --> 00:00:08.585
+And indeed, in some situations we use
+
+00:00:08.585 --> 00:00:11.460
+simple structured sentences but for
+
+00:00:11.460 --> 00:00:15.734
+the most part human discourse is complex and unstructured.
+
+00:00:15.734 --> 00:00:19.320
+Despite that, we seem to be really good at understanding
+
+00:00:19.320 --> 00:00:24.210
+each other and even ambiguities are welcome to a certain extent.
+
+00:00:24.210 --> 00:00:28.710
+So, what can computers do to make sense of unstructured text?
+
+00:00:28.710 --> 00:00:31.295
+Here are some preliminary ideas.
+
+00:00:31.295 --> 00:00:35.173
+Computers can do some level of processing with words and phrases,
+
+00:00:35.173 --> 00:00:37.109
+trying to identify key words,
+
+00:00:37.109 --> 00:00:41.780
+parts of speech, named entities, dates, quantities, etc.
+
+00:00:41.780 --> 00:00:46.317
+Using this information they can also try to parse sentences,
+
+00:00:46.317 --> 00:00:49.630
+at least ones that are relatively more structured.
+
+00:00:49.630 --> 00:00:54.780
+This can help extract the relevant parts of statements, questions, or instructions.
+
+00:00:54.780 --> 00:01:00.490
+At a higher level computers can analyze documents to find frequent and rare words,
+
+00:01:00.490 --> 00:01:03.894
+assess the overall tone or sentiment being expressed,
+
+00:01:03.893 --> 00:01:07.394
+and even cluster or group similar documents together.
+
+00:01:07.394 --> 00:01:10.750
+You can imagine that building on top of these ideas,
+
+00:01:10.750 --> 00:01:12.688
+computers can do a whole lot with
+
+00:01:12.688 --> 00:01:17.000
+unstructured text even if they cannot understand it like us.
+

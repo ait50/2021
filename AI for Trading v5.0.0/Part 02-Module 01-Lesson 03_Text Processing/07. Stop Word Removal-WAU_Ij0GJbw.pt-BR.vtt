@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.114 --> 00:00:02.873
+As palavras de parada
+são palavras pouco informativas,
+
+00:00:02.906 --> 00:00:06.176
+como "é, são, o, no, na" etc.,
+
+00:00:06.209 --> 00:00:09.047
+que não adicionam
+muito significado a uma sentença.
+
+00:00:09.080 --> 00:00:12.042
+Normalmente são palavras
+que ocorrem com muita frequência,
+
+00:00:12.075 --> 00:00:16.280
+e que podemos remover
+para reduzir o vocabulário
+
+00:00:16.313 --> 00:00:19.984
+e a complexidade
+dos procedimentos posteriores.
+
+00:00:20.017 --> 00:00:24.243
+Veja que, mesmo sem "our" e "the"
+na frase acima,
+
+00:00:24.276 --> 00:00:28.672
+ainda podemos inferir um sentimento
+positivo em relação aos cães.
+
+00:00:28.705 --> 00:00:32.176
+Veja por si só quais palavras
+o NLTK considera
+
+00:00:32.209 --> 00:00:34.472
+palavras de parada em inglês.
+
+00:00:34.505 --> 00:00:39.392
+Isso se baseia em um corpus
+ou coleção de texto específico.
+
+00:00:39.425 --> 00:00:42.893
+Corpora diferentes podem gerar
+diferentes palavras de parada.
+
+00:00:42.926 --> 00:00:46.723
+Além disso, uma palavra pode ser
+uma palavra de parada em um caso,
+
+00:00:46.756 --> 00:00:49.174
+e uma palavra útil em outro.
+
+00:00:49.207 --> 00:00:52.019
+Para remover palavras de parada
+de um pedaço de texto,
+
+00:00:52.052 --> 00:00:54.745
+podemos usar uma compreensão
+de lista do Python
+
+00:00:54.778 --> 00:00:56.785
+com uma condição de filtragem.
+
+00:00:56.818 --> 00:00:59.653
+Aplicamos a remoção de palavras
+à crítica do filme
+
+00:00:59.686 --> 00:01:02.544
+após a normalização
+e a tokenização.
+
+00:01:02.577 --> 00:01:04.909
+O resultado
+é um pouco difícil de ler,
+
+00:01:04.942 --> 00:01:08.092
+mas observe como isso ajudou
+a reduzir o tamanho do input e,
+
+00:01:08.125 --> 00:01:11.299
+ao mesmo tempo, as palavras
+importantes foram mantidas.
+

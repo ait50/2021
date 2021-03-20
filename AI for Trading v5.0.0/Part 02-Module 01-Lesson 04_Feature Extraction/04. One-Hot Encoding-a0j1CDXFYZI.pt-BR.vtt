@@ -1,0 +1,89 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.198 --> 00:00:02.669
+Até agora,
+vimos representações
+
+00:00:02.702 --> 00:00:05.171
+que tentaram caracterizar
+um documento inteiro
+
+00:00:05.205 --> 00:00:07.640
+ou coleção de palavras
+como uma unidade.
+
+00:00:07.674 --> 00:00:10.643
+Como resultado, os tipos
+de inferências que podemos fazer
+
+00:00:10.677 --> 00:00:13.113
+também estão num nível
+de documento:
+
+00:00:13.146 --> 00:00:15.215
+mistura de tópicos
+no documento,
+
+00:00:15.248 --> 00:00:18.184
+similaridade de documentos,
+sentimento de documentos etc.
+
+00:00:18.218 --> 00:00:20.353
+Para uma análise
+de texto mais profunda,
+
+00:00:20.387 --> 00:00:22.922
+precisamos pensar
+numa representação numérica
+
+00:00:22.956 --> 00:00:24.958
+para cada palavra.
+
+00:00:24.991 --> 00:00:28.395
+Se você já lidou com variáveis
+categóricas na análise de dados
+
+00:00:28.428 --> 00:00:31.164
+ou tentou fazer
+classificação multiclasse,
+
+00:00:31.197 --> 00:00:34.834
+pode ter visto este termo:
+"código one-hot".
+
+00:00:34.868 --> 00:00:37.003
+É um jeito
+de representar palavras
+
+00:00:37.037 --> 00:00:39.239
+que trata cada palavra
+como uma classe,
+
+00:00:39.272 --> 00:00:42.242
+atribui a ela um vetor
+que tem 1
+
+00:00:42.275 --> 00:00:45.211
+numa posição predeterminada
+para aquela palavra
+
+00:00:45.245 --> 00:00:46.746
+e 0 em todo o resto.
+
+00:00:46.780 --> 00:00:48.214
+Parece familiar?
+
+00:00:48.248 --> 00:00:50.850
+Sim, é igual à ideia
+do saco de palavras,
+
+00:00:50.884 --> 00:00:53.520
+só que mantemos só uma palavra
+em cada saco
+
+00:00:53.553 --> 00:00:55.455
+e construímos um vetor
+para ela.
+

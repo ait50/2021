@@ -1,0 +1,268 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.714
+Hello and welcome back.
+
+00:00:02.714 --> 00:00:06.089
+Before we start working with Beautiful Soup,
+
+00:00:06.089 --> 00:00:09.494
+let's take a quick look at how HTML works.
+
+00:00:09.494 --> 00:00:15.660
+Now, you don't have to be an HTML expert in order to use Beautiful Soup,
+
+00:00:15.660 --> 00:00:20.355
+but it's definitely important to know the basic workings of HTML.
+
+00:00:20.355 --> 00:00:24.795
+HTML stands for Hypertext Markup Language,
+
+00:00:24.795 --> 00:00:29.505
+and it is the standard markup language for creating web pages.
+
+00:00:29.504 --> 00:00:34.200
+Basically, what HTML does is to describe
+
+00:00:34.200 --> 00:00:39.404
+the structure of web pages using elements that are represented by tags,
+
+00:00:39.404 --> 00:00:43.620
+such as Head, Title, and so on.
+
+00:00:43.619 --> 00:00:50.250
+All the information displayed on a web page is contained within this tags.
+
+00:00:50.250 --> 00:00:55.344
+What web browsers, such as Chrome or Firefox,
+
+00:00:55.344 --> 00:01:00.350
+actually do is to take the information contained within
+
+00:01:00.350 --> 00:01:06.760
+the HTML file and render it to produce a web page like we see here.
+
+00:01:06.760 --> 00:01:13.640
+As we can see, the web browser doesn't actually display the HTML tags,
+
+00:01:13.640 --> 00:01:20.314
+but rather uses them to determine how to display the information contained within them.
+
+00:01:20.314 --> 00:01:23.584
+So let's see how this works in more detail.
+
+00:01:23.584 --> 00:01:27.500
+So here, we have a very simple web page.
+
+00:01:27.500 --> 00:01:29.375
+As we can see,
+
+00:01:29.375 --> 00:01:31.864
+it contains some headers,
+
+00:01:31.864 --> 00:01:34.778
+it also has some plain text,
+
+00:01:34.778 --> 00:01:37.804
+it also has an external link.
+
+00:01:37.805 --> 00:01:41.495
+We can also see that it has a blue background,
+
+00:01:41.495 --> 00:01:45.305
+and that this headers have an orange background.
+
+00:01:45.305 --> 00:01:51.910
+So let's take a detailed look at the HTML file that created this web page.
+
+00:01:51.909 --> 00:01:59.269
+Here we have the entire HTML document that produced this web page.
+
+00:01:59.269 --> 00:02:06.569
+The first thing we notice is that we have all these tags throughout our HTML file.
+
+00:02:06.569 --> 00:02:11.394
+These HTML tags normally come in pairs,
+
+00:02:11.395 --> 00:02:15.685
+as we can see here with title and title.
+
+00:02:15.685 --> 00:02:19.895
+The first tag in the pair is called the opening tag,
+
+00:02:19.895 --> 00:02:23.750
+and the second one is called the closing tag.
+
+00:02:23.750 --> 00:02:28.354
+The closing tag is written just like the opening tag
+
+00:02:28.354 --> 00:02:33.859
+but with a forward slash before the tag name as we can see here.
+
+00:02:33.860 --> 00:02:41.000
+Now, let's quickly go through this HTML file to see what each tag does.
+
+00:02:41.000 --> 00:02:43.474
+At the beginning of the document,
+
+00:02:43.474 --> 00:02:47.989
+we see the doctype HTML declaration.
+
+00:02:47.990 --> 00:02:52.235
+This indicates that this document is using
+
+00:02:52.235 --> 00:02:58.790
+HTML5 which is the latest version of the HTML standard.
+
+00:02:58.789 --> 00:03:06.859
+This declaration must appear only once at the top of the page before any HTML tags.
+
+00:03:06.860 --> 00:03:11.790
+Now, the second tag is the HTML tag.
+
+00:03:11.789 --> 00:03:17.294
+This tag is the root tag of the HTML file,
+
+00:03:17.294 --> 00:03:23.169
+and we can see that it has an attribute, lang equals en-US.
+
+00:03:23.169 --> 00:03:29.989
+This lang attribute specifies that the language of this page is US English.
+
+00:03:29.990 --> 00:03:35.870
+We should note that all HTML tags can have attributes,
+
+00:03:35.870 --> 00:03:42.680
+and that these attributes provide additional information about the HTML tags.
+
+00:03:42.680 --> 00:03:47.118
+The head tag contains information about the document
+
+00:03:47.118 --> 00:03:52.490
+such as a title tag that specifies the title of the page.
+
+00:03:52.490 --> 00:03:55.745
+In this case, it is AI for trading,
+
+00:03:55.745 --> 00:03:59.450
+and we can see it displayed right here.
+
+00:03:59.449 --> 00:04:03.819
+The head tag also contains the meta tag.
+
+00:04:03.819 --> 00:04:09.358
+This tag provides metadata about the HTML document,
+
+00:04:09.359 --> 00:04:10.814
+and in this case,
+
+00:04:10.814 --> 00:04:16.404
+it is specifying that is using the UTF-8 characters set.
+
+00:04:16.404 --> 00:04:19.969
+Web browsers must know which character set to
+
+00:04:19.970 --> 00:04:24.740
+use in order to display the HTML page correctly.
+
+00:04:24.740 --> 00:04:29.000
+Notice that this meta tag has no closing tag,
+
+00:04:29.000 --> 00:04:33.959
+because in HTML, the meta tag has no closing tag.
+
+00:04:33.959 --> 00:04:40.069
+We should also note that meta tags always go inside the head tag.
+
+00:04:40.069 --> 00:04:45.050
+Our head tag also contains this link tag.
+
+00:04:45.050 --> 00:04:50.629
+In our case, this link tag links our page to
+
+00:04:50.629 --> 00:04:59.355
+a CSS style sheet that is contained in a separate file named teststyle.css.
+
+00:04:59.355 --> 00:05:02.480
+It is this style sheet that determines
+
+00:05:02.480 --> 00:05:05.810
+that the background of our web page should be blue.
+
+00:05:05.810 --> 00:05:12.350
+Similarly, this style tag determines the style of our h2 headings.
+
+00:05:12.350 --> 00:05:17.240
+For example, here we can see that it sets the background color of
+
+00:05:17.240 --> 00:05:23.480
+our h2 headings to tomato which is displayed as this orange color right here.
+
+00:05:23.480 --> 00:05:29.935
+The body tag determines what will be displayed in the web page itself.
+
+00:05:29.935 --> 00:05:35.899
+Only the contents in the body tag will be displayed in a browser.
+
+00:05:35.899 --> 00:05:40.929
+Let's take a look at the tags inside the body tag.
+
+00:05:40.930 --> 00:05:48.843
+The h1 tag defines a large heading and it is set to get help from peers and mentors,
+
+00:05:48.843 --> 00:05:52.519
+and we can see it displayed right here.
+
+00:05:52.519 --> 00:05:59.719
+The div tag represents a division or a section in an HTML document.
+
+00:05:59.720 --> 00:06:06.125
+The h2 tag represents a slightly smaller heading than the h1 heading,
+
+00:06:06.125 --> 00:06:08.459
+and we can see them right here,
+
+00:06:08.459 --> 00:06:11.739
+student hub and knowledge.
+
+00:06:11.750 --> 00:06:15.670
+The P tag represents a paragraph,
+
+00:06:15.670 --> 00:06:18.770
+and we can see one of them right here.
+
+00:06:18.769 --> 00:06:23.414
+The HR tag displays a horizontal line,
+
+00:06:23.415 --> 00:06:27.390
+and in HTML it has no end tag.
+
+00:06:27.389 --> 00:06:37.034
+Finally, the A tag defines a hyperlink and it is used to link one web page with another.
+
+00:06:37.035 --> 00:06:44.705
+The HREF attribute of the A tag indicates the links destination.
+
+00:06:44.704 --> 00:06:46.474
+So in this case,
+
+00:06:46.475 --> 00:06:52.890
+this hyperlink will show up in the web page as knowledge as we can see here,
+
+00:06:52.889 --> 00:06:54.944
+and if we click on this link,
+
+00:06:54.944 --> 00:07:00.584
+it will take us to knowledge.udacity.com.
+
+00:07:00.584 --> 00:07:03.204
+Throughout the following lessons,
+
+00:07:03.204 --> 00:07:07.399
+we will use this very simple HTML file to
+
+00:07:07.399 --> 00:07:12.149
+learn how to use Beautiful Soup to scrape data from websites.
+

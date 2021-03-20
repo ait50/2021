@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.580
+Plain text is great but it's still
+
+00:00:02.580 --> 00:00:07.410
+human language with all its variations and bells and whistles.
+
+00:00:07.410 --> 00:00:10.650
+Next, we'll try to reduce some of that complexity.
+
+00:00:10.650 --> 00:00:12.316
+In the English language,
+
+00:00:12.316 --> 00:00:17.325
+the starting letter of the first word in any sentence is usually capitalized.
+
+00:00:17.324 --> 00:00:22.480
+All caps are sometimes used for emphasis and for stylistic reasons.
+
+00:00:22.480 --> 00:00:24.120
+While this is convenient for
+
+00:00:24.120 --> 00:00:27.839
+a human reader from the standpoint of a machine learning algorithm,
+
+00:00:27.839 --> 00:00:31.019
+it does not make sense to differentiate between Car,
+
+00:00:31.019 --> 00:00:34.769
+car, and CAR, they all mean the same thing.
+
+00:00:34.770 --> 00:00:39.825
+Therefore, we usually convert every letter in our text to a common case,
+
+00:00:39.825 --> 00:00:45.844
+usually lowercase, so that each word is represented by a unique token.
+
+00:00:45.844 --> 00:00:47.765
+Here's some sample text,
+
+00:00:47.765 --> 00:00:50.439
+a review for the movie, The Second Renaissance,
+
+00:00:50.439 --> 00:00:56.234
+a story about intelligent robots that get into a fight with humans over their rights.
+
+00:00:56.234 --> 00:00:59.380
+Yup, the way we treat robots these days.
+
+00:00:59.380 --> 00:01:04.195
+Anyway, if we have the reviews stored in a variable called text,
+
+00:01:04.194 --> 00:01:09.334
+converting it to lowercase is a simple call to the lore method in Python.
+
+00:01:09.334 --> 00:01:12.399
+Here's what it looks like after a conversion.
+
+00:01:12.400 --> 00:01:15.100
+Note all the letters that were changed.
+
+00:01:15.099 --> 00:01:17.500
+Other languages may or may not have a case
+
+00:01:17.500 --> 00:01:23.170
+equivalent but similar principles may apply depending on your NLP task,
+
+00:01:23.170 --> 00:01:27.129
+you may want to remove special characters like periods, question marks,
+
+00:01:27.129 --> 00:01:30.099
+and exclamation points from the text and only
+
+00:01:30.099 --> 00:01:33.669
+keep letters of the alphabet and maybe numbers.
+
+00:01:33.670 --> 00:01:36.489
+This is especially useful when we are looking
+
+00:01:36.489 --> 00:01:39.339
+at text documents as a whole in applications
+
+00:01:39.340 --> 00:01:41.170
+like document classification and
+
+00:01:41.170 --> 00:01:45.724
+clustering where the low level details do not matter a lot.
+
+00:01:45.724 --> 00:01:48.534
+Here, we can use a regular expression that matches
+
+00:01:48.534 --> 00:01:52.375
+everything that is not a lowercase A to Z,
+
+00:01:52.375 --> 00:01:53.650
+uppercase A is Z,
+
+00:01:53.650 --> 00:01:55.480
+or digits zero to nine,
+
+00:01:55.480 --> 00:01:58.505
+and replaces them with a space.
+
+00:01:58.504 --> 00:02:02.500
+This approach avoids having to specify all punctuation characters,
+
+00:02:02.500 --> 00:02:05.694
+but you can use other regular expressions as well.
+
+00:02:05.694 --> 00:02:08.875
+Lowercase conversion and punctuation removal
+
+00:02:08.875 --> 00:02:12.280
+are the two most common text normalization steps.
+
+00:02:12.280 --> 00:02:15.490
+Whether you need to apply them and at what stage
+
+00:02:15.490 --> 00:02:19.080
+depends on your end goal and the way you design your pipeline.
+

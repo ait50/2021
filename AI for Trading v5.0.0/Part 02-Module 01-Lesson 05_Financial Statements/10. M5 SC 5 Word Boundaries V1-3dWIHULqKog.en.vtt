@@ -1,0 +1,229 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.634
+We will now learn about another special sequence that you can create
+
+00:00:04.634 --> 00:00:09.689
+using the backslash, namely backslash b.
+
+00:00:09.689 --> 00:00:15.105
+The special sequence doesn't really match a particular set of characters,
+
+00:00:15.105 --> 00:00:18.375
+but rather determines word boundaries.
+
+00:00:18.375 --> 00:00:24.195
+A word in this context is defined as a sequence of alphanumeric characters,
+
+00:00:24.195 --> 00:00:27.449
+while a boundary is defined as a whitespace,
+
+00:00:27.449 --> 00:00:33.045
+a non-alphanumeric character, or the beginning or end of a string.
+
+00:00:33.045 --> 00:00:36.285
+Let's see how this works with an example.
+
+00:00:36.284 --> 00:00:42.344
+Here, we have a sentence that contains the word class with their friend word boundaries.
+
+00:00:42.344 --> 00:00:44.719
+In the first case, we have class as
+
+00:00:44.719 --> 00:00:50.079
+a standalone word with the boundary right before it and right after it.
+
+00:00:50.079 --> 00:00:54.199
+Here, we have class with a boundary right before it,
+
+00:00:54.200 --> 00:00:58.719
+and here we have class with a word boundary right after it.
+
+00:00:58.719 --> 00:01:01.829
+If we use class as a regular expression,
+
+00:01:01.829 --> 00:01:05.450
+we will find that we can match all three cases.
+
+00:01:05.450 --> 00:01:09.710
+Now, let's say I only wanted it to match the word class if it
+
+00:01:09.709 --> 00:01:14.644
+was at the beginning of a word such as in class or classroom.
+
+00:01:14.644 --> 00:01:21.890
+To do this, we can add backslash b before the word class in our regular expression.
+
+00:01:21.890 --> 00:01:24.920
+This regular expression will only find
+
+00:01:24.920 --> 00:01:29.000
+the word class when it has a boundary directly before it.
+
+00:01:29.000 --> 00:01:30.784
+So, if we run this code,
+
+00:01:30.784 --> 00:01:34.879
+we can see that we only get two matches corresponding to
+
+00:01:34.879 --> 00:01:39.099
+the standalone word class and to the class in classroom,
+
+00:01:39.099 --> 00:01:41.869
+since these are the only two cases where there's
+
+00:01:41.870 --> 00:01:45.350
+a word boundary right before the word class.
+
+00:01:45.349 --> 00:01:48.500
+Also notice that we didn't catch the class in
+
+00:01:48.500 --> 00:01:53.334
+subclass because there's no word boundary directly before it.
+
+00:01:53.334 --> 00:01:57.709
+Now, let's say I only want it to match the word class if it
+
+00:01:57.709 --> 00:02:02.119
+was at the end of a word such as in class or subclass.
+
+00:02:02.120 --> 00:02:08.900
+To do this, we can add backslash b after the word class in our regular expression.
+
+00:02:08.900 --> 00:02:11.780
+This regular expression will only find
+
+00:02:11.780 --> 00:02:16.164
+the word class if it has a word boundary directly after it.
+
+00:02:16.164 --> 00:02:18.019
+So, if we run this code,
+
+00:02:18.020 --> 00:02:20.540
+we can see that we only get two matches
+
+00:02:20.539 --> 00:02:24.304
+corresponding to the standalone word, class once again,
+
+00:02:24.305 --> 00:02:27.740
+and to the class in subclass since these are
+
+00:02:27.740 --> 00:02:33.050
+the only two cases where there is a word boundary right after the word, class.
+
+00:02:33.050 --> 00:02:35.930
+Also notice that we didn't catch the class in
+
+00:02:35.930 --> 00:02:40.385
+classroom since there's no word boundary directly after it.
+
+00:02:40.384 --> 00:02:44.479
+Now, let's say I only want it to match the word class,
+
+00:02:44.479 --> 00:02:46.819
+if it was a standalone word.
+
+00:02:46.819 --> 00:02:50.209
+To do this, we can add backslash b
+
+00:02:50.210 --> 00:02:54.950
+before and after the word class in our regular expression.
+
+00:02:54.949 --> 00:02:58.534
+This regular expression will only find the word class
+
+00:02:58.534 --> 00:03:02.359
+if it has boundaries directly before and after it.
+
+00:03:02.360 --> 00:03:04.355
+So, if we run this code,
+
+00:03:04.354 --> 00:03:10.199
+we can see that we only get one match corresponding to the standalone word class,
+
+00:03:10.199 --> 00:03:13.699
+since this is the only case where the word class has
+
+00:03:13.699 --> 00:03:17.644
+a boundary right before it and right after it.
+
+00:03:17.645 --> 00:03:21.320
+As with the other spatial sequences that we saw before,
+
+00:03:21.319 --> 00:03:25.924
+we also have the uppercase version of backslash b.
+
+00:03:25.925 --> 00:03:29.930
+This sequence does the opposite of backslash b,
+
+00:03:29.930 --> 00:03:34.415
+only matching when the current position is not a word boundary.
+
+00:03:34.414 --> 00:03:36.400
+Let's see how this works.
+
+00:03:36.400 --> 00:03:41.039
+Let's use backslash uppercase b to only
+
+00:03:41.039 --> 00:03:45.965
+find the word class when it doesn't have a boundary directly before it.
+
+00:03:45.965 --> 00:03:47.765
+If we run this code,
+
+00:03:47.764 --> 00:03:50.929
+we can see that we only have one match.
+
+00:03:50.930 --> 00:03:54.860
+This is because the class in sub-class
+
+00:03:54.860 --> 00:03:59.645
+is the only one that doesn't have a boundary directly before it.
+
+00:03:59.645 --> 00:04:04.680
+Similarly, let's use backslash uppercase b to only
+
+00:04:04.680 --> 00:04:09.905
+find the word class when it doesn't have a boundary directly after it.
+
+00:04:09.905 --> 00:04:12.009
+If we run this code, we can see,
+
+00:04:12.009 --> 00:04:14.629
+again, that we only get one match.
+
+00:04:14.629 --> 00:04:18.409
+This is because the class in classroom is
+
+00:04:18.410 --> 00:04:22.760
+the only one that doesn't have a boundary directly after it.
+
+00:04:22.759 --> 00:04:28.069
+Finally, let us use backslash uppercase b to only find
+
+00:04:28.069 --> 00:04:34.129
+the word class when it doesn't have a boundary directly before or after it.
+
+00:04:34.129 --> 00:04:35.704
+If we run this code,
+
+00:04:35.704 --> 00:04:38.539
+we can see that we get no matches.
+
+00:04:38.540 --> 00:04:42.170
+This is because all instances of the word class in
+
+00:04:42.170 --> 00:04:46.640
+our sentence have a boundary either before or after it.
+
+00:04:46.639 --> 00:04:49.669
+In order to have a match in this case,
+
+00:04:49.670 --> 00:04:55.775
+the word class will have to be in the middle of a word such as in the word declassified.
+
+00:04:55.774 --> 00:05:00.649
+If we run this code, we can see that we actually get one match.
+

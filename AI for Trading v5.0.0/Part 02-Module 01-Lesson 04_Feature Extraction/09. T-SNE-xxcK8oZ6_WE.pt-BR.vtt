@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.099 --> 00:00:03.370
+Embeddings de palavras precisam ter
+alta dimensionalidade
+
+00:00:03.403 --> 00:00:06.806
+para capturar variações suficientes
+em linguagens naturais.
+
+00:00:06.840 --> 00:00:10.010
+Isto os torna bem difíceis
+de visualizar.
+
+00:00:10.043 --> 00:00:11.811
+O t-SNE, que significa
+
+00:00:11.845 --> 00:00:14.447
+"Embedding do Vizinho Estocástico
+t-Distribuído",
+
+00:00:14.481 --> 00:00:16.750
+é uma técnica de redução
+de dimensionalidade
+
+00:00:16.783 --> 00:00:18.718
+que mapeia vetores
+de alta dimensão
+
+00:00:18.752 --> 00:00:20.820
+para um espaço dimensional
+mais baixo.
+
+00:00:20.854 --> 00:00:23.957
+É parecido com PCA,
+Análise de Componentes Principais,
+
+00:00:23.990 --> 00:00:25.792
+mas com
+uma propriedade incrível.
+
+00:00:25.825 --> 00:00:27.827
+Ao fazer a transformação,
+
+00:00:27.861 --> 00:00:31.398
+ele tenta manter
+distâncias relativas entre objetos,
+
+00:00:31.431 --> 00:00:33.933
+para os similares ficarem
+mais próximos
+
+00:00:33.967 --> 00:00:37.303
+enquanto objetos diferentes
+ficam distantes.
+
+00:00:37.337 --> 00:00:39.472
+Isto torna o t-SNE
+uma ótima escolha
+
+00:00:39.506 --> 00:00:41.641
+para visualizar
+embeddings de palavras.
+
+00:00:41.675 --> 00:00:45.679
+Ele preserva as subestruturas
+lineares e relacionamentos
+
+00:00:45.712 --> 00:00:48.381
+que foram aprendidos
+pelo modelo de embeddings.
+
+00:00:48.415 --> 00:00:50.884
+Se olharmos
+o maior espaço vetorial,
+
+00:00:50.917 --> 00:00:54.487
+descobrimos grupos significativos
+de palavras relacionadas.
+
+00:00:54.521 --> 00:00:58.324
+Pode levar um tempo para perceber
+por que certos grupos são formados,
+
+00:00:58.358 --> 00:01:01.461
+mas a maioria dos agrupamentos
+são bem intuitivos.
+
+00:01:01.494 --> 00:01:04.464
+O t-SNE também funciona
+em outros tipos de dados,
+
+00:01:04.497 --> 00:01:05.832
+como imagens.
+
+00:01:05.865 --> 00:01:08.935
+Aqui, vemos figuras
+do conjunto de dados Caltech 101
+
+00:01:08.968 --> 00:01:10.403
+organizadas em grupos
+
+00:01:10.437 --> 00:01:12.639
+que correspondem
+a rótulos de classes,
+
+00:01:12.672 --> 00:01:16.609
+incluindo "aviões",
+com "céu azul" sendo o tema comum,
+
+00:01:16.643 --> 00:01:20.880
+veleiros de diferentes
+formas e tamanhos
+
+00:01:20.914 --> 00:01:22.649
+e rostos humanos.
+
+00:01:22.682 --> 00:01:24.284
+É uma ferramenta muito útil
+
+00:01:24.317 --> 00:01:27.554
+para entender melhor a representação
+que uma rede aprende
+
+00:01:27.587 --> 00:01:30.824
+e para identificar qualquer erro
+ou outros problemas.
+

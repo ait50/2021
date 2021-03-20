@@ -1,0 +1,170 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.319 --> 00:00:03.335
+"Token" é um termo chique
+para um símbolo
+
+00:00:03.368 --> 00:00:05.493
+que normalmente
+tem um significado
+
+00:00:05.526 --> 00:00:08.533
+e que não costuma
+ser dividido.
+
+00:00:08.566 --> 00:00:10.937
+No caso do processamento
+de linguagem natural,
+
+00:00:10.970 --> 00:00:13.887
+os tokens são geralmente
+palavras individuais.
+
+00:00:13.920 --> 00:00:15.668
+A tokenização
+
+00:00:15.701 --> 00:00:19.428
+é a divisão de cada frase
+em uma sequência de palavras.
+
+00:00:19.461 --> 00:00:21.323
+A maneira mais simples
+de fazer isso
+
+00:00:21.356 --> 00:00:25.847
+é usando o método split,
+que retorna uma lista de palavras.
+
+00:00:25.880 --> 00:00:29.643
+Veja que ele divide em caracteres
+de espaço em branco por padrão,
+
+00:00:29.676 --> 00:00:32.837
+o que inclui os espaços regulares,
+mas também a tabulação,
+
+00:00:32.870 --> 00:00:34.540
+as novas linhas etc.
+
+00:00:34.573 --> 00:00:38.052
+Também é bom ignorar dois
+ou mais caracteres em branco
+
+00:00:38.085 --> 00:00:39.212
+em uma sequência,
+
+00:00:39.245 --> 00:00:41.548
+assim isso não retornará
+strings em branco.
+
+00:00:41.581 --> 00:00:45.348
+Podemos controlar tudo isso
+usando parâmetros opcionais.
+
+00:00:45.381 --> 00:00:49.459
+Até agora, só estamos usando
+a funcionalidade do Python,
+
+00:00:49.492 --> 00:00:52.726
+mas algumas dessas operações
+são muito mais fáceis de executar
+
+00:00:52.759 --> 00:00:55.499
+usando uma biblioteca,
+como o NLTK,
+
+00:00:55.532 --> 00:00:58.445
+que significa "kit de ferramentas
+de linguagem natural".
+
+00:00:58.478 --> 00:01:01.997
+A abordagem mais comum
+para dividir o texto com o NLTK
+
+00:01:02.030 --> 00:01:07.060
+é usar a função word_tokenize
+do nltk.tokenize.
+
+00:01:07.093 --> 00:01:11.687
+Isso faz o mesmo que o split,
+mas é um pouco mais inteligente.
+
+00:01:11.720 --> 00:01:15.175
+Tente passar um texto bruto
+que não tenha sido normalizado.
+
+00:01:15.208 --> 00:01:18.576
+Você notará que as pontuações
+serão tratadas de maneira diferente
+
+00:01:18.609 --> 00:01:20.097
+a partir da posição.
+
+00:01:20.130 --> 00:01:23.199
+Aqui, o ponto após o título
+de doutor
+
+00:01:23.232 --> 00:01:27.550
+foi mantido com "Dr",
+como um token único.
+
+00:01:27.583 --> 00:01:28.893
+Como podemos imaginar,
+
+00:01:28.926 --> 00:01:31.966
+o NLTK está usando algumas
+regras ou padrões
+
+00:01:31.999 --> 00:01:34.989
+para decidir o que fazer
+com cada pontuação.
+
+00:01:35.022 --> 00:01:38.629
+Às vezes, precisaremos dividir
+o texto em frases.
+
+00:01:38.662 --> 00:01:41.142
+Por exemplo,
+se quisermos traduzi-lo.
+
+00:01:41.175 --> 00:01:45.214
+Podemos fazer isso com o NLTK
+usando sent_tokenize.
+
+00:01:45.247 --> 00:01:49.077
+Podemos dividir cada frase
+em palavras, se necessário.
+
+00:01:49.110 --> 00:01:52.133
+O NLTK fornece vários
+outros tokenizers,
+
+00:01:52.166 --> 00:01:55.004
+incluindo um tokenizer base
+de expressão regular
+
+00:01:55.037 --> 00:01:57.174
+que podemos usar
+para remover a pontuação
+
+00:01:57.207 --> 00:02:00.312
+e executar a tokenização
+em uma única etapa.
+
+00:02:00.345 --> 00:02:02.414
+Também há
+um tokenizer de tuítes,
+
+00:02:02.447 --> 00:02:04.661
+que lida
+com os handles do Twitter,
+
+00:02:04.694 --> 00:02:07.013
+as hashtags e os emoticons.
+
+00:02:07.046 --> 00:02:10.666
+Confira o pacote nltk.tokenize
+para mais detalhes.
+

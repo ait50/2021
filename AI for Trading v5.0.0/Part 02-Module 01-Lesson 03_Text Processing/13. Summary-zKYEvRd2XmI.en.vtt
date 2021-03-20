@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.665
+We have covered a number of text processing steps.
+
+00:00:03.665 --> 00:00:07.275
+Let's summarize what a typical workflow looks like.
+
+00:00:07.275 --> 00:00:10.134
+Starting with a plain text sentence,
+
+00:00:10.134 --> 00:00:15.039
+you first normalize it by converting to lowercase and removing punctuation,
+
+00:00:15.039 --> 00:00:19.559
+and then you split it up into words using a tokenizer.
+
+00:00:19.559 --> 00:00:24.714
+Next, you can remove stop words to reduce the vocabulary you have to deal with.
+
+00:00:24.714 --> 00:00:26.519
+Depending on your application,
+
+00:00:26.519 --> 00:00:29.550
+you may then choose to apply a combination of stemming and
+
+00:00:29.550 --> 00:00:34.134
+lemmatization to reduce words to the root or stem form.
+
+00:00:34.134 --> 00:00:35.655
+It is common to apply both,
+
+00:00:35.655 --> 00:00:38.365
+lemmatization first, and then stemming.
+
+00:00:38.365 --> 00:00:42.210
+This procedure converts a natural language sentence into
+
+00:00:42.210 --> 00:00:47.000
+a sequence of normalized tokens which you can use for further analysis.
+
