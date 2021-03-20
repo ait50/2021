@@ -1,0 +1,175 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.330
+A metric that is a special application of the Sharpe ratio is the information ratio.
+
+00:00:06.330 --> 00:00:10.710
+Recall that we are separating known factors as risk factors,
+
+00:00:10.710 --> 00:00:14.610
+which drive the variants of stocks and Alpha factors which
+
+00:00:14.609 --> 00:00:19.399
+drive portfolio returns after neutralizing to those risk factors.
+
+00:00:19.399 --> 00:00:23.629
+The return driven by risk factors is the systematic return,
+
+00:00:23.629 --> 00:00:25.559
+whereas the return driven by
+
+00:00:25.559 --> 00:00:29.844
+the Alpha factors after taking out the effect of risk factors,
+
+00:00:29.844 --> 00:00:32.725
+well, this is the specific return.
+
+00:00:32.725 --> 00:00:38.329
+The specific return is also referred to as the residual return
+
+00:00:38.329 --> 00:00:41.390
+because it is the residual amount of return that
+
+00:00:41.390 --> 00:00:45.079
+remains after taking out the systematic return.
+
+00:00:45.079 --> 00:00:51.414
+The information ratio is the Sharpe ratio applied to the specific return.
+
+00:00:51.414 --> 00:00:58.144
+So, it's the average specific return divided by its standard deviation annualized.
+
+00:00:58.145 --> 00:01:02.720
+The information ratio can be interpreted as the Sharpe ratio that
+
+00:01:02.719 --> 00:01:07.855
+measures the performance that the fund manager contributes to the portfolio.
+
+00:01:07.855 --> 00:01:12.500
+Note that in the context of what we're doing in this lesson,
+
+00:01:12.500 --> 00:01:14.909
+that is Alpha modeling,
+
+00:01:14.909 --> 00:01:20.229
+we are creating a market and common factor neutral portfolio.
+
+00:01:20.230 --> 00:01:22.939
+Note that in this case,
+
+00:01:22.939 --> 00:01:26.444
+the Sharpe ratio equals the information ratio.
+
+00:01:26.444 --> 00:01:29.659
+We simply introduced the term information ratio
+
+00:01:29.659 --> 00:01:33.704
+here because you will see it often in academic literature.
+
+00:01:33.704 --> 00:01:35.750
+As I stated previously,
+
+00:01:35.750 --> 00:01:39.230
+the most important metric in evaluating an Alpha factor and
+
+00:01:39.230 --> 00:01:43.000
+ultimately a trading strategy or fund is the Sharpe ratio.
+
+00:01:43.000 --> 00:01:45.590
+So, some good advice might be, okay,
+
+00:01:45.590 --> 00:01:48.725
+just create Alpha strategies with high Sharpe ratios.
+
+00:01:48.724 --> 00:01:54.614
+That advice though is pretty useless because it's descriptive not proscriptive.
+
+00:01:54.614 --> 00:01:57.920
+In other words, it tells us what we want to achieve,
+
+00:01:57.920 --> 00:02:00.390
+but it says nothing about how to get there.
+
+00:02:00.390 --> 00:02:05.004
+So, how do we actually create high Sharpe Ratio strategies?
+
+00:02:05.004 --> 00:02:10.699
+Well, the fundamental law of active management gives us some insight.
+
+00:02:10.699 --> 00:02:13.299
+From a philosophical standpoint,
+
+00:02:13.300 --> 00:02:16.820
+perhaps the most important thing you will learn in
+
+00:02:16.819 --> 00:02:20.469
+this program is the following relationship;
+
+00:02:20.469 --> 00:02:25.715
+IR equals IC times the square root of B.
+
+00:02:25.715 --> 00:02:29.775
+This comes from the seminal work a Richard Grinold,
+
+00:02:29.775 --> 00:02:31.515
+which is aptly titled,
+
+00:02:31.514 --> 00:02:33.939
+the Fundamental Law of Active Management.
+
+00:02:33.939 --> 00:02:38.150
+This is further detailed in the subsequent book by both Richard Grinold
+
+00:02:38.150 --> 00:02:43.250
+and Ronald Khan titled, Active Portfolio Management.
+
+00:02:43.250 --> 00:02:48.409
+By the way, this formula IR equals IC times the square root of
+
+00:02:48.409 --> 00:02:54.764
+B sometimes referred to as the E equals MC squared of finance.
+
+00:02:54.764 --> 00:02:57.179
+I just want to make a point about this formula.
+
+00:02:57.180 --> 00:03:02.439
+This result is based on some simplifying assumptions and should be thought of as a guide.
+
+00:03:02.439 --> 00:03:05.210
+It would be more correct to say that IR is
+
+00:03:05.210 --> 00:03:09.800
+proportional to IC times the square root of B as opposed to equal.
+
+00:03:09.800 --> 00:03:12.590
+This is not a formula we will use directly.
+
+00:03:12.590 --> 00:03:15.800
+Meaning, we don't actually use it to make calculations.
+
+00:03:15.800 --> 00:03:21.385
+Rather, we use this identity to direct how we structure our investment process.
+
+00:03:21.384 --> 00:03:25.449
+Also, don't worry if the relationship between IR, IC,
+
+00:03:25.449 --> 00:03:29.614
+and B doesn't look obvious to you as it's not supposed to be.
+
+00:03:29.615 --> 00:03:31.955
+If you're interested in the derivation,
+
+00:03:31.955 --> 00:03:36.395
+you can check out the original paper or the book by Grinold and Kahn.
+
+00:03:36.395 --> 00:03:39.210
+I haven't defined what IR, IC,
+
+00:03:39.210 --> 00:03:42.170
+and B mean in the context of this relationship.
+
+00:03:42.169 --> 00:03:44.799
+But stay tuned, it's coming up.
+

@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.830
+The sharpe ratio, sometimes referred to as the risk adjusted return,
+
+00:00:04.830 --> 00:00:07.810
+is a key metric for evaluating alpha factors.
+
+00:00:07.809 --> 00:00:09.809
+This is the ratio of
+
+00:00:09.810 --> 00:00:14.355
+the daily factor return divided by the daily standard deviation of the return.
+
+00:00:14.355 --> 00:00:18.600
+As an example, if we had three years worth of daily data,
+
+00:00:18.600 --> 00:00:22.020
+we could calculate the average daily return over those three years and
+
+00:00:22.019 --> 00:00:26.250
+divide by the sample standard deviation of those daily returns,
+
+00:00:26.250 --> 00:00:29.070
+and then analyse that by multiplying by
+
+00:00:29.070 --> 00:00:32.270
+the square root of the number of trading days in a year.
+
+00:00:32.270 --> 00:00:37.475
+If we have two factors that have the same universe and similar turnover profiles,
+
+00:00:37.475 --> 00:00:40.990
+we will prefer the one with the higher sharpe ratio.
+
+00:00:40.990 --> 00:00:46.880
+Sharpe ratio is the key metric that institutional asset managers are judged on.
+
+00:00:46.880 --> 00:00:48.575
+Note that the Sharpe ratio,
+
+00:00:48.575 --> 00:00:51.825
+like many evaluation metrics for alpha factors,
+
+00:00:51.825 --> 00:00:56.165
+help us to compare the relative performance of alpha vectors.
+
+00:00:56.164 --> 00:00:58.310
+The sharpe ratio is key,
+
+00:00:58.310 --> 00:01:02.130
+not the magnitude of factor returns.
+
+00:01:02.130 --> 00:01:06.004
+Because as we learned in the immediately preceding section,
+
+00:01:06.004 --> 00:01:11.519
+we can amplify or dampen returns by the use of leverage.
+
+00:01:11.519 --> 00:01:17.000
+It is the sharpe ratio that gives us the confidence to apply that leverage.
+

@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.355
+Financial data is noisy,
+
+00:00:02.355 --> 00:00:05.535
+and sometimes the data we're working with is sparse.
+
+00:00:05.535 --> 00:00:08.664
+For instance, it might have many missing values.
+
+00:00:08.664 --> 00:00:11.309
+We can apply smoothing techniques across
+
+00:00:11.310 --> 00:00:16.870
+the time dimension to help make the factor more robust to noise and sparse data.
+
+00:00:16.870 --> 00:00:19.539
+Fundamental data is also sparse in nature,
+
+00:00:19.539 --> 00:00:21.869
+since it is only updated in the US,
+
+00:00:21.870 --> 00:00:24.325
+for example, once every three months.
+
+00:00:24.324 --> 00:00:26.609
+If we wish to use in a higher frequency,
+
+00:00:26.609 --> 00:00:28.344
+such as daily frequency,
+
+00:00:28.344 --> 00:00:30.750
+we should copy the most recent data over to
+
+00:00:30.750 --> 00:00:35.359
+each new day until the next new data point arrives three months later.
+
+00:00:35.359 --> 00:00:39.269
+We could also apply smoothing so that the daily data points
+
+00:00:39.270 --> 00:00:44.150
+incorporate some weighted averaging of not only the most recent update,
+
+00:00:44.149 --> 00:00:46.795
+but also the value from previous quarters.
+
+00:00:46.795 --> 00:00:50.929
+To make our Alpha factor more robust to noise and sparse data,
+
+00:00:50.929 --> 00:00:53.604
+we can apply a rolling window average.
+
+00:00:53.604 --> 00:00:56.625
+A rolling window is a kind of smoothing technique.
+
+00:00:56.625 --> 00:01:00.604
+A variation of a rolling window average is a weighted average,
+
+00:01:00.604 --> 00:01:03.679
+where the most recent Alpha may be given more weight
+
+00:01:03.679 --> 00:01:07.590
+and prior Alpha values are included but given less weight.
+
+00:01:07.590 --> 00:01:09.755
+This is called linear decay.
+
+00:01:09.754 --> 00:01:13.459
+For example, if we choose a window length of two and took
+
+00:01:13.459 --> 00:01:18.833
+the weighted average of the most recent Alpha values and the prior days Alpha values,
+
+00:01:18.834 --> 00:01:24.200
+we could give the newest value a weight of two and the earlier value a weight of one.
+
+00:01:24.200 --> 00:01:27.510
+In general, for a window length of T,
+
+00:01:27.510 --> 00:01:30.219
+we would give the most recent Alpha value a weight of
+
+00:01:30.219 --> 00:01:33.323
+T. Then for the earlier alpha values,
+
+00:01:33.323 --> 00:01:35.329
+we'd give them smaller weights.
+
+00:01:35.329 --> 00:01:38.379
+This technique can be very effective.
+
+00:01:38.379 --> 00:01:42.140
+In fact, I've seen several cases where the application of
+
+00:01:42.140 --> 00:01:47.730
+a smoothing operator both increase the Sharpe ratio and decrease the turnover.
+
+00:01:47.730 --> 00:01:50.299
+By the way, we'll cover the Sharpe ratio and
+
+00:01:50.299 --> 00:01:53.119
+a proxy for measuring turnover later in this lesson.
+
+00:01:53.120 --> 00:01:56.840
+These are both important evaluation metrics that help us find out if
+
+00:01:56.840 --> 00:02:02.530
+an Alpha factor that we create has the potential to enhance a portfolio's performance.
+

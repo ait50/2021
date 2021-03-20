@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.065
+Note that the word alpha is used to mean different things within the world of finance.
+
+00:00:06.065 --> 00:00:08.755
+In the context of factor models,
+
+00:00:08.755 --> 00:00:11.339
+we'll refer to an alpha model as
+
+00:00:11.339 --> 00:00:16.285
+an algorithm that transforms input data into a list of numbers,
+
+00:00:16.285 --> 00:00:21.429
+one number for each stock under consideration per time step.
+
+00:00:21.429 --> 00:00:27.719
+A higher positive number means we want to put more money on that stock law.
+
+00:00:27.719 --> 00:00:31.734
+A negative number means we want to short the stock.
+
+00:00:31.734 --> 00:00:39.570
+An alpha vector refers to this list of numbers for a single time period, such as a day.
+
+00:00:39.570 --> 00:00:43.564
+Each number in the alpha vector is proportional
+
+00:00:43.564 --> 00:00:47.210
+to the amount of money we want to allocate towards each stock,
+
+00:00:47.210 --> 00:00:49.375
+according to the alpha model.
+
+00:00:49.375 --> 00:00:53.755
+The alpha vector at each time step is standardized,
+
+00:00:53.755 --> 00:01:00.859
+so that it has mean zero and the sum of the absolute values adds up to one.
+
+00:01:00.859 --> 00:01:07.430
+We'll use the term alpha value to refer to a single number in the alpha vector.
+
+00:01:07.430 --> 00:01:12.870
+So, it's a number assigned to a single stock for a single time period, such as a day.
+
+00:01:12.870 --> 00:01:19.420
+We'll refer to an alpha factor as a time series of alpha vectors.
+
+00:01:19.420 --> 00:01:24.180
+So, it's the set of alpha vectors over multiple time periods,
+
+00:01:24.180 --> 00:01:26.115
+such as multiple days.
+
+00:01:26.114 --> 00:01:31.614
+A raw alpha factor is the initial output of the alpha model,
+
+00:01:31.614 --> 00:01:36.839
+excluding additional processing that is done to improve the alpha.
+
+00:01:36.840 --> 00:01:40.880
+We'll use the term raw alpha factor to distinguish from
+
+00:01:40.879 --> 00:01:44.780
+an alpha factor that has been processed to improve its signal,
+
+00:01:44.780 --> 00:01:47.015
+and make it easier to work with.
+
+00:01:47.015 --> 00:01:49.614
+Note that within the finance industry,
+
+00:01:49.614 --> 00:01:55.304
+there is no single consistent way that practitioners use the term alpha or alpha factor.
+
+00:01:55.305 --> 00:01:58.320
+Though, our use is the most common.
+
+00:01:58.319 --> 00:02:01.549
+We'll use these definitions to help us identify
+
+00:02:01.549 --> 00:02:05.054
+which step in our alpha generation we're referring to.
+
+00:02:05.055 --> 00:02:08.050
+We'll also be talking about our stock universe,
+
+00:02:08.050 --> 00:02:09.890
+or simply our universe.
+
+00:02:09.889 --> 00:02:12.349
+This refers to the set of stocks which
+
+00:02:12.349 --> 00:02:15.215
+we are considering in our portfolio at each time step.
+
+00:02:15.215 --> 00:02:20.680
+These are stocks that we may or may not hold positions in for our portfolio.
+

@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.025
+Here's an example of an ideal Alpha factors quintile performance.
+
+00:00:05.025 --> 00:00:07.020
+The fifth group containing
+
+00:00:07.019 --> 00:00:12.129
+the highest Alpha values would ideally give the highest returns.
+
+00:00:12.130 --> 00:00:16.365
+There would also ideally be a smooth progression,
+
+00:00:16.364 --> 00:00:18.294
+down the fourth, third,
+
+00:00:18.295 --> 00:00:20.345
+second, and first groups.
+
+00:00:20.344 --> 00:00:25.279
+That is the fourth group would have lower returns than the fifth group,
+
+00:00:25.280 --> 00:00:27.234
+but higher than the other groups.
+
+00:00:27.234 --> 00:00:31.100
+The first group would ideally have the lowest returns,
+
+00:00:31.100 --> 00:00:34.245
+and the second group would have the second lowest returns.
+
+00:00:34.244 --> 00:00:37.274
+It's common for the tails to show predictive power;
+
+00:00:37.274 --> 00:00:40.714
+that is group five may have higher returns,
+
+00:00:40.715 --> 00:00:44.450
+group one low returns, but groups two, three,
+
+00:00:44.450 --> 00:00:48.600
+and four have returns not that much distinguishable from zero.
+
+00:00:48.600 --> 00:00:52.130
+In these scenarios, the Alpha model's performance is
+
+00:00:52.130 --> 00:00:55.725
+more reliant on a smaller subset of the Alpha vector.
+
+00:00:55.725 --> 00:00:58.039
+In other words, on any given day,
+
+00:00:58.039 --> 00:01:03.119
+the factor return is due to the model being right on a subset of the stocks.
+
+00:01:03.119 --> 00:01:07.179
+Similarly, it's also possible for the tails to show
+
+00:01:07.180 --> 00:01:10.195
+less predictive power and for most
+
+00:01:10.194 --> 00:01:13.344
+of the factor return to be attributed to the middle groups;
+
+00:01:13.344 --> 00:01:14.694
+two, three, and four.
+
+00:01:14.694 --> 00:01:17.409
+Again, this means that a subset of
+
+00:01:17.409 --> 00:01:21.189
+the entire Alpha vector appears to get it right on any given day,
+
+00:01:21.189 --> 00:01:27.484
+and it's usually less correct when the Alpha number is either very high or very low.
+
+00:01:27.484 --> 00:01:31.530
+You must diagnose these situations very carefully.
+
+00:01:31.530 --> 00:01:36.924
+In most cases you want to see a monotonic relationship.
+
+00:01:36.924 --> 00:01:42.539
+Each successive quantile produces a higher return than the previous one.
+
+00:01:42.540 --> 00:01:46.175
+In general, if you don't see this it could
+
+00:01:46.174 --> 00:01:50.359
+indicate that your factor is not robust and invalid.
+
+00:01:50.359 --> 00:01:54.004
+However, there are exceptions and you should think
+
+00:01:54.004 --> 00:01:58.039
+about this before you run the quintile analysis.
+
+00:01:58.040 --> 00:02:03.710
+One example is the Sloan's accrual anomaly which you can read about on the link below.
+
+00:02:03.709 --> 00:02:06.500
+Whenever the factor return relies on
+
+00:02:06.500 --> 00:02:10.194
+a smaller subset of the Alpha vector having predictive power,
+
+00:02:10.194 --> 00:02:14.669
+then there's higher risk associated with using that Alpha.
+

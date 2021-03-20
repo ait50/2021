@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.790
+Let's get back to the interpretation of the factor return.
+
+00:00:03.790 --> 00:00:06.730
+When initially learning about alpha factors,
+
+00:00:06.730 --> 00:00:10.255
+the magnitude of the return can create some confusion.
+
+00:00:10.255 --> 00:00:17.010
+In the alphas we work with below the annual returns range from 1%-4% or so.
+
+00:00:17.010 --> 00:00:21.220
+Let's be honest, that seems really small,
+
+00:00:21.219 --> 00:00:25.254
+is that what institutions really want from their researchers?
+
+00:00:25.254 --> 00:00:30.269
+The key to placing these returns and context is to understand the concept of
+
+00:00:30.269 --> 00:00:32.729
+the return denominator in research and
+
+00:00:32.729 --> 00:00:37.409
+the actual leverage likely to be used in production trading.
+
+00:00:37.409 --> 00:00:40.549
+Let's first define return denominator,
+
+00:00:40.549 --> 00:00:44.149
+when we normalize an alpha vector one of the steps
+
+00:00:44.149 --> 00:00:47.835
+is to sum up the absolute values of the alpha values,
+
+00:00:47.835 --> 00:00:51.890
+then divide each value by the sum in order for
+
+00:00:51.890 --> 00:00:57.060
+the normalized vector to have the sum of absolute values equal to one.
+
+00:00:57.060 --> 00:00:59.780
+The sum of the absolute magnitudes of
+
+00:00:59.780 --> 00:01:04.025
+the alpha values is the denominator that I'm referring to.
+
+00:01:04.025 --> 00:01:10.870
+Leverage is the act of borrowing money in order to take positions in assets like stocks.
+
+00:01:10.870 --> 00:01:16.160
+The leverage ratio is the sum of the absolute value of all positions long and
+
+00:01:16.159 --> 00:01:22.504
+short divided by whatever capital we actually devote to supporting those positions.
+
+00:01:22.504 --> 00:01:27.104
+This concept will likely become more clear when we study backtesting in term two,
+
+00:01:27.105 --> 00:01:29.725
+until then, think about it this way,
+
+00:01:29.724 --> 00:01:34.064
+a trading strategy produces dollars of gains and losses,
+
+00:01:34.064 --> 00:01:38.370
+to convert those dollars in terms of returns or in return space,
+
+00:01:38.370 --> 00:01:40.990
+we need to divide by some denominator,
+
+00:01:40.989 --> 00:01:44.613
+which in this case is called the capital denominator.
+
+00:01:44.614 --> 00:01:46.520
+At the research stage,
+
+00:01:46.519 --> 00:01:53.474
+we ignore this and simply assume one dollar of capital to one dollar of longs and shorts.
+
+00:01:53.474 --> 00:01:56.390
+When we increase leverage by putting
+
+00:01:56.390 --> 00:02:00.204
+less than one dollar of capital against one dollar of positions,
+
+00:02:00.204 --> 00:02:02.894
+the leverage ratio increases.
+
+00:02:02.894 --> 00:02:08.949
+A leverage ratio of one means we apply one dollar of capital for one dollar of positions.
+
+00:02:08.949 --> 00:02:12.009
+A leverage ratio of four means,
+
+00:02:12.009 --> 00:02:16.459
+we apply 25 cents of capital for one dollar of positions.
+
+00:02:16.460 --> 00:02:21.105
+In research, we are looking at the return of the normalized alpha factor,
+
+00:02:21.104 --> 00:02:23.114
+the denominator is one,
+
+00:02:23.115 --> 00:02:25.610
+which implies a leverage ratio of one.
+
+00:02:25.610 --> 00:02:27.460
+In a real trading,
+
+00:02:27.460 --> 00:02:31.650
+we would combine several factors and then apply leverage,
+
+00:02:31.650 --> 00:02:33.875
+depending on the final portfolio,
+
+00:02:33.875 --> 00:02:39.939
+an institution might apply leverage of anywhere from two times to six times.
+
+00:02:39.939 --> 00:02:45.979
+In the context of that leverage the magnitude of the alpha factor returns start to make
+
+00:02:45.979 --> 00:02:48.889
+sense and likely look comparable to
+
+00:02:48.889 --> 00:02:53.104
+the published returns observable from hedge fund return indices.
+
+00:02:53.104 --> 00:02:57.709
+This insight should also help explain why I continually
+
+00:02:57.710 --> 00:03:03.655
+refer to implementing this style of trading as inside an asset management firm.
+
+00:03:03.655 --> 00:03:06.655
+It would be very unlikely that an individual,
+
+00:03:06.655 --> 00:03:08.810
+could obtain the necessary leverage and
+
+00:03:08.810 --> 00:03:13.640
+low-cost market access to allow him or her to trade in this style,
+
+00:03:13.639 --> 00:03:15.929
+in an individual brokerage account.
+

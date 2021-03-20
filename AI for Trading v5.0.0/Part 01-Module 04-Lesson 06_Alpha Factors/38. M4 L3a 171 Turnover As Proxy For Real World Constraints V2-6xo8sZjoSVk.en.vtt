@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.850
+Since liquidity and transaction costs are
+
+00:00:02.850 --> 00:00:06.425
+dependent upon market conditions at the time of a trade,
+
+00:00:06.424 --> 00:00:11.500
+it's difficult to simulate actual transaction costs when evaluating an Alpha factor.
+
+00:00:11.500 --> 00:00:17.609
+So a useful proxy for these real-world constraints is to measure turnover.
+
+00:00:17.609 --> 00:00:22.669
+Generally, factors that are updated quarterly such as fundamental factors,
+
+00:00:22.670 --> 00:00:25.920
+have lower turnover compared to factors that are
+
+00:00:25.920 --> 00:00:30.135
+updated daily such as those based on price and volume data.
+
+00:00:30.135 --> 00:00:32.820
+Turnover measures what fraction of
+
+00:00:32.820 --> 00:00:37.549
+the portfolio's total value gets traded in a time period.
+
+00:00:37.549 --> 00:00:43.349
+For example, let's say a portfolio is valued at $100 million.
+
+00:00:43.350 --> 00:00:46.240
+On a single day, let's imagine one million dollars
+
+00:00:46.240 --> 00:00:49.475
+are brought and another one million dollars are sold.
+
+00:00:49.475 --> 00:00:52.984
+So, the turnover in this case is two million dollars
+
+00:00:52.984 --> 00:00:56.549
+divided by 100 million or two percent.
+
+00:00:56.549 --> 00:01:02.280
+Since we're out the Alpha research stage and not dealing with an actual portfolio,
+
+00:01:02.280 --> 00:01:07.359
+turnover can be defined in terms of the change in portfolio weights.
+
+00:01:07.359 --> 00:01:10.760
+We calculate turnover by taking the difference between
+
+00:01:10.760 --> 00:01:15.270
+weights for each stock between yesterday and today,
+
+00:01:15.269 --> 00:01:21.229
+then we sum up the absolute values of the weights for all stocks in the portfolio.
+
+00:01:21.230 --> 00:01:24.234
+Recall that when constructing an Alpha factor,
+
+00:01:24.234 --> 00:01:27.859
+we're likely to convert raw factor values into ranks.
+
+00:01:27.859 --> 00:01:30.950
+So, there is another way in which we can measure
+
+00:01:30.950 --> 00:01:36.930
+turnover called the Factor Rank auto-correlation. We'll see this next
+

@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.435
+Another important constraint is the leverage constraints.
+
+00:00:03.435 --> 00:00:08.365
+With this constraint, we limit the leverage ratio which, as you recall,
+
+00:00:08.365 --> 00:00:12.265
+is the sum of the absolute dollar value of all positions,
+
+00:00:12.265 --> 00:00:14.190
+long and short, divided by
+
+00:00:14.189 --> 00:00:18.410
+whatever actual capital we devote to supporting those positions.
+
+00:00:18.410 --> 00:00:21.070
+In our portfolio optimization problem,
+
+00:00:21.070 --> 00:00:26.579
+we work with portfolio weights which are percentages of total invested capital,
+
+00:00:26.579 --> 00:00:29.729
+so the leverage ratio is just the sum of
+
+00:00:29.730 --> 00:00:33.210
+the absolute value of the weights, long and short.
+
+00:00:33.210 --> 00:00:37.039
+Again, we discussed this when we discussed alpha factors,
+
+00:00:37.039 --> 00:00:39.929
+but the basic idea here is that when you short stocks,
+
+00:00:39.929 --> 00:00:43.465
+you borrow the stocks and sell them on the open market.
+
+00:00:43.465 --> 00:00:47.885
+You can use the cash you get to take long positions on other stocks.
+
+00:00:47.884 --> 00:00:51.289
+In general, any investment position is said to
+
+00:00:51.289 --> 00:00:54.674
+be leveraged if it is financed by a debt position.
+
+00:00:54.674 --> 00:00:58.899
+Whether it's financed by borrowed cash or borrowed stocks.
+
+00:00:58.899 --> 00:01:01.864
+However, it would be much more risky to take
+
+00:01:01.865 --> 00:01:06.609
+very large short positions in order to finance very large long positions.
+
+00:01:06.609 --> 00:01:10.159
+These are large bets and shorting can be complicated.
+
+00:01:10.159 --> 00:01:13.489
+If the leverage ratio is allowed to be greater than one,
+
+00:01:13.489 --> 00:01:16.819
+it means the total magnitude of all year long and short
+
+00:01:16.819 --> 00:01:21.974
+positions is greater than the amount of initial capital that you have to work with.
+
+00:01:21.974 --> 00:01:27.280
+This means you're borrowing money either by shorting more stocks or by borrowing cash.
+
+00:01:27.280 --> 00:01:32.400
+You have to borrow from somebody and they'll have a maximum there willing to lend to you.
+
+00:01:32.400 --> 00:01:37.040
+So, you place a constraint on your leverage ratio which is the sum of
+
+00:01:37.040 --> 00:01:42.200
+the absolute values of all your positions to control the scale of this borrowing.
+
+00:01:42.200 --> 00:01:46.640
+This will keep you from ending up in a very extreme leverage position.
+
+00:01:46.640 --> 00:01:49.189
+If you're using an objective function like
+
+00:01:49.189 --> 00:01:54.144
+this and you are not using a risk constraint like this,
+
+00:01:54.144 --> 00:01:56.194
+you need a constraint like
+
+00:01:56.194 --> 00:01:59.759
+the leverage constraint to keep your weights from growing to infinity.
+
+00:01:59.760 --> 00:02:03.170
+You can try to control leverage by just controlling risk,
+
+00:02:03.170 --> 00:02:04.879
+but the leverage constraint is usually
+
+00:02:04.879 --> 00:02:09.349
+a hard constraint that will also be necessary to enforce.
+

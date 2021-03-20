@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.830
+Okay, we're doing math now,
+
+00:00:01.830 --> 00:00:04.955
+so let's start with something super simple; a vector.
+
+00:00:04.955 --> 00:00:06.669
+Oh my gosh you're thinking,
+
+00:00:06.669 --> 00:00:09.839
+a vector dah, I've seen this a million times.
+
+00:00:09.839 --> 00:00:12.240
+Well, I just want to remind you that there are
+
+00:00:12.240 --> 00:00:15.118
+a couple of different ways of thinking about a vector,
+
+00:00:15.118 --> 00:00:18.925
+that we will transition between when discussing analysis methods.
+
+00:00:18.925 --> 00:00:21.929
+First, a vector is a collection of numbers,
+
+00:00:21.929 --> 00:00:25.019
+as in you might make a bunch of measurements and put them into
+
+00:00:25.019 --> 00:00:28.714
+a column in a spreadsheet application and think of that as a vector.
+
+00:00:28.714 --> 00:00:31.259
+For example, you could think of the returns of
+
+00:00:31.260 --> 00:00:34.690
+several companies stocks on the same day as a vector.
+
+00:00:34.689 --> 00:00:36.829
+But the other way to think of a vector,
+
+00:00:36.829 --> 00:00:38.879
+which you may also be familiar with,
+
+00:00:38.880 --> 00:00:40.615
+is as a direction in space.
+
+00:00:40.615 --> 00:00:44.090
+Remember like a 3 D vector is also an arrow
+
+00:00:44.090 --> 00:00:47.965
+pointing from the origin to a point in 3 D space.
+
+00:00:47.965 --> 00:00:52.320
+These are both valid views and we'll need both to get to where we're going.
+
+00:00:52.320 --> 00:00:54.619
+I want you to be comfortable with the idea that
+
+00:00:54.619 --> 00:00:56.884
+we'll need to switch back and forth between them,
+
+00:00:56.884 --> 00:00:59.409
+as we move through this content.
+

@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.440
+Let's see how we can create a conditional factor based on momentum and skew.
+
+00:00:04.440 --> 00:00:09.085
+We first might want to convert both momentum and skew to ranks,
+
+00:00:09.085 --> 00:00:13.695
+since ranks are generally more stable and more robust to outliers.
+
+00:00:13.695 --> 00:00:18.510
+Notice though, that skew is a reversal or mean-reversion signal.
+
+00:00:18.510 --> 00:00:22.155
+So, we want to rank the skew in reverse order.
+
+00:00:22.155 --> 00:00:27.285
+Think about this in the context of our definition of enhanced momentum,
+
+00:00:27.285 --> 00:00:31.670
+and work out for yourself a few examples of why this works.
+
+00:00:31.670 --> 00:00:36.280
+That is, if our stock universe had 100 stocks,
+
+00:00:36.280 --> 00:00:41.730
+then the stock with the smallest skew would have the rank of 100,
+
+00:00:41.729 --> 00:00:47.009
+whereas the stock with the largest skew would have a rank of one.
+
+00:00:47.009 --> 00:00:50.064
+The momentum factor would be ranked as usual,
+
+00:00:50.064 --> 00:00:55.159
+where the most negative return is given a rank of one,
+
+00:00:55.159 --> 00:00:59.049
+and the most positive return has a rank of 100.
+
+00:00:59.049 --> 00:01:04.245
+If we multiply the rank of momentum times the reverse rank of skew,
+
+00:01:04.245 --> 00:01:06.600
+we will have the joint factor.
+
+00:01:06.599 --> 00:01:12.254
+The smallest alpha values would translate into the largest short positions,
+
+00:01:12.254 --> 00:01:18.199
+and the largest alpha values would translate into the largest long positions.
+

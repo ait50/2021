@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.365
+Now for simplicity, let's look at just one of these mean centered data points.
+
+00:00:05.365 --> 00:00:08.640
+We're looking for a new basis for the data and we want to
+
+00:00:08.640 --> 00:00:12.464
+write down the coordinates of this point in a new basis.
+
+00:00:12.464 --> 00:00:15.379
+This is the same thing we discussed earlier,
+
+00:00:15.380 --> 00:00:19.769
+we are looking for two new basis vectors for the 2D plane
+
+00:00:19.769 --> 00:00:25.164
+which give us an alternate way of describing our original points location.
+
+00:00:25.164 --> 00:00:30.294
+Okay. Let's say we've run PCA and it has spit out the new basis directions,
+
+00:00:30.295 --> 00:00:35.170
+these are called Principal Components PCs or just components.
+
+00:00:35.170 --> 00:00:41.465
+They are the directions of the new basis as written in the language of the old basis.
+
+00:00:41.465 --> 00:00:44.720
+It's required by the algorithm that these have
+
+00:00:44.719 --> 00:00:47.534
+length 1 and be perpendicular to each other.
+
+00:00:47.534 --> 00:00:50.074
+So, let's show them slightly smaller.
+
+00:00:50.075 --> 00:00:53.440
+We'll consider them to be length 1 now.
+
+00:00:53.570 --> 00:00:58.685
+Now, let's find our points' coordinates in the new basis.
+
+00:00:58.685 --> 00:01:01.484
+Let's do one coordinate at a time.
+
+00:01:01.484 --> 00:01:03.994
+We'll start with the red basis vector.
+
+00:01:03.994 --> 00:01:06.094
+Let's write down some names,
+
+00:01:06.094 --> 00:01:10.140
+let's call the vector pointing to our original data point X and
+
+00:01:10.140 --> 00:01:16.670
+the red basis vector W. Notice that what we've formed here is a right triangle.
+
+00:01:16.670 --> 00:01:21.469
+If X is the length of the X vector and Theta is the angle
+
+00:01:21.469 --> 00:01:26.459
+between the X vector and the W vector and you remember your trigonometry,
+
+00:01:26.459 --> 00:01:31.079
+you'll see that this distance is X cosine Theta.
+
+00:01:31.079 --> 00:01:35.405
+Now, let's remember the formula for the dot product.
+
+00:01:35.405 --> 00:01:39.159
+X.W is the length of X times the length of
+
+00:01:39.159 --> 00:01:43.244
+W times the cosine of the angle between them, Theta.
+
+00:01:43.245 --> 00:01:48.030
+So this length equals X.W divided by the length of
+
+00:01:48.030 --> 00:01:55.480
+W. This quantity is the projection of our original point onto the new basis direction,
+
+00:01:55.480 --> 00:02:00.275
+and it turns out it's exactly the quantity we're looking to maximize
+
+00:02:00.275 --> 00:02:05.545
+over all the data points when we pick our new basis direction.
+
+00:02:05.545 --> 00:02:08.860
+In fact, when I say maximize the variance,
+
+00:02:08.860 --> 00:02:12.580
+I actually mean that if we have all these dot products
+
+00:02:12.580 --> 00:02:16.900
+for all the X vectors pointing to each of our data points,
+
+00:02:16.900 --> 00:02:23.400
+we want the variance of this new set of numbers to be as large as possible.
+

@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.570
+Great. So, we found this new and special set of basis vectors,
+
+00:00:04.570 --> 00:00:06.634
+which are the principal components.
+
+00:00:06.634 --> 00:00:10.300
+What now? Well, let's look at what we have.
+
+00:00:10.300 --> 00:00:13.355
+We have these new basis dimensions.
+
+00:00:13.355 --> 00:00:15.620
+What are the significance of these?
+
+00:00:15.619 --> 00:00:16.984
+How do we interpret them?
+
+00:00:16.984 --> 00:00:18.655
+What do they represent?
+
+00:00:18.655 --> 00:00:23.089
+Well, we've been talking about vectors in geometric space so far.
+
+00:00:23.089 --> 00:00:27.089
+So, we picture the principal components as directions in space,
+
+00:00:27.089 --> 00:00:28.859
+and they are that.
+
+00:00:28.859 --> 00:00:31.160
+But when we have a data table,
+
+00:00:31.160 --> 00:00:34.009
+the dimensions have another meaning as well.
+
+00:00:34.009 --> 00:00:37.629
+Each dimension represents a feature in a dataset,
+
+00:00:37.630 --> 00:00:39.375
+one type of measurement.
+
+00:00:39.375 --> 00:00:42.590
+For example, if we're talking about stock returns,
+
+00:00:42.590 --> 00:00:46.420
+each dimension represents the returns of an individual company.
+
+00:00:46.420 --> 00:00:49.030
+The new basis dimensions,
+
+00:00:49.030 --> 00:00:53.719
+the PCs, are combinations of the original dimensions.
+
+00:00:53.719 --> 00:00:56.159
+Therefore, they have funny units,
+
+00:00:56.159 --> 00:01:03.019
+some amount of returns of company A plus some other amount of returns of company B.
+
+00:01:03.020 --> 00:01:05.810
+These new units may or may not
+
+00:01:05.810 --> 00:01:09.704
+correspond to any quantity that makes sense in the real world.
+
+00:01:09.704 --> 00:01:13.355
+We say they may or may not be interpretable.
+
+00:01:13.355 --> 00:01:17.120
+Whether or not we think the new basis dimensions represent
+
+00:01:17.120 --> 00:01:19.969
+some real-world quantity and whether or not we
+
+00:01:19.969 --> 00:01:24.000
+care depends on the problem we're trying to solve.
+

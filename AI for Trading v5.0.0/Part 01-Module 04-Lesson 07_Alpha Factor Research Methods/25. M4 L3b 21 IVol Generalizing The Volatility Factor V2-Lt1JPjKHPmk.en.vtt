@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.049
+Now that we've walked through risk factor models and Alpha factors,
+
+00:00:05.049 --> 00:00:09.660
+I hope you'll start to see how you can try out different variations
+
+00:00:09.660 --> 00:00:14.900
+that deviate from the specific methods you see in academic papers.
+
+00:00:14.900 --> 00:00:20.679
+For instance, instead of using the Fama French model to extract idiosyncratic volatility,
+
+00:00:20.679 --> 00:00:25.199
+you may try other risk factor models that you learned about in this module,
+
+00:00:25.199 --> 00:00:29.875
+such as a risk factor model based on principle component analysis.
+
+00:00:29.875 --> 00:00:33.645
+Moreover, you can try pairing iVol with
+
+00:00:33.645 --> 00:00:38.540
+other fundamental factors or really any other Alpha factors as well.
+
+00:00:38.539 --> 00:00:43.049
+If you can develop a good habit of reading academic research,
+
+00:00:43.049 --> 00:00:47.914
+proposing and implementing then evaluating potential Alpha vectors,
+
+00:00:47.914 --> 00:00:54.399
+these experiences will serve you well in preparing for roles in quantitative finance.
+

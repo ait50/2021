@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.130 --> 00:00:02.469
+Let's summarize.
+
+00:00:02.470 --> 00:00:07.109
+What I'm trying to tell you is that the goal of maximizing these links,
+
+00:00:07.110 --> 00:00:12.330
+the projections of our data onto the first dimension can be written this way,
+
+00:00:12.330 --> 00:00:16.019
+where this thing in here is the variance of this set of
+
+00:00:16.019 --> 00:00:20.074
+projections of the X vectors onto the W direction,
+
+00:00:20.074 --> 00:00:22.445
+up to a constant factor.
+
+00:00:22.445 --> 00:00:27.740
+Then, we choose W so as to maximize that variance.
+
+00:00:27.739 --> 00:00:31.464
+This is how we choose the first principle component,
+
+00:00:31.464 --> 00:00:34.939
+what we would do to find the next principle component is,
+
+00:00:34.939 --> 00:00:37.144
+subtract the component of
+
+00:00:37.145 --> 00:00:42.095
+each data vector in the direction of the first principle component.
+
+00:00:42.094 --> 00:00:45.975
+Remember that when you subtract a vector from another vector,
+
+00:00:45.975 --> 00:00:50.875
+you line up the first vector's tail with a second vector's tip.
+
+00:00:50.875 --> 00:00:55.189
+Then, we'd get a new set of data vectors that live
+
+00:00:55.189 --> 00:00:59.344
+in the space orthogonal to the first principle component.
+
+00:00:59.344 --> 00:01:01.179
+In our example here,
+
+00:01:01.179 --> 00:01:06.894
+this new space is only a straight line orthogonal to the first principle component.
+
+00:01:06.894 --> 00:01:09.674
+If we were working in three-dimensions,
+
+00:01:09.674 --> 00:01:13.545
+and we found the direction of the first principal component,
+
+00:01:13.545 --> 00:01:18.474
+we'd find the component of each data point along that direction,
+
+00:01:18.474 --> 00:01:22.084
+and subtract that from the data point.
+
+00:01:22.084 --> 00:01:25.489
+These new data vectors would all live in
+
+00:01:25.489 --> 00:01:29.810
+the 2D plane perpendicular to the first principle component.
+
+00:01:29.810 --> 00:01:34.500
+Then we'd apply the same procedure to find the next principle component,
+
+00:01:34.500 --> 00:01:37.799
+until we had one for each dimension.
+

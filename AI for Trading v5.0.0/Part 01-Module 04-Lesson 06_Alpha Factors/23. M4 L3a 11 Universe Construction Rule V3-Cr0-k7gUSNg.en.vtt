@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.525
+One important thing to note is that when we say "universe",
+
+00:00:04.525 --> 00:00:07.390
+we really mean Universe Construction Rule.
+
+00:00:07.389 --> 00:00:10.289
+Meaning, we cannot pick a static list of
+
+00:00:10.289 --> 00:00:14.929
+stocks and just use those for all time periods historically.
+
+00:00:14.929 --> 00:00:18.855
+If we chose a static list of stocks that exists today,
+
+00:00:18.855 --> 00:00:21.935
+or that have data for the time window of interests,
+
+00:00:21.934 --> 00:00:25.269
+that would include look-ahead bias.
+
+00:00:25.269 --> 00:00:29.039
+Look-ahead bias occurs when we simulate a trade on
+
+00:00:29.039 --> 00:00:33.649
+historical data using information that wouldn't be known at that time.
+
+00:00:33.649 --> 00:00:37.284
+A particular kind of look-ahead bias is survivorship bias.
+
+00:00:37.284 --> 00:00:43.894
+Survivorship bias occurs when we have the benefit today of choosing stocks for the past.
+
+00:00:43.895 --> 00:00:47.810
+In order to have an unbiased sample for our stock universe,
+
+00:00:47.810 --> 00:00:51.170
+we would not want to exclude companies that,
+
+00:00:51.170 --> 00:00:55.730
+for example, went bankrupt or were acquired because in the past,
+
+00:00:55.729 --> 00:00:59.268
+we would not know about those future events.
+
+00:00:59.268 --> 00:01:02.210
+Instead, we have to use a rule that
+
+00:01:02.210 --> 00:01:06.010
+creates the universe as it would have been for each day.
+
+00:01:06.010 --> 00:01:09.545
+One way to do this is to use a commercial index provider
+
+00:01:09.545 --> 00:01:13.555
+and use the components of an index as they were historically.
+
+00:01:13.555 --> 00:01:15.625
+That's actually what we do here.
+
+00:01:15.625 --> 00:01:18.200
+We're using the S&amp;P 500 index.
+
+00:01:18.200 --> 00:01:22.770
+The S&amp;P 500 is an index that's managed by Standard and Poor's.
+
+00:01:22.769 --> 00:01:25.594
+They managed index, adds, and deletes.
+
+00:01:25.594 --> 00:01:28.789
+By choosing our stock universe to include the stocks when they're in
+
+00:01:28.790 --> 00:01:33.230
+the index and exclude them when they are no longer in the index,
+
+00:01:33.230 --> 00:01:35.855
+we can more faithfully simulate a portfolio
+
+00:01:35.855 --> 00:01:38.620
+that would have existed in that point in time,
+
+00:01:38.620 --> 00:01:41.840
+thereby reducing look-ahead bias.
+

@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.975
+The matrix that describes the coordinates of the principal components
+
+00:00:03.975 --> 00:00:08.700
+in the original basis is the matrix of factor exposures.
+
+00:00:08.700 --> 00:00:16.120
+The matrix of data transformed into the new language is the matrix of factor returns.
+
+00:00:16.240 --> 00:00:19.560
+How do we calculate the factor returns?
+
+00:00:19.560 --> 00:00:26.830
+Well, we multiply the original data by the transpose of the factor exposures matrix.
+
+00:00:27.050 --> 00:00:30.105
+Remember, that for the risk model,
+
+00:00:30.105 --> 00:00:33.524
+we need to calculate the factor covariance matrix.
+
+00:00:33.524 --> 00:00:37.670
+How do we do that? Well, we have the matrix of factors.
+
+00:00:37.670 --> 00:00:44.250
+We just calculate their covariance the same way we always calculate a covariance matrix.
+
+00:00:45.770 --> 00:00:51.710
+Remember that since the factors are projections of the data onto the PCs,
+
+00:00:51.710 --> 00:00:53.795
+the factors are orthogonal,
+
+00:00:53.795 --> 00:00:56.995
+just as the principal components are orthogonal.
+
+00:00:56.995 --> 00:01:01.550
+This means that the factor covariance matrix is a diagonal matrix.
+
+00:01:01.550 --> 00:01:03.440
+This is true for PCA,
+
+00:01:03.440 --> 00:01:07.860
+but not necessarily true for other types of factor models.
+
+00:01:08.920 --> 00:01:13.670
+Finally, remember that the factors are returns time series.
+
+00:01:13.670 --> 00:01:17.765
+They don't necessarily have direct interpretations in the physical world,
+
+00:01:17.765 --> 00:01:21.660
+but you can think of them as returns time series for
+
+00:01:21.660 --> 00:01:26.580
+some latent or unknown driver of return variance.
+
+00:01:26.580 --> 00:01:29.805
+If the returns time series are daily returns,
+
+00:01:29.805 --> 00:01:32.115
+then when we calculate their variances,
+
+00:01:32.115 --> 00:01:37.099
+we have estimates of the factor returns variances on a daily basis.
+
+00:01:37.099 --> 00:01:43.535
+Typically, we annualize these by multiplying the whole matrix by an annualization factor.
+
+00:01:43.535 --> 00:01:47.540
+Remember, we don't need the square root of the factor because
+
+00:01:47.540 --> 00:01:51.985
+our numbers here are variances, not standard deviations.
+
+00:01:51.985 --> 00:01:54.920
+So if we were going from daily to annualized,
+
+00:01:54.920 --> 00:01:58.230
+we'd multiply by 252.
+
+00:02:00.120 --> 00:02:06.190
+Lastly, we need to calculate the idiosyncratic or specific risk matrix.
+
+00:02:06.190 --> 00:02:09.040
+We know that what's leftover from our model is
+
+00:02:09.040 --> 00:02:14.690
+the original returns data minus the part we represent with the PCs.
+
+00:02:14.820 --> 00:02:18.535
+To calculate the specific risk matrix,
+
+00:02:18.535 --> 00:02:22.405
+we calculate the covariance matrix of the residuals,
+
+00:02:22.405 --> 00:02:25.640
+and set the off-diagonal elements to zero.
+
+00:02:25.640 --> 00:02:28.960
+Since we set the off-diagonal elements to zero,
+
+00:02:28.960 --> 00:02:34.680
+we now do not have a perfect re-creation of the covariance matrix of the original data.
+
+00:02:34.680 --> 00:02:38.950
+But this is reasonable because we try to capture as much of the correlation
+
+00:02:38.950 --> 00:02:43.970
+in the data as possible with the principal components that we decided to keep.
+

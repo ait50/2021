@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.379
+Ranking is a broadly useful method in statistics to
+
+00:00:04.379 --> 00:00:08.634
+make calculations more robust and less sensitive to noise.
+
+00:00:08.634 --> 00:00:11.125
+So, how do we use ranking here?
+
+00:00:11.125 --> 00:00:14.129
+If we have just two stocks in our portfolio,
+
+00:00:14.130 --> 00:00:17.615
+we would sort them by the office signal in descending order.
+
+00:00:17.614 --> 00:00:24.539
+So, for instance, let's say we had a Raw Alpha values for Apple, Alphabet, and IBM.
+
+00:00:24.539 --> 00:00:29.625
+If we sorted their values and gave a rank of one to the lowest value,
+
+00:00:29.625 --> 00:00:32.354
+two for the next highest value,
+
+00:00:32.354 --> 00:00:35.299
+and three for the highest value;
+
+00:00:35.299 --> 00:00:41.433
+we've converted an Alpha Vector of decimals into an Alpha Vector of ranks.
+
+00:00:41.433 --> 00:00:45.890
+Note that we use descending order to preserve the property that
+
+00:00:45.890 --> 00:00:48.829
+the highest numerical Alpha value
+
+00:00:48.829 --> 00:00:52.394
+is proportional to the stock we think will rise the most.
+
+00:00:52.395 --> 00:00:55.955
+Now, let's see how ranking helps us deal with outliers.
+
+00:00:55.954 --> 00:01:03.625
+If Apple's Alpha value surged from 0.33 to 0.50 from day one to day two,
+
+00:01:03.625 --> 00:01:11.295
+and the Alpha Values of the other two also increased by 0.01 to 0.02,
+
+00:01:11.295 --> 00:01:16.355
+then the relative order or ranks of the three stocks wouldn't change.
+
+00:01:16.355 --> 00:01:19.430
+When this gets translated into portfolio weights,
+
+00:01:19.430 --> 00:01:24.815
+it means that we wouldn't be expected to make a trade based on these ranks.
+
+00:01:24.814 --> 00:01:28.685
+We can also see how ranking helps us deal with noise.
+
+00:01:28.685 --> 00:01:33.905
+If Apple's signal increases by one percent from day one to day two,
+
+00:01:33.905 --> 00:01:37.495
+and Alphabet signal also increases by one percent,
+
+00:01:37.495 --> 00:01:40.094
+their relative values don't change.
+
+00:01:40.094 --> 00:01:43.609
+So, the rank of Apple stays at two on
+
+00:01:43.609 --> 00:01:47.984
+both days and the rank of Alphabet stays at one for both days.
+
+00:01:47.984 --> 00:01:55.219
+Again, ranking is a broadly useful method for making data analysis more robust.
+
+00:01:55.219 --> 00:01:58.870
+We'll see ranking used again later in this lesson.
+

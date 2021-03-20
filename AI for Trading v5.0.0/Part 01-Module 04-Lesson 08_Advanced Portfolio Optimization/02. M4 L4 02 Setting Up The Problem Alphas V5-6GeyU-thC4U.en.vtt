@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.815
+Our goal is to set up
+
+00:00:01.815 --> 00:00:06.804
+a portfolio optimization problem using our alpha factors and risk model.
+
+00:00:06.804 --> 00:00:10.184
+In practice, it's possible that we are doing this
+
+00:00:10.185 --> 00:00:13.350
+in order to design a portfolio from scratch,
+
+00:00:13.349 --> 00:00:15.824
+but it's also possible that we are trying to
+
+00:00:15.824 --> 00:00:18.869
+guide the evolution of an existing portfolio.
+
+00:00:18.870 --> 00:00:24.210
+So, there may already be a portfolio in production with capital invested in
+
+00:00:24.210 --> 00:00:29.984
+a universe of assets and portfolio weights on the assets from a previous optimization,
+
+00:00:29.984 --> 00:00:35.384
+which may have evolved as the asset values appreciated or depreciated.
+
+00:00:35.384 --> 00:00:38.399
+So, how do we set up the optimization with
+
+00:00:38.399 --> 00:00:42.600
+our new or updated alpha factors and updated data?
+
+00:00:42.600 --> 00:00:46.893
+Thinking back to what we learned before about portfolio optimization,
+
+00:00:46.893 --> 00:00:50.289
+we know we want to do something like maximize
+
+00:00:50.289 --> 00:00:53.844
+return and limit risk as measured by variance.
+
+00:00:53.844 --> 00:00:57.909
+This is already great intuition for how to set up the problem.
+
+00:00:57.909 --> 00:01:01.539
+Can you guess where our alpha factors and risk model would go in
+
+00:01:01.539 --> 00:01:06.219
+the problem formulation following this intuition?
+
+00:01:06.219 --> 00:01:10.239
+Let's make this explicit starting with the alpha factors.
+
+00:01:10.239 --> 00:01:13.309
+Let's say we have just one alpha factor,
+
+00:01:13.310 --> 00:01:15.189
+we know that on a given day,
+
+00:01:15.189 --> 00:01:18.310
+our alpha factor is a vector of values,
+
+00:01:18.310 --> 00:01:25.040
+one value per stock that is hopefully predictive of the future mean return of each stock.
+
+00:01:25.040 --> 00:01:27.410
+But now we want a quantity in
+
+00:01:27.409 --> 00:01:32.090
+the objective function that represents the predicted portfolio return.
+
+00:01:32.090 --> 00:01:36.594
+Somehow, we need to sum the alpha values over the portfolio.
+
+00:01:36.594 --> 00:01:38.689
+Can you see what we want here?
+
+00:01:38.689 --> 00:01:41.799
+To calculate the portfolio alpha,
+
+00:01:41.799 --> 00:01:46.875
+we just take the dot product of the alpha with a vector of portfolio weights.
+
+00:01:46.875 --> 00:01:49.665
+Let's plot this into the objective function.
+
+00:01:49.665 --> 00:01:53.560
+We make it negative because we want to maximize alpha.
+

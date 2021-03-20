@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.679
+Remember how earlier we talked about the possibility of setting yourself a problem that
+
+00:00:04.679 --> 00:00:09.535
+doesn't have a solution because there is no answer that satisfies all the constraints?
+
+00:00:09.535 --> 00:00:11.884
+Well, that can happen in practice.
+
+00:00:11.884 --> 00:00:14.775
+When you're working with two or three dimensional problems
+
+00:00:14.775 --> 00:00:17.820
+where you can graph the functions and observe what's going on,
+
+00:00:17.820 --> 00:00:20.998
+it might be easier to see when the problem becomes infeasible.
+
+00:00:20.998 --> 00:00:23.219
+However, in practice you're working in
+
+00:00:23.219 --> 00:00:27.429
+a high-dimensional space where it's hard to visualize what's going on.
+
+00:00:27.429 --> 00:00:32.039
+In general learning what makes the problem infeasible comes with experience.
+
+00:00:32.039 --> 00:00:34.604
+So, much of this might sound rather abstract,
+
+00:00:34.604 --> 00:00:38.359
+but we want to have a short discussion here to give you an intuition.
+
+00:00:38.359 --> 00:00:41.479
+One possible situation where this might arise,
+
+00:00:41.479 --> 00:00:44.324
+is if you fix the weight on a particular stock.
+
+00:00:44.325 --> 00:00:47.870
+For example, sometimes for some reason the compliance group at
+
+00:00:47.869 --> 00:00:51.679
+your company may restrict trading company wide on a particular stock.
+
+00:00:51.679 --> 00:00:54.049
+So, there may be some stock that you can't
+
+00:00:54.049 --> 00:00:58.354
+trade or there may be a particular stock that's difficult to short,
+
+00:00:58.354 --> 00:01:01.549
+so again, you'd like to constrain the weight on that stock.
+
+00:01:01.549 --> 00:01:06.015
+However, if you put a hard constraint on the weight on that particular stock,
+
+00:01:06.015 --> 00:01:10.614
+this might cause you to reach an infeasible solution in your optimization problem.
+
+00:01:10.614 --> 00:01:13.984
+Let's just say first that it's often dangerous to put
+
+00:01:13.984 --> 00:01:16.609
+equality constraints in an optimization problem
+
+00:01:16.609 --> 00:01:19.385
+because the problem can get infeasible very easily.
+
+00:01:19.385 --> 00:01:21.500
+Remember that inequality constraint is
+
+00:01:21.500 --> 00:01:24.575
+a much stronger condition than an inequality constraint.
+
+00:01:24.575 --> 00:01:27.109
+It's the difference between requiring that they answer
+
+00:01:27.109 --> 00:01:30.295
+lie on a line or below a line, for example.
+
+00:01:30.295 --> 00:01:33.560
+Infeasibility is an issue with your constraints.
+
+00:01:33.560 --> 00:01:35.570
+One possible solution is to move
+
+00:01:35.569 --> 00:01:39.719
+one or more constraints to penalty terms in the objective function.
+
+00:01:39.719 --> 00:01:42.905
+This changes the problem from placing a hard limit
+
+00:01:42.905 --> 00:01:46.200
+on some quantity to seeking to minimize that quantity,
+
+00:01:46.200 --> 00:01:49.874
+but balanced against the other terms in the objective.
+
+00:01:49.873 --> 00:01:53.045
+So, what are general rules of thumb or
+
+00:01:53.045 --> 00:01:56.405
+guidelines for avoiding these situations in practice?
+
+00:01:56.405 --> 00:02:00.230
+In production you're inheriting a live portfolio.
+
+00:02:00.230 --> 00:02:06.180
+Your job in optimization is to transition that portfolio to a new state using new data,
+
+00:02:06.180 --> 00:02:09.170
+new Alpha factors, and keeping in mind that
+
+00:02:09.169 --> 00:02:13.405
+market movements have caused the old weights to change slightly.
+
+00:02:13.405 --> 00:02:15.530
+The first thing to check is whether
+
+00:02:15.530 --> 00:02:19.270
+the starting portfolio produces an infeasible problem or not.
+
+00:02:19.270 --> 00:02:23.534
+In general start with fewer terms in the objective function.
+
+00:02:23.534 --> 00:02:25.715
+If that problem becomes infeasible,
+
+00:02:25.715 --> 00:02:30.280
+try to figure out which constraints are the ones causing the infeasibility,
+
+00:02:30.280 --> 00:02:34.054
+see if you can change or override any of those constraints.
+
+00:02:34.054 --> 00:02:38.800
+Finally, consider moving constraints to penalty terms in the objective function.
+

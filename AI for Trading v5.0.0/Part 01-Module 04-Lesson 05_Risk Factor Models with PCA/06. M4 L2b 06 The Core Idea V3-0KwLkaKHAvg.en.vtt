@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.410
+Okay. Let's get back to what we really want to talk about, PCA.
+
+00:00:04.410 --> 00:00:07.380
+In a nutshell, what is PCA?
+
+00:00:07.379 --> 00:00:13.705
+PCA is a series of calculations that gives us a new and special basis for our data.
+
+00:00:13.705 --> 00:00:15.275
+Why is it special?
+
+00:00:15.275 --> 00:00:17.795
+Well, the first dimension is the dimension
+
+00:00:17.795 --> 00:00:20.750
+along which the data points are the most spread out,
+
+00:00:20.750 --> 00:00:24.609
+we say they have the most variance along this dimension.
+
+00:00:24.609 --> 00:00:27.089
+What do we mean exactly?
+
+00:00:27.089 --> 00:00:31.339
+We mean that, if we start with a dataset and we consider
+
+00:00:31.339 --> 00:00:36.325
+a new axis in the 2D plane represented by this line through the origin,
+
+00:00:36.325 --> 00:00:40.820
+then we find the coordinates of our points along this new axis
+
+00:00:40.820 --> 00:00:46.259
+by projecting them by the shortest path to the new axis.
+
+00:00:46.810 --> 00:00:54.130
+Consider the variance or spread of this set of coordinates along the line.
+
+00:00:56.329 --> 00:01:01.820
+When we do PCA or trying to choose our new axis in
+
+00:01:01.820 --> 00:01:04.549
+such a way that the new coordinates are as spread
+
+00:01:04.549 --> 00:01:08.194
+out as possible or have maximum variance,
+
+00:01:08.194 --> 00:01:10.750
+it turns out that the choice of line,
+
+00:01:10.750 --> 00:01:13.099
+where the coordinates are most spread out,
+
+00:01:13.099 --> 00:01:16.219
+is also the choice of line that minimizes
+
+00:01:16.219 --> 00:01:20.019
+the perpendicular distance of each coordinate to the line.
+
+00:01:20.019 --> 00:01:25.155
+We say that the basis minimizes reconstruction error.
+
+00:01:25.155 --> 00:01:30.105
+Maximizing variance and minimizing reconstruction error go hand in hand.
+
+00:01:30.105 --> 00:01:34.195
+The squared distance from the origin to the projection,
+
+00:01:34.194 --> 00:01:37.949
+plus the squared distance from the projection to the point,
+
+00:01:37.950 --> 00:01:41.719
+equals the squared distance from the origin to the point,
+
+00:01:41.719 --> 00:01:44.474
+this is just the Pythagorean theorem.
+
+00:01:44.474 --> 00:01:47.719
+So, when you change the orientation of the line,
+
+00:01:47.719 --> 00:01:50.799
+if one increases the other must decrease.
+
+00:01:50.799 --> 00:01:55.039
+The orientation of the line chosen by PCA is the one that
+
+00:01:55.040 --> 00:01:59.075
+maximizes the squared distances along the line
+
+00:01:59.075 --> 00:02:03.140
+for all points and simultaneously minimizes
+
+00:02:03.140 --> 00:02:07.909
+the squared perpendicular distances to the line for all points.
+
+00:02:07.909 --> 00:02:12.305
+This is how we find the first basis direction.
+
+00:02:12.305 --> 00:02:17.770
+The next basis direction must be perpendicular or orthogonal to the first.
+
+00:02:17.770 --> 00:02:19.429
+In our little example,
+
+00:02:19.429 --> 00:02:21.890
+there is only one choice for this dimension,
+
+00:02:21.889 --> 00:02:24.989
+because we are working in a two-dimensional space.
+
+00:02:24.990 --> 00:02:28.510
+But if we were working in a higher-dimensional space,
+
+00:02:28.509 --> 00:02:32.449
+the requirement for the next basis direction would be that it be
+
+00:02:32.449 --> 00:02:36.319
+orthogonal to the first and also maximize
+
+00:02:36.319 --> 00:02:40.590
+the variance of the points along that dimension and so
+
+00:02:40.590 --> 00:02:45.985
+on until we have as many new dimensions as we had dimensions to start with.
+
+00:02:45.985 --> 00:02:48.620
+So, if we had data in four dimensions,
+
+00:02:48.620 --> 00:02:52.530
+PCA would give us four new axes.
+

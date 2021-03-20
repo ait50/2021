@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.995
+Not all arbitrage opportunities are created equal.
+
+00:00:03.995 --> 00:00:08.695
+If you found two similar stocks with similar mispricing,
+
+00:00:08.695 --> 00:00:10.574
+all else being equal,
+
+00:00:10.574 --> 00:00:13.959
+you'd prefer to act on the stock that is less risky.
+
+00:00:13.960 --> 00:00:17.565
+For example, let's imagine we have identified
+
+00:00:17.565 --> 00:00:21.425
+through a model in which we have high confidence two stocks,
+
+00:00:21.425 --> 00:00:25.800
+A and B, which are each undervalued by 10 percent.
+
+00:00:25.800 --> 00:00:31.550
+However, stock B typically fluctuates two times as much as stock A.
+
+00:00:31.550 --> 00:00:35.054
+If we're limited to our capital deployment,
+
+00:00:35.054 --> 00:00:37.515
+which is how much cash we can invest,
+
+00:00:37.515 --> 00:00:40.380
+and we can only choose one stock,
+
+00:00:40.380 --> 00:00:43.420
+we would likely choose to buy stock A since
+
+00:00:43.420 --> 00:00:46.550
+our expected Sharpe ratio will be much higher.
+
+00:00:46.549 --> 00:00:51.569
+Remember, in neither case are we guaranteed to make money,
+
+00:00:51.570 --> 00:00:55.340
+we just have a model in which we have high confidence.
+
+00:00:55.340 --> 00:00:59.160
+Now take this example and think of the universal effect.
+
+00:00:59.159 --> 00:01:02.164
+All savvy arbitragers like us,
+
+00:01:02.164 --> 00:01:04.435
+would prefer stock A,
+
+00:01:04.435 --> 00:01:08.475
+and the opportunity in stock A might get arbitraged
+
+00:01:08.474 --> 00:01:13.584
+away before we even have a chance to buy the stock.
+
+00:01:13.584 --> 00:01:16.890
+If that's true, then in fact,
+
+00:01:16.890 --> 00:01:20.180
+we may be better off trying to capture the discount in
+
+00:01:20.180 --> 00:01:26.800
+stock B as there will be less competition to capture the opportunity presented there.
+
+00:01:26.799 --> 00:01:29.935
+That's the gist of this paper.
+
+00:01:29.935 --> 00:01:33.590
+The risk that acting on an arbitraged opportunity
+
+00:01:33.590 --> 00:01:37.475
+may actually yield a loss is called arbitrage risk.
+
+00:01:37.474 --> 00:01:40.829
+As you may have guessed from the example,
+
+00:01:40.829 --> 00:01:44.864
+one source of arbitrage risk is the volatility of the stock,
+
+00:01:44.864 --> 00:01:47.599
+defined as the standard deviation of returns.
+

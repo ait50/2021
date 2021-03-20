@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+Hi, welcome to the lesson where we'll take
+
+00:00:03.390 --> 00:00:09.169
+a deeper look at four academic papers and see how we can code up Alpha factors from them.
+
+00:00:09.169 --> 00:00:12.074
+In building the material for this lesson,
+
+00:00:12.074 --> 00:00:17.259
+I browsed dozens of academic papers and chose some of these to implement.
+
+00:00:17.260 --> 00:00:19.710
+Note, that I didn't choose these papers
+
+00:00:19.710 --> 00:00:23.315
+particularly because they produced great Alphas, rather,
+
+00:00:23.315 --> 00:00:26.510
+I chose them to give a diversity of style and show
+
+00:00:26.510 --> 00:00:30.270
+important techniques and building blocks for making Alphas.
+
+00:00:30.269 --> 00:00:34.729
+In fact, some of the performance is disappointing in the period we test,
+
+00:00:34.729 --> 00:00:39.750
+but the concepts that you'll learn are key to the work that you may do as a quant.
+
+00:00:39.750 --> 00:00:44.560
+I'll discuss each of these papers and we'll see how each can be implemented in code.
+
+00:00:44.560 --> 00:00:47.600
+I will also comment on instances where I take
+
+00:00:47.600 --> 00:00:49.969
+a practitioner's approach to interpreting or
+
+00:00:49.969 --> 00:00:52.964
+generalizing ideas from the academic research.
+
+00:00:52.965 --> 00:00:58.375
+In reading these papers and learning to implement Alpha factors based on their ideas,
+
+00:00:58.375 --> 00:01:01.625
+you will learn about Alpha factor building blocks
+
+00:01:01.625 --> 00:01:05.125
+that we'll refer to as overnight returns,
+
+00:01:05.125 --> 00:01:08.275
+accelerated and decelerated gains or losses,
+
+00:01:08.275 --> 00:01:11.734
+positive skew, and idiosyncratic volatility.
+
+00:01:11.734 --> 00:01:15.799
+You'll gain insights into how psychology and market mechanics
+
+00:01:15.799 --> 00:01:20.060
+shape the hypotheses upon which these factors were built,
+
+00:01:20.060 --> 00:01:25.700
+and also see different ways in which a factor can condition the effect of another factor.
+
+00:01:25.700 --> 00:01:30.025
+I hope that you can develop a good habit of reading academic research,
+
+00:01:30.025 --> 00:01:34.670
+proposing, and implementing, and then evaluating potential Alpha factors.
+
+00:01:34.670 --> 00:01:37.430
+These skills and experiences will serve you
+
+00:01:37.430 --> 00:01:41.059
+well in preparing you for roles in quantitative finance.
+
+00:01:41.058 --> 00:01:42.679
+Let's get started.
+

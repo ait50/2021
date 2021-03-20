@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.109
+Another way to measure turnover,
+
+00:00:02.109 --> 00:00:04.740
+is called the factor rank autocorrelation.
+
+00:00:04.740 --> 00:00:07.519
+The factor rank autocorrelation is close to one,
+
+00:00:07.519 --> 00:00:11.449
+when the ranking of stocks doesn't change much from day to day.
+
+00:00:11.449 --> 00:00:13.389
+To give you an illustration,
+
+00:00:13.390 --> 00:00:18.240
+let's imagine our universe consists of just two stocks, apple and alphabet.
+
+00:00:18.239 --> 00:00:20.004
+If over several days,
+
+00:00:20.004 --> 00:00:21.359
+the rank of apple,
+
+00:00:21.359 --> 00:00:23.905
+based on its alpha signal is always two,
+
+00:00:23.905 --> 00:00:26.560
+and the rank of alphabet is always one,
+
+00:00:26.559 --> 00:00:29.279
+then the previous ranks of each stock are
+
+00:00:29.280 --> 00:00:32.090
+perfectly correlated with the current day's ranks.
+
+00:00:32.090 --> 00:00:35.340
+In other words, the ranks are highly
+
+00:00:35.340 --> 00:00:39.595
+correlated or the factor rank autocorrelation is close to one.
+
+00:00:39.594 --> 00:00:43.100
+When the ranks of stocks don't change much from day to day,
+
+00:00:43.100 --> 00:00:48.535
+this also means that the weights of our theoretical portfolio don't change much either,
+
+00:00:48.534 --> 00:00:50.625
+which means less trading,
+
+00:00:50.625 --> 00:00:53.064
+and therefore less turnover.
+
+00:00:53.064 --> 00:00:57.559
+To calculate the factor rank autocorrelation for a single time period,
+
+00:00:57.560 --> 00:01:01.190
+we'll get the ranked alpha vector for the previous day,
+
+00:01:01.189 --> 00:01:04.329
+and also the ranked alpha vector for the current day.
+
+00:01:04.329 --> 00:01:07.564
+Then we calculate the Spearman rank correlation
+
+00:01:07.564 --> 00:01:11.469
+between the prior days and current days ranked alpha vectors.
+
+00:01:11.469 --> 00:01:15.209
+We can repeat this for multiple days and a time window,
+
+00:01:15.209 --> 00:01:19.759
+so that we have a time series of factor rank autocorrelations.
+
+00:01:19.760 --> 00:01:27.195
+A high factor rank autocorrelation is a proxy to indicate that the turnover is lower.
+
+00:01:27.194 --> 00:01:31.644
+A low, or even negative factor rank autocorrelation,
+
+00:01:31.644 --> 00:01:34.459
+would then indicate high turnover.
+
+00:01:34.459 --> 00:01:37.474
+Let's look at how we would use a turnover measure,
+
+00:01:37.474 --> 00:01:43.484
+such as factor rank autocorrelation in the context of other evaluation metrics.
+
+00:01:43.484 --> 00:01:47.545
+If two alpha factors have similar sharpe ratios,
+
+00:01:47.545 --> 00:01:52.000
+similar quintile performance, and similar factor returns,
+
+00:01:52.000 --> 00:01:55.805
+we'll always prefer the one with lower turnover.
+
+00:01:55.805 --> 00:01:58.779
+If an alpha factor has high sharpe ratio,
+
+00:01:58.778 --> 00:02:00.840
+but very high turnover,
+
+00:02:00.840 --> 00:02:05.230
+we may need to consider whether the alpha factor would survive backtesting,
+
+00:02:05.230 --> 00:02:07.200
+paper trading, and real trading.
+
+00:02:07.200 --> 00:02:10.840
+As a reminder of why lower turnover helps us,
+
+00:02:10.840 --> 00:02:14.170
+it makes it more possible for us to execute trades if
+
+00:02:14.169 --> 00:02:18.369
+the stocks are liquid and can reduce our transaction costs.
+
+00:02:18.370 --> 00:02:21.770
+Managing turnover is a delicate balance.
+
+00:02:21.770 --> 00:02:25.300
+On one hand, we want high turnover because that
+
+00:02:25.300 --> 00:02:29.070
+means alpha factor is taking advantage of new information,
+
+00:02:29.069 --> 00:02:33.689
+and making more trades which likely implies higher breath.
+
+00:02:33.689 --> 00:02:35.750
+However, on the other hand,
+
+00:02:35.750 --> 00:02:37.580
+trading costs money and
+
+00:02:37.580 --> 00:02:41.935
+excessive turnover could mean the alpha is simply capturing noise.
+
+00:02:41.935 --> 00:02:45.280
+Over time, the more you work in alpha research,
+
+00:02:45.280 --> 00:02:48.789
+the more you will develop intuition about this.
+
+00:02:48.789 --> 00:02:52.864
+Evaluating alpha factors is both an art and a science.
+
+00:02:52.865 --> 00:02:58.135
+Keep in mind that factor rank autocorrelation is different than rank IC.
+
+00:02:58.134 --> 00:03:02.194
+Even though these metrics both use ranking and correlation,
+
+00:03:02.194 --> 00:03:07.754
+rank IC is measuring whether an alpha factor is correlated with forward returns,
+
+00:03:07.754 --> 00:03:11.030
+while factor rank autocorrelation is measuring how
+
+00:03:11.030 --> 00:03:15.419
+stable the ranked alpha vectors are from day to day.
+

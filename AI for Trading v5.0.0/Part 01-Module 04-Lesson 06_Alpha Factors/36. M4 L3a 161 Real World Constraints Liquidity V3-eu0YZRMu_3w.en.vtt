@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.139
+So far, we've looked at evaluation metrics that
+
+00:00:04.139 --> 00:00:08.289
+assume unlimited liquidity in zero transaction costs.
+
+00:00:08.289 --> 00:00:12.839
+In other words, we've assumed that we can buy or short the stocks when we
+
+00:00:12.839 --> 00:00:18.390
+want and at the market price without cost or impact to that marketplace.
+
+00:00:18.390 --> 00:00:22.335
+We also saw that, increasing the number of stocks and the number of trades
+
+00:00:22.335 --> 00:00:26.575
+can improve one evaluation metric, the information ratio.
+
+00:00:26.574 --> 00:00:30.714
+However, when we include real-world constraints and costs,
+
+00:00:30.714 --> 00:00:34.804
+there are reasons why more trades aren't always better.
+
+00:00:34.804 --> 00:00:37.079
+When trading in the real market,
+
+00:00:37.079 --> 00:00:41.839
+there are constraints due to both liquidity and transaction costs.
+
+00:00:41.840 --> 00:00:45.859
+Liquidity of a stock refers to how likely one can
+
+00:00:45.859 --> 00:00:49.984
+buy or sell the stock when they want to in the amount that they want to.
+
+00:00:49.984 --> 00:00:53.769
+A proxy for liquidity is the bid-ask spread.
+
+00:00:53.770 --> 00:00:57.200
+The bid-ask spread is the difference between the price that
+
+00:00:57.200 --> 00:01:01.310
+an investor can buy versus sell immediately in the market.
+
+00:01:01.310 --> 00:01:06.075
+High liquid stocks that trade in high amounts every day have
+
+00:01:06.075 --> 00:01:11.600
+many shares that are accessible to the public and can be borrowed for short positions.
+
+00:01:11.599 --> 00:01:18.694
+Examples would be large market cap stocks in highly developed stock markets like the US.
+
+00:01:18.694 --> 00:01:25.074
+The bid-ask spreads in liquid stocks maybe around three to five basis points.
+
+00:01:25.075 --> 00:01:30.200
+For example, if the price at which one can sell a stock is
+
+00:01:30.200 --> 00:01:36.775
+$100 and the price at which one can buy a stock is 100.05,
+
+00:01:36.775 --> 00:01:41.165
+then the bid-ask spread is said to be five basis points.
+
+00:01:41.165 --> 00:01:43.325
+Low liquidity stocks have
+
+00:01:43.325 --> 00:01:49.045
+fewer accessible shares or are traded on a less active exchange.
+
+00:01:49.045 --> 00:01:54.519
+You may also refer to low liquidity as highly illiquid.
+
+00:01:54.519 --> 00:02:01.664
+Bid-ask spreads for less liquid stocks maybe 20 to 30 basis points.
+
+00:02:01.665 --> 00:02:04.760
+Remember, a decent Alpha factor might have
+
+00:02:04.760 --> 00:02:09.305
+an annual return of four percent or 400 basis points.
+
+00:02:09.305 --> 00:02:11.064
+When you think about that,
+
+00:02:11.064 --> 00:02:16.960
+a bid-ask spread of 20 to 30 basis points on a single trade is massive.
+

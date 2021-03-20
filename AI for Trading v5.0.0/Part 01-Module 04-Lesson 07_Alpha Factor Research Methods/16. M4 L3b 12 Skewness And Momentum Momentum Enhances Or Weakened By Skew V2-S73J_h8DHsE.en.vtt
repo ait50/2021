@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.060
+Let's walk through four hypothetical examples
+
+00:00:03.060 --> 00:00:06.050
+and assume that skewness is a reversal factor,
+
+00:00:06.049 --> 00:00:08.384
+which is another word for mean reversion.
+
+00:00:08.384 --> 00:00:10.679
+We'll be more specific and say that
+
+00:00:10.679 --> 00:00:16.140
+the maximum daily return over the trailing month is our measure of skew.
+
+00:00:16.140 --> 00:00:21.899
+Let's also assume that the return over the trailing year is a momentum vector.
+
+00:00:21.899 --> 00:00:24.729
+Notice that it's more precise to call
+
+00:00:24.730 --> 00:00:29.265
+our definition of skew as a measure of positive skew.
+
+00:00:29.265 --> 00:00:34.460
+We aren't defining negative skew with a minimum over the trailing month.
+
+00:00:34.460 --> 00:00:37.939
+Even though this is also a valid approach,
+
+00:00:37.939 --> 00:00:42.284
+for simplicity, we'll just be measuring positive skew.
+
+00:00:42.284 --> 00:00:48.719
+Remember, the Alpha vector is a relative ranking exercise.
+
+00:00:48.719 --> 00:00:50.990
+In our first scenario,
+
+00:00:50.990 --> 00:00:55.234
+let's say momentum is positive and skew is positive.
+
+00:00:55.234 --> 00:01:00.265
+This is the scenario that we saw in the introduction to this factor.
+
+00:01:00.265 --> 00:01:03.439
+We can think of the positive skew as having
+
+00:01:03.439 --> 00:01:08.564
+a dampening effect on the positive momentum of the stock.
+
+00:01:08.564 --> 00:01:12.920
+The paper calls this weakened momentum.
+
+00:01:12.920 --> 00:01:14.870
+For our second scenario,
+
+00:01:14.870 --> 00:01:17.555
+let's say momentum is still positive,
+
+00:01:17.555 --> 00:01:20.624
+but the skew is less positive.
+
+00:01:20.623 --> 00:01:24.459
+The less positive skew may indicate that
+
+00:01:24.459 --> 00:01:30.789
+future returns maybe stronger than if there were a positive skew.
+
+00:01:30.790 --> 00:01:34.575
+The paper calls this enhanced momentum.
+
+00:01:34.575 --> 00:01:36.659
+For our third scenario,
+
+00:01:36.659 --> 00:01:40.459
+we'll look at negative momentum and positive skew.
+
+00:01:40.459 --> 00:01:46.789
+The paper describes this scenario by suggesting a phenomenon where investors are overly
+
+00:01:46.790 --> 00:01:54.235
+optimistic about a downward trending stock when the stock bounces backup temporarily.
+
+00:01:54.234 --> 00:01:59.890
+The hypothesis continues to suggest that when the stock rebounds positively,
+
+00:01:59.890 --> 00:02:06.060
+individual investors may see this as a sign of recovery so they may buy as well.
+
+00:02:06.060 --> 00:02:07.814
+To conclude this scenario,
+
+00:02:07.813 --> 00:02:11.094
+as fundamental still put downward pressure on the stock,
+
+00:02:11.094 --> 00:02:16.879
+the momentum then reasserts itself and the stock continues to slide downward.
+
+00:02:16.879 --> 00:02:22.579
+This scenario is also referred to as enhanced momentum and is
+
+00:02:22.580 --> 00:02:25.160
+the primary scenario for which the researchers
+
+00:02:25.159 --> 00:02:29.275
+found more significant effect of skewness on momentum.
+
+00:02:29.275 --> 00:02:31.245
+For our fourth scenario,
+
+00:02:31.245 --> 00:02:34.740
+we'll look at negative momentum and less positive skew.
+
+00:02:34.740 --> 00:02:39.250
+The less positive skew has a dampening effect on the negative momentum,
+
+00:02:39.250 --> 00:02:42.800
+so it can be referred to as weakened momentum.
+
+00:02:42.800 --> 00:02:46.330
+Now that you've seen how momentum and skew interact,
+
+00:02:46.330 --> 00:02:51.320
+can you think of how these can be combined into a conditional factor?
+

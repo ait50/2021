@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.618
+As practitioners, we were reading academic research papers for insights.
+
+00:00:04.618 --> 00:00:06.330
+So, it's helpful to know
+
+00:00:06.330 --> 00:00:11.155
+how academic papers and practitioners view quantiles differently.
+
+00:00:11.154 --> 00:00:15.089
+Academic papers tend to take raw alpha signals,
+
+00:00:15.089 --> 00:00:16.475
+which are not ranked,
+
+00:00:16.475 --> 00:00:19.520
+and split them into quantiles only.
+
+00:00:19.519 --> 00:00:23.399
+Their analysis usually focuses on the tails.
+
+00:00:23.399 --> 00:00:26.529
+That is, the highest and lowest quantiles.
+
+00:00:26.530 --> 00:00:30.259
+The reason that academic researchers are focused on this,
+
+00:00:30.259 --> 00:00:34.380
+is that they want to detect broadly applicable market phenomenon,
+
+00:00:34.380 --> 00:00:39.330
+and are not necessarily interested in how to implement a trading strategy.
+
+00:00:39.329 --> 00:00:43.324
+Because of this, you may notice that certain academic research
+
+00:00:43.325 --> 00:00:47.810
+will find an effect in just one tail such as the lowest quintile,
+
+00:00:47.810 --> 00:00:50.390
+while they find less of an effect in
+
+00:00:50.390 --> 00:00:55.149
+the other tail quantile or even in the other quantiles in between.
+
+00:00:55.149 --> 00:00:59.634
+Note that this means that the abnormal returns that they detect in such a paper,
+
+00:00:59.634 --> 00:01:02.774
+may only work on a subset of the stock universe.
+
+00:01:02.774 --> 00:01:06.769
+Practitioners have the goal of implementing a trading strategy that
+
+00:01:06.769 --> 00:01:10.774
+can be applied to all the assets in their universe.
+
+00:01:10.775 --> 00:01:13.630
+This means that with quintile analysis,
+
+00:01:13.629 --> 00:01:18.224
+practitioners care about how the factor performs across all quantile groups,
+
+00:01:18.224 --> 00:01:20.179
+not just one or two tails.
+
+00:01:20.180 --> 00:01:23.000
+This is because practitioners want to see how the factor
+
+00:01:23.000 --> 00:01:25.870
+influences all stocks and there trading universe.
+
+00:01:25.870 --> 00:01:29.510
+So, even if a research study found that an alpha factor
+
+00:01:29.510 --> 00:01:33.405
+only worked in the subset of the quantile distribution,
+
+00:01:33.405 --> 00:01:36.230
+the practitioner will view this as
+
+00:01:36.230 --> 00:01:42.120
+a graded spectrum in order to generate an alpha number for every stock in their universe.
+

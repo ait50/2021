@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.355
+You have come so far.
+
+00:00:02.355 --> 00:00:06.269
+Just think of all the amazing things we've told you in the past few lessons,
+
+00:00:06.269 --> 00:00:09.445
+I bet your head is spinning in a good way.
+
+00:00:09.445 --> 00:00:11.640
+We've been talking about factors,
+
+00:00:11.640 --> 00:00:12.750
+how to think about them,
+
+00:00:12.750 --> 00:00:14.914
+how to find them, how to code them up,
+
+00:00:14.914 --> 00:00:16.314
+how to make them robust,
+
+00:00:16.315 --> 00:00:17.880
+and how to evaluate them.
+
+00:00:17.879 --> 00:00:22.384
+We've told you about risk factors and about the fun ones, alpha factors.
+
+00:00:22.385 --> 00:00:24.190
+But in this lesson,
+
+00:00:24.190 --> 00:00:26.070
+the rubber really hits the road.
+
+00:00:26.070 --> 00:00:29.714
+Now we want to find the optimal weights for our portfolio.
+
+00:00:29.714 --> 00:00:33.299
+So, we're going to plug our Alpha and risk factors into the formalism we
+
+00:00:33.299 --> 00:00:37.419
+discussed earlier in the course for portfolio optimization.
+
+00:00:37.420 --> 00:00:40.940
+This lesson is going to be critical for finishing the project.
+
+00:00:40.939 --> 00:00:44.599
+I can't wait to tell you about it, so, let's get started.
+

@@ -1,0 +1,184 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.280
+You may be wondering how to come up with alpha factors and trading strategies.
+
+00:00:04.280 --> 00:00:06.370
+Some sources of inspiration,
+
+00:00:06.370 --> 00:00:08.289
+maybe reading financial news,
+
+00:00:08.289 --> 00:00:11.069
+observing the markets for curious behavior,
+
+00:00:11.070 --> 00:00:14.429
+studying the methods of famous investors both
+
+00:00:14.429 --> 00:00:18.149
+discretionary and want or talking to industry practitioners.
+
+00:00:18.149 --> 00:00:22.049
+We'll explore academic research papers as a source for
+
+00:00:22.050 --> 00:00:26.975
+alpha factor ideas through the remainder of this lesson and in the next lesson.
+
+00:00:26.975 --> 00:00:30.705
+It's important to understand a key point before we do this.
+
+00:00:30.704 --> 00:00:33.019
+We should not expect to get
+
+00:00:33.020 --> 00:00:37.480
+strong production-ready alphas ''as is'' from academic papers.
+
+00:00:37.479 --> 00:00:42.500
+Why not? Because the very act of publication which makes the paper
+
+00:00:42.500 --> 00:00:47.784
+publicly available also diffuses this information into the market.
+
+00:00:47.784 --> 00:00:50.719
+As participants adopt the trading strategy,
+
+00:00:50.719 --> 00:00:53.689
+the strength of the effect is diffused.
+
+00:00:53.689 --> 00:00:56.879
+Why then do we look at academic papers at all?
+
+00:00:56.880 --> 00:00:58.645
+For four reasons.
+
+00:00:58.645 --> 00:01:04.844
+First, these papers can spur idea generation for us to create derivative works.
+
+00:01:04.844 --> 00:01:11.974
+Second, the work conserve as baseline factors to compare with our own alpha generation.
+
+00:01:11.974 --> 00:01:15.679
+Third, we can learn how professional full-time
+
+00:01:15.680 --> 00:01:19.825
+researchers approach problems and validate their findings.
+
+00:01:19.825 --> 00:01:25.990
+Fourth, perhaps we can learn about new sources of data or novel ways to work with data.
+
+00:01:25.989 --> 00:01:31.149
+Academic research can be published in general interests economic journals,
+
+00:01:31.150 --> 00:01:34.805
+investment focused journals, or open source journals.
+
+00:01:34.805 --> 00:01:38.450
+General interest journals and investment focused journals both
+
+00:01:38.450 --> 00:01:42.659
+require peer review and require a paid subscription.
+
+00:01:42.659 --> 00:01:46.670
+Open source repositories usually include working papers that
+
+00:01:46.670 --> 00:01:50.795
+have not yet been peer reviewed and are also free.
+
+00:01:50.795 --> 00:01:54.480
+Open source repositories for research papers include,
+
+00:01:54.480 --> 00:01:56.885
+SSRN and the archive.
+
+00:01:56.885 --> 00:02:00.350
+One benefit to using open source journals is that there's
+
+00:02:00.349 --> 00:02:03.819
+a broader selection of papers and their ideas more recent,
+
+00:02:03.819 --> 00:02:07.004
+since peer review is a process that takes time.
+
+00:02:07.004 --> 00:02:12.379
+It helps to figure out which other papers cite a particular article,
+
+00:02:12.379 --> 00:02:14.599
+to see how other researchers attempted to
+
+00:02:14.599 --> 00:02:18.379
+replicate critique or improve upon the original idea.
+
+00:02:18.379 --> 00:02:20.685
+Once you've found some papers of interests,
+
+00:02:20.685 --> 00:02:25.180
+scan the abstract and find out if the data use is accessible to you.
+
+00:02:25.180 --> 00:02:27.800
+Focus on papers for which the data is
+
+00:02:27.800 --> 00:02:31.064
+accessible so that you may try to replicate their work.
+
+00:02:31.064 --> 00:02:35.620
+Check that the methodology could potentially be practical.
+
+00:02:35.620 --> 00:02:38.420
+Academic papers almost never include
+
+00:02:38.419 --> 00:02:43.389
+real-world constraints like transaction costs or liquidity directly.
+
+00:02:43.389 --> 00:02:46.250
+You need to make a judgment quickly if you think adding
+
+00:02:46.250 --> 00:02:49.974
+these constraints will completely invalidate the ideas presented.
+
+00:02:49.974 --> 00:02:53.484
+Some papers include these aspects in a roundabout way.
+
+00:02:53.485 --> 00:02:56.270
+They conducted Turnover Analysis or they choose
+
+00:02:56.270 --> 00:02:59.465
+a stock universe that includes more illiquid stocks.
+
+00:02:59.465 --> 00:03:02.479
+Some examples of impractical methods may
+
+00:03:02.479 --> 00:03:06.064
+include choosing a large universe of say 8,000 stocks,
+
+00:03:06.064 --> 00:03:08.599
+in which most of the factor returns are derived from
+
+00:03:08.599 --> 00:03:11.449
+a subset of the small and micro cap stocks.
+
+00:03:11.449 --> 00:03:15.379
+Remember that small and micro cap stocks are less liquid and factors that
+
+00:03:15.379 --> 00:03:20.180
+rely on illiquid stocks may be difficult to implement in practice.
+
+00:03:20.180 --> 00:03:24.515
+Note that the process of finding academic papers, studying papers,
+
+00:03:24.514 --> 00:03:27.514
+implementing the papers and then evaluating them
+
+00:03:27.514 --> 00:03:31.244
+is a very important skill to have as a quantitative researcher.
+
+00:03:31.245 --> 00:03:34.224
+We hope to walk you through some of these examples,
+
+00:03:34.224 --> 00:03:36.680
+so that you will eventually have the confidence
+
+00:03:36.680 --> 00:03:40.200
+to conduct your own research after this course.
+

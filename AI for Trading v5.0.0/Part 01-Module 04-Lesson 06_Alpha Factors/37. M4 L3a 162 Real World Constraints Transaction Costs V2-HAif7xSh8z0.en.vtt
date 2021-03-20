@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.400
+Another real-world constraint is the total transaction cost,
+
+00:00:04.400 --> 00:00:08.085
+the implicit and explicit costs of making trades.
+
+00:00:08.085 --> 00:00:11.145
+Transaction costs add up and are often
+
+00:00:11.144 --> 00:00:17.129
+a substantial contributor to the success or lack of success of a trading strategy.
+
+00:00:17.129 --> 00:00:19.969
+Most people immediately think of commissions,
+
+00:00:19.969 --> 00:00:23.059
+the explicit cost, as the transaction cost.
+
+00:00:23.059 --> 00:00:26.004
+However, for an institutional market participant,
+
+00:00:26.004 --> 00:00:32.089
+the commission is usually by far the smallest component of the true transaction cost.
+
+00:00:32.090 --> 00:00:35.540
+The biggest component, the implicit component,
+
+00:00:35.539 --> 00:00:37.844
+is what is called the market impact.
+
+00:00:37.844 --> 00:00:40.979
+Institutions need to make large trades.
+
+00:00:40.979 --> 00:00:43.429
+Market impact is the effect that
+
+00:00:43.429 --> 00:00:46.829
+a market participant has when he or she buys or sells an asset.
+
+00:00:46.829 --> 00:00:53.170
+It is the extent to which buying or selling moves the price against the buyer or seller.
+
+00:00:53.170 --> 00:00:56.969
+More buying will move the market price upward.
+
+00:00:56.969 --> 00:01:00.629
+More selling will move the market price downward.
+
+00:01:00.630 --> 00:01:06.159
+For instance, if a fund is trying to sell a large block of shares to an investment bank,
+
+00:01:06.159 --> 00:01:08.420
+then the larger the block of shares,
+
+00:01:08.420 --> 00:01:13.390
+the more risk the investment bank is taking in holding the opposite side of the trade.
+
+00:01:13.390 --> 00:01:17.939
+So, the investment bank would ask for a better deal in the form of a lower price,
+
+00:01:17.939 --> 00:01:20.984
+which would then diminish the profit of the fund.
+
+00:01:20.984 --> 00:01:24.170
+To avoid adversely moving the market price,
+
+00:01:24.170 --> 00:01:27.409
+they will likely slice the trade into smaller blocks.
+
+00:01:27.409 --> 00:01:30.284
+Then we'll trade those blocks over time.
+
+00:01:30.284 --> 00:01:34.114
+Taking more time to trade all blocks also entails the risk
+
+00:01:34.114 --> 00:01:37.670
+that the market price will move over that time.
+
+00:01:37.670 --> 00:01:38.965
+So to summarize,
+
+00:01:38.965 --> 00:01:43.400
+real-world transaction costs can diminish the performance of an alpha factor.
+
+00:01:43.400 --> 00:01:46.310
+So, we want some way to evaluate
+
+00:01:46.310 --> 00:01:51.400
+an alpha factors potential impact on a portfolio's total transaction cost.
+

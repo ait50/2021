@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.660
+Another common type of constraint limits the extent to
+
+00:00:03.660 --> 00:00:07.370
+which you are exposed to any individual factor.
+
+00:00:07.370 --> 00:00:10.664
+This is where you might impose specific limitations
+
+00:00:10.664 --> 00:00:13.844
+on your exposure to common risk model factors.
+
+00:00:13.845 --> 00:00:19.380
+Individual sectors, momentum, value, or company size.
+
+00:00:19.379 --> 00:00:24.729
+Remember that the factor exposure matrix has dimensions of assets and factors.
+
+00:00:24.730 --> 00:00:29.875
+When you multiply the transposed factor exposure matrix by the weight vector,
+
+00:00:29.875 --> 00:00:31.899
+which has dimensions of assets,
+
+00:00:31.899 --> 00:00:34.914
+you get a vector that has dimensions of factors.
+
+00:00:34.914 --> 00:00:38.409
+Thus, this product is still a vector.
+
+00:00:38.409 --> 00:00:41.209
+When we impose a constraint like this,
+
+00:00:41.210 --> 00:00:43.789
+where this is a single scalar,
+
+00:00:43.789 --> 00:00:47.344
+it means that the constraint applies to each element of the vector.
+
+00:00:47.344 --> 00:00:51.019
+That is, we apply the same constraint for every factor.
+
+00:00:51.020 --> 00:00:54.940
+Again, where do we get these constraint numbers from?
+
+00:00:54.939 --> 00:00:58.155
+They come from business and risk mandates.
+
+00:00:58.155 --> 00:01:03.049
+Finally, it's common to place some ultimate constraints on the individual weights
+
+00:01:03.049 --> 00:01:06.200
+themselves just to ensure that you don't end up in
+
+00:01:06.200 --> 00:01:09.805
+very extreme positions in individual assets.
+
+00:01:09.805 --> 00:01:14.610
+Again, remember that the weight vector is a vector with dimensions of assets,
+
+00:01:14.609 --> 00:01:19.879
+so placing a constraint like this applies to each asset weight in the vector.
+
+00:01:19.879 --> 00:01:23.644
+You can think of this constraint as a kind of insurance.
+
+00:01:23.644 --> 00:01:27.625
+In theory, the risk model should help limit portfolio risk.
+
+00:01:27.625 --> 00:01:30.239
+But in case there's a problem with a risk model,
+
+00:01:30.239 --> 00:01:34.079
+setting limits on how much weight to put on any single stock
+
+00:01:34.079 --> 00:01:38.974
+also helps to protect the portfolio from concentrated risk exposure.
+
+00:01:38.974 --> 00:01:41.629
+This constraint is often impose so that
+
+00:01:41.629 --> 00:01:44.839
+the hedge fund can clearly communicate to investors that
+
+00:01:44.840 --> 00:01:47.450
+there is an absolute limit on the extent to which
+
+00:01:47.450 --> 00:01:50.659
+the portfolio is invested in any one asset.
+
+00:01:50.659 --> 00:01:55.319
+This value could be quoted in fund prospectus documentation.
+

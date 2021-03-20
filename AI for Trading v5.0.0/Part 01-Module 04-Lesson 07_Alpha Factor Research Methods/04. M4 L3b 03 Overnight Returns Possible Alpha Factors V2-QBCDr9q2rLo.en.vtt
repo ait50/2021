@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.964
+From reading the introduction,
+
+00:00:01.964 --> 00:00:03.929
+we see that the authors refer to
+
+00:00:03.930 --> 00:00:07.749
+investor sentiment as the positive or negative views of investors,
+
+00:00:07.748 --> 00:00:12.804
+especially individuals who tend to cluster their orders around a market open.
+
+00:00:12.804 --> 00:00:16.929
+The authors also define overnight returns as the close to
+
+00:00:16.929 --> 00:00:21.105
+open returns and describe the following hypothesis.
+
+00:00:21.105 --> 00:00:24.269
+Individual investors may notice attention
+
+00:00:24.269 --> 00:00:28.384
+getting events and may then choose to trade on those events.
+
+00:00:28.385 --> 00:00:30.440
+Since many of them have day jobs,
+
+00:00:30.440 --> 00:00:35.765
+they may place trades aftermarket clothes that would be executed the following morning.
+
+00:00:35.765 --> 00:00:39.049
+The hypothesis continues to assume that
+
+00:00:39.049 --> 00:00:45.069
+these overnight trades may be subject to mean-reversion by the middle of that second day.
+
+00:00:45.070 --> 00:00:51.049
+Based on this, you may start thinking about how this can be useful as an alpha factor.
+
+00:00:51.049 --> 00:00:54.299
+Let's say, a stock's overnight returns are high.
+
+00:00:54.299 --> 00:00:57.229
+So, that morning, you see an increase in
+
+00:00:57.229 --> 00:01:00.515
+a stock's open price relative to the previous day's close.
+
+00:01:00.515 --> 00:01:02.369
+According to this hypothesis,
+
+00:01:02.369 --> 00:01:08.109
+the stock is overbought and we may expect a correction in a form of a drop in the price.
+
+00:01:08.109 --> 00:01:11.799
+So, if you calculate the overnight return of the stock,
+
+00:01:11.799 --> 00:01:16.844
+you can short the stock that same morning when the overnight return is high.
+
+00:01:16.844 --> 00:01:21.084
+However, that's not the effect that we will look to capture here.
+
+00:01:21.084 --> 00:01:26.229
+There are ideas later in the paper that we will use to construct an alpha factor.
+
+00:01:26.230 --> 00:01:28.174
+Also, in the introduction,
+
+00:01:28.174 --> 00:01:33.780
+the authors state that they test for short-run persistence in overnight returns.
+
+00:01:33.780 --> 00:01:40.394
+This indicates some momentum in the overnight returns over a short term window.
+
+00:01:40.394 --> 00:01:46.134
+If we continue reading in section two titled sample, variable definitions,
+
+00:01:46.135 --> 00:01:49.219
+descriptive statistics, we can see that they're
+
+00:01:49.219 --> 00:01:53.045
+interested in a window of one week or five trading days.
+
+00:01:53.045 --> 00:01:57.409
+They calculate the average daily close to open return over
+
+00:01:57.409 --> 00:02:02.879
+a week as a measure of the persistence or momentum in sentiments.
+
+00:02:02.879 --> 00:02:05.774
+Again, based on this information,
+
+00:02:05.775 --> 00:02:07.280
+you can think about how
+
+00:02:07.280 --> 00:02:12.650
+this weekly average momentum factor might be used in a theoretical portfolio.
+
+00:02:12.650 --> 00:02:15.074
+If according to the hypothesis,
+
+00:02:15.074 --> 00:02:20.000
+the weekly average close to open return for a stock is high and positive,
+
+00:02:20.000 --> 00:02:22.909
+we might want to buy more shares of that stock with
+
+00:02:22.909 --> 00:02:27.044
+the assumption that the positive returns will continue in the short run.
+
+00:02:27.044 --> 00:02:31.704
+Finally, the abstract also identifies a third possible factor.
+
+00:02:31.705 --> 00:02:34.680
+With the hypothesis that in the longer term,
+
+00:02:34.680 --> 00:02:38.385
+stocks with high overnight returns under perform.
+
+00:02:38.384 --> 00:02:41.704
+In other words, in a longer time window,
+
+00:02:41.705 --> 00:02:44.430
+stocks exhibit mean reversion.
+
+00:02:44.430 --> 00:02:49.129
+If we go to section five titled longer-term returns,
+
+00:02:49.129 --> 00:02:51.319
+the hypothesis based on
+
+00:02:51.319 --> 00:02:55.414
+other papers is that stocks that are more attractive to speculators
+
+00:02:55.414 --> 00:02:57.439
+and therefore see more near term
+
+00:02:57.439 --> 00:03:02.250
+positive returns may end up under performing over the next 12 months.
+
+00:03:02.250 --> 00:03:06.800
+However, this also is not the effect we will look to capture here.
+

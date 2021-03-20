@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.690
+So, let's return to the main subject of this lesson,
+
+00:00:03.690 --> 00:00:06.275
+which is factor models of risk.
+
+00:00:06.275 --> 00:00:10.914
+So, how do we use PCA to create a factor model of risk?
+
+00:00:10.914 --> 00:00:13.094
+What are our data?
+
+00:00:13.095 --> 00:00:17.830
+They are a set of time series of stock returns for many, many companies.
+
+00:00:17.829 --> 00:00:23.264
+Our main motivations for using PCA are to reduce the dimensionality of these data
+
+00:00:23.265 --> 00:00:29.304
+and also find a representation of them that captures a maximum amount of their variance.
+
+00:00:29.304 --> 00:00:33.630
+We'll use this representation or model of risk later when
+
+00:00:33.630 --> 00:00:38.160
+we seek to minimize risk as part of an optimization problem.
+
+00:00:38.159 --> 00:00:41.839
+We're going to be talking about a lot of matrix multiplications here,
+
+00:00:41.840 --> 00:00:45.255
+so I'm going to try to always write down the dimensions.
+
+00:00:45.255 --> 00:00:49.545
+I think keeping track of the dimensions will help you keep track of what's going on.
+
+00:00:49.545 --> 00:00:51.365
+It's certainly helps me.
+
+00:00:51.365 --> 00:00:54.204
+When we use a factor model, remember,
+
+00:00:54.204 --> 00:00:58.494
+we have a representation of the returns that looks like this.
+
+00:00:58.494 --> 00:01:02.604
+In order to produce a factor model of risk using PCA,
+
+00:01:02.604 --> 00:01:05.450
+we need to look at what the PCA algorithm gives
+
+00:01:05.450 --> 00:01:08.810
+us and map its outputs to each of these matrices;
+
+00:01:08.810 --> 00:01:12.290
+the factor exposures, factor returns,
+
+00:01:12.290 --> 00:01:14.830
+and the idiosyncratic risk matrix.
+
+00:01:14.829 --> 00:01:19.484
+So, let's look at what these symbols represent in terms of matrices.
+
+00:01:19.484 --> 00:01:25.754
+The returns matrix has dimensions of number of companies by number of time points.
+
+00:01:25.754 --> 00:01:29.414
+The matrix of factor exposures has dimensions,
+
+00:01:29.415 --> 00:01:32.750
+number of companies by number of factors.
+
+00:01:32.750 --> 00:01:36.230
+The matrix of factor returns has dimensions
+
+00:01:36.230 --> 00:01:39.790
+of number of factors by number of time points.
+
+00:01:39.790 --> 00:01:43.250
+Finally, the matrix of specific risk has
+
+00:01:43.250 --> 00:01:47.420
+dimensions number of companies by number of time points.
+
+00:01:47.420 --> 00:01:52.224
+Let's take a look at what we get from running the PCA algorithm.
+
+00:01:52.224 --> 00:01:56.750
+Remember that PCA finds a new basis for the data.
+
+00:01:56.750 --> 00:01:59.079
+If we keep all the PCs,
+
+00:01:59.079 --> 00:02:03.679
+then multiplying the representation of the data in the PC language by
+
+00:02:03.680 --> 00:02:09.409
+the matrix of PCs completely recreates the data in the original basis.
+
+00:02:09.409 --> 00:02:14.120
+On the other hand, if we drop some of the PCs then multiplying
+
+00:02:14.120 --> 00:02:19.990
+the data matrix in the new basis by the matrix of PCs almost recreates the data.
+
+00:02:19.990 --> 00:02:23.365
+This is the compressed representation of the data.
+
+00:02:23.365 --> 00:02:25.330
+If we add in what's leftover,
+
+00:02:25.330 --> 00:02:28.705
+then we have a complete representation of the data.
+
+00:02:28.705 --> 00:02:31.820
+Now, this is looking a lot like
+
+00:02:31.819 --> 00:02:35.284
+the factor representation we discussed a little bit earlier.
+
+00:02:35.284 --> 00:02:40.000
+In fact, we're just going to use this as our factor model.
+

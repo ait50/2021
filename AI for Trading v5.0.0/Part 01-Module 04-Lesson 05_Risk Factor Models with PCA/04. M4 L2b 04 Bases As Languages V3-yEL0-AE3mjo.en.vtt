@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.160
+PCA, amounts to finding a new and special basis for your dataset.
+
+00:00:05.160 --> 00:00:09.199
+But hang on, what does it mean to find a new basis?
+
+00:00:09.199 --> 00:00:13.199
+I'm guessing that you've heard about and even done this yourself before.
+
+00:00:13.199 --> 00:00:17.660
+But before we move on, let's just briefly review exactly what this means.
+
+00:00:17.660 --> 00:00:21.675
+Let's return to thinking about vectors as directions in space,
+
+00:00:21.675 --> 00:00:23.875
+and start in the 2D plane.
+
+00:00:23.875 --> 00:00:28.750
+You know that we can represent a point living in the 2D plane with two coordinates.
+
+00:00:28.750 --> 00:00:32.240
+The coordinates tell you how to get to the point from the origin.
+
+00:00:32.240 --> 00:00:37.690
+For example, the vector 1,2 means go one unit to the right,
+
+00:00:37.689 --> 00:00:40.109
+and two up to get to this point.
+
+00:00:40.109 --> 00:00:42.964
+So, we see that we can decompose
+
+00:00:42.965 --> 00:00:47.385
+the overall movement represented by the vector into two movements;
+
+00:00:47.384 --> 00:00:49.464
+one to the right, and one up.
+
+00:00:49.465 --> 00:00:51.910
+Once we know the directions to go,
+
+00:00:51.909 --> 00:00:55.489
+we can specify how far to go in each direction.
+
+00:00:55.490 --> 00:00:58.855
+Towards this goal, let's write down two vectors,
+
+00:00:58.854 --> 00:01:00.639
+i hat and j hat.
+
+00:01:00.640 --> 00:01:06.439
+The first one, we write as 1,0 which means move one unit to the right.
+
+00:01:06.439 --> 00:01:12.295
+The second one, we write as 0,1 which represents moving one unit up.
+
+00:01:12.295 --> 00:01:17.865
+Our original vector is made up of one i hat and two j hats.
+
+00:01:17.864 --> 00:01:25.969
+We can write it as 1 times 1,0 plus 2 times 0,1 or 1,2.
+
+00:01:25.969 --> 00:01:31.929
+In other words, our vector can be written as a linear combination of i hat and j hat.
+
+00:01:31.930 --> 00:01:37.200
+We call i hat and j hat a set of basis vectors for the 2D plane.
+
+00:01:37.200 --> 00:01:40.939
+A set of vectors is a basis for a space,
+
+00:01:40.939 --> 00:01:46.584
+if no vector in the set can be written as a linear combination of the others,
+
+00:01:46.584 --> 00:01:53.459
+and any vector in the space can be written as a linear combination of vectors in the set.
+
+00:01:53.459 --> 00:01:57.684
+If we want to express this using matrix multiplication,
+
+00:01:57.685 --> 00:01:59.329
+we could write it this way.
+
+00:01:59.329 --> 00:02:05.329
+Now, we see that the number in the top position of this vector means how much of i hat,
+
+00:02:05.329 --> 00:02:08.120
+or how much of the first basis vector.
+
+00:02:08.120 --> 00:02:13.705
+While the number in this bottom position means how much of the second basis vector.
+
+00:02:13.705 --> 00:02:19.880
+So, 1,2 is how we write our vector in the i hat, j hat basis.
+
+00:02:19.879 --> 00:02:23.579
+Although we use i hat and j hat most of the time,
+
+00:02:23.580 --> 00:02:26.620
+there are other bases we can choose for the 2D plane,
+
+00:02:26.620 --> 00:02:29.060
+because there are different ways to get to our point.
+
+00:02:29.060 --> 00:02:30.789
+We could shoot out over here,
+
+00:02:30.789 --> 00:02:32.650
+and then go back over here.
+
+00:02:32.650 --> 00:02:36.520
+Remember, that our choice of basis also effectively
+
+00:02:36.520 --> 00:02:40.689
+sets up a coordinate grid for us to represent our vectors in.
+
+00:02:40.689 --> 00:02:44.359
+We are used to seeing a grid made up of square boxes,
+
+00:02:44.360 --> 00:02:46.500
+the usual X, Y coordinate system,
+
+00:02:46.500 --> 00:02:48.955
+with the basis vectors i hat and j hat.
+
+00:02:48.955 --> 00:02:53.590
+But if we use these red and blue vectors as our basis vectors,
+
+00:02:53.590 --> 00:02:57.580
+a more sensible grid would be made up of these parallelograms.
+
+00:02:57.580 --> 00:03:03.330
+Thus, we can represent our original vector with a different combination of basis vectors.
+
+00:03:03.330 --> 00:03:08.840
+We can think of this as another language for writing down our original vector,
+
+00:03:08.840 --> 00:03:11.390
+because we see that we can write down a new set of
+
+00:03:11.389 --> 00:03:14.554
+instructions for creating the original vector.
+
+00:03:14.555 --> 00:03:18.870
+Now, all we need is a way to translate between the two languages,
+
+00:03:18.870 --> 00:03:21.474
+the original language, where we use i hat j hat,
+
+00:03:21.474 --> 00:03:24.530
+and this one with the blue and red vectors.
+

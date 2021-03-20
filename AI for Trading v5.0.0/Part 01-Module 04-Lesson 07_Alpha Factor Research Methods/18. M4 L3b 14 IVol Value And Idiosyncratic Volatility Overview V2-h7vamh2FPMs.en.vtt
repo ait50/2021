@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.349
+The last alpha factor that we'll construct is based on the paper
+
+00:00:04.349 --> 00:00:09.629
+titled "Arbitrage asymmetry and the idiosyncratic volatility puzzle."
+
+00:00:09.630 --> 00:00:13.115
+This paper uses a lot of the concepts that we've learned,
+
+00:00:13.115 --> 00:00:16.679
+including a unique example of using some of
+
+00:00:16.679 --> 00:00:21.390
+the output of a risk model as part of alpha factor construction.
+
+00:00:21.390 --> 00:00:25.830
+Personally, I enjoy this example because we combined so much of what we have
+
+00:00:25.829 --> 00:00:30.568
+learned in addition to some more ideas from behavioral finance.
+
+00:00:30.568 --> 00:00:32.269
+Based on this paper,
+
+00:00:32.270 --> 00:00:34.295
+we'll construct a conditional factor,
+
+00:00:34.295 --> 00:00:38.385
+a fundamental factor enhanced by a volatility factor.
+
+00:00:38.384 --> 00:00:41.689
+Let's start with some background information that will help
+
+00:00:41.689 --> 00:00:45.344
+you interpret the meaning of the two factors that we'll combine.
+
+00:00:45.344 --> 00:00:50.104
+We'll first remind ourselves of how arbitrage supports efficient markets.
+
+00:00:50.104 --> 00:00:56.919
+Next, we'll look at volatility and how volatility may limit arbitrage activities.
+
+00:00:56.920 --> 00:01:01.250
+Then we'll look at the idiosyncratic portion of volatility and why
+
+00:01:01.250 --> 00:01:06.170
+this might be more useful as a factor than the total volatility.
+
+00:01:06.170 --> 00:01:10.165
+Then we'll refresh the meaning of a value factor,
+
+00:01:10.165 --> 00:01:13.050
+which is a type of fundamental factor.
+
+00:01:13.049 --> 00:01:20.259
+Lastly, we'll combine the value factor and idiosyncratic volatility into a joined factor.
+
+00:01:20.260 --> 00:01:24.500
+We'll discuss generalizing what we've learned so that you can use
+
+00:01:24.500 --> 00:01:28.480
+your creativity and create related factors of your own.
+

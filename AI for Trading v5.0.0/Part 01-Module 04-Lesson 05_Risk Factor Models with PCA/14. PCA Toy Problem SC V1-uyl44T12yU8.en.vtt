@@ -1,0 +1,352 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.669
+Hello and welcome. In this notebook,
+
+00:00:02.669 --> 00:00:07.674
+we will learn how to use principal component analysis for dimensionality reduction.
+
+00:00:07.674 --> 00:00:12.365
+Dimensionality reduction, is one of the main applications of PCA.
+
+00:00:12.365 --> 00:00:14.089
+In the previous lessons,
+
+00:00:14.089 --> 00:00:19.295
+you've already learned how PCA works and about eigenvectors and eigenvalues.
+
+00:00:19.295 --> 00:00:23.835
+In this notebook, we will see how to apply PCA to a small dataset.
+
+00:00:23.835 --> 00:00:28.690
+Let's begin by understanding what dimensionality reduction is all about.
+
+00:00:28.690 --> 00:00:33.484
+Let's suppose we had some two dimensional data that looks like this.
+
+00:00:33.484 --> 00:00:38.479
+We can see that most of the data points lie close to a straight line.
+
+00:00:38.479 --> 00:00:44.433
+We can also see that most of the variation in the data occurs along this direction,
+
+00:00:44.433 --> 00:00:48.324
+but there's not much variation along this direction.
+
+00:00:48.325 --> 00:00:52.760
+This means we can explain most of the variation of the data by
+
+00:00:52.759 --> 00:00:57.420
+only looking at how the data points are distributed along this straight line.
+
+00:00:57.420 --> 00:01:01.130
+Therefore, we could reduce this two-dimensional data to
+
+00:01:01.130 --> 00:01:06.445
+one-dimensional data by projecting all these data points onto this straight line.
+
+00:01:06.444 --> 00:01:09.529
+By projecting the data onto a straight line,
+
+00:01:09.530 --> 00:01:13.359
+we can actually reduce the number of variables needed to describe the data
+
+00:01:13.359 --> 00:01:15.650
+because you only need one number to
+
+00:01:15.650 --> 00:01:19.085
+specify a data point's position along a straight line.
+
+00:01:19.084 --> 00:01:24.239
+Therefore, the two variables that describe the original data can be
+
+00:01:24.239 --> 00:01:30.089
+replaced by a new variable that actually encodes this linear relationship.
+
+00:01:30.090 --> 00:01:33.760
+It is important to note that the new variable is
+
+00:01:33.760 --> 00:01:39.020
+just an abstract tool that allows us to express this data in a more compact form,
+
+00:01:39.019 --> 00:01:43.795
+and may or may not be interpreted as a real-world quantity.
+
+00:01:43.795 --> 00:01:47.015
+Now, let's see how we can do this in code.
+
+00:01:47.015 --> 00:01:51.140
+For simplicity, we will use a small two-dimensional dataset.
+
+00:01:51.140 --> 00:01:52.700
+In a later notebook,
+
+00:01:52.700 --> 00:01:57.270
+you'll get a chance to apply what you learned in this notebook to real stock data.
+
+00:01:57.269 --> 00:02:01.340
+We will start by creating some randomly correlated data.
+
+00:02:01.340 --> 00:02:07.140
+In this code, you can choose the range of your data and the amount of correlation.
+
+00:02:07.140 --> 00:02:13.240
+The code outputs a plot with the data points and the amount of correlation.
+
+00:02:13.240 --> 00:02:17.905
+In this case, we chose our data range to be between 10 and 80.
+
+00:02:17.905 --> 00:02:24.319
+Therefore, the datapoints range between 10 and 80 in both the x and y axis.
+
+00:02:24.319 --> 00:02:30.659
+Remember, a correlation of zero means no correlation at all,
+
+00:02:30.659 --> 00:02:34.889
+and a correlation of one means complete correlation.
+
+00:02:34.889 --> 00:02:39.789
+You can vary the amount of correlation and create the data that you like.
+
+00:02:39.789 --> 00:02:42.030
+Once you have created your data,
+
+00:02:42.030 --> 00:02:46.574
+the next step in PCA is to center your data around zero.
+
+00:02:46.574 --> 00:02:50.339
+It is also customary to normalize your data.
+
+00:02:50.340 --> 00:02:53.015
+This is known as mean normalization.
+
+00:02:53.014 --> 00:02:55.709
+While centering the data is necessary,
+
+00:02:55.710 --> 00:02:58.115
+normalizing the data is optional,
+
+00:02:58.115 --> 00:03:00.665
+and this is what I have done here.
+
+00:03:00.664 --> 00:03:05.384
+Mean normalization not only centers your data around zero,
+
+00:03:05.384 --> 00:03:08.435
+but also distributes your data evenly,
+
+00:03:08.435 --> 00:03:11.140
+in a small interval around zero.
+
+00:03:11.139 --> 00:03:12.604
+As you can see here,
+
+00:03:12.604 --> 00:03:16.519
+the data is no longer in the range between 10 and 80.
+
+00:03:16.520 --> 00:03:21.920
+But after normalization, the data is now distributed between minus three and three.
+
+00:03:21.919 --> 00:03:25.484
+This will help your algorithm converge faster.
+
+00:03:25.485 --> 00:03:27.275
+With our data centered,
+
+00:03:27.275 --> 00:03:29.450
+we're ready to perform PCA.
+
+00:03:29.449 --> 00:03:33.204
+To do this, we will use a package called Scikit-learn.
+
+00:03:33.205 --> 00:03:39.115
+Scikit-learn's PCA class allows us to easily implement PCA on data.
+
+00:03:39.115 --> 00:03:43.610
+The first thing we need to do is to create a PCA object with
+
+00:03:43.610 --> 00:03:49.080
+a given set of parameters including the number of principal components we want to use.
+
+00:03:49.080 --> 00:03:54.190
+We'll start by using two components because we want to visualize them later.
+
+00:03:54.189 --> 00:03:59.884
+Here, we can see the parameters that the PCA algorithm is going to use.
+
+00:03:59.884 --> 00:04:08.139
+The next step is to pass the data to the PC object using the fit method. A quick note.
+
+00:04:08.139 --> 00:04:13.379
+In Scikit-Learn, the PCA algorithm automatically centers the data for you.
+
+00:04:13.379 --> 00:04:16.250
+So, you could pass the original dataset to
+
+00:04:16.250 --> 00:04:20.930
+the fit method instead of the normalized data as we have done here.
+
+00:04:20.930 --> 00:04:23.025
+Once we fit the data,
+
+00:04:23.024 --> 00:04:26.479
+we can use the attributes of the PCA class to see
+
+00:04:26.480 --> 00:04:32.634
+the eigenvectors also known as the principle components, and its eigenvalues.
+
+00:04:32.634 --> 00:04:39.404
+One important attribute of the PCA class is the explained variance ratio.
+
+00:04:39.404 --> 00:04:42.979
+The explained variance ratio gives us the percentage
+
+00:04:42.980 --> 00:04:46.780
+of variance explained by each of the principal components.
+
+00:04:46.779 --> 00:04:49.579
+In general, the principle components with
+
+00:04:49.579 --> 00:04:53.759
+the largest eigenvalues explain the majority of the variance,
+
+00:04:53.759 --> 00:04:56.545
+and this is usually the ones that we want to keep.
+
+00:04:56.545 --> 00:04:58.910
+For example, here we can see that
+
+00:04:58.910 --> 00:05:03.555
+the first principle component explains 94 percent of the variance,
+
+00:05:03.555 --> 00:05:06.845
+and has the largest eigenvalue.
+
+00:05:06.845 --> 00:05:09.985
+Now that we have the principle components,
+
+00:05:09.985 --> 00:05:11.545
+we can visualize them.
+
+00:05:11.545 --> 00:05:15.655
+Here, we see the data with the first principle component,
+
+00:05:15.654 --> 00:05:17.924
+and the second principle component.
+
+00:05:17.925 --> 00:05:21.259
+We can see that the first principal component lies
+
+00:05:21.259 --> 00:05:25.324
+along the direction in which the data varies the most.
+
+00:05:25.324 --> 00:05:28.370
+One question that you will frequently face
+
+00:05:28.370 --> 00:05:31.610
+is how many principal components you should use.
+
+00:05:31.610 --> 00:05:36.754
+For example, suppose you had a dataset with 1,000 dimensions.
+
+00:05:36.754 --> 00:05:38.719
+Should you reduce this dataset to
+
+00:05:38.720 --> 00:05:43.955
+500 dimensions or could you do better and reduce it to 100 dimensions?
+
+00:05:43.954 --> 00:05:47.884
+Usually, the number of principal components is chosen
+
+00:05:47.884 --> 00:05:52.069
+depending on how much of the variance of the original data you want to retain.
+
+00:05:52.069 --> 00:05:56.204
+For example, you may want to retain 90 percent of the variance,
+
+00:05:56.204 --> 00:06:00.024
+or you may only want to retain 50 percent of the variance.
+
+00:06:00.024 --> 00:06:05.359
+You can use the explained variance ratio attribute of the PCA class
+
+00:06:05.360 --> 00:06:07.670
+to determine the number of components you need to
+
+00:06:07.670 --> 00:06:11.074
+keep to retain a given amount of variance.
+
+00:06:11.074 --> 00:06:15.654
+For example, if you wanted to retain 90 percent of the variance,
+
+00:06:15.654 --> 00:06:17.449
+you can add up the elements in
+
+00:06:17.449 --> 00:06:22.214
+the explained variance ratio array until the desired value is reached.
+
+00:06:22.214 --> 00:06:25.519
+The number of elements you had to add up to reach
+
+00:06:25.519 --> 00:06:28.219
+the desired value determines the number of
+
+00:06:28.220 --> 00:06:31.765
+principal components needed to retain that level of variance.
+
+00:06:31.764 --> 00:06:37.223
+For example, if you had to add up five elements to retain 90 percent of the variance,
+
+00:06:37.223 --> 00:06:40.904
+then you will need five principal components.
+
+00:06:40.904 --> 00:06:44.599
+Now, that we have seen what all the principal components look like,
+
+00:06:44.600 --> 00:06:48.935
+we will now use PCA to perform dimensionality reduction.
+
+00:06:48.935 --> 00:06:53.454
+Since the data we're using in this simple example only has two dimensions,
+
+00:06:53.454 --> 00:06:57.214
+the best we can do, is to reduce it to one dimension.
+
+00:06:57.214 --> 00:06:59.479
+So, now choose the number of
+
+00:06:59.480 --> 00:07:04.180
+principle components in our PCA algorithm to be equal to one.
+
+00:07:04.180 --> 00:07:08.550
+Once we ran the PC algorithm with only one component,
+
+00:07:08.550 --> 00:07:11.540
+we can see what the transform data looks like by
+
+00:07:11.540 --> 00:07:15.450
+using the transform method of the PCA class.
+
+00:07:15.449 --> 00:07:17.519
+In this simple case,
+
+00:07:17.519 --> 00:07:19.819
+the transform method projects the data onto
+
+00:07:19.819 --> 00:07:25.709
+the first principal component so we will just get a straight line.
+
+00:07:25.709 --> 00:07:28.589
+When working with higher dimensional data,
+
+00:07:28.589 --> 00:07:31.069
+the transform method will project the data onto
+
+00:07:31.069 --> 00:07:33.769
+the lower-dimensional surface determined by
+
+00:07:33.769 --> 00:07:37.839
+the number of principal components you used in your algorithm.
+

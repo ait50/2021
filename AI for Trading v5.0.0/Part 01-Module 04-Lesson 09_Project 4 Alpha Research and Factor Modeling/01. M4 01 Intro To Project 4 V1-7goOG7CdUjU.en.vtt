@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.749
+Now that you've learned a lot of the theory behind alpha and risk factors,
+
+00:00:03.749 --> 00:00:07.464
+and had a chance to work through some of the important ideas and exercises,
+
+00:00:07.464 --> 00:00:10.080
+you have the opportunity to put all these ideas into
+
+00:00:10.080 --> 00:00:13.625
+practice in your final project of term one.
+
+00:00:13.625 --> 00:00:19.125
+Personally, it's my favorite project of the term in part, because I designed it.
+
+00:00:19.125 --> 00:00:22.765
+In this project, we code up and test several alpha factors.
+
+00:00:22.765 --> 00:00:26.179
+First, we evaluate the factors to see which ones may be
+
+00:00:26.179 --> 00:00:29.989
+promising candidates to put together into a combined alpha factor.
+
+00:00:29.989 --> 00:00:32.914
+We examine them initially to check whether the alphas
+
+00:00:32.914 --> 00:00:35.905
+have predictive power in the cross-section of stocks.
+
+00:00:35.905 --> 00:00:37.865
+We calculate their Sharpe ratios,
+
+00:00:37.865 --> 00:00:42.670
+and we tried to get a sense of how much trading they would incur by a turnover analysis.
+
+00:00:42.670 --> 00:00:46.250
+Then we throw the alphas into an optimizer in order
+
+00:00:46.250 --> 00:00:49.549
+to calculate optimal portfolio weights by
+
+00:00:49.549 --> 00:00:53.029
+maximizing our predicted return via our alphas and
+
+00:00:53.030 --> 00:00:57.545
+simultaneously attempting to neutralize exposure to common risk factors,
+
+00:00:57.545 --> 00:01:00.810
+which are sources of return variance.
+
+00:01:00.810 --> 00:01:04.875
+I created this project as a fully production-ready prototype,
+
+00:01:04.875 --> 00:01:08.734
+so that you could see how industry practitioners do this in the real world.
+
+00:01:08.734 --> 00:01:11.659
+It was especially important to me that you see
+
+00:01:11.659 --> 00:01:14.509
+how ideas for alphas turned into code and how
+
+00:01:14.510 --> 00:01:16.700
+both alpha and risk factor models played
+
+00:01:16.700 --> 00:01:21.025
+distinct and equally important roles in portfolio construction.
+
+00:01:21.025 --> 00:01:24.410
+I also utilized industry-ready Python libraries
+
+00:01:24.409 --> 00:01:27.310
+that make common operations simpler and faster,
+
+00:01:27.310 --> 00:01:30.170
+so you have a chance to get familiar with these packages.
+
+00:01:30.170 --> 00:01:32.890
+I'm really excited to share this methodology with you,
+
+00:01:32.890 --> 00:01:35.120
+and I hope you enjoy the project.
+

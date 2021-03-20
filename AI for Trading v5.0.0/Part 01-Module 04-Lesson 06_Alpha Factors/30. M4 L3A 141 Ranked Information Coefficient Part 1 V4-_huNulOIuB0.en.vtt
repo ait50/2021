@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.710
+A useful evaluation metric is the rank information coefficient,
+
+00:00:04.710 --> 00:00:08.115
+often referred to as rank IC.
+
+00:00:08.115 --> 00:00:11.190
+The rank IC tells us whether the ranks of
+
+00:00:11.189 --> 00:00:15.704
+our alpha values are correlated with the ranks of the future returns.
+
+00:00:15.705 --> 00:00:19.785
+In other words, if the alpha factor suggested that we bet
+
+00:00:19.785 --> 00:00:24.625
+more on stock ABC and less on stock XYZ,
+
+00:00:24.625 --> 00:00:28.379
+was the future return of ABC relatively high?
+
+00:00:28.379 --> 00:00:32.750
+Was a future return of stock XYZ relatively low?
+
+00:00:32.750 --> 00:00:36.509
+If the future performance of the assets matched
+
+00:00:36.509 --> 00:00:40.250
+the expectations that was suggested by the alpha factor,
+
+00:00:40.250 --> 00:00:43.174
+then the information coefficient would be higher.
+
+00:00:43.174 --> 00:00:47.039
+Otherwise, it would be lower and possibly negative.
+
+00:00:47.039 --> 00:00:51.484
+For some insight, let's first look at this without ranking.
+
+00:00:51.484 --> 00:00:57.070
+Let's pretend there are just two stocks in our universe, ABC and XYZ.
+
+00:00:57.070 --> 00:01:00.920
+Stock ABC has a high positive alpha value and
+
+00:01:00.920 --> 00:01:05.740
+XYZ has a very negative alpha value as calculated before time,
+
+00:01:05.739 --> 00:01:09.794
+t. Between time T to time T plus one,
+
+00:01:09.795 --> 00:01:15.560
+the return of stock ABC is positive and XYZ's return is negative.
+
+00:01:15.560 --> 00:01:20.975
+These alpha values appear to be correlated with the forward asset returns.
+
+00:01:20.974 --> 00:01:24.509
+Note here, when we say asset return,
+
+00:01:24.510 --> 00:01:29.355
+we're referring to the return of each stock for each time period.
+
+00:01:29.355 --> 00:01:34.210
+We also specify that the asset return is a forward return.
+
+00:01:34.209 --> 00:01:39.109
+We say, forward asset return to specify that the return is in
+
+00:01:39.109 --> 00:01:45.105
+the future or forward in time compared to when the alpha value was calculated.
+
+00:01:45.105 --> 00:01:49.320
+So, if the alpha values are calculated before time t,
+
+00:01:49.319 --> 00:01:52.609
+then the forward asset return is calculated with data that
+
+00:01:52.609 --> 00:01:57.150
+occurs later from time t to time t plus one.
+
+00:01:57.150 --> 00:01:59.980
+To make our evaluation more robust,
+
+00:01:59.980 --> 00:02:04.545
+we want to use ranks instead of the original alpha values and returns.
+
+00:02:04.545 --> 00:02:09.664
+Stock ABC is alpha value before time t is high and positive,
+
+00:02:09.664 --> 00:02:13.060
+while stock XYZ is alpha value, is negative.
+
+00:02:13.060 --> 00:02:20.275
+So, ABC has a higher rank of two and XYZ has a lower rank of one.
+
+00:02:20.275 --> 00:02:28.384
+The forward asset return of ABC from time t to time t plus one is higher compared to XYZ.
+
+00:02:28.384 --> 00:02:32.500
+So, the rank of ABC's forward asset return is two,
+
+00:02:32.500 --> 00:02:37.280
+and the rank of XYZ's forward asset return is one.
+
+00:02:37.280 --> 00:02:40.370
+If the ranks of the alpha values and the ranks
+
+00:02:40.370 --> 00:02:43.525
+of the forward asset returns are highly correlated,
+
+00:02:43.525 --> 00:02:47.210
+the rank IC metric would be close to one.
+
+00:02:47.210 --> 00:02:49.520
+In this example, since the ranks of
+
+00:02:49.520 --> 00:02:54.054
+the two alpha values are equal to the ranks of the two forward asset returns,
+
+00:02:54.054 --> 00:02:57.930
+then the rank IC in this example is one.
+

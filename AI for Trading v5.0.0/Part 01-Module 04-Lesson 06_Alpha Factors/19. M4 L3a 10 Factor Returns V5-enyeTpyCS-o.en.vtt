@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.035
+Once we've calculated an Alpha factor,
+
+00:00:03.035 --> 00:00:05.880
+we can calculate some evaluation metrics,
+
+00:00:05.879 --> 00:00:09.359
+that let us compare it to other Alpha factors and get a sense for how it
+
+00:00:09.359 --> 00:00:13.425
+might perform when used to design a real-world portfolio.
+
+00:00:13.425 --> 00:00:15.765
+These metrics include factor returns,
+
+00:00:15.765 --> 00:00:18.380
+sharpe ratio, information coefficient,
+
+00:00:18.379 --> 00:00:23.369
+information ratio, quantile analysis, and turnover analysis.
+
+00:00:23.370 --> 00:00:26.880
+We evaluate Alpha factors to help us decide whether we'll
+
+00:00:26.879 --> 00:00:30.259
+use them in creating a combined Alpha factor,
+
+00:00:30.260 --> 00:00:33.484
+which we'll then use within portfolio optimization.
+
+00:00:33.484 --> 00:00:37.359
+One useful construct, is the return of the factor,
+
+00:00:37.359 --> 00:00:39.435
+which is called the factor return.
+
+00:00:39.435 --> 00:00:44.060
+The idea is that this is the return that a theoretical portfolio
+
+00:00:44.060 --> 00:00:49.310
+designed to capitalize on the arbitrage idea presented by the factor would produce.
+
+00:00:49.310 --> 00:00:53.570
+You can think of this as a way to directly measure the returns
+
+00:00:53.570 --> 00:00:58.969
+your portfolio would have if their weights were determined purely by the Alpha factor.
+
+00:00:58.969 --> 00:01:04.715
+To calculate the factor return we create a theoretical portfolio in which the weights for
+
+00:01:04.715 --> 00:01:10.790
+each stock on each day are set equal to the Alpha value for each stock on that day.
+
+00:01:10.790 --> 00:01:16.550
+So, every day we use the prior day's known data to calculate an Alpha vector,
+
+00:01:16.549 --> 00:01:19.444
+which we would standardize to have mean zero,
+
+00:01:19.444 --> 00:01:22.969
+and the sum of absolute values equal to one.
+
+00:01:22.969 --> 00:01:26.584
+We use the Alpha value of each stock i,
+
+00:01:26.584 --> 00:01:29.890
+as the weight for that stock on the current day
+
+00:01:29.890 --> 00:01:35.109
+T. At the end of that day we check the returns of each stock i,
+
+00:01:35.109 --> 00:01:39.254
+for that day T, which we'll call the single day return.
+
+00:01:39.254 --> 00:01:43.519
+Then, we can calculate the weighted average of the returns,
+
+00:01:43.519 --> 00:01:45.829
+using the Alpha values as weights.
+
+00:01:45.829 --> 00:01:49.399
+This gives us the factor return for a single day.
+
+00:01:49.400 --> 00:01:54.310
+We can repeat this for multiple days for a window of a year or more.
+
+00:01:54.310 --> 00:01:59.855
+This time series of daily portfolio returns is the factor return.
+
+00:01:59.855 --> 00:02:03.790
+Note that we'll use historical data to calculate the factor return.
+
+00:02:03.790 --> 00:02:07.520
+So, the example of calculating this one day at a time,
+
+00:02:07.519 --> 00:02:12.139
+is to help you see that we're simulating daily portfolio decisions that are
+
+00:02:12.139 --> 00:02:16.849
+only based on information that existed at the time of the theoretical trade,
+
+00:02:16.849 --> 00:02:20.509
+and these portfolio decisions are refreshed every day.
+
+00:02:20.509 --> 00:02:23.419
+Notice that the factor return depends upon
+
+00:02:23.419 --> 00:02:28.125
+the stock universe and time window of our theoretical portfolio,
+
+00:02:28.125 --> 00:02:32.000
+but it's a useful way to compare various Alpha factors to each
+
+00:02:32.000 --> 00:02:36.800
+other if we choose the same universe and time window.
+

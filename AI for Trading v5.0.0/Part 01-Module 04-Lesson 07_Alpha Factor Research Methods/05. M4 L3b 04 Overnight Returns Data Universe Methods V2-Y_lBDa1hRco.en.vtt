@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.080
+The paper identifies its dataset as the Center for Research and Security Prices,
+
+00:00:06.080 --> 00:00:12.245
+which is often abbreviated as CRSP and can be referred to as CRISP.
+
+00:00:12.244 --> 00:00:15.334
+This is a fairly well-known pricing dataset.
+
+00:00:15.335 --> 00:00:17.310
+And if you check out their website,
+
+00:00:17.309 --> 00:00:21.208
+you can see that the data is available via subscription.
+
+00:00:21.208 --> 00:00:23.649
+We don't use that data precisely,
+
+00:00:23.649 --> 00:00:26.994
+but we are using a pricing dataset which is very similar.
+
+00:00:26.995 --> 00:00:30.545
+It's also helpful to check what stock universe
+
+00:00:30.545 --> 00:00:34.774
+the authors think are most relevant to the factors they are analyzing.
+
+00:00:34.774 --> 00:00:40.399
+Even though a factor would ideally be applicable and useful for a broad range of stocks,
+
+00:00:40.399 --> 00:00:43.504
+it's also possible that certain factors only generate
+
+00:00:43.505 --> 00:00:47.260
+meaningful signals for a certain subgroup of stocks.
+
+00:00:47.259 --> 00:00:50.719
+In the abstract, the authors mentioned that mean
+
+00:00:50.719 --> 00:00:53.390
+reversion or momentum factors that they're
+
+00:00:53.390 --> 00:00:57.969
+evaluating are more pronounced for hard to value firms.
+
+00:00:57.969 --> 00:01:03.030
+If we look through the paper for mention of harder to value firms,
+
+00:01:03.030 --> 00:01:06.825
+we see how they define them in section four titled,
+
+00:01:06.825 --> 00:01:09.560
+Short-term Overnight Return Persistence,
+
+00:01:09.560 --> 00:01:13.329
+Hard to Value Firms and Institutional Share Holdings.
+
+00:01:13.329 --> 00:01:15.679
+According to other papers they cite,
+
+00:01:15.680 --> 00:01:18.350
+harder to value firms are more volatile,
+
+00:01:18.349 --> 00:01:20.099
+have a smaller market cap,
+
+00:01:20.099 --> 00:01:23.750
+are newer companies, currently less profitable,
+
+00:01:23.750 --> 00:01:29.614
+and considered high growth companies as exhibited by higher price to earnings ratios.
+
+00:01:29.614 --> 00:01:35.810
+Remember that I said when you see and, think conditional factor.
+
+00:01:35.810 --> 00:01:39.250
+If you wanted to implement these specific ideas,
+
+00:01:39.250 --> 00:01:42.969
+you would do so via the mechanics of a conditional factor.
+
+00:01:42.969 --> 00:01:46.390
+We don't do that in this exercise however.
+
+00:01:46.390 --> 00:01:51.859
+The authors provide some context for why harder to value firms may be more likely to
+
+00:01:51.859 --> 00:01:58.189
+exhibit overbuying at market open or weekly momentum of closed open returns.
+
+00:01:58.189 --> 00:02:02.629
+The hypothesis is that individual investors may rely more
+
+00:02:02.629 --> 00:02:07.614
+on sentiment when the fundamentals of the company are more difficult to measure.
+
+00:02:07.614 --> 00:02:12.805
+This sentiment is expressed in the recent closed open returns of the stock.
+
+00:02:12.805 --> 00:02:16.764
+We can also scan the paper for useful methodology,
+
+00:02:16.764 --> 00:02:21.004
+which we can apply more broadly to any factors that we're evaluating.
+
+00:02:21.003 --> 00:02:23.599
+For instance, in section two,
+
+00:02:23.599 --> 00:02:28.269
+the authors define the weekly overnight return on the stock.
+
+00:02:28.270 --> 00:02:30.520
+If you haven't read this section yet,
+
+00:02:30.520 --> 00:02:35.130
+you may imagine taking a window of five days daily returns,
+
+00:02:35.129 --> 00:02:39.444
+adding them up to get the weekly cumulative close to open return.
+
+00:02:39.444 --> 00:02:42.370
+The authors do something slightly different.
+
+00:02:42.370 --> 00:02:47.509
+They take the average of the daily returns over five trading days,
+
+00:02:47.509 --> 00:02:49.409
+then they multiply by five.
+
+00:02:49.409 --> 00:02:53.594
+Can you think of how this is different or why they may do this?
+
+00:02:53.594 --> 00:02:56.129
+Notice that if we had missing data,
+
+00:02:56.129 --> 00:03:00.590
+then simply adding up the daily closed open returns over a five-day window,
+
+00:03:00.590 --> 00:03:03.520
+may not make each week comparable.
+
+00:03:03.520 --> 00:03:06.770
+If a certain week is missing data for one day,
+
+00:03:06.770 --> 00:03:10.405
+then we would only have four days worth of returns to add up.
+
+00:03:10.405 --> 00:03:13.569
+By taking the daily average and then multiplying by five,
+
+00:03:13.569 --> 00:03:16.759
+we can better deal with missing data and help make
+
+00:03:16.759 --> 00:03:21.319
+each week's cumulative return more comparable to other weeks.
+

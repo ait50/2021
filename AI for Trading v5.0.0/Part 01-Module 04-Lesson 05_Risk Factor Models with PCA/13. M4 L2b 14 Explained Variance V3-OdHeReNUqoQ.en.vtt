@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.685
+So, you have a sense of what the PCs are.
+
+00:00:03.685 --> 00:00:07.800
+Now, I have an important thing to tell you about how we use them.
+
+00:00:07.799 --> 00:00:12.570
+In fact, we frequently don't use all the PCs.
+
+00:00:12.570 --> 00:00:17.475
+Instead, we decide to use some fraction of them starting with the first,
+
+00:00:17.475 --> 00:00:20.920
+which we think explain most of the variance,
+
+00:00:20.920 --> 00:00:23.590
+and I'm going to explain what I mean by that in a moment.
+
+00:00:23.589 --> 00:00:28.379
+So, for example, with the 2D dataset I'm showing you here,
+
+00:00:28.379 --> 00:00:31.894
+if we decide to only use the first PC,
+
+00:00:31.894 --> 00:00:36.234
+instead of an x-coordinate and a y-coordinate for each data point,
+
+00:00:36.234 --> 00:00:40.159
+we just use a single coordinate that represents how
+
+00:00:40.159 --> 00:00:44.574
+far along the first basis dimension the point falls.
+
+00:00:44.575 --> 00:00:49.859
+This is a lower dimensional representation of the same dataset and it
+
+00:00:49.859 --> 00:00:55.354
+makes the most sense if the data approximately fall along a line to begin with.
+
+00:00:55.354 --> 00:00:57.669
+In this new representation,
+
+00:00:57.670 --> 00:01:00.469
+we lose the information about how far
+
+00:01:00.469 --> 00:01:05.789
+the original data points lie in the direction perpendicular to the first PC.
+
+00:01:05.790 --> 00:01:08.395
+However, if those distances are small,
+
+00:01:08.394 --> 00:01:11.164
+we don't lose much information.
+
+00:01:11.165 --> 00:01:14.420
+But if we have many dimensions to begin with,
+
+00:01:14.420 --> 00:01:17.775
+how do we decide how many PCs to use?
+
+00:01:17.775 --> 00:01:20.505
+Well, it can depend on the application,
+
+00:01:20.504 --> 00:01:24.469
+but one way is by calculating how much variance each of
+
+00:01:24.469 --> 00:01:30.135
+the PCs account for and by dropping those that account for the least variance.
+
+00:01:30.135 --> 00:01:35.365
+That seems reasonable, but how do we implement that quantitatively?
+
+00:01:35.364 --> 00:01:41.435
+Well, we know that the variance along each dimension is an important quantity in PCA.
+
+00:01:41.435 --> 00:01:44.210
+It turns out that the total variance is the
+
+00:01:44.209 --> 00:01:48.334
+same in the original basis as it is in the new basis.
+
+00:01:48.334 --> 00:01:50.699
+Let me explain what I mean by that.
+
+00:01:50.700 --> 00:01:54.159
+Let's start with the three data points we had before,
+
+00:01:54.159 --> 00:01:57.465
+where we've already mean centered the data.
+
+00:01:57.465 --> 00:02:01.750
+The variance along the original horizontal dimension
+
+00:02:01.750 --> 00:02:05.614
+is the sum of the squares of these lengths.
+
+00:02:05.614 --> 00:02:09.139
+The variance along the original vertical dimension
+
+00:02:09.139 --> 00:02:12.454
+is the sum of the squares of these lengths.
+
+00:02:12.455 --> 00:02:15.455
+But because of the Pythagorean theorem,
+
+00:02:15.455 --> 00:02:20.060
+the sum of the squares of all of these lengths equals the sum of
+
+00:02:20.060 --> 00:02:25.175
+the squares of the distances from the origin to each data point.
+
+00:02:25.175 --> 00:02:28.750
+When we find the new PC basis,
+
+00:02:28.750 --> 00:02:32.610
+we can calculate the variances along the new dimensions.
+
+00:02:32.610 --> 00:02:37.825
+But since each dimension is still orthogonal to every other dimension,
+
+00:02:37.824 --> 00:02:41.449
+we still have that the sum of the variances in
+
+00:02:41.449 --> 00:02:47.464
+each dimension equals the squared distance to each data point from the origin.
+
+00:02:47.465 --> 00:02:49.490
+Since the sum of the variance of
+
+00:02:49.490 --> 00:02:53.659
+all the data points is determined by their distance from the center,
+
+00:02:53.659 --> 00:02:56.490
+the sum of total variance is the same,
+
+00:02:56.490 --> 00:02:59.555
+regardless of which basis you choose.
+
+00:02:59.555 --> 00:03:02.510
+This quantity, the sum of the squares of
+
+00:03:02.509 --> 00:03:05.539
+the distances to each data point from the origin,
+
+00:03:05.539 --> 00:03:08.259
+is called the total variance of the data.
+
+00:03:08.259 --> 00:03:10.465
+As you have already seen,
+
+00:03:10.465 --> 00:03:12.740
+each principal component, that is,
+
+00:03:12.740 --> 00:03:14.969
+each new dimension for the data,
+
+00:03:14.969 --> 00:03:19.484
+is associated with some fraction of the total variance.
+
+00:03:19.485 --> 00:03:22.855
+The first PC is associated with the most,
+
+00:03:22.854 --> 00:03:24.625
+the second with the next most,
+
+00:03:24.625 --> 00:03:26.425
+and so on down the line.
+
+00:03:26.425 --> 00:03:30.740
+So, in order to decide how many PCs to keep,
+
+00:03:30.740 --> 00:03:33.379
+we might look at the variance of the data along
+
+00:03:33.379 --> 00:03:38.870
+each dimension and drop the dimensions along which the data vary the least.
+
+00:03:38.870 --> 00:03:44.480
+It is in this sense that PCA is used as a dimensional reduction algorithm.
+
+00:03:44.479 --> 00:03:49.250
+When we drop the dimensions that capture less of the spread of the data,
+
+00:03:49.250 --> 00:03:51.500
+we have lost some information,
+
+00:03:51.500 --> 00:03:56.530
+but retained most of the spread and thus most of the information.
+

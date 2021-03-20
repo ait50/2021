@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.075
+But we're not quite done.
+
+00:00:02.075 --> 00:00:06.254
+As you know, we can impose lots of different constraints on the problem.
+
+00:00:06.254 --> 00:00:07.775
+These usually have to do with
+
+00:00:07.775 --> 00:00:11.565
+real-world constraints on the way we want our portfolio to behave.
+
+00:00:11.564 --> 00:00:15.404
+Sometimes they just make sure our results aren't really wacky.
+
+00:00:15.404 --> 00:00:18.044
+Let's discuss some common constraints.
+
+00:00:18.044 --> 00:00:21.629
+First off, we need to think about whether our portfolio is long
+
+00:00:21.629 --> 00:00:25.154
+only or whether we are allowed to take short positions.
+
+00:00:25.155 --> 00:00:28.984
+We'd usually know this from limitations in our trading environment.
+
+00:00:28.984 --> 00:00:33.060
+If we needed to enforce the constraint that our portfolio be long only,
+
+00:00:33.060 --> 00:00:36.609
+we'd require that each of our portfolio weights to be positive.
+
+00:00:36.609 --> 00:00:39.545
+If we can take long or short positions,
+
+00:00:39.545 --> 00:00:41.850
+we'd place no such constraint.
+
+00:00:41.850 --> 00:00:46.630
+It's very common to require that our portfolio be market neutral.
+
+00:00:46.630 --> 00:00:48.250
+What do we mean by that?
+
+00:00:48.250 --> 00:00:50.825
+In effect, it means that across the board,
+
+00:00:50.825 --> 00:00:53.380
+we short as much capital as we long.
+
+00:00:53.380 --> 00:00:58.625
+This means that we lose as much as we gain from movements that affect the entire market.
+
+00:00:58.625 --> 00:01:02.590
+In other words, when a portfolio is designed to be market neutral,
+
+00:01:02.590 --> 00:01:08.115
+the portfolio's returns are hopefully less affected by movement in the entire market.
+
+00:01:08.114 --> 00:01:13.234
+We mentioned making the portfolio market neutral when we discussed alpha factors.
+
+00:01:13.234 --> 00:01:15.730
+The difference here is that we place this as
+
+00:01:15.730 --> 00:01:18.660
+a constraint on the portfolio weights themselves,
+
+00:01:18.659 --> 00:01:22.795
+so that the constraint will be enforced by the optimization.
+
+00:01:22.795 --> 00:01:26.829
+Hedge funds usually require that the sum of the weights be zero.
+
+00:01:26.829 --> 00:01:30.769
+However, an alternative is to control the balance of long to
+
+00:01:30.769 --> 00:01:35.679
+short positions by requiring that the sum of the weights remain in some range.
+

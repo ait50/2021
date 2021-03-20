@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.849
+The breadth is the number of independent trading opportunities annualized.
+
+00:00:05.849 --> 00:00:09.469
+The key insight on this is the word "independent."
+
+00:00:09.470 --> 00:00:11.460
+For example, if we are
+
+00:00:11.460 --> 00:00:17.440
+long 30 oil services stocks and short 30 semiconductor stocks for a year,
+
+00:00:17.440 --> 00:00:20.075
+how many independent bets is that?
+
+00:00:20.074 --> 00:00:22.750
+The answer is one.
+
+00:00:22.750 --> 00:00:25.605
+Not 60, one.
+
+00:00:25.605 --> 00:00:31.160
+Why? Because we expect the stock holdings in each sector are diversified
+
+00:00:31.160 --> 00:00:34.070
+to such an extent that we are likely not going to
+
+00:00:34.070 --> 00:00:37.024
+get any material impact from any one stock,
+
+00:00:37.024 --> 00:00:39.710
+and we have simply one bet that
+
+00:00:39.710 --> 00:00:44.179
+the oil service sector will outperform the semiconductor sector.
+
+00:00:44.179 --> 00:00:46.820
+The key takeaway here is that in order to
+
+00:00:46.820 --> 00:00:50.340
+maximize the number of independent bets in our portfolio,
+
+00:00:50.340 --> 00:00:54.145
+we need to remove exposure to common risk factors.
+
+00:00:54.145 --> 00:01:00.515
+Again, risk factors are factors which indicate which stocks have strong commonality.
+
+00:01:00.515 --> 00:01:04.094
+If we hold positions with strong commonality,
+
+00:01:04.094 --> 00:01:07.420
+then we are not holding independent positions.
+
+00:01:07.420 --> 00:01:09.355
+At the Alpha research stage,
+
+00:01:09.355 --> 00:01:13.590
+this is precisely why we often demean by sector.
+
+00:01:13.590 --> 00:01:17.329
+One way to improve our Sharpe ratio is to increase
+
+00:01:17.329 --> 00:01:22.349
+the probability that our Alpha factor can accurately choose the correct stocks.
+
+00:01:22.349 --> 00:01:25.854
+This is measured by the information coefficient.
+
+00:01:25.855 --> 00:01:31.740
+We should always strive to do this but recognize that this is indeed very challenging.
+
+00:01:31.739 --> 00:01:34.759
+The other way to improve performance is to
+
+00:01:34.760 --> 00:01:38.365
+increase the number of independent bets we make.
+
+00:01:38.364 --> 00:01:40.670
+This is the breadth.
+
+00:01:40.670 --> 00:01:44.409
+This is the key advantage quants have over everyone else;
+
+00:01:44.409 --> 00:01:47.744
+the ability to achieve high breadth.
+
+00:01:47.745 --> 00:01:50.045
+In general, a reason why
+
+00:01:50.045 --> 00:01:54.200
+institutional investors take a cross-sectional approach of trading
+
+00:01:54.200 --> 00:01:57.620
+multiple stocks is to maximize breadth and
+
+00:01:57.620 --> 00:02:02.255
+improve their performance which can be measured as the information ratio.
+
+00:02:02.254 --> 00:02:07.344
+Additionally, institutional investors will combine many Alpha factors,
+
+00:02:07.344 --> 00:02:10.949
+again to maximize breadth.
+

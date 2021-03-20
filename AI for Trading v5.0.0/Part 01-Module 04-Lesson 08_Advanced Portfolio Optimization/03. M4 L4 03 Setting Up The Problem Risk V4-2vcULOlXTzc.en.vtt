@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.615
+Okay, now where does the risk model come in?
+
+00:00:03.615 --> 00:00:06.450
+Well, we discussed previously that if we put
+
+00:00:06.450 --> 00:00:09.515
+the quantity representing the mean in the objective,
+
+00:00:09.515 --> 00:00:14.150
+one option is to place a constraint on the portfolio variance.
+
+00:00:14.150 --> 00:00:20.164
+We already know how to calculate the portfolio covariance matrix using a risk model.
+
+00:00:20.164 --> 00:00:23.789
+All we do to get the portfolio variance is
+
+00:00:23.789 --> 00:00:28.454
+the same thing we did back when we were calculating the portfolio variance before.
+
+00:00:28.454 --> 00:00:31.179
+We write the portfolio variance as
+
+00:00:31.179 --> 00:00:36.975
+the weight vector transpose times the covariance matrix times the weight vector.
+
+00:00:36.975 --> 00:00:40.939
+That's great, so let's limit portfolio risk.
+
+00:00:40.939 --> 00:00:44.119
+We'll say it has to be below some value.
+
+00:00:44.119 --> 00:00:46.744
+We're already most of the way there.
+
+00:00:46.744 --> 00:00:51.078
+You might have one very reasonable question at this point which is,
+
+00:00:51.079 --> 00:00:56.039
+how do we know what value to set as our limit on portfolio variance?
+
+00:00:56.039 --> 00:01:00.019
+Well, this value represents the tolerable variance of
+
+00:01:00.020 --> 00:01:04.980
+your portfolio returns per time period over which you run the optimization.
+
+00:01:04.980 --> 00:01:06.829
+As a portfolio manager,
+
+00:01:06.829 --> 00:01:08.789
+this is usually given to you,
+
+00:01:08.790 --> 00:01:10.635
+but where does it come from?
+
+00:01:10.635 --> 00:01:13.280
+Well, it represents a business decision.
+
+00:01:13.280 --> 00:01:17.614
+Remember that the investment portfolio we're designing represents a product,
+
+00:01:17.614 --> 00:01:19.359
+which is sold to investors.
+
+00:01:19.359 --> 00:01:21.290
+When investors are shopping around,
+
+00:01:21.290 --> 00:01:25.594
+they typically compare products with different risk return characteristics.
+
+00:01:25.594 --> 00:01:27.715
+What numbers are reasonable?
+
+00:01:27.715 --> 00:01:31.850
+The general stale volatility can be observed from the market itself,
+
+00:01:31.849 --> 00:01:35.354
+for example, from an index like the S&amp;P 500.
+
+00:01:35.355 --> 00:01:38.590
+The annualized standard deviation of the S&amp;P
+
+00:01:38.590 --> 00:01:42.370
+500 over 100 years has been 12 percent or so.
+
+00:01:42.370 --> 00:01:45.445
+So, people benchmark their risk against that.
+
+00:01:45.444 --> 00:01:49.639
+If you look at indices that measure hedge fund industry performance,
+
+00:01:49.640 --> 00:01:52.719
+you see volatility of around four to five percent.
+
+00:01:52.719 --> 00:01:54.844
+So, if I'm running a hedge fund,
+
+00:01:54.844 --> 00:01:57.679
+there's business risk associated with setting
+
+00:01:57.680 --> 00:02:02.035
+my product's portfolio risk to something dramatically different from those numbers.
+
+00:02:02.034 --> 00:02:06.140
+Over time, there's been evolutionary convergence to the levels of risk,
+
+00:02:06.140 --> 00:02:09.370
+that makes sense given the market for these products.
+
+00:02:09.370 --> 00:02:11.469
+If you work in a really big firm,
+
+00:02:11.469 --> 00:02:13.615
+and you're managing a small portfolio,
+
+00:02:13.615 --> 00:02:16.250
+you will likely receive this number as a mandate,
+
+00:02:16.250 --> 00:02:18.884
+such as you can't lose more than 10 percent.
+
+00:02:18.884 --> 00:02:22.669
+So, you can calibrate your risk so that you are comfortable with where you
+
+00:02:22.669 --> 00:02:27.359
+are currently in relation to that maximum loss threshold.
+

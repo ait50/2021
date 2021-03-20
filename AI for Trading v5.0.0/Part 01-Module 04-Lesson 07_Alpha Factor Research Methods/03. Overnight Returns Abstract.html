@@ -1,0 +1,339 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Overnight Returns Abstract
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Alpha Factor Research Methods
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Case Studies Intro.html">
+       01. Case Studies Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. install libraries.html">
+       02. install libraries
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Overnight Returns Abstract.html">
+       03. Overnight Returns Abstract
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Overnight Returns Possible Alpha Factors.html">
+       04. Overnight Returns Possible Alpha Factors
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Overnight Returns Data, Universe, Methods.html">
+       05. Overnight Returns Data, Universe, Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Overnight Returns Methods Quantile Analysis.html">
+       06. Overnight Returns: Methods: Quantile Analysis
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Overnight Returns exercise.html">
+       07. Overnight Returns exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Winners and Losers in Momentum Investing.html">
+       08. Winners and Losers in Momentum Investing
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Winners and Losers Accelerated and Decelerated Gains and Losses.html">
+       09. Winners and Losers: Accelerated and Decelerated Gains and Losses
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Winners and Losers approximating curves with polynomials.html">
+       10. Winners and Losers: approximating curves with polynomials
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Winners and Losers Content Quiz.html">
+       11. Winners and Losers Content Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Winners and Losers Creating a joint factor.html">
+       12. Winners and Losers: Creating a joint factor
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Winners and Losers in Momentum Exercise.html">
+       13. Winners and Losers in Momentum Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Skewness and Momentum Attentional Bias.html">
+       14. Skewness and Momentum: Attentional Bias
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Skewness and Momentum Defining Skew.html">
+       15. Skewness and Momentum: Defining Skew
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Skewness and Momentum Momentum Enhanced or weakened by Skew.html">
+       16. Skewness and Momentum: Momentum Enhanced or weakened by Skew
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Skewness and Momentum Conditional Factor.html">
+       17. Skewness and Momentum: Conditional Factor
+      </a>
+     </li>
+     <li class="">
+      <a href="18. iVol Value and Idiosyncratic volatility Overview.html">
+       18. iVol: Value and Idiosyncratic volatility Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="19. iVol Arbitrage and Efficient Pricing of Stocks.html">
+       19. iVol: Arbitrage and Efficient Pricing of Stocks
+      </a>
+     </li>
+     <li class="">
+      <a href="20. iVol Arbitrage Risk.html">
+       20. iVol: Arbitrage Risk
+      </a>
+     </li>
+     <li class="">
+      <a href="21. iVol Idiosyncratic Volatility.html">
+       21. iVol: Idiosyncratic Volatility
+      </a>
+     </li>
+     <li class="">
+      <a href="22. iVol Value, Fundamental or Discretionary Investing.html">
+       22. iVol: Value, Fundamental or Discretionary Investing
+      </a>
+     </li>
+     <li class="">
+      <a href="23. iVOL Quantamental Investing.html">
+       23. iVOL: Quantamental Investing
+      </a>
+     </li>
+     <li class="">
+      <a href="24. iVol Joint Factor Volatility Enhanced Price Earnings Ratio.html">
+       24. iVol: Joint Factor: Volatility Enhanced Price Earnings Ratio
+      </a>
+     </li>
+     <li class="">
+      <a href="25. iVol Generalizing the volatility Factor.html">
+       25. iVol: Generalizing the volatility Factor
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Summary.html">
+       26. Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Interlude.html">
+       27. Interlude
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Overnight Returns Abstract
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          M4 L3b 02 Overnight Returns Abstract V2
+         </p>
+        </h3>
+        <video controls="">
+         <source src="03. M4 L3b 02 Overnight Returns Abstract V2-q5xidwa5W8w.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="03. M4 L3b 02 Overnight Returns Abstract V2-q5xidwa5W8w.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="03. M4 L3b 02 Overnight Returns Abstract V2-q5xidwa5W8w.zh-CN.vtt" srclang="zh-CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Title: Overnight Returns and Firm-Specific Investor Sentiment Abstract
+          <br/>
+          Authors:
+         </p>
+         <p>
+          We examine the suitability of using overnight returns to measure firm-specific investor sentiment by analyzing whether they possess characteristics expected of a sentiment measure. We document short-term overnight return persistence, consistent with existing evidence of short- term persistence in share demand of sentiment-influenced investors. We find that short-term persistence is stronger for harder-to-value firms, consistent with existing evidence that sentiment plays a larger role for such firms. We show that stocks with high (low) overnight returns underperform (outperform) over the longer-term, consistent with prior evidence of temporary sentiment-driven mispricing. Overall, our evidence supports using overnight returns to measure firm-specific sentiment.
+         </p>
+         <h4 id="notes">
+          Notes
+         </h4>
+         <p>
+          p 2, I: The recent work of Berkman, Koch, Tuttle, and Zhang (2012) suggests that a stock’s overnight (close-to-open) return can serve as a measure of firm-level sentiment.
+         </p>
+         <p>
+          p 3, I: Specifically, Berkman et al. (2012) find that attention-generating events (high absolute returns or strong net buying by retail investors) on one day lead to higher demand by individual investors, concentrated near the open of the next trading day…This creates temporary price pressure at the open, resulting in elevated overnight returns that are reversed during the trading day.
+         </p>
+         <p>
+          p 3, I: We conduct three sets of analyses. In the first we test for short-run persistence in overnight returns. The basis for expecting this from a measure of sentiment is the evidence in Barber et al. (2009) that the order imbalances of retail investors, who are the investors most likely to exhibit sentiment, persist for periods extending over several weeks…In the third analysis we examine whether stocks with high overnight returns underperform those with low overnight returns over the long term.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. Overnight Returns Possible Alpha Factors.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Overnight Returns Abstract')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

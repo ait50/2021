@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.815
+Variance, okay we know the formula for that.
+
+00:00:03.815 --> 00:00:07.365
+It's just the sum of the squared deviations from the mean,
+
+00:00:07.365 --> 00:00:09.515
+divided by n minus one.
+
+00:00:09.515 --> 00:00:13.745
+But if the mean of the original data coordinates is zero,
+
+00:00:13.744 --> 00:00:18.204
+so is the mean of their projections onto the new direction.
+
+00:00:18.204 --> 00:00:22.879
+So, we have that this term I call mu is zero.
+
+00:00:22.879 --> 00:00:26.079
+So, we're trying to maximize this thing.
+
+00:00:26.079 --> 00:00:30.149
+Now, I'm going to show you how to write this in a more condensed fashion,
+
+00:00:30.149 --> 00:00:33.269
+that you will see if you're reading about PCA.
+
+00:00:33.270 --> 00:00:38.270
+First, let's notice that if each of these quantities is a number and a vector,
+
+00:00:38.270 --> 00:00:42.950
+the variance above is just the squared length of the vector.
+
+00:00:42.950 --> 00:00:46.984
+Now let's look at the thing inside the double bars.
+
+00:00:46.984 --> 00:00:48.744
+If you don't follow this step,
+
+00:00:48.744 --> 00:00:52.000
+try writing it down for yourself and multiplying it out.
+
+00:00:52.000 --> 00:00:56.670
+But see that we can write this as a matrix where x_1 is the first row,
+
+00:00:56.670 --> 00:01:02.439
+x_2 is the second row and x_3 is the third row times the w vector.
+
+00:01:02.439 --> 00:01:06.590
+Remember that this w is just the length of the w vector,
+
+00:01:06.590 --> 00:01:08.030
+so it's just a number.
+
+00:01:08.030 --> 00:01:10.465
+I'll just pull it out over here.
+
+00:01:10.465 --> 00:01:14.380
+Now, let's write this in a more condensed form.
+
+00:01:14.379 --> 00:01:17.030
+See that the matrix on the left is
+
+00:01:17.030 --> 00:01:21.245
+just our data matrix where the rows are the observations,
+
+00:01:21.245 --> 00:01:23.990
+so the number of rows is the number of data points
+
+00:01:23.989 --> 00:01:27.295
+and the columns are the features or dimensions.
+
+00:01:27.295 --> 00:01:31.129
+The vector on the right is just our w vector.
+
+00:01:31.129 --> 00:01:35.994
+Another way you might see this written is like this.
+
+00:01:35.995 --> 00:01:41.570
+Be sure to go through these steps on your own if you find you're a little fuzzy on them.
+
+00:01:41.569 --> 00:01:44.714
+But now we've arrived at where we wanted to.
+
+00:01:44.715 --> 00:01:48.034
+This last quantity is called a Rayleigh quotient.
+
+00:01:48.034 --> 00:01:51.854
+This is exactly the quantity we try to maximize in PCA,
+
+00:01:51.855 --> 00:01:53.424
+when we're looking for w;
+
+00:01:53.424 --> 00:01:56.530
+the direction of the first dimension.
+

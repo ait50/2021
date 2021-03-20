@@ -1,0 +1,639 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Ranking in Zipline
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Alpha Factors
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro Efficient Market hypothesis and Arbitrage opportunities.html">
+       01. Intro: Efficient Market hypothesis and Arbitrage opportunities
+      </a>
+     </li>
+     <li class="">
+      <a href="02. install libraries.html">
+       02. install libraries
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Alpha Factors versus Risk Factor Modeling.html">
+       03. Alpha Factors versus Risk Factor Modeling
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Definition of key words.html">
+       04. Definition of key words
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Researching Alphas from Academic Papers.html">
+       05. Researching Alphas from Academic Papers
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Controlling for Risk within an Alpha Factor Part 1.html">
+       06. Controlling for Risk within an Alpha Factor Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Controlling for Risk within an Alpha Factor Part 2.html">
+       07. Controlling for Risk within an Alpha Factor Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Sector Neutral Exercise.html">
+       08. Sector Neutral Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Ranking Part 1.html">
+       09. Ranking Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Ranking Part 2.html">
+       10. Ranking Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Ranking in Zipline.html">
+       11. Ranking in Zipline
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Ranking exercise.html">
+       12. Ranking exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Z score.html">
+       13. Z score
+      </a>
+     </li>
+     <li class="">
+      <a href="14. z-score quiz.html">
+       14. z-score quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="15. z-score exercise.html">
+       15. z-score exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Smoothing.html">
+       16. Smoothing
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Smoothing Quiz 1.html">
+       17. Smoothing Quiz 1
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Smoothing Exercise.html">
+       18. Smoothing Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Factor Returns.html">
+       19. Factor Returns
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Factor returns quiz.html">
+       20. Factor returns quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="21. get_clean_factor_and_forward_returns.html">
+       21. get_clean_factor_and_forward_returns
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Factor and forward returns exercise.html">
+       22. Factor and forward returns exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Universe construction rule.html">
+       23. Universe construction rule
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Return Denominator, Leverage, and Factor Returns.html">
+       24. Return Denominator, Leverage, and Factor Returns
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Making dollar neutral and leverage ratio equal to one.html">
+       25. Making dollar neutral and leverage ratio equal to one
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Factor returns coding exercise.html">
+       26. Factor returns coding exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Sharpe Ratio.html">
+       27. Sharpe Ratio
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Sharpe Ratio Coding Exercise.html">
+       28. Sharpe Ratio Coding Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Halfway There!.html">
+       29. Halfway There!
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Ranked Information Coefficient (Rank IC)  Part 1.html">
+       30. Ranked Information Coefficient (Rank IC) : Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Ranked Information Coefficient (Rank IC)  Part 2.html">
+       31. Ranked Information Coefficient (Rank IC) : Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Quiz factor_information_coefficient.html">
+       32. Quiz factor_information_coefficient
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Rank IC coding exercise.html">
+       33. Rank IC coding exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="34. The Fundamental Law of Active Management Part 1.html">
+       34. The Fundamental Law of Active Management: Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="35. The Fundamental Law of Active Management Part 2.html">
+       35. The Fundamental Law of Active Management: Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Real World Constraints Liquidity.html">
+       36. Real World Constraints: Liquidity
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Real World Constraints Transaction Costs.html">
+       37. Real World Constraints: Transaction Costs
+      </a>
+     </li>
+     <li class="">
+      <a href="38. Turnover as a Proxy for Real World Constraints.html">
+       38. Turnover as a Proxy for Real World Constraints
+      </a>
+     </li>
+     <li class="">
+      <a href="39. Factor Rank Autocorrelation (Turnover).html">
+       39. Factor Rank Autocorrelation (Turnover)
+      </a>
+     </li>
+     <li class="">
+      <a href="40. Turnover Exercise.html">
+       40. Turnover Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="41. Quantile Analysis Part 1.html">
+       41. Quantile Analysis Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="42. Quantile Analysis Part 2.html">
+       42. Quantile Analysis Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="43. mean returns by quantile quiz.html">
+       43. mean returns by quantile quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="44. Quantile analysis exercise.html">
+       44. Quantile analysis exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="45. Quantiles Academic Research vs. Practitioners.html">
+       45. Quantiles: Academic Research vs. Practitioners
+      </a>
+     </li>
+     <li class="">
+      <a href="46. Transfer Coefficient.html">
+       46. Transfer Coefficient
+      </a>
+     </li>
+     <li class="">
+      <a href="47. Transfer Coefficient Coding Exercise.html">
+       47. Transfer Coefficient Coding Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="48. It’s all Relative.html">
+       48. It’s all Relative
+      </a>
+     </li>
+     <li class="">
+      <a href="49. Conditional Factors.html">
+       49. Conditional Factors
+      </a>
+     </li>
+     <li class="">
+      <a href="50. Summary.html">
+       50. Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="51. Interlude Reading Academic Research Papers, Part 1.html">
+       51. Interlude: Reading Academic Research Papers, Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="52. Interlude Reading Academic Research Papers, Part 2.html">
+       52. Interlude: Reading Academic Research Papers, Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="53. Interlude Reading Academic Research Papers, Part 3.html">
+       53. Interlude: Reading Academic Research Papers, Part 3
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          11. Ranking in Zipline
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="explore-the-rank-function">
+          Explore the rank function
+         </h2>
+         <p>
+          The Returns class inherits from zipline.pipeline.factors.factor.
+          <br/>
+          <a href="https://www.zipline.io/appendix.html#zipline.pipeline.factors.Factor.rank" target="_blank">
+           The documentation for rank is located here
+          </a>
+          and is also pasted below:
+         </p>
+         <p>
+          rank(method='ordinal', ascending=True, mask=sentinel('NotSpecified'), groupby=sentinel('NotSpecified'))[source]
+          <br/>
+          Construct a new Factor representing the sorted rank of each column within each row.
+         </p>
+         <p>
+          Parameters:
+         </p>
+         <p>
+          method (str, {'ordinal', 'min', 'max', 'dense', 'average'}) – The method used to assign ranks to tied elements. See scipy.stats.rankdata for a full description of the semantics for each ranking method. Default is ‘ordinal’.
+         </p>
+         <p>
+          ascending (bool, optional) – Whether to return sorted rank in ascending or descending order. Default is True.
+         </p>
+         <p>
+          mask (zipline.pipeline.Filter, optional) – A Filter representing assets to consider when computing ranks. If mask is supplied, ranks are computed ignoring any asset/date pairs for which mask produces a value of False.
+         </p>
+         <p>
+          groupby (zipline.pipeline.Classifier, optional) – A classifier defining partitions over which to perform ranking.
+         </p>
+         <p>
+          Returns:
+          <br/>
+          ranks – A new factor that will compute the ranking of the data produced by self.
+         </p>
+         <p>
+          Return type:
+          <br/>
+          zipline.pipeline.factors.Rank
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          By looking at the documentation, and the link to
+          <a href="https://docs.scipy.org/doc/scipy-0.16.0/reference/generated/scipy.stats.rankdata.html" target="_blank">
+           scipy.stats.rankdata
+          </a>
+          (also pasted below), which option for parameter
+          <code>
+           method
+          </code>
+          would we choose if we want unique ranks associated with each stock, even when the values are tied?
+         </p>
+         <p>
+          <strong>
+           Note
+          </strong>
+          When the documentation refers to "tied" values, it means instances where there are two alpha values for two different assets that are the same number, so there are different ways to handle the "tied" values when converting those values into ranks.
+         </p>
+         <p>
+          ‘average’:
+          <br/>
+          The average of the ranks that would have been assigned to all the tied values is assigned to each value.
+         </p>
+         <p>
+          ‘min’:
+          <br/>
+          The minimum of the ranks that would have been assigned to all the tied values is assigned to each value. (This is also referred to as “competition” ranking.)
+         </p>
+         <p>
+          ‘max’:
+          <br/>
+          The maximum of the ranks that would have been assigned to all the tied values is assigned to each value.
+         </p>
+         <p>
+          ‘dense’:
+          <br/>
+          Like ‘min’, but the rank of the next highest element is assigned the rank immediately after those assigned to the tied elements.
+         </p>
+         <p>
+          ‘ordinal’:
+          <br/>
+          All values are given a distinct rank, corresponding to the order that the values occur in a.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          ranking options
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             By looking at the documentation, and scipy.stats.rankdata, which option for parameter
+             <code>
+              method
+             </code>
+             would we choose if we want unique ranks associated with each stock, even when the values are tied?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1539831505936" name="752770" type="radio" value="a1539831505936"/>
+           <label for="a1539831505936">
+            <p>
+             average
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1539831555723" name="752770" type="radio" value="a1539831555723"/>
+           <label for="a1539831555723">
+            <p>
+             min
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1539831558924" name="752770" type="radio" value="a1539831558924"/>
+           <label for="a1539831558924">
+            <p>
+             max
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1539831561819" name="752770" type="radio" value="a1539831561819"/>
+           <label for="a1539831561819">
+            <p>
+             dense
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1539831565516" name="752770" type="radio" value="a1539831565516"/>
+           <label for="a1539831565516">
+            <p>
+             ordinal
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          ordinal
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Assuming a stock universe of 100 stocks, when a higher raw alpha value indicates a higher return, we have rank 1 for the most negative alpha value, and 100 for the most positive alpha value.   When a lower raw alpha value indicates a higher return, which parameter can you use to choose a rank of 100 for the most negative value and 1 for the most positive value?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1539831623606" name="752771" type="radio" value="a1539831623606"/>
+           <label for="a1539831623606">
+            <p>
+             ascending = True
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1539831675170" name="752771" type="radio" value="a1539831675170"/>
+           <label for="a1539831675170">
+            <p>
+             ascending = False
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          ascending = False
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="12. Ranking exercise.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('11. Ranking in Zipline')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

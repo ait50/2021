@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.020
+Okay. Let's say we've read a paper,
+
+00:00:03.020 --> 00:00:07.310
+extracted some ideas, and have come up with an Alpha factor.
+
+00:00:07.309 --> 00:00:11.309
+Now, let's talk about some of the common early transformations we might
+
+00:00:11.310 --> 00:00:15.510
+do to that factor in order to move it closer towards our goal.
+
+00:00:15.509 --> 00:00:20.753
+A vector of numbers that represents the weights we'd use to create a portfolio.
+
+00:00:20.754 --> 00:00:23.780
+These transformations help to enhance, improve,
+
+00:00:23.780 --> 00:00:27.035
+and prepare our Alpha factors so that they may be used
+
+00:00:27.035 --> 00:00:31.195
+during portfolio optimization to choose actual portfolio weights.
+
+00:00:31.195 --> 00:00:34.755
+When we actually implement traits for our portfolio,
+
+00:00:34.755 --> 00:00:39.515
+we want that portfolio to be neutral to common risk factors.
+
+00:00:39.515 --> 00:00:44.000
+We should not wait however for the optimization step to think about
+
+00:00:44.000 --> 00:00:50.480
+common risk as we do not want to rely exclusively on optimization to make this happen.
+
+00:00:50.479 --> 00:00:57.304
+Rather, it's best to consider obvious common risks even at the Alpha research stage.
+
+00:00:57.304 --> 00:01:03.094
+The most significant common factor risks are market risk and sector risk.
+
+00:01:03.094 --> 00:01:08.245
+We control market risks explicitly by the definition of an Alpha factor.
+
+00:01:08.245 --> 00:01:16.025
+The sum of the values is zero implying zero exposure to the market.
+
+00:01:16.025 --> 00:01:19.310
+Note that an important assumption that we'll make is that on
+
+00:01:19.310 --> 00:01:24.655
+average the Betas or exposure of the stocks to the market are all one.
+
+00:01:24.655 --> 00:01:30.155
+So even though in reality the regression Beta of stock ABC to the market may be
+
+00:01:30.155 --> 00:01:35.905
+1.2 or the Beta of stock XYZ maybe 0.8.
+
+00:01:35.905 --> 00:01:40.665
+When dealing with stock universes of hundreds or thousands of stocks,
+
+00:01:40.665 --> 00:01:45.740
+we often can take the simplifying assumption that they all have the same Beta of one.
+
+00:01:45.739 --> 00:01:48.254
+To get the values to sum to zero,
+
+00:01:48.254 --> 00:01:53.269
+we subtract the mean from each Alpha value in the vector.
+
+00:01:53.269 --> 00:01:55.700
+When the value sums to zero,
+
+00:01:55.700 --> 00:01:59.600
+the theoretical portfolio is said to be dollar neutral,
+
+00:01:59.599 --> 00:02:03.939
+and so general market movements that affect all stocks are cancelled out.
+
+00:02:03.939 --> 00:02:06.605
+This may not precisely eliminate
+
+00:02:06.605 --> 00:02:10.219
+all market risk as market Betas may not all be equal to one,
+
+00:02:10.219 --> 00:02:13.599
+but this is often a fine assumption at this stage.
+

@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.809
+Fundamentals such as price to earnings ratio and price to book ratios have often been
+
+00:00:06.809 --> 00:00:14.154
+used in alpha factors that represent the ratio of market price to intrinsic value.
+
+00:00:14.154 --> 00:00:18.030
+We could use these fundamental factors by themselves
+
+00:00:18.030 --> 00:00:21.885
+to indicate whether a stock is underpriced or overpriced.
+
+00:00:21.885 --> 00:00:26.910
+One thing to be aware of though when dealing with fundamentals is
+
+00:00:26.910 --> 00:00:32.115
+that the data change much less frequently than price.
+
+00:00:32.115 --> 00:00:36.445
+Fundamental values come from financial statements which,
+
+00:00:36.445 --> 00:00:37.825
+in the United States,
+
+00:00:37.825 --> 00:00:39.910
+are only updated quarterly.
+
+00:00:39.909 --> 00:00:45.319
+This means that the turnover for fundamental Alphas will be likely
+
+00:00:45.320 --> 00:00:51.200
+much lower than it is for price data-driven Alphas.
+
+00:00:51.200 --> 00:00:55.730
+Recall that this can be a positive because lower turnover means
+
+00:00:55.729 --> 00:01:00.789
+less trading cost but it also could be a negative.
+
+00:01:00.789 --> 00:01:05.789
+We won't be as responsive as the data does not arrive frequently.
+
+00:01:05.790 --> 00:01:07.825
+As a general rule,
+
+00:01:07.825 --> 00:01:11.659
+fundamental Alphas have high capacity but have
+
+00:01:11.659 --> 00:01:16.655
+lower Sharpe ratio than compared to their price data-driven cousins.
+
+00:01:16.655 --> 00:01:23.825
+Some firms embrace this as it allows them to deploy much larger assets for clients.
+
+00:01:23.825 --> 00:01:29.075
+Other firms though can be wary of using fundamentally driven Alphas.
+
+00:01:29.075 --> 00:01:36.159
+One middle ground is to use fundamental data as a conditioning factor along with
+
+00:01:36.159 --> 00:01:40.984
+price-driven data or to use a fundamental factor
+
+00:01:40.984 --> 00:01:46.969
+with low weight in a combined Alpha vector that includes more responsive Alphas.
+
+00:01:46.969 --> 00:01:48.814
+In this case, since
+
+00:01:48.814 --> 00:01:53.480
+higher idiosyncratic volatility can indicate instances of higher mispricing,
+
+00:01:53.480 --> 00:01:57.115
+we can combine iVol with a fundamental factor.
+
+00:01:57.114 --> 00:02:01.339
+We can think of iVol as a conditioning factor since by
+
+00:02:01.340 --> 00:02:06.140
+itself it doesn't indicate whether to go in the long or short direction.
+
+00:02:06.140 --> 00:02:08.395
+This is an important idea,
+
+00:02:08.395 --> 00:02:14.390
+the conditional information doesn't need to be an alpha factor on its own.
+
+00:02:14.389 --> 00:02:18.199
+The conditioning iVol factor can potentially be
+
+00:02:18.199 --> 00:02:22.560
+used to enhance the signal of any other factor.
+
+00:02:22.560 --> 00:02:26.199
+Perhaps you can try this out in your own work.
+

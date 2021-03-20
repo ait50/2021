@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.495
+Let's take a close look at these red and blue vectors.
+
+00:00:03.495 --> 00:00:08.460
+In fact, let's try looking at them in the original i hat j hat basis.
+
+00:00:08.460 --> 00:00:10.285
+In the original basis,
+
+00:00:10.285 --> 00:00:13.220
+the first vector can be written (1,0.5).
+
+00:00:13.220 --> 00:00:18.135
+That is to say it can be created with one i hat and a half a j hat.
+
+00:00:18.135 --> 00:00:24.910
+The second vector is (-1,1) so it can be created with minus one i hat and one j hat.
+
+00:00:24.910 --> 00:00:27.690
+Here, we've learned how to write the vectors of
+
+00:00:27.690 --> 00:00:30.420
+the new basis in the language of the old basis.
+
+00:00:30.420 --> 00:00:34.120
+So, we effectively know how to translate between them.
+
+00:00:34.119 --> 00:00:38.159
+Now, let's see how we can use this information to take a vector expressed
+
+00:00:38.159 --> 00:00:42.449
+in one basis and find out how to express it in another basis.
+
+00:00:42.450 --> 00:00:46.070
+We know that we need two copies of the blue vector and
+
+00:00:46.070 --> 00:00:49.384
+one of the red vector to represent our original vector,
+
+00:00:49.384 --> 00:00:51.309
+let's write that down.
+
+00:00:51.310 --> 00:00:53.105
+When we multiply it out,
+
+00:00:53.104 --> 00:00:56.299
+we see that we recover our vector as written in the i hat,
+
+00:00:56.299 --> 00:00:59.899
+j hat basis, which makes sense since we know that
+
+00:00:59.899 --> 00:01:03.804
+these vectors are also written in the i hat j hat basis.
+
+00:01:03.804 --> 00:01:08.444
+So, now we can see how translation between the two languages works.
+
+00:01:08.444 --> 00:01:13.264
+We need to write the new basis vectors in the language of the old basis,
+
+00:01:13.265 --> 00:01:16.849
+then the formula for building the vector in the language of
+
+00:01:16.849 --> 00:01:21.693
+the new basis gives us our vector in the language of the old basis.
+
+00:01:21.694 --> 00:01:27.049
+Conversely, if we were starting with (1,2) in our original language of i hat,
+
+00:01:27.049 --> 00:01:30.890
+j hat and we wanted to translate to this new basis,
+
+00:01:30.890 --> 00:01:34.879
+we'd have to find out how to write i hat and j hat in the new basis.
+
+00:01:34.879 --> 00:01:37.834
+Then, we'd multiply it by that matrix
+
+00:01:37.834 --> 00:01:42.149
+and outward pop our original vector in the new basis.
+
+00:01:42.150 --> 00:01:46.430
+It turns out that the matrix that tells you how to translate
+
+00:01:46.430 --> 00:01:49.745
+from the language of the old basis to the language of the new basis
+
+00:01:49.745 --> 00:01:52.820
+is just the inverse of the matrix that tells you how to
+
+00:01:52.819 --> 00:01:56.854
+translate from the language of the new basis to the language of the old basis.
+
+00:01:56.855 --> 00:02:01.100
+This makes sense because translating from the old basis to the new basis and
+
+00:02:01.099 --> 00:02:06.294
+back should have the effect of doing nothing and give you back what you started with.
+
+00:02:06.295 --> 00:02:09.960
+I'll let you verify this for yourself.
+

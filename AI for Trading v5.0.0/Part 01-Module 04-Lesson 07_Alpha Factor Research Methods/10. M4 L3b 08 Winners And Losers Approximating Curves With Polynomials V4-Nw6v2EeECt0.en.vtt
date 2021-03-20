@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.730
+Now that we have a sense for how accelerated or
+
+00:00:02.730 --> 00:00:05.935
+decelerated gains and losses look like visually,
+
+00:00:05.934 --> 00:00:11.019
+how do we represent their relative convexity or concavity in numbers?
+
+00:00:11.019 --> 00:00:13.599
+One way to approximate a curve,
+
+00:00:13.599 --> 00:00:17.199
+is with a formula that looks like y equals x squared.
+
+00:00:17.199 --> 00:00:22.429
+Or more accurately, y equals ax plus bx squared.
+
+00:00:22.429 --> 00:00:28.559
+The authors use t as the independent variable name representing time,
+
+00:00:28.559 --> 00:00:33.129
+such as the number of days from the start of the stocks trajectory.
+
+00:00:33.130 --> 00:00:36.580
+They also use beta as the coefficient for t,
+
+00:00:36.579 --> 00:00:40.344
+and gamma as the coefficient for t squared.
+
+00:00:40.344 --> 00:00:43.324
+To make the discussion easier to follow,
+
+00:00:43.325 --> 00:00:46.955
+let's just give descriptive names to the coefficients.
+
+00:00:46.954 --> 00:00:50.498
+The coefficient for t will be called gain,
+
+00:00:50.499 --> 00:00:54.770
+and the coefficient for t squared will be called accelerate.
+
+00:00:54.770 --> 00:00:57.845
+You'll see why we chose these names in a minute.
+
+00:00:57.844 --> 00:01:02.920
+Let's see what a positive or negative direction coefficient might look like.
+
+00:01:02.920 --> 00:01:05.795
+If we just ignore the t squared term,
+
+00:01:05.795 --> 00:01:08.219
+a positive gain coefficient,
+
+00:01:08.219 --> 00:01:14.269
+will make a line that slopes upward which could represent a stock price that is gaining.
+
+00:01:14.269 --> 00:01:17.884
+Conversely, a negative gain coefficient,
+
+00:01:17.885 --> 00:01:23.995
+makes a line that slopes downward which could represent a stock price that is losing.
+
+00:01:23.995 --> 00:01:26.090
+Next, we can look at
+
+00:01:26.090 --> 00:01:30.290
+the accelerate coefficient and how it affects the shape of the curve.
+
+00:01:30.290 --> 00:01:33.015
+If the gain coefficient is positive,
+
+00:01:33.015 --> 00:01:36.564
+and the accelerate coefficient is also positive,
+
+00:01:36.564 --> 00:01:41.019
+both the t term and the t squared term are pointing up and to the right,
+
+00:01:41.019 --> 00:01:45.289
+so the curve is convex and looks like an accelerated gain.
+
+00:01:45.290 --> 00:01:51.460
+If the gain coefficient is still positive but the accelerate coefficient is negative,
+
+00:01:51.459 --> 00:01:55.799
+the t term is being counteracted by the t squared term,
+
+00:01:55.799 --> 00:01:59.500
+so the curve looks like a decelerated gain.
+
+00:01:59.500 --> 00:02:04.280
+Let's look at two more cases when the gain coefficient is negative.
+
+00:02:04.280 --> 00:02:07.760
+If the accelerate coefficient is also negative,
+
+00:02:07.760 --> 00:02:11.444
+then both terms are pushing the trajectory downward,
+
+00:02:11.444 --> 00:02:15.250
+so the curve looks like an accelerated loss.
+
+00:02:15.250 --> 00:02:22.210
+Lastly, if the gain coefficient is negative but the accelerate coefficient is positive,
+
+00:02:22.210 --> 00:02:28.040
+the two terms counteract each other and the curve looks like a decelerated loss.
+
+00:02:28.039 --> 00:02:30.229
+Okay, now for the fun part.
+
+00:02:30.229 --> 00:02:32.810
+Based on whether the gain coefficient and
+
+00:02:32.810 --> 00:02:35.745
+the accelerated coefficient are positive or negative,
+
+00:02:35.745 --> 00:02:41.270
+can you decide which scenarios you would rather go long, or short?
+

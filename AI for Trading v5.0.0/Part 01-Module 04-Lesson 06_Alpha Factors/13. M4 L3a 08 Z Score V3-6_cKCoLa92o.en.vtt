@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.779
+It's common for researchers to normalize alpha factors
+
+00:00:03.779 --> 00:00:07.945
+by subtracting the mean and dividing by the standard deviation.
+
+00:00:07.945 --> 00:00:13.765
+We can also refer to this process as Z-scoring because the result is a Z-score.
+
+00:00:13.765 --> 00:00:16.580
+Z-scoring helps to standardize the data,
+
+00:00:16.579 --> 00:00:19.479
+so that it has a consistent range and distribution.
+
+00:00:19.480 --> 00:00:24.105
+This makes it easier to compare and combine more than one alpha factor.
+
+00:00:24.105 --> 00:00:28.380
+For instance, if we assume a somewhat Gaussian distribution,
+
+00:00:28.379 --> 00:00:31.289
+then about 95 percent of the values in
+
+00:00:31.289 --> 00:00:37.250
+a Z-scored distribution would be roughly between negative two and positive two.
+
+00:00:37.250 --> 00:00:39.649
+Notice that a ranking also has
+
+00:00:39.649 --> 00:00:44.539
+a similar benefit of setting different alpha vectors on the same scale.
+
+00:00:44.539 --> 00:00:48.210
+Whatever the original raw alpha values are for
+
+00:00:48.210 --> 00:00:51.509
+two different alpha factors when we convert to ranks,
+
+00:00:51.509 --> 00:00:54.399
+if we had a universe of 100 stocks,
+
+00:00:54.399 --> 00:00:59.104
+then the ranking for any alpha would be the integers 1-100.
+
+00:00:59.104 --> 00:01:04.554
+Note that Z-scoring has an additional benefit that you wouldn't get from ranking.
+
+00:01:04.555 --> 00:01:08.690
+Z-scoring sets alpha vectors on a comparable scale
+
+00:01:08.689 --> 00:01:13.519
+even when we're dealing with differently sized stock universes.
+
+00:01:13.519 --> 00:01:19.219
+For instance, certain alpha factors may be generated on different stock universes.
+
+00:01:19.219 --> 00:01:23.030
+So, if we had one alpha factor calculated on a universe of
+
+00:01:23.030 --> 00:01:28.469
+100 stocks and another alpha factor calculated on 500 stocks,
+
+00:01:28.469 --> 00:01:32.414
+the rankings for the first would range from 1-100,
+
+00:01:32.415 --> 00:01:36.335
+while the rankings for the second would range from 1-500.
+
+00:01:36.334 --> 00:01:39.669
+Converting the ranks into a Z-score would rescale
+
+00:01:39.670 --> 00:01:44.585
+the two alpha vectors so that they could be comparable and more readily combined.
+
+00:01:44.584 --> 00:01:46.909
+Recall that ranking still makes
+
+00:01:46.909 --> 00:01:50.984
+our alpha vectors more robust against outliers and noisy data,
+
+00:01:50.984 --> 00:01:54.670
+and Z-scoring does not provide the same benefit.
+
+00:01:54.670 --> 00:01:58.835
+So, a valid approach would be to use ranking only
+
+00:01:58.834 --> 00:02:03.294
+when you know that all your alpha vectors are using the same stock universe.
+
+00:02:03.295 --> 00:02:07.165
+It's also useful to apply ranking and then Z-scoring,
+
+00:02:07.165 --> 00:02:09.800
+if you think that some of your alpha vectors may
+
+00:02:09.800 --> 00:02:12.920
+be generated on different stock universes.
+
+00:02:12.919 --> 00:02:17.849
+One thing to remember is that when you work in a large asset management company,
+
+00:02:17.849 --> 00:02:20.905
+you may be one of many alpha researchers,
+
+00:02:20.905 --> 00:02:23.120
+and there may be other team members,
+
+00:02:23.120 --> 00:02:26.325
+portfolio managers, who use your alpha vectors.
+
+00:02:26.324 --> 00:02:29.209
+In this case, the portfolio managers want to
+
+00:02:29.210 --> 00:02:32.409
+get standardized outputs from all the quants.
+
+00:02:32.409 --> 00:02:35.719
+Z-scoring is one way to achieve this.
+
+00:02:35.719 --> 00:02:38.939
+Academic research often uses Z-scoring,
+
+00:02:38.939 --> 00:02:42.650
+as many papers are based on the work of Fama and French,
+
+00:02:42.650 --> 00:02:45.530
+who designed one of the first multi-factor models.
+
+00:02:45.530 --> 00:02:50.585
+Since this paper has influenced many subsequent papers in the study of factors,
+
+00:02:50.585 --> 00:02:54.200
+it's likely you'll see Z-scoring in academic papers.
+

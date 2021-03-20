@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.740
+I hinted previously, that we could use skewness as a signal that
+
+00:00:04.740 --> 00:00:09.759
+stocks may be over bought in the short-term and may revert back soon afterwards.
+
+00:00:09.759 --> 00:00:11.875
+To help you understand skewness,
+
+00:00:11.875 --> 00:00:15.009
+I'll first introduce a visual notion of skew.
+
+00:00:15.009 --> 00:00:18.410
+Then the common academic definition of skew,
+
+00:00:18.410 --> 00:00:23.710
+followed by the proxy for skewness that we will use when creating this Alpha factor.
+
+00:00:23.710 --> 00:00:28.160
+Skewness refers to the asymmetry in a distribution.
+
+00:00:28.160 --> 00:00:31.024
+When a distribution is negatively skewed,
+
+00:00:31.024 --> 00:00:33.619
+it has a longer tail on the left.
+
+00:00:33.619 --> 00:00:36.314
+When the distribution is positively skewed,
+
+00:00:36.314 --> 00:00:38.460
+it has a longer tail on the right.
+
+00:00:38.460 --> 00:00:44.545
+Skewness also means that the mean of a distribution is different than its medium.
+
+00:00:44.545 --> 00:00:48.995
+Negative skew, indicates that the mean is to the left of the median.
+
+00:00:48.994 --> 00:00:53.509
+You can imagine the small portion of extreme values on the left,
+
+00:00:53.509 --> 00:00:55.280
+pulling the mean to the left.
+
+00:00:55.280 --> 00:00:59.370
+While the median stays closer to the majority of observations.
+
+00:00:59.369 --> 00:01:04.924
+Similarly, a positive skew indicates that the mean is to the right of the median.
+
+00:01:04.924 --> 00:01:08.840
+You can imagine that the extreme values to the right,
+
+00:01:08.840 --> 00:01:11.299
+pull the mean to the right as well while the median
+
+00:01:11.299 --> 00:01:14.420
+stays closer to the majority of observations.
+
+00:01:14.420 --> 00:01:16.954
+If you learned about skewness in school,
+
+00:01:16.954 --> 00:01:19.459
+you may recall the concept of the first,
+
+00:01:19.459 --> 00:01:22.129
+second, third, and fourth moments of a distribution.
+
+00:01:22.129 --> 00:01:26.224
+The first moment is commonly known as the mean or average.
+
+00:01:26.224 --> 00:01:29.194
+The second moment is known as the variance.
+
+00:01:29.194 --> 00:01:33.354
+The third moment is skewness which we are discussing here.
+
+00:01:33.355 --> 00:01:39.225
+The fourth moment is kurtosis which measures the tails of the distribution.
+
+00:01:39.224 --> 00:01:41.944
+Stock returns generally exhibit
+
+00:01:41.944 --> 00:01:46.924
+excess kurtosis or fat tails compared to the normal distribution.
+
+00:01:46.924 --> 00:01:50.125
+For now though, we'll focus on skewness.
+
+00:01:50.125 --> 00:01:54.265
+So, those were the visual and traditional interpretations of skewness.
+
+00:01:54.265 --> 00:01:59.025
+Now, let's circle back to the definition of skewness used in this paper,
+
+00:01:59.025 --> 00:02:01.710
+and what we will implement in the Alpha factor.
+
+00:02:01.709 --> 00:02:04.640
+A useful proxy for skewness is
+
+00:02:04.640 --> 00:02:09.405
+the maximum daily return of a stock over the past 20 trading days.
+
+00:02:09.405 --> 00:02:11.944
+This definition is useful in part,
+
+00:02:11.944 --> 00:02:16.995
+because of how it captures how individual investors may perceive skewness.
+
+00:02:16.995 --> 00:02:19.789
+It's possible to imagine that an investor may
+
+00:02:19.789 --> 00:02:23.764
+look at a recent stock high of a company as an indicator,
+
+00:02:23.764 --> 00:02:27.869
+upon which they will base their decision to buy or sell the stock.
+

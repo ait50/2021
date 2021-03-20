@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.615
+As you already know,
+
+00:00:01.615 --> 00:00:04.974
+transaction costs are a hugely important thing to think about.
+
+00:00:04.974 --> 00:00:10.254
+Can you do anything to mitigate transaction costs and the optimization problem itself?
+
+00:00:10.255 --> 00:00:13.890
+Well, you know you want to minimize transaction costs.
+
+00:00:13.890 --> 00:00:16.410
+Can you just plop some quantity that measures
+
+00:00:16.410 --> 00:00:19.714
+transaction costs somehow into the objective function?
+
+00:00:19.714 --> 00:00:22.594
+That sounds like a seemingly satisfying solution.
+
+00:00:22.594 --> 00:00:24.899
+The problem with this is that in practice,
+
+00:00:24.899 --> 00:00:28.359
+it's extremely difficult to know how to represent those costs.
+
+00:00:28.359 --> 00:00:30.195
+To know the transaction costs,
+
+00:00:30.195 --> 00:00:31.929
+you must know what the trade is,
+
+00:00:31.929 --> 00:00:36.009
+but the whole reason to do the optimization is to know what the traders.
+
+00:00:36.009 --> 00:00:40.164
+In general, transaction cost is a function of trade size.
+
+00:00:40.164 --> 00:00:44.060
+But the problem is even an infinitesimally small trade
+
+00:00:44.060 --> 00:00:47.065
+will incur non-trivial transaction costs.
+
+00:00:47.064 --> 00:00:51.994
+That is, transaction cost is a discontinuous function of trade size.
+
+00:00:51.994 --> 00:00:57.549
+This is because there are lower bounds on bid ask spreads and Trade Commission's.
+
+00:00:57.549 --> 00:01:00.589
+This means that a transaction cost term can't
+
+00:01:00.590 --> 00:01:03.910
+be included in the objective function easily.
+
+00:01:03.909 --> 00:01:07.789
+One possibility is to impose a turnover constraint.
+
+00:01:07.790 --> 00:01:11.330
+Again, simply limiting the net change in weight
+
+00:01:11.329 --> 00:01:15.670
+on each asset relative to the weights in the previous portfolio.
+
+00:01:15.670 --> 00:01:20.549
+In general, turnover is directly proportional to transaction cost.
+
+00:01:20.549 --> 00:01:24.739
+So, you might limit turnover to say 20 percent.
+
+00:01:24.739 --> 00:01:29.949
+The problem with doing this is you can easily get to an infeasible situation.
+
+00:01:29.950 --> 00:01:34.939
+It's very possible that you can have a situation where through market movements,
+
+00:01:34.939 --> 00:01:37.715
+the portfolio gets pushed into a certain scenario
+
+00:01:37.715 --> 00:01:40.885
+where to have all the constraints satisfied,
+
+00:01:40.885 --> 00:01:43.315
+the turnover constraint must be violated.
+
+00:01:43.314 --> 00:01:47.420
+For example, market movements may have pushed the size of
+
+00:01:47.420 --> 00:01:52.894
+a stock's position beyond the maximum allowed by the individual weight constraint,
+
+00:01:52.894 --> 00:01:55.959
+but the trade required to reduce that weight
+
+00:01:55.959 --> 00:01:59.854
+may be more than allowed by the turnover constraint.
+
+00:01:59.855 --> 00:02:02.805
+There are two potential solutions.
+
+00:02:02.805 --> 00:02:05.705
+The first is to put that turnover constraint into
+
+00:02:05.704 --> 00:02:10.039
+a penalty term in the objective function so that instead of a hard cap,
+
+00:02:10.039 --> 00:02:13.689
+you have a scaling term that penalizes turnover.
+
+00:02:13.689 --> 00:02:18.129
+The second solution is to put the whole optimization problem inside a loop.
+
+00:02:18.129 --> 00:02:20.840
+You can impose a hard turnover constraint,
+
+00:02:20.840 --> 00:02:22.640
+and if the problem is infeasible,
+
+00:02:22.639 --> 00:02:25.564
+you can progressively relax the turnover constraint
+
+00:02:25.564 --> 00:02:30.000
+and rerun the optimization until the problem becomes feasible.
+

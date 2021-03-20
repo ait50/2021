@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:07.054
+The concept of value in factor modeling is one of the two most widely known concepts,
+
+00:00:07.054 --> 00:00:10.109
+the other being the concept of momentum.
+
+00:00:10.109 --> 00:00:16.024
+The significance of value can be traced to the work of Ben Graham and David Dodd,
+
+00:00:16.024 --> 00:00:18.543
+who wrote about value investing,
+
+00:00:18.544 --> 00:00:20.820
+which seeks to estimate accompanies
+
+00:00:20.820 --> 00:00:26.754
+intrinsic value than by companies that are priced below that intrinsic value.
+
+00:00:26.754 --> 00:00:30.250
+Some well known followers of Graham in
+
+00:00:30.250 --> 00:00:33.965
+value investing are Warren Buffett and Charlie Munger.
+
+00:00:33.965 --> 00:00:37.310
+These types of investors are referred to as
+
+00:00:37.310 --> 00:00:41.200
+fundamental investors are also discretionary investors.
+
+00:00:41.200 --> 00:00:45.850
+Given the apparent success of value investing by discretionary investors,
+
+00:00:45.850 --> 00:00:51.810
+quants have worked to replicate the idea by creating quantitative measures of value.
+
+00:00:51.810 --> 00:00:56.540
+Since I mentioned quants being inspired by discretionary investors,
+
+00:00:56.539 --> 00:01:00.789
+I want to tell you about an idea I think is very misunderstood.
+
+00:01:00.789 --> 00:01:06.370
+This is something I am very passionate about, most quants,
+
+00:01:06.370 --> 00:01:07.939
+those who are new to quant
+
+00:01:07.939 --> 00:01:13.789
+finance and even famous and very experienced quants often think and proclaim
+
+00:01:13.790 --> 00:01:16.640
+loudly and even impolitely that
+
+00:01:16.640 --> 00:01:21.614
+fundamental investors trade by gut instinct and have no process,
+
+00:01:21.614 --> 00:01:24.109
+whereas quants are the standard bearers of
+
+00:01:24.109 --> 00:01:29.334
+the scientific method and they are the only ones with a repeatable process.
+
+00:01:29.334 --> 00:01:32.419
+This is absolutely wrong,
+
+00:01:32.420 --> 00:01:36.019
+I have worked with some of the best fundamental investors in the world in
+
+00:01:36.019 --> 00:01:40.019
+addition to some of the best quants and both these groups,
+
+00:01:40.019 --> 00:01:44.664
+have had irrational well-articulated, repeatable process.
+
+00:01:44.665 --> 00:01:48.775
+The key difference though between the two are: one,
+
+00:01:48.775 --> 00:01:50.594
+the kind of inputs they use;
+
+00:01:50.594 --> 00:01:53.769
+two, how they process that information;
+
+00:01:53.769 --> 00:01:58.159
+and three, the shape of the portfolios that emerge.
+
+00:01:58.159 --> 00:02:05.060
+Historically, fundamental investors have relied on detective work together inputs.
+
+00:02:05.060 --> 00:02:08.620
+This work includes reading corporate filings,
+
+00:02:08.620 --> 00:02:10.420
+talking to research analysts,
+
+00:02:10.419 --> 00:02:12.274
+and reading analyst reports.
+
+00:02:12.275 --> 00:02:14.925
+Let's think the company conference calls,
+
+00:02:14.925 --> 00:02:17.665
+talking to executives at the companies,
+
+00:02:17.664 --> 00:02:20.224
+and even visiting companies on-site.
+
+00:02:20.224 --> 00:02:25.405
+Fundamental investors then synthesize all this information into a variant view,
+
+00:02:25.405 --> 00:02:27.835
+which is a non-consensus view.
+
+00:02:27.835 --> 00:02:32.814
+The shape of portfolios differ between fundamental investors and quant investors.
+
+00:02:32.814 --> 00:02:34.419
+When I refer to shape,
+
+00:02:34.419 --> 00:02:38.809
+I mean the number of positions and also the concentration of those position.
+
+00:02:38.810 --> 00:02:43.055
+Think of the shape function in the Python library pandas.
+
+00:02:43.055 --> 00:02:47.025
+Great fundamental investors have high IC,
+
+00:02:47.025 --> 00:02:48.585
+the measure of skill.
+
+00:02:48.585 --> 00:02:52.159
+But, because of the style and depth of their research process,
+
+00:02:52.159 --> 00:02:56.180
+they can only achieve low breadth because it's only humanly
+
+00:02:56.180 --> 00:03:01.340
+possible to research so many companies with that much depth.
+
+00:03:01.340 --> 00:03:03.314
+But, make no mistake,
+
+00:03:03.314 --> 00:03:06.370
+these investors use repeatable inputs,
+
+00:03:06.370 --> 00:03:12.134
+follow a repeatable process and produce high IC bets.
+
+00:03:12.134 --> 00:03:14.014
+Quants on the other hand,
+
+00:03:14.014 --> 00:03:18.784
+have historically used structured data like price and volume data,
+
+00:03:18.784 --> 00:03:24.129
+financial statement data, quantified a research analyst ratings, and the like.
+
+00:03:24.129 --> 00:03:28.519
+As discussed, quants typically have lower IC,
+
+00:03:28.520 --> 00:03:32.880
+but more than make up for that with much higher breadth.
+

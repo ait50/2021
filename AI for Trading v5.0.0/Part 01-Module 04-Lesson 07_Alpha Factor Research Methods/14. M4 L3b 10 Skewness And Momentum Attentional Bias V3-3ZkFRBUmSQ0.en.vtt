@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.389
+The next alpha factor that I'd like to share with you is based on the paper titled,
+
+00:00:05.389 --> 00:00:08.300
+Expected Skewness and Momentum.
+
+00:00:08.300 --> 00:00:11.440
+Before we get into the formal definition of skewness,
+
+00:00:11.439 --> 00:00:15.359
+I'd like to give you a hypothetical example that hopefully will guide
+
+00:00:15.359 --> 00:00:20.160
+your understanding as we discuss the conditional skewness and momentum vector.
+
+00:00:20.160 --> 00:00:24.429
+Why conditional? What word do you see in the title?
+
+00:00:24.429 --> 00:00:27.350
+"And", as a practitioner,
+
+00:00:27.350 --> 00:00:31.020
+it's often helpful to think of the alpha factors in terms
+
+00:00:31.019 --> 00:00:35.130
+of market mechanics and or behavioral psychology.
+
+00:00:35.130 --> 00:00:37.725
+If you look at which stocks are in the news,
+
+00:00:37.725 --> 00:00:42.115
+some stocks get more of press coverage and social media posts than others.
+
+00:00:42.115 --> 00:00:45.770
+Let's hypothesize that stocks that tend to get higher than
+
+00:00:45.770 --> 00:00:50.225
+average media attention tend to also become overpriced.
+
+00:00:50.225 --> 00:00:52.899
+What might cause that mispricing?
+
+00:00:52.899 --> 00:00:57.634
+When individual investors are flooded with news about a high flying company,
+
+00:00:57.634 --> 00:01:04.064
+there's a natural fear of missing out or "Fomo" as the kids are calling it these days.
+
+00:01:04.064 --> 00:01:10.890
+This sets up investors for a situation referred to as attentional bias.
+
+00:01:10.890 --> 00:01:18.079
+Attentional bias is a phenomenon where people focus on some aspect at the expense of
+
+00:01:18.079 --> 00:01:21.319
+focusing on the big picture and are more likely to
+
+00:01:21.319 --> 00:01:25.254
+notice evidence that supports their prior existing beliefs.
+
+00:01:25.254 --> 00:01:28.009
+So, when a stock that is getting lots of
+
+00:01:28.010 --> 00:01:32.310
+news coverage has a high one day return in the past month,
+
+00:01:32.310 --> 00:01:35.390
+this may trigger individual investors to
+
+00:01:35.390 --> 00:01:39.099
+see this as a sign that the stock will keep going up.
+
+00:01:39.099 --> 00:01:41.859
+Their fear of missing out may kick in,
+
+00:01:41.859 --> 00:01:46.164
+so they jump in and buy as well pushing the stock further up.
+
+00:01:46.165 --> 00:01:51.245
+Since this increase may not be based on fundamentals,
+
+00:01:51.245 --> 00:01:54.770
+the market as a whole both institutional investors and
+
+00:01:54.769 --> 00:01:59.959
+individual investors may realize that the stock is over bought and sell,
+
+00:01:59.959 --> 00:02:04.269
+thus starting to push the stock price back down to earth.
+
+00:02:04.269 --> 00:02:06.530
+If this is indeed true,
+
+00:02:06.530 --> 00:02:11.719
+then the maximum one day return in a historical window can be used as
+
+00:02:11.719 --> 00:02:15.500
+a reversal factor which can also be combined with
+
+00:02:15.500 --> 00:02:20.629
+momentum to decide that the stock maybe over bought or oversold.
+
+00:02:20.629 --> 00:02:23.030
+The maximum one day return over
+
+00:02:23.030 --> 00:02:27.474
+a month is the way that we can measure skewness of returns.
+
+00:02:27.474 --> 00:02:30.474
+We'll explain skew in the next section.
+
+00:02:30.474 --> 00:02:33.224
+Before we go to the next section though,
+
+00:02:33.224 --> 00:02:37.609
+let's pause and talk generally about alpha factors again.
+
+00:02:37.610 --> 00:02:43.775
+Many of you might be skeptical of this approach as many newcomers to call financer.
+
+00:02:43.775 --> 00:02:47.390
+Surely in the context of this specific factor,
+
+00:02:47.389 --> 00:02:50.509
+you can think of a few occasions in recent memory where
+
+00:02:50.509 --> 00:02:55.655
+the idea behind this factor was wrong, maybe spectacularly wrong.
+
+00:02:55.655 --> 00:02:58.849
+Meaning you can surely think of ideas where
+
+00:02:58.849 --> 00:03:02.150
+a stock went up a lot and then continued going up.
+
+00:03:02.150 --> 00:03:06.289
+Alpha factors though are trying to capture a mispricing,
+
+00:03:06.289 --> 00:03:10.429
+often imperceptible to humans across one,
+
+00:03:10.430 --> 00:03:14.480
+many stocks two, on a relative basis,
+
+00:03:14.479 --> 00:03:17.444
+and three, persistent across time.
+
+00:03:17.444 --> 00:03:23.084
+We are not trying to get very high conviction in any one specific stock.
+
+00:03:23.085 --> 00:03:28.110
+As we discussed in the section about the fundamental law of active management,
+
+00:03:28.110 --> 00:03:33.505
+we can expect that our skill on any one stock will be low,
+
+00:03:33.504 --> 00:03:38.849
+even imperceptibly difficult to distinguish from noise by a human.
+
+00:03:38.849 --> 00:03:46.324
+Skill just has to be marginally better than 50-50 at the single trait level, and then,
+
+00:03:46.324 --> 00:03:49.579
+we can apply it across many stocks to get
+
+00:03:49.580 --> 00:03:54.270
+a complete alpha factor that hopefully exhibits good Sharpe ratio.
+

@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.470
+By now, you've seen a few important types of factor models.
+
+00:00:03.470 --> 00:00:07.070
+You know that the goal of factor models is to model
+
+00:00:07.070 --> 00:00:12.705
+roughly things you think have a similar underlying effect on your variables of interest.
+
+00:00:12.705 --> 00:00:16.379
+You want to represent a variable or variables in terms of
+
+00:00:16.379 --> 00:00:20.625
+several important underlying variables or factors.
+
+00:00:20.625 --> 00:00:26.550
+In our case, we are trying to represent a large number of similar variables that returns
+
+00:00:26.550 --> 00:00:29.820
+time series of several financial assets in terms
+
+00:00:29.820 --> 00:00:33.740
+of a smaller number of common underlying factors.
+
+00:00:33.740 --> 00:00:38.010
+There's another way to do this that relies on the machine learning method,
+
+00:00:38.009 --> 00:00:40.949
+principal components analysis or PCA.
+
+00:00:40.950 --> 00:00:44.420
+PCA is a technique you can use to represent your data
+
+00:00:44.420 --> 00:00:48.075
+set in terms of hidden latent features or dimensions,
+
+00:00:48.075 --> 00:00:50.510
+and potentially reduce the number of dimensions of
+
+00:00:50.509 --> 00:00:54.219
+your data set by dropping the least informative dimensions.
+
+00:00:54.219 --> 00:00:56.304
+We'll show you what we mean by that.
+
+00:00:56.304 --> 00:01:00.314
+If you've been reading about machine learning or artificial intelligence,
+
+00:01:00.314 --> 00:01:03.304
+you may have heard of this method before because it's used
+
+00:01:03.304 --> 00:01:06.944
+widely across all types of industries and fields.
+
+00:01:06.944 --> 00:01:12.049
+What we're going to do now is refresh the math you'll need to understand PCA and then
+
+00:01:12.049 --> 00:01:17.644
+explain in detail how this method is typically used for risk modeling and finance.
+
+00:01:17.644 --> 00:01:22.560
+Let's start by reviewing some of the important math we'll need to learn PCA.
+

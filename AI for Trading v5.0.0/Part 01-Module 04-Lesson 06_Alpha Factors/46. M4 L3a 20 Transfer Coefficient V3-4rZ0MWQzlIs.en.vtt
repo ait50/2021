@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.873
+Recall that we prefer to control for risk within the Alpha factors,
+
+00:00:04.873 --> 00:00:10.355
+rather than waiting for their risk model optimizer to do it completely for us.
+
+00:00:10.355 --> 00:00:16.324
+This is why we make the Alpha vector dollar neutral and often also sector neutral.
+
+00:00:16.324 --> 00:00:20.070
+The reason we wish to control for risk early on within
+
+00:00:20.070 --> 00:00:24.410
+the Alpha vector itself is so that after the optimization,
+
+00:00:24.410 --> 00:00:28.675
+the portfolio weights are not too different from the original Alpha vector.
+
+00:00:28.675 --> 00:00:31.650
+It's natural for you to wonder why is it an issue
+
+00:00:31.649 --> 00:00:34.850
+at the portfolio weights are nothing like the original Alpha vector?
+
+00:00:34.850 --> 00:00:38.804
+To understand this, remember that we're evaluating
+
+00:00:38.804 --> 00:00:43.899
+each Alpha factor in isolation of other Alpha vectors.
+
+00:00:43.899 --> 00:00:46.789
+We evaluate the Alpha factor to see if it may be
+
+00:00:46.789 --> 00:00:50.579
+a good candidate to help improve the performance of a portfolio.
+
+00:00:50.579 --> 00:00:56.210
+If after optimization, the risk model significantly changes
+
+00:00:56.210 --> 00:00:58.820
+the weights for stock so that they no
+
+00:00:58.820 --> 00:01:02.299
+longer follow the weights chosen by the Alpha vector,
+
+00:01:02.299 --> 00:01:07.789
+then we can't expect the performance of the Alpha to carry over into the portfolio.
+
+00:01:07.790 --> 00:01:15.405
+As the example, imagine if an Alpha vector gives most positive weight to stock ABC.
+
+00:01:15.405 --> 00:01:19.430
+But after the risk model neutralizes various common risks,
+
+00:01:19.430 --> 00:01:23.345
+the final portfolio weights end up shorting stock ABC,
+
+00:01:23.344 --> 00:01:26.599
+then the signal from the Alpha vector which essentially says,
+
+00:01:26.599 --> 00:01:30.339
+"Buy stock ABC" is no longer being followed.
+
+00:01:30.340 --> 00:01:32.930
+This means that the performance that we originally
+
+00:01:32.930 --> 00:01:35.240
+hoped to gain from using this Alpha vector
+
+00:01:35.239 --> 00:01:40.250
+may not carry over or transfer to the portfolio itself.
+
+00:01:40.250 --> 00:01:45.340
+Remember that the Alpha vector is an expression of expected returns.
+
+00:01:45.340 --> 00:01:48.799
+If the portfolio weights after every optimization
+
+00:01:48.799 --> 00:01:52.119
+are very different from the original Alpha factors,
+
+00:01:52.120 --> 00:01:54.859
+then the portfolio itself may not be
+
+00:01:54.859 --> 00:01:58.655
+capturing the information expressed by those Alpha vectors.
+
+00:01:58.655 --> 00:02:04.219
+To see how closely the optimized portfolio weights still match the original Alpha vector,
+
+00:02:04.219 --> 00:02:07.750
+we can calculate something called the transfer coefficient.
+
+00:02:07.750 --> 00:02:10.610
+The transfer coefficient measures how closely
+
+00:02:10.610 --> 00:02:14.580
+the optimized portfolio weights match the original Alpha vector.
+
+00:02:14.580 --> 00:02:16.920
+To get the transfer coefficient,
+
+00:02:16.919 --> 00:02:22.109
+we need to use portfolio optimization that includes a risk factor model.
+
+00:02:22.110 --> 00:02:26.030
+We will learn about the portfolio optimization step in a later lesson.
+
+00:02:26.030 --> 00:02:29.060
+For now, let's just assume that we have
+
+00:02:29.060 --> 00:02:32.680
+a portfolio optimizer that outputs portfolio weights.
+
+00:02:32.680 --> 00:02:34.745
+We start with our Alpha vector,
+
+00:02:34.745 --> 00:02:39.490
+pass it through the portfolio optimization and get portfolio weights.
+
+00:02:39.490 --> 00:02:43.025
+The transfer coefficient is the correlation
+
+00:02:43.025 --> 00:02:47.235
+between the Alpha vector and the resulting portfolio weights.
+
+00:02:47.235 --> 00:02:50.540
+A high transfer coefficient is a good sign that
+
+00:02:50.539 --> 00:02:55.849
+the Alpha vector has survived the portfolio optimizers risk neutralization.
+
+00:02:55.849 --> 00:02:59.810
+The transfer coefficient is also a useful measure for
+
+00:02:59.810 --> 00:03:06.300
+another desired attribute of an Alpha factor independence from risk factors.
+
+00:03:06.300 --> 00:03:08.390
+Ideally, we would like to find
+
+00:03:08.389 --> 00:03:13.119
+Alpha factors that are independent of the common risk factors.
+
+00:03:13.120 --> 00:03:17.209
+If Alpha factors were too correlated with the risk factors,
+
+00:03:17.209 --> 00:03:21.750
+then they would also be neutralized by the risk model.
+

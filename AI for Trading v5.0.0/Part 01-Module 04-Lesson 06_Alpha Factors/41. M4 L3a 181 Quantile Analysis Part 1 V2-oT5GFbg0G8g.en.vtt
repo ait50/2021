@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.530
+We saw earlier that the rank IC can tell us overall how well
+
+00:00:04.530 --> 00:00:06.735
+an Alpha vector's predictions align
+
+00:00:06.735 --> 00:00:09.865
+with the subsequent stock returns for the next period.
+
+00:00:09.865 --> 00:00:12.359
+You may be wondering if it's possible to drill down
+
+00:00:12.359 --> 00:00:15.494
+deeper to look at the Alpha values assigned each stock
+
+00:00:15.494 --> 00:00:17.849
+to see which subset of stocks actually
+
+00:00:17.850 --> 00:00:21.535
+contribute most or least to the factor return of the portfolio.
+
+00:00:21.535 --> 00:00:26.179
+Ideally, if our Alpha model and hypothesis were accurate,
+
+00:00:26.179 --> 00:00:29.225
+the stock with the highest Alpha value for that day
+
+00:00:29.225 --> 00:00:33.285
+would also have the highest positive return the next day.
+
+00:00:33.284 --> 00:00:37.039
+Similarly, the stock with the lowest Alpha value for
+
+00:00:37.039 --> 00:00:41.719
+that day would also have the lowest return in the next day,
+
+00:00:41.719 --> 00:00:47.379
+which would be good for our theoretical portfolio since we would be shorting that stock.
+
+00:00:47.380 --> 00:00:50.210
+Remember, that we are working with
+
+00:00:50.210 --> 00:00:54.380
+perhaps hundreds or even thousands of stocks in our universe.
+
+00:00:54.380 --> 00:00:58.850
+So, a good middle ground is to divide our Alpha vector into
+
+00:00:58.850 --> 00:01:04.719
+quantiles and analyze their returns and volatility within those quantiles.
+
+00:01:04.719 --> 00:01:09.170
+An ideal Alpha model would be one where the group of stocks containing
+
+00:01:09.170 --> 00:01:14.590
+the highest Alpha values for that day would also have the highest average return,
+
+00:01:14.590 --> 00:01:17.799
+and possibly, the highest risk adjusted to return.
+
+00:01:17.799 --> 00:01:20.810
+Similarly, the group of stocks containing
+
+00:01:20.810 --> 00:01:25.585
+the lowest Alpha values would ideally have the lowest returns.
+
+00:01:25.584 --> 00:01:29.538
+For example, if we have 25 stocks in our universe
+
+00:01:29.539 --> 00:01:33.920
+and wanted divide them up each into five groups of equal size,
+
+00:01:33.920 --> 00:01:38.344
+we would be using five quantiles also called quintiles.
+
+00:01:38.344 --> 00:01:42.500
+For each day, we'll sort the stocks by their Alpha value.
+
+00:01:42.500 --> 00:01:45.034
+The five highest values go in the fifth group,
+
+00:01:45.034 --> 00:01:47.259
+which are above the fourth quintile.
+
+00:01:47.260 --> 00:01:50.930
+The stocks with the lowest five values go in the first group,
+
+00:01:50.930 --> 00:01:52.860
+which are below the first quintile.
+
+00:01:52.859 --> 00:01:56.790
+Similarly, we fill groups 2, 3,
+
+00:01:56.790 --> 00:02:01.390
+4, with five stocks each based on their Alpha value.
+
+00:02:01.390 --> 00:02:04.790
+We can keep track of the individual returns within
+
+00:02:04.790 --> 00:02:08.290
+each of the five groups over a time window such as one,
+
+00:02:08.289 --> 00:02:09.804
+three, or five years.
+
+00:02:09.805 --> 00:02:12.530
+Then we can calculate the mean return within
+
+00:02:12.530 --> 00:02:15.435
+each group as well as the standard deviation.
+
+00:02:15.435 --> 00:02:20.944
+We can call what we just did quantile analysis or quantile performance.
+
+00:02:20.944 --> 00:02:23.664
+Since we chose five quantiles,
+
+00:02:23.664 --> 00:02:27.669
+we can also call this quintile performance.
+

@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.009
+Going back to the question I asked earlier,
+
+00:00:03.009 --> 00:00:05.549
+based on whether the gain coefficient and
+
+00:00:05.549 --> 00:00:08.304
+the accelerate coefficient are positive or negative,
+
+00:00:08.304 --> 00:00:12.320
+can you decide which scenarios we would rather go long or short?
+
+00:00:12.320 --> 00:00:14.940
+We'll take a look at how the coefficients of
+
+00:00:14.939 --> 00:00:17.759
+the stock price approximation formula can inform
+
+00:00:17.760 --> 00:00:21.735
+our decision as to which stock we should go long or short.
+
+00:00:21.734 --> 00:00:27.809
+This in turn allows us to create an alpha factor based on these two coefficients.
+
+00:00:27.809 --> 00:00:31.079
+Let's take an example of two stocks, A and B.
+
+00:00:31.079 --> 00:00:37.250
+Stock A has a gain coefficient of 10 and an accelerate coefficient of two.
+
+00:00:37.250 --> 00:00:45.230
+Stock B also has a gain coefficient of 10 and accelerate coefficient of negative two.
+
+00:00:45.229 --> 00:00:48.239
+If you were going long both stocks,
+
+00:00:48.240 --> 00:00:51.010
+which one would you put more weight on?
+
+00:00:51.009 --> 00:00:55.144
+Since stock A has the trajectory of an accelerated gain,
+
+00:00:55.145 --> 00:00:59.090
+whereas stock B looks like a decelerated gain,
+
+00:00:59.090 --> 00:01:04.045
+we would put a larger long wait on stock A, the accelerated gain.
+
+00:01:04.045 --> 00:01:08.210
+Let's look at another example with two downward trending stocks.
+
+00:01:08.209 --> 00:01:11.989
+Let's say stock C has a gain coefficient of negative
+
+00:01:11.989 --> 00:01:15.679
+10 and accelerate coefficient of two.
+
+00:01:15.680 --> 00:01:20.150
+Stock D has a gain coefficient of negative 10,
+
+00:01:20.150 --> 00:01:23.844
+as well as an accelerate coefficient of negative two.
+
+00:01:23.844 --> 00:01:26.375
+If you were to go short both stocks,
+
+00:01:26.375 --> 00:01:29.709
+which one would you put a larger short position on?
+
+00:01:29.709 --> 00:01:35.309
+In this case, stock C has the trajectory of a decelerated loss,
+
+00:01:35.310 --> 00:01:39.320
+and stock D has the look of an accelerated loss.
+
+00:01:39.319 --> 00:01:44.794
+So, you'd prefer to put a larger shortwave on stock D, the accelerated loss.
+
+00:01:44.795 --> 00:01:48.079
+Now, you may have noticed something interesting with
+
+00:01:48.079 --> 00:01:51.724
+the signs of the gain and the accelerate coefficients.
+
+00:01:51.724 --> 00:01:56.379
+When the product of gain times accelerate is positive and large,
+
+00:01:56.379 --> 00:02:00.859
+the signal generally means to take a larger long position.
+
+00:02:00.859 --> 00:02:03.040
+When both are negative,
+
+00:02:03.040 --> 00:02:07.240
+the signal means to take a larger short position.
+
+00:02:07.239 --> 00:02:11.254
+If we were to convert the gain and accelerate coefficients
+
+00:02:11.254 --> 00:02:15.185
+into ranks then multiply them together,
+
+00:02:15.185 --> 00:02:21.265
+the product of the gain times accelerate would represent an alpha factor.
+
+00:02:21.264 --> 00:02:25.614
+When the rank of gain and the rank of accelerate are both small,
+
+00:02:25.615 --> 00:02:27.275
+the product is small,
+
+00:02:27.275 --> 00:02:31.835
+and this is a signal to take a larger short position.
+
+00:02:31.835 --> 00:02:36.540
+If the rank of gain and the rank of accelerate are both large,
+
+00:02:36.539 --> 00:02:38.905
+then the product is also large,
+
+00:02:38.905 --> 00:02:42.270
+and this is a signal to take a larger long wait.
+
+00:02:42.270 --> 00:02:45.775
+This is our first conditional factor.
+
+00:02:45.775 --> 00:02:51.625
+The key idea is that when you see and think conditional.
+
+00:02:51.625 --> 00:02:56.375
+Here, we have momentum and convexity.
+
+00:02:56.375 --> 00:02:59.344
+So, to summarize, we can use
+
+00:02:59.344 --> 00:03:04.520
+a multiple regression where the independent variables are time and time squared,
+
+00:03:04.520 --> 00:03:07.515
+and the dependent variable is the stock price.
+
+00:03:07.514 --> 00:03:13.024
+This regression gives us estimates for the coefficients gain and accelerate.
+
+00:03:13.024 --> 00:03:18.439
+We create our factor by first converting gain and accelerate into ranks,
+
+00:03:18.439 --> 00:03:23.199
+and then multiplying the ranks together to create a joint factor.
+

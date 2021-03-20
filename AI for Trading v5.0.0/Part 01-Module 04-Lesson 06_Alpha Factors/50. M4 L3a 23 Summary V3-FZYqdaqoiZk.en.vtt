@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+Congratulations on making it through this lesson.
+
+00:00:03.390 --> 00:00:09.029
+We reviewed some foundational building blocks that you will see again and use when we
+
+00:00:09.029 --> 00:00:15.064
+translate academic papers into alpha ideas and then implement those ideas in code.
+
+00:00:15.064 --> 00:00:18.699
+But let's just remember that, even after testing,
+
+00:00:18.699 --> 00:00:20.574
+if your alphas look promising,
+
+00:00:20.574 --> 00:00:25.515
+this is really only the first stage of their lives so to speak.
+
+00:00:25.515 --> 00:00:29.144
+Lets step back a bit and see how the search for alpha factors
+
+00:00:29.144 --> 00:00:33.619
+fits into the big picture of the quant workflow.
+
+00:00:33.619 --> 00:00:37.134
+We first propose and generate alpha factors,
+
+00:00:37.134 --> 00:00:42.195
+then evaluate them to find those that might show some promise.
+
+00:00:42.195 --> 00:00:46.390
+Then we perform out-of-sample testing of
+
+00:00:46.390 --> 00:00:52.689
+the alpha factors using historical data that wasn't used to construct the alpha vector.
+
+00:00:52.689 --> 00:00:54.934
+If that looks promising,
+
+00:00:54.935 --> 00:00:59.965
+then we would conduct paper trading in which we don't use real money,
+
+00:00:59.965 --> 00:01:03.610
+but we follow the factor as if we're making theoretical trays over
+
+00:01:03.609 --> 00:01:08.295
+time on newly arriving live market data for some period.
+
+00:01:08.295 --> 00:01:10.575
+If that showed promise,
+
+00:01:10.575 --> 00:01:16.004
+then we would put the alpha into production in a real portfolio with real money.
+
+00:01:16.004 --> 00:01:19.179
+The alpha at that stage would be blended with
+
+00:01:19.180 --> 00:01:24.595
+other alphas and the final alpha vector would pass through a portfolio optimizer.
+
+00:01:24.594 --> 00:01:30.504
+We would likely start by giving that alpha factor a small weight in the combined vector,
+
+00:01:30.504 --> 00:01:35.949
+and given more weight if it performed and improved portfolio performance.
+
+00:01:35.950 --> 00:01:40.680
+We would monitor the alpha factor over time knowing that at some point,
+
+00:01:40.680 --> 00:01:45.545
+the factor's usefulness will erode because we're trading in a competitive market.
+
+00:01:45.545 --> 00:01:49.510
+Then, we would remove the alpha factor and go back to
+
+00:01:49.510 --> 00:01:53.840
+the beginning to search for new promising alpha factors.
+
+00:01:53.840 --> 00:01:57.370
+Note that when I say "we" in those steps,
+
+00:01:57.370 --> 00:01:58.835
+after the first one,
+
+00:01:58.834 --> 00:02:02.529
+the "we" could be a human portfolio manager or it
+
+00:02:02.530 --> 00:02:06.924
+could be an artificially intelligent agent and AI.
+
+00:02:06.924 --> 00:02:08.844
+Even in the first step,
+
+00:02:08.844 --> 00:02:14.705
+we can utilize AI techniques to help us recover both these AI applications.
+
+00:02:14.705 --> 00:02:18.740
+The application for alpha generation and the AI application for
+
+00:02:18.740 --> 00:02:23.945
+portfolio construction in term two of the API for trading nano degree program.
+
+00:02:23.944 --> 00:02:28.750
+We will cover later stages of this process in future lessons.
+
+00:02:28.750 --> 00:02:31.099
+We will cover backtesting,
+
+00:02:31.099 --> 00:02:35.840
+out-of-sample testing and other methods to avoid overfitting.
+
+00:02:35.840 --> 00:02:41.905
+It can't be overstated how important out-of-sample testing is in practice.
+
+00:02:41.905 --> 00:02:45.634
+If our goal is to seek above average performance
+
+00:02:45.634 --> 00:02:50.049
+in real production trading with real money and real world constraints,
+
+00:02:50.050 --> 00:02:53.615
+then it is critically important to avoid overfitting to pass
+
+00:02:53.615 --> 00:02:59.270
+data to the point that our alpha factors cannot generalize to current market conditions.
+
+00:02:59.270 --> 00:03:02.320
+Even within the academic scientific community,
+
+00:03:02.319 --> 00:03:06.579
+both in finance and in the general sciences,
+
+00:03:06.580 --> 00:03:09.844
+there are serious discussions about
+
+00:03:09.844 --> 00:03:14.585
+overfitting and about validating the results of research.
+
+00:03:14.585 --> 00:03:19.295
+The rest of this lesson will focus on generating and evaluating alpha factors.
+
+00:03:19.294 --> 00:03:23.209
+But I do hope you keep in mind that it's perfectly normal if
+
+00:03:23.210 --> 00:03:27.165
+you feel the need to go back and review the concepts covered in this lesson.
+
+00:03:27.164 --> 00:03:29.810
+I know there was quite a lot of material,
+
+00:03:29.810 --> 00:03:33.620
+but I'm also very excited for you as you're learning the techniques and
+
+00:03:33.620 --> 00:03:38.360
+the type of thinking that real quant researchers deploy in their search for alpha.
+
+00:03:38.360 --> 00:03:40.330
+See you in the next lesson.
+

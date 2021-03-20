@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.254
+More formally, here are the steps we'll take to calculate the Rank IC.
+
+00:00:05.254 --> 00:00:07.089
+For each time period,
+
+00:00:07.089 --> 00:00:09.285
+rank the raw Alpha factor.
+
+00:00:09.285 --> 00:00:12.939
+For instance, with a stock universe of three stocks,
+
+00:00:12.939 --> 00:00:15.809
+the lowest Alpha value has a rank of 1,
+
+00:00:15.810 --> 00:00:18.940
+and the highest Alpha value has a rank of 3.
+
+00:00:18.940 --> 00:00:24.015
+Also, calculate the forward asset returns and rank them.
+
+00:00:24.015 --> 00:00:28.500
+The stock with the lowest forward return has a rank of 1,
+
+00:00:28.500 --> 00:00:33.075
+and the stock with the highest forward return has a rank of 3.
+
+00:00:33.075 --> 00:00:36.185
+The correlation of ranked values is called
+
+00:00:36.185 --> 00:00:41.670
+the Spearman rank correlation to distinguish it from the Pearson correlation.
+
+00:00:41.670 --> 00:00:43.835
+Let's clarify these two terms.
+
+00:00:43.835 --> 00:00:47.719
+The Pearson correlation is what you're probably familiar with,
+
+00:00:47.719 --> 00:00:50.449
+is the covariance of two variables which is then
+
+00:00:50.450 --> 00:00:54.340
+re-scaled using the standard deviations of the two variables.
+
+00:00:54.340 --> 00:00:59.560
+The denominator makes the correlation range from negative 1 to 1.
+
+00:00:59.560 --> 00:01:05.650
+The Pearson Correlation is also the square root of the R-squared in a linear regression.
+
+00:01:05.650 --> 00:01:09.050
+Recall that the R-squared represents the proportion of
+
+00:01:09.049 --> 00:01:13.784
+variance in one variable that is explained by the second variable.
+
+00:01:13.784 --> 00:01:18.090
+The Spearman rank correlation is the same as the Pearson correlation,
+
+00:01:18.090 --> 00:01:21.380
+except the variables x and y are converted to
+
+00:01:21.379 --> 00:01:25.859
+ranks before calculating the covariance and standard deviations.
+
+00:01:25.859 --> 00:01:27.905
+To get the rank IC,
+
+00:01:27.905 --> 00:01:31.445
+calculate the correlation between the ranked Alpha vector
+
+00:01:31.444 --> 00:01:35.629
+and the ranked forward asset returns for a single time period.
+
+00:01:35.629 --> 00:01:40.204
+Repeat this over multiple time periods to get a time series.
+
+00:01:40.204 --> 00:01:42.844
+You may be wondering why we use
+
+00:01:42.844 --> 00:01:46.870
+the Spearman rank correlation as opposed to the Pearson correlation.
+
+00:01:46.870 --> 00:01:49.469
+That is why do we use ranking?
+
+00:01:49.469 --> 00:01:56.019
+The answer is because we don't care about being wrong in the right direction.
+
+00:01:56.019 --> 00:02:01.769
+Let's say stock ABC is our top Alpha value in a universe of 2,000 stocks.
+
+00:02:01.769 --> 00:02:05.824
+Our alpha value will likely be a small positive value,
+
+00:02:05.825 --> 00:02:12.180
+then imagine that ABC outperforms all the other stocks not by a small amount,
+
+00:02:12.180 --> 00:02:14.314
+but by a very large amount.
+
+00:02:14.314 --> 00:02:18.020
+The Pearson correlation would calculate a lower score
+
+00:02:18.020 --> 00:02:22.615
+effectively penalizing us because we didn't get the relative magnitude correct.
+
+00:02:22.615 --> 00:02:27.300
+On the other hand, the Spearman rank correlation would not be affected by this.
+
+00:02:27.300 --> 00:02:31.730
+We prefer to use ranking to evaluate our performance because
+
+00:02:31.729 --> 00:02:36.869
+what matters is that our Alpha is still profitable as we had hoped.
+

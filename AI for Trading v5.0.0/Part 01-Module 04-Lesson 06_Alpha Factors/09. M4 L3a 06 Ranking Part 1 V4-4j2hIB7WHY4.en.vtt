@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.559
+You may notice, that if the amount we invest in each stock of
+
+00:00:04.559 --> 00:00:09.839
+our portfolio is tied to the Alpha value that we get from daily data,
+
+00:00:09.839 --> 00:00:12.435
+then we would be constantly buying and selling
+
+00:00:12.435 --> 00:00:16.365
+every day in order to follow the signal faithfully.
+
+00:00:16.364 --> 00:00:20.404
+In other words, as the Alpha vector changes every day,
+
+00:00:20.405 --> 00:00:24.245
+we'd have to adjust our portfolio weights every day also.
+
+00:00:24.245 --> 00:00:30.170
+We also have to address what happens to our Alpha vector when we encounter outliers,
+
+00:00:30.170 --> 00:00:32.530
+or extreme values in the data.
+
+00:00:32.530 --> 00:00:37.045
+If we have had a large increase in the office signal for one stock,
+
+00:00:37.045 --> 00:00:39.685
+then a sharp decrease the next day,
+
+00:00:39.685 --> 00:00:42.560
+this would effectively tell us to buy a lot of
+
+00:00:42.560 --> 00:00:46.520
+that stock and then sell a lot of that stock the next day.
+
+00:00:46.520 --> 00:00:49.835
+This may or may not be warranted.
+
+00:00:49.835 --> 00:00:53.265
+In the real world, trading costs money.
+
+00:00:53.265 --> 00:00:59.120
+So, we want to be very confident that if we go to make a trade and bear that cost,
+
+00:00:59.119 --> 00:01:01.489
+that it is indeed warranted.
+
+00:01:01.490 --> 00:01:06.560
+Some ways to keep extreme values from leading to unnecessarily large trades,
+
+00:01:06.560 --> 00:01:09.859
+are by clipping very large and small values at for
+
+00:01:09.859 --> 00:01:13.578
+example the 95th percentile and the fifth percentile.
+
+00:01:13.578 --> 00:01:17.204
+This process is called winsorizing.
+
+00:01:17.204 --> 00:01:19.530
+Here's an example of winsorizing in
+
+00:01:19.530 --> 00:01:24.415
+Alpha vector which has Alpha values for each stock, for a single day.
+
+00:01:24.415 --> 00:01:27.850
+For any number that exceeds the 95th percentile,
+
+00:01:27.849 --> 00:01:32.328
+we've replaced that outlier with a number at the 95th percentile.
+
+00:01:32.328 --> 00:01:35.929
+Also for any values that are below the fifth percentile,
+
+00:01:35.930 --> 00:01:39.435
+we replace those with a number at the fifth percentile.
+
+00:01:39.435 --> 00:01:42.924
+Again, this is called winsorizing.
+
+00:01:42.924 --> 00:01:44.869
+We can also deal with outliers,
+
+00:01:44.870 --> 00:01:50.175
+by setting a maximum magnitude allowed waits for any single stock.
+
+00:01:50.174 --> 00:01:56.694
+Note that we would handle outliers for each Alpha vector which may be updated each day.
+
+00:01:56.694 --> 00:01:59.114
+Even when we've dealt with outliers,
+
+00:01:59.114 --> 00:02:03.299
+there's still the issue of whether it makes sense to buy and sell
+
+00:02:03.299 --> 00:02:08.490
+based on the signal if their relative magnitudes for the Alpha values don't change.
+
+00:02:08.490 --> 00:02:12.534
+Let's again take the example of Apple and Alphabet.
+
+00:02:12.534 --> 00:02:20.870
+One day, Apple's Alpha value is 0.33 and Alphabet's value is 0.31.
+
+00:02:20.870 --> 00:02:22.534
+What if on the next day,
+
+00:02:22.534 --> 00:02:30.745
+Apple's Alpha value increased by 0.01 and Alphabet's Alpha value also increased by 0.01.
+
+00:02:30.745 --> 00:02:34.335
+If we translated these directly into portfolio weights,
+
+00:02:34.335 --> 00:02:37.705
+the weights would change slightly from day one today two.
+
+00:02:37.705 --> 00:02:40.790
+But the important thing to notice is that we'd still be
+
+00:02:40.789 --> 00:02:44.814
+putting more money on Apple relative to Alphabet.
+
+00:02:44.814 --> 00:02:49.254
+So, maybe we wouldn't actually want to change our positions at all.
+
+00:02:49.254 --> 00:02:51.444
+Often what we want to do,
+
+00:02:51.444 --> 00:02:58.155
+is have a more robust version of the signal which is able to withstand outliers,
+
+00:02:58.155 --> 00:03:00.090
+handle noise in the data,
+
+00:03:00.090 --> 00:03:04.564
+and also keep us from making potentially excessive traits.
+
+00:03:04.564 --> 00:03:08.129
+We can handle this with a ranking.
+

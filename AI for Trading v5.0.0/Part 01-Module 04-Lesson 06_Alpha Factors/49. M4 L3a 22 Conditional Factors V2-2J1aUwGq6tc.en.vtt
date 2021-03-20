@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.589
+So far, we've been looking at simple individual alpha factors.
+
+00:00:04.589 --> 00:00:10.794
+But there are times when we can create factors that are conditioned on another factor.
+
+00:00:10.794 --> 00:00:16.695
+We can create a conditional factor by multiplying two factors together.
+
+00:00:16.695 --> 00:00:22.940
+For example, if factor A gives an alpha value for a single stock,
+
+00:00:22.940 --> 00:00:28.145
+and factor B gives a different alpha value for that same stock,
+
+00:00:28.144 --> 00:00:30.949
+then we can create a conditioned,
+
+00:00:30.949 --> 00:00:36.700
+alpha value for that stock by multiplying those two separate alpha values together.
+
+00:00:36.700 --> 00:00:38.640
+Early on in my career,
+
+00:00:38.640 --> 00:00:40.880
+it was the case that some fairly simple,
+
+00:00:40.880 --> 00:00:43.620
+at least as thought of in hindsight today,
+
+00:00:43.619 --> 00:00:46.919
+factors could be profitable in live trading.
+
+00:00:46.920 --> 00:00:53.145
+Markets though have become much more competitive as time has marched on and as data,
+
+00:00:53.145 --> 00:00:56.525
+tools, and knowledge have become more available.
+
+00:00:56.524 --> 00:00:59.750
+Today, it's likely that you need to find
+
+00:00:59.750 --> 00:01:04.250
+conditionals to make really good alpha factors as such,
+
+00:01:04.250 --> 00:01:06.685
+this section is critical.
+
+00:01:06.685 --> 00:01:10.635
+So, how do we interpret what this multiplication is doing?
+
+00:01:10.635 --> 00:01:14.689
+We'll first look at a common practice in academic papers,
+
+00:01:14.689 --> 00:01:19.459
+which we'll refer to as quantiles of quantiles.
+
+00:01:19.459 --> 00:01:24.854
+If a research paper is looking at the effects of one factor condition on another,
+
+00:01:24.855 --> 00:01:29.510
+they would divide the data into quantiles for one factor.
+
+00:01:29.510 --> 00:01:33.219
+Let's say we're using 10 decile groups,
+
+00:01:33.219 --> 00:01:38.030
+then within each decile group they would split
+
+00:01:38.030 --> 00:01:43.299
+the stocks into another 10 decile groups based on the second factor.
+
+00:01:43.299 --> 00:01:49.739
+So, now we have 100 quantile groups conditioned on two factors.
+
+00:01:49.739 --> 00:01:53.539
+Because we have 10 deciles based on one factor and
+
+00:01:53.540 --> 00:01:58.195
+each decile group has 10 deciles based on the second factor.
+
+00:01:58.194 --> 00:02:03.094
+Now, let's see what happens if we create a condition factor based on two factors.
+
+00:02:03.094 --> 00:02:08.210
+Let's say we have a stock universe of 100 stocks and we'll convert
+
+00:02:08.210 --> 00:02:13.715
+signal A and signal B into scores from one to 10 for each signal,
+
+00:02:13.715 --> 00:02:18.844
+then we'll calculate the conditional factor as signal A times signal B.
+
+00:02:18.844 --> 00:02:24.064
+Let's pause a moment to think what multiplication means visually.
+
+00:02:24.064 --> 00:02:27.680
+If you remember learning your multiplication tables as a kid,
+
+00:02:27.680 --> 00:02:31.790
+you might remember seeing a rectangular grid with a column of
+
+00:02:31.789 --> 00:02:36.754
+numbers 1-10 along the left edge and the numbers 1-10 above the top.
+
+00:02:36.754 --> 00:02:39.724
+Multiplying the two numbers for each row and column
+
+00:02:39.724 --> 00:02:43.189
+allows us to fill all the boxes inside the multiplication table.
+
+00:02:43.189 --> 00:02:47.240
+This is exactly what we're doing with our two factors.
+
+00:02:47.240 --> 00:02:50.685
+As you can see, the product of A times B,
+
+00:02:50.685 --> 00:02:55.310
+ranges from a value of one to a value of a hundred.
+
+00:02:55.310 --> 00:02:59.900
+Notice that, not all the values in between one and 100 are represented,
+
+00:02:59.900 --> 00:03:02.724
+as there are some numbers that occur twice.
+
+00:03:02.724 --> 00:03:09.379
+However, overall, you can see that there is a range of values between one and a hundred.
+
+00:03:09.379 --> 00:03:12.000
+Does this look familiar to you?
+
+00:03:12.000 --> 00:03:17.215
+When we discuss the process of calculating deciles nested inside deciles,
+
+00:03:17.215 --> 00:03:20.360
+we also ended up with 100 groups.
+
+00:03:20.360 --> 00:03:23.600
+Even though multiplication of the two factors does not give
+
+00:03:23.599 --> 00:03:27.400
+the exact same groupings as we would get from nested quantiles,
+
+00:03:27.400 --> 00:03:29.810
+they have the same goal of creating
+
+00:03:29.810 --> 00:03:35.395
+a composite factor that is conditioned on the value of both the individual factors.
+
+00:03:35.395 --> 00:03:38.630
+We will seek some conditional factors in detail when we
+
+00:03:38.629 --> 00:03:42.319
+analyze some research papers to generate factor ideas.
+
+00:03:42.319 --> 00:03:45.995
+When you read ideas or hypotheses like,
+
+00:03:45.995 --> 00:03:49.640
+stocks that go up on high volume are likely to revert,
+
+00:03:49.639 --> 00:03:53.844
+or momentum is more pronounced on stocks with low volume,
+
+00:03:53.844 --> 00:03:56.115
+you need to use conditionals.
+
+00:03:56.115 --> 00:04:00.165
+Also, whenever you see the word or concept of end,
+
+00:04:00.164 --> 00:04:03.929
+it is likely that you need to use a conditional.
+

@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.129
+The paper titled, The Formation Process of Winners and Losers in Momentum Investing,
+
+00:00:06.129 --> 00:00:09.300
+discusses how the trajectory of a stock is
+
+00:00:09.300 --> 00:00:14.535
+an indicator for whether its momentum is accelerated or decelerated.
+
+00:00:14.535 --> 00:00:17.949
+When a stock is recently showing higher returns,
+
+00:00:17.949 --> 00:00:21.660
+this paper refers to these as accelerated gains.
+
+00:00:21.660 --> 00:00:25.975
+When a stock is recently showing minimal positive returns,
+
+00:00:25.975 --> 00:00:30.185
+the paper refers to these as decelerated gains.
+
+00:00:30.184 --> 00:00:35.344
+If you look at a stock price trajectory of an accelerated gain,
+
+00:00:35.344 --> 00:00:38.174
+the shape will be convex.
+
+00:00:38.174 --> 00:00:41.919
+In case you can't remember what a convex curve looks like,
+
+00:00:41.920 --> 00:00:47.635
+the plot of y equals x squared is an example of a convex function.
+
+00:00:47.634 --> 00:00:52.914
+Essentially, the trajectory is showing an accelerated increase.
+
+00:00:52.914 --> 00:00:54.490
+On the other hand,
+
+00:00:54.490 --> 00:01:00.775
+a stock price trajectory of a decelerated gain will have a concave shape.
+
+00:01:00.774 --> 00:01:03.679
+As a reminder of what concave means,
+
+00:01:03.679 --> 00:01:09.224
+a plot of y equals the square root of x is an example of a concave function.
+
+00:01:09.224 --> 00:01:13.834
+The trajectory is showing a decelerated increase.
+
+00:01:13.834 --> 00:01:20.375
+We can also describe accelerated losses and decelerated losses as concave or convex.
+
+00:01:20.375 --> 00:01:23.765
+An accelerated loss has a concave shape.
+
+00:01:23.765 --> 00:01:29.155
+You can imagine the plot of y equals negative x squared as a concave function.
+
+00:01:29.155 --> 00:01:33.215
+A decelerated loss has a convex shape.
+
+00:01:33.215 --> 00:01:41.450
+You can imagine the plot of y equals negative square root of x as a convex shape.
+
+00:01:41.450 --> 00:01:45.435
+So far, we've described four general shapes.
+
+00:01:45.435 --> 00:01:48.530
+What we want to point out is which type of
+
+00:01:48.530 --> 00:01:52.385
+trajectory may be preferred for going long or going short.
+
+00:01:52.385 --> 00:01:55.579
+We'd say that an accelerated gain may have
+
+00:01:55.579 --> 00:01:59.569
+higher future returns compared to a decelerated gain,
+
+00:01:59.569 --> 00:02:02.464
+if the starting and end points are the same.
+
+00:02:02.465 --> 00:02:06.439
+So, we would prefer to go long the accelerated gain,
+
+00:02:06.439 --> 00:02:09.025
+a bit more than the decelerated gain.
+
+00:02:09.025 --> 00:02:13.010
+We would also say that an accelerated loss is
+
+00:02:13.009 --> 00:02:17.329
+predictive of more negative returns compared to a decelerated loss.
+
+00:02:17.330 --> 00:02:18.765
+So, all else being equal,
+
+00:02:18.764 --> 00:02:24.079
+we would prefer to short the accelerated loss more than the decelerated loss.
+
+00:02:24.080 --> 00:02:29.210
+An important point that might not be obvious to see in the paper is that we can
+
+00:02:29.210 --> 00:02:34.430
+view the convexity or concavity of a curve in a relative terms.
+
+00:02:34.430 --> 00:02:38.670
+In other words, compared to a convex curve,
+
+00:02:38.669 --> 00:02:43.159
+a straight line is relatively more concave.
+
+00:02:43.159 --> 00:02:46.405
+Likewise, compared to a concave curve,
+
+00:02:46.405 --> 00:02:50.194
+a straight line is relatively more convex.
+
+00:02:50.194 --> 00:02:54.939
+You may recall with the example of the tortoise stock and the rabbit stock.
+
+00:02:54.939 --> 00:02:58.639
+The tortoise stock trajectory look like a straight line,
+
+00:02:58.639 --> 00:03:01.700
+whereas the rabbits stock was concave.
+
+00:03:01.699 --> 00:03:05.280
+So, relative to the rabbit stocks trajectory,
+
+00:03:05.280 --> 00:03:09.574
+the tortoise stocks trajectory was more convex and
+
+00:03:09.574 --> 00:03:15.139
+also more predictive of higher future returns under this hypothesis.
+

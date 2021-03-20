@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.000
+Welcome to the overview of alpha factors.
+
+00:00:03.000 --> 00:00:06.929
+This is the extra exciting part where you finally get to start
+
+00:00:06.929 --> 00:00:11.714
+turning hypotheses into code and testing that code against data.
+
+00:00:11.714 --> 00:00:15.960
+Alpha factors are tools operating on data that give us
+
+00:00:15.960 --> 00:00:20.679
+signals about how stocks may perform relative to one another.
+
+00:00:20.679 --> 00:00:26.458
+You've heard a little about alpha factors already and how they differ from risk factors.
+
+00:00:26.458 --> 00:00:32.384
+Remember that alpha factors are hopefully predictive of future mean returns,
+
+00:00:32.384 --> 00:00:38.659
+while risk factors impart information about commonality of return variance.
+
+00:00:38.659 --> 00:00:41.929
+The search for alpha factors is essentially
+
+00:00:41.929 --> 00:00:45.799
+the search for deviations from the efficient market hypothesis.
+
+00:00:45.799 --> 00:00:49.039
+The efficient market hypothesis has different forms,
+
+00:00:49.039 --> 00:00:50.585
+but generally it means that
+
+00:00:50.585 --> 00:00:54.410
+all available information is reflected in the current price of an asset,
+
+00:00:54.409 --> 00:00:57.109
+which suggests that assets are priced fairly.
+
+00:00:57.109 --> 00:01:00.905
+When searching for exceptions to the efficient market hypothesis,
+
+00:01:00.905 --> 00:01:03.795
+we're looking for mispricing in the market.
+
+00:01:03.795 --> 00:01:06.375
+We learned about arbitrage before,
+
+00:01:06.375 --> 00:01:11.135
+which is the simultaneous buying and selling of a perfect substitute to make a profit.
+
+00:01:11.135 --> 00:01:13.635
+In the context of this lesson,
+
+00:01:13.635 --> 00:01:16.340
+we'll also use the term arbitrage.
+
+00:01:16.340 --> 00:01:19.945
+But here, it refers to buying an asset that may be
+
+00:01:19.944 --> 00:01:23.854
+underpriced or shorting one that may be overpriced,
+
+00:01:23.855 --> 00:01:30.185
+where the expected return is in excess of what it should be for the risk we bear.
+
+00:01:30.185 --> 00:01:33.034
+In this lesson, we'll start by discussing
+
+00:01:33.034 --> 00:01:38.689
+academic research as a source for hypotheses and for alpha factor generation.
+
+00:01:38.689 --> 00:01:44.295
+We'll cover techniques for processing a raw alpha factor including methods,
+
+00:01:44.295 --> 00:01:47.280
+such as sector neutralization, ranking,
+
+00:01:47.280 --> 00:01:52.564
+Z-scoring, smoothing, and conditioning factors on other factors.
+
+00:01:52.564 --> 00:01:55.640
+Each of these techniques is important in
+
+00:01:55.640 --> 00:01:59.090
+the process of turning the numbers in our alpha vectors into
+
+00:01:59.090 --> 00:02:06.040
+signals that represent whether to buy or short each stock in a portfolio and by how much.
+
+00:02:06.040 --> 00:02:09.110
+That is to say, these techniques are relevant to
+
+00:02:09.110 --> 00:02:12.635
+the goals that we have for real-world portfolios.
+
+00:02:12.634 --> 00:02:16.405
+We'll also cover techniques for evaluating factors,
+
+00:02:16.405 --> 00:02:18.305
+such as the sharpe ratio,
+
+00:02:18.305 --> 00:02:23.650
+information coefficient, information ratio, and turnover analysis.
+
+00:02:23.650 --> 00:02:29.849
+These will help you decide whether your alphas provide enough return relative to risk,
+
+00:02:29.849 --> 00:02:35.335
+and whether they will cause too much trading to likely be profitable in the real world.
+
+00:02:35.335 --> 00:02:40.490
+The topics we discuss here will prepare you for the following lesson,
+
+00:02:40.490 --> 00:02:45.230
+in which we extract alpha factor ideas from academic research papers,
+
+00:02:45.229 --> 00:02:48.394
+and then implement those ideas in code.
+
+00:02:48.395 --> 00:02:52.820
+This is exactly the type of work that quants do in the real world.
+
+00:02:52.819 --> 00:02:57.584
+In this lesson, we step into the typical life of a quant researcher.
+
+00:02:57.585 --> 00:03:00.860
+You'll see how quants generate alpha factor ideas
+
+00:03:00.860 --> 00:03:05.000
+that may make their way into real hedge fund portfolios.
+
