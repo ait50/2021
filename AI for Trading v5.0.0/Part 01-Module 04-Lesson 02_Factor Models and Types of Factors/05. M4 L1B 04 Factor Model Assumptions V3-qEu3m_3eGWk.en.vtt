@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.384
+There are a couple of assumptions inherent to strict factor models.
+
+00:00:04.384 --> 00:00:07.349
+The first is that the residual return is assumed to
+
+00:00:07.349 --> 00:00:10.675
+be uncorrelated with each of the factor returns.
+
+00:00:10.675 --> 00:00:15.894
+This does not restrict the set of possible models as much as it may seem.
+
+00:00:15.894 --> 00:00:18.960
+The factor exposures can be adjusted to achieve
+
+00:00:18.960 --> 00:00:23.214
+the condition where the residuals are uncorrelated with the factor returns.
+
+00:00:23.214 --> 00:00:26.614
+In fact, in simple settings using historic data,
+
+00:00:26.614 --> 00:00:30.000
+this can be achieved with multiple regression procedures.
+
+00:00:30.000 --> 00:00:34.140
+The key assumption of a linear factor model is that the residual for
+
+00:00:34.140 --> 00:00:39.149
+one asset's return is uncorrelated with the residual of any other asset.
+
+00:00:39.149 --> 00:00:42.350
+This means that the only correlations among
+
+00:00:42.350 --> 00:00:48.000
+asset total returns are those that arise due to their exposures to the factors.
+
+00:00:48.000 --> 00:00:51.380
+The residual component of an asset's return is assumed to
+
+00:00:51.380 --> 00:00:54.660
+be unrelated to the residual of any other asset,
+
+00:00:54.659 --> 00:00:57.634
+and hence totally specific to that asset.
+
+00:00:57.634 --> 00:01:01.489
+In other words, the risk associated with the residual return is
+
+00:01:01.490 --> 00:01:06.034
+specific to or idiosyncratic to the asset in question.
+
+00:01:06.034 --> 00:01:10.280
+This assumption makes a linear factor model powerful in
+
+00:01:10.280 --> 00:01:14.450
+the sense that it rules out many possible combinations of outcomes.
+
+00:01:14.450 --> 00:01:16.825
+But this power comes at a cost.
+
+00:01:16.825 --> 00:01:18.885
+The more restrictive a model is,
+
+00:01:18.885 --> 00:01:21.305
+the greater the chance that it may be wrong.
+
+00:01:21.305 --> 00:01:24.445
+For this reason, if using a strict factor model,
+
+00:01:24.444 --> 00:01:28.279
+it is important to try to account for the most important sources of
+
+00:01:28.280 --> 00:01:32.314
+correlations by including a sufficient number of factors,
+
+00:01:32.314 --> 00:01:36.390
+while also attempting to include only the most important ones.
+
+00:01:36.390 --> 00:01:40.340
+That said, there's also value to simplicity in modeling,
+
+00:01:40.340 --> 00:01:44.270
+since the goal is always to model signal and not noise.
+

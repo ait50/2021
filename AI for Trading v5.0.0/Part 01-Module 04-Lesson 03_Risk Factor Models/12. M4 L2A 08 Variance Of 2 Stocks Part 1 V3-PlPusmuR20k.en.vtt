@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.365
+Recall that I'm referring to the first stock as butter pecan ice cream.
+
+00:00:04.365 --> 00:00:07.200
+The second stock can be modeled in a similar way.
+
+00:00:07.200 --> 00:00:10.080
+We can think of it as another flavor of ice cream.
+
+00:00:10.080 --> 00:00:11.925
+Like mint chocolate chip.
+
+00:00:11.925 --> 00:00:17.425
+Similar to before, the second stocks variance can be modeled as two parts.
+
+00:00:17.425 --> 00:00:20.484
+The part that is explained by the common risk factors,
+
+00:00:20.484 --> 00:00:22.980
+and the part that is not.
+
+00:00:22.980 --> 00:00:25.910
+I'd like to point out something very cool.
+
+00:00:25.910 --> 00:00:30.484
+Which is that all the values that you see inside a variance operator or
+
+00:00:30.484 --> 00:00:35.274
+covariance operator contain just the risk factor as one in two.
+
+00:00:35.274 --> 00:00:38.100
+Which we've nicknamed sugar and milk.
+
+00:00:38.100 --> 00:00:41.390
+The variance and covariance functions don't need
+
+00:00:41.390 --> 00:00:44.000
+to include information that is specific to
+
+00:00:44.000 --> 00:00:45.859
+the stocks because we can take
+
+00:00:45.859 --> 00:00:50.215
+the factor exposures outside of the variance and covariance operators.
+
+00:00:50.215 --> 00:00:54.020
+This is very helpful because as you'll see later on,
+
+00:00:54.020 --> 00:00:59.175
+it greatly simplifies the number of pairwise covariances that we'll need to estimate.
+
+00:00:59.174 --> 00:01:04.390
+So, now that we have models that describe the individual variances of the two stocks,
+
+00:01:04.390 --> 00:01:08.209
+what is the pairwise covariance of these two stocks?
+
+00:01:08.230 --> 00:01:11.480
+To get the covariance of the two stocks,
+
+00:01:11.480 --> 00:01:15.715
+we substitute their returns with the factor models of their returns.
+
+00:01:15.715 --> 00:01:20.314
+Now, we have a covariance of two expressions and each expression
+
+00:01:20.314 --> 00:01:25.094
+is some weighted sum of two factors and it's specific return.
+
+00:01:25.094 --> 00:01:27.679
+To help keep track of these formulas,
+
+00:01:27.680 --> 00:01:29.745
+notice that for the first stock,
+
+00:01:29.745 --> 00:01:33.145
+factor 1's contribution is labeled with white sugar,
+
+00:01:33.144 --> 00:01:37.159
+while factor 2's contribution is labeled with plain milk.
+
+00:01:37.159 --> 00:01:39.269
+Also, for stock 2,
+
+00:01:39.269 --> 00:01:42.060
+factor 1's contribution is brown sugar,
+
+00:01:42.060 --> 00:01:46.260
+while factor 2's contribution is chocolate milk.
+
+00:01:46.420 --> 00:01:52.859
+Our next step is to apply the pairwise covariance operator on each pair of terms.
+
+00:01:52.859 --> 00:01:56.569
+We see that each stock is the sum of three terms.
+
+00:01:56.569 --> 00:02:01.324
+This would end up with three times three or nine covariances.
+
+00:02:01.325 --> 00:02:05.019
+You can pause the video for a bit to study this.
+
+00:02:05.549 --> 00:02:10.990
+By definition, the specific returns are uncorrelated with the factors.
+
+00:02:10.990 --> 00:02:17.060
+So, the five pairwise covariances that include the specific returns will become zero.
+
+00:02:17.060 --> 00:02:22.689
+In other words, wherever we see a covariance that contains pecan or chocolate chips,
+
+00:02:22.689 --> 00:02:26.079
+we'll assume the covariance is zero.
+
+00:02:26.080 --> 00:02:32.185
+The remaining four covariance pairs that include only factors may still be non-zero.
+
+00:02:32.185 --> 00:02:34.370
+So, we'll keep these.
+
+00:02:34.370 --> 00:02:39.009
+These are the four pairwase covariances written out.
+
+00:02:39.469 --> 00:02:45.895
+For example, here's the covariance between the contribution of factor 1 to stock 1,
+
+00:02:45.895 --> 00:02:49.380
+and the contribution of factor 1 to stock 2.
+
+00:02:49.379 --> 00:02:53.460
+The images here are to help you keep track of the notation.
+
+00:02:53.460 --> 00:02:57.655
+You can see the four pairs of covariances among the white sugar,
+
+00:02:57.655 --> 00:03:01.360
+brown sugar, plain milk, and chocolate milk.
+

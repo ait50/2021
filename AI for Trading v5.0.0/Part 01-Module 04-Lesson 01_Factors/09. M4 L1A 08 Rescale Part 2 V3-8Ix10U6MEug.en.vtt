@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.450
+At first glance, leverage looks awesome because if we take enough short positions,
+
+00:00:05.450 --> 00:00:10.155
+we could technically have enough cash to pay for all of our long positions.
+
+00:00:10.154 --> 00:00:13.514
+But does this mean that more leverage is always better?
+
+00:00:13.515 --> 00:00:16.905
+Unfortunately, the answer is no.
+
+00:00:16.905 --> 00:00:19.690
+If the stock price went down 10 percent,
+
+00:00:19.690 --> 00:00:23.250
+then our leveraged position would go down 20 percent,
+
+00:00:23.250 --> 00:00:26.820
+which is greater than the loss we'd incur without leverage.
+
+00:00:26.820 --> 00:00:29.344
+So, as the saying goes,
+
+00:00:29.344 --> 00:00:31.829
+there's no such thing as a free lunch.
+
+00:00:31.829 --> 00:00:35.589
+Which means that the benefits of leverage come at a cost.
+
+00:00:35.590 --> 00:00:38.330
+Using leverage can increase
+
+00:00:38.329 --> 00:00:43.479
+our potential gain but can also increase our potential losses.
+
+00:00:43.479 --> 00:00:49.354
+A useful measure of the amount of leverage in a portfolio is the leverage ratio.
+
+00:00:49.354 --> 00:00:51.134
+In terms of dollars,
+
+00:00:51.134 --> 00:00:55.094
+if we added up the magnitudes of the long and short positions,
+
+00:00:55.094 --> 00:00:57.835
+and divided that sum by the notional,
+
+00:00:57.835 --> 00:01:00.590
+this would be the leverage ratio.
+
+00:01:00.590 --> 00:01:05.314
+For example, if a portfolio had a notional or initial capital
+
+00:01:05.314 --> 00:01:10.230
+of $1 million and had $1 million in long positions,
+
+00:01:10.230 --> 00:01:12.755
+the leverage ratio would be one.
+
+00:01:12.754 --> 00:01:15.289
+If the portfolio had the same notional of
+
+00:01:15.290 --> 00:01:19.350
+1 million but borrowed cash to go long two million positions,
+
+00:01:19.349 --> 00:01:24.584
+its leverage ratio would be two million divided by one million or two.
+
+00:01:24.584 --> 00:01:27.469
+If the portfolio had long positions totaling
+
+00:01:27.469 --> 00:01:31.879
+$1 million and short positions also totaling $1 million,
+
+00:01:31.879 --> 00:01:38.594
+then the leverage ratio would also be two million divided by one million, which is two.
+
+00:01:38.594 --> 00:01:42.569
+If the longs were two million and the shorts were two million,
+
+00:01:42.569 --> 00:01:45.774
+then the leverage ratio would be four.
+
+00:01:45.775 --> 00:01:49.370
+So, I hope you noticed that the more positions we take
+
+00:01:49.370 --> 00:01:53.230
+and absolute magnitude relative to the initial capital,
+
+00:01:53.230 --> 00:01:55.920
+the higher the leverage ratio.
+
+00:01:55.920 --> 00:02:00.269
+For theoretical portfolio, that's used for analyzing a factor,
+
+00:02:00.269 --> 00:02:03.049
+we assume a $1 notional.
+
+00:02:03.049 --> 00:02:06.590
+We add up the sum of the absolute values of the weights,
+
+00:02:06.590 --> 00:02:11.240
+then divide by the $1 notional to calculate the leverage ratio.
+
+00:02:11.240 --> 00:02:13.820
+Dividing by one doesn't change the sum.
+
+00:02:13.819 --> 00:02:16.340
+So, we can skip the division.
+
+00:02:16.340 --> 00:02:22.594
+For example, if we had three stocks in the portfolio with weights of negative 0.5,
+
+00:02:22.594 --> 00:02:26.599
+positive 0.3, and positive 0.2,
+
+00:02:26.599 --> 00:02:29.319
+the sum of their absolute values is one.
+
+00:02:29.319 --> 00:02:32.189
+So, the leverage ratio is also one.
+
+00:02:32.189 --> 00:02:33.995
+If on the other hand,
+
+00:02:33.995 --> 00:02:37.055
+the portfolio had weights of negative one,
+
+00:02:37.055 --> 00:02:41.020
+positive 0.6, and positive 0.4,
+
+00:02:41.020 --> 00:02:44.040
+then the sum of their absolute values is two.
+
+00:02:44.039 --> 00:02:47.174
+So, the leverage ratio is also two.
+
+00:02:47.175 --> 00:02:49.305
+Let's revisit our goal,
+
+00:02:49.305 --> 00:02:51.515
+which was to rescale portfolio weights,
+
+00:02:51.514 --> 00:02:54.414
+so that we have a leverage ratio of one.
+
+00:02:54.414 --> 00:02:57.319
+To do this, we can sum up the absolute values of
+
+00:02:57.319 --> 00:03:01.419
+the weights and divide each of our original weights by this sum.
+
+00:03:01.419 --> 00:03:03.209
+By doing this division,
+
+00:03:03.210 --> 00:03:09.840
+we are re-scaling the factor values so that the sum of their magnitudes equals one.
+

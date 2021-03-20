@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.809
+Notice that while we calculated our returns for one particular portfolio,
+
+00:00:04.809 --> 00:00:06.714
+if we chose different stocks,
+
+00:00:06.714 --> 00:00:10.980
+we could create another portfolio to represent the size factor.
+
+00:00:10.980 --> 00:00:14.050
+If we decided to buy in short twice as much,
+
+00:00:14.050 --> 00:00:18.734
+this could potentially be another portfolio representing the size factor.
+
+00:00:18.734 --> 00:00:22.070
+How do we generalize this to other portfolios that
+
+00:00:22.070 --> 00:00:26.245
+buy small-cap stocks in short large-cap stocks?
+
+00:00:26.245 --> 00:00:31.820
+Well, rather than trying to create an infinite number of long-short portfolios,
+
+00:00:31.820 --> 00:00:38.320
+we can use a single standard portfolio and then see how other portfolios co-vary with it.
+
+00:00:38.320 --> 00:00:42.399
+In other words, portfolios that are just like the standard portfolio
+
+00:00:42.399 --> 00:00:46.924
+would move up or down in the same percent as the standard portfolio.
+
+00:00:46.924 --> 00:00:50.779
+Some other portfolio that may not have such an extreme bet on
+
+00:00:50.780 --> 00:00:56.204
+the market cap of stocks may move a fraction as much as the standard portfolio.
+
+00:00:56.204 --> 00:01:00.364
+In fact, we don't have to limit ourselves to portfolios.
+
+00:01:00.365 --> 00:01:03.125
+We could check to see how much a single stock moves
+
+00:01:03.125 --> 00:01:05.859
+in relation to this long-short portfolio.
+
+00:01:05.859 --> 00:01:10.310
+If we perform the regression in which the independent variable was
+
+00:01:10.310 --> 00:01:15.325
+the return of this size portfolio and the stock return was the dependent variable,
+
+00:01:15.325 --> 00:01:19.775
+then the beta coefficient of that regression would give us a measure of how
+
+00:01:19.775 --> 00:01:25.199
+exposed the stock is to the movements of this size-based portfolio.
+
+00:01:25.198 --> 00:01:30.109
+Let's look at what Fama and French did to create the size factor.
+
+00:01:30.109 --> 00:01:32.625
+Start with an estimation universe,
+
+00:01:32.625 --> 00:01:37.950
+which is a set of stocks that are representative of a region or countries stock market.
+
+00:01:37.950 --> 00:01:41.325
+Sort the stocks by market cap.
+
+00:01:41.325 --> 00:01:46.930
+The top 90 percent by market cap are put into a portfolio called "Big".
+
+00:01:46.930 --> 00:01:52.470
+The bottom 10 percent by market cap are put into a portfolio called "Small".
+
+00:01:52.469 --> 00:01:57.900
+Calculate the equal weighted return of the Small portfolio,
+
+00:01:57.900 --> 00:02:02.325
+and the equal weighted return of the Big portfolio,
+
+00:02:02.325 --> 00:02:04.918
+then take the difference,
+
+00:02:04.918 --> 00:02:08.384
+the return of small minus the return of big.
+
+00:02:08.384 --> 00:02:10.669
+This difference gives us a measure of
+
+00:02:10.669 --> 00:02:13.789
+the return that can be attributed to investing based
+
+00:02:13.789 --> 00:02:19.609
+on the hypothesis that small-cap stocks tend to outperform large-cap stocks.
+
+00:02:19.610 --> 00:02:23.690
+We can think of this in terms of a long-short portfolio which buys
+
+00:02:23.689 --> 00:02:28.604
+the small cap stocks and shorts and equal dollar amount of the large-cap stocks.
+
+00:02:28.604 --> 00:02:32.284
+The daily returns of this long-short portfolio
+
+00:02:32.284 --> 00:02:35.995
+are the factor returns of this size factor.
+
+00:02:35.995 --> 00:02:41.289
+So, we now have a factor time series that we can use in a factor model.
+
+00:02:41.289 --> 00:02:43.965
+Note that in the Fama-French notation,
+
+00:02:43.965 --> 00:02:48.305
+this size factor is written with the acronym SMB.
+
+00:02:48.305 --> 00:02:50.870
+Can you guess what that stands for?
+
+00:02:50.870 --> 00:02:56.129
+SMB stands for Small Minus Big.
+

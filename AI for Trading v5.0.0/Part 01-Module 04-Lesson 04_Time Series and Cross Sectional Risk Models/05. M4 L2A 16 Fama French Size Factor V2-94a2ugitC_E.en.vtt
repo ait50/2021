@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.970
+Now, we'll build upon the previous risk model by
+
+00:00:02.970 --> 00:00:06.710
+including two additional factors for a total of three.
+
+00:00:06.710 --> 00:00:09.455
+This is the famous Fama-French model,
+
+00:00:09.455 --> 00:00:14.160
+which can be considered the model that started the movement towards multi-factor models.
+
+00:00:14.160 --> 00:00:18.355
+The original three-factor Fama-French model includes the market return,
+
+00:00:18.355 --> 00:00:20.440
+and adds two additional factors,
+
+00:00:20.440 --> 00:00:24.070
+which the other's called size and value.
+
+00:00:24.070 --> 00:00:26.335
+Let's look at these two additional factors,
+
+00:00:26.335 --> 00:00:29.094
+and how the data for them are generated.
+
+00:00:29.094 --> 00:00:33.114
+The first additional factor we will look at is size.
+
+00:00:33.115 --> 00:00:36.615
+The size of a company is measured by its market cap.
+
+00:00:36.615 --> 00:00:38.304
+There's been evidence that shows,
+
+00:00:38.304 --> 00:00:43.939
+that small-cap companies have higher average returns compared to large-cap companies.
+
+00:00:43.939 --> 00:00:49.614
+In other words, if we can determine that company ABC is a small-cap stock,
+
+00:00:49.615 --> 00:00:53.365
+valued at one billion dollars, and company XYZ,
+
+00:00:53.365 --> 00:00:56.620
+is a large cap stock valued at $10 billion,
+
+00:00:56.619 --> 00:01:00.159
+then we could expect that company ABC will have
+
+00:01:00.159 --> 00:01:04.719
+higher risk adjusted returns, compared to XYZ.
+
+00:01:04.719 --> 00:01:09.174
+The question is how much more return can we expect for company
+
+00:01:09.174 --> 00:01:13.679
+ABC for being a fraction of the size of XYZ?
+
+00:01:13.680 --> 00:01:17.550
+Remember that we're trying to fill in the factor risk model.
+
+00:01:17.549 --> 00:01:22.799
+The factor covariance matrix uses the time series of factor returns for
+
+00:01:22.799 --> 00:01:27.905
+the three factors: market, size and value.
+
+00:01:27.905 --> 00:01:30.120
+Well, if you had evidence,
+
+00:01:30.120 --> 00:01:33.390
+that small cap stocks had higher than average returns,
+
+00:01:33.390 --> 00:01:36.340
+than large-cap stocks, what would you do as
+
+00:01:36.340 --> 00:01:40.210
+a rational investor to make use of this knowledge?
+
+00:01:40.370 --> 00:01:45.305
+One way that seems to make sense is to buy small-cap stocks,
+
+00:01:45.305 --> 00:01:48.050
+and to short large-cap stocks.
+
+00:01:48.049 --> 00:01:53.810
+If we had a portfolio in which you bought small-cap stocks and shorted large-cap stocks,
+
+00:01:53.810 --> 00:01:59.075
+we could track the portfolio's value over time so we'd have a time series.
+
+00:01:59.075 --> 00:02:03.270
+We could also calculate the daily return on this portfolio.
+
+00:02:03.269 --> 00:02:08.134
+The return of this portfolio is the return of the size factor.
+
+00:02:08.134 --> 00:02:11.739
+Let's think about what this portfolio tells us.
+
+00:02:11.740 --> 00:02:14.760
+If the portfolio's return is positive,
+
+00:02:14.759 --> 00:02:16.644
+it means that on that day,
+
+00:02:16.645 --> 00:02:21.909
+favoring small cap stocks had a positive effect on the portfolio's return.
+
+00:02:21.909 --> 00:02:24.754
+If the portfolio's return is negative,
+
+00:02:24.754 --> 00:02:26.590
+then it means that on that day,
+
+00:02:26.590 --> 00:02:31.555
+favoring small cap stocks had a negative effect on the portfolio's return.
+
+00:02:31.555 --> 00:02:33.275
+So that's pretty cool.
+
+00:02:33.275 --> 00:02:36.455
+We have a way of quantifying whether a smaller size
+
+00:02:36.455 --> 00:02:41.180
+actually adds to positive or negative returns on each day.
+

@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.134
+We left off with the idea that the return of any stock, i,
+
+00:00:04.134 --> 00:00:07.849
+can be decomposed into the returns of factors times
+
+00:00:07.849 --> 00:00:12.614
+the stocks exposures to those factors plus an unexplained portion.
+
+00:00:12.615 --> 00:00:16.875
+But wait, this is looking a lot like multiple regression.
+
+00:00:16.875 --> 00:00:18.320
+What's the difference?
+
+00:00:18.320 --> 00:00:23.420
+Well, regression is one tool you might use to build a factor model.
+
+00:00:23.420 --> 00:00:25.600
+Also, in a factor model,
+
+00:00:25.600 --> 00:00:31.020
+the independent variables or factor returns are usually things we think are there,
+
+00:00:31.019 --> 00:00:34.079
+but have an influence that we can't measure directly.
+
+00:00:34.079 --> 00:00:38.619
+These are called unobserved or latent random variables.
+
+00:00:38.619 --> 00:00:41.419
+We may need to take other steps to produce
+
+00:00:41.420 --> 00:00:45.370
+these time series before we can run a multiple regression.
+
+00:00:45.369 --> 00:00:48.019
+For example, what if we think
+
+00:00:48.020 --> 00:00:52.620
+a company's size has something to do with the performance of its stock price?
+
+00:00:52.619 --> 00:00:57.424
+Maybe, smaller companies stock prices produced higher returns?
+
+00:00:57.424 --> 00:00:59.394
+Okay. That seems reasonable,
+
+00:00:59.395 --> 00:01:01.355
+so let's do a regression.
+
+00:01:01.354 --> 00:01:04.325
+But hang on, what data do we have?
+
+00:01:04.325 --> 00:01:07.609
+We have time series of returns for several stocks.
+
+00:01:07.609 --> 00:01:09.625
+You've seen those data before.
+
+00:01:09.625 --> 00:01:13.364
+Okay. So size, how do we measure that?
+
+00:01:13.364 --> 00:01:18.149
+Lets say, we're specifically thinking that market cap is the metric of interests.
+
+00:01:18.150 --> 00:01:23.505
+Market cap is the market value of a publicly traded companies outstanding shares.
+
+00:01:23.504 --> 00:01:27.250
+It's the share price multiplied by the number of shares outstanding.
+
+00:01:27.250 --> 00:01:32.040
+So, we'd have market cap for every company in our universe for every day,
+
+00:01:32.040 --> 00:01:34.330
+because it changes over time.
+
+00:01:34.329 --> 00:01:38.700
+That sounds like the data could be organized in a table or a matrix.
+
+00:01:38.700 --> 00:01:42.915
+But to create a single factor return time-series,
+
+00:01:42.915 --> 00:01:46.150
+we're looking for a single time-series of values that
+
+00:01:46.150 --> 00:01:50.585
+represents the effect of the size factor across stocks.
+
+00:01:50.584 --> 00:01:52.709
+Do you see the challenge we're facing?
+
+00:01:52.709 --> 00:01:56.500
+How do we create a single time series that represents our idea
+
+00:01:56.500 --> 00:02:00.754
+that small-cap companies generally outperform large-cap companies.
+
+00:02:00.754 --> 00:02:06.390
+Moreover, how do we quantify this effect on the returns of a whole set of stocks?
+
+00:02:06.390 --> 00:02:09.020
+A latent variable is something like this,
+
+00:02:09.020 --> 00:02:14.040
+something nebulous that we want to represent as a time series like a normal variable,
+
+00:02:14.039 --> 00:02:16.484
+but it's hard to directly measure.
+
+00:02:16.485 --> 00:02:21.080
+What we do in this case to create a single time series for our factor,
+
+00:02:21.080 --> 00:02:23.735
+is we create a theoretical portfolio.
+
+00:02:23.735 --> 00:02:28.560
+This portfolio long small caps and shorts large-caps every day.
+
+00:02:28.560 --> 00:02:33.125
+The time series we seek is the portfolio's daily return.
+
+00:02:33.125 --> 00:02:37.219
+This is how we quantify our idea that small caps should outperform
+
+00:02:37.219 --> 00:02:41.930
+large-caps and generate a single time series to represent this idea.
+

@@ -1,0 +1,598 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   cvxpy
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Portfolio Optimization
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. What is Optimization.html">
+       02. What is Optimization?
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Optimization with Constraints.html">
+       03. Optimization with Constraints
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Two-Asset Portfolio Optimization.html">
+       04. Two-Asset Portfolio Optimization
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Portfolio Optimization with 2 Stocks.html">
+       05. Portfolio Optimization with 2 Stocks
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Formulating Portfolio Optimization Problems.html">
+       06. Formulating Portfolio Optimization Problems
+      </a>
+     </li>
+     <li class="">
+      <a href="07. cvxpy.html">
+       07. cvxpy
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Exercise cvxpy.html">
+       08. Exercise: cvxpy
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Exercise cvxpy advanced optimization.html">
+       09. Exercise: cvxpy advanced optimization
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Rebalancing a Portfolio.html">
+       10. Rebalancing a Portfolio
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Rebalancing Strategies.html">
+       11. Rebalancing Strategies
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Limitations of the Classical Approach.html">
+       12. Limitations of the Classical Approach
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Summary.html">
+       13. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          07. cvxpy
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="cvxpy">
+          <code>
+           cvxpy
+          </code>
+         </h2>
+         <p>
+          <strong>
+           What is
+           <code>
+            cvxpy
+           </code>
+           ?
+          </strong>
+          <a href="http://www.cvxpy.org/index.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            cvxpy
+           </code>
+          </a>
+          is a Python package for solving convex optimization problems. It allows you to express the problem in a human-readable way, calls a solver, and unpacks the results.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="cvxpy-example">
+          <code>
+           cvxpy
+          </code>
+          Example
+         </h2>
+         <p>
+          Below, please find an example of the use of
+          <code>
+           cvxpy
+          </code>
+          to solve the simple example we referred to in the lectures, optimizing the objective function
+          <span class="mathquill ud-math">
+           (x - 1)^2 +1
+          </span>
+          subject to the constraint
+          <span class="mathquill ud-math">
+           x \leq 0
+          </span>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/cvxpy-visual.jpeg"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/cvxpy-example.jpeg"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="how-to-use-cvxpy">
+          How to use
+          <code>
+           cvxpy
+          </code>
+         </h2>
+         <p>
+          <strong>
+           Import
+          </strong>
+          : First, you need to import the package:
+          <code>
+           import cvxpy as cvx
+          </code>
+         </p>
+         <p>
+          <strong>
+           Steps
+          </strong>
+          : Optimization problems involve finding the values of a
+          <em>
+           variable
+          </em>
+          that minimize an
+          <em>
+           objective function
+          </em>
+          under a set of
+          <em>
+           constraints
+          </em>
+          on the range of possible values the variable can take. So we need to use
+          <code>
+           cvxpy
+          </code>
+          to declare the
+          <em>
+           variable
+          </em>
+          ,
+          <em>
+           objective function
+          </em>
+          and
+          <em>
+           constraints
+          </em>
+          , and then solve the problem.
+         </p>
+         <p>
+          <strong>
+           Optimization variable
+          </strong>
+          : Use
+          <code>
+           cvx.Variable()
+          </code>
+          to declare an optimization variable. For portfolio optimization, this will be
+          <span class="mathquill ud-math">
+           \mathbf{x}
+          </span>
+          , the vector of weights on the assets. Use the argument to declare the size of the variable; e.g.
+          <code>
+           x = cvx.Variable(2)
+          </code>
+          declares that
+          <span class="mathquill ud-math">
+           \mathbf{x}
+          </span>
+          is a vector of length 2. In general, variables can be scalars, vectors, or matrices.
+         </p>
+         <p>
+          <strong>
+           Objective function
+          </strong>
+          : Use
+          <code>
+           cvx.Minimize()
+          </code>
+          to declare the objective function. For example, if the objective function is
+          <span class="mathquill ud-math">
+           (\mathbf{x} - \mathbf{y})^2
+          </span>
+          , you would declare it to be:
+          <code>
+           objective = cvx.Minimize((x - y)**2)
+          </code>
+          .
+         </p>
+         <p>
+          <strong>
+           Constraints
+          </strong>
+          : You must specify the problem constraints with a list of expressions. For example, if the constraints are
+          <span class="mathquill ud-math">
+           \mathbf{x} + \mathbf{y} = 1
+          </span>
+          and
+          <span class="mathquill ud-math">
+           \mathbf{x} - \mathbf{y} \geq 1
+          </span>
+          you would create the list:
+          <code>
+           constraints = [x + y == 1, x - y &gt;= 1]
+          </code>
+          . Equality and inequality constraints are elementwise, whether they involve scalars, vectors, or matrices. For example, together the constraints
+          <code>
+           0 &lt;= x
+          </code>
+          and
+          <code>
+           x &lt;= 1
+          </code>
+          mean that every entry of
+          <span class="mathquill ud-math">
+           \mathbf{x}
+          </span>
+          is between 0 and 1. You cannot construct inequalities with &lt; and &gt;. Strict inequalities don’t make sense in a real world setting. Also, you cannot chain constraints together, e.g.,
+          <code>
+           0 &lt;= x &lt;= 1
+          </code>
+          or
+          <code>
+           x == y == 2
+          </code>
+          .
+         </p>
+         <p>
+          <strong>
+           Quadratic form
+          </strong>
+          : Use
+          <code>
+           cvx.quad_form()
+          </code>
+          to create a quadratic form. For example, if you want to minimize portfolio variance, and you have a covariance matrix
+          <span class="mathquill ud-math">
+           \mathbf{P}
+          </span>
+          , the quantity
+          <code>
+           cvx.quad_form(x, P)
+          </code>
+          represents the quadratic form
+          <span class="mathquill ud-math">
+           \mathbf{x}^\mathrm{T}\mathbf{P}\mathbf{x}
+          </span>
+          , the portfolio variance.
+         </p>
+         <p>
+          <strong>
+           Norm
+          </strong>
+          : Use
+          <code>
+           cvx.norm()
+          </code>
+          to create a norm term. For example, to minimize the distance between
+          <span class="mathquill ud-math">
+           \mathbf{x}
+          </span>
+          and another vector,
+          <span class="mathquill ud-math">
+           \mathbf{b}
+          </span>
+          , i.e.
+          <span class="mathquill ud-math">
+           \left | \mathbf{x} - \mathbf{b} \right |_2
+          </span>
+          , create a term in the objective function
+          <code>
+           cvx.norm(x-b, 2)
+          </code>
+          . The second argument specifies the type of norm; for an L2-norm, use the argument 2.
+         </p>
+         <p>
+          <strong>
+           Constants
+          </strong>
+          : Constants are the quantities in objective or constraint expressions that are not Variables. You can use your numeric library of choice to construct matrix and vector constants. For instance, if
+          <code>
+           x
+          </code>
+          is a
+          <code>
+           cvxpy
+          </code>
+          <code>
+           Variable
+          </code>
+          in the expression
+          <code>
+           A*x + b
+          </code>
+          ,
+          <code>
+           A
+          </code>
+          and
+          <code>
+           b
+          </code>
+          could be Numpy ndarrays, Numpy matrices, or SciPy sparse matrices.
+          <code>
+           A
+          </code>
+          and
+          <code>
+           b
+          </code>
+          could even be different types.
+         </p>
+         <p>
+          <strong>
+           Optimization problem
+          </strong>
+          : The core step in using
+          <code>
+           cvxpy
+          </code>
+          to solve an optimization problem is to specify the problem. Remember that an optimization problem involves minimizing an
+          <em>
+           objective function
+          </em>
+          , under some
+          <em>
+           constraints
+          </em>
+          , so to specify the problem, you need both of these. Use
+          <code>
+           cvx.Problem()
+          </code>
+          to declare the optimization problem. For example,
+          <code>
+           problem = cvx.Problem(objective, constraints)
+          </code>
+          , where
+          <code>
+           objective
+          </code>
+          and
+          <code>
+           constraints
+          </code>
+          are quantities you've defined earlier. Problems are immutable. This means that you cannot modify a problem’s objective or constraints after you have created it. If you find yourself wanting to add a constraint to an existing problem, you should instead create a new problem.
+         </p>
+         <p>
+          <strong>
+           Solve
+          </strong>
+          : Use
+          <code>
+           problem.solve()
+          </code>
+          to run the optimization solver.
+         </p>
+         <p>
+          <strong>
+           Status
+          </strong>
+          : Use
+          <code>
+           problem.status
+          </code>
+          to access the status of the problem and check whether it has been determined to be unfeasible or unbounded.
+         </p>
+         <p>
+          <strong>
+           Results
+          </strong>
+          : Use
+          <code>
+           problem.value
+          </code>
+          to access the optimal value of the objective function. Use e.g.
+          <code>
+           x.value
+          </code>
+          to access the optimal value of the optimization variable.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="08. Exercise cvxpy.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. cvxpy')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

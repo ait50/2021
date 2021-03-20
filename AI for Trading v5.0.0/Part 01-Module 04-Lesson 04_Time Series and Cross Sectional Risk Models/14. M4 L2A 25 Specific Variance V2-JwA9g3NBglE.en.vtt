@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.899
+Now that we have the matrix of factor variances and covariances,
+
+00:00:03.899 --> 00:00:07.064
+we also want to get values to fill in the matrix of
+
+00:00:07.065 --> 00:00:13.324
+specific variances which contain the variances of the specific returns for each stock.
+
+00:00:13.324 --> 00:00:15.989
+If there are two stocks in the stock universe,
+
+00:00:15.990 --> 00:00:19.929
+then there are two specific risk variances to calculate.
+
+00:00:19.929 --> 00:00:24.219
+Let's look at the specific risk variants of the first stock.
+
+00:00:24.219 --> 00:00:26.839
+The data to input into the variance is
+
+00:00:26.839 --> 00:00:30.960
+a time series of the specific returns for the stock.
+
+00:00:30.960 --> 00:00:36.424
+The specific return is the residual or the difference from taking the stocks
+
+00:00:36.424 --> 00:00:42.349
+actual return minus the stocks estimated return using the chosen risk factors.
+
+00:00:42.350 --> 00:00:44.390
+So for each time period,
+
+00:00:44.390 --> 00:00:47.420
+we have the actual stock return and can calculate
+
+00:00:47.420 --> 00:00:51.270
+the estimated return based on the chosen risk factors.
+
+00:00:51.270 --> 00:00:54.500
+We can get the estimated return of the stock at
+
+00:00:54.500 --> 00:00:58.859
+each time period by inputting values that we've already calculated.
+
+00:00:58.859 --> 00:01:01.250
+The estimated return of the stock for
+
+00:01:01.250 --> 00:01:05.838
+a single time period is a stock's factor exposure to country USA,
+
+00:01:05.838 --> 00:01:10.614
+multiplied by the factor return of USA for time t,
+
+00:01:10.614 --> 00:01:15.829
+plus the intercept term for time t. This is great.
+
+00:01:15.829 --> 00:01:20.424
+Now we have one data point for the specific return of stock one.
+
+00:01:20.424 --> 00:01:23.884
+We can do the same thing for multiple time periods
+
+00:01:23.885 --> 00:01:27.625
+and get a time series for the specific return of the stock.
+
+00:01:27.625 --> 00:01:31.099
+The variance of this time series is the estimate that we
+
+00:01:31.099 --> 00:01:34.655
+can use in the matrix of specific variances.
+
+00:01:34.655 --> 00:01:42.299
+So now we have all the pieces that go into the BFB transpose and S matrices.
+

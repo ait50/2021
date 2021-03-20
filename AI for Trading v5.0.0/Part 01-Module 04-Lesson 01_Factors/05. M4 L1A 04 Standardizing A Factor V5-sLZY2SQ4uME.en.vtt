@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.860
+Now, let's see how to convert this raw calculation into a standardized factor.
+
+00:00:05.860 --> 00:00:10.370
+We want the resulting weights to satisfy two conditions.
+
+00:00:10.369 --> 00:00:15.535
+First, we want the sum of the weights to add up to zero.
+
+00:00:15.535 --> 00:00:22.285
+Second, we want the absolute values of the weights to sum to one.
+
+00:00:22.285 --> 00:00:24.519
+To satisfy the first condition,
+
+00:00:24.519 --> 00:00:31.524
+we want to find the mean or average of the list of raw factor values for all the stocks.
+
+00:00:31.524 --> 00:00:37.424
+Then, subtract that mean from each of the raw factor values.
+
+00:00:37.424 --> 00:00:40.739
+We say that we de-mean the factor,
+
+00:00:40.740 --> 00:00:43.289
+because we're subtracting it's mean.
+
+00:00:43.289 --> 00:00:45.863
+To satisfy the second condition,
+
+00:00:45.863 --> 00:00:48.494
+we want to re-scale the values.
+
+00:00:48.494 --> 00:00:52.959
+To re-scale, we divide each value by a number.
+
+00:00:52.960 --> 00:00:57.429
+This scalar, equals the sum of the absolute values.
+
+00:00:57.429 --> 00:01:03.545
+So, we re-scale the values by dividing each value by this scalar.
+
+00:01:03.545 --> 00:01:06.935
+To standardize a vector of factor values,
+
+00:01:06.935 --> 00:01:10.140
+we both de-mean and re-scale,
+
+00:01:10.140 --> 00:01:14.099
+so that the mean of this two list of numbers equals zero,
+
+00:01:14.099 --> 00:01:18.030
+and the sum of the absolute values equals one.
+
+00:01:18.030 --> 00:01:21.019
+We could do the de-mean or re-scale,
+
+00:01:21.019 --> 00:01:23.894
+one after the other in either order.
+
+00:01:23.894 --> 00:01:27.405
+Let's walk through an example with three stocks,
+
+00:01:27.405 --> 00:01:31.820
+each with a factor value such as a one year return.
+
+00:01:31.819 --> 00:01:36.104
+First, we want to de-mean the values so that they sum to zero.
+
+00:01:36.105 --> 00:01:39.915
+So, we calculate the mean by adding up the values of A,
+
+00:01:39.915 --> 00:01:43.880
+B, and C, then divide by the number of stocks.
+
+00:01:43.879 --> 00:01:46.049
+Then, for each stock,
+
+00:01:46.049 --> 00:01:49.989
+we get the raw factor value minus the mean.
+
+00:01:49.989 --> 00:01:56.274
+Next, we want to re-scale so that the sum of absolute values equals one.
+
+00:01:56.275 --> 00:02:01.825
+We can get the scalar by adding up the absolute values of the numbers.
+
+00:02:01.825 --> 00:02:06.984
+To re-scale, we divide each value by the scalar.
+
+00:02:06.984 --> 00:02:11.514
+This gives us the standardized values for the factor.
+
+00:02:11.514 --> 00:02:15.319
+We can verify the conditions that the sum is equal to
+
+00:02:15.319 --> 00:02:21.280
+zero and the sum of the absolute values equals one.
+
+00:02:21.280 --> 00:02:23.634
+Feel free to pause the video,
+
+00:02:23.634 --> 00:02:26.609
+if you want to study these steps in detail.
+
+00:02:26.610 --> 00:02:30.915
+Great. So, now you know how de-meaning and re-scaling
+
+00:02:30.914 --> 00:02:35.189
+can convert raw calculations into candidates for alpha factors.
+
+00:02:35.189 --> 00:02:38.599
+This is actually how we standardize factors so that we can
+
+00:02:38.599 --> 00:02:42.544
+evaluate them and compare them with other factors.
+
+00:02:42.544 --> 00:02:45.155
+Next, we'll look at how to interpret,
+
+00:02:45.155 --> 00:02:48.430
+why we take these steps to standardize a factor.
+
+00:02:48.430 --> 00:02:51.855
+But first, here's a random question to ponder,
+
+00:02:51.854 --> 00:02:55.969
+why were the normal distribution and the raw factor both
+
+00:02:55.969 --> 00:03:00.764
+very unhappy when they were told that they would be standardized?
+
+00:03:00.764 --> 00:03:06.964
+One, I know the answer, because they thought it was de-meaning.
+
+00:03:06.965 --> 00:03:10.250
+Get it? De-meaning.
+

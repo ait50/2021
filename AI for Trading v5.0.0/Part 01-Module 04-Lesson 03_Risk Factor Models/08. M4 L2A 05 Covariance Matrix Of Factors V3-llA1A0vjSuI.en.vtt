@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.009
+We can also model the portfolio's variance as a function of factors.
+
+00:00:05.009 --> 00:00:09.230
+The portfolio's variance can be broken up into two parts,
+
+00:00:09.230 --> 00:00:11.890
+the risk contribution of the factors,
+
+00:00:11.890 --> 00:00:15.689
+and the specific risk that is not due to the factors.
+
+00:00:15.689 --> 00:00:21.094
+Note that is similar to what we saw earlier with the factor model of returns.
+
+00:00:21.094 --> 00:00:25.464
+The end goal is to become familiar with this formula,
+
+00:00:25.464 --> 00:00:30.105
+which models portfolio variance in terms of common factors.
+
+00:00:30.105 --> 00:00:33.750
+These variables represent matrices.
+
+00:00:33.750 --> 00:00:37.715
+The point of these matrix multiplications is to add up
+
+00:00:37.715 --> 00:00:41.859
+the individual stock variances and pairwise covariances,
+
+00:00:41.859 --> 00:00:44.950
+to get the variance of the entire portfolio.
+
+00:00:44.950 --> 00:00:50.730
+Also, to remember the various pieces and to make the math easier to digest,
+
+00:00:50.729 --> 00:00:54.754
+I'll use ice cream as an analogy to describe the variables.
+
+00:00:54.755 --> 00:00:58.340
+Here's the covariance matrix of factors,
+
+00:00:58.340 --> 00:01:02.835
+we can think of this as the main ingredients for making the ice cream,
+
+00:01:02.835 --> 00:01:05.629
+such as milk and sugar.
+
+00:01:05.629 --> 00:01:08.908
+Here is the matrix of factor exposures,
+
+00:01:08.909 --> 00:01:10.815
+as well as its transpose,
+
+00:01:10.814 --> 00:01:15.620
+which we can think of as measuring spoons for the ingredients.
+
+00:01:15.620 --> 00:01:19.390
+Here's the matrix of specific variances,
+
+00:01:19.390 --> 00:01:22.739
+also known as idiosyncratic variances.
+
+00:01:22.739 --> 00:01:27.189
+Which we can think of as ingredients that are specific to each ice cream,
+
+00:01:27.189 --> 00:01:30.474
+such as pecans or chocolate chips.
+
+00:01:30.474 --> 00:01:35.969
+Finally, there is the matrix of portfolio weights, and its transpose.
+
+00:01:35.969 --> 00:01:39.048
+We can think of these as ice cream scoops,
+
+00:01:39.049 --> 00:01:44.600
+which help us choose how much of each flavor of ice cream to put in our bowl.
+

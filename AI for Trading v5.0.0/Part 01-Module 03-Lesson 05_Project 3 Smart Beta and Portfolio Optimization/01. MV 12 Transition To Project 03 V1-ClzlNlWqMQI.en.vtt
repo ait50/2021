@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.080
+Congratulations, you're more than halfway through term one.
+
+00:00:03.080 --> 00:00:05.580
+You've done amazingly well to get this far.
+
+00:00:05.580 --> 00:00:07.830
+You've learned the basic mechanics of stock markets,
+
+00:00:07.830 --> 00:00:11.280
+the fundamental math and vocabulary that people use to describe markets,
+
+00:00:11.279 --> 00:00:15.559
+and a few types of trading strategies based on basic hypotheses about market behavior.
+
+00:00:15.560 --> 00:00:18.635
+This means that you're ready for a new exciting challenge.
+
+00:00:18.635 --> 00:00:21.655
+In this project there are two parts,
+
+00:00:21.655 --> 00:00:25.160
+in the first part you'll build a smart beta portfolio,
+
+00:00:25.160 --> 00:00:28.554
+then calculate the tracking error against its index.
+
+00:00:28.554 --> 00:00:30.030
+In the second part,
+
+00:00:30.030 --> 00:00:32.120
+you will re-balance the portfolio using
+
+00:00:32.119 --> 00:00:37.089
+quadratic programming and calculate its turnover to evaluate the performance.
+
+00:00:37.090 --> 00:00:41.390
+The project will give you practical experience with the idea of smart beta,
+
+00:00:41.390 --> 00:00:43.730
+a popular type of investment strategy that
+
+00:00:43.729 --> 00:00:46.449
+you'll hear about when discussing quantitative trading,
+
+00:00:46.450 --> 00:00:50.179
+and enable you to practice the math of portfolio optimization,
+
+00:00:50.179 --> 00:00:53.594
+which is something you would do frequently as a quantitative analyst.
+
+00:00:53.594 --> 00:00:56.199
+Best of luck with this project. It's a good one.
+

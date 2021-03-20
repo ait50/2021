@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.504
+If we look again at our risk model,
+
+00:00:02.504 --> 00:00:04.980
+we can see that we've got estimates for each
+
+00:00:04.980 --> 00:00:07.985
+of the variables in several of these matrices.
+
+00:00:07.985 --> 00:00:14.294
+In particular, we are able to fill in the matrix of factor variances and covariances,
+
+00:00:14.294 --> 00:00:21.710
+the matrix of factor exposures and the matrix of specific variances.
+
+00:00:21.710 --> 00:00:27.075
+The product of factor exposures to factor variances and covariances
+
+00:00:27.074 --> 00:00:33.344
+plus specific variances is essentially the covariance matrix of the stocks.
+
+00:00:33.344 --> 00:00:38.390
+The stock weights in the matrices at the left and right end of this expression can
+
+00:00:38.390 --> 00:00:43.730
+be multiplied to this covariance matrix of assets to get the portfolio variance.
+
+00:00:43.729 --> 00:00:45.414
+In a later lesson,
+
+00:00:45.414 --> 00:00:48.100
+you'll learn about choosing optimal portfolio weights.
+
+00:00:48.100 --> 00:00:51.115
+But for now, you can think of that inner core,
+
+00:00:51.115 --> 00:00:53.414
+the covariance matrix of assets,
+
+00:00:53.414 --> 00:00:56.990
+as the plug-and-play component that we can insert into
+
+00:00:56.990 --> 00:01:02.890
+various portfolios that contained a subset of the assets contained in that matrix.
+

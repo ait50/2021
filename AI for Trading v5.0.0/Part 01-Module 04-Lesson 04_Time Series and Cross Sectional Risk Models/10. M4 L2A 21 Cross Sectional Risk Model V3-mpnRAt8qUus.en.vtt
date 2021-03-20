@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.930
+What we've seen so far are called time series risk models.
+
+00:00:03.930 --> 00:00:06.015
+Most practitioners tend to buy
+
+00:00:06.014 --> 00:00:09.919
+commercial risk models that are built and maintained by other companies.
+
+00:00:09.919 --> 00:00:13.644
+These commercial risk models tend to be a different type of risk model,
+
+00:00:13.644 --> 00:00:16.035
+a cross-sectional risk model.
+
+00:00:16.035 --> 00:00:20.890
+The use of cross-sectional risk models is quite common within the investment industry.
+
+00:00:20.890 --> 00:00:23.190
+So, even though it is unlikely that you will have to
+
+00:00:23.190 --> 00:00:26.035
+implement a cross-sectional risk model from scratch,
+
+00:00:26.035 --> 00:00:29.085
+it is good to have a sense for how they work.
+
+00:00:29.085 --> 00:00:32.799
+So, what is a cross-sectional risk model,
+
+00:00:32.799 --> 00:00:36.404
+and how is it different from time series risk model?
+
+00:00:36.405 --> 00:00:41.240
+Well, let us first see how a cross-section differs from a time series.
+
+00:00:41.240 --> 00:00:45.005
+If we have lots of data on a single stock over time,
+
+00:00:45.005 --> 00:00:46.929
+this is a time series.
+
+00:00:46.929 --> 00:00:51.280
+If we have lots of data on many stocks in a single time period,
+
+00:00:51.280 --> 00:00:55.185
+such as one day then that is a cross-section.
+
+00:00:55.185 --> 00:00:59.510
+For risk models, a cross-sectional factor model also differs from
+
+00:00:59.509 --> 00:01:02.089
+a time series factor model in terms of
+
+00:01:02.090 --> 00:01:05.780
+what is known and what is estimated by a regression.
+
+00:01:05.780 --> 00:01:11.405
+Let us look at the factor model has a bunch of factor exposures and factor returns.
+
+00:01:11.405 --> 00:01:13.674
+When we use a time series model,
+
+00:01:13.674 --> 00:01:18.579
+the factor returns were calculated first using theoretical portfolios.
+
+00:01:18.579 --> 00:01:22.819
+Then, given the factor returns data and the stock returns,
+
+00:01:22.819 --> 00:01:27.484
+the factor exposures were estimated using regression.
+
+00:01:27.484 --> 00:01:32.640
+With the cross-sectional factor model we would actually calculate the factor exposures,
+
+00:01:32.640 --> 00:01:35.454
+the betas before doing a regression,
+
+00:01:35.454 --> 00:01:39.034
+then the factor returns are estimated using regression.
+
+00:01:39.034 --> 00:01:42.829
+This may sound pretty confusing at first, I have to admit,
+
+00:01:42.829 --> 00:01:46.069
+it was confusing to me after hearing it for the first time,
+
+00:01:46.069 --> 00:01:49.039
+and also second time and the third time.
+
+00:01:49.040 --> 00:01:51.870
+Let us look at this topic a bit more.
+

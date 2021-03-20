@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.149
+Advanced natural language processing techniques are
+
+00:00:03.149 --> 00:00:06.359
+being used to enhance fundamental analysis.
+
+00:00:06.360 --> 00:00:09.720
+Fundamental analysis is the kind of work done by
+
+00:00:09.720 --> 00:00:13.575
+traditional investment analysts who work for financial institutions,
+
+00:00:13.574 --> 00:00:16.140
+like mutual funds and brokerage firms.
+
+00:00:16.140 --> 00:00:21.519
+Much of the text-based analysis that fundamental researchers perform on companies,
+
+00:00:21.519 --> 00:00:24.019
+whether it's reading financial news,
+
+00:00:24.019 --> 00:00:26.239
+reading quarterly earnings reports,
+
+00:00:26.239 --> 00:00:28.289
+listening to earnings calls,
+
+00:00:28.289 --> 00:00:31.899
+or reading forms submitted to regulatory agencies,
+
+00:00:31.899 --> 00:00:36.104
+this work can be enhanced with natural language processing.
+
+00:00:36.104 --> 00:00:41.454
+For example, a human analyst usually tracks 10 to 20 companies.
+
+00:00:41.454 --> 00:00:44.679
+Computers could act as a first-pass filter
+
+00:00:44.679 --> 00:00:48.274
+sifting through the same data source for thousands of companies.
+
+00:00:48.274 --> 00:00:50.710
+The automated methods could filter,
+
+00:00:50.710 --> 00:00:53.480
+categorize, and label the information.
+
+00:00:53.479 --> 00:00:57.679
+This could help fundamental analysts decide which companies or
+
+00:00:57.679 --> 00:01:01.979
+information sources to prioritize for further analysis.
+
+00:01:01.979 --> 00:01:06.200
+So, the pre-processing performed with NLP could support and
+
+00:01:06.200 --> 00:01:10.999
+enhance the existing workflow of fundamental research analysts.
+
+00:01:10.998 --> 00:01:13.549
+One can also look for insights in
+
+00:01:13.549 --> 00:01:17.560
+the required paperwork that companies send to government regulators.
+
+00:01:17.560 --> 00:01:19.250
+In the United States,
+
+00:01:19.250 --> 00:01:23.150
+the Securities Exchange Commission or SEC receives
+
+00:01:23.150 --> 00:01:28.975
+10-K forms from companies once a year and three 10-Q forms per year.
+
+00:01:28.974 --> 00:01:32.464
+The 10-K details the companies view of its business,
+
+00:01:32.465 --> 00:01:34.755
+its past financial results for the year,
+
+00:01:34.754 --> 00:01:38.789
+as well as its current or potential future business risks.
+
+00:01:38.790 --> 00:01:45.235
+One potential use of these 10-Ks is to track how a company's business evolves over time.
+
+00:01:45.234 --> 00:01:49.534
+For instance, one study used natural language processing to analyze
+
+00:01:49.534 --> 00:01:54.364
+Amazon's 10-Ks from the years 2007 to 2016.
+
+00:01:54.364 --> 00:01:57.905
+The researchers attempted to determine which sectors
+
+00:01:57.905 --> 00:02:02.144
+the company most closely resembled based on its 10-K reports.
+
+00:02:02.144 --> 00:02:05.329
+In 2007, the company's description of
+
+00:02:05.329 --> 00:02:09.664
+its business most resembled the software and hardware sectors.
+
+00:02:09.664 --> 00:02:14.840
+Over time, the company's description based on it's 10-K forms resembled more
+
+00:02:14.840 --> 00:02:20.360
+of the retail and software sector and to some extent the media sector.
+
+00:02:20.360 --> 00:02:24.275
+You may be wondering how we could make use of this information.
+
+00:02:24.275 --> 00:02:27.784
+The sector that companies closely resemble are
+
+00:02:27.784 --> 00:02:31.919
+factors that help explain the price movement of their stocks.
+
+00:02:31.919 --> 00:02:36.500
+You could imagine that retail stocks may be correlated to some extent,
+
+00:02:36.500 --> 00:02:40.664
+and technology companies may also exhibit similar price movements.
+
+00:02:40.664 --> 00:02:42.280
+In a later lesson,
+
+00:02:42.280 --> 00:02:46.055
+we'll learn how the sector is a particularly important factor
+
+00:02:46.055 --> 00:02:50.974
+and we'll learn about adjusting a portfolio to be sector neutral.
+
+00:02:50.974 --> 00:02:57.299
+Another application of natural language processing on 10-K forms is sentiment analysis.
+
+00:02:57.300 --> 00:03:03.135
+You may be familiar with sentiment analysis on movie reviews or restaurant reviews,
+
+00:03:03.134 --> 00:03:09.250
+usually to categorize user-generated text as positive, neutral, or negative.
+
+00:03:09.250 --> 00:03:13.680
+Sentiment analysis can be used with other categories as well.
+
+00:03:13.680 --> 00:03:17.165
+For instance, one could apply sentiment analysis
+
+00:03:17.164 --> 00:03:20.639
+to estimate how much little risk a company's 10-K
+
+00:03:20.639 --> 00:03:23.869
+describes or how much uncertainty
+
+00:03:23.870 --> 00:03:28.805
+the company faces from competitors, customers, or suppliers.
+
+00:03:28.805 --> 00:03:32.944
+One could imagine creating factors based on positive outlook,
+
+00:03:32.944 --> 00:03:35.604
+negative outlook, little risk,
+
+00:03:35.604 --> 00:03:39.375
+business uncertainty, or any number of categories.
+
+00:03:39.375 --> 00:03:43.560
+These labels could also be used to create Alpha factors.
+
+00:03:43.560 --> 00:03:46.925
+In fact, you will be applying natural language processing
+
+00:03:46.925 --> 00:03:50.344
+on corporate documents in term two of this program.
+
+00:03:50.344 --> 00:03:52.699
+For now, we want to first build-up
+
+00:03:52.699 --> 00:03:57.844
+a comfortable foundation in factor risk modeling and Alpha factor research.
+
+00:03:57.844 --> 00:04:00.859
+This will give you the context to understand where
+
+00:04:00.860 --> 00:04:06.280
+NLP and deep learning techniques can fit into the quad workflow.
+

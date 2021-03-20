@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.765
+Now let's look at the third factor, the value factor.
+
+00:00:03.765 --> 00:00:08.279
+There is research to suggest that stocks that have a high book value,
+
+00:00:08.279 --> 00:00:10.168
+relative to their market price,
+
+00:00:10.169 --> 00:00:13.665
+tends to outperform stocks with lower book value.
+
+00:00:13.664 --> 00:00:17.849
+Put another way, stocks that are cheap relative to their fundamentals,
+
+00:00:17.850 --> 00:00:20.850
+tend to outperform stocks that are expensive,
+
+00:00:20.850 --> 00:00:22.710
+relative to their fundamentals.
+
+00:00:22.710 --> 00:00:25.425
+Stocks with high fundamental valuations,
+
+00:00:25.425 --> 00:00:27.045
+relative to market price,
+
+00:00:27.045 --> 00:00:29.700
+are often called value stocks.
+
+00:00:29.699 --> 00:00:31.939
+Stocks with high market price,
+
+00:00:31.940 --> 00:00:33.844
+relative to their fundamental valuations,
+
+00:00:33.844 --> 00:00:36.365
+are called growth stocks.
+
+00:00:36.365 --> 00:00:38.960
+Remember from the previous discussion of
+
+00:00:38.960 --> 00:00:43.249
+the size factor that we can create a theoretical long/short portfolio
+
+00:00:43.249 --> 00:00:46.429
+in order to express the hypothesis that value
+
+00:00:46.429 --> 00:00:50.530
+indicates an additional boost and returns relative to growth.
+
+00:00:50.530 --> 00:00:52.340
+To do this, first,
+
+00:00:52.340 --> 00:00:56.785
+sort the stocks in the estimation universe by their book-to-market value.
+
+00:00:56.784 --> 00:00:59.814
+Stocks with high book-to-market values,
+
+00:00:59.814 --> 00:01:02.524
+those that are above the 70th percentile,
+
+00:01:02.524 --> 00:01:06.245
+are grouped into a portfolio called value or high,
+
+00:01:06.245 --> 00:01:10.100
+where high refers to high book-to-market value.
+
+00:01:10.099 --> 00:01:13.019
+Stocks with low book-to-market values,
+
+00:01:13.019 --> 00:01:15.164
+below the 30th percentile,
+
+00:01:15.165 --> 00:01:19.200
+are placed into a portfolio called growth or low,
+
+00:01:19.200 --> 00:01:22.655
+where low refers to low book-to-market value.
+
+00:01:22.655 --> 00:01:28.430
+Note that these percentile cutoffs are the ones used in the Fama-French model.
+
+00:01:28.430 --> 00:01:31.970
+Next, calculate the equal weighted return of
+
+00:01:31.969 --> 00:01:38.450
+the value portfolio and equal weighted return of the growth portfolio.
+
+00:01:38.450 --> 00:01:42.620
+The long/short portfolio can be constructed by buying
+
+00:01:42.620 --> 00:01:47.935
+the value portfolio and shorting an equal dollar amount of the growth portfolio.
+
+00:01:47.935 --> 00:01:51.164
+The daily returns of this long/short portfolio
+
+00:01:51.164 --> 00:01:54.200
+gives us the factor return of the value factor,
+
+00:01:54.200 --> 00:01:57.424
+which we can now use in a factor model.
+
+00:01:57.424 --> 00:01:59.539
+In the Fama-French model,
+
+00:01:59.540 --> 00:02:02.890
+the value factor is written as HML.
+
+00:02:02.890 --> 00:02:05.760
+This stands for High Minus Low,
+
+00:02:05.760 --> 00:02:12.000
+where High refers to the value portfolio and Low refers to the growth portfolio.
+

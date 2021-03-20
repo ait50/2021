@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.150
+Earlier, we discussed a basic optimization problem.
+
+00:00:04.150 --> 00:00:08.505
+It's possible for optimization problems to have an additional wrinkle.
+
+00:00:08.505 --> 00:00:10.980
+Constraints can be placed on the problem
+
+00:00:10.980 --> 00:00:13.880
+to limit the region where you look for a solution.
+
+00:00:13.880 --> 00:00:17.130
+In other words, you try to find the smallest value of
+
+00:00:17.129 --> 00:00:20.414
+the function that also satisfies the constraints.
+
+00:00:20.414 --> 00:00:24.524
+Let's discuss how to solve an optimization problem with constraints.
+
+00:00:24.524 --> 00:00:27.750
+First, let's clarify some terminology.
+
+00:00:27.750 --> 00:00:33.394
+The function we are trying to optimize is called the objective or cost function.
+
+00:00:33.395 --> 00:00:36.140
+The variable we are trying to optimize,
+
+00:00:36.140 --> 00:00:39.109
+which in portfolio optimization is the vector
+
+00:00:39.109 --> 00:00:42.350
+of weights on the various assets in the portfolio,
+
+00:00:42.350 --> 00:00:45.460
+is called the optimization variable.
+
+00:00:45.460 --> 00:00:49.204
+Then we may have various constraints.
+
+00:00:49.204 --> 00:00:54.414
+The constraints can take the form of inequality or equality conditions.
+
+00:00:54.414 --> 00:00:56.100
+If there are no constraints,
+
+00:00:56.100 --> 00:00:58.835
+we say the problem is unconstrained.
+
+00:00:58.835 --> 00:01:03.380
+If the objective function is x minus one squared plus one
+
+00:01:03.380 --> 00:01:07.644
+and we apply the constraint that x must be less than or equal to zero,
+
+00:01:07.644 --> 00:01:10.849
+then the new minimum value is two because this is
+
+00:01:10.849 --> 00:01:16.039
+the smallest value of the function that also satisfies the constraint.
+
+00:01:16.040 --> 00:01:20.930
+A vector x is called optimal or a solution of the problem if it has
+
+00:01:20.930 --> 00:01:26.440
+the smallest objective value among all vectors that satisfy the constraints.
+
+00:01:26.439 --> 00:01:29.614
+The set of points for which the objective and
+
+00:01:29.614 --> 00:01:35.214
+all the constraint functions are defined is called the domain of the problem.
+
+00:01:35.215 --> 00:01:41.170
+A point in the domain is said to be feasible if it satisfies all the constraints.
+
+00:01:41.170 --> 00:01:46.109
+The problem is feasible if there exists at least one feasible point,
+
+00:01:46.109 --> 00:01:48.765
+and it is infeasible otherwise.
+
+00:01:48.765 --> 00:01:54.555
+If there are feasible points for which the objective function reaches negative infinity,
+
+00:01:54.555 --> 00:01:57.465
+we say the problem is unbounded below.
+
+00:01:57.465 --> 00:02:01.100
+This is the case for the function f of x equals
+
+00:02:01.099 --> 00:02:05.024
+the negative natural log of x with no constraints.
+
+00:02:05.025 --> 00:02:09.125
+A general optimization problem can be very difficult to solve.
+
+00:02:09.125 --> 00:02:11.539
+You can have functions of many variables and
+
+00:02:11.539 --> 00:02:14.924
+the objective function and constraints can be very complicated.
+
+00:02:14.925 --> 00:02:19.555
+So, instead of thinking about how to solve all types of optimization problems,
+
+00:02:19.555 --> 00:02:22.379
+let's just think about how to solve certain types.
+
+00:02:22.379 --> 00:02:27.439
+It turns out that there are well developed methods to solve some sub-types of problems,
+
+00:02:27.439 --> 00:02:31.724
+and they will be of great help to us as we try to optimize our portfolios.
+
+00:02:31.724 --> 00:02:36.400
+It turns out that a very important type of optimization problem is one for which
+
+00:02:36.400 --> 00:02:41.004
+the objective function and inequality constraints are convex.
+
+00:02:41.004 --> 00:02:44.829
+What does that mean? Well, it's actually very intuitive.
+
+00:02:44.830 --> 00:02:48.549
+A convex function curves upward everywhere.
+
+00:02:48.549 --> 00:02:51.700
+Any straight line you draw between two points
+
+00:02:51.699 --> 00:02:55.144
+on the function has to lie above the function.
+
+00:02:55.145 --> 00:02:58.659
+So, this wiggly function would not be convex.
+
+00:02:58.659 --> 00:03:04.805
+An important property of a convex optimization problem is that it only has one minimum.
+
+00:03:04.805 --> 00:03:06.879
+So, if you find a local minimum,
+
+00:03:06.879 --> 00:03:11.344
+you know it is the globally optimal value over the whole feasible region.
+
+00:03:11.344 --> 00:03:13.620
+This is actually hugely helpful.
+
+00:03:13.620 --> 00:03:18.289
+When the objective function and inequality constraints are convex and
+
+00:03:18.289 --> 00:03:24.250
+the equality constraints have the form f of x equals a times x plus b,
+
+00:03:24.250 --> 00:03:28.824
+the optimization problem is called a convex optimization problem.
+
+00:03:28.824 --> 00:03:31.669
+If you find a local optimum for this problem,
+
+00:03:31.669 --> 00:03:33.979
+you know it is a global optimum.
+
+00:03:33.979 --> 00:03:37.500
+There are well developed techniques for solving these problems,
+
+00:03:37.500 --> 00:03:39.830
+and the set of problems we deal with during
+
+00:03:39.830 --> 00:03:43.820
+portfolio optimization will generally be of this type.
+

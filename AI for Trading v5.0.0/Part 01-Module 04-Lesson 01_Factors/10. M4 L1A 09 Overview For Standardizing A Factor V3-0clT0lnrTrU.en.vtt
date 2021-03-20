@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.429
+So, let's revisit the steps we take to convert factor values into
+
+00:00:04.429 --> 00:00:09.625
+portfolio weights in a dollar neutral portfolio with a leverage ratio of one.
+
+00:00:09.625 --> 00:00:13.615
+To make the factor represent weights of a dollar neutral portfolio,
+
+00:00:13.615 --> 00:00:15.925
+de-mean the vector of values.
+
+00:00:15.925 --> 00:00:19.525
+Do this by subtracting the average from each value.
+
+00:00:19.524 --> 00:00:24.375
+To make the factor represent a portfolio with leverage ratio of one,
+
+00:00:24.375 --> 00:00:30.184
+re-scale the vector of values so that the sum of absolute values equals one.
+
+00:00:30.184 --> 00:00:32.394
+All right, I've talked enough.
+
+00:00:32.395 --> 00:00:35.800
+Let's give you a chance to practice coding up a factor.
+

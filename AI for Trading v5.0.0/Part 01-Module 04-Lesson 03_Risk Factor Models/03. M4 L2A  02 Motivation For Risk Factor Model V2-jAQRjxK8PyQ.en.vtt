@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.360
+We've previously seen how volatility is a common measure of risk.
+
+00:00:05.360 --> 00:00:09.350
+Variance is just the volatility squared.
+
+00:00:09.349 --> 00:00:14.189
+If we were to estimate the variance of a portfolio of two stocks,
+
+00:00:14.189 --> 00:00:18.329
+we would calculate this as the weighted sum of the variance of the returns of
+
+00:00:18.329 --> 00:00:23.964
+each stock as well as the covariance between the returns of these two stocks.
+
+00:00:23.964 --> 00:00:26.699
+If we were looking at the US stock market,
+
+00:00:26.699 --> 00:00:30.460
+we may have 9,000 stocks in the stock universe.
+
+00:00:30.460 --> 00:00:36.414
+Recall that we can organize these variances and covariances into a covariance matrix,
+
+00:00:36.414 --> 00:00:39.019
+which contains the pairwise covariances of
+
+00:00:39.020 --> 00:00:43.615
+each stock with itself and with all the other stocks in the portfolio.
+
+00:00:43.615 --> 00:00:50.715
+This means we have a covariance matrix that has 9,000 rows and 9,000 columns.
+
+00:00:50.715 --> 00:00:57.440
+Multiplying 9,000 by 9,000 results in 81 million elements.
+
+00:00:57.439 --> 00:01:01.644
+However, since the covariance matrix is symmetric,
+
+00:01:01.645 --> 00:01:07.030
+we will have about 14.5 million unique values to fill in the matrix.
+
+00:01:07.030 --> 00:01:11.204
+That's still too many values to estimate and maintain.
+
+00:01:11.204 --> 00:01:15.310
+Notice that this issue of having too many values to estimate is
+
+00:01:15.310 --> 00:01:19.765
+a general problem referred to as the Curse of Dimensionality.
+
+00:01:19.765 --> 00:01:24.460
+In one dimension, there are a couple of thousand stock returns to estimate.
+
+00:01:24.459 --> 00:01:28.539
+In two dimensions, to fill in the two dimensional matrix,
+
+00:01:28.540 --> 00:01:32.155
+we end up with a couple million values to estimate.
+
+00:01:32.155 --> 00:01:35.769
+This process of calculating the covariance matrix of
+
+00:01:35.769 --> 00:01:39.984
+assets is called a historical measure of a portfolio's risk.
+
+00:01:39.984 --> 00:01:44.484
+It becomes difficult to do when there are many stocks in the portfolio.
+
+00:01:44.484 --> 00:01:47.349
+The challenge with estimating the covariance matrix of
+
+00:01:47.349 --> 00:01:51.069
+assets motivates the need for a different approach.
+
+00:01:51.069 --> 00:01:54.929
+That approach is the Risk Factor Model.
+

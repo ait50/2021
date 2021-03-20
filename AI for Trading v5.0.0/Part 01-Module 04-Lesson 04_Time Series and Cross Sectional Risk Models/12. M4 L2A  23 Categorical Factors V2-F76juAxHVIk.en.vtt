@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.165
+Let's look at a few examples factors we can use with this cross-sectional risk model.
+
+00:00:05.165 --> 00:00:08.640
+There are categorical factors such as the country in which
+
+00:00:08.640 --> 00:00:12.190
+the company is based or the sector that it is a part of.
+
+00:00:12.189 --> 00:00:15.419
+Intuitively, we can imagine that the country of
+
+00:00:15.419 --> 00:00:18.875
+a company may affect its stock price movement in some way.
+
+00:00:18.875 --> 00:00:22.050
+For instance, if a country's government added or
+
+00:00:22.050 --> 00:00:25.245
+removed regulations that impacted only countries that
+
+00:00:25.245 --> 00:00:28.310
+operated in that country then the impact would be
+
+00:00:28.309 --> 00:00:32.609
+concentrated on companies that are exposed to that country.
+
+00:00:32.609 --> 00:00:34.909
+Similarly, it makes sense that
+
+00:00:34.909 --> 00:00:39.265
+companies sector is a useful indicator about its stock price movements.
+
+00:00:39.265 --> 00:00:42.804
+For instance, if oil prices increased sharply,
+
+00:00:42.804 --> 00:00:45.424
+we can imagine this having a positive impact
+
+00:00:45.424 --> 00:00:48.320
+on the stock price of most companies that operate in
+
+00:00:48.320 --> 00:00:52.429
+the oil and gas production sector but have a negative impact on
+
+00:00:52.429 --> 00:00:58.015
+businesses that buy oil and gas products such as airlines or trucking companies.
+
+00:00:58.015 --> 00:01:01.820
+What you may notice about categorical variables such as country
+
+00:01:01.820 --> 00:01:05.609
+or sector is that we can't sort categorical variables.
+
+00:01:05.609 --> 00:01:09.215
+Sorting only makes sense if we have numerical data.
+
+00:01:09.215 --> 00:01:13.155
+Recall that if we were to try using a time series risk model,
+
+00:01:13.155 --> 00:01:15.260
+our first step would be to create
+
+00:01:15.260 --> 00:01:20.469
+a theoretical portfolio whose daily returns represent the factor returns.
+
+00:01:20.469 --> 00:01:24.435
+But to construct the theoretical portfolio representing the factor,
+
+00:01:24.435 --> 00:01:27.140
+we first need to sort the values so that
+
+00:01:27.140 --> 00:01:30.060
+we can divide them into separate quantile groups.
+
+00:01:30.060 --> 00:01:35.135
+This isn't possible with categorical variables like a country or sector.
+
+00:01:35.135 --> 00:01:39.505
+Let's talk about how we normally handle categorical variables.
+
+00:01:39.504 --> 00:01:43.924
+You may have heard of dummy variables or one-hot encoding.
+
+00:01:43.924 --> 00:01:48.539
+If the country category has 12 unique countries for instance,
+
+00:01:48.540 --> 00:01:51.940
+then we could expand the single country variable into
+
+00:01:51.939 --> 00:01:56.370
+12 separate variables each representing one country.
+
+00:01:56.370 --> 00:01:59.390
+So, if a stock where in the USA,
+
+00:01:59.390 --> 00:02:02.599
+it would have a value of one assigned to the USA
+
+00:02:02.599 --> 00:02:06.949
+variable and zero for all other country variables.
+
+00:02:06.950 --> 00:02:09.985
+When we think in terms of the factor model,
+
+00:02:09.985 --> 00:02:13.910
+the value of one or zero that is assigned to each country
+
+00:02:13.909 --> 00:02:19.270
+variable is the factor exposure for that stock to that country.
+

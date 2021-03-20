@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.509
+Analysts factors are derived from the published reports
+
+00:00:03.509 --> 00:00:07.035
+of sell-side research analysts at investment banks.
+
+00:00:07.035 --> 00:00:11.699
+Their reports include ratings such as buy, hold, or sell.
+
+00:00:11.699 --> 00:00:16.254
+They also include earnings estimates or price targets for the stock.
+
+00:00:16.254 --> 00:00:21.660
+Sell-side analysts may be assigned to a few companies within the same industry,
+
+00:00:21.660 --> 00:00:25.615
+and may even meet with the management of the companies that they evaluate.
+
+00:00:25.614 --> 00:00:28.049
+This research is intended for
+
+00:00:28.050 --> 00:00:31.625
+buy-side investment firms such as mutual funds and hedge funds,
+
+00:00:31.625 --> 00:00:35.204
+who execute their trades with these sell-side investment banks.
+
+00:00:35.204 --> 00:00:40.009
+Since many large investment firms value the opinions or research analysts,
+
+00:00:40.009 --> 00:00:44.599
+their published analysis can have significant effects on stock trading.
+
+00:00:44.600 --> 00:00:47.960
+If you read financial news and the news mentioned that
+
+00:00:47.960 --> 00:00:51.320
+a particular stock has a buy or hold rating,
+
+00:00:51.320 --> 00:00:55.698
+this is likely an average rating of multiple research analysts.
+
+00:00:55.698 --> 00:01:00.259
+We may also refer to analyst ratings as a kind of sentiment factor
+
+00:01:00.259 --> 00:01:02.359
+because each research analysts
+
+00:01:02.359 --> 00:01:05.469
+aggregates their information about the company's financials,
+
+00:01:05.469 --> 00:01:08.840
+it's growth prospects as well as its current price,
+
+00:01:08.840 --> 00:01:11.510
+and then summarizes this into the analysts overall
+
+00:01:11.510 --> 00:01:15.605
+conclusion or sentiment about that stock.
+
+00:01:15.605 --> 00:01:18.995
+Investment banks choose their own rating scale.
+
+00:01:18.995 --> 00:01:24.295
+For example, one has buy, neutral, or sell.
+
+00:01:24.295 --> 00:01:27.859
+Another has overweight, equal weight,
+
+00:01:27.859 --> 00:01:31.114
+underweight, or more volatile.
+
+00:01:31.114 --> 00:01:35.759
+Yet another has trading by, recommended list,
+
+00:01:35.760 --> 00:01:41.400
+market out performer, market performer and market underperformer.
+
+00:01:41.400 --> 00:01:44.600
+Sell-side ratings are usually aggregated to
+
+00:01:44.599 --> 00:01:47.934
+create a consensus sentiment about a particular stock.
+
+00:01:47.935 --> 00:01:52.519
+It's also useful to focus on when analysts change their ratings.
+
+00:01:52.519 --> 00:01:55.489
+For example, if multiple analysts start
+
+00:01:55.489 --> 00:01:58.489
+changing their ratings of a stock from hold to sell,
+
+00:01:58.489 --> 00:02:03.824
+we might expect investors who follow analyst ratings to start selling that stock.
+
+00:02:03.825 --> 00:02:07.980
+Analyst ratings may experience a heard mentality.
+
+00:02:07.980 --> 00:02:11.909
+It's difficult for a single analyst to publish a sell rating
+
+00:02:11.909 --> 00:02:16.349
+when most other analysts in the industry are publishing a buy rating.
+
+00:02:16.349 --> 00:02:21.530
+In other words, it's safer to be wrong when everyone else is also wrong,
+
+00:02:21.530 --> 00:02:26.599
+but more costly for an analyst to be wrong when everyone else is right.
+
+00:02:26.599 --> 00:02:30.344
+So instead of taking a simple average of analyst ratings,
+
+00:02:30.344 --> 00:02:31.969
+it may be useful to focus on
+
+00:02:31.969 --> 00:02:37.389
+the most reputable star analysts and give their ratings more weight.
+
+00:02:37.389 --> 00:02:42.274
+One way to combine analyst sentiment into a trading signal is to aggregate
+
+00:02:42.275 --> 00:02:47.055
+all the ratings that have changed over a certain period such as the past three months.
+
+00:02:47.055 --> 00:02:52.515
+If we count all the ratings upgrades and subtract all the ratings downgrades,
+
+00:02:52.514 --> 00:02:56.884
+then we have a number that is either positive, negative or 0.
+
+00:02:56.884 --> 00:03:00.185
+A positive number represents a positive sentiment,
+
+00:03:00.185 --> 00:03:03.289
+whereas a negative number is a negative sentiment.
+
+00:03:03.289 --> 00:03:06.590
+To rescale this sentiment between negative 1 and 1,
+
+00:03:06.590 --> 00:03:10.539
+we could divide this number by the total number of analysts that we're tracking,
+
+00:03:10.539 --> 00:03:14.599
+whether they upgraded, downgraded or cut their rating the same.
+

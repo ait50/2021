@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.180
+In the coming series of lessons,
+
+00:00:02.180 --> 00:00:06.429
+we'll go into detail about risk factors and alpha factors.
+
+00:00:06.429 --> 00:00:07.835
+So, what's the difference,
+
+00:00:07.835 --> 00:00:10.070
+and why do we make this distinction?
+
+00:00:10.070 --> 00:00:12.935
+First, let's start with how factors,
+
+00:00:12.935 --> 00:00:16.670
+whether risk factors or alpha factors, are the same.
+
+00:00:16.670 --> 00:00:20.900
+The use of factors this is based on the assumption that stocks
+
+00:00:20.899 --> 00:00:25.649
+with similar characteristics may move up or down in similar ways.
+
+00:00:25.649 --> 00:00:28.159
+For example, stocks may exhibit
+
+00:00:28.160 --> 00:00:31.998
+similar price movements if they are also within the same sector
+
+00:00:31.998 --> 00:00:38.725
+or are similar in market cap or based in the same country or have similar fundamentals.
+
+00:00:38.725 --> 00:00:42.649
+Factors represent these common characteristics such as sector,
+
+00:00:42.649 --> 00:00:47.509
+market cap, or market return or the country or book-to-market ratio.
+
+00:00:47.509 --> 00:00:51.049
+If we model the return of a stock as the sum of
+
+00:00:51.049 --> 00:00:55.228
+the contributions from risk factors and alpha factors,
+
+00:00:55.228 --> 00:00:57.560
+then we notice that each of these factors,
+
+00:00:57.560 --> 00:00:59.145
+both alpha and risk factors,
+
+00:00:59.145 --> 00:01:01.330
+contribute to the stock return.
+
+00:01:01.329 --> 00:01:06.825
+In other words, each factor is adding a little bit to the movement of the stock price.
+
+00:01:06.825 --> 00:01:10.130
+However, in practice, risk factors and
+
+00:01:10.129 --> 00:01:13.984
+alpha factors are used to accomplish different goals.
+
+00:01:13.984 --> 00:01:17.420
+We want to use factors to help us learn something
+
+00:01:17.420 --> 00:01:21.605
+about the distribution of expected future returns.
+
+00:01:21.605 --> 00:01:28.760
+Factors could be predictive of the mean of the distribution of expected returns or not.
+
+00:01:28.760 --> 00:01:32.359
+They could also help to explain a significant amount of
+
+00:01:32.359 --> 00:01:36.560
+the variance of the return distribution or not.
+
+00:01:36.560 --> 00:01:40.219
+Factors that significantly help explain the variance of
+
+00:01:40.219 --> 00:01:44.939
+the return distribution are candidates for use as risk factors.
+
+00:01:44.939 --> 00:01:51.584
+We want to find a set of risk factors that explain much of the variance of a portfolio.
+
+00:01:51.584 --> 00:01:55.279
+The reason is so that we can adjust portfolio weights to
+
+00:01:55.280 --> 00:01:59.335
+reduce that variance that's caused by these risk factors.
+
+00:01:59.334 --> 00:02:03.679
+Reducing the movement of a portfolio that may be attributed to
+
+00:02:03.680 --> 00:02:08.055
+risk factors is how we control portfolio risk.
+
+00:02:08.055 --> 00:02:13.879
+One major risk factor is the market return from the capital asset pricing model.
+
+00:02:13.879 --> 00:02:19.519
+We saw earlier how adjusting portfolio weights to make them dollar neutral also helps
+
+00:02:19.520 --> 00:02:25.735
+to make a portfolio less sensitive to overall market movement thereby controlling risk.
+
+00:02:25.735 --> 00:02:30.010
+Factors that are significantly predictive of the mean of the return of
+
+00:02:30.009 --> 00:02:34.259
+distribution are candidates for use as alpha factors.
+
+00:02:34.259 --> 00:02:37.780
+We want to find alpha factors that are predictive of
+
+00:02:37.780 --> 00:02:43.469
+future price movements after we've neutralized price movements using a risk model.
+
+00:02:43.469 --> 00:02:46.870
+For example, if a factor signals that
+
+00:02:46.870 --> 00:02:51.020
+the mean of the expected return distribution is greater than zero,
+
+00:02:51.020 --> 00:02:54.700
+then this signal may indicate that the stock return will be
+
+00:02:54.699 --> 00:02:59.594
+positive in the future which also means it's a signal to buy.
+
+00:02:59.594 --> 00:03:04.794
+One example of a former alpha factor is the market cap of a stock.
+
+00:03:04.794 --> 00:03:11.324
+Small-cap stocks tend to have higher returns compared to large cap stocks.
+
+00:03:11.324 --> 00:03:16.399
+Factors that are neither useful in explaining the variance nor predictive or the mean
+
+00:03:16.400 --> 00:03:21.615
+of the return distribution would probably not be used as either alpha or risk factors.
+
+00:03:21.615 --> 00:03:25.010
+One example would be days when there are full moons.
+
+00:03:25.009 --> 00:03:27.219
+Even though a full moon may tell you when to
+
+00:03:27.219 --> 00:03:30.484
+expect werewolves or other magical creatures to appear,
+
+00:03:30.485 --> 00:03:34.400
+it probably wouldn't tell you much about which stocks to long or short.
+

@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.990
+Now, let's see how we can use
+
+00:00:01.990 --> 00:00:07.205
+the Fama French three-factor model to fill in the values we need for the risk model.
+
+00:00:07.205 --> 00:00:09.185
+We have three factors,
+
+00:00:09.185 --> 00:00:13.920
+so we'll fill in the covariance matrix of factors that is three by three.
+
+00:00:13.919 --> 00:00:18.439
+Notice that the first row has the market factor in all three columns,
+
+00:00:18.440 --> 00:00:21.115
+the second row has the size factor,
+
+00:00:21.114 --> 00:00:24.154
+and the third row has the value factor.
+
+00:00:24.155 --> 00:00:27.750
+We want time series of three factor returns;
+
+00:00:27.750 --> 00:00:30.714
+market, size, and value.
+
+00:00:30.714 --> 00:00:38.064
+The market factor can be the excess return of a market index such as the S&amp;P 500.
+
+00:00:38.064 --> 00:00:43.045
+The size factor is the return of a theoretical portfolio that long,
+
+00:00:43.045 --> 00:00:46.380
+small stocks and shorts, big stocks.
+
+00:00:46.380 --> 00:00:53.219
+So, it's going along the three small portfolios and shorting the three big portfolios.
+
+00:00:53.219 --> 00:00:56.119
+The value factor is the return of
+
+00:00:56.119 --> 00:01:01.424
+the theoretical portfolio that longs value stocks and shorts growth stocks.
+
+00:01:01.424 --> 00:01:07.170
+So, it's going long two value portfolios and shorting two growth portfolios.
+
+00:01:07.170 --> 00:01:11.829
+You can pause here to study these formulas before continuing.
+
+00:01:11.829 --> 00:01:15.709
+Now, let's look at the matrix of factor exposures.
+
+00:01:15.709 --> 00:01:18.319
+We'll assume just two stocks.
+
+00:01:18.319 --> 00:01:23.154
+Each stock has a factor exposure for each of the three factors.
+
+00:01:23.155 --> 00:01:27.400
+The transpose of the factor exposure matrix looks similar,
+
+00:01:27.400 --> 00:01:30.005
+just turned on its side.
+
+00:01:30.004 --> 00:01:33.655
+To estimate factor exposures for the first stock,
+
+00:01:33.655 --> 00:01:35.335
+we can use regression,
+
+00:01:35.334 --> 00:01:38.069
+this time a multiple regression.
+
+00:01:38.069 --> 00:01:39.875
+For the first stock,
+
+00:01:39.875 --> 00:01:41.849
+the regression looks like this.
+
+00:01:41.849 --> 00:01:47.129
+The independent variables are the factor returns for the market, size, and value.
+
+00:01:47.129 --> 00:01:52.054
+The dependent variable is the return of the first stock.
+
+00:01:52.055 --> 00:01:58.260
+The same procedure can be used to estimate the factor exposure for stock two.
+
+00:01:58.260 --> 00:02:02.240
+The specific variance matrix holds the variance for
+
+00:02:02.239 --> 00:02:06.184
+each stock that is not attributable to these factors.
+
+00:02:06.185 --> 00:02:09.155
+For the specific variants of the first stock,
+
+00:02:09.155 --> 00:02:13.039
+let's first get a time series of the specific return.
+
+00:02:13.039 --> 00:02:15.739
+The specific return for each day is
+
+00:02:15.740 --> 00:02:20.530
+the actual return of the stock minus is estimated return.
+
+00:02:20.530 --> 00:02:23.900
+The estimated return is calculated using
+
+00:02:23.900 --> 00:02:28.675
+the factor returns and factor exposures that we calculated earlier.
+
+00:02:28.675 --> 00:02:32.075
+We can do the same for the second stock.
+
+00:02:32.074 --> 00:02:36.049
+Taking the variance of the specific returns gives us
+
+00:02:36.050 --> 00:02:39.895
+the values that we can put in the matrix of specific variances.
+
+00:02:39.895 --> 00:02:43.425
+You can pause here to study the formulas a bit.
+
+00:02:43.425 --> 00:02:48.380
+So, we did it. We have all the pieces that go into the factor model of
+
+00:02:48.379 --> 00:02:50.479
+portfolio variance and we estimated
+
+00:02:50.479 --> 00:02:53.924
+these values using the Fama French three-factor model.
+
+00:02:53.925 --> 00:02:59.010
+Just a reminder that this approach is called a Time Series Risk Model.
+
+00:02:59.009 --> 00:03:02.539
+Next, we'll look at another common type of risk model,
+
+00:03:02.539 --> 00:03:05.469
+which is the cross-sectional risk model.
+

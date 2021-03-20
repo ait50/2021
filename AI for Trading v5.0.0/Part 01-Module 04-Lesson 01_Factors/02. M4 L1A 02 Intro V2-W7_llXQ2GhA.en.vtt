@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.904
+So, what are we doing here?
+
+00:00:02.904 --> 00:00:04.370
+What is this all about?
+
+00:00:04.370 --> 00:00:05.980
+As we heard about earlier,
+
+00:00:05.980 --> 00:00:09.165
+our work in this lesson builds upon previous lessons.
+
+00:00:09.164 --> 00:00:11.834
+While we'll still develop trading strategies with
+
+00:00:11.835 --> 00:00:15.120
+large baskets of stocks and use optimization to
+
+00:00:15.119 --> 00:00:18.000
+find combinations of weights on stocks to
+
+00:00:18.000 --> 00:00:21.269
+seek the highest return for a given level of risk,
+
+00:00:21.269 --> 00:00:25.050
+we'll now learn how to develop models of portfolio returns
+
+00:00:25.050 --> 00:00:29.219
+and risk and add these into our optimization framework.
+
+00:00:29.219 --> 00:00:32.939
+Before, we always talked about the distribution of
+
+00:00:32.939 --> 00:00:37.589
+future log returns and it's mean and standard deviation like these were numbers,
+
+00:00:37.590 --> 00:00:40.005
+we can just read off of a list somewhere.
+
+00:00:40.005 --> 00:00:42.370
+But in general, this is not the case.
+
+00:00:42.369 --> 00:00:44.794
+Otherwise, all this would be easy.
+
+00:00:44.795 --> 00:00:50.975
+In addition, we aren't going to explicitly model returns in the way you might expect.
+
+00:00:50.975 --> 00:00:56.689
+The problem with explicit estimation of returns is that these estimates are very
+
+00:00:56.689 --> 00:00:58.849
+noisy and noise causes
+
+00:00:58.850 --> 00:01:03.675
+unnecessary trading which we want to avoid because trades are costly.
+
+00:01:03.674 --> 00:01:07.810
+Instead, we will focus on what Jonathan mentioned earlier.
+
+00:01:07.810 --> 00:01:10.700
+Drivers of mean returns and drivers of
+
+00:01:10.700 --> 00:01:14.945
+volatility and these will be the bases of our model.
+
+00:01:14.944 --> 00:01:21.979
+Drivers of mean returns are alpha factors and drivers of volatility or risk factors.
+
+00:01:21.980 --> 00:01:25.564
+We'll come up with a way to quantify these concepts.
+
+00:01:25.564 --> 00:01:27.099
+In the next few lessons,
+
+00:01:27.099 --> 00:01:28.409
+we'll learn about factors,
+
+00:01:28.409 --> 00:01:30.159
+how to create and improve them,
+
+00:01:30.159 --> 00:01:32.304
+and how they fit into the model.
+
+00:01:32.305 --> 00:01:37.515
+We will also explore advanced portfolio optimization using factors.
+
+00:01:37.515 --> 00:01:41.000
+We've actually seen some ideas for factors earlier
+
+00:01:41.000 --> 00:01:44.269
+in this course without explicitly calling them factors.
+
+00:01:44.269 --> 00:01:49.429
+For example, factors can be based on momentum, or fundamental information.
+
+00:01:49.430 --> 00:01:53.810
+When we can process the data in such a way that they have the potential
+
+00:01:53.810 --> 00:01:57.969
+to provide predictive information about the future movement of stocks,
+
+00:01:57.969 --> 00:01:59.799
+we call these factors.
+
+00:01:59.799 --> 00:02:02.530
+But what is a factor?
+
+00:02:02.530 --> 00:02:07.969
+A factor is a list of numerical values one assign to each stock in
+
+00:02:07.969 --> 00:02:11.180
+our stock universe that is derived to potentially be
+
+00:02:11.180 --> 00:02:15.915
+predictive of an aspect of the performance of the stocks in the future.
+
+00:02:15.914 --> 00:02:21.590
+In essence, factors are signals that help suggest where to place bets in a portfolio of
+
+00:02:21.590 --> 00:02:27.530
+stocks and further suggest what the relative magnitudes of those bets should be.
+
+00:02:27.530 --> 00:02:31.724
+Factors are the basis of quantitative portfolio management,
+
+00:02:31.724 --> 00:02:35.030
+as the search for effective trading strategies starts
+
+00:02:35.030 --> 00:02:38.735
+with a search for factors that drive stock movements.
+
+00:02:38.735 --> 00:02:43.310
+This lesson will introduce you to an example of a factor and show you how to
+
+00:02:43.310 --> 00:02:45.905
+standardize it so that it can be interpreted
+
+00:02:45.905 --> 00:02:49.223
+as a set of weights for a theoretical portfolio.
+
+00:02:49.223 --> 00:02:53.894
+After that, we'll walk you through an open source Python library,
+
+00:02:53.895 --> 00:02:56.790
+Zipline which we'll use throughout the module.
+
+00:02:56.789 --> 00:03:01.354
+You'll also use it in the project to create and evaluate factors encode.
+
+00:03:01.354 --> 00:03:05.634
+Zipline is a Pythonic algorithmic trading library.
+
+00:03:05.634 --> 00:03:08.719
+It's an event-driven system for back-testing.
+
+00:03:08.719 --> 00:03:11.479
+If you start work at a fund or a bank,
+
+00:03:11.479 --> 00:03:15.229
+it's likely that you will learn proprietary software packages that are
+
+00:03:15.229 --> 00:03:19.719
+built in-house and these will be unique to the firm that you work at.
+
+00:03:19.719 --> 00:03:23.810
+Learning how to use the open source packages in this program,
+
+00:03:23.810 --> 00:03:26.164
+will give you practice in learning and using
+
+00:03:26.164 --> 00:03:30.150
+custom libraries such as the ones that you may use on the job.
+
+00:03:30.150 --> 00:03:32.435
+By the end of this lesson,
+
+00:03:32.435 --> 00:03:34.835
+you'll have hands on practice with implementing
+
+00:03:34.835 --> 00:03:39.840
+your first factor in code which will serve as a foundation for the rest of the module.
+

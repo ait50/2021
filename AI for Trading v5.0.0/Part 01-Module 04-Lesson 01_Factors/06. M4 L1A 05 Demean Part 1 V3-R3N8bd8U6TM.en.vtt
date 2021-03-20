@@ -1,0 +1,175 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.519
+So, you just learned how to demean a factor so that the values add up to zero.
+
+00:00:05.519 --> 00:00:07.924
+But why do we do this,
+
+00:00:07.924 --> 00:00:10.740
+the short answer is that, later on,
+
+00:00:10.740 --> 00:00:13.919
+we're going to test the factor as if each value
+
+00:00:13.919 --> 00:00:17.289
+associated with each stock also determined,
+
+00:00:17.289 --> 00:00:20.460
+the stock weight in a theoretical portfolio.
+
+00:00:20.460 --> 00:00:26.094
+We want to make this theoretical portfolio dollar neutral, that is,
+
+00:00:26.094 --> 00:00:32.890
+the dollar amount of all long positions equals the dollar amount of all short positions.
+
+00:00:32.890 --> 00:00:36.450
+We want to do this to test the predictive power of
+
+00:00:36.450 --> 00:00:41.655
+the factor while excluding the influence of the overall market.
+
+00:00:41.655 --> 00:00:47.645
+So, why is a dollar neutral portfolio less influenced by overall market movement?
+
+00:00:47.645 --> 00:00:50.330
+Well, market movement refers to
+
+00:00:50.329 --> 00:00:54.799
+the general direction of most stocks in a country or region.
+
+00:00:54.799 --> 00:00:57.589
+If a portfolio was long only,
+
+00:00:57.590 --> 00:01:01.845
+it would likely move in the same direction as the market.
+
+00:01:01.844 --> 00:01:04.969
+If a portfolio was short only,
+
+00:01:04.969 --> 00:01:09.170
+it would likely move in the opposite direction of the market.
+
+00:01:09.170 --> 00:01:14.540
+A long short portfolio means we can take long and short positions.
+
+00:01:14.540 --> 00:01:20.160
+A dollar neutral portfolio is a special case of a long-short portfolio.
+
+00:01:20.159 --> 00:01:25.894
+Is the case where the value of the longs equals the values of the shorts.
+
+00:01:25.894 --> 00:01:29.780
+If a portfolio were halfway along and have short,
+
+00:01:29.780 --> 00:01:31.400
+then the market movement would have
+
+00:01:31.400 --> 00:01:35.815
+a minimal effect on the movement of this dollar neutral portfolio.
+
+00:01:35.814 --> 00:01:41.924
+So, a dollar neutral portfolio is set up to approximately be market neutral.
+
+00:01:41.924 --> 00:01:45.500
+Note that, an assumption we're making is that on average
+
+00:01:45.500 --> 00:01:49.469
+the Beta of each stock to the market is one.
+
+00:01:49.469 --> 00:01:51.469
+Remember that, Beta in
+
+00:01:51.469 --> 00:01:57.114
+the capital asset pricing model refers to how much a stock moves when the market moves.
+
+00:01:57.114 --> 00:02:02.509
+In general, the average Beta of stocks may not be exactly one,
+
+00:02:02.510 --> 00:02:07.400
+but when a portfolio contains thousands of stocks it's a reasonable assumption.
+
+00:02:07.400 --> 00:02:11.000
+So, a dollar neutral portfolio may move a bit with
+
+00:02:11.000 --> 00:02:15.199
+the market but it would ideally be close to market neutral.
+
+00:02:15.199 --> 00:02:19.519
+Let's now switch from talking about portfolio positions in dollar
+
+00:02:19.520 --> 00:02:24.570
+amounts to talking about portfolio positions in terms of weights.
+
+00:02:24.569 --> 00:02:30.185
+Let's review the meaning of portfolio weights and introduce the concept of the notional.
+
+00:02:30.185 --> 00:02:37.330
+The notional or trade book value is the gross dollar amount associated with a portfolio.
+
+00:02:37.330 --> 00:02:41.320
+The amount of money we'd allocate towards a stock equals its
+
+00:02:41.319 --> 00:02:46.104
+portfolio weight times the portfolio's gross notional value.
+
+00:02:46.104 --> 00:02:52.810
+If a portfolio notional is 100 million and the stock is given a weight of 0.01,
+
+00:02:52.810 --> 00:02:59.275
+we multiply the weight of 0.01 times 100 million which is 1 million.
+
+00:02:59.275 --> 00:03:03.275
+This would be the amount of money we'd allocate toward the stock.
+
+00:03:03.275 --> 00:03:05.599
+For a long or short portfolio,
+
+00:03:05.599 --> 00:03:08.449
+we can also use the weight times the notional
+
+00:03:08.449 --> 00:03:11.674
+to see the dollar value placed on that stocks position,
+
+00:03:11.675 --> 00:03:15.585
+whether it's a long position or short position.
+
+00:03:15.585 --> 00:03:19.564
+For example, assuming a notional of 100 million,
+
+00:03:19.564 --> 00:03:22.819
+let's say we have a stock with a weight of 0.01
+
+00:03:22.819 --> 00:03:26.659
+this translates to a position of $1 million.
+
+00:03:26.659 --> 00:03:29.389
+Likewise, another stock with a weight of negative
+
+00:03:29.389 --> 00:03:35.000
+0.01 then has a position of negative $1 million.
+
+00:03:35.000 --> 00:03:36.300
+Notice in this example,
+
+00:03:36.300 --> 00:03:39.689
+assuming that there are only two stocks in the portfolio,
+
+00:03:39.689 --> 00:03:42.564
+these positions add up to zero.
+
+00:03:42.564 --> 00:03:44.810
+When all the positions add up to zero,
+
+00:03:44.810 --> 00:03:47.015
+the portfolio is dollar neutral.
+
+00:03:47.014 --> 00:03:51.169
+Remember, the goal of having a dollar neutral portfolio is to make
+
+00:03:51.169 --> 00:03:55.639
+the portfolio market neutral or at least close to market neutral.
+

@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.290
+Fundamental factors can also be used in the cross-sectional risk factor model.
+
+00:00:05.290 --> 00:00:10.125
+In fact we'll discuss two that we saw in the Fama-French time series model,
+
+00:00:10.125 --> 00:00:13.265
+the book to market value and market cap.
+
+00:00:13.265 --> 00:00:16.679
+This is an interesting example because we can see that
+
+00:00:16.679 --> 00:00:20.234
+there are two approaches to working with the same factor.
+
+00:00:20.234 --> 00:00:24.530
+There's the method we saw using a time series risk factor model,
+
+00:00:24.530 --> 00:00:29.250
+and now we'll see how to do this with the cross-sectional risk factor model.
+
+00:00:29.250 --> 00:00:31.379
+Just to revisit our goal,
+
+00:00:31.379 --> 00:00:35.710
+we're going to fill in the values to calculate the portfolio variance.
+
+00:00:35.710 --> 00:00:39.920
+For starters, let's see what data we already have to work with.
+
+00:00:39.920 --> 00:00:43.340
+For each stock, we have a book to market value,
+
+00:00:43.340 --> 00:00:48.150
+which may be updated once every three months if the company is based in the US.
+
+00:00:48.149 --> 00:00:50.469
+We also have a market cap,
+
+00:00:50.469 --> 00:00:52.625
+which may be updated daily.
+
+00:00:52.625 --> 00:00:56.405
+These values can be set as the factor exposures.
+
+00:00:56.405 --> 00:00:59.625
+Notice that in the Fama-French time series model,
+
+00:00:59.625 --> 00:01:01.685
+the book to market and market cap,
+
+00:01:01.685 --> 00:01:06.829
+were used in theoretical long-short portfolios to set the factor returns.
+
+00:01:06.829 --> 00:01:09.504
+However, for the cross-sectional model,
+
+00:01:09.504 --> 00:01:14.864
+these values are used directly as the factor exposures instead.
+
+00:01:14.864 --> 00:01:17.655
+We can also obtain the stock returns,
+
+00:01:17.655 --> 00:01:21.605
+and we want to estimate the factor returns using regression.
+
+00:01:21.605 --> 00:01:24.225
+So, we'll take the following steps.
+
+00:01:24.224 --> 00:01:27.244
+For all the stocks in the selected stock universe,
+
+00:01:27.245 --> 00:01:29.965
+obtain each stock's factor exposures,
+
+00:01:29.965 --> 00:01:33.295
+which are the book to market value and market cap.
+
+00:01:33.295 --> 00:01:38.465
+Also get each stock's return for one time period.
+
+00:01:38.465 --> 00:01:43.820
+Next, request the stock return against the factor exposures.
+
+00:01:43.819 --> 00:01:48.454
+The regression estimates the factor return for each of the two factors.
+
+00:01:48.454 --> 00:01:53.679
+Since this factor return is estimated based on all the stocks in the stock universe,
+
+00:01:53.680 --> 00:01:57.205
+it is general enough to apply to all those stocks.
+
+00:01:57.204 --> 00:01:59.234
+Notice that in practice,
+
+00:01:59.234 --> 00:02:02.295
+even if the stock universe is 9,000 stocks,
+
+00:02:02.295 --> 00:02:06.590
+we may use a subset of those stocks to perform the regression.
+
+00:02:06.590 --> 00:02:10.400
+This subset is called the estimation universe
+
+00:02:10.400 --> 00:02:15.760
+because it's the stock universe that is used for estimating these model parameters.
+
+00:02:15.759 --> 00:02:19.280
+To get a time series of factor returns,
+
+00:02:19.280 --> 00:02:23.974
+repeat this process of performing a multiple regression for each day.
+
+00:02:23.974 --> 00:02:27.739
+Once we obtain a time series of factor returns,
+
+00:02:27.740 --> 00:02:30.170
+we can calculate factor variances and
+
+00:02:30.169 --> 00:02:34.250
+covariances to fill in the covariance matrix of factors.
+
+00:02:34.250 --> 00:02:37.409
+To fill in the matrix of specific variances,
+
+00:02:37.409 --> 00:02:40.835
+we can calculate the specific return from the stock return
+
+00:02:40.835 --> 00:02:45.340
+minus the estimated stock return using the chosen factors.
+
+00:02:45.340 --> 00:02:49.520
+The variance of the specific return time series for each stock
+
+00:02:49.520 --> 00:02:54.400
+is what we'll use to fill in the matrix of specific variances.
+

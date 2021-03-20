@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.490
+Okay. Now, let's get an idea for why we
+
+00:00:03.490 --> 00:00:08.144
+re-scale the weights so that the sum of the absolute values equals one.
+
+00:00:08.144 --> 00:00:13.875
+Our goal is for the portfolio's leverage ratio to be equal to one.
+
+00:00:13.875 --> 00:00:17.280
+So, let's first discuss the concept of leverage,
+
+00:00:17.280 --> 00:00:20.655
+and then we'll learn about what the leverage ratio is.
+
+00:00:20.655 --> 00:00:25.390
+Leverage is the act of borrowing in order to invest in assets.
+
+00:00:25.390 --> 00:00:28.410
+Usually, the goal when using leverage is
+
+00:00:28.410 --> 00:00:31.785
+to potentially increase the return on investment.
+
+00:00:31.785 --> 00:00:36.215
+Leverage is related to the word leverage as used in physics.
+
+00:00:36.215 --> 00:00:39.215
+You can think of a lever resting on a fulcrum.
+
+00:00:39.215 --> 00:00:43.010
+If you push the short side of the lever down by one meter,
+
+00:00:43.009 --> 00:00:46.454
+the long side will move by more than one meter.
+
+00:00:46.454 --> 00:00:48.655
+For a long/short portfolio,
+
+00:00:48.655 --> 00:00:51.920
+the money that is borrowed for leverage can come from borrowing
+
+00:00:51.920 --> 00:00:56.210
+cash and also from taking short positions in stocks.
+
+00:00:56.210 --> 00:00:58.594
+Recall that to take a short position,
+
+00:00:58.594 --> 00:01:00.799
+we borrow an asset and sell it in
+
+00:01:00.799 --> 00:01:04.364
+the market with a promise of buying it back in the future.
+
+00:01:04.364 --> 00:01:06.859
+We can use the cash received from
+
+00:01:06.859 --> 00:01:11.289
+these short positions in order to buy other stocks in the portfolio.
+
+00:01:11.289 --> 00:01:15.085
+Without leverage, if we invested in a stock,
+
+00:01:15.084 --> 00:01:18.319
+then a 10 percent change in the stock price would lead to
+
+00:01:18.319 --> 00:01:23.104
+a 10 percent change relative to our initial invested capital.
+
+00:01:23.105 --> 00:01:28.409
+With leverage, if we borrowed cash to double our initial investment,
+
+00:01:28.409 --> 00:01:31.700
+then a 10 percent change in the stock price will lead to
+
+00:01:31.700 --> 00:01:36.135
+a 20 percent increase relative to our initial capital.
+
+00:01:36.135 --> 00:01:39.540
+Let's look at an example without leverage.
+
+00:01:39.540 --> 00:01:44.035
+Pretend that we have $100,000 as initial capital.
+
+00:01:44.034 --> 00:01:47.129
+If the stock price increases by 10 percent,
+
+00:01:47.129 --> 00:01:50.314
+then the portfolio gains $10,000.
+
+00:01:50.314 --> 00:01:52.534
+Relative to the initial capital,
+
+00:01:52.534 --> 00:01:55.619
+the investment increased 10 percent.
+
+00:01:55.620 --> 00:01:59.145
+Now, let's look at a scenario where we use leverage.
+
+00:01:59.144 --> 00:02:03.129
+Start with $100,000 of initial capital.
+
+00:02:03.129 --> 00:02:06.299
+Borrow 100,000 in cash.
+
+00:02:06.299 --> 00:02:10.844
+Use the 200,000 in cash to invest in the stock.
+
+00:02:10.844 --> 00:02:13.629
+If the stock increases by 10 percent,
+
+00:02:13.629 --> 00:02:17.344
+then the investment increases by $20,000.
+
+00:02:17.344 --> 00:02:20.840
+Relative to the initial capital of 100,000,
+
+00:02:20.840 --> 00:02:24.069
+this is actually an increase of 20 percent.
+
+00:02:24.069 --> 00:02:26.900
+Since the potential investment percent gain of
+
+00:02:26.900 --> 00:02:30.800
+20 percent is greater than the stock price gain of 10 percent,
+
+00:02:30.800 --> 00:02:33.515
+we say that this position is leveraged.
+
+00:02:33.514 --> 00:02:37.399
+Feel free to pause the video to study this.
+

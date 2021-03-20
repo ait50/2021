@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.399
+If you haven't looked at variance operators in a while,
+
+00:00:03.399 --> 00:00:05.980
+it may not be obvious why we're able to take
+
+00:00:05.980 --> 00:00:09.609
+the constant factor exposure out by squaring it.
+
+00:00:09.609 --> 00:00:11.889
+Just a reminder of why we'd square the
+
+00:00:11.890 --> 00:00:15.110
+constant when putting it outside of the variance operator.
+
+00:00:15.109 --> 00:00:21.405
+Remember, that variance takes the square of each observations difference from the mean.
+
+00:00:21.405 --> 00:00:24.010
+For example, let's pretend there are
+
+00:00:24.010 --> 00:00:28.280
+just two data points for factor one with equal probabilities,
+
+00:00:28.280 --> 00:00:32.115
+then the variance of factor one looks like this.
+
+00:00:32.115 --> 00:00:36.170
+If we take the variance of a constant times the variable,
+
+00:00:36.170 --> 00:00:38.505
+then it looks like this.
+
+00:00:38.505 --> 00:00:43.505
+Notice that this constant shows up next to every variable.
+
+00:00:43.505 --> 00:00:47.715
+If we take the constant out one step at a time,
+
+00:00:47.715 --> 00:00:52.240
+then we'll eventually factor out that constant from the squared terms,
+
+00:00:52.240 --> 00:00:56.679
+which means we'll also apply the square operator on this constant,
+
+00:00:56.679 --> 00:01:00.649
+then we'll factor out the squared constant a bit more.
+
+00:01:00.649 --> 00:01:05.530
+Notice that the variance of a constant times a random variable is the
+
+00:01:05.530 --> 00:01:10.355
+same as the squared constant times the variance of that variable.
+
+00:01:10.355 --> 00:01:14.564
+You can pause the video here if you want to look a bit longer.
+
+00:01:14.564 --> 00:01:19.920
+So, that's why we can take the constant out of variance operator by squaring it.
+
+00:01:19.920 --> 00:01:26.000
+For similar reasons, we can also take the constants out of the covariance operator.
+

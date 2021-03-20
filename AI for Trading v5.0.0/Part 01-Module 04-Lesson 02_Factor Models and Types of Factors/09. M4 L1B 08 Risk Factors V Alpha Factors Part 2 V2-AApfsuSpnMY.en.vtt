@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.490
+We generally observe different attributes among risk factors versus alpha factors.
+
+00:00:05.490 --> 00:00:10.300
+Even though factors fall along a graded incremental spectrum of these attributes,
+
+00:00:10.300 --> 00:00:12.960
+it helps to put them into two groups to get
+
+00:00:12.960 --> 00:00:16.469
+a sense of how risk factors and alpha factors differ.
+
+00:00:16.469 --> 00:00:19.289
+One difference is in the magnitude of
+
+00:00:19.289 --> 00:00:22.619
+the factors contribution to the stock's price movement.
+
+00:00:22.620 --> 00:00:24.330
+When we choose a set of
+
+00:00:24.329 --> 00:00:28.914
+20 or so risk factors that explain a good portion of the variance of stocks,
+
+00:00:28.914 --> 00:00:31.070
+then taken as a whole,
+
+00:00:31.070 --> 00:00:36.164
+these risk factors tend to be major contributors to the price movement of most stocks.
+
+00:00:36.164 --> 00:00:39.060
+These are factors such as the market return,
+
+00:00:39.060 --> 00:00:41.340
+the country in which the company operates,
+
+00:00:41.340 --> 00:00:43.350
+the sector or line of business,
+
+00:00:43.350 --> 00:00:46.170
+and interest rates set by central bank.
+
+00:00:46.170 --> 00:00:49.579
+In comparison, a single alpha factor may
+
+00:00:49.579 --> 00:00:52.939
+have a smaller contribution to a stock's price movement.
+
+00:00:52.939 --> 00:00:58.670
+As an example, the book-to-market ratio multiplied by idiosyncratic volatility
+
+00:00:58.670 --> 00:01:05.909
+or the trajectory of a stock's return over time are examples of potential alpha factors.
+
+00:01:05.909 --> 00:01:10.969
+You will actually get an in-depth look at these two alpha factors in a later lesson.
+
+00:01:10.969 --> 00:01:16.084
+But for now just assume that we're talking about two examples of alpha factors.
+
+00:01:16.084 --> 00:01:20.564
+The contribution of these alpha factors may be statistically significant,
+
+00:01:20.564 --> 00:01:22.209
+but in terms of magnitude,
+
+00:01:22.209 --> 00:01:24.559
+their impact on the variance of the stock may be
+
+00:01:24.560 --> 00:01:27.990
+smaller than that of a set of common risk factors.
+
+00:01:27.989 --> 00:01:31.699
+This is an important reason for why we want to find
+
+00:01:31.700 --> 00:01:36.564
+a useful set of risk factors and neutralize our portfolio's exposure to them.
+
+00:01:36.564 --> 00:01:41.269
+If we didn't, then the portfolio's movements due to these risk factors would
+
+00:01:41.269 --> 00:01:46.840
+likely be so large as to overwhelm the effects of the alpha factors.
+

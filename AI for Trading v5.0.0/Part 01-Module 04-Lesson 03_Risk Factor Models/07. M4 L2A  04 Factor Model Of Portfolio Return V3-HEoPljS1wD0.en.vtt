@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.924
+Already know, let's add one more layer of complexity,
+
+00:00:03.924 --> 00:00:08.205
+by using a factor model to describe a portfolio of stocks.
+
+00:00:08.205 --> 00:00:13.044
+A portfolio's return can also be modeled as a sum of two parts,
+
+00:00:13.044 --> 00:00:16.324
+the returns that can be explained by a set of factors,
+
+00:00:16.324 --> 00:00:20.728
+and the returns that are specific to each stock within the portfolio.
+
+00:00:20.728 --> 00:00:25.454
+Let's look at a single factors contribution to the portfolio.
+
+00:00:25.454 --> 00:00:30.699
+Assuming we had the factor exposures of each stock within the portfolio,
+
+00:00:30.699 --> 00:00:35.060
+and we also had the weight of each stock in the portfolio,
+
+00:00:35.060 --> 00:00:39.375
+how do we get the portfolios factor exposure?
+
+00:00:39.375 --> 00:00:43.519
+Well, a portfolio's exposure to a factor is
+
+00:00:43.520 --> 00:00:48.055
+a weighted average of the exposures from his individual stocks.
+
+00:00:48.054 --> 00:00:50.744
+For each stock in the portfolio,
+
+00:00:50.744 --> 00:00:53.299
+we multiply the stocks portfolio weight,
+
+00:00:53.299 --> 00:00:56.314
+by that stocks exposure to that factor,
+
+00:00:56.314 --> 00:00:59.229
+and we sum up all these weighted Betas.
+
+00:00:59.229 --> 00:01:02.039
+This process may look familiar to you.
+
+00:01:02.039 --> 00:01:04.719
+We do the same with portfolio returns,
+
+00:01:04.719 --> 00:01:08.885
+by calculating a weighted average of the individual stock returns.
+
+00:01:08.885 --> 00:01:13.710
+The difference here is that we're calculating the portfolio's factor exposure,
+
+00:01:13.709 --> 00:01:16.844
+instead of the portfolio's returns.
+
+00:01:16.844 --> 00:01:21.525
+So, now we can get the portfolio's exposure to one factor,
+
+00:01:21.525 --> 00:01:24.955
+exposure to a second factor,
+
+00:01:24.954 --> 00:01:28.724
+and exposures to each factor in the model.
+
+00:01:28.724 --> 00:01:33.429
+If we have each factors contribution to the portfolio return,
+
+00:01:33.430 --> 00:01:37.170
+we can sum up the contributions of all the factors.
+
+00:01:37.170 --> 00:01:41.965
+The remaining part of the portfolio's return is the specific return.
+
+00:01:41.965 --> 00:01:45.945
+Can you think of how to get the portfolios specific return,
+
+00:01:45.944 --> 00:01:49.519
+if we have the specific return of each stock?
+
+00:01:49.519 --> 00:01:56.594
+The portfolio's specific return is the weighted sum of the specific return of each stock.
+
+00:01:56.594 --> 00:02:00.194
+So, we take each stock's weight in the portfolio,
+
+00:02:00.194 --> 00:02:03.549
+multiplied by the stock's specific return,
+
+00:02:03.549 --> 00:02:07.295
+and add this up for all stocks in the portfolio.
+
+00:02:07.295 --> 00:02:12.094
+This weighted sum is the portfolio's specific return.
+
+00:02:12.094 --> 00:02:14.340
+This is the portfolio's return,
+
+00:02:14.340 --> 00:02:16.425
+modeled in terms of factors.
+
+00:02:16.425 --> 00:02:20.135
+The point is to explain most of the portfolio return,
+
+00:02:20.134 --> 00:02:22.959
+using a set of common factors.
+
+00:02:22.960 --> 00:02:28.719
+Ideally, the chosen factors would explain more of the portfolio return,
+
+00:02:28.719 --> 00:02:32.439
+and the specific return would explain less.
+
+00:02:32.439 --> 00:02:35.979
+From here, we'll get the portfolio's variance,
+
+00:02:35.979 --> 00:02:38.629
+modelled in terms of these common factors.
+
+00:02:38.629 --> 00:02:43.930
+We'll look at how to model portfolio variance for the rest of this lesson.
+

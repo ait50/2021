@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.129
+The other commonly used data in factor construction are called fundamentals.
+
+00:00:05.129 --> 00:00:10.140
+These are measures derived from financial statements such as price to earnings ratios.
+
+00:00:10.140 --> 00:00:12.450
+Price volume factors and
+
+00:00:12.449 --> 00:00:16.469
+fundamental factors are the most commonly used factors for quant trading,
+
+00:00:16.469 --> 00:00:19.349
+and it's possible for some active fund managers to
+
+00:00:19.350 --> 00:00:22.695
+rely primarily on these two types of factors.
+
+00:00:22.695 --> 00:00:27.719
+A practical difference with fundamental factors compared to technical factors is that
+
+00:00:27.719 --> 00:00:33.219
+financial statement data is usually updated on a quarterly basis, not daily.
+
+00:00:33.219 --> 00:00:37.134
+This means that if a fund is trading at a daily frequency,
+
+00:00:37.134 --> 00:00:39.890
+they use the most recent fundamental data for
+
+00:00:39.890 --> 00:00:43.560
+the three months until it's refreshed in the next quarter.
+
+00:00:43.560 --> 00:00:47.270
+Fundamental factors allow for higher capacity,
+
+00:00:47.270 --> 00:00:51.920
+which means that one can potentially put more capital on that particular trade.
+
+00:00:51.920 --> 00:00:54.749
+This is in part due to lower turnover,
+
+00:00:54.749 --> 00:00:57.289
+as we would only update our portfolio when
+
+00:00:57.289 --> 00:01:00.409
+new financial statements arrive every three months.
+
+00:01:00.409 --> 00:01:04.459
+Lower turnover generally means lower transaction costs,
+
+00:01:04.459 --> 00:01:09.494
+which means we can put more capital behind a strategy based on fundamental factors.
+
+00:01:09.495 --> 00:01:12.890
+One factor you've seen before is the market cap,
+
+00:01:12.890 --> 00:01:15.430
+which is a measure of the size of a company.
+
+00:01:15.430 --> 00:01:20.825
+Generally, small cap companies have historically outperformed large cap companies.
+
+00:01:20.825 --> 00:01:23.210
+So strategy may involve overweighting
+
+00:01:23.209 --> 00:01:27.239
+small cap stocks and underweighting large cap stocks.
+

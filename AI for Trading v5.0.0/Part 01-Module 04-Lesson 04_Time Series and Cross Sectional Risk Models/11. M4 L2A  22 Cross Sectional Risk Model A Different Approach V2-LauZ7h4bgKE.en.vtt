@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.585
+Let's step back and look at an equation z equals x times y.
+
+00:00:04.585 --> 00:00:07.080
+If we knew both z and x,
+
+00:00:07.080 --> 00:00:09.365
+then we can solve for y.
+
+00:00:09.365 --> 00:00:12.734
+Similarly, if we knew both z and y,
+
+00:00:12.734 --> 00:00:14.500
+then we can solve for x.
+
+00:00:14.500 --> 00:00:19.100
+In other words, if we know any two of the three variables in this equation,
+
+00:00:19.100 --> 00:00:21.550
+we can solve for the one that's missing.
+
+00:00:21.550 --> 00:00:24.370
+So, now let's revisit the factor model,
+
+00:00:24.370 --> 00:00:27.560
+keeping in mind that we can think of the stock return,
+
+00:00:27.559 --> 00:00:31.899
+the factor exposure, and the factor returned as three variables.
+
+00:00:31.899 --> 00:00:34.350
+If we can calculate two of these,
+
+00:00:34.350 --> 00:00:38.925
+then we can use regression to estimate the third variable that's missing.
+
+00:00:38.924 --> 00:00:41.809
+In the case of a time series risk model,
+
+00:00:41.810 --> 00:00:43.515
+like the Fama-French example,
+
+00:00:43.515 --> 00:00:46.969
+we get the stock return in factor returns first.
+
+00:00:46.969 --> 00:00:51.259
+So, we use regression to estimate the factor exposure Beta.
+
+00:00:51.259 --> 00:00:53.829
+For a cross-sectional risk model,
+
+00:00:53.829 --> 00:00:57.744
+we get the stock return and factor exposure Betas first.
+
+00:00:57.744 --> 00:01:02.259
+Then we use regression to estimate the factor return.
+
+00:01:02.259 --> 00:01:05.569
+Again, this might take some getting used to,
+
+00:01:05.569 --> 00:01:07.699
+because when we look at regression formulas,
+
+00:01:07.700 --> 00:01:12.260
+we're probably used to seeing a letter y for the dependent variable,
+
+00:01:12.260 --> 00:01:14.870
+a letter x for the independent variable,
+
+00:01:14.870 --> 00:01:19.255
+and a Greek letter Beta to represent the coefficient that we're estimating.
+
+00:01:19.254 --> 00:01:23.774
+Instead, we can shake things up and let our brains be more flexible.
+
+00:01:23.775 --> 00:01:26.930
+So, we'll think about what data is available as inputs for
+
+00:01:26.930 --> 00:01:30.020
+the regression and what variables we don't have,
+
+00:01:30.019 --> 00:01:32.469
+and we'll estimate with regression.
+

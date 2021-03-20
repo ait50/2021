@@ -1,0 +1,199 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.805
+In the last video, we discussed the purpose of rebalancing,
+
+00:00:03.805 --> 00:00:06.165
+costs incurred during rebalancing,
+
+00:00:06.165 --> 00:00:09.835
+and we also chatted about a way to estimate those costs.
+
+00:00:09.835 --> 00:00:12.795
+But how do you know when to rebalance a portfolio?
+
+00:00:12.794 --> 00:00:16.829
+There are two types of events that trigger the rebalancing decision,
+
+00:00:16.829 --> 00:00:22.269
+cash flows and changes in the underlying parameters of the stock return model.
+
+00:00:22.269 --> 00:00:26.994
+Cash flows are movements of money into and out of a portfolio.
+
+00:00:26.995 --> 00:00:29.155
+For a portfolio of stocks,
+
+00:00:29.155 --> 00:00:32.304
+the most common forms of cash flows are dividends,
+
+00:00:32.304 --> 00:00:34.945
+capital gains and new contributions.
+
+00:00:34.945 --> 00:00:40.000
+For example, an investor receives dividend payments when he loans a stock.
+
+00:00:40.000 --> 00:00:42.409
+However, when he has shorted a stock,
+
+00:00:42.409 --> 00:00:46.474
+he is obligated to pay the balance of dividend payments
+
+00:00:46.475 --> 00:00:51.200
+issued to shareholders to the person who has loaned him the stock.
+
+00:00:51.200 --> 00:00:54.109
+Capital gains and losses are the increases or
+
+00:00:54.109 --> 00:00:57.579
+decreases in value of the assets in the portfolio,
+
+00:00:57.579 --> 00:01:01.460
+but these are unrealized until the assets are sold at
+
+00:01:01.460 --> 00:01:06.439
+which time they become realized capital gains and contribute to cash flows.
+
+00:01:06.439 --> 00:01:13.019
+New contributions consist of new investments in the fund or portfolio under management.
+
+00:01:13.019 --> 00:01:16.609
+The simplest way to adjust for cash flows is to
+
+00:01:16.609 --> 00:01:20.349
+buy and sell stocks using the current portfolio weights,
+
+00:01:20.349 --> 00:01:24.234
+but when some assets appreciate and some depreciate,
+
+00:01:24.234 --> 00:01:30.769
+the weights which represent the fraction of the portfolio invested in each asset change.
+
+00:01:30.769 --> 00:01:35.769
+A portfolio manager can take advantage of cash flows to adjust the under
+
+00:01:35.769 --> 00:01:41.479
+weighted or over weighted portfolios to return to the target asset allocation.
+
+00:01:41.480 --> 00:01:46.400
+Changes in model parameters do not automatically trigger rebalancing.
+
+00:01:46.400 --> 00:01:51.080
+In this case, the portfolio manager must decide whether the parameter change is
+
+00:01:51.079 --> 00:01:55.890
+large enough to warrant incurring transaction costs to rebalance.
+
+00:01:55.890 --> 00:01:58.000
+As a portfolio manager,
+
+00:01:58.000 --> 00:02:00.730
+you need to constantly monitor the parameters used
+
+00:02:00.730 --> 00:02:04.335
+in your portfolio and be ready to rebalance when needed.
+
+00:02:04.334 --> 00:02:06.919
+Parameters can change at anytime.
+
+00:02:06.920 --> 00:02:10.509
+For example, many types of corporate actions such as mergers and
+
+00:02:10.509 --> 00:02:15.454
+acquisitions or changes in management may impact the model's parameters.
+
+00:02:15.455 --> 00:02:19.170
+When a portfolio manager suspects that a parameter has changed,
+
+00:02:19.169 --> 00:02:23.059
+she will re-estimate the model to come up with the optimal weights,
+
+00:02:23.060 --> 00:02:27.039
+then she will decide if the portfolio should be rebalanced by
+
+00:02:27.039 --> 00:02:31.864
+weighing the benefits of rebalancing with the downsides such as transaction costs.
+
+00:02:31.865 --> 00:02:34.990
+The most common rebalancing strategies are
+
+00:02:34.990 --> 00:02:38.254
+based on rebalancing at set temporal frequencies,
+
+00:02:38.254 --> 00:02:43.310
+or rebalancing when portfolio weights change by a certain threshold amount.
+
+00:02:43.310 --> 00:02:48.894
+One strategy is to rebalance at a set temporal frequency, daily, monthly,
+
+00:02:48.894 --> 00:02:51.875
+quarterly, annually or at another frequency,
+
+00:02:51.875 --> 00:02:56.134
+regardless of the changes in the sizes of the portfolio weights.
+
+00:02:56.134 --> 00:03:03.324
+This temporal frequency typically comes from the original time horizon of optimization.
+
+00:03:03.324 --> 00:03:06.319
+When a portfolio manager models his portfolio,
+
+00:03:06.319 --> 00:03:11.349
+he will often optimize it using data from a chunk of time of some duration.
+
+00:03:11.349 --> 00:03:16.849
+For example, if a portfolio is model based on month long chunks of data,
+
+00:03:16.849 --> 00:03:21.875
+the optimal weights are only valid for a month and so rebalancing is performed monthly.
+
+00:03:21.875 --> 00:03:25.009
+The threshold base strategy calls for rebalancing
+
+00:03:25.009 --> 00:03:27.935
+the portfolio only when the portfolio weights have
+
+00:03:27.935 --> 00:03:34.449
+drifted from the target ones by a predetermined threshold such as 1%, 5% or 10%.
+
+00:03:34.449 --> 00:03:38.599
+Since rebalancing does not occur at predetermined times,
+
+00:03:38.599 --> 00:03:40.489
+it can happen as frequently as daily,
+
+00:03:40.490 --> 00:03:43.400
+but also as infrequently as yearly.
+
+00:03:43.400 --> 00:03:45.984
+These strategies can also be combined,
+
+00:03:45.984 --> 00:03:49.969
+such that rebalancing is performed on a scheduled basis but only when
+
+00:03:49.969 --> 00:03:54.449
+the portfolio weights have drifted from the target ones by a predetermined threshold,
+
+00:03:54.449 --> 00:03:57.560
+thus, both criteria must be fulfilled.
+
+00:03:57.560 --> 00:03:59.810
+On the scheduled rebalancing date,
+
+00:03:59.810 --> 00:04:03.620
+if the change in the portfolio weights is less than the threshold,
+
+00:04:03.620 --> 00:04:05.539
+rebalancing won't be performed.
+
+00:04:05.539 --> 00:04:08.389
+Also, if the portfolio weights drift by
+
+00:04:08.389 --> 00:04:11.299
+more than the threshold before the scheduled rebalancing date,
+
+00:04:11.300 --> 00:04:13.530
+rebalancing won't be performed.
+

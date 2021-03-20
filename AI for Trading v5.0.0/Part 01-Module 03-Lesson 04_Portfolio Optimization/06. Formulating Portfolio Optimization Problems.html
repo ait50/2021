@@ -1,0 +1,562 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Formulating Portfolio Optimization Problems
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Portfolio Optimization
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. What is Optimization.html">
+       02. What is Optimization?
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Optimization with Constraints.html">
+       03. Optimization with Constraints
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Two-Asset Portfolio Optimization.html">
+       04. Two-Asset Portfolio Optimization
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Portfolio Optimization with 2 Stocks.html">
+       05. Portfolio Optimization with 2 Stocks
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Formulating Portfolio Optimization Problems.html">
+       06. Formulating Portfolio Optimization Problems
+      </a>
+     </li>
+     <li class="">
+      <a href="07. cvxpy.html">
+       07. cvxpy
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Exercise cvxpy.html">
+       08. Exercise: cvxpy
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Exercise cvxpy advanced optimization.html">
+       09. Exercise: cvxpy advanced optimization
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Rebalancing a Portfolio.html">
+       10. Rebalancing a Portfolio
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Rebalancing Strategies.html">
+       11. Rebalancing Strategies
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Limitations of the Classical Approach.html">
+       12. Limitations of the Classical Approach
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Summary.html">
+       13. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Formulating Portfolio Optimization Problems
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="formulating-portfolio-optimization-problems">
+          Formulating Portfolio Optimization Problems
+         </h2>
+         <p>
+          So far, we've discussed one way to formulate a portfolio optimization problem. We learned to set the portfolio variance as the objective function, while imposing the constraint that the portfolio weights should sum to 1. However, in practice you may
+          <em>
+           frame
+          </em>
+          the problem a little differently. Let's talk about some of the different ways to
+          <em>
+           set up
+          </em>
+          a portfolio optimization problem.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="common-constraints">
+          Common Constraints
+         </h2>
+         <p>
+          There are several common constraints that show up in these problems. Earlier, we were allowing our portfolio weights to be negative or positive, as long as they summed to 1. If a weight turned out to be negative, we would consider the absolute value of that number to be the size of the
+          <em>
+           short
+          </em>
+          position to take on that asset. If your strategy does not allow you to take short positions, your portfolio weights will all need to be positive numbers. In order to enforce this in the optimization problem, you would add the constraint that every
+          <span class="mathquill ud-math">
+           x_i
+          </span>
+          in the
+          <span class="mathquill ud-math">
+           \mathbf{x}
+          </span>
+          vector is
+          <em>
+           positive
+          </em>
+          .
+         </p>
+         <p>
+          <strong>
+           no short selling:
+          </strong>
+          <br/>
+          <span class="mathquill ud-math">
+           \;\;\;\;\;\;\;\;0 \leq x_i \leq 1,\;\;\;\;\;\;\;\;i=1,2,\ldots,n
+          </span>
+         </p>
+         <p>
+          You may choose to impose constraints that would limit your portfolio allocations in individual sectors, such as technology or energy. You could do this by limiting the sum of weights for assets in each sector.
+         </p>
+         <p>
+          <strong>
+           sector limits:
+          </strong>
+          <br/>
+          <span class="mathquill ud-math">
+           \;\;\;\;\;\;\;\;x_{\mathrm{biotech1}} + x_{\mathrm{biotech2}} + x_{\mathrm{biotech3}} \leq  M,\;\;\;\;\;\;\;\;M = \mathrm{percent\;of\;portfolio\;to\;invest\;in\;biotech\;companies}
+          </span>
+         </p>
+         <p>
+          If your optimization objective seeks to minimize portfolio variance, you might also incorporate into the problem a goal for the total portfolio return. You can do this by adding a constraint on the portfolio return.
+         </p>
+         <p>
+          <strong>
+           constraint on portfolio return:
+          </strong>
+          <br/>
+          <span class="mathquill ud-math">
+           \;\;\;\;\;\;\;\;\mathbf{x}^\mathrm{T} \mathbf{\mu} \geq r_{\mathrm{min}}, \;\;\;\;\;\;\;\;r_{\mathrm{min}} = \mathrm{minimum\;acceptable\;portfolio\;return}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="maximizing-portfolio-return">
+          Maximizing Portfolio Return
+         </h2>
+         <p>
+          We can also flip the problem around by maximizing returns instead of minimizing variance. Instead of minimizing variance, it often makes sense to impose a constraint on the variance in order to manage risk. Then you could maximize mean returns, which is equivalent to minimizing the negative mean returns. This makes sense when your employer has told you, “I want the best return possible, but you must limit your losses to
+          <span class="mathquill ud-math">
+           p
+          </span>
+          percent!”
+         </p>
+         <p>
+          <strong>
+           objective:
+          </strong>
+          <br/>
+          <span class="mathquill ud-math">
+           \;\;\;\;\mathrm{minimize:}\;\;-\mathbf{x}^\mathrm{T} \mathbf{\mu}
+          </span>
+         </p>
+         <p>
+          <strong>
+           constraint:
+          </strong>
+          <br/>
+          <span class="mathquill ud-math">
+           \;\;\;\;\mathbf{x}^\mathrm{T} \mathbf{P}\mathbf{x} \leq p, \;\;\;\;p = \mathrm{maximum\;permissible\;portfolio\;variance}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="maximizing-portfolio-return-_and_-minimizing-portfolio-variance">
+          Maximizing Portfolio Return
+          <em>
+           And
+          </em>
+          Minimizing Portfolio Variance
+         </h2>
+         <p>
+          Indeed, you could also create an objective function that both maximizes returns and minimizes variance, and controls the tradeoff between the two goals with a parameter,
+          <span class="mathquill ud-math">
+           b
+          </span>
+          . In this case, you have two terms in your objective function, one representing the portfolio mean, and one representing the portfolio variance, and the variance term is multiplied by
+          <span class="mathquill ud-math">
+           b
+          </span>
+          .
+         </p>
+         <p>
+          How does one determine the parameter
+          <span class="mathquill ud-math">
+           b
+          </span>
+          ? Well, it’s very dependent on the individual and the situation, and depends on the level of risk aversion appropriate. It basically represents how much percent return you are willing to give up for each unit of variance you take on.
+         </p>
+         <p>
+          <strong>
+           objective:
+          </strong>
+          <span class="mathquill ud-math">
+           \;\;\;\;\;\;\;\mathrm{minimize:}\;\;\;\;\;-\mathbf{x}^\mathrm{T} \mathbf{\mu}+b\mathbf{x}^\mathrm{T} \mathbf{P}\mathbf{x}, \;\;\;\;\; b = \mathrm{tradeoff\;parameter}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="a-math-note-the-l2-norm">
+          A Math Note: the L2-Norm
+         </h2>
+         <p>
+          There’s another way to formulate an optimization objective that relies on a new piece of notation, so I’ll just take a moment to explain that now. Say we just want to minimize the difference between two quantities. Then we need a measure of the difference, but generalized into many dimensions. For portfolio optimization problems, each dimension is an asset in the portfolio. When we want to measure the distance between two vectors, we use something called the Euclidean norm or L2-norm. This is just the square root of the squared differences of each of the vectors’ components. We write it with double bars and a 2 subscript.
+         </p>
+         <div class="mathquill">
+          d = \sqrt{(a_x - b_x)^2 + (a_y - b_y)^2 + (a_z - b_z)^2} = \left \| \mathbf{a} - \mathbf{b} \right \|_2
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l2-norm.jpeg"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Note that this reduces to the familiar Pythagorean theorem in 2 dimensions.
+         </p>
+         <div class="mathquill">
+          d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/pythagorean-theroem.jpeg"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="minimizing-distance-to-a-set-of-target-weights">
+          Minimizing Distance to a Set of Target Weights
+         </h2>
+         <p>
+          Back to portfolio optimization! One way to formulate an optimization problem is to use the L2 norm and minimize the difference between your vector of portfolio weights and a set of predefined target portfolio weights
+          <span class="mathquill ud-math">
+           \mathbf{x}^*
+          </span>
+          . The goal would be to get the weights as close as possible to the set of target weights while respecting a set of constraints. As an example, these target weights might be values thought to be proportional to future returns for each asset, in other words, an alpha vector.
+         </p>
+         <p>
+          <strong>
+           objective:
+          </strong>
+          <span class="mathquill ud-math">
+           \;\;\;\;\;\mathrm{minimize:}\;\;\;\;\;\left | \mathbf{x}-\mathbf{x}^* \right |_2, \;\;\;\;\;\mathbf{x}^* = \mathrm{a\;set\;of\;target\;portfolio\;weights}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="tracking-an-index">
+          Tracking an Index
+         </h2>
+         <p>
+          What if you want to minimize portfolio variance, but have the portfolio track an index at the same time? In this case, you would want terms in your objective function representing both portfolio variance and the relationship between your portfolio weights and the index weights,
+          <span class="mathquill ud-math">
+           \mathbf{q}
+          </span>
+          . There are a few ways to set this up, but one intuitive way is to simply minimize the difference between your portfolio weights and the weights on the assets in the index, and minimize portfolio variance at the same time. The tradeoff between these goals would be determined by a parameter,
+          <span class="mathquill ud-math">
+           \lambda
+          </span>
+          .
+         </p>
+         <p>
+          <strong>
+           objective:
+          </strong>
+          <span class="mathquill ud-math">
+           \;\;\;\;\;\mathrm{minimize:}\;\;\;\;\;\mathbf{x}^\mathrm{T}\mathbf{P}\mathbf{x} +\lambda\left | \mathbf{x} - \mathbf{q} \right |_2, \;\;\;\mathbf{q} = \mathrm{a\;set\;of\;index\;weights},\;\;\;\lambda = \mathrm{a\;tradeoff\;parameter}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Lambda
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Let's say you have two terms in your optimization objective, and lambda is multiplied to the second term.  If you choose a larger lambda, do you think this causes the optimization to be influenced more by the goal of minimizing the first term or the goal of minimizing the second term?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1532033660536" name="676964" type="radio" value="a1532033660536"/>
+           <label for="a1532033660536">
+            <p>
+             first term
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1532033713680" name="676964" type="radio" value="a1532033713680"/>
+           <label for="a1532033713680">
+            <p>
+             second term
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1532033716559" name="676964" type="radio" value="a1532033716559"/>
+           <label for="a1532033716559">
+            <p>
+             it depends
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1532033721954" name="676964" type="radio" value="a1532033721954"/>
+           <label for="a1532033721954">
+            <p>
+             neither
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          second term
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. cvxpy.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Formulating Portfolio Optimization Problems')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

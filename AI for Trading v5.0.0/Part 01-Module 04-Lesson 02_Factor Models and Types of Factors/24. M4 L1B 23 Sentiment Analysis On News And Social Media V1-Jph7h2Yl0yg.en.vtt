@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.730
+If you are starting out in the field of finance and
+
+00:00:02.730 --> 00:00:05.099
+you ask any experienced portfolio manager,
+
+00:00:05.099 --> 00:00:09.849
+investment banker or research analyst for advice on how to improve your skills,
+
+00:00:09.849 --> 00:00:16.274
+it's very likely that one of their suggestions would be to read financial news.
+
+00:00:16.274 --> 00:00:19.469
+Most people working in financial services read
+
+00:00:19.469 --> 00:00:24.375
+financial and business news regularly in order to stay in touch with the markets.
+
+00:00:24.375 --> 00:00:29.875
+Watch for trends and look out for unexpected events that may affect their portfolios.
+
+00:00:29.875 --> 00:00:32.594
+The rise of social media has created
+
+00:00:32.594 --> 00:00:36.405
+another source that we can use to measure the pulse of the markets.
+
+00:00:36.405 --> 00:00:42.219
+For example, negative tweets about accompany whether thereby investors, or customers,
+
+00:00:42.219 --> 00:00:45.469
+may provide a lead for investors signaling that it may be
+
+00:00:45.469 --> 00:00:49.560
+a good idea to follow up and analyze that stock in more detail.
+
+00:00:49.560 --> 00:00:53.609
+Companies that receive lots of positive attention from both news,
+
+00:00:53.609 --> 00:00:58.210
+media and social media may have a higher chance of being over bought.
+
+00:00:58.210 --> 00:01:03.079
+As much of the general public hear as positive mentions about a particular company,
+
+00:01:03.079 --> 00:01:06.079
+they may also jump in to buy the stock hoping to
+
+00:01:06.079 --> 00:01:09.885
+ride the wave of a stock that appears to just keep going up.
+
+00:01:09.885 --> 00:01:15.170
+This may push the stock to a price that's above what's supported by fundamentals.
+
+00:01:15.170 --> 00:01:19.504
+At which point the stock may be a potential candidate to short sell.
+
+00:01:19.504 --> 00:01:23.810
+Notice how we don't have to assume that every news article or
+
+00:01:23.810 --> 00:01:28.195
+a social media post is the definitive truth about the health of a company.
+
+00:01:28.194 --> 00:01:33.199
+This data is really measuring the sentiment of people whether they're investors,
+
+00:01:33.200 --> 00:01:36.635
+customers, or public figures with lots of followers.
+
+00:01:36.635 --> 00:01:40.790
+Financial analysts have been applying natural language processing or
+
+00:01:40.790 --> 00:01:46.355
+NLP on news and social media to analyze public sentiment towards companies.
+
+00:01:46.355 --> 00:01:50.120
+In other words, they're trying to turn raw text into
+
+00:01:50.120 --> 00:01:54.950
+a signal about whether people have a positive or negative view of a stock's future.
+
+00:01:54.950 --> 00:01:59.094
+This is similar to tracking the sentiment of financial research analysts
+
+00:01:59.094 --> 00:02:03.944
+except with news and social media there isn't always a clearly labeled buy,
+
+00:02:03.944 --> 00:02:05.699
+hold or sell rating.
+
+00:02:05.700 --> 00:02:08.840
+NLP can be used to estimate how likely
+
+00:02:08.840 --> 00:02:15.590
+a news article blog post or social media posts can be categorized as buy, hold or sell.
+
+00:02:15.590 --> 00:02:17.955
+In term two of this program,
+
+00:02:17.955 --> 00:02:21.440
+you will learn how to use NLP and deep learning to analyze
+
+00:02:21.439 --> 00:02:26.800
+social media data and apply these skills in order to generate Alpha factors.
+

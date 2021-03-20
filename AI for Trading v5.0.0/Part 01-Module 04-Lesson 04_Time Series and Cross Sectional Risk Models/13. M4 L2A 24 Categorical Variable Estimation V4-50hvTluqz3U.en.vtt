@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.910
+Let's focus on just one country variable,
+
+00:00:02.910 --> 00:00:05.849
+such as the USA country variable and see how
+
+00:00:05.849 --> 00:00:09.365
+we can estimate the values that will plug into the risk model.
+
+00:00:09.365 --> 00:00:12.855
+For the factor exposure matrix and its transpose,
+
+00:00:12.855 --> 00:00:17.615
+we want each stock's factor exposure to the USA country factor.
+
+00:00:17.614 --> 00:00:19.509
+This can be set to one,
+
+00:00:19.510 --> 00:00:24.625
+if the company is based in the USA and zero if it's based in another country.
+
+00:00:24.625 --> 00:00:28.829
+You could also imagine choosing decimal values between zero and one
+
+00:00:28.829 --> 00:00:33.414
+based on how much of the company's revenue is generated in the USA.
+
+00:00:33.414 --> 00:00:38.905
+In any case, the point is that we can estimate the values for the factor exposures.
+
+00:00:38.905 --> 00:00:43.685
+Next, we want to fill in the co-variance matrix of factor returns.
+
+00:00:43.685 --> 00:00:47.925
+So, we want to obtain a time series of factor returns.
+
+00:00:47.924 --> 00:00:49.899
+To make it easier to follow,
+
+00:00:49.899 --> 00:00:54.449
+I'm going to simplify our model so that it contains only one factor.
+
+00:00:54.450 --> 00:00:57.440
+So, the factor co-variance matrix contains
+
+00:00:57.439 --> 00:01:02.403
+just a single variants for the factor return of country USA.
+
+00:01:02.404 --> 00:01:08.420
+Also, the matrix of factor exposures has just one column for the single factor.
+
+00:01:08.420 --> 00:01:12.450
+The number of rows equals the number of stocks.
+
+00:01:12.450 --> 00:01:14.745
+We want to get the factor return,
+
+00:01:14.745 --> 00:01:17.195
+time series of the country USA,
+
+00:01:17.194 --> 00:01:20.304
+so that we can calculate a variance from it.
+
+00:01:20.305 --> 00:01:24.770
+The journey to estimating a time series starts with a single step.
+
+00:01:24.769 --> 00:01:29.359
+So, lets first estimate the factor return for a single time period.
+
+00:01:29.359 --> 00:01:33.019
+Once we estimate the factor return for one time period,
+
+00:01:33.019 --> 00:01:37.869
+we can repeat the process to estimate factor returns for more time periods.
+
+00:01:37.870 --> 00:01:42.265
+Okay. We're going to estimate the factor return for a single day.
+
+00:01:42.265 --> 00:01:45.814
+So, we take a cross section by collecting data points
+
+00:01:45.814 --> 00:01:49.923
+for a single day but across multiple stocks.
+
+00:01:49.924 --> 00:01:54.575
+Each stock has a factor exposure associated with it.
+
+00:01:54.575 --> 00:01:56.950
+The factor exposure is one,
+
+00:01:56.950 --> 00:02:01.135
+if the company is 100 percent exposed to country USA.
+
+00:02:01.135 --> 00:02:03.535
+The factor exposure is zero,
+
+00:02:03.534 --> 00:02:07.914
+if the stock is completely not exposed to the country USA.
+
+00:02:07.915 --> 00:02:09.925
+It's somewhere in between,
+
+00:02:09.925 --> 00:02:12.395
+if the stock is partly exposed to USA,
+
+00:02:12.395 --> 00:02:14.705
+but also to other countries.
+
+00:02:14.705 --> 00:02:19.370
+We'll also have the return for each stock on that time period.
+
+00:02:19.370 --> 00:02:23.120
+So, given the stock return and factor exposure,
+
+00:02:23.120 --> 00:02:25.900
+we want to estimate the factor return.
+
+00:02:25.900 --> 00:02:27.855
+We have several data points,
+
+00:02:27.854 --> 00:02:31.058
+one for each stock in the stock universe.
+
+00:02:31.058 --> 00:02:35.000
+So, we can use a regression model to fit a line through
+
+00:02:35.000 --> 00:02:38.949
+the plot of stock return versus factor exposure betas.
+
+00:02:38.949 --> 00:02:45.019
+The slope of that line is the estimate for the factor return for that one time period.
+
+00:02:45.020 --> 00:02:50.120
+We can interpret this estimate of factor return as the amount of return that can
+
+00:02:50.120 --> 00:02:56.055
+be attributed to being exposed to the risk factor of country USA.
+
+00:02:56.055 --> 00:02:59.180
+So, that was one factor return for
+
+00:02:59.180 --> 00:03:03.205
+a single time period using a single cross-section of data.
+
+00:03:03.205 --> 00:03:06.765
+Yeah. We've now estimated one point.
+
+00:03:06.764 --> 00:03:10.709
+Remember that we want to find factor returns over time.
+
+00:03:10.710 --> 00:03:14.885
+If we repeat this cross-sectional regression for multiple time periods,
+
+00:03:14.884 --> 00:03:18.259
+we'd get a time series for the factor return.
+
+00:03:18.259 --> 00:03:23.114
+That's great. If we calculate the variance of the factor return time series,
+
+00:03:23.115 --> 00:03:27.810
+we can plug it into the co-variance matrix of factor returns.
+

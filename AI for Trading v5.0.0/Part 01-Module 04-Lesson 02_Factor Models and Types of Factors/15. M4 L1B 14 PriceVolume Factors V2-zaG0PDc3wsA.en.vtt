@@ -1,0 +1,226 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.759
+One of the most commonly used data sources in quant rating is the stock price and volume.
+
+00:00:05.759 --> 00:00:08.900
+We will refer to this as price-volume,
+
+00:00:08.900 --> 00:00:12.464
+but you may also hear it referred to as technical factors.
+
+00:00:12.464 --> 00:00:15.344
+The raw data for price-volume can include
+
+00:00:15.345 --> 00:00:18.445
+anything that we learn from a quotes and trade feed.
+
+00:00:18.445 --> 00:00:22.103
+For example, adjusted and unadjusted prices,
+
+00:00:22.103 --> 00:00:24.175
+the open, high, low,
+
+00:00:24.175 --> 00:00:26.339
+close for each time period.
+
+00:00:26.339 --> 00:00:29.695
+Different time frequencies such as day, week,
+
+00:00:29.695 --> 00:00:33.950
+hour, minute, and bid-ask price quotes.
+
+00:00:33.950 --> 00:00:36.500
+There are operations that we can apply it to
+
+00:00:36.500 --> 00:00:40.159
+the price volume data in which we also defined the window length,
+
+00:00:40.159 --> 00:00:43.659
+which is how many days worth of data to use in the calculation.
+
+00:00:43.659 --> 00:00:45.654
+We've already seen returns,
+
+00:00:45.655 --> 00:00:48.605
+which can be daily, weekly, monthly, or yearly.
+
+00:00:48.604 --> 00:00:53.569
+Returns can also be calculated at shorter time scales such as seconds, minutes, hours.
+
+00:00:53.570 --> 00:00:59.259
+Returns can be calculated from the close of one day to the close of the next day.
+
+00:00:59.259 --> 00:01:05.334
+Returns can also be calculated on the open price to close price for the same day.
+
+00:01:05.334 --> 00:01:08.194
+For example, the open price in the morning
+
+00:01:08.194 --> 00:01:11.809
+to the close price of the afternoon on the same day.
+
+00:01:11.810 --> 00:01:15.140
+Returns can be calculated on the close price of
+
+00:01:15.140 --> 00:01:18.349
+one day to the open price of the next day.
+
+00:01:18.349 --> 00:01:21.379
+For example, the return from the close price of
+
+00:01:21.379 --> 00:01:25.534
+Monday evening to the open price of Tuesday morning.
+
+00:01:25.534 --> 00:01:29.049
+The last example is referred to as overnight returns,
+
+00:01:29.049 --> 00:01:32.704
+and we'll discuss this in detail in a later lesson.
+
+00:01:32.704 --> 00:01:36.620
+We can also apply operations on a distribution of returns.
+
+00:01:36.620 --> 00:01:40.100
+For instance, we can calculate the first four moments,
+
+00:01:40.099 --> 00:01:41.794
+which are called the mean,
+
+00:01:41.795 --> 00:01:45.359
+variance, skew, and kurtosis.
+
+00:01:45.359 --> 00:01:49.290
+The mean describes the center of the return distribution.
+
+00:01:49.290 --> 00:01:53.035
+The variance describes the spread of the distribution.
+
+00:01:53.034 --> 00:01:54.784
+The square root of variance,
+
+00:01:54.784 --> 00:01:56.534
+which is the standard deviation,
+
+00:01:56.534 --> 00:01:59.465
+is a common measure of return volatility.
+
+00:01:59.465 --> 00:02:02.915
+Skew describes the amount of asymmetry.
+
+00:02:02.915 --> 00:02:05.240
+A positive skew, means there are
+
+00:02:05.239 --> 00:02:09.284
+more extreme values in the positive side of the distribution.
+
+00:02:09.284 --> 00:02:15.680
+Kurtosis describes how much of the distribution occurs in the left and right tails.
+
+00:02:15.680 --> 00:02:18.890
+Stock returns distributions tend to exhibit
+
+00:02:18.889 --> 00:02:22.244
+larger tails compared to a normal distribution.
+
+00:02:22.245 --> 00:02:26.509
+Kurtosis is often referred to as fat tails.
+
+00:02:26.509 --> 00:02:30.799
+There's also the minimum or maximum over a certain time window.
+
+00:02:30.800 --> 00:02:35.235
+Note that we'll discuss skewness in a later lesson about alpha factors.
+
+00:02:35.235 --> 00:02:37.630
+So, to summarize, pretty much any
+
+00:02:37.629 --> 00:02:40.634
+statistical or time series calculation you can think of,
+
+00:02:40.634 --> 00:02:44.804
+is fair game for use in a price-volume driven factor.
+
+00:02:44.805 --> 00:02:47.500
+Using price and volume as a factor,
+
+00:02:47.500 --> 00:02:50.460
+has a benefit of having readily available data,
+
+00:02:50.460 --> 00:02:55.219
+since stocks trade on exchanges and many market data vendors sell trades,
+
+00:02:55.219 --> 00:02:56.984
+quotes, and bar data.
+
+00:02:56.985 --> 00:03:01.720
+The availability and regularity of the data source is nice to have,
+
+00:03:01.719 --> 00:03:04.090
+since other sources for factor generation such
+
+00:03:04.090 --> 00:03:06.789
+as fundamentals are updated less frequently,
+
+00:03:06.788 --> 00:03:10.609
+and still other data sources such as news, social media,
+
+00:03:10.610 --> 00:03:15.625
+or analyst reports may not always be available for the stock that we're analyzing.
+
+00:03:15.625 --> 00:03:19.009
+It's very helpful to have a factor that can generate
+
+00:03:19.009 --> 00:03:22.514
+a signal for every stock in the stock universe.
+
+00:03:22.514 --> 00:03:25.519
+This is especially helpful in quant investing,
+
+00:03:25.520 --> 00:03:30.485
+since quant investing usually involves portfolios of hundreds or thousands of stocks.
+
+00:03:30.485 --> 00:03:36.180
+Keep in mind that the higher frequency of price volume data often leads to more trading,
+
+00:03:36.180 --> 00:03:38.900
+and therefore higher portfolio turnover.
+
+00:03:38.900 --> 00:03:41.870
+Since trading decisions are based on the data,
+
+00:03:41.870 --> 00:03:44.569
+the more often the data updates and changes,
+
+00:03:44.569 --> 00:03:48.155
+the more often the portfolio is likely to require rebalancing.
+
+00:03:48.155 --> 00:03:52.305
+This can be good or bad and requires careful study.
+
+00:03:52.305 --> 00:03:55.510
+Faster signals means more information.
+
+00:03:55.509 --> 00:03:59.784
+More information, all other things being equal, is good.
+
+00:03:59.784 --> 00:04:05.784
+However, more rebalancing means more trades and more transaction costs.
+
+00:04:05.784 --> 00:04:07.789
+So, strategy that is based on
+
+00:04:07.789 --> 00:04:11.810
+frequently updated data generally has more transaction costs.
+
+00:04:11.810 --> 00:04:14.449
+As a researcher, a key thing you need to
+
+00:04:14.449 --> 00:04:18.235
+determine is if the higher information content of the signal,
+
+00:04:18.235 --> 00:04:22.600
+more than offsets, the likely higher transaction costs.
+

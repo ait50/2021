@@ -1,0 +1,175 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.870
+Volume-based factors usually include price information,
+
+00:00:03.870 --> 00:00:09.609
+to categorize the volume in a given time period as a net buy or net sell.
+
+00:00:09.609 --> 00:00:13.230
+At first glance, the idea of net buying or net selling,
+
+00:00:13.230 --> 00:00:15.690
+may appear counterintuitive when you recall,
+
+00:00:15.689 --> 00:00:18.585
+that every transaction involves a buyer and a seller.
+
+00:00:18.585 --> 00:00:22.135
+Some examples will help to clarify what we mean by this.
+
+00:00:22.135 --> 00:00:24.390
+A volume factor may track whether
+
+00:00:24.390 --> 00:00:28.469
+the total trading volume of a stock is higher than normal,
+
+00:00:28.469 --> 00:00:33.844
+and use that to determine whether recent price movements are significant or not.
+
+00:00:33.844 --> 00:00:39.564
+For example, sometimes stock exchanges are open on or around a major holiday,
+
+00:00:39.564 --> 00:00:43.070
+and since fewer investors are participating in trading,
+
+00:00:43.070 --> 00:00:45.744
+volume may be lower on these days.
+
+00:00:45.744 --> 00:00:49.564
+So investors will take the low volume into consideration,
+
+00:00:49.564 --> 00:00:53.719
+when deciding whether price movements are significant or not.
+
+00:00:53.719 --> 00:00:58.094
+Volume can help add more context to a price-based factor,
+
+00:00:58.094 --> 00:01:00.024
+such as a moment factor.
+
+00:01:00.024 --> 00:01:04.909
+For instance, unusually high volumes that accompanies a major price movement,
+
+00:01:04.909 --> 00:01:09.594
+may be a sign that the momentum signal is more significant than usual.
+
+00:01:09.594 --> 00:01:13.034
+One could say that the price-based momentum factor,
+
+00:01:13.034 --> 00:01:16.799
+is conditioned on the volume information.
+
+00:01:16.799 --> 00:01:22.384
+One piece of volume data that is independent of price is called short interest.
+
+00:01:22.385 --> 00:01:26.365
+Short interest tracks the quantity of a stock shares,
+
+00:01:26.364 --> 00:01:28.399
+which are held short.
+
+00:01:28.400 --> 00:01:30.620
+When a trader shorts a stock,
+
+00:01:30.620 --> 00:01:33.500
+they borrow the stock from its owner and sell it,
+
+00:01:33.500 --> 00:01:37.444
+with a hope of buying the stock back at a later date when it's cheaper.
+
+00:01:37.444 --> 00:01:41.209
+If instead, the stock price increases,
+
+00:01:41.209 --> 00:01:44.974
+the short seller will realize mark to market losses.
+
+00:01:44.974 --> 00:01:47.899
+Mark to market is an accounting concept,
+
+00:01:47.900 --> 00:01:51.740
+that assess the value of a health asset at its market price.
+
+00:01:51.739 --> 00:01:53.750
+So mark to market losses,
+
+00:01:53.750 --> 00:01:57.129
+are unrealized losses that are tracked in accounting,
+
+00:01:57.129 --> 00:02:01.369
+even if the asset isn't sold to realize those losses.
+
+00:02:01.370 --> 00:02:05.120
+This can become expensive if the stock price keeps rising,
+
+00:02:05.120 --> 00:02:07.785
+so short-sellers may decide to cut their losses,
+
+00:02:07.784 --> 00:02:09.865
+by buying the stock at the market price,
+
+00:02:09.865 --> 00:02:11.885
+and closing out their position.
+
+00:02:11.884 --> 00:02:14.914
+This is called a short squeeze.
+
+00:02:14.914 --> 00:02:16.959
+If this sounds a bit complicated,
+
+00:02:16.960 --> 00:02:19.925
+consider the mirror image of a short squeeze,
+
+00:02:19.925 --> 00:02:22.060
+which is a long squeeze.
+
+00:02:22.060 --> 00:02:24.724
+If you bought stock in a retail company,
+
+00:02:24.724 --> 00:02:27.739
+and watch the stock price decline day after day,
+
+00:02:27.740 --> 00:02:32.045
+you might have decided at some point to cut your losses and sell the stock.
+
+00:02:32.044 --> 00:02:36.079
+This long squeeze is the mirror image of a short squeeze.
+
+00:02:36.080 --> 00:02:40.460
+When a short squeeze occurs due to an upward price movement,
+
+00:02:40.460 --> 00:02:42.770
+the additional stock buying that it triggers,
+
+00:02:42.770 --> 00:02:46.415
+tends to add more upward momentum to the stock price.
+
+00:02:46.414 --> 00:02:49.929
+So if recent short interests is higher than usual,
+
+00:02:49.930 --> 00:02:52.310
+this might be considered a buy signal.
+
+00:02:52.310 --> 00:02:54.050
+Since an increase in price,
+
+00:02:54.050 --> 00:02:58.010
+may trigger a domino effect of additional increases.
+
+00:02:58.009 --> 00:03:01.024
+This could motivate a nice Alpha factor.
+
+00:03:01.025 --> 00:03:04.430
+Find stocks that have high price momentum,
+
+00:03:04.430 --> 00:03:06.575
+and are highly shorted.
+
+00:03:06.574 --> 00:03:11.359
+In this case, short interest data could act as a conditioning information,
+
+00:03:11.360 --> 00:03:14.360
+to make a momentum signal stronger.
+

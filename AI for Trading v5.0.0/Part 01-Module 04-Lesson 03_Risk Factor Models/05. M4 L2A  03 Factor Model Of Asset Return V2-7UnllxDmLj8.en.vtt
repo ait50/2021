@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.270
+To get us ready to look at the risk factor model,
+
+00:00:03.270 --> 00:00:06.509
+let's review the factor model of returns.
+
+00:00:06.509 --> 00:00:11.205
+Note that some of this may look familiar from an earlier lesson, which is great.
+
+00:00:11.205 --> 00:00:14.370
+Our team is really excited about what you'll be able
+
+00:00:14.369 --> 00:00:17.489
+to do by the time you get to this next project.
+
+00:00:17.489 --> 00:00:19.529
+But we also recognize that it's
+
+00:00:19.530 --> 00:00:23.890
+a pretty steep climb to reach the top of the mountain of knowledge.
+
+00:00:23.890 --> 00:00:28.670
+So, we're trying to guide you up the mountain as gently as possible.
+
+00:00:28.670 --> 00:00:32.325
+Let's begin by looking at a factor model of return.
+
+00:00:32.325 --> 00:00:35.975
+For a single stock and a single factor,
+
+00:00:35.975 --> 00:00:39.770
+the return of a stock can be modeled as the sum of
+
+00:00:39.770 --> 00:00:46.155
+two parts: the factor contribution to return plus the specific return.
+
+00:00:46.155 --> 00:00:51.435
+The contribution of the factors is also called the common return.
+
+00:00:51.435 --> 00:00:57.560
+The common return is defined as the stock's exposure to that factor times the rate of
+
+00:00:57.560 --> 00:01:00.530
+return of the factor is the part of
+
+00:01:00.530 --> 00:01:04.635
+the stock's return that can be explained by the factor.
+
+00:01:04.635 --> 00:01:11.405
+The stock's exposure to the factor has a couple commonly used names: factor exposure,
+
+00:01:11.405 --> 00:01:16.204
+factor loading, factor sensitivity, or factor beta.
+
+00:01:16.204 --> 00:01:20.289
+We'll refer to this as the factor exposure.
+
+00:01:20.290 --> 00:01:26.080
+The rate of return of the factor is the percent change of a particular factor.
+
+00:01:26.079 --> 00:01:29.295
+We'll call this the factor return.
+
+00:01:29.295 --> 00:01:33.890
+An example of a factor that we've seen before is the market return,
+
+00:01:33.890 --> 00:01:38.905
+as approximated by an index such as the S&amp;P 500.
+
+00:01:38.905 --> 00:01:43.655
+The other contributor to the stock return is the specific return
+
+00:01:43.655 --> 00:01:48.460
+which is the return of the stock that is not explained by the factors in the model.
+
+00:01:48.459 --> 00:01:54.914
+This may also be referred to as the idiosyncratic return or idiosyncratic shock.
+
+00:01:54.915 --> 00:01:58.090
+We'll call this the specific return.
+
+00:01:58.090 --> 00:02:01.234
+So, to summarize, the stock return equals
+
+00:02:01.234 --> 00:02:07.375
+the factor exposure times the factor return plus the specific return.
+
+00:02:07.375 --> 00:02:12.675
+A model can have multiple factors contributing to the return of the stock.
+
+00:02:12.675 --> 00:02:16.713
+So, for instance, the return can be modeled as the contribution
+
+00:02:16.713 --> 00:02:20.789
+of one factor plus the contribution of a second factor.
+
+00:02:20.789 --> 00:02:24.650
+As before, the specific return represents the part of
+
+00:02:24.650 --> 00:02:29.000
+the stock return that isn't explained by the chosen factors.
+
+00:02:29.000 --> 00:02:35.074
+In general, we can choose any number of factors in order to model stock's return.
+
+00:02:35.074 --> 00:02:39.524
+We can refer to this as a multi-factor model of returns.
+
+00:02:39.525 --> 00:02:43.705
+Cool. So, that was how we model the return of a single stock,
+
+00:02:43.705 --> 00:02:45.230
+but as you may guess,
+
+00:02:45.229 --> 00:02:48.769
+we're going to be more interested in a portfolio of stocks.
+
+00:02:48.770 --> 00:02:54.130
+Let's see how factor models describe a portfolio of stocks next.
+

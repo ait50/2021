@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.915
+Let's begin with our matrix notation,
+
+00:00:02.915 --> 00:00:05.689
+and consider a portfolio with two stocks,
+
+00:00:05.690 --> 00:00:08.830
+in a model that uses two factors.
+
+00:00:08.830 --> 00:00:12.539
+The variance of the portfolio is the weighted sum of
+
+00:00:12.539 --> 00:00:17.509
+the variances and pairwise covariances of its stocks.
+
+00:00:17.510 --> 00:00:21.560
+We can think of each stock as a different flavor of ice cream,
+
+00:00:21.559 --> 00:00:25.164
+such as butter pecan or mint chocolate chip.
+
+00:00:25.164 --> 00:00:27.265
+We'll start with the first stock.
+
+00:00:27.265 --> 00:00:34.575
+Its return is modeled as a linear combination of the factors plus the specific return.
+
+00:00:34.575 --> 00:00:38.480
+These factors are used in the model to describe all the stocks.
+
+00:00:38.479 --> 00:00:43.053
+So, in the context of risk modeling we call these common factors.
+
+00:00:43.054 --> 00:00:46.965
+Risk factors, or common risk factors.
+
+00:00:46.965 --> 00:00:50.890
+Let's take the variance of both sides of the equation.
+
+00:00:50.890 --> 00:00:56.914
+This becomes the variance of each factor plus twice the covariance of the factors.
+
+00:00:56.914 --> 00:01:00.500
+Plus the variance of the specific return.
+
+00:01:00.500 --> 00:01:05.569
+The model assumption is that the specific return is not correlated with the factors.
+
+00:01:05.569 --> 00:01:10.264
+So, this specific return doesn't show up in any covariance operator.
+
+00:01:10.265 --> 00:01:14.890
+You can pause the video to study these formulas as needed.
+
+00:01:15.049 --> 00:01:18.469
+For constant like the factor exposure,
+
+00:01:18.469 --> 00:01:23.129
+we can move it to the outside of the variance operator if we square it.
+
+00:01:23.129 --> 00:01:30.089
+Similarly, we can move the factor exposures to the outside of the covariance operators.
+
+00:01:30.200 --> 00:01:37.480
+The sum of the first three terms containing the factors is the systematic variance.
+
+00:01:37.829 --> 00:01:44.465
+The last term is the specific variance also called the idiosyncratic variance.
+
+00:01:44.465 --> 00:01:48.799
+If we think of this first stock as butter pecan ice cream,
+
+00:01:48.799 --> 00:01:53.734
+then the systematic variance describes the main ingredients such as sugar and milk.
+
+00:01:53.734 --> 00:01:57.890
+While the specific variance describes the pecans.
+
+00:01:58.049 --> 00:02:01.959
+Okay. That was the variance of one stock.
+
+00:02:01.959 --> 00:02:03.824
+Let's look at the second stock,
+
+00:02:03.825 --> 00:02:08.104
+and see how these two mixed together to create a bowl of ice cream.
+
+00:02:08.104 --> 00:02:11.489
+I mean, a portfolio of stocks.
+

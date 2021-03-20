@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.975
+Any theoretical dollar neutral portfolio,
+
+00:00:02.975 --> 00:00:06.845
+we technically wouldn't be using any cash to create the positions.
+
+00:00:06.844 --> 00:00:09.705
+In fact, sometimes, in academic papers,
+
+00:00:09.705 --> 00:00:13.980
+they call these portfolios, zero investment portfolios.
+
+00:00:13.980 --> 00:00:17.080
+In real life, there are transaction costs,
+
+00:00:17.079 --> 00:00:19.664
+margin costs for shorting positions,
+
+00:00:19.664 --> 00:00:21.980
+and differences in timing of trades.
+
+00:00:21.980 --> 00:00:25.945
+For the theoretical portfolio used to evaluate a factor,
+
+00:00:25.945 --> 00:00:28.149
+let's not worry about those issues.
+
+00:00:28.149 --> 00:00:34.128
+So, now, let's visualize how we convert a portfolio into a dollar neutral portfolio.
+
+00:00:34.128 --> 00:00:37.219
+Let's say we have some portfolio weights and
+
+00:00:37.219 --> 00:00:40.354
+want to adjust them so that they are dollar neutral.
+
+00:00:40.354 --> 00:00:44.489
+For example, let's say we have two stocks in the portfolio,
+
+00:00:44.490 --> 00:00:46.645
+the weights are both positive,
+
+00:00:46.645 --> 00:00:49.359
+so the portfolio is not dollar neutral.
+
+00:00:49.359 --> 00:00:54.340
+If you imagine the weights as actual weights on a balancing scale,
+
+00:00:54.340 --> 00:00:57.425
+the scale would be tilting because it's heavier
+
+00:00:57.424 --> 00:01:01.129
+on the positive side compared to the negative side.
+
+00:01:01.130 --> 00:01:03.950
+Notice that the relative difference between
+
+00:01:03.950 --> 00:01:07.909
+these two stocks is the weight of A minus the weight of B.
+
+00:01:07.909 --> 00:01:10.859
+Keep this in mind for what's coming next.
+
+00:01:10.859 --> 00:01:15.825
+If we were to shift the weights to the left towards the negative direction,
+
+00:01:15.825 --> 00:01:18.954
+we can keep going until the weights are balanced.
+
+00:01:18.954 --> 00:01:21.679
+Notice that the relative difference between
+
+00:01:21.680 --> 00:01:25.050
+the weights of the two stocks is still the same.
+
+00:01:25.049 --> 00:01:29.504
+So, how did we shift our weights to make the portfolio dollar neutral?
+
+00:01:29.504 --> 00:01:32.209
+Well, we actually took the average of
+
+00:01:32.209 --> 00:01:36.214
+the weights and then subtracted that average from each of the weights.
+
+00:01:36.215 --> 00:01:38.680
+Does this look familiar to you?
+
+00:01:38.680 --> 00:01:40.785
+Subtracting the mean of the weights,
+
+00:01:40.784 --> 00:01:43.179
+D means the portfolio weights.
+
+00:01:43.180 --> 00:01:46.355
+The sum of the resulting weights now equals zero.
+
+00:01:46.355 --> 00:01:49.200
+So, the portfolio is dollar neutral.
+

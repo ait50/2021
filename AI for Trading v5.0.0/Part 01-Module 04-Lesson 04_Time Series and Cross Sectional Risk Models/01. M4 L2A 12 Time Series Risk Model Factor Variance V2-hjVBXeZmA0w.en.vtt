@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.600
+So, you've seen the structure of the risk factor model and how it
+
+00:00:03.600 --> 00:00:08.070
+attempts to explain a portfolio's risk in terms of the common risk factors.
+
+00:00:08.070 --> 00:00:11.565
+Let's see how this works with a factor that we've seen before,
+
+00:00:11.564 --> 00:00:17.204
+the market return which was introduced when discussing the capital asset pricing model.
+
+00:00:17.204 --> 00:00:21.889
+Our goal is to use the market return as a single factor in
+
+00:00:21.890 --> 00:00:24.289
+our Risk Factor Model and then fill in
+
+00:00:24.289 --> 00:00:27.949
+the values that we need to calculate the portfolio variance.
+
+00:00:27.949 --> 00:00:31.849
+First, there is the covariance matrix of factors.
+
+00:00:31.850 --> 00:00:33.719
+Since there's only one factor,
+
+00:00:33.719 --> 00:00:36.409
+it has one value which is the variance of
+
+00:00:36.409 --> 00:00:40.799
+the market's excess return above the risk-free rate.
+
+00:00:40.990 --> 00:00:44.030
+To make our example more manageable,
+
+00:00:44.030 --> 00:00:46.325
+we'll work with just two stocks.
+
+00:00:46.325 --> 00:00:48.630
+For the matrix of factor exposures,
+
+00:00:48.630 --> 00:00:52.745
+we want the factor exposure of each stock to the single factor,
+
+00:00:52.744 --> 00:00:54.989
+which in our model, is the market return.
+
+00:00:54.990 --> 00:00:59.660
+So the factor exposure matrix is a column vector with two rows,
+
+00:00:59.659 --> 00:01:04.604
+and the transpose is a row vector with two columns.
+
+00:01:04.605 --> 00:01:10.245
+We'll also fill in the matrix of specific returns for each stock.
+
+00:01:10.245 --> 00:01:16.219
+Let's see how we get the values that we'll put into the matrices of this risk model.
+
+00:01:16.219 --> 00:01:18.864
+For the variance of the market factor,
+
+00:01:18.864 --> 00:01:21.515
+we can collect a time series of an index.
+
+00:01:21.515 --> 00:01:27.474
+For instance, the S and P 500 if the stock universe is focused on the US stock market.
+
+00:01:27.474 --> 00:01:30.509
+We can choose a time window of four weeks,
+
+00:01:30.510 --> 00:01:32.315
+eight weeks, or 12 weeks.
+
+00:01:32.314 --> 00:01:37.530
+Then calculating the variance of this time series gives an estimate for this value.
+
+00:01:37.530 --> 00:01:41.739
+There's a bit of a judgement call as to what time window to use.
+
+00:01:41.739 --> 00:01:43.569
+Too short of a sample,
+
+00:01:43.569 --> 00:01:45.634
+and the data is mostly noise.
+
+00:01:45.635 --> 00:01:47.420
+Too long of a sample,
+
+00:01:47.420 --> 00:01:49.670
+and the earlier data points may no longer be
+
+00:01:49.670 --> 00:01:52.950
+useful for estimating the current variance of the market.
+
+00:01:52.950 --> 00:01:57.140
+Also, the time window used for analysis scales
+
+00:01:57.140 --> 00:02:01.420
+with a holding period and the frequency at which we expect to trade.
+
+00:02:01.420 --> 00:02:03.094
+So, for daily trading,
+
+00:02:03.094 --> 00:02:05.879
+we may try different windows of several weeks.
+
+00:02:05.879 --> 00:02:08.590
+For strategies with longer holding periods,
+
+00:02:08.590 --> 00:02:11.390
+we may use a longer time window such as one,
+
+00:02:11.389 --> 00:02:13.584
+two, or three years.
+
+00:02:13.585 --> 00:02:17.730
+So now we've estimated one value in the risk model.
+

@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.490
+Okay. So, we've learned a little about factor models.
+
+00:00:03.490 --> 00:00:05.905
+So, how are they used in practice?
+
+00:00:05.905 --> 00:00:07.940
+It might not be what you expect.
+
+00:00:07.940 --> 00:00:12.975
+Most practitioners don't use factor models to explicitly model asset returns.
+
+00:00:12.974 --> 00:00:16.675
+Factor modeling has a long history in academic research,
+
+00:00:16.675 --> 00:00:21.565
+and some of these methods were used in the past to explicitly model returns time series.
+
+00:00:21.565 --> 00:00:24.510
+But when devising and testing trading strategies,
+
+00:00:24.510 --> 00:00:27.690
+the models are typically used slightly differently.
+
+00:00:27.690 --> 00:00:32.965
+We've seen the equations for returns and for risk in terms of factors.
+
+00:00:32.965 --> 00:00:36.020
+One key goal is that we want to be able to use
+
+00:00:36.020 --> 00:00:39.655
+these expressions in a portfolio optimization problem.
+
+00:00:39.655 --> 00:00:44.935
+Now, let me tell you about a couple of simplifications that quants make at this point.
+
+00:00:44.935 --> 00:00:48.120
+Let's take the matrix of factor exposures.
+
+00:00:48.119 --> 00:00:51.289
+As we've said, a value in this matrix represents
+
+00:00:51.289 --> 00:00:56.004
+the sensitivity of an individual asset to a specific factor return.
+
+00:00:56.005 --> 00:01:03.255
+A portfolio with weights x has a portfolio factor exposure of B transpose x.
+
+00:01:03.255 --> 00:01:06.549
+Now, let's introduce a new idea.
+
+00:01:06.549 --> 00:01:10.390
+Let's say we think there are actually two types of factors.
+
+00:01:10.390 --> 00:01:15.079
+One type of factor is predictive of the mean of the distribution of returns.
+
+00:01:15.079 --> 00:01:20.144
+The other type is predictive of the variance of the distribution, but not of the mean.
+
+00:01:20.144 --> 00:01:22.894
+The first describes our alpha factors,
+
+00:01:22.894 --> 00:01:25.983
+while the second describes our risk factors.
+
+00:01:25.983 --> 00:01:31.179
+We'd rather our portfolio be minimally exposed to risk factors.
+
+00:01:31.180 --> 00:01:32.945
+The drivers of volatility.
+
+00:01:32.944 --> 00:01:36.589
+We can try to make this happen by placing constraints on
+
+00:01:36.590 --> 00:01:42.245
+B transpose x that only apply to factors that we think are drivers of volatility.
+
+00:01:42.245 --> 00:01:46.990
+We do this typically in the constraints section of the optimization problem.
+
+00:01:46.989 --> 00:01:52.669
+This will specifically reduce the exposure of our portfolio to these risk factors.
+
+00:01:52.670 --> 00:01:57.415
+However, we don't constrain the factors that are drivers of mean returns.
+
+00:01:57.415 --> 00:01:59.515
+So, we drop them from B.
+
+00:01:59.515 --> 00:02:05.159
+Hence, you can think of B now as the risk factor loading matrix only.
+
+00:02:05.159 --> 00:02:08.299
+The alpha factors aren't kept in here because we're not
+
+00:02:08.300 --> 00:02:12.180
+going to constrain them the way we do with the risk factors.
+
+00:02:12.180 --> 00:02:16.969
+What about F and S. We think about F as
+
+00:02:16.969 --> 00:02:20.164
+the covariance matrix of factor returns that have
+
+00:02:20.164 --> 00:02:23.620
+large impact on variance across all stocks,
+
+00:02:23.620 --> 00:02:26.805
+and S as the variance that's left over.
+
+00:02:26.805 --> 00:02:30.665
+In fact, we define risk factors precisely as
+
+00:02:30.664 --> 00:02:35.189
+factors that have large impact on variance across all stocks.
+
+00:02:35.189 --> 00:02:41.344
+So, we include only the risk factors in F. Anything that's left over,
+
+00:02:41.344 --> 00:02:46.199
+like variance from the alpha factors we took out and everything we can't explain,
+
+00:02:46.199 --> 00:02:54.429
+is accounted for in S. We can use F and S together to constrain portfolio risk.
+
+00:02:54.430 --> 00:02:58.599
+The key takeaway here though is that, in practice,
+
+00:02:58.599 --> 00:03:03.454
+B and F explicitly contain only information about risk factors.
+
+00:03:03.455 --> 00:03:07.110
+S says nothing explicitly about alpha.
+
+00:03:07.110 --> 00:03:10.910
+Practitioners will usually buy F, S,
+
+00:03:10.909 --> 00:03:13.085
+and B from a commercial provider,
+
+00:03:13.085 --> 00:03:15.530
+and now we can see why that is sufficient.
+
+00:03:15.530 --> 00:03:19.655
+We typically don't mix our alphas and risk factors.
+
+00:03:19.655 --> 00:03:23.675
+What about the alpha factors we took out from B?
+
+00:03:23.675 --> 00:03:29.735
+We are left with some number of alpha factors which are values per stock per factor.
+
+00:03:29.735 --> 00:03:31.540
+What do we do with those?
+
+00:03:31.539 --> 00:03:36.129
+This is where the creation of the objective function and optimization comes in.
+
+00:03:36.129 --> 00:03:39.129
+We need to combine these into a single vector,
+
+00:03:39.129 --> 00:03:41.104
+which we will do in later projects,
+
+00:03:41.104 --> 00:03:44.669
+and optimize our resulting weight to these.
+

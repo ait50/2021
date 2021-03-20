@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.934
+Many fundamental factors are different variations of the price to earnings ratio.
+
+00:00:04.934 --> 00:00:09.149
+Note that [inaudible] typically use the data measured as earnings per
+
+00:00:09.150 --> 00:00:14.339
+share divided by price instead of price divided by earnings.
+
+00:00:14.339 --> 00:00:18.160
+Why? Earnings could be zero or close to zero.
+
+00:00:18.160 --> 00:00:21.240
+So, the data using price divided by earnings may end
+
+00:00:21.239 --> 00:00:24.875
+up with numbers close to infinity or even null values.
+
+00:00:24.875 --> 00:00:30.000
+Using earnings divided by price helps to reduce these kinds of data issues.
+
+00:00:30.000 --> 00:00:32.570
+The book to price ratio may be
+
+00:00:32.570 --> 00:00:36.799
+a good alternative to earnings divided by price because earnings
+
+00:00:36.799 --> 00:00:39.529
+may be negative while book to price ratios remain
+
+00:00:39.530 --> 00:00:43.820
+positive as long as the company's net asset value is positive.
+
+00:00:43.820 --> 00:00:48.740
+Other variations of fundamental ratios try to remove accounting choices
+
+00:00:48.740 --> 00:00:53.820
+from the metric by looking at direct cash flows instead of earnings.
+
+00:00:53.820 --> 00:00:56.384
+Example of these include cash flow,
+
+00:00:56.384 --> 00:01:00.545
+earnings before interest, tax depreciation, and amortization.
+
+00:01:00.545 --> 00:01:03.440
+You don't need to dive into accounting for this lesson,
+
+00:01:03.439 --> 00:01:07.144
+but it helps to get a sense of how earnings are different from cash flow.
+
+00:01:07.144 --> 00:01:12.340
+Cash flow is the amount of cash flowing into and out of a company.
+
+00:01:12.340 --> 00:01:16.015
+The cash flow can be a more volatile metric than earnings,
+
+00:01:16.015 --> 00:01:19.875
+but it's also more difficult for company executives to manipulate.
+
+00:01:19.875 --> 00:01:22.340
+Cash flow maybe more volatile due to
+
+00:01:22.340 --> 00:01:26.495
+large upfront capital costs such as buying expensive equipment.
+
+00:01:26.495 --> 00:01:29.900
+Accounting smooths out the earnings by spreading out
+
+00:01:29.900 --> 00:01:33.500
+the cost of these purchases over the lifetime of the asset.
+
+00:01:33.500 --> 00:01:38.760
+So, earning numbers are more smooth and less jumpy compared to cash flow.
+
+00:01:38.760 --> 00:01:41.510
+The earnings numbers come from the interpretations of
+
+00:01:41.510 --> 00:01:45.995
+accounting rules and there can be some judgment in applying these accounting rules.
+
+00:01:45.995 --> 00:01:48.420
+This is not the case with cash.
+
+00:01:48.420 --> 00:01:52.060
+With cash, it's either there or it isn't.
+
+00:01:52.060 --> 00:01:56.719
+Since accountants decide how to spread out the initial purchase over time,
+
+00:01:56.719 --> 00:02:01.390
+there is a human element in earnings that may add noise to the data.
+
+00:02:01.390 --> 00:02:06.960
+Whereas cash flows are a more direct measure of the state of the company's finances.
+

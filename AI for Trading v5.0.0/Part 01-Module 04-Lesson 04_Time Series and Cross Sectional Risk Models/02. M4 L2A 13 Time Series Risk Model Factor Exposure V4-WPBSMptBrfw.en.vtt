@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.285
+To estimate the other variables,
+
+00:00:02.285 --> 00:00:04.919
+we'll also collect a time series of data for
+
+00:00:04.919 --> 00:00:08.804
+each stock and make use of the capital asset pricing model.
+
+00:00:08.804 --> 00:00:12.150
+Remember that the capital asset pricing model assumes that
+
+00:00:12.150 --> 00:00:16.740
+the stock's excess return above the risk-free rate can be modeled as
+
+00:00:16.739 --> 00:00:19.829
+its exposure to the market's excess return above
+
+00:00:19.829 --> 00:00:25.959
+the risk-free rate multiplied by the market's excess return above the risk-free rate.
+
+00:00:27.480 --> 00:00:30.425
+To make this discussion less wordy,
+
+00:00:30.425 --> 00:00:33.200
+I'll just say market's excess return when
+
+00:00:33.200 --> 00:00:36.530
+referring to the market excess return above the risk-free rate.
+
+00:00:36.530 --> 00:00:39.740
+I'll also just say stock's excess return when
+
+00:00:39.740 --> 00:00:43.575
+referring to the stock's excess return above the risk-free rate.
+
+00:00:43.575 --> 00:00:46.640
+Also, notice that the market exposure,
+
+00:00:46.640 --> 00:00:50.160
+which is what we've been calling this Beta variable when discussing the CAPM,
+
+00:00:50.159 --> 00:00:54.625
+is called a factor exposure when we're discussing factor models.
+
+00:00:54.625 --> 00:00:57.604
+The term factor exposure is a more general term
+
+00:00:57.604 --> 00:01:01.375
+that describes any factor including the market factor.
+
+00:01:01.375 --> 00:01:06.625
+We're going to demonstrate one way to estimate factor exposures using regression.
+
+00:01:06.625 --> 00:01:11.120
+But keep in mind that factor exposure estimation is not a settled science.
+
+00:01:11.120 --> 00:01:13.340
+So, there are also other approaches to
+
+00:01:13.340 --> 00:01:16.930
+estimating a stock's exposure to a particular factor.
+
+00:01:16.930 --> 00:01:20.720
+We'll get a time series of the market's excess return,
+
+00:01:20.719 --> 00:01:26.554
+a time series of the first stock's excess return and run them through a regression.
+
+00:01:26.555 --> 00:01:33.050
+The coefficient Beta is an estimate of the first stock's exposure to this one factor.
+
+00:01:33.049 --> 00:01:37.849
+We can do the same with a time series of the second stock's returns and
+
+00:01:37.849 --> 00:01:42.729
+estimate the factor exposure of the second stock to this one factor.
+

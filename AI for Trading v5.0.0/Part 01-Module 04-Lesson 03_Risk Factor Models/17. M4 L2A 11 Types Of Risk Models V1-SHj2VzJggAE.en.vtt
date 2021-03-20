@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.910
+Coming up, we'll cover major flavors of the risk model.
+
+00:00:03.910 --> 00:00:08.850
+We'll start with a risk model that uses a single risk factor, the market return.
+
+00:00:08.849 --> 00:00:12.414
+This is the capital asset pricing model which you've learned earlier.
+
+00:00:12.414 --> 00:00:16.839
+Then, we'll build on this to learn about the Fama French three factor model.
+
+00:00:16.839 --> 00:00:20.969
+The Fama French model which was proposed by Eugene Fama and
+
+00:00:20.969 --> 00:00:26.489
+Kenneth French is the basis for the movement towards the multifactor model of assets.
+
+00:00:26.489 --> 00:00:31.344
+In fact, many papers that study or propose potential alpha factors,
+
+00:00:31.344 --> 00:00:36.159
+can trace some of their methodology to the Fama-French three factor model.
+
+00:00:36.159 --> 00:00:39.379
+The cap m and Fama French three factor model are
+
+00:00:39.380 --> 00:00:42.980
+both examples of time series risk models.
+
+00:00:42.979 --> 00:00:46.399
+We'll then introduce a cross-sectional risk model and
+
+00:00:46.399 --> 00:00:50.015
+see how they're different from time series risk models.
+
+00:00:50.015 --> 00:00:51.689
+In a later lesson,
+
+00:00:51.689 --> 00:00:54.979
+we'll also introduce a model of Leighton risk factors using
+
+00:00:54.979 --> 00:00:59.034
+a kind of unsupervised machine learning principle component analysis.
+
+00:00:59.034 --> 00:01:03.379
+In quanta investing, you may come across all three types of risk models,
+
+00:01:03.380 --> 00:01:06.635
+times series, cross sectional or PCA.
+
+00:01:06.635 --> 00:01:09.079
+So, it helps to understand each one.
+
+00:01:09.079 --> 00:01:12.890
+You will use the PCA risk model in this next project and we'll
+
+00:01:12.890 --> 00:01:17.040
+use one of the time series models in term two of this program.
+

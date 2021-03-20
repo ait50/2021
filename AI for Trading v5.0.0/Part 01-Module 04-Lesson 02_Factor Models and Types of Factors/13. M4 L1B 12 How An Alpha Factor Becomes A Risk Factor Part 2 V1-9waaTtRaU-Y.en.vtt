@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+We can see a similar process in the stock market.
+
+00:00:03.390 --> 00:00:09.015
+If you find an Alpha signal that suggests that a stock will have positive future returns,
+
+00:00:09.015 --> 00:00:12.554
+the assumption of future higher returns means that the price
+
+00:00:12.554 --> 00:00:16.509
+today is lower then the expected future price.
+
+00:00:16.510 --> 00:00:21.715
+In other words, its current market price is cheap according to the signal.
+
+00:00:21.714 --> 00:00:24.410
+If you buy it now at this price,
+
+00:00:24.410 --> 00:00:26.640
+and if your hypothesis was accurate,
+
+00:00:26.640 --> 00:00:30.190
+you'll be expecting the price to rise in the future.
+
+00:00:30.190 --> 00:00:33.695
+Now, what if lots of other investors also find
+
+00:00:33.695 --> 00:00:37.835
+the same signal and also decide to buy the stock now?
+
+00:00:37.835 --> 00:00:41.770
+The buying activity will push the stock price higher.
+
+00:00:41.770 --> 00:00:44.445
+So, by the time you get around to buying yourself,
+
+00:00:44.445 --> 00:00:46.414
+the price has already risen.
+
+00:00:46.414 --> 00:00:48.439
+If you buy it like everyone else,
+
+00:00:48.439 --> 00:00:52.354
+you may find that it doesn't produce the positive return you were hoping for.
+
+00:00:52.354 --> 00:00:56.449
+This is an example of the efficient market hypothesis,
+
+00:00:56.450 --> 00:01:01.975
+which states that assets are fairly priced based on publicly available information.
+
+00:01:01.975 --> 00:01:06.810
+The factor is no longer helping to drive the mean return of our investments.
+
+00:01:06.810 --> 00:01:11.030
+Instead, the factor is triggering the market price to move because
+
+00:01:11.030 --> 00:01:15.424
+it is known and being used for trade decisions by many other investors.
+
+00:01:15.424 --> 00:01:18.430
+So this factor is now driving the movement of the stock.
+
+00:01:18.430 --> 00:01:20.675
+Every time the factor signal changes,
+
+00:01:20.674 --> 00:01:23.355
+the market price also changes soon after.
+
+00:01:23.355 --> 00:01:27.200
+We now say that the factor is a risk factor.
+
+00:01:27.200 --> 00:01:31.400
+So in summary, good Alpha factors enable us to find
+
+00:01:31.400 --> 00:01:35.090
+mispricings and seek a competitive edge in the market,
+
+00:01:35.090 --> 00:01:38.480
+which drives the mean return of a portfolio.
+
+00:01:38.480 --> 00:01:41.660
+When Alpha factors become two well-known,
+
+00:01:41.659 --> 00:01:44.780
+then they end up triggering the market to move as a changes,
+
+00:01:44.780 --> 00:01:47.659
+which drives the variance of our portfolio's return,
+
+00:01:47.659 --> 00:01:49.804
+but no longer the mean of the return.
+
+00:01:49.805 --> 00:01:52.115
+So now it's a risk factor.
+
+00:01:52.114 --> 00:01:57.829
+Market participants historically have had to use their judgment and experience to decide
+
+00:01:57.829 --> 00:02:03.670
+which factors to use as Alpha factors and which factors to use as risk factors.
+
+00:02:03.670 --> 00:02:06.375
+Can we use AI to do this instead?
+
+00:02:06.375 --> 00:02:12.759
+Yes we can. We'll go in depth into Alpha factor combination in term two.
+

@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.165
+So, now we've seen how Fama and French used
+
+00:00:03.165 --> 00:00:06.450
+theoretical portfolios to create factor returns,
+
+00:00:06.450 --> 00:00:09.910
+time series that represents size and value.
+
+00:00:09.910 --> 00:00:14.535
+What Fama and French did when combining these factors was to define
+
+00:00:14.535 --> 00:00:19.335
+theoretical portfolios that were based on both size and value.
+
+00:00:19.335 --> 00:00:21.580
+Let's see what I mean by that,
+
+00:00:21.579 --> 00:00:24.699
+first sort by market cap,
+
+00:00:24.699 --> 00:00:31.079
+define the group of small stocks and also define the group of big stocks.
+
+00:00:31.079 --> 00:00:33.750
+Then, for the small group,
+
+00:00:33.750 --> 00:00:36.189
+sort by book to market value.
+
+00:00:36.189 --> 00:00:43.795
+Divide this small group into three groups: value, neutral and growth.
+
+00:00:43.795 --> 00:00:46.745
+Do the same for the big group.
+
+00:00:46.744 --> 00:00:49.134
+Sort the stocks by market cap.
+
+00:00:49.134 --> 00:00:51.500
+Sort them by book to market value,
+
+00:00:51.500 --> 00:00:57.424
+then divide them into three groups: value, neutral and growth.
+
+00:00:57.424 --> 00:01:02.659
+Now, we'll effectively have six portfolios which are six building blocks,
+
+00:01:02.659 --> 00:01:04.280
+with which we'll use to construct
+
+00:01:04.280 --> 00:01:09.430
+the long short portfolios representing the size and value factors.
+
+00:01:09.430 --> 00:01:13.970
+The small minus big size factor is the sum of
+
+00:01:13.969 --> 00:01:19.459
+the three small portfolios minus the sum of the three big portfolios.
+
+00:01:19.459 --> 00:01:23.629
+The high minus low value factor is the sum of
+
+00:01:23.629 --> 00:01:28.549
+two value portfolios minus the sum of two growth portfolios.
+
+00:01:28.549 --> 00:01:34.390
+Notice that the two neutral portfolios aren't used in this formula.
+
+00:01:34.390 --> 00:01:37.045
+Okay, one more thing.
+
+00:01:37.045 --> 00:01:40.355
+Notice that small minus big was constructed using
+
+00:01:40.355 --> 00:01:41.750
+three building blocks for
+
+00:01:41.750 --> 00:01:45.775
+the long position and three building blocks for the short position.
+
+00:01:45.775 --> 00:01:49.295
+However, high minus low was built using
+
+00:01:49.295 --> 00:01:53.015
+two building blocks for the loan and two for the short.
+
+00:01:53.015 --> 00:01:56.969
+Since we plan to use both factors in a multiple regression,
+
+00:01:56.969 --> 00:01:59.810
+we want to even out the effects of each factor.
+
+00:01:59.810 --> 00:02:06.715
+So, we'll divide the small minus big by three and divide the high minus low by two.
+
+00:02:06.715 --> 00:02:10.379
+You can pause here to study these formulas.
+

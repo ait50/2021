@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.625
+Well, you made it.
+
+00:00:02.625 --> 00:00:04.500
+Made what?
+
+00:00:04.500 --> 00:00:06.480
+Made it to the,
+
+00:00:06.480 --> 00:00:08.925
+in my opinion, best part of the term.
+
+00:00:08.925 --> 00:00:11.130
+This is where it all comes to life.
+
+00:00:11.130 --> 00:00:15.075
+That's part of the term but they've already learned so much good stuff.
+
+00:00:15.074 --> 00:00:17.684
+They've already created their own trading strategies
+
+00:00:17.684 --> 00:00:20.519
+and they're already developing strong market intuition.
+
+00:00:20.519 --> 00:00:23.000
+They have an idea for how quant research works and
+
+00:00:23.000 --> 00:00:25.554
+how production quality, trading strategies work.
+
+00:00:25.554 --> 00:00:27.359
+They know about markets, volatility,
+
+00:00:27.359 --> 00:00:29.548
+outliers, indices and ETFs.
+
+00:00:29.548 --> 00:00:32.640
+They even know how to create optimal diverse portfolios,
+
+00:00:32.640 --> 00:00:35.549
+trading off volatility or risk with return.
+
+00:00:35.549 --> 00:00:38.969
+Yeah, that's true, and learning all of those things help bring them to
+
+00:00:38.969 --> 00:00:42.409
+the point where they can fully appreciate what they're doing now.
+
+00:00:42.409 --> 00:00:45.199
+But now we're going to put it all together and they're
+
+00:00:45.200 --> 00:00:48.260
+finally going to see the whole process end to end,
+
+00:00:48.259 --> 00:00:50.104
+from an initial hypothesis,
+
+00:00:50.104 --> 00:00:51.804
+maybe from an academic paper,
+
+00:00:51.804 --> 00:00:56.140
+we'll see a few real life examples to quantify non-hypothesis,
+
+00:00:56.140 --> 00:01:00.424
+to combining information of many types from many sources
+
+00:01:00.424 --> 00:01:05.090
+about drivers of mean returns and drivers of volatility into a single model.
+
+00:01:05.090 --> 00:01:08.840
+Then using optimization tools we've already introduced,
+
+00:01:08.840 --> 00:01:11.584
+to turn that into a production quality,
+
+00:01:11.584 --> 00:01:16.689
+theoretical tradable portfolio ready for a barrage of further testing.
+
+00:01:16.689 --> 00:01:19.004
+Well you certainly have my attention.
+
+00:01:19.004 --> 00:01:21.284
+Is this how real quants do it?
+
+00:01:21.284 --> 00:01:24.929
+Absolutely. This is how real quants do it.
+
+00:01:24.930 --> 00:01:26.850
+Well, that's exciting.
+
+00:01:26.849 --> 00:01:30.664
+Wait, when you mentioned ways to quantify a hypothesis,
+
+00:01:30.665 --> 00:01:33.065
+are you referring to the alphas that we discussed
+
+00:01:33.064 --> 00:01:35.780
+back when we were talking about the quantum workflow?
+
+00:01:35.780 --> 00:01:37.745
+Yep. That's exactly right.
+
+00:01:37.745 --> 00:01:40.555
+We're going to talk about alphas in great detail.
+
+00:01:40.555 --> 00:01:45.185
+Okay. So, students are going to hear about all of these in these lessons.
+
+00:01:45.185 --> 00:01:47.674
+But will they get hands-on experience to?
+
+00:01:47.674 --> 00:01:50.814
+Absolutely, your final project for this term,
+
+00:01:50.814 --> 00:01:55.009
+will give you a chance to demonstrate your understanding of this whole process.
+
+00:01:55.010 --> 00:01:59.570
+Frankly, I'm excited that you'll have a chance to learn about these fundamental tools.
+
+00:01:59.569 --> 00:02:02.569
+I actually don't know of anywhere else where you can find
+
+00:02:02.569 --> 00:02:05.884
+this kind of practical instruction in these methods.
+
+00:02:05.885 --> 00:02:09.950
+In this lesson, you'll get an inside view of how practitioners translate
+
+00:02:09.949 --> 00:02:14.469
+ideas into alpha models and then implement those alpha models in code.
+
+00:02:14.469 --> 00:02:19.745
+Personally, I'm also very excited that Jonathan has designed this module to give you
+
+00:02:19.745 --> 00:02:22.939
+a real practitioner's perspective of how to combine
+
+00:02:22.939 --> 00:02:26.719
+data with an idea and implement it in code.
+
+00:02:26.719 --> 00:02:28.849
+Yep, this is awesome.
+
+00:02:28.849 --> 00:02:30.949
+We're all super excited that you've reached
+
+00:02:30.949 --> 00:02:33.439
+this point in your journey with us and we hope you are too.
+
+00:02:33.439 --> 00:02:36.240
+Without further ado, let's get started.
+

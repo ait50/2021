@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.075
+So far in this lesson,
+
+00:00:02.075 --> 00:00:03.165
+you've learned how to use
+
+00:00:03.165 --> 00:00:07.115
+optimization techniques to come up with optimal portfolio weights.
+
+00:00:07.115 --> 00:00:10.315
+Is your job done? Not really.
+
+00:00:10.314 --> 00:00:11.779
+As a portfolio manager,
+
+00:00:11.779 --> 00:00:14.399
+the next step after portfolio construction,
+
+00:00:14.400 --> 00:00:16.980
+is to constantly monitor your portfolio,
+
+00:00:16.980 --> 00:00:19.625
+and make sure it is in line with your goals.
+
+00:00:19.625 --> 00:00:24.795
+Over time, assets produce returns that can differ from those originally estimated.
+
+00:00:24.795 --> 00:00:28.794
+So, the amount of money invested in different assets, changes.
+
+00:00:28.794 --> 00:00:31.250
+Therefore, the portfolio weights,
+
+00:00:31.250 --> 00:00:36.435
+which represent the proportion of money invested in each asset, change.
+
+00:00:36.435 --> 00:00:40.859
+In order to make sure the portfolio maintains the desired set of weights,
+
+00:00:40.859 --> 00:00:42.714
+we need two rebalance.
+
+00:00:42.715 --> 00:00:47.705
+For example, say we started with a strategy in which we wanted to invest
+
+00:00:47.704 --> 00:00:53.585
+50% of our portfolio in a solar energy company and 50% in a construction company.
+
+00:00:53.585 --> 00:00:56.945
+Let's say the solar energy company does really well
+
+00:00:56.945 --> 00:01:00.170
+and it's value appreciates such that the shares we've invested in it,
+
+00:01:00.170 --> 00:01:04.019
+now represent 70% of the value of our portfolio.
+
+00:01:04.019 --> 00:01:07.399
+If we wanted to return to the 50% in
+
+00:01:07.400 --> 00:01:10.685
+a solar energy company and 50% in the construction company,
+
+00:01:10.685 --> 00:01:13.609
+we'd sell some shares of the solar energy company,
+
+00:01:13.609 --> 00:01:18.769
+and buy some shares of the construction company to bring us back to 50-50.
+
+00:01:18.769 --> 00:01:21.560
+When you have determined your portfolio weights
+
+00:01:21.560 --> 00:01:24.680
+via optimization and later want to rebalance,
+
+00:01:24.680 --> 00:01:30.070
+you simply re-run the optimization with the same objective function and constraints,
+
+00:01:30.069 --> 00:01:32.184
+but using updated data.
+
+00:01:32.185 --> 00:01:35.600
+Before we discuss different rebalancing strategies,
+
+00:01:35.599 --> 00:01:38.939
+let's consider the costs incurred during rebalancing.
+
+00:01:38.939 --> 00:01:42.899
+Think about it, when you rebalance, you place trades.
+
+00:01:42.900 --> 00:01:47.255
+To place trades, you generally have to pay a broker commissions.
+
+00:01:47.254 --> 00:01:50.824
+These commissions are one type of transaction costs.
+
+00:01:50.825 --> 00:01:55.935
+Transaction costs, are probably the most important costs incurred during rebalancing.
+
+00:01:55.935 --> 00:01:58.560
+But, there are others, such as taxes,
+
+00:01:58.560 --> 00:02:03.945
+like capital gains taxes and the administrative costs of time and labor.
+
+00:02:03.944 --> 00:02:07.625
+Transaction costs can be potentially significant.
+
+00:02:07.625 --> 00:02:09.284
+In the year 2000,
+
+00:02:09.284 --> 00:02:13.340
+the Texas Permanent School Fund rebalanced its portfolio of
+
+00:02:13.340 --> 00:02:17.560
+more than 2,000 securities, 40 portfolio managers,
+
+00:02:17.560 --> 00:02:24.890
+500 million shares, and $17.5 billion were involved not including administrative costs,
+
+00:02:24.889 --> 00:02:28.654
+the transactions themselves costs $120 million.
+
+00:02:28.655 --> 00:02:32.750
+Now, you can see how crazy transaction costs can be.
+
+00:02:32.750 --> 00:02:37.639
+In general, it's hard to model transaction costs directly.
+
+00:02:37.639 --> 00:02:39.489
+To know the transaction costs,
+
+00:02:39.490 --> 00:02:41.314
+you must know what the trade is.
+
+00:02:41.314 --> 00:02:43.664
+But the whole reason to do the optimization,
+
+00:02:43.664 --> 00:02:45.584
+is to know what the trade is.
+
+00:02:45.585 --> 00:02:49.075
+So, instead of trying to estimate transaction costs,
+
+00:02:49.074 --> 00:02:52.144
+we can make the assumption that transaction costs will be
+
+00:02:52.145 --> 00:02:56.165
+proportional to the magnitude of change in the holdings.
+
+00:02:56.164 --> 00:03:00.229
+This is called portfolio turnover and it's basically,
+
+00:03:00.229 --> 00:03:04.664
+the sum total of the changes in the weights on all the assets.
+
+00:03:04.664 --> 00:03:08.870
+To calculate turnover between two time periods,
+
+00:03:08.870 --> 00:03:11.599
+you would take the absolute value of
+
+00:03:11.599 --> 00:03:16.454
+the difference in weight between two time periods for each asset,
+
+00:03:16.455 --> 00:03:19.040
+and then sum these over assets.
+
+00:03:19.039 --> 00:03:21.780
+To get an annualized turnover,
+
+00:03:21.780 --> 00:03:27.125
+you would calculate the average turnover per rebalancing event by calculating,
+
+00:03:27.125 --> 00:03:31.365
+total turnover for all the rebalancing events in the timeframe you're considering,
+
+00:03:31.365 --> 00:03:35.094
+and dividing by the number of rebalancing events,
+
+00:03:35.094 --> 00:03:40.469
+and then multiplying by the number of rebalancing events per year.
+

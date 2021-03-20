@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.180
+We can also use the results of the regression to
+
+00:00:03.180 --> 00:00:06.515
+estimate a time series for the specific return.
+
+00:00:06.514 --> 00:00:08.275
+For each time period,
+
+00:00:08.275 --> 00:00:09.990
+the specific return is
+
+00:00:09.990 --> 00:00:15.690
+the residual from taking the actual minus estimated excess return of the stock.
+
+00:00:15.689 --> 00:00:21.230
+The actual return is data that we just used to input into the regression.
+
+00:00:21.230 --> 00:00:25.609
+The estimated return is calculated by using the market return and
+
+00:00:25.609 --> 00:00:31.559
+the regression estimates for the factor exposure and the intercept term.
+
+00:00:31.559 --> 00:00:33.679
+If we calculate the difference between
+
+00:00:33.679 --> 00:00:37.399
+actual and estimated returns for multiple time periods,
+
+00:00:37.399 --> 00:00:41.259
+this is an estimate for the specific return time series.
+
+00:00:41.259 --> 00:00:45.934
+The variance of the specific return can be used in the risk model.
+
+00:00:45.935 --> 00:00:51.585
+Similarly, we can also calculate the specific return of the second stock,
+
+00:00:51.585 --> 00:00:55.325
+then calculate the variance of that specific return.
+
+00:00:55.325 --> 00:01:00.270
+Note that calculating specific variance is also not a settled science.
+
+00:01:00.270 --> 00:01:03.575
+The time window chosen affects the result.
+
+00:01:03.575 --> 00:01:07.370
+This difference between actual and estimated return,
+
+00:01:07.370 --> 00:01:10.370
+which we often refer to as the residual return,
+
+00:01:10.370 --> 00:01:13.900
+is what we're calling the specific return in this context.
+
+00:01:13.900 --> 00:01:15.995
+If you're working in quant finance,
+
+00:01:15.995 --> 00:01:17.920
+you may hear an expression like,
+
+00:01:17.920 --> 00:01:20.719
+the returns that are not explained by the model
+
+00:01:20.719 --> 00:01:24.515
+or the returns that are not explained by the factors.
+
+00:01:24.515 --> 00:01:29.254
+Since the goal of risk factor models is to explain where the returns of assets
+
+00:01:29.254 --> 00:01:34.349
+came from by breaking them down into well-defined components or factors,
+
+00:01:34.349 --> 00:01:39.929
+anything left over that is unexplained is represented by the residual.
+

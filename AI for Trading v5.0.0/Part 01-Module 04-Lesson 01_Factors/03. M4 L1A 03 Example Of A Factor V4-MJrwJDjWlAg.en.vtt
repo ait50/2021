@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.714
+Let's walk through an example of a factor to learn more about what a factor looks like.
+
+00:00:05.714 --> 00:00:07.830
+We'll look at a momentum factor.
+
+00:00:07.830 --> 00:00:12.000
+So, let's say we have a hypothesis that the one year return of
+
+00:00:12.000 --> 00:00:17.359
+a stock gives some signal about future returns over the next few days.
+
+00:00:17.359 --> 00:00:19.070
+To create a factor,
+
+00:00:19.070 --> 00:00:23.490
+we get price data for stocks within the stock universe of interests and
+
+00:00:23.489 --> 00:00:28.734
+calculate the percent change of today's price from the price from one year ago.
+
+00:00:28.734 --> 00:00:31.785
+We repeat this for several days of data.
+
+00:00:31.785 --> 00:00:35.734
+The collection of one year returns for the set of stocks
+
+00:00:35.734 --> 00:00:40.259
+over time is what we'll refer to as a factor.
+
+00:00:40.259 --> 00:00:46.129
+It represents information that can potentially be useful in deciding how much weight
+
+00:00:46.130 --> 00:00:52.590
+we'll give each stock in the portfolio and whether to long or short each stock.
+
+00:00:52.590 --> 00:00:56.690
+Now, the question is how do we use this factor?
+
+00:00:56.689 --> 00:01:01.114
+Do we use it to try and predict how much a stock will go up the next day?
+
+00:01:01.115 --> 00:01:05.290
+That's quite difficult when dealing with data that has a lot of noise.
+
+00:01:05.290 --> 00:01:09.560
+What we actually want to do is to use the factor value for
+
+00:01:09.560 --> 00:01:11.750
+each stock to compare it to
+
+00:01:11.750 --> 00:01:16.039
+other stocks that are candidates to be included in a portfolio.
+
+00:01:16.039 --> 00:01:22.430
+So, let's say we have a portfolio of just two stocks, Apple and NVIDIA.
+
+00:01:22.430 --> 00:01:25.135
+On August 3rd, 2018,
+
+00:01:25.135 --> 00:01:31.740
+Apple's stock price reached $208 per share valuing the company at $1 trillion.
+
+00:01:31.739 --> 00:01:36.454
+Its price one year before was $156.
+
+00:01:36.454 --> 00:01:40.674
+So, Apple's one year return was about 33 percent.
+
+00:01:40.674 --> 00:01:43.509
+NVIDIA stock price on August 3rd,
+
+00:01:43.510 --> 00:01:50.260
+2018 was $252, valuing the company at $152 billion.
+
+00:01:50.260 --> 00:01:55.445
+NVIDIA's price one year before was $166 per share.
+
+00:01:55.444 --> 00:01:59.464
+So, its annual return was about 52 percent.
+
+00:01:59.465 --> 00:02:02.890
+To summarize, Apple's factor value is
+
+00:02:02.890 --> 00:02:09.685
+0.33 and NVIDIA's factor value is 0.52 for this one day.
+
+00:02:09.685 --> 00:02:13.865
+Now, what? Well, since the hypothesis of
+
+00:02:13.865 --> 00:02:18.810
+our factor is that a higher number indicates higher future returns,
+
+00:02:18.810 --> 00:02:22.819
+then according to our factor and its associated hypothesis,
+
+00:02:22.819 --> 00:02:28.894
+NVIDIA's return may be higher relative to Apple's over the next few days.
+
+00:02:28.895 --> 00:02:34.909
+One way to act on this signal is to put more money on the stock for which the factor has
+
+00:02:34.909 --> 00:02:41.280
+a more positive value and less money on the stock that has a less positive value.
+
+00:02:41.280 --> 00:02:45.745
+We could also short a stock that has a negative factor value.
+
+00:02:45.745 --> 00:02:47.995
+In this hypothetical example,
+
+00:02:47.995 --> 00:02:53.400
+we want to give a higher positive weight to NVIDIA relative to Apple.
+

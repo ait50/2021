@@ -1,0 +1,511 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.529
+Hello and welcome. In this lesson,
+
+00:00:02.529 --> 00:00:05.824
+we will introduce you to the zipline pipeline.
+
+00:00:05.825 --> 00:00:12.765
+Zipline is an open-source algorithmic trading simulator developed by Quantopian.
+
+00:00:12.765 --> 00:00:17.725
+In this notebook, we will see how to create a pipeline with screens,
+
+00:00:17.725 --> 00:00:22.734
+factors, and filters on how to run them using a pipeline engine.
+
+00:00:22.734 --> 00:00:24.620
+So, let's get started.
+
+00:00:24.620 --> 00:00:27.019
+So, why do we need a pipeline?
+
+00:00:27.019 --> 00:00:30.120
+One reason is that on any given trading day,
+
+00:00:30.120 --> 00:00:34.855
+the entire universe of stocks consists of thousands of securities.
+
+00:00:34.854 --> 00:00:39.379
+Usually, you will not be interested in investing in all of them,
+
+00:00:39.380 --> 00:00:44.380
+but rather you're most likely to only select a few of them to invest.
+
+00:00:44.380 --> 00:00:48.170
+For example, you may only want to invest in stocks that have
+
+00:00:48.170 --> 00:00:52.170
+a 10-day average closing price of $10 or less.
+
+00:00:52.170 --> 00:00:54.829
+In order to avoid spending a lot of time doing
+
+00:00:54.829 --> 00:00:57.905
+data wrangling to select only the stocks you want,
+
+00:00:57.905 --> 00:01:00.495
+people often use pipelines.
+
+00:01:00.494 --> 00:01:05.030
+So, in general, a pipeline is a placeholder for a series of
+
+00:01:05.030 --> 00:01:10.370
+data operations used to filter and rank data according to some factors.
+
+00:01:10.370 --> 00:01:12.769
+Before we start building our pipeline,
+
+00:01:12.769 --> 00:01:18.245
+we will first see how we can load the stock data we're going to use into Zipline.
+
+00:01:18.245 --> 00:01:23.925
+Zipline uses data bundles to make it easy to use different data sources.
+
+00:01:23.924 --> 00:01:28.825
+In this notebook, we will be using stock data from quote media.
+
+00:01:28.825 --> 00:01:31.090
+In the Udacity workspace,
+
+00:01:31.090 --> 00:01:33.260
+you will find that the stock data from
+
+00:01:33.260 --> 00:01:36.695
+quote media has already been ingested into Zipline.
+
+00:01:36.694 --> 00:01:39.429
+So, we will only need to load the data.
+
+00:01:39.430 --> 00:01:45.195
+To load the data, we will use zipline's load function from the bundles class.
+
+00:01:45.194 --> 00:01:49.069
+In order to load a previously ingested data bundle,
+
+00:01:49.069 --> 00:01:53.329
+we must pass the name of the data bundle to the load function.
+
+00:01:53.329 --> 00:01:59.259
+In this case, the name of our previously ingested data bundle is eod-quotemedia,
+
+00:01:59.260 --> 00:02:01.579
+which is specified here.
+
+00:02:01.659 --> 00:02:07.844
+The first thing the load function does is to look for the most recent ingested data.
+
+00:02:07.844 --> 00:02:13.594
+Therefore, we must also specify the location of the previously ingested data bundle.
+
+00:02:13.594 --> 00:02:16.580
+This is done by setting the zipline route
+
+00:02:16.580 --> 00:02:21.270
+variable to the path where the most recent data is located.
+
+00:02:21.270 --> 00:02:23.580
+Before we load the data bundle,
+
+00:02:23.580 --> 00:02:29.105
+we must also register the data bundle and its corresponding ingest function.
+
+00:02:29.104 --> 00:02:31.259
+After we load our data,
+
+00:02:31.259 --> 00:02:34.215
+we're ready to build our first pipeline.
+
+00:02:34.215 --> 00:02:38.030
+We will now start building our pipeline step-by-step.
+
+00:02:38.030 --> 00:02:41.765
+We will start by building an empty pipeline with the screen.
+
+00:02:41.764 --> 00:02:43.384
+To build a pipeline,
+
+00:02:43.384 --> 00:02:46.715
+we will use Zipline's pipeline class.
+
+00:02:46.715 --> 00:02:50.780
+In this example, we have used a screen that selects
+
+00:02:50.780 --> 00:02:56.610
+the top 10 assets with the highest average dollar volume within a 60-day window.
+
+00:02:56.610 --> 00:03:02.695
+This screen acts as a filter to exclude data from our stock universe every day.
+
+00:03:02.694 --> 00:03:08.405
+The average dollar volume is a good first pass filter to avoid illiquid assets.
+
+00:03:08.405 --> 00:03:11.270
+This way, we can guarantee that
+
+00:03:11.270 --> 00:03:16.355
+the selected assets have enough daily trading volume to fill our orders quickly.
+
+00:03:16.354 --> 00:03:21.394
+It is important to note that this freshly constructed pipeline is empty.
+
+00:03:21.395 --> 00:03:25.340
+This means that it doesn't know yet how to compute anything,
+
+00:03:25.340 --> 00:03:29.045
+anyone produce any values is we ask for its output.
+
+00:03:29.044 --> 00:03:33.459
+The next step in building a pipeline is to add factors and filters.
+
+00:03:33.460 --> 00:03:38.754
+We will now take a look at two types of computations that can be expressed in a pipeline.
+
+00:03:38.754 --> 00:03:41.014
+Factors and filters.
+
+00:03:41.014 --> 00:03:43.659
+Let's take a look at factors first.
+
+00:03:43.659 --> 00:03:46.189
+In general, a factor is a function from
+
+00:03:46.189 --> 00:03:50.504
+an asset at a particular moment in time to a numerical value.
+
+00:03:50.504 --> 00:03:55.313
+A simple example of a factor is a most recent price of a security,
+
+00:03:55.313 --> 00:04:01.430
+because the most recent price of a security is just a number, for example, $10.
+
+00:04:01.430 --> 00:04:04.745
+On the other hand. A filter is a function from an asset
+
+00:04:04.745 --> 00:04:08.340
+at a particular moment in time to a boolean value.
+
+00:04:08.340 --> 00:04:12.025
+Boolean values are either true or false.
+
+00:04:12.025 --> 00:04:14.750
+An example of a filter is a function
+
+00:04:14.750 --> 00:04:18.795
+indicating whether a security whose price is below $5.
+
+00:04:18.795 --> 00:04:21.859
+This is because at any particular moment in time,
+
+00:04:21.858 --> 00:04:25.479
+this statement will either be true or false.
+
+00:04:25.480 --> 00:04:31.050
+So, the difference between factors and filters is that factors return numerical values,
+
+00:04:31.050 --> 00:04:33.785
+while filters return boolean values.
+
+00:04:33.785 --> 00:04:36.650
+Zipline comes with some built-in factors and filters,
+
+00:04:36.649 --> 00:04:41.069
+but also allows you to combine and create custom factors and filters.
+
+00:04:41.069 --> 00:04:44.620
+Before we learn how to add factor some filters to our pipeline,
+
+00:04:44.620 --> 00:04:48.790
+let's take a look at a nice feature of the pipeline class.
+
+00:04:48.939 --> 00:04:52.714
+A neat feature, a Zipline's Pipeline class,
+
+00:04:52.714 --> 00:04:55.599
+that it comes with the attribute show graph
+
+00:04:55.600 --> 00:04:59.245
+that allows you to render the pipeline as diagram.
+
+00:04:59.245 --> 00:05:03.194
+This diagram is specified using the DOT language,
+
+00:05:03.194 --> 00:05:08.805
+and consequently, we need DAG graph layout program to view the rendered image.
+
+00:05:08.805 --> 00:05:12.605
+In this notebook, we will use the package Graphviz
+
+00:05:12.605 --> 00:05:16.230
+to render the diagram produced by this show graph attribute.
+
+00:05:16.230 --> 00:05:19.444
+Let's take a look at the current diagram of our pipeline.
+
+00:05:19.444 --> 00:05:21.420
+Right now, our pipeline is empty,
+
+00:05:21.420 --> 00:05:23.574
+and it only contains a screen.
+
+00:05:23.574 --> 00:05:26.289
+Therefore, when we render our pipeline,
+
+00:05:26.290 --> 00:05:28.830
+we only see the diagram of the screen.
+
+00:05:28.829 --> 00:05:31.779
+We can see that our screen takes as input,
+
+00:05:31.779 --> 00:05:35.449
+the closing price and volume from the US equity pricing data
+
+00:05:35.449 --> 00:05:39.894
+set to calculate the average solar volume in a 60-day window.
+
+00:05:39.894 --> 00:05:41.754
+At the bottom of the diagram,
+
+00:05:41.754 --> 00:05:47.675
+we can see that the output is determined by the expression x_0 less than or equal to 10.
+
+00:05:47.675 --> 00:05:52.785
+This expression reflects the fact that we only selecting the top 10 assets.
+
+00:05:52.785 --> 00:05:55.715
+As we are factors and filters through our pipeline,
+
+00:05:55.714 --> 00:05:58.484
+this diagram will get more complicated.
+
+00:05:58.485 --> 00:06:01.460
+In this diagram, we saw that our screen takes as
+
+00:06:01.459 --> 00:06:06.000
+input prices and volume from the US equity pricing dataset.
+
+00:06:06.000 --> 00:06:10.629
+So, let's take a moment to talk about the datasets and data loaders.
+
+00:06:10.629 --> 00:06:14.649
+Another feature of Zipline is that it separates the actual source of
+
+00:06:14.649 --> 00:06:19.019
+the stock data from the abstract description of that dataset.
+
+00:06:19.019 --> 00:06:22.060
+Therefore, Zipline differentiates between
+
+00:06:22.060 --> 00:06:25.555
+the actual dataset and the loader for that dataset.
+
+00:06:25.555 --> 00:06:28.319
+For example, the loader used for
+
+00:06:28.319 --> 00:06:32.839
+the USEquity pricing dataset is the USEquityPricingLoader.
+
+00:06:32.839 --> 00:06:38.199
+The USEquityPricingLoader class can also be used to load, open, high,
+
+00:06:38.199 --> 00:06:41.714
+low, close volume data from other data sets,
+
+00:06:41.714 --> 00:06:43.810
+like the one from quotemedia.
+
+00:06:43.810 --> 00:06:48.915
+Therefore, we will set the USEquityPricingLoader as our data loader.
+
+00:06:48.915 --> 00:06:51.379
+Before we add our factors and filters,
+
+00:06:51.379 --> 00:06:55.159
+let's take a look at the raw data in our quotemedia data bundle.
+
+00:06:55.160 --> 00:06:57.710
+This requires a couple of steps.
+
+00:06:57.709 --> 00:07:00.750
+The first step is to build a pipeline engine.
+
+00:07:00.750 --> 00:07:03.560
+This is because, in order to execute a pipeline,
+
+00:07:03.560 --> 00:07:06.670
+Zipline employs pipeline engines.
+
+00:07:06.670 --> 00:07:11.288
+The SimplePipelineEngine class that we've used here associates
+
+00:07:11.288 --> 00:07:16.209
+a data loader with a trading calendar and a corresponding data bundle.
+
+00:07:16.209 --> 00:07:21.739
+It is important to note that the get loading parameter must be a callable function,
+
+00:07:21.740 --> 00:07:25.120
+and this is the reason we have defined this function right here,
+
+00:07:25.120 --> 00:07:27.394
+that's [inaudible] are pricing loader.
+
+00:07:27.394 --> 00:07:32.375
+We will also use the trading calendar used by the New York Stock Exchange.
+
+00:07:32.375 --> 00:07:35.120
+Once we have chosen our pipeline engine,
+
+00:07:35.120 --> 00:07:37.290
+we're ready to execute our pipeline.
+
+00:07:37.290 --> 00:07:40.240
+We can execute our pipeline by using
+
+00:07:40.240 --> 00:07:44.939
+the.run_pipeline attribute from this simple pipeline engine class.
+
+00:07:44.939 --> 00:07:49.125
+In this example, we will run our pipeline for a single day.
+
+00:07:49.125 --> 00:07:55.464
+We can see that the output of the pipeline is a Pandas DataFrame with a MultiIndex,
+
+00:07:55.464 --> 00:07:58.714
+where the first index level contains a trading dates,
+
+00:07:58.714 --> 00:08:00.919
+and the second index level contains
+
+00:08:00.920 --> 00:08:04.745
+the tickers for the stocks that have passed our screen.
+
+00:08:04.745 --> 00:08:09.694
+This tickers can be accessed and saved into a list.
+
+00:08:09.694 --> 00:08:13.969
+Once we have the tickers for the stocks that have passed or pipeline screen,
+
+00:08:13.970 --> 00:08:18.330
+we can get the historical stock data for those tickers from our data bundle.
+
+00:08:18.329 --> 00:08:20.594
+In order to get the historical data,
+
+00:08:20.595 --> 00:08:23.250
+we need to use Zipline's data portal class.
+
+00:08:23.250 --> 00:08:28.564
+A data portal is an interface to all the data that a Zipline simulation needs.
+
+00:08:28.564 --> 00:08:32.075
+Once we created the data portal like we've done here,
+
+00:08:32.075 --> 00:08:37.710
+we can get the historical data by using the get_history_window attribute.
+
+00:08:37.710 --> 00:08:43.925
+Here, we can see the historical data for the given start and end dates.
+
+00:08:43.924 --> 00:08:47.934
+It is important to note that when a pipeline returns a date,
+
+00:08:47.934 --> 00:08:50.259
+for example, January 7th,
+
+00:08:50.259 --> 00:08:54.200
+2011, this includes data that
+
+00:08:54.200 --> 00:08:58.470
+will only be known prior to the market opening on that date.
+
+00:08:58.470 --> 00:09:01.970
+Therefore, the price shown for January 7th,
+
+00:09:01.970 --> 00:09:06.330
+2011 is actually the closing price from the day before.
+
+00:09:06.330 --> 00:09:11.514
+Finally, let's see how we can add factors and filters to our pipeline.
+
+00:09:11.514 --> 00:09:14.539
+We can add both factors and filters to
+
+00:09:14.539 --> 00:09:18.839
+our pipeline using the add method from the pipeline class.
+
+00:09:18.840 --> 00:09:21.980
+The first parameter in the add method represents
+
+00:09:21.980 --> 00:09:25.190
+the factor or filter we're going to add to our pipeline,
+
+00:09:25.190 --> 00:09:29.900
+and the second parameter is a string that determines the name in the column,
+
+00:09:29.899 --> 00:09:33.769
+in the output DataFrame for that factor or filter.
+
+00:09:33.769 --> 00:09:39.054
+Here, we have added factor that computes the 15-day mean closing price.
+
+00:09:39.054 --> 00:09:43.289
+Now, let's render our pipeline to see what it looks like.
+
+00:09:43.289 --> 00:09:47.689
+We can clearly see our factor in the pipeline now.
+
+00:09:47.690 --> 00:09:50.005
+If we want our pipeline,
+
+00:09:50.004 --> 00:09:53.654
+we now see a column that contains the output of the factor,
+
+00:09:53.654 --> 00:09:59.589
+namely the 15-day mean closing price for each stock that passed our screen.
+
+00:09:59.590 --> 00:10:03.129
+Now, let's add a filter to our pipeline.
+
+00:10:03.129 --> 00:10:07.205
+Here, we've created a filter that returns true
+
+00:10:07.205 --> 00:10:11.985
+whenever the 15-day average closing price is above $100.
+
+00:10:11.985 --> 00:10:13.938
+Like I mentioned earlier,
+
+00:10:13.938 --> 00:10:19.464
+we can add this filter to our pipeline by using the.add method would use before.
+
+00:10:19.465 --> 00:10:24.115
+Now, let's run through our pipeline to see what it looks like.
+
+00:10:24.115 --> 00:10:30.764
+We can now see our filter in the diagram and if we run our pipeline,
+
+00:10:30.764 --> 00:10:35.449
+we can now see a column that contains the output of the filter with true
+
+00:10:35.450 --> 00:10:40.690
+for every stock that had 15-day average closing price above $100,
+
+00:10:40.690 --> 00:10:43.515
+and that passed our screen.
+
+00:10:43.514 --> 00:10:47.519
+That's it. Now, you know how to create a pipeline with screens,
+
+00:10:47.519 --> 00:10:52.360
+factors, and filters, and how to run them using a pipeline engine.
+
+00:10:52.360 --> 00:10:55.220
+In the next lesson, you'll get some practice grading
+
+00:10:55.220 --> 00:10:58.120
+pipelines with custom factors and filters.
+
