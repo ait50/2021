@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.750
+Stock markets typically remain open for a finite number of hours every day,
+
+00:00:04.750 --> 00:00:06.970
+say 9:30 AM to 4:00 PM.
+
+00:00:06.969 --> 00:00:10.300
+This is when the majority of the transactions take place.
+
+00:00:10.300 --> 00:00:11.750
+Why you ask?
+
+00:00:11.750 --> 00:00:16.039
+Well, traders and exchange operators are humans just like you and me.
+
+00:00:16.039 --> 00:00:18.029
+They need to go back to their families,
+
+00:00:18.030 --> 00:00:19.945
+sleep, and live a life.
+
+00:00:19.945 --> 00:00:22.245
+Okay, there is another reason.
+
+00:00:22.245 --> 00:00:25.339
+With the growing popularity of algorithmic trading,
+
+00:00:25.339 --> 00:00:30.280
+a large portion of transactions today are being carried out by automated systems.
+
+00:00:30.280 --> 00:00:33.910
+They can be much more responsive to market conditions than humans,
+
+00:00:33.909 --> 00:00:36.379
+and result in a sharp increase or decrease in
+
+00:00:36.380 --> 00:00:39.525
+stock prices over a very short period of time.
+
+00:00:39.524 --> 00:00:44.265
+If left unchecked, this can result in things spiraling out of control.
+
+00:00:44.265 --> 00:00:48.679
+Closing market operations at a regular time every day provides
+
+00:00:48.679 --> 00:00:53.109
+an artificial barrier that can limit the damage such events can cause.
+
+00:00:53.109 --> 00:00:56.329
+This also give stock market regulators some time to
+
+00:00:56.329 --> 00:00:59.960
+analyze the situation and implement control measures.
+
+00:00:59.960 --> 00:01:04.430
+Now, some exchanges do allow for pre-market and post-market trading.
+
+00:01:04.430 --> 00:01:07.444
+Typically 4:00 AM to 9:30 AM for pre-market,
+
+00:01:07.444 --> 00:01:09.939
+and 4:00 PM to 8:00 PM post-market.
+
+00:01:09.939 --> 00:01:13.530
+However, not many traders participate in the session.
+
+00:01:13.530 --> 00:01:15.620
+So, trading volume is typically low.
+
+00:01:15.620 --> 00:01:18.350
+Either way, the takeaway from this is that
+
+00:01:18.349 --> 00:01:21.905
+stock markets close operations at a certain time every day,
+
+00:01:21.905 --> 00:01:25.909
+and they typically remain closed over weekends and holidays.
+
+00:01:25.909 --> 00:01:28.304
+As a result, when you look at stock data,
+
+00:01:28.305 --> 00:01:33.560
+you'll notice these gaps or discontinuities during periods when the markets are closed.
+
+00:01:33.560 --> 00:01:35.600
+Depending on your analysis,
+
+00:01:35.599 --> 00:01:39.039
+this may or may not have an impact on the conclusions you draw.
+
+00:01:39.040 --> 00:01:43.880
+For instance, if you treat market data as a simple sequence of observations and ignore
+
+00:01:43.879 --> 00:01:46.819
+the timestamps as if the market's just smoothly
+
+00:01:46.819 --> 00:01:50.234
+continue from one end of day to the next opening bell,
+
+00:01:50.234 --> 00:01:52.829
+then these gaps are not as significant.
+
+00:01:52.829 --> 00:01:58.439
+But, if you compute a metric that involves time like the number of transactions per hour,
+
+00:01:58.439 --> 00:02:02.370
+then ignoring these gaps can give you inaccurate results.
+
+00:02:02.370 --> 00:02:07.995
+The discontinuities can produce spikes or unusual flats in calculated values,
+
+00:02:07.995 --> 00:02:10.605
+or just outright wrong information.
+
+00:02:10.604 --> 00:02:14.530
+So, you need to be careful when dealing with market data.
+

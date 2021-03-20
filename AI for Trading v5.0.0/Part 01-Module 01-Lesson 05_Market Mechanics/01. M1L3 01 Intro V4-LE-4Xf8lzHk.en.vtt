@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.339
+This lesson will introduce you to the mechanics behind modern-day stock markets.
+
+00:00:05.339 --> 00:00:06.609
+But not only that,
+
+00:00:06.610 --> 00:00:11.609
+you also build a simple market simulator that matches and executes orders,
+
+00:00:11.609 --> 00:00:14.324
+and sets prices just like a real market.
+
+00:00:14.324 --> 00:00:19.234
+This will give you a better idea of all the activities that keep a market running.
+
+00:00:19.234 --> 00:00:22.244
+These activities generate a lot of data.
+
+00:00:22.245 --> 00:00:25.289
+Market data, which may hold important clues that you
+
+00:00:25.289 --> 00:00:28.589
+can use to decide when to buy or sell stocks.
+
+00:00:28.589 --> 00:00:33.140
+As you get introduced to the various dimensions of data available to us,
+
+00:00:33.140 --> 00:00:36.505
+try to build an intuition for why they might be important,
+
+00:00:36.505 --> 00:00:38.540
+what signals they might carry.
+
+00:00:38.539 --> 00:00:41.570
+Finally, you will learn to deal with data during
+
+00:00:41.570 --> 00:00:44.405
+the closing and opening of global markets.
+
+00:00:44.405 --> 00:00:46.149
+If you pay close attention,
+
+00:00:46.149 --> 00:00:49.094
+there might be some training opportunities there too.
+
+00:00:49.094 --> 00:00:51.530
+Are you ready? Let's get on with it.
+

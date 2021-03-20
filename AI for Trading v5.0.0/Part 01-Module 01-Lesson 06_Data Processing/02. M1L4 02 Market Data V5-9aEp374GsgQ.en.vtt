@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.370
+Let's start with market data.
+
+00:00:02.370 --> 00:00:07.634
+This is any data that you receive from the market typically generated from trades.
+
+00:00:07.634 --> 00:00:12.583
+This is perhaps the most important form of data relevant to quantitative analysis.
+
+00:00:12.583 --> 00:00:15.330
+Market data is temporal in nature,
+
+00:00:15.330 --> 00:00:19.509
+it's a series of trading events that happen in a moment of time,
+
+00:00:19.510 --> 00:00:21.570
+each moment is called a tick.
+
+00:00:21.570 --> 00:00:24.210
+A ticker contains the time of the event,
+
+00:00:24.210 --> 00:00:31.070
+information about which stock or ticker symbol is traded trade data and quote data.
+
+00:00:31.070 --> 00:00:35.314
+The trade data is the price and the amount of the transaction.
+
+00:00:35.314 --> 00:00:39.299
+The quote data is the price and size of the bid and ask.
+
+00:00:39.299 --> 00:00:44.459
+A bid is request to buy stock at a price for a set amount of shares.
+
+00:00:44.460 --> 00:00:48.140
+A ask is the other side of the trade it's the request to
+
+00:00:48.140 --> 00:00:51.910
+sell stock at a price for a set amount of shares.
+
+00:00:51.909 --> 00:00:58.064
+In large marketplaces the number of trades can easily hit 200 trades per second.
+
+00:00:58.064 --> 00:01:02.434
+This is a massive amount of data when using historical tech data.
+
+00:01:02.435 --> 00:01:07.555
+Analyzing individual texts may not be visible with this much data.
+
+00:01:07.555 --> 00:01:14.145
+So, we bucket these texts into equally space time integrals such as minutes or days.
+
+00:01:14.144 --> 00:01:16.429
+For each bucket, we can compute
+
+00:01:16.430 --> 00:01:21.005
+open high low close prices and total volume of transactions.
+
+00:01:21.004 --> 00:01:25.829
+This sort of minute or day level data is much easier to work with.
+
+00:01:25.829 --> 00:01:27.649
+You have the ability to ignore
+
+00:01:27.650 --> 00:01:32.145
+the timestamps and treat the data as equally spaced sequences.
+
+00:01:32.144 --> 00:01:35.914
+In some cases, you may still need to use the timestamps.
+
+00:01:35.915 --> 00:01:38.575
+But we'll save that for another lesson.
+
+00:01:38.575 --> 00:01:40.299
+In the next video,
+
+00:01:40.299 --> 00:01:45.000
+you will learn about another type of finance data called corporate actions.
+

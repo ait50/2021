@@ -1,0 +1,184 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+The next set of data we'll talk about is related to
+
+00:00:03.390 --> 00:00:07.455
+events a company can take that affects its shareholders.
+
+00:00:07.455 --> 00:00:10.429
+This data is called Corporate Actions.
+
+00:00:10.429 --> 00:00:15.089
+For this lesson, we'll describe only two of the many corporate actions.
+
+00:00:15.089 --> 00:00:17.460
+Stock splits and dividends.
+
+00:00:17.460 --> 00:00:19.635
+Let's start with stock splits.
+
+00:00:19.635 --> 00:00:22.635
+On June 2nd, 1998,
+
+00:00:22.635 --> 00:00:26.859
+you could buy a share of Amazon for about $85.
+
+00:00:26.859 --> 00:00:31.515
+On this date, Amazon decided to perform a two to one stock split.
+
+00:00:31.515 --> 00:00:35.534
+Every Amazon shareholder, had their shares doubled.
+
+00:00:35.534 --> 00:00:39.539
+This does not mean all of their money in Amazon doubled.
+
+00:00:39.539 --> 00:00:41.814
+When a stock is split into two,
+
+00:00:41.814 --> 00:00:43.799
+its price drops by half.
+
+00:00:43.799 --> 00:00:46.804
+This makes sure that the total market capitalization
+
+00:00:46.804 --> 00:00:49.789
+of a stock has not changed by a split.
+
+00:00:49.789 --> 00:00:55.274
+Market capitalization is the dollar value of a company's outstanding shares.
+
+00:00:55.274 --> 00:00:57.229
+This is calculated by multiplying
+
+00:00:57.229 --> 00:01:01.314
+the stock price by the total number of shares outstanding.
+
+00:01:01.314 --> 00:01:05.679
+In this case, there are twice as many outstanding shares.
+
+00:01:05.680 --> 00:01:09.080
+To keep the market capitalization the same,
+
+00:01:09.079 --> 00:01:12.004
+the stock price has to drop by half.
+
+00:01:12.004 --> 00:01:14.739
+Why would you ever want to split a stock?
+
+00:01:14.739 --> 00:01:18.334
+One reason could be to make the stock more liquid.
+
+00:01:18.334 --> 00:01:21.979
+Less expense of stocks are believed to be more liquid.
+
+00:01:21.980 --> 00:01:28.685
+Current shareholders and potential investors can now buy and sell and more granularity.
+
+00:01:28.685 --> 00:01:32.265
+This helps maintain a healthy volume of transactions.
+
+00:01:32.265 --> 00:01:36.665
+Amazon later went on to have two more stock splits.
+
+00:01:36.665 --> 00:01:40.985
+A three-to-one split on January 5th, 1999.
+
+00:01:40.984 --> 00:01:45.060
+A two-to-one split on September 2nd of the same year.
+
+00:01:45.060 --> 00:01:49.620
+The price dropped to roughly one-third and one-half respectively.
+
+00:01:49.620 --> 00:01:54.055
+I say roughly, because there is still some trading during the day.
+
+00:01:54.055 --> 00:02:00.965
+The closing price ends up being a little different from exactly one-third or one-half,
+
+00:02:00.965 --> 00:02:05.015
+typically, a little higher due to the renewed interest in the stock.
+
+00:02:05.015 --> 00:02:09.439
+If you look at the graph of the stock prices at that time,
+
+00:02:09.439 --> 00:02:13.159
+you'll notice that the large drops are due to the stock splits.
+
+00:02:13.159 --> 00:02:18.169
+Looking at this graph makes it look like the company dropped in value.
+
+00:02:18.169 --> 00:02:23.454
+Using these prices, a computer would read the data the same way.
+
+00:02:23.455 --> 00:02:26.785
+However, this is not true.
+
+00:02:26.784 --> 00:02:30.574
+The value of the company has not changed from the split.
+
+00:02:30.574 --> 00:02:32.504
+How do you correct for this?
+
+00:02:32.504 --> 00:02:37.900
+One common approach is to normalize the prices to reduce the sudden changes.
+
+00:02:37.900 --> 00:02:43.289
+For instance, you could double the stock price after each two-to-one split,
+
+00:02:43.289 --> 00:02:47.239
+triple after each three-to-one split, and so on.
+
+00:02:47.240 --> 00:02:48.680
+The trouble with that is,
+
+00:02:48.680 --> 00:02:50.780
+your current normalized price will be
+
+00:02:50.780 --> 00:02:54.085
+very different from what the stock is actually trading at.
+
+00:02:54.085 --> 00:02:56.780
+Instead, we'll do the opposite.
+
+00:02:56.780 --> 00:03:00.314
+We'll have the price before each two-to-one split,
+
+00:03:00.314 --> 00:03:04.585
+turn it into thirds before any three-to-one split, and so on.
+
+00:03:04.585 --> 00:03:09.814
+Now, the newest adjusted price matches the price currently on the market.
+
+00:03:09.814 --> 00:03:15.085
+Stock prices normalized in this manner is called adjusted price.
+
+00:03:15.085 --> 00:03:19.300
+This is typically provided in most historical data sets.
+
+00:03:19.300 --> 00:03:24.420
+Needless to say, you must keep in mind that this is a distortion of reality.
+
+00:03:24.419 --> 00:03:26.554
+In June of 1988,
+
+00:03:26.555 --> 00:03:27.890
+before the first split,
+
+00:03:27.889 --> 00:03:31.399
+Amazon was not trading at seven dollars.
+
+00:03:31.400 --> 00:03:34.765
+It was trading around $85.
+
+00:03:34.764 --> 00:03:42.964
+It is the repeated adjustments to historical prices that have reduced 85 to $7.
+
+00:03:42.965 --> 00:03:44.745
+With this in mind,
+
+00:03:44.745 --> 00:03:48.870
+let's learn about the next corporate action, dividend.
+

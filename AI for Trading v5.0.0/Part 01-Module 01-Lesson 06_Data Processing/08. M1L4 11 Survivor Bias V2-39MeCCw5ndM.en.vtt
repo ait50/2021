@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.625
+The average return from experiment A is indeed higher than from B. Why is that?
+
+00:00:06.625 --> 00:00:10.960
+It's due to a phenomenon known as survivor bias or survivorship bias.
+
+00:00:10.960 --> 00:00:14.519
+If you only picked from the stocks that have survived until today,
+
+00:00:14.519 --> 00:00:18.510
+that already filtered out all the other stocks that failed during that period.
+
+00:00:18.510 --> 00:00:21.000
+Another way to think about experiment A,
+
+00:00:21.000 --> 00:00:25.804
+is that you essentially traveled forward in time from 2005 to the present day.
+
+00:00:25.804 --> 00:00:27.975
+You know then which companies have survived,
+
+00:00:27.975 --> 00:00:31.515
+went back and bought from among those stocks.
+
+00:00:31.515 --> 00:00:33.770
+Of course you are going to do well,
+
+00:00:33.770 --> 00:00:35.565
+but what determines you?
+
+00:00:35.564 --> 00:00:38.530
+Experiment B is more honest.
+
+00:00:38.530 --> 00:00:42.715
+You buy stocks based on information available in 2005.
+
+00:00:42.715 --> 00:00:46.760
+No time travel mumbo jumbo and as expected some of
+
+00:00:46.759 --> 00:00:50.964
+these stocks will fail giving you a lower return on average.
+
+00:00:50.965 --> 00:00:54.170
+This is very critical when you're testing the efficiency of
+
+00:00:54.170 --> 00:00:58.260
+a trading signal or strategy using historical prices.
+
+00:00:58.259 --> 00:01:01.909
+If you allow survivor bias to creep into your analysis,
+
+00:01:01.909 --> 00:01:04.144
+you will get results that are overly
+
+00:01:04.144 --> 00:01:07.439
+optimistic and probably won't work in the real world.
+

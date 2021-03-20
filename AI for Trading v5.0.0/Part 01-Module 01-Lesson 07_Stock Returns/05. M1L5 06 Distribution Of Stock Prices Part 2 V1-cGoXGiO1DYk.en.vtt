@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.110
+Let's talk about how a series of daily price values arises.
+
+00:00:04.110 --> 00:00:06.884
+It has to do with our earlier discussion of compounding.
+
+00:00:06.884 --> 00:00:09.839
+Let's say, a stock starts at P sub zero,
+
+00:00:09.839 --> 00:00:13.949
+and each day the price changes by some small percent, the return.
+
+00:00:13.949 --> 00:00:17.579
+We saw earlier how the price at time T could be written
+
+00:00:17.579 --> 00:00:21.394
+as a product of all of these one plus little r sub i terms.
+
+00:00:21.394 --> 00:00:27.155
+Remember, one plus little r equals P sub t divided by P sub t minus one.
+
+00:00:27.155 --> 00:00:29.875
+If we take the log of both sides of this equation,
+
+00:00:29.875 --> 00:00:32.840
+we get log of P sub t on one side and
+
+00:00:32.840 --> 00:00:37.040
+a sum of log of one plus little r sub i terms on the other side.
+
+00:00:37.039 --> 00:00:42.884
+Here, for convenience, I'm going to move log of P sub zero back to the left-hand side.
+
+00:00:42.884 --> 00:00:45.250
+Remember, P sub zero is a constant,
+
+00:00:45.250 --> 00:00:47.000
+it's not dependent on time.
+
+00:00:47.000 --> 00:00:50.284
+Now, we're going to use the central limit theorem.
+
+00:00:50.284 --> 00:00:54.164
+You might remember the central limit theorem from a class on probability,
+
+00:00:54.164 --> 00:00:56.859
+but if you don't I'll just explain it briefly here.
+
+00:00:56.859 --> 00:01:00.049
+It says that, the sum of random variables that
+
+00:01:00.049 --> 00:01:03.019
+have the same distribution and are not dependent on each
+
+00:01:03.020 --> 00:01:06.290
+other approaches a normal distribution and
+
+00:01:06.290 --> 00:01:10.490
+the limit that the number of random variables and the sum goes to infinity.
+
+00:01:10.489 --> 00:01:14.209
+So, let's make the assumption that the returns on each day are independent,
+
+00:01:14.209 --> 00:01:16.875
+but come from the same underlying distribution.
+
+00:01:16.875 --> 00:01:21.515
+This seems reasonable certainly more reasonable for returns and for prices.
+
+00:01:21.515 --> 00:01:23.900
+After all, the price of a stock on one day
+
+00:01:23.900 --> 00:01:26.575
+almost certainly depends on its price the day before.
+
+00:01:26.575 --> 00:01:28.495
+So, if we make that assumption,
+
+00:01:28.495 --> 00:01:30.725
+we can see that the right hand side,
+
+00:01:30.724 --> 00:01:35.209
+the wholesome is a random variable that follows a normal distribution.
+
+00:01:35.209 --> 00:01:41.979
+So, we have that log of P sub t minus log of P sub zero is distributed normally.
+
+00:01:41.980 --> 00:01:44.549
+But if P sub 0 is a constant,
+
+00:01:44.549 --> 00:01:47.795
+then log of P sub t is also distributed normally,
+
+00:01:47.795 --> 00:01:50.600
+because a normally distributed random variable minus
+
+00:01:50.599 --> 00:01:53.049
+the constant is still normally distributed.
+
+00:01:53.049 --> 00:01:58.489
+Now, I'm going to tell you about a new distribution called the log-normal distribution.
+
+00:01:58.489 --> 00:02:03.259
+Guess what, it looks kind of like that right-skewed distribution we talked about earlier.
+
+00:02:03.260 --> 00:02:07.000
+What you need to know about the log normal distribution is that if Y is
+
+00:02:07.000 --> 00:02:11.034
+distributed normally then e to the y is distributed log normally.
+
+00:02:11.034 --> 00:02:14.109
+I'll say that again, if Y is distributed normally,
+
+00:02:14.110 --> 00:02:16.995
+then e to the y is distributed log normally.
+
+00:02:16.995 --> 00:02:20.620
+So, if log of P sub t is distributed normally,
+
+00:02:20.620 --> 00:02:27.175
+then P sub t which equals e to the log of P sub t is distributed log normally.
+
+00:02:27.175 --> 00:02:32.730
+In fact, prices are frequently assumed to arise from a log normal distribution.
+
+00:02:32.729 --> 00:02:36.019
+This seems reasonable from just eyeballing the distribution
+
+00:02:36.020 --> 00:02:39.640
+because we can see that it doesn't go below zero and it's skewed to the right.
+
+00:02:39.639 --> 00:02:42.839
+Those properties match our actual price distribution well.
+
+00:02:42.840 --> 00:02:45.405
+However, when working with real data,
+
+00:02:45.405 --> 00:02:48.469
+the assumption that prices are distributed log normally,
+
+00:02:48.469 --> 00:02:50.319
+may or may not be a good one.
+
+00:02:50.319 --> 00:02:53.060
+These distributions can be convenient models,
+
+00:02:53.060 --> 00:02:57.479
+but don't confuse them with actual distributions of stock prices or returns.
+

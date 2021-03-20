@@ -1,0 +1,268 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.229
+Stock markets function in a very similar way.
+
+00:00:03.229 --> 00:00:07.019
+When a company first begins trading publicly it typically picks
+
+00:00:07.019 --> 00:00:11.515
+a value for its stock based on certain company metrics like revenue,
+
+00:00:11.515 --> 00:00:13.700
+profits, assets et cetera.
+
+00:00:13.699 --> 00:00:15.660
+But from that point on,
+
+00:00:15.660 --> 00:00:21.015
+it's stock prices almost entirely driven by how much demand exists for its stock.
+
+00:00:21.015 --> 00:00:23.359
+But how do you quantify demand?
+
+00:00:23.359 --> 00:00:28.359
+Think about it. Demand is nothing but how many people want to own some stock,
+
+00:00:28.359 --> 00:00:31.109
+or how much money they're willing to pay for it.
+
+00:00:31.109 --> 00:00:33.289
+In market speak you want to see
+
+00:00:33.289 --> 00:00:37.384
+how many orders people are placing for it and at what price.
+
+00:00:37.384 --> 00:00:42.724
+Modern markets keep an electronic record of all orders that have been submitted.
+
+00:00:42.725 --> 00:00:45.439
+People who want to buy a stock can specify how
+
+00:00:45.439 --> 00:00:48.939
+much or the limit that they're willing to pay for it.
+
+00:00:48.939 --> 00:00:52.299
+People who want to sell can specify the least amount.
+
+00:00:52.299 --> 00:00:55.479
+Again the limit they're willing to sell it for.
+
+00:00:55.479 --> 00:00:59.199
+Whenever a suitable match is found between a buyer and seller,
+
+00:00:59.200 --> 00:01:01.130
+a trade is executed.
+
+00:01:01.130 --> 00:01:04.655
+It's important to understand how orders are matched.
+
+00:01:04.655 --> 00:01:11.299
+Let say I submit a limit buy order for two shares of Netflix at $180 each.
+
+00:01:11.299 --> 00:01:14.575
+Think of this as an offer or commitment to buy.
+
+00:01:14.575 --> 00:01:20.430
+It is also known as placing a bid where $180 is my bid price.
+
+00:01:20.430 --> 00:01:23.840
+This order gets added to the market's queue where
+
+00:01:23.840 --> 00:01:28.055
+all the different buyer orders for Netflix are listed sorted by price.
+
+00:01:28.055 --> 00:01:35.170
+Someone else submits a limit sell order for four shares at $179.90.
+
+00:01:35.170 --> 00:01:37.480
+This is a commitment to sell.
+
+00:01:37.480 --> 00:01:41.295
+$179.90 is their asking price.
+
+00:01:41.295 --> 00:01:44.719
+Since that is less than the top most buy order,
+
+00:01:44.719 --> 00:01:48.995
+the one with the highest bid price a transaction cannot take place.
+
+00:01:48.995 --> 00:01:52.250
+If there are enough stocks to fulfill that order then
+
+00:01:52.250 --> 00:01:56.079
+the next bid could also be fulfilled with that same seller.
+
+00:01:56.079 --> 00:01:58.774
+In this case the top to buy orders are
+
+00:01:58.775 --> 00:02:03.525
+executed and three out of the four shares offered by the seller are sold.
+
+00:02:03.525 --> 00:02:08.060
+The remaining one share can be used to partially fulfilled my buy order,
+
+00:02:08.060 --> 00:02:13.324
+and the rest of it can be satisfied by the next seller who offers a suitable price.
+
+00:02:13.324 --> 00:02:18.539
+Say someone else offers to sell three shares at $179.80.
+
+00:02:18.539 --> 00:02:23.019
+This order rises to the top of the sell queue due to its low price.
+
+00:02:23.020 --> 00:02:28.780
+Since this is less than my bid price my remaining one share can come from the seller.
+
+00:02:28.780 --> 00:02:30.340
+So, in the end,
+
+00:02:30.340 --> 00:02:38.615
+with my limit order of my two Netflix shares at $180 I got one share at $179.90,
+
+00:02:38.615 --> 00:02:46.865
+and one at $179.80 for an average price of $179.85 per share.
+
+00:02:46.865 --> 00:02:50.150
+This sounds a lot like an auction doesn't it?
+
+00:02:50.150 --> 00:02:55.069
+In fact, multiple auctions going on simultaneously orchestrated by
+
+00:02:55.069 --> 00:02:58.099
+some authority that ensures every buyer and
+
+00:02:58.099 --> 00:03:02.254
+seller gets the best available price for the stock they want to trade.
+
+00:03:02.254 --> 00:03:05.074
+This authority is the stock exchange.
+
+00:03:05.074 --> 00:03:09.409
+One problem with this model is that trading can take a lot of effort if
+
+00:03:09.409 --> 00:03:14.490
+everyone has to participate in an auction each time they want to buy or sell a stock.
+
+00:03:14.490 --> 00:03:17.175
+What if you wanted to purchase some right away,
+
+00:03:17.175 --> 00:03:19.925
+how do you make sure you're getting the best price?
+
+00:03:19.925 --> 00:03:24.490
+Well, if you're at a farmers' market you might go around asking every vendor,
+
+00:03:24.490 --> 00:03:26.219
+but that's very inefficient.
+
+00:03:26.218 --> 00:03:29.629
+Fortunately, since stock market transactions are carried
+
+00:03:29.629 --> 00:03:33.490
+out electronically we have better ways of dealing with this.
+
+00:03:33.490 --> 00:03:38.920
+The stock exchange keeps track of the last price at which a stock was traded.
+
+00:03:38.919 --> 00:03:42.604
+This is publicly posted as the current price of the stock,
+
+00:03:42.604 --> 00:03:45.199
+and if you wish to buy or sell shares around
+
+00:03:45.199 --> 00:03:48.369
+that price you should be able to do that immediately.
+
+00:03:48.370 --> 00:03:51.365
+This is known as placing a market order.
+
+00:03:51.365 --> 00:03:54.045
+But it does introduce one complication,
+
+00:03:54.044 --> 00:03:59.829
+someone has to be willing to sell or buy that stock on the other end at all times.
+
+00:03:59.830 --> 00:04:02.715
+That's where a market maker comes into the picture.
+
+00:04:02.715 --> 00:04:05.259
+A market maker is a financial firm.
+
+00:04:05.259 --> 00:04:08.419
+Usually a brokerage that continuously offers to
+
+00:04:08.419 --> 00:04:11.854
+buy and sell stocks at publicly advertised prices.
+
+00:04:11.854 --> 00:04:17.029
+For example, the New York Stock Exchange has designated market makers such as
+
+00:04:17.029 --> 00:04:20.434
+Citadel securities and J Stryker and Cole who are
+
+00:04:20.435 --> 00:04:24.280
+obligated to make large volumes of shares available for trading.
+
+00:04:24.279 --> 00:04:27.144
+You might think why would someone want to do that?
+
+00:04:27.144 --> 00:04:29.810
+What if a market maker buys a bunch of shares
+
+00:04:29.810 --> 00:04:32.759
+and then the price starts falling. That's right.
+
+00:04:32.759 --> 00:04:36.134
+They do take a risk by continuously buying and selling.
+
+00:04:36.134 --> 00:04:39.185
+But they are usually compensated for that risk by
+
+00:04:39.185 --> 00:04:42.780
+commissions and fees that they earn on those traits.
+
+00:04:42.779 --> 00:04:48.139
+They also maintain a small difference between the bid and ask prices for each stock.
+
+00:04:48.139 --> 00:04:51.610
+Say you want to sell some Microsoft shares at market price,
+
+00:04:51.610 --> 00:04:58.230
+a market maker is bidding $74 per stock which happens to be the best bid price available.
+
+00:04:58.230 --> 00:05:01.845
+So the market executes your order with that market maker.
+
+00:05:01.845 --> 00:05:07.720
+Later, another investor comes in and wants to buy some Microsoft shares at market price.
+
+00:05:07.720 --> 00:05:14.230
+The same market maker maybe asking for a slightly higher price to sell say $74.10.
+
+00:05:14.230 --> 00:05:19.015
+Assuming that's the best price available they just made $0.10 on each share,
+
+00:05:19.014 --> 00:05:20.604
+that might not seem much.
+
+00:05:20.605 --> 00:05:22.280
+But over the course of a day,
+
+00:05:22.279 --> 00:05:26.439
+a market maker typically trades thousands or millions of shares.
+
+00:05:26.439 --> 00:05:28.375
+That easily adds up.
+
+00:05:28.375 --> 00:05:33.165
+The difference between these prices is known as the Bid-Ask Spread.
+
+00:05:33.165 --> 00:05:35.840
+This is a very important concept to understand in
+
+00:05:35.839 --> 00:05:39.729
+trading and comes into play in other situations as well.
+

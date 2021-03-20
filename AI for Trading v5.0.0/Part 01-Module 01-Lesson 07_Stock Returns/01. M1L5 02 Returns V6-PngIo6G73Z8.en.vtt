@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.585
+Say we're looking at a time series of prices for a stock.
+
+00:00:03.585 --> 00:00:06.000
+The ups and downs are interesting if we're
+
+00:00:06.000 --> 00:00:08.550
+vaguely curious about how the company is doing.
+
+00:00:08.550 --> 00:00:10.070
+But more likely than not,
+
+00:00:10.070 --> 00:00:12.269
+we're looking at the price series because we own some of
+
+00:00:12.269 --> 00:00:16.289
+the stock or we've invested money in the stock on someone else's behalf.
+
+00:00:16.289 --> 00:00:21.004
+What we care about is how our investment has increased or decreased in value.
+
+00:00:21.004 --> 00:00:23.774
+So, how do we measure that increase or decrease?
+
+00:00:23.774 --> 00:00:28.479
+There are actually several metrics we might use to quantify changes in price over time.
+
+00:00:28.480 --> 00:00:31.435
+One is the simple difference in price.
+
+00:00:31.434 --> 00:00:34.504
+P_t minus P_t minus one.
+
+00:00:34.505 --> 00:00:37.505
+This might represent the difference between the price of a stock
+
+00:00:37.505 --> 00:00:40.695
+this month and it's price one month ago for example.
+
+00:00:40.695 --> 00:00:45.115
+Another is the percentage return or raw return.
+
+00:00:45.115 --> 00:00:48.685
+This is the difference divided by the starting price,
+
+00:00:48.685 --> 00:00:53.165
+P_t minus P_t minus one divided by P_t minus one.
+
+00:00:53.164 --> 00:00:59.475
+Imagine you bought a $1,000 of stock one month ago and sold it this month for $1050.
+
+00:00:59.475 --> 00:01:01.850
+Your return on your initial investment of
+
+00:01:01.850 --> 00:01:05.025
+$50 is five percent of your original investment.
+
+00:01:05.025 --> 00:01:10.685
+If you buy $5,000 of stock this month and sell it for $5,300 next month,
+
+00:01:10.685 --> 00:01:15.325
+you might want to compare the success of this new investment to the previous one.
+
+00:01:15.325 --> 00:01:18.075
+Instead of comparing $300 to $50,
+
+00:01:18.075 --> 00:01:21.030
+you can calculate the return and compare six percent to
+
+00:01:21.030 --> 00:01:24.579
+five percent to see that as a proportion of your original investment.
+
+00:01:24.579 --> 00:01:27.060
+You did slightly better with the second investment.
+
+00:01:27.060 --> 00:01:29.055
+That's the advantage of using returns.
+
+00:01:29.055 --> 00:01:31.965
+Prices are normalized and thus similar in scale.
+
+00:01:31.965 --> 00:01:36.469
+This is actually a requirement for many statistical and machine learning techniques.
+

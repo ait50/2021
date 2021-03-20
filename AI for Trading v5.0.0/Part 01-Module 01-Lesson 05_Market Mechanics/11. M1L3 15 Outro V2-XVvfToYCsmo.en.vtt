@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.850
+Now that you know how stock markets work,
+
+00:00:02.850 --> 00:00:05.970
+how trades are executed and how prices are set.
+
+00:00:05.969 --> 00:00:11.120
+We'll move on and take a closer look at the data you need to pay attention to.
+
+00:00:11.119 --> 00:00:15.570
+Market data forms the basis for quantitative analysis and trading.
+
+00:00:15.570 --> 00:00:18.030
+In addition, there are several other sources of
+
+00:00:18.030 --> 00:00:20.950
+information that you also need to take into account,
+
+00:00:20.949 --> 00:00:22.500
+such as corporate actions,
+
+00:00:22.500 --> 00:00:25.765
+data derived from fundamental information et cetera.
+
+00:00:25.765 --> 00:00:28.205
+All of these affect stock prices.
+
+00:00:28.204 --> 00:00:33.129
+So you need to factor them in when designing your quantitative trading pipeline.
+

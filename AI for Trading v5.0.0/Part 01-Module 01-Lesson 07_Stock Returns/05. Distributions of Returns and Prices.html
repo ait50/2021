@@ -1,0 +1,481 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Distributions of Returns and Prices
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Stock Returns
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Returns.html">
+       01. Returns
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Quiz Calculate Returns.html">
+       02. Quiz: Calculate Returns
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Log Returns.html">
+       03. Log Returns
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Quiz Log Returns and Compounding.html">
+       04. Quiz: Log Returns and Compounding
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Distributions of Returns and Prices.html">
+       05. Distributions of Returns and Prices
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Why Log Returns.html">
+       06. Why Log Returns?
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Distributions of Returns and Prices
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="distributions-of-returns-and-prices">
+          Distributions of Returns and Prices
+         </h2>
+         <p>
+          Investors are always interested in the potential appreciation or depreciation of financial assets. They'd like to be able to predict what will happen to assets in the future, hence, they'd like to be able to build
+          <em>
+           models
+          </em>
+          of stock prices and returns. An important first step is to think of these prices and returns as
+          <em>
+           random variables
+          </em>
+          , i.e. outcomes of random phenomena, that take on values as described by
+          <em>
+           distributions
+          </em>
+          . Distributions allow us to summarize the behavior of random variables. So, what are the distributions of returns and prices?
+         </p>
+         <p>
+          One strategy for getting a sense of potential future behavior is to look to the past. Let's look at some data from the stock of a familiar company with a storied past, Apple Inc.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="returns-and-the-historical-record">
+          Returns and the Historical Record
+         </h2>
+         <p>
+          Let's look at the
+          <em>
+           adjusted
+          </em>
+          closing price of Apple stock (AAPL) from 1980 up until the present.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/aapl-adj-close.jpeg"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          If we calculate returns and log returns on these data and plot them, we'll see something like the graphs below.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/aapl-returns-log-returns.jpeg"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          These plot look almost the same—that's because the returns and log returns for these
+          <em>
+           daily
+          </em>
+          data have
+          <strong>
+           very similar values
+          </strong>
+          . This is because daily returns are small—the values are close to 0, so the property
+          <span class="mathquill ud-math">
+           \ln(1 + r) \approx r
+          </span>
+          applies. But we're interested in the distribution of these values, so let's look at a histogram.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/aapl-returns-log-returns.jpeg"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Here we've plotted a histogram of AAPL's log returns from 1980 to the present, and we've overlaid a scaled normal distribution. We can see a few things right away from this plot. First, the values are centered around 0, and in fact look roughly normal. However, the tails of the histogram clearly lie above the tails of the normal distribution. We call these "fat tails".
+         </p>
+         <p>
+          In general, the normal distribution can be a reasonable approximation for short-term returns and log returns for some applications. However, many analyses have shown that the data do not conform perfectly to a normal distribution, and often deviate significantly in the tails. The significance of this is that the normal distribution predicts fewer extreme events than are actually observed. The conversation about the best model for the distribution of returns has been going on for at least the past century. The best model will depend on exactly what your analysis seeks to achieve.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="normality-and-long-term-investments">
+          Normality and Long-Term Investments
+         </h2>
+         <p>
+          Based on historical data, it may be reasonable to consider short-term returns as approximately normally distributed for some purposes. However, even if short-term returns are normally distributed, long-term returns cannot be. If
+          <span class="mathquill ud-math">
+           r_1 = \frac{p_1 - p_0}{p_0}
+          </span>
+          and
+          <span class="mathquill ud-math">
+           r_2 = \frac{p_2 - p_1}{p_1}
+          </span>
+          are normally distributed, the
+          <em>
+           sum
+          </em>
+          of these,
+          <span class="mathquill ud-math">
+           r_1 + r_2
+          </span>
+          would be normally distributed. But the two-period return is not the sum of the one-period returns.
+         </p>
+         <p>
+          Two-period return =
+          <span class="mathquill ud-math">
+           \frac{p_2 - p_0}{p_0}
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \frac{p_2 - p_0}{p_0} + 1 = \frac{p_2 - p_0}{p_0} + \frac{p_0}{p_0} = \frac{p_2}{p_0}
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           = \frac{p_1}{p_0}\times\frac{p_2}{p_1}
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           = (1 + r_1)(1 + r_2)
+          </span>
+         </p>
+         <p>
+          The product
+          <span class="mathquill ud-math">
+           (1 + r_1)(1 + r_2)
+          </span>
+          is not normal, and becomes noticeably less normal as the product grows over time.
+         </p>
+         <p>
+          Take a look at the workspace below to get a feeling for how this occurs.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          M1L5 06 Distribution Of Stock Prices Part 2 V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="05. M1L5 06 Distribution Of Stock Prices Part 2 V1-cGoXGiO1DYk.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="05. M1L5 06 Distribution Of Stock Prices Part 2 V1-cGoXGiO1DYk.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="05. M1L5 06 Distribution Of Stock Prices Part 2 V1-cGoXGiO1DYk.en.vtt" srclang="en"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="distribution-of-log-returns">
+          Distribution of Log Returns
+         </h2>
+         <p>
+          So long-term prices and cumulative returns can be modeled as approximately lognormally distributed because they are
+          <em>
+           products
+          </em>
+          of independently, identically distributed (IID) random variables. On the other hand,
+          <strong>
+           log returns
+          </strong>
+          <em>
+           sum
+          </em>
+          over time. Therefore, if
+          <span class="mathquill ud-math">
+           R_1 = \ln\left(\frac{p_1}{p_0}\right)
+          </span>
+          and
+          <span class="mathquill ud-math">
+           R_2 = \ln\left(\frac{p_2}{p_1}\right)
+          </span>
+          are normal, their sum, the two-period log return, is also normal. Even if they are not normal, as long as they are IID, their long-term sum will be approximately normal, thanks to the Central Limit Theorem. This is one reason why using log returns can be convenient for modeling purposes.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Why Log Returns.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Distributions of Returns and Prices')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

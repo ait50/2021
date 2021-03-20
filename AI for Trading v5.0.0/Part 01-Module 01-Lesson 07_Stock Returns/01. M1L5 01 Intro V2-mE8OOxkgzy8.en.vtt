@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.029
+So far, you've seen some stock market data and
+
+00:00:03.029 --> 00:00:06.070
+learned about some of the market processes that generate these data,
+
+00:00:06.070 --> 00:00:09.984
+so you're beginning to see what these long streams of numbers actually mean.
+
+00:00:09.984 --> 00:00:12.330
+As is true of all types of data,
+
+00:00:12.330 --> 00:00:14.699
+stock data represent measurements of things in
+
+00:00:14.699 --> 00:00:17.250
+the real world that have certain properties,
+
+00:00:17.250 --> 00:00:21.754
+and people often take particular steps or make certain assumptions on analyzing them.
+
+00:00:21.754 --> 00:00:25.019
+In this lesson, we're going to talk about some of the important properties
+
+00:00:25.019 --> 00:00:28.320
+of stock data that lead people to analyze them in certain ways.
+

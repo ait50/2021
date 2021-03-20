@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.089
+Quantitative analysts frequently work with a quantity
+
+00:00:03.089 --> 00:00:05.769
+related to but slightly different from the raw return,
+
+00:00:05.769 --> 00:00:08.279
+the natural logarithm of return.
+
+00:00:08.279 --> 00:00:10.769
+Remember how the return was defined as
+
+00:00:10.769 --> 00:00:14.890
+P sub t minus P sub t minus one divided by P sub t minus 1.
+
+00:00:14.890 --> 00:00:17.875
+Well, the log return is defined slightly differently,
+
+00:00:17.875 --> 00:00:22.254
+as the natural logarithm of P sub t divided by P sub t minus one.
+
+00:00:22.254 --> 00:00:24.980
+To see how to convert between these two quantities,
+
+00:00:24.980 --> 00:00:31.109
+note that if we add one to P sub t minus P sub t minus one divided by P sub t minus one,
+
+00:00:31.109 --> 00:00:34.240
+we can convert one to P sub t minus one,
+
+00:00:34.240 --> 00:00:36.070
+divided by P sub t minus one,
+
+00:00:36.070 --> 00:00:41.115
+and the expression simplifies to P sub t divided by P sub t minus one.
+
+00:00:41.115 --> 00:00:44.310
+So, if we denote the log return as capital R,
+
+00:00:44.310 --> 00:00:46.359
+and the raw return as little r,
+
+00:00:46.359 --> 00:00:49.609
+then capital R equals the log of little r plus
+
+00:00:49.609 --> 00:00:53.810
+one and little r equals e to the capital R minus one.
+
+00:00:53.810 --> 00:00:56.435
+Why the quantitative analysts use log returns?
+
+00:00:56.435 --> 00:01:00.560
+Well, it turns out that log returns have a number of appealing properties.
+
+00:01:00.560 --> 00:01:02.300
+Instead of listing them all now,
+
+00:01:02.299 --> 00:01:04.250
+we're going to highlight them as they arise while we
+
+00:01:04.250 --> 00:01:06.775
+talk about the remaining content in this lesson.
+
+00:01:06.775 --> 00:01:09.685
+For one thing, if the value of R is small,
+
+00:01:09.685 --> 00:01:11.025
+or much less than one,
+
+00:01:11.025 --> 00:01:14.135
+then the natural log of one plus r approximately equals
+
+00:01:14.135 --> 00:01:18.050
+r. Since returns are typically small percentages,
+
+00:01:18.049 --> 00:01:22.000
+the values of log returns are typically close to the values of returns.
+
+00:01:22.000 --> 00:01:24.094
+To understand this intuitively,
+
+00:01:24.094 --> 00:01:27.349
+take a look at the graph of the natural log of x plus one,
+
+00:01:27.349 --> 00:01:29.369
+it goes through the point 00,
+
+00:01:29.370 --> 00:01:31.025
+and it has a slope of one there,
+
+00:01:31.025 --> 00:01:34.495
+so at 00 it's tangent to the line y equals x.
+
+00:01:34.495 --> 00:01:38.590
+If we were to zoom into a tiny neighborhood around x equals 0,
+
+00:01:38.590 --> 00:01:40.969
+the two lines practically overlie each other,
+
+00:01:40.969 --> 00:01:44.409
+so the natural log of x plus one approximately equals X.
+
+00:01:44.409 --> 00:01:46.530
+That's all that equation is saying.
+

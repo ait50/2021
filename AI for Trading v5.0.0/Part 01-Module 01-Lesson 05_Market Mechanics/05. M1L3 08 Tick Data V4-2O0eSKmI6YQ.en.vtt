@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.540
+Stock exchanges publish a stream of data that includes each individual trade.
+
+00:00:05.540 --> 00:00:07.849
+This is known as tick data.
+
+00:00:07.849 --> 00:00:12.839
+Ticks are an intuitive way to gauge the health of a stock or even an entire market.
+
+00:00:12.839 --> 00:00:14.129
+Are investors happy?
+
+00:00:14.130 --> 00:00:15.235
+Are they making money?
+
+00:00:15.234 --> 00:00:18.355
+Are prices generally rising or falling, ect.?
+
+00:00:18.355 --> 00:00:21.949
+For example, you can compare each stock's latest tick price
+
+00:00:21.949 --> 00:00:25.589
+with its previous price to see if it is going up or down.
+
+00:00:25.589 --> 00:00:28.910
+You can then aggregate this information by comparing
+
+00:00:28.910 --> 00:00:33.090
+the number of stocks on an up-tick with the number of stocks on a down-tick.
+
+00:00:33.090 --> 00:00:38.490
+These ticks also form the basis for all market data that is available for analysis.
+
+00:00:38.490 --> 00:00:42.035
+Tick data can provide further insight into how
+
+00:00:42.034 --> 00:00:47.424
+a particular stock is behaving and can help you take better intraday decisions,
+
+00:00:47.424 --> 00:00:50.820
+but you're talking about a massive volume of data.
+
+00:00:50.820 --> 00:00:53.984
+Have you ever wondered how busy stock markets are?
+
+00:00:53.984 --> 00:00:58.695
+The New York Stock Exchange carries out billions of trades every day.
+
+00:00:58.695 --> 00:01:00.695
+That's billions with a B.
+
+00:01:00.695 --> 00:01:02.375
+If you want to keep track of
+
+00:01:02.375 --> 00:01:06.805
+all these transactions and use all that data to make trading decisions,
+
+00:01:06.805 --> 00:01:08.495
+that might slow you down.
+
+00:01:08.495 --> 00:01:11.510
+Even if you want to use historical tick data to build
+
+00:01:11.510 --> 00:01:14.704
+statistical models or train a learning algorithm,
+
+00:01:14.704 --> 00:01:17.325
+it might be too much data to process.
+
+00:01:17.325 --> 00:01:24.950
+Consider that over $42 trillion worth of stocks and shares were traded in the US in 2016.
+
+00:01:24.950 --> 00:01:26.325
+A single year.
+
+00:01:26.325 --> 00:01:29.954
+That's more than double the GDP of the entire country.
+
+00:01:29.954 --> 00:01:35.209
+Fortunately, market data can be summarized in a way that drastically reduces
+
+00:01:35.209 --> 00:01:37.969
+the volume of information to be processed and
+
+00:01:37.969 --> 00:01:41.530
+yet retains most of the important characteristics.
+

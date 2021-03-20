@@ -1,0 +1,667 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: Log Returns and Compounding
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Stock Returns
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Returns.html">
+       01. Returns
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Quiz Calculate Returns.html">
+       02. Quiz: Calculate Returns
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Log Returns.html">
+       03. Log Returns
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Quiz Log Returns and Compounding.html">
+       04. Quiz: Log Returns and Compounding
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Distributions of Returns and Prices.html">
+       05. Distributions of Returns and Prices
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Why Log Returns.html">
+       06. Why Log Returns?
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Quiz: Log Returns and Compounding
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="log-returns-and-compounding">
+          Log Returns and Compounding
+         </h2>
+         <p>
+          Log returns can be convenient for calculations that involve compounding. To explain this idea, let's first discuss compounding.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Annual Rate of Interest
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             If you invest $100 in an asset, and the rate of return is 4% per year, and the amount of interest accrued is only calculated after the money has sat in the account for 1 year, how much money do you have after 1 year?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1531078513148" name="672074" type="radio" value="a1531078513148"/>
+           <label for="a1531078513148">
+            <p>
+             $102
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531078601272" name="672074" type="radio" value="a1531078601272"/>
+           <label for="a1531078601272">
+            <p>
+             $108
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531078601918" name="672074" type="radio" value="a1531078601918"/>
+           <label for="a1531078601918">
+            <p>
+             $104
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531078602574" name="672074" type="radio" value="a1531078602574"/>
+           <label for="a1531078602574">
+            <p>
+             $116
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          $104
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="compounding">
+          Compounding
+         </h2>
+         <p>
+          The idea of compounding is a simple one. Say you put $100 in a bank account that earns 4% interest per year, compounded annually. After 1 year, you have
+         </p>
+         <p>
+          $100 + $100*0.04 = $104.
+         </p>
+         <p>
+          The next year, you have,
+         </p>
+         <p>
+          $104 + $104*0.04 = $108.16,
+         </p>
+         <p>
+          so you earned another $4 of interest on the original $100 but also 16 cents on the $4 of interest earned last year.
+         </p>
+         <p>
+          Compounding is the process by which an asset’s earnings are reinvested to generate additional earnings, that is to say, earning interest on interest.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Rates of Compounding
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Let's say you invest $100 in an asset. The
+             <em>
+              annual
+             </em>
+             rate of interest is reported at 4%, but the asset's seller has explained that what this means is that 2% is gained over 6 months, and then interest is calculated on the investment and it's reinvested, and then the process is repeated after the next 6 months. How much money will you have at the end of 1 year?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1531078845095" name="672075" type="radio" value="a1531078845095"/>
+           <label for="a1531078845095">
+            <p>
+             $104.04
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531078966286" name="672075" type="radio" value="a1531078966286"/>
+           <label for="a1531078966286">
+            <p>
+             $104.00
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531078967059" name="672075" type="radio" value="a1531078967059"/>
+           <label for="a1531078967059">
+            <p>
+             $102.00
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531078967615" name="672075" type="radio" value="a1531078967615"/>
+           <label for="a1531078967615">
+            <p>
+             $102.04
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          $104.04
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="rates-of-compounding">
+          Rates of Compounding
+         </h2>
+         <p>
+          A statement by a bank that the interest rate on one-year deposits is 4% per year sounds straightforward and unambiguous. In fact, its precise meaning depends on the way the interest rate is measured. For an interest rate statement to be clear, the magnitude and time dependence of the rate of interest, as well as the frequency of compounding, must be clearly stated.
+         </p>
+         <p>
+          If the interest rate is measured with annual compounding, the bank’s statement that the interest rate is 4% means that $100 grows to
+          <span class="mathquill ud-math">
+           \$100\times(1 + .04) = \$104
+          </span>
+          at the end of 1 year.
+         </p>
+         <p>
+          When the interest rate is measured with semiannual compounding, it means that 2% is earned every 6 months, with the interest being reinvested. In this case, $100 grows to
+          <span class="mathquill ud-math">
+           \$100\times(1 + .04/2)\times(1 + .04/2) = \$100\times(1 + .04/2)^2 = \$104.04
+          </span>
+          , at the end of 1 year.
+         </p>
+         <p>
+          When the interest rate is measured with quarterly compounding, the bank’s statement means that 1% is earned every 3 months, with the interest being reinvested. The $100 then grows to
+          <span class="mathquill ud-math">
+           \$100\times(1 + .04/4)^4 = \$104.06
+          </span>
+          at the end of 1 year.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="continuous-compounding">
+          Continuous Compounding
+         </h2>
+         <p>
+          Let's compare the amount of money accumulated after 1 year with the same annual rate of interest of 4%, but different rates of compounding:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{array}{c c}   \textbf{Compounding frequency} &amp; \textbf{Value of \$100 after 1 year} \\   \textrm{Annually (n=1)} &amp; \$104.00 \\   \textrm{Semi-annually (n=2)} &amp; \$104.04 \\   \textrm{Quarterly (n=4)} &amp; \$104.06 \\   \textrm{Monthly (n=12)} &amp; \$104.07 \\   \textrm{Weekly (n=52)} &amp; \$104.08 \\   \textrm{Daily (n=252)} &amp; \$104.08\end{array}
+          </span>
+         </p>
+         <p>
+          Looking at the table, you can see that with more frequent compounding, the value at 1 year increases but then seems to level off. If you assumed that the benefit of compounding more and more frequently had a limit, you would be right! How do we calculate this limit? Well, first we write down the formula for compounding,
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           p_t = p_{t-1}(1 + \frac{r}{n})^n
+          </span>
+          ,
+         </p>
+         <p>
+          and then we notice that what we'd like to do is make n bigger and bigger. We want the limit as n goes to infinity. Well, it turns out that this limit is:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \lim_{n\to\infty}\left( 1 + \frac{r}{n}\right)^n = \mathrm{e}^r
+          </span>
+         </p>
+         <p>
+          Compounding infinitely often is called
+          <em>
+           continuous compounding
+          </em>
+          . So what does this mean? Well, it means that if you wanted to calculate how much money you’d have at the end of the year if you started with $100 and compounded
+          <em>
+           continuously
+          </em>
+          , but at a simple annual rate of 4%, you’d calculate:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \$100 \times \mathrm{e}^{.04} = \$104.08
+          </span>
+         </p>
+         <p>
+          You'll notice that the value after 1 year with
+          <em>
+           continuous
+          </em>
+          compounding is pretty close (it's the same if we round to two decimal places) to the value after 1 year with
+          <em>
+           daily
+          </em>
+          compounding.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="continuously-compounded-return">
+          Continuously Compounded Return
+         </h2>
+         <p>
+          Now, say you were trying to reverse the previous calculation. Say you knew you had $104.08 at the end of the year, and $100 at the beginning of the year, and you wanted to calculate the rate of interest
+          <em>
+           as if it had been compounded continuously
+          </em>
+          . You would simply invert the formula. So you’d calculate:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \$104.08/\$100 = \mathrm{e}^r
+          </span>
+         </p>
+         <p>
+          Then you'd take the natural log of both sides, and then you'd have,
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \ln(\$104.08/\$100) = r
+          </span>
+         </p>
+         <p>
+          So,
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           .04 = r
+          </span>
+         </p>
+         <p>
+          r is the
+          <em>
+           continuously compounded annual return
+          </em>
+          . So the continuously compounded annual return equals
+          <span class="mathquill ud-math">
+           \ln(p_t/p_{t-1})
+          </span>
+          . But what is this quantity? It’s just the log return! This is why you might hear log returns called
+          <em>
+           continuously compounded returns
+          </em>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="additivity">
+          Additivity
+         </h2>
+         <p>
+          Now, say we invested $100, and the
+          <em>
+           monthly
+          </em>
+          continuously compounded interest rate was 2%. At the end of the month, we’d have
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \$100 \times \mathrm{e}^{.02} = \$102.02
+          </span>
+         </p>
+         <p>
+          But if the investment continued to accrue at a monthly continuously compounded rate of 0.02 for a whole year, we’d have
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \$100 \times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}\times \mathrm{e}^{.02}
+          </span>
+          <br/>
+          … in total, 12 factors of
+          <span class="mathquill ud-math">
+           \mathrm{e}^{.02}
+          </span>
+          .
+          <br/>
+          So we'd have
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \$100 \times (\mathrm{e}^{.02*12}) = \$127.12
+          </span>
+         </p>
+         <p>
+          Equivalently,
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \$100 \times \mathrm{e}^{.24} = \$127.12
+          </span>
+         </p>
+         <p>
+          Since the annual rate of continuous compounding, 0.24, is simply the sum of the monthly rates of continuous compounding, we say that the continuously compounded rate of return
+          <em>
+           is additive over time
+          </em>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="annualized-rate-of-return">
+          Annualized Rate of Return
+         </h2>
+         <p>
+          We saw above how to calculate the annual rate of continuous compounding from the monthly rate of continuous compounding. If we just had a single monthly rate, but we assumed that the rates for all the months of the year were the same, we could
+          <em>
+           extrapolate
+          </em>
+          the monthly rate to an annual rate by multiplying by 12. This is called
+          <em>
+           annualizing
+          </em>
+          the rate of continuous compounding. Rates of return and other metrics are often converted to a common annual basis in order to make comparisons across contexts and instruments.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="time-additivity-of-log-returns">
+          Time Additivity of Log Returns
+         </h2>
+         <p>
+          So, as you can see, the rate of continuous compounding is additive over time. Since, mathematically, the rate of continuous compounding is just the log return, this means that log returns are additive over time, and this can be very convenient. As another example,
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathrm{log\;return\;for\;January} + \mathrm{log\;return\;for\;February}
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           = \ln \left( \frac{p_{\mathrm{Feb\;1}}}{p_{\mathrm{Jan\;1}}} \right) + \ln \left( \frac{p_{\mathrm{Mar\;1}}}{p_{\mathrm{Feb\;1}}} \right)
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           = \ln(p_{\mathrm{Feb\;1}}) - \ln(p_{\mathrm{Jan\;1}}) + \ln(p_{\mathrm{Mar\;1}}) - \ln(p_{\mathrm{Feb\;1}})
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           = \ln(p_{\mathrm{Mar\;1}})  - \ln(p_{\mathrm{Jan\;1}})
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           = \ln \left( \frac{p_{\mathrm{Mar\;1}}}{p_{\mathrm{Jan\;1}}} \right)
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           =\mathrm{log\;return\;for\;January\;and\;February}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="numerical-stability">
+          Numerical Stability
+         </h2>
+         <p>
+          Multiplication of many small numbers can result in the problem that the product is smaller than the smallest number representable in computer memory. Sometimes the computation will incorrectly yield the value 0. This is called
+          <em>
+           arithmetic underflow
+          </em>
+          . The use of logarithms can help with this, since it enables the representation of much smaller (and much larger) numbers. For example:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/numerical-stability-example.jpg"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Distributions of Returns and Prices.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Quiz: Log Returns and Compounding')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

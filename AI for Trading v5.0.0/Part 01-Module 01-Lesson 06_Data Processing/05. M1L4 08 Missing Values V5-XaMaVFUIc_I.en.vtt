@@ -1,0 +1,274 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.910
+Up until now, you've been treating stock prices as a continuous time series.
+
+00:00:05.910 --> 00:00:13.169
+For instance, the end of day data for stock includes a row for every day or does it?
+
+00:00:13.169 --> 00:00:18.314
+Here's how Facebook traded over the month of May in 2017.
+
+00:00:18.315 --> 00:00:21.750
+As you can see, there's these clumps of five samples and
+
+00:00:21.750 --> 00:00:26.500
+then a gap and then another clump and so on.
+
+00:00:26.500 --> 00:00:29.690
+Take a look at the calendar for that month each clump of
+
+00:00:29.690 --> 00:00:33.585
+five dates in the plot corresponds to a workweek.
+
+00:00:33.585 --> 00:00:38.509
+These gaps are simply weekends when the market was closed.
+
+00:00:38.509 --> 00:00:42.594
+Two months later, it's July and we see a similar pattern,
+
+00:00:42.594 --> 00:00:44.094
+but here at the beginning,
+
+00:00:44.094 --> 00:00:46.250
+there seems to be a date missing,
+
+00:00:46.250 --> 00:00:49.884
+its fourth of July a holiday in the United States.
+
+00:00:49.884 --> 00:00:52.684
+So, gaps in the data can result from weekends,
+
+00:00:52.685 --> 00:00:56.620
+holidays, and other reasons the market might be closed.
+
+00:00:56.619 --> 00:00:59.524
+You might be thinking why is this important?
+
+00:00:59.524 --> 00:01:02.879
+After all, if we forget about these missing days,
+
+00:01:02.880 --> 00:01:06.530
+the data is still continuous in terms of trading days.
+
+00:01:06.530 --> 00:01:09.460
+Well, that's true if you treat the price data as
+
+00:01:09.459 --> 00:01:12.524
+simple sequence and ignore the timestamps,
+
+00:01:12.525 --> 00:01:15.070
+then you don't need to worry about the gaps.
+
+00:01:15.069 --> 00:01:17.619
+Say, you're computing daily returns.
+
+00:01:17.620 --> 00:01:22.320
+Take the price on each day and subtract it from the price on the previous day.
+
+00:01:22.319 --> 00:01:25.484
+Well, previous trading day that is.
+
+00:01:25.484 --> 00:01:28.179
+For more robust approach to trading,
+
+00:01:28.180 --> 00:01:31.125
+you may not want to ignore the missing days.
+
+00:01:31.125 --> 00:01:33.105
+Even if the market is closed,
+
+00:01:33.105 --> 00:01:38.215
+other events can occur that might influence stock prices when the market reopens.
+
+00:01:38.215 --> 00:01:41.490
+For example, company announcements, news articles,
+
+00:01:41.489 --> 00:01:43.439
+geopolitical events, natural disasters,
+
+00:01:43.439 --> 00:01:46.325
+anything and everything can affect the stock price.
+
+00:01:46.325 --> 00:01:49.189
+The more time between two trading days,
+
+00:01:49.189 --> 00:01:51.679
+the bigger the window for things to happen.
+
+00:01:51.680 --> 00:01:55.250
+So, you could try to normalize returns by dividing
+
+00:01:55.250 --> 00:01:59.094
+the actual number of days between any two samples.
+
+00:01:59.094 --> 00:02:01.685
+This may work in certain applications,
+
+00:02:01.685 --> 00:02:05.045
+but can reduce the genuine large differences,
+
+00:02:05.045 --> 00:02:09.110
+or you could just use that information about these irregular gaps
+
+00:02:09.110 --> 00:02:13.510
+between samples when trying to make trading decisions.
+
+00:02:13.509 --> 00:02:16.965
+Okay, let's recap, weekends,
+
+00:02:16.965 --> 00:02:22.248
+holidays, and other events can cause market to be closed on certain dates.
+
+00:02:22.248 --> 00:02:25.430
+These dates may be missing in stock market data,
+
+00:02:25.430 --> 00:02:27.610
+you can choose to ignore these gaps,
+
+00:02:27.610 --> 00:02:32.885
+normalize for them, or identify and deal with them as needed.
+
+00:02:32.884 --> 00:02:38.269
+Another kind of gap you should be aware of is the time between the market
+
+00:02:38.270 --> 00:02:43.390
+closes for the day and when it reopens the next day.
+
+00:02:43.389 --> 00:02:49.429
+Markets often allow some additional trading during the pre and post market sessions.
+
+00:02:49.430 --> 00:02:52.004
+Few traders participate in these sessions,
+
+00:02:52.004 --> 00:02:53.810
+so the volume is low,
+
+00:02:53.810 --> 00:02:57.310
+but these transactions can still affect stock prices.
+
+00:02:57.310 --> 00:03:02.240
+Moreover, when a stock is listed on multiple exchanges around the globe,
+
+00:03:02.240 --> 00:03:08.180
+its price may be actually changing around the clock on another exchange.
+
+00:03:08.180 --> 00:03:10.849
+When a particular market opens for trading,
+
+00:03:10.848 --> 00:03:12.889
+the price of that stock can be different from
+
+00:03:12.889 --> 00:03:16.539
+the closing price on that market from the previous day.
+
+00:03:16.539 --> 00:03:20.239
+Again, depending on how you are using the price information,
+
+00:03:20.240 --> 00:03:23.105
+you may not need to worry about these differences,
+
+00:03:23.104 --> 00:03:28.104
+but they may give you an additional clue that you can use for trading.
+
+00:03:28.104 --> 00:03:31.699
+A more significant case of missing values is
+
+00:03:31.699 --> 00:03:35.869
+produced by a major corporate action like listings and mergers.
+
+00:03:35.870 --> 00:03:42.344
+For instance, say you're analyzing stock data from the year 2000 to 2016,
+
+00:03:42.344 --> 00:03:45.340
+Google only IPOed in 2004,
+
+00:03:45.340 --> 00:03:48.675
+there is no existence of the stock prior to that.
+
+00:03:48.675 --> 00:03:50.385
+So, what do you do?
+
+00:03:50.384 --> 00:03:53.299
+If you absolutely need a value to work with,
+
+00:03:53.300 --> 00:03:57.740
+you can backfill Google's opening price from its IPO date to
+
+00:03:57.740 --> 00:04:02.570
+the beginning of your analysis period using the same price for open,
+
+00:04:02.569 --> 00:04:04.379
+high, low, and close.
+
+00:04:04.379 --> 00:04:07.560
+Since no trading actually happened on these days,
+
+00:04:07.560 --> 00:04:09.784
+you can set volume to zero.
+
+00:04:09.784 --> 00:04:11.859
+But, this may not be necessary,
+
+00:04:11.860 --> 00:04:13.430
+and it can be misleading.
+
+00:04:13.430 --> 00:04:18.079
+So instead, you can maintain a list of valid ticker symbols that form
+
+00:04:18.079 --> 00:04:23.814
+the universe of stocks you're considering and this list can change from day to day.
+
+00:04:23.814 --> 00:04:29.569
+A more bizarre case happens when a company is delisted from exchange.
+
+00:04:29.569 --> 00:04:35.680
+Perhaps because they went bankrupt or got bought out entirely by private investors.
+
+00:04:35.680 --> 00:04:41.240
+Dell went private in 2013 by buying back all its public shares.
+
+00:04:41.240 --> 00:04:45.805
+No record of Dell stock exists from that point onwards.
+
+00:04:45.805 --> 00:04:50.275
+If you held a share of Dell stock on that day it went private,
+
+00:04:50.274 --> 00:04:52.554
+it's not like you'd lost that investment,
+
+00:04:52.555 --> 00:04:55.540
+you would have been paid by Dell for that share.
+
+00:04:55.540 --> 00:04:59.300
+So, it would be wrong to assume that the price dropped to zero.
+
+00:04:59.300 --> 00:05:03.110
+One way to mitigate this is to fill the last known price on
+
+00:05:03.110 --> 00:05:07.220
+the stock forward till the end of your analysis period,
+
+00:05:07.220 --> 00:05:10.819
+or if you're simulating trades over that time period,
+
+00:05:10.819 --> 00:05:13.699
+you can force sell the stock on that date and
+
+00:05:13.699 --> 00:05:17.474
+remove Dell from the stock universe going forward.
+
+00:05:17.475 --> 00:05:20.510
+How you ultimately deal with this misleading values will
+
+00:05:20.509 --> 00:05:23.829
+depend on exactly what you're trying to do with the data,
+
+00:05:23.829 --> 00:05:25.519
+but completely ignoring them,
+
+00:05:25.519 --> 00:05:27.529
+might not be the right choice.
+
