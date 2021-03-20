@@ -1,0 +1,259 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.019
+Generally, there are two ways to create Numpy arrays.
+
+00:00:04.019 --> 00:00:08.239
+First, using Numpy's array function to create
+
+00:00:08.240 --> 00:00:12.955
+them from other array-like objects such as regular Python lists.
+
+00:00:12.955 --> 00:00:15.875
+And second, using a variety of
+
+00:00:15.875 --> 00:00:20.820
+built-in Numpy functions that quickly generate specific types of arrays.
+
+00:00:20.820 --> 00:00:24.480
+In this section, we will start with the first way.
+
+00:00:24.480 --> 00:00:28.490
+Let's import Numpy and create our first array.
+
+00:00:28.489 --> 00:00:32.924
+Here's a one-dimensional array that contains integers.
+
+00:00:32.924 --> 00:00:34.774
+Note that for clarity,
+
+00:00:34.774 --> 00:00:39.280
+the examples throughout these lessons will use small, simple arrays.
+
+00:00:39.280 --> 00:00:44.710
+We'll start by creating one-dimensional or 1D Numpy arrays.
+
+00:00:44.710 --> 00:00:47.064
+Let's print the array we just created,
+
+00:00:47.064 --> 00:00:48.479
+as well as, it's type.
+
+00:00:48.479 --> 00:00:54.359
+You can see that the type is Numpy's ndarray or n-dimensional array.
+
+00:00:54.359 --> 00:00:57.649
+Numpy arrays have useful attributes that provide
+
+00:00:57.649 --> 00:01:00.929
+us information about them in a very intuitive way.
+
+00:01:00.929 --> 00:01:03.740
+For example, this dtype attribute.
+
+00:01:03.740 --> 00:01:07.825
+Dtype returns the data type of the elements in that array.
+
+00:01:07.825 --> 00:01:13.689
+Notice, dtype is different from the datatype of the array itself.
+
+00:01:13.689 --> 00:01:17.564
+This d type let's us know that the elements of X
+
+00:01:17.564 --> 00:01:21.670
+are stored in memory a signed 64-bit integers.
+
+00:01:21.670 --> 00:01:27.365
+An additional advantage of Numpy is that it handles more datatypes than Python.
+
+00:01:27.364 --> 00:01:32.858
+You can check out all the different datatypes supported by Numpy in it's documentation.
+
+00:01:32.858 --> 00:01:35.479
+Another useful attribute is shape.
+
+00:01:35.480 --> 00:01:40.385
+This returns a tuple of n positive integers that specifies
+
+00:01:40.385 --> 00:01:45.795
+the sizes of each dimension n being the number of dimensions in the array.
+
+00:01:45.795 --> 00:01:48.109
+X has one dimension.
+
+00:01:48.109 --> 00:01:53.344
+So, shape returns an integer indicating the length of the array, five.
+
+00:01:53.344 --> 00:01:56.334
+If we had a two-dimensional array,
+
+00:01:56.334 --> 00:02:00.719
+this shape attribute would return a tuple with two values,
+
+00:02:00.719 --> 00:02:05.250
+one for the number of rows and one for the number of columns.
+
+00:02:05.250 --> 00:02:10.349
+To see this, let's create a two-dimensional array from a nested Python list.
+
+00:02:10.349 --> 00:02:13.079
+Here is one that contains integers.
+
+00:02:13.080 --> 00:02:16.395
+And let's print an additional attribute size.
+
+00:02:16.395 --> 00:02:19.135
+Looking at the tuple returned by shape,
+
+00:02:19.134 --> 00:02:23.554
+we know that Y has two dimensions since there are two elements.
+
+00:02:23.555 --> 00:02:28.629
+One is for the size of the first dimension which is the number of rows,
+
+00:02:28.629 --> 00:02:32.655
+four, and the other is for the second dimension,
+
+00:02:32.655 --> 00:02:35.254
+which is the number of columns, three.
+
+00:02:35.254 --> 00:02:40.875
+The size attribute gives us the total number of elements in Y which is 12.
+
+00:02:40.875 --> 00:02:44.985
+Let's pause for a second to introduce some useful terminology.
+
+00:02:44.985 --> 00:02:51.190
+In general, we say that an array with n dimensions has a rank n. So,
+
+00:02:51.189 --> 00:02:54.849
+we refer to the 1D array we created earlier as
+
+00:02:54.849 --> 00:03:02.079
+a rank one-array and we refer to the 2D array we just created as a rank two-array.
+
+00:03:02.080 --> 00:03:03.710
+For our next example,
+
+00:03:03.710 --> 00:03:07.960
+let's create a rank one-array that contains strings,
+
+00:03:07.960 --> 00:03:11.224
+and let's print those same attributes.
+
+00:03:11.224 --> 00:03:15.639
+The type of the array object itself isn't any different,
+
+00:03:15.639 --> 00:03:17.594
+it's still just a Numpy array.
+
+00:03:17.594 --> 00:03:20.984
+However, the dtype of this array is different.
+
+00:03:20.985 --> 00:03:25.765
+Here elements are stored as unicode strings of five characters.
+
+00:03:25.764 --> 00:03:28.474
+Notice that when Numpy creates an array,
+
+00:03:28.474 --> 00:03:31.310
+it automatically assigns it's dtype
+
+00:03:31.310 --> 00:03:35.400
+based on the type of the elements you used to create the array.
+
+00:03:35.400 --> 00:03:38.694
+But what happens when we try to create a Numpy array
+
+00:03:38.694 --> 00:03:42.824
+with a list that contains both integers and strings?
+
+00:03:42.824 --> 00:03:47.424
+We can see that even though the Python list had mixed datatypes,
+
+00:03:47.425 --> 00:03:54.575
+the array function created a Numpy array with elements of all the same datatype namely,
+
+00:03:54.574 --> 00:03:57.354
+unicode strings of 21 characters.
+
+00:03:57.354 --> 00:03:59.959
+Remember, unlike Python lists,
+
+00:03:59.960 --> 00:04:03.920
+Numpy arrays must contain elements of the same type.
+
+00:04:03.919 --> 00:04:08.500
+Up until now, we've only used elements that were integers or strings.
+
+00:04:08.500 --> 00:04:14.485
+Let's try another example with mixed datatypes using integers and floats.
+
+00:04:14.485 --> 00:04:18.620
+When we input a list with both integers and floats,
+
+00:04:18.620 --> 00:04:20.910
+Numpy assigns all elements,
+
+00:04:20.910 --> 00:04:23.160
+the float 64 dtype,
+
+00:04:23.160 --> 00:04:25.720
+this is called upcasting.
+
+00:04:25.720 --> 00:04:30.285
+Since all the elements of a Numpy array must be of the same type,
+
+00:04:30.285 --> 00:04:33.790
+Numpy upcasts the integers in the array to
+
+00:04:33.790 --> 00:04:38.740
+floats in order to avoid losing precision in numerical computations.
+
+00:04:38.740 --> 00:04:41.400
+Numpy also allows you to specify
+
+00:04:41.399 --> 00:04:45.764
+a particular dtype you want to assign to the elements of an array,
+
+00:04:45.764 --> 00:04:50.699
+you can do this using the keyword dtype in the array function.
+
+00:04:50.699 --> 00:04:53.995
+Here, you can see Numpy created an array of
+
+00:04:53.995 --> 00:04:57.800
+ints even though we passed it a list of floats.
+
+00:04:57.800 --> 00:05:00.530
+Specifying the datatype of the elements in
+
+00:05:00.529 --> 00:05:05.359
+a Numpy array can be useful in cases where you don't want to accidentally
+
+00:05:05.360 --> 00:05:09.045
+choose the wrong datatype or when you only need
+
+00:05:09.045 --> 00:05:13.379
+a certain amount of precision in your calculations and want to save memory.
+
+00:05:13.379 --> 00:05:15.439
+Once you create a Numpy array,
+
+00:05:15.439 --> 00:05:21.279
+you may want to save it to a file to be read later or to be used by another program.
+
+00:05:21.279 --> 00:05:26.484
+Numpy provides a way to save the arrays into files for later use.
+
+00:05:26.485 --> 00:05:30.545
+We can save X into the current directory like this.
+
+00:05:30.545 --> 00:05:35.420
+This saves the array into a file named my array dot npy.
+
+00:05:35.420 --> 00:05:43.080
+You can later load this file into a variable by using the load function like this.
+

@@ -1,0 +1,557 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Accessing and Deleting Elements in pandas Series
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Pandas
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructors.html">
+       01. Instructors
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Introduction to pandas.html">
+       02. Introduction to pandas
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Why Use pandas.html">
+       03. Why Use pandas?
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Creating pandas Series.html">
+       04. Creating pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Accessing and Deleting Elements in pandas Series.html">
+       05. Accessing and Deleting Elements in pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Arithmetic Operations on pandas Series.html">
+       06. Arithmetic Operations on pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Manipulate a Series.html">
+       07. Manipulate a Series
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Creating pandas DataFrames.html">
+       08. Creating pandas DataFrames
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Accessing Elements in pandas DataFrames.html">
+       09. Accessing Elements in pandas DataFrames
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Dealing with NaN.html">
+       10. Dealing with NaN
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Manipulate a DataFrame.html">
+       11. Manipulate a DataFrame
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Loading Data into a pandas DataFrame.html">
+       12. Loading Data into a pandas DataFrame
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Getting Set Up for the Mini-Project.html">
+       13. Getting Set Up for the Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Mini-Project Statistics From Stock Data.html">
+       14. Mini-Project: Statistics From Stock Data
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Accessing and Deleting Elements in pandas Series
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="accessing-and-deleting-elements-in-pandas-series">
+          Accessing and Deleting Elements in Pandas Series
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Pandas 2 V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="05. Pandas 2 V1-B7MuFIwboKU.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="05. Pandas 2 V1-B7MuFIwboKU.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="05. Pandas 2 V1-B7MuFIwboKU.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="05. Pandas 2 V1-B7MuFIwboKU.zh-CN.vtt" srclang="zh-CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Now let's look at how we can access or modify elements in a Pandas Series. One great advantage of Pandas Series is that it allows us to access data in many different ways. Elements can be accessed using index labels or numerical indices inside square brackets, [ ], similar to how we access elements in NumPy ndarrays. Since we can use numerical indices, we can use both positive and negative integers to access data from the beginning or from the end of the Series, respectively. Since we can access elements in various ways, in order to remove any ambiguity to whether we are referring to an index label or numerical index, Pandas Series have two attributes,
+          <code>
+           .loc
+          </code>
+          and
+          <code>
+           .iloc
+          </code>
+          to explicitly state what we mean. The attribute
+          <code>
+           .loc
+          </code>
+          stands for
+          <em>
+           location
+          </em>
+          and it is used to explicitly state that we are using a labeled index. Similarly, the attribute
+          <code>
+           .iloc
+          </code>
+          stands for
+          <em>
+           integer location
+          </em>
+          and it is used to explicitly state that we are using a numerical index. Let's see some examples:
+         </p>
+         <pre><code class="python language-python"># We access elements in Groceries using index labels:
+
+# We use a single index label
+print('How many eggs do we need to buy:', groceries['eggs'])
+print()
+
+# we can access multiple index labels
+print('Do we need milk and bread:\n', groceries[['milk', 'bread']]) 
+print()
+
+# we use loc to access multiple index labels
+print('How many eggs and apples do we need to buy:\n', groceries.loc[['eggs', 'apples']]) 
+print()
+
+# We access elements in Groceries using numerical indices:
+
+# we use multiple numerical indices
+print('How many eggs and apples do we need to buy:\n',  groceries[[0, 1]]) 
+print()
+
+# We use a negative numerical index
+print('Do we need bread:\n', groceries[[-1]]) 
+print()
+
+# We use a single numerical index
+print('How many eggs do we need to buy:', groceries[0]) 
+print()
+# we use iloc to access multiple numerical indices
+print('Do we need milk and bread:\n', groceries.iloc[[2, 3]]) </code></pre>
+         <blockquote>
+          <p>
+           How many eggs do we need to buy: 30
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Do we need milk and bread:
+           <br/>
+           milk       Yes
+           <br/>
+           bread     No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           How many eggs and apples do we need to buy:
+           <br/>
+           eggs       30
+           <br/>
+           apples     6
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           How many eggs and apples do we need to buy:
+           <br/>
+           eggs       30
+           <br/>
+           apples     6
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Do we need bread:
+           <br/>
+           bread     No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           How many eggs do we need to buy: 30
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Do we need milk and bread:
+           <br/>
+           milk       Yes
+           <br/>
+           bread     No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <p>
+          Pandas Series are also mutable like NumPy ndarrays, which means we can change the elements of a Pandas Series after it has been created. For example, let's change the number of eggs we need to buy from our grocery list
+         </p>
+         <pre><code class="python language-python"># We display the original grocery list
+print('Original Grocery List:\n', groceries)
+
+# We change the number of eggs to 2
+groceries['eggs'] = 2
+
+# We display the changed grocery list
+print()
+print('Modified Grocery List:\n', groceries)</code></pre>
+         <blockquote>
+          <p>
+           Original Grocery List:
+           <br/>
+           eggs           30
+           <br/>
+           apples         6
+           <br/>
+           milk         Yes
+           <br/>
+           bread       No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Modified Grocery List:
+           <br/>
+           eggs             2
+           <br/>
+           apples         6
+           <br/>
+           milk         Yes
+           <br/>
+           bread       No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <p>
+          We can also delete items from a Pandas Series by using the
+          <code>
+           .drop()
+          </code>
+          method. The
+          <code>
+           Series.drop(label)
+          </code>
+          method removes the given
+          <code>
+           label
+          </code>
+          from the given
+          <code>
+           Series
+          </code>
+          . We should note that the
+          <code>
+           Series.drop(label)
+          </code>
+          method drops elements from the Series out of place, meaning that it doesn't change the original Series being modified. Let's see how this works:
+         </p>
+         <pre><code class="python language-python"># We display the original grocery list
+print('Original Grocery List:\n', groceries)
+
+# We remove apples from our grocery list. The drop function removes elements out of place
+print()
+print('We remove apples (out of place):\n', groceries.drop('apples'))
+
+# When we remove elements out of place the original Series remains intact. To see this
+# we display our grocery list again
+print()
+print('Grocery List after removing apples out of place:\n', groceries)</code></pre>
+         <blockquote>
+          <p>
+           Original Grocery List:
+           <br/>
+           eggs           30
+           <br/>
+           apples         6
+           <br/>
+           milk         Yes
+           <br/>
+           bread       No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           We remove apples (out of place):
+           <br/>
+           eggs           30
+           <br/>
+           milk         Yes
+           <br/>
+           bread       No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Grocery List after removing apples out of place:
+           <br/>
+           eggs           30
+           <br/>
+           apples         6
+           <br/>
+           milk         Yes
+           <br/>
+           bread       No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <p>
+          We can delete items from a Pandas Series in place by setting the keyword
+          <code>
+           inplace
+          </code>
+          to
+          <code>
+           True
+          </code>
+          in the
+          <code>
+           .drop()
+          </code>
+          method. Let's see an example:
+         </p>
+         <pre><code class="python language-python"># We display the original grocery list
+print('Original Grocery List:\n', groceries)
+
+# We remove apples from our grocery list in place by setting the inplace keyword to True
+groceries.drop('apples', inplace = True)
+
+# When we remove elements in place the original Series its modified. To see this
+# we display our grocery list again
+print()
+print('Grocery List after removing apples in place:\n', groceries)</code></pre>
+         <blockquote>
+          <p>
+           Original Grocery List:
+           <br/>
+           eggs           30
+           <br/>
+           apples         6
+           <br/>
+           milk         Yes
+           <br/>
+           bread       No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Grocery List after removing apples in place:
+           <br/>
+           eggs           30
+           <br/>
+           milk         Yes
+           <br/>
+           bread       No
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Arithmetic Operations on pandas Series.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Accessing and Deleting Elements in pandas Series')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

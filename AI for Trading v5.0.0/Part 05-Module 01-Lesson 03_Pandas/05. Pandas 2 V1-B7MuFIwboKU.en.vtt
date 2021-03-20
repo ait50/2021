@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.560
+In the last video,
+
+00:00:01.560 --> 00:00:04.935
+we created this Panda series of a grocery list.
+
+00:00:04.934 --> 00:00:08.875
+Now, how do we access or modify its elements?
+
+00:00:08.875 --> 00:00:11.970
+One great advantage of the series object,
+
+00:00:11.970 --> 00:00:15.570
+is that it allows us to access data in multiple ways.
+
+00:00:15.570 --> 00:00:19.344
+One way is accessing elements with their index labels.
+
+00:00:19.344 --> 00:00:25.125
+This accesses the quantity of eggs using the eggs label in square brackets.
+
+00:00:25.125 --> 00:00:30.109
+We can get multiple elements by providing a list of index labels.
+
+00:00:30.109 --> 00:00:34.104
+Another way to access elements is numeric indices,
+
+00:00:34.104 --> 00:00:38.074
+very similar to how we access elements in NumPy arrays.
+
+00:00:38.075 --> 00:00:41.115
+Here, we get the quantity of the first item,
+
+00:00:41.115 --> 00:00:43.775
+eggs, using zero as our index.
+
+00:00:43.774 --> 00:00:47.689
+Now, let's get the last element with the index negative one.
+
+00:00:47.689 --> 00:00:53.219
+And again, we can grab multiple items using a list of numerical indices.
+
+00:00:53.219 --> 00:00:58.759
+In order to remove any ambiguity from rather we're referring to an index label,
+
+00:00:58.759 --> 00:01:00.945
+or a numerical index,
+
+00:01:00.945 --> 00:01:04.415
+Panda series have two attributes loc,
+
+00:01:04.415 --> 00:01:07.745
+and iloc, to explicitly state what we mean.
+
+00:01:07.745 --> 00:01:11.005
+The attribute loc stands for a location,
+
+00:01:11.004 --> 00:01:15.515
+and it's used to explicitly state that we're using a labelled index.
+
+00:01:15.515 --> 00:01:18.459
+Similarly the attribute iloc,
+
+00:01:18.459 --> 00:01:20.719
+stands for integer location,
+
+00:01:20.719 --> 00:01:25.635
+and is used to explicitly state that we are using a numerical index.
+
+00:01:25.635 --> 00:01:29.310
+Panda series are also mutable like NumPy arrays,
+
+00:01:29.310 --> 00:01:34.555
+which means we can change the elements of a series after it's been created.
+
+00:01:34.555 --> 00:01:38.770
+Let's change the number of eggs we need to buy from our grocery list.
+
+00:01:38.769 --> 00:01:40.795
+Let's see our grocery list again.
+
+00:01:40.795 --> 00:01:47.019
+We can change the number of eggs from 30 to two by reassigning the element like this.
+
+00:01:47.019 --> 00:01:51.364
+Now, we can see that the data for eggs has been modified.
+
+00:01:51.364 --> 00:01:56.625
+We can also delete items from a Panda series using the drop method.
+
+00:01:56.625 --> 00:02:01.834
+This method removes an element with the given label from the Panda series.
+
+00:02:01.834 --> 00:02:07.379
+As you can see, apples is no longer included in the series returned by this method.
+
+00:02:07.379 --> 00:02:11.789
+However, this drops elements from the series out of place.
+
+00:02:11.789 --> 00:02:16.219
+Meaning, up here, this just returned the modified series,
+
+00:02:16.219 --> 00:02:20.194
+and didn't actually change the original one as you can see here.
+
+00:02:20.194 --> 00:02:22.289
+We can make this happen inplace,
+
+00:02:22.289 --> 00:02:26.969
+and change the original series by setting the parameter inplace to true.
+
+00:02:26.969 --> 00:02:29.780
+Now, notice the drop method modified
+
+00:02:29.780 --> 00:02:34.400
+the actual series instead of returning another series with the modification.
+

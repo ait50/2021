@@ -1,0 +1,460 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Matrix Multiplication Quiz
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Linear Transformation and Matrices
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. What is a Matrix.html">
+       01. What is a Matrix?
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Matrix Addition.html">
+       02. Matrix Addition
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Matrix Addition Quiz.html">
+       03. Matrix Addition Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Scalar Multiplication of  Matrix and Quiz.html">
+       04. Scalar Multiplication of  Matrix and Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Multiplication of Square Matrices.html">
+       05. Multiplication of Square Matrices
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Square Matrix Multiplication Quiz.html">
+       06. Square Matrix Multiplication Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Matrix Multiplication - General.html">
+       07. Matrix Multiplication - General
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Matrix Multiplication Quiz.html">
+       08. Matrix Multiplication Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Linear Transformation and Matrices . Part 1.html">
+       09. Linear Transformation and Matrices . Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Linear Transformation and Matrices. Part 2.html">
+       10. Linear Transformation and Matrices. Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Linear Transformation and Matrices. Part 3.html">
+       11. Linear Transformation and Matrices. Part 3
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Linear Transformation Quiz Answers.html">
+       12. Linear Transformation Quiz Answers
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          08. Matrix Multiplication Quiz
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="matrix-multiplication-quiz">
+          Matrix Multiplication Quiz
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          let
+          <span class="mathquill ud-math">
+           A
+          </span>
+          be a matrix of
+          <span class="mathquill ud-math">
+           1
+          </span>
+          x
+          <span class="mathquill ud-math">
+           5
+          </span>
+          and
+          <span class="mathquill ud-math">
+           B
+          </span>
+          be matrix of
+          <span class="mathquill ud-math">
+           5
+          </span>
+          x
+          <span class="mathquill ud-math">
+           3
+          </span>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <span class="mathquill ud-math">
+           A=\begin{bmatrix} 0.6 &amp;-15 &amp;2&amp;5&amp;98\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           B=\begin{bmatrix} 2&amp;2&amp;-4\\ 9 &amp;-14 &amp;0\\13&amp;-0.5&amp;44\\1&amp;9&amp;4\\0&amp;0&amp;5\end{bmatrix}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Notice that
+          <span class="mathquill ud-math">
+           A
+          </span>
+          is actually a row vector!
+          <strong>
+           A matrix with only one row or one column is a vector
+          </strong>
+         </p>
+         <ul>
+          <li>
+           A matrix with only one row is a row vector
+          </li>
+          <li>
+           A matrix with only one column is a column vector
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          If
+          <span class="mathquill ud-math">
+           C=A
+          </span>
+          x
+          <span class="mathquill ud-math">
+           B
+          </span>
+          ,
+         </p>
+         <p>
+          (a) How many rows will
+          <span class="mathquill ud-math">
+           C
+          </span>
+          have?
+         </p>
+         <p>
+          (b) How many columns will
+          <span class="mathquill ud-math">
+           C
+          </span>
+          have?
+         </p>
+         <p>
+          (c) What will be the value of
+          <span class="mathquill ud-math">
+           c_{13}
+          </span>
+          ?
+         </p>
+         <p>
+          If
+          <span class="mathquill ud-math">
+           C=B
+          </span>
+          x
+          <span class="mathquill ud-math">
+           A
+          </span>
+          ,
+         </p>
+         <p>
+          (d) What will be the value of
+          <span class="mathquill ud-math">
+           c_{13}
+          </span>
+          ?
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           react-live
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Notice that in this quiz, we multiplied a vector by a matrix, which resulted in another vector.
+          <br/>
+          Essentially what happened was that our original vector,
+          <span class="mathquill ud-math">
+           \begin{bmatrix} 0.6 &amp;-15 &amp;2&amp;5&amp;98\end{bmatrix}
+          </span>
+          , went through a linear transformation and transformed into another vector with the use of the transformation matrix
+          <span class="mathquill ud-math">
+           \begin{bmatrix} 2&amp;2&amp;-4\\ 9 &amp;-14 &amp;0\\13&amp;-0.5&amp;44\\1&amp;9&amp;4\\0&amp;0&amp;5\end{bmatrix}
+          </span>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          All this in the next set of videos.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Remember: if you are having issues with the workspace, reset your data.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="09. Linear Transformation and Matrices . Part 1.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Matrix Multiplication Quiz')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

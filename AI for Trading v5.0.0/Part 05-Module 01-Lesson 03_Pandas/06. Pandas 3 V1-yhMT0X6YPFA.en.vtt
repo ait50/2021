@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.620
+Just like we did with NumPy arrays,
+
+00:00:02.620 --> 00:00:07.620
+we can perform element-wise arithmetic operations on Pandas series.
+
+00:00:07.620 --> 00:00:09.660
+In this video, we will look at
+
+00:00:09.660 --> 00:00:14.449
+arithmetic operations between Pandas series and single numbers.
+
+00:00:14.449 --> 00:00:18.934
+Let's create a new series that holds a grocery list of fruits.
+
+00:00:18.934 --> 00:00:21.989
+The first argument we pass in is the data,
+
+00:00:21.989 --> 00:00:24.774
+and the second argument is the index labels.
+
+00:00:24.774 --> 00:00:30.029
+We can modify the data in fruits by performing basic arithmetic operations.
+
+00:00:30.030 --> 00:00:32.670
+We can add two to each element in fruits,
+
+00:00:32.670 --> 00:00:37.435
+subtract two, multiply by two, and divide by two.
+
+00:00:37.435 --> 00:00:40.560
+We can also apply mathematical functions from
+
+00:00:40.560 --> 00:00:45.105
+NumPy such as square root to all the elements of a series.
+
+00:00:45.104 --> 00:00:49.104
+Let's import NumPy and take a look at our fruit series again.
+
+00:00:49.104 --> 00:00:53.419
+Using NumPy, we can get the square root of each element like this.
+
+00:00:53.420 --> 00:00:56.000
+And the exponential of each element,
+
+00:00:56.000 --> 00:00:58.655
+and each element to the power of two.
+
+00:00:58.655 --> 00:01:05.275
+Pandas also allows us to apply arithmetic operations on selected items in a series.
+
+00:01:05.275 --> 00:01:07.310
+Here's the fruit series again.
+
+00:01:07.310 --> 00:01:11.359
+We can add two to just the banana's item, like this.
+
+00:01:11.359 --> 00:01:15.819
+And let's subtract two from apples using its numerical index.
+
+00:01:15.819 --> 00:01:19.039
+We can double the apples and oranges like this,
+
+00:01:19.040 --> 00:01:22.720
+and divide apples and oranges by two like this.
+
+00:01:22.719 --> 00:01:27.189
+You can also apply arithmetic operations on a Pandas series of
+
+00:01:27.189 --> 00:01:29.679
+mixed data types provided that
+
+00:01:29.680 --> 00:01:34.160
+the arithmetic operation is defined for all data types in the series.
+
+00:01:34.159 --> 00:01:38.484
+To demonstrate this, let's go back to our grocery's list from the previous video,
+
+00:01:38.484 --> 00:01:41.545
+and let's multiply this series by two,
+
+00:01:41.545 --> 00:01:46.579
+since the multiplication operation is defined for both strings and numbers.
+
+00:01:46.579 --> 00:01:49.125
+This code doesn't return an error.
+
+00:01:49.125 --> 00:01:52.204
+Multiplying a string by two simply repeats it.
+
+00:01:52.204 --> 00:01:57.590
+If you were to apply an operation that was valid for numbers but not strings,
+
+00:01:57.590 --> 00:02:01.105
+for instance division, you would get an error.
+
+00:02:01.105 --> 00:02:04.605
+So, when you have mixed data types in your Pandas series,
+
+00:02:04.605 --> 00:02:07.310
+make sure the arithmetic operations you
+
+00:02:07.310 --> 00:02:11.599
+use are defined for all the data types in your series.
+

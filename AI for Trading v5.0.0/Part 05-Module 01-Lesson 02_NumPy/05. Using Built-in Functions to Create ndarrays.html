@@ -1,0 +1,1273 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Using Built-in Functions to Create ndarrays
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      NumPy
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructors.html">
+       01. Instructors
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Introduction to NumPy.html">
+       02. Introduction to NumPy
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Why Use NumPy.html">
+       03. Why Use NumPy?
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Creating and Saving NumPy ndarrays.html">
+       04. Creating and Saving NumPy ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Using Built-in Functions to Create ndarrays.html">
+       05. Using Built-in Functions to Create ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Create an ndarray.html">
+       06. Create an ndarray
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Accessing, Deleting, and Inserting Elements Into ndarrays.html">
+       07. Accessing, Deleting, and Inserting Elements Into ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Slicing ndarrays.html">
+       08. Slicing ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Boolean Indexing, Set Operations, and Sorting.html">
+       09. Boolean Indexing, Set Operations, and Sorting
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Manipulating ndarrays.html">
+       10. Manipulating ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Arithmetic operations and Broadcasting.html">
+       11. Arithmetic operations and Broadcasting
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Creating ndarrays with Broadcasting.html">
+       12. Creating ndarrays with Broadcasting
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Getting Set Up for the Mini-Project.html">
+       13. Getting Set Up for the Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Mini-Project Mean Normalization and Data Separation.html">
+       14. Mini-Project: Mean Normalization and Data Separation
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Using Built-in Functions to Create ndarrays
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="using-built-in-functions-to-create-ndarrays">
+          Using Built-in Functions to Create ndarrays
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          NumPy 2 V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="05. NumPy 2 V1-KR3hHf9Zxxg.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="05. NumPy 2 V1-KR3hHf9Zxxg.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="true" kind="subtitles" label="en" src="05. NumPy 2 V1-KR3hHf9Zxxg.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="05. NumPy 2 V1-KR3hHf9Zxxg.zh-CN.vtt" srclang="zh-CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          One great time-saving feature of NumPy is its ability to create ndarrays using built-in functions. These functions allow us to create certain kinds of ndarrays with just one line of code. Below we will see a few of the most useful built-in functions for creating ndarrays that you will come across when doing AI programming.
+         </p>
+         <p>
+          Let's start by creating an ndarray with a specified shape that is full of zeros. We can do this by using the
+          <code>
+           np.zeros()
+          </code>
+          function. The function
+          <code>
+           np.zeros(shape)
+          </code>
+          creates an ndarray full of
+          <code>
+           zeros
+          </code>
+          with the given
+          <code>
+           shape
+          </code>
+          . So, for example, if you wanted to create a rank 2 array with 3 rows and 4 columns, you will pass the shape to the function in the form of
+          <code>
+           (rows, columns)
+          </code>
+          , as in the example below:
+         </p>
+         <pre><code># We create a 3 x 4 ndarray full of zeros. 
+X = np.zeros((3,4))
+
+# We print X
+print()
+print('X = \n', X)
+print()
+
+# We print information about X
+print('X has dimensions:', X.shape)
+print('X is an object of type:', type(X))
+print('The elements in X are of type:', X.dtype)</code></pre>
+         <blockquote>
+          <p>
+           X =
+           <br/>
+           [[ 0.  0.  0.  0.]
+           <br/>
+           [ 0.  0.  0.  0.]
+           <br/>
+           [ 0.  0.  0.  0.]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           X has dimensions: (3, 4)
+           <br/>
+           X is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in X are of type: float64
+          </p>
+         </blockquote>
+         <p>
+          As we can see,  the
+          <code>
+           np.zeros()
+          </code>
+          function creates by default an array with dtype float64. If desired, the data type can be changed by using the keyword
+          <code>
+           dtype
+          </code>
+          .
+         </p>
+         <p>
+          Similarly, we can create an ndarray with a specified shape that is full of
+          <em>
+           ones
+          </em>
+          . We can do this by using the
+          <code>
+           np.ones()
+          </code>
+          function. Just like the
+          <code>
+           np.zeros()
+          </code>
+          function, the
+          <code>
+           np.ones()
+          </code>
+          function takes as an argument the shape of the ndarray you want to make. Let's see an example:
+         </p>
+         <pre><code># We create a 3 x 2 ndarray full of ones. 
+X = np.ones((3,2))
+
+# We print X
+print()
+print('X = \n', X)
+print()
+
+# We print information about X
+print('X has dimensions:', X.shape)
+print('X is an object of type:', type(X))
+print('The elements in X are of type:', X.dtype) </code></pre>
+         <blockquote>
+          <p>
+           X =
+           <br/>
+           [[ 1.  1.]
+           <br/>
+           [ 1.  1.]
+           <br/>
+           [ 1.  1.]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           X has dimensions: (3, 2)
+           <br/>
+           X is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in X are of type: float64
+          </p>
+         </blockquote>
+         <p>
+          As we can see, the
+          <code>
+           np.ones()
+          </code>
+          function also creates by default an array with dtype float64. If desired, the data type can be changed by using the keyword
+          <code>
+           dtype
+          </code>
+          .
+         </p>
+         <p>
+          We can also create an ndarray with a specified shape that is full of any number we want. We can do this by using the
+          <code>
+           np.full()
+          </code>
+          function. The
+          <code>
+           np.full(shape, constant value)
+          </code>
+          function takes two arguments. The first argument is the
+          <code>
+           shape
+          </code>
+          of the ndarray you want to make and the second is the
+          <code>
+           constant value
+          </code>
+          you want to populate the array with. Let's see an example:
+         </p>
+         <pre><code># We create a 2 x 3 ndarray full of fives. 
+X = np.full((2,3), 5) 
+
+# We print X
+print()
+print('X = \n', X)
+print()
+
+# We print information about X
+print('X has dimensions:', X.shape)
+print('X is an object of type:', type(X))
+print('The elements in X are of type:', X.dtype)  </code></pre>
+         <blockquote>
+          <p>
+           X =
+           <br/>
+           [[5 5 5]
+           <br/>
+           [5 5 5]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           X has dimensions: (2, 3)
+           <br/>
+           X is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in X are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          The
+          <code>
+           np.full()
+          </code>
+          function creates by default an array with the same data type as the constant value used to fill in the array. If desired, the data type can be changed by using the keyword
+          <code>
+           dtype
+          </code>
+          .
+         </p>
+         <p>
+          As you will learn later, a fundamental array in Linear Algebra is the Identity Matrix. An Identity matrix is a square matrix that has only 1s in its main diagonal and zeros everywhere else. The function
+          <code>
+           np.eye(N)
+          </code>
+          creates a square
+          <code>
+           N x N
+          </code>
+          ndarray corresponding to the Identity matrix. Since all Identity Matrices are square, the
+          <code>
+           np.eye()
+          </code>
+          function only takes a single integer as an argument. Let's see an example:
+         </p>
+         <pre><code># We create a 5 x 5 Identity matrix. 
+X = np.eye(5)
+
+# We print X
+print()
+print('X = \n', X)
+print()
+
+# We print information about X
+print('X has dimensions:', X.shape)
+print('X is an object of type:', type(X))
+print('The elements in X are of type:', X.dtype)  </code></pre>
+         <blockquote>
+          <p>
+           X =
+           <br/>
+           [[ 1.  0.  0.  0.  0.]
+           <br/>
+           [ 0.  1.  0.  0.  0.]
+           <br/>
+           [ 0.  0.  1.  0.  0.]
+           <br/>
+           [ 0.  0.  0.  1.  0.]
+           <br/>
+           [ 0.  0.  0.  0.  1.]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           X has dimensions: (5, 5)
+           <br/>
+           X is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in X are of type: float64
+          </p>
+         </blockquote>
+         <p>
+          As we can see, the
+          <code>
+           np.eye()
+          </code>
+          function also creates by default an array with dtype float64. If desired, the data type can be changed by using the keyword
+          <code>
+           dtype
+          </code>
+          . You will learn all about Identity Matrices and their use in the Linear Algebra section of this course. We can also create diagonal matrices by using the
+          <code>
+           np.diag()
+          </code>
+          function. A diagonal matrix is a square matrix that only has values in its main diagonal. The
+          <code>
+           np.diag()
+          </code>
+          function creates an ndarray corresponding to a diagonal matrix , as shown in the example below:
+         </p>
+         <pre><code># Create a 4 x 4 diagonal matrix that contains the numbers 10,20,30, and 50
+# on its main diagonal
+X = np.diag([10,20,30,50])
+
+# We print X
+print()
+print('X = \n', X)
+print()</code></pre>
+         <blockquote>
+          <p>
+           X =
+           <br/>
+           [[10  0  0  0]
+           <br/>
+           [ 0 20  0  0]
+           <br/>
+           [ 0  0 30  0]
+           <br/>
+           [ 0  0  0 50]]
+          </p>
+         </blockquote>
+         <p>
+          NumPy also allows you to create ndarrays that have evenly spaced values within a given interval. NumPy's
+          <code>
+           np.arange()
+          </code>
+          function is very versatile and can be used with either one, two, or three arguments. Below we will see examples of each case and how they are used to create different kinds of ndarrays.
+         </p>
+         <p>
+          Let's start by using
+          <code>
+           np.arange()
+          </code>
+          with only one argument. When used with only one argument,
+          <code>
+           np.arange(N)
+          </code>
+          will create a rank 1 ndarray with consecutive integers between
+          <code>
+           0
+          </code>
+          and
+          <code>
+           N - 1
+          </code>
+          . Therefore, notice that if I want an array to have integers between 0 and 9, I have to use N = 10,
+          <em>
+           NOT
+          </em>
+          N = 9, as in the example below:
+         </p>
+         <pre><code># We create a rank 1 ndarray that has sequential integers from 0 to 9
+x = np.arange(10)
+​
+# We print the ndarray
+print()
+print('x = ', x)
+print()
+
+# We print information about the ndarray
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype) </code></pre>
+         <blockquote>
+          <p>
+           x =  [0 1 2 3 4 5 6 7 8 9]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           x has dimensions: (10,)
+           <br/>
+           x is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          When used with two arguments,
+          <code>
+           np.arange(start,stop)
+          </code>
+          will create a rank 1 ndarray with evenly spaced values within the half-open interval
+          <code>
+           [start, stop)
+          </code>
+          . This means the evenly spaced numbers will include
+          <code>
+           start
+          </code>
+          but
+          <em>
+           exclude
+          </em>
+          <code>
+           stop
+          </code>
+          . Let's see an example
+         </p>
+         <pre><code># We create a rank 1 ndarray that has sequential integers from 4 to 9. 
+x = np.arange(4,10)
+
+# We print the ndarray
+print()
+print('x = ', x)
+print()
+
+# We print information about the ndarray
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype) </code></pre>
+         <blockquote>
+          <p>
+           x =  [4 5 6 7 8 9]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           x has dimensions: (6,)
+           <br/>
+           x is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          As we can see, the function
+          <code>
+           np.arange(4,10)
+          </code>
+          generates a sequence of integers with 4 inclusive and 10 exclusive.
+         </p>
+         <p>
+          Finally, when used with three arguments,
+          <code>
+           np.arange(start,stop,step)
+          </code>
+          will create a rank 1 ndarray with evenly spaced values within the half-open interval
+          <code>
+           [start, stop)
+          </code>
+          with
+          <code>
+           step
+          </code>
+          being the distance between two adjacent values. Let's see an example:
+         </p>
+         <pre><code># We create a rank 1 ndarray that has evenly spaced integers from 1 to 13 in steps of 3.
+x = np.arange(1,14,3)
+
+# We print the ndarray
+print()
+print('x = ', x)
+print()
+
+# We print information about the ndarray
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype) </code></pre>
+         <blockquote>
+          <p>
+           x =  [ 1  4  7 10 13]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           x has dimensions: (5,)
+           <br/>
+           x is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          We can see that
+          <code>
+           x
+          </code>
+          has sequential integers between 1 and 13 but the difference between all adjacent values is 3.
+         </p>
+         <p>
+          Even though the
+          <code>
+           np.arange()
+          </code>
+          function allows for non-integer steps, such as 0.3, the output is usually inconsistent, due to the finite floating point precision. For this reason, in the cases where non-integer steps are required, it is usually better to use the function
+          <code>
+           np.linspace()
+          </code>
+          . The
+          <code>
+           np.linspace(start, stop, N)
+          </code>
+          function returns
+          <code>
+           N
+          </code>
+          evenly spaced numbers over the
+          <em>
+           closed
+          </em>
+          interval
+          <code>
+           [start, stop]
+          </code>
+          . This means that both the
+          <code>
+           start
+          </code>
+          and the
+          <code>
+           stop
+          </code>
+          values are included. We should also note the
+          <code>
+           np.linspace()
+          </code>
+          function needs to be called with at least two arguments in the form
+          <code>
+           np.linspace(start,stop)
+          </code>
+          . In this case, the default number of elements in the specified interval will be
+          <em>
+           N= 50
+          </em>
+          . The reason
+          <code>
+           np.linspace()
+          </code>
+          works better than the
+          <code>
+           np.arange()
+          </code>
+          function, is that
+          <code>
+           np.linspace()
+          </code>
+          uses the number of elements we want in a particular interval, instead of the step between values.  Let's see some examples:
+         </p>
+         <pre><code># We create a rank 1 ndarray that has 10 integers evenly spaced between 0 and 25.
+x = np.linspace(0,25,10)
+
+# We print the ndarray
+print()
+print('x = \n', x)
+print()
+
+# We print information about the ndarray
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype) </code></pre>
+         <blockquote>
+          <p>
+           x = [  0.           2.77777778   5.55555556   8.33333333  11.11111111
+           <br/>
+           13.88888889  16.66666667  19.44444444  22.22222222  25.        ]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           x has dimensions: (10,)
+           <br/>
+           x is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: float64
+          </p>
+         </blockquote>
+         <p>
+          As we can see from the above example, the function
+          <code>
+           np.linspace(0,25,10)
+          </code>
+          returns an ndarray with
+          <code>
+           10
+          </code>
+          evenly spaced numbers in the closed interval
+          <code>
+           [0, 25]
+          </code>
+          . We can also see that both the start and end points,
+          <code>
+           0
+          </code>
+          and
+          <code>
+           25
+          </code>
+          in this case, are included. However, you can let the endpoint of the interval be excluded (just like in the np.arange() function) by setting the keyword
+          <code>
+           endpoint = False
+          </code>
+          in the
+          <code>
+           np.linspace()
+          </code>
+          function. Let's create the same
+          <code>
+           x
+          </code>
+          ndarray we created above but now with the endpoint excluded:
+         </p>
+         <pre><code># We create a rank 1 ndarray that has 10 integers evenly spaced between 0 and 25,
+# with 25 excluded.
+x = np.linspace(0,25,10, endpoint = False)
+
+# We print the ndarray
+print()
+print('x = ', x)
+print()
+
+# We print information about the ndarray
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype) </code></pre>
+         <blockquote>
+          <p>
+           x =  [  0.    2.5   5.    7.5  10.   12.5  15.   17.5  20.   22.5]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           x has dimensions: (10,)
+           <br/>
+           x is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: float64
+          </p>
+         </blockquote>
+         <p>
+          As we can see, because we have excluded the endpoint, the spacing between values had to change in order to fit 10 evenly spaced numbers in the given interval.
+         </p>
+         <p>
+          So far, we have only used the built-in functions
+          <code>
+           np.arange()
+          </code>
+          and
+          <code>
+           np.linspace()
+          </code>
+          to create rank 1 ndarrays. However, we can use these functions to create rank 2 ndarrays of any shape by combining them with the
+          <code>
+           np.reshape()
+          </code>
+          function. The
+          <code>
+           np.reshape(ndarray, new_shape)
+          </code>
+          function converts the given
+          <code>
+           ndarray
+          </code>
+          into the specified
+          <code>
+           new_shape
+          </code>
+          . It is important to note that the
+          <code>
+           new_shape
+          </code>
+          should be compatible with the number of elements in the given
+          <code>
+           ndarray
+          </code>
+          . For example, you can convert a rank 1 ndarray with 6 elements, into a 3 x 2 rank 2 ndarray, or a 2 x 3 rank 2 ndarray, since both of these rank 2 arrays will have a total of 6 elements. However, you can't reshape the rank 1 ndarray with 6 elements into a 3 x 3 rank 2 ndarray, since this rank 2 array will have 9 elements, which is greater than the number of elements in the original ndarray. Let's see some examples:
+         </p>
+         <pre><code># We create a rank 1 ndarray with sequential integers from 0 to 19
+x = np.arange(20)
+
+# We print x
+print()
+print('Original x = ', x)
+print()
+
+# We reshape x into a 4 x 5 ndarray 
+x = np.reshape(x, (4,5))
+
+# We print the reshaped x
+print()
+print('Reshaped x = \n', x)
+print()
+
+# We print information about the reshaped x
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype) </code></pre>
+         <blockquote>
+          <p>
+           Original x =  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Reshaped x =
+           <br/>
+           [[ 0  1  2  3  4]
+           <br/>
+           [ 5  6  7  8  9]
+           <br/>
+           [10 11 12 13 14]
+           <br/>
+           [15 16 17 18 19]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           x has dimensions: (4, 5)
+           <br/>
+           x is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          One great feature about NumPy, is that some functions can also be applied as methods. This allows us to apply different functions in sequence in just one line of code. ndarray methods are similar to ndarray attributes in that they are both applied using
+          <em>
+           dot
+          </em>
+          notation (
+          <code>
+           .
+          </code>
+          ). Let's see how we can accomplish the same result as in the above example, but in just one line of code:
+         </p>
+         <pre><code># We create a a rank 1 ndarray with sequential integers from 0 to 19 and
+# reshape it to a 4 x 5 array 
+Y = np.arange(20).reshape(4, 5)
+
+# We print Y
+print()
+print('Y = \n', Y)
+print()
+
+# We print information about Y
+print('Y has dimensions:', Y.shape)
+print('Y is an object of type:', type(Y))
+print('The elements in Y are of type:', Y.dtype) </code></pre>
+         <blockquote>
+          <p>
+           Y =
+           <br/>
+           [[ 0  1  2  3  4]
+           <br/>
+           [ 5  6  7  8  9]
+           <br/>
+           [10 11 12 13 14]
+           <br/>
+           [15 16 17 18 19]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Y has dimensions: (4, 5)
+           <br/>
+           Y is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in Y are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          As we can see, we get the exact same result as before. Notice that when we use
+          <code>
+           reshape()
+          </code>
+          as a method, it's applied as
+          <code>
+           ndarray.reshape(new_shape)
+          </code>
+          . This converts the
+          <code>
+           ndarray
+          </code>
+          into the specified shape
+          <code>
+           new_shape
+          </code>
+          . As before, it is important to note that the
+          <code>
+           new_shape
+          </code>
+          should be compatible with the number of elements in
+          <code>
+           ndarray
+          </code>
+          . In the example above, the function
+          <code>
+           np.arange(20)
+          </code>
+          creates an ndarray and serves as the
+          <code>
+           ndarray
+          </code>
+          to be reshaped by the
+          <code>
+           reshape()
+          </code>
+          method. Therefore,  when using
+          <code>
+           reshape()
+          </code>
+          as a method, we don't need to pass  the
+          <code>
+           ndarray
+          </code>
+          as an argument to the
+          <code>
+           reshape()
+          </code>
+          function, instead we only need to pass the
+          <code>
+           new_shape
+          </code>
+          argument.
+         </p>
+         <p>
+          In the same manner, we can also combine
+          <code>
+           reshape()
+          </code>
+          with
+          <code>
+           np.linspace()
+          </code>
+          to create rank 2 arrays, as shown in the next example.
+         </p>
+         <pre><code># We create a rank 1 ndarray with 10 integers evenly spaced between 0 and 50,
+# with 50 excluded. We then reshape it to a 5 x 2 ndarray
+X = np.linspace(0,50,10, endpoint=False).reshape(5,2)
+
+# We print X
+print()
+print('X = \n', X)
+print()
+
+# We print information about X
+print('X has dimensions:', X.shape)
+print('X is an object of type:', type(X))
+print('The elements in X are of type:', X.dtype)</code></pre>
+         <blockquote>
+          <p>
+           X =
+           <br/>
+           [[  0.   5.]
+           <br/>
+           [ 10.  15.]
+           <br/>
+           [ 20.  25.]
+           <br/>
+           [ 30.  35.]
+           <br/>
+           [ 40.  45.]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           X has dimensions: (5, 2)
+           <br/>
+           X is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in X are of type: float64
+          </p>
+         </blockquote>
+         <p>
+          The last type of ndarrays we are going to create are
+          <em>
+           random
+          </em>
+          ndarrays. Random ndarrays are arrays that contain random numbers. Often in Machine Learning, you need to create random matrices, for example, when initializing the weights of a Neural Network. NumPy offers a variety of random functions to help us create random ndarrays of any shape.
+         </p>
+         <p>
+          Let's start by using the
+          <code>
+           np.random.random(shape)
+          </code>
+          function to create an ndarray of the given
+          <code>
+           shape
+          </code>
+          with random floats in the half-open interval [0.0, 1.0).
+         </p>
+         <pre><code># We create a 3 x 3 ndarray with random floats in the half-open interval [0.0, 1.0).
+X = np.random.random((3,3))
+
+# We print X
+print()
+print('X = \n', X)
+print()
+
+# We print information about X
+print('X has dimensions:', X.shape)
+print('X is an object of type:', type(X))
+print('The elements in x are of type:', X.dtype)</code></pre>
+         <blockquote>
+          <p>
+           X =
+           <br/>
+           [[ 0.12379926  0.52943854  0.3443525 ]
+           <br/>
+           [ 0.11169547  0.82123909  0.52864397]
+           <br/>
+           [ 0.58244133  0.21980803  0.69026858]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           X has dimensions: (3, 3)
+           <br/>
+           X is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: float64
+          </p>
+         </blockquote>
+         <p>
+          NumPy also allows us to create ndarrays with random integers within a particular interval. The function
+          <code>
+           np.random.randint(start, stop, size = shape)
+          </code>
+          creates an ndarray of the given
+          <code>
+           shape
+          </code>
+          with random integers in the half-open interval
+          <code>
+           [start, stop)
+          </code>
+          . Let's see an example:
+         </p>
+         <pre><code># We create a 3 x 2 ndarray with random integers in the half-open interval [4, 15).
+X = np.random.randint(4,15,size=(3,2))
+
+# We print X
+print()
+print('X = \n', X)
+print()
+
+# We print information about X
+print('X has dimensions:', X.shape)
+print('X is an object of type:', type(X))
+print('The elements in X are of type:', X.dtype)</code></pre>
+         <blockquote>
+          <p>
+           X =
+           <br/>
+           [[ 7 11]
+           <br/>
+           [ 9 11]
+           <br/>
+           [ 6  7]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           X has dimensions: (3, 2)
+           <br/>
+           X is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in X are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          In some cases, you may need to create ndarrays with random numbers that satisfy certain statistical properties. For example, you may want the random numbers in the ndarray to have an average of 0. NumPy allows you create random ndarrays with numbers drawn from various probability distributions. The function
+          <code>
+           np.random.normal(mean, standard deviation, size=shape)
+          </code>
+          , for example, creates an ndarray with the given
+          <code>
+           shape
+          </code>
+          that contains random numbers picked from a
+          <code>
+           normal
+          </code>
+          (Gaussian) distribution with the given
+          <code>
+           mean
+          </code>
+          and
+          <code>
+           standard deviation
+          </code>
+          . Let's create a 1,000 x 1,000 ndarray of random floating point numbers drawn from a normal distribution with a mean (average) of zero and a standard deviation of 0.1.
+         </p>
+         <pre><code># We create a 1000 x 1000 ndarray of random floats drawn from normal (Gaussian) distribution
+# with a mean of zero and a standard deviation of 0.1.
+X = np.random.normal(0, 0.1, size=(1000,1000))
+
+# We print X
+print()
+print('X = \n', X)
+print()
+
+# We print information about X
+print('X has dimensions:', X.shape)
+print('X is an object of type:', type(X))
+print('The elements in X are of type:', X.dtype)
+print('The elements in X have a mean of:', X.mean())
+print('The maximum value in X is:', X.max())
+print('The minimum value in X is:', X.min())
+print('X has', (X &lt; 0).sum(), 'negative numbers')
+print('X has', (X &gt; 0).sum(), 'positive numbers')</code></pre>
+         <blockquote>
+          <p>
+           X =
+           <br/>
+           [[ 0.04218614  0.03247225 -0.02936003 …,  0.01586796 -0.05599115  -0.03630946]
+           <br/>
+           [ 0.13879995 -0.01583122 -0.16599967 …,  0.01859617 -0.08241612  0.09684025]
+           <br/>
+           [ 0.14422252 -0.11635985 -0.04550231 …, -0.09748604 -0.09350044  0.02514799]
+           <br/>
+           …,
+           <br/>
+           [-0.10472516 -0.04643974  0.08856722 …, -0.02096011 -0.02946155  0.12930844]
+           <br/>
+           [-0.26596955  0.0829783   0.11032549 …, -0.14492074 -0.00113646  -0.03566034]
+           <br/>
+           [-0.12044482  0.20355356  0.13637195 …,  0.06047196 -0.04170031  -0.04957684]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           X has dimensions: (1000, 1000)
+           <br/>
+           X is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in X are of type: float64
+           <br/>
+           The elements in X have a mean of: -0.000121576684405
+           <br/>
+           The maximum value in X is: 0.476673923106
+           <br/>
+           The minimum value in X is: -0.499114224706
+           <br/>
+           X has 500562 negative numbers
+           <br/>
+           X has 499438 positive numbers
+          </p>
+         </blockquote>
+         <p>
+          As we can see, the average of the random numbers in the ndarray is close to zero, both the maximum and minimum values in
+          <code>
+           X
+          </code>
+          are symmetric about zero (the average), and we have about the same amount of positive and negative numbers.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Create an ndarray.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Using Built-in Functions to Create ndarrays')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

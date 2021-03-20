@@ -1,0 +1,1894 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Loading Data into a pandas DataFrame
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Pandas
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructors.html">
+       01. Instructors
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Introduction to pandas.html">
+       02. Introduction to pandas
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Why Use pandas.html">
+       03. Why Use pandas?
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Creating pandas Series.html">
+       04. Creating pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Accessing and Deleting Elements in pandas Series.html">
+       05. Accessing and Deleting Elements in pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Arithmetic Operations on pandas Series.html">
+       06. Arithmetic Operations on pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Manipulate a Series.html">
+       07. Manipulate a Series
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Creating pandas DataFrames.html">
+       08. Creating pandas DataFrames
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Accessing Elements in pandas DataFrames.html">
+       09. Accessing Elements in pandas DataFrames
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Dealing with NaN.html">
+       10. Dealing with NaN
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Manipulate a DataFrame.html">
+       11. Manipulate a DataFrame
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Loading Data into a pandas DataFrame.html">
+       12. Loading Data into a pandas DataFrame
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Getting Set Up for the Mini-Project.html">
+       13. Getting Set Up for the Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Mini-Project Statistics From Stock Data.html">
+       14. Mini-Project: Statistics From Stock Data
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. Loading Data into a pandas DataFrame
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="loading-data-into-a-pandas-dataframe">
+          Loading Data into a pandas DataFrame
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Pandas 7 V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="12. Pandas 7 V1-ruTYp-twXO0.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="12. Pandas 7 V1-ruTYp-twXO0.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="12. Pandas 7 V1-ruTYp-twXO0.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="12. Pandas 7 V1-ruTYp-twXO0.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          In machine learning you will most likely use databases from many sources to train your learning algorithms. Pandas allows us to load databases of different formats into DataFrames. One of the most popular data formats used to store databases is csv. CSV stands for
+          <em>
+           Comma Separated Values
+          </em>
+          and offers a simple format to store data. We can load CSV files into Pandas DataFrames using the
+          <code>
+           pd.read_csv()
+          </code>
+          function. Let's load Google stock data into a Pandas DataFrame. The GOOG.csv file contains Google stock data from 8/19/2004 till 10/13/2017 taken from Yahoo Finance.
+         </p>
+         <pre><code class="python language-python"># We load Google stock data in a DataFrame
+Google_stock = pd.read_csv('./GOOG.csv')
+
+# We print some information about Google_stock
+print('Google_stock is of type:', type(Google_stock))
+print('Google_stock has shape:', Google_stock.shape)</code></pre>
+         <blockquote>
+          <p>
+           Google_stock is of type: class 'pandas.core.frame.DataFrame'
+           <br/>
+           Google_stock has shape: (3313, 7)
+          </p>
+         </blockquote>
+         <p>
+          We see that we have loaded the GOOG.csv file into a Pandas DataFrame and it consists of 3,313 rows and 7 columns. Now let's look at the stock data
+         </p>
+         <pre><code class="python language-python">Google_stock</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**date**" style="text-align:center;">
+              <strong>
+               Date
+              </strong>
+             </th>
+             <th id="**open**" style="text-align:center;">
+              <strong>
+               Open
+              </strong>
+             </th>
+             <th id="**high**" style="text-align:center;">
+              <strong>
+               High
+              </strong>
+             </th>
+             <th id="**low**" style="text-align:center;">
+              <strong>
+               Low
+              </strong>
+             </th>
+             <th id="**close**" style="text-align:center;">
+              <strong>
+               Close
+              </strong>
+             </th>
+             <th id="**adj_close**" style="text-align:center;">
+              <strong>
+               Adj Close
+              </strong>
+             </th>
+             <th id="**volume**" style="text-align:center;">
+              <strong>
+               Volume
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               0
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2004-08-19
+             </td>
+             <td style="text-align:center;">
+              49.676899
+             </td>
+             <td style="text-align:center;">
+              51.693783
+             </td>
+             <td style="text-align:center;">
+              47.669952
+             </td>
+             <td style="text-align:center;">
+              49.845802
+             </td>
+             <td style="text-align:center;">
+              49.845802
+             </td>
+             <td style="text-align:center;">
+              44994500
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2004-08-20
+             </td>
+             <td style="text-align:center;">
+              50.178635
+             </td>
+             <td style="text-align:center;">
+              54.187561
+             </td>
+             <td style="text-align:center;">
+              49.925285
+             </td>
+             <td style="text-align:center;">
+              53.805050
+             </td>
+             <td style="text-align:center;">
+              53.805050
+             </td>
+             <td style="text-align:center;">
+              23005800
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2004-08-23
+             </td>
+             <td style="text-align:center;">
+              55.017166
+             </td>
+             <td style="text-align:center;">
+              56.373344
+             </td>
+             <td style="text-align:center;">
+              54.172661
+             </td>
+             <td style="text-align:center;">
+              54.346527
+             </td>
+             <td style="text-align:center;">
+              54.346527
+             </td>
+             <td style="text-align:center;">
+              18393200
+             </td>
+            </tr>
+            <tr>
+             <td>
+              …     …
+             </td>
+             <td style="text-align:center;">
+             </td>
+             <td style="text-align:center;">
+             </td>
+             <td style="text-align:center;">
+             </td>
+             <td style="text-align:center;">
+             </td>
+             <td style="text-align:center;">
+             </td>
+             <td style="text-align:center;">
+             </td>
+             <td style="text-align:center;">
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               3311
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2017-10-12
+             </td>
+             <td style="text-align:center;">
+              987.450012
+             </td>
+             <td style="text-align:center;">
+              994.119995
+             </td>
+             <td style="text-align:center;">
+              985.000000
+             </td>
+             <td style="text-align:center;">
+              987.830017
+             </td>
+             <td style="text-align:center;">
+              987.830017
+             </td>
+             <td style="text-align:center;">
+              1262400
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               3312
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2017-10-13
+             </td>
+             <td style="text-align:center;">
+              992.000000
+             </td>
+             <td style="text-align:center;">
+              997.210022
+             </td>
+             <td style="text-align:center;">
+              989.000000
+             </td>
+             <td style="text-align:center;">
+              989.679993
+             </td>
+             <td style="text-align:center;">
+              989.679993
+             </td>
+             <td style="text-align:center;">
+              1157700
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <blockquote>
+          <p>
+           3313 rows × 7 columns
+          </p>
+         </blockquote>
+         <p>
+          We see that it is quite a large dataset and that Pandas has automatically assigned numerical row indices to the DataFrame. Pandas also used the labels that appear in the data in the CSV file to assign the column labels.
+         </p>
+         <p>
+          When dealing with large datasets like this one, it is often useful just to take a look at the first few rows of data instead of the whole dataset. We can take a look at the first 5 rows of data using the
+          <code>
+           .head()
+          </code>
+          method, as shown below
+         </p>
+         <pre><code class="python language-python">Google_stock.head()</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**date**" style="text-align:center;">
+              <strong>
+               Date
+              </strong>
+             </th>
+             <th id="**open**" style="text-align:center;">
+              <strong>
+               Open
+              </strong>
+             </th>
+             <th id="**high**" style="text-align:center;">
+              <strong>
+               High
+              </strong>
+             </th>
+             <th id="**low**" style="text-align:center;">
+              <strong>
+               Low
+              </strong>
+             </th>
+             <th id="**close**" style="text-align:center;">
+              <strong>
+               Close
+              </strong>
+             </th>
+             <th id="**adj_close**" style="text-align:center;">
+              <strong>
+               Adj Close
+              </strong>
+             </th>
+             <th id="**volume**" style="text-align:center;">
+              <strong>
+               Volume
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               0
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2004-08-19
+             </td>
+             <td style="text-align:center;">
+              49.676899
+             </td>
+             <td style="text-align:center;">
+              51.693783
+             </td>
+             <td style="text-align:center;">
+              47.669952
+             </td>
+             <td style="text-align:center;">
+              49.845802
+             </td>
+             <td style="text-align:center;">
+              49.845802
+             </td>
+             <td style="text-align:center;">
+              44994500
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2004-08-20
+             </td>
+             <td style="text-align:center;">
+              50.178635
+             </td>
+             <td style="text-align:center;">
+              54.187561
+             </td>
+             <td style="text-align:center;">
+              49.925285
+             </td>
+             <td style="text-align:center;">
+              53.805050
+             </td>
+             <td style="text-align:center;">
+              53.805050
+             </td>
+             <td style="text-align:center;">
+              23005800
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2004-08-23
+             </td>
+             <td style="text-align:center;">
+              55.017166
+             </td>
+             <td style="text-align:center;">
+              56.373344
+             </td>
+             <td style="text-align:center;">
+              54.172661
+             </td>
+             <td style="text-align:center;">
+              54.346527
+             </td>
+             <td style="text-align:center;">
+              54.346527
+             </td>
+             <td style="text-align:center;">
+              18393200
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2004-08-24
+             </td>
+             <td style="text-align:center;">
+              55.260582
+             </td>
+             <td style="text-align:center;">
+              55.439419
+             </td>
+             <td style="text-align:center;">
+              51.450363
+             </td>
+             <td style="text-align:center;">
+              52.096165
+             </td>
+             <td style="text-align:center;">
+              52.096165
+             </td>
+             <td style="text-align:center;">
+              15361800
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               4
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2004-08-25
+             </td>
+             <td style="text-align:center;">
+              52.140873
+             </td>
+             <td style="text-align:center;">
+              53.651051
+             </td>
+             <td style="text-align:center;">
+              51.604362
+             </td>
+             <td style="text-align:center;">
+              52.657513
+             </td>
+             <td style="text-align:center;">
+              52.657513
+             </td>
+             <td style="text-align:center;">
+              9257400
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          We can also take a look at the last 5 rows of data by using the
+          <code>
+           .tail()
+          </code>
+          method:
+         </p>
+         <pre><code class="python language-python">Google_stock.tail()</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**date**" style="text-align:center;">
+              <strong>
+               Date
+              </strong>
+             </th>
+             <th id="**open**" style="text-align:center;">
+              <strong>
+               Open
+              </strong>
+             </th>
+             <th id="**high**" style="text-align:center;">
+              <strong>
+               High
+              </strong>
+             </th>
+             <th id="**low**" style="text-align:center;">
+              <strong>
+               Low
+              </strong>
+             </th>
+             <th id="**close**" style="text-align:center;">
+              <strong>
+               Close
+              </strong>
+             </th>
+             <th id="**adj_close**" style="text-align:center;">
+              <strong>
+               Adj Close
+              </strong>
+             </th>
+             <th id="**volume**" style="text-align:center;">
+              <strong>
+               Volume
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               3308
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2017-10-09
+             </td>
+             <td style="text-align:center;">
+              980.000000
+             </td>
+             <td style="text-align:center;">
+              985.424988
+             </td>
+             <td style="text-align:center;">
+              976.109985
+             </td>
+             <td style="text-align:center;">
+              977.000000
+             </td>
+             <td style="text-align:center;">
+              977.000000
+             </td>
+             <td style="text-align:center;">
+              891400
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               3309
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2017-10-10
+             </td>
+             <td style="text-align:center;">
+              980.000000
+             </td>
+             <td style="text-align:center;">
+              981.570007
+             </td>
+             <td style="text-align:center;">
+              966.080017
+             </td>
+             <td style="text-align:center;">
+              972.599976
+             </td>
+             <td style="text-align:center;">
+              972.599976
+             </td>
+             <td style="text-align:center;">
+              968400
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               3310
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2017-10-11
+             </td>
+             <td style="text-align:center;">
+              973.719971
+             </td>
+             <td style="text-align:center;">
+              990.710022
+             </td>
+             <td style="text-align:center;">
+              972.250000
+             </td>
+             <td style="text-align:center;">
+              989.250000
+             </td>
+             <td style="text-align:center;">
+              989.250000
+             </td>
+             <td style="text-align:center;">
+              1693300
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               3311
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2017-10-12
+             </td>
+             <td style="text-align:center;">
+              987.450012
+             </td>
+             <td style="text-align:center;">
+              994.119995
+             </td>
+             <td style="text-align:center;">
+              985.000000
+             </td>
+             <td style="text-align:center;">
+              987.830017
+             </td>
+             <td style="text-align:center;">
+              987.830017
+             </td>
+             <td style="text-align:center;">
+              1262400
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               3312
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              2017-10-13
+             </td>
+             <td style="text-align:center;">
+              992.000000
+             </td>
+             <td style="text-align:center;">
+              997.210022
+             </td>
+             <td style="text-align:center;">
+              989.000000
+             </td>
+             <td style="text-align:center;">
+              989.679993
+             </td>
+             <td style="text-align:center;">
+              989.679993
+             </td>
+             <td style="text-align:center;">
+              1157700
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          We can also optionally use
+          <code>
+           .head(N)
+          </code>
+          or
+          <code>
+           .tail(N)
+          </code>
+          to display the first and last
+          <code>
+           N
+          </code>
+          rows of data, respectively.
+         </p>
+         <p>
+          Let's do a quick check to see whether we have any
+          <code>
+           NaN
+          </code>
+          values in our dataset. To do this, we will use the
+          <code>
+           .isnull()
+          </code>
+          method followed by the
+          <code>
+           .any()
+          </code>
+          method to check whether any of the columns contain
+          <code>
+           NaN
+          </code>
+          values.
+         </p>
+         <pre><code class="python language-python">Google_stock.isnull().any()</code></pre>
+         <blockquote>
+          <p>
+           Date                  False
+           <br/>
+           Open                False
+           <br/>
+           High                  False
+           <br/>
+           Low                   False
+           <br/>
+           Close                 False
+           <br/>
+           Adj Close          False
+           <br/>
+           Volume             False
+           <br/>
+           dtype: bool
+          </p>
+         </blockquote>
+         <p>
+          We see that we have no
+          <code>
+           NaN
+          </code>
+          values.
+         </p>
+         <p>
+          When dealing with large datasets, it is often useful to get statistical information from them. Pandas provides the
+          <code>
+           .describe()
+          </code>
+          method to get descriptive statistics on each column of the DataFrame. Let's see how this works:
+         </p>
+         <pre><code class="python language-python"># We get descriptive statistics on our stock data
+Google_stock.describe()</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**open**" style="text-align:center;">
+              <strong>
+               Open
+              </strong>
+             </th>
+             <th id="**high**" style="text-align:center;">
+              <strong>
+               High
+              </strong>
+             </th>
+             <th id="**low**" style="text-align:center;">
+              <strong>
+               Low
+              </strong>
+             </th>
+             <th id="**close**" style="text-align:center;">
+              <strong>
+               Close
+              </strong>
+             </th>
+             <th id="**adj_close**" style="text-align:center;">
+              <strong>
+               Adj Close
+              </strong>
+             </th>
+             <th id="**volume**" style="text-align:center;">
+              <strong>
+               Volume
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               count
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              3313.000000
+             </td>
+             <td style="text-align:center;">
+              3313.000000
+             </td>
+             <td style="text-align:center;">
+              3313.000000
+             </td>
+             <td style="text-align:center;">
+              3313.000000
+             </td>
+             <td style="text-align:center;">
+              3313.000000
+             </td>
+             <td style="text-align:center;">
+              3.313000e+03
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               mean
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              380.186092
+             </td>
+             <td style="text-align:center;">
+              383.493740
+             </td>
+             <td style="text-align:center;">
+              376.519309
+             </td>
+             <td style="text-align:center;">
+              380.072458
+             </td>
+             <td style="text-align:center;">
+              380.072458
+             </td>
+             <td style="text-align:center;">
+              8.038476e+06
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               std
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              223.818650
+             </td>
+             <td style="text-align:center;">
+              224.974534
+             </td>
+             <td style="text-align:center;">
+              222.473232
+             </td>
+             <td style="text-align:center;">
+              223.853780
+             </td>
+             <td style="text-align:center;">
+              223.853780
+             </td>
+             <td style="text-align:center;">
+              8.399521e+06
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               min
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              49.274517
+             </td>
+             <td style="text-align:center;">
+              50.541279
+             </td>
+             <td style="text-align:center;">
+              47.669952
+             </td>
+             <td style="text-align:center;">
+              49.681866
+             </td>
+             <td style="text-align:center;">
+              49.681866
+             </td>
+             <td style="text-align:center;">
+              7.900000e+03
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               25%
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              226.556473
+             </td>
+             <td style="text-align:center;">
+              228.394516
+             </td>
+             <td style="text-align:center;">
+              224.003082
+             </td>
+             <td style="text-align:center;">
+              226.407440
+             </td>
+             <td style="text-align:center;">
+              226.407440
+             </td>
+             <td style="text-align:center;">
+              2.584900e+06
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               50%
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              293.312286
+             </td>
+             <td style="text-align:center;">
+              295.433502
+             </td>
+             <td style="text-align:center;">
+              289.929291
+             </td>
+             <td style="text-align:center;">
+              293.029114
+             </td>
+             <td style="text-align:center;">
+              293.029114
+             </td>
+             <td style="text-align:center;">
+              5.281300e+06
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               75%
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              536.650024
+             </td>
+             <td style="text-align:center;">
+              540.000000
+             </td>
+             <td style="text-align:center;">
+              532.409973
+             </td>
+             <td style="text-align:center;">
+              536.690002
+             </td>
+             <td style="text-align:center;">
+              536.690002
+             </td>
+             <td style="text-align:center;">
+              1.065370e+07
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               max
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              992.000000
+             </td>
+             <td style="text-align:center;">
+              997.210022
+             </td>
+             <td style="text-align:center;">
+              989.000000
+             </td>
+             <td style="text-align:center;">
+              989.679993
+             </td>
+             <td style="text-align:center;">
+              989.679993
+             </td>
+             <td style="text-align:center;">
+              8.276810e+07
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          If desired, we can apply the
+          <code>
+           .describe()
+          </code>
+          method on a single column as shown below:
+         </p>
+         <pre><code class="python language-python"># We get descriptive statistics on a single column of our DataFrame
+Google_stock['Adj Close'].describe()</code></pre>
+         <blockquote>
+          <p>
+           count         3313.000000
+           <br/>
+           mean           380.072458
+           <br/>
+           std                223.853780
+           <br/>
+           min                 49.681866
+           <br/>
+           25%              226.407440
+           <br/>
+           50%              293.029114
+           <br/>
+           75%              536.690002
+           <br/>
+           max              989.679993
+           <br/>
+           Name: Adj Close, dtype: float64
+          </p>
+         </blockquote>
+         <p>
+          Similarly, you can also look at one statistic by using one of the many statistical functions Pandas provides. Let's look at some examples:
+         </p>
+         <pre><code class="python language-python"># We print information about our DataFrame  
+print()
+print('Maximum values of each column:\n', Google_stock.max())
+print()
+print('Minimum Close value:', Google_stock['Close'].min())
+print()
+print('Average value of each column:\n', Google_stock.mean())</code></pre>
+         <blockquote>
+          <p>
+           Maximum values of each column:
+           <br/>
+           Date            2017-10-13
+           <br/>
+           Open                        992
+           <br/>
+           High                    997.21
+           <br/>
+           Low                          989
+           <br/>
+           Close                  989.68
+           <br/>
+           Adj Close           989.68
+           <br/>
+           Volume        82768100
+           <br/>
+           dtype: object
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Minimum Close value: 49.681866
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Average value of each column:
+           <br/>
+           Open            3.801861e+02
+           <br/>
+           High             3.834937e+02
+           <br/>
+           Low              3.765193e+02
+           <br/>
+           Close            3.800725e+02
+           <br/>
+           Adj Close     3.800725e+02
+           <br/>
+           Volume        8.038476e+06
+           <br/>
+           dtype: float64
+          </p>
+         </blockquote>
+         <p>
+          Another important statistical measure is data correlation. Data correlation can tell us, for example, if the data in different columns are correlated. We can use the
+          <code>
+           .corr()
+          </code>
+          method to get the correlation between different columns, as shown below:
+         </p>
+         <pre><code class="python language-python"># We display the correlation between columns
+Google_stock.corr()</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**open**" style="text-align:center;">
+              <strong>
+               Open
+              </strong>
+             </th>
+             <th id="**high**" style="text-align:center;">
+              <strong>
+               High
+              </strong>
+             </th>
+             <th id="**low**" style="text-align:center;">
+              <strong>
+               Low
+              </strong>
+             </th>
+             <th id="**close**" style="text-align:center;">
+              <strong>
+               Close
+              </strong>
+             </th>
+             <th id="**adj_close**" style="text-align:center;">
+              <strong>
+               Adj Close
+              </strong>
+             </th>
+             <th id="**volume**" style="text-align:center;">
+              <strong>
+               Volume
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               Open
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1.000000
+             </td>
+             <td style="text-align:center;">
+              0.999904
+             </td>
+             <td style="text-align:center;">
+              0.999845
+             </td>
+             <td style="text-align:center;">
+              0.999745
+             </td>
+             <td style="text-align:center;">
+              0.999745
+             </td>
+             <td style="text-align:center;">
+              -0.564258
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               High
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              0.999904
+             </td>
+             <td style="text-align:center;">
+              1.000000
+             </td>
+             <td style="text-align:center;">
+              0.999834
+             </td>
+             <td style="text-align:center;">
+              0.999868
+             </td>
+             <td style="text-align:center;">
+              0.999868
+             </td>
+             <td style="text-align:center;">
+              -0.562749
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               Low
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              0.999845
+             </td>
+             <td style="text-align:center;">
+              0.999834
+             </td>
+             <td style="text-align:center;">
+              1.000000
+             </td>
+             <td style="text-align:center;">
+              0.999899
+             </td>
+             <td style="text-align:center;">
+              0.999899
+             </td>
+             <td style="text-align:center;">
+              -0.567007
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               Close
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              0.999745
+             </td>
+             <td style="text-align:center;">
+              0.999868
+             </td>
+             <td style="text-align:center;">
+              0.999899
+             </td>
+             <td style="text-align:center;">
+              1.000000
+             </td>
+             <td style="text-align:center;">
+              1.000000
+             </td>
+             <td style="text-align:center;">
+              -0.564967
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               Adj Close
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              0.999745
+             </td>
+             <td style="text-align:center;">
+              0.999868
+             </td>
+             <td style="text-align:center;">
+              0.999899
+             </td>
+             <td style="text-align:center;">
+              1.000000
+             </td>
+             <td style="text-align:center;">
+              1.000000
+             </td>
+             <td style="text-align:center;">
+              -0.564967
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               Volume
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              -0.564258
+             </td>
+             <td style="text-align:center;">
+              -0.562749
+             </td>
+             <td style="text-align:center;">
+              -0.567007
+             </td>
+             <td style="text-align:center;">
+              -0.564967
+             </td>
+             <td style="text-align:center;">
+              -0.564967
+             </td>
+             <td style="text-align:center;">
+              1.000000
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          A correlation value of 1 tells us there is a high correlation and a correlation of 0 tells us that the data is not correlated at all.
+         </p>
+         <p>
+          We will end this Introduction to Pandas by taking a look at the
+          <code>
+           .groupby()
+          </code>
+          method. The
+          <code>
+           .groupby()
+          </code>
+          method allows us to group data in different ways. Let's see how we can group data to get different types of information. For the next examples we are going to load fake data about a fictitious company.
+         </p>
+         <pre><code class="python language-python"># We load fake Company data in a DataFrame
+data = pd.read_csv('./fake_company.csv')
+
+data</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**year**" style="text-align:center;">
+              <strong>
+               Year
+              </strong>
+             </th>
+             <th id="**name**" style="text-align:center;">
+              <strong>
+               Name
+              </strong>
+             </th>
+             <th id="**department**" style="text-align:center;">
+              <strong>
+               Department
+              </strong>
+             </th>
+             <th id="**age**" style="text-align:center;">
+              <strong>
+               Age
+              </strong>
+             </th>
+             <th id="**salary**" style="text-align:center;">
+              <strong>
+               Salary
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               0
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1990
+             </td>
+             <td style="text-align:center;">
+              Alice
+             </td>
+             <td style="text-align:center;">
+              HR
+             </td>
+             <td style="text-align:center;">
+              25
+             </td>
+             <td style="text-align:center;">
+              50000
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1990
+             </td>
+             <td style="text-align:center;">
+              Bob
+             </td>
+             <td style="text-align:center;">
+              RD
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              48000
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1990
+             </td>
+             <td style="text-align:center;">
+              Charlie
+             </td>
+             <td style="text-align:center;">
+              Admin
+             </td>
+             <td style="text-align:center;">
+              45
+             </td>
+             <td style="text-align:center;">
+              55000
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1991
+             </td>
+             <td style="text-align:center;">
+              Alice
+             </td>
+             <td style="text-align:center;">
+              HR
+             </td>
+             <td style="text-align:center;">
+              26
+             </td>
+             <td style="text-align:center;">
+              52000
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               4
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1991
+             </td>
+             <td style="text-align:center;">
+              Bob
+             </td>
+             <td style="text-align:center;">
+              RD
+             </td>
+             <td style="text-align:center;">
+              31
+             </td>
+             <td style="text-align:center;">
+              50000
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               5
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1991
+             </td>
+             <td style="text-align:center;">
+              Charlie
+             </td>
+             <td style="text-align:center;">
+              Admin
+             </td>
+             <td style="text-align:center;">
+              46
+             </td>
+             <td style="text-align:center;">
+              60000
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               6
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1992
+             </td>
+             <td style="text-align:center;">
+              Alice
+             </td>
+             <td style="text-align:center;">
+              Admin
+             </td>
+             <td style="text-align:center;">
+              27
+             </td>
+             <td style="text-align:center;">
+              60000
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               7
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1992
+             </td>
+             <td style="text-align:center;">
+              Bob
+             </td>
+             <td style="text-align:center;">
+              RD
+             </td>
+             <td style="text-align:center;">
+              32
+             </td>
+             <td style="text-align:center;">
+              52000
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               8
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              1992
+             </td>
+             <td style="text-align:center;">
+              Charlie
+             </td>
+             <td style="text-align:center;">
+              Admin
+             </td>
+             <td style="text-align:center;">
+              28
+             </td>
+             <td style="text-align:center;">
+              62000
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          We see that the data contains information for the year 1990 through 1992. For each year we see name of the employees, the department they work for, their age, and their annual salary. Now, let's use the
+          <code>
+           .groupby()
+          </code>
+          method to get information.
+         </p>
+         <p>
+          Let's calculate how much money the company spent in salaries each year. To do this, we will group the data by
+          <em>
+           Year
+          </em>
+          using the
+          <code>
+           .groupby()
+          </code>
+          method and then we will add up the salaries of all the employees by using the
+          <code>
+           .sum()
+          </code>
+          method.
+         </p>
+         <pre><code class="python language-python"># We display the total amount of money spent in salaries each year
+data.groupby(['Year'])['Salary'].sum()</code></pre>
+         <blockquote>
+          <p>
+           Year
+           <br/>
+           1990     153000
+           <br/>
+           1991     162000
+           <br/>
+           1992     174000
+           <br/>
+           Name: Salary, dtype: int64
+          </p>
+         </blockquote>
+         <p>
+          We see that the company spent a total of 153,000 dollars in 1990, 162,000 in 1991, and 174,000 in 1992.
+         </p>
+         <p>
+          Now, let's suppose I want to know what was the average salary for each year. In this case, we will group the data by
+          <em>
+           Year
+          </em>
+          using the
+          <code>
+           .groupby()
+          </code>
+          method, just as we did before, and then we use the
+          <code>
+           .mean()
+          </code>
+          method to get the average salary. Let's see how this works
+         </p>
+         <pre><code class="python language-python"># We display the average salary per year
+data.groupby(['Year'])['Salary'].mean()</code></pre>
+         <blockquote>
+          <p>
+           Year
+           <br/>
+           1990     51000
+           <br/>
+           1991     54000
+           <br/>
+           1992     58000
+           <br/>
+           Name: Salary, dtype: int64
+          </p>
+         </blockquote>
+         <p>
+          We see that the average salary in 1990 was 51,000 dollars, 54,000 in 1991, and 58,000 in 1992.
+         </p>
+         <p>
+          Now let's see how much did each employee get paid in those three years. In this case, we will group the data by
+          <em>
+           Name
+          </em>
+          using the
+          <code>
+           .groupby()
+          </code>
+          method and then we will add up the salaries for each year. Let's see the result
+         </p>
+         <pre><code class="python language-python"># We display the total salary each employee received in all the years they worked for the company
+data.groupby(['Name'])['Salary'].sum()</code></pre>
+         <blockquote>
+          <p>
+           Name
+           <br/>
+           Alice         162000
+           <br/>
+           Bob          150000
+           <br/>
+           Charlie     177000
+           <br/>
+           Name: Salary, dtype: int64
+          </p>
+         </blockquote>
+         <p>
+          We see that Alice received a total of 162,000 dollars in the three years she worked for the company, Bob received 150,000, and Charlie received 177,000.
+         </p>
+         <p>
+          Now let's see what was the salary distribution per department per year. In this case we will group the data by
+          <em>
+           Year
+          </em>
+          and by
+          <em>
+           Department
+          </em>
+          using the
+          <code>
+           .groupby()
+          </code>
+          method and then we will add up the salaries for each department. Let's see the result
+         </p>
+         <pre><code class="python language-python"># We display the salary distribution per department per year.
+data.groupby(['Year', 'Department'])['Salary'].sum()</code></pre>
+         <blockquote>
+          <p>
+           Year     Department
+           <br/>
+           1990    Admin              55000
+           <br/>
+           HR                    50000
+           <br/>
+           RD                    48000
+           <br/>
+           1991    Admin              60000
+           <br/>
+           HR                    52000
+           <br/>
+           RD                    50000
+           <br/>
+           1992    Admin            122000
+           <br/>
+           RD                    52000
+           <br/>
+           Name: Salary, dtype: int64
+          </p>
+         </blockquote>
+         <p>
+          We see that in 1990 the Admin department paid 55,000 dollars in salaries,the HR department paid 50,000, and the RD department 48,0000. While in 1992 the Admin department paid 122,000 dollars in salaries and the RD department paid 52,000.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="13. Getting Set Up for the Mini-Project.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. Loading Data into a pandas DataFrame')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

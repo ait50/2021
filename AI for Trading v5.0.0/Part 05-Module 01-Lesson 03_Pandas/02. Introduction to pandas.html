@@ -1,0 +1,334 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Introduction to pandas
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Pandas
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructors.html">
+       01. Instructors
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Introduction to pandas.html">
+       02. Introduction to pandas
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Why Use pandas.html">
+       03. Why Use pandas?
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Creating pandas Series.html">
+       04. Creating pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Accessing and Deleting Elements in pandas Series.html">
+       05. Accessing and Deleting Elements in pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Arithmetic Operations on pandas Series.html">
+       06. Arithmetic Operations on pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Manipulate a Series.html">
+       07. Manipulate a Series
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Creating pandas DataFrames.html">
+       08. Creating pandas DataFrames
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Accessing Elements in pandas DataFrames.html">
+       09. Accessing Elements in pandas DataFrames
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Dealing with NaN.html">
+       10. Dealing with NaN
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Manipulate a DataFrame.html">
+       11. Manipulate a DataFrame
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Loading Data into a pandas DataFrame.html">
+       12. Loading Data into a pandas DataFrame
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Getting Set Up for the Mini-Project.html">
+       13. Getting Set Up for the Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Mini-Project Statistics From Stock Data.html">
+       14. Mini-Project: Statistics From Stock Data
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. Introduction to pandas
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="introduction-to-pandas">
+          Introduction to Pandas
+         </h1>
+         <p>
+          <strong>
+           Pandas
+          </strong>
+          is a  package for data manipulation and analysis in Python. The name Pandas is derived from the econometrics term
+          <em>
+           Panel Data
+          </em>
+          . Pandas incorporates two additional data structures into Python, namely
+          <strong>
+           Pandas Series
+          </strong>
+          and
+          <strong>
+           Pandas DataFrame
+          </strong>
+          . These data structures allow us to work with
+          <em>
+           labeled
+          </em>
+          and
+          <em>
+           relational
+          </em>
+          data in an easy and intuitive manner.  These lessons are intended as a basic overview of Pandas and introduces some of its most important features.
+         </p>
+         <p>
+          In the following lessons you will learn:
+         </p>
+         <ul>
+          <li>
+           How to import Pandas
+          </li>
+          <li>
+           How to create Pandas Series and DataFrames using various methods
+          </li>
+          <li>
+           How to access and change elements in Series and DataFrames
+          </li>
+          <li>
+           How to perform arithmetic operations on Series
+          </li>
+          <li>
+           How to load data into  a DataFrame
+          </li>
+          <li>
+           How to deal with Not a Number (NaN) values
+          </li>
+         </ul>
+         <p>
+          The following lessons assume that you are already familiar with NumPy and have gone over the previous NumPy lessons. Therefore, to avoid being repetitive we will omit a lot of details already given in the NumPy lessons. Consequently, if you haven't seen the NumPy lessons we suggest you go over them first.
+         </p>
+         <h1 id="downloading-pandas">
+          Downloading Pandas
+         </h1>
+         <p>
+          Pandas is included with
+          <strong>
+           Anaconda
+          </strong>
+          . If you don't already have Anaconda installed on your computer, please refer to the Anaconda section to get clear instructions on how to install Anaconda on your PC or Mac.
+         </p>
+         <h1 id="pandas-versions">
+          Pandas Versions
+         </h1>
+         <p>
+          As with many Python packages, Pandas is updated from time to time. The following lessons were created using Pandas version 0.22. You can check which version of Pandas you have by typing
+          <code>
+           !conda list pandas
+          </code>
+          in your Jupyter notebook or by typing
+          <code>
+           conda list pandas
+          </code>
+          in the Anaconda prompt. If you have another version of Pandas installed in your computer, you can update your version by typing
+          <code>
+           conda install pandas=0.22
+          </code>
+          in the Anaconda prompt.  As newer versions of Pandas are released, some functions may become obsolete or replaced, so make sure you have the correct Pandas version before running the code. This will guarantee your code will run smoothly.
+         </p>
+         <h1 id="pandas-documentation">
+          Pandas Documentation
+         </h1>
+         <p>
+          Pandas is remarkable data analysis library and it has many functions and features. In these introductory lessons we will only scratch the surface of what Pandas can do. If you want to learn more about Pandas, make sure you check out the Pandas Documentation:
+         </p>
+         <p>
+          <a href="https://pandas.pydata.org/pandas-docs/stable/" rel="noopener noreferrer" target="_blank">
+           Pandas Documentation
+          </a>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. Why Use pandas.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. Introduction to pandas')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

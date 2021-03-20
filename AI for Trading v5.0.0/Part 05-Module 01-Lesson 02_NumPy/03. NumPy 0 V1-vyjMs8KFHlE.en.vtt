@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.589
+NumPy is short for Numerical Python and is
+
+00:00:03.589 --> 00:00:07.549
+a library designed for efficient Scientific Computation.
+
+00:00:07.549 --> 00:00:10.884
+It's built on top of the programming language C,
+
+00:00:10.884 --> 00:00:13.919
+which works at a lower level on our computer.
+
+00:00:13.919 --> 00:00:17.969
+To understand what this means for the speed of our code,
+
+00:00:17.969 --> 00:00:20.384
+see the link in the instructor notes.
+
+00:00:20.385 --> 00:00:22.170
+At the core of NumPy,
+
+00:00:22.170 --> 00:00:24.740
+is its N-dimensional array object.
+
+00:00:24.739 --> 00:00:28.139
+This is just a multi-dimensional array that
+
+00:00:28.140 --> 00:00:31.855
+holds a group of elements that all have the same data type.
+
+00:00:31.855 --> 00:00:35.170
+In other words, it's like a grid that can take on
+
+00:00:35.170 --> 00:00:40.725
+many shapes and enforces every element in that grid to have the same type,
+
+00:00:40.725 --> 00:00:43.304
+whether that's string, float,
+
+00:00:43.304 --> 00:00:45.405
+boolean, or something else.
+
+00:00:45.405 --> 00:00:49.719
+Making arrays only able to hold one data type at a time
+
+00:00:49.719 --> 00:00:54.695
+helps NumPy make very quick computations with vector operations.
+
+00:00:54.695 --> 00:00:58.719
+These arrays, along with many useful functions in NumPy,
+
+00:00:58.719 --> 00:01:03.509
+can significantly optimize and simplify operations on data.
+
+00:01:03.509 --> 00:01:06.640
+Here's a simple example that demonstrates this.
+
+00:01:06.640 --> 00:01:12.765
+First, let's import NumPy with the standard alias for this library, NP.
+
+00:01:12.765 --> 00:01:18.204
+This generates an array of 100 million floats between zero and one.
+
+00:01:18.204 --> 00:01:21.340
+Let's compare the time it takes playing Python
+
+00:01:21.340 --> 00:01:25.359
+versus NumPy to calculate the mean of this array.
+
+00:01:25.359 --> 00:01:28.799
+Instead of Python, we do this by getting the sum of
+
+00:01:28.799 --> 00:01:33.349
+X and dividing that by the length of X, pretty straightforward.
+
+00:01:33.349 --> 00:01:35.319
+Using the time package,
+
+00:01:35.319 --> 00:01:39.034
+we can check how long this line of code takes to run.
+
+00:01:39.034 --> 00:01:42.420
+That took about 9.3 seconds.
+
+00:01:42.420 --> 00:01:46.335
+Makes sense that it took a while with 100 million values.
+
+00:01:46.334 --> 00:01:49.534
+Now, let's see how long it takes NumPy.
+
+00:01:49.534 --> 00:01:52.140
+That was ridiculously faster.
+
+00:01:52.140 --> 00:01:55.795
+NumPy took only 0.092 seconds,
+
+00:01:55.795 --> 00:01:58.960
+while plain Python took 9.31.
+
+00:01:58.959 --> 00:02:05.119
+As you saw, NumPy can make a difference of orders of magnitude in computation time.
+
+00:02:05.120 --> 00:02:08.420
+Imagine how much this speeds up the process for
+
+00:02:08.419 --> 00:02:12.604
+more complex situations that require many more calculations.
+
+00:02:12.604 --> 00:02:17.929
+For example, let's say we're engineering a whole new feature or column in a dataset,
+
+00:02:17.930 --> 00:02:21.400
+which you compute by multiplying the values and two columns
+
+00:02:21.400 --> 00:02:26.105
+together and dividing that by the values in another for each row.
+
+00:02:26.104 --> 00:02:29.199
+Unlike NumPy, plain Python would require
+
+00:02:29.199 --> 00:02:31.310
+a massively long loop through all of
+
+00:02:31.310 --> 00:02:35.310
+the rows to compute the new value for each individual row.
+
+00:02:35.310 --> 00:02:37.490
+In many machine learning problems,
+
+00:02:37.490 --> 00:02:41.710
+you'll often find yourself using NumPy arrays in many situations.
+
+00:02:41.710 --> 00:02:44.750
+For instance, you might use a NumPy array to hold
+
+00:02:44.750 --> 00:02:50.025
+the pixel values of an image that will be fed into a model for image classification.
+
+00:02:50.025 --> 00:02:54.155
+Later, we'll also learn about a popular data science package,
+
+00:02:54.155 --> 00:02:58.134
+Pandas, which is very useful for manipulating datasets.
+
+00:02:58.134 --> 00:03:00.364
+It's actually built on top of NumPy,
+
+00:03:00.365 --> 00:03:03.295
+which is why its computations are so fast.
+
+00:03:03.294 --> 00:03:08.000
+Now that you've learned a bit about the power of NumPy, let's get started.
+

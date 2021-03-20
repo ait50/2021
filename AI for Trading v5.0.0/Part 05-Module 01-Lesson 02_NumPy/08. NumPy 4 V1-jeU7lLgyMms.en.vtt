@@ -1,0 +1,304 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.935
+As we mentioned earlier,
+
+00:00:01.935 --> 00:00:06.540
+in addition to accessing individual elements one at a time,
+
+00:00:06.540 --> 00:00:11.230
+we can access subsets of NumPy arrays with slicing.
+
+00:00:11.230 --> 00:00:16.640
+Slicing is performed by combining indices with a colon inside the brackets.
+
+00:00:16.640 --> 00:00:20.455
+In general, you will come across three ways of slicing.
+
+00:00:20.454 --> 00:00:25.244
+First, slicing from a starting index to an ending index.
+
+00:00:25.245 --> 00:00:30.210
+Second, slicing from a starting index to the end of the array,
+
+00:00:30.210 --> 00:00:33.490
+by leaving this blank, or slicing from the beginning of
+
+00:00:33.490 --> 00:00:37.164
+the array to an ending index, by leaving this part blank.
+
+00:00:37.164 --> 00:00:39.119
+In the first and third methods,
+
+00:00:39.119 --> 00:00:41.704
+the ending index is always excluded.
+
+00:00:41.704 --> 00:00:45.604
+While here, the starting index is always included.
+
+00:00:45.604 --> 00:00:48.469
+NumPy arrays can be multidimensional.
+
+00:00:48.469 --> 00:00:54.619
+So, when slicing, you usually have to specify a slice for each dimension of the array.
+
+00:00:54.619 --> 00:00:56.765
+Let's see some examples of slicing,
+
+00:00:56.765 --> 00:00:58.289
+with a rank two array.
+
+00:00:58.289 --> 00:01:03.354
+Here is a four by five array that contains integers from one to 20.
+
+00:01:03.354 --> 00:01:09.450
+Let's say, you wanted to grab this subset from the array, these nine values.
+
+00:01:09.450 --> 00:01:11.924
+Here is one way we can do this.
+
+00:01:11.924 --> 00:01:14.009
+The part before the comma,
+
+00:01:14.010 --> 00:01:18.090
+specifies what indices you want to grab from the rows,
+
+00:01:18.090 --> 00:01:24.034
+and the part after the comma specifies what indices you want to grab from the columns.
+
+00:01:24.034 --> 00:01:29.954
+Remember, the starting index is included and the ending index is excluded.
+
+00:01:29.954 --> 00:01:32.965
+And indexing always starts with zero.
+
+00:01:32.965 --> 00:01:37.329
+So, the first row is zero and the second column is one.
+
+00:01:37.329 --> 00:01:42.859
+So, this grabs the rows one, two, and three.
+
+00:01:42.859 --> 00:01:48.120
+And this part grabs the columns two, three, and four.
+
+00:01:48.120 --> 00:01:51.505
+Here is another way we can accomplish that same thing.
+
+00:01:51.504 --> 00:01:55.134
+Remember, if we don't include an ending index after the colon,
+
+00:01:55.135 --> 00:01:58.460
+it will just go all the way to the last index.
+
+00:01:58.459 --> 00:02:02.739
+Let's try to grab another subset that uses these same columns,
+
+00:02:02.739 --> 00:02:04.824
+but instead of the last three rows,
+
+00:02:04.825 --> 00:02:06.630
+grabs the first three rows.
+
+00:02:06.629 --> 00:02:08.590
+This grabs this subset.
+
+00:02:08.590 --> 00:02:11.800
+Remember, not including a starting index before
+
+00:02:11.800 --> 00:02:15.600
+the colon just makes it go all the way to the beginning of the array.
+
+00:02:15.599 --> 00:02:19.784
+So, this grabs the rows zero, one, and two.
+
+00:02:19.784 --> 00:02:21.594
+For our next example,
+
+00:02:21.594 --> 00:02:25.305
+let's try to select all the elements in the third row.
+
+00:02:25.305 --> 00:02:28.469
+If we leave both sides of the colon blank,
+
+00:02:28.469 --> 00:02:31.710
+this will just grab all the rows in the array.
+
+00:02:31.710 --> 00:02:33.599
+So, X, colon, comma,
+
+00:02:33.599 --> 00:02:37.664
+two will get all the rows in column two.
+
+00:02:37.664 --> 00:02:41.104
+So, zero, one, two it would grab this column.
+
+00:02:41.104 --> 00:02:44.759
+If we want to select all the elements in the third column but
+
+00:02:44.759 --> 00:02:49.419
+return it in a rank two array, we can do this.
+
+00:02:49.419 --> 00:02:55.064
+Notice that when we first selected all the elements in the third column this way,
+
+00:02:55.064 --> 00:03:00.810
+the slice returned a rank one array instead of a rank two array.
+
+00:03:00.810 --> 00:03:03.030
+But slicing X like this,
+
+00:03:03.030 --> 00:03:04.569
+in a slightly different way,
+
+00:03:04.569 --> 00:03:07.799
+can get us a rank two NumPy array.
+
+00:03:07.800 --> 00:03:10.670
+It's important to note that when we perform slices on
+
+00:03:10.669 --> 00:03:13.994
+NumPy arrays and save them into new variables,
+
+00:03:13.995 --> 00:03:19.490
+like we did here, the data is not actually copied into the new variable.
+
+00:03:19.490 --> 00:03:23.555
+This is one feature that often causes confusion for beginners.
+
+00:03:23.555 --> 00:03:26.180
+So, we'll look into this in more detail.
+
+00:03:26.180 --> 00:03:30.650
+In these examples, the slice of the original array X,
+
+00:03:30.650 --> 00:03:33.750
+is not copied into the variable Z.
+
+00:03:33.750 --> 00:03:39.115
+Rather, X and Z are now just two different names for the same array.
+
+00:03:39.115 --> 00:03:43.950
+We say that slicing only creates a view of the original array.
+
+00:03:43.949 --> 00:03:47.144
+This means, if you make any changes in Z,
+
+00:03:47.145 --> 00:03:50.270
+you'll also be changing the elements in X.
+
+00:03:50.270 --> 00:03:53.725
+Let's see an example with that four by five array.
+
+00:03:53.724 --> 00:03:56.719
+We'll select the elements over here again,
+
+00:03:56.719 --> 00:03:59.224
+and assign that to the variable Z.
+
+00:03:59.224 --> 00:04:04.555
+Now, we'll change the last element in Z to 555.
+
+00:04:04.555 --> 00:04:06.605
+Now, if we print X,
+
+00:04:06.604 --> 00:04:10.364
+we can see that it has also been affected by this change.
+
+00:04:10.365 --> 00:04:16.100
+If we want to create a new NumPy array that contains a copy of the values in the slice,
+
+00:04:16.100 --> 00:04:18.870
+we need to use NumPy's Copy function.
+
+00:04:18.870 --> 00:04:21.735
+This function can also be used as a method,
+
+00:04:21.735 --> 00:04:24.504
+as we saw before with the reshape function.
+
+00:04:24.504 --> 00:04:27.935
+Let's repeat this example with the copy command.
+
+00:04:27.935 --> 00:04:33.990
+Here's X again, we'll create a copy of the same slice using the copy function.
+
+00:04:33.990 --> 00:04:37.435
+We can also use Copy as a method like this.
+
+00:04:37.435 --> 00:04:41.944
+If we change the last element in Z to 555,
+
+00:04:41.944 --> 00:04:45.144
+we can see that X has not been changed.
+
+00:04:45.144 --> 00:04:47.125
+By using the Copy command,
+
+00:04:47.125 --> 00:04:49.490
+we are creating a new NumPy array,
+
+00:04:49.490 --> 00:04:52.324
+that is completely independent of the original.
+
+00:04:52.324 --> 00:04:57.084
+It's often useful to use an array as indices to make slices,
+
+00:04:57.084 --> 00:05:00.889
+select, or change elements in another NumPy array.
+
+00:05:00.889 --> 00:05:02.709
+Let's see some examples.
+
+00:05:02.709 --> 00:05:09.300
+Let's create a rank one array that will serve as indices to select elements from X.
+
+00:05:09.300 --> 00:05:15.754
+We'll use this indices NumPy array to select the second and fourth row of X.
+
+00:05:15.754 --> 00:05:21.379
+Now, we'll use the same array to select the second and fourth column of X.
+
+00:05:21.379 --> 00:05:27.975
+NumPy also offers built-in functions to select specific elements within NumPy arrays.
+
+00:05:27.975 --> 00:05:35.135
+For example, NumPy's diag function can extract elements along the diagonal of an array.
+
+00:05:35.134 --> 00:05:38.545
+Remember, X was this.
+
+00:05:38.545 --> 00:05:45.185
+We can also print the elements above the main diagonal of X by setting a parameter,
+
+00:05:45.185 --> 00:05:47.204
+K equal to one.
+
+00:05:47.204 --> 00:05:51.954
+This grabs the elements one, seven,13, and 19.
+
+00:05:51.954 --> 00:05:54.269
+If K is a negative number,
+
+00:05:54.269 --> 00:05:59.474
+this will grab the values below the main diagonal, five,11, and 17.
+
+00:05:59.475 --> 00:06:01.895
+By default, K is zero,
+
+00:06:01.894 --> 00:06:04.509
+which is why it gets the main diagonal.
+
+00:06:04.509 --> 00:06:10.069
+It's also often useful to extract only the unique elements in a NumPy array.
+
+00:06:10.069 --> 00:06:15.915
+We can find the unique elements in an array by using NumPy's Unique function.
+
+00:06:15.915 --> 00:06:19.970
+Here's a three by three array with repeated values.
+
+00:06:19.970 --> 00:06:23.730
+We can see the unique values like this.
+

@@ -1,0 +1,387 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Notebook interface
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Jupyter Notebooks
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructor.html">
+       01. Instructor
+      </a>
+     </li>
+     <li class="">
+      <a href="02. What are Jupyter notebooks.html">
+       02. What are Jupyter notebooks?
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Installing Jupyter Notebook.html">
+       03. Installing Jupyter Notebook
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Launching the notebook server.html">
+       04. Launching the notebook server
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Notebook interface.html">
+       05. Notebook interface
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Code cells.html">
+       06. Code cells
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Markdown cells.html">
+       07. Markdown cells
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Keyboard shortcuts.html">
+       08. Keyboard shortcuts
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Magic keywords.html">
+       09. Magic keywords
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Converting notebooks.html">
+       10. Converting notebooks
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Creating a slideshow.html">
+       11. Creating a slideshow
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Finishing up.html">
+       12. Finishing up
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Notebook interface
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="notebook-interface">
+          Notebook interface
+         </h1>
+         <p>
+          When you create a new notebook, you should see something like this:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/new-notebook.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Feel free to try this yourself and poke around a bit.
+         </p>
+         <p>
+          You’ll see a little box outlined in green. This is called a
+          <em>
+           cell
+          </em>
+          . Cells are where you write and run your code. You can also change it to render Markdown, a popular formatting syntax for writing web content. I'll cover Markdown in more detail later. In the toolbar, click “Code” to change it to Markdown and back. The little play button runs the cell, and the up and down arrows move cells up and down.
+         </p>
+         <video autoplay="" loop="" style="width: 100%">
+          <source src="media/unnamed-199889-0.mp4" type="video/mp4"/>
+         </video>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          When you run a code cell, the output is displayed below the cell. The cell also gets numbered, you see
+          <code>
+           In [1]:
+          </code>
+          on the left. This lets you know the code was run and the order if you run multiple cells.  Running the cell in Markdown mode renders the Markdown as text.
+         </p>
+         <h2 id="the-tool-bar">
+          The tool bar
+         </h2>
+         <p>
+          Elsewhere on the tool bar, starting from the left:
+         </p>
+         <ul>
+          <li>
+           The anachronistic symbol for "save," the floppy disk. Saves the notebook!
+          </li>
+          <li>
+           The
+           <code>
+            +
+           </code>
+           button creates a new cell
+          </li>
+          <li>
+           Then, buttons to cut, copy, and paste cells.
+          </li>
+          <li>
+           Run, stop, restart the kernel
+          </li>
+          <li>
+           Cell type: code, Markdown, raw text, and header
+          </li>
+          <li>
+           Command palette (see next)
+          </li>
+          <li>
+           Cell toolbar, gives various options for cells such as using them as slides
+          </li>
+         </ul>
+         <h3 id="command-palette">
+          Command palette
+         </h3>
+         <p>
+          The little keyboard is the command palette. This will bring up a panel with a search bar where you can search for various commands. This is really helpful for speeding up your workflow as you don't need to search around in the menus with your mouse. Just open the command palette and type in what you want to do. For instance, if you want to merge two cells:
+         </p>
+         <video autoplay="" loop="" style="width: 100%">
+          <source src="media/unnamed-199940-0.mp4" type="video/mp4"/>
+         </video>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="more-things">
+          More things
+         </h2>
+         <p>
+          At the top you see the title. Click on this to rename the notebook.
+         </p>
+         <p>
+          Over on the right is the kernel type (Python 3 in my case) and next to it, a little circle. When the kernel is running a cell, it'll fill in. For most operations which run quickly, it won't fill in. It's a little indicator to let you know longer running code is actually running.
+         </p>
+         <p>
+          Along with the save button in the toolbar, notebooks are automatically saved periodically. The most recent save is noted to the right of the title. You can save manually with the save button, or by pressing
+          <code>
+           escape
+          </code>
+          then
+          <code>
+           s
+          </code>
+          on your keyboard. The
+          <code>
+           escape
+          </code>
+          key changes to command mode and
+          <code>
+           s
+          </code>
+          is the shortcut for "save." I'll cover command mode and keyboard shortcuts later.
+         </p>
+         <p>
+          In the "File" menu, you can download the notebook in multiple formats. You'll often want to download it as an HTML file to share with others who aren't using Jupyter. Also, you can download the notebook as a normal Python file where all the code will run like normal. The
+          <a href="https://daringfireball.net/projects/markdown/" rel="noopener noreferrer" target="_blank">
+           Markdown
+          </a>
+          and
+          <a href="http://docutils.sourceforge.net/rst.html" rel="noopener noreferrer" target="_blank">
+           reST
+          </a>
+          formats are great for using notebooks in blogs or documentation.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/notebook-download.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Code cells.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Notebook interface')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,134 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.901
+Agora eu vou apresentar
+os cadernos jupyter.
+
+00:00:02.934 --> 00:00:05.901
+São uma ótima ferramenta
+para análise de dados.
+
+00:00:05.934 --> 00:00:09.868
+Texto, código e imagens
+ficam em um só documento.
+
+00:00:09.901 --> 00:00:11.200
+Aqui está um exemplo
+
+00:00:11.234 --> 00:00:14.067
+onde prevejo o percentual
+de gordura corporal
+
+00:00:14.100 --> 00:00:16.834
+com vários modelos
+de regressão.
+
+00:00:16.868 --> 00:00:19.367
+Aqui temos
+uma célula de texto.
+
+00:00:19.400 --> 00:00:22.934
+As células são assim, e elas
+podem ter texto, ou código.
+
+00:00:22.968 --> 00:00:25.667
+Clicando duas vezes
+em uma célula de texto,
+
+00:00:25.701 --> 00:00:29.300
+posso editar o texto usando
+markdown, um formato de texto
+
+00:00:29.334 --> 00:00:31.801
+com sintaxe
+que se mostra como html.
+
+00:00:31.834 --> 00:00:35.100
+Por exemplo,
+se quero escrever um link,
+
+00:00:35.133 --> 00:00:37.167
+esta é a sintaxe.
+
+00:00:37.200 --> 00:00:39.834
+Renderizando a célula,
+é um link.
+
+00:00:42.334 --> 00:00:44.200
+Esta é
+uma célula de código.
+
+00:00:44.234 --> 00:00:47.667
+Estou importando bibliotecas,
+como NumPy e pandas.
+
+00:00:47.701 --> 00:00:49.067
+Posso rodar a célula,
+
+00:00:49.100 --> 00:00:51.167
+e o código executa
+da mesma forma
+
+00:00:51.200 --> 00:00:53.934
+como em um terminal
+ou script Python.
+
+00:00:53.968 --> 00:00:56.634
+Esta linha,
+matplotlib inline,
+
+00:00:56.667 --> 00:00:59.367
+mostrará as imagens
+geradas pelo matplotlib
+
+00:00:59.400 --> 00:01:02.467
+no caderno,
+e não em uma janela separada.
+
+00:01:04.434 --> 00:01:06.167
+Se a célula
+tiver uma saída,
+
+00:01:06.200 --> 00:01:07.801
+você a verá aqui.
+
+00:01:07.834 --> 00:01:11.067
+Por exemplo, data.head()
+retorna uma tabela html,
+
+00:01:11.100 --> 00:01:13.501
+que mostra alguns dados.
+
+00:01:15.267 --> 00:01:17.934
+Aqui embaixo vemos
+visualização dos dados
+
+00:01:17.968 --> 00:01:20.634
+com uma grade de gráficos
+e histogramas.
+
+00:01:23.234 --> 00:01:26.767
+Cadernos também mostram Matemática
+nas células de texto.
+
+00:01:26.801 --> 00:01:29.767
+É só um exemplo do que pode
+fazer com cadernos.
+
+00:01:29.801 --> 00:01:33.033
+Seu código, documentação,
+visualização, Matemática,
+
+00:01:33.067 --> 00:01:34.367
+tudo em um só lugar.
+
+00:01:34.400 --> 00:01:38.033
+Agora vou mostrar como usar
+cadernos para o seu trabalho.
+
+00:01:38.067 --> 00:01:41.300
+A aula deve levar uma hora.
+Até lá.
+

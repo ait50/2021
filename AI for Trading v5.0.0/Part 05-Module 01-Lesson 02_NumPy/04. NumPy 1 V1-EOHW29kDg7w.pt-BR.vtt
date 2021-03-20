@@ -1,0 +1,430 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.067 --> 00:00:04.200
+Normalmente há dois modos
+de criar arrays NumPy.
+
+00:00:04.233 --> 00:00:07.667
+Primeiro, usando a função array
+do NumPy
+
+00:00:07.700 --> 00:00:10.667
+para criá-los a partir de outros
+objetos similares ao NumPy,
+
+00:00:10.700 --> 00:00:13.333
+como listas Python.
+
+00:00:13.367 --> 00:00:17.633
+Segundo, usando
+diversas funções NumPy
+
+00:00:17.667 --> 00:00:21.100
+que geram rapidamente
+tipos específicos de arrays.
+
+00:00:21.167 --> 00:00:24.800
+Nessa sessão, vamos começar
+com o primeiro modo.
+
+00:00:24.833 --> 00:00:28.500
+Vamos importar NumPy
+e criar nosso primeiro array.
+
+00:00:28.900 --> 00:00:32.867
+Aqui é um array unidimensional
+que contém números inteiros.
+
+00:00:33.233 --> 00:00:34.833
+Para sermos claros,
+
+00:00:34.867 --> 00:00:36.767
+os exemplos dados nas aulas
+
+00:00:36.800 --> 00:00:39.600
+usarão arrays
+pequenos e simples.
+
+00:00:39.633 --> 00:00:44.433
+Começaremos criando arrays NumPy
+unidimensionais ou 1D.
+
+00:00:44.867 --> 00:00:47.000
+Vamos imprimir o array
+que acabamos de criar
+
+00:00:47.033 --> 00:00:48.633
+e o seu tipo também.
+
+00:00:48.667 --> 00:00:52.533
+Você pode ver que o tipo
+é o ndarray do NumPy,
+
+00:00:52.567 --> 00:00:54.567
+ou o array N-dimensional.
+
+00:00:54.600 --> 00:00:57.000
+Os arrays de NumPy têm
+atributos úteis
+
+00:00:57.033 --> 00:00:59.100
+que nos dão informações
+sobre eles
+
+00:00:59.133 --> 00:01:01.100
+de modo bem intuitivo.
+
+00:01:01.133 --> 00:01:03.867
+Por exemplo,
+esse atributo dtype.
+
+00:01:03.900 --> 00:01:07.967
+Dtype retorna o tipo de dados
+dos elementos daquele array.
+
+00:01:08.000 --> 00:01:10.633
+Note que o dtype é diferente
+
+00:01:10.667 --> 00:01:13.733
+do tipo de dados
+do próprio array.
+
+00:01:13.767 --> 00:01:17.533
+Esse dtype nos permite saber
+que os elementos de X
+
+00:01:17.567 --> 00:01:21.833
+estão armazenados na memória
+atribuída a inteiros de 64 bits.
+
+00:01:21.867 --> 00:01:24.267
+Outra vantagem do NumPy
+
+00:01:24.300 --> 00:01:27.567
+é que lida com mais
+tipos de dados do que o Python.
+
+00:01:27.600 --> 00:01:31.100
+Você pode ver todos os tipos
+de dados suportados por NumPy
+
+00:01:31.133 --> 00:01:33.100
+na sua documentação.
+
+00:01:33.133 --> 00:01:35.633
+Outro atributo útil
+é o shape.
+
+00:01:35.667 --> 00:01:39.267
+Isso retorna uma tupla
+de números inteiros positivos N
+
+00:01:39.300 --> 00:01:42.767
+que especificam os tamanhos
+de cada dimensão.
+
+00:01:42.800 --> 00:01:46.000
+N é o número de dimensões
+do array.
+
+00:01:46.033 --> 00:01:48.200
+X tem uma dimensão,
+
+00:01:48.233 --> 00:01:50.167
+então shape retorna
+um número inteiro
+
+00:01:50.200 --> 00:01:53.533
+que indica
+o comprimento do array, que é 5.
+
+00:01:53.567 --> 00:01:56.500
+Se tivéssemos
+um array bidimensional,
+
+00:01:56.533 --> 00:02:00.900
+esse atributo shape retornaria
+uma tupla com dois valores.
+
+00:02:00.933 --> 00:02:05.433
+Um para o número de linhas e
+outro para o número de colunas.
+
+00:02:05.467 --> 00:02:08.367
+Para ver isso, vamos criar
+um array bidimensional
+
+00:02:08.400 --> 00:02:10.667
+de uma
+lista Python aninhada.
+
+00:02:10.700 --> 00:02:12.933
+Aqui temos uma que contém
+números inteiros.
+
+00:02:13.467 --> 00:02:16.367
+E vamos imprimir
+mais um atributo size.
+
+00:02:16.400 --> 00:02:19.333
+Se olharmos a tupla
+resultante do shape,
+
+00:02:19.367 --> 00:02:21.633
+sabemos que Y
+tem duas dimensões
+
+00:02:21.667 --> 00:02:23.800
+porque há dois elementos.
+
+00:02:23.833 --> 00:02:26.833
+Um é para o tamanho
+da primeira dimensão,
+
+00:02:26.867 --> 00:02:30.033
+que é o número de linhas,
+ou seja, quatro.
+
+00:02:30.067 --> 00:02:32.833
+O outro é
+para a segunda dimensão,
+
+00:02:32.867 --> 00:02:35.500
+que é o número de colunas,
+ou seja, três.
+
+00:02:35.533 --> 00:02:39.800
+O atributo de size nos dá o
+número total de elementos de Y,
+
+00:02:39.833 --> 00:02:41.100
+que é 12.
+
+00:02:41.133 --> 00:02:42.467
+Vamos parar por um segundo
+
+00:02:42.500 --> 00:02:44.633
+para apresentar
+terminologias úteis.
+
+00:02:45.133 --> 00:02:49.033
+Em geral, dizemos que um array
+com N dimensões
+
+00:02:49.067 --> 00:02:50.733
+tem um rank N.
+
+00:02:50.767 --> 00:02:54.500
+Então nos referimos ao array 1D
+que criamos antes
+
+00:02:54.533 --> 00:02:56.800
+como um array de rank 1.
+
+00:02:56.833 --> 00:03:00.267
+E nos referimos ao array de 2D
+que acabamos de criar
+
+00:03:00.300 --> 00:03:02.300
+como um array de rank 2.
+
+00:03:02.333 --> 00:03:05.933
+Para o nosso próximo exemplo,
+vamos criar um array de rank 1
+
+00:03:05.967 --> 00:03:07.767
+que contém strings.
+
+00:03:08.267 --> 00:03:10.733
+E vamos imprimir
+os mesmos atributos.
+
+00:03:11.967 --> 00:03:15.667
+O tipo do próprio objeto array
+não é diferente.
+
+00:03:15.700 --> 00:03:17.700
+Ainda é um array NumPy.
+
+00:03:17.733 --> 00:03:21.100
+Mas o dtype desse array
+é diferente.
+
+00:03:21.133 --> 00:03:24.167
+Aqui, elementos são armazenados
+como strings unicode
+
+00:03:24.200 --> 00:03:26.000
+de 5 caracteres.
+
+00:03:26.033 --> 00:03:28.500
+Note que quando
+o NumPy cria um array,
+
+00:03:28.533 --> 00:03:31.433
+ele automaticamente
+determina o dtype
+
+00:03:31.467 --> 00:03:35.533
+com base nos tipos de elementos
+você usou para criar o array.
+
+00:03:35.567 --> 00:03:39.133
+Mas o que acontece quando
+tentamos criar um array NumPy
+
+00:03:39.167 --> 00:03:42.667
+com uma lista que contém
+números inteiros e strings?
+
+00:03:43.000 --> 00:03:44.100
+Podemos ver
+
+00:03:44.133 --> 00:03:47.567
+que embora a lista Python
+tenha tipos de dados mesclados,
+
+00:03:47.600 --> 00:03:50.667
+a função array criou
+um array NumPy
+
+00:03:50.700 --> 00:03:53.767
+com elementos
+do mesmo tipo de dados.
+
+00:03:53.800 --> 00:03:57.067
+Isto é, strings unicode
+de 21 caracteres.
+
+00:03:57.467 --> 00:04:00.067
+Lembre-se,
+diferente das listas Python,
+
+00:04:00.100 --> 00:04:04.033
+arrays NumPy devem
+conter elementos do mesmo tipo.
+
+00:04:04.067 --> 00:04:06.233
+Até agora,
+só usamos elementos
+
+00:04:06.267 --> 00:04:08.733
+que eram números inteiros
+ou strings.
+
+00:04:08.767 --> 00:04:12.100
+Vamos tentar outro exemplo
+com tipos de dados mesclados,
+
+00:04:12.133 --> 00:04:14.267
+usando números inteiros
+e floats.
+
+00:04:14.867 --> 00:04:18.733
+Quando inserimos uma lista
+com números inteiros e floats,
+
+00:04:18.767 --> 00:04:20.800
+NumPy determina
+a todos os elementos
+
+00:04:20.833 --> 00:04:23.333
+o dtype float64.
+
+00:04:23.367 --> 00:04:26.033
+Isso é chamado de "upcasting".
+
+00:04:26.067 --> 00:04:28.367
+Como todos os elementos
+de um array NumPy
+
+00:04:28.400 --> 00:04:30.567
+devem ser do mesmo tipo,
+
+00:04:30.600 --> 00:04:34.533
+o NumPy transforma os números
+inteiros do array em floats
+
+00:04:34.567 --> 00:04:38.700
+para impedir a perda de precisão
+em computações numéricas.
+
+00:04:38.733 --> 00:04:42.800
+NumPy também permite que você
+especifique um determinado dtype
+
+00:04:42.833 --> 00:04:45.933
+você quer designado
+aos elementos de um array.
+
+00:04:45.967 --> 00:04:48.967
+Você pode fazer isso usando
+a palavra-chave "dtype"
+
+00:04:49.000 --> 00:04:50.867
+na função array.
+
+00:04:50.900 --> 00:04:55.167
+Aqui, você pode ver que NumPy
+criou um array de int,
+
+00:04:55.200 --> 00:04:58.000
+embora a gente tenha dado
+uma lista de floats.
+
+00:04:58.033 --> 00:05:01.767
+Especificar o tipo de dados
+dos elementos de um array NumPy
+
+00:05:01.800 --> 00:05:04.233
+pode ser útil nos casos
+em que não queremos
+
+00:05:04.267 --> 00:05:07.333
+escolher acidentalmente
+o tipo errado de dados
+
+00:05:07.367 --> 00:05:11.767
+ou quando só precisamos de
+uma certa precisão nos cálculos
+
+00:05:11.800 --> 00:05:13.533
+e queremos economizar
+memória.
+
+00:05:13.567 --> 00:05:15.200
+Quando criar um array NumPy,
+
+00:05:15.233 --> 00:05:18.967
+é bom salvá-lo em um arquivo
+para ser lido mais tarde
+
+00:05:19.000 --> 00:05:21.333
+ou para ser usado
+por outro programa.
+
+00:05:21.367 --> 00:05:24.867
+NumPy permite salvar os arrays
+em arquivos
+
+00:05:24.900 --> 00:05:26.800
+para usar mais tarde.
+
+00:05:26.833 --> 00:05:30.500
+Podemos salvar X no diretório atual,
+assim.
+
+00:05:30.900 --> 00:05:36.367
+Isso salva o array em um arquivo
+chamado "my_array.npy".
+
+00:05:36.400 --> 00:05:40.067
+Depois você poderá carregar
+esse arquivo em uma variável
+
+00:05:40.100 --> 00:05:42.667
+ao usar a função load
+dessa forma.
+

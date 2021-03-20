@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.633
+So how do you think you could describe these transformations numerically,
+
+00:00:03.633 --> 00:00:07.804
+if you're say, programming some animations to make a video teaching the topic?
+
+00:00:07.804 --> 00:00:09.785
+What formula do you give the computer,
+
+00:00:09.785 --> 00:00:12.074
+so that if you give it the coordinates of a vector,
+
+00:00:12.074 --> 00:00:15.814
+it can give you the coordinates of where that vector lands?
+
+00:00:15.814 --> 00:00:20.259
+It turns out that you only need to record where the two bases vectors,
+
+00:00:20.260 --> 00:00:21.725
+i hat and j hat,
+
+00:00:21.725 --> 00:00:24.900
+each land, and everything else will follow from that.
+
+00:00:24.899 --> 00:00:29.509
+For example, consider the vector V with coordinates negative one, two.
+
+00:00:29.510 --> 00:00:32.170
+Meaning that it equals negative one times i hat,
+
+00:00:32.170 --> 00:00:34.579
+plus two times j hat.
+
+00:00:35.990 --> 00:00:40.995
+If we play some transformation and follow where all three of these vectors go,
+
+00:00:40.994 --> 00:00:43.564
+the property that grid lines remain parallel and
+
+00:00:43.564 --> 00:00:46.679
+evenly spaced has a really important consequence.
+
+00:00:46.679 --> 00:00:50.865
+The place where V lands, will be negative one times the vector where i hat landed,
+
+00:00:50.865 --> 00:00:53.664
+plus two times the vector where j hat landed.
+
+00:00:53.664 --> 00:00:58.185
+In other words, it started off as a certain linear combination of i hat and j hat,
+
+00:00:58.185 --> 00:01:03.020
+and it ends up as that same linear combination of where those two vectors landed.
+
+00:01:03.020 --> 00:01:09.185
+This means you can deduce where V must go based only on where i hat and j hat each land.
+
+00:01:09.185 --> 00:01:12.790
+This is why I like keeping a copy of the original grid in the background.
+
+00:01:12.790 --> 00:01:14.655
+For the transformations shown here,
+
+00:01:14.655 --> 00:01:19.109
+we can read off that i hat lands on the coordinates one, negative two.
+
+00:01:19.109 --> 00:01:23.334
+And j hat lands on the x axis over at the coordinates three, zero.
+
+00:01:23.334 --> 00:01:28.030
+This means that the vector represented by negative one i hat plus two times j hat,
+
+00:01:28.030 --> 00:01:31.719
+ends up at negative one times the vector one negative two,
+
+00:01:31.719 --> 00:01:34.560
+plus two times the vector three, zero.
+
+00:01:34.560 --> 00:01:40.579
+Adding that all together you can deduce that it has to land on the vector five, two.
+
+00:01:41.489 --> 00:01:45.794
+This is a good point to pause and ponder because it's pretty important.
+
+00:01:45.795 --> 00:01:49.780
+Now, given that I'm actually showing you the full transformation,
+
+00:01:49.780 --> 00:01:53.474
+you could have just looked to see that V has the coordinates five, two.
+
+00:01:53.474 --> 00:01:55.969
+But the cool part here is that this gives us
+
+00:01:55.969 --> 00:01:58.780
+a technique to deduce where any vectors land,
+
+00:01:58.780 --> 00:02:01.960
+so long as we have a record of where i hat and j hat
+
+00:02:01.959 --> 00:02:05.859
+each land without needing to watch the transformation itself.
+
+00:02:05.859 --> 00:02:09.300
+Write the vector with more general coordinates x and y,
+
+00:02:09.300 --> 00:02:12.945
+and it will land on x times the vector where i hat lands,
+
+00:02:12.944 --> 00:02:19.155
+one negative two, plus y times the vector where j hat lands, three, zero.
+
+00:02:19.155 --> 00:02:21.224
+Carrying out that sum,
+
+00:02:21.224 --> 00:02:24.159
+you see that it lands at one x plus three y,
+
+00:02:24.159 --> 00:02:27.384
+negative two x plus zero y. I give you
+
+00:02:27.384 --> 00:02:32.125
+any vector and you can tell me where that vector lands using this formula.
+
+00:02:32.125 --> 00:02:34.560
+What all of this is saying is that
+
+00:02:34.560 --> 00:02:39.939
+a two dimensional linear transformation is completely described by just four numbers,
+
+00:02:39.939 --> 00:02:42.159
+the two coordinates for where i hat lands
+
+00:02:42.159 --> 00:02:44.719
+and the two coordinates for where j hat lands.
+
+00:02:44.719 --> 00:02:48.240
+Isn't that cool? It's common to package these coordinates into
+
+00:02:48.240 --> 00:02:51.840
+a two by two grid of numbers called a two by two matrix.
+
+00:02:51.840 --> 00:02:54.060
+Where you can interpret the columns as
+
+00:02:54.060 --> 00:02:57.974
+the two special vectors where i hat and j hat each land.
+
+00:02:57.974 --> 00:03:02.180
+If you're given the two by two matrix describing a linear transformation and
+
+00:03:02.180 --> 00:03:04.485
+some specific vector and you want to know
+
+00:03:04.485 --> 00:03:07.955
+where that linear transformation takes that vector,
+
+00:03:07.955 --> 00:03:10.205
+you can take the coordinates of the vector,
+
+00:03:10.205 --> 00:03:13.715
+multiply them by the corresponding columns of the matrix,
+
+00:03:13.715 --> 00:03:15.615
+then add together what you get.
+
+00:03:15.615 --> 00:03:21.280
+This corresponds with the idea of adding the scaled versions of our new basis vectors.
+

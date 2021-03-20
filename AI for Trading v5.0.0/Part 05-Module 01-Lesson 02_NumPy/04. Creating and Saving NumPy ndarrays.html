@@ -1,0 +1,739 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Creating and Saving NumPy ndarrays
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      NumPy
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructors.html">
+       01. Instructors
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Introduction to NumPy.html">
+       02. Introduction to NumPy
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Why Use NumPy.html">
+       03. Why Use NumPy?
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Creating and Saving NumPy ndarrays.html">
+       04. Creating and Saving NumPy ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Using Built-in Functions to Create ndarrays.html">
+       05. Using Built-in Functions to Create ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Create an ndarray.html">
+       06. Create an ndarray
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Accessing, Deleting, and Inserting Elements Into ndarrays.html">
+       07. Accessing, Deleting, and Inserting Elements Into ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Slicing ndarrays.html">
+       08. Slicing ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Boolean Indexing, Set Operations, and Sorting.html">
+       09. Boolean Indexing, Set Operations, and Sorting
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Manipulating ndarrays.html">
+       10. Manipulating ndarrays
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Arithmetic operations and Broadcasting.html">
+       11. Arithmetic operations and Broadcasting
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Creating ndarrays with Broadcasting.html">
+       12. Creating ndarrays with Broadcasting
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Getting Set Up for the Mini-Project.html">
+       13. Getting Set Up for the Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Mini-Project Mean Normalization and Data Separation.html">
+       14. Mini-Project: Mean Normalization and Data Separation
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Creating and Saving NumPy ndarrays
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="creating-numpy-ndarrays">
+          Creating NumPy ndarrays
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          NumPy 1 V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="04. NumPy 1 V1-EOHW29kDg7w.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="04. NumPy 1 V1-EOHW29kDg7w.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="04. NumPy 1 V1-EOHW29kDg7w.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="true" kind="subtitles" label="en" src="04. NumPy 1 V1-EOHW29kDg7w.en.vtt" srclang="en"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          At the core of NumPy is the
+          <strong>
+           ndarray
+          </strong>
+          , where
+          <em>
+           nd
+          </em>
+          stands for n-dimensional.  An ndarray is a multidimensional array of elements all of the same type. In other words, an ndarray is a grid that can take on many shapes and can hold either numbers or strings. In many Machine Learning problems you will often find yourself using ndarrays in many different ways. For instance, you might use an ndarray to hold the pixel values of an image that will be fed into a Neural Network for image classification.
+         </p>
+         <p>
+          But before we can dive in and start using NumPy to create ndarrays we need to import it into Python. We can import packages into Python using the
+          <code>
+           import
+          </code>
+          command and it has become a convention to import NumPy as
+          <code>
+           np
+          </code>
+          . Therefore, you can import NumPy by typing the following command in your Jupyter notebook:
+         </p>
+         <pre><code>import numpy as np</code></pre>
+         <p>
+          There are several ways to create ndarrays in NumPy. In the following lessons we will see two ways to create ndarrays:
+         </p>
+         <ol>
+          <li>
+           <p>
+            Using regular Python lists
+           </p>
+          </li>
+          <li>
+           <p>
+            Using built-in NumPy functions
+           </p>
+          </li>
+         </ol>
+         <p>
+          In this section, we will create ndarrays by providing Python lists to the NumPy
+          <code>
+           np.array()
+          </code>
+          function. This can create some confusion for beginners, but it is important to remember that
+          <code>
+           np.array()
+          </code>
+          is
+          <em>
+           NOT
+          </em>
+          a class, it is just a function that returns an ndarray. We should note that for the purposes of clarity, the examples throughout these lessons will use small and simple ndarrays. Let's start by creating 1-Dimensional (1D) ndarrays.
+         </p>
+         <pre><code># We import NumPy into Python
+import numpy as np
+
+# We create a 1D ndarray that contains only integers
+x = np.array([1, 2, 3, 4, 5])
+
+# Let's print the ndarray we just created using the print() command
+print('x = ', x)</code></pre>
+         <blockquote>
+          <p>
+           x =  [1 2 3 4 5]
+          </p>
+         </blockquote>
+         <p>
+          Let's pause for a second to introduce some useful terminology. We refer to 1D arrays as
+          <em>
+           rank
+          </em>
+          1 arrays. In general
+          <em>
+           N
+          </em>
+          -Dimensional arrays have rank
+          <em>
+           N
+          </em>
+          . Therefore, we refer to a 2D array as a rank 2 array. Another important property of arrays is their
+          <em>
+           shape
+          </em>
+          . The shape of an array is the size along each of its dimensions. For example, the shape of a rank 2 array will correspond to the number of
+          <em>
+           rows
+          </em>
+          and
+          <em>
+           columns
+          </em>
+          of the array. As you will see, NumPy ndarrays have
+          <em>
+           attributes
+          </em>
+          that allow us to get information about them in a very intuitive way. For example, the shape of an ndarray can be obtained using the
+          <code>
+           .shape
+          </code>
+          attribute. The shape attribute returns a tuple of N positive integers that specify the sizes of each dimension. In the example below we will create a rank 1 array and learn how to obtain its shape, its type, and the data-type (
+          <em>
+           dtype
+          </em>
+          ) of its elements.
+         </p>
+         <pre><code># We create a 1D ndarray that contains only integers
+x = np.array([1, 2, 3, 4, 5])
+
+# We print x
+print()
+print('x = ', x)
+print()
+
+# We print information about x
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype)</code></pre>
+         <blockquote>
+          <p>
+           x =  [1 2 3 4 5]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           x has dimensions: (5,)
+           <br/>
+           x is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          We can see that the shape attribute returns the tuple
+          <code>
+           (5,)
+          </code>
+          telling us that
+          <code>
+           x
+          </code>
+          is of rank 1 (i.e.
+          <code>
+           x
+          </code>
+          only has 1 dimension ) and it has 5 elements. The
+          <code>
+           type()
+          </code>
+          function tells us that
+          <code>
+           x
+          </code>
+          is indeed a NumPy ndarray. Finally, the
+          <code>
+           .dtype
+          </code>
+          attribute tells us that the elements of
+          <code>
+           x
+          </code>
+          are stored in memory as
+          <em>
+           signed 64-bit integers
+          </em>
+          . Another great advantage of NumPy is that it can handle more data-types than Python lists. You can check out all the different data types NumPy supports in the link below:
+         </p>
+         <p>
+          <a href="https://docs.scipy.org/doc/numpy-1.13.0/user/basics.types.html" rel="noopener noreferrer" target="_blank">
+           NumPy Data Types
+          </a>
+         </p>
+         <p>
+          As mentioned earlier, ndarrays can also hold strings. Let's see how we can create a rank 1 ndarray of strings in the same manner as before, by providing the
+          <code>
+           np.array()
+          </code>
+          function a Python list of strings.
+         </p>
+         <pre><code># We create a rank 1 ndarray that only contains strings
+x = np.array(['Hello', 'World'])
+
+# We print x
+print()
+print('x = ', x)
+print()
+
+# We print information about x
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype)</code></pre>
+         <blockquote>
+          <p>
+           x =  ['Hello' 'World']
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           x has dimensions: (2,)
+           <br/>
+           x is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: U5
+          </p>
+         </blockquote>
+         <p>
+          As we can see the shape attribute tells us that
+          <code>
+           x
+          </code>
+          now has only 2 elements, and even though
+          <code>
+           x
+          </code>
+          now holds strings, the
+          <code>
+           type()
+          </code>
+          function tells us that
+          <code>
+           x
+          </code>
+          is still an ndarray as before. In this case however, the
+          <code>
+           .dtype
+          </code>
+          attribute tells us that the elements in
+          <code>
+           x
+          </code>
+          are stored in memory as
+          <em>
+           Unicode strings of 5 characters
+          </em>
+          .
+         </p>
+         <p>
+          It is important to remember that one big difference between Python lists and ndarrays, is that unlike Python lists, all the elements of an ndarray must be of the same type. So, while we can create Python lists with both integers and strings, we can't mix types in ndarrays. If you provide the
+          <code>
+           np.array()
+          </code>
+          function with a Python list that has both integers and strings, NumPy will interpret all elements as strings. We can see this in the next example:
+         </p>
+         <pre><code># We create a rank 1 ndarray from a Python list that contains integers and strings
+x = np.array([1, 2, 'World'])
+
+# We print the ndarray
+print()
+print('x = ', x)
+print()
+
+# We print information about x
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype)</code></pre>
+         <blockquote>
+          <p>
+           x =  ['1' '2' 'World']
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           x has dimensions: (3,)
+           <br/>
+           x is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in x are of type: U21
+          </p>
+         </blockquote>
+         <p>
+          We can see that even though the Python list had mixed data types, the elements in
+          <code>
+           x
+          </code>
+          are all of the same type, namely,
+          <em>
+           Unicode strings of 21 characters
+          </em>
+          . We won't be using ndarrays with strings for the remaining of this introduction to NumPy, but it's important to remember that ndarrays can hold strings as well.
+         </p>
+         <p>
+          Let us now look at how we can create a rank 2 ndarray from a nested Python list.
+         </p>
+         <pre><code># We create a rank 2 ndarray that only contains integers
+Y = np.array([[1,2,3],[4,5,6],[7,8,9], [10,11,12]])
+
+# We print Y
+print()
+print('Y = \n', Y)
+print()
+
+# We print information about Y
+print('Y has dimensions:', Y.shape)
+print('Y has a total of', Y.size, 'elements')
+print('Y is an object of type:', type(Y))
+print('The elements in Y are of type:', Y.dtype)</code></pre>
+         <blockquote>
+          <p>
+           Y =
+           <br/>
+           [[ 1  2  3]
+           <br/>
+           [ 4  5  6]
+           <br/>
+           [ 7  8  9]
+           <br/>
+           [10 11 12]]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Y has dimensions: (4, 3)
+           <br/>
+           Y has a total of 12 elements
+           <br/>
+           Y is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in Y are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          We can see that now the shape attribute returns the tuple
+          <code>
+           (4,3)
+          </code>
+          telling us that
+          <code>
+           Y
+          </code>
+          is of rank 2 and it has 4 rows and 3 columns. The
+          <code>
+           .size
+          </code>
+          attribute tells us that
+          <code>
+           Y
+          </code>
+          has a total of 12 elements.
+         </p>
+         <p>
+          Notice that when NumPy creates an ndarray it automatically assigns its
+          <em>
+           dtype
+          </em>
+          based on the type of the elements you used to create the ndarray. Up to now, we have only created ndarrays with integers and strings. We saw that when we create an ndarray with only integers, NumPy will automatically assign the dtype int64 to its elements. Let's see what happens when we create ndarrays with floats and integers.
+         </p>
+         <pre><code># We create a rank 1 ndarray that contains integers
+x = np.array([1,2,3])
+
+# We create a rank 1 ndarray that contains floats
+y = np.array([1.0,2.0,3.0])
+
+# We create a rank 1 ndarray that contains integers and floats
+z = np.array([1, 2.5, 4])
+
+# We print the dtype of each ndarray
+print('The elements in x are of type:', x.dtype)
+print('The elements in y are of type:', y.dtype)
+print('The elements in z are of type:', z.dtype)</code></pre>
+         <blockquote>
+          <p>
+           The elements in x are of type: int64
+           <br/>
+           The elements in y are of type: float64
+           <br/>
+           The elements in z are of type: float64
+          </p>
+         </blockquote>
+         <p>
+          We can see that when we create an ndarray with only floats, NumPy stores the elements in memory as* 64-bit floating point numbers (float64)*. However, notice that when we create an ndarray with both floats and integers, as we did with the
+          <code>
+           z
+          </code>
+          ndarray above, NumPy assigns its elements a *float64* dtype as well. This is called
+          <em>
+           upcasting
+          </em>
+          . Since all the elements of an ndarray must be of the same type, in this case NumPy upcasts the integers in
+          <code>
+           z
+          </code>
+          to floats in order to avoid losing precision in numerical computations.
+         </p>
+         <p>
+          Even though NumPy automatically selects the dtype of the ndarray, NumPy also allows you to specify the particular dtype you want to assign to the elements of the ndarray. You can specify the dtype when you create the ndarray using the keyword
+          <code>
+           dtype
+          </code>
+          in the
+          <code>
+           np.array()
+          </code>
+          function. Let's see an example:
+         </p>
+         <pre><code># We create a rank 1 ndarray of floats but set the dtype to int64
+x = np.array([1.5, 2.2, 3.7, 4.0, 5.9], dtype = np.int64)
+
+# We print x
+print()
+print('x = ', x)
+print()
+
+# We print the dtype x
+print('The elements in x are of type:', x.dtype)</code></pre>
+         <blockquote>
+          <p>
+           x =  [1 2 3 4 5]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           The elements in x are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          We can see that even though we created the ndarray with floats, by specifying the dtype to be int64, NumPy converted the floating point numbers into integers by removing their decimals. Specifying the data type of the ndarray can be useful in cases when you don't want NumPy to accidentally choose the wrong data type, or when you only need certain amount of precision in your calculations and you want to save memory.
+         </p>
+         <p>
+          Once you create an ndarray, you may want to save it to a file to be read later or to be used by another program. NumPy provides a way to save the arrays into files for later use - let's see how this is done.
+         </p>
+         <pre><code># We create a rank 1 ndarray
+x = np.array([1, 2, 3, 4, 5])
+
+# We save x into the current directory as 
+np.save('my_array', x)</code></pre>
+         <p>
+          The above saves the
+          <code>
+           x
+          </code>
+          ndarray into a file named
+          <code>
+           my_array.npy
+          </code>
+          . You can
+          <em>
+           load
+          </em>
+          the saved ndarray into a variable by using the
+          <code>
+           load()
+          </code>
+          function.
+         </p>
+         <pre><code># We load the saved array from our current directory into variable y
+y = np.load('my_array.npy')
+
+# We print y
+print()
+print('y = ', y)
+print()
+
+# We print information about the ndarray we loaded
+print('y is an object of type:', type(y))
+print('The elements in y are of type:', y.dtype)</code></pre>
+         <blockquote>
+          <p>
+           y =  [1 2 3 4 5]
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           y is an object of type: class 'numpy.ndarray'
+           <br/>
+           The elements in y are of type: int64
+          </p>
+         </blockquote>
+         <p>
+          When loading an array from a file, make sure you include the name of the file together with the extension
+          <code>
+           .npy
+          </code>
+          , otherwise you will get an error.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Using Built-in Functions to Create ndarrays.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Creating and Saving NumPy ndarrays')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

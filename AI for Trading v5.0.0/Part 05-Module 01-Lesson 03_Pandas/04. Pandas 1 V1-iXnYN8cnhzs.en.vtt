@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.434
+Pandas is a powerful tool for data analysis and manipulation.
+
+00:00:04.434 --> 00:00:06.844
+If you remember from the last lesson,
+
+00:00:06.844 --> 00:00:12.234
+this package is built on top of NumPy which makes it very fast and efficient.
+
+00:00:12.234 --> 00:00:17.125
+In this lesson, we will go over the two main data structures in Pandas.
+
+00:00:17.125 --> 00:00:20.420
+The Pandas series and the Panda's dataframe.
+
+00:00:20.420 --> 00:00:25.260
+Let's start off by learning about the Pandas series object, and how to create one.
+
+00:00:25.260 --> 00:00:29.260
+When importing Pandas, use a standard alias, pd.
+
+00:00:29.260 --> 00:00:32.475
+Let's create a series containing grocery items.
+
+00:00:32.475 --> 00:00:34.429
+To access the series object,
+
+00:00:34.429 --> 00:00:37.924
+we just type pd.Series with a capital S.
+
+00:00:37.924 --> 00:00:43.689
+A panda series is a one-dimensional array-like object that can hold many data types,
+
+00:00:43.689 --> 00:00:45.669
+such as numbers and strings.
+
+00:00:45.670 --> 00:00:50.170
+This is different from a NumPy array which can only hold one data type.
+
+00:00:50.170 --> 00:00:53.510
+Another big difference between a Pandas series and
+
+00:00:53.509 --> 00:00:59.204
+a NumPy array is that you can assign an index label to each element in the Pandas series.
+
+00:00:59.204 --> 00:01:01.369
+Here, we pass two arguments,
+
+00:01:01.369 --> 00:01:03.734
+the data and the indices.
+
+00:01:03.734 --> 00:01:07.129
+For our grocery series and we will use food names as
+
+00:01:07.129 --> 00:01:11.369
+index labels and the quantities we need to buy as our data.
+
+00:01:11.370 --> 00:01:16.969
+We can see that a Pandas series is displayed with the indices in the first column,
+
+00:01:16.969 --> 00:01:19.525
+and the data in the second column.
+
+00:01:19.525 --> 00:01:23.415
+Notice that the data is not indexed zero to three,
+
+00:01:23.415 --> 00:01:26.455
+but rather with the names of the foods that we put in,
+
+00:01:26.454 --> 00:01:29.409
+eggs, apples, milk, and bread.
+
+00:01:29.409 --> 00:01:35.039
+Also notice that the data in our Pandas series has both integers and strings,
+
+00:01:35.040 --> 00:01:36.805
+just like NumPy arrays.
+
+00:01:36.805 --> 00:01:39.560
+Pandas series have attributes that allow us to get
+
+00:01:39.560 --> 00:01:43.355
+information from them in an easy way. Let's see some of them.
+
+00:01:43.355 --> 00:01:47.430
+Shape gives us the sizes of each dimension of the data,
+
+00:01:47.430 --> 00:01:50.945
+ndim gives us the number of dimensions of the data,
+
+00:01:50.944 --> 00:01:54.849
+and size gives us the total number of values in the array.
+
+00:01:54.849 --> 00:01:59.599
+We can also print the index labels and the data of the Pandas series separately.
+
+00:01:59.599 --> 00:02:04.414
+This is useful if you don't happen to know what the index labels of a series are.
+
+00:02:04.415 --> 00:02:07.734
+This gives us the index labels of the series object,
+
+00:02:07.734 --> 00:02:10.935
+and this gives us the data into series object.
+
+00:02:10.935 --> 00:02:13.844
+If you're dealing with a very large Pandas series,
+
+00:02:13.844 --> 00:02:16.969
+and you're unsure whether an index label exists,
+
+00:02:16.969 --> 00:02:19.625
+you can always check using the In command.
+
+00:02:19.625 --> 00:02:25.205
+This let's us know that bananas is not one of the index labels in the grocery series,
+
+00:02:25.205 --> 00:02:28.130
+and this tells us that bread is.
+

@@ -1,0 +1,217 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.695
+Let's see how NumPy does arithmetic operations on arrays.
+
+00:00:04.695 --> 00:00:07.980
+NumPy allows element-wise operations,
+
+00:00:07.980 --> 00:00:10.740
+as well as matrix operations.
+
+00:00:10.740 --> 00:00:15.624
+In this video, we will only be looking at element-wise operations.
+
+00:00:15.624 --> 00:00:18.955
+Consider these two rank one arrays.
+
+00:00:18.954 --> 00:00:25.684
+We can perform basic element-wise operations using arithmetic symbols or functions.
+
+00:00:25.684 --> 00:00:29.195
+Both of these forms will do the same operation.
+
+00:00:29.195 --> 00:00:33.030
+The only difference is that if you use this function approach,
+
+00:00:33.030 --> 00:00:38.210
+the functions usually have options that you can tweak using keywords and methods.
+
+00:00:38.210 --> 00:00:42.865
+Let's also try element-wise subtraction, multiplication, and division.
+
+00:00:42.865 --> 00:00:46.065
+Again, these also have the function approach.
+
+00:00:46.064 --> 00:00:48.794
+In order to complete these operations,
+
+00:00:48.795 --> 00:00:52.675
+NumPy sometimes uses something called broadcasting.
+
+00:00:52.674 --> 00:00:57.149
+Broadcasting is a term used to describe how NumPy handles
+
+00:00:57.149 --> 00:01:02.149
+element-wise arithmetic operations with arrays of different shapes.
+
+00:01:02.149 --> 00:01:04.549
+An important thing to note is that,
+
+00:01:04.549 --> 00:01:07.155
+since we are doing element-wise operations,
+
+00:01:07.155 --> 00:01:13.364
+the arrays being operated on must have the same shape or be broadcastable.
+
+00:01:13.364 --> 00:01:15.619
+We'll talk more about this in a minute.
+
+00:01:15.620 --> 00:01:21.475
+Let's perform the same element-wise arithmetic operations on rank two arrays.
+
+00:01:21.474 --> 00:01:25.199
+Again, remember that in order to do these operations,
+
+00:01:25.200 --> 00:01:31.118
+the arrays being operated on must have the same shape or be broadcastable.
+
+00:01:31.118 --> 00:01:34.665
+Here are two two-by-two matrices.
+
+00:01:34.665 --> 00:01:40.055
+Let's do the same arithmetic operations using the symbol notation.
+
+00:01:40.055 --> 00:01:43.620
+We can also apply mathematical functions such
+
+00:01:43.620 --> 00:01:47.355
+as square root to all the elements of an array at once.
+
+00:01:47.355 --> 00:01:50.500
+Here's that rank one array we were using before.
+
+00:01:50.500 --> 00:01:53.799
+We can get the square root of each element like this,
+
+00:01:53.799 --> 00:01:56.549
+and the exponential of each like this.
+
+00:01:56.549 --> 00:01:59.884
+And also, each element to the power of two.
+
+00:01:59.885 --> 00:02:04.590
+Another great feature of NumPy is its statistical functions.
+
+00:02:04.590 --> 00:02:07.290
+Statistical functions such as mean,
+
+00:02:07.290 --> 00:02:11.375
+provide us with statistical information about the elements in an array.
+
+00:02:11.375 --> 00:02:13.169
+Let's see some examples.
+
+00:02:13.169 --> 00:02:15.669
+Here is that rank two array again.
+
+00:02:15.669 --> 00:02:18.534
+We can get the average of the matrix like this,
+
+00:02:18.534 --> 00:02:22.704
+as well as the averages of individual rows and columns like this.
+
+00:02:22.705 --> 00:02:26.170
+We can do the same for statistics like the sum,
+
+00:02:26.169 --> 00:02:28.639
+and others like the standard deviation,
+
+00:02:28.639 --> 00:02:31.629
+median, maximum, and minimum.
+
+00:02:31.629 --> 00:02:35.810
+Finally, let's see how NumPy can add single numbers to
+
+00:02:35.810 --> 00:02:40.425
+all the elements of a NumPy array without the use of complicated loops.
+
+00:02:40.425 --> 00:02:42.510
+Here's our rank two array again.
+
+00:02:42.509 --> 00:02:45.564
+We can add three to each element like this,
+
+00:02:45.564 --> 00:02:48.150
+and subtract three from each like this.
+
+00:02:48.150 --> 00:02:50.010
+Multiply each by three,
+
+00:02:50.009 --> 00:02:51.824
+and divide each by three.
+
+00:02:51.824 --> 00:02:53.474
+In the examples above,
+
+00:02:53.474 --> 00:02:56.968
+NumPy is working behind the scenes to broadcast
+
+00:02:56.968 --> 00:03:01.055
+three along the X array so that they have the same shape.
+
+00:03:01.055 --> 00:03:06.540
+This allows us to add three to each element of X in just one line of code.
+
+00:03:06.539 --> 00:03:08.459
+Subject to certain constraints,
+
+00:03:08.460 --> 00:03:12.710
+NumPy can do the same for two NumPy arrays of different shapes.
+
+00:03:12.710 --> 00:03:15.915
+Consider this three-by-three array Y,
+
+00:03:15.914 --> 00:03:18.750
+and this one-by-three array X.
+
+00:03:18.750 --> 00:03:23.069
+If we do Y plus X, this adds zero,
+
+00:03:23.069 --> 00:03:26.275
+to the first column in Y, one,
+
+00:03:26.275 --> 00:03:28.145
+to the second column in Y,
+
+00:03:28.145 --> 00:03:31.189
+and two, to the third column in Y.
+
+00:03:31.189 --> 00:03:36.259
+As before, NumPy is able to add a one-by-three array to
+
+00:03:36.259 --> 00:03:42.039
+a three-by-three array by broadcasting the smaller array along the big array,
+
+00:03:42.039 --> 00:03:44.179
+so that they have compatible shapes.
+
+00:03:44.180 --> 00:03:48.469
+In general, NumPy can do this provided that the smaller array,
+
+00:03:48.469 --> 00:03:50.280
+such as the one-by-three array,
+
+00:03:50.280 --> 00:03:53.960
+can be expanded to fit the shape of the larger array,
+
+00:03:53.960 --> 00:03:57.155
+so that the resulting broadcast is unambiguous.
+
+00:03:57.155 --> 00:04:00.409
+We can do the same with a three-by-one array.
+
+00:04:00.409 --> 00:04:04.009
+This adds zero, the first row of Y,
+
+00:04:04.009 --> 00:04:06.849
+one, to the second row of Y,
+
+00:04:06.849 --> 00:04:10.849
+and two, to the third row of Y. Checkout the NumPy
+
+00:04:10.849 --> 00:04:15.530
+documentation for more information on broadcasting and its rules.
+

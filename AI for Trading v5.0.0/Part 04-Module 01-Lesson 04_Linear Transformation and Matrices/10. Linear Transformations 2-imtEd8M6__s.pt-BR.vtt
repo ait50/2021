@@ -1,0 +1,279 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.930
+Como você acha que podemos descrever
+as transformações numericamente,
+
+00:00:03.963 --> 00:00:06.231
+se você estivesse, digamos,
+programando animações
+
+00:00:06.264 --> 00:00:08.026
+para um vídeo sobre o tópico?
+
+00:00:08.059 --> 00:00:09.920
+Que fórmula
+você dá ao computador
+
+00:00:09.953 --> 00:00:12.215
+para que,
+com as coordenadas de um vetor,
+
+00:00:12.248 --> 00:00:15.440
+ele dê a você as coordenadas
+de onde o vetor vai parar?
+
+00:00:16.326 --> 00:00:20.259
+Na verdade, você só precisa guardar
+aonde os dois vetores de base,
+
+00:00:20.292 --> 00:00:22.487
+i-chapéu e j-chapéu,
+vão parar.
+
+00:00:22.735 --> 00:00:24.776
+Todo o resto
+segue naturalmente.
+
+00:00:25.269 --> 00:00:27.374
+Por exemplo,
+considere o vetor v,
+
+00:00:27.407 --> 00:00:29.663
+cujas coordenadas são
+-1 e 2.
+
+00:00:29.696 --> 00:00:32.264
+Ou seja, ele é igual
+a -1 vezes i-chapéu
+
+00:00:32.297 --> 00:00:33.858
++ 2 vezes j-chapéu.
+
+00:00:37.044 --> 00:00:38.528
+Se fizermos
+uma transformação
+
+00:00:38.561 --> 00:00:40.915
+e seguirmos o caminho
+desses três vetores,
+
+00:00:41.311 --> 00:00:44.736
+o fato de as linhas de grade ficarem
+paralelas e igualmente espaçadas
+
+00:00:44.769 --> 00:00:46.864
+tem uma consequência
+muito importante.
+
+00:00:47.022 --> 00:00:48.234
+O lugar onde v vai parar
+
+00:00:48.267 --> 00:00:50.912
+será -1 vezes o lugar
+onde i-chapéu parou
+
+00:00:50.945 --> 00:00:53.533
++ 2 vezes o lugar
+onde j-chapéu parou.
+
+00:00:53.761 --> 00:00:54.896
+Em outras palavras,
+
+00:00:54.929 --> 00:00:58.223
+v começa como uma combinação
+linear de i-chapéu e j-chapéu
+
+00:00:58.256 --> 00:01:00.986
+e termina como essa mesma
+combinação linear
+
+00:01:01.019 --> 00:01:03.148
+de onde os vetores de base
+pararam.
+
+00:01:03.553 --> 00:01:05.969
+Ou seja, você pode deduzir
+para onde v vai
+
+00:01:06.002 --> 00:01:09.060
+baseado apenas no lugar
+onde i-chapéu e j-chapéu param.
+
+00:01:09.411 --> 00:01:13.005
+É por isso que gosto de manter
+uma cópia do eixo original ao fundo.
+
+00:01:13.038 --> 00:01:14.848
+Para a transformação mostrada,
+
+00:01:14.881 --> 00:01:19.026
+vamos que i-chapéu vai parar
+nas coordenadas [1, -2]
+
+00:01:19.500 --> 00:01:23.063
+e j-chapéu cai no eixo-x,
+nas coordenadas [3, 0].
+
+00:01:23.819 --> 00:01:26.674
+Ou seja, o vetor representado
+por -1 vezes i-chapéu
+
+00:01:26.707 --> 00:01:28.020
++ 2 vezes j-chapéu
+
+00:01:28.053 --> 00:01:31.613
+é igual a -1 vezes
+o vetor [1, -2]
+
+00:01:32.001 --> 00:01:34.250
++ 2 vezes o vetor [3, 0].
+
+00:01:34.942 --> 00:01:36.300
+Somando tudo isso
+
+00:01:36.685 --> 00:01:39.792
+podemos deduzir que v
+vai parar em [5, 2].
+
+00:01:42.482 --> 00:01:44.161
+Aqui é um bom lugar
+para parar e pensar,
+
+00:01:44.194 --> 00:01:45.898
+porque é muito importante.
+
+00:01:46.414 --> 00:01:49.662
+Agora, já que estou mostrando
+toda a transformação,
+
+00:01:49.868 --> 00:01:53.450
+você só precisava olhar para ver
+que v tem as coordenadas [5, 2].
+
+00:01:53.785 --> 00:01:54.879
+Mas o mais legal
+
+00:01:54.955 --> 00:01:56.621
+é que isso nos dá uma técnica
+
+00:01:56.654 --> 00:01:58.970
+para deduzir onde qualquer vetor
+vai parar,
+
+00:01:59.003 --> 00:02:02.786
+desde que saibamos onde param
+i-chapéu e j-chapéu
+
+00:02:02.819 --> 00:02:05.377
+sem precisar ver
+a própria transformação.
+
+00:02:06.596 --> 00:02:09.591
+Escreva o vetor
+em coordenadas mais gerais, [x, y]
+
+00:02:10.097 --> 00:02:14.437
+e ele vai parar em x vezes o vetor
+onde i-chapéu fica, [1,-2]
+
+00:02:15.181 --> 00:02:18.813
++ y vezes o vetor
+onde j-chapéu fica, [3,0].
+
+00:02:19.892 --> 00:02:21.204
+Fazendo essa soma,
+
+00:02:21.426 --> 00:02:26.324
+o vetor vai parar
+em [1x+3y, -2x+0y].
+
+00:02:26.897 --> 00:02:28.302
+Posso te dar qualquer vetor
+
+00:02:28.335 --> 00:02:30.482
+e você pode me dizer
+onde o vetor vai parar
+
+00:02:30.515 --> 00:02:31.980
+usando essa fórmula.
+
+00:02:32.887 --> 00:02:34.181
+O que tudo isso indica
+
+00:02:34.214 --> 00:02:36.630
+é que uma transformação linear
+bidimensional
+
+00:02:36.734 --> 00:02:39.815
+é completamente descrita
+por apenas quatro números:
+
+00:02:40.242 --> 00:02:42.203
+as duas coordenadas
+de i-chapéu
+
+00:02:42.236 --> 00:02:44.810
+e as duas coordenadas
+de j-chapéu.
+
+00:02:45.033 --> 00:02:46.119
+Não é bacana?
+
+00:02:46.240 --> 00:02:48.055
+É comum empacotar
+as duas coordenadas
+
+00:02:48.088 --> 00:02:49.947
+em uma grade de números 2x2,
+
+00:02:49.980 --> 00:02:51.872
+chamada de matrix 2x2.
+
+00:02:52.067 --> 00:02:53.970
+Você pode interpretar
+as colunas
+
+00:02:54.003 --> 00:02:55.619
+como os dois vetores
+especiais,
+
+00:02:55.652 --> 00:02:57.884
+onde i-chapéu e j-chapéu
+vão parar.
+
+00:02:58.422 --> 00:03:00.155
+Se você receber
+uma matrix 2x2
+
+00:03:00.188 --> 00:03:02.094
+que descreve
+uma transformação linear
+
+00:03:02.127 --> 00:03:03.546
+e um vetor específico,
+
+00:03:03.579 --> 00:03:07.764
+e quiser saber aonde a transformação
+linear vai levar aquele vetor,
+
+00:03:08.096 --> 00:03:10.346
+você pode pegar
+as coordenadas do vetor,
+
+00:03:10.379 --> 00:03:13.651
+multiplicá-las
+pelas colunas da matriz
+
+00:03:13.823 --> 00:03:15.424
+e somar o resultado.
+
+00:03:15.798 --> 00:03:19.250
+Isso corresponde à ideia
+de somar as versões transformadas
+
+00:03:19.283 --> 00:03:20.905
+dos novos vetores de base.
+

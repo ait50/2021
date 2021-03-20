@@ -1,0 +1,383 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.159 --> 00:00:04.448
+Agora que você sabe criar
+uma variedade de arrays do NumPy,
+
+00:00:04.481 --> 00:00:09.529
+vamos ver como o NumPy nos permite
+manipular os dados dentro deles.
+
+00:00:09.577 --> 00:00:12.009
+Os arrays do NumPy
+são mutáveis,
+
+00:00:12.042 --> 00:00:13.905
+então os elementos
+dentro deles
+
+00:00:13.938 --> 00:00:17.217
+podem ser alterados
+depois que o array foi criado.
+
+00:00:17.250 --> 00:00:21.210
+Os arrays do NumPy podem
+ser cortados de várias formas.
+
+00:00:21.243 --> 00:00:25.226
+Assim podemos ter
+qualquer subconjunto que quisermos.
+
+00:00:25.259 --> 00:00:27.994
+Usamos os fatiamentos
+para separar os dados.
+
+00:00:28.027 --> 00:00:30.449
+Como dividir
+um conjunto de dados
+
+00:00:30.482 --> 00:00:34.097
+entre conjuntos de treinamento,
+validação cruzada e teste.
+
+00:00:34.130 --> 00:00:37.946
+Vamos começar analisando
+como os elementos do array do NumPy
+
+00:00:37.979 --> 00:00:41.561
+podem ser acessados
+ou modificados pelo índice.
+
+00:00:41.594 --> 00:00:46.760
+Vamos criar um array nível 1
+que contenha inteiros de 1 a 5.
+
+00:00:46.793 --> 00:00:50.264
+Os elementos podem ser acessados
+quando especificamos suas posições
+
+00:00:50.297 --> 00:00:52.944
+com índices
+dentro de colchetes.
+
+00:00:52.977 --> 00:00:56.171
+Índices positivos são usados
+para especificar posições
+
+00:00:56.204 --> 00:00:58.196
+do início do array.
+
+00:00:58.229 --> 00:01:01.419
+Para acessar o primeiro elemento
+no array,
+
+00:01:01.452 --> 00:01:05.019
+precisamos usar o índice zero,
+e não o 1.
+
+00:01:05.251 --> 00:01:07.683
+Também podemos usar
+índices negativos
+
+00:01:07.716 --> 00:01:10.947
+para especificar posições
+do fim do array.
+
+00:01:11.140 --> 00:01:13.963
+O mesmo elemento
+pode ser acessado
+
+00:01:13.996 --> 00:01:17.211
+com inteiros negativos
+e positivos.
+
+00:01:17.244 --> 00:01:20.212
+Como mencionado,
+índices positivos são usados
+
+00:01:20.245 --> 00:01:23.427
+para acessar os elementos
+do início do array
+
+00:01:23.460 --> 00:01:26.643
+e índices negativos são usados
+para acessar os elementos
+
+00:01:26.676 --> 00:01:28.395
+do fim do array.
+
+00:01:28.428 --> 00:01:32.387
+Agora vamos ver como modificar
+os elementos num array.
+
+00:01:33.014 --> 00:01:36.685
+Podemos fazer isso ao acessar
+o elemento que queremos alterar
+
+00:01:36.718 --> 00:01:39.582
+e redesigná-lo
+com o sinal de igual.
+
+00:01:39.615 --> 00:01:42.808
+Vamos modificar o array X
+que acabamos de criar.
+
+00:01:42.841 --> 00:01:47.831
+Podemos alterar o 4º elemento no X
+de 4 para 20.
+
+00:01:48.128 --> 00:01:52.153
+Também podemos acessar e modificar
+elementos específicos nível 2
+
+00:01:52.186 --> 00:01:53.793
+nos arrays do NumPy.
+
+00:01:53.826 --> 00:01:57.490
+A única diferença é que precisamos
+apresentar dois índices
+
+00:01:57.523 --> 00:02:00.786
+separados por uma vírgula
+dentro dos colchetes.
+
+00:02:00.819 --> 00:02:05.026
+Temos um array 3 por 3,
+com os inteiros de 1 a 9.
+
+00:02:05.314 --> 00:02:07.994
+Vamos acessar elementos
+nesse array.
+
+00:02:08.027 --> 00:02:12.077
+Lembre-se de que 0,0
+se refere ao elemento
+
+00:02:12.110 --> 00:02:15.157
+a primeira fileira
+e na primeira coluna.
+
+00:02:15.333 --> 00:02:16.517
+No caso, é 1.
+
+00:02:16.550 --> 00:02:21.365
+Os elementos nos arrays nível 2
+também podem ser modificados.
+
+00:02:21.398 --> 00:02:25.821
+Podemos alterar o elemento 0,0
+no X
+
+00:02:26.189 --> 00:02:28.396
+de 1 para 20.
+
+00:02:28.917 --> 00:02:33.477
+Agora que sabemos como acessar
+e modificar os elementos no array,
+
+00:02:33.510 --> 00:02:37.197
+vamos ver como adicionar
+e apagar os elementos.
+
+00:02:37.388 --> 00:02:40.941
+Podemos apagar os elementos
+com a função delete do NumPy.
+
+00:02:40.974 --> 00:02:43.572
+Essa função recebe um array,
+
+00:02:43.605 --> 00:02:47.733
+uma lista de índices para apagar
+e um eixo de onde apagar.
+
+00:02:47.766 --> 00:02:49.516
+Para os arrays nível 1,
+
+00:02:49.549 --> 00:02:52.069
+a palavra-chave do eixo
+não é exigida.
+
+00:02:52.102 --> 00:02:53.796
+Para os arrays nível 2,
+
+00:02:53.829 --> 00:02:56.764
+o eixo zero é usado
+para selecionar as fileiras
+
+00:02:56.797 --> 00:03:00.084
+e o eixo um é usado
+para selecionar as colunas.
+
+00:03:00.117 --> 00:03:01.748
+Vamos ver exemplos.
+
+00:03:01.781 --> 00:03:03.997
+Temos um array nível 1.
+
+00:03:04.030 --> 00:03:08.237
+Podemos apagar o primeiro
+e o último elemento do X.
+
+00:03:08.444 --> 00:03:10.965
+Aqui está um array nível 2.
+
+00:03:11.364 --> 00:03:15.181
+Vamos apagar a primeira
+e a última coluna do Y.
+
+00:03:15.214 --> 00:03:18.109
+Podemos adicionar valores
+aos arrays do NumPy
+
+00:03:18.142 --> 00:03:20.480
+usando a função append.
+
+00:03:20.513 --> 00:03:23.304
+Essa função recebe um array,
+
+00:03:23.337 --> 00:03:25.704
+uma lista de elementos
+para anexar
+
+00:03:25.737 --> 00:03:28.079
+e o eixo onde anexar.
+
+00:03:28.112 --> 00:03:30.065
+Vamos ver exemplos.
+
+00:03:30.098 --> 00:03:35.181
+Podemos anexar o elemento 6
+a este array nível 1.
+
+00:03:35.525 --> 00:03:38.045
+Podemos anexar
+vários elementos,
+
+00:03:38.078 --> 00:03:41.357
+por exemplo,
+sete e oito numa lista.
+
+00:03:41.598 --> 00:03:43.838
+Num array nível 2,
+
+00:03:44.054 --> 00:03:48.973
+podemos anexar uma nova fileira
+com 10, 11 e 12.
+
+00:03:49.669 --> 00:03:54.469
+E podemos anexar uma nova coluna
+com 10, 11 e 12.
+
+00:03:54.941 --> 00:03:59.509
+Ao anexar fileiras e colunas
+aos arrays nível 2 do NumPy,
+
+00:03:59.542 --> 00:04:02.621
+as fileiras e colunas
+precisam ter o formato correto
+
+00:04:02.654 --> 00:04:05.142
+para corresponder
+o formato do array.
+
+00:04:05.175 --> 00:04:09.197
+Vamos ver como inserir valores
+nos arrays do NumPy.
+
+00:04:09.230 --> 00:04:11.677
+Podemos usar
+a função insert,
+
+00:04:11.710 --> 00:04:13.693
+que recebe um array,
+
+00:04:13.726 --> 00:04:16.765
+índices, elementos e eixos.
+
+00:04:16.798 --> 00:04:21.853
+Ela insere a lista de elementos
+no array logo antes do índice,
+
+00:04:21.886 --> 00:04:24.221
+junto com o eixo específico.
+
+00:04:24.254 --> 00:04:26.141
+Temos um array nível 1.
+
+00:04:26.174 --> 00:04:29.197
+Podemos inserir
+os inteiros 3 e 4
+
+00:04:29.230 --> 00:04:32.965
+entre os elementos 2 e 5.
+
+00:04:33.829 --> 00:04:36.333
+Neste array nível 2,
+
+00:04:36.716 --> 00:04:38.581
+podemos inserir uma fileira
+
+00:04:38.614 --> 00:04:41.733
+entre a primeira
+e a última fileira.
+
+00:04:42.029 --> 00:04:44.717
+E podemos inserir uma coluna
+cheia de 5
+
+00:04:44.750 --> 00:04:49.205
+entre a primeira
+e a segunda coluna.
+
+00:04:49.829 --> 00:04:53.957
+O NumPy também nos permite
+empilhar os arrays,
+
+00:04:53.990 --> 00:04:57.365
+um em cima do outro
+ou de lado.
+
+00:04:57.398 --> 00:05:01.342
+O empilhamento é feito
+com o Vstack do NumPy
+
+00:05:01.375 --> 00:05:03.037
+para o empilhamento vertical
+
+00:05:03.070 --> 00:05:06.789
+ou a função Hstack
+para o empilhamento horizontal.
+
+00:05:06.822 --> 00:05:10.045
+É importante saber
+que, para empilhar os arrays,
+
+00:05:10.078 --> 00:05:12.838
+o formato dos arrays
+devem corresponder.
+
+00:05:13.054 --> 00:05:17.764
+Considere estes arrays nível 1
+e nível 2 X e Y.
+
+00:05:18.398 --> 00:05:23.934
+Podemos empilhar o X em cima do Y
+com a Vstack.
+
+00:05:25.335 --> 00:05:28.606
+E podemos empilhar o X
+do lado direito do Y
+
+00:05:28.639 --> 00:05:30.678
+com a Hstack.
+
+00:05:31.085 --> 00:05:35.014
+Precisamos mudar o formato do X
+para corresponder ao do Y
+
+00:05:35.047 --> 00:05:37.033
+antes do empilhamento
+horizontal.
+

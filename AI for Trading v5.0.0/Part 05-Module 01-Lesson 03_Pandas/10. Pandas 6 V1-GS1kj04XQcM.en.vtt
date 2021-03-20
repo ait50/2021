@@ -1,0 +1,229 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.378
+Before we can begin analyzing data or using it to train our learning algorithms,
+
+00:00:05.378 --> 00:00:06.824
+we need to clean it.
+
+00:00:06.825 --> 00:00:11.230
+This means we need a way to detect and correct errors in our data.
+
+00:00:11.230 --> 00:00:14.205
+While any given dataset can have many types of
+
+00:00:14.205 --> 00:00:17.780
+bad data such as outliers or incorrect values,
+
+00:00:17.780 --> 00:00:22.960
+the type of bad data we encounter almost always is missing values.
+
+00:00:22.960 --> 00:00:24.545
+As we saw earlier,
+
+00:00:24.545 --> 00:00:26.865
+Pandas assigns the value NaN,
+
+00:00:26.864 --> 00:00:29.179
+or not a number to missing data.
+
+00:00:29.179 --> 00:00:34.259
+In this section, we will learn how to detect and deal with these NaN values.
+
+00:00:34.259 --> 00:00:37.354
+In this DataFrame, we have three NaN values.
+
+00:00:37.354 --> 00:00:39.354
+One in store one,
+
+00:00:39.354 --> 00:00:41.719
+and two in store three.
+
+00:00:41.719 --> 00:00:44.089
+However, in cases where we load
+
+00:00:44.090 --> 00:00:49.230
+very large datasets into a DataFrame possibly with millions of items,
+
+00:00:49.229 --> 00:00:53.819
+the number of NaN values isn't easily visualized like this.
+
+00:00:53.820 --> 00:00:56.909
+For these cases, we can use a combination of
+
+00:00:56.909 --> 00:01:00.049
+methods to count the number of NaN values in our data.
+
+00:01:00.049 --> 00:01:03.919
+This combines to is null and sum methods to count
+
+00:01:03.920 --> 00:01:07.935
+the number of NaN values in our DataFrame. Let's break this down.
+
+00:01:07.935 --> 00:01:10.859
+The is null method returns a DataFrame with
+
+00:01:10.859 --> 00:01:14.385
+a Boolean for each value in the store items DataFrame.
+
+00:01:14.385 --> 00:01:16.500
+True, when the value is NaN.
+
+00:01:16.500 --> 00:01:20.780
+In Pandas, logical true values have the numerical value
+
+00:01:20.780 --> 00:01:25.640
+one and logical false values have the numerical value zero.
+
+00:01:25.640 --> 00:01:29.049
+Therefore, we can count the number of NaN values by
+
+00:01:29.049 --> 00:01:32.609
+counting the number of logical true values from this DataFrame.
+
+00:01:32.609 --> 00:01:36.900
+Using sum ones gives us a number of NaNs in each column.
+
+00:01:36.900 --> 00:01:42.055
+We use sum again to get the total number of NaNs for the entire DataFrame.
+
+00:01:42.055 --> 00:01:44.905
+Instead of counting the number of NaN values,
+
+00:01:44.905 --> 00:01:51.085
+we can also do the opposite and count the number of non-NaN values with the count method.
+
+00:01:51.084 --> 00:01:55.449
+Now that we know how to find out if our dataset has any NaN values,
+
+00:01:55.450 --> 00:01:58.469
+the next step is to decide what to do with them.
+
+00:01:58.469 --> 00:02:00.734
+In general, we have two options.
+
+00:02:00.734 --> 00:02:04.140
+We can either remove or replace missing values.
+
+00:02:04.140 --> 00:02:07.424
+To remove them, we can use the drop na method.
+
+00:02:07.424 --> 00:02:14.090
+We can set the axis parameter to zero to eliminate any rows with NaN values.
+
+00:02:14.090 --> 00:02:19.465
+We can also set axis to one to eliminate any columns with NaN values.
+
+00:02:19.465 --> 00:02:23.909
+The dropna method drops these rows or columns out of place.
+
+00:02:23.909 --> 00:02:27.025
+Meaning, the original DataFrame is not modified.
+
+00:02:27.025 --> 00:02:32.275
+You can remove them in-place by setting the keyword in-place to true like this.
+
+00:02:32.275 --> 00:02:35.270
+Now, instead of eliminating NaN values,
+
+00:02:35.270 --> 00:02:37.960
+let's replace them with actual values.
+
+00:02:37.960 --> 00:02:43.155
+As an example, we could choose to replace all NaNs with the value zero.
+
+00:02:43.155 --> 00:02:46.164
+The fillna method can be used for this.
+
+00:02:46.164 --> 00:02:49.469
+We can also replace NaNs with values from
+
+00:02:49.469 --> 00:02:53.859
+the previous row or column with something called forward filling.
+
+00:02:53.860 --> 00:03:00.265
+This replaces each NaN with the value from the previous value along the given axis.
+
+00:03:00.264 --> 00:03:02.254
+Here's the original DataFrame again.
+
+00:03:02.254 --> 00:03:05.500
+Notice that the two NaN values in store three
+
+00:03:05.500 --> 00:03:09.354
+have been replaced with the previous values in their column.
+
+00:03:09.354 --> 00:03:14.375
+However, notice that the NaN value in store one did not get replaced.
+
+00:03:14.375 --> 00:03:17.129
+That's because there were no previous values in
+
+00:03:17.129 --> 00:03:20.805
+this column since NaN is the first value in this column.
+
+00:03:20.805 --> 00:03:26.580
+However, if we do forward fill using the previous row values this won't happen.
+
+00:03:26.580 --> 00:03:28.200
+We see that in this case,
+
+00:03:28.199 --> 00:03:32.804
+all the NaN values have been replaced with the previous value in that row.
+
+00:03:32.805 --> 00:03:35.200
+Similarly, you can choose to replace
+
+00:03:35.199 --> 00:03:39.199
+the NaNs with the values that go after them in the DataFrame.
+
+00:03:39.199 --> 00:03:41.869
+This is known as backward filling.
+
+00:03:41.870 --> 00:03:45.900
+This replaces each NaN with the next value in that column.
+
+00:03:45.900 --> 00:03:51.360
+The NaN value in store one has been replaced by the next value in it's column.
+
+00:03:51.360 --> 00:03:53.850
+But the two NaN values in store three did
+
+00:03:53.849 --> 00:03:57.525
+not since they are the last values in their columns.
+
+00:03:57.525 --> 00:04:01.170
+The fillna method fills the NaN values out of place.
+
+00:04:01.169 --> 00:04:06.444
+So, set the parameter in place to true if you want to modify the original DataFrame.
+
+00:04:06.444 --> 00:04:11.560
+We can also choose to replace NaNs by using different interpolation methods.
+
+00:04:11.560 --> 00:04:15.250
+For example, this uses linear interpolation to
+
+00:04:15.250 --> 00:04:19.129
+replace NaN values using the values along the column axis.
+
+00:04:19.129 --> 00:04:25.129
+The two NaN values in store three have been replaced with linear interpolated values.
+
+00:04:25.129 --> 00:04:29.740
+However, NaN value in store one did not get replaced since
+
+00:04:29.740 --> 00:04:34.530
+there is no data before it to allow the interpolation function to calculate a value.
+
+00:04:34.529 --> 00:04:39.964
+We can replace NaN values with linear interpolation using row values like this.
+
+00:04:39.964 --> 00:04:41.679
+Like the other methods we saw,
+
+00:04:41.680 --> 00:04:45.600
+the interpolate method replaces NaN values out of place.
+

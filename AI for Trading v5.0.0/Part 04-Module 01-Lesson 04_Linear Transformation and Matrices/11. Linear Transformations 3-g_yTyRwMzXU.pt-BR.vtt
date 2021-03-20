@@ -1,0 +1,269 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.295 --> 00:00:03.204
+Vamos ver como isso fica
+no caso mais geral,
+
+00:00:03.237 --> 00:00:06.228
+onde sua matriz tem as entradas
+a, b, c, d.
+
+00:00:06.497 --> 00:00:10.172
+Lembre que a matriz é só um jeito
+de empacotar a informação necessária
+
+00:00:10.205 --> 00:00:12.303
+para descrever
+uma transformação linear.
+
+00:00:12.336 --> 00:00:15.246
+Lembre sempre de interpretar
+a 1ª coluna, [a,c],
+
+00:00:15.279 --> 00:00:17.996
+como o lugar onde o 1º vetor de base
+vai parar
+
+00:00:18.029 --> 00:00:19.740
+e que a 2ª coluna, [b,d],
+
+00:00:19.773 --> 00:00:22.603
+como o lugar onde o 2º vetor de base
+vai parar.
+
+00:00:23.012 --> 00:00:25.961
+Quando aplicamos essa transformação
+a um vetor [x,y],
+
+00:00:25.994 --> 00:00:27.280
+temos o quê?
+
+00:00:27.639 --> 00:00:32.904
+Bom, vai ser x vezes [a,c]
++ y vezes [b,d].
+
+00:00:33.728 --> 00:00:34.937
+Reunindo tudo isso,
+
+00:00:34.970 --> 00:00:39.066
+temos um vetor
+[ax+by,cx+dy].
+
+00:00:39.879 --> 00:00:43.274
+Dá para definir isso como
+multiplicação de matriz por vetor,
+
+00:00:43.592 --> 00:00:45.752
+colocando a matriz
+à esquerda do vetor,
+
+00:00:45.785 --> 00:00:47.131
+como se fosse uma função.
+
+00:00:47.164 --> 00:00:49.237
+Até estudantes de ensino médio
+podem decorar
+
+00:00:49.270 --> 00:00:52.440
+sem aprender a parte crucial
+que torna isso intuitivo.
+
+00:00:53.880 --> 00:00:56.341
+Mas não é mais divertido
+pensar nessas colunas
+
+00:00:56.374 --> 00:00:59.218
+como as versões transformadas
+dos vetores de base
+
+00:00:59.251 --> 00:01:00.536
+e pensar no resultado
+
+00:01:00.569 --> 00:01:03.725
+como a combinação linear
+desses vetores?
+
+00:01:06.549 --> 00:01:08.754
+Vamos descrever
+algumas transformações lineares
+
+00:01:08.787 --> 00:01:09.881
+com matrizes.
+
+00:01:10.020 --> 00:01:14.483
+Por exemplo, se girarmos o espaço
+90° no sentido anti-horário,
+
+00:01:14.745 --> 00:01:17.989
+i-chapéu vai parar
+nas coordenadas [0,1].
+
+00:01:19.695 --> 00:01:23.046
+E j-chapéu vai parar
+nas coordenadas [-1,0].
+
+00:01:23.639 --> 00:01:27.833
+A matriz da transformada
+terá colunas [0,1] e [-1,0].
+
+00:01:28.869 --> 00:01:32.323
+Para descobrir o que acontece
+com um vetor depois de girar 90°,
+
+00:01:32.356 --> 00:01:35.330
+basta multiplicar suas coordenadas
+por essa matriz.
+
+00:01:37.068 --> 00:01:40.519
+Aqui está uma transformação legal,
+chamada de "cisalhamento".
+
+00:01:40.552 --> 00:01:42.560
+Nela, i-chapéu permanece fixo.
+
+00:01:42.593 --> 00:01:44.901
+A primeira coluna da matriz
+é [1,0].
+
+00:01:45.234 --> 00:01:48.634
+Mas j-chapéu vai
+para as coordenadas [1,1],
+
+00:01:48.667 --> 00:01:51.122
+o que se torna
+a segunda coluna da matriz.
+
+00:01:51.711 --> 00:01:53.604
+Correndo o risco
+de soar redundante,
+
+00:01:53.637 --> 00:01:56.420
+descobrir como o cisalhamento
+transforma um vetor
+
+00:01:56.453 --> 00:02:00.016
+é questão de multiplicar a matriz
+por esse vetor.
+
+00:02:01.272 --> 00:02:03.315
+Digamos que queremos
+fazer o contrário.
+
+00:02:03.348 --> 00:02:04.475
+Começando com a matriz,
+
+00:02:04.508 --> 00:02:07.143
+com colunas [1,2] e [3,1],
+
+00:02:07.352 --> 00:02:10.004
+queremos deduzir
+qual é a cara da transformação.
+
+00:02:10.429 --> 00:02:12.776
+Pare um instante
+para imaginar como fica.
+
+00:02:14.119 --> 00:02:18.015
+Um jeito de fazer isso
+é mover i-chapéu para [1,2]
+
+00:02:18.314 --> 00:02:20.622
+e depois mover j-chapéu
+para [3,1],
+
+00:02:20.964 --> 00:02:22.525
+sempre movendo
+o resto do espaço
+
+00:02:22.558 --> 00:02:26.329
+de forma a manter as linhas de grade
+paralelas e igualmente espaçadas.
+
+00:02:27.494 --> 00:02:31.337
+Se os novos vetores de base
+forem linearmente dependentes,
+
+00:02:31.370 --> 00:02:33.328
+o que, lembrando
+do vídeo passado,
+
+00:02:33.361 --> 00:02:36.116
+significa que um é uma versão
+em escala do outro,
+
+00:02:36.149 --> 00:02:40.271
+quer dizer que a transformação
+linear espreme todo o espaço 2D
+
+00:02:40.304 --> 00:02:42.928
+em cima da linha
+onde esses dois vetores estão,
+
+00:02:42.961 --> 00:02:45.292
+também chamado de
+"espaço 1D gerado"
+
+00:02:45.325 --> 00:02:48.114
+por esses vetores
+linearmente dependentes.
+
+00:02:50.494 --> 00:02:54.321
+Resumindo, transformações lineares
+movem o espaço por aí,
+
+00:02:54.354 --> 00:02:57.487
+mantendo as linhas de grade
+paralelas e igualmente espaçadas
+
+00:02:57.520 --> 00:02:59.614
+e deixando a origem
+no mesmo lugar.
+
+00:03:00.014 --> 00:03:02.571
+Por sorte, essas transformações
+podem ser descritas
+
+00:03:02.604 --> 00:03:04.660
+usando apenas
+um punhado de números,
+
+00:03:04.693 --> 00:03:07.785
+as coordenadas aonde cada
+vetor de base vai parar.
+
+00:03:08.148 --> 00:03:11.521
+As matrizes são uma língua
+para descrever as transformações,
+
+00:03:11.753 --> 00:03:14.379
+onde as colunas representam
+essas coordenadas
+
+00:03:14.467 --> 00:03:16.460
+e a multiplicação
+da matriz por um vetor
+
+00:03:16.493 --> 00:03:20.739
+é apenas um jeito de computar o que
+a transformação faz com esse vetor.
+
+00:03:20.963 --> 00:03:22.151
+O importante aqui
+
+00:03:22.184 --> 00:03:24.200
+é que sempre
+que você vir uma matriz,
+
+00:03:24.233 --> 00:03:27.932
+pode interpretá-la como
+uma certa transformação do espaço.
+
+00:03:28.035 --> 00:03:29.943
+Depois de digerir essa ideia,
+
+00:03:29.976 --> 00:03:33.016
+poderá entender profundamente
+a álgebra linear.
+

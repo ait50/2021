@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.190
+When working with data you'll most likely use databases from many sources.
+
+00:00:05.190 --> 00:00:10.765
+Pandas allows us to load databases of different formats into DataFrames.
+
+00:00:10.765 --> 00:00:17.955
+One of the most popular formats used to store data is CSV or comma separated values.
+
+00:00:17.954 --> 00:00:23.659
+We can load CSV files into DataFrames using the read CSV function.
+
+00:00:23.660 --> 00:00:27.079
+Let's load Google stock data into a DataFrame.
+
+00:00:27.079 --> 00:00:33.320
+This file was taken from Yahoo finances and contains Google stock data from August 19th,
+
+00:00:33.320 --> 00:00:37.230
+2004 to October 13th, 2017.
+
+00:00:37.229 --> 00:00:42.879
+The DataFrame consists of 3,313 rows and seven columns.
+
+00:00:42.880 --> 00:00:44.650
+Let's look at the stock data.
+
+00:00:44.649 --> 00:00:48.299
+We can see it's a pretty large dataset and that Pandas
+
+00:00:48.299 --> 00:00:52.184
+automatically assign numerical row indices to the DataFrame.
+
+00:00:52.185 --> 00:00:57.920
+Pandas also use the names that appeared in the CSV file to assign the column labels.
+
+00:00:57.920 --> 00:01:00.880
+When dealing with large data sets like this one,
+
+00:01:00.880 --> 00:01:03.350
+it's often useful to just take a look at
+
+00:01:03.350 --> 00:01:06.670
+the first few rows of data instead of the whole dataset.
+
+00:01:06.670 --> 00:01:10.600
+We can take a look at the first five rows using the head method.
+
+00:01:10.599 --> 00:01:15.659
+We can also take a look at the last five rows of data using the tail method.
+
+00:01:15.659 --> 00:01:18.629
+Both of these accept an integer as an argument
+
+00:01:18.629 --> 00:01:22.039
+if you want to specify a different number of rows to return.
+
+00:01:22.040 --> 00:01:25.470
+For example, I can get the last eight rows like this,
+
+00:01:25.469 --> 00:01:27.594
+or the first two rows like this.
+
+00:01:27.594 --> 00:01:32.304
+Let's do a quick check to see whether we have any none values in this data set.
+
+00:01:32.305 --> 00:01:36.090
+To do so, we will use the "Is no" method followed by
+
+00:01:36.090 --> 00:01:40.445
+the "Any" method to check whether any of the columns contain none values.
+
+00:01:40.444 --> 00:01:43.064
+This shows us that we have no missing data.
+
+00:01:43.064 --> 00:01:45.204
+When dealing with large data sets,
+
+00:01:45.204 --> 00:01:48.750
+it's often useful to get statistical information from them.
+
+00:01:48.750 --> 00:01:52.150
+Pandas provides a described method which returns
+
+00:01:52.150 --> 00:01:55.655
+descriptive statistics on each column of the DataFrame.
+
+00:01:55.655 --> 00:02:00.575
+If desired, we can apply the describe method on a single column like this.
+
+00:02:00.575 --> 00:02:04.010
+Similarly, you can also look at one statistic by
+
+00:02:04.010 --> 00:02:07.815
+using one of the many statistical functions that Pandas provides.
+
+00:02:07.814 --> 00:02:09.449
+Here are some examples.
+
+00:02:09.449 --> 00:02:12.609
+This gives us the maximum value in each column,
+
+00:02:12.610 --> 00:02:15.195
+and this gives us the mean of each column,
+
+00:02:15.194 --> 00:02:18.704
+and this gives us the minimum value in a specific column.
+
+00:02:18.705 --> 00:02:22.500
+Another important statistical measure is data correlation.
+
+00:02:22.500 --> 00:02:26.879
+We can use the core method to get the correlation between different columns.
+
+00:02:26.879 --> 00:02:29.599
+Lastly, let's look at the group by method,
+
+00:02:29.599 --> 00:02:33.814
+which allows us to group data to get different types of information.
+
+00:02:33.814 --> 00:02:35.729
+For the following examples,
+
+00:02:35.729 --> 00:02:38.764
+we are going to load data about a fake company.
+
+00:02:38.764 --> 00:02:44.229
+This data contains information for the years 1990 through 1992.
+
+00:02:44.229 --> 00:02:47.454
+And for each year, we see the name of the employees,
+
+00:02:47.455 --> 00:02:49.300
+the department they worked for,
+
+00:02:49.300 --> 00:02:51.790
+their age, and their annual salary.
+
+00:02:51.789 --> 00:02:55.419
+Now, let's use the group by method to get information.
+
+00:02:55.419 --> 00:02:59.699
+Let's calculate how much money the company spent on salaries each year.
+
+00:02:59.699 --> 00:03:03.419
+To do this, we will group the data by year and then add
+
+00:03:03.419 --> 00:03:07.289
+up the salaries of all of the employees with the sum method.
+
+00:03:07.289 --> 00:03:11.909
+The company spent a total of $150,000 in 1990,
+
+00:03:11.909 --> 00:03:17.835
+$162,000 in 1991, and $174,000 in 1992.
+
+00:03:17.835 --> 00:03:20.795
+If we want to know the average salary for each year,
+
+00:03:20.794 --> 00:03:25.809
+we can repeat the last step replacing the sum method with the mean method.
+
+00:03:25.810 --> 00:03:31.640
+Now, let's see how much in total each employee got paid during those five years.
+
+00:03:31.639 --> 00:03:37.504
+In this case, we will group the data by name and then add up the salaries for each year.
+
+00:03:37.504 --> 00:03:42.329
+Now let's see what the salary distribution per department was per year.
+
+00:03:42.330 --> 00:03:45.750
+In this case, we will group the data by year and
+
+00:03:45.750 --> 00:03:49.020
+by department and then add up the salaries for each group.
+
+00:03:49.020 --> 00:03:51.105
+We can see that in 1990,
+
+00:03:51.104 --> 00:03:55.019
+the Admin department paid $55,000 in salaries,
+
+00:03:55.020 --> 00:03:59.325
+HR $50,000 and R and D, $48,000.
+
+00:03:59.324 --> 00:04:06.129
+And in 1992 the admin department paid $122,000 in salaries, and so on.
+

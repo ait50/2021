@@ -1,0 +1,211 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:11.519 --> 00:00:16.269
+Hey everyone, if I had to choose just one topic that makes all of the others in
+
+00:00:16.269 --> 00:00:18.660
+linear algebra start to click and which too often
+
+00:00:18.660 --> 00:00:21.179
+goes unlearned the first time a student takes linear algebra,
+
+00:00:21.179 --> 00:00:22.454
+it will be this one.
+
+00:00:22.454 --> 00:00:24.859
+The idea of a linear transformation,
+
+00:00:24.859 --> 00:00:26.774
+and its relation to matrices.
+
+00:00:26.774 --> 00:00:29.079
+For this video, I'm just going to focus on what
+
+00:00:29.079 --> 00:00:32.179
+these transformations look like in the case of two dimensions,
+
+00:00:32.179 --> 00:00:35.524
+and how they relate to the idea of matrix-vector multiplication.
+
+00:00:35.524 --> 00:00:40.140
+In particular, I want to show you a way to think about matrix-vector multiplication,
+
+00:00:40.140 --> 00:00:42.649
+that doesn't rely on memorization.
+
+00:00:42.649 --> 00:00:46.994
+To start, let's just parse this term, linear transformation.
+
+00:00:46.994 --> 00:00:50.179
+Transformation is essentially a fancy word for function,
+
+00:00:50.179 --> 00:00:52.020
+it's something that takes in inputs,
+
+00:00:52.020 --> 00:00:56.660
+and spits out an output for each one Specifically in the context of linear algebra,
+
+00:00:56.659 --> 00:00:59.719
+we like to think about transformations that take in some vector,
+
+00:00:59.719 --> 00:01:01.799
+and spit out another vector.
+
+00:01:01.799 --> 00:01:05.209
+So, why use the word transformation instead of function,
+
+00:01:05.209 --> 00:01:06.729
+if they mean the same thing?
+
+00:01:06.730 --> 00:01:11.725
+Well, it's to be suggestive of a certain way to visualize this input-output relation.
+
+00:01:11.724 --> 00:01:14.619
+A great way to understand functions of vectors,
+
+00:01:14.620 --> 00:01:16.448
+is to use movement.
+
+00:01:16.448 --> 00:01:19.310
+If a transformation takes some input vector,
+
+00:01:19.310 --> 00:01:20.875
+to some output vector,
+
+00:01:20.875 --> 00:01:25.295
+we imagine that input vector moving over to the output vector.
+
+00:01:25.295 --> 00:01:28.150
+Then to understand the transformation as a whole,
+
+00:01:28.150 --> 00:01:31.385
+we might imagine watching every possible input vector,
+
+00:01:31.385 --> 00:01:34.605
+move over to its corresponding output vector.
+
+00:01:34.605 --> 00:01:37.424
+It gets really crowded to think about all of the vectors,
+
+00:01:37.424 --> 00:01:39.334
+all at once, each one has an arrow.
+
+00:01:39.334 --> 00:01:40.994
+So, as I mentioned in the last video,
+
+00:01:40.995 --> 00:01:44.625
+a nice trick is to conceptualize each vector not as an arrow,
+
+00:01:44.625 --> 00:01:45.959
+but as a single point.
+
+00:01:45.959 --> 00:01:48.569
+The point where it's tip sets That way,
+
+00:01:48.569 --> 00:01:53.129
+to think about a transformation taking every possible input vector to some output vector,
+
+00:01:53.129 --> 00:01:56.844
+we watch every point in space moving to some other point.
+
+00:01:56.844 --> 00:01:59.459
+In the case of transformations in two dimensions,
+
+00:01:59.459 --> 00:02:02.829
+to get a better feel for the whole shape of the transformation,
+
+00:02:02.829 --> 00:02:06.194
+I like to do this with all of the points on an infinite grid.
+
+00:02:06.194 --> 00:02:09.354
+I also sometimes like to keep a copy of the grid in the background,
+
+00:02:09.354 --> 00:02:11.584
+just to help keep track of where everything ends up,
+
+00:02:11.585 --> 00:02:13.900
+relative to where it starts.
+
+00:02:13.960 --> 00:02:19.320
+The effect for various transformations moving around all of the points in space is,
+
+00:02:19.319 --> 00:02:21.534
+and you've got to admit, beautiful.
+
+00:02:21.534 --> 00:02:23.219
+It gives the feeling of squishing,
+
+00:02:23.219 --> 00:02:25.169
+and morphing space itself.
+
+00:02:25.169 --> 00:02:30.229
+As you can imagine though arbitrary transformations can look pretty complicated.
+
+00:02:30.229 --> 00:02:34.479
+But luckily, linear algebra limits itself to a special type of transformation.
+
+00:02:34.479 --> 00:02:38.764
+Ones that are easier to understand, called linear transformations.
+
+00:02:38.764 --> 00:02:43.414
+Visually speaking, a transformation is linear if it has two properties.
+
+00:02:43.414 --> 00:02:47.194
+All lines must remain lines without getting curved,
+
+00:02:47.194 --> 00:02:50.180
+and the origin must remain fixed in place.
+
+00:02:50.180 --> 00:02:54.030
+For example, this right here would not be a linear transformation,
+
+00:02:54.030 --> 00:02:55.844
+since the lines get all curvy.
+
+00:02:55.844 --> 00:02:58.745
+And this one right here although it keeps the line straight,
+
+00:02:58.745 --> 00:03:00.590
+is not a linear transformation,
+
+00:03:00.590 --> 00:03:02.295
+because it moves the origin.
+
+00:03:02.294 --> 00:03:04.179
+This one here fixes the origin,
+
+00:03:04.180 --> 00:03:05.990
+and it might look like it keeps lines straight,
+
+00:03:05.990 --> 00:03:08.240
+but that's just because I'm only showing the horizontal,
+
+00:03:08.240 --> 00:03:09.430
+and vertical grid lines.
+
+00:03:09.430 --> 00:03:11.340
+When you see what it does to a diagonal line,
+
+00:03:11.340 --> 00:03:13.479
+it becomes clear that it's not at all linear,
+
+00:03:13.479 --> 00:03:16.079
+since it turns that line all curvy.
+
+00:03:16.080 --> 00:03:19.450
+In general, you should think of linear transformations as
+
+00:03:19.449 --> 00:03:22.899
+keeping grid lines parallel, and evenly spaced.
+
+00:03:22.900 --> 00:03:25.750
+Some linear transformations are simple to think about,
+
+00:03:25.750 --> 00:03:27.854
+like rotations about the origin.
+
+00:03:27.854 --> 00:03:31.119
+Others are a little trickier to describe with words.
+

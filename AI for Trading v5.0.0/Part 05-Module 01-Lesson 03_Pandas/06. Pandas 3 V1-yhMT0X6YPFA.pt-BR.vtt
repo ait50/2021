@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.649
+Assim como fizemos
+com os arrays NumPy,
+
+00:00:02.682 --> 00:00:06.171
+podemos fazer operações
+aritméticas elementares
+
+00:00:06.204 --> 00:00:07.836
+no Pandas Series.
+
+00:00:07.869 --> 00:00:11.349
+Neste vídeo,
+vamos ver operações aritméticas
+
+00:00:11.382 --> 00:00:14.622
+entre o Pandas Series
+e números simples.
+
+00:00:14.655 --> 00:00:16.183
+Vamos criar um novo Series
+
+00:00:16.216 --> 00:00:19.248
+que contenha
+uma lista de mercado de frutas.
+
+00:00:19.281 --> 00:00:22.169
+O primeiro argumento
+que vamos passar são os dados,
+
+00:00:22.202 --> 00:00:24.938
+e o segundo argumento são
+os rótulos de índice.
+
+00:00:24.971 --> 00:00:27.107
+Podemos modicar os dados
+em frutas
+
+00:00:27.140 --> 00:00:30.133
+fazendo operações
+aritméticas básicas.
+
+00:00:30.166 --> 00:00:32.685
+Podemos adicionar 2
+a cada elemento em frutas,
+
+00:00:32.718 --> 00:00:37.567
+subtrair 2, multiplicar por 2
+e dividir por 2.
+
+00:00:37.600 --> 00:00:41.345
+Podemos também aplicar
+funções matemáticas de NumPy,
+
+00:00:41.378 --> 00:00:42.770
+como a raiz quadrada
+
+00:00:42.803 --> 00:00:45.355
+de todos os elementos
+de um Series.
+
+00:00:45.388 --> 00:00:47.019
+Vamos importar NumPy
+
+00:00:47.052 --> 00:00:49.269
+e dar uma olhada
+no Series frutas novamente.
+
+00:00:49.302 --> 00:00:50.934
+Usando NumPy,
+podemos conseguir
+
+00:00:50.967 --> 00:00:53.655
+a raiz quadrada
+de cada elemento assim.
+
+00:00:53.688 --> 00:00:55.767
+E o exponencial
+de cada elemento,
+
+00:00:55.800 --> 00:00:58.833
+e cada elemento
+elevado à potência de 2.
+
+00:00:58.866 --> 00:01:02.843
+Pandas também nos permite
+realizar operações aritméticas
+
+00:01:02.876 --> 00:01:05.515
+em itens específicos
+de um Series.
+
+00:01:05.548 --> 00:01:07.677
+Aqui temos o Series frutas
+novamente.
+
+00:01:07.710 --> 00:01:11.687
+E podemos adicionar 2
+apenas ao item bananas assim.
+
+00:01:11.720 --> 00:01:16.048
+E vamos subtrair 2 de maçãs
+usando seu índice numérico.
+
+00:01:16.081 --> 00:01:19.226
+Podemos duplicar as maçãs
+e as laranjas assim,
+
+00:01:19.259 --> 00:01:22.803
+e dividir as maçãs
+e as laranjas por 2 assim.
+
+00:01:22.836 --> 00:01:25.796
+Podemos também aplicar
+operações aritméticas
+
+00:01:25.829 --> 00:01:28.502
+em um Pandas Series
+de tipos de dados mistos,
+
+00:01:28.535 --> 00:01:31.151
+contanto que
+a operação aritmética
+
+00:01:31.184 --> 00:01:34.400
+seja definida por todos
+os tipos de dados do Series.
+
+00:01:34.433 --> 00:01:35.656
+Para demonstrar isto,
+
+00:01:35.689 --> 00:01:37.586
+vamos voltar
+para a lista de mercado
+
+00:01:37.619 --> 00:01:39.073
+do vídeo anterior.
+
+00:01:39.106 --> 00:01:41.690
+E vamos multiplicar
+o Series por 2,
+
+00:01:41.723 --> 00:01:44.356
+já que a operação
+de multiplicação é definida
+
+00:01:44.389 --> 00:01:46.725
+por strings e números.
+
+00:01:46.758 --> 00:01:49.295
+Este código não retorna
+nenhum erro.
+
+00:01:49.328 --> 00:01:52.415
+Multiplicar um string por 2
+apenas o repete.
+
+00:01:52.448 --> 00:01:55.208
+Se tiver que aplicar
+uma operação válida
+
+00:01:55.241 --> 00:01:57.744
+para números e não strings,
+
+00:01:57.777 --> 00:02:01.378
+por exemplo, divisão,
+você terá um erro.
+
+00:02:01.411 --> 00:02:03.210
+Quando tiver tipos
+de dados mistos
+
+00:02:03.243 --> 00:02:04.763
+em seu Pandas Series,
+
+00:02:04.796 --> 00:02:07.988
+Garanta que as operações
+aritméticas utilizadas
+
+00:02:08.021 --> 00:02:11.329
+sejam definidas por todos
+os tipos de dados em seu Series.
+

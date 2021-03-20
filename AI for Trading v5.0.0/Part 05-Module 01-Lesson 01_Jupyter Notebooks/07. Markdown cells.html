@@ -1,0 +1,456 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Markdown cells
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Jupyter Notebooks
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructor.html">
+       01. Instructor
+      </a>
+     </li>
+     <li class="">
+      <a href="02. What are Jupyter notebooks.html">
+       02. What are Jupyter notebooks?
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Installing Jupyter Notebook.html">
+       03. Installing Jupyter Notebook
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Launching the notebook server.html">
+       04. Launching the notebook server
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Notebook interface.html">
+       05. Notebook interface
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Code cells.html">
+       06. Code cells
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Markdown cells.html">
+       07. Markdown cells
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Keyboard shortcuts.html">
+       08. Keyboard shortcuts
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Magic keywords.html">
+       09. Magic keywords
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Converting notebooks.html">
+       10. Converting notebooks
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Creating a slideshow.html">
+       11. Creating a slideshow
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Finishing up.html">
+       12. Finishing up
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          07. Markdown cells
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="markdown-cells">
+          Markdown cells
+         </h1>
+         <p>
+          As mentioned before, cells can also be used for text written in Markdown. Markdown is a formatting syntax that allows you to include links, style text as bold or italicized, and format code. As with code cells, you press
+          <strong>
+           Shift + Enter
+          </strong>
+          or
+          <strong>
+           Control + Enter
+          </strong>
+          to run the Markdown cell, where it will render the Markdown to formatted text. Including text allows you to write a narrative alongside your code, as well as documenting your code and the thoughts that went into it.
+         </p>
+         <p>
+          You can find the
+          <a href="https://daringfireball.net/projects/markdown/basics" rel="noopener noreferrer" target="_blank">
+           documentation here
+          </a>
+          , but I'll provide a short primer.
+         </p>
+         <h2 id="headers">
+          Headers
+         </h2>
+         <p>
+          You can write headers using the pound/hash/
+          <a href="http://www.worldwidewords.org/weirdwords/ww-oct1.htm" rel="noopener noreferrer" target="_blank">
+           octothorpe
+          </a>
+          symbol
+          <code>
+           #
+          </code>
+          placed before the text. One
+          <code>
+           #
+          </code>
+          renders as an
+          <code>
+           h1
+          </code>
+          header, two
+          <code>
+           #
+          </code>
+          s is an h2, and so on. Looks like this:
+         </p>
+         <pre><code class="[Markdown] language-[Markdown]"># Header 1
+## Header 2
+### Header 3</code></pre>
+         <p>
+          renders as
+         </p>
+         <h1 id="header-1">
+          Header 1
+         </h1>
+         <h2 id="header-2">
+          Header 2
+         </h2>
+         <h3 id="header-3">
+          Header 3
+         </h3>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="links">
+          Links
+         </h2>
+         <p>
+          Linking in Markdown is done by enclosing text in square brackets and the URL in parentheses, like this
+          <code>
+           [Udacity's home page](https://www.udacity.com)
+          </code>
+          for a link to
+          <a href="https://www.udacity.com" rel="noopener noreferrer" target="_blank">
+           Udacity's home page
+          </a>
+          .
+         </p>
+         <h2 id="emphasis">
+          Emphasis
+         </h2>
+         <p>
+          You can add emphasis through bold or italics with asterisks or underscores (
+          <code>
+           *
+          </code>
+          or
+          <code>
+           _
+          </code>
+          ). For italics, wrap the text in one asterisk or underscore,
+          <code>
+           _gelato_
+          </code>
+          or
+          <code>
+           *gelato*
+          </code>
+          renders as
+          <em>
+           gelato
+          </em>
+          .
+         </p>
+         <p>
+          Bold text uses two symbols,
+          <code>
+           **aardvark**
+          </code>
+          or
+          <code>
+           __aardvark__
+          </code>
+          looks like
+          <strong>
+           aardvark
+          </strong>
+          .
+         </p>
+         <p>
+          Either asterisks or underscores are fine as long as you use the same symbol on both sides of the text.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="code">
+          Code
+         </h2>
+         <p>
+          There are two different ways to display code, inline with text and as a code block separated from the text. To format inline code, wrap the text in backticks. For example,
+          <code>
+           `string.punctuation`
+          </code>
+          renders as
+          <code>
+           string.punctuation
+          </code>
+          .
+         </p>
+         <p>
+          To create a code block, start a new line and wrap the text in three backticks
+         </p>
+         <pre><code>```
+import requests
+response = requests.get('https://www.udacity.com')
+```</code></pre>
+         <p>
+          or indent each line of the code block with four spaces.
+         </p>
+         <pre><code class="python language-python">    import requests
+    response = requests.get('https://www.udacity.com')</code></pre>
+         <p>
+          Note: You won't see the spaces here in the page for the above! Udacity's classroom is rendering the spaces directly as a code block.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="math-expressions">
+          Math expressions
+         </h2>
+         <p>
+          You can create math expressions in Markdown cells using
+          <a href="https://www.latex-project.org/" rel="noopener noreferrer" target="_blank">
+           LaTeX
+          </a>
+          symbols. Notebooks use MathJax to render the LaTeX symbols as math symbols. To start math mode, wrap the LaTeX in dollar signs
+          <code>
+           $y = mx + b$
+          </code>
+          for inline math. For a math block, use double dollar signs,
+         </p>
+         <pre><code>$$
+y = \frac{a}{b+c}
+$$</code></pre>
+         <p>
+          This is a really useful feature, so if you don't have experience with LaTeX,
+          <a href="https://www.latex-tutorial.com/" rel="noopener noreferrer" target="_blank">
+           here is a tutorial
+          </a>
+          on using it to create math expressions.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <video autoplay="" loop="" style="width:100%">
+          <source src="media/unnamed-200065-0.mp4" type="video/mp4"/>
+         </video>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="wrapping-up">
+          Wrapping up
+         </h2>
+         <p>
+          Here's
+          <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" rel="noopener noreferrer" target="_blank">
+           a cheatsheet
+          </a>
+          you can use as a reference for writing Markdown. My advice is to make use of the Markdown cells. Your notebooks will be much more readable compared to a bunch of code blocks.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="08. Keyboard shortcuts.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. Markdown cells')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

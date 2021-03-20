@@ -1,0 +1,223 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.559
+We can access elements in a DataFrame in different ways.
+
+00:00:04.559 --> 00:00:08.375
+In general, we can access rows, columns,
+
+00:00:08.375 --> 00:00:12.925
+or individual elements by using the row and column labels.
+
+00:00:12.925 --> 00:00:14.839
+Let's see some examples.
+
+00:00:14.839 --> 00:00:18.164
+Here's a DataFrame we created in the last video.
+
+00:00:18.164 --> 00:00:21.609
+We can access the bikes column using the column label,
+
+00:00:21.609 --> 00:00:27.269
+like this, and use a list of the column labels to access multiple columns.
+
+00:00:27.269 --> 00:00:31.195
+We can access a row using the row index label,
+
+00:00:31.195 --> 00:00:35.034
+and the value at a specific row and column like this.
+
+00:00:35.034 --> 00:00:39.729
+It's important to know that when accessing individual elements in a DataFrame,
+
+00:00:39.729 --> 00:00:41.604
+like in this last example,
+
+00:00:41.604 --> 00:00:44.224
+the column label always comes first,
+
+00:00:44.225 --> 00:00:45.785
+and then the row label.
+
+00:00:45.784 --> 00:00:49.769
+If you provide the row label first, you'll get an error.
+
+00:00:49.770 --> 00:00:54.575
+We can also modify our DataFrames by adding rows or columns.
+
+00:00:54.575 --> 00:00:59.275
+Suppose we decided to add a shirts column to our DataFrame, to do this,
+
+00:00:59.274 --> 00:01:01.500
+we can define our shirts column containing
+
+00:01:01.500 --> 00:01:05.344
+the quantity for each of the two store rows like this.
+
+00:01:05.344 --> 00:01:08.929
+This added a new column to the end of our DataFrame.
+
+00:01:08.930 --> 00:01:11.155
+We can also add new columns using
+
+00:01:11.155 --> 00:01:15.159
+arithmetic operations on other columns of our DataFrame.
+
+00:01:15.159 --> 00:01:18.329
+For example, we can create a new column called
+
+00:01:18.329 --> 00:01:22.614
+suits by computing the sum of the shirts and pants column.
+
+00:01:22.614 --> 00:01:24.569
+Suppose now, that you opened
+
+00:01:24.569 --> 00:01:28.934
+a new store and you want to add that as a row on your DataFrame.
+
+00:01:28.935 --> 00:01:31.240
+To add rows to our DataFrame,
+
+00:01:31.239 --> 00:01:35.074
+we first have to create a new DataFrame with those rows,
+
+00:01:35.075 --> 00:01:38.000
+and then append it to the original DataFrame.
+
+00:01:38.000 --> 00:01:39.754
+Let's see how this works.
+
+00:01:39.754 --> 00:01:41.929
+Here is a dictionary of the items in
+
+00:01:41.930 --> 00:01:45.145
+our new store that we will use to create a DataFrame.
+
+00:01:45.144 --> 00:01:50.759
+We can now add this row to our store items DataFrame using the append method.
+
+00:01:50.760 --> 00:01:52.945
+After appending to the DataFrame,
+
+00:01:52.944 --> 00:01:55.939
+the columns have been placed in alphabetical order.
+
+00:01:55.939 --> 00:01:59.289
+We can also add new columns to our DataFrame by
+
+00:01:59.290 --> 00:02:02.800
+selecting data that already exists in our DataFrame.
+
+00:02:02.799 --> 00:02:08.659
+For example, let's say you want to stock stores two and three with new watches.
+
+00:02:08.659 --> 00:02:12.995
+So you decide to add a new column called new watches to your DataFrame,
+
+00:02:12.995 --> 00:02:15.039
+and say you want the quantity of
+
+00:02:15.039 --> 00:02:19.479
+these new watches to be the same as the watches already in stock.
+
+00:02:19.479 --> 00:02:22.949
+Since we only want the stock stores two and three,
+
+00:02:22.949 --> 00:02:24.984
+we can index them like this.
+
+00:02:24.985 --> 00:02:30.185
+It is also possible to insert new columns into the DataFrame anywhere we want.
+
+00:02:30.185 --> 00:02:33.890
+The insert method allows us to specify the location,
+
+00:02:33.889 --> 00:02:37.054
+label, and data of the column we want to add.
+
+00:02:37.055 --> 00:02:42.290
+Let's use this to add a new column called shoes right before the suits column.
+
+00:02:42.289 --> 00:02:47.344
+The first argument is loc or location, we put five.
+
+00:02:47.344 --> 00:02:50.715
+So, 0, 1, 2, 3, 4, 5.
+
+00:02:50.715 --> 00:02:54.780
+So, we actually inserted the shoes column before the watches column.
+
+00:02:54.780 --> 00:02:57.259
+The second argument is the label,
+
+00:02:57.259 --> 00:02:59.120
+and the last is the data.
+
+00:02:59.120 --> 00:03:01.909
+In addition to adding rows and columns,
+
+00:03:01.909 --> 00:03:03.349
+we can also delete them.
+
+00:03:03.349 --> 00:03:06.620
+We can use the pop and drop methods to do this.
+
+00:03:06.620 --> 00:03:10.560
+The pop method allows us to delete columns while
+
+00:03:10.560 --> 00:03:16.395
+the drop method can be used to delete both rows and columns by using the axis keyword.
+
+00:03:16.395 --> 00:03:18.159
+Let's see some examples.
+
+00:03:18.159 --> 00:03:24.060
+We can delete the new watches column using pop which is used to remove columns.
+
+00:03:24.060 --> 00:03:28.509
+Now, we will move the watches and shoes columns with drop,
+
+00:03:28.509 --> 00:03:32.939
+which can be used to remove columns if we set axis to one.
+
+00:03:32.939 --> 00:03:35.859
+We'll use that same method to remove
+
+00:03:35.860 --> 00:03:40.420
+the rows store two and store one by setting axis to zero.
+
+00:03:40.419 --> 00:03:44.694
+Sometimes, we might need to change the row and column labels.
+
+00:03:44.694 --> 00:03:49.949
+Let's change the bikes column label to hats using the rename method.
+
+00:03:49.949 --> 00:03:56.750
+This takes in a dictionary with original label as keys and the new labels as values.
+
+00:03:56.750 --> 00:04:00.610
+We can see the bikes has been renamed to hats.
+
+00:04:00.610 --> 00:04:05.060
+Now, let's change the row label using the rename method.
+
+00:04:05.060 --> 00:04:10.344
+We can change the index label of store three to last store like this.
+
+00:04:10.344 --> 00:04:14.594
+Notice here, we set the index parameter to the dictionary.
+
+00:04:14.594 --> 00:04:16.394
+Whereas in the previous cell,
+
+00:04:16.394 --> 00:04:19.064
+we set columns to the dictionary.
+
+00:04:19.064 --> 00:04:24.404
+We can also set the index to be one of the existing columns in the DataFrame, like this.
+
+00:04:24.404 --> 00:04:29.599
+Now, we're using the values in the pants column as our row index labels.
+

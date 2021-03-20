@@ -1,0 +1,411 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.877
+Antes de começar
+a analisar dados
+
+00:00:02.910 --> 00:00:05.551
+ou usá-los para treinar
+algoritmos em aprendizado,
+
+00:00:05.584 --> 00:00:07.046
+precisamos limpá-los.
+
+00:00:07.079 --> 00:00:08.079
+Ou seja,
+
+00:00:08.112 --> 00:00:11.486
+precisamos detectar e corrigir
+erros dos nossos dados.
+
+00:00:11.519 --> 00:00:12.920
+Enquanto qualquer
+conjunto de dados
+
+00:00:12.953 --> 00:00:15.193
+pode ter muitos tipos
+de dados ruins,
+
+00:00:15.226 --> 00:00:18.066
+como valores atípicos
+ou incorretos,
+
+00:00:18.099 --> 00:00:21.523
+o tipo de dados
+que quase sempre encontramos
+
+00:00:21.556 --> 00:00:23.123
+são valores ausentes.
+
+00:00:23.156 --> 00:00:24.620
+Como vimos mais cedo,
+
+00:00:24.653 --> 00:00:26.893
+o Pandas atribui
+o valor NaN,
+
+00:00:26.926 --> 00:00:29.390
+que significa que não é um número,
+aos dados ausentes.
+
+00:00:29.423 --> 00:00:30.430
+Nesta seção,
+
+00:00:30.463 --> 00:00:34.385
+vamos aprender a detectar
+e lidar com valores NaN.
+
+00:00:34.418 --> 00:00:37.452
+Neste DataFrame,
+temos três valores NaN.
+
+00:00:37.485 --> 00:00:39.494
+Um na loja 1
+
+00:00:39.527 --> 00:00:42.045
+e 2 na loja 3.
+
+00:00:42.078 --> 00:00:43.078
+No entanto,
+
+00:00:43.111 --> 00:00:45.537
+em casos em que carregamos
+conjuntos de dados muito grandes
+
+00:00:45.570 --> 00:00:46.873
+em um DataFrame,
+
+00:00:46.906 --> 00:00:49.603
+possivelmente
+com milhões de itens,
+
+00:00:49.636 --> 00:00:54.141
+a quantidade de valores NaN
+não é tão fácil de enxergar.
+
+00:00:54.174 --> 00:00:55.541
+Nestes casos,
+
+00:00:55.574 --> 00:00:57.525
+podemos usar
+uma combinação de métodos
+
+00:00:57.558 --> 00:01:00.346
+para contar a quantidade
+de valores NaN dos dados.
+
+00:01:00.379 --> 00:01:03.435
+Isto combina
+os métodos is null e sum
+
+00:01:03.468 --> 00:01:06.637
+para contar a quantidade
+de valores NaN do DataFrame.
+
+00:01:06.670 --> 00:01:08.245
+Vamos analisar.
+
+00:01:08.278 --> 00:01:10.670
+O método is null
+retorna um DataFrame
+
+00:01:10.703 --> 00:01:14.616
+com um Booleano para cada valor
+no DataFrame de itens da loja.
+
+00:01:14.649 --> 00:01:16.745
+True quando o valor é NaN.
+
+00:01:16.778 --> 00:01:17.858
+No Pandas,
+
+00:01:17.891 --> 00:01:21.619
+valores de verdade lógicos
+têm o valor numérico 1,
+
+00:01:21.652 --> 00:01:25.894
+e valores de falsidade lógicos
+têm o valor numérico 0.
+
+00:01:25.927 --> 00:01:28.839
+Portanto, podemos contar
+a quantidade de valores NaN
+
+00:01:28.872 --> 00:01:31.529
+contando a quantidade
+de valores de verdade lógicos
+
+00:01:31.562 --> 00:01:32.858
+deste DataFrame.
+
+00:01:32.891 --> 00:01:34.273
+Usando sum uma vez,
+
+00:01:34.306 --> 00:01:37.187
+temos a quantidade de NaN
+em cada coluna.
+
+00:01:37.220 --> 00:01:40.236
+Usamos sum novamente
+para ter o total de NaN
+
+00:01:40.269 --> 00:01:42.390
+do DataFrame inteiro.
+
+00:01:42.423 --> 00:01:45.007
+Invés de contar
+a quantidade de valores NaN,
+
+00:01:45.040 --> 00:01:46.906
+podemos também
+fazer o oposto
+
+00:01:46.939 --> 00:01:49.884
+e contar a quantidade
+de valores não NaN
+
+00:01:49.917 --> 00:01:51.454
+com o método count.
+
+00:01:51.487 --> 00:01:53.246
+Agora que sabemos
+como descobrir
+
+00:01:53.279 --> 00:01:55.647
+se o conjunto de dados
+tem algum valor NaN,
+
+00:01:55.680 --> 00:01:58.671
+o próximo passo é decidir
+o que fazer com eles.
+
+00:01:58.704 --> 00:02:00.881
+Em geral, temos duas opções.
+
+00:02:00.914 --> 00:02:04.378
+Podemos remover
+ou substituir valores ausentes.
+
+00:02:04.411 --> 00:02:07.676
+Para removê-los,
+podemos usar o método drop na.
+
+00:02:07.709 --> 00:02:10.901
+Podemos definir
+o parâmetro de eixo como 0
+
+00:02:10.934 --> 00:02:14.487
+para eliminar linhas
+com valores NaN.
+
+00:02:14.520 --> 00:02:16.632
+Podemos também definir
+o eixo como 1
+
+00:02:16.665 --> 00:02:19.761
+para eliminar colunas
+com valores NaN.
+
+00:02:19.794 --> 00:02:24.196
+O método drop na deixa
+as linhas e colunas deslocadas.
+
+00:02:24.229 --> 00:02:27.268
+Ou seja, o DataFrame original
+não é modificado.
+
+00:02:27.301 --> 00:02:29.036
+Podemos removê-los
+de forma ordenada
+
+00:02:29.069 --> 00:02:32.719
+definindo a palavra-chave
+"in-place" como verdadeira assim.
+
+00:02:32.752 --> 00:02:35.400
+Agora, em vez de eliminar
+os valores NaN,
+
+00:02:35.433 --> 00:02:38.289
+vamos substituí-los
+por valores concretos.
+
+00:02:38.322 --> 00:02:39.546
+Como exemplo,
+
+00:02:39.579 --> 00:02:43.664
+podemos substituir
+todos os NaN por valores 0.
+
+00:02:43.697 --> 00:02:46.428
+O método fill na
+pode ser usado para tal.
+
+00:02:46.461 --> 00:02:48.461
+Podemos também
+substituir NaN
+
+00:02:48.494 --> 00:02:51.687
+por valores da linha
+ou coluna anteriores
+
+00:02:51.720 --> 00:02:54.121
+com algo chamado
+"preenchimento antecipado".
+
+00:02:54.154 --> 00:02:58.750
+Isto substitui cada NaN
+pelo valor anterior
+
+00:02:58.783 --> 00:03:00.630
+através do eixo dado.
+
+00:03:00.663 --> 00:03:02.655
+Aqui está o DataFrame original
+novamente.
+
+00:03:02.688 --> 00:03:06.937
+Veja que os dois valores NaN
+da loja 3 foram substituídos
+
+00:03:06.970 --> 00:03:09.714
+pelos valores anteriores
+de sua coluna.
+
+00:03:09.747 --> 00:03:14.692
+No entanto, veja que o valor NaN
+da loja 1 não foi substituído.
+
+00:03:14.725 --> 00:03:18.149
+Isto é porque não havia
+valores anteriores nesta coluna,
+
+00:03:18.182 --> 00:03:21.022
+já que NaN é o primeiro valor
+nesta coluna.
+
+00:03:21.055 --> 00:03:23.200
+No entanto,
+se preenchemos antecipadamente
+
+00:03:23.233 --> 00:03:25.474
+usando os valores
+anteriores da linha,
+
+00:03:25.507 --> 00:03:26.960
+isso não acontece.
+
+00:03:26.993 --> 00:03:28.290
+Vemos isso neste caso,
+
+00:03:28.323 --> 00:03:30.323
+todos os valores NaN
+foram substituídos
+
+00:03:30.356 --> 00:03:33.262
+pelos valores
+anteriores da linha.
+
+00:03:33.295 --> 00:03:36.111
+De forma parecida,
+podemos substituir NaN
+
+00:03:36.144 --> 00:03:39.543
+pelos valores que vêm
+depois deles no DataFrame.
+
+00:03:39.576 --> 00:03:42.290
+Isto é conhecido
+como "preenchimento retroativo".
+
+00:03:42.323 --> 00:03:46.179
+Ele substitui cada NaN
+pelo próximo valor da coluna.
+
+00:03:46.212 --> 00:03:48.036
+O valor NaN na loja 1
+
+00:03:48.069 --> 00:03:51.701
+foi substituído
+pelo próximo valor da coluna.
+
+00:03:51.734 --> 00:03:54.570
+Mas os dois valores NaN
+da loja 3 não,
+
+00:03:54.603 --> 00:03:57.960
+já que eles são
+os últimos valores das colunas.
+
+00:03:57.993 --> 00:04:01.395
+O método fill na preenche
+os valores NaN deslocadamente.
+
+00:04:01.428 --> 00:04:03.970
+Vamos definir o parâmetro
+in-place como verdadeiro
+
+00:04:04.003 --> 00:04:06.829
+para modificar
+o DataFrame original.
+
+00:04:06.862 --> 00:04:09.253
+Podemos também
+substituir NaN
+
+00:04:09.286 --> 00:04:11.876
+usando métodos
+de interpolação diferentes.
+
+00:04:11.909 --> 00:04:12.924
+Por exemplo,
+
+00:04:12.957 --> 00:04:16.527
+este usa interpolação linear
+para substituir valores NaN
+
+00:04:16.560 --> 00:04:19.543
+usando valores
+através do eixo da coluna.
+
+00:04:19.576 --> 00:04:21.804
+Os dois valores NaN
+da loja 3
+
+00:04:21.837 --> 00:04:25.403
+foram substituídos por valores
+de interpolação lineares.
+
+00:04:25.436 --> 00:04:29.613
+No entanto, o valor NaN
+da loja 1 não foi substituído,
+
+00:04:29.646 --> 00:04:31.261
+já que não havia
+nenhum dado anterior
+
+00:04:31.294 --> 00:04:34.950
+para a função de interpolação
+calcular um valor.
+
+00:04:34.983 --> 00:04:37.918
+Podemos substituir valores NaN
+com interpolação linear
+
+00:04:37.951 --> 00:04:40.238
+usando valores de linha,
+assim.
+
+00:04:40.271 --> 00:04:41.853
+Como outros métodos
+que vimos,
+
+00:04:41.886 --> 00:04:43.180
+o método de interpolação
+
+00:04:43.213 --> 00:04:45.428
+substitui valores NaN
+deslocadamente.
+

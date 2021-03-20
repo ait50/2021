@@ -1,0 +1,247 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.530
+The second main data structure in Pandas is a DataFrame,
+
+00:00:04.530 --> 00:00:08.089
+which is a two-dimensional object with labeled rows and
+
+00:00:08.089 --> 00:00:11.974
+columns and can also hold multiple data types.
+
+00:00:11.974 --> 00:00:14.109
+If you're familiar with Excel,
+
+00:00:14.109 --> 00:00:17.710
+you can think of a DataFrame as a really powerful spreadsheet.
+
+00:00:17.710 --> 00:00:23.214
+We can create Pandas DataFrames manually or by loading data from a file.
+
+00:00:23.214 --> 00:00:27.399
+We will start by creating a DataFrame manually from a dictionary,
+
+00:00:27.399 --> 00:00:29.679
+containing several pandas series.
+
+00:00:29.679 --> 00:00:34.340
+Let's create that dictionary and then pass it into Pandas DataFrame function.
+
+00:00:34.340 --> 00:00:37.970
+Here's one that contains the shopping carts of two people,
+
+00:00:37.969 --> 00:00:41.039
+Alice and Bob on an online store.
+
+00:00:41.039 --> 00:00:46.399
+Each series contains the price of the items and is labeled with the item names.
+
+00:00:46.399 --> 00:00:50.239
+And let's confirm the items is of the datatype dictionary.
+
+00:00:50.240 --> 00:00:52.085
+Now that we have a dictionary,
+
+00:00:52.085 --> 00:00:56.609
+we are ready to create a DataFrame by passing it to the DataFrame function.
+
+00:00:56.609 --> 00:00:59.405
+Remember, when using the DataFrame function,
+
+00:00:59.405 --> 00:01:02.524
+capitalize the D and F in DataFrame.
+
+00:01:02.524 --> 00:01:04.614
+There are several things to notice here.
+
+00:01:04.614 --> 00:01:09.015
+First, we see that DataFrames are displayed in a tabular form,
+
+00:01:09.015 --> 00:01:14.515
+much like a spreadsheet with the labels of the rows and columns in bold.
+
+00:01:14.515 --> 00:01:18.379
+Also notice that the row labels of the DataFrame are built from
+
+00:01:18.379 --> 00:01:22.780
+the union of the index labels we provided in the series,
+
+00:01:22.780 --> 00:01:28.379
+and the column labels of the DataFrame are taken from the keys of the dictionary.
+
+00:01:28.379 --> 00:01:33.424
+The columns are arranged alphabetically and not in the order given by the dictionary.
+
+00:01:33.424 --> 00:01:36.235
+Later, we will see that this is not the case
+
+00:01:36.234 --> 00:01:39.549
+when we load data into a DataFrame from a file.
+
+00:01:39.549 --> 00:01:44.524
+Lastly, notice the NaN values that appeared in a DataFrame.
+
+00:01:44.525 --> 00:01:46.990
+NaN stands for not a number,
+
+00:01:46.989 --> 00:01:49.929
+and is Pandas way of indicating that it doesn't have
+
+00:01:49.930 --> 00:01:53.210
+a value for this particular row and index.
+
+00:01:53.209 --> 00:01:56.664
+For example, if we look at the column Alice,
+
+00:01:56.665 --> 00:02:00.025
+we see that it has NaN in the watch index.
+
+00:02:00.025 --> 00:02:06.020
+This is because the dictionary over here didn't have an item for Alice called watch.
+
+00:02:06.019 --> 00:02:08.454
+Whenever a DataFrame is created,
+
+00:02:08.455 --> 00:02:12.645
+if a particular column doesn't have values for a particular index,
+
+00:02:12.645 --> 00:02:14.485
+Pandas will put a NaN there.
+
+00:02:14.485 --> 00:02:18.215
+If we were to feed this data into a machine-learning algorithm,
+
+00:02:18.215 --> 00:02:21.104
+we would have to remove these NaN values first.
+
+00:02:21.104 --> 00:02:22.619
+In a later video,
+
+00:02:22.620 --> 00:02:26.585
+we will learn how to deal with Nan values and clean our data.
+
+00:02:26.585 --> 00:02:30.110
+For now, we will leave these values in our dataframe.
+
+00:02:30.110 --> 00:02:33.280
+In this example, we created a Pandas DataFrame from
+
+00:02:33.280 --> 00:02:37.710
+a dictionary of pandas series that had clearly defined index labels.
+
+00:02:37.710 --> 00:02:40.610
+If we don't provide index labels however,
+
+00:02:40.610 --> 00:02:44.945
+Pandas will use numerical row indices when it creates the DataFrame.
+
+00:02:44.944 --> 00:02:48.659
+Let's create the same dictionary without the index labels.
+
+00:02:48.659 --> 00:02:54.069
+We can see that pandas indexes the rows of the DataFrame starting from zero,
+
+00:02:54.069 --> 00:02:56.924
+just like NumPy indexes its arrays.
+
+00:02:56.925 --> 00:02:59.330
+Like we did with the pandas series,
+
+00:02:59.330 --> 00:03:03.785
+we can also extract information from a DataFrame using attributes.
+
+00:03:03.784 --> 00:03:07.810
+Let's print some information on our shopping carts DataFrame from earlier.
+
+00:03:07.810 --> 00:03:09.640
+We can get the index labels,
+
+00:03:09.639 --> 00:03:14.214
+column labels and data from our dataframe with these attributes,
+
+00:03:14.215 --> 00:03:18.599
+and we can use the same attributes to get information about its shape.
+
+00:03:18.599 --> 00:03:23.500
+This dataframe has two dimensions with five rows and two columns,
+
+00:03:23.500 --> 00:03:25.939
+making a total size of 10.
+
+00:03:25.939 --> 00:03:28.550
+When creating the shopping carts DataFrame,
+
+00:03:28.550 --> 00:03:32.260
+we pass the whole items dictionary to the DataFrame function.
+
+00:03:32.259 --> 00:03:37.149
+However, there might be cases where you're only interested in a subset of the data.
+
+00:03:37.150 --> 00:03:40.250
+Pandas let's us select which data we want to put in
+
+00:03:40.250 --> 00:03:44.544
+our DataFrame with the keywords, column and index.
+
+00:03:44.544 --> 00:03:46.299
+Let's see some examples.
+
+00:03:46.300 --> 00:03:50.090
+Here's a DataFrame that only loads Bob's shopping cart,
+
+00:03:50.090 --> 00:03:55.164
+and here's one that only has selected items for both Alice and Bob.
+
+00:03:55.164 --> 00:04:00.304
+And this is one that only has selected items from Alice's shopping cart.
+
+00:04:00.305 --> 00:04:06.200
+You can also manually create DataFrames from a dictionary of lists or arrays.
+
+00:04:06.199 --> 00:04:08.669
+The procedure is the same as before,
+
+00:04:08.669 --> 00:04:13.934
+we start by creating the dictionary and then pass it into the DataFrame function.
+
+00:04:13.935 --> 00:04:15.580
+In this case however,
+
+00:04:15.580 --> 00:04:20.514
+all the lists or arrays in a dictionary must be of the same length.
+
+00:04:20.514 --> 00:04:23.550
+Here's a dictionary of integers and floats.
+
+00:04:23.550 --> 00:04:28.935
+Notice that since the data dictionary we created doesn't have index labels,
+
+00:04:28.935 --> 00:04:34.050
+Pandas automatically uses numerical row indices when it creates the DataFrame.
+
+00:04:34.050 --> 00:04:39.835
+We can however add these labels by using the index keyword in the DataFrame function.
+
+00:04:39.834 --> 00:04:43.079
+The last method we'll look at for manually creating
+
+00:04:43.079 --> 00:04:47.034
+Pandas DataFrames is using a list of Python dictionaries.
+
+00:04:47.035 --> 00:04:50.985
+Here's an example, again we don't have index labels.
+
+00:04:50.985 --> 00:04:53.710
+So Panda put numerical row indices here,
+
+00:04:53.709 --> 00:04:56.884
+and let's assume we're going to use this DataFrame.
+
+00:04:56.884 --> 00:05:00.545
+to hold the number of items a particular store has in stock.
+
+00:05:00.545 --> 00:05:04.870
+We'll rename the index labels to store 1 store 2.
+

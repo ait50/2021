@@ -1,0 +1,383 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.350 --> 00:00:03.093
+Podemos acessar
+os elementos de um DataFrame
+
+00:00:03.126 --> 00:00:04.871
+de diferentes maneiras.
+
+00:00:04.904 --> 00:00:08.336
+Em geral, podemos acessar
+linhas, colunas
+
+00:00:08.369 --> 00:00:10.211
+ou elementos individuais
+
+00:00:10.244 --> 00:00:13.122
+usando os rótulos
+de linha e coluna.
+
+00:00:13.155 --> 00:00:15.107
+Vamos ver alguns exemplos.
+
+00:00:15.140 --> 00:00:18.293
+Este é o DataFrame
+que criamos no último vídeo.
+
+00:00:18.326 --> 00:00:20.366
+Podemos acessar
+a coluna de bicicletas
+
+00:00:20.399 --> 00:00:22.726
+usando o rótulo de coluna
+assim
+
+00:00:22.759 --> 00:00:24.959
+e usando uma lista
+de rótulos de coluna
+
+00:00:24.992 --> 00:00:27.521
+para acessar
+múltiplas colunas.
+
+00:00:27.554 --> 00:00:29.217
+Podemos acessar uma linha
+
+00:00:29.250 --> 00:00:31.450
+usando o rótulo
+de índice de linha
+
+00:00:31.483 --> 00:00:35.427
+e o valor de uma linha
+ou coluna específicas assim.
+
+00:00:35.460 --> 00:00:36.619
+É importante saber que,
+
+00:00:36.652 --> 00:00:39.893
+ao acessar elementos individuais
+de um DataFrame,
+
+00:00:39.926 --> 00:00:41.878
+como no último exemplo,
+
+00:00:41.911 --> 00:00:44.328
+o rótulo de coluna
+sempre vem primeiro
+
+00:00:44.361 --> 00:00:46.071
+seguido do rótulo de linha.
+
+00:00:46.104 --> 00:00:48.081
+Usando o rótulo de linha
+primeiro,
+
+00:00:48.114 --> 00:00:50.233
+você terá um erro.
+
+00:00:50.266 --> 00:00:52.570
+Podemos também modificar
+os DataFrames
+
+00:00:52.603 --> 00:00:54.883
+adicionando
+linhas ou colunas.
+
+00:00:54.916 --> 00:00:56.316
+Supondo que decidimos
+adicionar
+
+00:00:56.349 --> 00:00:58.548
+uma coluna de camisas
+ao DataFrame.
+
+00:00:58.581 --> 00:01:00.997
+Para tal, podemos definir
+a coluna de camisas
+
+00:01:01.030 --> 00:01:02.438
+contendo a quantidade
+
+00:01:02.471 --> 00:01:05.799
+para cada uma
+das duas linhas de loja, assim.
+
+00:01:05.832 --> 00:01:09.138
+Isto adiciona uma nova coluna
+ao final do DataFrame.
+
+00:01:09.171 --> 00:01:10.732
+Podemos também adicionar
+novas colunas
+
+00:01:10.765 --> 00:01:15.469
+usando operações aritméticas
+em outras colunas do DataFrame.
+
+00:01:15.502 --> 00:01:19.285
+Por exemplo, podemos criar
+uma nova coluna chamada "ternos"
+
+00:01:19.318 --> 00:01:22.888
+calculando a soma da coluna
+das camisas e das calças.
+
+00:01:22.921 --> 00:01:25.785
+Supondo agora
+que você abriu uma nova loja
+
+00:01:25.818 --> 00:01:29.403
+e quer adicionar isso
+como uma linha ao seu DataFrame.
+
+00:01:29.436 --> 00:01:31.459
+Para adicionar linhas
+ao DataFrame,
+
+00:01:31.492 --> 00:01:33.844
+primeiro temos que criar
+um novo DataFrame
+
+00:01:33.877 --> 00:01:35.221
+com essas linhas
+
+00:01:35.254 --> 00:01:38.222
+e anexá-lo
+ao DataFrame original.
+
+00:01:38.255 --> 00:01:39.999
+Vamos ver
+como isso funciona.
+
+00:01:40.032 --> 00:01:42.880
+Este é um dicionário
+dos itens da nova loja
+
+00:01:42.913 --> 00:01:45.473
+que usaremos para criar
+um DataFrame.
+
+00:01:45.506 --> 00:01:47.178
+Podemos então
+adicionar esta linha
+
+00:01:47.211 --> 00:01:51.011
+ao DataFrame de itens da loja
+usando o método append.
+
+00:01:51.044 --> 00:01:53.091
+Depois de anexá-la
+ao DataFrame,
+
+00:01:53.124 --> 00:01:56.173
+as colunas são ordenadas
+em ordem alfabética.
+
+00:01:56.206 --> 00:01:59.134
+Podemos também adicionar
+novas colunas ao DataFrame
+
+00:01:59.167 --> 00:02:03.048
+selecionando os dados
+que já existem nele.
+
+00:02:03.081 --> 00:02:04.297
+Por exemplo,
+
+00:02:04.330 --> 00:02:07.282
+digamos que você queria estocar
+as lojas 2 e 3
+
+00:02:07.315 --> 00:02:08.995
+com novos relógios.
+
+00:02:09.028 --> 00:02:10.740
+Você então decide adicionar
+uma nova coluna
+
+00:02:10.773 --> 00:02:13.373
+chamada "novos relógios"
+ao DataFrame,
+
+00:02:13.406 --> 00:02:16.253
+e digamos que você queira
+que a quantidade deles
+
+00:02:16.286 --> 00:02:19.903
+seja a mesma dos relógios
+que já estão em estoque.
+
+00:02:19.936 --> 00:02:23.129
+Como queremos apenas
+as lojas 2 e 3,
+
+00:02:23.162 --> 00:02:25.298
+podemos indexá-las assim.
+
+00:02:25.331 --> 00:02:29.044
+Também é possível inserir
+novas colunas no DataFrame
+
+00:02:29.077 --> 00:02:30.509
+onde quisermos.
+
+00:02:30.542 --> 00:02:33.982
+O método insert nos permite
+especificar a localização,
+
+00:02:34.015 --> 00:02:37.377
+o rótulo e dados da coluna
+que queremos adicionar.
+
+00:02:37.410 --> 00:02:40.417
+Vamos usar isto para adicionar
+uma nova coluna chamada "sapatos"
+
+00:02:40.450 --> 00:02:42.713
+logo antes
+da coluna de ternos.
+
+00:02:42.746 --> 00:02:46.212
+O primeiro argumento é loc,
+ou localização,
+
+00:02:46.245 --> 00:02:47.547
+e colocamos 5.
+
+00:02:47.580 --> 00:02:50.957
+Portanto, 0, 1, 2, 3, 4, 5.
+
+00:02:50.990 --> 00:02:55.006
+Inserimos a coluna de sapatos
+antes da coluna de relógios.
+
+00:02:55.039 --> 00:02:57.488
+O segundo argumento é
+o rótulo,
+
+00:02:57.521 --> 00:02:59.417
+e o último são os dados.
+
+00:02:59.450 --> 00:03:02.003
+Além de adicionar
+linhas e colunas,
+
+00:03:02.036 --> 00:03:03.602
+podemos também apagá-las.
+
+00:03:03.635 --> 00:03:06.781
+Podemos usar os métodos
+pop e drop para fazer isso.
+
+00:03:06.814 --> 00:03:10.359
+O método pop nos permite
+apagar colunas
+
+00:03:10.392 --> 00:03:12.238
+enquanto o método drop
+pode ser usado
+
+00:03:12.271 --> 00:03:16.689
+para apagar linhas e colunas
+usando a palavra-chave "eixo".
+
+00:03:16.722 --> 00:03:18.554
+Vamos ver alguns exemplos.
+
+00:03:18.587 --> 00:03:20.603
+Podemos apagar
+a coluna de novos relógios
+
+00:03:20.636 --> 00:03:24.366
+usando pop,
+que serve para remover colunas.
+
+00:03:24.399 --> 00:03:28.791
+Removemos as colunas de relógios
+e de sapatos com drop,
+
+00:03:28.824 --> 00:03:33.393
+que serve para remover colunas,
+se o eixo for 1.
+
+00:03:33.426 --> 00:03:35.266
+Vamos usar o mesmo método
+
+00:03:35.299 --> 00:03:38.508
+para remover
+as linhas loja 2 e loja 1
+
+00:03:38.541 --> 00:03:40.820
+definindo o eixo como 0.
+
+00:03:40.853 --> 00:03:44.622
+Às vezes, podemos precisar mudar
+os rótulos de linha e coluna.
+
+00:03:44.853 --> 00:03:48.200
+Vamos mudar o rótulo da coluna
+de bicicletas para chapéus
+
+00:03:48.233 --> 00:03:50.312
+usando o método rename.
+
+00:03:50.345 --> 00:03:53.119
+Isto toma um dicionário
+com o rótulo original
+
+00:03:53.152 --> 00:03:54.236
+como chaves
+
+00:03:54.269 --> 00:03:57.180
+e os novos rótulos
+como valores.
+
+00:03:57.213 --> 00:04:01.221
+Podemos ver que as bicicletas
+foram renomeadas como chapéus.
+
+00:04:01.254 --> 00:04:05.432
+Vamos mudar o rótulo de linha
+usando o método rename.
+
+00:04:05.465 --> 00:04:08.232
+Podemos mudar
+o rótulo de índice da loja 3
+
+00:04:08.265 --> 00:04:10.817
+para última loja assim.
+
+00:04:10.850 --> 00:04:13.475
+Veja que aqui definimos
+o parâmetro de índice
+
+00:04:13.508 --> 00:04:14.940
+pelo dicionário.
+
+00:04:14.973 --> 00:04:16.547
+Enquanto
+que na célula anterior
+
+00:04:16.580 --> 00:04:19.470
+definimos as colunas
+pelo dicionário.
+
+00:04:19.503 --> 00:04:21.047
+Podemos também
+definir o índice
+
+00:04:21.080 --> 00:04:24.840
+como uma das colunas existentes
+no DataFrame assim.
+
+00:04:24.873 --> 00:04:27.897
+Agora estamos usando
+os valores da coluna de calças
+
+00:04:27.930 --> 00:04:29.462
+como os rótulos
+de índice de linha.
+

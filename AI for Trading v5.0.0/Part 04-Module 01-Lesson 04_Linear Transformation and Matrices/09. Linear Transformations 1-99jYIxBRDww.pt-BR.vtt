@@ -1,0 +1,304 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:03.474 --> 00:00:06.144
+"INFELIZMENTE, NINGUÉM PODE
+DESCREVER A MATRIZ.
+
+00:00:06.177 --> 00:00:09.503
+VOCÊ PRECISA VÊ-LA POR SI SÓ."
+MORPHEUS
+
+00:00:09.542 --> 00:00:12.567
+(UMA BOA DESCRIÇÃO DA IMPORTÂNCIA DE
+VISUALIZAR OPERAÇÕES COM MATRIZES)
+
+00:00:12.600 --> 00:00:15.165
+Olá, pessoal!
+Se eu fosse escolher um só tópico
+
+00:00:15.198 --> 00:00:17.882
+que torna todo o resto
+da álgebra linear compreensível
+
+00:00:17.915 --> 00:00:21.386
+e que geralmente o aluno
+de álgebra linear não aprende,
+
+00:00:21.419 --> 00:00:22.700
+seria este aqui.
+
+00:00:22.733 --> 00:00:26.564
+A ideia de uma transformação linear
+e sua relação com matrizes.
+
+00:00:27.120 --> 00:00:30.746
+Neste vídeo eu vou falar
+de que cara as transformações têm
+
+00:00:30.779 --> 00:00:32.412
+quando são em duas dimensões
+
+00:00:32.445 --> 00:00:35.728
+e como estão relacionadas
+à multiplicação de matriz e vetores.
+
+00:00:35.895 --> 00:00:40.113
+Em particular, quero mostrar
+um jeito de pensar nisso
+
+00:00:40.196 --> 00:00:42.572
+que não requer decoreba.
+
+00:00:43.203 --> 00:00:45.468
+Para começar,
+vamos decifrar esse termo:
+
+00:00:45.501 --> 00:00:47.075
+transformação linear.
+
+00:00:47.236 --> 00:00:50.296
+"Transformação" é uma palavra chique
+para "função".
+
+00:00:50.329 --> 00:00:52.053
+É algo que aceita input
+
+00:00:52.086 --> 00:00:54.149
+e cospe um output
+para cada entrada.
+
+00:00:54.447 --> 00:00:56.923
+Especificamente, no contexto
+da álgebra linear,
+
+00:00:56.956 --> 00:00:59.808
+gostamos de imaginar transformações
+que pegam um vetor
+
+00:00:59.832 --> 00:01:01.476
+e cospem outro vetor.
+
+00:01:02.485 --> 00:01:05.239
+Por que usar a palavra
+"transformação" em vez de "função",
+
+00:01:05.272 --> 00:01:07.035
+se querem dizer
+a mesma coisa?
+
+00:01:07.163 --> 00:01:09.898
+Bom, é para sugerir
+um certo modo de visualizar
+
+00:01:09.931 --> 00:01:11.955
+essa relação
+de input e output.
+
+00:01:11.988 --> 00:01:14.557
+Um bom jeito de entender
+funções de vetores
+
+00:01:14.675 --> 00:01:16.370
+é usando movimento.
+
+00:01:16.858 --> 00:01:19.264
+Se uma transformação
+pega um vetor de input
+
+00:01:19.297 --> 00:01:21.081
+e muda para
+um vetor de saída,
+
+00:01:21.114 --> 00:01:24.987
+imaginamos o vetor de input
+se movendo para o de saída.
+
+00:01:25.607 --> 00:01:28.305
+Aí, para entender a transformação
+como um todo,
+
+00:01:28.347 --> 00:01:31.417
+você pode imaginar todos
+os vetores de input possíveis
+
+00:01:31.450 --> 00:01:34.263
+se movendo até o vetor de output
+correspondente.
+
+00:01:35.061 --> 00:01:38.266
+Fica muito confuso imaginar
+todos os vetores de uma vez,
+
+00:01:38.299 --> 00:01:41.128
+cada um com sua flecha, então,
+como falei no último vídeo,
+
+00:01:41.161 --> 00:01:44.594
+é interessante ver cada vetor
+não como uma flecha,
+
+00:01:44.736 --> 00:01:46.121
+mas como um único ponto.
+
+00:01:46.154 --> 00:01:47.890
+O ponto
+onde a flecha termina.
+
+00:01:48.100 --> 00:01:50.004
+Assim,
+pensar em uma transformação
+
+00:01:50.037 --> 00:01:51.986
+que pegar todos
+os vetores possíveis
+
+00:01:52.019 --> 00:01:53.290
+e leva aos vetores de output,
+
+00:01:53.323 --> 00:01:56.735
+observamos cada ponto do espaço
+se movendo para outro ponto.
+
+00:01:57.357 --> 00:01:59.543
+No caso de transformações
+em duas dimensões,
+
+00:01:59.576 --> 00:02:02.746
+para ter uma ideia
+da forma geral da transformação,
+
+00:02:02.911 --> 00:02:05.942
+gosto de fazer isso com os pontos
+em uma rede infinita.
+
+00:02:06.571 --> 00:02:09.393
+Também gosto de manter
+uma cópia da rede ao fundo,
+
+00:02:09.426 --> 00:02:11.752
+para ver onde as coisas
+acabam parando
+
+00:02:11.785 --> 00:02:13.694
+em relação
+ao ponto de partida.
+
+00:02:14.985 --> 00:02:16.936
+O efeito
+de várias transformações
+
+00:02:16.969 --> 00:02:18.985
+se movendo em todos
+os pontos do espaço
+
+00:02:19.018 --> 00:02:21.477
+é lindo,
+você tem que admitir.
+
+00:02:21.838 --> 00:02:24.977
+Dá a sensação de apertar
+e transformar o próprio espaço.
+
+00:02:25.643 --> 00:02:26.926
+Como você pode imaginar,
+
+00:02:26.959 --> 00:02:30.311
+transformações arbitrárias
+podem parecer bem complicadas.
+
+00:02:30.535 --> 00:02:32.738
+Por sorte,
+a álgebra linear se limita
+
+00:02:32.771 --> 00:02:34.834
+a um tipo especial
+de transformação,
+
+00:02:34.867 --> 00:02:36.541
+mais fácil de entender,
+
+00:02:36.574 --> 00:02:38.669
+chamada de
+transformação linear.
+
+00:02:39.131 --> 00:02:40.338
+Visualmente falando,
+
+00:02:40.371 --> 00:02:43.318
+uma transformação é linear
+se tiver duas propriedades:
+
+00:02:43.722 --> 00:02:47.118
+todas as linhas devem permanecer
+retas, sem fazer curvas,
+
+00:02:47.478 --> 00:02:49.926
+e a origem deve permanecer
+fixa no lugar.
+
+00:02:50.698 --> 00:02:54.049
+Por exemplo, esta não seria
+uma transformação linear,
+
+00:02:54.082 --> 00:02:55.785
+pois as retas ficam curvas.
+
+00:02:56.190 --> 00:02:57.363
+Já esta aqui,
+
+00:02:57.396 --> 00:02:59.048
+embora mantenha
+as linhas retas,
+
+00:02:59.081 --> 00:03:00.702
+não é
+uma transformação linear,
+
+00:03:00.735 --> 00:03:02.177
+porque ela move a origem.
+
+00:03:02.661 --> 00:03:04.373
+Esta aqui fixa a origem
+
+00:03:04.406 --> 00:03:06.251
+e parece que mantém
+as linhas retas,
+
+00:03:06.284 --> 00:03:09.544
+mas isso é porque só mostrei
+as linhas verticais e horizontais.
+
+00:03:09.577 --> 00:03:11.753
+Quando vemos o que ela faz
+com uma diagonal,
+
+00:03:11.786 --> 00:03:13.636
+fica claro
+que ela não é linear,
+
+00:03:13.669 --> 00:03:15.640
+pois aquela linha reta
+fica curva.
+
+00:03:16.652 --> 00:03:19.386
+Em geral, pense que
+as transformações lineares
+
+00:03:19.419 --> 00:03:22.711
+mantêm as linhas de grade paralelas
+e igualmente espaçadas.
+
+00:03:23.536 --> 00:03:25.801
+Algumas transformações lineares
+são simples,
+
+00:03:25.834 --> 00:03:27.802
+como as rotações
+em torno da origem.
+
+00:03:28.117 --> 00:03:30.891
+Outras são mais difíceis
+de descrever com palavras.
+

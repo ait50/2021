@@ -1,0 +1,442 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.615
+In the last video,
+
+00:00:01.615 --> 00:00:04.969
+we learnt how to create NumPy arrays by converting
+
+00:00:04.969 --> 00:00:08.699
+existing array like objects such as Python lists,
+
+00:00:08.699 --> 00:00:11.019
+using NumPy's array function.
+
+00:00:11.019 --> 00:00:14.929
+But one great time saving feature of NumPy is
+
+00:00:14.929 --> 00:00:19.515
+its ability to generate specific kinds of NumPy arrays from nothing,
+
+00:00:19.515 --> 00:00:21.420
+using just one line of code.
+
+00:00:21.420 --> 00:00:27.865
+Here, we will see a few of the most useful builtin functions for generating Numpy arrays.
+
+00:00:27.864 --> 00:00:33.689
+Let's start by creating a NumPy array of zeroes with a shape that we specify.
+
+00:00:33.689 --> 00:00:37.479
+We can do this by using NumPy's zeros function.
+
+00:00:37.479 --> 00:00:42.929
+This function takes as an argument the shape of the array you want to create.
+
+00:00:42.929 --> 00:00:49.439
+Passing in the tuple (3,4) gives us a 3 by 4 array of zeros.
+
+00:00:49.439 --> 00:00:54.494
+By default, this creates an array with the data type float 64.
+
+00:00:54.494 --> 00:00:57.204
+If you want to use a different data type,
+
+00:00:57.204 --> 00:01:00.329
+you can change this with the keyword dtype.
+
+00:01:00.329 --> 00:01:05.844
+Similarly, we can create a NumPy array of ones using this function,
+
+00:01:05.844 --> 00:01:08.760
+which also takes shape as an argument.
+
+00:01:08.760 --> 00:01:11.585
+In addition to ones and zeros,
+
+00:01:11.584 --> 00:01:17.649
+you can create an array filled with any constant value using the full function.
+
+00:01:17.650 --> 00:01:19.850
+This takes two arguments,
+
+00:01:19.849 --> 00:01:23.859
+a shape for the array and the constant you want to fill it with.
+
+00:01:23.859 --> 00:01:27.629
+The full function by default creates an array
+
+00:01:27.629 --> 00:01:31.364
+with a data type of the value you inputted as a constant.
+
+00:01:31.364 --> 00:01:35.814
+Here, since we used the Integer 5 as our constant,
+
+00:01:35.814 --> 00:01:40.409
+this generated an array with the dtype int64.
+
+00:01:40.409 --> 00:01:44.144
+Use the key word dtype to specify otherwise.
+
+00:01:44.144 --> 00:01:49.209
+A fundamental array in Linear Algebra is the identity matrix.
+
+00:01:49.209 --> 00:01:52.994
+A matrix is just another term used to describe
+
+00:01:52.995 --> 00:01:56.665
+a two dimensional array with rows and columns.
+
+00:01:56.665 --> 00:01:58.760
+And, an identity matrix is
+
+00:01:58.760 --> 00:02:03.465
+just a square shaped matrix that has ones along its main diagonal,
+
+00:02:03.465 --> 00:02:05.730
+and zeros everywhere else.
+
+00:02:05.730 --> 00:02:09.550
+NumPy's eye function can be used to create this.
+
+00:02:09.550 --> 00:02:13.035
+Since all identity matrices are square,
+
+00:02:13.034 --> 00:02:16.490
+this only takes a single integer as an argument.
+
+00:02:16.490 --> 00:02:20.850
+Using 5 gives us a 5 x 5 identity matrix.
+
+00:02:20.849 --> 00:02:23.500
+And its main diagonal which goes from the top
+
+00:02:23.500 --> 00:02:27.145
+left to the bottom right, is filled with ones.
+
+00:02:27.145 --> 00:02:32.610
+We can also use Numpy's diag function to create a diagonal matrix.
+
+00:02:32.610 --> 00:02:36.530
+This function takes in as input a sequence of
+
+00:02:36.530 --> 00:02:40.534
+values to use as the main diagonal of a square matrix,
+
+00:02:40.534 --> 00:02:43.064
+and fills in the rest with zeros.
+
+00:02:43.064 --> 00:02:49.650
+NumPy also has useful functions to generate arrays with specific numerical ranges.
+
+00:02:49.650 --> 00:02:52.305
+One useful one is arange,
+
+00:02:52.305 --> 00:02:58.415
+which creates a one dimensional array of evenly spaced values within a given interval.
+
+00:02:58.414 --> 00:03:02.759
+This takes three arguments: start, stop, and step.
+
+00:03:02.759 --> 00:03:06.924
+But we can still use this whether we want to specify one,
+
+00:03:06.925 --> 00:03:09.150
+two or three arguments.
+
+00:03:09.150 --> 00:03:11.080
+Let's see each case.
+
+00:03:11.080 --> 00:03:13.895
+When only one integer is specified,
+
+00:03:13.895 --> 00:03:17.120
+arange uses this as a stop argument,
+
+00:03:17.120 --> 00:03:22.405
+and generates an array of integers from zero to that integer minus one.
+
+00:03:22.405 --> 00:03:25.155
+The stop argument is exclusive,
+
+00:03:25.155 --> 00:03:27.314
+which is why we need to subtract one.
+
+00:03:27.314 --> 00:03:34.280
+For example, arange 10 gives us an array from zero to 10 minus one which is nine.
+
+00:03:34.280 --> 00:03:36.814
+When used with two arguments,
+
+00:03:36.814 --> 00:03:40.175
+arange uses the first as a start argument,
+
+00:03:40.175 --> 00:03:43.025
+and the second as a stop argument.
+
+00:03:43.025 --> 00:03:45.150
+The start is inclusive,
+
+00:03:45.150 --> 00:03:47.585
+and the stop is exclusive.
+
+00:03:47.585 --> 00:03:53.110
+Arange (4,10) gives us an array from four to nine.
+
+00:03:53.110 --> 00:03:55.420
+When you use the three arguments,
+
+00:03:55.419 --> 00:04:00.929
+arange generates an array from the first integer to the second minus one,
+
+00:04:00.930 --> 00:04:03.260
+evenly spaced by the third.
+
+00:04:03.259 --> 00:04:05.959
+This third argument, the step,
+
+00:04:05.960 --> 00:04:09.875
+is the distance between any two values in this array.
+
+00:04:09.875 --> 00:04:14.949
+When we specified only one or two arguments in arange earlier,
+
+00:04:14.949 --> 00:04:17.444
+step defaulted to one.
+
+00:04:17.444 --> 00:04:22.969
+Even though NumPy's arange function allows for a non integer steps such as 0.3,
+
+00:04:22.970 --> 00:04:28.775
+the output is usually inconsistent due to finite floating point precision.
+
+00:04:28.774 --> 00:04:32.279
+For this reason, when we want non integer steps,
+
+00:04:32.279 --> 00:04:37.004
+it's usually better to use a different NumPy function, linspace.
+
+00:04:37.004 --> 00:04:41.189
+This takes three arguments, start, stop,
+
+00:04:41.189 --> 00:04:48.454
+and n. This returns n evenly spaced numbers from start to stop,
+
+00:04:48.454 --> 00:04:51.734
+both start and stop being inclusive.
+
+00:04:51.735 --> 00:04:57.720
+Unlike arange, Linspace requires at least two arguments for start and stop.
+
+00:04:57.720 --> 00:05:00.054
+If n is not specified,
+
+00:05:00.053 --> 00:05:01.854
+it defaults to 50.
+
+00:05:01.855 --> 00:05:03.650
+Let's see some examples.
+
+00:05:03.649 --> 00:05:09.789
+Here's a rank one array that has 10 numbers evenly spaced from zero to 25.
+
+00:05:09.790 --> 00:05:15.665
+Again, note that both the start and stop points are inclusive.
+
+00:05:15.665 --> 00:05:19.120
+However, you can let the stop endpoint of the interval be
+
+00:05:19.120 --> 00:05:22.704
+excluded just like it is in the arange function,
+
+00:05:22.704 --> 00:05:26.819
+if you set the keyword endpoint to false like this.
+
+00:05:26.819 --> 00:05:32.019
+As you can see, because we have excluded the endpoint 25,
+
+00:05:32.019 --> 00:05:35.165
+the spacing between the values had to change in
+
+00:05:35.165 --> 00:05:38.850
+order to fit 10 evenly spaced numbers in the given interval.
+
+00:05:38.850 --> 00:05:45.605
+So far, we've only used the functions arange and linspace to create rank 1 arrays.
+
+00:05:45.605 --> 00:05:50.145
+However, we can use these functions to create rank 2 arrays of
+
+00:05:50.144 --> 00:05:54.854
+any shape by combining them with NumPy's reshape function.
+
+00:05:54.855 --> 00:05:59.340
+This function converts any NumPy array into a specified shape.
+
+00:05:59.339 --> 00:06:03.219
+It's important to note that the new shape specified here,
+
+00:06:03.220 --> 00:06:07.195
+should be compatible with a number of elements in the array.
+
+00:06:07.194 --> 00:06:10.745
+For example, you can convert a rank one array
+
+00:06:10.745 --> 00:06:15.060
+with 20 elements into a 4 by 5 rank two array,
+
+00:06:15.060 --> 00:06:18.444
+or a 10 by 2 array,
+
+00:06:18.444 --> 00:06:23.014
+since both of these rank two arrays still have 20 elements.
+
+00:06:23.014 --> 00:06:28.294
+However, you can't reshape this to a 5 by 5 array,
+
+00:06:28.295 --> 00:06:32.270
+since this rank two array would have 25 elements,
+
+00:06:32.269 --> 00:06:36.384
+which is greater than the number of elements in the original NumPy array.
+
+00:06:36.384 --> 00:06:42.634
+One great feature about NumPy is that some functions can also be applied as methods.
+
+00:06:42.634 --> 00:06:46.259
+This allows us to apply different functions in sequence,
+
+00:06:46.259 --> 00:06:47.935
+in just one line of code.
+
+00:06:47.935 --> 00:06:50.810
+NumPy array methods are similar to
+
+00:06:50.810 --> 00:06:55.110
+its attributes in that they are both applied using dot notation.
+
+00:06:55.110 --> 00:07:01.455
+Let's see how we can accomplish the same result as this example using one line of code.
+
+00:07:01.454 --> 00:07:03.664
+This gives us the same result.
+
+00:07:03.665 --> 00:07:06.625
+Notice that when using reshape as a method,
+
+00:07:06.625 --> 00:07:10.204
+we don't need to pas in the array as an argument.
+
+00:07:10.204 --> 00:07:17.714
+Similarly, we can also use reshape to create rank two arrays with the linspace function.
+
+00:07:17.714 --> 00:07:23.589
+Lastly, we are going to create NumPy arrays that contain random numbers.
+
+00:07:23.589 --> 00:07:25.694
+Often in machine learning,
+
+00:07:25.694 --> 00:07:28.165
+you need to create random matrices.
+
+00:07:28.165 --> 00:07:31.980
+For example, when initializing the weights of a neural network,
+
+00:07:31.980 --> 00:07:34.030
+NumPy offers a variety of
+
+00:07:34.029 --> 00:07:38.564
+random functions to help us create random NumPy arrays of any shape.
+
+00:07:38.564 --> 00:07:44.079
+Let's start by using NumPy's random function to create an array of a given shape,
+
+00:07:44.079 --> 00:07:47.245
+with random floats between zero and one,
+
+00:07:47.245 --> 00:07:49.235
+where zero is inclusive,
+
+00:07:49.235 --> 00:07:51.314
+and one is exclusive.
+
+00:07:51.314 --> 00:07:55.064
+The following functions including this random function,
+
+00:07:55.064 --> 00:07:58.240
+are contained in NumPy's random module.
+
+00:07:58.240 --> 00:08:02.430
+So we type np.random to access this module,
+
+00:08:02.430 --> 00:08:06.655
+and then.random to access the function in the module.
+
+00:08:06.654 --> 00:08:09.884
+NumPy also let's us create NumPy arrays
+
+00:08:09.884 --> 00:08:13.764
+that contain random integers within a particular interval.
+
+00:08:13.764 --> 00:08:17.464
+We can use the function randint to do this.
+
+00:08:17.464 --> 00:08:20.924
+This takes three arguments, the lower bound,
+
+00:08:20.925 --> 00:08:23.400
+inclusive, and the upper bound,
+
+00:08:23.399 --> 00:08:25.794
+exclusive, and the shape.
+
+00:08:25.795 --> 00:08:29.605
+In some cases, you may need to create NumPy arrays
+
+00:08:29.605 --> 00:08:33.960
+with random numbers that satisfy certain statistical properties.
+
+00:08:33.960 --> 00:08:39.825
+For example, you may want the random numbers in the array to have an average of zero.
+
+00:08:39.825 --> 00:08:42.900
+NumPy allows you to create random arrays with
+
+00:08:42.899 --> 00:08:46.350
+numbers drawn from various probability distributions.
+
+00:08:46.350 --> 00:08:50.379
+The function np.random.normal for example,
+
+00:08:50.379 --> 00:08:53.279
+creates an array with the given shape that
+
+00:08:53.279 --> 00:08:56.814
+contains random numbers picked from a normal distribution,
+
+00:08:56.815 --> 00:08:59.750
+with a given mean and standard deviation.
+
+00:08:59.750 --> 00:09:03.690
+This creates a 1000 by 1000 array of
+
+00:09:03.690 --> 00:09:08.420
+random floats drawn from a normal distribution with the mean of zero,
+
+00:09:08.419 --> 00:09:11.659
+and a standard deviation of 0.1.
+
+00:09:11.659 --> 00:09:17.844
+As we can see, the average of the random numbers in the array is very close to zeo,
+
+00:09:17.845 --> 00:09:22.504
+and the standard deviation is also very close to 0.1.
+
+00:09:22.504 --> 00:09:28.509
+Both the maximum and minimum values next are symmetric about zero, the average.
+
+00:09:28.509 --> 00:09:32.730
+And we have about the same number of positive and negative integers.
+

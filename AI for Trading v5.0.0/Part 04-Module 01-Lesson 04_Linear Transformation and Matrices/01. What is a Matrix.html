@@ -1,0 +1,404 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   What is a Matrix?
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Linear Transformation and Matrices
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. What is a Matrix.html">
+       01. What is a Matrix?
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Matrix Addition.html">
+       02. Matrix Addition
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Matrix Addition Quiz.html">
+       03. Matrix Addition Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Scalar Multiplication of  Matrix and Quiz.html">
+       04. Scalar Multiplication of  Matrix and Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Multiplication of Square Matrices.html">
+       05. Multiplication of Square Matrices
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Square Matrix Multiplication Quiz.html">
+       06. Square Matrix Multiplication Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Matrix Multiplication - General.html">
+       07. Matrix Multiplication - General
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Matrix Multiplication Quiz.html">
+       08. Matrix Multiplication Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Linear Transformation and Matrices . Part 1.html">
+       09. Linear Transformation and Matrices . Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Linear Transformation and Matrices. Part 2.html">
+       10. Linear Transformation and Matrices. Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Linear Transformation and Matrices. Part 3.html">
+       11. Linear Transformation and Matrices. Part 3
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Linear Transformation Quiz Answers.html">
+       12. Linear Transformation Quiz Answers
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          01. What is a Matrix?
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="what-is-a-matrix">
+          What is a Matrix?
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Our next step is to understand what a
+          <strong>
+           Matrix
+          </strong>
+          is.
+         </p>
+         <p>
+          Before we dive into the video, let's cover a few necessary definitions and calculations!
+         </p>
+         <p>
+          So what is a
+          <a href="https://en.wikipedia.org/wiki/The_Matrix" rel="noopener noreferrer" target="_blank">
+           Matrix
+          </a>
+          ? No, not that Matrix. The Matrix we are referring to was designed and created well before 1999.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          A
+          <strong>
+           Matrix
+          </strong>
+          is a two dimensional array that contains the same elements as the vector.
+         </p>
+         <p>
+          A Matrix can have
+          <span class="mathquill ud-math">
+           m
+          </span>
+          rows and
+          <span class="mathquill ud-math">
+           n
+          </span>
+          columns.
+         </p>
+         <p>
+          If a Matrix has
+          <span class="mathquill ud-math">
+           m
+          </span>
+          rows and
+          <span class="mathquill ud-math">
+           n
+          </span>
+          columns is it called an
+          <span class="mathquill ud-math">
+           m
+          </span>
+          x
+          <span class="mathquill ud-math">
+           n
+          </span>
+          matrix.
+         </p>
+         <p>
+          Lets take a look at matrix
+          <span class="mathquill ud-math">
+           A
+          </span>
+          in the equation below:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <span class="mathquill ud-math">
+           A=\begin{bmatrix} a_{11} &amp;a_{12} &amp;a_{13}&amp;..&amp; a_{1n}\\ a_{21} &amp;a_{22} &amp;a_{23}&amp;..&amp; a_{2n}\\a_{31} &amp;a_{32} &amp;a_{33}&amp;..&amp; a_{3n}\\ :\\a_{m1} &amp;a_{m2} &amp;a_{m3}&amp;……&amp; a_{mn}\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          <em>
+           Equation 11
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Each element
+          <span class="mathquill ud-math">
+           a_{ij}
+          </span>
+          in the matrix displayed in
+          <em>
+           equation 11
+          </em>
+          is a numerical value displayed in row
+          <span class="mathquill ud-math">
+           i
+          </span>
+          and column
+          <span class="mathquill ud-math">
+           j
+          </span>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_Element ij matrix A_" class="img img-fluid" src="img/screen-shot-2018-02-14-at-10.47.52-am.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Element ij matrix A
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Our next step is to understand how to apply
+          <strong>
+           matrix arithmetic
+          </strong>
+          : to perform operations such as:
+         </p>
+         <ul>
+          <li>
+           Matrix Addition
+          </li>
+          <li>
+           Scalar multiplication of a matrix
+          </li>
+          <li>
+           Matrix multiplication
+          </li>
+         </ul>
+         <p>
+          When performing any mathematical calculations on matrices, we need to make sure we are working with the appropriate dimensions. We also need to be very careful with the indices.
+          <br/>
+          Once we understand that, the rest becomes easier! Let's look at the details:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="02. Matrix Addition.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('01. What is a Matrix?')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

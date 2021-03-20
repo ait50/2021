@@ -1,0 +1,452 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.063 --> 00:00:03.140
+A segunda estrutura principal
+de dados do Pandas
+
+00:00:03.173 --> 00:00:04.795
+é o DataFrame,
+
+00:00:04.828 --> 00:00:09.164
+um objeto bidimensional
+com linhas e colunas rotuladas
+
+00:00:09.197 --> 00:00:12.310
+que pode também conter
+tipos de dados múltiplos.
+
+00:00:12.343 --> 00:00:14.360
+Se você é familiarizado
+com o Excel,
+
+00:00:14.393 --> 00:00:17.941
+podemos pensar que o DataFrame
+é uma planilha super poderosa.
+
+00:00:17.974 --> 00:00:21.119
+Podemos criar
+DataFrames Pandas manualmente
+
+00:00:21.152 --> 00:00:23.479
+ou carregando dados
+de um arquivo.
+
+00:00:23.512 --> 00:00:26.311
+Vamos começar criando
+um DataFrame manualmente
+
+00:00:26.344 --> 00:00:29.929
+a partir de um dicionário
+contendo vários Pandas Series.
+
+00:00:29.962 --> 00:00:31.586
+Vamos criar o dicionário
+
+00:00:31.619 --> 00:00:34.540
+e passá-lo na função
+DataFrame Pandas.
+
+00:00:34.573 --> 00:00:38.150
+Esta aqui contém
+o carrinho de duas pessoas,
+
+00:00:38.183 --> 00:00:41.238
+Alice e Bob,
+em uma loja on-line.
+
+00:00:41.271 --> 00:00:44.064
+Cada Series contém
+o preço dos itens
+
+00:00:44.097 --> 00:00:46.673
+e está rotulada
+com os nomes dos itens.
+
+00:00:46.706 --> 00:00:48.337
+Vamos confirmar se os itens
+
+00:00:48.370 --> 00:00:50.482
+estão no dicionário
+de tipos de dados.
+
+00:00:50.515 --> 00:00:52.205
+Agora que temos
+um dicionário,
+
+00:00:52.238 --> 00:00:54.221
+estamos prontos
+para criar um DataFrame
+
+00:00:54.254 --> 00:00:56.902
+passando-o
+na função DataFrame.
+
+00:00:56.935 --> 00:00:59.575
+Lembre-se,
+ao usar a função DataFrame,
+
+00:00:59.608 --> 00:01:02.776
+use D e F maiúsculo
+no DataFrame.
+
+00:01:02.809 --> 00:01:04.663
+Há diversas coisas
+para se notar aqui.
+
+00:01:04.696 --> 00:01:05.796
+Primeiro,
+
+00:01:05.829 --> 00:01:09.313
+vemos que os DataFrames estão
+colocados de forma tabular,
+
+00:01:09.346 --> 00:01:10.727
+assim como uma planilha,
+
+00:01:10.760 --> 00:01:14.728
+com os rótulos das linhas
+e colunas em negrito.
+
+00:01:14.761 --> 00:01:17.666
+Veja também que o rótulos
+das linhas do DataFrame
+
+00:01:17.699 --> 00:01:20.467
+são fruto da união
+dos rótulos de índice
+
+00:01:20.500 --> 00:01:23.021
+que fornecemos neste Series,
+
+00:01:23.054 --> 00:01:25.621
+e os rótulos das colunas
+do DataFrame
+
+00:01:25.654 --> 00:01:28.647
+foram retirados
+das chaves do dicionário.
+
+00:01:28.680 --> 00:01:30.767
+As colunas estão
+em ordem alfabética
+
+00:01:30.800 --> 00:01:33.585
+e não na ordem dada
+pelo dicionário.
+
+00:01:33.618 --> 00:01:36.307
+Mais tarde veremos
+que isto não acontece
+
+00:01:36.340 --> 00:01:39.868
+quando carregamos dados
+em um DataFrame de um arquivo.
+
+00:01:39.901 --> 00:01:44.807
+Por último, veja os valores NaN
+que apareceram no DataFrame.
+
+00:01:44.840 --> 00:01:47.234
+NaN significa
+que não é um número
+
+00:01:47.267 --> 00:01:50.899
+e é o jeito do Pandas de indicar
+que não há um valor
+
+00:01:50.932 --> 00:01:53.683
+para esta linha
+e índice específicos.
+
+00:01:53.716 --> 00:01:56.677
+Por exemplo,
+se olharmos a coluna Alice,
+
+00:01:56.710 --> 00:02:00.262
+veremos que há um NaN
+no índice relógio.
+
+00:02:00.295 --> 00:02:04.896
+Isto é porque no dicionário
+não havia um item para Alice
+
+00:02:04.929 --> 00:02:06.506
+chamado "relógio".
+
+00:02:06.539 --> 00:02:08.650
+Sempre que um DataFrame
+é criado,
+
+00:02:08.683 --> 00:02:11.276
+se uma coluna específica
+não tiver valores
+
+00:02:11.309 --> 00:02:12.812
+para um índice específico,
+
+00:02:12.845 --> 00:02:14.701
+o Pandas colocará um NaN lá.
+
+00:02:14.734 --> 00:02:16.294
+Se tivéssemos
+que alimentar estes dados
+
+00:02:16.327 --> 00:02:18.462
+em um algoritmo
+de aprendizado de máquina,
+
+00:02:18.495 --> 00:02:21.337
+teríamos que remover
+os valores NaN primeiro.
+
+00:02:21.370 --> 00:02:22.777
+Em um outro vídeo,
+
+00:02:22.810 --> 00:02:25.258
+vamos aprender a lidar
+com valores NaN
+
+00:02:25.291 --> 00:02:27.083
+e limpar nossos dados.
+
+00:02:27.116 --> 00:02:30.429
+Por enquanto, vamos deixar
+estes valores no DataFrame.
+
+00:02:30.462 --> 00:02:33.118
+Neste exemplo,
+criamos um DataFrame Pandas
+
+00:02:33.151 --> 00:02:35.335
+a partir de um dicionário
+de Pandas Series
+
+00:02:35.368 --> 00:02:37.992
+com rótulos de índice
+bem definidos.
+
+00:02:38.025 --> 00:02:40.782
+Mas se não darmos
+rótulos de índice,
+
+00:02:40.815 --> 00:02:43.408
+o Pandas usará índices
+numéricos de linha
+
+00:02:43.441 --> 00:02:45.264
+ao criar o DataFrame.
+
+00:02:45.297 --> 00:02:49.024
+Vamos criar o mesmo dicionário
+sem os rótulos de índice.
+
+00:02:49.057 --> 00:02:52.708
+Podemos ver que o Pandas
+indexa as linhas do DataFrame
+
+00:02:52.741 --> 00:02:54.405
+a partir de 0,
+
+00:02:54.438 --> 00:02:57.261
+assim como o NumPy indexa
+seus arrays.
+
+00:02:57.294 --> 00:02:59.486
+Assim como fizemos
+com o Pandas Series,
+
+00:02:59.519 --> 00:03:02.632
+podemos extrair informações
+de um DataFrame
+
+00:03:02.665 --> 00:03:04.096
+usando atributos.
+
+00:03:04.129 --> 00:03:05.960
+Vamos fazer um print
+de algumas informações
+
+00:03:05.993 --> 00:03:08.130
+do DataFrame
+dos carrinhos de compras.
+
+00:03:08.163 --> 00:03:09.848
+Conseguimos pegar
+os rótulos de índice,
+
+00:03:09.881 --> 00:03:12.890
+os rótulos de coluna
+e os dados do DataFrame
+
+00:03:12.923 --> 00:03:14.596
+com estes atributos,
+
+00:03:14.629 --> 00:03:16.516
+e podemos usar
+os mesmos atributos
+
+00:03:16.549 --> 00:03:18.926
+para obter informações
+sobre a forma.
+
+00:03:18.959 --> 00:03:21.150
+Este DataFrame tem
+duas dimensões,
+
+00:03:21.183 --> 00:03:23.760
+com 5 linhas e 2 colunas,
+
+00:03:23.793 --> 00:03:26.320
+tendo um tamanho total
+de 10.
+
+00:03:26.353 --> 00:03:28.745
+Ao criar o DataFrame
+dos carrinhos de compras,
+
+00:03:28.778 --> 00:03:32.408
+passamos o dicionário de itens
+completo na função DataFrame.
+
+00:03:32.441 --> 00:03:33.541
+No entanto,
+
+00:03:33.574 --> 00:03:35.674
+pode haver casos
+em que você esteja interessado
+
+00:03:35.707 --> 00:03:37.579
+apenas em um subconjunto
+dos dados.
+
+00:03:37.612 --> 00:03:39.524
+O Pandas nos permite
+selecionar os dados
+
+00:03:39.557 --> 00:03:41.517
+que queremos colocar
+no DataFrame
+
+00:03:41.550 --> 00:03:44.898
+com as palavras-chave
+"coluna" e "índice".
+
+00:03:44.931 --> 00:03:46.625
+Vamos ver alguns exemplos.
+
+00:03:46.658 --> 00:03:48.745
+Este é um DataFrame
+que só carrega
+
+00:03:48.778 --> 00:03:50.520
+o carrinho de compras
+de Bob.
+
+00:03:50.553 --> 00:03:55.716
+Este só tem itens selecionados
+de Alice e Bob.
+
+00:03:55.749 --> 00:04:00.556
+E este só tem itens
+do carrinho de compras de Alice.
+
+00:04:00.589 --> 00:04:03.443
+Você pode também criar
+DataFrames manualmente
+
+00:04:03.476 --> 00:04:06.642
+a partir de um dicionário
+de listas ou arrays.
+
+00:04:06.675 --> 00:04:09.069
+O processo é o mesmo
+que o anterior.
+
+00:04:09.102 --> 00:04:11.427
+Começamos criando
+o dicionário
+
+00:04:11.460 --> 00:04:14.316
+e passando-o
+na função DataFrame.
+
+00:04:14.349 --> 00:04:15.835
+Neste caso, no entanto,
+
+00:04:15.868 --> 00:04:18.762
+todas a listas ou arrays
+do dicionário
+
+00:04:18.795 --> 00:04:20.836
+devem ter o mesmo tamanho.
+
+00:04:20.869 --> 00:04:23.988
+Este é um dicionário
+de integers e floats.
+
+00:04:24.021 --> 00:04:27.290
+Veja que, como o dicionário
+de dados que criamos
+
+00:04:27.323 --> 00:04:29.317
+não tem rótulos de índice,
+
+00:04:29.350 --> 00:04:32.590
+o Pandas automaticamente
+usa índices numéricos de linha
+
+00:04:32.623 --> 00:04:34.382
+ao criar o DataFrame.
+
+00:04:34.415 --> 00:04:36.621
+No entanto,
+podemos adicionar estes rótulos
+
+00:04:36.654 --> 00:04:40.243
+usando a palavra-chave
+do índice na função DataFrame.
+
+00:04:40.276 --> 00:04:41.947
+O último método
+que vamos ver
+
+00:04:41.980 --> 00:04:44.531
+para criar DataFrames Pandas
+manualmente
+
+00:04:44.564 --> 00:04:47.346
+é usar uma lista
+de dicionários Python.
+
+00:04:47.379 --> 00:04:48.715
+Aqui está um exemplo.
+
+00:04:48.748 --> 00:04:51.259
+Novamente,
+não temos rótulos de índice,
+
+00:04:51.292 --> 00:04:54.530
+então o Pandas coloca os índices
+numéricos de linha aqui.
+
+00:04:54.563 --> 00:04:57.139
+Vamos supor que usaremos
+este DataFrame
+
+00:04:57.172 --> 00:04:58.778
+para conter
+a quantidade de itens
+
+00:04:58.811 --> 00:05:00.883
+que uma loja específica
+tem em estoque.
+
+00:05:00.916 --> 00:05:02.723
+Vamos renomear
+os rótulos de índice
+
+00:05:02.756 --> 00:05:04.431
+como loja 1 e loja 2.
+

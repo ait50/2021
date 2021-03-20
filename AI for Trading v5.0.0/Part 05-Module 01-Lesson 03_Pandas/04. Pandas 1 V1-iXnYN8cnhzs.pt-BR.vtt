@@ -1,0 +1,208 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.021 --> 00:00:02.037
+Pandas é
+uma ferramenta poderosa
+
+00:00:02.070 --> 00:00:04.655
+para análise
+e manipulação de dados.
+
+00:00:04.688 --> 00:00:07.032
+Se você se lembra
+da última aula,
+
+00:00:07.065 --> 00:00:09.993
+este pacote foi feito
+em cima do NumPy,
+
+00:00:10.026 --> 00:00:12.544
+o que o torna
+bem rápido e eficiente.
+
+00:00:12.577 --> 00:00:13.775
+Nesta aula,
+
+00:00:13.808 --> 00:00:17.516
+vamos falar sobre as duas
+principais estruturas do Pandas.
+
+00:00:17.549 --> 00:00:20.653
+O Panda Series
+e o DataFrame Pandas.
+
+00:00:20.686 --> 00:00:23.967
+Vamos começar
+com o objeto do Panda Series
+
+00:00:24.000 --> 00:00:25.640
+e como criar um.
+
+00:00:25.673 --> 00:00:29.553
+Ao importar Pandas,
+use um alias padrão, pd.
+
+00:00:29.586 --> 00:00:32.587
+Vamos criar um Series
+contendo itens de mercado.
+
+00:00:32.620 --> 00:00:34.483
+Para acessar
+o objeto de série,
+
+00:00:34.516 --> 00:00:38.165
+digitamos pd.Series,
+com S maiúsculo.
+
+00:00:38.198 --> 00:00:41.999
+Um Panda Series é um objeto
+tipo array de uma dimensão
+
+00:00:42.032 --> 00:00:43.807
+que pode conter
+vários tipos de dados,
+
+00:00:43.840 --> 00:00:45.936
+como números e strings.
+
+00:00:45.969 --> 00:00:48.090
+É diferente
+de um array NumPy,
+
+00:00:48.123 --> 00:00:50.331
+que só pode conter
+um tipo de dados.
+
+00:00:50.364 --> 00:00:53.470
+Outra grande diferença
+entre um Panda Series
+
+00:00:53.503 --> 00:00:54.945
+e um array NumPy
+
+00:00:54.978 --> 00:00:57.013
+é que se pode atribuir
+um rótulo de índice
+
+00:00:57.046 --> 00:00:59.478
+para cada elemento
+no Panda Series.
+
+00:00:59.511 --> 00:01:01.504
+Aqui,
+passamos dois argumentos,
+
+00:01:01.537 --> 00:01:04.105
+os dados e os índices.
+
+00:01:04.138 --> 00:01:05.603
+Para o Series de mercado,
+
+00:01:05.636 --> 00:01:08.219
+usaremos nomes de comida
+como rótulos de índice
+
+00:01:08.252 --> 00:01:11.222
+e as quantidades
+que precisamos como dados.
+
+00:01:11.684 --> 00:01:13.831
+Podemos ver
+que o Panda Series
+
+00:01:13.864 --> 00:01:17.256
+tem os índices
+na primeira coluna
+
+00:01:17.289 --> 00:01:19.994
+e os dados
+na segunda coluna.
+
+00:01:20.027 --> 00:01:23.692
+Veja que os dados
+não estão ordenados de 0 a 3,
+
+00:01:23.725 --> 00:01:26.548
+mas sim pelos nomes de comida
+que colocamos,
+
+00:01:26.581 --> 00:01:29.701
+ovos, maçãs, leite e pão.
+
+00:01:29.734 --> 00:01:32.422
+Veja também
+que os dados no Panda Series
+
+00:01:32.455 --> 00:01:36.953
+têm integers e strings,
+assim como os arrays NumPy.
+
+00:01:36.986 --> 00:01:38.697
+A série Pandas tem atributos
+
+00:01:38.730 --> 00:01:42.066
+que nos permitem
+coletar informações facilmente.
+
+00:01:42.099 --> 00:01:43.683
+Vamos dar uma olhada.
+
+00:01:43.716 --> 00:01:47.613
+Shape nos dá os tamanhos
+de cada dimensão dos dados,
+
+00:01:47.646 --> 00:01:51.192
+ndim nos dá o número
+de dimensões dos dados,
+
+00:01:51.225 --> 00:01:55.176
+e size nos dá o número total
+de valores do array.
+
+00:01:55.209 --> 00:01:57.489
+Podemos também fazer um print
+dos rótulos de índice
+
+00:01:57.522 --> 00:01:59.819
+e dos dados do Panda Series
+separadamente.
+
+00:01:59.852 --> 00:02:01.450
+É útil quando não sabemos
+
+00:02:01.483 --> 00:02:04.732
+quais são os rótulos de índice
+do Series.
+
+00:02:04.765 --> 00:02:07.958
+Isto nos dá os rótulos de índice
+do objeto do Series,
+
+00:02:07.991 --> 00:02:11.112
+e nos dá os dados
+dentro do objeto do Series.
+
+00:02:11.145 --> 00:02:14.121
+Se estiver lidando com
+um Panda Series muito grande
+
+00:02:14.154 --> 00:02:17.010
+e não souber
+se um rótulo de índice existe,
+
+00:02:17.043 --> 00:02:19.891
+você pode sempre verificar
+usando o comando In.
+
+00:02:19.924 --> 00:02:23.763
+Isto nos mostra que "bananas"
+não é um dos rótulos de índice
+
+00:02:23.796 --> 00:02:25.478
+do Series de mercado
+
+00:02:25.511 --> 00:02:27.500
+e nos diz que "pão" é.
+

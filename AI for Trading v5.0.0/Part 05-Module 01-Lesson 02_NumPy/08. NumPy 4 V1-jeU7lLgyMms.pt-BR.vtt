@@ -1,0 +1,450 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.197 --> 00:00:02.342
+Como mencionamos antes,
+
+00:00:02.375 --> 00:00:06.861
+além de acessar elementos
+individuais, um de cada vez,
+
+00:00:06.894 --> 00:00:10.196
+podemos acessar subconjuntos
+dos arrays do NumPy
+
+00:00:10.229 --> 00:00:11.637
+com o fatiamento.
+
+00:00:11.670 --> 00:00:14.349
+O fatiamento acontece
+ao unir índices
+
+00:00:14.382 --> 00:00:17.085
+com dois pontos
+dentro dos colchetes.
+
+00:00:17.118 --> 00:00:20.805
+No geral, você vai ver
+três maneiras de fatiar.
+
+00:00:20.838 --> 00:00:23.917
+O primeiro é o fatiamento
+do índice do início
+
+00:00:23.950 --> 00:00:25.701
+ao índice do fim.
+
+00:00:25.734 --> 00:00:28.765
+O segundo é o fatiamento
+do índice do início
+
+00:00:28.798 --> 00:00:32.028
+ao fim do array,
+ao deixar isto em branco.
+
+00:00:32.061 --> 00:00:35.821
+Ou o fatiamento
+do início do array ao índice do fim,
+
+00:00:35.854 --> 00:00:37.620
+ao deixar isto em branco.
+
+00:00:37.653 --> 00:00:39.461
+No 1º e no 3º métodos,
+
+00:00:39.494 --> 00:00:42.013
+o índice do fim
+é sempre excluído.
+
+00:00:42.046 --> 00:00:45.973
+Aqui o índice do início
+é sempre incluído.
+
+00:00:46.006 --> 00:00:48.861
+Os arrays do NumPy
+podem ser multidimensionais.
+
+00:00:48.894 --> 00:00:52.517
+Então você precisa especificar
+a fatia
+
+00:00:52.550 --> 00:00:55.005
+de cada dimensão do array.
+
+00:00:55.038 --> 00:00:58.597
+Vamos ver exemplos de fatiamento
+com um array nível 2.
+
+00:00:58.630 --> 00:01:03.621
+Temos um array 4 por 5
+que contém inteiros de 1 a 20.
+
+00:01:03.654 --> 00:01:08.085
+Vamos dizer que você queira
+este subconjunto do array.
+
+00:01:08.118 --> 00:01:09.877
+Estes nove valores.
+
+00:01:09.910 --> 00:01:12.269
+Vou mostrar
+uma maneira de fazer.
+
+00:01:12.302 --> 00:01:15.925
+A parte antes da vírgula
+especifica que índices
+
+00:01:15.958 --> 00:01:18.469
+você quer pegar das fileiras
+
+00:01:18.502 --> 00:01:21.901
+e a parte depois da vírgula
+especifica que índices
+
+00:01:21.934 --> 00:01:24.420
+você quer pegar das colunas.
+
+00:01:24.453 --> 00:01:30.436
+O índice do início é incluído
+e o índice do fim é excluído.
+
+00:01:30.469 --> 00:01:33.244
+E os índices
+sempre começam com zero.
+
+00:01:33.277 --> 00:01:37.628
+Então a primeira fileira é zero
+e a segunda coluna é 1.
+
+00:01:37.661 --> 00:01:43.051
+Então isto pega
+as fileiras 1, 2 e 3.
+
+00:01:43.244 --> 00:01:48.380
+E esta parte pega
+as colunas 2, 3 e 4.
+
+00:01:48.413 --> 00:01:51.941
+Vou mostrar outra maneira
+de realizar a mesma coisa.
+
+00:01:51.974 --> 00:01:55.627
+Se não incluirmos o índice do fim
+depois dos dois pontos,
+
+00:01:55.660 --> 00:01:58.612
+ele vai até o último índice.
+
+00:01:58.869 --> 00:02:01.077
+Vamos tentar pegar
+outro subconjunto
+
+00:02:01.110 --> 00:02:03.165
+que use as mesmas colunas,
+
+00:02:03.198 --> 00:02:05.357
+mas, em vez
+das três últimas fileiras,
+
+00:02:05.390 --> 00:02:07.093
+queremos as três primeiras.
+
+00:02:07.126 --> 00:02:09.033
+Isto pega este subconjunto.
+
+00:02:09.066 --> 00:02:12.737
+Se não incluir um índice do início
+antes dos dois pontos,
+
+00:02:12.770 --> 00:02:15.913
+você vai até o começo
+do array.
+
+00:02:15.946 --> 00:02:19.889
+Então isto pega
+as fileiras 0, 1 e 2.
+
+00:02:20.233 --> 00:02:21.841
+No próximo exemplo,
+
+00:02:21.874 --> 00:02:25.505
+vamos tentar selecionar
+todos os elementos na 3ª fileira.
+
+00:02:25.801 --> 00:02:28.849
+Se deixarmos os dois lados
+dos dois pontos em branco,
+
+00:02:28.882 --> 00:02:32.073
+isto vai pegar
+todas as fileiras do array.
+
+00:02:32.106 --> 00:02:36.465
+Então X, dois pontos, vírgula, 2
+vai pegar todas as fileiras
+
+00:02:36.498 --> 00:02:38.121
+da coluna dois.
+
+00:02:38.154 --> 00:02:41.457
+Então 0, 1, 2.
+Vai pegar esta coluna.
+
+00:02:41.490 --> 00:02:45.073
+Se quisermos selecionar
+todos os elementos na 3ª coluna,
+
+00:02:45.106 --> 00:02:47.984
+mas retornar
+num array nível 2,
+
+00:02:48.017 --> 00:02:49.737
+podemos fazer isto.
+
+00:02:50.010 --> 00:02:55.418
+Quando selecionamos
+todos os elementos na 3ª coluna,
+
+00:02:55.451 --> 00:02:58.754
+o fatiamento retornou
+um array nível 1,
+
+00:02:58.787 --> 00:03:01.146
+em vez de um array nível 2.
+
+00:03:01.362 --> 00:03:05.138
+Mas fatiar o X assim,
+de uma maneira um pouco diferente,
+
+00:03:05.171 --> 00:03:08.234
+nos dá um array nível 2
+do NumPy.
+
+00:03:08.267 --> 00:03:11.907
+Quando usamos o fatiamento
+nos arrays do NumPy
+
+00:03:11.940 --> 00:03:15.890
+e salvamos em novas variáveis,
+como fizemos aqui,
+
+00:03:16.115 --> 00:03:19.858
+os dados não são copiados
+na variável nova.
+
+00:03:19.891 --> 00:03:23.874
+Esse recurso gera confusão
+nos iniciantes.
+
+00:03:23.907 --> 00:03:26.649
+Então vamos analisar
+com mais detalhe.
+
+00:03:26.682 --> 00:03:31.058
+Nestes exemplos,
+a fatia do array X original
+
+00:03:31.091 --> 00:03:33.938
+não é copiada na variável Z.
+
+00:03:34.154 --> 00:03:37.770
+Em vez disso,
+X e Z são nomes diferentes
+
+00:03:37.803 --> 00:03:39.602
+para o mesmo array.
+
+00:03:39.635 --> 00:03:44.130
+O fatiamento só cria uma exibição
+do array original.
+
+00:03:44.163 --> 00:03:47.629
+Então, se você fizer
+alterações no Z,
+
+00:03:47.662 --> 00:03:50.637
+também vai alterar
+os elementos do X.
+
+00:03:50.670 --> 00:03:53.925
+Vamos ver um exemplo
+com o array 4 por 5.
+
+00:03:54.212 --> 00:03:57.123
+Vamos selecionar
+estes elementos aqui de novo
+
+00:03:57.156 --> 00:03:59.420
+e designá-los à variável Z.
+
+00:03:59.659 --> 00:04:04.716
+Agora vamos alterar
+o último elemento na Z para 555.
+
+00:04:04.988 --> 00:04:06.796
+Se reproduzirmos X,
+
+00:04:06.829 --> 00:04:10.653
+vemos que também foi afetado
+pela alteração.
+
+00:04:10.686 --> 00:04:13.221
+Se quisermos criar
+um novo array do NumPy
+
+00:04:13.254 --> 00:04:16.452
+que contenha uma cópia
+dos valores no fatiamento,
+
+00:04:16.485 --> 00:04:19.212
+precisamos usar a função copy
+do NumPy.
+
+00:04:19.245 --> 00:04:22.077
+Essa função também
+pode ser usada como método,
+
+00:04:22.110 --> 00:04:24.868
+como vimos antes,
+com a função reshape.
+
+00:04:24.901 --> 00:04:28.220
+Vamos repetir este exemplo
+com um comando copy.
+
+00:04:28.404 --> 00:04:29.901
+Aqui está o X.
+
+00:04:29.934 --> 00:04:32.363
+Vamos criar uma cópia
+da mesma fatia
+
+00:04:32.396 --> 00:04:34.421
+usando a função copy.
+
+00:04:34.454 --> 00:04:37.857
+Também podemos usar copy
+como um método, assim.
+
+00:04:37.890 --> 00:04:42.313
+Se alterarmos
+o último elemento da Z para 555,
+
+00:04:42.346 --> 00:04:45.554
+vamos ver que X
+não foi alterado.
+
+00:04:45.587 --> 00:04:49.738
+Ao usar o comando copy,
+criamos um novo array do NumPy
+
+00:04:49.771 --> 00:04:52.658
+completamente independente
+do original.
+
+00:04:52.691 --> 00:04:57.401
+É geralmente útil usar um array
+como índice para fatiar,
+
+00:04:57.434 --> 00:05:01.154
+selecionar ou alterar elementos
+em outro array do NumPy.
+
+00:05:01.187 --> 00:05:03.009
+Vamos ver exemplos.
+
+00:05:03.042 --> 00:05:06.834
+Vamos criar um array nível 1
+que serve de índice
+
+00:05:06.867 --> 00:05:09.553
+para selecionar elementos do X.
+
+00:05:09.778 --> 00:05:12.547
+Vamos usar este índice do array
+do NumPy
+
+00:05:12.580 --> 00:05:15.979
+para selecionar
+a 2ª e a 4ª fileira do X.
+
+00:05:16.177 --> 00:05:18.305
+Agora vamos usar
+o mesmo array
+
+00:05:18.338 --> 00:05:21.649
+para selecionar
+a 2ª e a 4ª coluna do X.
+
+00:05:21.682 --> 00:05:24.498
+O NumPy oferece
+funções embutidas
+
+00:05:24.531 --> 00:05:28.161
+para selecionar elementos
+específicos nos arrays.
+
+00:05:28.409 --> 00:05:31.169
+Por exemplo,
+a função diag do NumPy
+
+00:05:31.202 --> 00:05:35.225
+pode extrair os elementos
+da diagonal do array.
+
+00:05:35.634 --> 00:05:38.586
+Lembre-se de que X era isto.
+
+00:05:39.345 --> 00:05:43.680
+Podemos reproduzir os elementos
+acima da diagonal principal do X
+
+00:05:43.713 --> 00:05:47.409
+ao estabelecer
+o parâmetro K=1.
+
+00:05:47.624 --> 00:05:52.113
+Ele pega
+os elementos 1, 7, 13 e 19.
+
+00:05:52.345 --> 00:05:54.649
+Se K for um número negativo,
+
+00:05:54.682 --> 00:05:57.345
+vai pegar os valores
+abaixo da diagonal principal,
+
+00:05:57.378 --> 00:06:00.048
+que são 5, 11 e 17.
+
+00:06:00.081 --> 00:06:02.169
+Por padrão, K é zero.
+
+00:06:02.202 --> 00:06:05.017
+É por isso que pega
+a diagonal principal.
+
+00:06:05.050 --> 00:06:08.729
+Também é útil extrair
+apenas os elementos únicos
+
+00:06:08.762 --> 00:06:10.488
+num array do NumPy.
+
+00:06:10.521 --> 00:06:13.577
+Encontramos os elementos únicos
+num array
+
+00:06:13.610 --> 00:06:16.121
+com a função unique
+do NumPy.
+
+00:06:16.353 --> 00:06:20.033
+Temos um array 3 por 3
+com valores repetidos.
+
+00:06:20.448 --> 00:06:23.333
+Podemos ver
+os valores únicos assim.
+

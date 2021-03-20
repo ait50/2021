@@ -1,0 +1,2024 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Dealing with NaN
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Pandas
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructors.html">
+       01. Instructors
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Introduction to pandas.html">
+       02. Introduction to pandas
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Why Use pandas.html">
+       03. Why Use pandas?
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Creating pandas Series.html">
+       04. Creating pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Accessing and Deleting Elements in pandas Series.html">
+       05. Accessing and Deleting Elements in pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Arithmetic Operations on pandas Series.html">
+       06. Arithmetic Operations on pandas Series
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Manipulate a Series.html">
+       07. Manipulate a Series
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Creating pandas DataFrames.html">
+       08. Creating pandas DataFrames
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Accessing Elements in pandas DataFrames.html">
+       09. Accessing Elements in pandas DataFrames
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Dealing with NaN.html">
+       10. Dealing with NaN
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Manipulate a DataFrame.html">
+       11. Manipulate a DataFrame
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Loading Data into a pandas DataFrame.html">
+       12. Loading Data into a pandas DataFrame
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Getting Set Up for the Mini-Project.html">
+       13. Getting Set Up for the Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Mini-Project Statistics From Stock Data.html">
+       14. Mini-Project: Statistics From Stock Data
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          10. Dealing with NaN
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="dealing-with-nan">
+          Dealing with NaN
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Pandas 6 V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="10. Pandas 6 V1-GS1kj04XQcM.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="10. Pandas 6 V1-GS1kj04XQcM.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="10. Pandas 6 V1-GS1kj04XQcM.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="10. Pandas 6 V1-GS1kj04XQcM.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          As mentioned earlier, before we can begin training our learning algorithms with large datasets, we usually need to clean the data first. This means we need to have a method for detecting and correcting errors in our data. While any given dataset can have many types of bad data, such as outliers or incorrect values, the type of bad data we encounter almost always is missing values. As we saw earlier, Pandas assigns
+          <code>
+           NaN
+          </code>
+          values to missing data. In this lesson we will learn how to detect and deal with
+          <code>
+           NaN
+          </code>
+          values.
+         </p>
+         <p>
+          We will begin by creating a DataFrame with some
+          <code>
+           NaN
+          </code>
+          values in it.
+         </p>
+         <pre><code class="python language-python"># We create a list of Python dictionaries
+items2 = [{'bikes': 20, 'pants': 30, 'watches': 35, 'shirts': 15, 'shoes':8, 'suits':45},
+{'watches': 10, 'glasses': 50, 'bikes': 15, 'pants':5, 'shirts': 2, 'shoes':5, 'suits':7},
+{'bikes': 20, 'pants': 30, 'watches': 35, 'glasses': 4, 'shoes':10}]
+
+# We create a DataFrame  and provide the row index
+store_items = pd.DataFrame(items2, index = ['store 1', 'store 2', 'store 3'])
+
+# We display the DataFrame
+store_items</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              NaN
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              8
+             </td>
+             <td style="text-align:center;">
+              45.0
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              15
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              4.0
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              NaN
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+             <td style="text-align:center;">
+              NaN
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          We can clearly see that the DataFrame we created has 3
+          <code>
+           NaN
+          </code>
+          values: one in store 1 and two in store 3. However, in cases where we load very large datasets into a DataFrame, possibly with millions of items, the number of
+          <code>
+           NaN
+          </code>
+          values is not easily visualized. For these cases, we can use a combination of methods to count the number of
+          <code>
+           NaN
+          </code>
+          values in our data. The following example combines the
+          <code>
+           .isnull()
+          </code>
+          and the
+          <code>
+           sum()
+          </code>
+          methods to count the number of
+          <code>
+           NaN
+          </code>
+          values in our DataFrame
+         </p>
+         <pre><code class="python language-python"># We count the number of NaN values in store_items
+x =  store_items.isnull().sum().sum()
+
+# We print x
+print('Number of NaN values in our DataFrame:', x)</code></pre>
+         <blockquote>
+          <p>
+           Number of NaN values in our DataFrame: 3
+          </p>
+         </blockquote>
+         <p>
+          In the above example, the
+          <code>
+           .isnull()
+          </code>
+          method returns a
+          <em>
+           Boolean
+          </em>
+          DataFrame of the same size as
+          <code>
+           store_items
+          </code>
+          and indicates with
+          <code>
+           True
+          </code>
+          the elements that have
+          <code>
+           NaN
+          </code>
+          values and with
+          <code>
+           False
+          </code>
+          the elements that are not. Let's see an example:
+         </p>
+         <pre><code class="python language-python">store_items.isnull()</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              True
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              True
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+             <td style="text-align:center;">
+              True
+             </td>
+             <td style="text-align:center;">
+              False
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          In Pandas, logical
+          <code>
+           True
+          </code>
+          values have numerical value 1 and logical
+          <code>
+           False
+          </code>
+          values have numerical value 0. Therefore, we can count the number of
+          <code>
+           NaN
+          </code>
+          values by counting the number of logical
+          <code>
+           True
+          </code>
+          values. In order to count the total number of logical
+          <code>
+           True
+          </code>
+          values we use the
+          <code>
+           .sum()
+          </code>
+          method twice. We have to use it twice because the first sum returns a Pandas Series with the sums of logical
+          <code>
+           True
+          </code>
+          values along columns, as we see below:
+         </p>
+         <pre><code class="python language-python">store_items.isnull().sum()</code></pre>
+         <blockquote>
+          <p>
+           bikes            0
+           <br/>
+           glasses        1
+           <br/>
+           pants           0
+           <br/>
+           shirts           1
+           <br/>
+           shoes          0
+           <br/>
+           suits            1
+           <br/>
+           watches      0
+           <br/>
+           dtype: int64
+          </p>
+         </blockquote>
+         <p>
+          The second sum will then add up the 1s in the above Pandas Series.
+         </p>
+         <p>
+          Instead of counting the number of
+          <code>
+           NaN
+          </code>
+          values we can also do the opposite, we can count the number of
+          <em>
+           non-NaN
+          </em>
+          values. We can do this by using the
+          <code>
+           .count()
+          </code>
+          method as shown below:
+         </p>
+         <pre><code class="python language-python"># We print the number of non-NaN values in our DataFrame
+print()
+print('Number of non-NaN values in the columns of our DataFrame:\n', store_items.count())</code></pre>
+         <blockquote>
+          <p>
+           Number of non-NaN values in the columns of our DataFrame:
+           <br/>
+           bikes            3
+           <br/>
+           glasses        2
+           <br/>
+           pants           3
+           <br/>
+           shirts           2
+           <br/>
+           shoes          3
+           <br/>
+           suits            2
+           <br/>
+           watches      3
+           <br/>
+           dtype: int64
+          </p>
+         </blockquote>
+         <p>
+          Now that we learned how to know if our dataset has any
+          <code>
+           NaN
+          </code>
+          values in it, the next step is to decide what to do with them. In general we have two options, we can either
+          <em>
+           delete
+          </em>
+          or
+          <em>
+           replace
+          </em>
+          the
+          <code>
+           NaN
+          </code>
+          values. In the following examples we will show you how to do both.
+         </p>
+         <p>
+          We will start by learning how to eliminate rows or columns from our DataFrame that contain any
+          <code>
+           NaN
+          </code>
+          values. The
+          <code>
+           .dropna(axis)
+          </code>
+          method eliminates any
+          <em>
+           rows
+          </em>
+          with
+          <code>
+           NaN
+          </code>
+          values when
+          <code>
+           axis = 0
+          </code>
+          is used and will eliminate any
+          <em>
+           columns
+          </em>
+          with
+          <code>
+           NaN
+          </code>
+          values when
+          <code>
+           axis = 1
+          </code>
+          is used. Let's see some examples
+         </p>
+         <pre><code class="python language-python"># We drop any rows with NaN values
+store_items.dropna(axis = 0)</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              15
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <pre><code class="python language-python"># We drop any columns with NaN values
+store_items.dropna(axis = 1)</code></pre>
+         <blockquote>
+          <p>
+           |    |     ** bikes**     |
+           <strong>
+            pants
+           </strong>
+           |
+           <strong>
+            shoes
+           </strong>
+           |
+           <strong>
+            watches
+           </strong>
+           |
+           <br/>
+           |----------|:-------------:|:------:|:------:|:------:|:------:|:------:|:------:|
+           <br/>
+           |
+           <strong>
+            store 1
+           </strong>
+           |20 | 30 | 8 |  35 |
+           <br/>
+           |
+           <strong>
+            store 2
+           </strong>
+           |15 |  5 | 5 |  10 |
+           <br/>
+           |
+           <strong>
+            store 3
+           </strong>
+           |20 | 30 |  10 | 35 |
+          </p>
+         </blockquote>
+         <p>
+          Notice that the
+          <code>
+           .dropna()
+          </code>
+          method eliminates (drops) the rows or columns with
+          <code>
+           NaN
+          </code>
+          values out of place. This means that the original DataFrame is not modified. You can always remove the desired rows or columns in place by setting the keyword
+          <code>
+           inplace = True
+          </code>
+          inside the
+          <code>
+           dropna()
+          </code>
+          function.
+         </p>
+         <p>
+          Now, instead of eliminating
+          <code>
+           NaN
+          </code>
+          values, we can replace them with suitable values. We could choose for example to replace all
+          <code>
+           NaN
+          </code>
+          values with the value 0. We can do this by using the
+          <code>
+           .fillna()
+          </code>
+          method as shown below.
+         </p>
+         <pre><code class="python language-python"># We replace all NaN values with 0
+store_items.fillna(0)</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              0.0
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              8
+             </td>
+             <td style="text-align:center;">
+              45.0
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              15
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              4.0
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              0.0
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+             <td style="text-align:center;">
+              0.0
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          We can also use the
+          <code>
+           .fillna()
+          </code>
+          method to replace
+          <code>
+           NaN
+          </code>
+          values with previous values in the DataFrame, this is known as
+          <em>
+           forward filling
+          </em>
+          . When replacing
+          <code>
+           NaN
+          </code>
+          values with forward filling, we can use previous values taken from columns or rows. The
+          <code>
+           .fillna(method = 'ffill', axis)
+          </code>
+          will use the forward filling (
+          <code>
+           ffill
+          </code>
+          ) method to replace
+          <code>
+           NaN
+          </code>
+          values using the previous known value along the given
+          <code>
+           axis
+          </code>
+          . Let's see some examples:
+         </p>
+         <pre><code class="python language-python"># We replace NaN values with the previous value in the column
+store_items.fillna(method = 'ffill', axis = 0)</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              NaN
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              8
+             </td>
+             <td style="text-align:center;">
+              45.0
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              15
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              4.0
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          Notice that the two
+          <code>
+           NaN
+          </code>
+          values in
+          <strong>
+           store 3
+          </strong>
+          have been replaced with previous values in their columns. However, notice that the
+          <code>
+           NaN
+          </code>
+          value in
+          <strong>
+           store 1
+          </strong>
+          didn't get replaced. That's because there are no previous values in this column, since the
+          <code>
+           NaN
+          </code>
+          value is the first value in that column. However, if we do forward fill using the previous row values, this won't happen. Let's take a look:
+         </p>
+         <pre><code class="python language-python"># We replace NaN values with the previous value in the row
+store_items.fillna(method = 'ffill', axis = 1)</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20.0
+             </td>
+             <td style="text-align:center;">
+              20.0
+             </td>
+             <td style="text-align:center;">
+              30.0
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              8.0
+             </td>
+             <td style="text-align:center;">
+              45.0
+             </td>
+             <td style="text-align:center;">
+              35.0
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              5.0
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              5.0
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              10.0
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20.0
+             </td>
+             <td style="text-align:center;">
+              4.0
+             </td>
+             <td style="text-align:center;">
+              30.0
+             </td>
+             <td style="text-align:center;">
+              30.0
+             </td>
+             <td style="text-align:center;">
+              10.0
+             </td>
+             <td style="text-align:center;">
+              10.0
+             </td>
+             <td style="text-align:center;">
+              35.0
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          We see that in this case all the
+          <code>
+           NaN
+          </code>
+          values have been replaced with the previous row values.
+         </p>
+         <p>
+          Similarly, you can choose to replace the
+          <code>
+           NaN
+          </code>
+          values with the values that go after them in the DataFrame, this is known as
+          <em>
+           backward filling
+          </em>
+          . The
+          <code>
+           .fillna(method = 'backfill', axis)
+          </code>
+          will use the backward filling (
+          <code>
+           backfill
+          </code>
+          ) method to replace
+          <code>
+           NaN
+          </code>
+          values using the next known value along the given
+          <code>
+           axis
+          </code>
+          . Just like with forward filling we can choose to use row or column values. Let's see some examples:
+         </p>
+         <pre><code class="python language-python"># We replace NaN values with the next value in the column
+store_items.fillna(method = 'backfill', axis = 0)</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              8
+             </td>
+             <td style="text-align:center;">
+              45.0
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              15
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              4.0
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              NaN
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+             <td style="text-align:center;">
+              NaN
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          Notice that the
+          <code>
+           NaN
+          </code>
+          value in
+          <strong>
+           store 1
+          </strong>
+          has been replaced with the next value in its column. However, notice that the two
+          <code>
+           NaN
+          </code>
+          values in
+          <strong>
+           store 3
+          </strong>
+          didn't get replaced. That's because there are no next values in these columns, since these
+          <code>
+           NaN
+          </code>
+          values are the last values in those columns. However, if we do backward fill using the next row values, this won't happen. Let's take a look:
+         </p>
+         <pre><code class="python language-python"># We replace NaN values with the next value in the row
+store_items.fillna(method = 'backfill', axis = 1)</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20.0
+             </td>
+             <td style="text-align:center;">
+              30.0
+             </td>
+             <td style="text-align:center;">
+              30.0
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              8.0
+             </td>
+             <td style="text-align:center;">
+              45.0
+             </td>
+             <td style="text-align:center;">
+              35.0
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              5.0
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              5.0
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              10.0
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20.0
+             </td>
+             <td style="text-align:center;">
+              4.0
+             </td>
+             <td style="text-align:center;">
+              30.0
+             </td>
+             <td style="text-align:center;">
+              10.0
+             </td>
+             <td style="text-align:center;">
+              10.0
+             </td>
+             <td style="text-align:center;">
+              35.0
+             </td>
+             <td style="text-align:center;">
+              35.0
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          Notice that the
+          <code>
+           .fillna()
+          </code>
+          method replaces (fills) the
+          <code>
+           NaN
+          </code>
+          values out of place. This means that the original DataFrame is not modified. You can always replace the
+          <code>
+           NaN
+          </code>
+          values in place by setting the keyword
+          <code>
+           inplace = True
+          </code>
+          inside the
+          <code>
+           fillna()
+          </code>
+          function.
+         </p>
+         <p>
+          We can also choose to replace
+          <code>
+           NaN
+          </code>
+          values by using different interpolation methods. For example, the
+          <code>
+           .interpolate(method = 'linear', axis)
+          </code>
+          method will use
+          <code>
+           linear
+          </code>
+          interpolation to replace
+          <code>
+           NaN
+          </code>
+          values using the values along the given
+          <code>
+           axis
+          </code>
+          . Let's see some examples:
+         </p>
+         <pre><code class="python language-python"># We replace NaN values by using linear interpolation using column values
+store_items.interpolate(method = 'linear', axis = 0)</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              NaN
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              8
+             </td>
+             <td style="text-align:center;">
+              45.0
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              15
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              5
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20
+             </td>
+             <td style="text-align:center;">
+              4.0
+             </td>
+             <td style="text-align:center;">
+              30
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              10
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              35
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          Notice that the two
+          <code>
+           NaN
+          </code>
+          values in
+          <strong>
+           store 3
+          </strong>
+          have been replaced with linear interpolated values. However, notice that the
+          <code>
+           NaN
+          </code>
+          value in
+          <strong>
+           store 1
+          </strong>
+          didn't get replaced. That's because the
+          <code>
+           NaN
+          </code>
+          value is the first value in that column, and since there is no data before it, the interpolation function can't calculate a value.  Now, let's interpolate using row values instead:
+         </p>
+         <pre><code class="python language-python"># We replace NaN values by using linear interpolation using row values
+store_items.interpolate(method = 'linear', axis = 1)</code></pre>
+         <blockquote>
+          <table>
+           <thead>
+            <tr>
+             <th id="">
+             </th>
+             <th id="**_bikes**" style="text-align:center;">
+              ** bikes**
+             </th>
+             <th id="**glasses**" style="text-align:center;">
+              <strong>
+               glasses
+              </strong>
+             </th>
+             <th id="**pants**" style="text-align:center;">
+              <strong>
+               pants
+              </strong>
+             </th>
+             <th id="**shirts**" style="text-align:center;">
+              <strong>
+               shirts
+              </strong>
+             </th>
+             <th id="**shoes**" style="text-align:center;">
+              <strong>
+               shoes
+              </strong>
+             </th>
+             <th id="**suits**" style="text-align:center;">
+              <strong>
+               suits
+              </strong>
+             </th>
+             <th id="**watches**" style="text-align:center;">
+              <strong>
+               watches
+              </strong>
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>
+              <strong>
+               store 1
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20.0
+             </td>
+             <td style="text-align:center;">
+              25.0
+             </td>
+             <td style="text-align:center;">
+              30.0
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              8.0
+             </td>
+             <td style="text-align:center;">
+              45.0
+             </td>
+             <td style="text-align:center;">
+              35.0
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 2
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              15.0
+             </td>
+             <td style="text-align:center;">
+              50.0
+             </td>
+             <td style="text-align:center;">
+              5.0
+             </td>
+             <td style="text-align:center;">
+              2.0
+             </td>
+             <td style="text-align:center;">
+              5.0
+             </td>
+             <td style="text-align:center;">
+              7.0
+             </td>
+             <td style="text-align:center;">
+              10.0
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <strong>
+               store 3
+              </strong>
+             </td>
+             <td style="text-align:center;">
+              20.0
+             </td>
+             <td style="text-align:center;">
+              4.0
+             </td>
+             <td style="text-align:center;">
+              30.0
+             </td>
+             <td style="text-align:center;">
+              20.0
+             </td>
+             <td style="text-align:center;">
+              10.0
+             </td>
+             <td style="text-align:center;">
+              22.5
+             </td>
+             <td style="text-align:center;">
+              35.0
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </blockquote>
+         <p>
+          Just as with the other methods we saw, the
+          <code>
+           .interpolate()
+          </code>
+          method replaces
+          <code>
+           NaN
+          </code>
+          values out of place.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="11. Manipulate a DataFrame.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('10. Dealing with NaN')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
