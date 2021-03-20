@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.375
+Welcome to my solution for this exercise.
+
+00:00:03.375 --> 00:00:08.699
+So, for here, I had you calculate the output of our network using matrix multiplication.
+
+00:00:08.699 --> 00:00:12.059
+So remember, we wanted to use matrix multiplication because it's more
+
+00:00:12.060 --> 00:00:16.605
+efficient than doing these two separate operations of the multiplication and the sum.
+
+00:00:16.605 --> 00:00:18.300
+But to do the matrix multiplication,
+
+00:00:18.300 --> 00:00:21.405
+we actually needed to change the size of our weights tensor.
+
+00:00:21.405 --> 00:00:24.690
+So, to do that, just do weights.view 5, 1,
+
+00:00:24.690 --> 00:00:31.304
+and so this will change the shape of our weights tensor to be five rows and one column.
+
+00:00:31.304 --> 00:00:34.969
+If you remember, our features has the shape of one row and five columns,
+
+00:00:34.969 --> 00:00:37.144
+so we can do this matrix multiplication.
+
+00:00:37.145 --> 00:00:42.984
+So, there's just one operation that does the multiplication and the sum and just one go,
+
+00:00:42.984 --> 00:00:45.104
+and then we again add our bias term,
+
+00:00:45.104 --> 00:00:46.299
+pass it through the activation,
+
+00:00:46.299 --> 00:00:49.129
+and we get our output.
+
+00:00:49.130 --> 00:00:51.560
+So, as I mentioned before, you could actually stack up
+
+00:00:51.560 --> 00:00:55.310
+these simple neural networks into a multi-layer neural network,
+
+00:00:55.310 --> 00:00:57.679
+and this basically gives
+
+00:00:57.679 --> 00:01:02.255
+your network greater power to capture patterns and correlations in your data.
+
+00:01:02.255 --> 00:01:06.409
+Now, instead of a simple vector for our weights,
+
+00:01:06.409 --> 00:01:08.269
+we actually need to use a matrix.
+
+00:01:08.269 --> 00:01:13.744
+So, in this case, we have our input vector and our input data x_1, x_2, x_3.
+
+00:01:13.745 --> 00:01:16.790
+You think of this as a vector of just x, which our features.
+
+00:01:16.790 --> 00:01:23.695
+Then we have weights that connect our input to one hidden unit in this middle layers,
+
+00:01:23.694 --> 00:01:25.864
+usually called the hidden layer, hidden units,
+
+00:01:25.864 --> 00:01:29.134
+and we have two units in this hidden layer.
+
+00:01:29.135 --> 00:01:32.370
+So then, if we have our features,
+
+00:01:32.370 --> 00:01:34.370
+our inputs as a row vector,
+
+00:01:34.370 --> 00:01:37.040
+if we multiply it by this first column,
+
+00:01:37.040 --> 00:01:39.275
+then we're going to get the output,
+
+00:01:39.275 --> 00:01:41.484
+we're going to get this value of h_1.
+
+00:01:41.484 --> 00:01:44.840
+Then if we take our features and multiply it by the second column,
+
+00:01:44.840 --> 00:01:48.625
+then we're going to get the value for h_2.
+
+00:01:48.625 --> 00:01:53.239
+So again, mathematically looking at this with matrices and vectors and linear algebra,
+
+00:01:53.239 --> 00:01:56.929
+we see that to get the values for this hidden layer that
+
+00:01:56.930 --> 00:02:00.855
+we do a matrix multiplication between our feature vector,
+
+00:02:00.855 --> 00:02:02.505
+this x_1 to x_n,
+
+00:02:02.504 --> 00:02:04.604
+and our weight matrix.
+
+00:02:04.605 --> 00:02:06.780
+Then as before with these values,
+
+00:02:06.780 --> 00:02:08.150
+we're going to pass them through
+
+00:02:08.150 --> 00:02:11.689
+some activation function or maybe not an activation function,
+
+00:02:11.689 --> 00:02:14.954
+maybe we just want the row output of our network.
+
+00:02:14.955 --> 00:02:18.560
+So here, I'm generating some random data, some features,
+
+00:02:18.560 --> 00:02:22.430
+and some random weight matrices and bias terms that you'll
+
+00:02:22.430 --> 00:02:26.500
+be using to calculate the output of a multi-layer network.
+
+00:02:26.500 --> 00:02:30.819
+So, what I've built is basically we have three input features,
+
+00:02:30.819 --> 00:02:32.989
+two hidden units and one output unit.
+
+00:02:32.990 --> 00:02:35.000
+So, you can see that I've listed it here.
+
+00:02:35.000 --> 00:02:41.025
+So, our features we're going to create three features and this features vector here,
+
+00:02:41.025 --> 00:02:44.085
+and then we have an input equals three,
+
+00:02:44.085 --> 00:02:48.195
+so the shape is this, and two hidden units, one output unit.
+
+00:02:48.194 --> 00:02:53.259
+So, these weight matrices are created using these values. All right.
+
+00:02:53.259 --> 00:02:58.234
+I'll leave it up to you to calculate the output for this multi-layer network.
+
+00:02:58.235 --> 00:03:01.895
+Again, feel free to use the activation function defined
+
+00:03:01.895 --> 00:03:06.670
+earlier for the output of your network and the hidden layer. Cheers.
+

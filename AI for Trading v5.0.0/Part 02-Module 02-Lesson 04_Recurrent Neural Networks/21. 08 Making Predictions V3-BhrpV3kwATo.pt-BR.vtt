@@ -1,0 +1,474 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.136 --> 00:00:02.669
+O objetivo deste modelo
+é treinar
+
+00:00:02.702 --> 00:00:06.373
+para pegar um caractere
+e produzir um próximo caractere.
+
+00:00:06.406 --> 00:00:08.808
+E o próximo passo,
+"Fazendo Previsões",
+
+00:00:08.842 --> 00:00:10.043
+é sobre isto.
+
+00:00:10.076 --> 00:00:13.580
+Queremos criar funções
+que contenham um caractere
+
+00:00:13.613 --> 00:00:16.383
+e façam a rede prever
+o próximo caractere.
+
+00:00:16.416 --> 00:00:19.119
+E queremos passar
+este caractere
+
+00:00:19.152 --> 00:00:21.988
+e conseguir mais e mais
+previsões de caracteres.
+
+00:00:22.022 --> 00:00:24.791
+Continuaremos isto
+até gerarmos bastante texto.
+
+00:00:24.824 --> 00:00:28.128
+A função de previsão
+vai ajudar você com isto.
+
+00:00:28.161 --> 00:00:31.264
+Esta função pega um modelo
+e caracteres,
+
+00:00:31.298 --> 00:00:34.634
+e seu trabalho é nos dar
+o valor codificado
+
+00:00:34.668 --> 00:00:36.570
+do próximo caractere previsto
+
+00:00:36.603 --> 00:00:39.406
+e o estado oculto produzido
+pelo modelo.
+
+00:00:39.439 --> 00:00:42.209
+Vamos ver o que ela faz
+passo a passo.
+
+00:00:42.242 --> 00:00:44.344
+Ela pega
+um caractere de input
+
+00:00:44.377 --> 00:00:47.247
+e o converte num valor inteiro
+codificado.
+
+00:00:47.280 --> 00:00:49.216
+E, como parte
+do pré-processamento,
+
+00:00:49.249 --> 00:00:52.385
+o alteramos para uma representação
+codificada one-hot
+
+00:00:52.419 --> 00:00:55.088
+e convertemos estes inputs
+num tensor.
+
+00:00:55.121 --> 00:00:57.324
+E podemos passar os inputs
+para o modelo.
+
+00:00:57.357 --> 00:01:01.528
+Veremos passos bem similares
+aos que vimos no loop de treino:
+
+00:01:01.561 --> 00:01:04.231
+colocamos os inputs em uma GPU,
+se disponível,
+
+00:01:04.264 --> 00:01:07.300
+e destacamos o estado oculto
+do seu histórico aqui.
+
+00:01:07.334 --> 00:01:10.971
+Depois passamos os inputs
+e o estado oculto para o modelo,
+
+00:01:11.004 --> 00:01:13.773
+que retorna um output
+e um novo estado oculto.
+
+00:01:13.807 --> 00:01:16.843
+E vamos processar
+um pouco mais o output.
+
+00:01:16.877 --> 00:01:20.247
+Vamos aplicar uma função softmax
+para conseguir pi possibilidades
+
+00:01:20.280 --> 00:01:22.015
+do próximo caractere
+mais provável.
+
+00:01:22.048 --> 00:01:24.584
+Pi é uma distribuição
+de probabilidade
+
+00:01:24.618 --> 00:01:26.853
+das possibilidades
+de próximos caracteres,
+
+00:01:26.887 --> 00:01:28.889
+de acordo
+com o caractere de input X.
+
+00:01:28.922 --> 00:01:31.458
+Podemos gerar caracteres
+mais sensatos
+
+00:01:31.491 --> 00:01:34.661
+considerando os k caracteres
+mais prováveis.
+
+00:01:34.694 --> 00:01:37.297
+Nós demos a você
+algumas linhas de código
+
+00:01:37.330 --> 00:01:39.032
+para usar amostragem top_k,
+
+00:01:39.065 --> 00:01:41.935
+que acha os caracteres
+mais prováveis.
+
+00:01:41.968 --> 00:01:44.638
+Aqui adicionamos
+um elemento de aleatoriedade,
+
+00:01:44.671 --> 00:01:45.771
+algo que seleciona
+
+00:01:45.805 --> 00:01:48.475
+entre os próximos caracteres
+mais prováveis.
+
+00:01:48.508 --> 00:01:50.877
+Temos o próximo caractere
+mais provável,
+
+00:01:50.911 --> 00:01:54.214
+e estamos retornando
+o valor codificado deste caractere
+
+00:01:54.247 --> 00:01:56.383
+e o estado oculto
+produzido pelo modelo.
+
+00:01:56.416 --> 00:01:59.586
+Mas vamos chamar a função
+de previsão várias vezes,
+
+00:01:59.619 --> 00:02:02.923
+gerando um output do caractere
+e o passando como input,
+
+00:02:02.956 --> 00:02:05.258
+prevendo
+os próximos caracteres.
+
+00:02:05.292 --> 00:02:07.794
+Isto nos leva à próxima função:
+amostragem.
+
+00:02:07.827 --> 00:02:10.330
+Ela vai pegar
+o modelo treinado
+
+00:02:10.363 --> 00:02:12.632
+e o tamanho do texto
+que queremos gerar.
+
+00:02:12.666 --> 00:02:14.301
+Ela também usará prime,
+
+00:02:14.334 --> 00:02:16.002
+um conjunto de caracteres
+
+00:02:16.036 --> 00:02:18.371
+com os quais queremos
+que o modelo comece.
+
+00:02:18.405 --> 00:02:20.941
+Ela terá um valor
+para top_k,
+
+00:02:20.974 --> 00:02:23.810
+que vai retornar os caracteres
+mais prováveis
+
+00:02:23.844 --> 00:02:25.212
+na função de previsão.
+
+00:02:25.245 --> 00:02:29.850
+Vamos começar movendo o modelo
+para a GPU, se estiver disponível.
+
+00:02:29.883 --> 00:02:32.018
+E aqui inicializamos
+o estado oculto
+
+00:02:32.052 --> 00:02:33.687
+com o tamanho de lote 1,
+
+00:02:33.720 --> 00:02:36.256
+pois para cada caractere
+que fizermos input,
+
+00:02:36.289 --> 00:02:37.958
+o tamanho do lote será 1.
+
+00:02:37.991 --> 00:02:41.161
+Deste modo, a previsão é
+bem diferente de treinar um modelo.
+
+00:02:41.194 --> 00:02:44.264
+E você verá que obteremos
+cada caractere na palavra principal.
+
+00:02:44.297 --> 00:02:47.133
+A palavra principal
+ajuda a responder à pergunta:
+
+00:02:47.167 --> 00:02:49.302
+"Como começamos
+a gerar texto?"
+
+00:02:49.336 --> 00:02:51.071
+Não podemos
+começar aleatoriamente,
+
+00:02:51.104 --> 00:02:53.707
+então é fornecida
+uma palavra principal
+
+00:02:53.740 --> 00:02:55.242
+ou um conjunto de caracteres.
+
+00:02:55.275 --> 00:02:58.612
+Aqui o conjunto principal padrão
+é "The": T, H, E.
+
+00:02:58.645 --> 00:03:01.581
+Mas você pode passar
+o conjunto de caracteres que quiser
+
+00:03:01.615 --> 00:03:02.716
+como o principal.
+
+00:03:02.749 --> 00:03:06.186
+A função de amostragem processa
+estes caracteres em sequência,
+
+00:03:06.219 --> 00:03:08.088
+os adiciona
+a uma lista de caracteres
+
+00:03:08.121 --> 00:03:10.090
+e chama predict
+nos caracteres,
+
+00:03:10.123 --> 00:03:13.226
+passando para eles o modelo,
+os caracteres e o estado oculto.
+
+00:03:13.260 --> 00:03:16.563
+E isto retorna o próximo caractere
+após uma sequência principal
+
+00:03:16.596 --> 00:03:17.864
+e o estado oculto.
+
+00:03:17.898 --> 00:03:20.200
+Aqui temos todos
+os caracteres principais
+
+00:03:20.233 --> 00:03:23.003
+e o padrão, que é T, H e E.
+
+00:03:23.036 --> 00:03:26.439
+E vamos anexar o próximo
+caractere mais provável.
+
+00:03:26.473 --> 00:03:29.609
+Estamos basicamente construindo
+uma lista de caracteres.
+
+00:03:30.079 --> 00:03:32.546
+E vamos gerar mais
+e mais caracteres.
+
+00:03:32.909 --> 00:03:35.115
+Neste loop, estamos passando
+o modelo
+
+00:03:35.148 --> 00:03:37.951
+e o último caractere
+na lista de caracteres.
+
+00:03:37.984 --> 00:03:40.887
+Isto retorna o próximo caractere
+e o estado oculto.
+
+00:03:40.921 --> 00:03:44.524
+Este caractere é anexado à lista,
+e o ciclo começa novamente.
+
+00:03:44.558 --> 00:03:47.827
+A função de previsão prevê
+o próximo caractere mais provável,
+
+00:03:47.861 --> 00:03:49.162
+que é anexado à lista
+
+00:03:49.196 --> 00:03:52.199
+e volta como um input
+na função de previsão.
+
+00:03:52.232 --> 00:03:55.602
+O efeito é que vamos receber
+os próximos caracteres,
+
+00:03:55.635 --> 00:03:57.637
+os adicionando à lista
+de caracteres
+
+00:03:57.671 --> 00:04:00.207
+até atingirmos o comprimento
+de texto desejado.
+
+00:04:00.240 --> 00:04:02.742
+Finalmente juntamos estes
+caracteres
+
+00:04:02.776 --> 00:04:04.811
+e retornamos um texto
+de amostragem.
+
+00:04:04.845 --> 00:04:06.880
+Aqui eu gerei
+algumas amostras.
+
+00:04:06.913 --> 00:04:10.450
+Veja que eu passei o modelo
+que treinou por 20 epochs,
+
+00:04:10.483 --> 00:04:13.220
+e pedi para gerar
+um texto de 1.000 caracteres,
+
+00:04:13.253 --> 00:04:15.388
+começando com a palavra principal
+"Anna".
+
+00:04:15.422 --> 00:04:18.191
+Também passei um valor
+para top_k, o 5.
+
+00:04:18.225 --> 00:04:20.861
+Veja que começa
+com a palavra principal
+
+00:04:20.894 --> 00:04:24.197
+e gera o que podia ser
+um parágrafo de texto num livro.
+
+00:04:24.231 --> 00:04:26.733
+E mesmo só com alguns
+caracteres principais,
+
+00:04:26.766 --> 00:04:29.402
+o modelo está criando
+palavras reais e completas
+
+00:04:29.436 --> 00:04:30.604
+que fazem sentido.
+
+00:04:30.637 --> 00:04:33.006
+A estrutura e a ortografia
+estão muito boas,
+
+00:04:33.039 --> 00:04:35.876
+mesmo que o conteúdo esteja
+um pouco confuso.
+
+00:04:35.909 --> 00:04:37.477
+Aqui está outro exemplo
+
+00:04:37.511 --> 00:04:39.513
+em que carreguei um modelo
+por nome.
+
+00:04:39.546 --> 00:04:43.183
+E uso este modelo para gerar
+um texto mais longo,
+
+00:04:43.216 --> 00:04:46.253
+começando com as palavras principais
+"E Levin disse".
+
+00:04:46.286 --> 00:04:48.021
+Isto está bem legal.
+
+00:04:48.054 --> 00:04:51.558
+Um modelo bem treinado pode gerar
+textos que fazem sentido.
+
+00:04:51.591 --> 00:04:54.561
+Ele aprende, ao ver
+longas sequências de caracteres,
+
+00:04:54.594 --> 00:04:56.730
+qual é o próximo caractere
+mais provável.
+
+00:04:56.763 --> 00:04:59.032
+E no código de amostragem
+e no de previsão,
+
+00:04:59.065 --> 00:05:01.635
+usamos amostragem top_k
+e aleatoriedade
+
+00:05:01.668 --> 00:05:04.171
+para selecionar
+o melhor próximo caractere.
+
+00:05:04.204 --> 00:05:06.106
+E você pode treinar
+um modelo assim
+
+00:05:06.139 --> 00:05:07.807
+em qualquer
+outro dado de texto.
+
+00:05:07.841 --> 00:05:11.011
+Por exemplo, você pode tentar
+gerar sonetos de Shakespeare
+
+00:05:11.044 --> 00:05:12.812
+ou outro texto de sua escolha.
+
+00:05:12.846 --> 00:05:14.648
+Ótimo trabalho
+em chegar até aqui.
+
+00:05:14.681 --> 00:05:18.118
+Você aprendeu bastante
+sobre implementar RNNs no PyTorch.
+

@@ -1,0 +1,250 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.129
+So in this notebook, I'll be leading you through a Word2Vec implementation in PyTorch.
+
+00:00:05.129 --> 00:00:08.955
+Now, you've just learned about the idea behind embeddings in general.
+
+00:00:08.955 --> 00:00:14.099
+For any dataset with lots of classes or input dimensions like a large word vocabulary,
+
+00:00:14.099 --> 00:00:16.739
+we're basically skipping the one-hot encoding step,
+
+00:00:16.739 --> 00:00:20.654
+which would result in extremely long input vectors of mostly zeros.
+
+00:00:20.655 --> 00:00:23.010
+We're taking advantage of the fact that when
+
+00:00:23.010 --> 00:00:26.040
+one-hot vectors are multiplied by a weight matrix,
+
+00:00:26.039 --> 00:00:28.504
+we will just get one row of values back.
+
+00:00:28.504 --> 00:00:32.789
+For example, if we have a one-hot vector that has its fourth index on,
+
+00:00:32.789 --> 00:00:34.759
+and we multiply this by a weight matrix,
+
+00:00:34.759 --> 00:00:37.599
+we'll get the fourth row of weights back as a result.
+
+00:00:37.600 --> 00:00:38.890
+So, what we can do,
+
+00:00:38.890 --> 00:00:42.259
+is actually just have input numbers instead of one-hot vectors,
+
+00:00:42.259 --> 00:00:46.134
+and then we can use an embedding weight matrix to look up the correct output.
+
+00:00:46.134 --> 00:00:50.405
+In this case, we see the word heart is encoded as the integer 958,
+
+00:00:50.405 --> 00:00:53.300
+and we can look up the embedding vector for this word in
+
+00:00:53.299 --> 00:00:56.669
+the 958 row of an embedding weight matrix,
+
+00:00:56.670 --> 00:00:59.395
+this is also often called a lookup table.
+
+00:00:59.395 --> 00:01:01.345
+In text analysis, this is great.
+
+00:01:01.344 --> 00:01:06.109
+Because we already know that we can convert a vocabulary of words into integer tokens.
+
+00:01:06.109 --> 00:01:09.989
+So, each unique word will have a corresponding integer value.
+
+00:01:09.989 --> 00:01:13.054
+If we have a vocabulary of 10,000 words,
+
+00:01:13.055 --> 00:01:15.620
+we'll have a 10,000 row embedded weight matrix,
+
+00:01:15.620 --> 00:01:18.075
+where we can look up the correct output values.
+
+00:01:18.075 --> 00:01:20.780
+These output values which will just be rows in
+
+00:01:20.780 --> 00:01:24.784
+this weight matrix will be a vector representation of that input word.
+
+00:01:24.784 --> 00:01:27.349
+These representations are called embeddings,
+
+00:01:27.349 --> 00:01:30.979
+and they have as many values as is weight matrix has columns.
+
+00:01:30.980 --> 00:01:33.495
+This width is called the embedding dimension,
+
+00:01:33.495 --> 00:01:35.689
+it's usually some value in the hundreds.
+
+00:01:35.689 --> 00:01:39.575
+Now, Word2Vec is a special algorithm that basically says,
+
+00:01:39.575 --> 00:01:42.409
+"Any words that appear in the same context in
+
+00:01:42.409 --> 00:01:45.683
+a given text should have similar vector representations."
+
+00:01:45.683 --> 00:01:47.179
+So context in this case,
+
+00:01:47.180 --> 00:01:51.110
+basically means the words that come before and after a word of interest.
+
+00:01:51.109 --> 00:01:53.194
+Here are a couple of examples.
+
+00:01:53.194 --> 00:01:56.294
+In a body of text, you'll find a variety of sentences,
+
+00:01:56.295 --> 00:01:59.189
+and these ones all involve drinking some beverage.
+
+00:01:59.189 --> 00:02:02.239
+In some of these cases, even if I removed a word of interests,
+
+00:02:02.239 --> 00:02:04.309
+you may be able to guess what goes in there,
+
+00:02:04.310 --> 00:02:06.900
+just based on the context words surrounding it.
+
+00:02:06.900 --> 00:02:09.844
+So here it says, "I often drink coffee in the mornings.
+
+00:02:09.844 --> 00:02:11.379
+When I'm thirsty, I drink water,
+
+00:02:11.379 --> 00:02:13.495
+and I drink tea before I go to sleep."
+
+00:02:13.495 --> 00:02:15.879
+The mention of I drink before these words,
+
+00:02:15.879 --> 00:02:17.854
+makes these contexts similar.
+
+00:02:17.854 --> 00:02:20.329
+So, we'll expect these words coffee, water,
+
+00:02:20.330 --> 00:02:23.014
+and tea to have similar word embeddings.
+
+00:02:23.014 --> 00:02:25.560
+You can imagine that if we look at a large enough text,
+
+00:02:25.560 --> 00:02:30.400
+we may also see that coffee is more closely associated with morning time and so on.
+
+00:02:30.400 --> 00:02:34.444
+So, just by looking at a word of interest and some context words that surround it,
+
+00:02:34.444 --> 00:02:38.750
+Word2Vec can find similarities between words and relationships between them.
+
+00:02:38.750 --> 00:02:40.974
+In fact, for such similar words,
+
+00:02:40.974 --> 00:02:44.484
+Word2Vec should produce vectors that are very close in vector space,
+
+00:02:44.485 --> 00:02:47.770
+different words will be some distance away from each other.
+
+00:02:47.770 --> 00:02:50.360
+In this way, we're actually able to do vector arithmetic,
+
+00:02:50.360 --> 00:02:52.790
+and that's how Word2Vec confined mappings between
+
+00:02:52.789 --> 00:02:55.329
+words in the past and present tense for example.
+
+00:02:55.330 --> 00:02:57.850
+So, mapping the verb drink to drinking,
+
+00:02:57.849 --> 00:02:59.219
+and swam to swimming,
+
+00:02:59.219 --> 00:03:02.030
+is going to be the same transformation in vector space.
+
+00:03:02.030 --> 00:03:06.094
+In practice, Word2Vec is implemented in one of two ways.
+
+00:03:06.094 --> 00:03:09.650
+The first option is to basically give our model the context,
+
+00:03:09.650 --> 00:03:12.250
+so several words surrounding a word of interest,
+
+00:03:12.250 --> 00:03:14.330
+and have it tried to predict the missing word.
+
+00:03:14.330 --> 00:03:18.050
+So, context words in and a single word out,
+
+00:03:18.050 --> 00:03:22.385
+this is called the continuous bag of words or a CBOW model.
+
+00:03:22.384 --> 00:03:24.590
+The second option is the reverse,
+
+00:03:24.590 --> 00:03:28.699
+to input our word of interests and have our model tried to predict the context.
+
+00:03:28.699 --> 00:03:31.745
+So, one word n and a few you context words out.
+
+00:03:31.745 --> 00:03:33.705
+This is the skip-gram model,
+
+00:03:33.705 --> 00:03:35.380
+and we'll be implementing Word2Vec in
+
+00:03:35.379 --> 00:03:37.775
+this way because it's been shown to work a bit better.
+
+00:03:37.775 --> 00:03:39.830
+You'll notice that for either of these models,
+
+00:03:39.830 --> 00:03:44.935
+we'll also have to formalize the idea of context to be a window of a specified size.
+
+00:03:44.935 --> 00:03:49.235
+So, something like two words before and two words after a word of interest.
+
+00:03:49.235 --> 00:03:52.340
+Here, for an input word w at time t,
+
+00:03:52.340 --> 00:03:55.724
+we have context words from t minus two to t plus two,
+
+00:03:55.724 --> 00:03:59.284
+that is minus two words in the past and plus two in the future.
+
+00:03:59.284 --> 00:04:03.405
+Notice that the context does not include the original word of interest.
+
+00:04:03.405 --> 00:04:07.569
+So, now that you've been introduced to this notebook and the Word2Vec skip-gram model.
+
+00:04:07.569 --> 00:04:11.870
+Next, I'll show you the data that we'll be working with and give you your first exercise.
+

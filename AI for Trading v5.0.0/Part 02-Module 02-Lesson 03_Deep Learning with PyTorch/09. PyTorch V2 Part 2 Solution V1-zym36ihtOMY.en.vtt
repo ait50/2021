@@ -1,0 +1,283 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.685
+Here is my solution for
+
+00:00:02.685 --> 00:00:04.695
+this multi-layer neural network for
+
+00:00:04.695 --> 00:00:08.505
+classifying handwritten digits from the MNIST dataset.
+
+00:00:08.505 --> 00:00:11.850
+So, here I've defined our activation function like before, so,
+
+00:00:11.849 --> 00:00:15.464
+again this is the sigmoid function and here I'm flattening the images.
+
+00:00:15.464 --> 00:00:19.859
+So, remember how to reshape your tensors.
+
+00:00:19.859 --> 00:00:21.285
+So, here I'm using.view.
+
+00:00:21.285 --> 00:00:23.579
+So, I'm just grabbing the batch size.
+
+00:00:23.579 --> 00:00:25.184
+So, images.shape.
+
+00:00:25.184 --> 00:00:27.719
+The first element zero here,
+
+00:00:27.719 --> 00:00:32.924
+gives you the number of batches in your images tensor.
+
+00:00:32.924 --> 00:00:35.459
+So, I want to keep the number of batches the same,
+
+00:00:35.460 --> 00:00:38.384
+but I want to flatten the rest of the dimensions.
+
+00:00:38.384 --> 00:00:41.149
+So, to do this, you actually can just put in negative one.
+
+00:00:41.149 --> 00:00:44.600
+So, I could type in 784 here but a kind of
+
+00:00:44.600 --> 00:00:48.410
+a shortcut way to do this is to put in negative one.
+
+00:00:48.409 --> 00:00:54.979
+So, basically what this does is it takes 64 as your batch size here and then when you
+
+00:00:54.979 --> 00:00:58.099
+put a negative one it sees this and then it just chooses
+
+00:00:58.100 --> 00:01:02.270
+the appropriate size to get the total number of elements.
+
+00:01:02.270 --> 00:01:07.219
+So, it'll work out on its own that it needs to make the second dimension,
+
+00:01:07.219 --> 00:01:10.219
+784 so that the number of elements
+
+00:01:10.219 --> 00:01:13.674
+after reshaping matches the number elements before reshaping.
+
+00:01:13.674 --> 00:01:17.134
+So, this is just a kind of quick way to flatten
+
+00:01:17.135 --> 00:01:21.245
+a tensor without having to know what the second dimension used to be.
+
+00:01:21.245 --> 00:01:25.025
+Then here I'm just creating our weight and bias parameters.
+
+00:01:25.025 --> 00:01:33.020
+So, we know that we want an input of 784 units and we want 256 hidden units.
+
+00:01:33.019 --> 00:01:37.069
+So, our first weight matrix is going to be 784 by 256.
+
+00:01:37.069 --> 00:01:41.359
+Then, we need a bias term for each of our hidden units.
+
+00:01:41.359 --> 00:01:45.120
+So we have 256 bias terms here in b1.
+
+00:01:45.120 --> 00:01:48.829
+Then, for our second weight's going from the hidden layer to
+
+00:01:48.829 --> 00:01:53.569
+the output layer we want 256 inputs to 10 outputs.
+
+00:01:53.569 --> 00:01:55.684
+Then again 10 elements in our bias.
+
+00:01:55.685 --> 00:02:02.629
+Before we can do a matrix multiplication of our inputs with the first set of weights,
+
+00:02:02.629 --> 00:02:04.189
+our first weight parameters,
+
+00:02:04.189 --> 00:02:07.640
+add in the bias terms and passes
+
+00:02:07.640 --> 00:02:10.939
+through our activation functions so that gives us the output of our hidden layer.
+
+00:02:10.939 --> 00:02:15.395
+Then we can use that as the input to our output layer, and again,
+
+00:02:15.395 --> 00:02:19.969
+a matrix multiplication with a second set of weights and the second set of bias terms.
+
+00:02:19.969 --> 00:02:23.134
+This gives us the output of our network. All right.
+
+00:02:23.134 --> 00:02:26.209
+So, if we look at the output of this network,
+
+00:02:26.210 --> 00:02:29.450
+we see that we get those 64.
+
+00:02:29.449 --> 00:02:32.629
+So, first let me print the shape just to make sure we did that right.
+
+00:02:32.629 --> 00:02:40.164
+So, 64 rows for one of each of our sort of input examples and then 10 values,
+
+00:02:40.164 --> 00:02:42.530
+so, basically it's a value that's trying to
+
+00:02:42.530 --> 00:02:46.414
+say this image belongs to this class like this digit.
+
+00:02:46.414 --> 00:02:50.530
+So, we can inspect our output tensor and see what's going on here.
+
+00:02:50.530 --> 00:02:53.640
+So, we see these values are just sort of all over the place.
+
+00:02:53.639 --> 00:02:57.144
+So, you got like six and negative 11 and so on.
+
+00:02:57.145 --> 00:03:00.469
+But we really want is we want our network to kind of tell
+
+00:03:00.469 --> 00:03:04.159
+us the probability of our different classes given some image.
+
+00:03:04.159 --> 00:03:09.500
+So, kind of we want to pass in an image to our network and then the output should be
+
+00:03:09.500 --> 00:03:12.050
+a probability distribution that tells us which are
+
+00:03:12.050 --> 00:03:16.564
+the most likely classes or digits that belong to this image.
+
+00:03:16.564 --> 00:03:19.254
+So, if it's the image of a six,
+
+00:03:19.254 --> 00:03:21.829
+then we want a probability distribution where most of
+
+00:03:21.830 --> 00:03:24.995
+the probability is in the sixth class.
+
+00:03:24.995 --> 00:03:27.115
+So, it's telling us that it's a number six.
+
+00:03:27.115 --> 00:03:29.375
+So, we want it to look something like this.
+
+00:03:29.375 --> 00:03:31.520
+This is like a class probability.
+
+00:03:31.520 --> 00:03:33.725
+So, it's telling us the probabilities of
+
+00:03:33.724 --> 00:03:37.814
+the different classes given this image that we're passing in.
+
+00:03:37.814 --> 00:03:39.604
+So, you can see that the probability for
+
+00:03:39.604 --> 00:03:41.449
+each of these different classes is roughly the same,
+
+00:03:41.449 --> 00:03:43.984
+and so it's a uniform distribution.
+
+00:03:43.985 --> 00:03:46.310
+This represents an untrained network,
+
+00:03:46.310 --> 00:03:49.164
+so it's a uniform probability distribution.
+
+00:03:49.164 --> 00:03:51.049
+It's because it hasn't seen any data yet,
+
+00:03:51.050 --> 00:03:53.495
+so it hasn't learned anything about these images.
+
+00:03:53.495 --> 00:03:57.004
+So, whenever you give an image to it,
+
+00:03:57.004 --> 00:04:00.949
+it doesn't know what it is so it's just going to give an equal probability to each class,
+
+00:04:00.949 --> 00:04:03.369
+regardless of the image that you pass in.
+
+00:04:03.370 --> 00:04:07.355
+So, what we want is we want the output of our network to be
+
+00:04:07.354 --> 00:04:10.669
+a probability distribution that gives us the probability
+
+00:04:10.669 --> 00:04:14.959
+that the image belongs to any one of our classes.
+
+00:04:14.960 --> 00:04:17.944
+So for this, we use the softmax function.
+
+00:04:17.944 --> 00:04:20.540
+So what this looks like is the exponential.
+
+00:04:20.540 --> 00:04:22.670
+So,you pass in your 10 values.
+
+00:04:22.670 --> 00:04:24.455
+So, for each of those values,
+
+00:04:24.454 --> 00:04:26.764
+we calculate the exponential of that value divided by
+
+00:04:26.764 --> 00:04:29.555
+the sum of exponentials of all the values.
+
+00:04:29.555 --> 00:04:33.139
+So, what this does is it actually kind of squishes each
+
+00:04:33.139 --> 00:04:36.680
+of the input values x between zero and one,
+
+00:04:36.680 --> 00:04:39.470
+and then also normalizes all the values so that
+
+00:04:39.470 --> 00:04:42.870
+the sum of each of the probabilities is one.
+
+00:04:42.870 --> 00:04:44.939
+So, the entire thing sums up to one.
+
+00:04:44.939 --> 00:04:47.524
+So, this gives you a proper probability distribution.
+
+00:04:47.524 --> 00:04:50.224
+What I want you to do here is actually implement
+
+00:04:50.225 --> 00:04:54.310
+a function called softmax that performs this calculation.
+
+00:04:54.310 --> 00:04:57.800
+So, what you're going to be doing is taking the output from
+
+00:04:57.800 --> 00:05:02.704
+this simple neural network and has shaped 64 by 10 and pass it through
+
+00:05:02.704 --> 00:05:06.694
+a dysfunction softmax and make sure it calculates
+
+00:05:06.694 --> 00:05:11.659
+the probability distribution for each of the different examples that we passed in.
+
+00:05:11.660 --> 00:05:13.130
+Right? Good luck.
+

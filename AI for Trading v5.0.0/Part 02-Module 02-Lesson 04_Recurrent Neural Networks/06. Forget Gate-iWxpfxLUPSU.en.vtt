@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.814
+Now, we go to the Forget Gate,
+
+00:00:01.814 --> 00:00:03.584
+this one works as follows: It takes
+
+00:00:03.584 --> 00:00:08.035
+a long term memory and it decides what parts to keep and to forget.
+
+00:00:08.035 --> 00:00:11.519
+In this case, the show is about nature and science and the forget gate decides to
+
+00:00:11.519 --> 00:00:15.724
+forget that the show is about science and keep the fact that it's about nature.
+
+00:00:15.724 --> 00:00:18.009
+How does the Forget Gate work mathematically?
+
+00:00:18.009 --> 00:00:23.054
+Very simple. The long-term memory (LTM) from time T minus 1 comes in,
+
+00:00:23.053 --> 00:00:24.538
+and it gets multiplied by
+
+00:00:24.539 --> 00:00:29.885
+a Forget Factor ft. And how does the forget factor ft get calculated?
+
+00:00:29.885 --> 00:00:31.350
+Well, simple. We'll use
+
+00:00:31.350 --> 00:00:36.469
+a short term memory STM and the event information to calculate ft.
+
+00:00:36.469 --> 00:00:37.859
+So, just as before,
+
+00:00:37.859 --> 00:00:42.118
+we run a small one layer neural network with a linear function combined with
+
+00:00:42.118 --> 00:00:44.173
+the sigmoid function to calculate
+
+00:00:44.173 --> 00:00:47.570
+this Forget Factor and that's how the Forget Gate works.
+

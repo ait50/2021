@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.370
+So here we go. As we've seen before,
+
+00:00:02.370 --> 00:00:05.878
+here is the architecture for an LSTM with the four gates.
+
+00:00:05.878 --> 00:00:07.003
+There is the forget gate,
+
+00:00:07.003 --> 00:00:09.993
+which takes the long-term memory and forgets part of it.
+
+00:00:09.993 --> 00:00:12.599
+The learn gate puts the short-term memory together with
+
+00:00:12.599 --> 00:00:16.035
+the event as the information we've recently learned.
+
+00:00:16.035 --> 00:00:20.070
+The remember gate joins the long-term memory that we haven't yet forgotten plus
+
+00:00:20.070 --> 00:00:24.760
+the new information we've learned in order to update our long-term memory and output it.
+
+00:00:24.760 --> 00:00:27.629
+And finally, the use gate also takes the information we just
+
+00:00:27.629 --> 00:00:30.719
+learned together with long-term memory we haven't yet forgotten,
+
+00:00:30.719 --> 00:00:34.875
+and it uses it to make a prediction and update the short-term memory.
+
+00:00:34.875 --> 00:00:36.734
+So this is how it looks all put together.
+
+00:00:36.734 --> 00:00:38.993
+It's not so complicated after all, isn't it?
+
+00:00:38.993 --> 00:00:40.695
+Now you may be thinking, wait a minute,
+
+00:00:40.695 --> 00:00:42.350
+this looks too arbitrary.
+
+00:00:42.350 --> 00:00:45.520
+Why use tanh sometimes and sigmoid other times?
+
+00:00:45.520 --> 00:00:47.574
+Why multiply sometimes and add other times,
+
+00:00:47.573 --> 00:00:50.369
+and other times apply a more complicated linear function?
+
+00:00:50.369 --> 00:00:52.169
+You can probably think of different architectures that
+
+00:00:52.170 --> 00:00:54.329
+make more sense or that are simpler,
+
+00:00:54.329 --> 00:00:55.908
+and you are absolutely right.
+
+00:00:55.908 --> 00:00:57.613
+This is an arbitrary construction.
+
+00:00:57.613 --> 00:00:59.339
+And as many things in machine learning,
+
+00:00:59.340 --> 00:01:03.170
+the reason why it is like this is because it works.
+
+00:01:03.170 --> 00:01:04.349
+And in the following section,
+
+00:01:04.349 --> 00:01:06.689
+we'll see some other architectures which can be simpler
+
+00:01:06.688 --> 00:01:09.818
+or more complex and that also do the job.
+
+00:01:09.819 --> 00:01:12.180
+But you're welcome to look for others and experiment.
+
+00:01:12.180 --> 00:01:14.819
+This is an area very much under development so if you come up
+
+00:01:14.819 --> 00:01:18.000
+with a different architecture and it works, that is wonderful.
+

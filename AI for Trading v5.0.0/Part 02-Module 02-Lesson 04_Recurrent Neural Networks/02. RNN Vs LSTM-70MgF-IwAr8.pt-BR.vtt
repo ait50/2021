@@ -1,0 +1,220 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.333 --> 00:00:03.859
+Imagine uma rede neural
+que reconhece imagens,
+
+00:00:03.896 --> 00:00:05.548
+na qual alimentamos
+esta imagem.
+
+00:00:05.585 --> 00:00:09.124
+A rede adivinha que a imagem
+deve ser um cachorro,
+
+00:00:09.161 --> 00:00:13.076
+com mais chance de ser um lobo
+e menos chance de ser um peixe.
+
+00:00:13.113 --> 00:00:17.260
+Mas e se a imagem for um lobo?
+Como a rede neural saberá?
+
+00:00:17.297 --> 00:00:19.539
+Imagine um programa de TV
+sobre natureza
+
+00:00:19.576 --> 00:00:22.459
+em que a imagem anterior à do lobo
+é a de um urso
+
+00:00:22.496 --> 00:00:24.558
+e, antes dela,
+a de uma raposa.
+
+00:00:24.595 --> 00:00:27.574
+Neste caso, utilizamos
+essas informações como dica
+
+00:00:27.611 --> 00:00:30.351
+de que a imagem
+é um lobo e não um cachorro.
+
+00:00:30.388 --> 00:00:34.933
+Nós analisamos cada imagem
+com a mesma cópia da rede neural,
+
+00:00:34.970 --> 00:00:37.277
+mas utilizamos a saída
+da rede neural
+
+00:00:37.314 --> 00:00:39.974
+como parte da entrada
+da próxima.
+
+00:00:40.011 --> 00:00:42.517
+Isso melhora os resultados.
+
+00:00:42.554 --> 00:00:44.205
+Matematicamente,
+isso é simples.
+
+00:00:44.242 --> 00:00:46.684
+Combinamos os vetores
+em uma função linear
+
+00:00:46.721 --> 00:00:49.860
+que serão "espremidos"
+com uma função de ativação,
+
+00:00:49.897 --> 00:00:52.573
+que pode ser sigmoide
+ou tangente hiperbólica.
+
+00:00:52.610 --> 00:00:54.707
+Utilizamos
+as informações anteriores
+
+00:00:54.744 --> 00:00:56.515
+para que a rede neural saiba
+
+00:00:56.552 --> 00:00:58.786
+que o programa
+é sobre animais selvagens
+
+00:00:58.823 --> 00:01:01.379
+e utilize as informações
+para prever corretamente
+
+00:01:01.416 --> 00:01:04.091
+que a imagem é a de um lobo
+e não a de um cachorro.
+
+00:01:04.128 --> 00:01:07.046
+É assim que as redes neurais
+recorrentes funcionam.
+
+00:01:07.083 --> 00:01:08.653
+Mas existem
+alguns problemas.
+
+00:01:08.690 --> 00:01:10.181
+Digamos que o urso apareceu
+
+00:01:10.218 --> 00:01:13.788
+e, logo depois,
+uma árvore e um esquilo.
+
+00:01:13.825 --> 00:01:17.261
+A partir disso, não saberemos
+se é lobo ou cachorro,
+
+00:01:17.298 --> 00:01:22.332
+pois árvores e esquilos
+são comuns aos dois.
+
+00:01:22.369 --> 00:01:26.429
+Então a informação
+sobre a floresta vem do urso.
+
+00:01:26.466 --> 00:01:28.020
+Mas, como já vimos,
+
+00:01:28.057 --> 00:01:31.797
+as informações são "espremidas"
+por funções sigmoides
+
+00:01:31.834 --> 00:01:33.277
+e, pior do que isso,
+
+00:01:33.314 --> 00:01:36.333
+treinar uma rede
+com retropropagação tão longa
+
+00:01:36.370 --> 00:01:40.181
+pode causar problemas
+como o da dissipação do gradiente.
+
+00:01:40.218 --> 00:01:43.621
+Nesse ponto, as informações
+sobre o urso se perderam,
+
+00:01:43.658 --> 00:01:46.261
+e esse é um problema
+das redes neurais recorrentes,
+
+00:01:46.298 --> 00:01:49.299
+pois a memória armazenada
+é de curta duração.
+
+00:01:49.336 --> 00:01:52.437
+As RNNs não armazenam
+memórias de longa duração,
+
+00:01:52.474 --> 00:01:54.132
+e é aqui que as LSTMs,
+
+00:01:54.169 --> 00:01:57.700
+redes de memória de longa
+e de curta duração, entram em ação.
+
+00:01:57.737 --> 00:02:00.428
+Resumindo,
+a RNN funciona assim:
+
+00:02:00.465 --> 00:02:03.243
+a memória entra,
+se mistura com o evento atual,
+
+00:02:03.280 --> 00:02:06.291
+e a saída será uma previsão
+do que é a entrada,
+
+00:02:06.328 --> 00:02:10.100
+bem como a entrada da próxima
+iteração da rede neural.
+
+00:02:10.137 --> 00:02:12.700
+De forma parecida,
+uma LSTM funciona assim:
+
+00:02:12.737 --> 00:02:16.196
+ela rastreia
+a memória de longa duração,
+
+00:02:16.233 --> 00:02:18.203
+que entra e sai,
+
+00:02:18.240 --> 00:02:21.788
+e a memória de curta duração,
+que também entra e sai.
+
+00:02:21.825 --> 00:02:25.764
+Em cada estágio, a memória de longa
+e de curta duração se misturam.
+
+00:02:25.801 --> 00:02:28.604
+A partir daí, teremos
+a nova memória de longa duração,
+
+00:02:28.641 --> 00:02:30.995
+a de curta duração
+e uma previsão.
+
+00:02:31.032 --> 00:02:33.685
+Aqui protegemos mais
+as informações antigas.
+
+00:02:33.722 --> 00:02:37.733
+Assim a rede poderá se lembrar
+de coisas muito antigas.
+
+00:02:37.770 --> 00:02:38.998
+Nos próximos vídeos,
+
+00:02:39.035 --> 00:02:42.762
+mostrarei a arquitetura
+das LSTMs e como funcionam.
+

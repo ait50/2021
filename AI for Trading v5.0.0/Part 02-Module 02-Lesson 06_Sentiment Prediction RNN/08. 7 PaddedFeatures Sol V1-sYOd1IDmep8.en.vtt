@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.595
+So here's my solution for creating an array of features,
+
+00:00:03.595 --> 00:00:06.610
+reviews that have either been padded on the left with zeros
+
+00:00:06.610 --> 00:00:10.280
+until their sequence length on or truncated at that length.
+
+00:00:10.280 --> 00:00:13.120
+First, I'm actually creating an array of zeros,
+
+00:00:13.120 --> 00:00:15.410
+that's just the final shape that I know I want.
+
+00:00:15.410 --> 00:00:18.810
+That is, it should have as many rows as I have reviews in
+
+00:00:18.810 --> 00:00:23.895
+the input reviews_ints data into as many columns as the specified sequence length,
+
+00:00:23.895 --> 00:00:26.815
+and this will just hold all the zero integers for now.
+
+00:00:26.815 --> 00:00:29.230
+Then for each review in my list,
+
+00:00:29.230 --> 00:00:31.600
+I'll put it as a row in my features array.
+
+00:00:31.600 --> 00:00:33.605
+The first review is going to go on the first row,
+
+00:00:33.605 --> 00:00:35.955
+and the second in the second, and so on.
+
+00:00:35.955 --> 00:00:39.110
+I started out thinking of my short review case.
+
+00:00:39.110 --> 00:00:41.500
+I want to keep a left padding of zeros,
+
+00:00:41.500 --> 00:00:45.295
+up until I reach where that review can fill the remaining values.
+
+00:00:45.295 --> 00:00:47.605
+So, I'm looking at filling my features,
+
+00:00:47.605 --> 00:00:51.530
+starting at the index that's at the end of the features row,
+
+00:00:51.530 --> 00:00:53.670
+minus the length of the input review.
+
+00:00:53.670 --> 00:00:55.110
+So, if a reviewer show,
+
+00:00:55.110 --> 00:00:59.080
+this means our features are going to keep the zeros which are padding on the left,
+
+00:00:59.080 --> 00:01:01.580
+and the review tokens will be on the right side.
+
+00:01:01.580 --> 00:01:04.100
+It turns out that I only have to add one more piece to
+
+00:01:04.100 --> 00:01:07.130
+this line to make this work for a long reviews too.
+
+00:01:07.130 --> 00:01:10.760
+Hear for annual review including those longer than the given sequence length,
+
+00:01:10.760 --> 00:01:13.375
+I'm truncating them at that sequence length,
+
+00:01:13.375 --> 00:01:15.720
+and this should fill the corresponding features row.
+
+00:01:15.720 --> 00:01:19.145
+So, this loop will do this for every review in reviews_ints,
+
+00:01:19.145 --> 00:01:21.165
+and then returns these features.
+
+00:01:21.165 --> 00:01:23.020
+Below I'm running my test code.
+
+00:01:23.020 --> 00:01:25.550
+Here I'm creating features passing in my list of
+
+00:01:25.550 --> 00:01:29.060
+reviews_ints and a sequence length equal to 200.
+
+00:01:29.060 --> 00:01:30.950
+I don't trigger any of these error messages,
+
+00:01:30.950 --> 00:01:32.765
+so I know my dimensions are correct,
+
+00:01:32.765 --> 00:01:36.555
+and then printing out the first ten values of the first three rows here.
+
+00:01:36.555 --> 00:01:38.475
+And here's what these rows look like.
+
+00:01:38.475 --> 00:01:40.010
+A lot of these start with zeros,
+
+00:01:40.010 --> 00:01:42.160
+which is what I expect for left padding,
+
+00:01:42.160 --> 00:01:45.620
+and others have filled up these rows with various token values.
+
+00:01:45.620 --> 00:01:48.005
+So, this is great. And I'll also add that.
+
+00:01:48.005 --> 00:01:52.465
+In this step, we've actually introduced a new token into our review features.
+
+00:01:52.465 --> 00:01:57.860
+Remember that before, all words in our vocabulary hadn't associated integer value,
+
+00:01:57.860 --> 00:02:00.205
+and we started organizing with the value one.
+
+00:02:00.205 --> 00:02:02.470
+So, in our vocab_to_int dictionary,
+
+00:02:02.470 --> 00:02:06.055
+we had integers from one up to 74,000 or so.
+
+00:02:06.055 --> 00:02:08.500
+And here by adding zero as padding,
+
+00:02:08.500 --> 00:02:12.450
+I've effectively inserted the zero token into our vocabulary.
+
+00:02:12.450 --> 00:02:15.740
+Okay. Now for your next and the last data transformation
+
+00:02:15.740 --> 00:02:18.755
+exercise with our data in nice shape, next,
+
+00:02:18.755 --> 00:02:23.970
+I want you to split the features and encoded labels into three different datasets,
+
+00:02:23.970 --> 00:02:26.660
+training, validation, and test sets.
+
+00:02:26.660 --> 00:02:29.330
+You'll need to create datasets for grouping our features and
+
+00:02:29.330 --> 00:02:32.560
+labels like train_x and train_y, for example.
+
+00:02:32.560 --> 00:02:35.795
+And we'll use these different sets to train and test our model.
+
+00:02:35.795 --> 00:02:37.795
+So, I've defined a split fraction,
+
+00:02:37.795 --> 00:02:41.775
+split_frac, as the fraction of data to keep in the training set.
+
+00:02:41.775 --> 00:02:45.105
+This is set to 0.8 or 80 percent of data.
+
+00:02:45.105 --> 00:02:48.080
+The 20 percent of the data that's left should be split in
+
+00:02:48.080 --> 00:02:51.415
+half to create the validation and testing data respectively.
+
+00:02:51.415 --> 00:02:53.845
+So, I'll leave this as an exercise.
+
+00:02:53.845 --> 00:02:57.320
+And next, I'll go over how I split the data and I'll show you
+
+00:02:57.320 --> 00:02:59.450
+some PyTorch resources we can use to
+
+00:02:59.450 --> 00:03:03.280
+effectively batch and iterate through these different datasets.
+

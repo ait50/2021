@@ -1,0 +1,266 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.600
+Vamos recapitular.
+Temos o seguinte problema:
+
+00:00:02.650 --> 00:00:05.900
+estamos assistindo à TV
+e temos uma memória de longo prazo
+
+00:00:05.950 --> 00:00:08.150
+que sabe que é um programa
+de natureza e ciência,
+
+00:00:08.200 --> 00:00:10.600
+e que muitos animais
+da floresta apareceram.
+
+00:00:10.650 --> 00:00:13.550
+Também temos uma memória
+de curto prazo que nos diz
+
+00:00:13.600 --> 00:00:15.450
+que vimos esquilos
+e árvores.
+
+00:00:15.500 --> 00:00:18.650
+E temos um evento atual,
+que é o que acabamos de ver,
+
+00:00:18.700 --> 00:00:21.450
+a imagem de um cachorro,
+que também poderia ser um lobo.
+
+00:00:21.500 --> 00:00:23.450
+Queremos combinar
+essas três coisas
+
+00:00:23.500 --> 00:00:26.350
+para formar uma previsão
+da nossa imagem.
+
+00:00:26.400 --> 00:00:28.350
+Neste caso,
+a memória de longo prazo,
+
+00:00:28.400 --> 00:00:30.450
+que lembra que são
+animais da floresta,
+
+00:00:30.500 --> 00:00:33.950
+nos dará a dica de que se trata
+de um lobo, e não de um cachorro.
+
+00:00:34.000 --> 00:00:36.000
+Também queremos usar
+as três informações,
+
+00:00:36.050 --> 00:00:38.550
+a memória de longo e curto prazo
+e o evento,
+
+00:00:38.600 --> 00:00:40.550
+para atualizar
+a memória de longo prazo.
+
+00:00:40.600 --> 00:00:42.950
+Manteremos o fato
+de que é sobre natureza,
+
+00:00:43.000 --> 00:00:44.700
+mas esqueceremos
+que é sobre ciência,
+
+00:00:44.750 --> 00:00:47.600
+e também lembraremos que é
+sobre animais da floresta e árvores,
+
+00:00:47.650 --> 00:00:49.450
+já que vimos uma há pouco.
+
+00:00:49.500 --> 00:00:52.650
+Então nós adicionamos e removemos
+algo da memória de longo prazo.
+
+00:00:52.700 --> 00:00:55.600
+Por fim, também queremos usar
+essas três informações
+
+00:00:55.650 --> 00:00:57.500
+para atualizar a memória
+de curto prazo.
+
+00:00:57.550 --> 00:01:00.600
+Digamos que queiramos esquecer
+que aparecem árvores
+
+00:01:00.650 --> 00:01:02.050
+e lembrar que há lobos,
+
+00:01:02.100 --> 00:01:04.000
+já que as árvores já apareceram
+faz tempo
+
+00:01:04.050 --> 00:01:05.850
+e acabamos de ver o lobo.
+
+00:01:05.900 --> 00:01:07.700
+Então temos
+uma arquitetura assim
+
+00:01:07.750 --> 00:01:10.700
+e usaremos ainda mais animais
+para representar a memória.
+
+00:01:10.750 --> 00:01:13.250
+A de longo prazo
+é representada por um elefante,
+
+00:01:13.300 --> 00:01:15.650
+já que elefantes
+têm memória de longo prazo.
+
+00:01:15.700 --> 00:01:18.600
+A de curto prazo
+será um peixinho esquecido,
+
+00:01:18.650 --> 00:01:22.050
+e o evento
+será representado pelo lobo.
+
+00:01:22.100 --> 00:01:23.750
+Então o LSTM funciona assim:
+
+00:01:23.800 --> 00:01:26.350
+as três informações
+entram no nó,
+
+00:01:26.400 --> 00:01:29.050
+acontece um cálculo
+e novas informações
+
+00:01:29.100 --> 00:01:31.900
+são atualizadas e geradas.
+A memória de longo prazo,
+
+00:01:31.950 --> 00:01:35.000
+a de curto prazo
+e a previsão do evento.
+
+00:01:35.050 --> 00:01:38.600
+Mais especificamente, a arquitetura
+do LSTM contém algumas portas.
+
+00:01:38.650 --> 00:01:41.100
+Uma porta esquecimento,
+uma aprendizagem,
+
+00:01:41.150 --> 00:01:43.750
+uma lembrança
+e uma uso.
+
+00:01:43.800 --> 00:01:45.700
+E é assim
+que geralmente funciona.
+
+00:01:45.750 --> 00:01:48.400
+A memória de longo prazo
+passa pela porta esquecimento,
+
+00:01:48.450 --> 00:01:51.350
+que deixa para lá
+tudo que considera inútil.
+
+00:01:51.400 --> 00:01:53.400
+A memória de curto prazo
+e o evento
+
+00:01:53.450 --> 00:01:55.450
+são mesclados
+na porta aprendizagem,
+
+00:01:55.500 --> 00:01:58.150
+contendo a informação
+que aprendemos há pouco
+
+00:01:58.200 --> 00:02:00.650
+e removendo informações
+desnecessárias.
+
+00:02:00.700 --> 00:02:03.300
+A memória a longo prazo
+de que ainda não esquecemos
+
+00:02:03.350 --> 00:02:05.050
+e a informação nova
+que aprendemos
+
+00:02:05.100 --> 00:02:07.750
+são juntadas
+na porta lembrança.
+
+00:02:07.800 --> 00:02:11.250
+Ele junta as duas
+e, como o nome diz,
+
+00:02:11.300 --> 00:02:14.700
+retorna uma memória
+de longo prazo atualizada.
+
+00:02:14.750 --> 00:02:17.250
+É disso que lembraremos
+no futuro.
+
+00:02:17.300 --> 00:02:20.600
+E, por fim, a porta uso
+diz o que usaremos
+
+00:02:20.650 --> 00:02:23.400
+do que já sabíamos
+e do que aprendemos agora
+
+00:02:23.450 --> 00:02:24.600
+para fazer uma previsão.
+
+00:02:24.650 --> 00:02:28.250
+Então ele recebe a memória
+a longo prazo e os dados novos,
+
+00:02:28.300 --> 00:02:31.250
+os mescla e decide
+o que manter.
+
+00:02:31.300 --> 00:02:35.350
+A saída se torna tanto a previsão
+quanto a memória de curto prazo.
+
+00:02:35.400 --> 00:02:38.150
+E a grande pintura que temos
+é assim:
+
+00:02:38.200 --> 00:02:41.300
+temos uma memória de longo prazo
+e outra de curto entrando,
+
+00:02:41.350 --> 00:02:44.350
+que chamaremos de LTM e STM,
+
+00:02:44.400 --> 00:02:48.200
+um evento e uma saída
+entram e saem do LSTM
+
+00:02:48.250 --> 00:02:53.100
+isso passa para o próximo nó,
+e assim por diante.
+
+00:02:53.150 --> 00:02:57.400
+Então, em geral, no tempo t,
+rotulamos tudo com _t.
+
+00:02:57.450 --> 00:03:02.300
+Como vemos, a informação passa
+do tempo t - 1 para o tempo t.
+

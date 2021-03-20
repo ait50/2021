@@ -1,0 +1,489 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Training the Model
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Sentiment Prediction RNN
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Sentiment RNN, Introduction.html">
+       01. Sentiment RNN, Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Pre-Notebook Sentiment RNN.html">
+       02. Pre-Notebook: Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Notebook Sentiment RNN.html">
+       03. Notebook: Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Data Pre-Processing.html">
+       04. Data Pre-Processing
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Encoding Words, Solution.html">
+       05. Encoding Words, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Getting Rid of Zero-Length.html">
+       06. Getting Rid of Zero-Length
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Cleaning &amp; Padding Data.html">
+       07. Cleaning &amp; Padding Data
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Padded Features, Solution.html">
+       08. Padded Features, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="09. TensorDataset &amp; Batching Data.html">
+       09. TensorDataset &amp; Batching Data
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Defining the Model.html">
+       10. Defining the Model
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Complete Sentiment RNN.html">
+       11. Complete Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Training the Model.html">
+       12. Training the Model
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Testing.html">
+       13. Testing
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Inference, Solution.html">
+       14. Inference, Solution
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. Training the Model
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="hyperparameters">
+          Hyperparameters
+         </h2>
+         <p>
+          After defining my model, next I should instantiate it with some hyperparameters.
+         </p>
+         <pre><code class="python language-python"># Instantiate the model w/ hyperparams
+vocab_size = len(vocab_to_int)+1 # +1 for the 0 padding + our word tokens
+output_size = 1
+embedding_dim = 400
+hidden_dim = 256
+n_layers = 2
+
+net = SentimentRNN(vocab_size, output_size, embedding_dim, hidden_dim, n_layers)
+
+print(net)</code></pre>
+         <p>
+          This should look familiar, but the main thing to note here is our
+          <code>
+           vocab_size
+          </code>
+          .
+         </p>
+         <p>
+          This is actually the length of our
+          <code>
+           vocab_to_int
+          </code>
+          dictionary (all our unique words)
+          <strong>
+           plus one
+          </strong>
+          to account for the
+          <code>
+           0
+          </code>
+          -token that we added,  when we padded our input features. So, if you do data pre-processing, you may end up with one or two extra, special tokens that you’ll need to account for, in this parameter!
+         </p>
+         <p>
+          Then, I want my
+          <code>
+           output_size
+          </code>
+          to be 1; this will be a sigmoid value between 0 and 1, indicating whether a review is positive or negative.
+         </p>
+         <p>
+          Then I have my embedding and hidden dimension. The embedding dimension is just a smaller representation of my vocabulary of 70k words and I think any value between like 200 and 500 or so would work, here. I’ve chosen 400. Similarly, for our hidden dimension, I think 256 hidden features should be enough to distinguish between positive and negative reviews.
+         </p>
+         <p>
+          I’m also choosing to make a 2 layer LSTM. Finally, I’m instantiating my model and printing it out to make sure everything looks good.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Model hyperparameters" class="img img-fluid" src="img/screen-shot-2018-11-05-at-11.33.57-am.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Model hyperparameters
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="training-and-optimization">
+          Training and Optimization
+         </h2>
+         <p>
+          The training code, should look pretty familiar. One new detail is that, we'll be using a new kind of cross entropy loss that is designed to work with a single Sigmoid output.
+         </p>
+         <blockquote>
+          <p>
+           <a href="https://pytorch.org/docs/stable/nn.html#bceloss" rel="noopener noreferrer" target="_blank">
+            BCELoss
+           </a>
+           , or
+           <strong>
+            Binary Cross Entropy Loss
+           </strong>
+           , applies cross entropy loss to a single value between 0 and 1.
+          </p>
+         </blockquote>
+         <p>
+          We'll define an Adam optimizer, as usual.
+         </p>
+         <pre><code class="python language-python"># loss and optimization functions
+lr=0.001
+
+criterion = nn.BCELoss()
+optimizer = torch.optim.Adam(net.parameters(), lr=lr)</code></pre>
+         <h4 id="output-target-format">
+          Output, target format
+         </h4>
+         <p>
+          You should also notice that, in the training loop, we are making sure that our outputs are squeezed so that they do not have an empty dimension
+          <code>
+           output.squeeze()
+          </code>
+          and the labels are float tensors,
+          <code>
+           labels.float()
+          </code>
+          . Then we perform backpropagation as usual.
+         </p>
+         <h4 id="train-and-eval-mode">
+          Train and eval mode
+         </h4>
+         <p>
+          Below, you can also see that we switch between train and evaluation mode when the model is training versus when it is being evaluated on validation data!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="training-loop">
+          Training Loop
+         </h3>
+         <p>
+          Below, you’ll see a usual training loop.
+         </p>
+         <p>
+          I’m actually only going to do four epochs of training because that's about when I noticed the validation loss stop decreasing.
+         </p>
+         <ul>
+          <li>
+           You can see that I am initializing my hidden state before entering the batch loop then have my usual detachment from history for the hidden state and backpropagation steps.
+          </li>
+          <li>
+           I’m getting my input and label data from my train_dataloader. Then applying my model to the inputs and comparing the outputs and the true labels.
+          </li>
+          <li>
+           I also have some code that checks performance on my validation set, which, if you want, may be a great thing to use to decide when to stop training or which best model to save!
+          </li>
+         </ul>
+         <pre><code class="python language-python"># training params
+
+epochs = 4 # 3-4 is approx where I noticed the validation loss stop decreasing
+
+counter = 0
+print_every = 100
+clip=5 # gradient clipping
+
+# move model to GPU, if available
+if(train_on_gpu):
+    net.cuda()
+
+net.train()
+# train for some number of epochs
+for e in range(epochs):
+    # initialize hidden state
+    h = net.init_hidden(batch_size)
+
+    # batch loop
+    for inputs, labels in train_loader:
+        counter += 1
+
+        if(train_on_gpu):
+            inputs, labels = inputs.cuda(), labels.cuda()
+
+        # Creating new variables for the hidden state, otherwise
+        # we'd backprop through the entire training history
+        h = tuple([each.data for each in h])
+
+        # zero accumulated gradients
+        net.zero_grad()
+
+        # get the output from the model
+        output, h = net(inputs, h)
+
+        # calculate the loss and perform backprop
+        loss = criterion(output.squeeze(), labels.float())
+        loss.backward()
+        # `clip_grad_norm` helps prevent the exploding gradient problem in RNNs / LSTMs.
+        nn.utils.clip_grad_norm_(net.parameters(), clip)
+        optimizer.step()
+
+        # loss stats
+        if counter % print_every == 0:
+            # Get validation loss
+            val_h = net.init_hidden(batch_size)
+            val_losses = []
+            net.eval()
+            for inputs, labels in valid_loader:
+
+                # Creating new variables for the hidden state, otherwise
+                # we'd backprop through the entire training history
+                val_h = tuple([each.data for each in val_h])
+
+                if(train_on_gpu):
+                    inputs, labels = inputs.cuda(), labels.cuda()
+
+                output, val_h = net(inputs, val_h)
+                val_loss = criterion(output.squeeze(), labels.float())
+
+                val_losses.append(val_loss.item())
+
+            net.train()
+            print("Epoch: {}/{}...".format(e+1, epochs),
+                  "Step: {}...".format(counter),
+                  "Loss: {:.6f}...".format(loss.item()),
+                  "Val Loss: {:.6f}".format(np.mean(val_losses)))</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Make sure to take a look at how training
+          <strong>
+           and
+          </strong>
+          validation loss decrease during training! Then, once you're satisfied with your trained model, you can test it out in a couple ways to see how it behaves on new data!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="consult-the-solution-code">
+          Consult the Solution Code
+         </h2>
+         <p>
+          To take a closer look at this solution, feel free to check out the solution workspace or click
+          <a href="https://github.com/udacity/deep-learning-v2-pytorch/blob/master/sentiment-rnn/Sentiment_RNN_Solution.ipynb" rel="noopener noreferrer" target="_blank">
+           here
+          </a>
+          to see it as a webpage.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="13. Testing.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. Training the Model')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

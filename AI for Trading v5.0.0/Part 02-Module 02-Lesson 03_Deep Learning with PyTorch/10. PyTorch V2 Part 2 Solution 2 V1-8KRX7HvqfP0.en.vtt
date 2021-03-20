@@ -1,0 +1,460 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.919
+Welcome back. Here is my solution for the softmax function.
+
+00:00:04.919 --> 00:00:07.214
+Here in the numerator,
+
+00:00:07.214 --> 00:00:08.849
+we know we want to take the exponential,
+
+00:00:08.849 --> 00:00:12.179
+so it's pretty straight forward with torch.exp.
+
+00:00:12.179 --> 00:00:14.519
+So we're going to use the exponential of x,
+
+00:00:14.519 --> 00:00:16.469
+which is our input tensor.
+
+00:00:16.469 --> 00:00:20.099
+In the denominator, we know we want to do something like,
+
+00:00:20.100 --> 00:00:23.150
+again take exponentials so torch.exp,
+
+00:00:23.149 --> 00:00:25.739
+and then take the sum across all those values.
+
+00:00:25.739 --> 00:00:29.939
+So, one thing we need to remember is that we want the sum across one single row.
+
+00:00:29.940 --> 00:00:33.914
+So, each of the columns in one single row for each example.
+
+00:00:33.914 --> 00:00:36.375
+So, for one example, we want to sum up those values.
+
+00:00:36.375 --> 00:00:38.159
+So, for here in torch.sum,
+
+00:00:38.159 --> 00:00:40.169
+we're going to use dimension equals one.
+
+00:00:40.170 --> 00:00:44.195
+So, this is basically going to take the sum across the columns.
+
+00:00:44.195 --> 00:00:46.984
+What this does, torch.sum here,
+
+00:00:46.984 --> 00:00:50.344
+is going to actually going to give us a tensor,
+
+00:00:50.344 --> 00:00:53.530
+that is just a vector of 64 elements.
+
+00:00:53.530 --> 00:00:54.870
+So, the problem with this is that,
+
+00:00:54.869 --> 00:00:56.879
+if this is 64 by 10,
+
+00:00:56.880 --> 00:01:00.115
+and this is just a 64-long vector,
+
+00:01:00.115 --> 00:01:06.575
+it's going to try to divide every element in this tensor by all 64 of these values.
+
+00:01:06.575 --> 00:01:11.450
+So, it's going give us a 64 by 64 tensor, and that's not what we want.
+
+00:01:11.450 --> 00:01:13.355
+We want our output to be 64 by 10.
+
+00:01:13.355 --> 00:01:20.090
+So, what you actually need to do is reshape this tensor here to have 64 rows,
+
+00:01:20.090 --> 00:01:22.344
+but only one value for each of those rows.
+
+00:01:22.344 --> 00:01:23.519
+So, what that's going do,
+
+00:01:23.519 --> 00:01:27.670
+it's going look at for each row in this tensor,
+
+00:01:27.670 --> 00:01:31.504
+is going to look at the equivalent row in this tensor.
+
+00:01:31.504 --> 00:01:35.179
+So, since each row in this tensor only has one value,
+
+00:01:35.180 --> 00:01:40.550
+it's going to divide this exponential by the one value in this denominator tensor.
+
+00:01:40.549 --> 00:01:42.700
+This can be really tricky,
+
+00:01:42.700 --> 00:01:49.278
+but it's also super important to understand how broadcasting works in PyTorch,
+
+00:01:49.278 --> 00:01:52.099
+and how to actually fit all these tensors together with
+
+00:01:52.099 --> 00:01:55.509
+the correct shape and the correct operations to get everything out right.
+
+00:01:55.510 --> 00:01:57.525
+So, if we do this, it look what we have,
+
+00:01:57.525 --> 00:02:01.340
+we pass our output through the softmax function,
+
+00:02:01.340 --> 00:02:02.390
+and then we get our probabilities,
+
+00:02:02.390 --> 00:02:05.284
+and we can look the shape and it is 64 by 10,
+
+00:02:05.284 --> 00:02:07.700
+and if you take the sum across each of the rows,
+
+00:02:07.700 --> 00:02:08.765
+then it adds up to one,
+
+00:02:08.764 --> 00:02:11.339
+like it should with a proper probability distribution.
+
+00:02:11.340 --> 00:02:17.870
+So, now, we're going to look at how you use this nn module to build neural networks.
+
+00:02:17.870 --> 00:02:22.939
+So, you'll find that it's actually in a lot of ways simpler and more powerful.
+
+00:02:22.939 --> 00:02:28.564
+You'll be able to build larger and larger neural networks using the same framework.
+
+00:02:28.564 --> 00:02:30.215
+The way this works in general,
+
+00:02:30.215 --> 00:02:32.375
+is that we're going to create a new class,
+
+00:02:32.375 --> 00:02:34.189
+and you can call it networking,
+
+00:02:34.189 --> 00:02:35.300
+you can call it whatever you want,
+
+00:02:35.300 --> 00:02:36.800
+you can call it classifier,
+
+00:02:36.800 --> 00:02:38.430
+you can call it MNIST.
+
+00:02:38.430 --> 00:02:40.920
+It doesn't really matter so much what you call it,
+
+00:02:40.919 --> 00:02:46.125
+but you need to subclass it from nn.module.
+
+00:02:46.125 --> 00:02:51.360
+Then, in the init method, it's __init method.
+
+00:02:51.360 --> 00:02:54.925
+You need to call it super and run the init method of nn.module.
+
+00:02:54.925 --> 00:02:57.120
+So, you need to do this because then,
+
+00:02:57.120 --> 00:02:59.284
+PyTorch will know to register
+
+00:02:59.284 --> 00:03:00.770
+all the different layers and
+
+00:03:00.770 --> 00:03:03.290
+operations that you're going to be putting into this network.
+
+00:03:03.289 --> 00:03:04.969
+If you don't do this part then,
+
+00:03:04.969 --> 00:03:06.740
+it won't be able to track the things that
+
+00:03:06.740 --> 00:03:08.680
+you're adding to your network, and it just won't work.
+
+00:03:08.680 --> 00:03:14.025
+So, here, we can create our hidden layers using nn.Linear.
+
+00:03:14.025 --> 00:03:15.230
+So, what this does,
+
+00:03:15.229 --> 00:03:19.250
+is it creates a operation for the linear transformation.
+
+00:03:19.250 --> 00:03:24.370
+So, when we take our inputs x and then multiply it by weights and add your bias terms,
+
+00:03:24.370 --> 00:03:26.205
+that's a linear transformation.
+
+00:03:26.205 --> 00:03:29.110
+So, what this does is calling NN.Linear,
+
+00:03:29.110 --> 00:03:32.330
+it creates an object that itself has created
+
+00:03:32.330 --> 00:03:35.620
+parameters for the weights and parameters for the bias and then,
+
+00:03:35.620 --> 00:03:39.270
+when you pass a tensor through this hidden layer,
+
+00:03:39.270 --> 00:03:43.540
+this object, it's going to automatically calculate the linear transformation for you.
+
+00:03:43.539 --> 00:03:47.539
+So, all you really need to do is tell it what's the size of the inputs,
+
+00:03:47.539 --> 00:03:48.769
+and then what are the size of the output.
+
+00:03:48.770 --> 00:03:52.219
+So, 784 by 256,
+
+00:03:52.219 --> 00:03:54.590
+we're going to use 256 outputs for this.
+
+00:03:54.590 --> 00:03:58.104
+So, it's kind of rebuilding the network that we saw before.
+
+00:03:58.104 --> 00:04:04.114
+Similarly, we want another linear transformation between our hidden units and our output.
+
+00:04:04.115 --> 00:04:06.695
+So, again, we have 256 hidden units,
+
+00:04:06.694 --> 00:04:09.689
+and we have 10 outputs, 10 output units,
+
+00:04:09.689 --> 00:04:14.120
+so we're going to create a output layer called self.output,
+
+00:04:14.120 --> 00:04:17.530
+and create this linear transformation operation.
+
+00:04:17.529 --> 00:04:21.469
+We also want to create a sigmoid operation for the activation and then,
+
+00:04:21.470 --> 00:04:23.150
+softmax for the output,
+
+00:04:23.149 --> 00:04:25.134
+so we get this probability distribution.
+
+00:04:25.134 --> 00:04:28.814
+Now, we're going to create a forward method and so,
+
+00:04:28.814 --> 00:04:31.110
+forward is basically going to be,
+
+00:04:31.110 --> 00:04:34.889
+as we pass a tensor in to the network.
+
+00:04:34.889 --> 00:04:36.519
+It's gonna go through all these operations,
+
+00:04:36.519 --> 00:04:37.944
+and eventually give us our output.
+
+00:04:37.944 --> 00:04:41.120
+So, here, x, the argument is going to be the input tensor and then,
+
+00:04:41.120 --> 00:04:43.560
+we're going to pass it through our hidden layer.
+
+00:04:43.560 --> 00:04:47.095
+So, this is again, like this linear transformation that we defined up here,
+
+00:04:47.095 --> 00:04:50.510
+and it's going to go through a sigmoid activation,
+
+00:04:50.509 --> 00:04:55.664
+and then through our output layer or output linear transformation, we have here,
+
+00:04:55.665 --> 00:04:57.924
+and then through the sigmoid function,
+
+00:04:57.923 --> 00:05:02.060
+and then finally return the output of our softmax.
+
+00:05:02.060 --> 00:05:03.725
+so we can create this.
+
+00:05:03.725 --> 00:05:07.140
+Then, if we kind of look at it, so it'll print it out,
+
+00:05:07.139 --> 00:05:10.399
+and it'll tell us the operations, and not necessarily the order,
+
+00:05:10.399 --> 00:05:14.844
+but at least it tells us the operations that we have defined for this network.
+
+00:05:14.845 --> 00:05:20.375
+You can also use some functional definitions for things like sigmoid and softmax,
+
+00:05:20.375 --> 00:05:24.949
+and it kind of makes the class the way you write the code a little bit cleaner.
+
+00:05:24.949 --> 00:05:27.784
+We can get that from torch.nn.functional.
+
+00:05:27.785 --> 00:05:32.689
+Most of the time, you'll see is like import torch.nn.functional as capital F. So,
+
+00:05:32.689 --> 00:05:35.545
+there's kind of that convention in PyTorch code.
+
+00:05:35.545 --> 00:05:38.970
+So, again, we define our linear transformations,
+
+00:05:38.970 --> 00:05:43.335
+self.hidden, self.output but now in our forward method.
+
+00:05:43.334 --> 00:05:47.909
+So, we can call self.hidden to get like our values for hidden layer, but then,
+
+00:05:47.910 --> 00:05:49.785
+we pass it through the sigmoid function,
+
+00:05:49.785 --> 00:05:53.310
+f.sigmoid, and the same thing with the output layers.
+
+00:05:53.310 --> 00:05:56.990
+So, we have our output linear transformations of the output,
+
+00:05:56.990 --> 00:05:59.509
+and we pass it through this softmax operation.
+
+00:05:59.509 --> 00:06:01.865
+So, the reason we can do this because,
+
+00:06:01.865 --> 00:06:04.444
+when we create these linear transformations,
+
+00:06:04.444 --> 00:06:09.665
+it's creating the weights and bias matrices on its own.
+
+00:06:09.665 --> 00:06:11.870
+But for sigmoid and softmax,
+
+00:06:11.870 --> 00:06:14.329
+it's just an element wise operation,
+
+00:06:14.329 --> 00:06:17.120
+so it doesn't have to create any extra parameters
+
+00:06:17.120 --> 00:06:19.550
+or extra matrices to do these operations,
+
+00:06:19.550 --> 00:06:22.353
+and so we can have these be purely functional
+
+00:06:22.353 --> 00:06:25.699
+without having to create any sort of object or classes.
+
+00:06:25.699 --> 00:06:28.384
+However, they are equivalent.
+
+00:06:28.384 --> 00:06:33.439
+So this way to build the network is equivalent to this way up here,
+
+00:06:33.439 --> 00:06:36.259
+but it's a little bit more succinct when you're
+
+00:06:36.259 --> 00:06:39.490
+doing it with these kind of functional pattern.
+
+00:06:39.490 --> 00:06:44.150
+So far, we've only been using the sigmoid function as an activation function,
+
+00:06:44.149 --> 00:06:45.364
+but there are, of course,
+
+00:06:45.365 --> 00:06:47.660
+a lot of different ones you want to use.
+
+00:06:47.660 --> 00:06:49.700
+Really the only requirement is that,
+
+00:06:49.699 --> 00:06:53.300
+these activation functions should typically be non-linear.
+
+00:06:53.300 --> 00:07:00.259
+So, if you want your network to be able to learn non-linear correlations and patterns,
+
+00:07:00.259 --> 00:07:02.745
+and we want the output to be non-linear,
+
+00:07:02.745 --> 00:07:07.009
+then you need to use non-linear activation functions in your hidden layers.
+
+00:07:07.009 --> 00:07:09.800
+So, a sigmoid is one example.
+
+00:07:09.800 --> 00:07:12.064
+The hyperbolic tangent is another.
+
+00:07:12.064 --> 00:07:14.509
+One that is pretty much used all the time,
+
+00:07:14.509 --> 00:07:17.879
+like almost exclusively as activation function and hidden layers,
+
+00:07:17.879 --> 00:07:20.670
+is the ReLU, so the rectified linear unit.
+
+00:07:20.670 --> 00:07:24.845
+This is basically the simplest non-linear function that you can use,
+
+00:07:24.845 --> 00:07:28.330
+and it turns out that networks tend to train a lot faster
+
+00:07:28.329 --> 00:07:32.810
+when using ReLU as compared to sigmoid and hyperbolic tangent,
+
+00:07:32.810 --> 00:07:35.464
+so ReLU was what we typically use.
+
+00:07:35.464 --> 00:07:40.159
+Okay. So, here, you're going to build your own neural network, that's larger.
+
+00:07:40.160 --> 00:07:43.170
+So, this time, it's going to have two hidden layers,
+
+00:07:43.170 --> 00:07:49.009
+and you'll be using the ReLU activation function for this on your hidden layers.
+
+00:07:49.009 --> 00:07:55.519
+So using this object-oriented class method within a.module,
+
+00:07:55.519 --> 00:07:59.134
+go ahead and build a network that looks like this,
+
+00:07:59.134 --> 00:08:00.935
+with 784 input units,
+
+00:08:00.935 --> 00:08:03.560
+a 128 units in the first hidden layer,
+
+00:08:03.560 --> 00:08:05.930
+64 units and the second hidden layer,
+
+00:08:05.930 --> 00:08:09.000
+and then 10 output units. All right. Cheers.
+

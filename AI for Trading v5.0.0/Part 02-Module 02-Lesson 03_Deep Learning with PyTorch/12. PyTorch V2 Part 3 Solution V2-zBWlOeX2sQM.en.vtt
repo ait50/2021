@@ -1,0 +1,559 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.955
+Hi and welcome back. Here's my solution for this model that uses a LogSoftmax output.
+
+00:00:05.955 --> 00:00:09.914
+It is a pretty similar to what I built before with an index sequential.
+
+00:00:09.914 --> 00:00:12.359
+So, we just use a linear transformation,
+
+00:00:12.359 --> 00:00:14.160
+ReLU, linear transformation, ReLU,
+
+00:00:14.160 --> 00:00:16.859
+another linear transformation for output and then we can pass this
+
+00:00:16.859 --> 00:00:20.054
+to our LogSoftmax module.
+
+00:00:20.054 --> 00:00:22.410
+So, what I'm doing here is I'm making sure I set
+
+00:00:22.410 --> 00:00:25.500
+the dimension to one for LogSoftmax and this
+
+00:00:25.500 --> 00:00:31.214
+makes it so that it calculates the function across the columns instead of the rows.
+
+00:00:31.214 --> 00:00:34.969
+So, if you remember, the rows correspond to our examples.
+
+00:00:34.969 --> 00:00:37.640
+So, we have a batch of examples that we're passing
+
+00:00:37.640 --> 00:00:40.750
+to our network and each row is one of those examples.
+
+00:00:40.750 --> 00:00:42.799
+So, we want to make sure that we're covering
+
+00:00:42.799 --> 00:00:46.159
+the softmax function across each of our examples and
+
+00:00:46.159 --> 00:00:52.239
+not across each individual feature in our batches.
+
+00:00:52.240 --> 00:00:56.060
+Here, I'm just defining our loss or criterion as
+
+00:00:56.060 --> 00:00:58.490
+the negative log likelihood loss and
+
+00:00:58.490 --> 00:01:01.250
+again get our images and labels from our train loader,
+
+00:01:01.250 --> 00:01:04.310
+flatten them, pass it through our model to get the logits.
+
+00:01:04.310 --> 00:01:07.379
+So, this is actually not the largest anymore,
+
+00:01:07.379 --> 00:01:09.843
+this is like a log probability,
+
+00:01:09.843 --> 00:01:11.449
+so we call it like logps,
+
+00:01:11.450 --> 00:01:14.344
+and then you do that.
+
+00:01:14.344 --> 00:01:17.319
+There you go. You see we get our nice loss.
+
+00:01:17.319 --> 00:01:19.968
+Now, we know how to calculate a loss,
+
+00:01:19.968 --> 00:01:23.194
+but how do we actually use it to perform backpropagation?
+
+00:01:23.194 --> 00:01:26.089
+So, PyTorch towards actually has this really great module called
+
+00:01:26.090 --> 00:01:30.460
+Autograd that automatically calculates the gradients of our tensors.
+
+00:01:30.459 --> 00:01:32.549
+So, the way it works is that,
+
+00:01:32.549 --> 00:01:35.209
+PyTorch will keep track of all the operations you do on
+
+00:01:35.209 --> 00:01:39.634
+a tensor and then when you can tell it to do a backwards pass,
+
+00:01:39.635 --> 00:01:41.630
+to go backwards through each of
+
+00:01:41.629 --> 00:01:47.015
+those operations and calculate the gradients with respect to the input parameters.
+
+00:01:47.015 --> 00:01:53.825
+In general, you need to tell PyTorch that you want to use autograd on a specific tensor.
+
+00:01:53.825 --> 00:01:59.025
+So, in this case, you would create some tensor like x equals torch.zeros,
+
+00:01:59.025 --> 00:02:00.590
+just to make it a scalar,
+
+00:02:00.590 --> 00:02:03.844
+say one and then give it requires grad equals true.
+
+00:02:03.844 --> 00:02:09.620
+So, this tells PyTorch to track the operations on this tensor x,
+
+00:02:09.620 --> 00:02:13.539
+so that if you want to get the gradient then it will calculate it for you.
+
+00:02:13.539 --> 00:02:16.099
+So, in general, if you're creating a tensor and
+
+00:02:16.099 --> 00:02:19.310
+you don't want to calculate the gradient for it,
+
+00:02:19.310 --> 00:02:21.789
+you want to make sure this is set to false.
+
+00:02:21.789 --> 00:02:26.194
+You can also use this context torch.no grad to make sure
+
+00:02:26.194 --> 00:02:28.400
+all the gradients are shut off for all of
+
+00:02:28.400 --> 00:02:31.254
+the operations that you're doing while you're in this context.
+
+00:02:31.254 --> 00:02:35.000
+Then, you can also turn on or off gradients globally with
+
+00:02:35.000 --> 00:02:39.060
+torch.set grad enabled and give it true or false, depending on what you want to do.
+
+00:02:39.060 --> 00:02:44.520
+So, the way this works in PyTorch is that you basically create your tensor and again,
+
+00:02:44.520 --> 00:02:49.290
+you set requires grad equals true and then you just perform some operations on it.
+
+00:02:49.289 --> 00:02:53.359
+Then, once you are done with those operations, you type in.backwards.
+
+00:02:53.360 --> 00:02:56.060
+So, if you use x, this tensor x,
+
+00:02:56.060 --> 00:02:59.000
+then calculate some other tensor z then if you do z.backward,
+
+00:02:59.000 --> 00:03:04.594
+it'll go backwards through your operations and calculate the total gradient for x.
+
+00:03:04.594 --> 00:03:07.370
+So, for example, if I just create this random tensor,
+
+00:03:07.370 --> 00:03:12.319
+random two-by-two tensor, and then I can square it like this.
+
+00:03:12.319 --> 00:03:15.889
+What it does, you can actually see if you look at y,
+
+00:03:15.889 --> 00:03:18.319
+so y is our secondary or squared tensor.
+
+00:03:18.319 --> 00:03:20.405
+If you look at y.grad function,
+
+00:03:20.405 --> 00:03:25.125
+then it actually shows us that this grad function is a power.
+
+00:03:25.125 --> 00:03:28.340
+So, PyTorch just track this and it
+
+00:03:28.340 --> 00:03:31.914
+knows that the last operation done was a power operation.
+
+00:03:31.914 --> 00:03:36.334
+So, now, we can take the mean of y and get another tensor z.
+
+00:03:36.335 --> 00:03:40.145
+So, now this is just a scalar tensor, we've reduced y,
+
+00:03:40.145 --> 00:03:42.710
+y is a two-by-two matrix,
+
+00:03:42.710 --> 00:03:45.849
+two by two array and then we take in the mean of it to get z.
+
+00:03:45.849 --> 00:03:49.219
+Ingredients for tensor show up in this attribute grad,
+
+00:03:49.219 --> 00:03:53.870
+so we can actually look at what's the gradient of our tensor x right now,
+
+00:03:53.870 --> 00:03:56.330
+and we've only done this forward pass,
+
+00:03:56.330 --> 00:03:59.410
+we haven't actually calculated the gradient yet and so it's just none.
+
+00:03:59.409 --> 00:04:01.275
+So, now if we do z.backward,
+
+00:04:01.275 --> 00:04:05.550
+it's going to go backwards through this tiny little set of operations that we've done.
+
+00:04:05.550 --> 00:04:07.430
+So, we did a power and then a mean and let's go
+
+00:04:07.430 --> 00:04:10.795
+backwards through this and calculate the gradient for x.
+
+00:04:10.794 --> 00:04:12.739
+So, if you actually work out the math,
+
+00:04:12.740 --> 00:04:15.290
+you find out that the gradient of z with respect to x should
+
+00:04:15.289 --> 00:04:18.379
+be x over two and if we look at the gradient,
+
+00:04:18.379 --> 00:04:21.680
+then we can also look at x divided by two then they are the same.
+
+00:04:21.680 --> 00:04:26.435
+So, our gradient is equal to what it should be mathematically,
+
+00:04:26.435 --> 00:04:29.209
+and this is the general process for working with gradients,
+
+00:04:29.209 --> 00:04:31.430
+and autograd, and PyTorch.
+
+00:04:31.430 --> 00:04:32.810
+Why this is useful,
+
+00:04:32.810 --> 00:04:36.579
+is because we can use this to get our gradients when we calculate the loss.
+
+00:04:36.579 --> 00:04:42.349
+So, if remember, our loss depends on our weight and bias parameters.
+
+00:04:42.350 --> 00:04:44.960
+We need the gradients of our weights to do gradient descent.
+
+00:04:44.959 --> 00:04:48.169
+So, what we can do is we can set up our weights as
+
+00:04:48.170 --> 00:04:52.960
+tensors that require gradients and then do a forward pass to calculate our loss.
+
+00:04:52.959 --> 00:04:57.229
+With the loss, you do a backwards pass which calculates the gradients for your weights,
+
+00:04:57.230 --> 00:04:59.990
+and then with those gradients, you can do your gradient descent step.
+
+00:04:59.990 --> 00:05:02.930
+Now, I'll show you how that looks in code.
+
+00:05:02.930 --> 00:05:07.535
+So, here, I'm defining our model like I did before with LogSoftmax output,
+
+00:05:07.535 --> 00:05:10.220
+then using the negative log-likelihood loss,
+
+00:05:10.220 --> 00:05:13.625
+get our images and labels from our train loader, flatten it,
+
+00:05:13.625 --> 00:05:15.949
+and then we can get our log probabilities from
+
+00:05:15.949 --> 00:05:18.800
+our model and then pass that into our criterion,
+
+00:05:18.800 --> 00:05:20.930
+which gives us the actual loss.
+
+00:05:20.930 --> 00:05:23.750
+So, now, if we look at our models weights,
+
+00:05:23.750 --> 00:05:29.600
+so model zero gives us the parameters for this first linear transformation.
+
+00:05:29.600 --> 00:05:31.715
+So, we can look at the weight and then we can look at the gradient,
+
+00:05:31.714 --> 00:05:34.369
+then we'll do our backwards pass starting from
+
+00:05:34.370 --> 00:05:38.259
+the loss and then we can look at the weight gradients again.
+
+00:05:38.259 --> 00:05:40.569
+So, we see before the backward pass,
+
+00:05:40.569 --> 00:05:42.694
+we don't have any because we haven't actually
+
+00:05:42.694 --> 00:05:45.425
+calculated it yet but then after the backwards pass,
+
+00:05:45.425 --> 00:05:47.629
+we have calculated our gradients.
+
+00:05:47.629 --> 00:05:51.714
+So, we can use these gradients in gradient descent to train our network. All right.
+
+00:05:51.714 --> 00:05:54.769
+So, now you know how to calculate losses and you know
+
+00:05:54.769 --> 00:05:57.829
+how to use those losses to calculate gradients.
+
+00:05:57.829 --> 00:06:00.979
+So, there's one piece left before we can start training.
+
+00:06:00.980 --> 00:06:04.850
+So, you need to see how to use those gradients to actually update our weights,
+
+00:06:04.850 --> 00:06:09.230
+and for that we use optimizers and these come from PyTorch's Optim package.
+
+00:06:09.230 --> 00:06:14.345
+So, for example, we can use stochastic gradient descent with optim.SGD.
+
+00:06:14.345 --> 00:06:18.184
+The way this is defined is we import
+
+00:06:18.184 --> 00:06:22.395
+this module optim from PyTorch and then we'd say optim.SGD,
+
+00:06:22.394 --> 00:06:23.939
+we give it our model parameters.
+
+00:06:23.939 --> 00:06:25.894
+So, these are the parameters that we want
+
+00:06:25.894 --> 00:06:29.854
+this optimizer to actually update and then we give it a learning rate,
+
+00:06:29.855 --> 00:06:32.245
+and this creates our optimizer for us.
+
+00:06:32.245 --> 00:06:36.110
+So, the training pass consists of four different steps.
+
+00:06:36.110 --> 00:06:39.439
+So, first, we're going to make a forward pass through the network
+
+00:06:39.439 --> 00:06:43.219
+then we're going to use that network output to calculate the loss,
+
+00:06:43.220 --> 00:06:45.350
+then we'll perform a backwards pass through
+
+00:06:45.350 --> 00:06:48.540
+the network with loss.backwards and this will calculate the gradients.
+
+00:06:48.540 --> 00:06:52.715
+Then, we'll make a step with our optimizer that updates the weights.
+
+00:06:52.714 --> 00:06:56.089
+I'll show you how this works with one training step and then you're going
+
+00:06:56.089 --> 00:07:00.409
+to write it up for real and a loop that is going to train a network.
+
+00:07:00.410 --> 00:07:04.189
+So, first, we're going to start by getting our images
+
+00:07:04.189 --> 00:07:05.795
+and labels like we normally do from
+
+00:07:05.795 --> 00:07:08.350
+our train loader and then we're going to flatten them.
+
+00:07:08.350 --> 00:07:11.910
+Then next, what we want to do is actually clear the gradients.
+
+00:07:11.910 --> 00:07:14.970
+So, PyTorch by default accumulates gradients.
+
+00:07:14.970 --> 00:07:18.185
+That means that if you actually do
+
+00:07:18.185 --> 00:07:21.829
+multiple passes and multiple backwards like multiple forward passes,
+
+00:07:21.829 --> 00:07:24.629
+multiple backwards passes, and you keep calculating your gradient,
+
+00:07:24.629 --> 00:07:27.100
+it's going to keep summing up those gradients.
+
+00:07:27.100 --> 00:07:29.850
+So, if you don't clear gradients,
+
+00:07:29.850 --> 00:07:33.680
+then you're going to be getting gradients from the previous training step in
+
+00:07:33.680 --> 00:07:36.019
+your current training step and it's going to end up where
+
+00:07:36.019 --> 00:07:38.724
+your network is just not training properly.
+
+00:07:38.725 --> 00:07:40.290
+So, for this in general,
+
+00:07:40.290 --> 00:07:45.710
+you're going to be calling zero grad before every training passes.
+
+00:07:45.709 --> 00:07:48.560
+So, you just say optimizer.zero grad and this will just clean
+
+00:07:48.560 --> 00:07:52.120
+out all the gradients and all the parameters in your optimizer,
+
+00:07:52.120 --> 00:07:54.480
+and it'll allow you to train appropriately.
+
+00:07:54.480 --> 00:07:59.355
+So, this is one of the things in PyTorch that is easy to forget,
+
+00:07:59.355 --> 00:08:00.569
+but it's really important.
+
+00:08:00.569 --> 00:08:03.219
+So, try your hardest to remember to do this part,
+
+00:08:03.220 --> 00:08:06.090
+and then we do our forward pass,
+
+00:08:06.089 --> 00:08:07.724
+backward pass, then update the weights.
+
+00:08:07.725 --> 00:08:09.010
+So, we get our output,
+
+00:08:09.009 --> 00:08:12.110
+so we do a forward pass through our model with our images,
+
+00:08:12.110 --> 00:08:15.720
+then we calculate the loss using the output of the model and our labels,
+
+00:08:15.720 --> 00:08:20.360
+then we do a backwards pass and then finally we take an optimizer step.
+
+00:08:20.360 --> 00:08:23.675
+So, if we look at our initial weights,
+
+00:08:23.675 --> 00:08:26.150
+so it looks like this and then we can calculate our gradient,
+
+00:08:26.149 --> 00:08:28.009
+and so the gradient looks like and then if
+
+00:08:28.009 --> 00:08:30.349
+we take an optimizer step and update our weights,
+
+00:08:30.350 --> 00:08:32.330
+then our weights have changed.
+
+00:08:32.330 --> 00:08:35.870
+So, in general, what has worked is you're going to be looping
+
+00:08:35.870 --> 00:08:39.560
+through your training set and then for each batch out of your training set,
+
+00:08:39.559 --> 00:08:42.184
+you'll do the same training pass.
+
+00:08:42.184 --> 00:08:44.059
+So, you'll get your data,
+
+00:08:44.059 --> 00:08:46.179
+then clear the gradients,
+
+00:08:46.179 --> 00:08:51.319
+pass those images or your input through your network to get your output, from that,
+
+00:08:51.320 --> 00:08:52.925
+in the labels, calculate your loss,
+
+00:08:52.924 --> 00:08:56.284
+and then do a backwards pass on the loss and then update your weights.
+
+00:08:56.284 --> 00:09:01.639
+So, now, it's your turn to implement the training loop for this model.
+
+00:09:01.639 --> 00:09:05.870
+So, the idea here is that we're going to be looping through our data-set,
+
+00:09:05.870 --> 00:09:10.440
+so grabbing images and labels from train loader and then on each of those batches,
+
+00:09:10.440 --> 00:09:11.710
+you'll be doing the training pass,
+
+00:09:11.710 --> 00:09:16.000
+and so you'll do this pass where you calculate the output of the network,
+
+00:09:16.000 --> 00:09:18.190
+calculate the loss, do backwards pass on loss,
+
+00:09:18.190 --> 00:09:20.120
+and then update your weights.
+
+00:09:20.120 --> 00:09:23.435
+Each pass through the entire training set is called an
+
+00:09:23.434 --> 00:09:26.979
+epoch and so here I just have it set for five epochs.
+
+00:09:26.980 --> 00:09:30.004
+So, you can change this number if you want to go more or less.
+
+00:09:30.004 --> 00:09:31.564
+Once you calculate the loss,
+
+00:09:31.565 --> 00:09:34.880
+we can accumulate it to keep track,
+
+00:09:34.879 --> 00:09:36.620
+so we're going to be looking at a loss.
+
+00:09:36.620 --> 00:09:38.509
+So, this is running loss and so we'll be
+
+00:09:38.509 --> 00:09:40.610
+printing out the training loss as it's going along.
+
+00:09:40.610 --> 00:09:42.065
+So, if it's working,
+
+00:09:42.065 --> 00:09:44.825
+you should see the loss start falling,
+
+00:09:44.825 --> 00:09:47.555
+start dropping as you're going through the data.
+
+00:09:47.554 --> 00:09:49.984
+Try this out yourself and if you need some help,
+
+00:09:49.985 --> 00:09:52.529
+be sure to check out my solution. Cheers.
+

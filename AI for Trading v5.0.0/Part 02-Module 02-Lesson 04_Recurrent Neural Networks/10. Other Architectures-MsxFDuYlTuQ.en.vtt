@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.679
+In this video, I will show you a pair of similar architectures that also work well,
+
+00:00:04.679 --> 00:00:09.099
+but there are many variations to LSTMs and we encourage you to study them further.
+
+00:00:09.099 --> 00:00:12.019
+Here's a simple architecture which also works well.
+
+00:00:12.019 --> 00:00:16.140
+It's called the gated recurring unit or GRU for short.
+
+00:00:16.140 --> 00:00:18.059
+It combines the forget and the learn gate into
+
+00:00:18.059 --> 00:00:21.565
+an update gate and then runs this through a combine gate.
+
+00:00:21.565 --> 00:00:25.410
+It only returns one working memory instead of a pair of long- and short-term memories,
+
+00:00:25.410 --> 00:00:28.285
+but it actually seems to work in practice very well too.
+
+00:00:28.285 --> 00:00:29.594
+I won't go much into details,
+
+00:00:29.594 --> 00:00:31.260
+but in the instructor comments I'll recommend
+
+00:00:31.260 --> 00:00:35.005
+some very good reference to learn more about gated recurrent units.
+
+00:00:35.005 --> 00:00:36.774
+Here's another observation.
+
+00:00:36.774 --> 00:00:38.158
+Let's remember the forget gate.
+
+00:00:38.158 --> 00:00:41.173
+The forget factor f_t was calculating using as
+
+00:00:41.173 --> 00:00:44.875
+input a combination of the short-term memory and the event.
+
+00:00:44.875 --> 00:00:46.615
+But what about the long term memory?
+
+00:00:46.615 --> 00:00:49.140
+It seems like we left it away from the decision.
+
+00:00:49.140 --> 00:00:51.478
+Why does a long-term memory not have a say into which
+
+00:00:51.478 --> 00:00:54.515
+things get remembered or not? Well let's fix that.
+
+00:00:54.515 --> 00:00:56.759
+Let's also connect the long-term memory into
+
+00:00:56.759 --> 00:00:59.798
+the neural network that calculates the forget factor.
+
+00:00:59.798 --> 00:01:02.939
+Mathematically, this just means the input matrix is larger since
+
+00:01:02.939 --> 00:01:06.420
+we're also concatenating it with the long-term memory matrix.
+
+00:01:06.420 --> 00:01:09.420
+This is called a peephole connection since now the long-term memory
+
+00:01:09.420 --> 00:01:12.775
+has more access into the decisions made inside the LSTM.
+
+00:01:12.775 --> 00:01:15.760
+We can do this for every one of the forget-type nodes,
+
+00:01:15.760 --> 00:01:20.000
+and this is what we get: an LSTM with peephole connections.
+

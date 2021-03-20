@@ -1,0 +1,247 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.529
+Now, the last model took quite a while to train,
+
+00:00:02.529 --> 00:00:05.115
+and there are some ways that we can speed up this process.
+
+00:00:05.115 --> 00:00:09.445
+In this video, I'll talk about one such method which is called negative sampling.
+
+00:00:09.445 --> 00:00:11.120
+So, this is a new notebook,
+
+00:00:11.119 --> 00:00:13.229
+but it contains basically the same info as
+
+00:00:13.230 --> 00:00:16.690
+our previous notebook including this architecture diagram.
+
+00:00:16.690 --> 00:00:21.350
+This is our current architecture where we have a softmax layer on the output,
+
+00:00:21.350 --> 00:00:24.170
+and since we're working with tens of thousands of words,
+
+00:00:24.170 --> 00:00:27.645
+the softmax layer is going to have tens of thousands of units.
+
+00:00:27.644 --> 00:00:29.285
+But with any one input,
+
+00:00:29.285 --> 00:00:32.299
+we're really going to have one true context target.
+
+00:00:32.299 --> 00:00:34.214
+What that means is, when we train,
+
+00:00:34.215 --> 00:00:37.310
+we're going to be making very small changes to the weights between
+
+00:00:37.310 --> 00:00:41.660
+these two layers even though we only have one true output that we care about.
+
+00:00:41.659 --> 00:00:45.839
+So, very few of the weights are actually going to be updated in a meaningful way.
+
+00:00:45.840 --> 00:00:50.270
+Instead what we can do is approximate the loss from the softmax layer,
+
+00:00:50.270 --> 00:00:54.535
+and we do this by only updating a small subset of all the weights at once.
+
+00:00:54.534 --> 00:00:58.519
+We'll update the weights for what we know to be the correct target output,
+
+00:00:58.520 --> 00:01:00.815
+but then we'll only update a small number of
+
+00:01:00.814 --> 00:01:06.444
+incorrect or noise targets usually around 100 or so as opposed to 60,000.
+
+00:01:06.444 --> 00:01:09.319
+This process is called negative sampling.
+
+00:01:09.319 --> 00:01:13.864
+To implement this, there are two main modifications we need to make to our model.
+
+00:01:13.864 --> 00:01:17.988
+First, since we're not taking the softmax output over all the words,
+
+00:01:17.989 --> 00:01:20.915
+we're really only concerned with one output one at a time.
+
+00:01:20.915 --> 00:01:23.510
+Similar to how we used an embedding layer to map
+
+00:01:23.510 --> 00:01:26.000
+an input word to a row of embedding weights,
+
+00:01:26.000 --> 00:01:28.189
+we can now use another embedding layer to
+
+00:01:28.189 --> 00:01:31.060
+map the output words to a row of hidden weights.
+
+00:01:31.060 --> 00:01:33.234
+So, we'll have two embedding layers,
+
+00:01:33.234 --> 00:01:35.750
+one for input words and one for output words.
+
+00:01:35.750 --> 00:01:39.409
+Second, we have to use a modified loss function that only cares about
+
+00:01:39.409 --> 00:01:43.950
+the true target and a small subset of noisy and correct target context words,
+
+00:01:43.950 --> 00:01:46.340
+and that's this big loss function here.
+
+00:01:46.340 --> 00:01:47.945
+It's a little heavy on notation,
+
+00:01:47.944 --> 00:01:50.139
+so I'll go over it one part at a time.
+
+00:01:50.140 --> 00:01:52.209
+Let's take a look at the first term.
+
+00:01:52.209 --> 00:01:55.000
+We can see that this is a negative log operation,
+
+00:01:55.000 --> 00:01:59.900
+and this little loop, this lowercase sigma is a sigmoid activation function.
+
+00:01:59.900 --> 00:02:04.969
+A sigmoid activation function scales any input from a range from zero to one.
+
+00:02:04.969 --> 00:02:07.965
+So, let's look at the input inside the parentheses.
+
+00:02:07.965 --> 00:02:13.414
+UW0 transpose is the embedding vector for our output target word.
+
+00:02:13.414 --> 00:02:15.739
+So, this is the embedding vector that we know as
+
+00:02:15.740 --> 00:02:18.969
+the correct contexts target for a given input word.
+
+00:02:18.969 --> 00:02:21.305
+This T here is the transpose symbol.
+
+00:02:21.305 --> 00:02:26.275
+Then we have VWI which is the embedding vector for our input word.
+
+00:02:26.275 --> 00:02:30.180
+In general, you will indicate an output embedding and V are input.
+
+00:02:30.180 --> 00:02:33.335
+If you remember from doing cosine similarity
+
+00:02:33.335 --> 00:02:38.085
+a transpose multiplication like this is equivalent to doing a.product operation.
+
+00:02:38.085 --> 00:02:42.500
+So, this whole first term is same that we take the log sigmoid of the.product
+
+00:02:42.500 --> 00:02:46.849
+of our correct output word vector with our input word vector,
+
+00:02:46.849 --> 00:02:49.799
+and this represents our correct target loss.
+
+00:02:49.800 --> 00:02:54.020
+Next, we want to sample our outputs and get some noisy target words,
+
+00:02:54.020 --> 00:02:56.460
+and that's what the second part of this equation is all about.
+
+00:02:56.460 --> 00:02:58.340
+So, let's look at this piece by piece.
+
+00:02:58.340 --> 00:03:03.025
+This capital sigma means we're going to take a sum over all of our words WI.
+
+00:03:03.025 --> 00:03:08.060
+This P and W indicates that these words are drawn from a noise distribution.
+
+00:03:08.060 --> 00:03:10.909
+The noise distribution is our vocabulary of
+
+00:03:10.909 --> 00:03:13.990
+words that are not in the context of our input word.
+
+00:03:13.990 --> 00:03:16.490
+In effect, we want to randomly sample words from
+
+00:03:16.490 --> 00:03:19.925
+our vocabulary to get these noisy irrelevant target words.
+
+00:03:19.925 --> 00:03:21.590
+So P and W is
+
+00:03:21.590 --> 00:03:24.170
+an arbitrary probability distribution which
+
+00:03:24.169 --> 00:03:27.159
+means we can get to decide how to weight the words that we're sampling.
+
+00:03:27.159 --> 00:03:30.454
+This could be a uniform distribution where we sample all words with
+
+00:03:30.455 --> 00:03:33.020
+equal probability or it could be according to
+
+00:03:33.020 --> 00:03:36.145
+the frequency that each word shows up in our text corpus,
+
+00:03:36.145 --> 00:03:38.594
+the unigram distribution UW.
+
+00:03:38.594 --> 00:03:41.569
+In fact the authors of the negative sampling paper found
+
+00:03:41.569 --> 00:03:45.709
+the best distribution to be a unigram distribution raised to the three-fourths.
+
+00:03:45.710 --> 00:03:49.205
+Then we get to this last part which looks very similar to our first term.
+
+00:03:49.205 --> 00:03:54.150
+This takes the log sigmoid of the negated.product between a noise vector UWI,
+
+00:03:54.150 --> 00:03:56.530
+and our input vector from before.
+
+00:03:56.530 --> 00:03:59.490
+To give you an intuition for what this whole loss is doing here,
+
+00:03:59.490 --> 00:04:03.390
+remember that this sigmoid function returns a probability between zero and one.
+
+00:04:03.389 --> 00:04:06.799
+So, the first term in this loss is going to push the probability that
+
+00:04:06.800 --> 00:04:10.280
+our network will predict the correct context word towards one.
+
+00:04:10.280 --> 00:04:13.460
+In the second term, since we're negating the sigmoid input,
+
+00:04:13.460 --> 00:04:16.009
+we're pushing the summed probabilities that our network will
+
+00:04:16.009 --> 00:04:19.379
+predict the incorrect noisy words towards zero.
+
+00:04:19.379 --> 00:04:22.219
+Okay. So next, I'll present your task which will be to
+
+00:04:22.220 --> 00:04:25.200
+define this negative sampling model in code.
+

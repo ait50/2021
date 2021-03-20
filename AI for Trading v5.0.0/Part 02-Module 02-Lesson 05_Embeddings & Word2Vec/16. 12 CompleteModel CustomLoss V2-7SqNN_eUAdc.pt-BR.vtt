@@ -1,0 +1,525 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.410 --> 00:00:02.574
+Executei todas as células
+do meu notebook,
+
+00:00:02.607 --> 00:00:06.903
+e esta é minha solução e definição
+do modelo SkipGramNeg.
+
+00:00:06.936 --> 00:00:09.382
+Primeiro eu defini
+as duas camadas embedding,
+
+00:00:09.415 --> 00:00:11.562
+in_embed e out_embed.
+
+00:00:11.595 --> 00:00:14.316
+Ambas recebem o tamanho
+do vocabulário de palavras
+
+00:00:14.349 --> 00:00:17.117
+e produzem embeddings
+de tamanho n_embed.
+
+00:00:17.150 --> 00:00:20.364
+Então transformam o vocabulário
+na dimensão do embedding.
+
+00:00:20.397 --> 00:00:22.150
+E aqui eu fiz
+um passo adicional,
+
+00:00:22.183 --> 00:00:24.805
+que é inicializar
+as tabelas de pesquisa de embedding
+
+00:00:24.838 --> 00:00:27.774
+com pesos uniformes
+entre -1 e 1.
+
+00:00:27.807 --> 00:00:29.308
+Fiz isso nas duas camadas,
+
+00:00:29.341 --> 00:00:32.736
+e isso ajuda o modelo a obter
+mais rápido os melhores pesos.
+
+00:00:32.769 --> 00:00:35.407
+Depois defini
+as três funções forward.
+
+00:00:35.440 --> 00:00:37.663
+Forward_input passa
+as palavras de input
+
+00:00:37.696 --> 00:00:39.269
+pela camada embedding de input
+
+00:00:39.302 --> 00:00:41.614
+e retorna
+vetores de embedding de input.
+
+00:00:41.647 --> 00:00:43.430
+Fiz a mesma coisa
+em forward_output,
+
+00:00:43.463 --> 00:00:45.721
+mas passando as palavras
+pela camada de output
+
+00:00:45.754 --> 00:00:47.258
+para obter vetores de output.
+
+00:00:47.291 --> 00:00:51.337
+Note que não há funções de camadas
+lineares nem de ativação softmax.
+
+00:00:51.370 --> 00:00:53.814
+A última função forward é
+forward_noise,
+
+00:00:53.847 --> 00:00:56.597
+que retorna
+os embeddings-alvo de ruído.
+
+00:00:56.630 --> 00:00:59.315
+Ela pega palavras de amostra
+da distribuição de ruído
+
+00:00:59.348 --> 00:01:03.172
+e retorna o número de amostras
+batch_size vezes n_samples.
+
+00:01:03.205 --> 00:01:04.547
+Então obtive os embeddings
+
+00:01:04.580 --> 00:01:08.425
+passando estas palavras de ruído
+pela camada embedding de output.
+
+00:01:08.458 --> 00:01:11.489
+Na mesma linha, remodelei-os
+para o tamanho que eu queria,
+
+00:01:11.522 --> 00:01:15.198
+ou seja, batch_size por n_samples
+por dimensão do embedding,
+
+00:01:15.231 --> 00:01:17.104
+e retornei esses vetores.
+
+00:01:17.137 --> 00:01:20.247
+Assim completamos
+o modelo SkipGramNeg.
+
+00:01:20.280 --> 00:01:24.123
+Aqui defini uma perda personalizada
+de amostragem negativa.
+
+00:01:24.156 --> 00:01:26.897
+Isso foi definido cuidadosamente
+nas equações acima,
+
+00:01:26.930 --> 00:01:30.368
+e eu não expliquei em detalhes
+como defini a perda personalizada,
+
+00:01:30.401 --> 00:01:34.739
+mas basta dizer que é quase igual
+a definir uma classe de modelo,
+
+00:01:34.772 --> 00:01:37.363
+mas, neste caso,
+deixamos a função init vazia
+
+00:01:37.396 --> 00:01:40.212
+e só precisamos definir
+a função forward.
+
+00:01:40.245 --> 00:01:44.021
+A função forward deve receber
+alguns inputs e alvos,
+
+00:01:44.054 --> 00:01:47.363
+e podemos definir aqui
+os parâmetros que ela vai receber.
+
+00:01:47.396 --> 00:01:49.703
+Eles devem retornar
+um único valor
+
+00:01:49.736 --> 00:01:53.082
+que indica a perda média
+de um lote de dados.
+
+00:01:53.115 --> 00:01:57.117
+Neste caso, quero que a perda
+considere um vetor de input,
+
+00:01:57.150 --> 00:02:01.656
+o embedding de output certo
+e os vetores de ruído errados.
+
+00:02:01.689 --> 00:02:04.403
+Aqui obtive o tamanho do lote
+e a dimensão do embedding
+
+00:02:04.436 --> 00:02:06.466
+a partir da forma
+do vetor de input.
+
+00:02:06.499 --> 00:02:10.364
+Depois transformei o vetor de input
+numa forma que é um lote.
+
+00:02:10.397 --> 00:02:13.491
+E aqui fiz algo parecido
+com o vetor de output,
+
+00:02:13.524 --> 00:02:17.111
+mas troquei as 2 últimas dimensões,
+1 e embed_size,
+
+00:02:17.144 --> 00:02:20.383
+transformando-as
+na transposta do vetor de output.
+
+00:02:20.416 --> 00:02:23.808
+Assim pude calcular
+o produto escalar dos dois vetores
+
+00:02:23.841 --> 00:02:26.858
+multiplicando
+as matrizes do lote.
+
+00:02:26.891 --> 00:02:29.095
+Foi isso que fiz aqui.
+
+00:02:29.128 --> 00:02:30.815
+Primeiro calculei
+o termo da perda
+
+00:02:30.848 --> 00:02:34.284
+entre o vetor de input
+e o vetor-alvo certo.
+
+00:02:34.317 --> 00:02:36.345
+Usei a multiplicação
+das matrizes do lote
+
+00:02:36.378 --> 00:02:39.160
+e apliquei uma função sigmoide
+e uma função log.
+
+00:02:39.193 --> 00:02:40.448
+Aqui espremi o output,
+
+00:02:40.481 --> 00:02:43.480
+para que o output não tenha
+nenhuma dimensão vazia.
+
+00:02:43.513 --> 00:02:45.195
+Depois fiz algo parecido,
+
+00:02:45.228 --> 00:02:49.447
+porém, entre os vetores de input
+e os vetores de ruído negativados.
+
+00:02:49.480 --> 00:02:51.977
+Este é o 2º termo
+da nossa função de perda.
+
+00:02:52.010 --> 00:02:54.065
+Usei a multiplicação
+das matrizes do lote,
+
+00:02:54.098 --> 00:02:56.110
+aplicando
+as funções sigmoide e log,
+
+00:02:56.143 --> 00:02:59.919
+e somei as perdas das amostras
+dos vetores de ruído.
+
+00:03:00.233 --> 00:03:02.632
+Por fim,
+adicionei estas duas perdas,
+
+00:03:02.665 --> 00:03:05.948
+negativando-as, já que as mantive
+positivas durante meus cálculos,
+
+00:03:05.981 --> 00:03:08.636
+e calculando a média
+da perda total.
+
+00:03:08.669 --> 00:03:11.414
+Assim retornei a perda média
+de amostragem negativa
+
+00:03:11.447 --> 00:03:12.972
+de um lote de dados.
+
+00:03:13.005 --> 00:03:16.336
+Depois pude criar o modelo
+e treiná-lo.
+
+00:03:16.369 --> 00:03:18.577
+Este loop de treinamento
+parece o anterior,
+
+00:03:18.610 --> 00:03:21.076
+mas tem diferenças cruciais.
+
+00:03:21.109 --> 00:03:23.786
+Primeiro criei
+uma distribuição de ruído unigrama
+
+00:03:23.819 --> 00:03:27.206
+que relaciona vetores de ruído
+à frequência com que ocorrem.
+
+00:03:27.239 --> 00:03:30.113
+E eu já tinha calculado
+estes valores neste notebook.
+
+00:03:30.146 --> 00:03:35.175
+Então defini a distribuição de ruído
+como unigram_dist elevada a 3/4,
+
+00:03:35.208 --> 00:03:37.177
+como foi especificado
+no artigo.
+
+00:03:37.210 --> 00:03:38.817
+Depois defini o modelo,
+
+00:03:38.850 --> 00:03:40.833
+passando
+o comprimento do vocabulário,
+
+00:03:40.866 --> 00:03:43.554
+a dimensão do embedding,
+que defini como 300,
+
+00:03:43.587 --> 00:03:45.768
+e a distribuição de ruído
+que eu criei.
+
+00:03:45.801 --> 00:03:47.493
+E movi tudo isto
+para uma GPU.
+
+00:03:47.526 --> 00:03:49.122
+Há outra diferença crucial.
+
+00:03:49.155 --> 00:03:51.205
+Em vez de usar uma perda NLL,
+
+00:03:51.238 --> 00:03:53.690
+usei a perda personalizada
+de amostragem negativa
+
+00:03:53.723 --> 00:03:55.049
+que defini acima.
+
+00:03:55.082 --> 00:03:58.042
+E, no loop de treinamento,
+passei três parâmetros
+
+00:03:58.075 --> 00:03:59.640
+para esta função de perda.
+
+00:03:59.673 --> 00:04:01.377
+Treinei de novo por 5 epochs,
+
+00:04:01.410 --> 00:04:04.133
+obtendo lotes de input
+e de palavras-alvo.
+
+00:04:04.166 --> 00:04:06.219
+Depois, usando
+as três funções forward,
+
+00:04:06.252 --> 00:04:09.351
+obtive o embedding de input,
+o embedding de output desejado
+
+00:04:09.384 --> 00:04:11.245
+e os embeddings de ruído.
+
+00:04:11.278 --> 00:04:15.368
+Forward_input recebe os inputs,
+forward_output recebe os alvos,
+
+00:04:15.401 --> 00:04:18.305
+e forward_noise recebe
+dois parâmetros:
+
+00:04:18.338 --> 00:04:21.998
+o tamanho do lote e o número
+de vetores de ruído a serem gerados.
+
+00:04:22.031 --> 00:04:23.475
+Para calcular a perda,
+
+00:04:23.508 --> 00:04:27.777
+passei os embeddings de input,
+de output e de ruído aqui.
+
+00:04:27.810 --> 00:04:30.100
+Depois usei
+o mesmo código de antes,
+
+00:04:30.133 --> 00:04:34.081
+fazendo a retropropagação
+e a otimização, como sempre.
+
+00:04:34.114 --> 00:04:36.796
+Depois imprimi
+as similaridades de validação,
+
+00:04:36.829 --> 00:04:40.210
+assim como a epoch e a perda,
+para obter mais informações.
+
+00:04:40.243 --> 00:04:43.664
+Note que decidi definir
+as três funções forward diferentes
+
+00:04:43.697 --> 00:04:45.688
+para poder obter
+os vetores necessários
+
+00:04:45.721 --> 00:04:48.448
+para calcular a perda
+de amostragem negativa aqui.
+
+00:04:48.481 --> 00:04:49.943
+Tente treinar o modelo
+
+00:04:49.976 --> 00:04:52.953
+para ver como este treinamento
+é muito mais rápido.
+
+00:04:52.986 --> 00:04:56.847
+Imprimi os dados menos vezes,
+porque são gerados mais rapidamente.
+
+00:04:56.880 --> 00:04:58.473
+Aqui, depois da 1ª epoch,
+
+00:04:58.506 --> 00:05:01.764
+vemos as relações de ruído
+mais comuns.
+
+00:05:02.118 --> 00:05:05.340
+Mas, no fim, vemos grupos
+de palavras que fazem sentido.
+
+00:05:05.373 --> 00:05:08.515
+Temos "matemática",
+"álgebra" e "cálculo",
+
+00:05:08.548 --> 00:05:11.986
+temos "oceano", "ilhas",
+"pacífico" e "atlântico"
+
+00:05:12.019 --> 00:05:15.350
+e palavras menores que também
+parecem fazer parte do mesmo grupo.
+
+00:05:15.383 --> 00:05:19.112
+Mais uma vez, visualizei
+os vetores de palavra usando T-SNE.
+
+00:05:19.145 --> 00:05:21.151
+Desta vez, visualizei
+menos palavras
+
+00:05:21.184 --> 00:05:24.845
+e obtive os embeddings
+só da camada embedding de input.
+
+00:05:24.878 --> 00:05:27.463
+Depois passei estes embeddings
+para o modelo T-SNE,
+
+00:05:27.496 --> 00:05:29.452
+e este foi o resultado obtido.
+
+00:05:29.485 --> 00:05:32.285
+Vejo alguns inteiros individuais
+agrupados aqui,
+
+00:05:32.318 --> 00:05:36.703
+como termos educacionais
+e estes termos bélicos e militares.
+
+00:05:36.736 --> 00:05:39.356
+Vejo alguns termos governamentais
+e outras relações,
+
+00:05:39.389 --> 00:05:43.109
+e é interessante examinar
+uma visualização como esta.
+
+00:05:43.142 --> 00:05:45.322
+O modelo Word2Vec
+sempre me faz pensar
+
+00:05:45.355 --> 00:05:48.503
+sobre como um espaço de vetor
+aprendido pode ser interessante.
+
+00:05:48.536 --> 00:05:50.770
+Pense em como podemos
+mapear imagens
+
+00:05:50.803 --> 00:05:53.747
+e encontrar relações
+entre as cores e os objetos
+
+00:05:53.780 --> 00:05:57.041
+ou em como transformar palavras
+usando aritmética de vetores.
+
+00:05:57.074 --> 00:05:59.921
+Construir e treinar este modelo
+também foi bem complexo,
+
+00:05:59.954 --> 00:06:02.268
+e se você tiver entendido
+o código deste modelo
+
+00:06:02.301 --> 00:06:05.440
+e como manipular os modelos
+para adicionar funções forward
+
+00:06:05.473 --> 00:06:07.034
+e tipos de perda
+personalizadas,
+
+00:06:07.067 --> 00:06:10.346
+você aprendeu muito
+sobre a natureza do PyTorch
+
+00:06:10.379 --> 00:06:12.038
+e a personalização de modelos,
+
+00:06:12.071 --> 00:06:15.714
+além de ter aprendido a implementar
+um modelo Word2Vec muito eficiente.
+
+00:06:15.747 --> 00:06:17.609
+Parabéns
+por ter chegado até aqui,
+
+00:06:17.642 --> 00:06:19.972
+e espero que esteja animado
+para aprender mais.
+

@@ -1,0 +1,93 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:03.150
+Por fim, chegamos à porta uso,
+ou porta saída.
+
+00:00:03.200 --> 00:00:05.400
+Esta é a que usa
+a memória de longo prazo
+
+00:00:05.450 --> 00:00:07.200
+que acabou de sair
+da porta esquecimento
+
+00:00:07.250 --> 00:00:09.750
+e a de curto prazo
+que saiu da porta aprendizagem
+
+00:00:09.800 --> 00:00:13.150
+para calcular uma nova memória
+de curto prazo e uma saída.
+
+00:00:13.200 --> 00:00:15.100
+São a mesma coisa.
+
+00:00:15.150 --> 00:00:18.150
+Neste caso,
+usarei o mais útil no longo prazo,
+
+00:00:18.200 --> 00:00:19.900
+que é este urso aqui,
+
+00:00:19.950 --> 00:00:21.900
+e o mais útil
+da memória de curto prazo,
+
+00:00:21.950 --> 00:00:24.400
+ou seja, este cachorro/lobo
+e este esquilo,
+
+00:00:24.450 --> 00:00:28.000
+e essa se tornará
+sua nova memória de curto prazo.
+
+00:00:28.050 --> 00:00:31.550
+Nossa saída basicamente diz
+que sua imagem parece um lobo,
+
+00:00:31.600 --> 00:00:34.800
+mas também carrega
+outros animais plausíveis.
+
+00:00:34.850 --> 00:00:37.650
+Matematicamente,
+o que isso faz é o seguinte.
+
+00:00:37.700 --> 00:00:41.000
+Aplica uma pequena rede neural
+na saída da porta esquecimento
+
+00:00:41.050 --> 00:00:43.800
+usando a função de ativação
+tanh...
+
+00:00:43.850 --> 00:00:45.800
+e aplica outra pequena
+rede neural
+
+00:00:45.850 --> 00:00:48.200
+na memória de curto prazo
+e nos eventos
+
+00:00:48.250 --> 00:00:51.100
+usando a função de ativação
+sigmoide.
+
+00:00:51.150 --> 00:00:52.300
+E, como último passo,
+
+00:00:52.350 --> 00:00:56.050
+multiplica estes dois
+para obter a nova saída.
+
+00:00:56.100 --> 00:00:59.300
+A saída também funciona
+como nova memória de curto prazo.
+
+00:00:59.350 --> 00:01:01.350
+E é assim
+que a porta uso funciona.
+

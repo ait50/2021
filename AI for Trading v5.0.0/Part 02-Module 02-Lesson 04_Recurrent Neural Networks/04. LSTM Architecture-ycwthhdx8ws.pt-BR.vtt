@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.250 --> 00:00:02.600
+Para estudar a arquitetura
+de uma LSTM,
+
+00:00:02.650 --> 00:00:05.250
+vamos relembrar
+a arquitetura de uma RNN.
+
+00:00:05.300 --> 00:00:07.900
+Basicamente,
+nós pegamos nosso evento Et
+
+00:00:07.950 --> 00:00:10.300
+e nossa memória Mt - 1,
+
+00:00:10.350 --> 00:00:12.350
+que vêm
+de um ponto anterior,
+
+00:00:12.400 --> 00:00:16.800
+e aplicamos um simples tanh,
+ou função sigmoide de ativação,
+
+00:00:16.850 --> 00:00:20.050
+para obter a saída
+e nossa nova memória Mt.
+
+00:00:20.100 --> 00:00:21.450
+Para ser mais claro,
+
+00:00:21.500 --> 00:00:24.399
+nós juntamos os dois vetores,
+os multiplicamos por uma matriz W
+
+00:00:24.449 --> 00:00:26.000
+e adicionamos um viés b.
+
+00:00:26.050 --> 00:00:28.600
+Depois, multiplicamos
+pela função tanh
+
+00:00:28.650 --> 00:00:31.350
+para obter a saída Mt.
+
+00:00:31.400 --> 00:00:35.650
+Essa saída é a previsão e a memória
+que usaremos no próximo nó.
+
+00:00:35.700 --> 00:00:39.350
+A arquitetura LSTM é muito parecida,
+só que com bem mais nós
+
+00:00:39.400 --> 00:00:40.950
+e com duas entradas
+e saídas,
+
+00:00:41.000 --> 00:00:43.800
+já que mantém registro
+das memórias de longo e curto prazo.
+
+00:00:43.850 --> 00:00:47.600
+E, como eu disse, a de curto prazo
+é novamente a saída ou previsão.
+
+00:00:47.650 --> 00:00:51.100
+Não se assuste. Não é
+tão complicado quanto parece.
+
+00:00:51.150 --> 00:00:53.450
+Explicaremos a fundo
+nos próximos vídeos.
+

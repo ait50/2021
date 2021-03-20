@@ -1,0 +1,199 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.599
+Here's how I'm defining the context targets around a given word index.
+
+00:00:04.599 --> 00:00:07.219
+First, according to the excerpt from the paper,
+
+00:00:07.219 --> 00:00:10.230
+I'm going to define a range R. R is going to be
+
+00:00:10.230 --> 00:00:13.980
+a random integer in the range one to c, the window size.
+
+00:00:13.980 --> 00:00:17.780
+randint takes in a range that is not inclusive of the last number.
+
+00:00:17.780 --> 00:00:19.789
+So, that's why I have a plus one here.
+
+00:00:19.789 --> 00:00:23.649
+Then I define the start and stop indices of my context window.
+
+00:00:23.649 --> 00:00:26.059
+The start will be a range of words in the past.
+
+00:00:26.059 --> 00:00:29.579
+That is the index of my word of interest minus my range R.
+
+00:00:29.579 --> 00:00:33.869
+This will only happen as long as that doesn't get us to a negative index.
+
+00:00:33.869 --> 00:00:36.799
+If this operation does give us a negative value,
+
+00:00:36.799 --> 00:00:41.059
+then I just set my start index to the startup my list of words index zero.
+
+00:00:41.060 --> 00:00:43.920
+Then my stop index is where my feature words end.
+
+00:00:43.920 --> 00:00:45.984
+So, my word of interests index,
+
+00:00:45.984 --> 00:00:47.875
+plus our range R. Finally,
+
+00:00:47.875 --> 00:00:52.375
+I do not want my return target context to include the word at the past in index.
+
+00:00:52.375 --> 00:00:55.070
+So, I'm defining my target words as the words
+
+00:00:55.070 --> 00:00:58.340
+behind my index of interest from start to idx,
+
+00:00:58.340 --> 00:01:00.030
+plus the words in front,
+
+00:01:00.030 --> 00:01:02.375
+idx plus one to stop plus one.
+
+00:01:02.375 --> 00:01:04.760
+Then I'm returning these words as a list.
+
+00:01:04.760 --> 00:01:08.210
+Then when I go to test this out on a test set of word tokens,
+
+00:01:08.209 --> 00:01:09.949
+and I can run this a couple of times,
+
+00:01:09.950 --> 00:01:14.390
+I see that I get a variable length of words around my past an index of five.
+
+00:01:14.390 --> 00:01:17.454
+I can see the target does not include my index of interest.
+
+00:01:17.454 --> 00:01:20.064
+These line up just because I've created some input data,
+
+00:01:20.064 --> 00:01:21.859
+that's the integer zero through nine.
+
+00:01:21.859 --> 00:01:23.825
+If you run the cell multiple times,
+
+00:01:23.825 --> 00:01:26.000
+you will see a different target based on a different
+
+00:01:26.000 --> 00:01:28.799
+randomly generated R. So, this looks good.
+
+00:01:28.799 --> 00:01:30.079
+Right below this function,
+
+00:01:30.079 --> 00:01:32.030
+I've defined a generator function.
+
+00:01:32.030 --> 00:01:35.629
+This function we'll use our get_target function that we've just defined.
+
+00:01:35.629 --> 00:01:40.134
+get_batches takes in a list of word tokens a batch_size and a window_size.
+
+00:01:40.135 --> 00:01:42.740
+It makes sure that we can make complete batches of data.
+
+00:01:42.739 --> 00:01:47.149
+In this four loop, I'm iterating over our words one batch length at a time.
+
+00:01:47.150 --> 00:01:51.435
+I get a batch of words then for each word in a batch I'm calling get_target.
+
+00:01:51.435 --> 00:01:56.064
+This should return a batch of target words in a window around the given batch word.
+
+00:01:56.064 --> 00:02:01.114
+I'm calling extend here so that each batch x and y will be one row of values.
+
+00:02:01.114 --> 00:02:04.079
+Here, I'm making x the same length as y.
+
+00:02:04.079 --> 00:02:09.620
+Finally, it returns this list of input words x and target context words why using yield,
+
+00:02:09.620 --> 00:02:11.360
+which makes this a generator function.
+
+00:02:11.360 --> 00:02:12.615
+Then in the blue cell,
+
+00:02:12.615 --> 00:02:14.510
+we can test this batching out to see what it
+
+00:02:14.509 --> 00:02:16.724
+looks like when applied to some fake data here.
+
+00:02:16.724 --> 00:02:21.180
+So, I'm getting an x and y batch of data by calling next on our generator function.
+
+00:02:21.180 --> 00:02:23.175
+Here, I've passed in some int_text,
+
+00:02:23.175 --> 00:02:25.770
+a batch_size of four, and a window_size of five.
+
+00:02:25.770 --> 00:02:27.094
+When I run this cell,
+
+00:02:27.094 --> 00:02:31.425
+this output might look a little weird because everything's been extended into one row.
+
+00:02:31.425 --> 00:02:34.085
+But I can see that I've made my desired four batches
+
+00:02:34.085 --> 00:02:36.530
+because I have four different input x values;
+
+00:02:36.530 --> 00:02:38.550
+zero, one, two, and three.
+
+00:02:38.550 --> 00:02:40.750
+If we take a look at the first input zero,
+
+00:02:40.750 --> 00:02:42.229
+we see is length three.
+
+00:02:42.229 --> 00:02:44.699
+So, the target must have also been length three.
+
+00:02:44.699 --> 00:02:47.329
+The corresponding context is one, two, three.
+
+00:02:47.330 --> 00:02:49.670
+All the targets in the future window that surround
+
+00:02:49.669 --> 00:02:52.375
+the input index zero, which is what I expect.
+
+00:02:52.375 --> 00:02:54.449
+For the other input, output batches,
+
+00:02:54.449 --> 00:02:59.829
+I can see that I'm generating targets that surround the input values one, two, and three.
+
+00:02:59.830 --> 00:03:02.000
+So, we have our batch inputs,
+
+00:03:02.000 --> 00:03:03.639
+and our target context.
+
+00:03:03.639 --> 00:03:08.149
+Now, we can get to defining and training a word to vec model on this batch data,
+
+00:03:08.150 --> 00:03:09.670
+which I'll go over next.
+

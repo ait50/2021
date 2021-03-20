@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.310
+All right. So, we have two tasks to complete,
+
+00:00:02.310 --> 00:00:05.730
+to define a more efficient Word2vec skip-gram model.
+
+00:00:05.730 --> 00:00:09.885
+Here, I'm calling this model skip-gram neg to include negative sampling.
+
+00:00:09.884 --> 00:00:13.734
+This model takes in our usual vocab and embedding dimension.
+
+00:00:13.734 --> 00:00:17.109
+It also takes in a noise distribution, if it's provided.
+
+00:00:17.109 --> 00:00:20.469
+Okay. So, first, we want to define two embedding layers,
+
+00:00:20.469 --> 00:00:22.954
+one for input and one for output words.
+
+00:00:22.954 --> 00:00:26.234
+Here, I'm calling those in_embed and out_embed.
+
+00:00:26.234 --> 00:00:27.969
+I want you to define these layers,
+
+00:00:27.969 --> 00:00:31.189
+such that they can accept an input or output target as input
+
+00:00:31.190 --> 00:00:35.225
+and return an embedding that's a vector of dimension in_embed.
+
+00:00:35.225 --> 00:00:38.390
+I'll also suggest that you initialize the weights of these layers
+
+00:00:38.390 --> 00:00:41.770
+using a uniform distribution between negative one and one.
+
+00:00:41.770 --> 00:00:44.130
+Now, let's look at our loss function for a moment.
+
+00:00:44.130 --> 00:00:47.090
+When we think about defining a negative sampling loss,
+
+00:00:47.090 --> 00:00:49.860
+we know that this loss will take in a few things as input.
+
+00:00:49.859 --> 00:00:53.335
+It will for sure take in our input word embedding, vwi.
+
+00:00:53.335 --> 00:00:56.564
+It will also take in our correct output word embedding
+
+00:00:56.564 --> 00:01:01.354
+uw0 and several noisy incorrect embeddings uwi.
+
+00:01:01.354 --> 00:01:03.479
+So, in this model definition,
+
+00:01:03.479 --> 00:01:05.075
+I'm actually going to ask you to define
+
+00:01:05.075 --> 00:01:08.405
+three different forward functions for creating these embeddings.
+
+00:01:08.405 --> 00:01:11.909
+The first forward input should return our input embeddings,
+
+00:01:11.909 --> 00:01:15.784
+which are just going to be our input words passed through our input embedding layer.
+
+00:01:15.784 --> 00:01:18.259
+Similarly, forward output, which should return
+
+00:01:18.260 --> 00:01:20.975
+output vectors for passed and output words.
+
+00:01:20.974 --> 00:01:23.989
+Finally, a forward noise function, this one is special.
+
+00:01:23.989 --> 00:01:26.420
+It takes in a batch size and a number of
+
+00:01:26.420 --> 00:01:29.534
+noise samples to generate for performing negative sampling.
+
+00:01:29.534 --> 00:01:34.075
+This function first gets noisy samples from a passed in noise distribution.
+
+00:01:34.075 --> 00:01:35.799
+If no distribution is passed in,
+
+00:01:35.799 --> 00:01:38.125
+this will default to uniform distribution.
+
+00:01:38.125 --> 00:01:40.370
+Now, it gets a sample of noise words using
+
+00:01:40.370 --> 00:01:45.439
+torch.multinomial and gets batch size times n_samples of values.
+
+00:01:45.439 --> 00:01:49.289
+In this line, those words are being moved to a GPU, if available,
+
+00:01:49.290 --> 00:01:52.640
+and what you need to do to complete this function is pass these words
+
+00:01:52.640 --> 00:01:56.215
+through the output embedding layer to get their respective embeddings.
+
+00:01:56.215 --> 00:01:58.700
+So, you get our noise embeddings and then you should
+
+00:01:58.700 --> 00:02:01.890
+reshape these embeddings to be batch size by n_samples,
+
+00:02:01.890 --> 00:02:04.540
+by n_embed in dimension. All right.
+
+00:02:04.540 --> 00:02:06.210
+So, complete these forward functions,
+
+00:02:06.209 --> 00:02:09.539
+making sure to return correct embeddings for each forward function.
+
+00:02:09.539 --> 00:02:11.429
+If you've completed this implementation,
+
+00:02:11.430 --> 00:02:13.580
+you should be able to proceed with training this model.
+
+00:02:13.580 --> 00:02:16.550
+Next, I'll go over one solution for this model and I'll
+
+00:02:16.550 --> 00:02:20.000
+show you how I defined a custom negative sampling loss.
+

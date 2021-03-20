@@ -1,0 +1,426 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.135 --> 00:00:02.280
+É assim que ficará
+o nosso modelo.
+
+00:00:02.313 --> 00:00:05.753
+Ele pegará alguns inputs
+e passará pela camada embedding,
+
+00:00:05.786 --> 00:00:07.769
+que produzirá
+vetores incorporados,
+
+00:00:07.802 --> 00:00:10.636
+que serão enviados para uma camada
+de output softmax.
+
+00:00:10.669 --> 00:00:12.362
+Aqui está a definição
+do modelo.
+
+00:00:12.395 --> 00:00:14.480
+Vemos que é um modelo
+bem simples.
+
+00:00:14.513 --> 00:00:17.523
+Primeiro definimos
+a camada embedding, self.embed,
+
+00:00:17.556 --> 00:00:20.019
+que pega o comprimento
+do vocabulário.
+
+00:00:20.052 --> 00:00:22.015
+Criamos uma matriz
+de peso embedding
+
+00:00:22.048 --> 00:00:25.166
+que tem uma linha para cada
+uma das palavras do vocabulário.
+
+00:00:25.199 --> 00:00:27.706
+Isso retornará vetores
+de tamanho n_embed,
+
+00:00:27.739 --> 00:00:29.219
+a dimensão embedding.
+
+00:00:29.252 --> 00:00:31.019
+A camada
+completamente conectada
+
+00:00:31.052 --> 00:00:33.476
+pega a dimensão embedding
+como input,
+
+00:00:33.509 --> 00:00:36.823
+e o tamanho de output
+será o comprimento do vocabulário.
+
+00:00:36.856 --> 00:00:40.405
+Isso porque o output é uma série
+de pontuações de classe de palavra,
+
+00:00:40.438 --> 00:00:43.754
+que informa a probabilidade
+do contexto de uma palavra de input.
+
+00:00:43.787 --> 00:00:46.811
+Depois eu defini uma camada
+de ativação softmax.
+
+00:00:46.844 --> 00:00:49.135
+Eu poderia ter feito isso
+na função forward.
+
+00:00:49.168 --> 00:00:50.687
+Esta é só uma das soluções.
+
+00:00:50.720 --> 00:00:54.600
+Na função forward, passo o input "x"
+para a camada embedding.
+
+00:00:54.633 --> 00:00:58.033
+Isso retornará as incorporações,
+que vão para a camada conectada,
+
+00:00:58.066 --> 00:01:00.547
+que retornará uma série
+de pontuações de classe.
+
+00:01:00.580 --> 00:01:03.179
+Por fim, uma função de ativação
+softmax é aplicada
+
+00:01:03.212 --> 00:01:06.262
+e eu terei a probabilidade log
+para palavras de contexto.
+
+00:01:06.295 --> 00:01:09.855
+Abaixo, na seção de treinamento,
+eu instanciarei o modelo.
+
+00:01:09.888 --> 00:01:11.999
+Aqui eu defini
+uma dimensão embedding
+
+00:01:12.032 --> 00:01:13.820
+e configurei isto como 300,
+
+00:01:13.853 --> 00:01:16.967
+mas você poderá experimentar
+com valores maiores ou menores.
+
+00:01:17.000 --> 00:01:20.698
+A dimensão embedding é a quantidade
+de atributos de palavras detectadas,
+
+00:01:20.731 --> 00:01:23.682
+como o comprimento, o tipo
+de palavra e assim por diante.
+
+00:01:23.715 --> 00:01:26.141
+Isso pega o comprimento total
+do vocabulário
+
+00:01:26.174 --> 00:01:27.591
+e a dimensão embedding.
+
+00:01:27.624 --> 00:01:30.044
+Eu movi isto para uma GPU
+para o treinamento.
+
+00:01:30.077 --> 00:01:33.005
+Aqui eu uso NLLLoss.
+
+00:01:33.038 --> 00:01:37.069
+Isso porque a softmax
+em conjunto com a NLLLoss
+
+00:01:37.102 --> 00:01:39.334
+se iguala
+à perda da entropia cruzada,
+
+00:01:39.367 --> 00:01:41.709
+que é uma boa perda
+para probabilidades
+
+00:01:41.742 --> 00:01:43.222
+de palavras de contexto.
+
+00:01:43.255 --> 00:01:46.254
+Eu usei um otimizador Adam,
+que é meu preferido.
+
+00:01:46.287 --> 00:01:49.290
+Passei os parâmetros
+do modelo e a taxa de aprendizagem.
+
+00:01:49.323 --> 00:01:52.792
+Depois temos o loop de treinamento,
+e eu treinei por 5 epochs.
+
+00:01:52.825 --> 00:01:55.841
+O treinamento demorou algumas horas,
+mesmo na GPU,
+
+00:01:55.874 --> 00:01:58.416
+então recomendo treinar
+por menos tempo
+
+00:01:58.449 --> 00:02:01.214
+ou esperar eu mostrar como
+treinar de outra forma.
+
+00:02:01.247 --> 00:02:03.619
+No loop de treinamento,
+obtenho lotes de dados
+
+00:02:03.652 --> 00:02:06.128
+chamando a função generator
+definida acima
+
+00:02:06.161 --> 00:02:08.008
+e passando a lista de palavras
+
+00:02:08.041 --> 00:02:09.473
+e o tamanho de lote.
+
+00:02:09.506 --> 00:02:11.008
+Eu obtenho os inputs
+
+00:02:11.041 --> 00:02:14.857
+e as palavras de contexto-alvo
+e as converto em LongTensor.
+
+00:02:14.890 --> 00:02:17.169
+Movo para a GPU,
+se estiver disponível,
+
+00:02:17.202 --> 00:02:19.840
+e realizo a retropropagação,
+como sempre.
+
+00:02:19.873 --> 00:02:22.072
+Passo os inputs
+no modelo Skip-Gram
+
+00:02:22.105 --> 00:02:24.812
+para obter a probabilidade log
+das palavras de contexto
+
+00:02:24.845 --> 00:02:27.607
+e aplico a função de perda
+para as palavras de contexto
+
+00:02:27.640 --> 00:02:28.760
+e para os alvos.
+
+00:02:28.793 --> 00:02:32.329
+Realizo a retropropagação
+e atualizo os pesos do modelo.
+
+00:02:32.362 --> 00:02:36.432
+Zeramos os gradientes acumulados
+antes destes dois passos.
+
+00:02:36.465 --> 00:02:38.785
+Eu imprimo alguns
+exemplos de validação
+
+00:02:38.818 --> 00:02:40.873
+usando a função
+cosine_similarity.
+
+00:02:40.906 --> 00:02:43.605
+Eu passo o modelo
+em um dispositivo GPU
+
+00:02:43.638 --> 00:02:45.633
+e obtenho alguns
+exemplos de validação
+
+00:02:45.666 --> 00:02:47.017
+e as semelhanças.
+
+00:02:47.050 --> 00:02:50.118
+Aqui eu uso amostragem topk
+para obter as seis palavras
+
+00:02:50.151 --> 00:02:53.103
+mais semelhantes
+de um determinado exemplo.
+
+00:02:53.136 --> 00:02:56.006
+Aqui eu itero
+pelos exemplos de validação
+
+00:02:56.039 --> 00:02:58.153
+e imprimo a primeira
+palavra de validação
+
+00:02:58.186 --> 00:03:01.664
+e as cinco palavras mais próximas
+depois de um caractere de linha.
+
+00:03:01.697 --> 00:03:03.799
+Aqui estão alguns
+resultados iniciais.
+
+00:03:03.832 --> 00:03:07.209
+Eu imprimi muitos dados
+depois de treinar por 5 epochs.
+
+00:03:07.242 --> 00:03:10.599
+A princípio, as associações
+dessas palavras parecem aleatórias.
+
+00:03:10.632 --> 00:03:13.715
+Temos "e, retorna, liverpudlians"
+e assim por diante.
+
+00:03:13.748 --> 00:03:15.002
+Conforme treinamos,
+
+00:03:15.035 --> 00:03:18.597
+vemos que as palavras de validação
+ficam mais semelhantes.
+
+00:03:18.630 --> 00:03:21.170
+Se eu descer
+até o fim do treinamento,
+
+00:03:21.203 --> 00:03:24.163
+veremos que palavras semelhantes
+estão agrupadas.
+
+00:03:24.196 --> 00:03:27.035
+Vemos números agrupados,
+
+00:03:27.068 --> 00:03:30.187
+vemos animais,
+
+00:03:30.220 --> 00:03:32.931
+outras relacionadas
+com Estado e política.
+
+00:03:32.964 --> 00:03:36.332
+Até palavras relacionadas
+com lugares e línguas.
+
+00:03:36.365 --> 00:03:38.260
+Parece que o modelo
+está aprendendo
+
+00:03:38.293 --> 00:03:41.219
+e podemos visualizar
+as incorporações de outra forma.
+
+00:03:41.252 --> 00:03:43.821
+Outro método poderoso
+de visualização
+
+00:03:43.854 --> 00:03:45.243
+se chama "TSNE",
+
+00:03:45.276 --> 00:03:48.915
+que significa "t-Distributed
+Stochastic Neighbor Embeddings".
+
+00:03:48.948 --> 00:03:51.603
+É uma técnica de redução
+não linear
+
+00:03:51.636 --> 00:03:55.674
+que separa dados
+agrupando os semelhantes
+
+00:03:55.707 --> 00:03:57.755
+e separando
+os dados diferentes.
+
+00:03:57.788 --> 00:04:01.785
+Neste caso, é um algoritmo
+da biblioteca scikit-learn.
+
+00:04:01.818 --> 00:04:04.890
+Eu forneço a quantidade
+de incorporações que desejo
+
+00:04:04.923 --> 00:04:06.307
+e obtenho as incorporações
+
+00:04:06.340 --> 00:04:10.290
+dos pesos da camada embedded,
+que eu chamo pelo nome no modelo.
+
+00:04:10.323 --> 00:04:14.042
+A camada embedded se chama "embed",
+e obtenho os pesos
+
+00:04:14.075 --> 00:04:16.450
+usando model.embed.weigth.
+
+00:04:16.483 --> 00:04:20.602
+Aqui eu aplico TSNE
+para 600 incorporações.
+
+00:04:20.635 --> 00:04:23.898
+É assim que o agrupamento TSNE
+ficará.
+
+00:04:23.931 --> 00:04:26.803
+Vemos que as palavras semelhantes
+estão agrupadas.
+
+00:04:26.836 --> 00:04:29.610
+Temos "leste, oeste,
+norte e sul"...
+
+00:04:29.643 --> 00:04:32.274
+Se observarmos à direita,
+vemos termos musicais -
+
+00:04:32.307 --> 00:04:34.986
+"rock, música, disco, banda"
+e "música" -
+
+00:04:35.019 --> 00:04:39.586
+abaixo vemos termos religiosos,
+algumas cores aqui,
+
+00:04:39.619 --> 00:04:42.892
+alguns termos acadêmicos -
+"escola, universidade, faculdade".
+
+00:04:42.925 --> 00:04:46.483
+À esquerda, vemos agrupamentos
+dos meses do ano
+
+00:04:46.516 --> 00:04:49.089
+e alguns valores inteiros aqui.
+
+00:04:49.122 --> 00:04:52.729
+Esse agrupamento indica que o modelo
+Word2Vec funcionou.
+
+00:04:52.762 --> 00:04:56.170
+Ele aprende a gerar incorporações
+com significado semântico.
+
+00:04:56.203 --> 00:05:00.954
+Assim também visualizamos
+a relação entre palavras no espaço.
+
+00:05:00.987 --> 00:05:04.238
+O problema deste modelo
+é que demorou para treinar.
+
+00:05:04.271 --> 00:05:06.300
+A seguir, abordarei
+esse desafio.
+

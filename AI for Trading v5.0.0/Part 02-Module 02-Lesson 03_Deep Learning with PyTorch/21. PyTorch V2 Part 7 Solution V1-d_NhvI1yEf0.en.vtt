@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.665
+Hello, and welcome back.
+
+00:00:01.665 --> 00:00:07.304
+So, here are my solutions for the exercises I had you do on loading image data.
+
+00:00:07.304 --> 00:00:11.910
+Here, I had you define some transforms and then load the actual dataset with
+
+00:00:11.910 --> 00:00:14.505
+image folder and then turn that into a data loader
+
+00:00:14.505 --> 00:00:17.789
+using this torch utils data loader class.
+
+00:00:17.789 --> 00:00:21.509
+So, here, I chose a couple transforms.
+
+00:00:21.510 --> 00:00:27.855
+So, first, I'm resizing the images to be 255 by 255 squares.
+
+00:00:27.855 --> 00:00:32.429
+So, basically, even if your image is actually a rectangle,
+
+00:00:32.429 --> 00:00:36.630
+then this will resize it to be square with 255 pixels on each size.
+
+00:00:36.630 --> 00:00:39.135
+The first transform I used was resize.
+
+00:00:39.134 --> 00:00:44.239
+So, this resizes your images to be squares with 255 pixels on each side.
+
+00:00:44.240 --> 00:00:47.120
+So, even if your original image is a rectangle,
+
+00:00:47.119 --> 00:00:49.734
+this will change it into a square.
+
+00:00:49.734 --> 00:00:53.534
+Then, I did a center crop with 224 pixels.
+
+00:00:53.534 --> 00:00:59.464
+So, this crops a square out of the center of the image with 224 pixels on each side.
+
+00:00:59.465 --> 00:01:04.284
+Then, I convert it into a tensor which we can then use in our networks.
+
+00:01:04.284 --> 00:01:06.079
+With the transform defined,
+
+00:01:06.079 --> 00:01:09.439
+we can pass that into this image folder and along
+
+00:01:09.439 --> 00:01:13.719
+with the path to our dataset and that creates a dataset object.
+
+00:01:13.719 --> 00:01:15.090
+Then, with the dataset object,
+
+00:01:15.090 --> 00:01:17.070
+we can pass that to data loader.
+
+00:01:17.069 --> 00:01:21.639
+So, this will give us back a generator were we actually can get our images and labels.
+
+00:01:21.640 --> 00:01:26.295
+So, here, I just chose a batch size of 32 and this shuffle set to true.
+
+00:01:26.295 --> 00:01:31.010
+So, basically, every time you loop through the generator again like multiple times,
+
+00:01:31.010 --> 00:01:32.325
+every time you do that,
+
+00:01:32.325 --> 00:01:36.010
+it'll randomly shuffle the images and labels.
+
+00:01:36.010 --> 00:01:37.859
+So, that loaded, here's what it looks like.
+
+00:01:37.859 --> 00:01:40.219
+We have a nice little dogs now here.
+
+00:01:40.219 --> 00:01:45.019
+So, here, I had you define transforms for our training data and our testing data.
+
+00:01:45.019 --> 00:01:46.729
+So, like I was saying before,
+
+00:01:46.730 --> 00:01:50.090
+with training data, you typically want to do data augmentation.
+
+00:01:50.090 --> 00:01:51.680
+So, that means rotating it,
+
+00:01:51.680 --> 00:01:53.690
+resizing it, flipping it, et cetera,
+
+00:01:53.689 --> 00:01:58.810
+to create this simulated dataset of more images than we actually have.
+
+00:01:58.810 --> 00:02:01.265
+Firstly, it just gives you more data to actually train with.
+
+00:02:01.265 --> 00:02:06.864
+But secondly, it helps the network generalize to images that aren't in the training set.
+
+00:02:06.864 --> 00:02:08.979
+So, my transformations here,
+
+00:02:08.979 --> 00:02:12.489
+I first chose to do a random rotation with 30 degrees.
+
+00:02:12.490 --> 00:02:15.140
+So, this is going to rotate in either direction up to 30 degrees.
+
+00:02:15.139 --> 00:02:17.889
+Then, I did a random resize crop.
+
+00:02:17.889 --> 00:02:21.544
+So, this is going to randomly resize the image and then take
+
+00:02:21.544 --> 00:02:26.000
+a crop from the center of 224 pixels square.
+
+00:02:26.000 --> 00:02:29.090
+Then, after that crop, then it do a random horizontal flip.
+
+00:02:29.090 --> 00:02:33.150
+So, it's going to mirror it horizontally and change it to a tensor.
+
+00:02:33.150 --> 00:02:36.500
+Then, with the test transforms kind of the same as before resize
+
+00:02:36.500 --> 00:02:40.205
+it to 255 pixels and then do a center crop 224,
+
+00:02:40.205 --> 00:02:42.155
+and it finally change it to a tensor.
+
+00:02:42.155 --> 00:02:45.860
+Then, here with the train data and test data,
+
+00:02:45.860 --> 00:02:51.560
+we can pass our data directories and our transforms through this image folder.
+
+00:02:51.560 --> 00:02:52.789
+I should actually load the data,
+
+00:02:52.789 --> 00:02:56.824
+and then give our loaded data to our data loaders to actually get
+
+00:02:56.824 --> 00:03:02.009
+our load our datasets so that we can see data from the train loader,
+
+00:03:02.009 --> 00:03:07.599
+it looks like this, and we can see data from our test loader, so like that.
+

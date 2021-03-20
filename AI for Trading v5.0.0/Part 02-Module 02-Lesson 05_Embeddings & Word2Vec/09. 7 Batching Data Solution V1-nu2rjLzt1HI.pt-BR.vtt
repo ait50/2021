@@ -1,0 +1,279 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.253 --> 00:00:02.557
+Foi assim que eu defini
+os alvos de contexto
+
+00:00:02.590 --> 00:00:04.748
+em torno do índice
+de uma palavra.
+
+00:00:04.781 --> 00:00:07.077
+De acordo com o trecho
+do artigo,
+
+00:00:07.110 --> 00:00:09.124
+definirei o intervalo R,
+
+00:00:09.157 --> 00:00:12.660
+que será um inteiro aleatório
+no intervalo de 1 a C,
+
+00:00:12.693 --> 00:00:13.976
+o tamanho da janela.
+
+00:00:14.009 --> 00:00:17.804
+O randint pega o intervalo que
+não é inclusivo no último número.
+
+00:00:17.837 --> 00:00:20.036
+É por isso
+que temos um "+1" aqui.
+
+00:00:20.069 --> 00:00:23.657
+Depois defini os índices de início
+e de parada da janela de contexto.
+
+00:00:23.690 --> 00:00:26.245
+O início será o intervalo
+de palavras no passado,
+
+00:00:26.278 --> 00:00:29.938
+que é o índice da palavra
+de interesse menos o intervalo R.
+
+00:00:29.971 --> 00:00:34.116
+Isso só acontecerá se não obtivermos
+um índice negativo.
+
+00:00:34.149 --> 00:00:36.587
+Se a operação retornar
+um valor negativo,
+
+00:00:36.620 --> 00:00:38.184
+configure o índice de início
+
+00:00:38.217 --> 00:00:41.104
+para o início da lista
+de palavras, no índice 0.
+
+00:00:41.137 --> 00:00:44.110
+O índice de parada
+é onde as palavras futuras terminam.
+
+00:00:44.143 --> 00:00:46.043
+Será o índice
+da palavra de interesse
+
+00:00:46.076 --> 00:00:47.427
+mais o intervalo R.
+
+00:00:47.460 --> 00:00:49.802
+Não quero
+que o contexto-alvo de retorno
+
+00:00:49.835 --> 00:00:52.513
+inclua a palavra
+do índice passado.
+
+00:00:52.546 --> 00:00:54.322
+Eu defino as palavras-alvo
+
+00:00:54.355 --> 00:00:56.698
+como as palavras atrás
+do índice de interesse
+
+00:00:56.731 --> 00:00:59.754
+de start:idx
+mais as palavras à frente -
+
+00:00:59.787 --> 00:01:02.417
+idx+1:stop+1 -,
+
+00:01:02.450 --> 00:01:04.770
+então retornamos as palavras
+como uma lista.
+
+00:01:04.803 --> 00:01:08.153
+Agora vamos testar
+com os tokens de palavra,
+
+00:01:08.186 --> 00:01:09.874
+e executar isso algumas vezes.
+
+00:01:09.907 --> 00:01:11.766
+Obtemos a variável
+do comprimento
+
+00:01:11.799 --> 00:01:14.207
+em volta do índice 5 passado.
+
+00:01:14.240 --> 00:01:17.480
+Vemos que o alvo não inclui
+o índice de interesse.
+
+00:01:17.513 --> 00:01:19.937
+Isso porque eu criei
+alguns dados de input
+
+00:01:19.970 --> 00:01:21.923
+com os inteiros de 0 a 9.
+
+00:01:21.956 --> 00:01:23.866
+Se executarmos a célula
+várias vezes,
+
+00:01:23.899 --> 00:01:27.673
+veremos um alvo diferente
+a partir do R gerado aleatoriamente.
+
+00:01:27.706 --> 00:01:31.992
+Isso está bom. Abaixo da função,
+eu defini uma função generator,
+
+00:01:32.025 --> 00:01:35.803
+que usará a função get_target
+que acabamos de definir.
+
+00:01:35.836 --> 00:01:37.906
+A get_batches pega a lista
+de tokens
+
+00:01:37.939 --> 00:01:40.123
+o batch_size e o window_size,
+
+00:01:40.156 --> 00:01:42.973
+e garante que possamos fazer
+lotes completos de dados.
+
+00:01:43.006 --> 00:01:46.864
+Deste loop for eu itero palavras
+um lote por vez.
+
+00:01:46.897 --> 00:01:49.859
+Obtenho um lote de palavras
+e, para cada palavra do lote,
+
+00:01:49.892 --> 00:01:51.345
+chamo get_target.
+
+00:01:51.378 --> 00:01:53.725
+Isso deverá retornar um lote
+de palavras-alvo
+
+00:01:53.758 --> 00:01:56.001
+e uma janela em torno
+da palavra do lote.
+
+00:01:56.034 --> 00:01:59.290
+Eu chamo extend aqui
+para que cada lote X e Y
+
+00:01:59.323 --> 00:02:01.128
+tenha uma linha de valores.
+
+00:02:01.161 --> 00:02:04.021
+Aqui eu deixo x
+com o mesmo comprimento de y.
+
+00:02:04.054 --> 00:02:07.029
+Por fim, isso retornará esta lista
+de palavras de input x
+
+00:02:07.062 --> 00:02:09.332
+e palavras de contexto-alvo y
+usando yield,
+
+00:02:09.365 --> 00:02:11.366
+que faz disso
+uma função generator.
+
+00:02:11.399 --> 00:02:13.989
+Na célula abaixo,
+podemos testar este lote
+
+00:02:14.022 --> 00:02:16.861
+para ver como ele reage
+aos dados.
+
+00:02:16.894 --> 00:02:18.812
+Eu obtenho um lote
+de dados x e y
+
+00:02:18.845 --> 00:02:21.118
+chamando next
+na função generator.
+
+00:02:21.151 --> 00:02:24.230
+Aqui eu passei int_text,
+batch_size=4
+
+00:02:24.263 --> 00:02:25.917
+e window_size=5.
+
+00:02:25.950 --> 00:02:28.715
+Ao executar a célula,
+o output parecerá estranho,
+
+00:02:28.748 --> 00:02:31.525
+porque tudo foi estendido
+em uma linha,
+
+00:02:31.558 --> 00:02:33.950
+mas consegui criar
+os quatro lotes,
+
+00:02:33.983 --> 00:02:36.327
+porque tenho quatro
+valores x diferentes,
+
+00:02:36.360 --> 00:02:38.748
+0, 1, 2 e 3.
+
+00:02:38.781 --> 00:02:40.691
+Se observamos
+o primeiro input, 0,
+
+00:02:40.724 --> 00:02:42.324
+veremos que o comprimento é 3,
+
+00:02:42.357 --> 00:02:44.903
+então o alvo também deve ter 3
+de comprimento,
+
+00:02:44.936 --> 00:02:47.268
+e o contexto correspondente
+será 1, 2, 3 -
+
+00:02:47.301 --> 00:02:50.963
+os alvos da janela futura
+que rodeia o índice de input 0,
+
+00:02:50.996 --> 00:02:52.411
+que é o que eu esperava.
+
+00:02:52.444 --> 00:02:54.395
+Nos outros lotes
+de input e de output,
+
+00:02:54.428 --> 00:02:57.479
+geramos alvos
+que permeiam os valores de input
+
+00:02:57.512 --> 00:03:00.095
+1, 2 e 3.
+
+00:03:00.128 --> 00:03:03.647
+Temos os inputs dos lotes
+e o contexto-alvo,
+
+00:03:03.680 --> 00:03:06.975
+agora podemos definir e treinar
+um modelo Word2Vec
+
+00:03:07.008 --> 00:03:09.497
+nos dados de lote,
+que faremos a seguir.
+

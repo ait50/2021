@@ -1,0 +1,257 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.462 --> 00:00:02.902
+Este é meu código get_batches
+
+00:00:02.936 --> 00:00:05.038
+que gera minilotes de dados.
+
+00:00:05.071 --> 00:00:08.308
+Primeiro precisamos conseguir
+o número total
+
+00:00:08.341 --> 00:00:11.177
+de lotes completos
+que podemos fazer: n_batches.
+
+00:00:11.211 --> 00:00:14.381
+Para fazer isto, nós calculamos
+quantos caracteres tinham
+
+00:00:14.414 --> 00:00:16.149
+em um minilote completo.
+
+00:00:16.182 --> 00:00:18.752
+Um minilote será igual
+ao tamanho do lote
+
+00:00:18.785 --> 00:00:21.087
+vezes o número de caracteres
+na sequência.
+
+00:00:21.121 --> 00:00:24.090
+E o número de lotes completos
+que eu posso fazer
+
+00:00:24.124 --> 00:00:27.394
+é o tamanho do array dividido
+pelo número total de caracteres
+
+00:00:27.427 --> 00:00:28.661
+em um minilote.
+
+00:00:28.695 --> 00:00:31.097
+As barras duplas são
+uma divisão de inteiros,
+
+00:00:31.131 --> 00:00:32.565
+que arredondará para baixo
+
+00:00:32.599 --> 00:00:34.501
+qualquer resto decimal
+desta divisão.
+
+00:00:34.534 --> 00:00:37.937
+Assim, temos quantos lotes completos
+podemos fazer.
+
+00:00:37.971 --> 00:00:42.342
+Nós pegamos todos os caracteres
+de um array até n_batches
+
+00:00:42.375 --> 00:00:45.178
+vezes o tamanho total
+de caracteres para um minilote.
+
+00:00:45.211 --> 00:00:48.314
+Vamos garantir que temos
+caracteres o bastante
+
+00:00:48.348 --> 00:00:49.783
+para fazer lotes completos.
+
+00:00:49.816 --> 00:00:51.618
+E podemos perder
+alguns caracteres,
+
+00:00:51.651 --> 00:00:53.753
+mas ainda teremos
+dados o suficiente,
+
+00:00:53.787 --> 00:00:57.190
+então nos livrarmos de um lote vazio
+não vai importar.
+
+00:00:57.223 --> 00:01:00.060
+Em seguida, com reshape,
+podemos pegar o array
+
+00:01:00.093 --> 00:01:03.463
+e deixar o número de linhas
+igual ao tamanho do lote.
+
+00:01:03.496 --> 00:01:05.298
+E este é
+o número de sequências
+
+00:01:05.331 --> 00:01:07.200
+que queremos colocar
+em um minilote.
+
+00:01:07.233 --> 00:01:10.203
+Nós queremos que o número
+de linhas seja batch_size
+
+00:01:10.236 --> 00:01:11.938
+e colocamos este -1.
+
+00:01:12.368 --> 00:01:15.442
+O -1 é
+um placeholder dimensional
+
+00:01:15.475 --> 00:01:18.044
+e vai preencher automaticamente
+a segunda dimensão
+
+00:01:18.077 --> 00:01:21.247
+para o tamanho que ele precisar ter
+para acomodar os dados.
+
+00:01:21.281 --> 00:01:24.117
+E, por último, vou iterar
+sobre meus dados em lote
+
+00:01:24.150 --> 00:01:26.586
+usando uma janela de comprimento
+"seq_lenght".
+
+00:01:26.619 --> 00:01:29.923
+Aqui estou colocando
+o array completo e reformatado,
+
+00:01:29.956 --> 00:01:33.293
+e olhando as linhas,
+todos os lotes.
+
+00:01:33.326 --> 00:01:37.163
+E as colunas estão
+num intervalo de n:n+seq_lenght,
+
+00:01:37.197 --> 00:01:39.032
+que faz a janela de sequência.
+
+00:01:39.065 --> 00:01:41.668
+Isto completa X,
+o input do minilote.
+
+00:01:41.701 --> 00:01:44.304
+Aqui para o alvo Y,
+
+00:01:44.337 --> 00:01:46.940
+eu inicializei um array
+só com zeros,
+
+00:01:46.973 --> 00:01:48.842
+que tem o mesmo formato que X.
+
+00:01:48.875 --> 00:01:52.712
+E preenchi com valores do array X
+alterados em 1.
+
+00:01:52.745 --> 00:01:56.816
+Do começo ao fim,
+transfiro X em uma posição.
+
+00:01:56.850 --> 00:01:59.819
+E no caso de atingir
+o fim do array,
+
+00:01:59.853 --> 00:02:04.357
+vou deixar o último elemento de Y
+igual ao primeiro elemento no array.
+
+00:02:04.390 --> 00:02:06.559
+Não sei por que a maioria
+faz assim,
+
+00:02:06.593 --> 00:02:08.027
+unir o array de uma forma
+
+00:02:08.061 --> 00:02:11.331
+que o último elemento de Y
+seja o primeiro elemento de X.
+
+00:02:11.364 --> 00:02:14.234
+Mas vi isto muitas vezes,
+então fiz de um jeito cíclico.
+
+00:02:14.267 --> 00:02:16.703
+E parece que a rede treina bem
+fazendo isto,
+
+00:02:16.736 --> 00:02:18.571
+então não parece ser
+um problema.
+
+00:02:18.605 --> 00:02:21.708
+O principal é que queremos
+que X e Y tenham o mesmo tamanho.
+
+00:02:21.741 --> 00:02:25.044
+Se fizer isto certo
+e quiser testar a implementação,
+
+00:02:25.078 --> 00:02:27.847
+deve ter lotes parecidos
+com estes.
+
+00:02:27.881 --> 00:02:30.850
+Aqui temos um lote de tamanho 8,
+então temos 8 linhas.
+
+00:02:30.884 --> 00:02:33.620
+E imprimimos
+os primeiros 10 itens na sequência.
+
+00:02:33.653 --> 00:02:35.455
+Então você vê 10 itens aqui.
+
+00:02:35.785 --> 00:02:40.059
+O importante aqui é garantir
+que os elementos em X,
+
+00:02:40.093 --> 00:02:41.694
+como os valores codificados,
+
+00:02:41.728 --> 00:02:44.264
+sejam transferidos uma posição
+para trás em Y.
+
+00:02:44.297 --> 00:02:48.902
+Temos 51 como o primeiro item aqui
+e como o item 0 ali.
+
+00:02:48.935 --> 00:02:51.171
+E 23 e 23.
+
+00:02:51.204 --> 00:02:55.175
+Do mesmo modo, 55 está aqui em X
+e aqui em Y.
+
+00:02:55.208 --> 00:02:58.278
+Eu quero garantir que tudo
+seja transferido corretamente.
+
+00:02:58.311 --> 00:02:59.412
+E parece bom.
+
+00:02:59.445 --> 00:03:01.247
+Agora que temos
+os dados em lote,
+
+00:03:01.281 --> 00:03:04.451
+o próximo passo de que falaremos
+será a construção da rede.
+

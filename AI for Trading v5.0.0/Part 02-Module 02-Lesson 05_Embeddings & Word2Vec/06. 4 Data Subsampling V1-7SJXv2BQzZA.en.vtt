@@ -1,0 +1,382 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.075
+Okay, let's get started with implementing the skip-gram word2vec model.
+
+00:00:04.075 --> 00:00:07.455
+The first thing you want to do is load in the necessary data.
+
+00:00:07.455 --> 00:00:10.155
+In this example, I'm using a large body of text
+
+00:00:10.154 --> 00:00:13.094
+that was scraped from Wikipedia articles by Matt Mahoney.
+
+00:00:13.095 --> 00:00:14.339
+If you're working locally,
+
+00:00:14.339 --> 00:00:18.059
+you'll actually need to click this link to download this data as a zip file,
+
+00:00:18.059 --> 00:00:20.699
+and we'll move it into our data directory, and unzip it.
+
+00:00:20.699 --> 00:00:24.820
+You should then be left with a file just called text8 in our data directory.
+
+00:00:24.820 --> 00:00:28.115
+So, I've already put that data in the data directory, and here,
+
+00:00:28.114 --> 00:00:31.599
+I'm loading that file in my name and printing out the first 100 characters.
+
+00:00:31.600 --> 00:00:36.460
+It looks like the first section of text is about anarchism and the working class.
+
+00:00:36.460 --> 00:00:38.274
+So I loaded that in correctly,
+
+00:00:38.274 --> 00:00:40.140
+and then I want to do some preprocessing.
+
+00:00:40.140 --> 00:00:42.740
+Essentially, I want to break this text up into
+
+00:00:42.740 --> 00:00:46.130
+a giant list of words so that I can build up a vocabulary.
+
+00:00:46.130 --> 00:00:48.830
+So here, I'm going to do that using a function in the
+
+00:00:48.829 --> 00:00:51.859
+provided utils.py file called preprocess.
+
+00:00:51.859 --> 00:00:54.530
+Let's actually take a look at this code.
+
+00:00:54.530 --> 00:00:58.700
+So here's our utils.py file and our preprocess function.
+
+00:00:58.700 --> 00:01:02.675
+This function takes in some text and you can see that it does a few things.
+
+00:01:02.674 --> 00:01:04.469
+First, in all of these lines,
+
+00:01:04.469 --> 00:01:07.250
+it converts any punctuation into tokens.
+
+00:01:07.250 --> 00:01:11.415
+So a period is changed to a bracketed period token and so on.
+
+00:01:11.415 --> 00:01:13.880
+Next, we see that it stores the number of times
+
+00:01:13.879 --> 00:01:16.259
+certain words appear in the text using a Counter.
+
+00:01:16.260 --> 00:01:18.980
+A Counter is a collection that will basically
+
+00:01:18.980 --> 00:01:22.745
+return a dictionary of words and their frequency of occurrence.
+
+00:01:22.745 --> 00:01:26.255
+Here, we're creating a list of trimmed words that basically cuts
+
+00:01:26.254 --> 00:01:29.799
+all words that show up five or fewer times in this dataset.
+
+00:01:29.799 --> 00:01:32.659
+This should greatly reduce issues due to noise in the data,
+
+00:01:32.659 --> 00:01:35.609
+and it should improve the quality of the vector representations.
+
+00:01:35.609 --> 00:01:38.135
+Then, finally, it returns those trimmed words.
+
+00:01:38.135 --> 00:01:39.700
+So back to our notebook,
+
+00:01:39.700 --> 00:01:43.144
+I'm going to say words equal utils.preprocess text,
+
+00:01:43.144 --> 00:01:45.609
+and I'll print out the first trim 30 words.
+
+00:01:45.609 --> 00:01:49.040
+This may take a few moments to run since our text data is quite big.
+
+00:01:49.040 --> 00:01:51.495
+Then you should see an output like this.
+
+00:01:51.495 --> 00:01:54.005
+Pretty much the same text that we saw above,
+
+00:01:54.004 --> 00:01:56.204
+only the words are split into a list.
+
+00:01:56.204 --> 00:01:59.189
+Here, I'm going to print out some statistics about this data.
+
+00:01:59.189 --> 00:02:03.259
+I'm printing out the length of the text so a word count of our data,
+
+00:02:03.260 --> 00:02:05.460
+and I'll print out the number of unique words.
+
+00:02:05.459 --> 00:02:07.214
+To get the number of unique words,
+
+00:02:07.215 --> 00:02:09.814
+I'm using the built-in Python data type set,
+
+00:02:09.814 --> 00:02:11.829
+which if you recall from the last lesson,
+
+00:02:11.830 --> 00:02:13.580
+will get rid of any duplicate words.
+
+00:02:13.580 --> 00:02:16.405
+So, we have a set of only unique words in this text.
+
+00:02:16.405 --> 00:02:20.485
+So, you can see that we have over 16 million words in this text,
+
+00:02:20.485 --> 00:02:22.990
+and over 60 thousand unique words,
+
+00:02:22.990 --> 00:02:26.350
+and these numbers will be useful to keep in mind as we continue processing.
+
+00:02:26.349 --> 00:02:29.030
+Next, I'm creating two dictionaries to convert
+
+00:02:29.030 --> 00:02:32.129
+words to integers and back again, integers to words.
+
+00:02:32.129 --> 00:02:34.525
+This is our usual tokenization step.
+
+00:02:34.525 --> 00:02:39.675
+This is again done with a function in the utils.py file, create lookup tables.
+
+00:02:39.675 --> 00:02:41.950
+So, let's take a look at what this function is doing.
+
+00:02:41.949 --> 00:02:45.530
+So, this function takes in a list of words in a text and it returns
+
+00:02:45.530 --> 00:02:49.750
+two dictionaries that map from our vocabulary to integer values and back.
+
+00:02:49.750 --> 00:02:52.675
+You may notice an interesting use of counter here.
+
+00:02:52.675 --> 00:02:55.425
+First, this is creating a sorted vocabulary.
+
+00:02:55.425 --> 00:02:57.890
+So this is a list of words from most to least
+
+00:02:57.889 --> 00:03:00.719
+frequent according to the word counts returned by counter.
+
+00:03:00.719 --> 00:03:04.205
+Then integers are assigned in descending frequency order.
+
+00:03:04.205 --> 00:03:08.035
+So the most frequent word like B is given the integer 0,
+
+00:03:08.034 --> 00:03:11.099
+and the next most frequent is 1 and so on.
+
+00:03:11.099 --> 00:03:14.313
+So in our notebook, this function returns are two dictionaries.
+
+00:03:14.313 --> 00:03:16.969
+Once we have those, the words are then converted to
+
+00:03:16.969 --> 00:03:19.560
+integers and stored in the list into words.
+
+00:03:19.560 --> 00:03:23.955
+I'll print out the first 30 tokenized words here just to check that they make sense.
+
+00:03:23.955 --> 00:03:27.650
+So, if we look at these values and back to our list of words above,
+
+00:03:27.650 --> 00:03:30.210
+we'll be able to see that 'the' and 'of'
+
+00:03:30.210 --> 00:03:32.754
+are some of the most common words in our dictionary.
+
+00:03:32.754 --> 00:03:35.984
+We can see that 'the' is tokenized as the integer 0,
+
+00:03:35.985 --> 00:03:40.615
+and it looks like 'of' is the next most frequent word tokenized as 1.
+
+00:03:40.615 --> 00:03:44.085
+We have over 60,000 words in our vocabulary,
+
+00:03:44.085 --> 00:03:48.115
+so all of these token value should be integer values in that range.
+
+00:03:48.115 --> 00:03:50.710
+Now, our goal is to implement word2vec,
+
+00:03:50.710 --> 00:03:54.370
+which relies on looking at the context around a word of interest.
+
+00:03:54.370 --> 00:03:57.310
+We want to define our context very carefully,
+
+00:03:57.310 --> 00:04:02.104
+basically looking at a window of the most relevant words around a word of interests.
+
+00:04:02.104 --> 00:04:04.369
+There are some words that are almost never
+
+00:04:04.370 --> 00:04:06.730
+going to be relevant because they're so common,
+
+00:04:06.729 --> 00:04:11.169
+words that show up anywhere and really often such as the, of, and for.
+
+00:04:11.169 --> 00:04:14.509
+These don't provide much context to other nearby words.
+
+00:04:14.509 --> 00:04:17.089
+So if we discard some of these common words,
+
+00:04:17.089 --> 00:04:19.849
+we can remove some noise from our data, and in return,
+
+00:04:19.850 --> 00:04:22.850
+get faster training and better vector representations.
+
+00:04:22.850 --> 00:04:25.115
+This process is called subsampling.
+
+00:04:25.115 --> 00:04:26.965
+This will be your first task.
+
+00:04:26.964 --> 00:04:28.914
+Subsampling works like this.
+
+00:04:28.915 --> 00:04:32.010
+For each word wi in our training set,
+
+00:04:32.009 --> 00:04:35.800
+you want to discard it with a probability given by this equation.
+
+00:04:35.800 --> 00:04:39.389
+The probability of discarding a word w is equal to
+
+00:04:39.389 --> 00:04:43.175
+1 minus the square root of t over that words frequency,
+
+00:04:43.175 --> 00:04:45.574
+and t is the threshold value that we set.
+
+00:04:45.574 --> 00:04:49.370
+So say, we're thinking of discarding the word 'the', word index 0.
+
+00:04:49.370 --> 00:04:54.199
+Let's say, it occurs one million times in our 16-million long dataset.
+
+00:04:54.199 --> 00:04:56.779
+These are approximations but this is one million over
+
+00:04:56.779 --> 00:04:59.479
+16 million here the frequency of occurrence.
+
+00:04:59.480 --> 00:05:01.670
+The numerator is a threshold I've set,
+
+00:05:01.670 --> 00:05:03.800
+which is 1 times 10 to the negative fifth.
+
+00:05:03.800 --> 00:05:06.590
+So, if I just run these values through our equation,
+
+00:05:06.589 --> 00:05:11.474
+I'm going to get a probability of getting rid of this word 98.7 percent of the time.
+
+00:05:11.475 --> 00:05:15.310
+Even after discarding the majority of these inner text will
+
+00:05:15.310 --> 00:05:19.740
+still leave over 12,000 of the original one million these inner text.
+
+00:05:19.740 --> 00:05:22.750
+The idea with subsampling is really to just get rid of
+
+00:05:22.750 --> 00:05:25.990
+a lot of these frequently occurring words so that they're not always
+
+00:05:25.990 --> 00:05:28.329
+affecting the context of other words while
+
+00:05:28.329 --> 00:05:32.329
+simultaneously keeping enough examples to learn a word embedding for that word.
+
+00:05:32.329 --> 00:05:35.709
+So, the subsampling equation says the probability that
+
+00:05:35.709 --> 00:05:39.384
+we discard a word is going to be higher if that word's frequency is higher.
+
+00:05:39.384 --> 00:05:41.089
+Here I provided some code,
+
+00:05:41.089 --> 00:05:42.384
+a threshold to start you out,
+
+00:05:42.384 --> 00:05:44.245
+and a dictionary of word counts.
+
+00:05:44.245 --> 00:05:47.800
+This is using the counter collection which takes in our list of encoded words,
+
+00:05:47.800 --> 00:05:50.590
+and returns how many times they appear in that list,
+
+00:05:50.589 --> 00:05:53.554
+and I can print out the first key value pair in this list.
+
+00:05:53.555 --> 00:05:59.530
+So here, I can see that the word token 5233 appears 303 times in our text.
+
+00:05:59.529 --> 00:06:02.000
+I want you to use this information to calculate
+
+00:06:02.000 --> 00:06:05.365
+the discard probability for each word in our vocabulary,
+
+00:06:05.365 --> 00:06:09.050
+then use that to create a new set of data train words,
+
+00:06:09.050 --> 00:06:10.889
+which will basically be our original list of
+
+00:06:10.889 --> 00:06:14.509
+int words only with some of our most frequent words discarded.
+
+00:06:14.509 --> 00:06:16.954
+This is more of a programming challenge rather than
+
+00:06:16.954 --> 00:06:20.629
+a deep learning task but preparing data is an important skill to have,
+
+00:06:20.629 --> 00:06:22.284
+so try to solve this task,
+
+00:06:22.285 --> 00:06:24.330
+and next, I'll show you my solution.
+

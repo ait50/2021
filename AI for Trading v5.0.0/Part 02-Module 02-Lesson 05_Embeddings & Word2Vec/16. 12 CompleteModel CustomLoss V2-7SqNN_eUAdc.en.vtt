@@ -1,0 +1,373 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.270
+So, I ran all the cells in my notebook and here's
+
+00:00:03.270 --> 00:00:07.040
+my solution and definition for the SkipGramNeg Module.
+
+00:00:07.040 --> 00:00:11.580
+First, I've defined my two embedding layers, in-embed and out-embed,
+
+00:00:11.580 --> 00:00:13.380
+and they'll both take in the size of
+
+00:00:13.380 --> 00:00:17.030
+our word vocabulary and produce embeddings of size and embed.
+
+00:00:17.030 --> 00:00:20.070
+So, mapping from our vocab to our embedding dimension.
+
+00:00:20.070 --> 00:00:23.609
+Here, I'm doing an additional step which is initializing
+
+00:00:23.609 --> 00:00:27.754
+the embedding look-up tables with uniform weights between negative one and one.
+
+00:00:27.754 --> 00:00:30.149
+I'm doing this for both of our layers and I believe
+
+00:00:30.149 --> 00:00:32.725
+this helps our model reached the best way faster.
+
+00:00:32.725 --> 00:00:35.355
+Then I've defined my three forward functions.
+
+00:00:35.354 --> 00:00:38.640
+Forward input passes our input words through our input
+
+00:00:38.640 --> 00:00:41.810
+embedding layer and returns input embedding vectors.
+
+00:00:41.810 --> 00:00:44.359
+I do the same thing in forward output only passing that
+
+00:00:44.359 --> 00:00:47.164
+through our output embedding layer to get output vectors.
+
+00:00:47.164 --> 00:00:51.689
+Notice that there are no linear layers or softmax activation functions here.
+
+00:00:51.689 --> 00:00:53.739
+The last forward function is forward noise,
+
+00:00:53.740 --> 00:00:56.565
+which will return a noisy target embeddings.
+
+00:00:56.564 --> 00:00:59.599
+So, this samples noisy words from our noise distribution and
+
+00:00:59.600 --> 00:01:03.125
+returns the number of samples batch size times N samples.
+
+00:01:03.125 --> 00:01:05.284
+Then we get the embeddings bypassing
+
+00:01:05.284 --> 00:01:08.185
+those noise words through our output embedding layer.
+
+00:01:08.185 --> 00:01:09.609
+In the same line,
+
+00:01:09.609 --> 00:01:11.650
+I'm reshaping these to be the size I want,
+
+00:01:11.650 --> 00:01:16.940
+which is batch size by N samples by our embedding dimension and I return those vectors.
+
+00:01:16.939 --> 00:01:20.079
+Okay, so this completes the SkipGramNeg Module.
+
+00:01:20.079 --> 00:01:23.789
+Next, I'm defining a custom negative sampling loss.
+
+00:01:23.790 --> 00:01:27.310
+This was carefully defined above in our equations and I
+
+00:01:27.310 --> 00:01:30.609
+haven't ever gotten into the details of defining a custom loss,
+
+00:01:30.609 --> 00:01:34.510
+but suffice to say that it is really similar to defining a model class.
+
+00:01:34.510 --> 00:01:36.969
+Only in this case, the init function is left
+
+00:01:36.969 --> 00:01:40.129
+empty and we're really left with defining the forward function.
+
+00:01:40.129 --> 00:01:43.329
+The forward function should take in some inputs and targets
+
+00:01:43.329 --> 00:01:47.459
+typically and you can define what it takes in as parameters here.
+
+00:01:47.459 --> 00:01:52.875
+This should return a single value that indicates the average loss over a batch of data.
+
+00:01:52.875 --> 00:01:57.135
+So, in this case, I know I what my loss to look at an input embedded vector,
+
+00:01:57.135 --> 00:01:59.090
+my correct output embedding,
+
+00:01:59.090 --> 00:02:01.430
+and my incorrect noisy vectors.
+
+00:02:01.430 --> 00:02:03.700
+So here, I am getting the batch size and
+
+00:02:03.700 --> 00:02:06.310
+embedding dimension from the shape of my input vector,
+
+00:02:06.310 --> 00:02:10.520
+then I'm shaping my input vector into a shape that is batch first,
+
+00:02:10.520 --> 00:02:13.670
+and I'm doing something similar to my output vector here,
+
+00:02:13.669 --> 00:02:15.784
+only I'm swapping these last two dimensions
+
+00:02:15.784 --> 00:02:20.259
+one an embed size effectively making this the output vector transpose.
+
+00:02:20.259 --> 00:02:23.030
+This way, I'll be able to calculate the.product between
+
+00:02:23.030 --> 00:02:26.765
+these two vectors by performing batch matrix multiplication on them,
+
+00:02:26.764 --> 00:02:28.929
+and that's just what I'm doing here.
+
+00:02:28.930 --> 00:02:31.250
+First, I'm calculating the loss term between
+
+00:02:31.250 --> 00:02:34.175
+my input vector and my correct target vector.
+
+00:02:34.175 --> 00:02:38.990
+I'm using batch matrix multiplication and then applying a sigmoid and a log function.
+
+00:02:38.990 --> 00:02:43.370
+Here, I'm squeezing the output so that no empty dimensions are left in the output.
+
+00:02:43.370 --> 00:02:45.890
+Next, I'm doing something similar only between
+
+00:02:45.889 --> 00:02:49.375
+my input vector and my negated noise vectors.
+
+00:02:49.375 --> 00:02:51.539
+So, this is the second term in our loss function.
+
+00:02:51.539 --> 00:02:54.164
+I'm using batch matrix multiplication,
+
+00:02:54.164 --> 00:02:56.284
+applying a sigmoid and a log function,
+
+00:02:56.284 --> 00:03:00.014
+and then I'm summing the losses over the sample of noise vectors.
+
+00:03:00.014 --> 00:03:04.069
+Okay finally, I'm adding these two losses up negating them since I kept them
+
+00:03:04.069 --> 00:03:08.560
+positive during my calculations and taking the mean of this total loss.
+
+00:03:08.560 --> 00:03:12.960
+This way, I'm returning the average negative sample loss over a batch of data.
+
+00:03:12.960 --> 00:03:16.230
+Then I can move on to creating this model and training it.
+
+00:03:16.229 --> 00:03:18.738
+This training loop will look pretty similar to before,
+
+00:03:18.739 --> 00:03:20.873
+but with some key differences.
+
+00:03:20.873 --> 00:03:24.109
+First, I'm creating a unigram noise distribution that
+
+00:03:24.110 --> 00:03:27.325
+relates noisy vectors to their frequency of occurrence,
+
+00:03:27.324 --> 00:03:29.979
+and this is a value I calculated earlier in this notebook.
+
+00:03:29.979 --> 00:03:32.299
+So, I'm defining our noise distribution as
+
+00:03:32.300 --> 00:03:34.385
+the unigram distribution raised to a power
+
+00:03:34.384 --> 00:03:37.030
+of three-fourths as was specified in the paper.
+
+00:03:37.030 --> 00:03:39.890
+Then, I'm defining my model passing in the length of
+
+00:03:39.889 --> 00:03:43.599
+our vocabulary and embedding dimension which I left as 300,
+
+00:03:43.599 --> 00:03:45.710
+and this noise distribution that I've just created,
+
+00:03:45.710 --> 00:03:47.510
+and I'm moving this altered GPU.
+
+00:03:47.509 --> 00:03:49.245
+Then I have another key difference,
+
+00:03:49.245 --> 00:03:51.319
+instead of using NLL loss,
+
+00:03:51.319 --> 00:03:54.989
+I'm using my custom negative sampling loss that I defined above.
+
+00:03:54.990 --> 00:03:59.500
+In my training loop, I'll have to pass in three parameters to this loss function.
+
+00:03:59.500 --> 00:04:01.490
+So, I'm training for five epochs again,
+
+00:04:01.490 --> 00:04:04.070
+getting batches of input and target words.
+
+00:04:04.069 --> 00:04:07.939
+Then using my three different forward functions I'm getting my input embedding,
+
+00:04:07.939 --> 00:04:09.469
+my desired output embedding,
+
+00:04:09.469 --> 00:04:11.104
+and my noise embeddings.
+
+00:04:11.104 --> 00:04:13.359
+So, forward input takes in my inputs,
+
+00:04:13.360 --> 00:04:18.185
+forward output takes in my targets and forward noise takes in two parameters.
+
+00:04:18.185 --> 00:04:21.980
+It takes in a batch size and a number of noise vectors to generate.
+
+00:04:21.980 --> 00:04:23.660
+Then to calculate my loss,
+
+00:04:23.660 --> 00:04:25.314
+I'm passing in my input,
+
+00:04:25.314 --> 00:04:27.764
+output and noise embeddings here.
+
+00:04:27.764 --> 00:04:30.214
+Then, I just have the same code as before,
+
+00:04:30.214 --> 00:04:34.000
+performing backpropagation and optimization steps as usual,
+
+00:04:34.000 --> 00:04:36.589
+and I have my validation similarities that I'm going to print
+
+00:04:36.589 --> 00:04:40.000
+out along with the epoch and loss, a little more information.
+
+00:04:40.000 --> 00:04:43.759
+So, note that I chose to define my three different forward functions
+
+00:04:43.759 --> 00:04:48.274
+just so I a get the vectors that I needed to calculate my negative sampling loss here.
+
+00:04:48.274 --> 00:04:52.644
+You can try training this yourself just to see how much faster this training is.
+
+00:04:52.644 --> 00:04:56.544
+Then imprinting data less frequently because it's generated quicker.
+
+00:04:56.545 --> 00:04:58.574
+So here, after the first epoch,
+
+00:04:58.574 --> 00:05:01.754
+we see our usual sort of noisy relationships.
+
+00:05:01.754 --> 00:05:03.295
+But by the end of training,
+
+00:05:03.295 --> 00:05:05.395
+we see words grouped together that makes sense.
+
+00:05:05.394 --> 00:05:07.284
+So, we have mathematics, algebra,
+
+00:05:07.285 --> 00:05:09.700
+calculus, we have ocean,
+
+00:05:09.699 --> 00:05:12.000
+islands, Pacific, Atlantic,
+
+00:05:12.000 --> 00:05:15.125
+and some smaller words that all seem to be grouped together as well.
+
+00:05:15.125 --> 00:05:18.949
+Once again, I visualize the word vectors using T-SNE.
+
+00:05:18.949 --> 00:05:21.860
+This time I'm visualizing fewer words and I'm getting
+
+00:05:21.860 --> 00:05:24.819
+the embeddings from our input embedding layer only.
+
+00:05:24.819 --> 00:05:29.689
+Then I'm passing these embeddings into our T-SNE model and this is the result I get.
+
+00:05:29.689 --> 00:05:32.254
+I can see some individual integers grouped over here,
+
+00:05:32.254 --> 00:05:36.545
+some educational terms and war and military terms over here.
+
+00:05:36.545 --> 00:05:39.515
+I see some governmental terms and other relationships
+
+00:05:39.514 --> 00:05:42.844
+and it's pretty interesting to poke around a visualization like this.
+
+00:05:42.845 --> 00:05:45.470
+The word2vec model always makes me think about
+
+00:05:45.470 --> 00:05:48.505
+how a learned vector space can be really interesting.
+
+00:05:48.504 --> 00:05:52.370
+Just think about how you might embed images and find relationships between
+
+00:05:52.370 --> 00:05:56.884
+colors and objects or how you might transform words using vector arithmetic.
+
+00:05:56.884 --> 00:06:01.430
+Building and training this model was also quite involved and if you feel comfortable with
+
+00:06:01.430 --> 00:06:04.310
+this model code and especially manipulating models to
+
+00:06:04.310 --> 00:06:07.189
+add your own forward functions and custom loss types,
+
+00:06:07.189 --> 00:06:11.939
+you've really learned a lot about the Pythonic nature of PyTorch and model customization.
+
+00:06:11.939 --> 00:06:15.629
+In addition to implementing a very effective word2vec model.
+
+00:06:15.629 --> 00:06:17.675
+So, great job on making it this far,
+
+00:06:17.675 --> 00:06:20.199
+and I hope you're excited to learn even more.
+

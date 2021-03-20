@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.820
+Here is my solution for creating a new list of train words.
+
+00:00:04.820 --> 00:00:09.750
+First, I calculated the frequency of occurrence for each word in our vocabulary.
+
+00:00:09.750 --> 00:00:13.969
+So, I stored the total length of our text in a variable, total_count.
+
+00:00:13.970 --> 00:00:16.589
+Then, I created a dictionary of frequencies.
+
+00:00:16.589 --> 00:00:20.675
+For each word token and count in the word counter dictionary that was given,
+
+00:00:20.675 --> 00:00:22.939
+I added an item to this dictionary,
+
+00:00:22.939 --> 00:00:26.609
+where the word was the key and the value was the count of
+
+00:00:26.609 --> 00:00:30.500
+that word over the total number of words in our text, the frequency.
+
+00:00:30.500 --> 00:00:33.850
+Then, I calculated the discard probability as p_drop.
+
+00:00:33.850 --> 00:00:37.615
+This is another dictionary that maps words to the drop probability.
+
+00:00:37.615 --> 00:00:40.704
+Here, I'm just using the subsampling equation to get that,
+
+00:00:40.704 --> 00:00:45.119
+which is 1 minus the square root of our threshold over that word's frequency.
+
+00:00:45.119 --> 00:00:48.044
+Finally, I created a new list of train words.
+
+00:00:48.045 --> 00:00:50.414
+For each word in our list of int_words,
+
+00:00:50.414 --> 00:00:53.420
+I said I'll keep this word with some probability.
+
+00:00:53.420 --> 00:00:57.050
+So, I generated a random value between zero and one,
+
+00:00:57.049 --> 00:01:02.214
+and I checked if that value was less than 1 minus the drop probability for that word.
+
+00:01:02.215 --> 00:01:03.595
+This is saying, okay,
+
+00:01:03.594 --> 00:01:08.054
+I want to keep this word with a probability of 1 minus p_drop.
+
+00:01:08.055 --> 00:01:11.615
+So, if I have a drop probability of 0.98,
+
+00:01:11.614 --> 00:01:15.265
+then the keyboard probability is 1 minus this p_drop,
+
+00:01:15.265 --> 00:01:17.329
+which will be 0.02.
+
+00:01:17.329 --> 00:01:20.674
+If I generate a value less than 0.02,
+
+00:01:20.674 --> 00:01:24.989
+which is unlikely, only then will I keep this word in my list of train words.
+
+00:01:24.989 --> 00:01:27.079
+There are other ways to solve this problem,
+
+00:01:27.079 --> 00:01:30.219
+but I like to frame this as a which words do I keep task.
+
+00:01:30.219 --> 00:01:33.679
+Okay. Then I'm printing out the first 30 words of this train data.
+
+00:01:33.680 --> 00:01:37.665
+This should look similar to the first 30 tokens in our int_words list.
+
+00:01:37.665 --> 00:01:41.375
+Only you'll notice that most of the zeros and ones are gone.
+
+00:01:41.375 --> 00:01:43.665
+These were our most common words from before,
+
+00:01:43.665 --> 00:01:45.570
+and so this is looking as I expect,
+
+00:01:45.569 --> 00:01:47.324
+and I can move on to the next step,
+
+00:01:47.325 --> 00:01:50.799
+which will be defining a context window and batching our data.
+

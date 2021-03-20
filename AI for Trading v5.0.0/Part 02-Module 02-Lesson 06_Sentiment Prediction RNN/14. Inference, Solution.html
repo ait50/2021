@@ -1,0 +1,513 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Inference, Solution
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Sentiment Prediction RNN
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Sentiment RNN, Introduction.html">
+       01. Sentiment RNN, Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Pre-Notebook Sentiment RNN.html">
+       02. Pre-Notebook: Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Notebook Sentiment RNN.html">
+       03. Notebook: Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Data Pre-Processing.html">
+       04. Data Pre-Processing
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Encoding Words, Solution.html">
+       05. Encoding Words, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Getting Rid of Zero-Length.html">
+       06. Getting Rid of Zero-Length
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Cleaning &amp; Padding Data.html">
+       07. Cleaning &amp; Padding Data
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Padded Features, Solution.html">
+       08. Padded Features, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="09. TensorDataset &amp; Batching Data.html">
+       09. TensorDataset &amp; Batching Data
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Defining the Model.html">
+       10. Defining the Model
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Complete Sentiment RNN.html">
+       11. Complete Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Training the Model.html">
+       12. Training the Model
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Testing.html">
+       13. Testing
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Inference, Solution.html">
+       14. Inference, Solution
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          14. Inference, Solution
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="inference">
+          Inference
+         </h2>
+         <p>
+          Let's put all these pieces together! One of the coolest ways to test a model like this is to give it user-generated data, without any true label, and see what happens. So, in this case, that data will just be a single string: a review that you can write and here’s just one
+          <code>
+           test_review
+          </code>
+          as an example:
+         </p>
+         <pre><code class="python language-python"># negative test review
+test_review_neg = 'The worst movie I have seen; acting was terrible and I want my money back. This movie had bad acting and the dialogue was slow.'</code></pre>
+         <p>
+          We can see that this review is a negative one, but let's see if our model can identify it's sentiment correctly!
+         </p>
+         <p>
+          Our task is to write a
+          <code>
+           predict
+          </code>
+          function that takes in a trained model, a
+          <code>
+           test_review
+          </code>
+          like this one that is just normal text and punctuation, a
+          <code>
+           sequence_length
+          </code>
+          for padding.
+         </p>
+         <p>
+          The process by which you make predictions based on user data, is called
+          <strong>
+           inference
+          </strong>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="pre-process-the-test_review">
+          Pre-process the
+          <code>
+           test_review
+          </code>
+         </h3>
+         <p>
+          The first thing we'll have to do it to process the
+          <code>
+           test_review
+          </code>
+          , so that it is converted into a tensor that our model can see as input. In fact, this involves quite a lot of pre-processing, but nothing that you haven't seen before!
+         </p>
+         <p>
+          I broke this down into a series of steps.
+         </p>
+         <p>
+          I have a helper function
+          <code>
+           tokenize_review
+          </code>
+          that is responsible for doing some data processing on my test_review.
+         </p>
+         <p>
+          It takes in my test_review, and then does a couple of things:
+         </p>
+         <ol>
+          <li>
+           First, I convert my
+           <code>
+            test_review
+           </code>
+           to lowercase, and remove any punctuation, so I’m left with all text.
+          </li>
+          <li>
+           Then I breaks it into individual words with split(), and I’m left with a list of words in the review.
+          </li>
+          <li>
+           I encode those words using the
+           <code>
+            vocab_to_int
+           </code>
+           dictionary that we already defined, near the start of this lesson.
+          </li>
+         </ol>
+         <p>
+          Now, I am assuming a few things here, including: this review is one review, not a batch, and that this review only includes words
+          <em>
+           already
+          </em>
+          in our dictionary, and in this case that will be true, but you can add code to handle unknown characters, I just didn’t do that in my model.
+         </p>
+         <pre><code class="python language-python">from string import punctuation
+
+def tokenize_review(test_review):
+    test_review = test_review.lower() # lowercase
+    # get rid of punctuation
+    test_text = ''.join([c for c in test_review if c not in punctuation])
+
+    # splitting by spaces
+    test_words = test_text.split()
+
+    # tokens
+    test_ints = []
+    test_ints.append([vocab_to_int[word] for word in test_words])
+
+    return test_ints</code></pre>
+         <p>
+          Okay, so this tokenize function returns a list of integers; my tokenized review!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="padding-and-converting-into-a-tensor">
+          Padding and converting into a Tensor
+         </h3>
+         <p>
+          For my next couple of steps, I’m going to pad the ints, returned by the
+          <code>
+           tokenize_review
+          </code>
+          function and shape them into our
+          <code>
+           sequence_length
+          </code>
+          size; since our model was trained on sequence lengths of 200, I’m going to use the same length, here. I'll pad it using the
+          <code>
+           pad_features
+          </code>
+          function that we defined earlier.
+         </p>
+         <p>
+          Finally, I’m going to convert the padded result into a Tensor. So, these are all the steps, and I’m going to wrap this
+          <em>
+           all
+          </em>
+          up in my predict function.
+         </p>
+         <pre><code class="python language-python">def predict(net, test_review, sequence_length=200):
+
+    net.eval()
+
+    # tokenize review
+    test_ints = tokenize_review(test_review)
+
+    # pad tokenized sequence
+    seq_length=sequence_length
+    features = pad_features(test_ints, seq_length)
+
+    # convert to tensor to pass into your model
+    feature_tensor = torch.from_numpy(features)
+
+    batch_size = feature_tensor.size(0)
+
+    # initialize hidden state
+    h = net.init_hidden(batch_size)
+
+    if(train_on_gpu):
+        feature_tensor = feature_tensor.cuda()
+
+    # get the output from the model
+    output, h = net(feature_tensor, h)
+
+    # convert output probabilities to predicted class (0 or 1)
+    pred = torch.round(output.squeeze()) 
+    # printing output value, before rounding
+    print('Prediction value, pre-rounding: {:.6f}'.format(output.item()))
+
+    # print custom response
+    if(pred.item()==1):
+        print("Positive review detected!")
+    else:
+        print("Negative review detected.")</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          So, using the passed in arguments, I’m tokenizing my review using my helper function, then padding it using my pad function, and converting it into a Tensor that can be seen by my model.
+         </p>
+         <p>
+          Then, I’m passing this tensor into my trained net which will return an output of length one. With this output, I can grab the most likely class, which will be the rounded value 0 or 1; this is my prediction!
+         </p>
+         <p>
+          Lastly, I want to print out a custom message for a positive or negative detected review, and I’m doing that at the bottom of the above function!
+         </p>
+         <p>
+          <strong>
+           You can test this out on sample positive and negative text reviews to see how this trained model behaves!
+          </strong>
+          Below, you can see how it identifies our negative test review correctly.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Identifies negative review" class="img img-fluid" src="img/screen-shot-2018-11-06-at-2.48.40-pm.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Identifies negative review
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="conclusion">
+          Conclusion
+         </h2>
+         <p>
+          Now that you have a trained model and a predict function, you can pass in any kind of text and this model will predict whether the text has a positive or negative sentiment. You can use this to try to find what words it associates with positive or negative sentiment.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Dancing Beemo from [Adventure Time](https://en.wikipedia.org/wiki/Adventure_Time) to celebrate!" class="img img-fluid" src="img/dancing-beemo.gif"/>
+          <figcaption class="figure-caption">
+           <p>
+            Dancing Beemo from
+            <a href="https://en.wikipedia.org/wiki/Adventure_Time" rel="noopener noreferrer" target="_blank">
+             Adventure Time
+            </a>
+            to celebrate!
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Later, you'll learn how to deploy a model like this to a production environment so that it can respond to any kind of user data put into a web app!
+         </p>
+         <p>
+          <strong>
+           For now, great job implementing so
+           <em>
+            many
+           </em>
+           kinds of recurrent neural networks!!
+          </strong>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('14. Inference, Solution')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

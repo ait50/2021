@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.479
+And now we're going to learn the Remember Gate. This one is the simplest.
+
+00:00:03.479 --> 00:00:06.150
+It take the long-term memory coming out of the Forget Gate and
+
+00:00:06.150 --> 00:00:10.570
+the short-term memory coming out of the Learn Gate and simply combines them together.
+
+00:00:10.570 --> 00:00:14.009
+And how does this work mathematically? Again, very simple.
+
+00:00:14.009 --> 00:00:17.190
+We just take the outputs coming from the Forget Gate
+
+00:00:17.190 --> 00:00:21.460
+and from the Learn Gate and we just add them.
+
+00:00:21.460 --> 00:00:24.730
+That's it, that's all we do.
+
+00:00:24.730 --> 00:00:27.010
+And that's how the Remember Gate works.
+

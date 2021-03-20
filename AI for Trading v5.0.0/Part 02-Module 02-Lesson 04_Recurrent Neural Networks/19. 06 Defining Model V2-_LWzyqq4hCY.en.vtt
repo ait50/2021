@@ -1,0 +1,205 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.745
+All right. So, we have our mini batches of data and now it's time to define our model.
+
+00:00:04.745 --> 00:00:08.115
+This is a little diagram of what the model will look like.
+
+00:00:08.115 --> 00:00:12.914
+We'll have our character's put into our input layer and then a stack of LSTM cells.
+
+00:00:12.914 --> 00:00:17.969
+These LSTM cells make up our hidden recurrent layer and when they look at a mini batch of
+
+00:00:17.969 --> 00:00:20.129
+data as input they'll look at one character at
+
+00:00:20.129 --> 00:00:22.919
+a time and produce an output and a hidden state.
+
+00:00:22.920 --> 00:00:25.500
+So, we will pass an input character into
+
+00:00:25.500 --> 00:00:28.574
+our first LSTM cell which produces a hidden state.
+
+00:00:28.574 --> 00:00:30.250
+Then at the next time step,
+
+00:00:30.250 --> 00:00:33.450
+we'll look at the next character in our sequence and pass that into
+
+00:00:33.450 --> 00:00:37.495
+this LSTM cell which will see the previous hidden state as input.
+
+00:00:37.494 --> 00:00:42.169
+You have so far seen this behavior in a one layer RNN but in this case we
+
+00:00:42.170 --> 00:00:46.520
+plan on using a two-layer model that has stacked LSTM layers and
+
+00:00:46.520 --> 00:00:50.270
+that means that the output of this LSTM layer is going to go to the next one as
+
+00:00:50.270 --> 00:00:52.790
+input and each of these cells is sharing
+
+00:00:52.789 --> 00:00:56.329
+its hidden state with the next cell in the unrolled series.
+
+00:00:56.329 --> 00:00:59.929
+Finally, the output of the last LSTM layer will include
+
+00:00:59.929 --> 00:01:03.634
+some character class scores that will be the length of our vocabulary.
+
+00:01:03.634 --> 00:01:07.730
+We'll put this through a Softmax activation function which we'll use to get
+
+00:01:07.730 --> 00:01:11.660
+the probability distribution for predicting the most likely next character.
+
+00:01:11.659 --> 00:01:14.319
+So, to start you off on this task,
+
+00:01:14.319 --> 00:01:17.014
+you've been given some skeleton code for creating a model.
+
+00:01:17.015 --> 00:01:19.640
+First, we're going to check to see if a GPU is
+
+00:01:19.640 --> 00:01:23.370
+available for training then you'll see this class character RNN.
+
+00:01:23.370 --> 00:01:26.270
+You can see that this character RNN class has
+
+00:01:26.269 --> 00:01:29.189
+our usual init and forward functions and later
+
+00:01:29.189 --> 00:01:31.909
+you've been given some code to initialize the hidden state of
+
+00:01:31.909 --> 00:01:35.069
+an LSTM layer and I'll go over this in a moment.
+
+00:01:35.069 --> 00:01:38.239
+You can definitely take a look at this given code and how we're
+
+00:01:38.239 --> 00:01:41.769
+creating our initial character dictionaries but you won't need to change it.
+
+00:01:41.769 --> 00:01:45.170
+We also have several parameters that are going to be passed in when a character
+
+00:01:45.170 --> 00:01:49.555
+RNN is instantiated and I've saved some of these as class variables.
+
+00:01:49.555 --> 00:01:52.130
+So, using these input parameters and variables,
+
+00:01:52.129 --> 00:01:55.989
+it will be up to you to create our model layers and complete the forward function.
+
+00:01:55.989 --> 00:02:00.419
+You'll first create an LSTM layer which you can read about in the documentation here.
+
+00:02:00.420 --> 00:02:04.510
+We can see that an LSTM layer is created using our usual parameters;
+
+00:02:04.510 --> 00:02:06.329
+an input size, hidden size,
+
+00:02:06.329 --> 00:02:08.930
+number of layers, and a batch first parameter.
+
+00:02:08.930 --> 00:02:11.140
+We'll also add a dropout value.
+
+00:02:11.139 --> 00:02:14.209
+This introduces a dropout layer in between the outputs
+
+00:02:14.210 --> 00:02:17.855
+of LSTM layers if you've decided to stack multiple layers.
+
+00:02:17.854 --> 00:02:20.209
+So, after you define an LSTM layer,
+
+00:02:20.210 --> 00:02:22.409
+I'll ask you to define two more layers;
+
+00:02:22.409 --> 00:02:27.319
+one dropout layer and a final fully-connected layer for getting our desired output size.
+
+00:02:27.319 --> 00:02:28.739
+Once you've defined these layers,
+
+00:02:28.740 --> 00:02:31.000
+you'll move on to define the forward function.
+
+00:02:31.000 --> 00:02:33.770
+This takes in an input x and hidden state.
+
+00:02:33.770 --> 00:02:35.900
+You'll pass this input through the layers of
+
+00:02:35.900 --> 00:02:38.974
+the model and return a final output and hidden state.
+
+00:02:38.974 --> 00:02:41.539
+You'll have to make sure to shape the LSTM output
+
+00:02:41.539 --> 00:02:44.349
+so that it can be fed into the last fully connected layer.
+
+00:02:44.349 --> 00:02:45.939
+Okay. Then at the bottom here,
+
+00:02:45.939 --> 00:02:49.719
+you'll see this function for initializing the hidden state of an LSTM.
+
+00:02:49.719 --> 00:02:54.775
+An LSTM has a hidden and a cell state that are saved as a tuple hidden.
+
+00:02:54.775 --> 00:02:57.289
+The shape of the hidden and cell state is
+
+00:02:57.289 --> 00:02:59.840
+defined first by the number of layers in our model,
+
+00:02:59.840 --> 00:03:01.420
+the batch size of our input,
+
+00:03:01.419 --> 00:03:04.729
+and then the hidden dimension that we specified in model creation.
+
+00:03:04.729 --> 00:03:07.609
+In this function, we're initializing the hidden weights all to
+
+00:03:07.610 --> 00:03:10.250
+zero and moving them to GPU if it's available.
+
+00:03:10.250 --> 00:03:13.289
+Okay, so all the code that you see you don't need to change,
+
+00:03:13.289 --> 00:03:16.689
+you just need to define the model layers and feedforward behavior.
+
+00:03:16.689 --> 00:03:18.555
+If you've implemented this correctly,
+
+00:03:18.555 --> 00:03:21.064
+you should be able to set your model hyperparameters
+
+00:03:21.064 --> 00:03:24.229
+and proceed with training and generating some sample text.
+
+00:03:24.229 --> 00:03:26.359
+Try this out on your own then next,
+
+00:03:26.360 --> 00:03:27.800
+check out my solution.
+

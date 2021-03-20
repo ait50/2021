@@ -1,0 +1,391 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.065
+In this video, I'll be showing you how to load image data.
+
+00:00:04.065 --> 00:00:08.670
+This is really useful for what you'll be doing in real projects.
+
+00:00:08.669 --> 00:00:10.800
+So previously, we used MNIST.
+
+00:00:10.800 --> 00:00:16.125
+Fashion-MNIST were just toy datasets for testing your networks,
+
+00:00:16.125 --> 00:00:20.550
+but you'll be using full-size images like you'd get from smartphone cameras and
+
+00:00:20.550 --> 00:00:25.475
+your actual projects that you'll be doing with deep learning networks.
+
+00:00:25.475 --> 00:00:30.375
+So with this, we'll be using a dataset of cat and dog photos, super cute.
+
+00:00:30.375 --> 00:00:33.030
+That come from Kaggle. So, if you want to learn more about it,
+
+00:00:33.030 --> 00:00:34.350
+you can just click on this link.
+
+00:00:34.350 --> 00:00:37.480
+So, you can see our images are now much larger,
+
+00:00:37.479 --> 00:00:39.599
+much higher resolution and they're coming in
+
+00:00:39.600 --> 00:00:44.609
+different shapes and sizes than what we saw with MNIST and fashion-MNIST.
+
+00:00:44.609 --> 00:00:49.335
+So, the first step to using these is to actually load them in with PyTorch.
+
+00:00:49.335 --> 00:00:50.880
+Then once you have them in,
+
+00:00:50.880 --> 00:00:54.165
+you can train a network using these things.
+
+00:00:54.164 --> 00:00:58.304
+So, the easiest way to load in our image data is with datasets.ImageFolder.
+
+00:00:58.304 --> 00:01:01.019
+This is from torchvision, that datasets module.
+
+00:01:01.020 --> 00:01:05.480
+So basically, you just pass in a path to your dataset,
+
+00:01:05.480 --> 00:01:07.130
+so into the folder where your data is
+
+00:01:07.129 --> 00:01:10.159
+sitting into image folder and give us some transforms,
+
+00:01:10.159 --> 00:01:11.420
+which we talked about before.
+
+00:01:11.420 --> 00:01:14.950
+I'll go into some more detail about transforms next.
+
+00:01:14.950 --> 00:01:16.600
+So, the image folder,
+
+00:01:16.599 --> 00:01:19.354
+it expects your files and directories to look like this,
+
+00:01:19.355 --> 00:01:22.609
+where you have some root directory that's where all your data.
+
+00:01:22.609 --> 00:01:25.635
+Then each of the different classes has their own folder.
+
+00:01:25.635 --> 00:01:28.020
+So in this case, we have two classes.
+
+00:01:28.019 --> 00:01:29.280
+We have dog and cat.
+
+00:01:29.280 --> 00:01:32.030
+So, we have these two folders, dog and cat.
+
+00:01:32.030 --> 00:01:34.625
+Get more classes like for MNIST,
+
+00:01:34.625 --> 00:01:35.659
+now you have ten classes.
+
+00:01:35.659 --> 00:01:39.450
+There will be one folder for each of the different digits, right?
+
+00:01:39.450 --> 00:01:41.385
+Those are our classes or labels.
+
+00:01:41.385 --> 00:01:45.660
+Then within each of the specific class folders,
+
+00:01:45.659 --> 00:01:48.795
+you have your images that belong to those classes.
+
+00:01:48.795 --> 00:01:50.579
+So, in your dog folder are going to be all of
+
+00:01:50.579 --> 00:01:53.939
+your dog pictures and the cat folder are going to be all of your cat pictures.
+
+00:01:53.939 --> 00:01:56.204
+So, if you're working in a workspace,
+
+00:01:56.204 --> 00:01:57.870
+then the data should already be there,
+
+00:01:57.870 --> 00:01:59.760
+but if you're working on your local computer,
+
+00:01:59.760 --> 00:02:01.665
+you can get the data by clicking here.
+
+00:02:01.665 --> 00:02:05.220
+I've also already split this into a training set and test set for you.
+
+00:02:05.219 --> 00:02:07.004
+When you load in the image folder,
+
+00:02:07.004 --> 00:02:09.180
+you need to define some transforms.
+
+00:02:09.180 --> 00:02:13.135
+So, what I mean by this is you'll want to resize it, you can crop it,
+
+00:02:13.134 --> 00:02:17.479
+you can do a lot of things like typically you'll want to convert it to
+
+00:02:17.479 --> 00:02:22.060
+a PyTorch tensor and it is loaded in as a pillow image.
+
+00:02:22.060 --> 00:02:24.580
+So, you need to change the image into a tensor.
+
+00:02:24.580 --> 00:02:27.320
+Then you combine these transforms into
+
+00:02:27.319 --> 00:02:30.489
+a pipeline of transforms, using transforms.compose.
+
+00:02:30.490 --> 00:02:34.879
+So, if you want to resize your image to be 255 by 255,
+
+00:02:34.879 --> 00:02:39.500
+then you say transforms.resize 255 and then you take just the center portion,
+
+00:02:39.500 --> 00:02:43.099
+you just crop that out with a size of 224 by 224.
+
+00:02:43.099 --> 00:02:45.120
+Then you can convert it to a tensor.
+
+00:02:45.120 --> 00:02:49.295
+So, these are the transforms that you'll use and you pass this into
+
+00:02:49.294 --> 00:02:54.224
+ImageFolder to define the transforms that you're performing on your images.
+
+00:02:54.224 --> 00:02:58.305
+Once you have your dataset from your image folder,
+
+00:02:58.305 --> 00:03:01.830
+defining your transforms and then you pass that to dataloader.
+
+00:03:01.830 --> 00:03:04.410
+From here, you can define your batch size,
+
+00:03:04.409 --> 00:03:07.680
+so it's the number of images you get per batch like per loop through
+
+00:03:07.680 --> 00:03:13.125
+this dataloader and then you can also do things like set shuffle to true.
+
+00:03:13.125 --> 00:03:15.134
+So basically, what shuffle does is it
+
+00:03:15.134 --> 00:03:18.509
+randomly shuffles your data every time you start a new epoch.
+
+00:03:18.509 --> 00:03:23.174
+This is useful because when you're training your network,
+
+00:03:23.175 --> 00:03:28.530
+we prefer it the second time it goes through to see your images in a different order,
+
+00:03:28.530 --> 00:03:31.064
+the third time it goes through you see your images in a different order.
+
+00:03:31.064 --> 00:03:35.370
+Rather than just learning in the same order every time because then this could
+
+00:03:35.370 --> 00:03:39.944
+introduce weird artifacts in how your network is learning from your data.
+
+00:03:39.944 --> 00:03:41.625
+So, the thing to remember is that
+
+00:03:41.625 --> 00:03:44.280
+this dataloader that you get from this class dataloader,
+
+00:03:44.280 --> 00:03:47.580
+the actual dataloader object itself, is a generator.
+
+00:03:47.580 --> 00:03:51.825
+So, this means to get data out of it you actually have to loop through it
+
+00:03:51.824 --> 00:03:56.159
+like in a for loop or you need to call iter on it,
+
+00:03:56.159 --> 00:03:57.314
+to turn into an iterator.
+
+00:03:57.314 --> 00:04:01.259
+Then call next to get the data out of it.
+
+00:04:01.259 --> 00:04:04.359
+Really what's happening here in this for loop,
+
+00:04:04.360 --> 00:04:09.160
+this for images comma labels in dataloader is actually turning this into an iterator.
+
+00:04:09.159 --> 00:04:11.395
+Every time you go through a loop, it calls next.
+
+00:04:11.395 --> 00:04:14.795
+So basically, this for loop is an automatic way of doing this.
+
+00:04:14.794 --> 00:04:18.519
+Okay. So, I'm going to leave up to you is to define some transforms,
+
+00:04:18.519 --> 00:04:23.589
+create your image folder and then pass that image folder to create a dataloader.
+
+00:04:23.589 --> 00:04:25.389
+Then if you do everything right,
+
+00:04:25.389 --> 00:04:29.324
+you should see an image that looks like this.
+
+00:04:29.324 --> 00:04:32.649
+So, that's the basic way of loading in your data.
+
+00:04:32.649 --> 00:04:35.389
+You can also do what's called data augmentation.
+
+00:04:35.389 --> 00:04:41.870
+So, what this is is you want to introduce randomness into your data itself.
+
+00:04:41.870 --> 00:04:45.259
+What this can do is you can imagine if you have images,
+
+00:04:45.259 --> 00:04:49.399
+you can translate where a cat shows up and you can rotate the cat,
+
+00:04:49.399 --> 00:04:50.614
+you can scale the cat,
+
+00:04:50.615 --> 00:04:52.925
+you can crop different parts of things,
+
+00:04:52.925 --> 00:04:55.449
+you can mirror it horizontally and vertically.
+
+00:04:55.449 --> 00:04:58.849
+What this does is it helps your network generalized
+
+00:04:58.850 --> 00:05:02.550
+because it's seen these images in different scales,
+
+00:05:02.550 --> 00:05:05.500
+at different orientations and so on.
+
+00:05:05.500 --> 00:05:09.959
+This really helps your network train and will
+
+00:05:09.959 --> 00:05:14.819
+eventually lead to better accuracy on your validation tests.
+
+00:05:14.819 --> 00:05:18.899
+Here, I'll let you define some transforms for training data.
+
+00:05:18.899 --> 00:05:20.879
+So here, you want to do the data augmentation thing,
+
+00:05:20.879 --> 00:05:25.199
+where you're randomly cropping and resizing and rotating
+
+00:05:25.199 --> 00:05:30.149
+your images and also define transforms for the test dataset.
+
+00:05:30.149 --> 00:05:33.719
+So, one thing to remember is that for testing when you're doing your validation,
+
+00:05:33.720 --> 00:05:36.660
+you don't want to do any of this data augmentation.
+
+00:05:36.660 --> 00:05:42.495
+So basically, you just want to just do a resize and center crop of your images.
+
+00:05:42.495 --> 00:05:45.949
+This is because you want your validation to be similar
+
+00:05:45.949 --> 00:05:49.469
+to the eventual like in state of your model.
+
+00:05:49.470 --> 00:05:50.580
+Once you train your data,
+
+00:05:50.579 --> 00:05:53.219
+you're going to be sending in pictures of cats and dogs.
+
+00:05:53.220 --> 00:05:56.000
+So, you want your validation set to look pretty much
+
+00:05:56.000 --> 00:06:00.370
+exactly like what your eventual input images will look like.
+
+00:06:00.370 --> 00:06:02.139
+If you do all that correctly,
+
+00:06:02.139 --> 00:06:04.490
+you should see training examples are like this.
+
+00:06:04.490 --> 00:06:06.530
+So, you can see how these are rotated.
+
+00:06:06.529 --> 00:06:08.614
+Then you're testing examples should look like this,
+
+00:06:08.615 --> 00:06:13.280
+where they are scaled proportionally and they're not rotated.
+
+00:06:13.279 --> 00:06:14.989
+Once you've loaded this data,
+
+00:06:14.990 --> 00:06:18.230
+you should try to build a network based on what you've already
+
+00:06:18.230 --> 00:06:22.200
+learned that can then classify cats and dogs from this dataset.
+
+00:06:22.199 --> 00:06:27.599
+I should warn you this is actually a pretty tough challenge and it probably won't work.
+
+00:06:27.600 --> 00:06:30.450
+So, don't try too hard at it.
+
+00:06:30.449 --> 00:06:33.420
+Before you used MNIST and fashion-IMNIST.
+
+00:06:33.420 --> 00:06:36.240
+Those are very simple images, right?
+
+00:06:36.240 --> 00:06:37.829
+So, there are 20 by 28.
+
+00:06:37.829 --> 00:06:40.979
+They only have grayscale colors.
+
+00:06:40.980 --> 00:06:43.995
+But now these cat and dog images, they're much larger.
+
+00:06:43.995 --> 00:06:47.204
+Their colors, so you have those three channels.
+
+00:06:47.204 --> 00:06:50.925
+Just in general, it's going to be very difficult to build
+
+00:06:50.925 --> 00:06:56.009
+a classifier that can do this just using this fully connected network.
+
+00:06:56.009 --> 00:06:59.969
+The next part, I'll show you how to use a pre-trained network to build a model that
+
+00:06:59.970 --> 00:07:04.130
+can actually classify these cat and dog images. Cheers.
+

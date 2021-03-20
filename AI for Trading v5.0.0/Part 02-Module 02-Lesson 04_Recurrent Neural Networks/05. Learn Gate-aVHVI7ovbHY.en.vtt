@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.189
+So, let's keep this our base case.
+
+00:00:02.189 --> 00:00:03.990
+We have a long term memory which is at
+
+00:00:03.990 --> 00:00:06.708
+the show we're watching it's about nature and science.
+
+00:00:06.708 --> 00:00:09.554
+We also have a short term memory which is what we've recently seen,
+
+00:00:09.554 --> 00:00:11.323
+a squirrel and a tree.
+
+00:00:11.323 --> 00:00:14.219
+And finally, we have our current event which is a picture we
+
+00:00:14.220 --> 00:00:17.769
+just saw that looks like a dog but it could also be a wolf.
+
+00:00:17.768 --> 00:00:19.018
+So let's study the learn gate.
+
+00:00:19.018 --> 00:00:21.029
+What the learn gate does is the following.
+
+00:00:21.030 --> 00:00:26.429
+It takes a short term memory and the event and it joins it. Actually, it does a bit more.
+
+00:00:26.428 --> 00:00:29.729
+It takes the short term memory and the event and it combines
+
+00:00:29.730 --> 00:00:33.783
+them and then it ignores a bit of it keeping the important part of it.
+
+00:00:33.783 --> 00:00:37.199
+So here it forgets the fact that there's a tree and it
+
+00:00:37.200 --> 00:00:41.685
+remembers how we recently saw a squirrel and a dog/wolf.
+
+00:00:41.685 --> 00:00:43.185
+And how does this work mathematically?
+
+00:00:43.185 --> 00:00:46.939
+Well, it works like this. We have the short term memory STMt minus
+
+00:00:46.939 --> 00:00:51.810
+one and the event Et and it combines them by putting them through
+
+00:00:51.810 --> 00:00:56.130
+a linear function which consists of joining the vectors multiplying by
+
+00:00:56.130 --> 00:01:01.890
+a matrix adding a bias and finally squishing the result with a tanh activation function.
+
+00:01:01.890 --> 00:01:05.474
+Then the new information Nt has this form over here.
+
+00:01:05.474 --> 00:01:07.118
+Now, how do we ignore part of it?
+
+00:01:07.117 --> 00:01:11.593
+Well, by multiplying by an ignore factor, I-T.
+
+00:01:11.593 --> 00:01:14.003
+The ignore factor, I-T,
+
+00:01:14.004 --> 00:01:17.989
+is actually a vector but it multiplies element wise.
+
+00:01:17.989 --> 00:01:19.795
+And how do we calculate I-T?
+
+00:01:19.795 --> 00:01:24.239
+Well, we use our previous information of the short term memory and the event.
+
+00:01:24.239 --> 00:01:26.680
+So again, we create a small neural network
+
+00:01:26.680 --> 00:01:29.969
+whose inputs are the short term memory and the event.
+
+00:01:29.968 --> 00:01:33.789
+We'll pass them through a small linear function with a new matrix and
+
+00:01:33.790 --> 00:01:39.045
+a new bias and squish them with the sigmoid function to keep it between zero and one.
+
+00:01:39.045 --> 00:01:41.700
+So that's it. That's how the learn gate works.
+

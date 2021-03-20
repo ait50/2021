@@ -1,0 +1,530 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.263 --> 00:00:03.308
+Agora que pré-processamos
+e criamos lotes com os dados,
+
+00:00:03.341 --> 00:00:05.756
+é hora de construir a rede.
+
+00:00:05.789 --> 00:00:08.956
+Vemos aqui a estrutura geral
+da rede que construiremos.
+
+00:00:08.989 --> 00:00:12.820
+Temos os inputs, que serão
+os lotes dos tokens treinados,
+
+00:00:12.853 --> 00:00:15.004
+e, como vimos
+quando carregamos o lote,
+
+00:00:15.037 --> 00:00:18.725
+muitos desses valores serão
+repetidos neste vetor de input.
+
+00:00:18.758 --> 00:00:21.541
+Nós passaremos
+a lista de inteiros,
+
+00:00:21.574 --> 00:00:24.819
+que entrará nesta camada oculta,
+a camada embedding.
+
+00:00:24.852 --> 00:00:28.251
+Ela observará
+os inteiros de input
+
+00:00:28.284 --> 00:00:30.613
+e criará
+uma tabela de pesquisa.
+
+00:00:30.646 --> 00:00:32.828
+Para cada valor inteiro
+possível
+
+00:00:32.861 --> 00:00:35.437
+haverá uma linha na matriz
+de pesos embedding
+
+00:00:35.470 --> 00:00:39.284
+e a largura da matriz terá
+a dimensão embedding definida,
+
+00:00:39.317 --> 00:00:42.884
+que será o tamanho dos outputs
+das camadas embedding.
+
+00:00:42.917 --> 00:00:44.732
+As embeddings seguem
+
+00:00:44.765 --> 00:00:48.100
+para uma camada de output
+softmax completamente conectada.
+
+00:00:48.133 --> 00:00:51.747
+No modelo Skip-Gram,
+passamos algumas palavras de input
+
+00:00:51.780 --> 00:00:55.212
+e treinamos o modelo para gerar
+as palavras de contexto-alvo.
+
+00:00:55.245 --> 00:00:59.862
+Para o input 1, os alvos serão
+palavras de contexto aleatórias
+
+00:00:59.895 --> 00:01:02.142
+da janela em volta
+da palavra de input.
+
+00:01:02.175 --> 00:01:04.782
+A camada de output
+mostrará a probabilidade
+
+00:01:04.815 --> 00:01:07.013
+de uma palavra de contexto
+aleatória
+
+00:01:07.046 --> 00:01:09.694
+ser as palavras
+"the", "of", "nine"
+
+00:01:09.727 --> 00:01:12.413
+ou qualquer outra palavra
+do vocabulário.
+
+00:01:12.446 --> 00:01:15.286
+Tentaremos prever
+as palavras de contexto-alvo
+
+00:01:15.319 --> 00:01:17.742
+usando os outputs
+da camada softmax,
+
+00:01:17.775 --> 00:01:20.230
+observando as palavras
+com maior probabilidade
+
+00:01:20.263 --> 00:01:22.269
+de serem palavras
+de contexto.
+
+00:01:22.302 --> 00:01:23.790
+Quando treinarmos tudo,
+
+00:01:23.823 --> 00:01:27.382
+a camada oculta
+fará as representações vetoriais
+
+00:01:27.415 --> 00:01:28.934
+das palavras de input.
+
+00:01:28.967 --> 00:01:30.665
+Cada linha da tabela embedding
+
+00:01:30.698 --> 00:01:33.427
+será uma representação vetorial
+de uma palavra.
+
+00:01:33.460 --> 00:01:36.785
+A linha 0 será o embedding
+da palavra "the", por exemplo.
+
+00:01:36.818 --> 00:01:39.081
+Esses vetores contêm
+significado semântico,
+
+00:01:39.114 --> 00:01:41.305
+e é nisso
+que estamos interessados.
+
+00:01:41.338 --> 00:01:43.537
+Só nos importamos
+com os embeddings.
+
+00:01:43.570 --> 00:01:45.914
+A partir deles,
+fazemos coisas interessantes,
+
+00:01:45.947 --> 00:01:49.120
+realizamos o cálculo do vetor
+para ver as palavras parecidas,
+
+00:01:49.153 --> 00:01:51.801
+ou podemos enviar embeddings
+para outro modelo
+
+00:01:51.834 --> 00:01:54.216
+que funcionará com os mesmos
+inputs de dados.
+
+00:01:54.249 --> 00:01:57.871
+Quando o treinamento acabar,
+nos livraremos da camada softmax,
+
+00:01:57.904 --> 00:02:00.030
+porque ela só serve
+para treinar o modelo
+
+00:02:00.063 --> 00:02:02.640
+e criar incorporações
+corretas.
+
+00:02:02.673 --> 00:02:04.604
+Antes de definirmos o modelo,
+
+00:02:04.637 --> 00:02:07.752
+teremos uma função que ajudará
+a ver quais tipos de relações
+
+00:02:07.785 --> 00:02:09.140
+o modelo está aprendendo.
+
+00:02:09.173 --> 00:02:11.562
+Quando mostrei
+o modelo do Word2Vec,
+
+00:02:11.595 --> 00:02:13.806
+disse que representar
+palavras como vetores
+
+00:02:13.839 --> 00:02:16.430
+possibilitava operar
+matematicamente as palavras
+
+00:02:16.463 --> 00:02:17.718
+no espaço vetorial.
+
+00:02:17.751 --> 00:02:19.729
+Para ver quais palavras
+são parecidas,
+
+00:02:19.762 --> 00:02:21.903
+calculamos a semelhança
+entre os vetores
+
+00:02:21.936 --> 00:02:24.183
+usando a semelhança
+de cosseno,
+
+00:02:24.216 --> 00:02:28.503
+que observa dois vetores,
+"a" e "b", e o ângulo entre eles,
+
+00:02:28.536 --> 00:02:32.103
+o teta, e diz que a semelhança
+entre os dois vetores
+
+00:02:32.136 --> 00:02:34.751
+é o cosseno do ângulo
+entre eles.
+
+00:02:34.784 --> 00:02:38.328
+Se você conhece a matemática vetora,
+ela também poderá ser calculada
+
+00:02:38.361 --> 00:02:40.635
+pelo produto escalar normalizado
+de "a" e "b".
+
+00:02:40.668 --> 00:02:42.547
+Pense desta forma.
+
+00:02:42.580 --> 00:02:43.882
+Quando teta é 0,
+
+00:02:43.915 --> 00:02:45.979
+o cosseno de teta é igual a 1.
+
+00:02:46.012 --> 00:02:48.892
+E esse é o valor máximo
+aceito pelo cosseno.
+
+00:02:48.925 --> 00:02:50.595
+Quando teta for 90 graus,
+
+00:02:50.628 --> 00:02:53.745
+ou se os vetores
+forem ortogonais,
+
+00:02:53.778 --> 00:02:55.585
+então o cosseno será 0.
+
+00:02:55.618 --> 00:02:59.241
+A semelhança acaba sendo
+um valor entre 0 e 1
+
+00:02:59.274 --> 00:03:02.593
+que indica a semelhança entre
+dois vetores no espaço vetorial.
+
+00:03:02.626 --> 00:03:05.449
+Vejamos a função
+de semelhança cosseno.
+
+00:03:05.482 --> 00:03:08.753
+Ela pega uma camada embedding,
+o tamanho de validação
+
+00:03:08.786 --> 00:03:10.380
+e a janela de validação.
+
+00:03:10.413 --> 00:03:13.393
+Aqui, eu recebo os embeddings
+da camada anterior,
+
+00:03:13.426 --> 00:03:15.113
+que são os pesos das camadas.
+
+00:03:15.146 --> 00:03:19.424
+Depois calculamos e armazenamos
+as magnitudes dos vetores embedding.
+
+00:03:19.457 --> 00:03:23.577
+Essa magnitude será a raiz quadrada
+da soma dos vetores embedding
+
+00:03:23.610 --> 00:03:24.848
+ao quadrado.
+
+00:03:24.881 --> 00:03:29.470
+Depois selecionamos palavras
+de validação comuns e incomuns,
+
+00:03:29.503 --> 00:03:32.937
+que serão inteiros em um intervalo -
+neste caso, de 0 a 1.000 -
+
+00:03:32.970 --> 00:03:35.402
+de palavras comuns,
+e, para um intervalo maior,
+
+00:03:35.435 --> 00:03:36.758
+de palavras incomuns.
+
+00:03:36.791 --> 00:03:38.060
+Índices menores
+
+00:03:38.093 --> 00:03:40.681
+indicam que a palavra
+aparece com mais frequência.
+
+00:03:40.714 --> 00:03:43.112
+Eu gero metade
+dos exemplos de validação
+
+00:03:43.145 --> 00:03:46.871
+do intervalo mais comum,
+e metade do intervalo incomum.
+
+00:03:46.904 --> 00:03:48.766
+E isso é coletado
+em um np.array
+
+00:03:48.799 --> 00:03:51.415
+e convertido
+em um tipo LongTensor.
+
+00:03:51.448 --> 00:03:53.511
+Eu passo os exemplos
+de validação
+
+00:03:53.544 --> 00:03:55.142
+para a camada embedding.
+
+00:03:55.175 --> 00:03:58.543
+Como retorno, obtenho
+as representações vetoriais.
+
+00:03:58.576 --> 00:04:01.753
+As palavras de validação
+são codificadas como vetores "a".
+
+00:04:01.786 --> 00:04:05.766
+Calculamos a semelhança entre
+"a" e cada vetor de palavra "b"
+
+00:04:05.799 --> 00:04:07.545
+da tabela embedding.
+
+00:04:07.578 --> 00:04:10.500
+Dissemos que a semelhança
+é um produto escalar de "a" e "b"
+
+00:04:10.533 --> 00:04:11.941
+sobre a magnitude.
+
+00:04:11.974 --> 00:04:14.556
+Esse produto
+é uma multiplicação matricial
+
+00:04:14.589 --> 00:04:16.613
+entre os vetores
+de validação "a"
+
+00:04:16.646 --> 00:04:19.140
+e a transposição
+dos vetores embedding "b".
+
+00:04:19.173 --> 00:04:21.348
+Aqui eu divido pela magnitude.
+
+00:04:21.381 --> 00:04:24.622
+Esta não é a equação exata,
+mas obteremos valores válidos
+
+00:04:24.655 --> 00:04:27.659
+para as semelhanças
+escalonados por uma constante.
+
+00:04:27.692 --> 00:04:31.197
+Essa função retorna exemplos
+e semelhanças de validação.
+
+00:04:31.230 --> 00:04:32.846
+E isso nos dá o que precisamos
+
+00:04:32.879 --> 00:04:34.832
+para imprimir as palavras
+de validação
+
+00:04:34.865 --> 00:04:38.505
+e as palavras da tabela embedding
+que são semanticamente semelhantes.
+
+00:04:38.538 --> 00:04:41.236
+Será uma boa forma de conferir
+se a tabela embedding
+
+00:04:41.269 --> 00:04:44.309
+agrupa palavras com significados
+semânticos parecidos.
+
+00:04:44.342 --> 00:04:46.237
+Esta é uma função pronta,
+
+00:04:46.270 --> 00:04:48.109
+e não precisamos mudar nada.
+
+00:04:48.142 --> 00:04:50.085
+Vamos definir o modelo.
+
+00:04:50.118 --> 00:04:52.429
+Sabemos que o modelo aceita
+alguns inputs
+
+00:04:52.462 --> 00:04:56.157
+e que tem uma camada embedding
+e uma de output softmax.
+
+00:04:56.190 --> 00:04:59.030
+Definimos isso usando
+o embedding.layer do PyTorch,
+
+00:04:59.063 --> 00:05:00.704
+que pode ser consultado aqui.
+
+00:05:00.737 --> 00:05:02.073
+Aqui está a documentação.
+
+00:05:02.106 --> 00:05:04.837
+A camada embedding é conhecida
+como tipo esparso.
+
+00:05:04.870 --> 00:05:07.471
+Ela pega uma quantidade
+de embeddings de input,
+
+00:05:07.504 --> 00:05:10.733
+que será a quantidade de linhas
+da matriz embedding de pesquisa,
+
+00:05:10.766 --> 00:05:12.653
+e uma dimensão de embedding,
+
+00:05:12.686 --> 00:05:15.302
+que é o tamanho de cada
+vetor embedding -
+
+00:05:15.335 --> 00:05:17.931
+a quantidade de colunas
+na tabela de pesquisa.
+
+00:05:17.964 --> 00:05:19.826
+Esses são os inputs
+mais importantes
+
+00:05:19.859 --> 00:05:21.276
+na definição da camada.
+
+00:05:21.309 --> 00:05:24.046
+Depois da camada embedding,
+definimos a camada linear
+
+00:05:24.079 --> 00:05:25.686
+para ir do embedding_size
+
+00:05:25.719 --> 00:05:27.796
+para as palavras de contexto
+previstas.
+
+00:05:27.829 --> 00:05:30.743
+Também precisaremos aplicar
+uma função softmax no output
+
+00:05:30.776 --> 00:05:33.717
+para que o modelo retorne
+as probabilidades de palavras.
+
+00:05:33.750 --> 00:05:35.702
+Aqui está o esqueleto
+deste modelo.
+
+00:05:35.735 --> 00:05:39.173
+Quando instanciamos o modelo,
+passamos valores de input
+
+00:05:39.206 --> 00:05:41.768
+para n_vocab -
+o tamanho do vocabulário -
+
+00:05:41.801 --> 00:05:44.811
+e n_embed -
+a dimensão embedding.
+
+00:05:44.844 --> 00:05:48.779
+Você conseguirá completar
+as funções init e forward do modelo.
+
+00:05:48.812 --> 00:05:51.657
+Ao fazer isso, poderá seguir
+com o treinamento
+
+00:05:51.690 --> 00:05:54.225
+usando os loops de treinamento
+fornecidos abaixo.
+
+00:05:54.258 --> 00:05:56.144
+Recomendo treinar na GPU,
+
+00:05:56.177 --> 00:06:00.053
+pois treinar este modelo demora
+até mesmo na GPU.
+
+00:06:00.086 --> 00:06:03.606
+Eu começaria treinando
+por uma ou duas epochs.
+
+00:06:03.639 --> 00:06:05.485
+Este será um exercício,
+
+00:06:05.518 --> 00:06:07.127
+mas mostrarei uma solução
+
+00:06:07.160 --> 00:06:09.467
+para definir e treinar
+um modelo Skip-Gram.
+

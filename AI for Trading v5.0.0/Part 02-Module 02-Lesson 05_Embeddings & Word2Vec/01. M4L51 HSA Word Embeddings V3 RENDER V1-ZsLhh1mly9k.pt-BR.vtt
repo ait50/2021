@@ -1,0 +1,162 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.667 --> 00:00:04.404
+Nesta aula, vou falar mais
+sobre usar redes neurais
+
+00:00:04.437 --> 00:00:06.373
+para processamento
+de línguas naturais.
+
+00:00:06.406 --> 00:00:08.675
+Vamos discutir
+embedding de palavras,
+
+00:00:08.708 --> 00:00:11.411
+que é o termo para modelos
+que aprendem a mapear
+
+00:00:11.444 --> 00:00:14.114
+um conjunto de palavras ou frases
+num vocabulário
+
+00:00:14.147 --> 00:00:16.249
+para vetores
+de valores numéricos.
+
+00:00:16.283 --> 00:00:18.084
+Estes vetores
+se chamam "embeddings".
+
+00:00:18.118 --> 00:00:21.421
+Podemos usar redes neurais
+para aprender a fazer embedding.
+
+00:00:21.454 --> 00:00:22.923
+Esta técnica é usada
+
+00:00:22.956 --> 00:00:25.559
+para diminuir a dimensionalidade
+de dados de texto.
+
+00:00:25.592 --> 00:00:27.861
+Mas os modelos de embedding
+também aprendem
+
+00:00:27.894 --> 00:00:30.497
+traços interessantes de palavras
+num vocabulário.
+
+00:00:30.530 --> 00:00:33.533
+Vamos nos concentrar
+no modelo Word2Vec,
+
+00:00:33.567 --> 00:00:35.101
+que aprende a mapear palavras
+
+00:00:35.135 --> 00:00:37.838
+para embeddings que contêm
+significado semântico.
+
+00:00:37.871 --> 00:00:40.106
+Embeddings
+podem aprender a relação
+
+00:00:40.140 --> 00:00:42.709
+entre verbos no presente
+e no passado.
+
+00:00:42.742 --> 00:00:45.979
+A relação entre embeddings
+para "andando" e "andou"
+
+00:00:46.012 --> 00:00:49.850
+deveria ser a mesma
+para "nadando" e "nadou".
+
+00:00:49.883 --> 00:00:52.586
+Da mesma forma, embeddings
+podem aprender a relação
+
+00:00:52.619 --> 00:00:54.521
+entre palavras
+e gêneros comuns,
+
+00:00:54.554 --> 00:00:56.556
+como "mulher" e "rainha"
+
+00:00:56.590 --> 00:00:58.291
+e "homem" e "rei".
+
+00:00:58.325 --> 00:01:00.093
+Pense nos embeddings
+como vetores
+
+00:01:00.126 --> 00:01:02.395
+que aprenderam a representar
+matematicamente
+
+00:01:02.429 --> 00:01:04.998
+a relação entre palavras
+em um vocabulário.
+
+00:01:05.031 --> 00:01:06.433
+Um conselho.
+
+00:01:06.466 --> 00:01:09.135
+Os embeddings aprendem
+de um corpo de texto,
+
+00:01:09.169 --> 00:01:12.239
+então qualquer associação
+de palavras no texto-fonte
+
+00:01:12.272 --> 00:01:14.307
+será replicada nos embeddings.
+
+00:01:14.341 --> 00:01:16.810
+Se seu texto contém
+informações falsas
+
+00:01:16.843 --> 00:01:18.645
+ou associações baseadas
+em gênero,
+
+00:01:18.678 --> 00:01:21.314
+isso tudo será replicado
+nos embeddings.
+
+00:01:21.348 --> 00:01:25.151
+Diminuir preferências em embeddings
+é uma área ativa de pesquisa.
+
+00:01:25.185 --> 00:01:26.786
+Leia mais sobre ela abaixo.
+
+00:01:26.820 --> 00:01:28.388
+Nesta aula, vamos falar
+
+00:01:28.421 --> 00:01:30.624
+como o embedding
+funciona na teoria.
+
+00:01:30.657 --> 00:01:32.526
+Depois, em vários notebooks,
+
+00:01:32.559 --> 00:01:35.228
+você aprenderá a implementar
+um modelo Word2Vec.
+
+00:01:35.262 --> 00:01:37.364
+Antes de codificar,
+aprenderemos mais sobre
+
+00:01:37.397 --> 00:01:39.566
+como embeddings
+reduzem a dimensionalidade
+
+00:01:39.599 --> 00:01:41.101
+de dados de texto.
+

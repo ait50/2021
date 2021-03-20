@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:03.000
+Agora, à porta esquecimento.
+Essa funciona assim:
+
+00:00:03.050 --> 00:00:04.500
+pega a memória
+de longo prazo
+
+00:00:04.550 --> 00:00:07.900
+e decide o que manter
+e o que descartar.
+
+00:00:07.950 --> 00:00:09.950
+Neste caso, o programa
+é sobre natureza e ciência,
+
+00:00:10.000 --> 00:00:13.200
+e a porta esquecimento decide
+esquecer que é sobre ciência
+
+00:00:13.250 --> 00:00:15.350
+e manter o fato
+de que é sobre natureza.
+
+00:00:15.400 --> 00:00:17.750
+Como a porta esquecimento
+funciona matematicamente?
+
+00:00:17.800 --> 00:00:18.950
+Simples.
+
+00:00:19.000 --> 00:00:23.050
+A memória de longo prazo (LTM),
+do tempo "t - 1" entra,
+
+00:00:23.100 --> 00:00:26.650
+e é multiplicada
+por um fator de esquecimento FT.
+
+00:00:26.700 --> 00:00:29.750
+Como esse fator é calculado?
+
+00:00:29.800 --> 00:00:30.800
+Simples.
+
+00:00:30.850 --> 00:00:32.916
+Use a memória
+de curto prazo STM
+
+00:00:32.966 --> 00:00:36.350
+e a informação de evento
+para calcular FT.
+
+00:00:36.400 --> 00:00:39.950
+Como antes, executamos
+uma rede neural de uma camada
+
+00:00:40.050 --> 00:00:43.350
+com uma função linear combinada
+com uma função sigmoide
+
+00:00:43.400 --> 00:00:45.450
+para calcular
+o fator de esquecimento.
+
+00:00:45.500 --> 00:00:47.700
+E é assim que funciona
+a porta esquecimento.
+

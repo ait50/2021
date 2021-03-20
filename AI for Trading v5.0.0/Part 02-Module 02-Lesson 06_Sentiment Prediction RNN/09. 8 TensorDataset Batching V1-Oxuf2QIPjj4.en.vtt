@@ -1,0 +1,232 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.685
+In this cell, I've split our features and
+
+00:00:02.685 --> 00:00:06.455
+encoded labels into training test and validation sets.
+
+00:00:06.455 --> 00:00:11.130
+I started by splitting our features and label data according to their split frac.
+
+00:00:11.130 --> 00:00:13.050
+So, I'm reserving 80 percent of my data for
+
+00:00:13.050 --> 00:00:16.230
+training and I'm basically getting the index at which I should split
+
+00:00:16.230 --> 00:00:18.645
+my features and label data based on this value
+
+00:00:18.645 --> 00:00:22.235
+0.8 and actually I could have just put in this variable here.
+
+00:00:22.235 --> 00:00:24.415
+Then I'm splitting my features first,
+
+00:00:24.415 --> 00:00:27.610
+getting the features up until my 80 percent split index.
+
+00:00:27.610 --> 00:00:32.735
+This makes up my training features train_x then I'm getting the remaining data.
+
+00:00:32.735 --> 00:00:36.655
+So, after the split index and that makes up my remaining_x.
+
+00:00:36.655 --> 00:00:40.670
+Then, I'm doing the exact same thing but for my labels data,
+
+00:00:40.670 --> 00:00:44.030
+splitting it at the 80 percent index to get my training labels and
+
+00:00:44.030 --> 00:00:46.670
+my remaining data then I'm doing something
+
+00:00:46.670 --> 00:00:49.930
+similar all over again only with the remaining data.
+
+00:00:49.930 --> 00:00:53.045
+I'm getting an index to split this data in half,
+
+00:00:53.045 --> 00:00:54.790
+so at the 0.5 mark.
+
+00:00:54.790 --> 00:00:59.150
+Then each half of our remaining_x will make up our validation and test sets of
+
+00:00:59.150 --> 00:01:04.240
+features and each half of remaining_y will make up our validation and test set of labels.
+
+00:01:04.240 --> 00:01:07.010
+That's it. The last step I'm doing is checking
+
+00:01:07.010 --> 00:01:09.820
+my work and printing out the shapes of my features data.
+
+00:01:09.820 --> 00:01:13.760
+I can see that I have the largest number of reviews in my training set with
+
+00:01:13.760 --> 00:01:18.760
+a sequence length of 200 and my validation and test sets are of the same size.
+
+00:01:18.760 --> 00:01:20.360
+If you want, you can do the same thing for
+
+00:01:20.360 --> 00:01:24.015
+your labels data and you should see the same number of rows here.
+
+00:01:24.015 --> 00:01:26.125
+So, this is 80 percent of my data,
+
+00:01:26.125 --> 00:01:27.710
+10 percent, and 10 percent.
+
+00:01:27.710 --> 00:01:30.740
+After creating training test and validation data,
+
+00:01:30.740 --> 00:01:34.615
+we want to batch this data so that we can train on batches at a time.
+
+00:01:34.615 --> 00:01:36.515
+Typically, you've seen this done with
+
+00:01:36.515 --> 00:01:40.190
+a generator function which we could definitely do here but I want to show
+
+00:01:40.190 --> 00:01:42.980
+you a really nice way to batch our datasets when we've
+
+00:01:42.980 --> 00:01:45.985
+split up our input features and labels like this.
+
+00:01:45.985 --> 00:01:50.315
+We can actually create data loaders for our data by following a couple of steps.
+
+00:01:50.315 --> 00:01:54.020
+First, we can use pytorch's tensor dataset to wrap
+
+00:01:54.020 --> 00:01:58.530
+tensor data into a known format and I can look at the documentation for this here.
+
+00:01:58.530 --> 00:02:03.015
+This dataset basically takes any amount of tensors with the same first dimension,
+
+00:02:03.015 --> 00:02:04.585
+so the same number of rows,
+
+00:02:04.585 --> 00:02:08.780
+and in our case this is our input features and the label tensors and it
+
+00:02:08.780 --> 00:02:13.360
+creates a dataset that can be processed and batched by pytorch's data loader class.
+
+00:02:13.360 --> 00:02:16.770
+So, once we create our data wrapping it in a tensor dataset,
+
+00:02:16.770 --> 00:02:19.595
+we can then pass that to a data loader as usual.
+
+00:02:19.595 --> 00:02:22.070
+Data loader just takes in some data and
+
+00:02:22.070 --> 00:02:27.305
+a batch size and it returns a data loader that batches our data as we typically might.
+
+00:02:27.305 --> 00:02:29.330
+This is a great alternative to creating
+
+00:02:29.330 --> 00:02:32.450
+a generator function for batching our data into full batches.
+
+00:02:32.450 --> 00:02:35.120
+The data loader class is going to take care of a lot of
+
+00:02:35.120 --> 00:02:38.725
+behind-the-scenes work for us and here's what this looks like in code.
+
+00:02:38.725 --> 00:02:41.370
+First, I'm creating my tensor datasets.
+
+00:02:41.370 --> 00:02:42.845
+To create my training data,
+
+00:02:42.845 --> 00:02:46.960
+I'm passing in the tensor version of my train_x and train_y that I created
+
+00:02:46.960 --> 00:02:49.555
+above and torch that from numpy just
+
+00:02:49.555 --> 00:02:52.570
+takes in numpy arrays and converts them into tensors.
+
+00:02:52.570 --> 00:02:55.250
+So, I'm doing that for my training validation and test
+
+00:02:55.250 --> 00:02:57.770
+data and if you named your data differently above,
+
+00:02:57.770 --> 00:02:59.520
+you'll have to change those names here.
+
+00:02:59.520 --> 00:03:02.815
+In fact, I could have actually done these steps the other way around.
+
+00:03:02.815 --> 00:03:05.615
+Creating a tensor dataset for all my data
+
+00:03:05.615 --> 00:03:08.955
+and then splitting the data into different sets. Both approaches work.
+
+00:03:08.955 --> 00:03:11.540
+Then for each tensor dataset that I just created,
+
+00:03:11.540 --> 00:03:14.510
+I'm passing it into pytorch's data loader or I can
+
+00:03:14.510 --> 00:03:17.810
+specify a batch size parameter equal to 50 in this case.
+
+00:03:17.810 --> 00:03:20.905
+So, without the messiness of loops and yield commands,
+
+00:03:20.905 --> 00:03:24.110
+this defines training validation and test data loaders
+
+00:03:24.110 --> 00:03:27.710
+that I can use in my train loop to batch data into the size I want.
+
+00:03:27.710 --> 00:03:32.420
+So, this gives me three different iterators and I just want to show you what a sample of
+
+00:03:32.420 --> 00:03:34.310
+data from this data loader looks like
+
+00:03:34.310 --> 00:03:37.545
+looking at our train loader and getting an iterator,
+
+00:03:37.545 --> 00:03:40.670
+then grabbing one batch of data using a call to next.
+
+00:03:40.670 --> 00:03:45.075
+So, this should return some sample input features and some sample labels.
+
+00:03:45.075 --> 00:03:49.445
+Then I'm printing out the size of my input which I can see is the batch size 50
+
+00:03:49.445 --> 00:03:54.030
+and the sequence length 200 and the output label size which is just 50,
+
+00:03:54.030 --> 00:03:55.700
+one label for each review in
+
+00:03:55.700 --> 00:04:00.220
+the input batch and I see my tokens and the encoded labels as well.
+
+00:04:00.220 --> 00:04:02.120
+So, this is looking really great.
+
+00:04:02.120 --> 00:04:06.810
+Next, we can proceed with defining and training the model on this data.
+

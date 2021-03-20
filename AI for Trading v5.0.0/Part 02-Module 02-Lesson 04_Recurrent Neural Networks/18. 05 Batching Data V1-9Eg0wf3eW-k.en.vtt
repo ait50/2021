@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.940
+So, this is my complete get_batches code that generates mini-batches of data.
+
+00:00:04.940 --> 00:00:07.530
+So, the first thing I wanted to do here is get
+
+00:00:07.530 --> 00:00:11.169
+the total number of complete batches that we can make in batches.
+
+00:00:11.169 --> 00:00:16.039
+To do that, I first calculated how many characters were in a complete mini-batch.
+
+00:00:16.039 --> 00:00:17.429
+So, in one mini-batch,
+
+00:00:17.429 --> 00:00:21.199
+there's going to be batch size times sequence length number of characters.
+
+00:00:21.199 --> 00:00:24.269
+Then, the number of complete batches that we can make is
+
+00:00:24.269 --> 00:00:28.469
+just the length of the array divided by the total number of characters in a mini-batch.
+
+00:00:28.469 --> 00:00:31.085
+This double slash is an integer division
+
+00:00:31.085 --> 00:00:34.365
+which we'll just round down any decimal leftover from this division.
+
+00:00:34.365 --> 00:00:37.640
+With that, we have the number of completely full batches that we can make.
+
+00:00:37.640 --> 00:00:40.549
+Then, we get our array and we take all the characters in
+
+00:00:40.549 --> 00:00:45.274
+the array up to n_batches times this total character size for a mini-batch.
+
+00:00:45.274 --> 00:00:47.390
+So here, we're making sure that we're keeping
+
+00:00:47.390 --> 00:00:49.850
+only enough characters to make full batches,
+
+00:00:49.850 --> 00:00:51.715
+and we may lose some characters here.
+
+00:00:51.715 --> 00:00:54.410
+But in general, you're going to have enough data that getting rid
+
+00:00:54.409 --> 00:00:57.344
+of a last unfold batch is not really going to matter.
+
+00:00:57.344 --> 00:01:00.350
+Next, with reshaping, we can take our array and we
+
+00:01:00.350 --> 00:01:03.465
+can make the number of rows equal to our batch size,
+
+00:01:03.465 --> 00:01:06.920
+and that's just how many sequences we want to include in a mini-batch.
+
+00:01:06.920 --> 00:01:09.200
+So, we just say we want the number of rows
+
+00:01:09.200 --> 00:01:12.109
+to be batch size and then we put this negative one.
+
+00:01:12.109 --> 00:01:15.359
+Negative one here is kind of a dimension placeholder,
+
+00:01:15.359 --> 00:01:17.974
+and it'll just automatically fill up the second dimension
+
+00:01:17.974 --> 00:01:21.144
+to whatever size it needs to be to accommodate all the data.
+
+00:01:21.144 --> 00:01:26.554
+Then finally, I'm iterating over my batch data using a window of length sequence length.
+
+00:01:26.555 --> 00:01:31.855
+So here, I'm taking in a reshaped complete array and then looking at all our rows,
+
+00:01:31.855 --> 00:01:36.980
+all our batches, and the columns are in a range from n to n plus sequence length,
+
+00:01:36.980 --> 00:01:38.790
+which makes our sequence length window.
+
+00:01:38.790 --> 00:01:41.650
+This completes x our input mini-batch.
+
+00:01:41.650 --> 00:01:44.930
+Then, what I did here for the target y is I just
+
+00:01:44.930 --> 00:01:48.860
+initialized an array of all zeros that's the same shape as x,
+
+00:01:48.859 --> 00:01:52.730
+and I just kind of fill it up with values from our x array shifted by one.
+
+00:01:52.730 --> 00:01:54.439
+From the start to the end,
+
+00:01:54.439 --> 00:01:56.774
+I just shifted over x by one.
+
+00:01:56.775 --> 00:01:59.840
+Then in the case of reaching the very end of our array,
+
+00:01:59.840 --> 00:02:04.310
+I'm going to make the last element of y equal to the first element in our array.
+
+00:02:04.310 --> 00:02:06.424
+I'm not super sure why most people do it this way,
+
+00:02:06.424 --> 00:02:11.094
+wrapping our array around so that the last element of y is the first element of x.
+
+00:02:11.094 --> 00:02:12.495
+But I've seen this many times,
+
+00:02:12.495 --> 00:02:14.450
+and so I did it in the cyclical way and it
+
+00:02:14.449 --> 00:02:16.579
+seems like the network trains perfectly fine doing this.
+
+00:02:16.580 --> 00:02:18.435
+So, it does not seem to be a problem.
+
+00:02:18.435 --> 00:02:21.775
+The main thing is we want x and y to be the same size.
+
+00:02:21.775 --> 00:02:24.939
+So, if you did this right and you want to test your implementation,
+
+00:02:24.939 --> 00:02:27.594
+you should have gotten batches that looks something like this.
+
+00:02:27.594 --> 00:02:29.449
+Right here, we have a batch size of eight,
+
+00:02:29.449 --> 00:02:30.919
+so you have eight rows here,
+
+00:02:30.919 --> 00:02:33.494
+and then we're just printing out the first 10 items in a sequence.
+
+00:02:33.495 --> 00:02:35.205
+So, you should see 10 items here.
+
+00:02:35.205 --> 00:02:39.955
+The important thing to note here is that you want to make sure that the elements in x,
+
+00:02:39.955 --> 00:02:41.750
+like the actual encoded values,
+
+00:02:41.750 --> 00:02:43.914
+are shifted over by one in y.
+
+00:02:43.914 --> 00:02:48.965
+So, we have 51 as the first item here and as the zeroth item here,
+
+00:02:48.965 --> 00:02:51.140
+then 23 and 23.
+
+00:02:51.139 --> 00:02:55.279
+Likewise, 55 is here and 55 is here in y. I
+
+00:02:55.280 --> 00:02:57.245
+basically want to make sure that everything is shifted
+
+00:02:57.245 --> 00:02:59.420
+over correctly, and this looks good.
+
+00:02:59.419 --> 00:03:01.159
+So now that we have our batch data,
+
+00:03:01.159 --> 00:03:04.530
+the next step we'll talk about is actually building the network.
+

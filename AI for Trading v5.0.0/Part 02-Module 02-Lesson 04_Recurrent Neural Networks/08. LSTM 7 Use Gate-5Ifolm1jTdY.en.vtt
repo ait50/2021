@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.169
+And finally, we come to the use gate or output gate.
+
+00:00:03.169 --> 00:00:06.540
+This is the one that uses the long term memory that just came out
+
+00:00:06.540 --> 00:00:09.914
+of the forget gate and the short term memory that just came out of the learned gate,
+
+00:00:09.914 --> 00:00:13.389
+to come up with a new short term memory and an output.
+
+00:00:13.390 --> 00:00:15.140
+These are the same thing.
+
+00:00:15.140 --> 00:00:17.190
+In this case, we'll take what's useful from
+
+00:00:17.190 --> 00:00:20.057
+the long term memory which is this bear over here,
+
+00:00:20.056 --> 00:00:23.504
+and what's useful from the short term memory which is these dark wolf,
+
+00:00:23.504 --> 00:00:28.114
+and the squirrel, and that's what's going to be our new short term memory.
+
+00:00:28.114 --> 00:00:29.673
+So our output basically says,
+
+00:00:29.673 --> 00:00:32.015
+your image is most likely a wolf but
+
+00:00:32.015 --> 00:00:34.990
+it also carry some of the other animals that I've seen recently.
+
+00:00:34.990 --> 00:00:38.440
+And mathematically what this does is the following: it applies
+
+00:00:38.439 --> 00:00:40.349
+a small neural network on the output of
+
+00:00:40.350 --> 00:00:43.679
+the forget gate using the tanh activation function,
+
+00:00:43.679 --> 00:00:47.130
+and it applies to another small neural network on the short term memory
+
+00:00:47.130 --> 00:00:50.955
+and the events using the sigmoid activation function.
+
+00:00:50.954 --> 00:00:52.549
+And as a final step,
+
+00:00:52.549 --> 00:00:55.890
+it multiplies these two in order to get the new output.
+
+00:00:55.890 --> 00:00:59.134
+The output also worth of the new short term memory.
+
+00:00:59.134 --> 00:01:01.039
+And that's how they use gate works.
+

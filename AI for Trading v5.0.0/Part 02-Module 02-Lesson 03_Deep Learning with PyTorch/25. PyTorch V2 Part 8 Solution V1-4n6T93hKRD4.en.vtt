@@ -1,0 +1,496 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.530
+Hi everyone, here is my solution for the transfer learning exercise that I had to do.
+
+00:00:04.530 --> 00:00:05.910
+So, this one's going to be a little different.
+
+00:00:05.910 --> 00:00:09.900
+I'm going to be typing it out as I do it so you can understand
+
+00:00:09.900 --> 00:00:14.565
+my that process is kind of the combination of everything you've learned in this lesson.
+
+00:00:14.564 --> 00:00:16.785
+So, the first thing I'm going do is,
+
+00:00:16.785 --> 00:00:18.899
+if I have a GPU available,
+
+00:00:18.899 --> 00:00:23.894
+I'm going to write this code in agnostic way so that I can use the GPU.
+
+00:00:23.894 --> 00:00:30.254
+So, what I'm going to say, device = torch.device and then this is going to be cuda.
+
+00:00:30.254 --> 00:00:40.289
+So, it's going to run on our GPU if torch.cuda is available, else CPU.
+
+00:00:40.289 --> 00:00:42.240
+So, what this will do is,
+
+00:00:42.240 --> 00:00:44.565
+if our GPU is available,
+
+00:00:44.564 --> 00:00:50.329
+then this will be true and then we'll return cuda here and then otherwise, it'll be CPU.
+
+00:00:50.329 --> 00:00:53.989
+So, now we can just pass device to all the tensors and models and then it
+
+00:00:53.990 --> 00:00:57.700
+will just automatically go to the GPU if we have it available.
+
+00:00:57.700 --> 00:01:02.490
+So, next, I'm going to get our pre-trained model.
+
+00:01:02.490 --> 00:01:04.439
+So, here I'm actually going to use ResNet.
+
+00:01:04.439 --> 00:01:07.289
+So, to do this, model dot models.
+
+00:01:07.290 --> 00:01:09.140
+So, we already imported models from
+
+00:01:09.140 --> 00:01:12.849
+torch vision then we can kind of like took out all the ones they have.
+
+00:01:12.849 --> 00:01:14.564
+So, there's ResNet there.
+
+00:01:14.564 --> 00:01:16.545
+So, I'm just going to use a fairly small one,
+
+00:01:16.545 --> 00:01:22.905
+ResNet 50 and then we want pre-trained true and that should get us our model.
+
+00:01:22.905 --> 00:01:24.629
+So, now if we look,
+
+00:01:24.629 --> 00:01:27.649
+so we can just print it out like this and it
+
+00:01:27.650 --> 00:01:31.490
+will tell us all the different operations and layers and everything that's going on.
+
+00:01:31.489 --> 00:01:36.259
+So, if we scroll down, we can see that at the end here has fc.
+
+00:01:36.260 --> 00:01:38.300
+So, this is the last layer,
+
+00:01:38.299 --> 00:01:40.840
+this fully connected layer that's acting like a classifier.
+
+00:01:40.840 --> 00:01:42.480
+So, we can see that it has,
+
+00:01:42.480 --> 00:01:47.659
+it expects 2,048 inputs to this layer and then the out features are 1,000.
+
+00:01:47.659 --> 00:01:51.829
+So, remember that this was trained on ImageNet and so ImageNet
+
+00:01:51.829 --> 00:01:56.609
+is typically trained with 1,000 different classes of images.
+
+00:01:56.609 --> 00:01:58.719
+But here we're only using cat and dog,
+
+00:01:58.719 --> 00:02:02.034
+so we just need to output features and in our classifier.
+
+00:02:02.034 --> 00:02:06.409
+So, we can load the model like that and now I'm going to make sure
+
+00:02:06.409 --> 00:02:08.629
+that our models' perimeters are frozen
+
+00:02:08.629 --> 00:02:11.615
+so that when we're training they don't get updated.
+
+00:02:11.615 --> 00:02:14.275
+So, I'll just run this make sure it works.
+
+00:02:14.275 --> 00:02:19.325
+So, now, we can load the model and we can turn off gradients.
+
+00:02:19.324 --> 00:02:21.979
+Turn off gradients for our model.
+
+00:02:21.979 --> 00:02:24.965
+So, then, the next step is we want to
+
+00:02:24.965 --> 00:02:29.974
+define our new classifier which we will be training.
+
+00:02:29.974 --> 00:02:31.715
+So, here, we can make it pretty simple.
+
+00:02:31.715 --> 00:02:34.849
+So, models= nn.sequential.
+
+00:02:34.849 --> 00:02:36.439
+You can define this in a lot of different ways,
+
+00:02:36.439 --> 00:02:39.219
+so I'm just using an industrial sequential here.
+
+00:02:39.219 --> 00:02:42.145
+So, our first layer, so linear,
+
+00:02:42.145 --> 00:02:47.585
+so remember we needed 248 inputs and then let's say,
+
+00:02:47.585 --> 00:02:53.080
+let's drop it down to 512 at a ReLu layer, a dropout.
+
+00:02:53.080 --> 00:02:54.840
+Now our output layer,
+
+00:02:54.840 --> 00:03:01.950
+512 to two and then we're going to do log softmax.
+
+00:03:01.949 --> 00:03:05.849
+I should change this to be a classifier.
+
+00:03:05.849 --> 00:03:09.590
+Okay. So, that's to finding our classifier and now we can attach it to our model,
+
+00:03:09.590 --> 00:03:13.580
+so to say, model.fc= classifier.
+
+00:03:13.580 --> 00:03:16.639
+Now, if we look at our model again,
+
+00:03:16.639 --> 00:03:19.270
+so we can scroll down to the bottom here.
+
+00:03:19.270 --> 00:03:23.960
+So, we see now this fully-connected module layer
+
+00:03:23.960 --> 00:03:28.550
+here is a sequential classifier linear operation ReLu,
+
+00:03:28.550 --> 00:03:32.740
+dropout, another linear transformation and then log softmax.
+
+00:03:32.740 --> 00:03:36.740
+So, the next thing we do is define my loss, my criterion.
+
+00:03:36.740 --> 00:03:40.700
+So, this is going to be the negative log like we had loss.
+
+00:03:40.699 --> 00:03:47.935
+Then, define our optimizer, optim.Adam.
+
+00:03:47.935 --> 00:03:52.129
+So, we want to use the parameters from
+
+00:03:52.129 --> 00:03:57.159
+our classifier which is fc here and then set our learning rate.
+
+00:03:57.159 --> 00:04:03.639
+The final thing to do is to move our model to whichever device we have available.
+
+00:04:03.639 --> 00:04:07.824
+So, now we have the model all set up and it's time to train it.
+
+00:04:07.824 --> 00:04:10.458
+Here's is the first thing I'm going to do is define
+
+00:04:10.459 --> 00:04:13.430
+some variables that we're going to be using during the training.
+
+00:04:13.430 --> 00:04:16.579
+So, for example, I'm going to set our epochs, so I'm going to set to one.
+
+00:04:16.579 --> 00:04:19.129
+I'll be tracking the number of train steps we do,
+
+00:04:19.129 --> 00:04:20.555
+so set that to zero.
+
+00:04:20.555 --> 00:04:22.644
+I'll be tracking our loss,
+
+00:04:22.644 --> 00:04:26.214
+so also set this to zero, and finally,
+
+00:04:26.214 --> 00:04:29.269
+we want to kind of set a loop for
+
+00:04:29.269 --> 00:04:33.819
+how many steps we're going to go before we print out the validation loss.
+
+00:04:33.819 --> 00:04:36.959
+So, now we want to loop through our epochs.
+
+00:04:36.959 --> 00:04:41.729
+So, for epoch and range epochs.
+
+00:04:41.730 --> 00:04:46.245
+Now, we're going to loop through our data for images,
+
+00:04:46.245 --> 00:04:52.004
+labels in trainloader, cumulate steps.
+
+00:04:52.004 --> 00:04:54.500
+So, basically, every time we go through one of these batches,
+
+00:04:54.500 --> 00:04:56.589
+we're going to increment steps here.
+
+00:04:56.589 --> 00:04:58.849
+So, now that we have our images and our labels,
+
+00:04:58.850 --> 00:05:04.160
+we're going to want to move them over to the GPU, if that's available.
+
+00:05:04.160 --> 00:05:13.685
+So, we're just going to do is images.to (device), labels.to(device).
+
+00:05:13.685 --> 00:05:17.819
+Now we're just going to write out our training loop.
+
+00:05:17.819 --> 00:05:22.680
+So, the first thing we need to do is zero our gradients.
+
+00:05:22.680 --> 00:05:25.170
+So, it's very important, don't forget to do this.
+
+00:05:25.170 --> 00:05:28.730
+Then, get our log probabilities from our model,
+
+00:05:28.730 --> 00:05:33.170
+model passed in the images with the log probabilities,
+
+00:05:33.170 --> 00:05:37.520
+we can get our loss from the criterion in the labels.
+
+00:05:37.519 --> 00:05:42.664
+Then do a backwards pass and then finally with our optimizer we take a step.
+
+00:05:42.665 --> 00:05:47.629
+Here, we can increment are running loss like so.
+
+00:05:47.629 --> 00:05:50.029
+So, this way we can keep track of our training loss as we are
+
+00:05:50.029 --> 00:05:52.439
+going through more and more data. All right.
+
+00:05:52.439 --> 00:05:54.074
+So, that is the training loop.
+
+00:05:54.074 --> 00:05:58.729
+So, now every once in a while so which is set by this like print every variable.
+
+00:05:58.730 --> 00:06:02.685
+We actually want to drop out of the train loop and test
+
+00:06:02.685 --> 00:06:07.399
+our network's accuracy and loss on our test dataset.
+
+00:06:07.399 --> 00:06:12.394
+So, for step modulo print_every,
+
+00:06:12.394 --> 00:06:15.859
+this is equal to zero, then we're going to go into our validation loop.
+
+00:06:15.860 --> 00:06:18.480
+So, what we need to do first is set model.eval.
+
+00:06:18.480 --> 00:06:24.965
+So, this'll turn our model into evaluation inference mode which turns off dropout.
+
+00:06:24.964 --> 00:06:28.669
+So, we can actually accurately use our network for making
+
+00:06:28.670 --> 00:06:34.259
+predictions instead a test loss and accuracy.
+
+00:06:34.259 --> 00:06:40.310
+So, now we'll get our images and labels from our test data.
+
+00:06:40.310 --> 00:06:42.410
+Now we'll do our validation loop.
+
+00:06:42.410 --> 00:06:47.030
+So, with our model so we'll pass in the images.
+
+00:06:47.029 --> 00:06:49.479
+So, these are the images from our test set.
+
+00:06:49.480 --> 00:06:53.835
+So, we're going to get our logps from our test set so again,
+
+00:06:53.834 --> 00:07:01.279
+get the loss with our criterion and keep track of our loss to test loss plus+= loss.item.
+
+00:07:01.279 --> 00:07:04.279
+So, this will allow us to keep
+
+00:07:04.279 --> 00:07:08.199
+track of our test loss as we're going through these validation rules.
+
+00:07:08.199 --> 00:07:12.019
+So, next we want to calculate our accuracy.
+
+00:07:12.019 --> 00:07:17.389
+So, probabilities= torch.exponential(logps).
+
+00:07:17.389 --> 00:07:20.789
+So, remember that our model is returning log softmax,
+
+00:07:20.790 --> 00:07:25.460
+so it's the log probabilities of our classes and to get the actual probabilities,
+
+00:07:25.459 --> 00:07:27.379
+we're going to use torch.exponential.
+
+00:07:27.379 --> 00:07:34.230
+So we get our top probabilities and top classes from ps.topk(1).
+
+00:07:34.230 --> 00:07:39.950
+So, that's going to give us our first largest value in our probabilities.
+
+00:07:39.949 --> 00:07:43.490
+Here, we need to make sure we set dimension to one to make sure it's actually like
+
+00:07:43.490 --> 00:07:47.215
+looking for the top probabilities along the columns.
+
+00:07:47.214 --> 00:07:48.759
+Go to the top classes,
+
+00:07:48.759 --> 00:07:56.300
+now we can check for equality with our labels and then with the equality tensor,
+
+00:07:56.300 --> 00:07:58.280
+we can update our accuracy.
+
+00:07:58.279 --> 00:08:03.154
+So, here remember we can calculate our accuracy from equality.
+
+00:08:03.154 --> 00:08:05.659
+Once we change it to a FloatTensor then we can do
+
+00:08:05.660 --> 00:08:08.210
+torch.mean and get our accuracy and so again just
+
+00:08:08.209 --> 00:08:13.319
+kind of incremented accumulated into this accuracy variable. All right.
+
+00:08:13.319 --> 00:08:18.305
+Now, we are in this loop here so this four step every print_every.
+
+00:08:18.305 --> 00:08:23.375
+So basically, now we have a running loss of our training loss and we have
+
+00:08:23.375 --> 00:08:26.240
+a test loss that we passed our test data through
+
+00:08:26.240 --> 00:08:29.139
+our model and measured the loss in accuracy.
+
+00:08:29.139 --> 00:08:30.854
+So now we can print all this out
+
+00:08:30.855 --> 00:08:33.580
+and I'm just going to copy and paste this because it's a lot to type.
+
+00:08:33.580 --> 00:08:37.070
+So, basically here, we're just printing out our epochs.
+
+00:08:37.070 --> 00:08:40.475
+So, we can keep track and know where we are and keep track of that.
+
+00:08:40.475 --> 00:08:43.610
+So, running_loss divided by print_every so basically we're
+
+00:08:43.610 --> 00:08:46.639
+taking the average of our training loss.
+
+00:08:46.639 --> 00:08:47.855
+So every time we print it out,
+
+00:08:47.855 --> 00:08:49.610
+we're just going to take the average.
+
+00:08:49.610 --> 00:08:52.909
+Then, test_loss over length the testloader.
+
+00:08:52.909 --> 00:08:56.629
+So basically length test loader tells us how many batches
+
+00:08:56.629 --> 00:09:00.539
+are actually in our test dataset that we're getting from testloader.
+
+00:09:00.539 --> 00:09:03.949
+So, since we're we're summing up all the losses for each of our batches,
+
+00:09:03.950 --> 00:09:05.750
+if we take the total loss and divide by
+
+00:09:05.750 --> 00:09:07.909
+the number of batches and that gives us our average loss,
+
+00:09:07.909 --> 00:09:09.814
+we do the same thing with accuracy.
+
+00:09:09.815 --> 00:09:13.820
+So, we're summing up the accuracy for each batch here and then we just divide
+
+00:09:13.820 --> 00:09:18.540
+by the total number of batches and that gives us our average accuracy for the test set.
+
+00:09:18.539 --> 00:09:19.879
+Then at the end,
+
+00:09:19.879 --> 00:09:23.600
+we can set our running loss back to
+
+00:09:23.600 --> 00:09:29.095
+zero and then we also want to put our model back into training mode.
+
+00:09:29.095 --> 00:09:34.475
+Great. So, that should be the training code and we'll see if it works.
+
+00:09:34.475 --> 00:09:38.409
+Now, this should be an if instead of a for.
+
+00:09:38.409 --> 00:09:41.944
+So, here I forgot this happens a lot.
+
+00:09:41.945 --> 00:09:48.515
+I forgot to transfer my tensors over to the GPU.
+
+00:09:48.514 --> 00:09:51.095
+So, hopefully this will work. All right.
+
+00:09:51.095 --> 00:09:53.805
+So, even like pretty quickly,
+
+00:09:53.804 --> 00:09:57.819
+we see that we can actually get our test accuracy on this above 95 percent.
+
+00:09:57.820 --> 00:10:00.710
+So, this is, remember that we're printing this out
+
+00:10:00.710 --> 00:10:04.400
+every five steps and so this is a total of 15 batches,
+
+00:10:04.399 --> 00:10:06.949
+training batches that were updated in the model.
+
+00:10:06.950 --> 00:10:10.850
+So, we're able to easily fine tune these classifiers on
+
+00:10:10.850 --> 00:10:15.529
+top and get greater than a 95 percent accuracy on our dataset.
+

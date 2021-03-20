@@ -1,0 +1,274 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.930
+Welcome back. So, here's my solution for the validation pass.
+
+00:00:03.930 --> 00:00:06.870
+So, here, our model has been defined,
+
+00:00:06.870 --> 00:00:10.125
+our loss, and our optimizer, and all this stuff.
+
+00:00:10.125 --> 00:00:16.980
+I've set to 30 epochs so we can see like how this trains or how the training loss drops,
+
+00:00:16.980 --> 00:00:19.800
+and how the validation loss changes over time.
+
+00:00:19.800 --> 00:00:23.205
+The way this works is that after each pass,
+
+00:00:23.204 --> 00:00:25.619
+after each epoch, after each pass through the training set,
+
+00:00:25.620 --> 00:00:28.155
+then we're going to do a validation pass.
+
+00:00:28.155 --> 00:00:29.820
+That's what this else here means.
+
+00:00:29.820 --> 00:00:33.119
+So, basically, four of this stuff and then
+
+00:00:33.119 --> 00:00:36.750
+else basically says after this four loop completes,
+
+00:00:36.750 --> 00:00:38.060
+then run this code.
+
+00:00:38.060 --> 00:00:40.150
+That's what this else here means.
+
+00:00:40.149 --> 00:00:45.089
+As seen before, we want to turn off our gradients so with torch.no_grad,
+
+00:00:45.090 --> 00:00:47.990
+and then we're going to get our images and labels from a test set,
+
+00:00:47.990 --> 00:00:53.725
+pass it into the images into our model to get our log probabilities, calculate our loss.
+
+00:00:53.725 --> 00:00:57.079
+So, here, I am going to just be updating our test_loss.
+
+00:00:57.079 --> 00:00:59.989
+So, test_loss is just an integer that's going to count
+
+00:00:59.990 --> 00:01:03.230
+up our loss on our test set as we're training,
+
+00:01:03.229 --> 00:01:05.119
+as we're doing more of these validation passes.
+
+00:01:05.120 --> 00:01:06.650
+So, this way, we can actually track
+
+00:01:06.650 --> 00:01:10.100
+the test loss over all the epochs that we're training.
+
+00:01:10.099 --> 00:01:12.079
+So, from the law of probabilities,
+
+00:01:12.079 --> 00:01:17.030
+I can get our actual probability distributions using torch.exponential.
+
+00:01:17.030 --> 00:01:23.159
+Again, topk1 gives us our predicted classes and we can measure,
+
+00:01:23.159 --> 00:01:25.965
+we can calculate the equalities.
+
+00:01:25.965 --> 00:01:30.549
+So, here, we can get our probabilities from our log probabilities using torch.exp,
+
+00:01:30.549 --> 00:01:34.284
+taking the exponential of a log gives you back into the probabilities.
+
+00:01:34.284 --> 00:01:38.114
+From that, we do ps.topk, so one,
+
+00:01:38.114 --> 00:01:43.109
+and this gives us the top_class or predicted class from the network.
+
+00:01:43.109 --> 00:01:47.519
+Then, using checking for equality,
+
+00:01:47.519 --> 00:01:52.534
+we can see where our predicted classes match with the true classes from labels.
+
+00:01:52.534 --> 00:01:55.670
+Again, measure our calculator accuracy.
+
+00:01:55.670 --> 00:01:59.125
+So, using torch.mean and changing equals into a FloatTensor.
+
+00:01:59.125 --> 00:02:02.469
+So, I'm going to run this and then let it run for a while,
+
+00:02:02.469 --> 00:02:05.314
+and then we can see what the actual training
+
+00:02:05.314 --> 00:02:08.965
+and validation losses look like as we were training this network.
+
+00:02:08.965 --> 00:02:10.879
+Now, the network is trained, we can see how
+
+00:02:10.879 --> 00:02:12.590
+the validation loss and the training loss actually
+
+00:02:12.590 --> 00:02:16.985
+changed over time like as we continue training on more and more data.
+
+00:02:16.985 --> 00:02:19.790
+So, we see is the training loss drops but
+
+00:02:19.789 --> 00:02:23.269
+the validation loss actually starts going up over time.
+
+00:02:23.270 --> 00:02:26.340
+There's actually a clear sign of overfitting
+
+00:02:26.340 --> 00:02:29.270
+so our network is getting better and better and better on the training data,
+
+00:02:29.270 --> 00:02:32.530
+but it's actually starting to get worse on the validation data.
+
+00:02:32.530 --> 00:02:35.330
+This is because as it's learning the training data,
+
+00:02:35.330 --> 00:02:38.795
+it's failing to generalize the data outside of that.
+
+00:02:38.794 --> 00:02:43.644
+Okay. So, this is what the phenomenon of overfitting looks like.
+
+00:02:43.645 --> 00:02:45.480
+The way that we combine it,
+
+00:02:45.479 --> 00:02:47.959
+the way that we try to avoid this and prevent it is by
+
+00:02:47.960 --> 00:02:51.560
+using regularization and specifically, dropout.
+
+00:02:51.560 --> 00:02:56.245
+So, deep behind dropout is that we randomly drop input units between our layers.
+
+00:02:56.245 --> 00:03:00.185
+What this does is it forces the network to share information between the weights,
+
+00:03:00.185 --> 00:03:03.965
+and so this increases this ability to generalize to new data.
+
+00:03:03.965 --> 00:03:06.349
+PyTorch adding dropout is pretty straightforward.
+
+00:03:06.349 --> 00:03:08.814
+We just use this nn.Dropout module.
+
+00:03:08.814 --> 00:03:12.125
+So, we can basically create our classifier like we had before
+
+00:03:12.125 --> 00:03:16.384
+using the linear transformations to do our hidden layers,
+
+00:03:16.384 --> 00:03:18.259
+and then we just add self.dropout,
+
+00:03:18.259 --> 00:03:21.685
+nn.Dropout, and then you give it some drop probability.
+
+00:03:21.685 --> 00:03:23.460
+In this case, this is 20 percent,
+
+00:03:23.460 --> 00:03:26.719
+so this is the probability that you'll drop a unit.
+
+00:03:26.719 --> 00:03:28.655
+In the forward method, it's pretty similar.
+
+00:03:28.655 --> 00:03:30.259
+So, we just pass in x,
+
+00:03:30.259 --> 00:03:32.134
+which is our input tensor,
+
+00:03:32.134 --> 00:03:33.604
+we're going to make sure it's flattened,
+
+00:03:33.604 --> 00:03:37.590
+and then we pass this tensor through each of
+
+00:03:37.590 --> 00:03:41.909
+our fully connected layers into an activation,
+
+00:03:41.909 --> 00:03:44.264
+relu activation and then through dropout.
+
+00:03:44.264 --> 00:03:48.629
+Our last layer is the output layer so we're not going to use dropout here.
+
+00:03:48.629 --> 00:03:50.759
+There's one more thing to note about this.
+
+00:03:50.759 --> 00:03:53.799
+So, when we're actually doing inference,
+
+00:03:53.800 --> 00:03:55.700
+if we're trying to make predictions with our network,
+
+00:03:55.699 --> 00:03:59.389
+we want to have all of our units available, right?
+
+00:03:59.389 --> 00:04:00.839
+So, in this case,
+
+00:04:00.840 --> 00:04:03.718
+we want to turn off dropout when we're doing validation,
+
+00:04:03.718 --> 00:04:05.969
+testing, when we're trying to make predictions.
+
+00:04:05.969 --> 00:04:09.439
+So, to do that, we do model.eval.
+
+00:04:09.439 --> 00:04:16.269
+So, model.eval will turn off dropout and this will allow us to get the most power,
+
+00:04:16.269 --> 00:04:19.714
+the highest performance out of our network when we're doing inference.
+
+00:04:19.714 --> 00:04:22.609
+Then, to go back in the train mode, use model.train.
+
+00:04:22.610 --> 00:04:25.780
+So, then, the validation pass looks like this now.
+
+00:04:25.779 --> 00:04:27.699
+So, first, we're going to turn off our gradients.
+
+00:04:27.699 --> 00:04:32.360
+So, with torch.no_grad, and then we set our model to evaluation mode,
+
+00:04:32.360 --> 00:04:36.720
+and then we do our validation pass through the test data.
+
+00:04:36.720 --> 00:04:38.070
+Then, after all this,
+
+00:04:38.069 --> 00:04:42.545
+we want to make sure the model is set back to train mode so we do model.train.
+
+00:04:42.545 --> 00:04:48.585
+Okay. So, now, I'm going to leave it up to you to create your new model.
+
+00:04:48.584 --> 00:04:52.049
+Try adding dropout to it and then try training your model with dropout.
+
+00:04:52.050 --> 00:04:58.470
+Then, again, checkout the training progress of validation using dropout. Cheers.
+

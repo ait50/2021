@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.930
+Welcome to this lesson on Sentiment Analysis with an RNN. All right.
+
+00:00:04.930 --> 00:00:08.585
+So, in this notebook, I want to give you one more LSTM example,
+
+00:00:08.585 --> 00:00:11.365
+and in this case, we'll actually be training an RNN to
+
+00:00:11.365 --> 00:00:14.730
+solve our sentiment analysis task from a few lessons ago.
+
+00:00:14.730 --> 00:00:18.105
+Sentiment analysis is all about taking in some text,
+
+00:00:18.105 --> 00:00:19.870
+in this case movie reviews,
+
+00:00:19.870 --> 00:00:21.960
+and predicting the sentiment of that review.
+
+00:00:21.960 --> 00:00:24.690
+So, whether it's positive or negative.
+
+00:00:24.690 --> 00:00:29.790
+Recall that Andrew Trask showed you how to build a sentiment analysis model from scratch,
+
+00:00:29.790 --> 00:00:33.135
+and he also did some really cool visualizations with this data.
+
+00:00:33.135 --> 00:00:36.750
+What I want to do now is use this as an opportunity to show you
+
+00:00:36.750 --> 00:00:41.675
+how well an RNN versus just a feedforward network performs on this task.
+
+00:00:41.675 --> 00:00:45.500
+My thinking is that an RNN should work really well because
+
+00:00:45.500 --> 00:00:49.625
+we can include information about the sequence of words in a movie review.
+
+00:00:49.625 --> 00:00:52.910
+I've broken this notebook up into a series of exercises,
+
+00:00:52.910 --> 00:00:54.919
+and I'll leave them pretty open-ended.
+
+00:00:54.919 --> 00:00:58.250
+You'll be tasked with pre-processing some text data and
+
+00:00:58.250 --> 00:01:02.255
+building a model that includes both an embedding and LSTM layer.
+
+00:01:02.255 --> 00:01:05.060
+I'll also be showing you a few more things that are useful to
+
+00:01:05.060 --> 00:01:08.075
+know about batching data and making predictions.
+
+00:01:08.075 --> 00:01:10.670
+Next, you'll be able to access this notebook,
+
+00:01:10.670 --> 00:01:13.550
+and I'd suggest that you keep the exercise notebook open.
+
+00:01:13.550 --> 00:01:18.080
+You can have it open in one tab and watch my exercise and solution videos in another,
+
+00:01:18.080 --> 00:01:22.880
+moving back and forth between absorbing information and practicing what you've learned.
+

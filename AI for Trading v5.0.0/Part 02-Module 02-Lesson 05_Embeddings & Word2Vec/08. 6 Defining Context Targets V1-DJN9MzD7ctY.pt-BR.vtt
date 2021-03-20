@@ -1,0 +1,228 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.221 --> 00:00:02.156
+Agora que os dados
+estão organizados,
+
+00:00:02.189 --> 00:00:05.581
+precisamos adequá-los
+para passá-los na rede.
+
+00:00:05.614 --> 00:00:08.927
+Com esta arquitetura Skip-Gram,
+para cada palavra no texto,
+
+00:00:08.960 --> 00:00:10.876
+definiremos um contexto
+
+00:00:10.909 --> 00:00:13.695
+e colocaremos as palavras
+em uma janela ao redor dela
+
+00:00:13.728 --> 00:00:14.999
+com tamanho C.
+
+00:00:15.032 --> 00:00:18.104
+Quando falo de uma janela,
+me refiro a uma janela no tempo,
+
+00:00:18.137 --> 00:00:20.407
+duas palavras no passado,
+e duas no futuro
+
+00:00:20.440 --> 00:00:22.150
+a partir da palavra de input.
+
+00:00:22.183 --> 00:00:25.422
+Melhor do que dizer "duas palavras
+no passado e duas no futuro",
+
+00:00:25.455 --> 00:00:28.763
+eu direi que é uma janela
+de tamanho C.
+
+00:00:28.796 --> 00:00:32.628
+Aqui temos um texto do Mikolov
+sobre o Word2Vec:
+
+00:00:32.661 --> 00:00:36.043
+"Como as palavras mais distantes
+estão menos relacionadas
+
+00:00:36.076 --> 00:00:37.420
+do que as mais próximas,
+
+00:00:37.453 --> 00:00:39.197
+damos menos peso
+para as distantes
+
+00:00:39.230 --> 00:00:42.280
+pegando menos amostras delas
+nos exemplos de treinamento.
+
+00:00:42.313 --> 00:00:45.212
+Se escolhermos C = 5
+para cada palavra de treinamento,
+
+00:00:45.245 --> 00:00:47.178
+selecionaremos a quantidade R
+
+00:00:47.211 --> 00:00:48.892
+no intervalo de 1 a C,
+
+00:00:48.925 --> 00:00:50.932
+e usaremos R palavras
+da história
+
+00:00:50.965 --> 00:00:53.310
+e R palavras do futuro
+da palavra atual
+
+00:00:53.343 --> 00:00:54.988
+como rótulos corretos."
+
+00:00:55.021 --> 00:00:58.554
+Isso diz para não escolhermos
+janelas muito grandes,
+
+00:00:58.587 --> 00:01:02.094
+pois isso nos daria
+um contexto relevante.
+
+00:01:02.127 --> 00:01:05.915
+Melhor dizendo, palavras de contexto
+boas são as mais próximas da atual,
+
+00:01:05.948 --> 00:01:07.610
+ao invés das mais distantes.
+
+00:01:07.643 --> 00:01:11.250
+Adicionamos aleatoriedade
+na definição do contexto.
+
+00:01:11.283 --> 00:01:14.095
+Se definirmos uma janela de contexto
+de tamanho C = 5,
+
+00:01:14.128 --> 00:01:17.264
+então criaremos um intervalo R
+que será um inteiro aleatório
+
+00:01:17.297 --> 00:01:18.579
+entre 1 e 5.
+
+00:01:18.612 --> 00:01:21.729
+Se configurarmos R = 2,
+por exemplo,
+
+00:01:21.762 --> 00:01:24.464
+então definiremos que o contexto
+em torno da palavra
+
+00:01:24.497 --> 00:01:27.029
+será as duas palavras
+que aparecem antes e depois
+
+00:01:27.062 --> 00:01:28.411
+da palavra de interesse.
+
+00:01:28.444 --> 00:01:29.859
+Vejamos um exemplo.
+
+00:01:29.892 --> 00:01:32.984
+Imagine a palavra
+do segundo índice desta lista,
+
+00:01:33.017 --> 00:01:34.589
+a 741.
+
+00:01:34.622 --> 00:01:37.014
+Se gerarmos aleatoriamente
+R = 2,
+
+00:01:37.047 --> 00:01:40.637
+nos interessaremos nos dois tokens
+antes e depois desta palavra.
+
+00:01:40.670 --> 00:01:43.510
+Escreva uma função que retornará
+palavras de contexto
+
+00:01:43.543 --> 00:01:45.413
+em uma lista como esta.
+
+00:01:45.446 --> 00:01:49.250
+Isto será a função get_target, que
+pega uma lista de IDs de palavras,
+
+00:01:49.283 --> 00:01:52.594
+o índice de interesse
+e o tamanho da janela de contexto.
+
+00:01:52.627 --> 00:01:55.658
+Obtendo palavras
+em um intervalo aleatório R
+
+00:01:55.691 --> 00:01:58.205
+em vez de um intervalo
+consistente maior C
+
+00:01:58.238 --> 00:02:01.675
+teremos mais chance de obtermos
+palavras próximas da atual
+
+00:02:01.708 --> 00:02:05.138
+e menos chance de obtermos palavras
+mais distantes da atual.
+
+00:02:05.171 --> 00:02:08.417
+Assim nós treinaremos
+palavras de contexto
+
+00:02:08.450 --> 00:02:10.411
+que estão próximas
+da de interesse
+
+00:02:10.444 --> 00:02:13.314
+e serão mais relevantes
+com mais frequência.
+
+00:02:13.347 --> 00:02:15.994
+Eu deixei esta função
+para você preencher.
+
+00:02:16.027 --> 00:02:17.827
+Existem casos especiais.
+
+00:02:17.860 --> 00:02:20.346
+Se o índice passado for zero
+
+00:02:20.379 --> 00:02:23.322
+ou o intervalo
+não puder voltar como o desejado,
+
+00:02:23.355 --> 00:02:27.603
+podemos começar o contexto
+no início das palavras passadas.
+
+00:02:27.636 --> 00:02:31.113
+Podemos testar a implementação
+nesta célula abaixo.
+
+00:02:31.146 --> 00:02:33.723
+Usaremos esta função
+para criar lotes dos dados,
+
+00:02:33.756 --> 00:02:36.532
+então é importante
+implementar isso corretamente.
+
+00:02:36.565 --> 00:02:38.828
+Como sempre, se quiser
+ver a minha solução,
+
+00:02:38.861 --> 00:02:40.863
+confira o vídeo a seguir.
+

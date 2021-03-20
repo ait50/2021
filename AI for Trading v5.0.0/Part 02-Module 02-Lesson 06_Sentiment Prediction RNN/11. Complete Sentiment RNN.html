@@ -1,0 +1,487 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Complete Sentiment RNN
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Sentiment Prediction RNN
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Sentiment RNN, Introduction.html">
+       01. Sentiment RNN, Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Pre-Notebook Sentiment RNN.html">
+       02. Pre-Notebook: Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Notebook Sentiment RNN.html">
+       03. Notebook: Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Data Pre-Processing.html">
+       04. Data Pre-Processing
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Encoding Words, Solution.html">
+       05. Encoding Words, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Getting Rid of Zero-Length.html">
+       06. Getting Rid of Zero-Length
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Cleaning &amp; Padding Data.html">
+       07. Cleaning &amp; Padding Data
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Padded Features, Solution.html">
+       08. Padded Features, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="09. TensorDataset &amp; Batching Data.html">
+       09. TensorDataset &amp; Batching Data
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Defining the Model.html">
+       10. Defining the Model
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Complete Sentiment RNN.html">
+       11. Complete Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Training the Model.html">
+       12. Training the Model
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Testing.html">
+       13. Testing
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Inference, Solution.html">
+       14. Inference, Solution
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          11. Complete Sentiment RNN
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="consult-the-solution-code">
+          Consult the Solution Code
+         </h2>
+         <p>
+          To take a closer look at this solution, feel free to check out the solution workspace or click
+          <a href="https://github.com/udacity/deep-learning-v2-pytorch/blob/master/sentiment-rnn/Sentiment_RNN_Solution.ipynb" rel="noopener noreferrer" target="_blank">
+           here
+          </a>
+          to see it as a webpage.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="complete-rnn-class">
+          Complete RNN Class
+         </h2>
+         <p>
+          I hope you tried out defining this model on your own and got it to work! Below, is how I completed this model.
+         </p>
+         <blockquote>
+          <p>
+           I know I want an embedding layer, a recurrent layer, and a final, linear layer with a sigmoid applied; I defined all of those in the
+           <code>
+            __init__
+           </code>
+           function, according to passed in parameters.
+          </p>
+         </blockquote>
+         <pre><code class="python language-python">def __init__(self, vocab_size, output_size, embedding_dim, hidden_dim, n_layers, drop_prob=0.5):
+        """
+        Initialize the model by setting up the layers.
+        """
+        super(SentimentRNN, self).__init__()
+
+        self.output_size = output_size
+        self.n_layers = n_layers
+        self.hidden_dim = hidden_dim
+
+        # embedding and LSTM layers
+        self.embedding = nn.Embedding(vocab_size, embedding_dim)
+        self.lstm = nn.LSTM(embedding_dim, hidden_dim, n_layers, 
+                            dropout=drop_prob, batch_first=True)
+
+        # dropout layer
+        self.dropout = nn.Dropout(0.3)
+
+        # linear and sigmoid layers
+        self.fc = nn.Linear(hidden_dim, output_size)
+        self.sig = nn.Sigmoid()</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="__init__-explanation">
+          <code>
+           __init__
+          </code>
+          explanation
+         </h3>
+         <p>
+          First I have an
+          <strong>
+           embedding layer
+          </strong>
+          , which should take in the size of our vocabulary (our number of integer tokens) and produce an embedding of
+          <code>
+           embedding_dim
+          </code>
+          size. So, as this model trains, this is going to create and embedding lookup table that has as many rows as we have word integers, and as many columns as the embedding dimension.
+         </p>
+         <p>
+          Then, I have an
+          <strong>
+           LSTM layer
+          </strong>
+          , which takes in inputs of
+          <code>
+           embedding_dim
+          </code>
+          size. So, it's accepting embeddings as inputs, and producing an output and hidden state of a hidden size. I am also specifying a number of layers, and a dropout value, and finally, I’m setting
+          <code>
+           batch_first
+          </code>
+          to True because we are using DataLoaders to batch our data like that!
+         </p>
+         <p>
+          Then, the LSTM outputs are passed to a dropout layer and then a fully-connected, linear layer that will produce
+          <code>
+           output_size
+          </code>
+          number of outputs. And finally, I’ve defined a sigmoid layer to convert the output to a value between 0-1.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="feedforward-behavior">
+          Feedforward behavior
+         </h2>
+         <p>
+          Moving on to the
+          <code>
+           forward
+          </code>
+          function, which takes in an input
+          <code>
+           x
+          </code>
+          and a
+          <code>
+           hidden
+          </code>
+          state, I am going to pass an input through these layers in sequence.
+         </p>
+         <pre><code class="python language-python">def forward(self, x, hidden):
+        """
+        Perform a forward pass of our model on some input and hidden state.
+        """
+        batch_size = x.size(0)
+
+        # embeddings and lstm_out
+        embeds = self.embedding(x)
+        lstm_out, hidden = self.lstm(embeds, hidden)
+
+        # stack up lstm outputs
+        lstm_out = lstm_out.contiguous().view(-1, self.hidden_dim)
+
+        # dropout and fully-connected layer
+        out = self.dropout(lstm_out)
+        out = self.fc(out)
+
+        # sigmoid function
+        sig_out = self.sig(out)
+
+        # reshape to be batch_size first
+        sig_out = sig_out.view(batch_size, -1)
+        sig_out = sig_out[:, -1] # get last batch of labels
+
+        # return last sigmoid output and hidden state
+        return sig_out, hidden</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="forward-explanation">
+          <code>
+           forward
+          </code>
+          explanation
+         </h3>
+         <p>
+          So, first, I'm getting the
+          <code>
+           batch_size
+          </code>
+          of my input x, which I’ll use for shaping my data. Then, I'm passing x through the embedding layer first, to get my embeddings as output
+         </p>
+         <p>
+          These embeddings are passed to my lstm layer, alongside a hidden state, and this returns an
+          <code>
+           lstm_output
+          </code>
+          and a new
+          <code>
+           hidden
+          </code>
+          state! Then I'm going to stack up the outputs of my LSTM to pass to my last linear layer.
+         </p>
+         <p>
+          Then I keep going, passing the reshaped
+          <code>
+           lstm_output
+          </code>
+          to a dropout layer and my linear layer, which should return a specified number of outputs that I will pass to my sigmoid activation function.
+         </p>
+         <p>
+          Now, I want to make sure that I’m returning
+          <em>
+           only
+          </em>
+          the
+          <strong>
+           last
+          </strong>
+          of these sigmoid outputs for a batch of input data, so, I’m going to shape these outputs into a shape that is
+          <code>
+           batch_size
+          </code>
+          first. Then I'm getting the last bacth by called `sig_out[:, -1], and that’s going to give me the batch of last labels that I want!
+         </p>
+         <p>
+          Finally, I am returning that output and the hidden state produced by the LSTM layer.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="init_hidden">
+          <code>
+           init_hidden
+          </code>
+         </h3>
+         <p>
+          That completes my forward function and then I have one more:
+          <code>
+           init_hidden
+          </code>
+          and this is just the same as you’ve seen before. The hidden and cell states of an LSTM are a tuple of values and each of these is size (n_layers by batch_size, by hidden_dim). I’m initializing these hidden weights to all zeros, and moving to a gpu if available.
+         </p>
+         <pre><code class="python language-python">def init_hidden(self, batch_size):
+        ''' Initializes hidden state '''
+        # Create two new tensors with sizes n_layers x batch_size x hidden_dim,
+        # initialized to zero, for hidden state and cell state of LSTM
+        weight = next(self.parameters()).data
+
+        if (train_on_gpu):
+            hidden = (weight.new(self.n_layers, batch_size, self.hidden_dim).zero_().cuda(),
+                  weight.new(self.n_layers, batch_size, self.hidden_dim).zero_().cuda())
+        else:
+            hidden = (weight.new(self.n_layers, batch_size, self.hidden_dim).zero_(),
+                      weight.new(self.n_layers, batch_size, self.hidden_dim).zero_())
+
+        return hidden</code></pre>
+         <p>
+          After this, I’m ready to instantiate and train this model, you should see if you can decide on good hyperparameters of your own, and then check out the solution code, next!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="12. Training the Model.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('11. Complete Sentiment RNN')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

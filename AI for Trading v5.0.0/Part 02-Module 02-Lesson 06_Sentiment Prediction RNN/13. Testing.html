@@ -1,0 +1,406 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Testing
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Sentiment Prediction RNN
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Sentiment RNN, Introduction.html">
+       01. Sentiment RNN, Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Pre-Notebook Sentiment RNN.html">
+       02. Pre-Notebook: Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Notebook Sentiment RNN.html">
+       03. Notebook: Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Data Pre-Processing.html">
+       04. Data Pre-Processing
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Encoding Words, Solution.html">
+       05. Encoding Words, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Getting Rid of Zero-Length.html">
+       06. Getting Rid of Zero-Length
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Cleaning &amp; Padding Data.html">
+       07. Cleaning &amp; Padding Data
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Padded Features, Solution.html">
+       08. Padded Features, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="09. TensorDataset &amp; Batching Data.html">
+       09. TensorDataset &amp; Batching Data
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Defining the Model.html">
+       10. Defining the Model
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Complete Sentiment RNN.html">
+       11. Complete Sentiment RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Training the Model.html">
+       12. Training the Model
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Testing.html">
+       13. Testing
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Inference, Solution.html">
+       14. Inference, Solution
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          13. Testing
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="testing-the-trained-model">
+          Testing the Trained Model
+         </h2>
+         <p>
+          I want to show you two great ways to test: using test data and using inference. The first is similar to what you’ve seen in our CNN lessons. I am iterating through the test data in the
+          <code>
+           test_loader
+          </code>
+          , recording the test loss and calculating the accuracy based on how many labels this model got correct!
+         </p>
+         <p>
+          I’m doing this by looking at the
+          <strong>
+           rounded value
+          </strong>
+          of our output. Recall that this is a sigmoid output between 0-1 and so rounding this value will give us an integer that is the most likely label: 0 or 1. Then I’m comparing that predicted label to the true label; if it matches, I record that as a correctly-labeled test review.
+         </p>
+         <pre><code class="python language-python"># Get test data loss and accuracy
+
+test_losses = [] # track loss
+num_correct = 0
+
+# init hidden state
+h = net.init_hidden(batch_size)
+
+net.eval()
+# iterate over test data
+for inputs, labels in test_loader:
+
+    # Creating new variables for the hidden state, otherwise
+    # we'd backprop through the entire training history
+    h = tuple([each.data for each in h])
+
+    if(train_on_gpu):
+        inputs, labels = inputs.cuda(), labels.cuda()
+
+    # get predicted outputs
+    output, h = net(inputs, h)
+
+    # calculate loss
+    test_loss = criterion(output.squeeze(), labels.float())
+    test_losses.append(test_loss.item())
+
+    # convert output probabilities to predicted class (0 or 1)
+    pred = torch.round(output.squeeze())  # rounds to the nearest integer
+
+    # compare predictions to true label
+    correct_tensor = pred.eq(labels.float().view_as(pred))
+    correct = np.squeeze(correct_tensor.numpy()) if not train_on_gpu else np.squeeze(correct_tensor.cpu().numpy())
+    num_correct += np.sum(correct)
+
+
+# -- stats! -- ##
+# avg test loss
+print("Test loss: {:.3f}".format(np.mean(test_losses)))
+
+# accuracy over all test data
+test_acc = num_correct/len(test_loader.dataset)
+print("Test accuracy: {:.3f}".format(test_acc))</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Below, I’m printing out the average test loss and the accuracy, which is just the number of correctly classified items divided by the number of pieces of test data,total.
+         </p>
+         <p>
+          We can see that the test loss  is
+          <code>
+           0.516
+          </code>
+          and the accuracy is about
+          <strong>
+           81.1%
+          </strong>
+          !
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Test results" class="img img-fluid" src="img/screen-shot-2018-11-06-at-2.30.04-pm.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Test results
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Next, you're ready for your last task! Which is to define a
+          <code>
+           predict
+          </code>
+          function to perform inference on any given text review!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="exercise-inference-on-a-test-review">
+          Exercise: Inference on a test review
+         </h3>
+         <p>
+          You can change this
+          <code>
+           test_review
+          </code>
+          to any text that you want. Read it and think: is it pos or neg? Then see if your model predicts correctly!
+         </p>
+         <blockquote>
+          <p>
+           <strong>
+            Exercise:
+           </strong>
+           Write a
+           <code>
+            predict
+           </code>
+           function that takes in a trained net, a plain text_review, and a sequence length, and prints out a custom statement for a positive or negative review!
+          </p>
+          <ul>
+           <li>
+            You can use any functions that you've already defined or define any helper functions you want to complete
+            <code>
+             predict
+            </code>
+            , but it should just take in a trained net, a text review, and a sequence length.
+           </li>
+          </ul>
+         </blockquote>
+         <pre><code class="python language-python">def predict(net, test_review, sequence_length=200):
+    ''' Prints out whether a give review is predicted to be 
+        positive or negative in sentiment, using a trained model.
+
+        params:
+        net - A trained net 
+        test_review - a review made of normal text and punctuation
+        sequence_length - the padded length of a review
+        '''
+
+
+    # print custom response based on whether test_review is pos/neg</code></pre>
+         <p>
+          Try to solve this task on  your own, then check out the solution, next!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="14. Inference, Solution.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('13. Testing')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

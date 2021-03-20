@@ -1,0 +1,175 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.190
+By now, you've had a lot of practice with data processing and with defining RNNs.
+
+00:00:05.190 --> 00:00:07.290
+So, I'm not going to give you too much guidance here,
+
+00:00:07.290 --> 00:00:09.135
+when it comes to defining this model.
+
+00:00:09.135 --> 00:00:11.210
+Here's what it should look like generally.
+
+00:00:11.210 --> 00:00:14.760
+The model should be able to take in our word tokens,
+
+00:00:14.760 --> 00:00:18.360
+and the first thing that these go through will be an embedding layer.
+
+00:00:18.360 --> 00:00:20.725
+We have about 74,000 different words,
+
+00:00:20.725 --> 00:00:24.600
+and so this layer is going to be responsible for converting our word tokens,
+
+00:00:24.600 --> 00:00:28.255
+our integers into embeddings of a specific size.
+
+00:00:28.255 --> 00:00:31.645
+Now, you could train a Word2Vec model separately,
+
+00:00:31.645 --> 00:00:35.930
+and actually just use the learned word embeddings as input to an LSTM.
+
+00:00:35.930 --> 00:00:39.410
+But it turns out that these embedding layers are still useful even if
+
+00:00:39.410 --> 00:00:43.100
+they haven't been trained to learn the semantic relationships between words.
+
+00:00:43.100 --> 00:00:45.020
+So in this case, what we're mainly using
+
+00:00:45.020 --> 00:00:48.200
+this embedding layer for is dimensionality reduction.
+
+00:00:48.200 --> 00:00:51.380
+It will learn to look at our large vocabulary and map
+
+00:00:51.380 --> 00:00:54.945
+each word into a vector of a specified embedding dimension.
+
+00:00:54.945 --> 00:00:56.850
+Then, after our embedding layer,
+
+00:00:56.850 --> 00:00:58.810
+we have an LSTM layer.
+
+00:00:58.810 --> 00:01:02.150
+This is defined by a hidden state size and number of layers as you know.
+
+00:01:02.150 --> 00:01:07.775
+At each step, these LSTM cells will produce an output and a new hidden state.
+
+00:01:07.775 --> 00:01:11.010
+The hidden state will be passed to the next cell as input,
+
+00:01:11.010 --> 00:01:14.110
+and this is how we represent a memory in this model.
+
+00:01:14.110 --> 00:01:19.700
+The output is going to be fed into a Sigmoid activated fully connected output layer.
+
+00:01:19.700 --> 00:01:21.800
+This layer will be responsible for mapping
+
+00:01:21.800 --> 00:01:25.560
+the LSTM layer outputs to a desired output size.
+
+00:01:25.560 --> 00:01:29.885
+In this case, this should be the number of our sentiment classes, positive or negative.
+
+00:01:29.885 --> 00:01:32.990
+Then, the Sigmoid activation function is responsible for
+
+00:01:32.990 --> 00:01:36.800
+turning all of those outputs into a value between zero and one.
+
+00:01:36.800 --> 00:01:40.290
+This is the range we expect for our encoded sentiment labels.
+
+00:01:40.290 --> 00:01:43.615
+Zero is a negative and one is a positive review.
+
+00:01:43.615 --> 00:01:47.920
+So, this model is going to look at a sequence of words that make up a review.
+
+00:01:47.920 --> 00:01:52.820
+Here, we're interested in only the last Sigmoid output because this will
+
+00:01:52.820 --> 00:01:55.040
+produce the one label we're looking for at
+
+00:01:55.040 --> 00:01:57.875
+the end of processing a sequence of words in a review.
+
+00:01:57.875 --> 00:02:02.890
+So here's a little more explanation and some links to documentation if you need it.
+
+00:02:02.890 --> 00:02:04.375
+Then below, in this first cell,
+
+00:02:04.375 --> 00:02:07.370
+I'm going to check if a GPU is available for training.
+
+00:02:07.370 --> 00:02:09.980
+Then here, I want you to complete this model.
+
+00:02:09.980 --> 00:02:13.360
+It should take in all these parameters: our vocab size,
+
+00:02:13.360 --> 00:02:15.580
+output size, embedding dimension,
+
+00:02:15.580 --> 00:02:17.635
+hidden dimension, number of layers,
+
+00:02:17.635 --> 00:02:19.934
+and an optional dropout probability,
+
+00:02:19.934 --> 00:02:23.045
+and create an entire sentiment RNN model.
+
+00:02:23.045 --> 00:02:27.670
+You'll be responsible for completing the init and forward functions for this model.
+
+00:02:27.670 --> 00:02:32.810
+Remember that the output should just be the last value from our Sigmoid output layer.
+
+00:02:32.810 --> 00:02:37.265
+I'll also ask you to complete the init hidden function for the LSTM layer.
+
+00:02:37.265 --> 00:02:39.935
+This should initialize the hidden and cell state to be
+
+00:02:39.935 --> 00:02:43.235
+all zeros and move them to a GPU, if available.
+
+00:02:43.235 --> 00:02:47.790
+I'd encourage you to look at the documentation when helpful or your other code examples.
+
+00:02:47.790 --> 00:02:51.635
+You should have all the information you need to complete this model on your own.
+
+00:02:51.635 --> 00:02:54.945
+If you're confident in your model definition, later in this code,
+
+00:02:54.945 --> 00:02:59.110
+you'll be able to define your model hyperparameters and train it.
+
+00:02:59.110 --> 00:03:02.450
+Next, I'll show you one solution for defining the sentiment RNN model.
+
+00:03:02.450 --> 00:03:06.375
+But I do think this is a fun task to try out on your own in earnest too.
+
+00:03:06.375 --> 00:03:09.140
+I think it's a great exercise in thinking about how
+
+00:03:09.140 --> 00:03:13.380
+data is shaped as it moves through a model. So, good luck.
+

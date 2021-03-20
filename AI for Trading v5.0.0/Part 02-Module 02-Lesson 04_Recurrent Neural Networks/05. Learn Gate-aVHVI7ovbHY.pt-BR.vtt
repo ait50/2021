@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:01.922
+Continuemos
+com o mesmo exemplo.
+
+00:00:01.972 --> 00:00:03.400
+Temos uma memória
+de longo prazo
+
+00:00:03.450 --> 00:00:06.450
+de que o programa
+trata de natureza e ciência.
+
+00:00:06.500 --> 00:00:09.400
+Também temos a de curto prazo,
+que é o visto recentemente:
+
+00:00:09.450 --> 00:00:11.250
+um esquilo e uma árvore.
+
+00:00:11.300 --> 00:00:14.800
+Por fim, temos nosso evento atual,
+uma figura que vimos agora.
+
+00:00:14.850 --> 00:00:17.550
+Parece um cachorro,
+mas pode ser um lobo.
+
+00:00:17.600 --> 00:00:21.000
+Agora vejamos
+o que a porta aprendizagem faz.
+
+00:00:21.050 --> 00:00:24.800
+Ela pega uma memória de curto prazo
+e a junta a um evento.
+
+00:00:24.850 --> 00:00:26.450
+Na verdade,
+é mais do que isso.
+
+00:00:26.500 --> 00:00:30.150
+Ele pega a memória de curto prazo
+e o evento, os combina
+
+00:00:30.200 --> 00:00:33.650
+e depois ignora parte deles,
+mantendo o importante.
+
+00:00:33.700 --> 00:00:36.750
+Aqui ele se esquece
+da existência da árvore
+
+00:00:36.800 --> 00:00:41.350
+e lembra de ter visto um esquilo
+e um cachorro/lobo recentemente.
+
+00:00:41.400 --> 00:00:44.500
+Como isso funciona matematicamente?
+Bem, assim:
+
+00:00:44.550 --> 00:00:47.650
+temos a memória
+de curto prazo STMt - 1
+
+00:00:47.700 --> 00:00:49.600
+e o evento Et.
+
+00:00:49.650 --> 00:00:52.800
+Ele os combina submetendo-os
+a uma função linear
+
+00:00:52.850 --> 00:00:55.000
+que consiste em juntar
+os vetores,
+
+00:00:55.050 --> 00:00:57.650
+multiplicar por uma matriz,
+adicionar um viés
+
+00:00:57.700 --> 00:01:01.550
+e, por fim, multiplicar o resultado
+por uma função de ativação tanh.
+
+00:01:01.600 --> 00:01:05.150
+A nova informação Nt
+tem essa fórmula aqui.
+
+00:01:05.200 --> 00:01:06.950
+Como ignorar parte dela?
+
+00:01:07.000 --> 00:01:12.600
+Multiplicando por um fator
+de ignorar, "it".
+
+00:01:12.650 --> 00:01:15.450
+O fator de ignorar "it"
+é um vetor,
+
+00:01:15.500 --> 00:01:17.750
+mas multiplica elementos.
+
+00:01:17.800 --> 00:01:19.600
+E como calcular "it"?
+
+00:01:19.650 --> 00:01:21.528
+Bem, usamos
+informações prévias
+
+00:01:21.578 --> 00:01:24.050
+sobre a memória
+de curto prazo e o evento.
+
+00:01:24.100 --> 00:01:26.500
+Então, novamente,
+criamos uma minirrede neural
+
+00:01:26.550 --> 00:01:30.100
+cujas entradas são a memória
+de entrada e o evento.
+
+00:01:30.150 --> 00:01:32.250
+Nós as passamos
+por uma pequena função linear
+
+00:01:32.300 --> 00:01:34.550
+com uma nova matriz
+e um novo viés
+
+00:01:34.600 --> 00:01:36.531
+e multiplicamos
+por uma função sigmoide
+
+00:01:36.581 --> 00:01:38.800
+para manter entre 0 e 1.
+
+00:01:38.850 --> 00:01:41.800
+E prontinho. É assim
+que a porta aprendizagem funciona.
+

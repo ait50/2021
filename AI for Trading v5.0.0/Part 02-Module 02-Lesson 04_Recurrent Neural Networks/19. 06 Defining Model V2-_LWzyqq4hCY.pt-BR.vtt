@@ -1,0 +1,320 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:02.502
+Certo. Nós temos
+os minilotes de dados.
+
+00:00:02.535 --> 00:00:04.637
+Agora é hora
+de definir o modelo.
+
+00:00:04.804 --> 00:00:08.274
+Este é um pequeno diagrama
+de como o modelo vai ficar.
+
+00:00:08.307 --> 00:00:10.843
+Os caracteres vão ficar
+na camada de input
+
+00:00:10.877 --> 00:00:12.945
+e uma pilha de células LSTM.
+
+00:00:12.979 --> 00:00:16.616
+Estas células formam a camada
+recorrente oculta.
+
+00:00:16.649 --> 00:00:19.051
+E quando olham um minilote
+de dados como input,
+
+00:00:19.085 --> 00:00:20.753
+elas olham um caractere
+por vez
+
+00:00:20.786 --> 00:00:23.289
+e produzem um output
+e um estado oculto.
+
+00:00:23.322 --> 00:00:25.224
+Vamos passar
+um caractere de input
+
+00:00:25.258 --> 00:00:27.026
+para a primeira célula LSTM,
+
+00:00:27.059 --> 00:00:28.861
+que produz um estado oculto.
+
+00:00:28.895 --> 00:00:30.363
+No próximo instante de tempo,
+
+00:00:30.396 --> 00:00:32.665
+vamos ver o próximo caractere
+na sequência
+
+00:00:32.698 --> 00:00:34.934
+e passá-lo
+para esta célula LSTM,
+
+00:00:34.967 --> 00:00:37.637
+que verá o estado anterior
+como input.
+
+00:00:37.670 --> 00:00:41.407
+Você já viu este comportamento
+em uma RNN de uma camada,
+
+00:00:41.440 --> 00:00:43.943
+mas, aqui, vamos usar
+um modelo de duas camadas
+
+00:00:43.976 --> 00:00:46.445
+que tem camadas
+LSTM empilhadas.
+
+00:00:46.479 --> 00:00:48.915
+Isto significa que o output
+desta camada LSTM
+
+00:00:48.948 --> 00:00:51.117
+vai para a próxima como input.
+
+00:00:51.150 --> 00:00:53.753
+E cada célula compartilha
+seu estado oculto
+
+00:00:53.786 --> 00:00:56.422
+com a célula na sequência.
+
+00:00:56.455 --> 00:00:59.292
+O output da última camada LSTM
+
+00:00:59.325 --> 00:01:01.627
+vai incluir algumas
+pontuações de classe.
+
+00:01:01.661 --> 00:01:03.830
+Elas serão o comprimento
+do vocabulário.
+
+00:01:03.863 --> 00:01:06.933
+Vamos usar uma função
+de ativação softmax
+
+00:01:06.966 --> 00:01:09.535
+para obter
+a distribuição de probabilidade
+
+00:01:09.569 --> 00:01:12.071
+para prever qual deve
+ser o próximo caractere.
+
+00:01:12.104 --> 00:01:14.440
+Para começar nesta tarefa,
+
+00:01:14.474 --> 00:01:17.376
+você recebeu um código esqueleto
+para criar um modelo.
+
+00:01:17.410 --> 00:01:20.947
+Primeiro vamos ver se uma GPU
+está disponível para treino.
+
+00:01:20.980 --> 00:01:23.649
+E você verá
+esta classe CharRNN.
+
+00:01:23.683 --> 00:01:28.521
+Veja que a classe CharRNN tem
+a função init e a função forward.
+
+00:01:28.554 --> 00:01:30.323
+Depois, você recebeu um código
+
+00:01:30.356 --> 00:01:33.459
+para inicializar o estado oculto
+de uma camada LSTM.
+
+00:01:33.493 --> 00:01:35.361
+E vou falar disto em breve.
+
+00:01:35.394 --> 00:01:37.797
+Você pode dar uma olhada
+no código
+
+00:01:37.830 --> 00:01:40.599
+e em como criamos os dicionários
+de caracteres iniciais.
+
+00:01:40.632 --> 00:01:42.001
+Mas não precisa mudá-lo.
+
+00:01:42.034 --> 00:01:44.637
+Também há vários parâmetros
+que vamos passar
+
+00:01:44.670 --> 00:01:47.106
+quando CharRNN
+for instanciada.
+
+00:01:47.140 --> 00:01:49.876
+Salvei alguns deles
+como variáveis de classe.
+
+00:01:49.909 --> 00:01:52.278
+Usando estes parâmetros
+de input e variáveis,
+
+00:01:52.311 --> 00:01:54.580
+caberá a você criar
+as camadas do modelo
+
+00:01:54.614 --> 00:01:56.282
+e completar a função forward.
+
+00:01:56.315 --> 00:01:58.117
+Primeiro você criará
+uma camada LSTM
+
+00:01:58.151 --> 00:02:00.653
+sobre a qual você pode ler
+no anexo aqui.
+
+00:02:00.686 --> 00:02:02.388
+Podemos ver
+que uma camada LSTM
+
+00:02:02.421 --> 00:02:04.657
+é criada usando
+os parâmetros usuais.
+
+00:02:04.690 --> 00:02:06.459
+Tamanho de input,
+tamanho oculto,
+
+00:02:06.492 --> 00:02:09.095
+número de camadas
+e um parâmetro batch_first.
+
+00:02:09.128 --> 00:02:11.464
+Também vamos adicionar
+um valor de dropout.
+
+00:02:11.497 --> 00:02:13.199
+Isto introduz
+uma camada dropout
+
+00:02:13.232 --> 00:02:15.568
+entre os outputs
+das camadas LSTM,
+
+00:02:15.601 --> 00:02:17.937
+se você decidiu empilhar
+múltiplas camadas.
+
+00:02:17.970 --> 00:02:20.273
+Depois de definir
+uma camada LSTM,
+
+00:02:20.306 --> 00:02:22.708
+vou pedir para você definir
+mais duas camadas:
+
+00:02:22.742 --> 00:02:25.444
+uma camada dropout
+e uma completamente conectada
+
+00:02:25.478 --> 00:02:27.513
+para obter o output desejado.
+
+00:02:27.547 --> 00:02:31.184
+Quando definir estas camadas,
+você define a função forward.
+
+00:02:31.217 --> 00:02:33.920
+Ela contém um input X
+e um estado oculto.
+
+00:02:33.953 --> 00:02:36.656
+Você vai passar este input
+pelas camadas do modelo
+
+00:02:36.689 --> 00:02:39.325
+e retornar um output final
+e um estado oculto.
+
+00:02:39.358 --> 00:02:42.495
+Formule o output LSTM
+para ele ser alimentado
+
+00:02:42.528 --> 00:02:44.729
+para a última camada
+completamente conectada.
+
+00:02:44.763 --> 00:02:47.133
+Aqui embaixo, você verá
+esta função
+
+00:02:47.166 --> 00:02:50.136
+para inicializar o estado oculto
+de uma LSTM.
+
+00:02:50.169 --> 00:02:52.772
+Uma LSTM tem um estado oculto
+e um estado de célula
+
+00:02:52.805 --> 00:02:55.141
+que são salvos
+como uma tupla: hidden.
+
+00:02:55.174 --> 00:02:57.210
+O formato do estado oculto
+e do da célula
+
+00:02:57.243 --> 00:03:00.179
+é definido pelo número
+de camadas no modelo,
+
+00:03:00.213 --> 00:03:01.781
+o tamanho do lote do input
+
+00:03:01.814 --> 00:03:04.884
+e pela dimensão oculta
+que definimos na criação do modelo.
+
+00:03:04.917 --> 00:03:08.454
+Nesta função, vamos inicializar
+os pesos ocultos todos como zero
+
+00:03:08.488 --> 00:03:10.723
+e movê-los para a GPU,
+se estiver disponível.
+
+00:03:10.756 --> 00:03:13.526
+Todo o código que você vê,
+você não precisa mudar.
+
+00:03:13.559 --> 00:03:17.063
+Apenas defina as camadas do modelo
+e seu comportamento.
+
+00:03:17.096 --> 00:03:18.698
+Se implementou corretamente,
+
+00:03:18.731 --> 00:03:21.400
+conseguirá configurar
+os hiperparâmetros do modelo
+
+00:03:21.434 --> 00:03:24.337
+e treinar e gerar
+alguns textos de amostra.
+
+00:03:24.370 --> 00:03:25.771
+Tente sozinho.
+
+00:03:25.805 --> 00:03:27.773
+Em seguida,
+mostro minha solução.
+

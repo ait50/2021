@@ -1,0 +1,394 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.540
+So now, this is my solution for this exercise
+
+00:00:03.540 --> 00:00:08.190
+on calculating the output of this small simple neural network.
+
+00:00:08.189 --> 00:00:12.329
+So, remember that what we want to do is multiply our features by our weights,
+
+00:00:12.330 --> 00:00:14.070
+so features times weights.
+
+00:00:14.070 --> 00:00:18.225
+So these tensors, they work basically the same as NumPy arrays,
+
+00:00:18.225 --> 00:00:19.845
+if you've used NumPy before.
+
+00:00:19.844 --> 00:00:22.769
+So, when you multiply features times weights,
+
+00:00:22.769 --> 00:00:25.320
+it'll just take the first element from each one, multiply them together,
+
+00:00:25.320 --> 00:00:27.420
+take the second element and multiply them together and so
+
+00:00:27.420 --> 00:00:29.895
+on and give you back a new tensor,
+
+00:00:29.894 --> 00:00:33.060
+where there's element by element multiplication.
+
+00:00:33.060 --> 00:00:37.020
+So, from that we can do torch.sum to sum it all up into one value,
+
+00:00:37.020 --> 00:00:41.100
+add our bias term and then pass it through the activation function and then we get Y.
+
+00:00:41.100 --> 00:00:44.719
+So, we can also do this where we do features times weights again,
+
+00:00:44.719 --> 00:00:46.295
+and this creates another tensor,
+
+00:00:46.295 --> 00:00:48.710
+but tensors have a method.sum,
+
+00:00:48.710 --> 00:00:53.645
+where you just take a tensor do.sum and then it sums up all the values in that tensor.
+
+00:00:53.645 --> 00:00:56.550
+So, we can either do it this way or we do torch.sum,
+
+00:00:56.549 --> 00:00:58.604
+or we can just take this method,
+
+00:00:58.604 --> 00:01:01.429
+this sum method of a tensor and some upper values that way.
+
+00:01:01.429 --> 00:01:04.644
+Again, pass it through our our activation function.
+
+00:01:04.644 --> 00:01:06.439
+So, here what we're doing, we're doing
+
+00:01:06.439 --> 00:01:11.079
+this element wise multiplication and taking the sum in two separate operations.
+
+00:01:11.079 --> 00:01:13.179
+We're doing this multiplication and then we're doing the sum.
+
+00:01:13.180 --> 00:01:17.420
+But you can actually do this in the same operation using matrix multiplication.
+
+00:01:17.420 --> 00:01:19.519
+So, in general, you're going to be wanting to
+
+00:01:19.519 --> 00:01:22.069
+use matrix multiplications most of the time,
+
+00:01:22.069 --> 00:01:24.364
+since they're the more efficient and
+
+00:01:24.364 --> 00:01:30.144
+these linear algebra operations have been accelerated using modern libraries,
+
+00:01:30.144 --> 00:01:32.984
+such as CUDA that run on GPUs.
+
+00:01:32.984 --> 00:01:37.549
+To do matrix multiplication in PyTorch with our two tensors features and weights,
+
+00:01:37.549 --> 00:01:40.310
+we can use one of two methods.
+
+00:01:40.310 --> 00:01:44.875
+So, either torch.mm or torch.matmul.
+
+00:01:44.875 --> 00:01:48.590
+So, torch.mm, so matrix multiplication is more
+
+00:01:48.590 --> 00:01:52.760
+simple and more strict about the tensors that you pass in.
+
+00:01:52.760 --> 00:01:56.420
+So, torch.matmul, it actually supports broadcasting.
+
+00:01:56.420 --> 00:02:02.028
+So, if you put in tensors that have weird sizes,
+
+00:02:02.028 --> 00:02:05.664
+weird shapes, then you could get an output that you're not expecting.
+
+00:02:05.665 --> 00:02:09.495
+So, what I tend to use torch.mm more often,
+
+00:02:09.495 --> 00:02:12.520
+so that it does what I expect basically,
+
+00:02:12.520 --> 00:02:15.710
+and then if I get something wrong it's going throw an error instead of just
+
+00:02:15.710 --> 00:02:19.085
+doing it and continuing the calculations.
+
+00:02:19.085 --> 00:02:21.665
+So, however, if we actually try to use
+
+00:02:21.664 --> 00:02:25.174
+torch.mm with features and weights, we'll get an error.
+
+00:02:25.175 --> 00:02:28.975
+So, here we see RuntimeError, size mismatch.
+
+00:02:28.974 --> 00:02:33.484
+So, what this means is that we passed in our two tensors to torch.mm,
+
+00:02:33.485 --> 00:02:35.810
+but there's a mismatch in the sizes and it can't actually do
+
+00:02:35.810 --> 00:02:39.814
+the matrix multiplication and it lists out the sizes here.
+
+00:02:39.814 --> 00:02:42.155
+So, the first tensor,
+
+00:02:42.155 --> 00:02:45.905
+M1 is one by five and the second tensor is one by five also.
+
+00:02:45.905 --> 00:02:51.360
+So, if you remember from your linear algebra classes or if you studied it recently,
+
+00:02:51.360 --> 00:02:53.425
+when you're doing matrix multiplication,
+
+00:02:53.425 --> 00:02:56.689
+the first matrix has to have a number of
+
+00:02:56.689 --> 00:03:00.520
+columns that's equal to the number of rows in the second matrix.
+
+00:03:00.520 --> 00:03:04.245
+So, really what we need is we need our weights tensor,
+
+00:03:04.245 --> 00:03:07.765
+our weights matrix to be five by one instead of one by five.
+
+00:03:07.764 --> 00:03:11.338
+To checkout the shape of tensors,
+
+00:03:11.338 --> 00:03:13.365
+as you're building your networks,
+
+00:03:13.365 --> 00:03:15.210
+you want to use tensor.shape.
+
+00:03:15.210 --> 00:03:18.500
+So, this is something you're going to be using all the time in PyTorch,
+
+00:03:18.500 --> 00:03:22.889
+but also in TensorFlow and in other deep learning frameworks So,
+
+00:03:22.889 --> 00:03:25.759
+most of the errors you're going to see when you're building networks and
+
+00:03:25.759 --> 00:03:28.909
+just a lot of the difficulty when it comes to
+
+00:03:28.909 --> 00:03:32.240
+designing the architecture of neural networks is getting
+
+00:03:32.240 --> 00:03:35.780
+the shapes of your tensors to work right together.
+
+00:03:35.780 --> 00:03:38.014
+So, what that means is that a large part of debugging,
+
+00:03:38.014 --> 00:03:39.980
+you're actually going to be trying to look at
+
+00:03:39.979 --> 00:03:42.634
+the shape of your tensors as they're going through your network.
+
+00:03:42.634 --> 00:03:45.169
+So, remember this, tensor.shape.
+
+00:03:45.169 --> 00:03:47.689
+So, for reshaping tensors,
+
+00:03:47.689 --> 00:03:49.789
+there are three, in general,
+
+00:03:49.789 --> 00:03:51.859
+three different options to choose from.
+
+00:03:51.860 --> 00:03:53.045
+So, we have these methods;
+
+00:03:53.044 --> 00:03:56.074
+reshape, resize, and view.
+
+00:03:56.074 --> 00:03:58.204
+The way these all work, in general,
+
+00:03:58.205 --> 00:04:01.105
+is that you take your tensor
+
+00:04:01.104 --> 00:04:04.804
+weights.reshape and then pass in the new shape that you want.
+
+00:04:04.805 --> 00:04:05.930
+So, in this case,
+
+00:04:05.930 --> 00:04:08.900
+you want to change our weights to be a five by one matrix,
+
+00:04:08.900 --> 00:04:11.629
+so we'd say.reshape and then five comma one.
+
+00:04:11.629 --> 00:04:15.319
+So, reshape here, what it will do is it's going to
+
+00:04:15.319 --> 00:04:18.750
+return a new tensor with the same data as weights.
+
+00:04:18.750 --> 00:04:22.595
+So, the same data that's sitting in memory at those addresses in memory.
+
+00:04:22.595 --> 00:04:24.275
+So, it's going to basically just create
+
+00:04:24.274 --> 00:04:27.774
+a new tensor that has the shape that you requested,
+
+00:04:27.774 --> 00:04:31.774
+but the actual data in memory isn't being changed.
+
+00:04:31.774 --> 00:04:33.739
+But that's only sometimes.
+
+00:04:33.740 --> 00:04:38.569
+Sometimes it does return a clone and what that means is that it actually
+
+00:04:38.569 --> 00:04:41.089
+copies the data to another part of memory and then returns
+
+00:04:41.089 --> 00:04:44.214
+you a tensor on top of that part of the memory.
+
+00:04:44.214 --> 00:04:47.049
+As you can imagine when it actually does that,
+
+00:04:47.050 --> 00:04:50.079
+when it's copying the data that's less efficient than if you had
+
+00:04:50.079 --> 00:04:54.079
+just changed the shape of your tensor without cloning the data.
+
+00:04:54.079 --> 00:04:55.259
+To do something like that,
+
+00:04:55.259 --> 00:04:58.050
+we can use resize, where there's underscore at the end.
+
+00:04:58.050 --> 00:05:02.884
+The underscore means that this method is an in-place operation.
+
+00:05:02.884 --> 00:05:04.235
+So, when it's in-place,
+
+00:05:04.235 --> 00:05:06.220
+that basically means that you're just not touching the data
+
+00:05:06.220 --> 00:05:08.140
+at all and all you're doing is changing
+
+00:05:08.139 --> 00:05:12.574
+the tensor that's sitting on top of that addressed data in memory.
+
+00:05:12.574 --> 00:05:16.435
+The problem with the resize method is that if you request
+
+00:05:16.435 --> 00:05:20.560
+a shape that has more or less elements than the original tensor,
+
+00:05:20.560 --> 00:05:23.470
+then you can actually cut off,
+
+00:05:23.470 --> 00:05:26.305
+you can actually lose some of the data that you had or you can
+
+00:05:26.305 --> 00:05:30.004
+create this spurious data from uninitialized memory.
+
+00:05:30.004 --> 00:05:32.509
+So instead, what you typically want is
+
+00:05:32.509 --> 00:05:35.779
+that you want a method that's going to return an error
+
+00:05:35.779 --> 00:05:38.029
+if you changed the shape from
+
+00:05:38.029 --> 00:05:41.554
+the original number of elements to a different number of elements.
+
+00:05:41.555 --> 00:05:43.644
+So, we can actually do that with.view.
+
+00:05:43.644 --> 00:05:46.870
+So.view is the one that I use the most,
+
+00:05:46.870 --> 00:05:49.535
+and basically what it does it just returns a new tensor
+
+00:05:49.535 --> 00:05:52.985
+with the same data in memory as weights.
+
+00:05:52.985 --> 00:05:55.345
+This is just all the time, 100 percent of the time,
+
+00:05:55.345 --> 00:05:57.620
+all it's going to do is return a new tensor without
+
+00:05:57.620 --> 00:06:00.155
+messing with any of the data in memory.
+
+00:06:00.154 --> 00:06:03.754
+If you tried to get a new size,
+
+00:06:03.754 --> 00:06:08.250
+a new shape for your tensor with a different number of elements,
+
+00:06:08.250 --> 00:06:09.884
+it'll return an error.
+
+00:06:09.884 --> 00:06:12.909
+So, you are basically using.view,
+
+00:06:12.910 --> 00:06:15.035
+you're ensuring that you will always get
+
+00:06:15.035 --> 00:06:17.905
+the same number of elements when you change the shape of your weights.
+
+00:06:17.904 --> 00:06:21.739
+So, this is why I typically use when I'm reshaping tensors.
+
+00:06:21.740 --> 00:06:23.555
+So, with all that out of the way,
+
+00:06:23.555 --> 00:06:27.110
+if you want to reshape weights to have five rows and one column,
+
+00:06:27.110 --> 00:06:30.420
+then you can use something like weights.view (5, 1), right.
+
+00:06:30.420 --> 00:06:33.155
+So, now, that you have seen how you can change
+
+00:06:33.154 --> 00:06:37.279
+the shape of a tensor and also do matrix multiplication,
+
+00:06:37.279 --> 00:06:39.829
+so this time I want you to calculate the output of
+
+00:06:39.829 --> 00:06:43.329
+this little neural network using matrix multiplication.
+

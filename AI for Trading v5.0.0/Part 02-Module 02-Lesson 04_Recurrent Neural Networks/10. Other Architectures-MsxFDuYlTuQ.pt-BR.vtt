@@ -1,0 +1,134 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:03.050
+Neste vídeo, vou mostrar
+um par de arquiteturas similares
+
+00:00:03.100 --> 00:00:04.400
+que também funcionam bem.
+
+00:00:04.450 --> 00:00:06.500
+Mas há muitas variações
+das LSTMs,
+
+00:00:06.550 --> 00:00:09.000
+e o encorajamos
+a estudá-las a fundo.
+
+00:00:09.050 --> 00:00:11.750
+Eis uma arquitetura simples
+que funciona bem.
+
+00:00:11.800 --> 00:00:14.100
+É chamada
+de "Gated Recurrent Unit",
+
+00:00:14.150 --> 00:00:15.900
+ou pela sigla GRU.
+
+00:00:15.950 --> 00:00:17.750
+Ela combina esquecimento
+e aprendizagem
+
+00:00:17.800 --> 00:00:19.100
+em uma porta atualização
+
+00:00:19.150 --> 00:00:21.300
+e depois a submete
+a uma porta combinação.
+
+00:00:21.350 --> 00:00:22.950
+Só retorna
+uma memória funcional,
+
+00:00:23.000 --> 00:00:25.350
+em vez de um par de memórias
+de longo e curto prazo,
+
+00:00:25.400 --> 00:00:28.050
+mas parece funcionar
+muito bem na prática.
+
+00:00:28.100 --> 00:00:29.500
+Não vou me alongar,
+
+00:00:29.550 --> 00:00:32.150
+mas, nas notas do instrutor,
+deixarei recomendações
+
+00:00:32.200 --> 00:00:35.150
+para aprender mais
+sobre GRUs.
+
+00:00:35.200 --> 00:00:38.350
+Outra observação: vamos nos lembrar
+da porta esquecimento.
+
+00:00:38.400 --> 00:00:41.500
+O fator de esquecimento ft
+foi calculado usando, como entrada,
+
+00:00:41.550 --> 00:00:44.650
+uma combinação da memória
+de curto prazo e do evento.
+
+00:00:44.700 --> 00:00:46.400
+Mas e a memória
+de longo prazo?
+
+00:00:46.450 --> 00:00:48.850
+Parece que a excluímos
+da decisão.
+
+00:00:48.900 --> 00:00:53.150
+Por que ela não tem voz
+sobre o que é lembrado ou não?
+
+00:00:53.200 --> 00:00:54.300
+Vamos corrigir isso.
+
+00:00:54.350 --> 00:00:56.250
+E vamos conectar
+a memória de longo prazo
+
+00:00:56.300 --> 00:00:59.700
+à rede neural
+que calcula o fator de esquecimento.
+
+00:00:59.750 --> 00:01:02.550
+Matematicamente, significa
+que a matriz de entrada é maior,
+
+00:01:02.600 --> 00:01:04.450
+já que a estamos
+concatenando
+
+00:01:04.500 --> 00:01:06.400
+com a matriz da memória
+de longo prazo.
+
+00:01:06.450 --> 00:01:07.900
+Chama-se
+"Conexão Olho-Mágico".
+
+00:01:07.950 --> 00:01:10.000
+A memória de longo prazo
+agora tem mais acesso
+
+00:01:10.050 --> 00:01:12.900
+às decisões feitas
+dentro da LSTM.
+
+00:01:12.950 --> 00:01:15.500
+Podemos fazer isso em cada um
+dos nós tipo esquecimento,
+
+00:01:15.550 --> 00:01:17.100
+e é isto que obtemos:
+
+00:01:17.150 --> 00:01:19.700
+uma LSTM
+com Conexões Olho-Mágico.
+

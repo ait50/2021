@@ -1,0 +1,282 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Sequence Batching
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Recurrent Neural Networks
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro to RNNs.html">
+       01. Intro to RNNs
+      </a>
+     </li>
+     <li class="">
+      <a href="02. RNN vs LSTM.html">
+       02. RNN vs LSTM
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Basics of LSTM.html">
+       03. Basics of LSTM
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Architecture of LSTM.html">
+       04. Architecture of LSTM
+      </a>
+     </li>
+     <li class="">
+      <a href="05. The Learn Gate.html">
+       05. The Learn Gate
+      </a>
+     </li>
+     <li class="">
+      <a href="06. The Forget Gate.html">
+       06. The Forget Gate
+      </a>
+     </li>
+     <li class="">
+      <a href="07. The Remember Gate.html">
+       07. The Remember Gate
+      </a>
+     </li>
+     <li class="">
+      <a href="08. The Use Gate.html">
+       08. The Use Gate
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Putting it All Together.html">
+       09. Putting it All Together
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Other architectures.html">
+       10. Other architectures
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Implementing RNNs.html">
+       11. Implementing RNNs
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Time-Series Prediction.html">
+       12. Time-Series Prediction
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Training &amp; Memory.html">
+       13. Training &amp; Memory
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Character-wise RNNs.html">
+       14. Character-wise RNNs
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Sequence Batching.html">
+       15. Sequence Batching
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Notebook Character-Level RNN.html">
+       16. Notebook: Character-Level RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Implementing a Char-RNN.html">
+       17. Implementing a Char-RNN
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Batching Data, Solution.html">
+       18. Batching Data, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Defining the Model.html">
+       19. Defining the Model
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Char-RNN, Solution.html">
+       20. Char-RNN, Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Making Predictions.html">
+       21. Making Predictions
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          15. Sequence Batching
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Sequence-Batching
+         </p>
+        </h3>
+        <video controls="">
+         <source src="15. Sequence-Batching-Z4OiyU0Cldg.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="15. Sequence-Batching-Z4OiyU0Cldg.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="15. Sequence-Batching-Z4OiyU0Cldg.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="true" kind="subtitles" label="en" src="15. Sequence-Batching-Z4OiyU0Cldg.en.vtt" srclang="en"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="16. Notebook Character-Level RNN.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('15. Sequence Batching')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

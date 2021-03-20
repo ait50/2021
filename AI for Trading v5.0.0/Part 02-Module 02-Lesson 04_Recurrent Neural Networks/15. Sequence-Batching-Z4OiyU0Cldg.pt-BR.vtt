@@ -1,0 +1,116 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.334 --> 00:00:03.270
+Uma das partes que eu acho
+mais difíceis ao construir redes
+
+00:00:03.303 --> 00:00:04.872
+é fazer os lotes direito.
+
+00:00:04.905 --> 00:00:09.176
+É um problema de programação
+que não tem a ver com deep learning.
+
+00:00:09.209 --> 00:00:14.114
+Então aqui eu vou mostrar
+como os lotes funcionam nas RNNs.
+
+00:00:14.147 --> 00:00:16.984
+Nas RNNs, trabalhamos
+com sequências de dados,
+
+00:00:17.017 --> 00:00:20.821
+como textos, valores de ações,
+áudio etc.
+
+00:00:20.854 --> 00:00:24.358
+Ao pegar uma sequência e dividi-la
+em várias sequências menores,
+
+00:00:24.391 --> 00:00:26.727
+podemos tirar proveito
+das operações matriciais
+
+00:00:26.760 --> 00:00:28.795
+para tornar o treinamento
+mais eficiente.
+
+00:00:28.829 --> 00:00:33.834
+Na verdade, a RNN treina
+em várias sequências em paralelo.
+
+00:00:33.867 --> 00:00:38.405
+Vejamos um exemplo simples:
+uma sequência de números de 1 a 12.
+
+00:00:38.438 --> 00:00:41.642
+Podemos passá-los para a RNN
+como uma sequência única,
+
+00:00:41.675 --> 00:00:44.211
+mas o melhor
+é dividir a sequência em dois
+
+00:00:44.244 --> 00:00:46.480
+e passar duas sequências.
+
+00:00:46.513 --> 00:00:49.983
+O tamanho do lote corresponde
+ao número de sequências que usamos.
+
+00:00:50.017 --> 00:00:53.086
+Aqui vamos considerar
+que o tamanho do lote é 2.
+
+00:00:53.120 --> 00:00:56.190
+Além disso, nós também escolhemos
+o comprimento das sequências
+
+00:00:56.223 --> 00:00:57.558
+que alimentamos à rede.
+
+00:00:57.591 --> 00:01:01.094
+Por exemplo, vamos considerar
+que o comprimento de sequência é 3.
+
+00:01:01.128 --> 00:01:03.630
+O 1º lote de dados
+que passamos para a rede
+
+00:01:03.664 --> 00:01:06.967
+são os 3 primeiros valores
+de cada mini-sequência.
+
+00:01:07.000 --> 00:01:09.303
+O lote seguinte contém
+os 3 valores seguintes
+
+00:01:09.336 --> 00:01:11.805
+e assim por diante,
+até esgotarmos todos os dados.
+
+00:01:11.839 --> 00:01:14.174
+Podemos reter
+o estado oculto de um lote
+
+00:01:14.207 --> 00:01:16.443
+e usá-lo
+no início do próximo lote.
+
+00:01:16.476 --> 00:01:18.979
+Deste modo, a informação
+da sequência é transferida
+
+00:01:19.012 --> 00:01:21.415
+ao longo dos lotes
+de cada mini-sequência.
+
+00:01:21.815 --> 00:01:26.053
+Em seguida, você vai ver
+como construir uma rede recorrente.
+
+00:01:26.086 --> 00:01:27.087
+Valeu!
+

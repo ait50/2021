@@ -1,0 +1,355 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.740
+Hello everyone and welcome to this lesson on deep learning with PyTorch.
+
+00:00:04.740 --> 00:00:07.530
+So, in this lesson I'm going to be showing you how we can
+
+00:00:07.530 --> 00:00:11.400
+build neural networks with pyTorch and train them.
+
+00:00:11.400 --> 00:00:14.220
+By working through all these notebooks I built,
+
+00:00:14.220 --> 00:00:18.914
+you'll be writing the actual code yourself for building these networks.
+
+00:00:18.914 --> 00:00:21.794
+By the end of the lesson,
+
+00:00:21.795 --> 00:00:25.125
+you will have built your own state of the art image classifier.
+
+00:00:25.125 --> 00:00:27.059
+But first we're going to start with basics,
+
+00:00:27.059 --> 00:00:31.604
+so how do you build just a simple neural network in pyTorch?
+
+00:00:31.605 --> 00:00:34.905
+So, as a reminder of how neural networks work,
+
+00:00:34.905 --> 00:00:38.469
+in general we have some input values so here x1,
+
+00:00:38.469 --> 00:00:43.460
+x2, and we multiply them by some weights w and bias.
+
+00:00:43.460 --> 00:00:47.645
+So, this b is this bias we just multiply it by one then you sum all these up
+
+00:00:47.645 --> 00:00:52.220
+and you get some value h. Then we have what's called an activation function.
+
+00:00:52.219 --> 00:00:54.875
+So, here f of h and passing
+
+00:00:54.875 --> 00:00:59.829
+these input values h through this activation function gets you output y.
+
+00:00:59.829 --> 00:01:02.929
+This is the basis of neural networks.
+
+00:01:02.929 --> 00:01:04.069
+You have these inputs,
+
+00:01:04.069 --> 00:01:06.125
+you multiply it by some waves, take the sum,
+
+00:01:06.125 --> 00:01:10.435
+pass it through some activation function and you get an output.
+
+00:01:10.435 --> 00:01:13.879
+You can stack these up so that the output of these units,
+
+00:01:13.879 --> 00:01:18.250
+of these neurons go to another layer like another set of weights.
+
+00:01:18.250 --> 00:01:20.834
+So, mathematically this what it looks like, y,
+
+00:01:20.834 --> 00:01:26.959
+our output is equal to this linear combination of the weights and
+
+00:01:26.959 --> 00:01:30.319
+the input values w's and x's plus your bias value
+
+00:01:30.319 --> 00:01:34.069
+b passes through your activation function f and you get y.
+
+00:01:34.069 --> 00:01:36.109
+You could also write it with this sum.
+
+00:01:36.109 --> 00:01:40.510
+So, sum of wi times xi and plus b, your bias term.
+
+00:01:40.510 --> 00:01:42.344
+That gives you y.
+
+00:01:42.344 --> 00:01:46.640
+So, what's nice about this is that you can actually think of the x's,
+
+00:01:46.640 --> 00:01:49.519
+your input features, your values,
+
+00:01:49.519 --> 00:01:52.685
+as a vector, and your weights as another vector.
+
+00:01:52.685 --> 00:01:58.799
+So, your multiplication and sum is the same as a dot or inner product of two vectors.
+
+00:01:58.799 --> 00:02:01.864
+So, if you consider your input as a vector and your weights as a vector,
+
+00:02:01.864 --> 00:02:03.859
+if you take the dot product of these two,
+
+00:02:03.859 --> 00:02:06.784
+then you get your value h and then you pass
+
+00:02:06.784 --> 00:02:09.859
+h through your activation function and that gets you your output y.
+
+00:02:09.860 --> 00:02:16.430
+So, now if we start thinking of our weights and our input values as vectors,
+
+00:02:16.430 --> 00:02:20.330
+so vectors are an instance of a tensor.
+
+00:02:20.330 --> 00:02:24.350
+So, a tensor is just a generalization of vectors and matrices.
+
+00:02:24.349 --> 00:02:27.949
+So, when you have these like regular structured arrangements of
+
+00:02:27.949 --> 00:02:32.284
+values and so a tensor with only one dimension is a vector.
+
+00:02:32.284 --> 00:02:37.400
+So, we just have this single one-dimensional array of values.
+
+00:02:37.400 --> 00:02:42.664
+So, in this case characters T-E-N-S-O-R. A matrix like this is
+
+00:02:42.664 --> 00:02:46.370
+a two-dimensional tensor and so we have values going in
+
+00:02:46.370 --> 00:02:48.830
+two directions from left to right and from top to
+
+00:02:48.830 --> 00:02:51.620
+bottom and so that we have individual rows and columns.
+
+00:02:51.620 --> 00:02:54.500
+So, you can do operations across the columns like
+
+00:02:54.500 --> 00:02:58.490
+along a row or you can do it across the rows like going down a column.
+
+00:02:58.490 --> 00:03:01.745
+You also have three-dimensional tensors so you can think of
+
+00:03:01.745 --> 00:03:05.990
+an image like an RGB color image as a three-dimensional tensor.
+
+00:03:05.990 --> 00:03:07.370
+So, for every pixel,
+
+00:03:07.370 --> 00:03:10.490
+there's some value for all the red and the green
+
+00:03:10.490 --> 00:03:13.765
+and the blue channels and so for every individual pixel,
+
+00:03:13.764 --> 00:03:15.629
+in a two-dimensional image,
+
+00:03:15.629 --> 00:03:17.069
+you have three values.
+
+00:03:17.069 --> 00:03:19.155
+So, that is a three-dimensional tensor.
+
+00:03:19.155 --> 00:03:21.800
+Like I said before, tensors are a generalization of
+
+00:03:21.800 --> 00:03:24.379
+this so you can actually have four-dimensional,
+
+00:03:24.378 --> 00:03:27.709
+five-dimensional, six-dimensional, and so on like tensors.
+
+00:03:27.710 --> 00:03:29.930
+It's just the ones that we normally work with are
+
+00:03:29.930 --> 00:03:32.800
+one and two-dimensional, three-dimensional tensors.
+
+00:03:32.800 --> 00:03:36.695
+So, these tensors are the base data structure that you use
+
+00:03:36.694 --> 00:03:40.715
+an pyTorch and other neural network frameworks.
+
+00:03:40.715 --> 00:03:43.759
+So, TensorFlow is named after tensors.
+
+00:03:43.759 --> 00:03:46.579
+So, these are the base data structures that
+
+00:03:46.580 --> 00:03:49.520
+you'll be using so you pretty much need to understand
+
+00:03:49.520 --> 00:03:52.310
+them really well to be able to use
+
+00:03:52.310 --> 00:03:55.865
+pretty much any framework that you'll be using for deep learning.
+
+00:03:55.865 --> 00:03:59.689
+So, let's get started. I'm going to show you how to actually create
+
+00:03:59.689 --> 00:04:03.604
+some tensors and use them to build a simple neural network.
+
+00:04:03.604 --> 00:04:07.564
+So, first we're going to import pyTorch and so just import torch here.
+
+00:04:07.564 --> 00:04:09.770
+Here I am creating activation function,
+
+00:04:09.770 --> 00:04:12.355
+so this is the Sigmoid activation function.
+
+00:04:12.354 --> 00:04:17.879
+It's the nice s shape that kind of squeezes the input values between zero and one.
+
+00:04:17.879 --> 00:04:21.064
+It's really useful for providing a probability.
+
+00:04:21.064 --> 00:04:25.194
+So, probabilities are these values that can only be between zero and one.
+
+00:04:25.194 --> 00:04:27.769
+So, you're Sigmoid activation if you want
+
+00:04:27.769 --> 00:04:30.560
+the output of your neural network to be a probability,
+
+00:04:30.560 --> 00:04:33.060
+then the sigmoid activation is what you want to use.
+
+00:04:33.060 --> 00:04:38.120
+So, here I'm going to create some fake data, I'm generating some data,
+
+00:04:38.120 --> 00:04:41.240
+I'm generating some weights and biases and with these you're actually going to
+
+00:04:41.240 --> 00:04:44.814
+do the computations to get the output of a simple neural network.
+
+00:04:44.814 --> 00:04:47.519
+So, here I'm just creating a manual seeds.
+
+00:04:47.519 --> 00:04:50.299
+So, I'm setting the seed for the random number generation that I'll
+
+00:04:50.300 --> 00:04:53.254
+be using and here I'm creating features.
+
+00:04:53.254 --> 00:04:57.605
+So, features are like the input features of the input data for your network.
+
+00:04:57.605 --> 00:05:00.150
+Here we see torch.randn.
+
+00:05:00.149 --> 00:05:04.909
+So, randn is going to create a tensor of normal variables.
+
+00:05:04.910 --> 00:05:08.180
+So, random normal variables as samples from a normal distribution.
+
+00:05:08.180 --> 00:05:11.250
+You give it a tuple of the size that you want.
+
+00:05:11.250 --> 00:05:15.605
+So, in this case I want the features to be a matrix,
+
+00:05:15.605 --> 00:05:20.675
+a 2-dimensional tensor of one row and five columns.
+
+00:05:20.675 --> 00:05:25.800
+So, you can think of this as a row vector that has five elements.
+
+00:05:25.800 --> 00:05:28.610
+For the weights, we're going to create another matrix
+
+00:05:28.610 --> 00:05:33.270
+of random normal variables and this time I'm using randn_like.
+
+00:05:33.269 --> 00:05:35.990
+So, what this does is it takes
+
+00:05:35.990 --> 00:05:39.259
+another tensor and it looks at the shape of this tensor and then it creates it,
+
+00:05:39.259 --> 00:05:41.329
+it creates another tensor with the same shape.
+
+00:05:41.329 --> 00:05:42.769
+So, that's what this this like means.
+
+00:05:42.769 --> 00:05:44.930
+So, I'm going to create a tensor of
+
+00:05:44.930 --> 00:05:50.115
+random normal variables with the same shape as features. So, it gives me my weights.
+
+00:05:50.115 --> 00:05:53.115
+Then I'm going to create a bias term.
+
+00:05:53.115 --> 00:05:56.240
+So, this is again just a random normal variable.
+
+00:05:56.240 --> 00:05:58.699
+Now I'm just creating one value.
+
+00:05:58.699 --> 00:06:00.714
+So, this is one row and one column.
+
+00:06:00.714 --> 00:06:03.349
+Here I'm going to leave this exercise up to you.
+
+00:06:03.350 --> 00:06:06.050
+So, what you're going to be doing is taking the features, weights,
+
+00:06:06.050 --> 00:06:08.449
+and the bias tensors and you're going to
+
+00:06:08.449 --> 00:06:11.029
+calculate the output of this simple neural network.
+
+00:06:11.029 --> 00:06:13.609
+So, remember with features and weights you want to take
+
+00:06:13.610 --> 00:06:17.389
+the inner product or you want to multiply the features by
+
+00:06:17.389 --> 00:06:20.779
+the weights and sum them up and then add the bias and then pass it through
+
+00:06:20.779 --> 00:06:26.000
+the activation function and from that you should get the output of your network.
+
+00:06:26.000 --> 00:06:27.680
+So, if you want to see how I did this,
+
+00:06:27.680 --> 00:06:30.379
+checkout my solution notebook or watch
+
+00:06:30.379 --> 00:06:34.129
+the next video which I'll show you my solution for this exercise.
+

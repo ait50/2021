@@ -1,0 +1,111 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.214 --> 00:00:02.978
+Bem-vindo de volta.
+Então, neste Notebook,
+
+00:00:03.012 --> 00:00:05.757
+você vai construir
+a sua própria rede neural
+
+00:00:05.791 --> 00:00:08.685
+para classificar
+imagens de roupas.
+
+00:00:08.724 --> 00:00:10.761
+Como eu falei no último vídeo,
+
+00:00:10.795 --> 00:00:14.267
+O MNIST é um conjunto de dados
+bem trivial nos dias de hoje.
+
+00:00:14.301 --> 00:00:18.889
+É bem fácil obter precisão
+uma muito alta com uma rede neural.
+
+00:00:18.923 --> 00:00:21.619
+Ao invés disso, você vai usar
+o Fashion-MNIST,
+
+00:00:21.653 --> 00:00:24.293
+que é basicamente
+um substituto para o MNIST,
+
+00:00:24.327 --> 00:00:26.929
+então temos imagens 28x28
+em escala de cinza,
+
+00:00:26.963 --> 00:00:28.332
+mas desta vez é roupa.
+
+00:00:28.366 --> 00:00:31.481
+Você tem muito mais variação
+nas classes
+
+00:00:31.515 --> 00:00:36.148
+e acaba sendo muito mais difícil
+classificar
+
+00:00:36.182 --> 00:00:38.777
+já que há camisetas,
+calças, suéteres, calçados,
+
+00:00:38.811 --> 00:00:41.275
+em vez de dígitos manuscritos.
+
+00:00:41.309 --> 00:00:43.827
+Então é uma representação melhor
+dos conjuntos de dados
+
+00:00:43.861 --> 00:00:45.828
+que você usaria no mundo real.
+
+00:00:45.862 --> 00:00:50.218
+É com você construir
+uma rede e treiná-la.
+
+00:00:50.252 --> 00:00:52.877
+Aqui você pode definir
+a arquitetura da rede,
+
+00:00:52.911 --> 00:00:55.515
+e aqui vai criar a rede
+
+00:00:55.549 --> 00:00:57.713
+para encontrar
+o otimizador de critério
+
+00:00:57.747 --> 00:01:00.115
+e depois escreve o código
+para o passe de treinamento.
+
+00:01:00.149 --> 00:01:05.161
+Depois de construir
+e treinar a rede, pode testar ela.
+
+00:01:05.195 --> 00:01:08.050
+Aqui você faz um forward pass,
+obtém os logits,
+
+00:01:08.084 --> 00:01:11.551
+calcula as probabilidades de classe,
+talvez a saída da sua rede,
+
+00:01:11.585 --> 00:01:15.640
+e depois passa uma dessas imagens
+do conjunto de testes
+
+00:01:15.674 --> 00:01:19.366
+e verifica se a rede pode
+prever corretamente.
+
+00:01:19.400 --> 00:01:22.416
+Se quiser ver a minha solução,
+está no próximo Notebook, parte 5,
+
+00:01:22.450 --> 00:01:24.563
+e você também a verá
+no próximo vídeo. Até mais!
+

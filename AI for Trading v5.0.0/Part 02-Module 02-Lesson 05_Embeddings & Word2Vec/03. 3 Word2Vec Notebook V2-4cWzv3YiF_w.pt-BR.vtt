@@ -1,0 +1,374 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.467 --> 00:00:02.269
+Neste notebook, vou guiar você
+
+00:00:02.302 --> 00:00:05.105
+durante uma implementação
+de Word2Vec no PyTorch.
+
+00:00:05.138 --> 00:00:09.075
+Você acabou de aprender
+sobre embeddings em geral.
+
+00:00:09.109 --> 00:00:11.178
+Conjuntos de dados
+com várias classes
+
+00:00:11.211 --> 00:00:14.147
+ou dimensões de input,
+como um grande vocabulário,
+
+00:00:14.181 --> 00:00:16.750
+pulam a parte
+da codificação one-hot,
+
+00:00:16.783 --> 00:00:20.854
+que resultaria em grandes vetores
+basicamente só com zeros.
+
+00:00:20.887 --> 00:00:23.957
+E aproveitamos o fato
+de que, quando vetores one-hot
+
+00:00:23.990 --> 00:00:26.158
+são multiplicados
+por uma matriz de pesos,
+
+00:00:26.192 --> 00:00:28.628
+recebemos uma fileira
+de valores de volta.
+
+00:00:28.662 --> 00:00:31.131
+Por exemplo, se temos
+um vetor one-hot
+
+00:00:31.164 --> 00:00:32.966
+que tem quatro índices
+
+00:00:32.999 --> 00:00:34.968
+e o multiplicarmos
+pela matriz de pesos,
+
+00:00:35.001 --> 00:00:37.771
+receberemos a quarta linha
+de pesos como resultado.
+
+00:00:37.804 --> 00:00:40.841
+Então podemos colocar
+números de input
+
+00:00:40.874 --> 00:00:42.342
+em vez de vetores one-hot.
+
+00:00:42.375 --> 00:00:44.578
+E com uma matriz
+de embedding de pesos,
+
+00:00:44.611 --> 00:00:46.346
+podemos procurar
+o output correto.
+
+00:00:46.379 --> 00:00:48.014
+Aqui, vemos
+que a palavra "heart"
+
+00:00:48.048 --> 00:00:50.584
+é codificada
+como o inteiro 958.
+
+00:00:50.617 --> 00:00:53.353
+E podemos achar o vetor
+de embedding para esta palavra
+
+00:00:53.386 --> 00:00:56.756
+na 958ª linha de uma matriz
+de embedding de peso.
+
+00:00:56.790 --> 00:00:59.392
+Isto costuma ser chamado
+de "tabela de pesquisa".
+
+00:00:59.426 --> 00:01:01.595
+Em análise de texto,
+isto é ótimo,
+
+00:01:01.628 --> 00:01:03.463
+porque sabemos
+que podemos converter
+
+00:01:03.496 --> 00:01:06.433
+um vocabulário de palavras
+em tokens inteiros.
+
+00:01:06.466 --> 00:01:09.970
+Então cada palavra terá
+um valor inteiro correspondente.
+
+00:01:10.003 --> 00:01:13.173
+E se tivermos um vocabulário
+de 10 mil palavras,
+
+00:01:13.206 --> 00:01:15.842
+teremos uma matriz de embedding
+de 10 mil linhas,
+
+00:01:15.876 --> 00:01:18.144
+onde achamos
+os valores corretos de output.
+
+00:01:18.178 --> 00:01:19.446
+Os valores de output,
+
+00:01:19.479 --> 00:01:22.082
+que serão linhas
+nesta matriz de pesos,
+
+00:01:22.115 --> 00:01:25.018
+serão uma representação de vetor
+da palavra de input.
+
+00:01:25.051 --> 00:01:27.320
+Estas representações
+se chamam "embeddings",
+
+00:01:27.354 --> 00:01:28.822
+e têm tantos valores
+
+00:01:28.855 --> 00:01:31.157
+quanto esta matriz de pesos tem
+colunas.
+
+00:01:31.191 --> 00:01:33.627
+E a largura é chamada
+de "dimensão de embedding",
+
+00:01:33.660 --> 00:01:35.795
+normalmente é um valor
+na casa dos 100.
+
+00:01:35.829 --> 00:01:38.398
+Word2Vec é
+um algoritmo especial,
+
+00:01:38.431 --> 00:01:39.633
+que basicamente diz que
+
+00:01:39.666 --> 00:01:43.303
+qualquer palavra que apareça
+no mesmo contexto em um texto
+
+00:01:43.336 --> 00:01:45.572
+deve ter uma representação vetorial
+similar.
+
+00:01:45.605 --> 00:01:48.542
+Contexto, neste caso,
+significa palavras
+
+00:01:48.575 --> 00:01:51.209
+que vêm antes ou após
+uma palavra de interesse.
+
+00:01:51.242 --> 00:01:53.346
+Aqui temos alguns exemplos.
+
+00:01:53.380 --> 00:01:56.483
+Em um corpo de texto,
+você encontra várias frases,
+
+00:01:56.516 --> 00:01:59.352
+e elas envolvem tomar
+algum tipo de bebida.
+
+00:01:59.386 --> 00:02:02.389
+Em alguns casos, mesmo ao retirar
+uma palavra de interesse,
+
+00:02:02.422 --> 00:02:04.391
+você ainda adivinha
+a palavra que falta
+
+00:02:04.424 --> 00:02:06.960
+baseado no contexto
+das palavras em volta.
+
+00:02:06.993 --> 00:02:09.896
+Aqui diz: "Frequentemente
+bebo café de manhã",
+
+00:02:09.930 --> 00:02:11.598
+"Quando tenho sede,
+bebo água."
+
+00:02:11.631 --> 00:02:13.500
+e "Bebo chá antes
+de ir dormir."
+
+00:02:13.533 --> 00:02:15.969
+Mencionar "bebo"
+antes das palavras
+
+00:02:16.002 --> 00:02:18.104
+torna o contexto similar.
+
+00:02:18.138 --> 00:02:20.974
+Então espero que as palavras
+"café", "água" e "chá"
+
+00:02:21.007 --> 00:02:23.176
+tenham embeddings de palavra
+semelhantes.
+
+00:02:23.210 --> 00:02:25.846
+Imagine que,
+se olharmos um texto maior,
+
+00:02:25.879 --> 00:02:30.817
+veremos que "café" é
+mais associado com "manhã".
+
+00:02:30.851 --> 00:02:34.621
+Só olhando uma palavra de interesse
+e o contexto das palavras em volta,
+
+00:02:34.654 --> 00:02:38.925
+o Word2Vec acha similaridades
+e relações entre as palavras.
+
+00:02:38.959 --> 00:02:41.061
+Na verdade,
+para palavras similares,
+
+00:02:41.094 --> 00:02:44.698
+o Word2Vec deve produzir vetores
+bem próximos no espaço vetorial.
+
+00:02:44.731 --> 00:02:47.534
+Palavras diferentes estarão
+distantes umas das outras.
+
+00:02:47.567 --> 00:02:50.637
+Dessa maneira, podemos fazer
+aritmética de vetor.
+
+00:02:50.670 --> 00:02:53.406
+Assim, o Word2Vec pode achar
+mapeamentos entre palavras
+
+00:02:53.440 --> 00:02:55.642
+no passado
+e no presente, por exemplo.
+
+00:02:55.675 --> 00:02:57.944
+Mapear o verbo "beber"
+para "bebendo"
+
+00:02:57.978 --> 00:02:59.479
+e "nadar" para "nadando"
+
+00:02:59.513 --> 00:03:02.215
+será a mesma transformação
+no espaço vetorial.
+
+00:03:02.249 --> 00:03:06.086
+Na prática, o Word2Vec
+é implementado de dois modos:
+
+00:03:06.119 --> 00:03:09.890
+a primeira opção é dar o contexto
+para o modelo,
+
+00:03:09.923 --> 00:03:12.459
+várias palavras cercando
+a palavra de interesse.
+
+00:03:12.492 --> 00:03:14.761
+E ele vai tentar prever
+a palavra que falta.
+
+00:03:14.794 --> 00:03:18.031
+Palavras de contexto dentro,
+e uma única palavra fora.
+
+00:03:18.064 --> 00:03:20.667
+Isto é chamado
+de "continuous bag-of-words"
+
+00:03:20.700 --> 00:03:22.335
+ou modelo CBOW.
+
+00:03:22.369 --> 00:03:24.671
+A segunda opção é o reverso.
+
+00:03:24.704 --> 00:03:26.206
+Inserir a palavra de interesse
+
+00:03:26.272 --> 00:03:28.675
+e fazer o modelo
+tentar descobrir o contexto.
+
+00:03:28.708 --> 00:03:31.811
+Uma palavra dentro
+e palavras de contexto fora.
+
+00:03:31.845 --> 00:03:33.847
+Este é o modelo Skip-Gram.
+
+00:03:33.880 --> 00:03:35.916
+Vamos implementar
+o Word2Vec assim,
+
+00:03:35.949 --> 00:03:37.951
+porque ele funciona
+um pouco melhor.
+
+00:03:37.984 --> 00:03:41.755
+Note que, para os dois modelos,
+teremos que formalizar a ideia
+
+00:03:41.788 --> 00:03:45.058
+de contexto como uma janela
+de um tamanho específico.
+
+00:03:45.091 --> 00:03:48.061
+Algo como duas palavras antes
+e duas palavras depois
+
+00:03:48.094 --> 00:03:49.496
+da palavra de interesse.
+
+00:03:49.529 --> 00:03:52.666
+Aqui, para uma palavra de input w
+em um tempo t,
+
+00:03:52.699 --> 00:03:56.069
+temos palavras de contexto
+de t-2 a t+2.
+
+00:03:56.102 --> 00:03:59.372
+São -2 palavras no passado
+e +2 palavras no futuro.
+
+00:03:59.406 --> 00:04:03.310
+Note que o contexto não inclui
+a palavra de interesse original.
+
+00:04:03.343 --> 00:04:05.812
+Agora que você foi apresentado
+a este notebook
+
+00:04:05.846 --> 00:04:07.714
+e ao modelo Skip-Gram
+do Word2Vec,
+
+00:04:07.747 --> 00:04:10.083
+vou mostrar os dados
+com que trabalharemos
+
+00:04:10.116 --> 00:04:11.885
+e darei
+seu primeiro exercício.
+

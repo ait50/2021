@@ -1,0 +1,379 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.159 --> 00:00:01.908
+Da última vez,
+definimos o modelo.
+
+00:00:01.941 --> 00:00:06.252
+Agora quero instanciá-lo e treinar
+usando os dados de treinamento.
+
+00:00:06.285 --> 00:00:09.026
+Primeiro, vamos especificar
+os hiperparâmetros.
+
+00:00:09.059 --> 00:00:11.075
+O input e o output serão 1,
+
+00:00:11.108 --> 00:00:14.586
+pois processaremos
+uma sequência por vez,
+
+00:00:14.619 --> 00:00:16.461
+e especificaremos
+a dimensão oculta,
+
+00:00:16.494 --> 00:00:20.170
+que será a quantidade de recursos
+que esperamos gerar na camada RNN.
+
+00:00:20.203 --> 00:00:22.828
+Configuramos como 32,
+mas, para poucos dados,
+
+00:00:22.861 --> 00:00:25.052
+podemos até usar menos.
+
+00:00:25.085 --> 00:00:27.088
+E n_layers será igual a 1,
+
+00:00:27.121 --> 00:00:29.915
+pois não empilharei
+nenhuma camada RNN.
+
+00:00:29.948 --> 00:00:32.067
+Criamos a RNN e imprimimos.
+
+00:00:32.100 --> 00:00:33.978
+Vemos as variáveis esperadas:
+
+00:00:34.011 --> 00:00:37.676
+camada RNN, com tamanho de input
+e dimensão oculta, e camada linear,
+
+00:00:37.709 --> 00:00:40.324
+com quantidade de recursos
+e de output.
+
+00:00:40.357 --> 00:00:44.092
+Antes de treinarmos, definimos
+as funções de perda e de otimização.
+
+00:00:44.125 --> 00:00:47.357
+Neste caso, treinamos um modelo
+para gerar pontos de dados
+
+00:00:47.390 --> 00:00:49.645
+que serão
+valores de coordenadas.
+
+00:00:49.678 --> 00:00:52.389
+Para comparar pontos previstos
+e comprovados,
+
+00:00:52.422 --> 00:00:54.038
+usaremos a perda de regressão,
+
+00:00:54.071 --> 00:00:57.820
+pois esta é uma quantidade
+e não uma probabilidade de classe.
+
+00:00:57.853 --> 00:01:00.727
+Para a função de perda,
+usarei o erro quadrático médio,
+
+00:01:00.760 --> 00:01:03.597
+que medirá a distância
+entre dois pontos.
+
+00:01:03.630 --> 00:01:05.284
+Usarei o otimizador Adam,
+
+00:01:05.317 --> 00:01:07.216
+que é padrão
+dos modelos recorrentes,
+
+00:01:07.249 --> 00:01:09.917
+passando os parâmetros
+e a taxa de aprendizagem.
+
+00:01:09.950 --> 00:01:13.565
+A seguir, temos a função train,
+que pegará a RNN,
+
+00:01:13.598 --> 00:01:15.141
+os passos a serem treinados
+
+00:01:15.174 --> 00:01:16.809
+e o parâmetro que determinará
+
+00:01:16.842 --> 00:01:19.285
+quando imprimir
+estatísticas de perda.
+
+00:01:19.318 --> 00:01:23.213
+No início desta função,
+inicializamos o estado oculto.
+
+00:01:23.246 --> 00:01:24.709
+No início, isso será nada,
+
+00:01:24.742 --> 00:01:27.645
+e usaremos zeros
+como padrão de estados ocultos.
+
+00:01:27.678 --> 00:01:30.018
+Agora vejamos o loop do lote.
+
+00:01:30.051 --> 00:01:31.540
+Isto é um pouco incomum,
+
+00:01:31.573 --> 00:01:33.677
+mas estamos gerando dados
+na hora,
+
+00:01:33.710 --> 00:01:36.158
+de acordo
+com os passos de treinamento.
+
+00:01:36.191 --> 00:01:40.629
+Nestas linhas, geramos a sequência
+de 20 valores senoides por vez,
+
+00:01:40.662 --> 00:01:43.117
+como vimos ao gerarmos dados
+no início.
+
+00:01:43.150 --> 00:01:45.772
+Pegamos o input X e o alvo Y,
+
+00:01:45.805 --> 00:01:48.462
+que está a 1 instante
+de tempo no futuro.
+
+00:01:48.495 --> 00:01:50.733
+Aqui eu converto os dados
+em tensores
+
+00:01:50.766 --> 00:01:53.432
+e descomprimo a primeira dimensão
+do x_tensor
+
+00:01:53.465 --> 00:01:55.658
+para que tenha tamanho
+de lote igual a 1.
+
+00:01:55.691 --> 00:01:58.744
+Passamos o tensor de input
+pelo modelo RNN.
+
+00:01:58.777 --> 00:02:03.011
+Isso pega o tensor X de input
+e o estado oculto inicial
+
+00:02:03.044 --> 00:02:06.823
+e produz uma previsão de output
+e um novo estado oculto.
+
+00:02:06.856 --> 00:02:08.846
+A seguir,
+vem uma parte importante.
+
+00:02:08.879 --> 00:02:12.272
+Quero fornecer o novo estado oculto
+como input da RNN
+
+00:02:12.305 --> 00:02:15.351
+no próximo instante de tempo,
+quando fizermos outro loop.
+
+00:02:15.384 --> 00:02:18.238
+Copiamos os valores
+do estado oculto produzido
+
+00:02:18.271 --> 00:02:19.780
+em uma nova variável.
+
+00:02:19.813 --> 00:02:22.773
+Isso separa o estado oculto
+da história dele,
+
+00:02:22.806 --> 00:02:27.253
+e não precisaremos retropropagar
+por uma série de estados acumulados.
+
+00:02:27.286 --> 00:02:30.100
+Isso é o que será passado
+como input para a RNN
+
+00:02:30.133 --> 00:02:34.044
+no próximo instante de tempo,
+no próximo ponto da sequência.
+
+00:02:34.077 --> 00:02:36.221
+Temos os mesmos comandos
+de treinamento,
+
+00:02:36.254 --> 00:02:39.589
+zeramos os gradientes acumulados,
+calculamos a perda
+
+00:02:39.622 --> 00:02:42.901
+e realizamos a retropropagação
+e o passo de otimização.
+
+00:02:42.934 --> 00:02:45.316
+Aqui eu tenho um código
+para imprimir a perda
+
+00:02:45.349 --> 00:02:47.960
+e mostrar os inputs
+e as previsões de outputs.
+
+00:02:47.993 --> 00:02:50.481
+Por fim, esta função retornará
+uma RNN treinada,
+
+00:02:50.514 --> 00:02:53.421
+que será útil na hora de salvar
+um modelo, por exemplo.
+
+00:02:53.454 --> 00:02:55.100
+Vamos executar o código.
+
+00:02:55.133 --> 00:02:57.796
+Optamos por treinar a RNN
+definida acima
+
+00:02:57.829 --> 00:02:59.701
+por 75 passos.
+
+00:02:59.734 --> 00:03:02.589
+Imprimiremos o resultado
+a cada 15 passos.
+
+00:03:02.622 --> 00:03:04.805
+Vemos o erro quadrático médio
+
+00:03:04.838 --> 00:03:09.160
+e a diferença entre os valores
+do input vermelho e do output azul.
+
+00:03:09.193 --> 00:03:11.454
+Queremos que os valores
+do output azul
+
+00:03:11.487 --> 00:03:14.767
+estejam a um instante no futuro
+em comparação com o vermelho.
+
+00:03:14.800 --> 00:03:16.620
+Então isso começa bem errado.
+
+00:03:16.653 --> 00:03:18.675
+Podemos ver que a perda
+diminui muito
+
+00:03:18.708 --> 00:03:20.339
+depois dos primeiros
+15 passos,
+
+00:03:20.372 --> 00:03:22.779
+e que a linha azul se aproxima
+da vermelha.
+
+00:03:22.812 --> 00:03:24.020
+Conforme treinamos,
+
+00:03:24.053 --> 00:03:27.556
+a linha de previsão azul
+se aproxima do alvo.
+
+00:03:27.589 --> 00:03:30.626
+Ao fim dos 75 passos,
+a perda é bem baixa
+
+00:03:30.659 --> 00:03:34.433
+e a linha azul está bem parecida
+com o que deveria ser o output.
+
+00:03:34.466 --> 00:03:37.649
+Se observarmos o instante de tempo
+do ponto vermelho de input
+
+00:03:37.682 --> 00:03:38.959
+e do azul de input,
+
+00:03:38.992 --> 00:03:42.424
+veremos que o azul está
+a um instante de tempo no futuro
+
+00:03:42.457 --> 00:03:44.000
+e está muito próximo.
+
+00:03:44.033 --> 00:03:47.623
+Podemos ter um desempenho melhor
+depois de treinarmos mais passos
+
+00:03:47.656 --> 00:03:50.777
+ou se adicionarmos mais camadas
+na RNN.
+
+00:03:50.810 --> 00:03:53.767
+Neste vídeo, demonstrei
+a estrutura básica
+
+00:03:53.800 --> 00:03:55.208
+de uma RNN simples
+
+00:03:55.241 --> 00:03:58.242
+e como rastrear o estado oculto
+e representar a memória
+
+00:03:58.275 --> 00:04:00.104
+conforme você treina.
+
+00:04:00.137 --> 00:04:01.983
+Imagine fazer algo
+bem parecido
+
+00:04:02.016 --> 00:04:04.935
+com dados sobre a temperatura
+mundial ou as ações da bolsa,
+
+00:04:04.968 --> 00:04:07.101
+que são mais complicados
+do que isso,
+
+00:04:07.134 --> 00:04:09.908
+embora fosse interessante ver
+se podemos prever o futuro
+
+00:04:09.941 --> 00:04:11.369
+a partir dos dados.
+
+00:04:11.402 --> 00:04:13.055
+Esse foi só um exemplo,
+
+00:04:13.088 --> 00:04:16.175
+e o código está no nosso GitHub,
+cujo link está abaixo.
+
+00:04:16.208 --> 00:04:19.025
+Aconselho que você brinque
+com os parâmetros do modelo
+
+00:04:19.058 --> 00:04:22.588
+até entender bem as dimensões
+do input e do output da RNN
+
+00:04:22.621 --> 00:04:25.712
+e como os hiperparâmetros
+mudam conforme o modelo treina.
+
+00:04:25.745 --> 00:04:29.200
+A seguir, faremos um exercício
+sobre geração de texto.
+

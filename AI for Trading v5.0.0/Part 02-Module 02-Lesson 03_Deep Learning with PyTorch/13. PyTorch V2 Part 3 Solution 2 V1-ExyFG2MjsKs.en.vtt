@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.620
+Hi again. So, here's my solution for the train pass that I had you implement.
+
+00:00:04.620 --> 00:00:07.620
+So, here we're just defining our model like normal and
+
+00:00:07.620 --> 00:00:10.109
+then our negative log-likelihood loss using
+
+00:00:10.109 --> 00:00:13.094
+stochastic gradient descent and pass in our parameters.
+
+00:00:13.095 --> 00:00:15.510
+Then, here is our training pass.
+
+00:00:15.509 --> 00:00:18.149
+So, for each image in labels in trainloader,
+
+00:00:18.149 --> 00:00:23.189
+we're going to flatten it and then zero out the gradients using optimizer. zero_ grad.
+
+00:00:23.190 --> 00:00:26.970
+Pass our images forward through the model and the output and then from that,
+
+00:00:26.969 --> 00:00:28.820
+we can calculate our loss and then do
+
+00:00:28.820 --> 00:00:31.129
+a backward pass and then finally with the gradients,
+
+00:00:31.129 --> 00:00:32.960
+we can do this optimizer step.
+
+00:00:32.960 --> 00:00:36.259
+So, if I run this and we wait a little bit for to train,
+
+00:00:36.259 --> 00:00:40.304
+we can actually see the loss dropping over time, right?
+
+00:00:40.304 --> 00:00:41.924
+So, after five epochs,
+
+00:00:41.924 --> 00:00:43.379
+we see that the first one,
+
+00:00:43.380 --> 00:00:47.429
+it starts out fairly high at 1.9 but after five epochs,
+
+00:00:47.429 --> 00:00:51.950
+continuous drop as we're training and we see it much lower after five epochs.
+
+00:00:51.950 --> 00:00:54.950
+So, if we kept training then our network would learn the data
+
+00:00:54.950 --> 00:00:58.445
+better and better and the training loss would be even smaller.
+
+00:00:58.445 --> 00:01:00.740
+So, now with our training network,
+
+00:01:00.740 --> 00:01:05.655
+we can actually see what our network thinks it's seen in these images.
+
+00:01:05.655 --> 00:01:08.700
+So, for here, we can pass in an image.
+
+00:01:08.700 --> 00:01:11.630
+In this case, it's the image of a number two and
+
+00:01:11.629 --> 00:01:14.609
+then this is what our network is predicting now.
+
+00:01:14.609 --> 00:01:19.189
+So, you can see pretty easily that it's putting most of the probability,
+
+00:01:19.189 --> 00:01:23.480
+most of its prediction into the class for the digit two.
+
+00:01:23.480 --> 00:01:29.460
+So we try it again and put in passes in number eight and again, it's predicting eight.
+
+00:01:29.459 --> 00:01:31.654
+So, we've managed to actually train
+
+00:01:31.655 --> 00:01:34.969
+our network to make accurate predictions for our digits.
+
+00:01:34.969 --> 00:01:37.730
+So next step, you'll write the code for training
+
+00:01:37.730 --> 00:01:41.420
+a neutral network on a more complex dataset and you'll be doing the whole thing,
+
+00:01:41.420 --> 00:01:46.070
+defining the model, running the training loop, all that. Cheers.
+

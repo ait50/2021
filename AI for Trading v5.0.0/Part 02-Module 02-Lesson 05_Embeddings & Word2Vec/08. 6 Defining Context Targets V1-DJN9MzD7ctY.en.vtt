@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.115
+Now that our data is in good shape,
+
+00:00:02.115 --> 00:00:05.560
+we need to get it into the proper form to pass it into our network.
+
+00:00:05.559 --> 00:00:08.969
+With the skip-gram architecture for each word in the text,
+
+00:00:08.970 --> 00:00:12.480
+we want to define a surrounding context and grab all the words in
+
+00:00:12.480 --> 00:00:16.429
+a window around that word with size C. When I talk about a window,
+
+00:00:16.429 --> 00:00:17.765
+I mean a window in time.
+
+00:00:17.765 --> 00:00:22.185
+So, like two words in the past and two words in the future from our given input word.
+
+00:00:22.184 --> 00:00:25.379
+More generally than two words in the past and future,
+
+00:00:25.379 --> 00:00:29.585
+I'm going to say we want to define a window of size C. Here,
+
+00:00:29.585 --> 00:00:32.505
+I have some text from the Mikolov paper on Word2Vec,
+
+00:00:32.505 --> 00:00:34.890
+"Since the more distant words are usually less
+
+00:00:34.890 --> 00:00:37.410
+related to the current word than those close to it,
+
+00:00:37.409 --> 00:00:39.689
+we give less weight to the distant words by sampling
+
+00:00:39.689 --> 00:00:42.149
+less from those words in our training examples.
+
+00:00:42.149 --> 00:00:43.884
+If we choose C equals five,
+
+00:00:43.884 --> 00:00:45.195
+for each training word,
+
+00:00:45.195 --> 00:00:48.744
+we'll randomly select a number R in range one to C,
+
+00:00:48.744 --> 00:00:51.589
+and then use R words from history and R words
+
+00:00:51.590 --> 00:00:54.885
+from the future of the current word as correct labels."
+
+00:00:54.884 --> 00:00:58.129
+So, this is saying that we don't want to choose too big of
+
+00:00:58.130 --> 00:01:01.910
+a window because too big of a window will give us irrelevant context.
+
+00:01:01.909 --> 00:01:04.369
+In other words, good context words are usually
+
+00:01:04.370 --> 00:01:07.415
+the ones closest to the current word rather than farther away,
+
+00:01:07.415 --> 00:01:11.090
+and we want to include some randomness in how we define our context.
+
+00:01:11.090 --> 00:01:14.174
+If we define a context window of size C equals five,
+
+00:01:14.174 --> 00:01:18.465
+then we'll create a range R that's going to be a random integer between one or five.
+
+00:01:18.465 --> 00:01:21.835
+So, say we get an R equal to two as an example,
+
+00:01:21.834 --> 00:01:24.799
+then we'll define the context around a given word to be
+
+00:01:24.799 --> 00:01:27.920
+the two words that appear right before and after our word of interest.
+
+00:01:27.920 --> 00:01:29.750
+I have an example here.
+
+00:01:29.750 --> 00:01:34.409
+Say we're interested in the word at the second index in this list, 741.
+
+00:01:34.409 --> 00:01:37.069
+If we randomly generate an R equal to two,
+
+00:01:37.069 --> 00:01:40.119
+we'll be interested in the two tokens before and after this word.
+
+00:01:40.120 --> 00:01:45.189
+I want you to write a function that will return context words in a list like this.
+
+00:01:45.189 --> 00:01:47.269
+This will be the function get_target,
+
+00:01:47.269 --> 00:01:49.364
+which takes in a list of word IDs,
+
+00:01:49.364 --> 00:01:50.744
+and index of interests,
+
+00:01:50.745 --> 00:01:52.609
+and a context window size.
+
+00:01:52.609 --> 00:01:56.914
+So, the effect of getting words within a random rage R instead of a consistent
+
+00:01:56.915 --> 00:01:59.060
+larger range C is that you're more
+
+00:01:59.060 --> 00:02:01.700
+likely to get words that are right next to your current word,
+
+00:02:01.700 --> 00:02:05.070
+and less likely to get words that are further away from your current word.
+
+00:02:05.069 --> 00:02:08.914
+So, what you're really doing is going to be training on context words that are
+
+00:02:08.914 --> 00:02:13.014
+closer to your word of interests and likely more relevant, more often.
+
+00:02:13.014 --> 00:02:15.744
+So here, I've left this function for you to fill out.
+
+00:02:15.745 --> 00:02:17.905
+Now, there are some special cases.
+
+00:02:17.905 --> 00:02:20.629
+If the index that's passed in is zero or
+
+00:02:20.629 --> 00:02:23.299
+your range cannot go back in the past as far as you want,
+
+00:02:23.300 --> 00:02:27.505
+then you can start your context at the start of the past and list of words.
+
+00:02:27.504 --> 00:02:30.710
+You can test out your implementation in this cell below.
+
+00:02:30.710 --> 00:02:33.770
+Next, we'll use this function to actually batch the data,
+
+00:02:33.770 --> 00:02:36.390
+and so it's important that this is implemented correctly.
+
+00:02:36.389 --> 00:02:38.875
+As usual, if you're stuck or want to see my solution,
+
+00:02:38.875 --> 00:02:41.000
+checkout my solution video next.
+

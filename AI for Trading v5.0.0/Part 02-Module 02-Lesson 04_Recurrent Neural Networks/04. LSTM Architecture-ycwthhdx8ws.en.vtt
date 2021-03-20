@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.740
+So in order to study the architecture of an LSTM,
+
+00:00:02.740 --> 00:00:05.429
+let's quickly recall the architecture of an RNN.
+
+00:00:05.429 --> 00:00:10.379
+Basically what we do is we take our event E_t and our memory M_t-1,
+
+00:00:10.380 --> 00:00:12.460
+coming from the previous point in time,
+
+00:00:12.460 --> 00:00:15.150
+and we apply a simple tanh or
+
+00:00:15.150 --> 00:00:20.184
+sigmoid activation function to obtain the output and then your memory M_t.
+
+00:00:20.184 --> 00:00:21.539
+So to be more specific,
+
+00:00:21.539 --> 00:00:26.039
+we join these two vectors and multiply them by a matrix W and add a bias b,
+
+00:00:26.039 --> 00:00:28.920
+and then squish this with the tanh function,
+
+00:00:28.920 --> 00:00:31.149
+and that gives us the output M_t.
+
+00:00:31.149 --> 00:00:35.490
+This output is a prediction and also the memory that we carry to the next node.
+
+00:00:35.490 --> 00:00:37.710
+The LSTM architecture is very similar,
+
+00:00:37.710 --> 00:00:40.679
+except with a lot more nodes inside and with two inputs
+
+00:00:40.679 --> 00:00:43.990
+and outputs since it keeps track of the long- and short-term memories.
+
+00:00:43.990 --> 00:00:45.679
+And as I said, the short-term memory is,
+
+00:00:45.679 --> 00:00:47.550
+again, the output or prediction.
+
+00:00:47.549 --> 00:00:51.274
+Don't get scared. These are actually not as complicated as they look.
+
+00:00:51.274 --> 00:00:53.298
+We'll break them down in the next few videos.
+

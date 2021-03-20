@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.040
+After encoding all our word and label data as an additional preprocessing step,
+
+00:00:05.040 --> 00:00:09.000
+we want to make sure that our reviews are in good shape for standard processing.
+
+00:00:09.000 --> 00:00:12.905
+That is, our network will expect a standard input text size,
+
+00:00:12.905 --> 00:00:16.885
+and so we'll want to shape our reviews into a consistent specific length.
+
+00:00:16.885 --> 00:00:20.160
+There are two things we'll need to do to approach this task.
+
+00:00:20.160 --> 00:00:23.805
+First, I'm going to take a look at the review data and see do we have
+
+00:00:23.805 --> 00:00:28.440
+any especially sure or longer views that might mess with our training process.
+
+00:00:28.440 --> 00:00:32.630
+I'll especially look to see if we have any reviews of length zero which
+
+00:00:32.630 --> 00:00:36.830
+will not provide any text information and will just act as noisy data.
+
+00:00:36.830 --> 00:00:39.210
+If I find any of those zero length reviews,
+
+00:00:39.210 --> 00:00:41.840
+I'll want to remove them from our data entirely.
+
+00:00:41.840 --> 00:00:44.330
+Then second, I'll look at the remaining reviews,
+
+00:00:44.330 --> 00:00:45.845
+and for really long reviews,
+
+00:00:45.845 --> 00:00:48.710
+I'll actually truncate them at a specific length.
+
+00:00:48.710 --> 00:00:51.560
+I'll do something similar for shortest reviews and make sure
+
+00:00:51.560 --> 00:00:54.695
+that I'm creating a set of reviews that are all the same length.
+
+00:00:54.695 --> 00:00:57.440
+This will be our padding and truncation step,
+
+00:00:57.440 --> 00:00:59.960
+where we basically pad our data with columns of zeros
+
+00:00:59.960 --> 00:01:03.410
+or remove columns until we get our desired input shape.
+
+00:01:03.410 --> 00:01:05.520
+Okay. Before we pad our review text,
+
+00:01:05.520 --> 00:01:08.085
+we should check for reviews of length zero.
+
+00:01:08.085 --> 00:01:10.910
+The way I'm gonna do this is to use a counter.
+
+00:01:10.910 --> 00:01:13.985
+For each review length that's currently in our data,
+
+00:01:13.985 --> 00:01:16.640
+whether that's a length of zero or thousands of words,
+
+00:01:16.640 --> 00:01:19.370
+I'll look at how many reviews are of that length.
+
+00:01:19.370 --> 00:01:21.640
+So this returns a dictionary of
+
+00:01:21.640 --> 00:01:25.935
+review lengths and account for how many our reviews fall into those lengths.
+
+00:01:25.935 --> 00:01:28.660
+So, here I'm looking at how many of our reviews are
+
+00:01:28.660 --> 00:01:32.735
+zero length and I'll also print out the longest review length just to see.
+
+00:01:32.735 --> 00:01:34.265
+So, when I run this cell,
+
+00:01:34.265 --> 00:01:36.895
+I can see that I have one review that is zero length
+
+00:01:36.895 --> 00:01:40.365
+and that my longest review has over 2,000 words in it.
+
+00:01:40.365 --> 00:01:44.415
+This zero length review is just going to add noise into our dataset.
+
+00:01:44.415 --> 00:01:47.385
+So next, your task will be to create a new list of
+
+00:01:47.385 --> 00:01:50.200
+reviews_ints and an array of encoded labels,
+
+00:01:50.200 --> 00:01:53.650
+where any reviews of zero length will be removed from this data.
+
+00:01:53.650 --> 00:01:55.870
+So, remove any zero length reviews from
+
+00:01:55.870 --> 00:01:58.935
+reviews_ints and remove that corresponding label as well.
+
+00:01:58.935 --> 00:02:01.330
+In this particular case, after running this cell,
+
+00:02:01.330 --> 00:02:04.130
+I expect to see that one of our reviews was removed.
+
+00:02:04.130 --> 00:02:06.350
+Try to solve this task on your own, and next,
+
+00:02:06.350 --> 00:02:10.260
+I'll present my solution and introduce you to your next exercise.
+

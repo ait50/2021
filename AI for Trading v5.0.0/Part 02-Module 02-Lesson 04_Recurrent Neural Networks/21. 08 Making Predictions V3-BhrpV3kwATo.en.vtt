@@ -1,0 +1,307 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.500
+Now, the goal of this model is to train it so that it can take in
+
+00:00:03.500 --> 00:00:07.835
+one character and produce a next character and that's what this next step,
+
+00:00:07.835 --> 00:00:09.589
+Making Predictions is all about.
+
+00:00:09.589 --> 00:00:12.675
+We basically want to create functions that can take in
+
+00:00:12.675 --> 00:00:15.955
+a character and have our network predict the next character.
+
+00:00:15.955 --> 00:00:17.850
+Then, we want to take that character,
+
+00:00:17.850 --> 00:00:21.675
+pass it back in, and get more and more predicted next characters.
+
+00:00:21.675 --> 00:00:24.435
+We'll keep doing this until we generate a bunch of text.
+
+00:00:24.434 --> 00:00:27.769
+So, you've been given this predict function which will help with this.
+
+00:00:27.769 --> 00:00:29.894
+This function takes in a model and
+
+00:00:29.894 --> 00:00:33.210
+occurring character and its job is to basically give us
+
+00:00:33.210 --> 00:00:34.770
+back the encoded value of
+
+00:00:34.770 --> 00:00:39.330
+the predictive next character and the hidden state that's produced by our model.
+
+00:00:39.329 --> 00:00:42.100
+So, let's see what it's actually doing step-by-step.
+
+00:00:42.100 --> 00:00:47.039
+It's taking in our input character and converting it into it's encoded integer value.
+
+00:00:47.039 --> 00:00:49.079
+Then, as part of pre-processing,
+
+00:00:49.079 --> 00:00:50.210
+we're turning that into
+
+00:00:50.210 --> 00:00:54.905
+a one-hot encoded representation and then converting these inputs into a tensor.
+
+00:00:54.905 --> 00:00:57.410
+These inputs we can then pass to our model,
+
+00:00:57.409 --> 00:00:59.059
+and then you'll see a couple of steps that are really
+
+00:00:59.060 --> 00:01:01.285
+similar to what we saw in our training loop.
+
+00:01:01.284 --> 00:01:03.469
+We put our inputs on a GPU if it's
+
+00:01:03.469 --> 00:01:07.179
+available and we detach our hidden state from its history here.
+
+00:01:07.180 --> 00:01:10.160
+Then, we pass in the inputs and the hidden state to
+
+00:01:10.159 --> 00:01:13.819
+our model which returns an output and a new hidden state.
+
+00:01:13.819 --> 00:01:16.599
+Next, we're processing the output a little more.
+
+00:01:16.599 --> 00:01:21.789
+We're applying a softmax function to get p probabilities for the likely next character.
+
+00:01:21.790 --> 00:01:24.800
+So, p is a probability distribution over
+
+00:01:24.799 --> 00:01:28.929
+all the possible mixed characters given the input character x.
+
+00:01:28.930 --> 00:01:31.595
+Now, we can generate more sensible characters by
+
+00:01:31.594 --> 00:01:34.784
+only considering the k most probable characters.
+
+00:01:34.784 --> 00:01:38.899
+So, here we're giving you a couple of lines of code to use top k sampling,
+
+00:01:38.900 --> 00:01:41.880
+which finds us the k most likely next characters.
+
+00:01:41.879 --> 00:01:44.659
+Then, here we're adding an element of randomness,
+
+00:01:44.659 --> 00:01:48.280
+something that selects from among those top likely next characters.
+
+00:01:48.280 --> 00:01:51.950
+So, then we have a most likely next character and we're actually returning
+
+00:01:51.950 --> 00:01:56.170
+the encoded value of that character and the hidden state produced by our model,
+
+00:01:56.170 --> 00:01:59.510
+but we'll basically want to call the predict function several times,
+
+00:01:59.510 --> 00:02:01.320
+generating one character's output,
+
+00:02:01.319 --> 00:02:05.144
+then passing that in as input and predicting the next and next characters.
+
+00:02:05.144 --> 00:02:07.724
+That brings me to our next function sample.
+
+00:02:07.724 --> 00:02:12.384
+Sample will take in our trained model and the size of text that we want to generate.
+
+00:02:12.384 --> 00:02:14.234
+It will also take in prime,
+
+00:02:14.235 --> 00:02:18.440
+which is going to be a set of characters that we want to start our model off with.
+
+00:02:18.439 --> 00:02:21.379
+Lastly, we will take in a value for top k which will
+
+00:02:21.379 --> 00:02:24.949
+just return our k most probable characters in our predict function.
+
+00:02:24.949 --> 00:02:29.429
+So, in here, we're starting off by moving our model to GPU if it's available,
+
+00:02:29.430 --> 00:02:33.950
+and here we're also initializing the hidden state with a batch size of one because,
+
+00:02:33.949 --> 00:02:36.079
+for one character that we're inputting at a time,
+
+00:02:36.080 --> 00:02:37.520
+the batch size will be one.
+
+00:02:37.520 --> 00:02:40.830
+In this way, prediction is quite different than training a model.
+
+00:02:40.830 --> 00:02:44.560
+Then, you'll see that we're getting each character in our prime word.
+
+00:02:44.560 --> 00:02:46.854
+The prime word basically helps us answer the question,
+
+00:02:46.854 --> 00:02:49.134
+how do we start to generate text?
+
+00:02:49.134 --> 00:02:50.959
+We shouldn't just start out randomly.
+
+00:02:50.960 --> 00:02:54.974
+So, what is usually done is to provide a prime word or a set of characters.
+
+00:02:54.974 --> 00:02:57.319
+Here the default prime set is just the,
+
+00:02:57.319 --> 00:03:02.314
+T-H-E, but you can pass in any set of characters that you want as the prime.
+
+00:03:02.314 --> 00:03:04.504
+The sample function first processes
+
+00:03:04.504 --> 00:03:08.034
+these characters in sequence adding them to a list of characters.
+
+00:03:08.034 --> 00:03:11.179
+It then calls predict on these characters passing in our model,
+
+00:03:11.179 --> 00:03:14.044
+each character and hidden state and this returns
+
+00:03:14.044 --> 00:03:17.485
+the next character after our prime sequence and the hidden state.
+
+00:03:17.485 --> 00:03:20.870
+So, here we have all our prime characters in the default case.
+
+00:03:20.870 --> 00:03:22.175
+This is going to be T, H,
+
+00:03:22.175 --> 00:03:25.969
+and E and then we're going to append the next most likely character.
+
+00:03:25.969 --> 00:03:29.805
+So, we're basically building up a list of characters here,
+
+00:03:29.805 --> 00:03:32.659
+then we're going to generate more and more characters.
+
+00:03:32.659 --> 00:03:37.764
+In this loop, we're passing in our model and the last character in our character list.
+
+00:03:37.764 --> 00:03:40.449
+This returns the next character and the hidden state.
+
+00:03:40.449 --> 00:03:44.379
+This character is appended to our list and the cycle starts all over again.
+
+00:03:44.379 --> 00:03:47.930
+So, predict is generating a next likely character which is
+
+00:03:47.930 --> 00:03:52.004
+appended to our list and then that goes back as input into our predict function.
+
+00:03:52.004 --> 00:03:54.500
+The effect is that we're getting next and next and
+
+00:03:54.500 --> 00:03:57.740
+next characters and adding them to our characters list,
+
+00:03:57.740 --> 00:04:00.265
+that is until we reach our desired text length.
+
+00:04:00.264 --> 00:04:04.454
+Finally, we join all these characters together to return a sample text,
+
+00:04:04.455 --> 00:04:06.770
+and here I've generated a couple samples.
+
+00:04:06.770 --> 00:04:10.740
+You can see that I've passed in my model that was trained for 20 epochs, and I said,
+
+00:04:10.740 --> 00:04:15.145
+generate a text that's 1,000 characters long starting with the prime word Anna.
+
+00:04:15.145 --> 00:04:18.340
+I've also passed in a value for top k equal to five.
+
+00:04:18.339 --> 00:04:21.219
+You can see that this starts with the prime word and generates
+
+00:04:21.220 --> 00:04:24.195
+what might be thought of as a paragraph of text in a book.
+
+00:04:24.194 --> 00:04:26.514
+Even with just a few prime characters,
+
+00:04:26.514 --> 00:04:30.394
+our model is definitely making complete and real words that make sense.
+
+00:04:30.394 --> 00:04:32.875
+The structure and spelling looks pretty good
+
+00:04:32.875 --> 00:04:35.764
+even if the content itself is a little confusing,
+
+00:04:35.764 --> 00:04:38.800
+and here's another example where I've loaded in a model by
+
+00:04:38.800 --> 00:04:42.819
+name and I'm using this loaded model to generate a longer piece of text,
+
+00:04:42.819 --> 00:04:46.149
+starting with the prime words, "And Levin said."
+
+00:04:46.149 --> 00:04:47.739
+So, this is pretty cool.
+
+00:04:47.740 --> 00:04:51.235
+A well-trained model can actually generate some text that makes some sense.
+
+00:04:51.235 --> 00:04:53.750
+It learned just from looking at long sequences of
+
+00:04:53.750 --> 00:04:56.654
+characters what characters were likely to come next.
+
+00:04:56.654 --> 00:04:58.879
+Then in our sampling and prediction code,
+
+00:04:58.879 --> 00:05:04.115
+we used top-k sampling and some randomness in selecting the best likely next character.
+
+00:05:04.115 --> 00:05:07.629
+You can train a model like this on any other text data.
+
+00:05:07.629 --> 00:05:10.009
+For example, you could try it on generating
+
+00:05:10.009 --> 00:05:12.754
+Shakespeare sonnets or another text of your choice.
+
+00:05:12.754 --> 00:05:14.350
+Great job on getting this far.
+
+00:05:14.350 --> 00:05:18.330
+You've really learned a lot about implementing RNNs in PyTorch.
+

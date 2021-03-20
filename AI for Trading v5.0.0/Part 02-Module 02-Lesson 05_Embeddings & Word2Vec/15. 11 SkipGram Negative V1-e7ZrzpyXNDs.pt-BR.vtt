@@ -1,0 +1,185 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.196 --> 00:00:02.147
+Bom, temos que completar
+duas tarefas
+
+00:00:02.180 --> 00:00:05.890
+para definir um modelo Skip-Gram
+Word2Vec mais eficiente.
+
+00:00:05.923 --> 00:00:08.144
+Aqui chamei o modelo
+SkipGramNeg
+
+00:00:08.177 --> 00:00:09.930
+para incluir
+amostragem negativa.
+
+00:00:09.963 --> 00:00:13.814
+O modelo recebe um vocabulário
+e uma dimensão do embedding.
+
+00:00:13.847 --> 00:00:15.942
+Recebe também
+uma distribuição de ruído,
+
+00:00:15.975 --> 00:00:17.172
+se assim definirmos.
+
+00:00:17.205 --> 00:00:20.412
+Primeiro definimos
+duas camadas embedding,
+
+00:00:20.445 --> 00:00:22.906
+uma de palavras de input
+e outra de output.
+
+00:00:22.939 --> 00:00:26.307
+Aqui eu as chamei
+de "in_embed" e "out_embed".
+
+00:00:26.323 --> 00:00:27.883
+Você deve definir
+essas camadas
+
+00:00:27.916 --> 00:00:31.219
+de modo que aceitem como input
+um alvo de input ou de output
+
+00:00:31.252 --> 00:00:35.229
+e retornem um embedding que seja
+um vetor com dimensão n_embed.
+
+00:00:35.262 --> 00:00:38.263
+Eu também sugiro que você inicialize
+os pesos dessas camadas
+
+00:00:38.296 --> 00:00:41.820
+usando uma distribuição uniforme
+entre -1 e 1.
+
+00:00:41.853 --> 00:00:44.017
+Agora vamos ver
+a função de perda.
+
+00:00:44.050 --> 00:00:46.929
+Quando vamos definir
+uma perda de amostragem negativa,
+
+00:00:46.962 --> 00:00:49.968
+sabemos que essa perda receberá
+algumas coisas como input.
+
+00:00:50.001 --> 00:00:53.494
+Com certeza receberá o embedding
+da palavra de input, vwi.
+
+00:00:53.527 --> 00:00:57.814
+Também receberá o embedding certo
+da palavra de output, uw0,
+
+00:00:57.847 --> 00:01:01.935
+e vários embeddings de ruído
+errados, uwi.
+
+00:01:01.968 --> 00:01:03.338
+Na definição deste modelo,
+
+00:01:03.371 --> 00:01:06.346
+quero que você defina
+três funções forward diferentes
+
+00:01:06.379 --> 00:01:08.643
+para criar esses embeddings.
+
+00:01:08.676 --> 00:01:11.749
+A 1ª forward_input deve retornar
+os embeddings de input,
+
+00:01:11.782 --> 00:01:15.775
+que serão as palavras recebidas
+pela camada embedding de input.
+
+00:01:15.808 --> 00:01:18.095
+Da mesma forma,
+forward_output deve retornar
+
+00:01:18.128 --> 00:01:21.013
+os vetores de output
+das palavras de output recebidas.
+
+00:01:21.046 --> 00:01:23.934
+Por fim, definimos a função
+forward_noise, que é especial.
+
+00:01:23.967 --> 00:01:27.522
+Ela recebe o tamanho do lote
+e o número de amostras a ser gerado
+
+00:01:27.555 --> 00:01:29.641
+para fazer
+a amostragem negativa.
+
+00:01:29.674 --> 00:01:34.157
+Essa função pega amostras de ruído
+da distribuição de ruído recebida.
+
+00:01:34.190 --> 00:01:38.311
+Se não recebê-la, a função
+recorre à distribuição uniforme.
+
+00:01:38.344 --> 00:01:41.751
+Depois pega palavras de ruído
+de amostra usando torch.multinomial
+
+00:01:41.784 --> 00:01:45.644
+e recebe os valores
+de batch_size vezes n_samples.
+
+00:01:45.677 --> 00:01:49.325
+Nesta linha, as palavras são movidas
+para uma GPU, se estiver disponível.
+
+00:01:49.358 --> 00:01:51.455
+O que você fará
+para completar esta função
+
+00:01:51.488 --> 00:01:54.216
+é passar essas palavras
+pela camada embedding de output
+
+00:01:54.249 --> 00:01:56.625
+para obter
+os respectivos embeddings.
+
+00:01:56.658 --> 00:01:59.746
+Você obtém os embeddings de ruído
+e deve remodelá-los
+
+00:01:59.779 --> 00:02:04.084
+para as dimensões
+batch_size, n_samples, n_embed.
+
+00:02:04.117 --> 00:02:06.014
+Então complete
+estas funções forward,
+
+00:02:06.047 --> 00:02:09.660
+retornando os embeddings certos
+para cada função forward.
+
+00:02:09.693 --> 00:02:13.968
+Depois desta implementação,
+você será capaz de treinar o modelo.
+
+00:02:14.001 --> 00:02:16.173
+A seguir, mostrarei
+como solucionei o modelo
+
+00:02:16.206 --> 00:02:19.887
+e defini a perda personalizada
+de amostragem negativa.
+

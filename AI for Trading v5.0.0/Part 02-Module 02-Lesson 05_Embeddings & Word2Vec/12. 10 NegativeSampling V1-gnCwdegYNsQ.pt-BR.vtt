@@ -1,0 +1,381 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.282 --> 00:00:02.529
+Treinar o último modelo
+exigiu muito tempo,
+
+00:00:02.562 --> 00:00:05.101
+e há algumas formas
+de acelerar esse processo.
+
+00:00:05.134 --> 00:00:07.410
+Neste vídeo, mostrarei
+um desses métodos,
+
+00:00:07.443 --> 00:00:09.627
+que se chama
+"amostragem negativa".
+
+00:00:09.660 --> 00:00:10.969
+Este é um notebook novo,
+
+00:00:11.002 --> 00:00:14.491
+mas contém as mesmas informações
+do notebook anterior,
+
+00:00:14.524 --> 00:00:16.726
+inclusive este diagrama
+de arquitetura.
+
+00:00:16.759 --> 00:00:18.749
+Esta é a arquitetura atual,
+
+00:00:18.782 --> 00:00:21.317
+em que há uma camada softmax
+no output.
+
+00:00:21.350 --> 00:00:24.321
+E, para trabalhar
+com dezenas de milhares de palavras,
+
+00:00:24.354 --> 00:00:27.729
+a camada softmax terá
+dezenas de milhares de unidades.
+
+00:00:27.762 --> 00:00:32.323
+Mas, para cada input, só teremos
+um contexto-alvo verdadeiro.
+
+00:00:32.356 --> 00:00:34.094
+Isso significa que,
+ao treinarmos,
+
+00:00:34.127 --> 00:00:38.094
+faremos mudanças muito pequenas
+nos pesos entre essas 2 camadas,
+
+00:00:38.127 --> 00:00:41.462
+embora só haja um output verdadeiro
+que nos interessa.
+
+00:00:41.495 --> 00:00:45.858
+Então pouquíssimos pesos serão
+atualizados de forma significativa.
+
+00:00:45.891 --> 00:00:50.048
+Em vez disso, podemos calcular
+a perda da camada softmax.
+
+00:00:50.081 --> 00:00:52.839
+Fazemos isso atualizando
+apenas um pequeno subconjunto
+
+00:00:52.872 --> 00:00:54.739
+de todos os pesos
+de uma só vez.
+
+00:00:54.772 --> 00:00:58.319
+Atualizaremos os pesos
+do output-alvo certo,
+
+00:00:58.352 --> 00:01:00.402
+mas só atualizaremos
+um número pequeno
+
+00:01:00.435 --> 00:01:02.936
+de alvos incorretos,
+ou alvos de ruído,
+
+00:01:02.969 --> 00:01:06.406
+que giram em torno de 100,
+em vez de 6.000.
+
+00:01:06.439 --> 00:01:09.466
+Esse processo é chamado
+de "amostragem negativa".
+
+00:01:09.499 --> 00:01:12.013
+Para implementá-lo,
+há duas mudanças principais
+
+00:01:12.046 --> 00:01:13.942
+que precisamos fazer
+no nosso modelo.
+
+00:01:13.975 --> 00:01:16.554
+Primeiro, como não pegaremos
+o output softmax
+
+00:01:16.587 --> 00:01:17.764
+de todas as palavras,
+
+00:01:17.797 --> 00:01:21.026
+só nos preocuparemos com uma palavra
+de output de cada vez.
+
+00:01:21.059 --> 00:01:22.927
+Assim como usamos
+uma camada embedding
+
+00:01:22.960 --> 00:01:25.877
+para converter uma palavra de input
+em pesos embedding,
+
+00:01:25.910 --> 00:01:27.879
+podemos usar
+outra camada embedding
+
+00:01:27.912 --> 00:01:31.169
+para converter as palavras de output
+numa linha de pesos ocultos.
+
+00:01:31.202 --> 00:01:33.035
+Então teremos
+duas camadas embedding:
+
+00:01:33.068 --> 00:01:35.893
+uma para palavras de input
+e outra para as de output.
+
+00:01:35.926 --> 00:01:38.322
+Depois usaremos
+uma função de perda modificada
+
+00:01:38.355 --> 00:01:40.056
+que só se importa
+com o alvo certo
+
+00:01:40.089 --> 00:01:44.013
+e com um subconjunto de palavras
+de contexto de ruído certas.
+
+00:01:44.046 --> 00:01:46.371
+Esta é a grande
+função de perda.
+
+00:01:46.404 --> 00:01:47.836
+Ela contém muitas notações,
+
+00:01:47.869 --> 00:01:50.259
+então explicarei
+uma parte de cada vez.
+
+00:01:50.292 --> 00:01:52.298
+Vejamos o primeiro termo.
+
+00:01:52.331 --> 00:01:54.993
+Podemos ver que esta é
+uma operação de log negativa
+
+00:01:55.026 --> 00:01:57.196
+e este pequeno loop,
+sigma minúsculo,
+
+00:01:57.229 --> 00:02:00.000
+é uma função de ativação
+sigmoide.
+
+00:02:00.033 --> 00:02:01.748
+A função de ativação sigmoide
+
+00:02:01.781 --> 00:02:05.147
+muda o peso de todo input
+que varie de 0 a 1.
+
+00:02:05.180 --> 00:02:07.991
+Então vejamos o input
+contido dentro dos parênteses.
+
+00:02:08.024 --> 00:02:11.182
+A matriz transposta de uw0
+é o vetor embedding
+
+00:02:11.215 --> 00:02:13.453
+da nossa palavra-alvo
+de output.
+
+00:02:13.486 --> 00:02:17.113
+Então esse é o vetor embedding
+que é o alvo de contexto certo
+
+00:02:17.146 --> 00:02:19.048
+de uma determinada palavra
+de input.
+
+00:02:19.081 --> 00:02:21.419
+E este T é o símbolo
+da matriz transposta.
+
+00:02:21.452 --> 00:02:23.213
+Aqui temos vwi,
+
+00:02:23.246 --> 00:02:26.345
+que é o vetor embedding
+da nossa palavra de input.
+
+00:02:26.378 --> 00:02:30.931
+U indicará o embedding de output,
+e V indicará o input.
+
+00:02:30.964 --> 00:02:33.203
+E, assim como
+na semelhança de cosseno,
+
+00:02:33.236 --> 00:02:35.097
+a multiplicação de transpostas
+
+00:02:35.130 --> 00:02:38.189
+é similar
+a uma operação de produto escalar.
+
+00:02:38.222 --> 00:02:41.326
+Então todo este 1º termo expressa
+que pegamos o log sigmoide
+
+00:02:41.359 --> 00:02:44.661
+do produto escalar
+do vetor de output certo
+
+00:02:44.694 --> 00:02:46.662
+com o vetor de input.
+
+00:02:46.695 --> 00:02:49.843
+Isso representa
+a perda de alvo correta.
+
+00:02:49.876 --> 00:02:51.579
+Depois usamos
+amostras de outputs
+
+00:02:51.612 --> 00:02:53.763
+e obtemos
+algumas palavras-alvo de ruído.
+
+00:02:53.796 --> 00:02:56.428
+A segunda parte da equação
+consiste nisso.
+
+00:02:56.461 --> 00:02:58.207
+Vamos ver
+uma parte de cada vez.
+
+00:02:58.240 --> 00:02:59.379
+Este sigma maiúsculo
+
+00:02:59.412 --> 00:03:02.934
+significa que pegaremos
+a soma de todas as palavras, wi.
+
+00:03:02.967 --> 00:03:06.037
+E este Pnw indica
+que essas palavras são extraídas
+
+00:03:06.070 --> 00:03:08.253
+de uma distribuição de ruído.
+
+00:03:08.286 --> 00:03:11.118
+A distribuição de ruído é
+o vocabulário de palavras
+
+00:03:11.151 --> 00:03:14.100
+que não estão no contexto
+da palavra de input.
+
+00:03:14.133 --> 00:03:17.226
+Aliás, queremos processar
+palavras aleatórias do vocabulário
+
+00:03:17.259 --> 00:03:20.108
+para obter essas palavras-alvo
+de ruído irrelevantes.
+
+00:03:20.141 --> 00:03:23.794
+Pnw é uma distribuição
+de probabilidade arbitrária,
+
+00:03:23.827 --> 00:03:27.144
+então podemos decidir como ponderar
+a amostra de palavras -
+
+00:03:27.177 --> 00:03:28.813
+por uma distribuição uniforme,
+
+00:03:28.846 --> 00:03:31.839
+em que testamos todas as palavras
+de mesma probabilidade,
+
+00:03:31.872 --> 00:03:34.696
+ou de acordo com a frequência
+que cada palavra aparece
+
+00:03:34.729 --> 00:03:38.803
+no corpus do texto,
+a distribuição de unigrama, U(w).
+
+00:03:38.836 --> 00:03:41.194
+Os autores do artigo
+de amostragem negativa
+
+00:03:41.227 --> 00:03:44.191
+viram que a melhor distribuição
+é a distribuição de unigrama
+
+00:03:44.224 --> 00:03:45.712
+elevada a 3/4.
+
+00:03:45.745 --> 00:03:49.331
+Chegamos à última parte,
+que é bem parecida com o 1º termo.
+
+00:03:49.364 --> 00:03:52.403
+Ela pega o log sigmoide
+do produto escalar negativado
+
+00:03:52.436 --> 00:03:56.678
+entre o vetor de ruído, uwi,
+e o vetor de input de antes.
+
+00:03:56.711 --> 00:03:59.515
+Para você entender
+o que a perda faz,
+
+00:03:59.548 --> 00:04:03.550
+pense que a função sigmoide retorna
+uma probabilidade entre 0 e 1.
+
+00:04:03.583 --> 00:04:06.541
+Então o 1º termo desta perda
+vai direcionar a probabilidade
+
+00:04:06.574 --> 00:04:09.198
+de que a rede preveja
+a palavra de contexto certa
+
+00:04:09.231 --> 00:04:10.358
+para o valor de 1.
+
+00:04:10.391 --> 00:04:13.253
+No 2º termo, já que negativamos
+a função sigmoide,
+
+00:04:13.286 --> 00:04:15.165
+direcionamos
+as probabilidades somadas
+
+00:04:15.198 --> 00:04:18.161
+de que a rede preveja
+as palavras de ruído erradas
+
+00:04:18.194 --> 00:04:19.606
+para o valor de 0.
+
+00:04:19.639 --> 00:04:21.543
+A seguir,
+apresentarei sua tarefa,
+
+00:04:21.576 --> 00:04:25.084
+que será definir o código
+deste modelo de amostragem negativa.
+

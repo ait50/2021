@@ -1,0 +1,253 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.715
+So, let's get started with sentiment analysis.
+
+00:00:02.715 --> 00:00:06.220
+First, I'm going to load in data from our data directory.
+
+00:00:06.220 --> 00:00:10.980
+In here, there are two files reviews.txt and labels.txt.
+
+00:00:10.980 --> 00:00:13.800
+These are just the text files for our movie reviews
+
+00:00:13.800 --> 00:00:16.875
+data and their corresponding labels, positive or negative.
+
+00:00:16.875 --> 00:00:20.315
+So, I'm going to load these in and print out some of their contents.
+
+00:00:20.315 --> 00:00:22.905
+Here, you can see some example review text
+
+00:00:22.905 --> 00:00:25.800
+that's talking about a comedy called bromwell high.
+
+00:00:25.800 --> 00:00:28.710
+And here you see some of the text and the label's file,
+
+00:00:28.710 --> 00:00:31.225
+which just has lines positive and negative.
+
+00:00:31.225 --> 00:00:33.570
+Actually, this looks like just one review and I
+
+00:00:33.570 --> 00:00:35.680
+want to see if I can print out more than one.
+
+00:00:35.680 --> 00:00:38.270
+All right. So here, I've started printing out a second review
+
+00:00:38.270 --> 00:00:41.750
+here and you can see that these two are separated by new line characters,
+
+00:00:41.750 --> 00:00:44.800
+much like positive and negative are separated by new lines.
+
+00:00:44.800 --> 00:00:48.770
+Now, we already know that we need to pre-process this data and to organize all of
+
+00:00:48.770 --> 00:00:53.180
+the words in our vocabulary so that we have numerical data to feed to our model later.
+
+00:00:53.180 --> 00:00:55.140
+Since we're using an embedding layer,
+
+00:00:55.140 --> 00:00:56.840
+we'll need to encode each word as
+
+00:00:56.840 --> 00:01:00.190
+an integer and we'll also want to clean up our data a bit.
+
+00:01:00.190 --> 00:01:02.900
+The first pre-processing steps I want to take are turn
+
+00:01:02.900 --> 00:01:06.505
+our text to lowercase and getting rid of extraneous punctuation.
+
+00:01:06.505 --> 00:01:08.305
+Punctuation that, in this case,
+
+00:01:08.305 --> 00:01:10.160
+will not really have any bearing on whether
+
+00:01:10.160 --> 00:01:13.175
+our review is classified as positive or negative.
+
+00:01:13.175 --> 00:01:14.660
+Okay. So in this cell,
+
+00:01:14.660 --> 00:01:16.610
+I'm converting all my review text to
+
+00:01:16.610 --> 00:01:20.640
+lowercase and I'm getting rid of everything that is punctuation.
+
+00:01:20.640 --> 00:01:23.155
+And I'm using a built-in Python list here,
+
+00:01:23.155 --> 00:01:25.225
+which is from string import punctuation,
+
+00:01:25.225 --> 00:01:27.220
+and I'm going to print out what all is in there.
+
+00:01:27.220 --> 00:01:31.435
+So, punctuation is just a list of all of these punctuation characters.
+
+00:01:31.435 --> 00:01:34.280
+Then for our reviews, I'm looking at every character and if
+
+00:01:34.280 --> 00:01:36.920
+it's not and the punctuation list, I'm keeping it.
+
+00:01:36.920 --> 00:01:40.835
+This gives me a version of the review text that is all text no punctuation.
+
+00:01:40.835 --> 00:01:43.360
+So, I'm storing that in this variable all_text.
+
+00:01:43.360 --> 00:01:48.990
+Next, I know that my reviews are separated by a new line characters slash n. So,
+
+00:01:48.990 --> 00:01:50.430
+to separate out our reviews,
+
+00:01:50.430 --> 00:01:55.000
+I'm going to split the text into each review using slash n as the delimiter here.
+
+00:01:55.000 --> 00:01:58.740
+Then I can combine all the reviews back together as one big string.
+
+00:01:58.740 --> 00:02:00.710
+Finally, I get to my end goal,
+
+00:02:00.710 --> 00:02:03.765
+which is splitting that text into individual words.
+
+00:02:03.765 --> 00:02:06.980
+So, I'll run the cell and print out the first 30 words,
+
+00:02:06.980 --> 00:02:08.910
+and it looks just as I expect.
+
+00:02:08.910 --> 00:02:11.360
+Essentially, the original text that I printed out
+
+00:02:11.360 --> 00:02:16.480
+only all the punctuation is removed and we've separated everything into individual words.
+
+00:02:16.480 --> 00:02:18.080
+So, our data is in good shape,
+
+00:02:18.080 --> 00:02:20.375
+and by now you should know what's coming next.
+
+00:02:20.375 --> 00:02:22.460
+We have to take our word data and
+
+00:02:22.460 --> 00:02:26.225
+our label text data and convert this into numerical data.
+
+00:02:26.225 --> 00:02:29.135
+Your first couple of exercises will be to create
+
+00:02:29.135 --> 00:02:34.430
+a dictionary vocab_to_int that can convert any unique word into an integer token.
+
+00:02:34.430 --> 00:02:36.165
+Then using this dictionary,
+
+00:02:36.165 --> 00:02:39.375
+I want you to create a new list of tokenized words,
+
+00:02:39.375 --> 00:02:43.145
+all the words in our data but converted into their integer values.
+
+00:02:43.145 --> 00:02:48.545
+I'd also like it so that our dictionary maps more frequent words to lower integer tokens.
+
+00:02:48.545 --> 00:02:51.320
+One important thing to note here is that later,
+
+00:02:51.320 --> 00:02:54.180
+we're going to pad our input vectors with zeros.
+
+00:02:54.180 --> 00:02:57.005
+So, I actually do not want zero as a word token.
+
+00:02:57.005 --> 00:02:59.725
+I want the tokenized values to start at one.
+
+00:02:59.725 --> 00:03:05.110
+And so, the most common word in our vocabulary should be mapped to the integer value one.
+
+00:03:05.110 --> 00:03:06.860
+So, create that dictionary,
+
+00:03:06.860 --> 00:03:08.630
+use it to tokenize our words,
+
+00:03:08.630 --> 00:03:12.200
+and then store those tokens in a list, reviews_ints.
+
+00:03:12.200 --> 00:03:16.430
+Below this, I provided some code that lets you test your implementation.
+
+00:03:16.430 --> 00:03:19.040
+It'll print the length of your vocabulary and it will
+
+00:03:19.040 --> 00:03:21.980
+print the first review in your tokenized review list.
+
+00:03:21.980 --> 00:03:27.945
+Your next and similar task is going to be to encode our label text into numerical values.
+
+00:03:27.945 --> 00:03:31.910
+We saw that this text was just lines of positive or negative,
+
+00:03:31.910 --> 00:03:34.640
+and I want you to create an array encoded labels
+
+00:03:34.640 --> 00:03:38.015
+that converts the word positive to one and negative to zero.
+
+00:03:38.015 --> 00:03:40.250
+I'm not providing any testing code here,
+
+00:03:40.250 --> 00:03:42.410
+but I encourage you to get in the habit of testing
+
+00:03:42.410 --> 00:03:44.990
+out your own code piece by piece as you build.
+
+00:03:44.990 --> 00:03:46.910
+It's good practice and can be as simple as
+
+00:03:46.910 --> 00:03:48.980
+a few print statements to check that your data is
+
+00:03:48.980 --> 00:03:52.990
+converted as you expect or that it's the correct size and so on.
+
+00:03:52.990 --> 00:03:55.295
+These checks can really save some time later on
+
+00:03:55.295 --> 00:03:57.830
+because these code blocks really build on one another,
+
+00:03:57.830 --> 00:04:00.295
+and it's good to debug early and often.
+
+00:04:00.295 --> 00:04:03.860
+Okay. So, try encoding all of our words and labels on your own.
+
+00:04:03.860 --> 00:04:06.290
+And if you get stuck or want to check your solution,
+
+00:04:06.290 --> 00:04:09.380
+feel free to look at the solution video next.
+

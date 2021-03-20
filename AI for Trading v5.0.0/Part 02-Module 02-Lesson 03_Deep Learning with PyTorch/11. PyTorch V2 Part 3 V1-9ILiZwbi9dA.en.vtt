@@ -1,0 +1,559 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.995
+Hello, everyone, and welcome back.
+
+00:00:01.995 --> 00:00:05.235
+So, in this video and in this notebook,
+
+00:00:05.235 --> 00:00:09.195
+I'll be showing you how to actually train neural networks in PyTorch.
+
+00:00:09.195 --> 00:00:15.914
+So, previously, we saw how to define neural networks in PyTorch using the nn module,
+
+00:00:15.914 --> 00:00:18.269
+but now we're going to see how we actually take
+
+00:00:18.269 --> 00:00:20.609
+one of these networks that we defined and train it.
+
+00:00:20.609 --> 00:00:22.800
+So, what I mean by training is that we're going to use
+
+00:00:22.800 --> 00:00:26.414
+our neural networks as a universal function approximator.
+
+00:00:26.414 --> 00:00:28.274
+What that means is that,
+
+00:00:28.274 --> 00:00:30.375
+for basically any function,
+
+00:00:30.375 --> 00:00:33.439
+we have some desired input for example,
+
+00:00:33.439 --> 00:00:35.839
+an image of the number four,
+
+00:00:35.840 --> 00:00:38.450
+and then we have some desired output of this function.
+
+00:00:38.450 --> 00:00:40.970
+In this case a probability distribution that
+
+00:00:40.969 --> 00:00:43.865
+is telling us the probabilities of the various digits.
+
+00:00:43.865 --> 00:00:45.185
+So, in this case,
+
+00:00:45.185 --> 00:00:46.609
+if we passed it in image four,
+
+00:00:46.609 --> 00:00:49.250
+we want to get out a probability distribution where there's
+
+00:00:49.250 --> 00:00:52.240
+a lot of probability in the digit four.
+
+00:00:52.240 --> 00:00:54.590
+So, the cool thing about neural networks is that if
+
+00:00:54.590 --> 00:00:56.885
+you use non-linear activations and then
+
+00:00:56.884 --> 00:01:02.179
+you have the correct dataset of these images that are labeled with the correct ones,
+
+00:01:02.179 --> 00:01:06.555
+then basically you pass in an image and the correct output,
+
+00:01:06.555 --> 00:01:08.665
+the correct label or class,
+
+00:01:08.665 --> 00:01:13.219
+and eventually your neural network will build to approximate this function that is
+
+00:01:13.219 --> 00:01:17.969
+converting these images into this probability distribution, and that's our goal here.
+
+00:01:17.969 --> 00:01:21.504
+So, basically we want to see how in PyTorch,
+
+00:01:21.504 --> 00:01:26.239
+we can build a neural network and then we're going to give it the inputs and outputs,
+
+00:01:26.239 --> 00:01:31.314
+and then adjust the weights of that network so that it approximates this function.
+
+00:01:31.314 --> 00:01:34.939
+So, the first thing that we need for that is what is called a loss function.
+
+00:01:34.939 --> 00:01:37.069
+So, it's sometimes also called the cost,
+
+00:01:37.069 --> 00:01:40.129
+and what this is it's a measure of our prediction error.
+
+00:01:40.129 --> 00:01:42.994
+So, we pass in the image of a four and then
+
+00:01:42.995 --> 00:01:46.510
+our network predicts something else that's an error.
+
+00:01:46.510 --> 00:01:52.135
+So, we want to measure how far away our networks prediction is from the correct label,
+
+00:01:52.135 --> 00:01:54.195
+and we do that using loss function.
+
+00:01:54.194 --> 00:01:56.954
+So, in this case, it's the mean squared error.
+
+00:01:56.954 --> 00:01:59.959
+So, a lot of times you'll use this in regression problems,
+
+00:01:59.959 --> 00:02:04.429
+but use other loss functions and classification problems like this one here.
+
+00:02:04.430 --> 00:02:07.130
+So, the loss depends on
+
+00:02:07.129 --> 00:02:11.060
+the output of our network or the predictions our network is making.
+
+00:02:11.060 --> 00:02:14.080
+The output of a network depends on the weight.
+
+00:02:14.080 --> 00:02:15.785
+So, like the network parameters.
+
+00:02:15.784 --> 00:02:20.783
+So, we can actually adjust our weights such that this loss is minimized,
+
+00:02:20.783 --> 00:02:22.754
+and once the loss is minimized,
+
+00:02:22.754 --> 00:02:26.729
+then we know that our network is making as good predictions as it can.
+
+00:02:26.729 --> 00:02:33.139
+So, this is the whole goal to adjust our network parameters to minimize our loss,
+
+00:02:33.139 --> 00:02:36.349
+and we do this by using a process called gradient descent.
+
+00:02:36.349 --> 00:02:42.039
+So, the gradient is the slope of the loss function with respect to our perimeters.
+
+00:02:42.039 --> 00:02:45.379
+The gradient always points in the direction of fastest change.
+
+00:02:45.379 --> 00:02:47.180
+So, for example if you have a mountain,
+
+00:02:47.180 --> 00:02:49.610
+the gradient is going to always point up the mountain.
+
+00:02:49.610 --> 00:02:52.820
+So, you can imagine our loss function being like
+
+00:02:52.819 --> 00:02:56.359
+this mountain where we have a high loss up here and we have a low loss down here.
+
+00:02:56.360 --> 00:03:01.415
+So, we know that we want to get to the minimum of our loss when we minimize our loss,
+
+00:03:01.414 --> 00:03:02.824
+and so, we want to go downwards.
+
+00:03:02.824 --> 00:03:05.479
+So, basically, the gradient points upwards and so,
+
+00:03:05.479 --> 00:03:07.099
+we just go the opposite direction.
+
+00:03:07.099 --> 00:03:09.335
+So, we go in the direction of the negative gradient,
+
+00:03:09.335 --> 00:03:11.540
+and then if we keep following this down,
+
+00:03:11.539 --> 00:03:17.084
+then eventually we get to the bottom of this mountain, the lowest loss.
+
+00:03:17.085 --> 00:03:18.680
+With multilayered neural networks,
+
+00:03:18.680 --> 00:03:21.395
+we use an algorithm called backpropagation to do this.
+
+00:03:21.395 --> 00:03:26.015
+Backpropagation is really just an application of the chain rule from calculus.
+
+00:03:26.014 --> 00:03:29.834
+So, if you think about it when we pass in some data,
+
+00:03:29.835 --> 00:03:31.465
+some input into our network,
+
+00:03:31.465 --> 00:03:35.539
+it goes through this forward pass through the network to calculate our loss.
+
+00:03:35.539 --> 00:03:37.324
+So, we pass in some data,
+
+00:03:37.324 --> 00:03:39.709
+some feature input x and then it goes through
+
+00:03:39.710 --> 00:03:43.474
+this linear transformation which depends on our weights and biases,
+
+00:03:43.474 --> 00:03:46.489
+and then through some activation function like a sigmoid,
+
+00:03:46.490 --> 00:03:49.820
+through another linear transformation with some more weights and biases,
+
+00:03:49.819 --> 00:03:50.930
+and then that goes in,
+
+00:03:50.930 --> 00:03:52.430
+from that we can calculate our loss.
+
+00:03:52.430 --> 00:03:55.985
+So, if we make a small change in our weights here, W1,
+
+00:03:55.985 --> 00:03:58.910
+it's going to propagate through the network and
+
+00:03:58.909 --> 00:04:02.645
+end up like results in a small change in our loss.
+
+00:04:02.645 --> 00:04:05.330
+So, you can think of this as a chain of changes.
+
+00:04:05.330 --> 00:04:07.850
+So, if we change here, this is going to change.
+
+00:04:07.849 --> 00:04:09.739
+Even that's going to propagate through here,
+
+00:04:09.740 --> 00:04:12.129
+it's going to propagate through here, it's going to propagate through here.
+
+00:04:12.129 --> 00:04:15.859
+So, with backpropagation, we actually use these same changes,
+
+00:04:15.860 --> 00:04:17.830
+but we go in the opposite direction.
+
+00:04:17.829 --> 00:04:20.659
+So, for each of these operations like the loss and
+
+00:04:20.660 --> 00:04:23.600
+the linear transformation into the sigmoid activation function,
+
+00:04:23.600 --> 00:04:25.939
+there's always going to be some derivative,
+
+00:04:25.939 --> 00:04:29.449
+some gradient between the outputs and inputs, and so,
+
+00:04:29.449 --> 00:04:32.149
+what we do is we take each of the gradients for
+
+00:04:32.149 --> 00:04:35.929
+these operations and we pass them backwards through the network.
+
+00:04:35.930 --> 00:04:42.040
+Each step we multiply the incoming gradient with the gradient of the operation itself.
+
+00:04:42.040 --> 00:04:45.650
+So, for example just starting at the end with the loss.
+
+00:04:45.649 --> 00:04:48.739
+So, we pass this gradient or the loss dldL2.
+
+00:04:48.740 --> 00:04:53.509
+So, this is the gradient of the loss with respect to the second linear transformation,
+
+00:04:53.509 --> 00:05:03.334
+and then we pass that backwards again and if we multiply it by the loss of this L2.
+
+00:05:03.334 --> 00:05:06.169
+So, this is the linear transformation with respect to
+
+00:05:06.170 --> 00:05:08.840
+the outputs of our activation function,
+
+00:05:08.839 --> 00:05:10.974
+that gives us the gradient for this operation.
+
+00:05:10.975 --> 00:05:16.625
+If you multiply this gradient by the gradient coming from the loss,
+
+00:05:16.625 --> 00:05:18.600
+then we get the total gradient for both of these parts,
+
+00:05:18.600 --> 00:05:21.865
+and this gradient can be passed back to this softmax function.
+
+00:05:21.865 --> 00:05:25.845
+So, as the general process for backpropagation, we take our gradients,
+
+00:05:25.845 --> 00:05:28.745
+we pass it backwards to the previous operation,
+
+00:05:28.745 --> 00:05:30.110
+multiply it by the gradient there,
+
+00:05:30.110 --> 00:05:31.879
+and then pass that total gradient backwards.
+
+00:05:31.879 --> 00:05:35.629
+So, we just keep doing that through each of the operations in our network,
+
+00:05:35.629 --> 00:05:38.165
+and eventually we'll get back to our weights.
+
+00:05:38.165 --> 00:05:40.985
+What this does is it allows us to calculate
+
+00:05:40.985 --> 00:05:44.480
+the gradient of the loss with respect to these weights.
+
+00:05:44.480 --> 00:05:46.160
+Like I was saying before,
+
+00:05:46.160 --> 00:05:52.590
+the gradient points in the direction of fastest change in our loss,
+
+00:05:52.589 --> 00:05:53.894
+so, to maximize it.
+
+00:05:53.894 --> 00:05:55.484
+So, if we want to minimize our loss,
+
+00:05:55.485 --> 00:05:59.819
+we can subtract the gradient off from our weights,
+
+00:05:59.819 --> 00:06:03.110
+and so, what this will do is it'll give us a new set of weights
+
+00:06:03.110 --> 00:06:06.965
+that will in general result in a smaller loss.
+
+00:06:06.964 --> 00:06:09.769
+So, the way that backpropagation algorithm works is that it will
+
+00:06:09.769 --> 00:06:12.924
+make a forward pass through a network, calculate the loss,
+
+00:06:12.925 --> 00:06:14.675
+and then once we have the loss, we can go
+
+00:06:14.675 --> 00:06:17.030
+backwards through our network and calculate the gradient,
+
+00:06:17.029 --> 00:06:19.174
+and get the gradient for a weights.
+
+00:06:19.175 --> 00:06:20.485
+Then we'll update the weights.
+
+00:06:20.485 --> 00:06:21.660
+Do another forward pass,
+
+00:06:21.660 --> 00:06:24.495
+calculate the loss, do another backward pass, update the weights,
+
+00:06:24.495 --> 00:06:25.935
+and so on and so on and so on,
+
+00:06:25.935 --> 00:06:29.519
+until we get sufficiently minimized loss.
+
+00:06:29.519 --> 00:06:32.149
+So, once we have the gradient and like I was saying before,
+
+00:06:32.149 --> 00:06:34.219
+we can subtract it off from our weights,
+
+00:06:34.220 --> 00:06:38.770
+but we also use this term Alpha which is called the learning rate.
+
+00:06:38.769 --> 00:06:42.109
+This is basically just a way to scale our gradients so that we're not
+
+00:06:42.110 --> 00:06:45.864
+taking too large steps in this iterative process.
+
+00:06:45.863 --> 00:06:48.839
+So, what can happen if you're update steps are too large,
+
+00:06:48.839 --> 00:06:51.529
+you can bounce around in this trough around
+
+00:06:51.529 --> 00:06:55.250
+the minimum and never actually settle in the minimum of the loss.
+
+00:06:55.250 --> 00:07:00.009
+So, let's see how we can actually calculate losses in PyTorch.
+
+00:07:00.009 --> 00:07:02.279
+Again using the nn module,
+
+00:07:02.279 --> 00:07:06.904
+PyTorch provides us a lot of different losses including the cross-entropy loss.
+
+00:07:06.904 --> 00:07:12.264
+So, this loss is what we'll typically use when we're doing classification problems.
+
+00:07:12.264 --> 00:07:17.479
+In PyTorch, the convention is to assign our loss to its variable criterion.
+
+00:07:17.480 --> 00:07:19.805
+So, if we wanted to use cross-entropy,
+
+00:07:19.805 --> 00:07:25.060
+we just say criterion equals nn.crossEntropyLoss and create that class.
+
+00:07:25.060 --> 00:07:26.689
+So, one thing to note is that,
+
+00:07:26.689 --> 00:07:30.485
+if you look at the documentation for cross-entropy loss,
+
+00:07:30.485 --> 00:07:34.730
+you'll see that it actually wants the scores
+
+00:07:34.730 --> 00:07:39.060
+like the logits of our network as the input to the cross-entropy loss.
+
+00:07:39.060 --> 00:07:43.310
+So, you'll be using this with an output such as softmax,
+
+00:07:43.310 --> 00:07:46.405
+which gives us this nice probability distribution.
+
+00:07:46.404 --> 00:07:48.974
+But for computational reasons,
+
+00:07:48.975 --> 00:07:51.680
+then it's generally better to use the logits which are
+
+00:07:51.680 --> 00:07:55.704
+the input to the softmax function as the input to this loss.
+
+00:07:55.704 --> 00:07:58.834
+So, the input is expected to be the scores
+
+00:07:58.834 --> 00:08:02.239
+for each class and not the probabilities themselves.
+
+00:08:02.240 --> 00:08:06.500
+So, first I'm going to import the necessary modules
+
+00:08:06.500 --> 00:08:11.370
+here and also download our data and create it in,
+
+00:08:11.370 --> 00:08:13.410
+like you've seen before, as a trainloader,
+
+00:08:13.410 --> 00:08:15.110
+and so, we can get our data out of here.
+
+00:08:15.110 --> 00:08:17.165
+So, here I'm defining a model.
+
+00:08:17.165 --> 00:08:19.910
+So, I'm using nn.Sequential, and if you haven't seen this,
+
+00:08:19.910 --> 00:08:21.860
+checkout the end of the previous notebook.
+
+00:08:21.860 --> 00:08:23.139
+So, the end of part two,
+
+00:08:23.139 --> 00:08:25.844
+will show you how to use nn.Sequential.
+
+00:08:25.845 --> 00:08:31.300
+It's just a somewhat more concise way to define simple feed-forward networks, and so,
+
+00:08:31.300 --> 00:08:34.730
+you'll notice here that I'm actually only returning the logits,
+
+00:08:34.730 --> 00:08:41.250
+the scores of our output function and not the softmax output itself.
+
+00:08:41.250 --> 00:08:42.779
+Then here we can define our loss.
+
+00:08:42.779 --> 00:08:45.899
+So, criterions equal to nn.crossEntropyLoss.
+
+00:08:45.899 --> 00:08:48.139
+We get our data with images and labels,
+
+00:08:48.139 --> 00:08:51.710
+flatten it, pass it through our model to get the logits,
+
+00:08:51.710 --> 00:08:57.995
+and then we can get the actual loss by bypassing in our logits and the true labels,
+
+00:08:57.995 --> 00:09:00.710
+and so, again we get the labels from our trainloader.
+
+00:09:00.710 --> 00:09:03.920
+So, if we do this, we see we have calculated the loss.
+
+00:09:03.919 --> 00:09:06.995
+So, my experience, it's more convenient to build your model
+
+00:09:06.995 --> 00:09:10.975
+using a log-softmax output instead of just normal softmax.
+
+00:09:10.975 --> 00:09:13.860
+So, with a log-softmax output to get the actual probabilities,
+
+00:09:13.860 --> 00:09:17.250
+you just pass it through torch.exp. So, the exponential.
+
+00:09:17.250 --> 00:09:19.279
+With a log-softmax output,
+
+00:09:19.279 --> 00:09:24.339
+you'll want to use the negative log-likelihood loss or nn.NLLLoss.
+
+00:09:24.340 --> 00:09:26.780
+So, what I want you to do here is build
+
+00:09:26.779 --> 00:09:29.899
+a model that returns the log-softmax as the output,
+
+00:09:29.899 --> 00:09:33.980
+and calculate the loss using the negative log-likelihood loss.
+
+00:09:33.980 --> 00:09:36.095
+When you're using log-softmax,
+
+00:09:36.095 --> 00:09:40.040
+make sure you pay attention to the dim keyword argument.
+
+00:09:40.039 --> 00:09:45.199
+You want to make sure you set it right so that the output is what you want.
+
+00:09:45.200 --> 00:09:49.550
+So, go and try this and feel free to check out my solution.
+
+00:09:49.549 --> 00:09:51.454
+It's in the notebook and also in the next video,
+
+00:09:51.455 --> 00:09:53.730
+if you're having problems. Cheers.
+

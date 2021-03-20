@@ -1,0 +1,217 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.205
+Hello everyone and welcome back.
+
+00:00:02.205 --> 00:00:05.099
+So, in this notebook and series of videos,
+
+00:00:05.099 --> 00:00:11.279
+I'm going to be showing you a more powerful way to build neural networks and PyTorch.
+
+00:00:11.279 --> 00:00:14.820
+So, in the last notebook, you saw how you can calculate the output for
+
+00:00:14.820 --> 00:00:18.464
+network using tensors and matrix multiplication.
+
+00:00:18.464 --> 00:00:21.509
+But PyTorch has this nice module, nn,
+
+00:00:21.510 --> 00:00:26.160
+that has a lot of my classes and methods and
+
+00:00:26.160 --> 00:00:31.050
+functions that allow us to build large neural networks in a very efficient way.
+
+00:00:31.050 --> 00:00:32.579
+So, to show you how this works,
+
+00:00:32.579 --> 00:00:35.144
+we're going to be using a dataset called MNIST.
+
+00:00:35.145 --> 00:00:39.920
+So, MNIST it's a whole bunch of grayscale handwritten digits.
+
+00:00:39.920 --> 00:00:41.270
+So ,0, 1, 2, 3,
+
+00:00:41.270 --> 00:00:43.350
+4 and so on through nine.
+
+00:00:43.350 --> 00:00:47.570
+Each of these images is 28 by 28 pixels and the goal is
+
+00:00:47.570 --> 00:00:51.969
+to actually identify what the number is in these images.
+
+00:00:51.969 --> 00:00:55.699
+So, that dataset consists of each of these images and
+
+00:00:55.700 --> 00:00:59.620
+it's labeled with the digit that is in that image.
+
+00:00:59.619 --> 00:01:01.379
+So, ones are labeled one,
+
+00:01:01.380 --> 00:01:03.120
+twos are labeled two and so on.
+
+00:01:03.119 --> 00:01:05.435
+So, what we can do is we can actually show
+
+00:01:05.435 --> 00:01:09.290
+our network and image and the correct label and
+
+00:01:09.290 --> 00:01:15.680
+then it learns how to actually determine what the number and the image is.
+
+00:01:15.680 --> 00:01:19.010
+This dataset is available through the torchvision package.
+
+00:01:19.010 --> 00:01:23.575
+So, this is a package that sits alongside PyTorch,
+
+00:01:23.575 --> 00:01:26.420
+that provides a lot of nice utilities like
+
+00:01:26.420 --> 00:01:29.989
+datasets and models for doing computer vision problems.
+
+00:01:29.989 --> 00:01:35.299
+We can run this cell to download and load the MNIST dataset.
+
+00:01:35.299 --> 00:01:38.929
+What it does is it gives us back an object which I'm calling trainloader.
+
+00:01:38.930 --> 00:01:43.625
+So, with this trainloader we can turn into an iterator with iter and then
+
+00:01:43.625 --> 00:01:45.650
+this will allow us to start getting good at
+
+00:01:45.650 --> 00:01:48.260
+it or we can actually just use this in a loop,
+
+00:01:48.260 --> 00:01:51.890
+in a for loop and so we can get our images and labels out
+
+00:01:51.890 --> 00:01:55.668
+of this generator with four image,
+
+00:01:55.668 --> 00:01:57.634
+comma label and trainloader.
+
+00:01:57.635 --> 00:02:00.500
+One thing to notice is that when I created the trainloader,
+
+00:02:00.500 --> 00:02:03.170
+I set the batch size to 64.
+
+00:02:03.170 --> 00:02:07.579
+So, what that means and every time we get a set of images and labels out,
+
+00:02:07.579 --> 00:02:12.204
+we're actually getting 64 images out from our data loader.
+
+00:02:12.205 --> 00:02:16.520
+So, then if you look at the shape and the size of these images,
+
+00:02:16.520 --> 00:02:20.620
+we'll see that they are 64 by one by 28 by 28.
+
+00:02:20.620 --> 00:02:25.325
+So, 64 images and then one color channels so it's grayscale,
+
+00:02:25.324 --> 00:02:31.089
+and then it's 28 by 28 pixels is the shape of these images and so we can see that here.
+
+00:02:31.090 --> 00:02:37.085
+Then our labels have a shape of 64 so it's just a vector that's 64 elements which with
+
+00:02:37.085 --> 00:02:39.980
+a label for each of our images and we can see what
+
+00:02:39.979 --> 00:02:42.979
+one of these images looks like this is a nice number four.
+
+00:02:42.979 --> 00:02:44.824
+So, we're going to do here is build
+
+00:02:44.824 --> 00:02:48.214
+a multi-layer neural network using the methods that we saw before.
+
+00:02:48.215 --> 00:02:52.849
+By that I mean you're going to initialize some weight matrices and
+
+00:02:52.849 --> 00:02:59.574
+some bias vectors and use those to calculate the output of this multi-layer network.
+
+00:02:59.574 --> 00:03:05.310
+Specifically, we want to build this network with 784 input units,
+
+00:03:05.310 --> 00:03:08.280
+256 hidden units, and 10 output units.
+
+00:03:08.280 --> 00:03:09.719
+So, 10 output units,
+
+00:03:09.719 --> 00:03:12.064
+one for each of our classes.
+
+00:03:12.064 --> 00:03:14.319
+So, the 784 input units,
+
+00:03:14.319 --> 00:03:17.739
+this comes from the fact that with this type of network is
+
+00:03:17.740 --> 00:03:21.825
+called a fully connected network or a dense network.
+
+00:03:21.824 --> 00:03:25.944
+We want to think of our inputs as just one vector.
+
+00:03:25.944 --> 00:03:29.919
+So, our images are actually this 28 by 28 image,
+
+00:03:29.919 --> 00:03:34.299
+but we want to put a vector into our network and so what we need to do is
+
+00:03:34.300 --> 00:03:39.100
+actually convert this 28 by 28 image into a vector and so,
+
+00:03:39.099 --> 00:03:41.935
+784 is 28 times 28.
+
+00:03:41.935 --> 00:03:46.295
+When we actually take this 28 by 28 image and flatten it into
+
+00:03:46.294 --> 00:03:50.609
+a vector then it's going to be 784 elements long.
+
+00:03:50.610 --> 00:03:53.570
+So, now what we need to do is take each of our batches
+
+00:03:53.569 --> 00:03:56.539
+which is 64 by one by 28 by 28 and then
+
+00:03:56.539 --> 00:04:03.090
+convert it into a shape that is to another tensor which shapes 64 by 784.
+
+00:04:03.090 --> 00:04:07.009
+This is going to be the tensor that's the input to our network.
+
+00:04:07.009 --> 00:04:09.155
+So, go and give this a shot.
+
+00:04:09.155 --> 00:04:12.379
+So again, build the networks 784 input units,
+
+00:04:12.379 --> 00:04:17.180
+256 hidden units and 10 output units and you're going to be
+
+00:04:17.180 --> 00:04:23.269
+generating your own random initial weight and bias matrices. Cheers.
+

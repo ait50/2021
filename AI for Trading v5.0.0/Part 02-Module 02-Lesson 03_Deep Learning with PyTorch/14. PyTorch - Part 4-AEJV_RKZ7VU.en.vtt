@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.419
+Welcome back. So, in this notebook,
+
+00:00:03.419 --> 00:00:08.724
+you'll be building your own neural network to classify clothing images.
+
+00:00:08.724 --> 00:00:10.919
+So, like I talked about in the last video,
+
+00:00:10.919 --> 00:00:14.099
+MNIST is actually a fairly trivial dataset these days.
+
+00:00:14.099 --> 00:00:18.914
+It's really easy to get really high accuracy with a neural network.
+
+00:00:18.914 --> 00:00:21.625
+So instead, you're going to be using Fashion-MNIST,
+
+00:00:21.625 --> 00:00:24.179
+and this is basically just a drop-in replacement for MNIST
+
+00:00:24.179 --> 00:00:26.820
+so we have 28 by 28 grayscale images,
+
+00:00:26.820 --> 00:00:28.199
+but this time it's clothing.
+
+00:00:28.199 --> 00:00:31.903
+So, you have a lot more variation in the classes,
+
+00:00:31.903 --> 00:00:33.494
+and it just ends up being
+
+00:00:33.494 --> 00:00:37.019
+a much more difficult problem to classify like there's a t-shirt,
+
+00:00:37.020 --> 00:00:38.280
+there's pants, there's a sweater,
+
+00:00:38.280 --> 00:00:41.219
+there's shoes instead of handwritten digits.
+
+00:00:41.219 --> 00:00:45.644
+So it's a better representation of datasets that you'd use in the real world.
+
+00:00:45.645 --> 00:00:50.330
+So, I've left this up to you to actually build a network and train it.
+
+00:00:50.329 --> 00:00:53.039
+So here you can define your network architecture,
+
+00:00:53.039 --> 00:00:56.359
+then here you will create your network to
+
+00:00:56.359 --> 00:00:59.884
+define the criterion and optimizer and then write the code for the training pass.
+
+00:00:59.884 --> 00:01:03.729
+Once you have your network built and trained,
+
+00:01:03.729 --> 00:01:05.310
+you can test out your network.
+
+00:01:05.310 --> 00:01:08.030
+So here, you'd want to do a forward pass, get your logits,
+
+00:01:08.030 --> 00:01:11.530
+calculate the class probabilities, maybe output of your network,
+
+00:01:11.530 --> 00:01:15.049
+and then pass in one of these images from
+
+00:01:15.049 --> 00:01:19.519
+the test set and check out if your network can actually predict it correctly.
+
+00:01:19.519 --> 00:01:22.189
+If you want to see my solution, it's in the next notebook, part five,
+
+00:01:22.189 --> 00:01:25.200
+and you'll also see it in the next video. Cheers.
+

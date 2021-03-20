@@ -1,0 +1,292 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.560
+Last time, we defined a model, and next,
+
+00:00:02.560 --> 00:00:06.379
+I want to actually instantiate it and train it using our training data.
+
+00:00:06.379 --> 00:00:09.120
+First, I'll specify my model hyperparameters.
+
+00:00:09.119 --> 00:00:11.160
+The input and output will just be one,
+
+00:00:11.160 --> 00:00:14.550
+it's just one sequence at a time that we're processing and outputting,
+
+00:00:14.550 --> 00:00:17.310
+then I'll specify a hidden dimension which is just the number
+
+00:00:17.309 --> 00:00:20.250
+of features expect to generate with the RNN layer.
+
+00:00:20.250 --> 00:00:23.065
+I'll set this to 32, but for a small data set like this,
+
+00:00:23.065 --> 00:00:25.105
+I may even be able to go smaller.
+
+00:00:25.105 --> 00:00:27.344
+I'll set n_layers to one for now.
+
+00:00:27.344 --> 00:00:29.879
+So, I'm not stacking any RNN layers.
+
+00:00:29.879 --> 00:00:31.914
+I'll create this RNN and printed out.
+
+00:00:31.914 --> 00:00:33.890
+I should see the variables that I expect.
+
+00:00:33.890 --> 00:00:36.619
+My RNN layer with an input size and hidden dimension,
+
+00:00:36.619 --> 00:00:40.599
+and a linear layer with an input number of features and output number.
+
+00:00:40.600 --> 00:00:44.090
+Before training, I'm defining my loss and optimization functions.
+
+00:00:44.090 --> 00:00:46.730
+Now in this case, we're training our model to generate
+
+00:00:46.729 --> 00:00:49.829
+data points that are going to be basically coordinate values.
+
+00:00:49.829 --> 00:00:52.640
+So to compare a predicted and ground truth point like this,
+
+00:00:52.640 --> 00:00:54.679
+we'll use a regression loss because this is
+
+00:00:54.679 --> 00:00:57.670
+just a quantity rather than something like a class probability.
+
+00:00:57.670 --> 00:00:58.969
+So for the loss function,
+
+00:00:58.969 --> 00:01:00.979
+I'm going to use mean squared error loss which will
+
+00:01:00.979 --> 00:01:03.649
+just measure the distance between two points.
+
+00:01:03.649 --> 00:01:06.989
+I'll use an Adam optimizer which is standard for recurrent models,
+
+00:01:06.989 --> 00:01:09.655
+passing in my parameters and our learning rate.
+
+00:01:09.655 --> 00:01:12.530
+Next, I have a function train that's going to take
+
+00:01:12.530 --> 00:01:15.320
+in and RNN a number of steps to train for,
+
+00:01:15.319 --> 00:01:19.314
+and the parameter that will determine when it will print out law statistics.
+
+00:01:19.314 --> 00:01:21.560
+Now, at the very start of this function,
+
+00:01:21.560 --> 00:01:23.204
+I'm initializing my hidden state.
+
+00:01:23.204 --> 00:01:27.469
+At first, this is going to be nothing and it will default to a hidden state of all zeros.
+
+00:01:27.469 --> 00:01:29.784
+Then let's take a look at our batch loop.
+
+00:01:29.784 --> 00:01:31.704
+Now, this is a little unconventional,
+
+00:01:31.704 --> 00:01:33.439
+but I'm just generating data on the fly
+
+00:01:33.439 --> 00:01:35.879
+here according to how many steps we will train for.
+
+00:01:35.879 --> 00:01:40.634
+So, in these lines, I'm just generating a sequence of 20 sine wave values at a time.
+
+00:01:40.635 --> 00:01:42.990
+As we saw when I generated data at the start.
+
+00:01:42.989 --> 00:01:45.500
+Here, I'm getting my input x and a target
+
+00:01:45.500 --> 00:01:48.109
+y that's just shifted by one time step in the future.
+
+00:01:48.109 --> 00:01:51.140
+Here, I'm converting this data into tensors and
+
+00:01:51.140 --> 00:01:55.275
+squeezing the first dimension of our x_tensor to give it a batch size of one.
+
+00:01:55.275 --> 00:01:58.280
+Then I can pass my input tensor into my RNN model.
+
+00:01:58.280 --> 00:02:03.019
+So this is taking in my x input tensor and my initial hidden state at first.
+
+00:02:03.019 --> 00:02:06.819
+It produces a predicted output and a new hidden state.
+
+00:02:06.819 --> 00:02:08.875
+Next is an important part.
+
+00:02:08.875 --> 00:02:11.870
+I want to feed this new hidden state into the RNN as
+
+00:02:11.870 --> 00:02:14.860
+input at the next time step when we loop around once more.
+
+00:02:14.860 --> 00:02:19.660
+So I'm just copying the values from this produced hidden state into a new variable.
+
+00:02:19.659 --> 00:02:23.329
+This essentially detaches the hidden state from its history and I will
+
+00:02:23.330 --> 00:02:26.810
+not have to backpropagate through a series of accumulated hidden states.
+
+00:02:26.810 --> 00:02:29.539
+So this is what's going to be passed as input to
+
+00:02:29.539 --> 00:02:33.789
+the RNN at the next time step or next point in our sequence.
+
+00:02:33.789 --> 00:02:36.179
+So then, I have the usual training commands,
+
+00:02:36.180 --> 00:02:38.629
+I zero out any accumulated gradients.
+
+00:02:38.629 --> 00:02:42.719
+Calculate the loss, and perform a backpropagation in optimization step.
+
+00:02:42.719 --> 00:02:45.319
+Down here, I have some code to print out the loss
+
+00:02:45.319 --> 00:02:47.769
+and show what our input and predicted outputs are.
+
+00:02:47.770 --> 00:02:50.375
+Finally, this function returns a trained RNN
+
+00:02:50.375 --> 00:02:53.030
+which will be useful if you want to save a model for example.
+
+00:02:53.030 --> 00:02:55.115
+So, let's run this code.
+
+00:02:55.115 --> 00:02:56.840
+I'll choose to train our RNN,
+
+00:02:56.840 --> 00:02:59.710
+and that we defined above for 75 steps.
+
+00:02:59.710 --> 00:03:02.480
+I'll print out the result every 15 steps.
+
+00:03:02.479 --> 00:03:05.389
+We can see the mean squared error loss here and the
+
+00:03:05.389 --> 00:03:09.079
+difference between our red input in our blue output values.
+
+00:03:09.080 --> 00:03:11.870
+Recall that we want the blue output values to be
+
+00:03:11.870 --> 00:03:14.560
+one times step in the future when compared to the red ones.
+
+00:03:14.560 --> 00:03:16.500
+So it starts out pretty incorrect.
+
+00:03:16.500 --> 00:03:20.229
+Then we can see the loss decreases quite a lot after the first 15 steps.
+
+00:03:20.229 --> 00:03:22.759
+Our blue line is getting closer to our red one.
+
+00:03:22.759 --> 00:03:27.564
+As we train the blue predicted line gets closer to what we know our target is,
+
+00:03:27.564 --> 00:03:29.370
+at the end of 75 steps,
+
+00:03:29.370 --> 00:03:30.840
+our loss is pretty low.
+
+00:03:30.840 --> 00:03:34.310
+Our blue line looks very similar to what we know or output should be.
+
+00:03:34.310 --> 00:03:37.564
+If we look at the same time step for a red input dot,
+
+00:03:37.564 --> 00:03:38.889
+and a blue input dot,
+
+00:03:38.889 --> 00:03:40.519
+we we shouldn't see that the blue input is
+
+00:03:40.520 --> 00:03:43.895
+one time-step shifted in the future. It's pretty close.
+
+00:03:43.895 --> 00:03:47.000
+You could imagine getting even better performance after training for
+
+00:03:47.000 --> 00:03:50.680
+more steps or if you wanted to add more layers to your RNN.
+
+00:03:50.680 --> 00:03:51.944
+So, in this video,
+
+00:03:51.944 --> 00:03:55.849
+I wanted to demonstrate the basic structure of a simple RNN and show you how
+
+00:03:55.849 --> 00:04:00.009
+to keep track of the hidden state and represent memory over time as you train.
+
+00:04:00.009 --> 00:04:02.989
+You could imagine doing something very similar with data about
+
+00:04:02.990 --> 00:04:07.010
+world temperature or stock prices which are a little bit more complicated than this.
+
+00:04:07.009 --> 00:04:08.989
+But it will be really interesting to see if you could
+
+00:04:08.990 --> 00:04:11.120
+predict the future given that kind of data.
+
+00:04:11.120 --> 00:04:13.099
+Okay, so this is just an example,
+
+00:04:13.099 --> 00:04:15.134
+you can check out this code in our program GitHub,
+
+00:04:15.134 --> 00:04:16.519
+which is linked to below.
+
+00:04:16.519 --> 00:04:17.779
+I encourage you to play around with
+
+00:04:17.779 --> 00:04:20.389
+these model parameters until you have a good handle on
+
+00:04:20.389 --> 00:04:22.009
+the dimensions of an RNN input and
+
+00:04:22.009 --> 00:04:25.569
+output and how hyperparameters might change, how this model trains.
+
+00:04:25.569 --> 00:04:29.670
+Next, Matt and I will go over an exercise in generating text.
+

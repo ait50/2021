@@ -1,0 +1,535 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.129 --> 00:00:04.278
+Vamos implementar o modelo
+Word2Vec do Skip-Gram.
+
+00:00:04.311 --> 00:00:07.607
+A primeira coisa a ser feita
+é carregar os dados necessários.
+
+00:00:07.640 --> 00:00:10.040
+Neste exemplo,
+uso um corpo grande de texto
+
+00:00:10.073 --> 00:00:13.152
+que foi retirado dos artigos
+de Matt Mahoney, na Wikipédia.
+
+00:00:13.185 --> 00:00:16.841
+Se estiver trabalhando localmente,
+clique no link para baixar os dados
+
+00:00:16.874 --> 00:00:20.863
+como arquivo ZIP, mova-o para
+o diretório data e o descompacte.
+
+00:00:20.896 --> 00:00:24.871
+Você terá um arquivo
+chamado "text8" no diretório data.
+
+00:00:24.904 --> 00:00:27.519
+Eu já coloquei os dados
+no diretório data
+
+00:00:27.552 --> 00:00:29.655
+e aqui carrego o arquivo
+pelo nome,
+
+00:00:29.688 --> 00:00:32.031
+imprimindo
+os primeiros 100 caracteres.
+
+00:00:32.064 --> 00:00:35.070
+Parece que a primeira parte
+do texto fala sobre anarquismo
+
+00:00:35.103 --> 00:00:36.536
+e a classe operária.
+
+00:00:36.569 --> 00:00:40.271
+Eu carreguei de forma incorreta,
+então farei um pré-processamento.
+
+00:00:40.304 --> 00:00:43.983
+Quero transformar o texto
+em uma lista gigante de palavras
+
+00:00:44.016 --> 00:00:46.192
+para poder construir
+o vocabulário.
+
+00:00:46.225 --> 00:00:50.681
+Farei isso usando a função
+do arquivo utils.py
+
+00:00:50.714 --> 00:00:52.338
+chamada de "preprocess".
+
+00:00:52.371 --> 00:00:54.809
+Vamos dar uma olhada
+neste código.
+
+00:00:54.842 --> 00:00:58.662
+Aqui está o arquivo utils.py
+e a função preprocess.
+
+00:00:58.695 --> 00:01:02.845
+Ela pega o texto
+e faz algumas coisas.
+
+00:01:02.878 --> 00:01:07.302
+Primeiro, nestas linhas,
+ela converte pontuações em tokens.
+
+00:01:07.335 --> 00:01:10.607
+O ponto final se transforma
+no token '.',
+
+00:01:10.640 --> 00:01:11.868
+e assim por diante.
+
+00:01:11.901 --> 00:01:13.909
+Ela armazena a quantidade
+de vezes
+
+00:01:13.942 --> 00:01:16.645
+que as palavras aparecem
+no texto usando um Counter.
+
+00:01:16.678 --> 00:01:20.109
+O Counter é uma coleção
+que retorna um dicionário
+
+00:01:20.142 --> 00:01:23.021
+com as palavras
+e a frequência da ocorrência.
+
+00:01:23.054 --> 00:01:25.373
+Aqui criamos uma lista
+trimmed_words,
+
+00:01:25.406 --> 00:01:28.383
+que elimina palavras que aparecem
+cinco ou menos vezes
+
+00:01:28.416 --> 00:01:29.790
+no conjunto de dados.
+
+00:01:29.823 --> 00:01:32.613
+Isso reduzirá muito
+o ruído nos dados,
+
+00:01:32.646 --> 00:01:35.877
+melhorará a qualidade
+do vetor dos dados
+
+00:01:35.910 --> 00:01:38.380
+e retornará
+as palavras eliminadas.
+
+00:01:38.413 --> 00:01:43.121
+De volta ao notebook, digitarei
+words = utils.preprocess(text)
+
+00:01:43.154 --> 00:01:45.642
+e imprimirei
+as primeiras 30 palavras eliminadas.
+
+00:01:45.675 --> 00:01:49.438
+Isso pode levar tempo para executar,
+pois os dados de texto são grandes.
+
+00:01:49.471 --> 00:01:51.664
+Então veremos um output
+como este.
+
+00:01:51.697 --> 00:01:53.872
+Vemos o mesmo texto de cima,
+
+00:01:53.905 --> 00:01:56.202
+mas as palavras
+se tornaram uma lista.
+
+00:01:56.235 --> 00:01:59.370
+Vamos imprimir as estatísticas
+dos dados.
+
+00:01:59.403 --> 00:02:03.009
+Imprimimos o comprimento
+do texto - a contagem de palavras -
+
+00:02:03.042 --> 00:02:05.522
+e a quantidade
+de palavras únicas.
+
+00:02:05.555 --> 00:02:07.467
+Para a quantidade
+de palavras únicas,
+
+00:02:07.500 --> 00:02:11.638
+uso o tipo de dado set, do Python,
+que - se você se lembra -
+
+00:02:11.671 --> 00:02:13.654
+se livrará
+das palavras repetidas.
+
+00:02:13.687 --> 00:02:16.614
+Então teremos um conjunto
+de palavras únicas no texto.
+
+00:02:16.647 --> 00:02:20.451
+Vemos que existem mais de 16 milhões
+de palavras no texto
+
+00:02:20.484 --> 00:02:23.022
+e mais de 60 mil
+palavras únicas.
+
+00:02:23.055 --> 00:02:26.535
+Esses números serão úteis
+para o processamento.
+
+00:02:26.568 --> 00:02:29.286
+Criamos dois dicionários
+para converter palavras
+
+00:02:29.319 --> 00:02:32.146
+em inteiros
+e inteiros em palavras.
+
+00:02:32.179 --> 00:02:34.659
+Esse é um passo comum
+para a criação de tokens.
+
+00:02:34.692 --> 00:02:38.074
+Isso é feito com uma função
+do arquivo utils.py,
+
+00:02:38.107 --> 00:02:39.834
+a create_lookup_tables.
+
+00:02:39.867 --> 00:02:42.146
+Vejamos o que esta função
+está fazendo.
+
+00:02:42.179 --> 00:02:44.695
+Ela pega uma lista
+de palavras de um texto
+
+00:02:44.728 --> 00:02:48.042
+e retorna dois dicionários,
+que mapeiam do vocabulário
+
+00:02:48.075 --> 00:02:49.986
+para valores inteiros
+e o contrário.
+
+00:02:50.019 --> 00:02:52.931
+Você deve ter notado
+o uso do Counter aqui.
+
+00:02:52.964 --> 00:02:55.434
+Primeiro isso cria
+um vocabulário organizado,
+
+00:02:55.467 --> 00:02:58.205
+uma lista de palavras da mais
+para a menos frequente
+
+00:02:58.238 --> 00:03:00.842
+de acordo com a contagem
+de palavras do Counter.
+
+00:03:00.875 --> 00:03:04.156
+Os inteiros são atribuídos
+em ordem decrescente por frequência,
+
+00:03:04.189 --> 00:03:07.866
+assim a palavra mais frequente
+receberá o inteiro 0
+
+00:03:07.899 --> 00:03:11.002
+e a próxima mais frequente,
+1, e assim por diante.
+
+00:03:11.035 --> 00:03:14.370
+No notebook, esta função
+retornará dois dicionários.
+
+00:03:14.403 --> 00:03:17.370
+Depois disso, as palavras
+serão convertidas em inteiros
+
+00:03:17.403 --> 00:03:19.793
+e armazenadas na lista
+como palavras.
+
+00:03:19.826 --> 00:03:22.263
+Imprimimos os primeiros 30 tokens
+de palavras
+
+00:03:22.296 --> 00:03:24.077
+para conferir
+se fazem sentido.
+
+00:03:24.110 --> 00:03:27.975
+Se observarmos os valores
+e as listas de palavras acima,
+
+00:03:28.008 --> 00:03:31.518
+veremos que "the" e "of"
+são algumas das palavras comuns
+
+00:03:31.551 --> 00:03:32.878
+do dicionário.
+
+00:03:32.911 --> 00:03:36.046
+Vemos que "the"
+tem o token 0,
+
+00:03:36.079 --> 00:03:39.117
+e parece que "of"
+é a próxima palavra mais frequente,
+
+00:03:39.150 --> 00:03:40.711
+com token igual a 1.
+
+00:03:40.744 --> 00:03:44.038
+Temos mais de 60 mil palavras
+no vocabulário.
+
+00:03:44.071 --> 00:03:48.302
+Os valores de token devem ser
+valores inteiros nesse limite.
+
+00:03:48.335 --> 00:03:50.727
+O objetivo é implementar
+o Word2Vec,
+
+00:03:50.760 --> 00:03:54.526
+que observará
+o contexto em torno da palavra.
+
+00:03:54.559 --> 00:03:57.185
+Queremos definir o contexto
+com muita cautela.
+
+00:03:57.218 --> 00:04:00.352
+Basicamente observando a janela
+das palavras mais relevantes
+
+00:04:00.385 --> 00:04:02.262
+em torno
+da palavra de interesse.
+
+00:04:02.295 --> 00:04:05.118
+Existem palavras
+que quase nunca serão relevantes
+
+00:04:05.151 --> 00:04:06.766
+por serem comuns demais.
+
+00:04:06.799 --> 00:04:09.070
+Palavras que aparecem
+com frequência,
+
+00:04:09.103 --> 00:04:12.757
+tais como "the", "of" e "for",
+que não fornecem muito contexto
+
+00:04:12.790 --> 00:04:14.597
+para as palavras próximas.
+
+00:04:14.630 --> 00:04:16.952
+Se descartarmos
+algumas dessas palavras,
+
+00:04:16.985 --> 00:04:18.949
+removeremos o ruído
+dos dados
+
+00:04:18.982 --> 00:04:20.824
+e teremos um treinamento
+mais rápido
+
+00:04:20.857 --> 00:04:22.789
+e vetores de representação
+melhores.
+
+00:04:22.822 --> 00:04:24.999
+Esse processo
+se chama "subamostragem".
+
+00:04:25.032 --> 00:04:27.158
+Essa será
+a nossa primeira tarefa.
+
+00:04:27.191 --> 00:04:28.902
+Ela funciona assim:
+
+00:04:28.935 --> 00:04:31.918
+para cada palavra wi
+do conjunto de treinamento,
+
+00:04:31.951 --> 00:04:35.845
+queremos descartar de acordo
+com a probabilidade nesta equação.
+
+00:04:35.878 --> 00:04:38.574
+A probabilidade
+de descartarmos a palavra w
+
+00:04:38.607 --> 00:04:40.902
+é igual a 1 menos
+a raiz quadrada
+
+00:04:40.935 --> 00:04:43.351
+de t sobre
+a frequência da palavra.
+
+00:04:43.384 --> 00:04:45.741
+T é um valor limite
+que configuramos.
+
+00:04:45.774 --> 00:04:49.373
+Imagine descartar a palavra "the",
+no índice 0.
+
+00:04:49.406 --> 00:04:51.967
+Digamos que ela ocorre
+um milhão de vezes
+
+00:04:52.000 --> 00:04:54.350
+no conjunto
+de 16 milhões de palavras.
+
+00:04:54.383 --> 00:04:57.998
+Aqui usamos aproximações,
+mas será um milhão sobre 16 milhões,
+
+00:04:58.031 --> 00:04:59.542
+a frequência da ocorrência.
+
+00:04:59.575 --> 00:05:03.909
+O numerador é um limite configurado,
+que é 1 vezes 10 ao quinto negativo.
+
+00:05:03.942 --> 00:05:06.273
+Se eu executar os valores
+na equação,
+
+00:05:06.306 --> 00:05:09.078
+obterei a probabilidade
+de me livrar desta palavra
+
+00:05:09.111 --> 00:05:11.462
+em 98,7% das vezes.
+
+00:05:11.495 --> 00:05:14.839
+Mesmo depois de descartar
+a maioria dessas palavras,
+
+00:05:14.872 --> 00:05:19.966
+ainda teremos 12.000
+dos um milhão de "the" no texto.
+
+00:05:19.999 --> 00:05:21.422
+A ideia da subamostragem
+
+00:05:21.455 --> 00:05:24.774
+é se livrar de muitas
+das palavras recorrentes,
+
+00:05:24.807 --> 00:05:27.965
+para que elas não afetem
+o contexto das outras palavras,
+
+00:05:27.998 --> 00:05:30.446
+e, ao mesmo tempo,
+manter exemplos suficientes
+
+00:05:30.479 --> 00:05:32.638
+para aprender o embedding
+daquela palavra.
+
+00:05:32.671 --> 00:05:35.478
+A equação de subamostragem
+diz que a probabilidade
+
+00:05:35.511 --> 00:05:37.470
+de descartarmos uma palavra
+será maior
+
+00:05:37.503 --> 00:05:39.630
+se a frequência da palavra
+for maior.
+
+00:05:39.663 --> 00:05:42.326
+Eu forneci o código do limite
+para você começar
+
+00:05:42.359 --> 00:05:44.389
+e o dicionário word_counts.
+
+00:05:44.422 --> 00:05:47.733
+Isso usa a coleção Counter,
+que pega uma lista de palavras
+
+00:05:47.766 --> 00:05:50.406
+e retorna quantas vezes
+elas aparecem na lista.
+
+00:05:50.439 --> 00:05:53.831
+Podemos imprimir o primeiro
+par de chave-valor da lista.
+
+00:05:53.864 --> 00:05:59.542
+Vemos que o token da palavra 5233
+aparece 303 vezes no texto.
+
+00:05:59.575 --> 00:06:01.003
+Use essa informação
+
+00:06:01.036 --> 00:06:03.153
+para calcular a probabilidade
+de descarte
+
+00:06:03.186 --> 00:06:05.365
+de cada palavra
+do vocabulário.
+
+00:06:05.398 --> 00:06:09.004
+Use isso para criar um novo conjunto
+de dados, de palavras treinadas,
+
+00:06:09.037 --> 00:06:11.469
+que será nossa lista
+original de palavras,
+
+00:06:11.502 --> 00:06:14.461
+porém, com as mais frequentes
+sendo descartadas.
+
+00:06:14.494 --> 00:06:16.408
+Esse é mais
+um desafio de programação
+
+00:06:16.441 --> 00:06:18.024
+do que de aprendizado
+profundo,
+
+00:06:18.057 --> 00:06:20.528
+mas precisamos saber
+como preparar os dados.
+
+00:06:20.561 --> 00:06:22.223
+Tente resolver esta tarefa,
+
+00:06:22.256 --> 00:06:24.230
+que mostrarei minha solução
+a seguir.
+

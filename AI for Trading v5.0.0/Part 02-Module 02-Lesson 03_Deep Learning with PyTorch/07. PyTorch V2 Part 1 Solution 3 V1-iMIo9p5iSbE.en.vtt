@@ -1,0 +1,175 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.690
+All right. So, here's my solution for this exercise.
+
+00:00:03.690 --> 00:00:06.960
+So, here, I had you calculate the output of
+
+00:00:06.960 --> 00:00:11.905
+this multi-layer network using the weights and features that we've defined up here.
+
+00:00:11.904 --> 00:00:14.160
+So, it was really similar to what we did before with
+
+00:00:14.160 --> 00:00:16.769
+our single layer simple neural network.
+
+00:00:16.769 --> 00:00:20.370
+So, it's basically just taking the features and our weight matrix,
+
+00:00:20.370 --> 00:00:21.630
+our first weight matrix,
+
+00:00:21.629 --> 00:00:24.945
+and calculating a matrix multiplication.
+
+00:00:24.945 --> 00:00:27.839
+So, here's the torch.mm plus B1,
+
+00:00:27.839 --> 00:00:32.219
+and then that gives us values for our hidden layer H. Now,
+
+00:00:32.219 --> 00:00:37.879
+we can use the values H as the input for the next layer of our network.
+
+00:00:37.880 --> 00:00:39.500
+So, we just do, again,
+
+00:00:39.500 --> 00:00:42.590
+a matrix multiplication of these hidden values H,
+
+00:00:42.590 --> 00:00:45.380
+with our second weight matrix W2,
+
+00:00:45.380 --> 00:00:48.880
+and adding on our bias terms, and then we get the output.
+
+00:00:48.880 --> 00:00:52.100
+So, my favorite features of PyTorches is being able to
+
+00:00:52.100 --> 00:00:54.920
+convert between Numpy arrays and Torch tensors,
+
+00:00:54.920 --> 00:00:58.480
+in a very nice and easy manner.
+
+00:00:58.479 --> 00:01:00.469
+So, this is really useful because a lot of the times,
+
+00:01:00.469 --> 00:01:05.120
+you'll be preparing your data and to do some preprocessing using Numpy,
+
+00:01:05.120 --> 00:01:07.640
+and then you want to move it into your network,
+
+00:01:07.640 --> 00:01:11.170
+and so, you have to bridge these Numpy arrays,
+
+00:01:11.170 --> 00:01:12.750
+what you're using for your data,
+
+00:01:12.750 --> 00:01:17.015
+and then the Torch tensors that you're using for your network.
+
+00:01:17.015 --> 00:01:18.560
+So, actually, to do this,
+
+00:01:18.560 --> 00:01:25.115
+we can actually get a tensor from a Numpy array using torch.fromnumpy.
+
+00:01:25.114 --> 00:01:28.909
+So, here I've just created a random array, a four-by-three array,
+
+00:01:28.909 --> 00:01:31.159
+and then we can create a Torch tensor from
+
+00:01:31.159 --> 00:01:35.280
+this array just by doing.from Numpy, and passing an array.
+
+00:01:35.280 --> 00:01:37.564
+So, this creates a nice tensor for us.
+
+00:01:37.564 --> 00:01:38.959
+So, this is a tensor in PyTorch,
+
+00:01:38.959 --> 00:01:43.564
+we can use with all of our Torch methods and eventually,
+
+00:01:43.564 --> 00:01:45.594
+use it in a neural network.
+
+00:01:45.594 --> 00:01:47.079
+Then, we can go backwards,
+
+00:01:47.079 --> 00:01:50.329
+so we can take a tensor such as B here.
+
+00:01:50.329 --> 00:01:54.620
+This is our Torch tensor and we can go back to a Numpy array doing b.numpy.
+
+00:01:54.620 --> 00:01:57.085
+So, this gives us back our Numpy array.
+
+00:01:57.084 --> 00:01:59.000
+So, one thing to remember when you're doing this,
+
+00:01:59.000 --> 00:02:04.594
+is that the memory is actually shared between the Numpy array and this Torch tensor.
+
+00:02:04.594 --> 00:02:07.819
+So, what this means, is that if you do any operations in
+
+00:02:07.819 --> 00:02:11.840
+place on either the Numpy array or the tensor,
+
+00:02:11.840 --> 00:02:13.825
+then you're going to change the values for the other one.
+
+00:02:13.824 --> 00:02:19.129
+So, for example, if we do this in-place operation of multiplying by two,
+
+00:02:19.129 --> 00:02:22.219
+which means that we're actually changing the values in memory,
+
+00:02:22.219 --> 00:02:24.849
+and not creating a new tensor,
+
+00:02:24.849 --> 00:02:29.930
+then we will actually change the values in the Numpy array.
+
+00:02:29.930 --> 00:02:32.189
+So, you see here, we have our Numpy array.
+
+00:02:32.189 --> 00:02:34.115
+So initially, it's like this,
+
+00:02:34.115 --> 00:02:37.070
+convert it to a Torch tensor, and here,
+
+00:02:37.069 --> 00:02:39.245
+I'm doing this in-place multiplication,
+
+00:02:39.245 --> 00:02:42.560
+and we've changed our values for this tensor.
+
+00:02:42.560 --> 00:02:44.509
+Then, if you look back at the Numpy array,
+
+00:02:44.509 --> 00:02:46.344
+the values have changed.
+
+00:02:46.344 --> 00:02:49.550
+So, that's just something to keep in mind as you're doing this,
+
+00:02:49.550 --> 00:02:53.330
+so you're not caught off guard when you're seeing your arrays,
+
+00:02:53.330 --> 00:02:56.840
+your Numpy arrays, being changed because of operations you're doing on the tensor.
+
+00:02:56.840 --> 00:02:58.599
+See you in the next video, cheers.
+

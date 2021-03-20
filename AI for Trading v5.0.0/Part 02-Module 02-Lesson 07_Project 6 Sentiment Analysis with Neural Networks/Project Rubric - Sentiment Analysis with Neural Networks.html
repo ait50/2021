@@ -1,0 +1,519 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Sentiment Analysis with Neural Networks
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Project 6: Sentiment Analysis with Neural Networks
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Project Description.html">
+       01. Project Description
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Project Notebook.html">
+       02. Project Notebook
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Description - Sentiment Analysis with Neural Networks.html">
+       Project Description - Sentiment Analysis with Neural Networks
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Rubric - Sentiment Analysis with Neural Networks.html">
+       Project Rubric - Sentiment Analysis with Neural Networks
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          Sentiment Analysis with Neural Networks
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div>
+        <h2>
+         <p>
+          Importing Twits
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Length of Data
+            </p>
+           </td>
+           <td>
+            <p>
+             Print the number of twits in the dataset.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Preprocessing the Data
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Pre-Processing
+            </p>
+           </td>
+           <td>
+            <p>
+             The function
+             <code>
+              preprocess
+             </code>
+             correctly lowercases, removes URLs, removes ticker symbols, removes punctuation, tokenizes, and removes any single character tokens.
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             Preprocess All the Twits
+            </p>
+           </td>
+           <td>
+            <p>
+             Preprocess all the twits into the
+             <code>
+              tokenized
+             </code>
+             variable.
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             Bag of Words
+            </p>
+           </td>
+           <td>
+            <p>
+             Create a bag of words using the tokenized data.
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             Frequency of Words Appearing in Message
+            </p>
+           </td>
+           <td>
+            <p>
+             Remove most common and rare words by defining the following variables:
+             <code>
+              freqs
+             </code>
+             ,
+             <code>
+              low_cotoff
+             </code>
+             ,
+             <code>
+              high_cutoff
+             </code>
+             ,
+             <code>
+              K_most_common
+             </code>
+             .
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             Updaing Vocabulary by Removing Filtered Words
+            </p>
+           </td>
+           <td>
+            <p>
+             Defining the variables : 'vacab', 'id2vocab' and 'filtered' correctly.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Neural Network
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             TextClassifier.
+             <strong>
+              init
+             </strong>
+            </p>
+           </td>
+           <td>
+            <p>
+             The init function correctly initializes the following parameters:
+             <code>
+              self.vocab_size
+             </code>
+             ,
+             <code>
+              self.embed_size
+             </code>
+             ,
+             <code>
+              self.lstm_size
+             </code>
+             ,
+             <code>
+              self.lstm_layers
+             </code>
+             ,
+             <code>
+              self.dropout
+             </code>
+             ,
+             <code>
+              self.embedding
+             </code>
+             ,
+             <code>
+              self.lstm
+             </code>
+             , and
+             <code>
+              self.fc
+             </code>
+             .
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             TextClassifier.init_hidden
+            </p>
+           </td>
+           <td>
+            <p>
+             The 'init_hidden' function generates a hidden state
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             TextClassifier.forward
+            </p>
+           </td>
+           <td>
+            <p>
+             The 'forward' function performs a forward pass of the model the parameter input using the hidden state.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Training
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Training and  Validation
+            </p>
+           </td>
+           <td>
+            <p>
+             Correctly split the data into
+             <code>
+              train_features
+             </code>
+             ,
+             <code>
+              valid_features
+             </code>
+             ,
+             <code>
+              train_labels
+             </code>
+             , and
+             <code>
+              valid_labels
+             </code>
+             .
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             Training
+            </p>
+           </td>
+           <td>
+            <p>
+             Train your model with dropout and clip the gradient. Print out the training progress with the loss and accuracy.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Making Predictions
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Prediction
+            </p>
+           </td>
+           <td>
+            <p>
+             The
+             <code>
+              predict
+             </code>
+             function correctly prints out the prediction vector from the trained model.
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             What is the prediction of the model? What is the uncertainty of the prediction?
+            </p>
+           </td>
+           <td>
+            <p>
+             Answer what the prediction of the model is and the uncertainty of the prediction.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('Sentiment Analysis with Neural Networks')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

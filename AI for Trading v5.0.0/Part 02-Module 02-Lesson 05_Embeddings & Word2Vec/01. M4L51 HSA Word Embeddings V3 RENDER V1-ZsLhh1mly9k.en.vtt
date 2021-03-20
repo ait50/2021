@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.050 --> 00:00:03.270
+In this lesson, I want to talk a bit more about
+
+00:00:03.270 --> 00:00:06.150
+using neural networks for natural language processing.
+
+00:00:06.150 --> 00:00:08.403
+We'll be discussing word embedding,
+
+00:00:08.403 --> 00:00:12.120
+which is the collective term for models that learned to map a set of words or
+
+00:00:12.119 --> 00:00:16.004
+phrases in a vocabulary to vectors of numerical values.
+
+00:00:16.004 --> 00:00:17.994
+These vectors are called embeddings,
+
+00:00:17.995 --> 00:00:21.080
+and we can use neural networks to learn to do word embedding.
+
+00:00:21.079 --> 00:00:25.329
+In general this technique is used to reduce the dimensionality of text data.
+
+00:00:25.329 --> 00:00:27.500
+But these embedding models can also learn
+
+00:00:27.500 --> 00:00:30.289
+some interesting traits about words in a vocabulary.
+
+00:00:30.289 --> 00:00:33.469
+In fact, we'll focus on the Word2Vec embedding model.
+
+00:00:33.469 --> 00:00:37.390
+Which learns to map words to embeddings that contain semantic meaning.
+
+00:00:37.390 --> 00:00:39.920
+For example embeddings can learn the relationship
+
+00:00:39.920 --> 00:00:42.560
+between verbs in the present and past tense.
+
+00:00:42.560 --> 00:00:45.750
+The relationship between the embeddings for walking and walked,
+
+00:00:45.750 --> 00:00:49.774
+should be the same as the relationship between the embeddings for swimming and swam.
+
+00:00:49.774 --> 00:00:54.214
+Similarly embeddings can learn the relationships between words and common genders.
+
+00:00:54.215 --> 00:00:58.145
+Such as between woman and Queen and between man and King.
+
+00:00:58.145 --> 00:01:00.800
+You can think of these embeddings as vectors that have learned to
+
+00:01:00.799 --> 00:01:04.875
+mathematically represent the relationship between words in a vocabulary.
+
+00:01:04.875 --> 00:01:09.200
+A word of caution here. The embeddings are learned from a body of text and
+
+00:01:09.200 --> 00:01:14.064
+so any word associations in that source text will be replicated in the embeddings.
+
+00:01:14.064 --> 00:01:18.664
+If your text contains false information or gender biased associations.
+
+00:01:18.665 --> 00:01:21.415
+These traits will be replicated in your embeddings.
+
+00:01:21.415 --> 00:01:23.630
+In fact debiasing word embeddings is
+
+00:01:23.629 --> 00:01:26.694
+an active area of research and you can read more about it below.
+
+00:01:26.694 --> 00:01:30.589
+In this lesson we'll first talk about how word embedding works in theory,
+
+00:01:30.590 --> 00:01:32.480
+then a walk through a series of notebooks in
+
+00:01:32.480 --> 00:01:34.975
+which you'll learn to implement the Word2Vec model.
+
+00:01:34.974 --> 00:01:37.489
+Before we start coding, let's learn more about how
+
+00:01:37.489 --> 00:01:41.079
+embeddings can reduce the dimensionality of text data.
+

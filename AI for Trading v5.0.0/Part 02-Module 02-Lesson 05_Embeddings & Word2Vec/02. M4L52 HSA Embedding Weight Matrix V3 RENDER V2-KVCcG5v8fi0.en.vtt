@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.934
+We've talked a bit about how neural networks are designed to learn from numerical data.
+
+00:00:04.934 --> 00:00:07.619
+In our case, word embedding is really all about
+
+00:00:07.620 --> 00:00:11.199
+improving the ability of networks to learn from texted data.
+
+00:00:11.199 --> 00:00:14.009
+The idea is this, embeddings can greatly
+
+00:00:14.009 --> 00:00:16.829
+improve the ability of networks to learn from text data,
+
+00:00:16.829 --> 00:00:19.785
+by representing that data as lower-dimensional vectors.
+
+00:00:19.785 --> 00:00:21.804
+Let's think about this in an example.
+
+00:00:21.804 --> 00:00:25.230
+Usually, when you're dealing with text and you split things up into words,
+
+00:00:25.230 --> 00:00:28.960
+you tend to have tens of thousands of different words in a large data set.
+
+00:00:28.960 --> 00:00:32.490
+When you're using these words as input to a network like an R&amp;N,
+
+00:00:32.490 --> 00:00:34.835
+we've seen that we can one-hot encode them.
+
+00:00:34.835 --> 00:00:38.980
+What that means is that you have these giant vectors that are like 50,000 units long,
+
+00:00:38.979 --> 00:00:41.029
+and only one of them is set to one,
+
+00:00:41.030 --> 00:00:42.730
+and all the others are set to zero.
+
+00:00:42.729 --> 00:00:46.894
+Then, you pass this long vector as input to some hidden layer in the network.
+
+00:00:46.895 --> 00:00:49.880
+The output of this hidden layer is calculated by multiplying
+
+00:00:49.880 --> 00:00:52.960
+that input vector by some matrix of learned weights.
+
+00:00:52.960 --> 00:00:55.490
+The result is a huge matrix of values.
+
+00:00:55.490 --> 00:00:58.625
+Most of which are zero, because of the initial one-hot vector.
+
+00:00:58.625 --> 00:01:03.079
+So, all these computing resources are used on values that do not hold any information,
+
+00:01:03.079 --> 00:01:05.319
+and this is really computationally inefficient.
+
+00:01:05.319 --> 00:01:07.854
+To solve this problem, we can use embeddings,
+
+00:01:07.855 --> 00:01:11.745
+which basically provide a shortcut for doing this matrix multiplication.
+
+00:01:11.745 --> 00:01:13.230
+To learn word embeddings,
+
+00:01:13.230 --> 00:01:16.600
+we use a fully-connected linear layer like you've seen before.
+
+00:01:16.599 --> 00:01:18.454
+We'll call this layer the embedding layer,
+
+00:01:18.454 --> 00:01:20.454
+and its weights are the embedding weights.
+
+00:01:20.454 --> 00:01:24.039
+These weights will be values that are learned during training this embedding model,
+
+00:01:24.040 --> 00:01:26.260
+and they make up a useful weight matrix.
+
+00:01:26.260 --> 00:01:30.640
+With this matrix, we can skip the big multiplication step from before,
+
+00:01:30.640 --> 00:01:32.980
+by instead grabbing the values for the output of
+
+00:01:32.980 --> 00:01:36.215
+our hidden layer directly from a row in our weight matrix.
+
+00:01:36.215 --> 00:01:38.409
+We can do this because the multiplication of
+
+00:01:38.409 --> 00:01:41.289
+a one-hot encoded vector with a weight matrix,
+
+00:01:41.290 --> 00:01:43.960
+returns only the row of the matrix that corresponds to
+
+00:01:43.959 --> 00:01:46.659
+the index of the one or the on input unit.
+
+00:01:46.659 --> 00:01:49.509
+So, instead of doing matrix multiplication,
+
+00:01:49.510 --> 00:01:52.505
+we can use the embedding weight matrix as a lookup table.
+
+00:01:52.504 --> 00:01:55.539
+Instead of representing words as one-hot vectors,
+
+00:01:55.540 --> 00:01:58.225
+we can encode each word as a unique integer.
+
+00:01:58.224 --> 00:02:03.409
+As an example, say we have the word heart encoded as the integer 958.
+
+00:02:03.409 --> 00:02:06.159
+Then, to get the hidden layer values for heart,
+
+00:02:06.159 --> 00:02:10.234
+we just take the 958th row of the embedding weight matrix.
+
+00:02:10.235 --> 00:02:12.980
+This process is called an embedding lookup,
+
+00:02:12.979 --> 00:02:15.769
+and the number of hidden units is the embedding dimension.
+
+00:02:15.770 --> 00:02:19.060
+So, the embedding lookup table is just a weight matrix,
+
+00:02:19.060 --> 00:02:21.400
+and the embedding layer is just a hidden layer.
+
+00:02:21.400 --> 00:02:24.200
+It's important to know that the lookup table holds weights that are
+
+00:02:24.199 --> 00:02:26.949
+learned during training just like any weight matrix.
+
+00:02:26.949 --> 00:02:30.364
+So, this is the basic idea behind how embedding works.
+
+00:02:30.365 --> 00:02:31.795
+In the next few sections,
+
+00:02:31.794 --> 00:02:34.699
+you'll see how word "the vec" uses the embedding layer to find
+
+00:02:34.699 --> 00:02:38.719
+vector representations of words that contain semantic meaning.
+

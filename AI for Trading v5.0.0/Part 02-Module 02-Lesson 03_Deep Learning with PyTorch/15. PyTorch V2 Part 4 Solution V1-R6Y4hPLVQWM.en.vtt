@@ -1,0 +1,244 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.080
+Again.
+
+00:00:01.080 --> 00:00:02.625
+So, in the last video,
+
+00:00:02.625 --> 00:00:05.609
+I hand you try out building
+
+00:00:05.610 --> 00:00:09.015
+your own neural network to classify this fashion in this dataset.
+
+00:00:09.015 --> 00:00:12.900
+Here is my solution like how I decided to build this.
+
+00:00:12.900 --> 00:00:14.685
+So first, building our network.
+
+00:00:14.685 --> 00:00:18.269
+So, here, I'm going to import our normal modules from PyTorch.
+
+00:00:18.269 --> 00:00:19.664
+So, nn and optim, so,
+
+00:00:19.664 --> 00:00:21.629
+nn is going to allow us to build our network,
+
+00:00:21.629 --> 00:00:23.564
+and optim is going to give us our optimizers.
+
+00:00:23.565 --> 00:00:26.100
+I must going to import this functional modules, so,
+
+00:00:26.100 --> 00:00:30.015
+we can use functions like ReLU and log softmax.
+
+00:00:30.015 --> 00:00:33.810
+I decided to define my network architectures using the class.
+
+00:00:33.810 --> 00:00:36.150
+So, in nn.modules subclassing from this,
+
+00:00:36.149 --> 00:00:37.649
+and it's called a classifier.
+
+00:00:37.649 --> 00:00:41.269
+Then I created four different linear transformations.
+
+00:00:41.270 --> 00:00:45.935
+So, in this case, it's three hidden layers and then one output layer.
+
+00:00:45.935 --> 00:00:49.190
+Our first hidden layer has 256 units.
+
+00:00:49.189 --> 00:00:50.989
+The second hidden layer has a 128,
+
+00:00:50.990 --> 00:00:52.560
+one after that has 64.
+
+00:00:52.560 --> 00:00:55.200
+Then our output has 10 units.
+
+00:00:55.200 --> 00:00:57.330
+So, in the forward pass, I did something a little different.
+
+00:00:57.329 --> 00:01:01.384
+So, I made sure here that the input tensor is actually flattened.
+
+00:01:01.384 --> 00:01:06.049
+So now, you don't have to flatten your input tensors in the training loop,
+
+00:01:06.049 --> 00:01:08.334
+it'll just do it in the forward pass itself.
+
+00:01:08.334 --> 00:01:10.304
+So, to do this is do x.view,
+
+00:01:10.305 --> 00:01:12.645
+which is going to change our shape.
+
+00:01:12.644 --> 00:01:16.185
+So, x.shape zero is going to give us our batch size.
+
+00:01:16.185 --> 00:01:19.460
+Then the negative one here is going to basically fill out
+
+00:01:19.459 --> 00:01:21.589
+the the second dimension with as many elements as it
+
+00:01:21.590 --> 00:01:24.320
+needs to keep the same total number of elements.
+
+00:01:24.319 --> 00:01:27.529
+So, what this does is it basically gives us another tensor,
+
+00:01:27.530 --> 00:01:30.560
+that is the flattened version of our input tensor.
+
+00:01:30.560 --> 00:01:33.454
+It doing a pass these through our linear transformations,
+
+00:01:33.454 --> 00:01:36.024
+and then ReLU activation functions.
+
+00:01:36.025 --> 00:01:40.550
+Then finally, we use a log softmax with a dimension set to one,
+
+00:01:40.549 --> 00:01:43.204
+as our output, and return that from our forward function.
+
+00:01:43.204 --> 00:01:44.584
+With the model defined,
+
+00:01:44.584 --> 00:01:46.969
+I can do model equals classifiers.
+
+00:01:46.969 --> 00:01:48.459
+So, this actually creates our model.
+
+00:01:48.459 --> 00:01:53.434
+Then we define our criterion with the negative log likelihood loss.
+
+00:01:53.435 --> 00:01:56.299
+So, I'm using log softmax as the output my model.
+
+00:01:56.299 --> 00:02:00.009
+So, I want to use the NLLLoss as the criterion.
+
+00:02:00.010 --> 00:02:03.150
+Then, here I'm using the Adam optimizer.
+
+00:02:03.150 --> 00:02:07.070
+So, this is basically the same as stochastic gradient descent,
+
+00:02:07.069 --> 00:02:10.264
+but it has some nice properties where it uses
+
+00:02:10.264 --> 00:02:14.569
+momentum which speeds up the actual fitting process.
+
+00:02:14.569 --> 00:02:21.609
+It also adjust the learning rate for each of the individual parameters in your model.
+
+00:02:21.610 --> 00:02:24.465
+Here, I wrote my training loop.
+
+00:02:24.465 --> 00:02:26.674
+So, again I'm using five epochs.
+
+00:02:26.674 --> 00:02:28.670
+So, for e in range epoch, so,
+
+00:02:28.669 --> 00:02:31.954
+this is going to basically loop through our dataset five times,
+
+00:02:31.955 --> 00:02:35.090
+I'm tracking the loss with running loss,
+
+00:02:35.090 --> 00:02:36.900
+and just kind of instantiated it here.
+
+00:02:36.900 --> 00:02:38.564
+Then, getting our images.
+
+00:02:38.564 --> 00:02:41.175
+So, from images labels in train loader,
+
+00:02:41.175 --> 00:02:45.635
+so I get our log probabilities by passing in the images to a model.
+
+00:02:45.634 --> 00:02:48.019
+So, one thing to note, you can kind of do a little shortcut.
+
+00:02:48.020 --> 00:02:51.320
+If you just pass these in to model as if it was a function,
+
+00:02:51.319 --> 00:02:53.810
+then it will run the forward method.
+
+00:02:53.810 --> 00:02:59.634
+So, this is just a kind of a shorter way to run the forward pass through your model.
+
+00:02:59.634 --> 00:03:02.060
+Then with the log probabilities and the labels,
+
+00:03:02.060 --> 00:03:03.560
+I can calculate the loss.
+
+00:03:03.560 --> 00:03:06.110
+Then here, I am zeroing the gradients.
+
+00:03:06.110 --> 00:03:09.485
+Now I'm doing the lost up backwards to calculating our gradients,
+
+00:03:09.485 --> 00:03:11.890
+and then with the gradients, I can do our optimizer step.
+
+00:03:11.889 --> 00:03:14.209
+If we tried it, we can see at least for
+
+00:03:14.210 --> 00:03:17.645
+these first five epochs that are loss actually drops.
+
+00:03:17.645 --> 00:03:18.860
+Now the network is trained,
+
+00:03:18.860 --> 00:03:20.555
+we can actually test it out.
+
+00:03:20.555 --> 00:03:24.965
+So, we pass in data to our model, calculate the probabilities.
+
+00:03:24.965 --> 00:03:28.129
+So, here, doing the forward pass through the model to
+
+00:03:28.129 --> 00:03:31.509
+get our actual log probabilities and with the log probabilities,
+
+00:03:31.509 --> 00:03:33.979
+you can take the exponential to get the actual probabilities.
+
+00:03:33.979 --> 00:03:38.875
+Then with that, we can pass it into this nice little view classify function that I wrote,
+
+00:03:38.875 --> 00:03:40.365
+and it shows us,
+
+00:03:40.365 --> 00:03:42.110
+if we pass an image of a shirt,
+
+00:03:42.110 --> 00:03:44.195
+it tells us that it's a shirt.
+
+00:03:44.194 --> 00:03:47.974
+So, our network seems to have learned fairly well,
+
+00:03:47.974 --> 00:03:50.799
+what this dataset is showing us.
+
