@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.349
+Since you've studied the stocks in your universe now for a while,
+
+00:00:04.349 --> 00:00:07.919
+you might already know which stock has been performing the best.
+
+00:00:07.919 --> 00:00:10.679
+Let's call it New Digital Corporation.
+
+00:00:10.679 --> 00:00:15.064
+At this point, you may want to put all your money in New Digital stock.
+
+00:00:15.064 --> 00:00:20.460
+But let's say you do this and New Digital stock keeps increasing in value for a while,
+
+00:00:20.460 --> 00:00:23.675
+but suddenly drops to half the price you purchased that.
+
+00:00:23.675 --> 00:00:26.580
+Since you used all your money to buy the stock,
+
+00:00:26.579 --> 00:00:28.484
+you just lost half your money.
+
+00:00:28.484 --> 00:00:31.399
+Ouch! What if instead you put
+
+00:00:31.399 --> 00:00:35.600
+half your money in New Digital and half your money in Big Pharma Company?
+
+00:00:35.600 --> 00:00:41.300
+Intuitively, this seems like it could smooth out the dips and value of your investment,
+
+00:00:41.299 --> 00:00:46.209
+because New Digital could start doing well when it launches a new tech product,
+
+00:00:46.210 --> 00:00:49.445
+while Big Pharma recovers from a failed drug trial.
+
+00:00:49.445 --> 00:00:53.204
+Big pharma might start doing well when it's research arm,
+
+00:00:53.204 --> 00:00:56.369
+deliver several new promising candidate drugs,
+
+00:00:56.369 --> 00:00:59.905
+while New Digital struggles during a change in management.
+
+00:00:59.905 --> 00:01:06.579
+What we've done here is reduced our portfolio risk by diversifying our portfolio.
+
+00:01:06.579 --> 00:01:11.234
+But why not keep spreading our money into more and more stocks?
+
+00:01:11.234 --> 00:01:15.049
+Can we reduce our portfolio risk indefinitely?
+
+00:01:15.049 --> 00:01:17.965
+If all the sources of risk are independent,
+
+00:01:17.965 --> 00:01:19.810
+we could in theory,
+
+00:01:19.810 --> 00:01:24.704
+reduce risk to zero by spreading our money between more and more stocks.
+
+00:01:24.704 --> 00:01:27.560
+This would be the case if each company is only
+
+00:01:27.560 --> 00:01:30.740
+subject to its own independent sources of risk,
+
+00:01:30.739 --> 00:01:33.875
+and there are no risks common to all companies.
+
+00:01:33.875 --> 00:01:40.040
+Risks specific to individual companies is called idiosyncratic risk or specific risk.
+
+00:01:40.040 --> 00:01:42.550
+However, in the real world,
+
+00:01:42.549 --> 00:01:45.829
+all companies are subject to common sources of risk that
+
+00:01:45.829 --> 00:01:49.920
+affect the entire economy such as the risks of inflation,
+
+00:01:49.920 --> 00:01:53.659
+recession, or change in interest rates or GDP.
+
+00:01:53.659 --> 00:02:00.935
+Risk attributable to market-wide sources is called market risk or systematic risk.
+
+00:02:00.935 --> 00:02:04.340
+Let's see if we can quantify this risk and
+
+00:02:04.340 --> 00:02:07.200
+find some guidelines for how to allocate our money.
+

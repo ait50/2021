@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.205
+There are several flavors of trading strategies.
+
+00:00:03.205 --> 00:00:07.495
+The most basic type is based on buying and selling a single asset.
+
+00:00:07.495 --> 00:00:12.445
+An example of this type of strategy might be just trading the S&amp;P 500.
+
+00:00:12.445 --> 00:00:14.790
+You could track the performance of the S&amp;P over
+
+00:00:14.789 --> 00:00:18.224
+time and enter positions based on past performance.
+
+00:00:18.225 --> 00:00:21.660
+For example, if the S&amp;P has been doing well for a while,
+
+00:00:21.660 --> 00:00:25.995
+you might enter a long position under the assumption that it has momentum.
+
+00:00:25.995 --> 00:00:29.760
+Another common strategy is to find pairs of assets that seemed to be
+
+00:00:29.760 --> 00:00:33.675
+related and trade based on their relative movements.
+
+00:00:33.674 --> 00:00:36.195
+These are called pairwise strategies.
+
+00:00:36.195 --> 00:00:40.189
+For example, say there are two big companies in the beverage industry,
+
+00:00:40.189 --> 00:00:44.159
+these companies are probably subject to many in the same market affects,
+
+00:00:44.159 --> 00:00:45.594
+the price of ingredients,
+
+00:00:45.594 --> 00:00:47.570
+the cost of shipping et cetera.
+
+00:00:47.570 --> 00:00:50.560
+If one stock starts to appreciate more than the other,
+
+00:00:50.560 --> 00:00:53.480
+you might think that the laggard will eventually catch up.
+
+00:00:53.479 --> 00:00:58.024
+A pairwise strategy would make trades to try to capture this differential.
+
+00:00:58.024 --> 00:01:03.244
+Another class of trading strategy extends this idea to groups of stocks,
+
+00:01:03.244 --> 00:01:07.159
+these are called cross-sectional strategies also known as
+
+00:01:07.159 --> 00:01:11.099
+equity statistical arbitrage or equity market neutral investing.
+
+00:01:11.099 --> 00:01:14.659
+This is a popular type of strategy and involves comparing
+
+00:01:14.659 --> 00:01:18.334
+hundreds to thousands of stocks to determine which to hold
+
+00:01:18.334 --> 00:01:22.189
+in long and short portfolios with the goal of benefiting from
+
+00:01:22.189 --> 00:01:27.170
+transient market phenomena without being subject to overall market movements.
+
+00:01:27.170 --> 00:01:33.335
+The comparison is often based on price and or volume or fundamental information.
+
+00:01:33.334 --> 00:01:36.679
+A momentum signal where you rank stocks based on the strength of
+
+00:01:36.680 --> 00:01:41.940
+prior returns over a given period is an example of a cross-sectional strategy.
+
+00:01:41.939 --> 00:01:47.414
+Finally, there's a class of strategies based primarily on new types of data,
+
+00:01:47.415 --> 00:01:49.920
+such as satellite imagery, social media,
+
+00:01:49.920 --> 00:01:52.924
+geolocation or consumer transaction data.
+
+00:01:52.924 --> 00:01:58.364
+Large hedge funds and asset managers are most interested in strategies three and four.
+
+00:01:58.364 --> 00:02:02.134
+These are the two we spend most of the time on in this nano-degree.
+
+00:02:02.135 --> 00:02:05.660
+Why is this? Two reasons: first,
+
+00:02:05.659 --> 00:02:08.030
+large professional market participants by
+
+00:02:08.030 --> 00:02:10.919
+definition have large amounts of capital to put to work.
+
+00:02:10.919 --> 00:02:15.004
+As such, they desire strategies with high capacity,
+
+00:02:15.004 --> 00:02:18.889
+this means the strategy can be put to work at a meaningful asset level and
+
+00:02:18.889 --> 00:02:23.234
+this is most often achieved by trading very many stocks.
+
+00:02:23.235 --> 00:02:27.135
+Cross-sectional strategies all other things being equal,
+
+00:02:27.134 --> 00:02:28.969
+have the highest capacity.
+
+00:02:28.969 --> 00:02:33.965
+Second, professional market participants are looking for differentiated ideas.
+
+00:02:33.965 --> 00:02:36.955
+Given the proliferation of alternative data,
+
+00:02:36.955 --> 00:02:40.130
+many funds hope to uncover signals in hard-to-find,
+
+00:02:40.129 --> 00:02:43.009
+expensive and difficult to work with data.
+
+00:02:43.009 --> 00:02:46.129
+We will talk about that later in this nano degree.
+

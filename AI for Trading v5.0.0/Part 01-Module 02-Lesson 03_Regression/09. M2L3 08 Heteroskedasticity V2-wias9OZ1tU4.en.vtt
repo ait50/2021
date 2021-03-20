@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.410
+Recall that we also need to check if our data is stationary over time.
+
+00:00:05.410 --> 00:00:08.400
+By stationary, we mean that the mean,
+
+00:00:08.400 --> 00:00:12.515
+variance, and covariance are the same over time.
+
+00:00:12.515 --> 00:00:18.255
+In particular, we want to check that the variance of our data is stable over time.
+
+00:00:18.254 --> 00:00:22.519
+This is important because if the variance changes over time,
+
+00:00:22.519 --> 00:00:26.719
+then the tests that we use to validate our model will be incorrect.
+
+00:00:26.719 --> 00:00:31.759
+The term for constant variance over time is homoscedasticity.
+
+00:00:31.760 --> 00:00:37.250
+The term for a changing variance over time is heteroskedasticity.
+
+00:00:37.250 --> 00:00:41.685
+To check if our data is homoscedastic or heteroskedastic,
+
+00:00:41.685 --> 00:00:44.410
+we can use the Breusch-Pagan test.
+
+00:00:44.409 --> 00:00:46.449
+If the Breusch-Pagan test,
+
+00:00:46.450 --> 00:00:48.505
+yields a small P value,
+
+00:00:48.505 --> 00:00:51.020
+say less than 0.05,
+
+00:00:51.020 --> 00:00:55.175
+then we have to assume that the data is heteroskedastic.
+
+00:00:55.174 --> 00:01:00.204
+If the Breusch-Pagan test yields a P value greater than 0.05,
+
+00:01:00.204 --> 00:01:03.729
+we can assume that the data is homoscedastic.
+

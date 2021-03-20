@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.609
+If possible, we'd like to generate
+
+00:00:02.609 --> 00:00:05.759
+trading signals that are robust to outlying data points.
+
+00:00:05.759 --> 00:00:10.589
+For example, imagine you have an outlier in the closing price time series,
+
+00:00:10.589 --> 00:00:12.404
+a huge positive spike.
+
+00:00:12.404 --> 00:00:16.710
+If you're using a momentum based strategy and your strategies buy or sell
+
+00:00:16.710 --> 00:00:21.065
+decision is based solely on individual closing price values,
+
+00:00:21.065 --> 00:00:24.745
+then the single value might induce a buy decision.
+
+00:00:24.745 --> 00:00:29.315
+If instead you take the moving average of closing prices
+
+00:00:29.315 --> 00:00:34.340
+averaged with a fixed duration rolling time window as the input to your signal,
+
+00:00:34.340 --> 00:00:37.640
+it will average out that single extreme datum and
+
+00:00:37.640 --> 00:00:41.784
+reduce the effect of individual outliers on buy or sell decisions.
+
+00:00:41.784 --> 00:00:45.079
+The trade-off here is that your signal actions might be
+
+00:00:45.079 --> 00:00:49.039
+generated with a slight delay relative to the stock price movement.
+
+00:00:49.039 --> 00:00:53.585
+The duration of this delay will depend on the window size you use.
+
+00:00:53.585 --> 00:00:58.160
+You can take an analogous approach for portfolio level strategies,
+
+00:00:58.159 --> 00:01:02.994
+or strategies that are based on the movements of an entire portfolio of stocks,.
+
+00:01:02.994 --> 00:01:07.459
+You can average out the extreme movements of individual stocks by basing
+
+00:01:07.459 --> 00:01:12.000
+your buy or sell decision on the accumulated movements of many stocks,
+
+00:01:12.000 --> 00:01:14.215
+or even an entire sector.
+
+00:01:14.215 --> 00:01:18.255
+This will also reduce the effect of outliers on your signal.
+
+00:01:18.254 --> 00:01:21.019
+If you are looking for alternative solutions,
+
+00:01:21.019 --> 00:01:25.894
+there have been ongoing efforts from within the industry to incorporate Bayesian methods,
+
+00:01:25.894 --> 00:01:28.655
+or machine-learning, into outlier detection.
+
+00:01:28.655 --> 00:01:30.960
+This is outside the scope of this lesson,
+
+00:01:30.959 --> 00:01:33.869
+so, we will leave the subject to you to explore.
+

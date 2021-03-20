@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.879
+So, we know how to calculate volatility for a given period.
+
+00:00:03.879 --> 00:00:08.714
+This gives us one number to capture return variability for this period,
+
+00:00:08.714 --> 00:00:12.189
+but we also know that the market changes over time.
+
+00:00:12.189 --> 00:00:14.594
+We know the market goes up and down,
+
+00:00:14.595 --> 00:00:17.569
+and while sometimes it seems highly variable,
+
+00:00:17.568 --> 00:00:20.210
+other times it seems relatively placid.
+
+00:00:20.210 --> 00:00:24.230
+For example, during the last financial crisis in 2008,
+
+00:00:24.230 --> 00:00:26.669
+stock prices were extremely volatile.
+
+00:00:26.669 --> 00:00:32.130
+Whereas 2016 and 2017 have marked a relatively low volatility period.
+
+00:00:32.130 --> 00:00:37.844
+So, what do you do if you want to understand how volatility is changing over time?
+
+00:00:37.844 --> 00:00:41.079
+One option is to use a rolling window.
+
+00:00:41.079 --> 00:00:44.179
+So, if you wanted to estimate today's volatility,
+
+00:00:44.179 --> 00:00:47.119
+you would calculate the standard deviation of a set of
+
+00:00:47.119 --> 00:00:50.894
+log returns from sometime in the past up to yesterday.
+
+00:00:50.895 --> 00:00:54.170
+This is a practical method that is commonly implemented,
+
+00:00:54.170 --> 00:00:57.060
+but how long should the time window be?
+
+00:00:57.060 --> 00:01:02.560
+When you take a look at the volatility of previous days to estimate today's volatility,
+
+00:01:02.560 --> 00:01:05.859
+how important is the volatility from one day ago?
+
+00:01:05.859 --> 00:01:07.650
+How about from one week ago?
+
+00:01:07.650 --> 00:01:10.305
+Or how about from one month ago?
+
+00:01:10.305 --> 00:01:13.250
+A long window will mean that the value you
+
+00:01:13.250 --> 00:01:17.599
+compute may not react to changes in market conditions quickly enough.
+
+00:01:17.599 --> 00:01:21.769
+To short window may mean that the computed value becomes
+
+00:01:21.769 --> 00:01:26.209
+two variable over different window periods to be used reliably.
+
+00:01:26.209 --> 00:01:30.389
+Your choice of time window is going to depend on your application.
+
+00:01:30.390 --> 00:01:37.069
+In general, if your signal or strategy involves holding onto purchases for long periods,
+
+00:01:37.069 --> 00:01:39.439
+you can afford to use a longer time window for
+
+00:01:39.439 --> 00:01:43.450
+computation and vice versa for short holding periods.
+
+00:01:43.450 --> 00:01:49.670
+You can also use windows of different sizes to gain insight into how volatility evolves.
+

@@ -1,0 +1,325 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Mean Reversion
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Pairs Trading and Mean Reversion
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Mean Reversion.html">
+       02. Mean Reversion
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Pairs Trading.html">
+       03. Pairs Trading
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Finding Pairs to Trade.html">
+       04. Finding Pairs to Trade
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz Identify Pairs to Trade.html">
+       05. Quiz: Identify Pairs to Trade
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Cointegration.html">
+       06. Cointegration
+      </a>
+     </li>
+     <li class="">
+      <a href="07. ADF and roots.html">
+       07. ADF and roots
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Clustering Stocks.html">
+       08. Clustering Stocks
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Trade Pairs of Stocks.html">
+       09. Trade Pairs of Stocks
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Exercise finding pairs.html">
+       10. Exercise: finding pairs
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Variations of Pairs Trading and Mean Reversion Trading.html">
+       11. Variations of Pairs Trading and Mean Reversion Trading
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 3 or more stocks (optional).html">
+       12. 3 or more stocks (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Details of Johansen Test (optional).html">
+       13. Details of Johansen Test (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Summary.html">
+       14. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. Mean Reversion
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          M2L6 02 Mean Reversion V5
+         </p>
+        </h3>
+        <video controls="">
+         <source src="02. M2L6 02 Mean Reversion V5-zQ08lFcZa_A.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="02. M2L6 02 Mean Reversion V5-zQ08lFcZa_A.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="02. M2L6 02 Mean Reversion V5-zQ08lFcZa_A.zh-CN.vtt" srclang="zh-CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="drift-and-volatility-model-optional">
+          Drift and Volatility Model (optional)
+         </h3>
+         <p>
+          The drift and volatility model is also called a Brownian Motion model, and is a type of stochastic volatility model.  First, let’s discuss how this relates to the finance industry.  Stochastic volatility models are fundamental building blocks for estimating the price of options (calls, puts, swaps) and also bonds.  Before creating a model of an option (like a call option, for instance), we first want a model for the movement of its underlying asset (the stock price itself).  The movement of the stock price is what the drift and volatility model (brownian motion model) attempts to describe.
+          <br/>
+          The word Brownian Motion refers to the movements of molecules suspended in fluid, since this model was first used in physics and later adapted for finance.  So it helps to imagine the stock price as a small particle, drifting through a glass of water, while it’s being bumped around by other particles and molecules.  The word “stochastic” is another word for “random”.  Stochastic volatility models attempt to represent the movement of a stock price when the volatility of its movements is random.  Stochastic volatility models were used to improve upon the work of Black, Scholes and Merton, who came up with the first formula for pricing options.
+         </p>
+         <p>
+          Now let’s revisit the drift and volatility model and describe what it means.
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           dp_t = p_t \mu d_t + p_t \sigma_t \epsilon \sqrt(d_t)
+          </span>
+         </p>
+         <p>
+          First, notice that
+          <span class="mathquill ud-math">
+           dp_t
+          </span>
+          on the left is referring to the differential of the stock price at time t.  This type of equation is called a differential equation, since it describes the change over time of some process, rather than the specific state (stock price) of that series.
+         </p>
+         <p>
+          The term
+          <span class="mathquill ud-math">
+           p_t \mu dt
+          </span>
+          is the drift term.  First, notice that it depends on the value of the stock price at time t
+          <span class="mathquill ud-math">
+           (p_t)
+          </span>
+          .  This means that if we compare the movements of two stocks, one that’s priced at $2 per share, and another that’s priced at $1000 per share, the series with the larger price per share is expected to drift (change) more in absolute dollar amounts compared to the other stock.  The
+          <span class="mathquill ud-math">
+           \mu
+          </span>
+          term is the expected return of the stock (think average return).  Think of the expected return as the expected percent change over a period of time.  We usually estimate the expected future return based on historical returns.  So if a stock is expected to have a larger percent change per day compared to another, we’d also expect it to drift more (change more) compared to the other stock.  This term also includes
+          <span class="mathquill ud-math">
+           d_t
+          </span>
+          , which is the change in time (how much time has passed).  If we watched a stock over a period of day versus over one month, we would expect it to drift more over a month, as more time has passed.
+         </p>
+         <p>
+          Now let’s look at the volatility term.  Think of this as the random, bouncy part of the stock movement.  This term includes the stock price
+          <span class="mathquill ud-math">
+           p_t
+          </span>
+          .  It also includes the standard deviation of the stock
+          <span class="mathquill ud-math">
+           \sigma_t
+          </span>
+          , which is a function of time.  This is why this model is a type of stochastic volatility model, because it allows for a non-constant volatility that varies over time.  If a stock series has higher volatility, this will result in a larger overall movement in stock price (a higher
+          <span class="mathquill ud-math">
+           dp_t
+          </span>
+          ).  The \epsilon is a white noise term, which means it’s a random number with a mean of zero and standard deviation of one.  The white noise accounts for movements in the stock price that are not accounted for by the model.  Finally, there’s the square root of the change in time.  Note that the product
+          <span class="mathquill ud-math">
+           \epsilon_t \sqrt(d_t)
+          </span>
+          is usually written as
+          <span class="mathquill ud-math">
+           dW_t
+          </span>
+          , and named a Wiener process.
+         </p>
+         <h3 id="back-to-mean-reversion">
+          Back to Mean Reversion
+         </h3>
+         <p>
+          Okay, stepping back a bit to relate this to mean reversion.  The drift and volatility model is a way to describe phenomena that we observe in real life, such as stock prices.  The model assumes that there is a constant drift term with some added randomness, so we can expect that a series will bounce around, but still revert back to its long-term mean.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. Pairs Trading.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. Mean Reversion')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

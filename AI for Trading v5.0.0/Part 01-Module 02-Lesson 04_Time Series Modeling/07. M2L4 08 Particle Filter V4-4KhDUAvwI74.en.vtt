@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.375
+Next, we'll discuss the particle filter,
+
+00:00:03.375 --> 00:00:06.209
+a type of genetic algorithm that is also
+
+00:00:06.209 --> 00:00:10.019
+used for self-driving cars as well as time series.
+
+00:00:10.019 --> 00:00:16.050
+By genetic algorithm, I mean that we apply natural selection to improve our estimates.
+
+00:00:16.050 --> 00:00:18.480
+This will become more clear in a bit.
+
+00:00:18.480 --> 00:00:20.949
+Let's start with a thought experiment.
+
+00:00:20.949 --> 00:00:24.544
+Imagine that we can hire many little helpers,
+
+00:00:24.545 --> 00:00:29.795
+each with a certain view on where the stock returns are going based on market data.
+
+00:00:29.795 --> 00:00:34.230
+Each of these little helpers predict the stock return for the next day,
+
+00:00:34.229 --> 00:00:35.479
+and on the following day,
+
+00:00:35.479 --> 00:00:37.544
+you can see how correct they were.
+
+00:00:37.545 --> 00:00:41.370
+Each day, you pay more to the little helpers who are
+
+00:00:41.369 --> 00:00:45.169
+correct and pay less to the incorrect helpers.
+
+00:00:45.170 --> 00:00:50.245
+Over time, only the accurate helpers remain to make predictions.
+
+00:00:50.244 --> 00:00:52.753
+So by the process of natural selection,
+
+00:00:52.753 --> 00:00:54.619
+we find the helpers who are most
+
+00:00:54.619 --> 00:00:58.354
+accurate and average their predictions as your best estimate.
+
+00:00:58.354 --> 00:01:02.239
+Since this process looks like natural selection and evolution,
+
+00:01:02.240 --> 00:01:05.629
+particle filters are considered a type of genetic algorithm.
+
+00:01:05.629 --> 00:01:08.089
+The little helpers are called particles.
+
+00:01:08.090 --> 00:01:13.025
+These particles are individual models whose parameters are set randomly.
+
+00:01:13.025 --> 00:01:16.225
+When most particles make very similar predictions,
+
+00:01:16.224 --> 00:01:19.599
+this also shows more confidence in the average prediction.
+
+00:01:19.599 --> 00:01:23.579
+When there are significant changes in the data distribution at any point in time,
+
+00:01:23.579 --> 00:01:27.579
+the particles may make predictions that are more different from each other.
+
+00:01:27.579 --> 00:01:31.754
+In those cases, when the individual predictions are more spread out,
+
+00:01:31.754 --> 00:01:34.239
+we are less confident of the prediction.
+
+00:01:34.239 --> 00:01:37.549
+Particle filters are pretty good at handling a variety of
+
+00:01:37.549 --> 00:01:41.429
+data because they don't assume the data to be normally distributed.
+
+00:01:41.430 --> 00:01:45.200
+Particle filters also do not assume a linear relationship,
+
+00:01:45.200 --> 00:01:48.269
+so they can better fit non-linear data.
+

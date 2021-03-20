@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.054
+Here's how you might approach the problem of formulating the complete trading strategy.
+
+00:00:05.054 --> 00:00:10.019
+Our goal is to construct a stock portfolio of long and short positions,
+
+00:00:10.019 --> 00:00:13.740
+and the selection process for stocks to go into the portfolio is
+
+00:00:13.740 --> 00:00:17.714
+based on the stock's returns performance relative to other stocks.
+
+00:00:17.714 --> 00:00:19.679
+For this example, we shall assume
+
+00:00:19.679 --> 00:00:24.855
+we are periodically re-evaluating and re-balancing stock holdings every month-end.
+
+00:00:24.855 --> 00:00:27.754
+Let's use the S&amp;P stocks universe.
+
+00:00:27.754 --> 00:00:33.405
+The top 500 stocks trading in the US tracked by the S&amp;P 500 index.
+
+00:00:33.405 --> 00:00:37.640
+A stock universe, is a general term in finance that refers to
+
+00:00:37.640 --> 00:00:41.689
+a group of stocks that share certain common features,
+
+00:00:41.689 --> 00:00:45.049
+belong to the same market or simply a set of stocks that
+
+00:00:45.049 --> 00:00:48.625
+are used in verifying or simulating trading strategies.
+
+00:00:48.625 --> 00:00:54.210
+First, we fetch the daily closing prices of each toxins mid-2013.
+
+00:00:54.210 --> 00:00:56.990
+Please note that it is important that we use
+
+00:00:56.990 --> 00:01:00.134
+adjusted closing prices for analysis purposes.
+
+00:01:00.134 --> 00:01:04.640
+Also note that the composition of stock universes changes over time.
+
+00:01:04.640 --> 00:01:10.510
+For example, around 10 to 40 companies leave or enter the S&amp;P 500 every year.
+
+00:01:10.510 --> 00:01:12.090
+When you test your strategy,
+
+00:01:12.090 --> 00:01:15.829
+it is important that your dataset for 2013 for example,
+
+00:01:15.829 --> 00:01:19.724
+contained the companies that were part of the universe in 2013.
+
+00:01:19.724 --> 00:01:22.849
+In fact, your dataset for any point in time,
+
+00:01:22.849 --> 00:01:26.579
+should contain the companies that were in the universe at that time.
+
+00:01:26.579 --> 00:01:29.269
+If you use the current composition for example,
+
+00:01:29.269 --> 00:01:32.435
+the current S&amp;P 500 index in 2017,
+
+00:01:32.435 --> 00:01:35.344
+then you will effectively be testing your strategy
+
+00:01:35.343 --> 00:01:39.004
+on the subset of stocks that survive to 2017.
+
+00:01:39.004 --> 00:01:42.739
+These stocks probably performed better than the ones that left the universe.
+
+00:01:42.739 --> 00:01:46.819
+So the performance of your strategy will look better than it should.
+
+00:01:46.819 --> 00:01:49.939
+This is a subtle error that analysts often make,
+
+00:01:49.939 --> 00:01:52.284
+and is known as survivorship bias.
+
+00:01:52.284 --> 00:01:55.969
+Now, since we are only interested in month-end prices,
+
+00:01:55.969 --> 00:02:00.355
+we can re-sample the daily closing prices into monthly prices,
+
+00:02:00.355 --> 00:02:05.150
+then we can form a log returns time-series from the monthly prices.
+
+00:02:05.150 --> 00:02:08.060
+For each month-end observation period,
+
+00:02:08.060 --> 00:02:12.750
+we rank the stocks by their month-end returns from the highest to the lowest.
+
+00:02:12.750 --> 00:02:15.419
+Select the top performing end stocks into
+
+00:02:15.419 --> 00:02:20.194
+our long portfolio and the bottom performing end stocks into our short portfolio.
+
+00:02:20.194 --> 00:02:23.055
+You could also choose a fraction of stock say,
+
+00:02:23.055 --> 00:02:25.290
+the top and bottom 10 percent.
+
+00:02:25.289 --> 00:02:27.239
+To simplify this example,
+
+00:02:27.240 --> 00:02:31.270
+we'll assume every stock gets an equal dollar amount of investment.
+
+00:02:31.270 --> 00:02:34.610
+This makes it easier to compute the portfolios monthly returns
+
+00:02:34.610 --> 00:02:39.020
+performance as the simple arithmetic average of the stock returns.
+
+00:02:39.020 --> 00:02:42.710
+Lastly, the combined portfolios monthly returns is
+
+00:02:42.710 --> 00:02:47.189
+the difference between the long portfolio's return and that of the short portfolio.
+
+00:02:47.189 --> 00:02:50.090
+Now, continue doing this for each month and
+
+00:02:50.090 --> 00:02:53.530
+period and you have a momentum based trading strategy.
+

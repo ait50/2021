@@ -1,0 +1,247 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Kalman Filter
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Time Series Modeling
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Time Series Modeling.html">
+       01. Time Series Modeling
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Autoregressive Models.html">
+       02. Autoregressive Models
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Moving Average Models.html">
+       03. Moving Average Models
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Advanced Time Series Models.html">
+       04. Advanced Time Series Models
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Exercise ARMA and ARIMA.html">
+       05. Exercise: ARMA and ARIMA
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Kalman Filter.html">
+       06. Kalman Filter
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Particle Filter.html">
+       07. Particle Filter
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Recurrent Neural Networks.html">
+       08. Recurrent Neural Networks
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Summary.html">
+       09. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Kalman Filter
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          M2L4 07 Kalman Filter V4
+         </p>
+        </h3>
+        <video controls="">
+         <source src="06. M2L4 07 Kalman Filter V4-CLJhgfMI4Ho.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="06. M2L4 07 Kalman Filter V4-CLJhgfMI4Ho.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="06. M2L4 07 Kalman Filter V4-CLJhgfMI4Ho.en.vtt" srclang="en"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="kalman-filters-for-pairs-trading">
+          Kalman Filters for Pairs Trading
+         </h2>
+         <p>
+          One way Kalman Filters are used in trading is for choosing the hedge ratio in pairs trading.  We will get into pairs trading and hedge ratios in lesson 13 of this module, but for now, imagine that there’s a magic number that you can estimate from a model, such as a regression model, based on time series data of two stocks.
+         </p>
+         <p>
+          Every day when you get another data point, you can run another regression and get an updated estimate for this number.  So do you take the most recent number every time?  Do you take a moving average?  If so, how many days will you average together?  Will you give each day the same weight when taking the average?
+         </p>
+         <p>
+          All of these kinds of decisions are meant to smooth an estimate of a number that is based on noisy data.  The Kalman Filter is designed to provide this estimate based on both past information and new observations.  So instead of taking a moving average of this estimate, we can use a Kalman Filter.
+         </p>
+         <p>
+          The Kalman Filter takes the time series of two stocks, and generate its “smoothed” estimate for this magic number at each new time period.  Kalman Filters are often used in control systems for vehicles such as cars, planes, rockets, and robots.  They’re similar to the application in pairs trading because they take noisy indirect measurements at each new time period in order to estimate state variables (location, direction, speed) of a system .
+         </p>
+         <p>
+          Kalman Filters are not used in this module’s project, but if you want to learn more, please check out the extracurricular content section: "Machine Learning": Introduction to Kalman Filters.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. Particle Filter.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Kalman Filter')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

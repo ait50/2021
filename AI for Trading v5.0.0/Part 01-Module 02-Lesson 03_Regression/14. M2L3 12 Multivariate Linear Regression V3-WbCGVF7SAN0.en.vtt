@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.399
+Earlier, we touched on using
+
+00:00:02.399 --> 00:00:06.945
+multiple independent variables to predict a single dependent variable.
+
+00:00:06.945 --> 00:00:09.599
+We call this multiple regression.
+
+00:00:09.599 --> 00:00:13.044
+In this example, we are using a house's area,
+
+00:00:13.044 --> 00:00:17.265
+number of rooms and number of years since the house was built.
+
+00:00:17.265 --> 00:00:21.725
+All three are variables that we use to predict the house price.
+
+00:00:21.725 --> 00:00:24.540
+We can go one step further and choose
+
+00:00:24.539 --> 00:00:28.379
+more than one dependent variable that we wish to predict.
+
+00:00:28.379 --> 00:00:31.744
+Now, we're not just predicting the house price,
+
+00:00:31.745 --> 00:00:36.704
+but also trying to predict the home's electricity consumption and gas consumption.
+
+00:00:36.704 --> 00:00:41.750
+When we tried to predict more than one dependent variable at the same time,
+
+00:00:41.750 --> 00:00:44.670
+this is called multivariate regression.
+
+00:00:44.670 --> 00:00:47.929
+When we're using more than one independent variable
+
+00:00:47.929 --> 00:00:51.219
+to predict more than one dependent variable,
+
+00:00:51.219 --> 00:00:55.314
+this is called multivariate multiple regression.
+
+00:00:55.314 --> 00:00:57.469
+This appears rather complicated,
+
+00:00:57.469 --> 00:01:00.920
+but being familiar with multivariate regression will help
+
+00:01:00.920 --> 00:01:04.930
+you later when you learn about time series and pairs trading.
+

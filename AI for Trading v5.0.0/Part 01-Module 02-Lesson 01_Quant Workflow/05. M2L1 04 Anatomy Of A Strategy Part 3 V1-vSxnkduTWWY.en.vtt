@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+Eventually, you will arrive at the stage where
+
+00:00:03.390 --> 00:00:07.125
+you want to start thinking about how your strategy will work in practice.
+
+00:00:07.125 --> 00:00:09.835
+This is the portfolio construction stage,
+
+00:00:09.835 --> 00:00:11.760
+he stage where you have to think about using
+
+00:00:11.759 --> 00:00:16.064
+your combined alpha vector to generate and update an actual portfolio.
+
+00:00:16.065 --> 00:00:17.945
+At every time iteration,
+
+00:00:17.945 --> 00:00:20.914
+your strategy is going to take an existing portfolio,
+
+00:00:20.914 --> 00:00:25.640
+make predictions about market behavior using your combined alpha vector and use
+
+00:00:25.640 --> 00:00:31.194
+this information to make trades that move the existing portfolio to an updated portfolio.
+
+00:00:31.193 --> 00:00:34.100
+There are more questions that must be answered when turning
+
+00:00:34.100 --> 00:00:37.550
+your market hypothesis into traits such as,
+
+00:00:37.549 --> 00:00:41.474
+how does your strategy take into account in various forms of risk?
+
+00:00:41.475 --> 00:00:44.945
+What quantities should your portfolio seek to optimize?
+
+00:00:44.945 --> 00:00:48.270
+Are there any additional constraints on your portfolio?
+
+00:00:48.270 --> 00:00:51.635
+How do real-world constraints like transaction costs
+
+00:00:51.634 --> 00:00:55.554
+eat into the theoretical return and how can these be mitigated?
+
+00:00:55.554 --> 00:00:59.195
+Let's talk in a bit more detail about some of these questions.
+
+00:00:59.195 --> 00:01:03.020
+You probably already have an intuitive sense of what a risk is.
+
+00:01:03.020 --> 00:01:06.630
+It's uncertainty about the future, and in particular,
+
+00:01:06.629 --> 00:01:09.179
+the possibility that something bad will happen,
+
+00:01:09.180 --> 00:01:11.620
+like losing the money you invested.
+
+00:01:11.620 --> 00:01:15.410
+In finance, risk usually refers to uncertainty or
+
+00:01:15.409 --> 00:01:20.724
+variability in returns and there are many different ways to quantify it mathematically.
+
+00:01:20.724 --> 00:01:22.984
+There are different types of risks.
+
+00:01:22.984 --> 00:01:27.325
+Risks inherent in the entire market are called systematic risks.
+
+00:01:27.325 --> 00:01:32.515
+One form of systematic risk is risk inherent to individual sectors,
+
+00:01:32.515 --> 00:01:37.689
+like the technology sector or the energy sector called sector-specific risk.
+
+00:01:37.689 --> 00:01:40.879
+For example, the success of the energy sector as a
+
+00:01:40.879 --> 00:01:44.839
+whole might be affected by fluctuations in the price of oil,
+
+00:01:44.840 --> 00:01:49.150
+but it's unlikely that this would affect the technology sector nearly as much.
+
+00:01:49.150 --> 00:01:54.700
+Risk inherent to individual stocks is called idiosyncratic or specific risk.
+
+00:01:54.700 --> 00:01:59.180
+For example, a single oil company might be uniquely affected by
+
+00:01:59.180 --> 00:02:03.560
+political events in a region of the world in which it is exploring for oil.
+
+00:02:03.560 --> 00:02:07.969
+Your strategy will likely incorporate a mathematical model in these risks,
+
+00:02:07.969 --> 00:02:11.210
+which will help you understand and manage the different types of risks
+
+00:02:11.210 --> 00:02:15.110
+and attempt to avoid being overly exposed to anyone.
+
+00:02:15.110 --> 00:02:17.390
+Different investment funds have
+
+00:02:17.389 --> 00:02:20.909
+different mandates driven by the goals of their investors.
+
+00:02:20.909 --> 00:02:25.460
+For example, some funds will want to be neutral to all systematic risk.
+
+00:02:25.460 --> 00:02:29.415
+Whereas, other funds have a specific target for that risk.
+
+00:02:29.414 --> 00:02:34.039
+Your portfolio could be designed to maximize different objectives.
+
+00:02:34.039 --> 00:02:40.120
+As one example, you could seek to maximize expected return and minimize return variance.
+
+00:02:40.120 --> 00:02:43.730
+In this case, if two portfolios have the same expected return,
+
+00:02:43.729 --> 00:02:46.449
+you would choose the one with lower variance.
+
+00:02:46.449 --> 00:02:51.804
+Finally, your portfolio may be subject to additional requirements or constraints.
+
+00:02:51.805 --> 00:02:55.400
+For example, the policies of your investment firm may dictate
+
+00:02:55.400 --> 00:02:59.109
+that you can't hold stocks below a certain level of market capitalization,
+
+00:02:59.109 --> 00:03:00.800
+or you may only be allowed to enter
+
+00:03:00.800 --> 00:03:04.570
+long positions due to government regulations in certain markets,
+
+00:03:04.569 --> 00:03:07.250
+or there may be a limit on what percentage of
+
+00:03:07.250 --> 00:03:11.120
+your portfolio can be invested in any single stock.
+
+00:03:11.120 --> 00:03:15.825
+These must be taken into account during portfolio design.
+
+00:03:15.824 --> 00:03:18.750
+Finally, in the training stage,
+
+00:03:18.750 --> 00:03:21.094
+you make actual trades in the market.
+
+00:03:21.094 --> 00:03:23.750
+After portfolio construction, you'll have
+
+00:03:23.750 --> 00:03:27.069
+an ideal portfolio and a list of trades to make.
+
+00:03:27.069 --> 00:03:31.039
+In this stage, you'll have to figure out mechanics like how
+
+00:03:31.039 --> 00:03:35.734
+fast to trade and to which time horizon you believe your alpha applies.
+
+00:03:35.735 --> 00:03:38.510
+You may decide to trade quickly and aggressively,
+
+00:03:38.509 --> 00:03:40.625
+or more slowly and passively.
+
+00:03:40.625 --> 00:03:44.270
+You'll also have to take into account the fact that the trades
+
+00:03:44.270 --> 00:03:48.125
+themselves incur costs which will eat into your returns.
+
+00:03:48.125 --> 00:03:52.139
+This is the realm of market microstructure and high-frequency trading.
+
+00:03:52.139 --> 00:03:58.144
+Finally, spends market conditions don't allow you to place the exact trades you intend.
+
+00:03:58.145 --> 00:04:02.475
+As you can see, there's a lot to think about during this process.
+
+00:04:02.474 --> 00:04:03.799
+So, let's get on with it.
+

@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.120
+Let's see how an index is constructed and
+
+00:00:03.120 --> 00:00:06.679
+updated to see where the index number comes from.
+
+00:00:06.679 --> 00:00:09.839
+The Hang Seng Index was created by a banker,
+
+00:00:09.839 --> 00:00:13.830
+Stan Lee Kuan at Hang Seng Bank in 1969,
+
+00:00:13.830 --> 00:00:19.065
+and tracks the 50 largest companies that are listed on the Hong Kong Stock Exchange.
+
+00:00:19.065 --> 00:00:22.710
+The index selected the 50 largest companies that were traded on
+
+00:00:22.710 --> 00:00:26.925
+the Hong Kong Stock Exchange and added up their market capitalization.
+
+00:00:26.925 --> 00:00:31.925
+Then, they set that sum equal to 100 points for the index.
+
+00:00:31.925 --> 00:00:37.035
+So the index began in 1969 with the number 100.
+
+00:00:37.034 --> 00:00:40.729
+Note that we will refer to the sum of market caps of
+
+00:00:40.729 --> 00:00:44.574
+all these 50 companies as the total market cap.
+
+00:00:44.575 --> 00:00:47.780
+Each trading day, the percent change of
+
+00:00:47.780 --> 00:00:52.390
+the total market cap is multiplied to the previous day's index,
+
+00:00:52.390 --> 00:00:55.250
+to calculate the index for that day.
+
+00:00:55.250 --> 00:00:59.149
+For example, let's pretend the total market cap on
+
+00:00:59.149 --> 00:01:03.265
+the very first day was 100 billion Hong Kong dollars.
+
+00:01:03.265 --> 00:01:09.454
+The following day, let's say the total market cap changed to 102 billion.
+
+00:01:09.454 --> 00:01:12.109
+Recall that we can get the percent change by
+
+00:01:12.109 --> 00:01:15.204
+taking the current day divided by the previous day.
+
+00:01:15.204 --> 00:01:16.635
+So in this case,
+
+00:01:16.635 --> 00:01:25.050
+102 billion divided by 100 billion is 1.02 or a 2% increase.
+
+00:01:25.049 --> 00:01:31.129
+If we multiply the first day's index of 100 points by 1.02,
+
+00:01:31.129 --> 00:01:35.670
+the second day's index value is now 102 points.
+

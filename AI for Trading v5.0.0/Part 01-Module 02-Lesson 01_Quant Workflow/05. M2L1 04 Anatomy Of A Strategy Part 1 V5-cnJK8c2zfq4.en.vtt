@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.569
+Let's zoom in on one of the types of trading strategies we talked
+
+00:00:03.569 --> 00:00:06.929
+about earlier, cross-sectional equity investing.
+
+00:00:06.929 --> 00:00:10.150
+This is a deep and important type of trading strategy.
+
+00:00:10.150 --> 00:00:15.359
+So, let's talk in detail about the pieces needed to build this type of strategy.
+
+00:00:15.359 --> 00:00:19.320
+In general, you can think of the process of developing this type of
+
+00:00:19.320 --> 00:00:23.175
+strategy as having six stages: data selection,
+
+00:00:23.175 --> 00:00:26.289
+universe definition, alpha discovery,
+
+00:00:26.289 --> 00:00:31.184
+alpha combination, portfolio construction, and trading.
+
+00:00:31.184 --> 00:00:36.769
+In the first stage, you need to decide what data set or data sets you want to use.
+
+00:00:36.770 --> 00:00:40.010
+As we've said, you should start with a hypothesis.
+
+00:00:40.009 --> 00:00:44.204
+So, you're going to want to get access to the data relevant to testing it.
+
+00:00:44.204 --> 00:00:45.964
+In the second stage,
+
+00:00:45.965 --> 00:00:48.560
+you need to pare down your data set to a subset that
+
+00:00:48.560 --> 00:00:51.395
+contains the stocks you wanted potentially trade.
+
+00:00:51.395 --> 00:00:54.410
+You might exclude stocks that have low training volume,
+
+00:00:54.409 --> 00:00:56.034
+and are therefore, hard to trade.
+
+00:00:56.034 --> 00:00:58.509
+But you also want to construct your portfolio,
+
+00:00:58.509 --> 00:01:01.234
+so that the stocks in it have similarities,
+
+00:01:01.234 --> 00:01:04.185
+so that ranking them is a reasonable thing to do.
+
+00:01:04.185 --> 00:01:08.960
+However, since you're looking to benefit from their movements relative to each other,
+
+00:01:08.959 --> 00:01:10.774
+they shouldn't be too similar.
+
+00:01:10.775 --> 00:01:13.570
+You're also going to want to limit your universe to
+
+00:01:13.569 --> 00:01:17.259
+the stocks to which your hypothesis logically applies.
+
+00:01:17.260 --> 00:01:21.955
+For example, let's imagine you want to work with the hypothesis discussed in the paper,
+
+00:01:21.954 --> 00:01:24.909
+Geographic Momentum by Quoc Nguyen.
+
+00:01:24.909 --> 00:01:31.039
+This hypothesis is that a momentum effect is created for multinational US companies,
+
+00:01:31.040 --> 00:01:35.445
+because investors do not pay attention to foreign market developments.
+
+00:01:35.444 --> 00:01:38.689
+So, there is an opportunity to predict increases in
+
+00:01:38.689 --> 00:01:43.700
+these company stock prices when markets and countries they're operating in improve.
+
+00:01:43.700 --> 00:01:46.015
+If you're working with this hypothesis,
+
+00:01:46.015 --> 00:01:48.409
+you would only want to work with companies who actually
+
+00:01:48.409 --> 00:01:51.670
+have significant foreign market operations.
+

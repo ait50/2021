@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.349
+The last model we'll introduce here are recurrent neural networks,
+
+00:00:04.349 --> 00:00:08.369
+which are used in natural language processing as well as time series.
+
+00:00:08.369 --> 00:00:13.414
+Recurrent neural networks are as the name implies neural networks.
+
+00:00:13.414 --> 00:00:16.619
+Neural networks are models that can be thought of as
+
+00:00:16.620 --> 00:00:20.535
+many regressions stacked in series and in parallel.
+
+00:00:20.535 --> 00:00:23.179
+When I say the regressions are in a series,
+
+00:00:23.179 --> 00:00:26.339
+I mean that the output of one regression is fed
+
+00:00:26.339 --> 00:00:30.000
+in as the input to another regression in a chain.
+
+00:00:30.000 --> 00:00:32.554
+Also, when I say parallel,
+
+00:00:32.554 --> 00:00:34.829
+I mean that there are multiple regressions
+
+00:00:34.829 --> 00:00:38.460
+whose outputs are fed into another layer of regressions.
+
+00:00:38.460 --> 00:00:43.549
+A recurrent neural network is called recurrent because it takes some of
+
+00:00:43.549 --> 00:00:46.609
+its intermediate output and uses this as
+
+00:00:46.609 --> 00:00:50.894
+part of its input as it trains itself on incoming data.
+
+00:00:50.895 --> 00:00:56.070
+The recurrent neural network takes an input and outputs in prediction.
+
+00:00:56.070 --> 00:01:00.009
+The recurrent neural network also outputs an additional signal
+
+00:01:00.009 --> 00:01:04.344
+and intermediate output which it feeds back into itself.
+
+00:01:04.344 --> 00:01:10.099
+At the next time step when the RNN receives another input from the data source,
+
+00:01:10.099 --> 00:01:12.769
+it uses both the input as well as
+
+00:01:12.769 --> 00:01:17.759
+its previous intermediate output to help it calculate its next prediction.
+
+00:01:17.760 --> 00:01:20.060
+You can think of this signal as a way for
+
+00:01:20.060 --> 00:01:23.885
+the RNN to remember relevant information from the past.
+
+00:01:23.885 --> 00:01:26.079
+To train a recurrent neural network,
+
+00:01:26.079 --> 00:01:28.575
+you feed it lots of data from the past,
+
+00:01:28.575 --> 00:01:32.355
+then you see how well it predicts data from the future using
+
+00:01:32.355 --> 00:01:36.795
+a process called gradient descent to adjust the coefficients in the network.
+
+00:01:36.795 --> 00:01:40.549
+One commonly used version of recurrent neural network is made
+
+00:01:40.549 --> 00:01:44.420
+up of one or more long short-term memory cells.
+
+00:01:44.420 --> 00:01:46.960
+The long short-term memory cell,
+
+00:01:46.959 --> 00:01:53.959
+or LSTM cell consists of several neural networks each that perform a specific task.
+
+00:01:53.959 --> 00:01:58.099
+The LSTM cell can be thought of as an assembly line,
+
+00:01:58.099 --> 00:02:02.750
+and specific tasks are performed by different assembly line workers.
+
+00:02:02.750 --> 00:02:07.069
+The LSTM cell takes data as input and also
+
+00:02:07.069 --> 00:02:11.305
+takes its own signals that it generated from the previous period.
+
+00:02:11.305 --> 00:02:14.300
+The signal that it takes from its previous period
+
+00:02:14.300 --> 00:02:17.390
+can be thought of as its memory from the past.
+
+00:02:17.389 --> 00:02:21.514
+Some of the assembly line workers, remove some memories.
+
+00:02:21.514 --> 00:02:26.884
+Other assembly line workers add more memories based on incoming data.
+
+00:02:26.884 --> 00:02:31.584
+Still other assembly line workers decide what to output.
+
+00:02:31.585 --> 00:02:35.875
+Remember that the recurrent neural network has two kinds of outputs.
+
+00:02:35.875 --> 00:02:39.370
+One, is its prediction for the variable in question.
+
+00:02:39.370 --> 00:02:43.645
+The other is an intermediate output for its future self.
+
+00:02:43.645 --> 00:02:45.860
+You can think of this intermediate output as
+
+00:02:45.860 --> 00:02:49.470
+the memory that it wishes to pass on to the next time period.
+

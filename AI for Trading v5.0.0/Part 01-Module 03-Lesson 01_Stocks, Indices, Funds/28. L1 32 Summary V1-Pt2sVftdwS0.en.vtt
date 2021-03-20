@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.290
+In this lesson, we learned about indices,
+
+00:00:03.290 --> 00:00:05.734
+mutual funds, and hedge funds.
+
+00:00:05.735 --> 00:00:10.905
+We learned how indices may either be market cap-weighted or price-weighted.
+
+00:00:10.904 --> 00:00:13.769
+We also saw an example of how to construct
+
+00:00:13.769 --> 00:00:18.000
+an index and update its value from one day to the next.
+
+00:00:18.000 --> 00:00:21.484
+We learned about mutual funds and hedge funds.
+
+00:00:21.484 --> 00:00:26.800
+We discussed the concept of actively managed funds versus passively managed funds.
+
+00:00:26.800 --> 00:00:29.714
+We also introduced the idea of Alpha,
+
+00:00:29.714 --> 00:00:32.005
+Beta, and Spark Beta.
+
+00:00:32.005 --> 00:00:35.820
+Moreover, we defined a fund's relative returns as
+
+00:00:35.820 --> 00:00:39.250
+the fund's performance relative to its benchmark,
+
+00:00:39.250 --> 00:00:41.625
+which is usually an index.
+
+00:00:41.625 --> 00:00:47.210
+We also learned about open-end mutual funds and closed-end mutual funds.
+
+00:00:47.210 --> 00:00:50.240
+We saw how open-end funds need to handle
+
+00:00:50.240 --> 00:00:54.185
+customer withdrawals and therefore hold cash reserves.
+
+00:00:54.185 --> 00:00:59.535
+We also saw how closed-end funds are designed to address this issue.
+
+00:00:59.534 --> 00:01:03.369
+We also pointed out that the market price of a closed-end fund
+
+00:01:03.369 --> 00:01:07.509
+may trade at a premium or a discount to its fair value.
+
+00:01:07.510 --> 00:01:09.230
+In the next lesson,
+
+00:01:09.230 --> 00:01:12.109
+you will build upon these concepts and learn how
+
+00:01:12.109 --> 00:01:16.594
+exchange-traded funds are designed to improve upon mutual funds.
+
+00:01:16.594 --> 00:01:19.159
+See you soon.
+

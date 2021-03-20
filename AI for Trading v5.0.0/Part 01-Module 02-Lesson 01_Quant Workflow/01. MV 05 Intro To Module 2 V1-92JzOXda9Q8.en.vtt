@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.759
+Welcome back. In this set of lessons,
+
+00:00:02.759 --> 00:00:05.150
+we're going to expand on the fundamentals even building,
+
+00:00:05.150 --> 00:00:07.480
+to prepare you for some neat stuff we'll do later.
+
+00:00:07.480 --> 00:00:11.545
+We're going to begin with a bird's eye view of strategy development,
+
+00:00:11.544 --> 00:00:14.189
+so that you understand the stages of this and
+
+00:00:14.189 --> 00:00:17.030
+how the activities of each stage fit together.
+
+00:00:17.030 --> 00:00:20.089
+We'll talk about weird data points, outliers,
+
+00:00:20.089 --> 00:00:22.370
+a discussion that will help you start to get a feel for
+
+00:00:22.370 --> 00:00:24.980
+the type of data used in quantitative trading.
+
+00:00:24.980 --> 00:00:26.330
+We're also going to discuss
+
+00:00:26.329 --> 00:00:30.204
+the very important concepts of regression and time series analysis,
+
+00:00:30.204 --> 00:00:34.214
+which are basic building blocks we'll need to introduce later concepts.
+
+00:00:34.215 --> 00:00:39.290
+We'll discuss the very important concept of volatility or variability in returns,
+
+00:00:39.289 --> 00:00:41.659
+which is frequently used as a measure of risk,
+
+00:00:41.659 --> 00:00:45.094
+which people in the trading world are constantly talking about.
+
+00:00:45.094 --> 00:00:47.585
+Finally, we'll discuss Paris trading,
+
+00:00:47.585 --> 00:00:50.250
+another very important type of trading strategy.
+
+00:00:50.250 --> 00:00:55.149
+This set of lessons is designed to help you build out your understanding of the ideas,
+
+00:00:55.149 --> 00:00:57.410
+data, tools, and concepts,
+
+00:00:57.409 --> 00:01:01.239
+fundamental to trading strategies. Let's go for it.
+

@@ -1,0 +1,334 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Reducing Risk
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Portfolio Risk and Return
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Diversification.html">
+       02. Diversification
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Portfolio Mean.html">
+       03. Portfolio Mean
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Portfolio Variance.html">
+       04. Portfolio Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Reducing Risk.html">
+       05. Reducing Risk
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Variance of a 3-Asset Portfolio.html">
+       06. Variance of a 3-Asset Portfolio
+      </a>
+     </li>
+     <li class="">
+      <a href="07. The Covariance Matrix and Quadratic Forms.html">
+       07. The Covariance Matrix and Quadratic Forms
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Calculate a Covariance Matrix.html">
+       08. Calculate a Covariance Matrix
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz np.cov.html">
+       09. Quiz: np.cov
+      </a>
+     </li>
+     <li class="">
+      <a href="10. The Efficient Frontier.html">
+       10. The Efficient Frontier
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Capital Market Line.html">
+       11. Capital Market Line
+      </a>
+     </li>
+     <li class="">
+      <a href="12. The Sharpe Ratio.html">
+       12. The Sharpe Ratio
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Other Risk Measures.html">
+       13. Other Risk Measures
+      </a>
+     </li>
+     <li class="">
+      <a href="14. The Capital Assets Pricing Model.html">
+       14. The Capital Assets Pricing Model
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Quiz Portfolio Return with a 3-Asset Portfolio.html">
+       15. Quiz: Portfolio Return with a 3-Asset Portfolio
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Summary.html">
+       16. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Reducing Risk
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="reducing-risk-with-imperfectly-correlated-stocks">
+          Reducing Risk with Imperfectly Correlated Stocks
+         </h2>
+         <p>
+          We just noted that when the correlation is less than one
+          <span class="mathquill ud-math">
+           (\rho &lt; 1)
+          </span>
+          , the portfolio standard deviation is less than the weighted average of the individual standard deviations:
+          <br/>
+          <span class="mathquill ud-math">
+           \sigma_{p,\rho&lt;1} &lt; x_A \sigma_A + x_B \sigma_B
+          </span>
+          .
+          <br/>
+          Let’s walk through this together to see how this helps us as investors.
+         </p>
+         <p>
+          First, we notice that if the standard deviation of a portfolio is less than the standard deviation of another, then the variance of the first portfolio is also less than that of the second.
+          <br/>
+          <span class="mathquill ud-math">
+           \sigma_{p1} &lt; \sigma_{p2} \Leftrightarrow \sigma_{p1}^{2} &lt; \sigma_{p2}^{2}
+          </span>
+         </p>
+         <p>
+          So let’s compare the variance of a portfolio where correlation is +1, and compare it to another portfolio where correlation is less than 1 (let’s just say 0.9).
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \sigma_{p,\rho=1.0}^2 = x_A^2 \sigma_A^2 + x_B^2 \sigma_B^2 + 2x_Ax_B\sigma_A\sigma_B\rho_{r_Ar_B}
+          </span>
+          <br/>
+          where
+          <span class="mathquill ud-math">
+           \rho_{r_Ar_B} = 1
+          </span>
+         </p>
+         <p>
+          Versus
+          <br/>
+          <span class="mathquill ud-math">
+           \sigma_{p,\rho=0.9}^2 = x_A^2 \sigma_A^2 + x_B^2 \sigma_B^2 + 2x_Ax_B\sigma_A\sigma_B\rho_{r_Ar_B}
+          </span>
+          <br/>
+          where
+          <span class="mathquill ud-math">
+           \rho_{r_Ar_B} = 0.9
+          </span>
+         </p>
+         <p>
+          If we cancel all of the identical terms in both equations, we can compare the third term in each:
+          <br/>
+          <span class="mathquill ud-math">
+           2x_Ax_B\sigma_A\sigma_B\times 1 &gt; 2x_Ax_B\sigma_A\sigma_B\times 0.9
+          </span>
+          .
+          <br/>
+          Or more simply: 1 &gt; 0.9
+         </p>
+         <p>
+          So we can show that the variance of the imperfectly correlated portfolio is less than the variance of the perfectly correlated one.
+          <br/>
+          <span class="mathquill ud-math">
+           \sigma_{p,\rho=1.0}^2 = (x_A\sigma_A + x_B\sigma_B)^2= x_A^2 \sigma_A^2 + x_B^2 \sigma_B^2 + 2x_Ax_B\sigma_A\sigma_B\times 1
+          </span>
+          <br/>
+          <span class="mathquill ud-math">
+           &gt; x_A^2 \sigma_A^2 + x_B^2 \sigma_B^2 + 2x_Ax_B\sigma_A\sigma_B\times 0.9 = \sigma_{p,\rho=0.9}^2
+          </span>
+         </p>
+         <p>
+          In other words:
+          <span class="mathquill ud-math">
+           \sigma_{p,\rho=1.0}^2 &gt; \sigma_{p,\rho=0.9}^2
+          </span>
+          <br/>
+          which implies that
+          <span class="mathquill ud-math">
+           \sigma_{p,\rho=1.0} &gt; \sigma_{p,\rho=0.9}
+          </span>
+         </p>
+         <p>
+          The nice benefit of putting two stocks into a portfolio is that, as long as they’re not perfectly correlated, we’ll end up with a portfolio whose risk is less than the the weighted sum of the individual risks.  A key benefit of portfolio diversification is that it helps us to reduce risk!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Variance of a 3-Asset Portfolio.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Reducing Risk')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

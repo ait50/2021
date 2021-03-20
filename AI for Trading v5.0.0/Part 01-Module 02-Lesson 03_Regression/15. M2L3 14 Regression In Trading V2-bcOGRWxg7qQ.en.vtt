@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.044
+So, how is regression used in stock trading?
+
+00:00:03.044 --> 00:00:06.839
+In practice, using regression to predict a stock's return is
+
+00:00:06.839 --> 00:00:11.995
+difficult because the signal and financial data is low compared to the noise.
+
+00:00:11.994 --> 00:00:16.835
+Moreover, the models are sensitive to some choices you make about the model.
+
+00:00:16.835 --> 00:00:20.700
+For instance, you'll have to decide how much of your previous data to
+
+00:00:20.699 --> 00:00:26.035
+use since more recent data is more relevant than very old data.
+
+00:00:26.035 --> 00:00:30.149
+Regression models are pretty sensitive to these design choices.
+
+00:00:30.149 --> 00:00:33.868
+Regression is also sensitive to outliers in the data,
+
+00:00:33.868 --> 00:00:36.509
+as it adds more noise to the training data.
+
+00:00:36.509 --> 00:00:42.295
+However, there are still important reasons to learn regression to analyze stock returns.
+
+00:00:42.295 --> 00:00:45.575
+Learning regression is useful because we can apply
+
+00:00:45.575 --> 00:00:49.580
+the same regression techniques to analyze time-series data.
+
+00:00:49.579 --> 00:00:54.170
+Time series analysis looks at data that is collected at regular intervals
+
+00:00:54.170 --> 00:00:58.715
+over time and uses that to predict its value in the near future.
+
+00:00:58.715 --> 00:01:01.890
+One more note about why regression is important to learn,
+
+00:01:01.890 --> 00:01:06.170
+if we learn the details of how neural networks work,
+
+00:01:06.170 --> 00:01:08.495
+many of the same principles apply.
+
+00:01:08.495 --> 00:01:12.859
+In fact, if we think of regression as a fundamental building block,
+
+00:01:12.859 --> 00:01:18.439
+then a neural network is a building that is composed of many regression building blocks.
+

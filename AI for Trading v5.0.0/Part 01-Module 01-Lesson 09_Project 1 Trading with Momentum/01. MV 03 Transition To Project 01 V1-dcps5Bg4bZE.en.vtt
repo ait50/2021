@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.975
+Congratulations on getting through your first batch of lessons.
+
+00:00:03.975 --> 00:00:08.595
+Next on your agenda is your first project, trading with momentum,
+
+00:00:08.595 --> 00:00:12.255
+where you'll implement a momentum trading strategy and perform
+
+00:00:12.255 --> 00:00:15.950
+a statistical test to conclude if there's alpha in the signal.
+
+00:00:15.949 --> 00:00:17.780
+That sounds like a really interesting project.
+
+00:00:17.780 --> 00:00:20.440
+Does a bode on the learning we've been doing up until now?
+
+00:00:20.440 --> 00:00:25.080
+It does. This project will give you an overview of the Quant workflow.
+
+00:00:25.079 --> 00:00:27.459
+By preprocessing data with pandas,
+
+00:00:27.460 --> 00:00:29.320
+implementing a trading signal,
+
+00:00:29.320 --> 00:00:31.059
+and evaluating it's performance.
+
+00:00:31.059 --> 00:00:32.579
+Sounds like students will get a chance to
+
+00:00:32.579 --> 00:00:34.559
+use all the skills they've been building up until now,
+
+00:00:34.560 --> 00:00:36.945
+but in a really industry-relevant way.
+
+00:00:36.945 --> 00:00:40.880
+Completely. We'll use this foundation in later lessons
+
+00:00:40.880 --> 00:00:44.840
+where you'll learn more advanced techniques to generate trading signals,
+
+00:00:44.840 --> 00:00:48.405
+construct a portfolio, and evaluate its performance.
+
+00:00:48.405 --> 00:00:51.480
+That's awesome. Projects are a super powerful learning tool,
+
+00:00:51.479 --> 00:00:54.199
+they give you a chance to bring together all the skills and knowledge you've built
+
+00:00:54.200 --> 00:00:57.240
+up until now and apply them in new and interesting ways.
+
+00:00:57.240 --> 00:00:59.825
+Totally. I love doing projects.
+
+00:00:59.825 --> 00:01:01.880
+They certainly can feel a bit challenging,
+
+00:01:01.880 --> 00:01:04.710
+but even though I don't always see the solution straight away,
+
+00:01:04.709 --> 00:01:06.839
+they help me grow in really meaningful ways.
+
+00:01:06.840 --> 00:01:08.250
+Totally. That's a great point.
+
+00:01:08.250 --> 00:01:10.685
+Since projects are these big learning opportunities,
+
+00:01:10.685 --> 00:01:12.814
+it's totally normal to find them challenging.
+
+00:01:12.814 --> 00:01:14.450
+Luckily, in your Nanodegree Program,
+
+00:01:14.450 --> 00:01:17.799
+you get to iterate on your projects just like you do with work in the real world.
+
+00:01:17.799 --> 00:01:22.609
+That's right. You'll get personalized feedback on each project you do from
+
+00:01:22.609 --> 00:01:26.000
+our expert project reviewers that will help you see what
+
+00:01:26.000 --> 00:01:30.129
+you've learned already and how you can keep learning and improving your work.
+
+00:01:30.129 --> 00:01:33.069
+If your project doesn't meet the specifications the first
+
+00:01:33.069 --> 00:01:36.779
+time or even a number times beyond that, that's totally normal.
+
+00:01:36.780 --> 00:01:40.609
+Yeah. Again, projects themselves are meant to stretch your knowledge and skills,
+
+00:01:40.609 --> 00:01:43.064
+not just give you a chance to show off what you've already learned.
+
+00:01:43.064 --> 00:01:45.515
+It's the same as with the quizzes in the Udacity classroom,
+
+00:01:45.515 --> 00:01:47.480
+you get to play around and practice with them,
+
+00:01:47.480 --> 00:01:50.540
+trying them as many times as you want to or need to to keep growing.
+
+00:01:50.540 --> 00:01:53.390
+Everything you do at Udacity is intended to help you learn,
+
+00:01:53.390 --> 00:01:55.180
+and you are in the driver's seat.
+
+00:01:55.180 --> 00:01:59.050
+Good luck with project one, and have fun.
+

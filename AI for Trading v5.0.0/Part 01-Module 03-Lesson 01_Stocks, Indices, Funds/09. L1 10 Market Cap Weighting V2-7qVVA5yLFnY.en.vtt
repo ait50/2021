@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.970
+We can also take a weighted average of
+
+00:00:02.970 --> 00:00:07.040
+the stocks in a way that does not treat all the stocks the same.
+
+00:00:07.040 --> 00:00:09.705
+A sensible choice for weights is to give
+
+00:00:09.705 --> 00:00:13.080
+more weight to stocks of bigger companies rather than
+
+00:00:13.080 --> 00:00:16.589
+smaller companies because a larger company's price moving
+
+00:00:16.589 --> 00:00:20.795
+has a greater effect on the overall change in the stock market.
+
+00:00:20.795 --> 00:00:23.625
+This is called market cap weighting.
+
+00:00:23.625 --> 00:00:27.015
+Remember, that market capitalization of a company
+
+00:00:27.015 --> 00:00:30.679
+is the number of shares times the market price per share.
+
+00:00:30.679 --> 00:00:35.210
+So, for example, the Wilshire 5000 Index is
+
+00:00:35.210 --> 00:00:39.884
+market cap weighted and contains both Nvidia and iRobot.
+
+00:00:39.884 --> 00:00:44.674
+Nvidia has a market cap of about 160 billion.
+
+00:00:44.674 --> 00:00:49.640
+While, iRobot has a market cap of about 1.8 billion.
+
+00:00:49.640 --> 00:00:54.359
+This means that a one percent change in the price of Nvidia will affect
+
+00:00:54.359 --> 00:01:00.295
+the Wilshire 5000 Index more than a one percent change in the price of iRobot.
+
+00:01:00.295 --> 00:01:06.424
+Major indices that are market-capitalization weighted are the S&amp;P 500,
+
+00:01:06.424 --> 00:01:10.084
+Ibovespa, MERVAL, Hang Seng,
+
+00:01:10.084 --> 00:01:12.869
+FTSE and EURO STOXX.
+

@@ -1,0 +1,241 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.094
+In this lesson, I'm going to tell you how to annualize volatility.
+
+00:00:04.094 --> 00:00:07.380
+Annualizing volatility means extrapolating
+
+00:00:07.380 --> 00:00:12.450
+a standard deviation of log returns calculated at some time frequency,
+
+00:00:12.450 --> 00:00:17.235
+to a standard deviation of log returns calculated on an annual frequency.
+
+00:00:17.235 --> 00:00:22.080
+I want to give you more intuition for what the annualized volatility represents.
+
+00:00:22.080 --> 00:00:24.630
+Usually, when you calculate volatility,
+
+00:00:24.630 --> 00:00:26.460
+you have a small price series.
+
+00:00:26.460 --> 00:00:29.160
+You cannot calculate the standard deviation of
+
+00:00:29.160 --> 00:00:33.070
+annual log returns because you don't have several years of data.
+
+00:00:33.070 --> 00:00:38.750
+Now, if that price series were to continue to generate prices for many years,
+
+00:00:38.750 --> 00:00:39.890
+such that the mean,
+
+00:00:39.890 --> 00:00:44.525
+and the standard deviation of the log return distribution remain the same,
+
+00:00:44.525 --> 00:00:48.874
+and you calculated the standard deviation of the annual log returns,
+
+00:00:48.874 --> 00:00:51.950
+you would get the same number as you would get by
+
+00:00:51.950 --> 00:00:56.950
+annualizing the standard deviation of log returns of another time frequency.
+
+00:00:56.950 --> 00:01:00.935
+So the way to annualize the daily standard deviation
+
+00:01:00.935 --> 00:01:05.270
+of log returns is to multiply by the square root of 252,
+
+00:01:05.270 --> 00:01:07.555
+the number of trading days in a year.
+
+00:01:07.555 --> 00:01:12.515
+Similarly, to annualize the monthly standard deviation of log returns,
+
+00:01:12.515 --> 00:01:14.810
+you multiply by the square root of 12,
+
+00:01:14.810 --> 00:01:16.820
+the number of months in a year.
+
+00:01:16.820 --> 00:01:20.370
+Why the square root?Why not just the number of days?
+
+00:01:20.370 --> 00:01:22.575
+This is what we're going to explain now.
+
+00:01:22.575 --> 00:01:25.040
+An important fact we need to remember for
+
+00:01:25.040 --> 00:01:28.780
+this calculation is that log returns some overtime.
+
+00:01:28.780 --> 00:01:30.709
+As a quick refresher,
+
+00:01:30.709 --> 00:01:33.065
+if we have price data for three times,
+
+00:01:33.065 --> 00:01:35.540
+we can see that if we add the log return
+
+00:01:35.540 --> 00:01:38.510
+for the first period and the log return for the second period,
+
+00:01:38.510 --> 00:01:41.210
+we get the log return for the entire time period,
+
+00:01:41.210 --> 00:01:44.620
+the natural log of P3 divided by p1.
+
+00:01:44.620 --> 00:01:49.100
+Now, let's look at the case of annualizing monthly log returns.
+
+00:01:49.100 --> 00:01:51.110
+If r is the log return,
+
+00:01:51.110 --> 00:01:56.470
+we know that the log return for the year is the sum of the log returns for each month.
+
+00:01:56.470 --> 00:02:00.985
+Now, let's think of each monthly log return as a random variable.
+
+00:02:00.985 --> 00:02:06.005
+This just means that it's a quantity that represents the outcome of a random phenomenon.
+
+00:02:06.005 --> 00:02:08.720
+The likelihood that it takes different values
+
+00:02:08.720 --> 00:02:11.885
+can be represented with a probability distribution.
+
+00:02:11.885 --> 00:02:15.665
+In fact, let's make a few important assumptions.
+
+00:02:15.665 --> 00:02:18.665
+First, we'll assume that the random variables
+
+00:02:18.665 --> 00:02:22.805
+representing the log returns for each month have the same distribution.
+
+00:02:22.805 --> 00:02:26.164
+Second, we'll assume that they are independent.
+
+00:02:26.164 --> 00:02:28.910
+So the log return you end up with for one month
+
+00:02:28.910 --> 00:02:32.060
+doesn't depend on the log return for any other month.
+
+00:02:32.060 --> 00:02:36.065
+Let's think of the annual log return as another random variable.
+
+00:02:36.065 --> 00:02:40.750
+The sum of the monthly log returns equals the annual log return.
+
+00:02:40.750 --> 00:02:44.235
+Recall what it means to sum random variables.
+
+00:02:44.235 --> 00:02:48.080
+You can generate the distribution of the sum by repeatedly taking
+
+00:02:48.080 --> 00:02:52.450
+sets of samples from each of the constituent distributions, and summing them.
+
+00:02:52.450 --> 00:02:54.259
+We've set up the situation,
+
+00:02:54.259 --> 00:02:55.865
+but let's remember our goal.
+
+00:02:55.865 --> 00:02:59.630
+We want to relate the standard deviation of the distribution of
+
+00:02:59.630 --> 00:03:04.765
+monthly log returns to the standard deviation of the distribution of annual log returns.
+
+00:03:04.765 --> 00:03:08.075
+So now, we're going to use a key fact that is true
+
+00:03:08.075 --> 00:03:11.390
+whenever you some independent random variables.
+
+00:03:11.390 --> 00:03:15.415
+That the variance of the sum equals the sum of the variances.
+
+00:03:15.415 --> 00:03:17.540
+Getting back to the calculation,
+
+00:03:17.540 --> 00:03:20.435
+we know the variance of the annual log return
+
+00:03:20.435 --> 00:03:24.475
+equals the variance of the sum of the monthly log returns.
+
+00:03:24.475 --> 00:03:28.520
+Since we assumed that the monthly log returns are independent,
+
+00:03:28.520 --> 00:03:31.385
+we have that the variance of the annual log return
+
+00:03:31.385 --> 00:03:35.050
+is the sum of the variances of the monthly log returns.
+
+00:03:35.050 --> 00:03:38.675
+Variance is just the square of the standard deviation,
+
+00:03:38.675 --> 00:03:40.790
+so we can write it as Sigma squared.
+
+00:03:40.790 --> 00:03:43.610
+But we also assumed that the standard deviations of
+
+00:03:43.610 --> 00:03:47.810
+the monthly log returns were all the same value, Sigma month.
+
+00:03:47.810 --> 00:03:50.725
+So we end up with 12 factors of Sigma month.
+
+00:03:50.725 --> 00:03:52.595
+When we take the square root,
+
+00:03:52.595 --> 00:03:55.760
+we see the relationship between the standard deviations.
+
+00:03:55.760 --> 00:04:01.265
+So you now see how you can annualize the standard deviations of the monthly log returns.
+
+00:04:01.265 --> 00:04:03.670
+You multiply it by the square root of 12.
+
+00:04:03.670 --> 00:04:07.010
+In a nutshell, this arises because you can
+
+00:04:07.010 --> 00:04:10.810
+sum the variances of independent random variables.
+
+00:04:10.810 --> 00:04:15.725
+Similarly, if you want to annualize the standard deviation of weekly log returns,
+
+00:04:15.725 --> 00:04:17.809
+you multiply by the square root of 52,
+
+00:04:17.809 --> 00:04:19.555
+the number of weeks in a year.
+
+00:04:19.555 --> 00:04:23.555
+If you want to annualize the standard deviation of daily log returns,
+
+00:04:23.555 --> 00:04:26.330
+you multiply it by the square root of 252,
+
+00:04:26.330 --> 00:04:28.980
+the number of trading days in a year.
+

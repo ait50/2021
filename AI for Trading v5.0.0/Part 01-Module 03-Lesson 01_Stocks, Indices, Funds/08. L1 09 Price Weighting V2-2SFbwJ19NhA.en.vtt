@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.315
+So, let's say an Index like the Nikkei 225,
+
+00:00:04.315 --> 00:00:08.155
+tracks the price movements of 225 stocks.
+
+00:00:08.154 --> 00:00:10.459
+To get a single Index number,
+
+00:00:10.460 --> 00:00:15.350
+we could add up the single share price of all of the 225 stocks,
+
+00:00:15.349 --> 00:00:17.410
+and there's your index number.
+
+00:00:17.410 --> 00:00:21.105
+That's more or less what the Nikkei 225 Index does,
+
+00:00:21.105 --> 00:00:24.530
+and this is called Price Weighting, or Equal Weighting.
+
+00:00:24.530 --> 00:00:28.440
+The Dow Jones Index is also a Price-Weighted Index.
+
+00:00:28.440 --> 00:00:32.460
+Note, that Index creators usually rescale the number,
+
+00:00:32.460 --> 00:00:34.730
+but we'll see that later in the lesson.
+

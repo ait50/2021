@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.730
+In this lesson, we'll learn about two properties of financial assets,
+
+00:00:04.730 --> 00:00:07.480
+mean reversion, and co-integration.
+
+00:00:07.480 --> 00:00:09.200
+Based on these properties,
+
+00:00:09.199 --> 00:00:12.594
+we will learn about the trading strategy called, Paris trading.
+
+00:00:12.595 --> 00:00:18.300
+From there, we will examine the more general strategy called, mean reversion trading.
+
+00:00:18.300 --> 00:00:21.495
+First, let's preview some concepts.
+
+00:00:21.495 --> 00:00:24.320
+What is mean reversion?
+
+00:00:24.320 --> 00:00:27.890
+A mean reverting time series is one that tends to
+
+00:00:27.890 --> 00:00:31.475
+move back and forth around some constant value.
+
+00:00:31.475 --> 00:00:34.765
+When applying mean reversion to a single stock,
+
+00:00:34.765 --> 00:00:39.185
+we could check when the stock price deviates significantly from the mean.
+
+00:00:39.185 --> 00:00:44.915
+For example, we may see a stock decline significantly below its historical average.
+
+00:00:44.914 --> 00:00:47.990
+Assuming the stock will revert to its mean,
+
+00:00:47.990 --> 00:00:54.325
+we may buy the stock and anticipate that it will increase back to its original price.
+
+00:00:54.325 --> 00:00:59.685
+There is still the risk that the stock price does not return to its historical mean.
+
+00:00:59.685 --> 00:01:04.034
+For example, the stock may settle at its new, lower value.
+
+00:01:04.034 --> 00:01:07.569
+Even worse, it might just keep declining.
+
+00:01:07.569 --> 00:01:13.264
+In practice it's more common to apply mean reversion to a pair of stocks.
+
+00:01:13.265 --> 00:01:17.310
+Let's imagine that two companies are economically linked.
+
+00:01:17.310 --> 00:01:22.144
+By economically linked, I mean that they may be in the same line of business,
+
+00:01:22.144 --> 00:01:24.464
+may be operating in the same country,
+
+00:01:24.465 --> 00:01:28.385
+and may have similar types of products or customers.
+
+00:01:28.385 --> 00:01:30.829
+We can imagine that the stock prices of
+
+00:01:30.829 --> 00:01:35.310
+these two companies may also move up and down in a similar way.
+
+00:01:35.310 --> 00:01:39.200
+Since these companies move up together and down together,
+
+00:01:39.200 --> 00:01:42.019
+they appear to have a consistent relationship that
+
+00:01:42.019 --> 00:01:45.209
+we can expect will continue into the near future.
+
+00:01:45.209 --> 00:01:50.655
+So, when we see the prices of these two similar companies diverge significantly,
+
+00:01:50.655 --> 00:01:56.885
+we may make trading decisions based on the assumption that this divergence is temporary.
+
+00:01:56.885 --> 00:02:00.955
+The view of our trading strategy is that later in the future,
+
+00:02:00.954 --> 00:02:05.060
+the prices will settle back to their original relationship.
+
+00:02:05.060 --> 00:02:09.870
+We'll examine these concepts in more detail in the rest of this lesson.
+

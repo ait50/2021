@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.314
+Let's take a closer look at pairs trade.
+
+00:00:03.314 --> 00:00:06.540
+When two companies have economic links,
+
+00:00:06.540 --> 00:00:11.025
+this implies that their stock prices may also move in a similar manner.
+
+00:00:11.025 --> 00:00:14.759
+For example, company A sells frozen green peas,
+
+00:00:14.759 --> 00:00:18.059
+and company B cells frozen carrots.
+
+00:00:18.059 --> 00:00:22.589
+Since frozen peas and carrots are often combined and sold together,
+
+00:00:22.589 --> 00:00:28.204
+we can see how an increase in sales of peas and carrots would affect both companies.
+
+00:00:28.204 --> 00:00:32.140
+Most of the time we see the two stocks moving similarly.
+
+00:00:32.140 --> 00:00:35.859
+However, we may see the two start to diverge.
+
+00:00:35.859 --> 00:00:40.159
+When this happens, we use our assumption about their economic ties,
+
+00:00:40.159 --> 00:00:43.625
+and also our assumption about mean-reversion.
+
+00:00:43.625 --> 00:00:47.060
+We assume that the divergence is temporary and that
+
+00:00:47.060 --> 00:00:52.185
+the two stock values will revert back to their original long-term relationship.
+
+00:00:52.185 --> 00:00:57.255
+The pairs trade involves going long the asset that is priced relatively low.
+
+00:00:57.255 --> 00:00:58.695
+At the same time,
+
+00:00:58.695 --> 00:01:03.765
+the strategy involves going short the asset that is priced relatively high.
+
+00:01:03.765 --> 00:01:08.655
+If and when the prices start to converge we can close our positions.
+
+00:01:08.655 --> 00:01:11.204
+When I say we close our positions,
+
+00:01:11.204 --> 00:01:13.969
+I mean that we sell the asset that we originally
+
+00:01:13.969 --> 00:01:17.900
+buy and we buy the asset that we initially shorted.
+
+00:01:17.900 --> 00:01:24.830
+Also, if we see the stocks do not converge but continue to diverge over a period of time,
+
+00:01:24.829 --> 00:01:28.875
+we may also decide to close our positions to cut our losses.
+
+00:01:28.875 --> 00:01:34.459
+You may be wondering how long we should wait before expecting to see the pairs converge.
+
+00:01:34.459 --> 00:01:37.219
+It helps to look at historical trends.
+
+00:01:37.219 --> 00:01:40.250
+Sometimes pairs of socks diverge and then
+
+00:01:40.250 --> 00:01:44.180
+converge in cycles that may last weeks or months.
+
+00:01:44.180 --> 00:01:50.700
+Some traders may decide to trade in shorter time horizons such as in days or even hours.
+
+00:01:50.700 --> 00:01:53.930
+For these shorter time periods traders may look for
+
+00:01:53.930 --> 00:01:59.145
+smaller movements to determine what they consider diverging, or converging trends.
+
+00:01:59.144 --> 00:02:03.634
+There are benefits to trading a pair rather than a single stock.
+
+00:02:03.635 --> 00:02:07.825
+Trading a pair reduces our exposure to the overall market.
+
+00:02:07.825 --> 00:02:10.400
+For example, with a single stock,
+
+00:02:10.400 --> 00:02:14.439
+we may expect a stock's recent price decline to be temporary.
+
+00:02:14.439 --> 00:02:19.370
+However, if a negative jobs report causes most stocks to decline
+
+00:02:19.370 --> 00:02:24.444
+then this overall market movement would carry this single stock downward with it.
+
+00:02:24.444 --> 00:02:29.150
+With partnering, we reduce some of the impact of large market movements.
+
+00:02:29.150 --> 00:02:34.500
+So, even if both stocks in the pair are pulled down by a general market downturn,
+
+00:02:34.500 --> 00:02:39.425
+what matters to us is the relative difference between the pair of stocks.
+
+00:02:39.425 --> 00:02:42.350
+To describe this relative difference between a pair of
+
+00:02:42.349 --> 00:02:46.250
+stocks we will look into the spread and the hedge ratio.
+
+00:02:46.250 --> 00:02:49.439
+While the pair of stocks are still converged or linked,
+
+00:02:49.439 --> 00:02:55.819
+we can imagine holding a long position in stock A and a short position in stock B.
+
+00:02:55.819 --> 00:02:59.120
+Our positions are in a certain proportion so that
+
+00:02:59.120 --> 00:03:02.895
+our combined position has a constant value over time.
+
+00:03:02.895 --> 00:03:09.320
+In other words, movements in our long position and short position cancel each other out.
+
+00:03:09.319 --> 00:03:14.034
+The proportion that lets us create this neutral position is called the hedge ratio.
+
+00:03:14.034 --> 00:03:19.270
+There are two ways to calculate the hedge ratio and they tend to have similar results.
+
+00:03:19.270 --> 00:03:24.155
+One way is to take the price of stock B divided by the price of stock A,
+
+00:03:24.155 --> 00:03:26.050
+or the price ratio.
+
+00:03:26.050 --> 00:03:30.680
+A second way is to run a linear regression in which stock A is
+
+00:03:30.680 --> 00:03:35.460
+the independent variable and stock B is the dependent variable.
+
+00:03:35.460 --> 00:03:41.534
+The coefficient of this regression is our hedge ratio and is similar to the price ratio.
+
+00:03:41.534 --> 00:03:45.109
+The difference is that the regression accounts for a series of
+
+00:03:45.110 --> 00:03:51.185
+previous prices while the price ratio uses just the most recent price of each stock.
+
+00:03:51.185 --> 00:03:55.164
+Once we have a hedge ratio we can calculate the spread.
+
+00:03:55.164 --> 00:04:01.329
+The spread is the price of B minus the product of the hedge ratio and price of A.
+
+00:04:01.330 --> 00:04:04.995
+This may look familiar from our studies of regression.
+
+00:04:04.995 --> 00:04:09.980
+When we used a regression model to estimate the dependent variable we compared
+
+00:04:09.979 --> 00:04:15.694
+the prediction with the actual value and called it a residual or error term.
+
+00:04:15.694 --> 00:04:18.769
+Here, we can think of using the hedge ratio to
+
+00:04:18.769 --> 00:04:22.129
+estimate the price of B using the price of A.
+
+00:04:22.129 --> 00:04:27.625
+We still expect a difference between the estimation and the actual price of B.
+
+00:04:27.625 --> 00:04:33.329
+This difference between the estimation and actual value is called the spread.
+

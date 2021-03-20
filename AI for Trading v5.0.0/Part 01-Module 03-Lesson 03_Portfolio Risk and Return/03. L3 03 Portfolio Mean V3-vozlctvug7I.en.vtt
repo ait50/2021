@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.620
+Let's see how this works in more detail,
+
+00:00:02.620 --> 00:00:04.890
+by constructing a portfolio that contains
+
+00:00:04.889 --> 00:00:08.353
+two stocks and then calculating its mean and variance.
+
+00:00:08.353 --> 00:00:15.375
+Let's put a fraction xA of our portfolio in stock A and the rest xB in stock B.
+
+00:00:15.375 --> 00:00:19.050
+We call xA and xB the weights on assets A and B in
+
+00:00:19.050 --> 00:00:24.495
+our portfolio and we know these weights xA and xB sum to one.
+
+00:00:24.495 --> 00:00:28.125
+To calculate the mean and variance of our portfolio,
+
+00:00:28.125 --> 00:00:32.905
+we will again need to think of future log returns as random variables,
+
+00:00:32.905 --> 00:00:38.530
+that is as quantities that can take a variety of values with different probabilities.
+
+00:00:38.530 --> 00:00:40.285
+You can think of returns,
+
+00:00:40.284 --> 00:00:43.459
+at a future time as being indexed by i,
+
+00:00:43.460 --> 00:00:48.725
+where i is a possible scenario or alternate timeline of the future.
+
+00:00:48.725 --> 00:00:51.100
+R the log return,
+
+00:00:51.100 --> 00:00:54.005
+takes different values for different scenarios
+
+00:00:54.005 --> 00:00:58.155
+and different scenarios have different probabilities of occurring.
+
+00:00:58.155 --> 00:01:00.865
+The expected value of R,
+
+00:01:00.865 --> 00:01:05.234
+which we referred to before as the mean or expected log return,
+
+00:01:05.234 --> 00:01:08.189
+is given by this formula.
+
+00:01:08.189 --> 00:01:12.739
+The total return of the portfolio in each scenario is
+
+00:01:12.739 --> 00:01:17.204
+just the weighted sum of the returns of each individual asset.
+
+00:01:17.204 --> 00:01:20.840
+The expected value of the portfolio return,
+
+00:01:20.840 --> 00:01:25.335
+equals the weighted sum of the individual stock's expected returns.
+
+00:01:25.334 --> 00:01:30.964
+To see this, we take the expected value of the portfolio returns.
+
+00:01:30.965 --> 00:01:35.260
+The summation symbol distributes across the sum,
+
+00:01:35.260 --> 00:01:40.205
+then we can pull out the weights because they are independent of scenario.
+
+00:01:40.204 --> 00:01:46.069
+Finally, we see that each term is the expected value of the individual asset.
+

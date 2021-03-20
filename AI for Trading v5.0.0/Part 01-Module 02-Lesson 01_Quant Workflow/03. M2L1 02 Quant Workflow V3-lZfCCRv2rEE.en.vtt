@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.960
+A hypothesis that forms the basis of a trading strategy must
+
+00:00:03.960 --> 00:00:08.179
+survive several phases of increasingly rigorous testing.
+
+00:00:08.179 --> 00:00:10.750
+This process can be different at different companies,
+
+00:00:10.750 --> 00:00:13.509
+banks, or hedge funds, but usually,
+
+00:00:13.509 --> 00:00:16.664
+there is an initial exploratory research phase during which
+
+00:00:16.664 --> 00:00:20.429
+ideas are generated and validated in a fairly basic way.
+
+00:00:20.429 --> 00:00:24.804
+The goal here is to come up with promising ideas relatively quickly.
+
+00:00:24.804 --> 00:00:26.570
+In the research phase,
+
+00:00:26.570 --> 00:00:30.240
+you will focus on determining what set of positions to enter,
+
+00:00:30.239 --> 00:00:32.774
+on which assets at which times.
+
+00:00:32.774 --> 00:00:36.488
+Such that you have the potential to get positive future returns.
+
+00:00:36.488 --> 00:00:41.794
+Later on, you'll incorporate other factors critical to a full-fledged trading strategy.
+
+00:00:41.795 --> 00:00:44.070
+How much money to invest in each asset,
+
+00:00:44.070 --> 00:00:46.659
+under what conditions to exit positions,
+
+00:00:46.659 --> 00:00:49.449
+factoring in the costs of making trades,
+
+00:00:49.450 --> 00:00:52.100
+and what risks constraints to impose?
+
+00:00:52.100 --> 00:00:56.000
+The process of rigorously simulating the entire flow in
+
+00:00:56.000 --> 00:01:00.500
+an automated fashion using historical data is called Backtesting.
+
+00:01:00.500 --> 00:01:04.879
+It is important to resist the temptation to jump right into full-fledged backtesting.
+
+00:01:04.879 --> 00:01:10.399
+We'll talk about the reasons for this when we discuss overfitting in depth.
+

@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.629
+A probability distribution is defined in math by an equation.
+
+00:00:04.629 --> 00:00:10.259
+We call this equation a probability density function or PDF.
+
+00:00:10.259 --> 00:00:14.195
+For every number from negative infinity to infinity,
+
+00:00:14.195 --> 00:00:19.815
+the probability density function gives a probability that this number will be generated.
+
+00:00:19.815 --> 00:00:23.940
+Using math notation, X tilde D means
+
+00:00:23.940 --> 00:00:29.170
+the random variable X follows a probability distribution D.
+
+00:00:29.170 --> 00:00:34.905
+The capital P with a lowercase x vertical bar and capital D
+
+00:00:34.905 --> 00:00:40.549
+is read as the probability of x given D. So,
+
+00:00:40.549 --> 00:00:44.854
+what does it mean when we say the probability of x given D?
+
+00:00:44.854 --> 00:00:49.494
+Let's say we have a number two that we observed from a dataset.
+
+00:00:49.494 --> 00:00:52.039
+We assume that the dataset follows
+
+00:00:52.039 --> 00:00:56.685
+a particular probability distribution such as the normal distribution.
+
+00:00:56.685 --> 00:01:03.484
+The equation P of x tells us how likely the random variable would take on the value two.
+
+00:01:03.484 --> 00:01:09.515
+This P of x outputs a number between zero and one which represents this probability.
+
+00:01:09.515 --> 00:01:15.385
+For instance, here is the standard normal distribution written as a fancy-looking capital
+
+00:01:15.385 --> 00:01:22.435
+N. The standard normal distribution has a mean of zero and a standard deviation of one,
+
+00:01:22.435 --> 00:01:26.600
+but what if you had a distribution that was not centered around zero?
+
+00:01:26.599 --> 00:01:32.394
+Or, what if you had a distribution that had a flatter wider distribution?
+
+00:01:32.394 --> 00:01:35.149
+These distributions can still be modeled by
+
+00:01:35.150 --> 00:01:38.300
+the same equation by adjusting its parameters.
+
+00:01:38.299 --> 00:01:41.480
+To describe these variations of the normal distribution,
+
+00:01:41.480 --> 00:01:43.939
+we can adjust two of its parameters.
+
+00:01:43.938 --> 00:01:48.604
+Calculate the mean of the data and assign that value to mu.
+
+00:01:48.605 --> 00:01:53.060
+Calculate the standard deviation and assign it to sigma.
+
+00:01:53.060 --> 00:01:57.730
+The resulting function approximates the distribution of our data.
+

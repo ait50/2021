@@ -1,0 +1,232 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.464
+Volatility is a very general metric of variability in returns,
+
+00:00:04.464 --> 00:00:06.490
+so it's used in many ways.
+
+00:00:06.490 --> 00:00:11.089
+In this video, we're going to mention a few possible ways that might be used in trading,
+
+00:00:11.089 --> 00:00:13.469
+but there are many more possibilities.
+
+00:00:13.470 --> 00:00:18.929
+First, you can classify stocks as highly volatile or less volatile.
+
+00:00:18.929 --> 00:00:22.719
+Some strategies might work best on low volatility stocks,
+
+00:00:22.719 --> 00:00:26.654
+so you could use the volatility metric to limit your universe.
+
+00:00:26.655 --> 00:00:31.640
+For example, one type of strategy called a mean reverting strategy is to take
+
+00:00:31.640 --> 00:00:33.619
+a short position on an asset when it
+
+00:00:33.619 --> 00:00:37.119
+appreciates because you think it will depreciate again.
+
+00:00:37.119 --> 00:00:39.939
+If a stock has low volatility,
+
+00:00:39.939 --> 00:00:43.774
+you may think there is less uncertainty in its fair value.
+
+00:00:43.774 --> 00:00:47.149
+So, after a large deviation from its fair value,
+
+00:00:47.149 --> 00:00:49.560
+its price is more likely to revert.
+
+00:00:49.560 --> 00:00:53.539
+Another interesting observation about low volatility stocks is
+
+00:00:53.539 --> 00:00:57.899
+that they actually seem to perform well compared to high volatility stocks.
+
+00:00:57.899 --> 00:00:59.954
+In finance in general,
+
+00:00:59.954 --> 00:01:03.234
+greater risk is thought to accompany greater returns.
+
+00:01:03.234 --> 00:01:05.480
+So, the empirical observation that
+
+00:01:05.480 --> 00:01:10.430
+low volatility stocks outperform high-volatility stocks is considered a mystery.
+
+00:01:10.430 --> 00:01:16.425
+One explanation is that people ignore really boring things in favor of exciting stocks,
+
+00:01:16.424 --> 00:01:18.569
+like the tortoise and the hare.
+
+00:01:18.569 --> 00:01:21.639
+The low volatility tortoise is chugging along,
+
+00:01:21.640 --> 00:01:25.129
+but people are buying the high-volatility hare stocks.
+
+00:01:25.129 --> 00:01:29.239
+Some exchange traded funds specifically optimized for
+
+00:01:29.239 --> 00:01:33.804
+low volatility and seek to include low volatility stocks.
+
+00:01:33.805 --> 00:01:37.880
+We'll talk more about exchange traded funds in future lessons.
+
+00:01:37.879 --> 00:01:42.289
+Another way to use volatility is to normalize another metric.
+
+00:01:42.290 --> 00:01:44.345
+Let me explain what I mean by that.
+
+00:01:44.344 --> 00:01:50.189
+Say you have a momentum signal consisting of returns over the previous year,
+
+00:01:50.189 --> 00:01:55.325
+say both Netflix and Walmart have a return of 30%.
+
+00:01:55.325 --> 00:01:58.620
+This may seem to mean they're doing equally well,
+
+00:01:58.620 --> 00:02:01.814
+but in fact, Netflix is much more volatile,
+
+00:02:01.814 --> 00:02:04.155
+it can move 30% in a week.
+
+00:02:04.155 --> 00:02:09.020
+So, you could normalize your momentum signal by dividing by the volatility.
+
+00:02:09.020 --> 00:02:13.130
+The idea is to make the comparison apples to apples.
+
+00:02:13.129 --> 00:02:16.039
+This theme exists all over the place.
+
+00:02:16.039 --> 00:02:20.004
+If you want to compare any signal across your entire universe,
+
+00:02:20.004 --> 00:02:24.159
+you usually get some benefit by standardizing it in this way.
+
+00:02:24.159 --> 00:02:28.750
+You can also use volatility to help you determine position sizes.
+
+00:02:28.750 --> 00:02:33.020
+In general, quant traders utilize smaller position sizes in
+
+00:02:33.020 --> 00:02:38.055
+their strategies when markets are volatile to minimize the volatility of net profits,
+
+00:02:38.055 --> 00:02:41.430
+commonly called profit and loss, or P&amp;L.
+
+00:02:41.430 --> 00:02:45.610
+Moreover, the volatility of overall portfolio, P&amp;L,
+
+00:02:45.610 --> 00:02:48.950
+is often used as a gauge of the professional ability of
+
+00:02:48.949 --> 00:02:52.639
+portfolio managers managing multiple trading strategies.
+
+00:02:52.639 --> 00:02:55.629
+So, the ability to allocate capital,
+
+00:02:55.629 --> 00:02:58.979
+taking volatility into account becomes very important.
+
+00:02:58.979 --> 00:03:03.919
+If you believe you can forecast volatility with a certain level of confidence,
+
+00:03:03.919 --> 00:03:08.724
+you can adjust your portfolio sizing in anticipation of a pending storm in the market.
+
+00:03:08.724 --> 00:03:11.799
+But how would you decide how much money to move?
+
+00:03:11.800 --> 00:03:14.630
+Well, you can include volatility in
+
+00:03:14.629 --> 00:03:18.060
+a formula used to determine the size of your positions.
+
+00:03:18.060 --> 00:03:20.854
+Every trader might do this slightly differently,
+
+00:03:20.854 --> 00:03:22.003
+but as an example,
+
+00:03:22.003 --> 00:03:24.639
+a trader might use a formula like this.
+
+00:03:24.639 --> 00:03:31.219
+R divided by sigma times M times last close equals position size,
+
+00:03:31.219 --> 00:03:35.359
+where r is the dollar amount the trader is willing to lose if
+
+00:03:35.360 --> 00:03:40.100
+an M sigma event occurs against her or his position.
+
+00:03:40.099 --> 00:03:45.719
+Sigma is the annualized volatility of the security or strategy in question,
+
+00:03:45.719 --> 00:03:48.865
+M is a trader to find integer,
+
+00:03:48.865 --> 00:03:51.860
+last close is the last closing price of
+
+00:03:51.860 --> 00:03:55.630
+the security or the equivalent for a portfolio of stocks,
+
+00:03:55.629 --> 00:03:59.594
+and position size is the number of stocks to trade.
+
+00:03:59.594 --> 00:04:05.094
+This will lead to smaller position sizes for more expensive and more volatile assets.
+
+00:04:05.094 --> 00:04:08.719
+If you determine your position using a formula like this,
+
+00:04:08.719 --> 00:04:11.050
+then when you notice market conditions changing,
+
+00:04:11.050 --> 00:04:15.469
+you might decide to recalculate and adjust your position sizes accordingly.
+
+00:04:15.469 --> 00:04:19.129
+Sometimes trading strategies define thresholds at which to
+
+00:04:19.129 --> 00:04:23.949
+automatically sell a stock to take a guaranteed profit or limit losses.
+
+00:04:23.949 --> 00:04:27.740
+An upper threshold is called the take profit level,
+
+00:04:27.740 --> 00:04:30.540
+while a lower threshold is called a stop-loss level.
+
+00:04:30.540 --> 00:04:36.345
+These might be defined as a target price or as a percent change from an entry price.
+
+00:04:36.345 --> 00:04:39.835
+However, if market volatility increases,
+
+00:04:39.834 --> 00:04:45.753
+many stocks might reach these levels more frequently causing more frequent trades.
+
+00:04:45.754 --> 00:04:50.600
+During volatile times, traders might adjust these thresholds accordingly.
+

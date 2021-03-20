@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.850
+After you've identified anomalous skew in
+
+00:00:02.850 --> 00:00:06.904
+your signal returns and you think you know the cause, what do you do?
+
+00:00:06.905 --> 00:00:09.810
+The best strategy for dealing with these types of
+
+00:00:09.810 --> 00:00:12.525
+outliers varies on a case-by-case basis.
+
+00:00:12.525 --> 00:00:16.140
+If you know it's just bad data from the data vendor,
+
+00:00:16.140 --> 00:00:18.060
+you can try to fix it by replacing
+
+00:00:18.059 --> 00:00:21.614
+the affected data with correct values from a different vendor.
+
+00:00:21.614 --> 00:00:23.099
+If you can't do this,
+
+00:00:23.100 --> 00:00:26.340
+you might try to determine if your research result will be greatly
+
+00:00:26.339 --> 00:00:30.134
+affected if you replace the value with any reasonable value.
+
+00:00:30.135 --> 00:00:33.425
+For example, the previous day's values.
+
+00:00:33.424 --> 00:00:35.324
+If this isn't going to work,
+
+00:00:35.325 --> 00:00:38.620
+you might try to figure out whether removing this data row,
+
+00:00:38.619 --> 00:00:43.144
+all together, will have any significant effect on your signal research results.
+
+00:00:43.145 --> 00:00:47.120
+You are the one in the best position to make this judgment call.
+
+00:00:47.119 --> 00:00:50.039
+After all, you know the signal the best.
+
+00:00:50.039 --> 00:00:54.109
+If you think the extreme values are due to legit market events,
+
+00:00:54.109 --> 00:00:56.670
+there are a few different things you should think about.
+
+00:00:56.670 --> 00:01:02.010
+You might try to find out whether there are many similar occurrences in other stocks.
+
+00:01:02.009 --> 00:01:06.920
+If there are and if you can identify a common cause for all the extreme values,
+
+00:01:06.920 --> 00:01:11.805
+you could consider isolating this group of stocks out of the research stock universe.
+
+00:01:11.805 --> 00:01:15.990
+You should think about what effect this might have on your signal overall.
+
+00:01:15.989 --> 00:01:21.469
+Here, we're showing several thinly traded small market cap Asian stocks
+
+00:01:21.469 --> 00:01:26.284
+experiencing large sudden unpredictable price fluctuations.
+
+00:01:26.284 --> 00:01:29.015
+Another type of stock that experiences
+
+00:01:29.015 --> 00:01:32.390
+dramatic unpredictable price fluctuations is
+
+00:01:32.390 --> 00:01:35.950
+the stock of single drug biotechnology companies.
+
+00:01:35.950 --> 00:01:39.500
+These type of companies evaluation hinges
+
+00:01:39.500 --> 00:01:43.625
+upon the success of various milestones: phase one,two,
+
+00:01:43.625 --> 00:01:48.215
+and three drug efficacy trials and FDA approval.
+
+00:01:48.215 --> 00:01:49.850
+With only one product,
+
+00:01:49.849 --> 00:01:54.854
+the company is worth a lot if it is successful and very little if it fails.
+
+00:01:54.855 --> 00:02:01.170
+However, the outcome of these binary events is very difficult to predict and to handle.
+
+00:02:01.170 --> 00:02:05.719
+So, quants frequently exclude these stocks from their trading universes.
+
+00:02:05.719 --> 00:02:09.930
+As one example, the price of the stock of Sage Theraputics,
+
+00:02:09.930 --> 00:02:13.069
+a company that makes a postpartum depression drug,
+
+00:02:13.069 --> 00:02:16.699
+jumped from $93 to $167 in
+
+00:02:16.699 --> 00:02:21.125
+a single day last year when the company announced positive test results.
+
+00:02:21.125 --> 00:02:25.159
+You should also think about whether events you think are legitimate are due to
+
+00:02:25.159 --> 00:02:29.365
+special market events like corporate earnings or central bank announcement's.
+
+00:02:29.365 --> 00:02:34.599
+Realistically, if you eventually use this signal to build a trading strategy,
+
+00:02:34.598 --> 00:02:38.209
+you might want to think about whether you can avoid these events by,
+
+00:02:38.210 --> 00:02:42.210
+for example, pausing the strategy in advance of them.
+
+00:02:42.210 --> 00:02:44.370
+If it's possible to do this,
+
+00:02:44.370 --> 00:02:48.390
+then you can probably remove these rows and proceed with the research.
+
+00:02:48.389 --> 00:02:51.949
+If you can't pause the strategy ahead of these events,
+
+00:02:51.949 --> 00:02:54.259
+then you're going to need to think about how you will be able to
+
+00:02:54.259 --> 00:02:57.530
+avoid losing money when executing this strategy.
+
+00:02:57.530 --> 00:03:00.935
+As you can see, a lot of this is common sense.
+
+00:03:00.935 --> 00:03:03.485
+You'll always need to think about how you can prevent
+
+00:03:03.485 --> 00:03:05.900
+the quality of your research results being
+
+00:03:05.900 --> 00:03:11.530
+degraded by outliers and how you can avoid losing money when trading your final strategy.
+

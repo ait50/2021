@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.299
+Now, we'll look at how to use one random variable to predict another random variable.
+
+00:00:06.299 --> 00:00:10.949
+We'll cover the basics of regression as this forms the basis for
+
+00:00:10.949 --> 00:00:15.599
+several models that are used to analyze stock returns over time.
+
+00:00:15.599 --> 00:00:18.539
+If we want to estimate the price of a house,
+
+00:00:18.539 --> 00:00:23.445
+we may assume that home buyers are willing to pay more for a bigger house,
+
+00:00:23.445 --> 00:00:25.664
+all other things being equal.
+
+00:00:25.664 --> 00:00:31.204
+So, we may find data on the area covered by each house as well as its price.
+
+00:00:31.204 --> 00:00:35.699
+We want to find a coefficient that we can multiply by the area,
+
+00:00:35.700 --> 00:00:37.630
+then add a constant term,
+
+00:00:37.630 --> 00:00:40.275
+which we refer to as the intercept.
+
+00:00:40.274 --> 00:00:43.234
+This is the equation for a straight line.
+
+00:00:43.234 --> 00:00:48.888
+Fortunately, we don't have to guess the best values for the coefficient and intercept.
+
+00:00:48.889 --> 00:00:51.500
+When we plot the price against the area,
+
+00:00:51.500 --> 00:00:56.490
+we can draw a line that tries its best to pass through most of the points.
+
+00:00:56.490 --> 00:00:59.780
+We can measure how well the line fits the data by
+
+00:00:59.780 --> 00:01:03.734
+measuring the vertical difference between the point and the line.
+
+00:01:03.734 --> 00:01:08.689
+An optimal regression line is one that manages to reduce these differences.
+
+00:01:08.689 --> 00:01:14.793
+This process that finds the optimal regression line is called ordinary least squares.
+
+00:01:14.793 --> 00:01:17.989
+Even after we find the best regression line,
+
+00:01:17.989 --> 00:01:22.034
+we can expect to see differences between the data points and the line.
+
+00:01:22.034 --> 00:01:25.549
+These differences between the best fit regression line at
+
+00:01:25.549 --> 00:01:30.069
+each point are called residuals or error terms.
+
+00:01:30.069 --> 00:01:35.084
+In other words, the residual is the difference between the actual value,
+
+00:01:35.084 --> 00:01:37.189
+and the predicted value.
+
+00:01:37.189 --> 00:01:40.870
+We can check if the residuals follow a normal distribution.
+
+00:01:40.870 --> 00:01:43.969
+If the residuals follow a normal distribution with
+
+00:01:43.969 --> 00:01:47.394
+a mean of zero and a constant standard deviation,
+
+00:01:47.394 --> 00:01:51.004
+then these residuals can be considered random.
+
+00:01:51.004 --> 00:01:55.310
+By random, I mean that the model's predicted value is equally
+
+00:01:55.310 --> 00:01:59.775
+likely to be higher or lower than the actual value.
+
+00:01:59.775 --> 00:02:03.855
+If however, the average of the residuals is not zero,
+
+00:02:03.855 --> 00:02:08.990
+this gives us a hint that the model has a bias in its prediction errors.
+
+00:02:08.990 --> 00:02:13.990
+One way to improve our model is to look for other independent variables.
+
+00:02:13.990 --> 00:02:16.700
+This is called multiple regression,
+
+00:02:16.699 --> 00:02:22.349
+when we use more than one independent variable to predict a dependent variable.
+
+00:02:22.349 --> 00:02:24.489
+Now that we fit a regression model,
+
+00:02:24.490 --> 00:02:28.075
+we want to check if we can rely on it for future predictions.
+
+00:02:28.074 --> 00:02:33.274
+One measure of our model's ability to fit the data is the R-squared value.
+
+00:02:33.275 --> 00:02:38.030
+The R-squared is a metric that ranges from zero to one.
+
+00:02:38.030 --> 00:02:43.360
+R-squared of one means that all the variation in the dependent variable,
+
+00:02:43.360 --> 00:02:48.360
+can be explained by all the variation in the independent variables.
+
+00:02:48.360 --> 00:02:51.940
+A better metric is the adjusted R-squared,
+
+00:02:51.939 --> 00:02:55.085
+which helps us to find the minimum combination of
+
+00:02:55.085 --> 00:02:58.875
+independent variables that are most relevant for our model.
+
+00:02:58.875 --> 00:03:00.729
+Another way to check our model,
+
+00:03:00.729 --> 00:03:03.134
+is by performing an F-test.
+
+00:03:03.134 --> 00:03:06.349
+The F-test checks whether our coefficients and
+
+00:03:06.349 --> 00:03:10.489
+intercepts are not zero, and therefore, meaningful.
+
+00:03:10.490 --> 00:03:14.790
+If we get a P-value of 0.05 or smaller,
+
+00:03:14.789 --> 00:03:18.474
+we can assume that our parameters are not zero.
+
+00:03:18.474 --> 00:03:20.614
+When parameters are not zero,
+
+00:03:20.615 --> 00:03:24.870
+then we can say that our model describes a meaningful relationship.
+

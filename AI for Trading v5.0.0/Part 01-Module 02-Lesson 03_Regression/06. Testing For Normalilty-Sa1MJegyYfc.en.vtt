@@ -1,0 +1,388 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.894
+We've just seen how to model our data if we assume that it is normally distributed.
+
+00:00:05.894 --> 00:00:08.490
+But how do we decide if our data can be
+
+00:00:08.490 --> 00:00:11.530
+described by a normal distribution in the first place?
+
+00:00:11.529 --> 00:00:13.649
+A quick way to visually check,
+
+00:00:13.650 --> 00:00:16.045
+is to plot a histogram of our data.
+
+00:00:16.045 --> 00:00:20.540
+We can then compare the histogram to a plot of the normal distribution.
+
+00:00:20.539 --> 00:00:23.244
+Does this data's distribution look normal?
+
+00:00:23.245 --> 00:00:25.285
+How about this one?
+
+00:00:25.285 --> 00:00:29.210
+Does it look like we can still describe it with a normal distribution?
+
+00:00:29.210 --> 00:00:33.115
+We can also use a boxplot to check for normality.
+
+00:00:33.115 --> 00:00:34.660
+As you'll soon see,
+
+00:00:34.659 --> 00:00:38.209
+the boxplot helps to check for symmetry in your data.
+
+00:00:38.210 --> 00:00:41.740
+Normal distributions are symmetric around their mean.
+
+00:00:41.740 --> 00:00:43.775
+Here is a boxplot.
+
+00:00:43.774 --> 00:00:46.469
+There is a box with a line inside.
+
+00:00:46.469 --> 00:00:48.484
+The bottom edge of the box,
+
+00:00:48.484 --> 00:00:50.089
+the middle line in the box,
+
+00:00:50.090 --> 00:00:51.590
+and the top edge of the box,
+
+00:00:51.590 --> 00:00:55.135
+are quantiles that divide the data in two groups.
+
+00:00:55.134 --> 00:00:58.724
+We call the dividing lines quantiles because
+
+00:00:58.725 --> 00:01:02.620
+they split the data into groups with the same number of points.
+
+00:01:02.619 --> 00:01:06.200
+Since the three dividing lines create four groups,
+
+00:01:06.200 --> 00:01:08.795
+we call these lines quartiles.
+
+00:01:08.795 --> 00:01:12.489
+Remember that the quartiles are the three dividing lines,
+
+00:01:12.489 --> 00:01:15.015
+not the four groups themselves.
+
+00:01:15.015 --> 00:01:18.364
+The line inside the box is the median.
+
+00:01:18.364 --> 00:01:22.429
+If you ordered all of your dataset from smallest to largest,
+
+00:01:22.430 --> 00:01:26.255
+50 percent of your data points are less than the median.
+
+00:01:26.254 --> 00:01:30.454
+The bottom side of the box represents the first quartile.
+
+00:01:30.454 --> 00:01:35.105
+Twenty five percent of the data are less than the first quartile.
+
+00:01:35.105 --> 00:01:38.660
+The top side of the box is the third quartile.
+
+00:01:38.659 --> 00:01:43.194
+Seventy five percent of the data are less than the third quartile.
+
+00:01:43.194 --> 00:01:48.179
+We can calculate the interquartile range by taking the third quartile,
+
+00:01:48.180 --> 00:01:50.445
+minus the first quartile.
+
+00:01:50.444 --> 00:01:54.189
+The boxplot has small lines on either end.
+
+00:01:54.189 --> 00:01:56.914
+We call these lines whiskers.
+
+00:01:56.915 --> 00:02:01.049
+The lower bound whisker is defined as the first quartile,
+
+00:02:01.049 --> 00:02:05.485
+minus 1.5 times the interquartile range.
+
+00:02:05.484 --> 00:02:10.699
+Similarly, the upper bound whisker is set to the third quartile,
+
+00:02:10.699 --> 00:02:15.079
+plus 1.5 times the interquartile range.
+
+00:02:15.080 --> 00:02:18.515
+Points lying outside of the whiskers can be considered
+
+00:02:18.514 --> 00:02:22.844
+outliers and are visualized as individual points.
+
+00:02:22.844 --> 00:02:25.590
+Going back to our test for normality,
+
+00:02:25.590 --> 00:02:29.120
+if you look at the normal distribution, it is symmetric.
+
+00:02:29.120 --> 00:02:31.200
+When a distribution is symmetric,
+
+00:02:31.199 --> 00:02:33.889
+it's median is equal to it's mean.
+
+00:02:33.889 --> 00:02:39.609
+The first quartile and third quartile are also the same distance away from the median.
+
+00:02:39.610 --> 00:02:44.045
+Also, the whiskers are the same distance away from the median.
+
+00:02:44.044 --> 00:02:46.734
+By visualizing your data with a boxplot,
+
+00:02:46.735 --> 00:02:49.220
+you can see whether it's symmetric or not.
+
+00:02:49.219 --> 00:02:51.008
+If it's not symmetric,
+
+00:02:51.008 --> 00:02:53.114
+it's not normally distributed.
+
+00:02:53.115 --> 00:02:58.080
+We can look at the data using both a box whisker plot and a histogram.
+
+00:02:58.080 --> 00:03:01.855
+Here, it looks like it follows a normal distribution.
+
+00:03:01.854 --> 00:03:04.864
+This other dataset is not normal.
+
+00:03:04.865 --> 00:03:08.719
+In fact, we say that it is skewed because it has
+
+00:03:08.719 --> 00:03:13.099
+a long tail of data to only one side of the distribution.
+
+00:03:13.099 --> 00:03:16.314
+When there is a long tail of data to the left,
+
+00:03:16.314 --> 00:03:20.204
+the mean of the distribution lies to the left of the median.
+
+00:03:20.205 --> 00:03:23.905
+We say that the distribution is left skewed.
+
+00:03:23.905 --> 00:03:29.655
+In fact, stock returns tend to exhibit left skew and fat tails.
+
+00:03:29.655 --> 00:03:33.469
+This means that extreme negative returns occur with
+
+00:03:33.469 --> 00:03:37.805
+greater frequency than would be expected by a normal distribution.
+
+00:03:37.805 --> 00:03:41.240
+Please note that even if your data is symmetric,
+
+00:03:41.240 --> 00:03:45.500
+it's not necessarily a bell-shaped curve of a normal distribution.
+
+00:03:45.500 --> 00:03:48.530
+So, it helps to see the box whisker plot,
+
+00:03:48.530 --> 00:03:50.474
+as well as the histogram.
+
+00:03:50.474 --> 00:03:53.129
+To do a more thorough check for normality,
+
+00:03:53.129 --> 00:03:55.629
+we can use a QQ plot.
+
+00:03:55.629 --> 00:03:59.134
+The QQ plot checks if the shape of the data
+
+00:03:59.134 --> 00:04:02.769
+matches the shape of our probability density function.
+
+00:04:02.770 --> 00:04:07.125
+The first Q in QQ plot stands for quantile.
+
+00:04:07.125 --> 00:04:11.789
+The second Q in QQ plot also stands for quantile.
+
+00:04:11.789 --> 00:04:17.449
+Common quantiles are quartiles, deciles, and percentiles.
+
+00:04:17.449 --> 00:04:21.784
+Recall that when we sort the data points from smallest to largest,
+
+00:04:21.785 --> 00:04:27.660
+we can find boundaries that divide the data into groups with equal number of points.
+
+00:04:27.660 --> 00:04:30.930
+If we divide a data into 10 buckets,
+
+00:04:30.930 --> 00:04:34.264
+the nine boundaries are deciles.
+
+00:04:34.264 --> 00:04:37.774
+If we divide the data into 100 buckets,
+
+00:04:37.774 --> 00:04:41.724
+the 99 boundaries are called percentiles.
+
+00:04:41.725 --> 00:04:46.140
+Notice, that this is not the same as plotting a histogram.
+
+00:04:46.139 --> 00:04:50.329
+With a histogram, the buckets have the same width.
+
+00:04:50.329 --> 00:04:55.229
+With quantiles, the buckets all have the same number of data points.
+
+00:04:55.230 --> 00:05:01.444
+QQ plots let us compare any two distributions to check if they have the same shape.
+
+00:05:01.444 --> 00:05:05.819
+Since we want to check if a data is shaped like a normal distribution,
+
+00:05:05.819 --> 00:05:11.009
+we can plot it's quantiles against the quantiles of a normal distribution.
+
+00:05:11.009 --> 00:05:17.360
+As an example, let's take the 50th percentile of our data as our y-coordinate.
+
+00:05:17.360 --> 00:05:20.810
+Next, we take the 50th percentile of
+
+00:05:20.810 --> 00:05:24.435
+the standard normal distribution as our x-coordinate.
+
+00:05:24.435 --> 00:05:28.134
+We plot this xy point on the QQ plot.
+
+00:05:28.134 --> 00:05:31.969
+We repeat this for all the other percentiles.
+
+00:05:31.970 --> 00:05:35.360
+If the two distributions have the same shape,
+
+00:05:35.360 --> 00:05:37.639
+then the plotted points will follow
+
+00:05:37.639 --> 00:05:41.519
+a straight line that goes from the bottom left to the top right.
+
+00:05:41.519 --> 00:05:43.064
+In this QQ plot,
+
+00:05:43.064 --> 00:05:46.660
+we can see that the data does not look like a normal distribution.
+
+00:05:46.660 --> 00:05:52.015
+This is because the plotted points form a curve instead of a straight line.
+
+00:05:52.014 --> 00:05:58.029
+So far, we've seen plots that help us visually check if our data looks like it's normal.
+
+00:05:58.029 --> 00:06:03.754
+What if we wanted a single number to represent how normal the data is?
+
+00:06:03.754 --> 00:06:05.954
+If we had a single number,
+
+00:06:05.954 --> 00:06:08.319
+we could choose a cutoff point.
+
+00:06:08.319 --> 00:06:11.259
+Anything on one side of this cutoff point,
+
+00:06:11.259 --> 00:06:13.330
+and we decide that it's normal.
+
+00:06:13.329 --> 00:06:16.209
+Anything on the other side of the cutoff point,
+
+00:06:16.209 --> 00:06:18.685
+and we decide that it's not normal.
+
+00:06:18.685 --> 00:06:23.069
+The Shapiro-Wilk test and the D'Augustino-Pearson tests,
+
+00:06:23.069 --> 00:06:26.860
+are hypotheses tests that give a p-value.
+
+00:06:26.860 --> 00:06:30.085
+The p-value ranges from zero to one.
+
+00:06:30.084 --> 00:06:32.739
+These are hypotheses tests in which
+
+00:06:32.740 --> 00:06:36.775
+the null hypothesis assumes that the data is normally distributed.
+
+00:06:36.774 --> 00:06:41.114
+If the p-value is larger than 0.05,
+
+00:06:41.115 --> 00:06:44.735
+then we will assume that it follows a normal distribution.
+
+00:06:44.735 --> 00:06:48.105
+If the p-value is less than 0.05,
+
+00:06:48.105 --> 00:06:51.275
+then it likely does not follow a normal distribution.
+
+00:06:51.274 --> 00:06:54.139
+There is a another more general test to decide
+
+00:06:54.139 --> 00:06:57.274
+whether any two distributions are the same.
+
+00:06:57.274 --> 00:07:02.419
+This test is called the Kolmogorov-Smirnov test.
+
+00:07:02.420 --> 00:07:08.715
+Given two distributions, the Kolmogorov-Smirnov test returns a p-value.
+
+00:07:08.714 --> 00:07:12.274
+If the p-value is greater than 0.05,
+
+00:07:12.274 --> 00:07:16.084
+we will assume that the two distributions are the same.
+
+00:07:16.084 --> 00:07:19.469
+If the p-value is less than 0.05,
+
+00:07:19.470 --> 00:07:22.935
+then we say the two distributions are not the same.
+
+00:07:22.935 --> 00:07:26.915
+Remember the reason why we care about the data being normal.
+
+00:07:26.915 --> 00:07:30.615
+When we use statistical models such as regression,
+
+00:07:30.615 --> 00:07:36.074
+we use hypotheses tests to check if we can trust the model parameters of the model.
+
+00:07:36.074 --> 00:07:39.939
+These tests assume that our data is normally distributed.
+
+00:07:39.939 --> 00:07:42.879
+If the data are not normally distributed,
+
+00:07:42.879 --> 00:07:49.069
+these tests tend to tell us that our model is valid when in fact it is not.
+

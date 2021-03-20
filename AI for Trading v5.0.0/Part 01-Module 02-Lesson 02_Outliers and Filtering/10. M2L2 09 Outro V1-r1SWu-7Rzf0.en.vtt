@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.480
+In this lesson, we've discussed common sources of outliers and data,
+
+00:00:04.480 --> 00:00:06.235
+some ways to spot them,
+
+00:00:06.235 --> 00:00:08.765
+and a few things you can do to handle them.
+
+00:00:08.765 --> 00:00:12.525
+However, it's worth noting that your strategy for dealing
+
+00:00:12.525 --> 00:00:16.280
+with outliers will probably vary on a case-by-case basis.
+
+00:00:16.280 --> 00:00:22.160
+In general, pay attention to your dataset and investigate when you see something unusual.
+

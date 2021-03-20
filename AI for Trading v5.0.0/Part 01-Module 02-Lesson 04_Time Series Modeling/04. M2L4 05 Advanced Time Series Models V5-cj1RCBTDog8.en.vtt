@@ -1,0 +1,277 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.759
+Autoregressive and moving average models tend to capture different relationships.
+
+00:00:05.759 --> 00:00:10.099
+The nice thing is, you can get the best of both by adding them together.
+
+00:00:10.099 --> 00:00:14.644
+An autoregressive moving average is defined with a p and q.
+
+00:00:14.644 --> 00:00:17.730
+The p is the lag for the autoregression,
+
+00:00:17.730 --> 00:00:20.699
+the q is the lag for moving average.
+
+00:00:20.699 --> 00:00:23.669
+A variation of the autoregressive moving average
+
+00:00:23.670 --> 00:00:27.185
+is the autoregressive integrated moving average.
+
+00:00:27.184 --> 00:00:31.434
+This concept is used in a trading strategy called Pairs trading.
+
+00:00:31.434 --> 00:00:34.729
+First, let's build some intuition that will help us when
+
+00:00:34.729 --> 00:00:38.269
+we study autoregressive integrated moving averages.
+
+00:00:38.270 --> 00:00:41.795
+Let's say we want to describe the position of a turtle.
+
+00:00:41.795 --> 00:00:44.270
+The turtle is walking at a regular pace.
+
+00:00:44.270 --> 00:00:46.645
+So, its position goes from zero,
+
+00:00:46.645 --> 00:00:49.500
+then one, then two, and so on.
+
+00:00:49.500 --> 00:00:52.225
+We noticed that the turtle is moving at a regular pace.
+
+00:00:52.225 --> 00:00:54.015
+So, we can describe its speed,
+
+00:00:54.015 --> 00:00:55.685
+or the distance over time,
+
+00:00:55.685 --> 00:00:57.295
+as a single number.
+
+00:00:57.295 --> 00:01:01.405
+For example, this turtle is moving at one meter per second.
+
+00:01:01.405 --> 00:01:04.010
+If we plot the turtle's position over time,
+
+00:01:04.010 --> 00:01:05.645
+it is not constant.
+
+00:01:05.644 --> 00:01:10.204
+Its position over time will look like a line that slopes upward.
+
+00:01:10.204 --> 00:01:13.890
+However, if we plot the turtle's speed over time,
+
+00:01:13.890 --> 00:01:16.730
+it is a constant one meter per second.
+
+00:01:16.730 --> 00:01:20.689
+The plot of speed over time is a horizontal line.
+
+00:01:20.689 --> 00:01:25.105
+Now let's think about how the turtle's position is related to its speed.
+
+00:01:25.105 --> 00:01:27.969
+If we look at the turtle's position over time,
+
+00:01:27.969 --> 00:01:30.438
+the slope of that line is its speed,
+
+00:01:30.438 --> 00:01:31.954
+or meters per second.
+
+00:01:31.954 --> 00:01:33.549
+Going the other way,
+
+00:01:33.549 --> 00:01:38.384
+we look at the plot of the turtle's speed over time and take the cumulative sum.
+
+00:01:38.385 --> 00:01:40.950
+So, for instance, at each second,
+
+00:01:40.950 --> 00:01:42.079
+we add one meter.
+
+00:01:42.079 --> 00:01:44.245
+So, we get one meter,
+
+00:01:44.245 --> 00:01:47.885
+two meters, three meters, and so on.
+
+00:01:47.885 --> 00:01:51.015
+This is actually the area under the horizontal line,
+
+00:01:51.015 --> 00:01:54.754
+and is also the position of the turtle as time goes on.
+
+00:01:54.754 --> 00:01:56.364
+So, what did we learn here?
+
+00:01:56.364 --> 00:02:00.184
+In general, taking the difference between each period
+
+00:02:00.185 --> 00:02:04.180
+is called the time difference or item wise difference.
+
+00:02:04.180 --> 00:02:06.979
+If you take the time difference of your data,
+
+00:02:06.978 --> 00:02:11.254
+you may be able to describe your data more easily as a constant number.
+
+00:02:11.254 --> 00:02:13.280
+If you remember from calculus,
+
+00:02:13.280 --> 00:02:17.900
+taking the derivative of a straight line gives the slope of that line.
+
+00:02:17.900 --> 00:02:21.860
+This slope gives us a way to describe the line with a constant.
+
+00:02:21.860 --> 00:02:24.875
+To go from speed back to position,
+
+00:02:24.875 --> 00:02:26.944
+we can take the integral.
+
+00:02:26.944 --> 00:02:32.209
+This is finding the area under the curve or taking the cumulative sum.
+
+00:02:32.210 --> 00:02:37.320
+Taking the integral lets us translate from the speed back to position.
+
+00:02:37.319 --> 00:02:40.609
+We will now apply these concepts of time difference to learn
+
+00:02:40.610 --> 00:02:44.135
+about the autoregressive integrated moving average.
+
+00:02:44.134 --> 00:02:49.864
+Recall that regression-based time series models require the data to be stationary.
+
+00:02:49.865 --> 00:02:53.735
+When data is not stationary, the mean, variants,
+
+00:02:53.735 --> 00:02:56.150
+or co-variants may change over time,
+
+00:02:56.150 --> 00:02:59.390
+and it's hard to use the past to predict the future.
+
+00:02:59.389 --> 00:03:02.419
+One way to get a stationary time series is by
+
+00:03:02.419 --> 00:03:05.739
+taking the difference between points in the time series.
+
+00:03:05.740 --> 00:03:11.475
+The time difference may also be called the rate of change or the item wise difference.
+
+00:03:11.474 --> 00:03:14.284
+We call that the rate of change between periods,
+
+00:03:14.284 --> 00:03:15.805
+or the rate of return,
+
+00:03:15.805 --> 00:03:22.349
+can be calculated by taking the ratio of the current price divided by the previous price.
+
+00:03:22.349 --> 00:03:25.310
+When you express your data in terms of logs,
+
+00:03:25.310 --> 00:03:27.409
+this ratio becomes a difference between
+
+00:03:27.409 --> 00:03:31.085
+your current log price and the previous log price.
+
+00:03:31.085 --> 00:03:33.150
+When working with financial data,
+
+00:03:33.150 --> 00:03:36.469
+we usually find that asset price time series have
+
+00:03:36.469 --> 00:03:40.344
+a property such that their time difference is stationary.
+
+00:03:40.344 --> 00:03:44.090
+In other words, we like working with returns and
+
+00:03:44.090 --> 00:03:48.094
+not prices because the time series are more stable.
+
+00:03:48.094 --> 00:03:54.814
+In math terms, we say that the original price data is integrated of order one.
+
+00:03:54.814 --> 00:04:01.395
+We also say that the log returns of this data is integrated of order zero.
+
+00:04:01.395 --> 00:04:04.080
+So, when working the time series,
+
+00:04:04.080 --> 00:04:06.380
+you can check if it is stationary using
+
+00:04:06.379 --> 00:04:10.479
+a statistical test called the augmented Dickey Fuller test.
+
+00:04:10.479 --> 00:04:16.909
+If the augmented Dickey Fuller test gives a p-value that is 0.05 or less,
+
+00:04:16.910 --> 00:04:20.380
+then we can assume that the time series is stationary.
+
+00:04:20.379 --> 00:04:22.725
+If the data is not stationary,
+
+00:04:22.725 --> 00:04:25.939
+we can take the time difference then run
+
+00:04:25.939 --> 00:04:30.310
+the augmented Dickey-Fuller test to see if the time difference is stationary.
+
+00:04:30.310 --> 00:04:32.030
+If it is stationary,
+
+00:04:32.029 --> 00:04:36.834
+then we can say that this time difference is integrated of order zero.
+
+00:04:36.834 --> 00:04:42.854
+We can also say that the original time series is integrated of order one.
+
+00:04:42.855 --> 00:04:46.175
+You may need to take the time difference multiple times.
+
+00:04:46.175 --> 00:04:49.500
+Then, once you find a time difference that is stationary,
+
+00:04:49.500 --> 00:04:52.504
+you refer to the original data as integrated of
+
+00:04:52.504 --> 00:04:57.610
+order d where d is the number of times that you had to take the time difference.
+
+00:04:57.610 --> 00:05:01.040
+Also, once we have a stationary time series,
+
+00:05:01.040 --> 00:05:04.280
+we can model it with an autoregressive moving average.
+
+00:05:04.279 --> 00:05:07.069
+Note that being familiar with the integrated order
+
+00:05:07.069 --> 00:05:10.129
+one and integrated ordered zero time series
+
+00:05:10.129 --> 00:05:14.469
+will help you as you learn about co-integration and pairs trading.
+

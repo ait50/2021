@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.919
+Let's look at mean reversion in detail.
+
+00:00:02.919 --> 00:00:07.169
+We can plot a stock's price movements against its moving average.
+
+00:00:07.169 --> 00:00:10.349
+We tend to see that when the price increases or
+
+00:00:10.349 --> 00:00:13.289
+decreases significantly from this moving average,
+
+00:00:13.289 --> 00:00:17.039
+the price then reverts back towards this moving average.
+
+00:00:17.039 --> 00:00:20.484
+To describe a mean reverting process with some math,
+
+00:00:20.484 --> 00:00:24.140
+we'll use what's called the Drift and Volatility model.
+
+00:00:24.140 --> 00:00:26.250
+To guide our understanding,
+
+00:00:26.250 --> 00:00:31.309
+we'll imagine the stock movement as a boat that is floating passively in the ocean.
+
+00:00:31.309 --> 00:00:35.060
+The change in price of an asset over a period of time is
+
+00:00:35.060 --> 00:00:39.469
+a sum of a long-term average plus some randomness.
+
+00:00:39.469 --> 00:00:41.674
+This long-term average is called
+
+00:00:41.674 --> 00:00:46.554
+the drift term because it changes over time, but relatively slowly.
+
+00:00:46.554 --> 00:00:49.189
+Hence, the long-term average is like
+
+00:00:49.189 --> 00:00:53.164
+the ocean current that slowly and steadily carries the boat.
+
+00:00:53.164 --> 00:00:55.579
+The amount of drift depends upon
+
+00:00:55.579 --> 00:00:59.500
+the current price and the amount of time that has passed.
+
+00:00:59.500 --> 00:01:05.200
+The random part of the price change is called the Volatility Term.
+
+00:01:05.200 --> 00:01:09.005
+We can think of this volatility component as all the fish,
+
+00:01:09.004 --> 00:01:12.795
+dolphins or even whales that bump into the boat.
+
+00:01:12.795 --> 00:01:18.500
+All of these little bumps move the boat in a more random path around it stripped.
+
+00:01:18.500 --> 00:01:22.099
+The volatility term depends on the current price,
+
+00:01:22.099 --> 00:01:26.015
+a standard deviation and the amount of time that passes.
+
+00:01:26.015 --> 00:01:29.950
+The standard deviation is small when the markets are calm,
+
+00:01:29.950 --> 00:01:33.130
+so it's like encountering a small group of fish.
+
+00:01:33.129 --> 00:01:37.685
+The standard deviation may become large during a market crash.
+
+00:01:37.685 --> 00:01:41.245
+This would be like encountering a group of wales.
+
+00:01:41.245 --> 00:01:46.045
+With math, the Drift and Volatility model looks like this.
+
+00:01:46.045 --> 00:01:51.415
+The dp_t on the left represents the change in price over the time
+
+00:01:51.415 --> 00:01:57.219
+t. The first term to the right of the equal sign a is the drift term.
+
+00:01:57.219 --> 00:02:00.515
+The drift term is made up of the current price,
+
+00:02:00.515 --> 00:02:02.560
+a constant average mu,
+
+00:02:02.560 --> 00:02:04.545
+and the change in time.
+
+00:02:04.545 --> 00:02:08.104
+The second term on the right is the volatility term.
+
+00:02:08.104 --> 00:02:11.569
+The volatility term is made up of the current price,
+
+00:02:11.569 --> 00:02:13.750
+a standard deviation sigma,
+
+00:02:13.750 --> 00:02:19.159
+a random noise factor epsilon and the square root of the change in time.
+
+00:02:19.159 --> 00:02:22.435
+If this equation feels intimidating, don't worry.
+
+00:02:22.435 --> 00:02:26.504
+For now, just think about the boat drifting in the ocean,
+
+00:02:26.504 --> 00:02:31.129
+encountering fish, dolphins and maybe even some tropical islands.
+

@@ -1,0 +1,292 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.535
+Hi. We're back with Thomas John,
+
+00:00:02.535 --> 00:00:04.330
+a Quantitative Portfolio Manager,
+
+00:00:04.330 --> 00:00:06.870
+to talk about AI and finance.
+
+00:00:06.870 --> 00:00:09.405
+So Thomas, based on your experience,
+
+00:00:09.405 --> 00:00:12.405
+how is AI applied in quant finance today?
+
+00:00:12.405 --> 00:00:14.760
+To be honest, not a whole lot yet.
+
+00:00:14.760 --> 00:00:18.975
+Only the largest firms are applying AI in any form directly,
+
+00:00:18.975 --> 00:00:21.765
+although many might be consuming it indirectly.
+
+00:00:21.765 --> 00:00:24.750
+For example, in the form of a data stream that might have been
+
+00:00:24.750 --> 00:00:28.875
+constructed by a vendor using some machine learning technique.
+
+00:00:28.875 --> 00:00:34.260
+The flip side of that is great news for aspiring quants who wanted to use AI.
+
+00:00:34.260 --> 00:00:38.820
+There's a lot of unchartered territory to explore and contribute to.
+
+00:00:38.820 --> 00:00:41.480
+Another favorable tailwind is that
+
+00:00:41.480 --> 00:00:45.680
+financial firms are far more keen than earlier for investing in machine learning,
+
+00:00:45.680 --> 00:00:50.510
+regardless of where they stand on the spectrum of skepticism of the utility of AI.
+
+00:00:50.510 --> 00:00:53.780
+Most are making a concerted effort
+
+00:00:53.780 --> 00:00:57.110
+to integrate machine learning into various parts of their business.
+
+00:00:57.110 --> 00:00:59.690
+Large firms on the buy side,
+
+00:00:59.690 --> 00:01:03.485
+like Blackrock and on the sell side like JP Morgan and Goldman Sachs,
+
+00:01:03.485 --> 00:01:07.340
+are hiring people with expertise in machine learning for working on
+
+00:01:07.340 --> 00:01:12.170
+topics ranging from liquidity analysis to execution algorithms.
+
+00:01:12.170 --> 00:01:14.930
+So applications of AI in
+
+00:01:14.930 --> 00:01:19.174
+quant finance are not limited to systematic investment departments alone.
+
+00:01:19.174 --> 00:01:23.450
+An entirely separate area from traditional investment management consists of
+
+00:01:23.450 --> 00:01:26.510
+fintech firms that are investing in AI and
+
+00:01:26.510 --> 00:01:30.335
+seek to disrupt the traditional firms altogether.
+
+00:01:30.335 --> 00:01:33.095
+Yet another way of thinking about this question
+
+00:01:33.095 --> 00:01:36.050
+is that it might become irrelevant in a few years.
+
+00:01:36.050 --> 00:01:39.140
+AI will just be an integral part of every industry,
+
+00:01:39.140 --> 00:01:43.565
+including quant finance, and it won't be something to remark about at all.
+
+00:01:43.565 --> 00:01:47.060
+Interesting. So Thomas, what else is important to know
+
+00:01:47.060 --> 00:01:50.975
+other than AI and machine learning if you want to be a successful quant?
+
+00:01:50.975 --> 00:01:53.230
+We can talk about quant requirements,
+
+00:01:53.230 --> 00:01:55.760
+but one big thing to understand is that
+
+00:01:55.760 --> 00:01:58.600
+you need to have some knowledge of finance itself.
+
+00:01:58.600 --> 00:02:01.595
+Of course, finance is a vast area,
+
+00:02:01.595 --> 00:02:06.380
+an ocean, and you aren't expected to have expertise in a lot of it.
+
+00:02:06.380 --> 00:02:09.740
+But you want to have shown a taste for swimming in that ocean in
+
+00:02:09.740 --> 00:02:12.710
+order to get a job and then as you work,
+
+00:02:12.710 --> 00:02:15.230
+you gain more and more domain knowledge.
+
+00:02:15.230 --> 00:02:18.590
+For example, if you're interviewing with the derivatives group,
+
+00:02:18.590 --> 00:02:21.500
+you are expected to know a fair amount about options,
+
+00:02:21.500 --> 00:02:24.460
+how they work, what they're sensitive to.
+
+00:02:24.460 --> 00:02:29.900
+Likewise, with a bond trading group to know basic bond math and terminologies,
+
+00:02:29.900 --> 00:02:33.365
+such as duration, convexity, spread.
+
+00:02:33.365 --> 00:02:35.510
+This isn't too hard to do.
+
+00:02:35.510 --> 00:02:38.510
+There are books that can help you prepare for this.
+
+00:02:38.510 --> 00:02:40.805
+John Hulls book on Options,
+
+00:02:40.805 --> 00:02:43.930
+Futures and Other Derivatives is a classic.
+
+00:02:43.930 --> 00:02:46.200
+There are other such books.
+
+00:02:46.200 --> 00:02:51.455
+Do try to know the information and solve problems post in those books.
+
+00:02:51.455 --> 00:02:56.270
+There are even books discussing the kind of questions you can expect in quant interviews.
+
+00:02:56.270 --> 00:02:59.720
+You can use them to get a good sense of what to expect.
+
+00:02:59.720 --> 00:03:02.300
+Great. Thank you. So Thomas,
+
+00:03:02.300 --> 00:03:03.800
+is there a trade off between
+
+00:03:03.800 --> 00:03:09.125
+complex black-box models and the simple but explainable linear models?
+
+00:03:09.125 --> 00:03:12.695
+Some of the main differences between typical applications of
+
+00:03:12.695 --> 00:03:17.014
+AI or machine learning in the tech space versus investments,
+
+00:03:17.014 --> 00:03:22.270
+is that the signal to noise ratio is much lower in asset pricing forecasting.
+
+00:03:22.270 --> 00:03:25.520
+The data is highly non-stationary and
+
+00:03:25.520 --> 00:03:29.240
+the sample size available is small, relatively speaking.
+
+00:03:29.240 --> 00:03:32.014
+Plus, when you act on the forecasts,
+
+00:03:32.014 --> 00:03:36.905
+that in turn impacts prices and changes the dynamics of what you are predicting,
+
+00:03:36.905 --> 00:03:38.585
+at least to some extent,
+
+00:03:38.585 --> 00:03:41.000
+depending on the size of your trades.
+
+00:03:41.000 --> 00:03:43.970
+Adding to this uncertainty in forecast is
+
+00:03:43.970 --> 00:03:47.435
+the fact that in the case of large-scale asset management,
+
+00:03:47.435 --> 00:03:51.340
+significant things like pensions are at stake.
+
+00:03:51.340 --> 00:03:57.080
+For these reasons, a majority of investors prefer interpretable models for investing,
+
+00:03:57.080 --> 00:03:59.630
+so that they can know for themselves and explain to
+
+00:03:59.630 --> 00:04:03.245
+their clients the reasons behind any under performance,
+
+00:04:03.245 --> 00:04:06.005
+resulting from the use of a given model.
+
+00:04:06.005 --> 00:04:08.870
+In the news, you can encounter firms talking about
+
+00:04:08.870 --> 00:04:12.230
+how they might have had a better performing black-box model,
+
+00:04:12.230 --> 00:04:15.500
+but prefer to use the more readily interpretable one.
+
+00:04:15.500 --> 00:04:17.375
+There are exceptions to this.
+
+00:04:17.375 --> 00:04:20.750
+There are some investors who are willing to risk the black box nature of
+
+00:04:20.750 --> 00:04:24.800
+the model in order to get access to new or different forecasts,
+
+00:04:24.800 --> 00:04:27.485
+and so invest in pure AI based strategies with
+
+00:04:27.485 --> 00:04:33.425
+exceptional performance or very high Sharpe ratio high frequency algorithms.
+
+00:04:33.425 --> 00:04:39.515
+This debate exists in other areas also and it depends very much on applications.
+
+00:04:39.515 --> 00:04:43.925
+Many had taken the position that interpretability is not the important thing,
+
+00:04:43.925 --> 00:04:47.945
+performance is and this debate has existed for a long time.
+
+00:04:47.945 --> 00:04:52.030
+You can see this discussed as a well-developed debate even, for example,
+
+00:04:52.030 --> 00:04:58.205
+back in 2001 in Breiman's discussion of the two cultures in statistical modeling.
+
+00:04:58.205 --> 00:05:00.040
+In recent times too,
+
+00:05:00.040 --> 00:05:02.720
+some have argued that in some applications,
+
+00:05:02.720 --> 00:05:05.465
+like serving ads on a social media platform,
+
+00:05:05.465 --> 00:05:09.440
+people may not really need to know or even want to understand
+
+00:05:09.440 --> 00:05:14.300
+all about the inner workings of the models as long as performance is good.
+
+00:05:14.300 --> 00:05:17.345
+Others have pushed back with examples in medical fields
+
+00:05:17.345 --> 00:05:20.360
+or elsewhere where causality is important,
+
+00:05:20.360 --> 00:05:23.300
+that interpretability is important.
+
+00:05:23.300 --> 00:05:25.520
+Even within a single field really,
+
+00:05:25.520 --> 00:05:28.355
+it comes down to the particular application.
+
+00:05:28.355 --> 00:05:32.070
+Great. Thanks so much for sharing your insights.
+

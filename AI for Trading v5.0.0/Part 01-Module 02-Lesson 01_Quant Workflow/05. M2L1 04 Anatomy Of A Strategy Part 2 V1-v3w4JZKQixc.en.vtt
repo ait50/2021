@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.884
+The alpha discovery phase is where the fun really starts.
+
+00:00:03.884 --> 00:00:06.285
+This is when you start looking for alphas,
+
+00:00:06.285 --> 00:00:08.560
+but what are alphas exactly?
+
+00:00:08.560 --> 00:00:11.640
+An alpha is an expression applied to
+
+00:00:11.640 --> 00:00:14.910
+the cross-section over your universe of stocks which returns
+
+00:00:14.910 --> 00:00:17.850
+a vector of real numbers whose values are
+
+00:00:17.850 --> 00:00:22.665
+proportional to the size of the position you will take on each asset.
+
+00:00:22.664 --> 00:00:27.774
+You can think of the numerical output of an alpha as providing an indication,
+
+00:00:27.774 --> 00:00:29.820
+or metric of conviction about
+
+00:00:29.820 --> 00:00:33.880
+future returns which will ultimately inform a trading decision.
+
+00:00:33.880 --> 00:00:36.920
+When you have discovered a successful alpha,
+
+00:00:36.920 --> 00:00:41.015
+the value in that vector for each stock is directly proportional
+
+00:00:41.015 --> 00:00:45.844
+to the rank of its return at a future time across the universe of stocks.
+
+00:00:45.844 --> 00:00:49.674
+For example, in a cross-sectional momentum strategy,
+
+00:00:49.674 --> 00:00:52.399
+we rank the stocks according to how much momentum
+
+00:00:52.399 --> 00:00:55.429
+they have as measured by a momentum indicator.
+
+00:00:55.429 --> 00:00:58.789
+We use the ranks to decide which stocks to put in along
+
+00:00:58.789 --> 00:01:03.615
+portfolio and which stocks to put in a short portfolio at every time interval.
+
+00:01:03.615 --> 00:01:08.829
+In this scenario, you can think of the logic that produces the ranks as the alpha,
+
+00:01:08.829 --> 00:01:11.929
+and the ranks themselves as the alpha vector.
+
+00:01:11.930 --> 00:01:15.740
+Taken together, the ranks are a vector of numbers that help
+
+00:01:15.739 --> 00:01:20.109
+inform the trading decision of which docs to hold long and short,
+
+00:01:20.109 --> 00:01:22.170
+and in what amounts.
+
+00:01:22.170 --> 00:01:25.275
+An alpha is one type of trading signal.
+
+00:01:25.275 --> 00:01:28.160
+A trading signal is a general term for
+
+00:01:28.159 --> 00:01:31.659
+any numerical signal that can be used to inform a trade.
+
+00:01:31.659 --> 00:01:33.734
+It could just be a single number.
+
+00:01:33.734 --> 00:01:39.200
+Therefore, alphas which are vectors are a subset of trading signals.
+
+00:01:39.200 --> 00:01:43.835
+The alpha discovery phase can also be called the signal research phase.
+
+00:01:43.834 --> 00:01:47.959
+This stage is where you test your hypothesis and see if you can come up with
+
+00:01:47.959 --> 00:01:52.254
+evidence that your idea may lead to strong future returns.
+
+00:01:52.254 --> 00:01:54.509
+This will be an iterative process.
+
+00:01:54.510 --> 00:01:57.070
+However, in modern markets,
+
+00:01:57.069 --> 00:01:59.449
+it's rare that a single alpha will provide
+
+00:01:59.450 --> 00:02:01.909
+sufficiently consistent positive returns
+
+00:02:01.909 --> 00:02:04.814
+to provide the sole basis of an investment strategy.
+
+00:02:04.814 --> 00:02:08.719
+Typically, several alphas will be combined together to generate
+
+00:02:08.719 --> 00:02:13.125
+an overall alpha that has better performance than the best individual alpha.
+
+00:02:13.125 --> 00:02:15.500
+This is akin to the ideas of model
+
+00:02:15.500 --> 00:02:19.055
+stacking and ensembling in traditional machine learning.
+
+00:02:19.055 --> 00:02:22.025
+Combining alphas that have diverse inputs and
+
+00:02:22.025 --> 00:02:26.730
+underlying hypotheses can lead to a high-quality combined alpha vector.
+
+00:02:26.729 --> 00:02:31.699
+For example, a price-driven alpha such as the momentum alpha may
+
+00:02:31.699 --> 00:02:34.009
+combined well with an alpha based on
+
+00:02:34.009 --> 00:02:37.674
+company fundamentals since the inputs are very different.
+
+00:02:37.675 --> 00:02:44.070
+In this phase, alphas may be combined using simple logic like adding ranks are averaging,
+
+00:02:44.069 --> 00:02:47.689
+or through more complicated waiting schemes like finding
+
+00:02:47.689 --> 00:02:51.965
+the weights that lead to the lowest possible variance for the combined alpha.
+
+00:02:51.965 --> 00:02:56.450
+Another possible method is to translate your alphas into features and use them as
+
+00:02:56.449 --> 00:03:01.524
+inputs to a machine learning classifier to capture the relationships between the alphas.
+
+00:03:01.525 --> 00:03:05.330
+The output of this stage is a single alpha vector that
+
+00:03:05.330 --> 00:03:09.270
+incorporates the information of many individual alphas.
+

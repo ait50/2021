@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.250
+Finding and handling Outliers in
+
+00:00:02.250 --> 00:00:06.389
+raw price data and signal returns are slightly different scenarios.
+
+00:00:06.389 --> 00:00:10.455
+In this video, we're going to talk about spotting Outliers in raw data.
+
+00:00:10.455 --> 00:00:16.500
+Outliers to look for in raw data include large changes in stock prices and volumes,
+
+00:00:16.500 --> 00:00:20.550
+missing dates, missing prices and missing volumes.
+
+00:00:20.550 --> 00:00:26.375
+One basic approach to finding extreme values in raw data is to screen the data for them.
+
+00:00:26.375 --> 00:00:28.429
+Doing this by brute force,
+
+00:00:28.429 --> 00:00:29.879
+by looking at every row,
+
+00:00:29.879 --> 00:00:34.825
+for example, is very inefficient but maybe necessary if time is tight.
+
+00:00:34.825 --> 00:00:40.415
+Plots can be helpful but not by much if the data-set contains hundreds of stocks.
+
+00:00:40.414 --> 00:00:46.125
+One way to screen for Outliers is to create rule-based searching and filtering methods.
+
+00:00:46.125 --> 00:00:51.500
+For example, you might set up a filter to catch instances when prices change by more than
+
+00:00:51.500 --> 00:00:54.020
+some value that seems reasonable given
+
+00:00:54.020 --> 00:00:57.090
+your signal and the scale of typical price movements.
+
+00:00:57.090 --> 00:01:01.160
+Percent change thresholds should not be relied upon too heavily,
+
+00:01:01.159 --> 00:01:03.854
+as they are likely to yield many false positives,
+
+00:01:03.854 --> 00:01:07.465
+extreme yet legitimate price movement data-points.
+
+00:01:07.465 --> 00:01:12.545
+Nonetheless, using such thresholds is one way to screen data quickly.
+
+00:01:12.545 --> 00:01:16.510
+If the price change is accompanied by a large change in volume,
+
+00:01:16.510 --> 00:01:18.270
+it's less likely to be wrong.
+
+00:01:18.269 --> 00:01:23.045
+So, you can use volume information to improve the accuracy of your filter.
+
+00:01:23.045 --> 00:01:28.640
+The challenges of this task will always be the need to process large amounts of data,
+
+00:01:28.640 --> 00:01:33.670
+minimize false positives and decide how to deal with data values that are missing.
+

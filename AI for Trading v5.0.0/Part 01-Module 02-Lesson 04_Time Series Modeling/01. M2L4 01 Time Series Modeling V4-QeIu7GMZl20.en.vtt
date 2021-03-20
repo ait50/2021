@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.194
+Welcome to the lesson on time series analysis.
+
+00:00:03.194 --> 00:00:07.345
+Time series are data that are collected at regular intervals.
+
+00:00:07.344 --> 00:00:10.050
+We will cover two statistical methods,
+
+00:00:10.050 --> 00:00:12.265
+autoregression and moving averages.
+
+00:00:12.265 --> 00:00:16.269
+This will give us the foundation to cover two more advanced methods,
+
+00:00:16.269 --> 00:00:21.504
+autoregressive moving averages and autoregressive integrated moving averages.
+
+00:00:21.504 --> 00:00:25.114
+From there, we will cover two machine-learning methods.
+
+00:00:25.114 --> 00:00:27.009
+The first is Kalman filters,
+
+00:00:27.010 --> 00:00:29.490
+and the more generalized, particle filters.
+
+00:00:29.489 --> 00:00:32.674
+The second is recurrent neural networks.
+
+00:00:32.674 --> 00:00:34.454
+Let's get started.
+
+00:00:34.454 --> 00:00:38.299
+Let's think a bit about what a stock price time series looks like.
+
+00:00:38.299 --> 00:00:41.589
+Most stock prices increase over time.
+
+00:00:41.590 --> 00:00:45.915
+Sadly, some stock prices also decrease over time.
+
+00:00:45.914 --> 00:00:48.875
+This means that the price shows a trend.
+
+00:00:48.875 --> 00:00:53.929
+This makes analyzing the prices difficult since the prices are non-stationary.
+
+00:00:53.929 --> 00:01:00.679
+By non-stationary, we mean that the data's mean and standard deviation change over time.
+
+00:01:00.679 --> 00:01:06.260
+The goal of time series analysis is to use past data to predict future values.
+
+00:01:06.260 --> 00:01:09.560
+So, if the properties of the data change over time,
+
+00:01:09.560 --> 00:01:13.240
+the past is less useful in predicting the future.
+
+00:01:13.239 --> 00:01:17.549
+To work with data that is more likely to be stationary, and therefore,
+
+00:01:17.549 --> 00:01:22.579
+easier to model, we use stock returns and not stock prices.
+
+00:01:22.579 --> 00:01:28.079
+Moreover, to work with data that is more stationary and more normally distributed,
+
+00:01:28.079 --> 00:01:30.674
+we use the log of stock returns,
+
+00:01:30.674 --> 00:01:33.129
+which we call log returns.
+

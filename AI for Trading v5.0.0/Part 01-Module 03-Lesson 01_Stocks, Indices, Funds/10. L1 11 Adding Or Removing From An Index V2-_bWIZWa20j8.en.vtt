@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.120
+You may wonder what happens to an index if one of its listed companies goes bankrupt,
+
+00:00:06.120 --> 00:00:09.370
+is acquired, or merges with another company.
+
+00:00:09.369 --> 00:00:13.629
+For example, in June of 2018, Monsanto,
+
+00:00:13.630 --> 00:00:17.710
+a US based agriculture company was acquired by Bayer,
+
+00:00:17.710 --> 00:00:20.670
+a pharmaceutical company based in Germany.
+
+00:00:20.670 --> 00:00:24.255
+Monsanto was listed in the S&amp;P 500,
+
+00:00:24.254 --> 00:00:25.884
+but due to the acquisition,
+
+00:00:25.885 --> 00:00:30.150
+Standard &amp; Poor's removed Monsanto from the S&amp;P 500,
+
+00:00:30.149 --> 00:00:33.074
+which is called an Index delete.
+
+00:00:33.075 --> 00:00:37.805
+Standard &amp; Poor's also added Twitter to the S&amp;P 500,
+
+00:00:37.804 --> 00:00:40.225
+which is called an Index add.
+
+00:00:40.225 --> 00:00:43.280
+When the list of companies in an index changes,
+
+00:00:43.280 --> 00:00:45.500
+the index needs to be rebalanced.
+
+00:00:45.500 --> 00:00:48.920
+In other words, the weights applies to each stock must be
+
+00:00:48.920 --> 00:00:53.885
+recalculated based on the new total market cap of all stocks in the index.
+
+00:00:53.884 --> 00:00:58.309
+Now, we'll cover how an index is constructed and calculated next.
+
+00:00:58.310 --> 00:01:02.100
+Industry balancing can be scheduled at predetermined intervals,
+
+00:01:02.100 --> 00:01:03.435
+such as every month,
+
+00:01:03.435 --> 00:01:05.780
+every quarter, or every year.
+
+00:01:05.780 --> 00:01:10.924
+An index may also be rebalanced on the day of a major event such as during a merger,
+
+00:01:10.924 --> 00:01:15.069
+acquisition, privatization, or bankruptcy.
+

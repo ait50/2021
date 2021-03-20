@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.355
+Welcome back. In this lesson,
+
+00:00:02.355 --> 00:00:04.240
+we're going to tell you all about volatility.
+
+00:00:04.240 --> 00:00:08.015
+Volatility is an important measure of risk, but what is risk?
+
+00:00:08.015 --> 00:00:10.260
+We've talked a little about it already,
+
+00:00:10.259 --> 00:00:12.969
+and you may have an intuitive idea for what it means.
+
+00:00:12.970 --> 00:00:16.650
+It's basically uncertainty about the future and in particular,
+
+00:00:16.649 --> 00:00:18.824
+uncertainty about bad things happening,
+
+00:00:18.824 --> 00:00:21.619
+like losing all the money you've invested in something.
+
+00:00:21.620 --> 00:00:26.240
+In finance, risks can be thought of as uncertainty about future returns.
+
+00:00:26.239 --> 00:00:30.074
+Uncertainty, that sounds kind of hard to measure.
+
+00:00:30.074 --> 00:00:32.225
+How do you measure what you don't know?
+
+00:00:32.225 --> 00:00:36.079
+Well, we can get started by thinking of the log return as
+
+00:00:36.079 --> 00:00:40.640
+a random variable that can assume different values with different probabilities.
+
+00:00:40.640 --> 00:00:42.829
+An important way of characterizing
+
+00:00:42.829 --> 00:00:47.250
+a probability distribution is with it's expected or mean value.
+
+00:00:47.250 --> 00:00:51.664
+The mean is the average of many measurements of the random variable,
+
+00:00:51.664 --> 00:00:53.420
+and you already know that
+
+00:00:53.420 --> 00:00:57.315
+the standard deviation is a measure of the spread of a distribution.
+
+00:00:57.314 --> 00:01:00.379
+Volatility is simply the standard deviation of
+
+00:01:00.380 --> 00:01:03.465
+the probability distribution of log returns.
+
+00:01:03.465 --> 00:01:07.250
+It's a measure of the spread of this particular distribution.
+
+00:01:07.250 --> 00:01:11.625
+It measures the dispersion of log returns around the expected log return.
+
+00:01:11.625 --> 00:01:16.694
+Volatility gives you a sense of the range of values log returns are likely to fall into.
+
+00:01:16.694 --> 00:01:19.729
+For example, say you measured log returns on
+
+00:01:19.730 --> 00:01:22.730
+investment for several years and found that they happen
+
+00:01:22.730 --> 00:01:29.460
+to be distributed more or less normally with a mean or expected log return of about 5%,
+
+00:01:29.459 --> 00:01:32.689
+and an annual volatility of about 6%.
+
+00:01:32.689 --> 00:01:35.855
+If you remember, that for a normal distribution,
+
+00:01:35.855 --> 00:01:39.620
+about 95% of observations fall in a range from
+
+00:01:39.620 --> 00:01:43.590
+negative two to positive two standard deviations around the mean.
+
+00:01:43.590 --> 00:01:48.049
+This would mean that 95% of the annual returns would
+
+00:01:48.049 --> 00:01:52.534
+be between approximately negative 7% and positive 17%.
+
+00:01:52.534 --> 00:01:55.604
+So, why spend all this time learning about volatility?
+
+00:01:55.605 --> 00:01:58.430
+Basically, every investor trying to
+
+00:01:58.430 --> 00:02:01.460
+understand what level of return they can expect to get on
+
+00:02:01.459 --> 00:02:04.429
+average will also care about how often and by
+
+00:02:04.430 --> 00:02:07.790
+how much their returns are going to differ from that average.
+
+00:02:07.790 --> 00:02:13.610
+In essence, volatility is a simple metric that characterizes variability in returns,
+
+00:02:13.610 --> 00:02:16.690
+that has many different users all over the financial world.
+
+00:02:16.689 --> 00:02:20.270
+Let's list a few examples of the ways you might see it used.
+
+00:02:20.270 --> 00:02:24.145
+As I said, volatility is one way to measure risk.
+
+00:02:24.145 --> 00:02:26.240
+Traders can use volatility of
+
+00:02:26.240 --> 00:02:30.150
+a trading instrument to define position sizing in a portfolio.
+
+00:02:30.150 --> 00:02:34.340
+Volatility can be used in the design of alphas, that is,
+
+00:02:34.340 --> 00:02:39.390
+as part of the logic that defines which stocks to trade and when to trade them.
+
+00:02:39.389 --> 00:02:44.054
+Volatility is very important for determining the prices of options contracts.
+
+00:02:44.055 --> 00:02:47.835
+Finally, it's possible to trade volatility directly.
+
+00:02:47.835 --> 00:02:53.140
+For example, you can trade an instrument that tracks the volatility of the S&amp;P 500,
+
+00:02:53.139 --> 00:02:56.069
+we'll learn a little more about this later on.
+

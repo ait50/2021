@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.730
+Now that you've reached the end of this lesson,
+
+00:00:02.730 --> 00:00:05.009
+we hope you've gained a better understanding of
+
+00:00:05.009 --> 00:00:07.934
+pairs trading and mean reversion in general.
+
+00:00:07.934 --> 00:00:12.314
+Remember that mean reversion trading follows these general steps.
+
+00:00:12.314 --> 00:00:18.230
+Find a pair of assets or a pair of portfolios that have some economic link,
+
+00:00:18.230 --> 00:00:20.554
+compute the hedge ratio,
+
+00:00:20.554 --> 00:00:24.079
+use the hedge ratio to compute the spread,
+
+00:00:24.079 --> 00:00:27.144
+test whether the spread is stationary,
+
+00:00:27.144 --> 00:00:29.164
+if the spread is stationary,
+
+00:00:29.164 --> 00:00:33.600
+consider the pair a candidate for mean reversion trading.
+
+00:00:33.600 --> 00:00:36.990
+Next, choose thresholds for the spread.
+
+00:00:36.990 --> 00:00:42.135
+When the spread widens beyond its historical average, short the spread.
+
+00:00:42.134 --> 00:00:45.464
+When the spread narrows beyond its historical average,
+
+00:00:45.465 --> 00:00:47.405
+go along the spread.
+
+00:00:47.405 --> 00:00:49.304
+Most important of all,
+
+00:00:49.304 --> 00:00:52.009
+remember to backtest your model.
+
+00:00:52.009 --> 00:00:57.799
+We hope you've enjoyed learning about mean reversion and pairs trading. Bye for now.
+

@@ -1,0 +1,226 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.595
+In the last video,
+
+00:00:01.595 --> 00:00:03.780
+you learned about the efficient frontier.
+
+00:00:03.779 --> 00:00:07.169
+You know that any point on the efficient frontier represents
+
+00:00:07.169 --> 00:00:10.859
+the portfolio that gives you the best risk return trade-off,
+
+00:00:10.859 --> 00:00:14.129
+and that these portfolios are known as market portfolios.
+
+00:00:14.130 --> 00:00:18.535
+But is that it? Is there a way to do better than the efficient frontier?
+
+00:00:18.535 --> 00:00:22.560
+In this video, we will be adding a risk-free asset into
+
+00:00:22.559 --> 00:00:27.304
+our portfolio and we're going to introduce something called the capital market line.
+
+00:00:27.304 --> 00:00:30.500
+A risk-free asset is an investment instrument that
+
+00:00:30.500 --> 00:00:33.789
+entails absolutely no risk or uncertainty.
+
+00:00:33.789 --> 00:00:36.950
+In theory, if you invest in such an instrument,
+
+00:00:36.950 --> 00:00:42.170
+you receive a guaranteed rate of return called the risk-free rate and
+
+00:00:42.170 --> 00:00:44.870
+reality entirely risk-free assets don't
+
+00:00:44.869 --> 00:00:48.905
+exist since all investments carry a certain level of risk.
+
+00:00:48.905 --> 00:00:52.460
+However, in practice people normally refer to the rate of
+
+00:00:52.460 --> 00:00:56.884
+return on a three month treasury bill as the risk-free rate.
+
+00:00:56.884 --> 00:01:00.994
+Now let's add this risk-free asset into the picture.
+
+00:01:00.994 --> 00:01:04.909
+Let's imagine we construct a new portfolio with any of
+
+00:01:04.909 --> 00:01:09.295
+the market portfolios that you prefer and the risk-free asset.
+
+00:01:09.295 --> 00:01:12.290
+Which market portfolio would you choose?
+
+00:01:12.290 --> 00:01:14.480
+Note that this new portfolio is
+
+00:01:14.480 --> 00:01:18.335
+a weighted sum of the risk-free asset and the market portfolio.
+
+00:01:18.334 --> 00:01:24.114
+For example, if you choose the green portfolio as your market portfolio and the red.
+
+00:01:24.114 --> 00:01:25.974
+as your risk-free asset,
+
+00:01:25.974 --> 00:01:28.280
+the line between them represents
+
+00:01:28.280 --> 00:01:32.980
+the potential portfolios that you can construct with the two assets.
+
+00:01:32.980 --> 00:01:36.755
+Now, which market portfolio would you choose
+
+00:01:36.754 --> 00:01:40.924
+so as to achieve the best return for a given level of risk?
+
+00:01:40.924 --> 00:01:44.659
+Well, you should be looking at the efficient frontier,
+
+00:01:44.659 --> 00:01:48.170
+the top edge of the set of possible portfolios.
+
+00:01:48.170 --> 00:01:53.090
+It turns out that you should choose the market portfolio that allows you to draw
+
+00:01:53.090 --> 00:01:54.920
+a straight line starting from
+
+00:01:54.920 --> 00:01:59.335
+the risk-free asset that just touches the top of the efficient frontier.
+
+00:01:59.334 --> 00:02:03.494
+To see why this is the best market portfolio for the job,
+
+00:02:03.495 --> 00:02:05.680
+let's take a look at lines A, B,
+
+00:02:05.680 --> 00:02:08.860
+and C. Note that line A connects
+
+00:02:08.860 --> 00:02:12.190
+the red dot which represents the risk-free asset with the green dot,
+
+00:02:12.189 --> 00:02:17.039
+which represents the tangent market portfolio on the efficient frontier.
+
+00:02:17.039 --> 00:02:22.984
+Line A lies above the efficient frontier and intersects the tangent portfolio.
+
+00:02:22.985 --> 00:02:27.560
+All the portfolios represented by line A have higher returns
+
+00:02:27.560 --> 00:02:32.020
+than the ones on the efficient frontier given the same risk level.
+
+00:02:32.020 --> 00:02:34.430
+This is not the case for lines B and
+
+00:02:34.430 --> 00:02:39.210
+C. Portfolios on this tangent line are the best achievable.
+
+00:02:39.210 --> 00:02:43.945
+They even beat the efficient frontier which consists of purely risky assets.
+
+00:02:43.944 --> 00:02:47.549
+This line is called the capital market line.
+
+00:02:47.550 --> 00:02:50.390
+Now what is the expected return of
+
+00:02:50.389 --> 00:02:54.819
+the portfolio consisting of the risky portfolio and the risk-free asset?
+
+00:02:54.819 --> 00:02:58.039
+The formula for this quantity is also the formula for
+
+00:02:58.039 --> 00:03:01.280
+the capital market line because each point on this line
+
+00:03:01.280 --> 00:03:04.280
+gives the return as a function of risk of
+
+00:03:04.280 --> 00:03:08.824
+a possible combination of the risky portfolio and the risk-free asset.
+
+00:03:08.824 --> 00:03:13.019
+So let's examine the graph to determine the equation.
+
+00:03:13.020 --> 00:03:15.814
+You have two points 0,
+
+00:03:15.814 --> 00:03:19.840
+rf which is the risk-free portfolio and sigma m,
+
+00:03:19.840 --> 00:03:22.129
+rm which is the market portfolio.
+
+00:03:22.129 --> 00:03:28.734
+The slope of a line simply equals rm minus rf divided by sigma m.
+
+00:03:28.735 --> 00:03:32.810
+This quantity the difference between the market return and
+
+00:03:32.810 --> 00:03:37.115
+the risk-free rate is called the market risk premium.
+
+00:03:37.115 --> 00:03:41.300
+The portfolio return is then just the risk-free rate of return as
+
+00:03:41.300 --> 00:03:46.160
+a baseline plus the slope times the portfolio volatility.
+
+00:03:46.159 --> 00:03:50.060
+The portfolio volatility will depend on what weights you choose to
+
+00:03:50.060 --> 00:03:54.335
+put on the risk-free asset and the market portfolio, i.e.
+
+00:03:54.335 --> 00:03:57.995
+where you choose to sit along the capital market line.
+
+00:03:57.995 --> 00:04:00.890
+The slope of the capital market line,
+
+00:04:00.889 --> 00:04:04.009
+which is of course the same for all points on
+
+00:04:04.009 --> 00:04:09.149
+the line is a special quantity known as the Sharpe Ratio of the market.
+
+00:04:09.150 --> 00:04:12.185
+We're going to discuss that more in a future lesson.
+
+00:04:12.185 --> 00:04:15.560
+In fact, if you can borrow at the risk-free rate,
+
+00:04:15.560 --> 00:04:16.850
+you can achieve points on
+
+00:04:16.850 --> 00:04:20.600
+the capital market line to the right of the tangent market portfolio.
+
+00:04:20.600 --> 00:04:24.760
+This amounts to setting a negative weight on the risk-free asset.
+
+00:04:24.759 --> 00:04:27.014
+That is to say, shorting it.
+
+00:04:27.014 --> 00:04:30.829
+This is why professional investors care almost only about
+
+00:04:30.829 --> 00:04:36.870
+the Sharpe ratio because they can manufacture any level of risk or return with leverage.
+

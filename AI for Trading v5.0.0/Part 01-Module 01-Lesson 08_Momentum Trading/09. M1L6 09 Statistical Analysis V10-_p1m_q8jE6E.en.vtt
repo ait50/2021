@@ -1,0 +1,226 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.049
+Now we are ready to perform our analysis.
+
+00:00:03.049 --> 00:00:05.459
+The resulting returns time series is
+
+00:00:05.459 --> 00:00:09.254
+the theoretical monthly performance of our long-short portfolio.
+
+00:00:09.255 --> 00:00:13.750
+Our goal is to see if the mean monthly return is greater than zero.
+
+00:00:13.750 --> 00:00:15.599
+Let's calculate that.
+
+00:00:15.599 --> 00:00:20.789
+So, our mean is indeed greater than zero at 0.53 percent,
+
+00:00:20.789 --> 00:00:24.089
+but does this mean that we got this value because
+
+00:00:24.089 --> 00:00:27.519
+on average this trading strategy yields positive returns?
+
+00:00:27.519 --> 00:00:31.335
+That is to say that the true mean is greater than zero?
+
+00:00:31.335 --> 00:00:36.000
+It could be that on average this trading strategy will not yield positive returns.
+
+00:00:36.000 --> 00:00:38.789
+Maybe the true mean is less than or equal to zero,
+
+00:00:38.789 --> 00:00:41.689
+and this value is just a random fluctuation.
+
+00:00:41.689 --> 00:00:47.474
+Well, one approach to assess this is to perform a statistical test on our hypothesis.
+
+00:00:47.475 --> 00:00:52.715
+A t-test is a way of testing the probability of getting as bigger mean as we did,
+
+00:00:52.715 --> 00:00:57.980
+assuming all the assumptions we made to build our model of strategy returns were correct.
+
+00:00:57.979 --> 00:01:01.640
+In our case, we can compute the t-statistic by dividing
+
+00:01:01.640 --> 00:01:06.775
+the mean return x bar by the standard error of the mean SE x bar.
+
+00:01:06.775 --> 00:01:10.400
+Using this t-statistic, we can measure the probability
+
+00:01:10.400 --> 00:01:13.880
+of getting a mean monthly return of 0.53 percent or
+
+00:01:13.879 --> 00:01:16.949
+larger if the true mean monthly return is
+
+00:01:16.950 --> 00:01:21.655
+zero given that the assumptions we made to build our model are correct.
+
+00:01:21.655 --> 00:01:24.364
+This probability is called the p-value.
+
+00:01:24.364 --> 00:01:26.829
+If the probability is very small,
+
+00:01:26.829 --> 00:01:30.879
+we might infer that it's unlikely that the true mean is zero.
+
+00:01:30.879 --> 00:01:33.079
+Now, before running the test,
+
+00:01:33.079 --> 00:01:35.799
+we should decide how small the p-value needs to
+
+00:01:35.799 --> 00:01:39.405
+be for us to conclude that the true mean is not zero.
+
+00:01:39.405 --> 00:01:41.219
+To denote this threshold,
+
+00:01:41.219 --> 00:01:44.025
+we usually use the Greek symbol alpha.
+
+00:01:44.025 --> 00:01:47.325
+A commonly used value is 0.1.
+
+00:01:47.325 --> 00:01:51.005
+Setting alpha sets the false positive rate for the test.
+
+00:01:51.004 --> 00:01:53.849
+So, if we set alpha equals 0.1,
+
+00:01:53.849 --> 00:01:57.158
+we're effectively saying that if we use this threshold,
+
+00:01:57.159 --> 00:02:01.690
+we are incorrectly rejecting the null hypothesis when the true mean
+
+00:02:01.689 --> 00:02:06.795
+is zero in 10 percent of many hypothetical users of this test.
+
+00:02:06.795 --> 00:02:09.409
+By performing a one-tail t-test on
+
+00:02:09.409 --> 00:02:11.659
+the alternative hypothesis that the mean of
+
+00:02:11.659 --> 00:02:14.629
+these returns is statistically greater than zero,
+
+00:02:14.629 --> 00:02:16.129
+we calculate the p-value with
+
+00:02:16.129 --> 00:02:21.219
+the stats package using a degrees of freedom of n minus one equals 47,
+
+00:02:21.219 --> 00:02:25.495
+and we find that the t-statistic is about 1.618,
+
+00:02:25.495 --> 00:02:28.875
+with the p-value of 0.0566.
+
+00:02:28.875 --> 00:02:34.129
+Meaning that the result is not significant at P less than 0.05 level,
+
+00:02:34.129 --> 00:02:37.254
+but insignificant at P less than 0.1.
+
+00:02:37.254 --> 00:02:40.609
+This means that we are fairly unlikely to get a mean of
+
+00:02:40.610 --> 00:02:44.390
+0.53 percent if the true mean is zero.
+
+00:02:44.389 --> 00:02:46.909
+This result shows some initial promise
+
+00:02:46.909 --> 00:02:50.159
+that there could be some alpha contained in the strategy,
+
+00:02:50.159 --> 00:02:54.859
+and thus serves as a quick sanity check to justify investigating further and
+
+00:02:54.860 --> 00:02:59.925
+fine-tuning the strategy leading to a full backtesting exercise in the end.
+
+00:02:59.925 --> 00:03:03.030
+If we measure the monthly performance of the SPDR,
+
+00:03:03.030 --> 00:03:06.735
+S&amp;P 500 ETF, SPY over the same period,
+
+00:03:06.735 --> 00:03:11.065
+we would find that the mean monthly return is 0.83 percent,
+
+00:03:11.064 --> 00:03:13.859
+which is actually greater than that of the strategy,
+
+00:03:13.860 --> 00:03:16.155
+at least at this preliminary stage.
+
+00:03:16.155 --> 00:03:20.180
+To be clear, comparing our momentum strategy to the strategy of
+
+00:03:20.180 --> 00:03:25.175
+investing directly in S&amp;P 500 ETF is not really a fair comparison.
+
+00:03:25.175 --> 00:03:27.660
+These are two very different strategies.
+
+00:03:27.659 --> 00:03:31.323
+For one thing, ours involves taking long and short positions,
+
+00:03:31.324 --> 00:03:35.330
+while investing in the S&amp;P only involves taking long positions.
+
+00:03:35.330 --> 00:03:41.770
+However, this gives us a vague idea of what values portfolio returns might take.
+
+00:03:41.770 --> 00:03:46.330
+Also, while our strategy's obviously simplistic to begin with,
+
+00:03:46.330 --> 00:03:48.860
+this shows that it is actually not
+
+00:03:48.860 --> 00:03:52.820
+an easy task to find a strategy that can outperform the market.
+
+00:03:52.819 --> 00:03:56.719
+Note that if you get a very large p-value at this early stage,
+
+00:03:56.719 --> 00:03:59.569
+you wouldn't want to go back and make meaningless changes to
+
+00:03:59.569 --> 00:04:04.430
+your strategy like changing a parameter a little until you got a very low p-value.
+
+00:04:04.430 --> 00:04:07.610
+Doing this is called data snooping or p-hacking,
+
+00:04:07.610 --> 00:04:10.250
+and would just fine tune your strategy to exploit
+
+00:04:10.250 --> 00:04:14.090
+the particular random fluctuations in the dataset you have.
+
+00:04:14.090 --> 00:04:19.014
+A strategy device that way would be unlikely to perform well on future data.
+
+00:04:19.014 --> 00:04:23.159
+What you should do instead is make meaningful changes to your strategy.
+
+00:04:23.160 --> 00:04:24.860
+In other words, you should come up with
+
+00:04:24.860 --> 00:04:28.600
+a different idea for a strategy and test that instead.
+

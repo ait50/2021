@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.388
+After you calculate returns from a trading signal,
+
+00:00:03.388 --> 00:00:05.969
+you may suspect the presence of outliers when you
+
+00:00:05.969 --> 00:00:09.029
+examine the distribution of your signal returns.
+
+00:00:09.029 --> 00:00:11.199
+Let me explain what I mean by that.
+
+00:00:11.199 --> 00:00:15.869
+Imagine that we've written some code to generate a trading signal and we've
+
+00:00:15.869 --> 00:00:21.079
+calculated our monthly returns from a couple years of trading based on this signal,
+
+00:00:21.079 --> 00:00:25.195
+what would we expect the distribution of returns to look like?
+
+00:00:25.195 --> 00:00:30.135
+Let's figure out what we would expect to see in a few limiting scenarios.
+
+00:00:30.135 --> 00:00:33.760
+What if we picked our buy and sell times at random?
+
+00:00:33.759 --> 00:00:37.619
+In that case, we wouldn't expect to make any money because we'll be
+
+00:00:37.619 --> 00:00:42.144
+equally likely to buy or sell when the market is going up or down.
+
+00:00:42.145 --> 00:00:46.695
+We'd expect our returns to have a normal distribution with mean zero,
+
+00:00:46.695 --> 00:00:50.804
+but what if we designed a trading strategy that performed well?
+
+00:00:50.804 --> 00:00:55.100
+Ideally, if a trading signal looks like it will perform well,
+
+00:00:55.100 --> 00:00:57.844
+the distribution of its returns should look like
+
+00:00:57.844 --> 00:01:01.274
+a slightly positively skewed normal distribution.
+
+00:01:01.274 --> 00:01:03.439
+For the signal to make money,
+
+00:01:03.439 --> 00:01:06.984
+returns should be positive and non-zero on average.
+
+00:01:06.984 --> 00:01:10.420
+So, the distributions mean should be above zero.
+
+00:01:10.420 --> 00:01:13.879
+However, sometimes the return distribution can
+
+00:01:13.879 --> 00:01:17.539
+look a little too good or just plain weird.
+
+00:01:17.540 --> 00:01:20.440
+This should arouse your skepticism.
+
+00:01:20.439 --> 00:01:26.030
+Extremely skewed shapes or bumps at either tail of the histogram spell trouble.
+
+00:01:26.030 --> 00:01:30.079
+One tool you can use to compare your distribution of returns to
+
+00:01:30.079 --> 00:01:35.060
+another distribution like the normal distribution is the QQ plot.
+
+00:01:35.060 --> 00:01:38.600
+A QQ plot is a plot of the quantiles of
+
+00:01:38.599 --> 00:01:42.449
+the first data set against the quantiles of the second data set.
+
+00:01:42.450 --> 00:01:44.155
+What are quantiles?
+
+00:01:44.155 --> 00:01:49.144
+Well, if we split a data set into four equally sized groups,
+
+00:01:49.144 --> 00:01:52.524
+the dividing lines are at the 25th, 50th,
+
+00:01:52.525 --> 00:01:57.245
+and 75th percentiles, these are usually called quartiles.
+
+00:01:57.245 --> 00:02:00.100
+The 50th percentile is the median,
+
+00:02:00.099 --> 00:02:03.780
+the value below which 50% the data fall.
+
+00:02:03.780 --> 00:02:07.234
+Quartiles divide the data set into four groups,
+
+00:02:07.234 --> 00:02:12.814
+but with quantiles, the dataset can be divided into any number of equally-sized groups.
+
+00:02:12.814 --> 00:02:15.539
+For example, you could have ten quantiles,
+
+00:02:15.539 --> 00:02:17.944
+these are usually called deciles.
+
+00:02:17.944 --> 00:02:22.155
+The word quantile is usually used to denote the cut points,
+
+00:02:22.155 --> 00:02:25.610
+but it's sometimes used to refer to the groups themselves.
+
+00:02:25.610 --> 00:02:28.070
+Let's get back to the goal of comparing
+
+00:02:28.069 --> 00:02:31.319
+your distribution of returns to the normal distribution.
+
+00:02:31.319 --> 00:02:33.959
+If you wanted to use QQ plots,
+
+00:02:33.960 --> 00:02:37.555
+you would first first the set of quantiles you want to use,
+
+00:02:37.555 --> 00:02:43.400
+then you would plot the nth quantile of your distribution against the nth quantile of
+
+00:02:43.400 --> 00:02:47.000
+the normal distribution and continue for all the values of
+
+00:02:47.000 --> 00:02:51.289
+n. If you're comparing your distribution to the normal distribution,
+
+00:02:51.289 --> 00:02:54.370
+and your distribution is approximately normal,
+
+00:02:54.370 --> 00:02:58.390
+points in the QQ plot should fall along a straight line.
+
+00:02:58.389 --> 00:03:02.559
+If the distribution has fatter tails than the normal distribution,
+
+00:03:02.560 --> 00:03:08.444
+the QQ plot will reveal deviations from a straight line at the extremities of the graph.
+
+00:03:08.444 --> 00:03:14.579
+Distributions with skew will also have QQ plots that curve away from a straight line.
+
+00:03:14.580 --> 00:03:19.330
+A good quant should try to understand the root cause of outliers and returns.
+
+00:03:19.330 --> 00:03:22.880
+The first step in dealing with a situation like this is to
+
+00:03:22.879 --> 00:03:26.659
+find out where and when the outlying data points occurred,
+
+00:03:26.659 --> 00:03:30.139
+for which stock or stocks and for which dates.
+
+00:03:30.139 --> 00:03:32.769
+The next step is to ask why.
+
+00:03:32.770 --> 00:03:35.780
+Depending upon the nature of the extreme data,
+
+00:03:35.780 --> 00:03:38.390
+the source might be obvious or less so.
+
+00:03:38.389 --> 00:03:40.119
+Was it a data error?
+
+00:03:40.120 --> 00:03:43.240
+Was an illegitimate movement due to a real event?
+
+00:03:43.240 --> 00:03:46.580
+If an extreme datum looks like it could be real,
+
+00:03:46.580 --> 00:03:48.880
+you can check the news for the stock on that day.
+
+00:03:48.879 --> 00:03:50.314
+Was there an announcement?
+
+00:03:50.314 --> 00:03:52.969
+You'll want to think of every possibility you can to
+
+00:03:52.969 --> 00:03:56.764
+explain why this might not be a market data vendor problem.
+
+00:03:56.764 --> 00:04:00.729
+A good strategy is to crosscheck with another market data source.
+

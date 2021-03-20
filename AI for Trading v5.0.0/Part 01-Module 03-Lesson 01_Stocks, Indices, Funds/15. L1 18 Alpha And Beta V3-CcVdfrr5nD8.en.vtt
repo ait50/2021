@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.919
+Note that Active Funds,
+
+00:00:01.919 --> 00:00:04.349
+are sometimes called Alpha Funds.
+
+00:00:04.349 --> 00:00:08.529
+While Passive Funds are sometimes called Beta Funds.
+
+00:00:08.529 --> 00:00:11.974
+So, where do the names alpha and beta come from?
+
+00:00:11.974 --> 00:00:18.464
+Well, alpha and beta refer to the intercept and coefficient of a regression line.
+
+00:00:18.464 --> 00:00:20.969
+In particular, this is the regression of
+
+00:00:20.969 --> 00:00:26.515
+a portfolio's return against the markets return in excess of the risk-free rate.
+
+00:00:26.515 --> 00:00:29.710
+In general, a portfolio's excess return,
+
+00:00:29.710 --> 00:00:33.484
+is the portfolio's return minus the risk-free rate.
+
+00:00:33.484 --> 00:00:38.679
+A beta coefficient of one means that a two percent increase in the market,
+
+00:00:38.679 --> 00:00:42.844
+will also result in a two percent increase in the portfolio.
+
+00:00:42.844 --> 00:00:46.699
+An intercept or alpha of one means that
+
+00:00:46.700 --> 00:00:50.330
+the portfolio has a one percent return that exists,
+
+00:00:50.329 --> 00:00:53.664
+even if the market's excess return is zero.
+
+00:00:53.664 --> 00:00:55.579
+You'll get more details about
+
+00:00:55.579 --> 00:01:00.324
+this particular regression line in a later lesson about portfolio optimization.
+
+00:01:00.325 --> 00:01:02.445
+But the goal of an active fund,
+
+00:01:02.445 --> 00:01:06.650
+is to generate excess returns above the market's excess return.
+
+00:01:06.650 --> 00:01:09.830
+Hence, is called an Alpha Fund.
+
+00:01:09.829 --> 00:01:12.319
+The goal of a passive fund is to
+
+00:01:12.319 --> 00:01:15.494
+closely match the returns of the market that is tracking.
+
+00:01:15.495 --> 00:01:18.730
+So, it's called a Beta Fund.
+

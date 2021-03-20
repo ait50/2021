@@ -1,0 +1,441 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   ADF and roots
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Pairs Trading and Mean Reversion
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Mean Reversion.html">
+       02. Mean Reversion
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Pairs Trading.html">
+       03. Pairs Trading
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Finding Pairs to Trade.html">
+       04. Finding Pairs to Trade
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz Identify Pairs to Trade.html">
+       05. Quiz: Identify Pairs to Trade
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Cointegration.html">
+       06. Cointegration
+      </a>
+     </li>
+     <li class="">
+      <a href="07. ADF and roots.html">
+       07. ADF and roots
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Clustering Stocks.html">
+       08. Clustering Stocks
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Trade Pairs of Stocks.html">
+       09. Trade Pairs of Stocks
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Exercise finding pairs.html">
+       10. Exercise: finding pairs
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Variations of Pairs Trading and Mean Reversion Trading.html">
+       11. Variations of Pairs Trading and Mean Reversion Trading
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 3 or more stocks (optional).html">
+       12. 3 or more stocks (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Details of Johansen Test (optional).html">
+       13. Details of Johansen Test (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Summary.html">
+       14. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          07. ADF and roots
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="adf-and-roots-of-the-characteristic-equation--very-optional-but-kinda-cool">
+          ADF and Roots of the Characteristic Equation ( very optional but kinda cool!)
+         </h3>
+         <p>
+          The previous explanation of ADF is usually done with a bit more added vocabulary.  Normally, you might hear ADF explained as a test for the existence of a unit root.  This next section will introduce some math vocabulary, but please remember the main idea of the previous section if this section starts to feel like too much.
+         </p>
+         <p>
+          If we have an AR(p) model
+          <br/>
+          <span class="mathquill ud-math">
+           y_t = \beta_1 y_{t-1} + … + \beta_{t-p} y_{t-p} + \epsilon_t
+          </span>
+          <br/>
+          we can put all the terms that are not the white noise
+          <span class="mathquill ud-math">
+           \epsilon
+          </span>
+          to the left, like this:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t - \beta_1 y_{t-1} - … - \beta_{t-p} y_{t-p} = \epsilon_t.
+          </span>
+         </p>
+         <p>
+          Then we set the left side of the equation equal to zero.  What we have on the left is called the “characteristic equation”.  You might recall from learning algebra that when we set an equation equal to zero, we usually are trying to solve for the roots (the values that make the equation equal to zero).  Before we can solve for the roots of this equation, we need to rewrite it differently using something called backward shift notation.
+         </p>
+         <p>
+          Backward shift notation looks like this:
+          <span class="mathquill ud-math">
+           B^n y_t = y_{t-n}.
+          </span>
+          So when we see
+          <span class="mathquill ud-math">
+           y_{t-1}
+          </span>
+          , we’ll replace it with
+          <span class="mathquill ud-math">
+           B^1 y_t
+          </span>
+          .  If we see
+          <span class="mathquill ud-math">
+           y_{t-2}
+          </span>
+          , we’ll replace it with
+          <span class="mathquill ud-math">
+           B^2 y_t
+          </span>
+          .  The nice thing about backward shift notation is that we can describe our lags in terms of
+          <span class="mathquill ud-math">
+           y_t
+          </span>
+          , which will come in handy in the part that’s coming up.
+         </p>
+         <p>
+          So we can change this equation:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t - \beta_1 y_{t-1} - … - \beta_{t-p} y_{t-p} = 0
+          </span>
+          <br/>
+          Into this:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t - \beta_1 (B y_t) - … - \beta_{t-p} (B^p y_t) = 0
+          </span>
+         </p>
+         <p>
+          Notice how we can now factor out the
+          <span class="mathquill ud-math">
+           y_t
+          </span>
+          , so we have:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t (1 -\beta_1 B - … - \beta_{t-p} B^p) = 0
+          </span>
+         </p>
+         <p>
+          Okay, let’s look at some examples to see what this means.  We saw previously that an AR(1) model with a coefficient of one:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t = y_{t-1} + \epsilon_t
+          </span>
+          <br/>
+          is called a random walk, and that a random walk is not stationary.  If write the characteristic equation of the random walk, it looks like this:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t - y_{t-1} = \epsilon_t = 0
+          </span>
+          <br/>
+          Next, we rewrite it with backward shift notation:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t - B y_t = 0
+          </span>
+          <br/>
+          Then we factor out the
+          <span class="mathquill ud-math">
+           y_t
+          </span>
+          to get:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t (1 - B) = 0
+          </span>
+          <br/>
+          And we solve for B to get B = 1.  The root equals one, and you might hear people say that the series has a unit root, or that its root “equals unity”.
+         </p>
+         <p>
+          Next, let’s look at an AR(1) series where the
+          <span class="mathquill ud-math">
+           \beta
+          </span>
+          coefficient is less than one (let’s say
+          <span class="mathquill ud-math">
+           \beta
+          </span>
+          is
+          <span class="mathquill ud-math">
+           \frac{1}{2}
+          </span>
+          ).
+          <br/>
+          <span class="mathquill ud-math">
+           y_t = \frac{1}{2} y_{t-1} + \epsilon_t
+          </span>
+          <br/>
+          The characteristic equation looks like this:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t - \frac{1}{2} y_{t-1} = \epsilon_t = 0
+          </span>
+          <br/>
+          In backward shift notation, it looks like:
+          <br/>
+          <span class="mathquill ud-math">
+           y_t - \frac{1}{2} B y_t = 0
+          </span>
+          <br/>
+          Factor out the
+          <span class="mathquill ud-math">
+           y_t
+          </span>
+          :
+          <br/>
+          <span class="mathquill ud-math">
+           y_t(1 - \frac{1}{2} B) = 0
+          </span>
+         </p>
+         <p>
+          Solving for B is solving for the unit root of the characteristic equation.  So we get
+          <span class="mathquill ud-math">
+           1 = \frac{1}{2} B
+          </span>
+          , and so
+          <span class="mathquill ud-math">
+           B = 2.
+          </span>
+          Since the root is greater than one, we can say that the series is stationary.
+         </p>
+         <p>
+          Note that for series with more than one lag, we can solve for more than one root.
+         </p>
+         <p>
+          The Augmented Dickey Fuller Test has a null hypothesis that a series has a unit root.  In other words, the null hypothesis is that a series is a random walk, which is not stationary.  The alternate hypothesis is that the roots of the series are all greater than one, which suggests that the series is stationary.  If the ADF gives a p-value of 0.05 or less, we reject the null hypothesis and can assume that the series is stationary.
+         </p>
+         <h3 id="engle-granger-test">
+          Engle-Granger Test
+         </h3>
+         <p>
+          The Engle Granger Test is used to check whether two series are cointegrated. It involves two steps.  First, calculate the hedge ratio by running a regression on one series against the other
+          <br/>
+          <span class="mathquill ud-math">
+           y_t = \beta x_t
+          </span>
+          <br/>
+          We call the
+          <span class="mathquill ud-math">
+           \beta
+          </span>
+          the “hedge ratio”.
+         </p>
+         <p>
+          Second, we take
+          <span class="mathquill ud-math">
+           y_t - \beta x_t
+          </span>
+          to create a series that may be stationary.  We’ll call this new series
+          <span class="mathquill ud-math">
+           z_t
+          </span>
+          .  Then we use the ADF test to check if that series
+          <span class="mathquill ud-math">
+           z_t
+          </span>
+          is stationary.  If
+          <span class="mathquill ud-math">
+           z_t
+          </span>
+          is stationary, we can assume that the x and y series are cointegrated.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="08. Clustering Stocks.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. ADF and roots')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

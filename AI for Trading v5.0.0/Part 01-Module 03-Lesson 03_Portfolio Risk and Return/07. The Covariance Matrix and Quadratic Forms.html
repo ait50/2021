@@ -1,0 +1,378 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   The Covariance Matrix and Quadratic Forms
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Portfolio Risk and Return
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Diversification.html">
+       02. Diversification
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Portfolio Mean.html">
+       03. Portfolio Mean
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Portfolio Variance.html">
+       04. Portfolio Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Reducing Risk.html">
+       05. Reducing Risk
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Variance of a 3-Asset Portfolio.html">
+       06. Variance of a 3-Asset Portfolio
+      </a>
+     </li>
+     <li class="">
+      <a href="07. The Covariance Matrix and Quadratic Forms.html">
+       07. The Covariance Matrix and Quadratic Forms
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Calculate a Covariance Matrix.html">
+       08. Calculate a Covariance Matrix
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz np.cov.html">
+       09. Quiz: np.cov
+      </a>
+     </li>
+     <li class="">
+      <a href="10. The Efficient Frontier.html">
+       10. The Efficient Frontier
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Capital Market Line.html">
+       11. Capital Market Line
+      </a>
+     </li>
+     <li class="">
+      <a href="12. The Sharpe Ratio.html">
+       12. The Sharpe Ratio
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Other Risk Measures.html">
+       13. Other Risk Measures
+      </a>
+     </li>
+     <li class="">
+      <a href="14. The Capital Assets Pricing Model.html">
+       14. The Capital Assets Pricing Model
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Quiz Portfolio Return with a 3-Asset Portfolio.html">
+       15. Quiz: Portfolio Return with a 3-Asset Portfolio
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Summary.html">
+       16. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          07. The Covariance Matrix and Quadratic Forms
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L3 06 The Covariance Matrix And Quadratic Forms V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="07. L3 06 The Covariance Matrix And Quadratic Forms V1-as5lafBZ2CA.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="07. L3 06 The Covariance Matrix And Quadratic Forms V1-as5lafBZ2CA.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="07. L3 06 The Covariance Matrix And Quadratic Forms V1-as5lafBZ2CA.zh-CN.vtt" srclang="zh-CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="the-covariance-matrix">
+          The Covariance Matrix
+         </h2>
+         <p>
+          Let's take a moment to learn a compact way to represent the portfolio variance using matrices and vectors.
+         </p>
+         <p>
+          Remember that the portfolio variance we calculated for our two-stock portfolio was:
+         </p>
+         <div class="mathquill">
+          \sigma_P^2 = x_A^2\sigma_A^2 + x_B^2\sigma_B^2 + 2x_Ax_B\mathrm{Cov}(r_A,r_B).
+         </div>
+         <p>
+          But
+          <div class="mathquill">
+           \sigma_A^2 = \mathrm{Cov}(r_A,r_A),
+          </div>
+          so
+         </p>
+         <div class="mathquill">
+          \sigma_P^2 = x_A^2\mathrm{Cov}(r_A,r_A)  + x_B^2\mathrm{Cov}(r_B,r_B) + 2x_Ax_B\mathrm{Cov}(r_A,r_B).
+         </div>
+         <p>
+          This expression now has a nice parallel structure. If we create a matrix called the covariance matrix,
+          <div class="mathquill">
+           \mathbf{P} = \begin{bmatrix}
+\mathrm{Cov}(r_A,r_A) &amp; \mathrm{Cov}(r_A,r_B)\ 
+\mathrm{Cov}(r_B,r_A) &amp; \mathrm{Cov}(r_B,r_B)
+\end{bmatrix},
+          </div>
+         </p>
+         <p>
+          and a vector of weights:
+          <div class="mathquill">
+           \mathbf{x} = \begin{bmatrix}
+x_A \ 
+x_B
+\end{bmatrix},
+          </div>
+         </p>
+         <p>
+          and do the following matrix multiplication:
+         </p>
+         <div class="mathquill">
+          \begin{bmatrix}
+x_A &amp; x_B
+\end{bmatrix}
+\begin{bmatrix}
+\mathrm{Cov}(r_A,r_A) &amp; \mathrm{Cov}(r_A,r_B)\\ 
+\mathrm{Cov}(r_B,r_A) &amp; \mathrm{Cov}(r_B,r_B)
+\end{bmatrix}
+\begin{bmatrix}
+x_A \\ 
+x_B
+\end{bmatrix}
+         </div>
+         <div class="mathquill">
+          = \begin{bmatrix}
+x_A &amp; x_B
+\end{bmatrix}
+\begin{bmatrix}
+x_A\mathrm{Cov}(r_A,r_A) + x_B \mathrm{Cov}(r_A,r_B)\\ 
+x_A\mathrm{Cov}(r_B,r_A) + x_B\mathrm{Cov}(r_B,r_B)
+\end{bmatrix}
+         </div>
+         <div class="mathquill">
+          =x_Ax_A\mathrm{Cov}(r_A,r_A)  + x_Ax_B\mathrm{Cov}(r_A,r_B) + x_Ax_B\mathrm{Cov}(r_A,r_B) + x_Bx_B\mathrm{Cov}(r_B,r_B)
+         </div>
+         <div class="mathquill">
+          = x_A^2\sigma_A^2 + x_B^2\sigma_B^2 + 2x_Ax_B\mathrm{Cov}(r_A,r_B),
+         </div>
+         <p>
+          we see that we recover the expression for
+          <span class="mathquill ud-math">
+           \sigma_P^2
+          </span>
+          .
+         </p>
+         <h3 id="so-div-classmathquillsigma_p2--mathbfxmathrmtmathbfpmathbfxdiv">
+          So:
+          <div class="mathquill">
+           \sigma_P^2 = \mathbf{x}^\mathrm{T}\mathbf{P}\mathbf{x}
+          </div>
+         </h3>
+         <h2 id="quadratic-forms">
+          Quadratic Forms
+         </h2>
+         <p>
+          A polynomial where the sums of the exponents of the variables in each term equals 2 is called a quadratic form. An example:
+         </p>
+         <div class="mathquill">
+          4x^2 - 2xy + 3y^2
+         </div>
+         <p>
+          The portfolio variance is an example of a quadratic form (remember,
+          <span class="mathquill ud-math">
+           x_A
+          </span>
+          and
+          <span class="mathquill ud-math">
+           x_B
+          </span>
+          are the variables here):
+         </p>
+         <div class="mathquill">
+          \sigma_P^2 = x_A^2\sigma_A^2 + x_B^2\sigma_B^2 + 2x_Ax_B\mathrm{Cov}(r_A,r_B)
+         </div>
+         <p>
+          A quadratic form can always been written as
+          <span class="mathquill ud-math">
+           \mathbf{x}^\mathrm{T}\mathbf{P}\mathbf{x}
+          </span>
+          , where P is a symmetric matrix.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="08. Calculate a Covariance Matrix.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. The Covariance Matrix and Quadratic Forms')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.275
+Let's see how we would find cointegrated pairs from a universe of stocks.
+
+00:00:05.275 --> 00:00:10.339
+For example, we might look at companies listed in the S&amp;P 500.
+
+00:00:10.339 --> 00:00:15.314
+If we were to compare every pair of stocks this would take a long time.
+
+00:00:15.314 --> 00:00:20.839
+More importantly, we would end up with spurious false positives just by chance.
+
+00:00:20.839 --> 00:00:25.504
+It's important to partition our universe of stocks into meaningful groups.
+
+00:00:25.504 --> 00:00:28.994
+One way is to group stocks by sector or industry.
+
+00:00:28.995 --> 00:00:32.425
+However, since grouping by sector is quite popular,
+
+00:00:32.424 --> 00:00:37.569
+we want to find other relationships that are not as obvious but still meaningful.
+
+00:00:37.570 --> 00:00:41.405
+One way to find meaningful but less obvious groups is to use
+
+00:00:41.405 --> 00:00:45.939
+a class of unsupervised machine learning algorithms called clustering.
+
+00:00:45.939 --> 00:00:50.030
+The inputs to the clustering algorithm are the time series themselves.
+
+00:00:50.030 --> 00:00:53.300
+More similar time series get grouped together.
+
+00:00:53.299 --> 00:00:56.659
+Note that after clustering we still want to analyze
+
+00:00:56.659 --> 00:01:01.799
+the fundamental relationships between pairs of stocks that exhibit co integration.
+

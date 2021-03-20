@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.810
+We'll now discuss the Kalman filter,
+
+00:00:02.810 --> 00:00:08.210
+which is used for time series in self-driving cars and even flying cars.
+
+00:00:08.210 --> 00:00:10.380
+But first, let's look back at
+
+00:00:10.380 --> 00:00:15.390
+regression and autoregressive moving averages to see how Kalman filters are different.
+
+00:00:15.390 --> 00:00:18.464
+Recall that with autoregressive moving averages,
+
+00:00:18.464 --> 00:00:20.730
+we must choose the lag number for
+
+00:00:20.730 --> 00:00:25.670
+autoregression and also the lag number for moving averages.
+
+00:00:25.670 --> 00:00:30.120
+Our choice of the lag parameters can affect how the model performs.
+
+00:00:30.120 --> 00:00:33.810
+What if, instead of trying to find the best lag parameters,
+
+00:00:33.810 --> 00:00:38.980
+we had a single state that represented all of the relevant information from the past?
+
+00:00:38.979 --> 00:00:43.459
+In other words, instead of choosing values for P and Q,
+
+00:00:43.460 --> 00:00:48.825
+what if we had a set of variables at T minus 1 to represent the past?
+
+00:00:48.825 --> 00:00:51.965
+I'll give you a hint, Kalman filters.
+
+00:00:51.965 --> 00:00:55.280
+Also, you may recall that financial data has
+
+00:00:55.280 --> 00:00:59.250
+a lot of noise relative to its useful signal information.
+
+00:00:59.250 --> 00:01:02.015
+It's often the case that we want to measure
+
+00:01:02.015 --> 00:01:06.359
+a specific thing that can only measure something else that's related.
+
+00:01:06.359 --> 00:01:10.474
+For example, we may wish to measure oil production levels
+
+00:01:10.474 --> 00:01:14.959
+but can only measure oil pipeline flows near the production sites.
+
+00:01:14.959 --> 00:01:19.929
+So, how do we make predictions when we have noisy indirect measurements?
+
+00:01:19.930 --> 00:01:23.175
+If you guessed Kalman filters, then you're right.
+
+00:01:23.174 --> 00:01:24.994
+When using Kalman filters,
+
+00:01:24.995 --> 00:01:30.395
+we can assume that the stock returns properties can be summarized by set of values.
+
+00:01:30.394 --> 00:01:33.879
+We call these set of values the state.
+
+00:01:33.879 --> 00:01:36.319
+Within the state of the time series,
+
+00:01:36.319 --> 00:01:39.884
+there is some hidden property that we can't measure directly.
+
+00:01:39.885 --> 00:01:43.490
+We can think of this hidden property as a smooth curve which
+
+00:01:43.489 --> 00:01:47.334
+represents the value of the stock return if there was no noise.
+
+00:01:47.334 --> 00:01:50.449
+On the other hand, where we actually measure
+
+00:01:50.450 --> 00:01:54.530
+the stock return includes this hidden state plus noise.
+
+00:01:54.530 --> 00:01:59.814
+So, what we have to work with is a more jagged curve with some randomness in it.
+
+00:01:59.814 --> 00:02:04.245
+The Kalman filter is designed to handle this kind of real life noisy data.
+
+00:02:04.245 --> 00:02:07.780
+The Kalman filter repeats the following steps in a loop.
+
+00:02:07.780 --> 00:02:11.294
+The first step is called the predict step,
+
+00:02:11.294 --> 00:02:15.375
+the second step is called the measurement update step.
+
+00:02:15.375 --> 00:02:18.889
+First, the Kalman filter predicts the hidden state
+
+00:02:18.889 --> 00:02:22.764
+or value of the stock return as a probability distribution.
+
+00:02:22.764 --> 00:02:25.309
+Next, it takes measurements such as
+
+00:02:25.310 --> 00:02:30.129
+the actual stock return data and then updates its belief about the hidden state.
+
+00:02:30.129 --> 00:02:34.914
+Note that the Kalman filter stores the relevant information in what's called the state.
+
+00:02:34.914 --> 00:02:38.254
+Also notice how the Kalman filter is dynamically
+
+00:02:38.254 --> 00:02:42.284
+updating its underlying model every time it performs a measurement.
+
+00:02:42.284 --> 00:02:46.789
+The Kalman filter uses both the previous time period's state and
+
+00:02:46.789 --> 00:02:51.780
+the measurement of the latest stock return to predict the next state.
+
+00:02:51.780 --> 00:02:57.854
+So all the relevant prior history of the time series is stored in the T minus 1 state,
+
+00:02:57.854 --> 00:03:01.069
+and there's no need to look at the earlier time periods.
+

@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:07.410
+Note that the Hang Seng Index is a capped free float adjusted market cap weighted index.
+
+00:00:07.410 --> 00:00:09.509
+Okay, that was a lot of words.
+
+00:00:09.509 --> 00:00:13.250
+Let's start with free float adjusted market cap,
+
+00:00:13.250 --> 00:00:16.545
+in particular the free float part.
+
+00:00:16.545 --> 00:00:19.340
+When we measure the market cap of a company,
+
+00:00:19.339 --> 00:00:25.399
+we take all outstanding shares held by investors and multiply by the price per share.
+
+00:00:25.399 --> 00:00:30.604
+However, some of these shares are not readily available in the market
+
+00:00:30.605 --> 00:00:32.960
+because some stockholders are legally
+
+00:00:32.960 --> 00:00:36.605
+prevented from selling their shares during a lock-up period.
+
+00:00:36.604 --> 00:00:39.549
+For example, employees who are paid in
+
+00:00:39.549 --> 00:00:42.904
+their company's shares may not be allowed to sell their shares
+
+00:00:42.905 --> 00:00:45.950
+a few days before the company's quarterly earnings report
+
+00:00:45.950 --> 00:00:49.640
+or for a year after an initial public offering.
+
+00:00:49.640 --> 00:00:55.100
+By using only their readily tradable or free float shares to calculate market cap,
+
+00:00:55.100 --> 00:00:58.289
+we can get a better measure of how the market is moving,
+
+00:00:58.289 --> 00:01:03.115
+since the non-free float shares can't be bought or sold at that time.
+
+00:01:03.115 --> 00:01:07.609
+So in practice, an index will estimate what fraction of shares are
+
+00:01:07.609 --> 00:01:13.730
+free float and use that in this calculation of free float shares from day to day.
+
+00:01:13.730 --> 00:01:20.915
+For example, let's say about 90 percent of $0.10 outstanding shares are free float.
+
+00:01:20.915 --> 00:01:25.900
+If today, we see that $0.10 has 10 billion shares outstanding,
+
+00:01:25.900 --> 00:01:30.200
+we'll estimate that nine billion of those are free float.
+

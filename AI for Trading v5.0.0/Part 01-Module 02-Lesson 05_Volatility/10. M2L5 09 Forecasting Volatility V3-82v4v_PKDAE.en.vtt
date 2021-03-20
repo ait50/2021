@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.110
+It would be great to know what will happen before it happens, wouldn't it?
+
+00:00:04.110 --> 00:00:09.085
+Traders sometimes try to forecast volatility in order to anticipate the market.
+
+00:00:09.085 --> 00:00:14.070
+The general thinking is that it's easier to predict volatility than price,
+
+00:00:14.070 --> 00:00:15.974
+volatility tends to be sticky.
+
+00:00:15.974 --> 00:00:20.574
+A volatile market trading day is often followed by another volatile one.
+
+00:00:20.574 --> 00:00:23.114
+When you're trying to model volatility,
+
+00:00:23.114 --> 00:00:27.959
+you can use a special form of the autoregressive model called ARCH,
+
+00:00:27.960 --> 00:00:32.950
+which stands for, autoregressive conditionally heteroscedastic.
+
+00:00:32.950 --> 00:00:35.960
+Okay, now those are some really big words,
+
+00:00:35.960 --> 00:00:37.789
+so let's break it down.
+
+00:00:37.789 --> 00:00:40.280
+Autoregressive simply means that
+
+00:00:40.280 --> 00:00:44.469
+the current value is somehow related to the recent past values.
+
+00:00:44.469 --> 00:00:48.064
+Heteroscedastic means that the variable we're trying to
+
+00:00:48.064 --> 00:00:52.864
+model may have different magnitudes of variability at different time points.
+
+00:00:52.865 --> 00:00:57.204
+The magnitude of variability is commonly measured using variance.
+
+00:00:57.204 --> 00:01:02.695
+Finally, conditional here, refers to a constraint we place in this model,
+
+00:01:02.695 --> 00:01:05.870
+which limits the heteroscedastic property to be
+
+00:01:05.870 --> 00:01:10.715
+conditionally dependent on the previous value or values of the variable.
+
+00:01:10.715 --> 00:01:13.850
+An arch model looks really similar to the formula
+
+00:01:13.849 --> 00:01:17.084
+we had for an exponentially weighted moving average.
+
+00:01:17.084 --> 00:01:22.574
+The current variance is a weighted sum of past squared log returns,
+
+00:01:22.575 --> 00:01:26.390
+but now we think of the weights as being parameters of a model.
+
+00:01:26.390 --> 00:01:29.674
+For example, in an arch one model,
+
+00:01:29.674 --> 00:01:34.314
+if rt represents the log return of a stock at time t,
+
+00:01:34.314 --> 00:01:38.060
+then we say that its variance is equal to alpha zero,
+
+00:01:38.060 --> 00:01:42.079
+plus alpha one, times r t minus one squared.
+
+00:01:42.079 --> 00:01:46.564
+Alpha zero and alpha one are the two parameters of the model.
+
+00:01:46.564 --> 00:01:51.355
+You can think about alpha zero as representing a baseline variance,
+
+00:01:51.355 --> 00:01:54.350
+and alpha one as waiting the contribution to
+
+00:01:54.349 --> 00:01:57.744
+the model of the log return at the previous time point.
+
+00:01:57.745 --> 00:02:00.859
+This can be extended to an arch m model,
+
+00:02:00.859 --> 00:02:05.590
+where the variance is conditionally dependent on m past timesteps.
+
+00:02:05.590 --> 00:02:11.895
+Note that here, the variance is being modeled only based on the squared log returns.
+
+00:02:11.895 --> 00:02:14.210
+We can also add terms to make
+
+00:02:14.210 --> 00:02:18.659
+the current variance dependent on previous estimates of the variance.
+
+00:02:18.659 --> 00:02:22.685
+To address this, you could modify the expression to include
+
+00:02:22.685 --> 00:02:27.015
+terms with previous variance values denoted as sigma squared.
+
+00:02:27.014 --> 00:02:28.875
+This is known as the GARCH,
+
+00:02:28.875 --> 00:02:31.284
+or generalized arch model.
+
+00:02:31.284 --> 00:02:35.199
+And you can parameterize it as GARCH m, n,
+
+00:02:35.199 --> 00:02:38.389
+where m is the number of log return terms,
+
+00:02:38.389 --> 00:02:42.484
+and n is the number of variants terms to include in the model.
+
+00:02:42.485 --> 00:02:45.410
+Once you're satisfied with a model you've built,
+
+00:02:45.409 --> 00:02:48.990
+it's time to think about how you might use it to make trading decisions.
+
+00:02:48.990 --> 00:02:51.340
+You may choose to generate buy,
+
+00:02:51.340 --> 00:02:54.680
+sell signals directly based on your predictions,
+
+00:02:54.680 --> 00:02:57.245
+or you may use it in an indirect way.
+
+00:02:57.245 --> 00:03:03.164
+You can analyze past signal returns and see if it has somehow correlated with volatility.
+
+00:03:03.164 --> 00:03:08.814
+For example, it's well known that certain strategies do better with higher volatility,
+
+00:03:08.814 --> 00:03:14.120
+and then you can choose to activate that strategy only during high volatility periods.
+

@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.375
+Going back to the issue of index deletes and index adds,
+
+00:00:04.375 --> 00:00:09.589
+when Monsanto was removed from the SMP 500 and replaced by Twitter,
+
+00:00:09.589 --> 00:00:11.359
+what happened to the index?
+
+00:00:11.359 --> 00:00:13.484
+Was it reset back to 100?
+
+00:00:13.484 --> 00:00:16.859
+Is there's some fancy math to update the index?
+
+00:00:16.859 --> 00:00:21.439
+Well in fact, we use the same math as we did before.
+
+00:00:21.440 --> 00:00:26.405
+Prior to the replacement Monsanto was worth about $50 billion.
+
+00:00:26.405 --> 00:00:30.845
+On the day of replacement Twitter was worth about $30 billion.
+
+00:00:30.844 --> 00:00:35.670
+Let's make up a fake company to serve as a placeholder for Monsanto before,
+
+00:00:35.670 --> 00:00:37.890
+and Twitter after the change.
+
+00:00:37.890 --> 00:00:41.024
+Let's call this fake company, MonsanTwitter.
+
+00:00:41.024 --> 00:00:43.625
+Between the previous day and the current day,
+
+00:00:43.625 --> 00:00:50.390
+our placeholder MonsanTwitter changed its market cap from $50 billion to $30 billion.
+
+00:00:50.390 --> 00:00:53.990
+We calculate the percent change of the total market cap as
+
+00:00:53.990 --> 00:00:59.130
+usual and apply that to the previous index to get the current day's index.
+

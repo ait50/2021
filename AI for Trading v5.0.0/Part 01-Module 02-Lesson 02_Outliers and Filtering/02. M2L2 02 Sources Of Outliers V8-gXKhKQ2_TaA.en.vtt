@@ -1,0 +1,253 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.154
+What are we talking about when we talk about outliers?
+
+00:00:03.154 --> 00:00:06.269
+We're talking about extreme or unexpected values in
+
+00:00:06.269 --> 00:00:10.109
+market data which may or may not represent real events.
+
+00:00:10.109 --> 00:00:14.399
+For example, if we're tracking a solar energy company stock price,
+
+00:00:14.400 --> 00:00:18.984
+we might see unexpected movements in the price on a day when a solar eclipse occurs.
+
+00:00:18.984 --> 00:00:20.460
+Outliers can show up for
+
+00:00:20.460 --> 00:00:24.464
+a million different reasons but some reasons are more common than others.
+
+00:00:24.464 --> 00:00:29.195
+In this video, we're going to talk about a few of the most common types of outliers.
+
+00:00:29.195 --> 00:00:32.255
+Outliers can always appear due to human error,
+
+00:00:32.255 --> 00:00:36.304
+either during manual data entry or in the form of computer bugs.
+
+00:00:36.304 --> 00:00:38.769
+These are known as fat finger errors.
+
+00:00:38.770 --> 00:00:42.540
+To cite a few examples that had newsworthy consequences,
+
+00:00:42.539 --> 00:00:47.869
+in 2001 a Japanese traitor cost his employer UBS Warburg,
+
+00:00:47.869 --> 00:00:52.149
+71 million pounds when he sold 610,000 shares at
+
+00:00:52.149 --> 00:00:57.869
+60 yen instead of six shares at 610,000 yen as he had intended.
+
+00:00:57.869 --> 00:01:00.739
+In 2015, a junior member of
+
+00:01:00.740 --> 00:01:04.655
+Deutsche Bank's foreign exchange sales team processed a trade using
+
+00:01:04.655 --> 00:01:07.760
+a gross figure rather than a net figure causing
+
+00:01:07.760 --> 00:01:11.560
+a payment to a U.S. hedge fund of six billion dollars,
+
+00:01:11.560 --> 00:01:13.430
+orders of magnitude too high.
+
+00:01:13.430 --> 00:01:15.944
+Sometimes data can be missing completely,
+
+00:01:15.944 --> 00:01:19.210
+entered as zeros or duplicated from previous states.
+
+00:01:19.209 --> 00:01:24.739
+This can happen due to lax quality control of market data vendors but sometimes exchanges
+
+00:01:24.739 --> 00:01:26.759
+themselves can be missing data.
+
+00:01:26.760 --> 00:01:29.930
+Data maybe missing because the stock was suspended from
+
+00:01:29.930 --> 00:01:33.110
+trading for a day or more often, for part of a day.
+
+00:01:33.109 --> 00:01:36.890
+Trading on a stock can be stopped for regulatory reasons,
+
+00:01:36.890 --> 00:01:40.760
+to reduce volatile trading prior to a companies news announcement
+
+00:01:40.760 --> 00:01:45.719
+or when there's uncertainty about whether the stock continues to meet listing standards.
+
+00:01:45.719 --> 00:01:49.004
+It can also be stopped for non-regulatory reasons.
+
+00:01:49.004 --> 00:01:54.004
+For example, if there's a significant imbalance and pending buy and sell orders.
+
+00:01:54.004 --> 00:01:56.959
+In these cases, one way to check if trading actually
+
+00:01:56.959 --> 00:02:00.204
+occurred is to check if the trade volume was zero.
+
+00:02:00.204 --> 00:02:03.605
+Trading for an entire exchange can also be stopped.
+
+00:02:03.605 --> 00:02:06.715
+There are mechanisms called trading curves or circuit
+
+00:02:06.715 --> 00:02:10.895
+breakers that halt trading if an index drops by a certain percent.
+
+00:02:10.895 --> 00:02:14.260
+The idea is to prevent stock market crashes,
+
+00:02:14.259 --> 00:02:16.774
+events when the prices of stocks across
+
+00:02:16.775 --> 00:02:21.460
+a significant cross section of the market drops suddenly and significantly.
+
+00:02:21.460 --> 00:02:26.445
+You might also see extreme price movements that are due to real events such as earnings,
+
+00:02:26.444 --> 00:02:28.715
+mergers or other announcements.
+
+00:02:28.715 --> 00:02:33.409
+Announcements represent information that the market previously did not know.
+
+00:02:33.409 --> 00:02:36.694
+So these can surprise the general market if the results are much
+
+00:02:36.694 --> 00:02:40.840
+better or worse than the market expected, so to speak.
+
+00:02:40.840 --> 00:02:43.314
+When the market adjusts to this information,
+
+00:02:43.314 --> 00:02:44.930
+the stock price fluctuates as
+
+00:02:44.930 --> 00:02:48.469
+the new information starts to be reflected in the trading price.
+
+00:02:48.469 --> 00:02:51.900
+For example, the athletic apparel company, Puma,
+
+00:02:51.900 --> 00:02:55.430
+made an unexpected earnings announcement on October 18th,
+
+00:02:55.430 --> 00:03:00.430
+2017 in which it reported stronger than expected third-quarter earnings.
+
+00:03:00.430 --> 00:03:03.620
+That day, its stock closed four percent higher than
+
+00:03:03.620 --> 00:03:06.259
+the previous day's close and the subsequent days
+
+00:03:06.259 --> 00:03:09.454
+saw fluctuations as the price rose still further.
+
+00:03:09.455 --> 00:03:11.210
+Outliers can occur due to
+
+00:03:11.210 --> 00:03:14.945
+the intended or unintended actions of computer trading programs.
+
+00:03:14.944 --> 00:03:18.185
+For example, in 2010 the market experienced
+
+00:03:18.185 --> 00:03:23.900
+a flash crash which lasted only 36 minutes and was later linked to trading algorithms.
+
+00:03:23.900 --> 00:03:28.129
+While extreme price fluctuations occurred during this short period,
+
+00:03:28.129 --> 00:03:29.854
+they were due to real events.
+
+00:03:29.854 --> 00:03:32.134
+Sometimes quants must work with
+
+00:03:32.134 --> 00:03:34.564
+unadjusted or nominal price data
+
+00:03:34.564 --> 00:03:38.599
+because adjusted price data are unavailable through their data source,
+
+00:03:38.599 --> 00:03:43.259
+when working with real time data directly from a stock exchange for example.
+
+00:03:43.259 --> 00:03:45.949
+If you are working with unadjusted price data,
+
+00:03:45.949 --> 00:03:51.349
+you will see discontinuities in prices on dates when companies issue dividends,
+
+00:03:51.349 --> 00:03:54.858
+split their stock or took other corporate actions.
+
+00:03:54.859 --> 00:03:58.308
+Companies may issue dividends on a regular schedule
+
+00:03:58.308 --> 00:04:02.439
+or may decide to issue one-off so-called special dividends.
+
+00:04:02.439 --> 00:04:05.810
+In this example, you can see that in 2017,
+
+00:04:05.810 --> 00:04:08.900
+Costco issued several regular dividends as
+
+00:04:08.900 --> 00:04:12.590
+well as a large seven dollar per share special dividend.
+
+00:04:12.590 --> 00:04:17.829
+These discontinuities can look like outliers if returns are calculated on these data.
+
+00:04:17.829 --> 00:04:22.680
+A stock trades ex-dividend on or after the ex-dividend date,
+
+00:04:22.680 --> 00:04:26.324
+so on this date, non-adjusted prices decrease.
+
+00:04:26.324 --> 00:04:29.779
+This represents the fact that the net company value has
+
+00:04:29.779 --> 00:04:34.519
+decreased because cash has been transferred from the company to shareholders.
+
+00:04:34.519 --> 00:04:37.789
+However, after prices are adjusted,
+
+00:04:37.790 --> 00:04:42.379
+change demand for company stock may also cause prices to change.
+
+00:04:42.379 --> 00:04:46.800
+Price changes due to change demand are real market effects.
+
+00:04:46.800 --> 00:04:50.030
+To deal with discontinuities in unadjusted prices,
+
+00:04:50.029 --> 00:04:52.669
+whoever is cleaning the data must go back,
+
+00:04:52.670 --> 00:04:55.939
+look at corporate events and cumulatively adjust
+
+00:04:55.939 --> 00:04:59.670
+for each dividend distribution to generate adjusted prices.
+

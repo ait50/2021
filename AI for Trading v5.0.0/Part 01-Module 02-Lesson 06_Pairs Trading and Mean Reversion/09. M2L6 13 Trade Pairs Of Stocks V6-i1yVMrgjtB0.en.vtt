@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.609
+It's also important to decide how we
+
+00:00:02.609 --> 00:00:06.165
+define when two stocks are diverging from there spread.
+
+00:00:06.165 --> 00:00:09.625
+For this, we want to choose a threshold.
+
+00:00:09.625 --> 00:00:12.054
+If the spread exceeds the threshold,
+
+00:00:12.054 --> 00:00:13.800
+then we can assume that the spread is
+
+00:00:13.800 --> 00:00:17.394
+temporary and will revert back to its historical mean.
+
+00:00:17.394 --> 00:00:20.039
+We can have two kinds of thresholds.
+
+00:00:20.039 --> 00:00:25.364
+One threshold, tells us that the spread is much wider than its historical average.
+
+00:00:25.364 --> 00:00:28.079
+Another threshold, can tell us that the spread is
+
+00:00:28.079 --> 00:00:30.899
+much narrower than its historical average.
+
+00:00:30.899 --> 00:00:33.439
+When the spread is unusually wide,
+
+00:00:33.439 --> 00:00:36.835
+the action we take is called shorting the spread.
+
+00:00:36.835 --> 00:00:38.865
+We say we're shorting the spread,
+
+00:00:38.865 --> 00:00:42.385
+because we expect the spread to get smaller in the future.
+
+00:00:42.384 --> 00:00:45.989
+Conversely, when the spread is unusually narrow,
+
+00:00:45.990 --> 00:00:49.620
+the action we take is called going long the spread.
+
+00:00:49.619 --> 00:00:53.149
+We say we're going long the spread or buying
+
+00:00:53.149 --> 00:00:57.439
+the spread because we expect the spread to get larger in the future.
+
+00:00:57.439 --> 00:01:01.434
+Let's discuss what it means to go long or short spread.
+
+00:01:01.435 --> 00:01:03.225
+When the spread widens,
+
+00:01:03.225 --> 00:01:05.394
+we decide to short the spread.
+
+00:01:05.394 --> 00:01:11.304
+This means, that we short the asset that has increased relative to the spread.
+
+00:01:11.305 --> 00:01:16.250
+We also buy the asset that has declined relative to the spread.
+
+00:01:16.250 --> 00:01:20.305
+Some of our previous examples involved shorting the spread.
+
+00:01:20.305 --> 00:01:23.405
+Conversely, when we see this spread narrow,
+
+00:01:23.405 --> 00:01:25.950
+we decided to go long the spread.
+
+00:01:25.950 --> 00:01:31.159
+This means that we buy the asset that has declined relative to the spread.
+
+00:01:31.159 --> 00:01:35.689
+We also short the asset that has increased relative to the spread.
+
+00:01:35.689 --> 00:01:38.424
+If this concept sounds a bit confusing,
+
+00:01:38.424 --> 00:01:41.704
+just to remember to buy low and sell high.
+
+00:01:41.704 --> 00:01:44.594
+In other words, buy when it's on sale,
+
+00:01:44.594 --> 00:01:46.969
+and sell when it's overpriced.
+
+00:01:46.969 --> 00:01:49.039
+The way we define these thresholds,
+
+00:01:49.040 --> 00:01:55.100
+is by calculating how many standard deviations the spread is from its historical average.
+
+00:01:55.099 --> 00:01:58.059
+This is called the Z-score of spread.
+
+00:01:58.060 --> 00:02:00.370
+A Z-score of positive one,
+
+00:02:00.370 --> 00:02:05.655
+means that a value is one standard deviation greater than its historical mean.
+
+00:02:05.655 --> 00:02:07.585
+To calculate the Z-score,
+
+00:02:07.584 --> 00:02:11.894
+we subtracted the mean and divide by the standard deviation.
+
+00:02:11.895 --> 00:02:14.110
+As with all modeling,
+
+00:02:14.110 --> 00:02:17.120
+is necessary to perform backtesting.
+
+00:02:17.120 --> 00:02:22.525
+By backtesting, I mean that we want to test our model on historical data.
+
+00:02:22.525 --> 00:02:28.129
+We want to test in a way that simulates the model making predictions in real time.
+
+00:02:28.129 --> 00:02:32.784
+We don't want to expose the model to data that occurs in the future.
+
+00:02:32.784 --> 00:02:38.155
+To perform backtesting, we divide our historical data into a training set,
+
+00:02:38.155 --> 00:02:41.659
+a validation set, and a test set.
+
+00:02:41.659 --> 00:02:46.180
+The training set has earlier data up to a cutoff date,
+
+00:02:46.180 --> 00:02:49.490
+the validation set has data that occurs after
+
+00:02:49.490 --> 00:02:53.100
+the training set up to and even later cutoff date,
+
+00:02:53.099 --> 00:02:57.784
+the test set contains data that occurs after the validation set.
+
+00:02:57.784 --> 00:03:00.504
+We train our model on the training set,
+
+00:03:00.504 --> 00:03:04.530
+then do intermediate checks using the validation set.
+
+00:03:04.530 --> 00:03:10.449
+This allows us to adjust our model to help it perform more accurate estimates.
+
+00:03:10.449 --> 00:03:15.109
+When we've adjusted our model to the point that we think it's ready to use,
+
+00:03:15.110 --> 00:03:19.490
+we then check it against the test set to see if it really works.
+
+00:03:19.490 --> 00:03:25.260
+Note that, it's important not to use the test set until we're done optimizing the model.
+
+00:03:25.259 --> 00:03:29.810
+If we were to adjust the model after using the final test set,
+
+00:03:29.810 --> 00:03:34.530
+this would be like letting our model cheat by showing it information about the future.
+

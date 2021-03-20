@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.000
+So, now the question is,
+
+00:00:02.000 --> 00:00:05.970
+what do we do when our data is not normally distributed?
+
+00:00:05.969 --> 00:00:11.064
+Similarly, what do we do when our data is heteroscedastic?
+
+00:00:11.064 --> 00:00:14.399
+To reshape our data and make it more normal,
+
+00:00:14.400 --> 00:00:17.625
+we can feed our data into the log function.
+
+00:00:17.625 --> 00:00:20.300
+To get data that is homoscedastic,
+
+00:00:20.300 --> 00:00:23.300
+we can take the time difference between periods.
+
+00:00:23.300 --> 00:00:26.130
+By time difference, I mean that we can view
+
+00:00:26.129 --> 00:00:30.434
+our data as the rate of return from one day to the next.
+
+00:00:30.434 --> 00:00:33.539
+Similarly, we could get the time difference by
+
+00:00:33.539 --> 00:00:38.049
+subtracting each previous day's value from the current day's value.
+
+00:00:38.049 --> 00:00:45.169
+In practice, we take the rate of change for each period and then apply the log function.
+
+00:00:45.170 --> 00:00:48.380
+You may have seen this earlier when learning about why we
+
+00:00:48.380 --> 00:00:51.515
+model financial data with log returns.
+
+00:00:51.515 --> 00:00:56.435
+A way to make our data both normally distributed and homoscedastic,
+
+00:00:56.435 --> 00:01:00.425
+is by applying the Box-Cox transformation.
+
+00:01:00.424 --> 00:01:04.019
+To preview what the Box-Cox transformation does,
+
+00:01:04.019 --> 00:01:08.234
+let's get a conceptual idea of what a transformation looks like.
+
+00:01:08.234 --> 00:01:12.189
+Imagine you place all your data points on a number line,
+
+00:01:12.189 --> 00:01:15.799
+they are not evenly spaced and have odd clusters in
+
+00:01:15.799 --> 00:01:19.519
+some parts and no data points in other places.
+
+00:01:19.519 --> 00:01:25.625
+Think of this as a necklace in which the beads are not spaced out in a very nice way.
+
+00:01:25.625 --> 00:01:29.569
+Now, imagine if we could nudge each of these beads a little bit to
+
+00:01:29.569 --> 00:01:34.129
+the left and to the right to even out the spacing in a nicer way.
+
+00:01:34.129 --> 00:01:38.659
+Notice that since these beads are all on the same string,
+
+00:01:38.659 --> 00:01:42.219
+the relative order of each data point remains the same,
+
+00:01:42.219 --> 00:01:46.164
+we're just spacing them out in a way that's easier to work with.
+
+00:01:46.165 --> 00:01:51.400
+In math terms, we just applied a monotonic transformation.
+
+00:01:51.400 --> 00:01:54.950
+A monotonic transformation changes the values of
+
+00:01:54.950 --> 00:01:58.835
+a dataset but preserves the relative order.
+
+00:01:58.834 --> 00:02:02.269
+The Box-Cox transformation takes a dataset
+
+00:02:02.269 --> 00:02:06.435
+and outputs a dataset that is more normally distributed.
+
+00:02:06.435 --> 00:02:12.590
+You can see that the Box-Cox transformation has one constant value, lambda.
+
+00:02:12.590 --> 00:02:15.094
+If you choose lambda to be zero,
+
+00:02:15.094 --> 00:02:19.395
+then the transformation function is defined as the natural log.
+
+00:02:19.395 --> 00:02:23.564
+You can try different values for lambda to transform the data,
+
+00:02:23.564 --> 00:02:28.079
+then perform tests for normality and homoscedasticity.
+
+00:02:28.080 --> 00:02:31.490
+Once you can say your data is normally distributed,
+
+00:02:31.490 --> 00:02:36.070
+you can use it in the various models that we'll discuss in the rest of the lesson.
+

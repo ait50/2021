@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.430
+At this point, you may be wondering,
+
+00:00:02.430 --> 00:00:05.425
+well, what causes volatility anyway?
+
+00:00:05.424 --> 00:00:08.820
+A natural assumption may be that volatility of
+
+00:00:08.820 --> 00:00:12.390
+a stock is caused by new information reaching the market.
+
+00:00:12.390 --> 00:00:17.664
+New information causes people to revise their opinions about the value of a stock.
+
+00:00:17.664 --> 00:00:21.294
+The price of the stock changes which causes volatility.
+
+00:00:21.294 --> 00:00:25.425
+However, research hasn't supported this conclusion.
+
+00:00:25.425 --> 00:00:29.820
+Research studies have compared the variance of stock price returns between
+
+00:00:29.820 --> 00:00:34.259
+the closing price on one day and the closing price on the next trading day,
+
+00:00:34.259 --> 00:00:37.655
+when there are no non-trading days in between,
+
+00:00:37.655 --> 00:00:41.855
+and the closing price on a Friday and the closing price on a Monday.
+
+00:00:41.854 --> 00:00:44.779
+You might expect the weekend variance to be
+
+00:00:44.780 --> 00:00:50.280
+three times the midweek variance because the real elapsed time is three times as long.
+
+00:00:50.280 --> 00:00:53.850
+However, this has not been found to be the case,
+
+00:00:53.850 --> 00:00:57.109
+even for assets affected by news that is equally
+
+00:00:57.109 --> 00:01:00.710
+likely to arrive midweek or on a weekend.
+
+00:01:00.710 --> 00:01:05.510
+The weekend variants of orange juice futures prices which are mainly affected by
+
+00:01:05.510 --> 00:01:10.585
+weather news is only about 1.5 times the midweek variance.
+
+00:01:10.584 --> 00:01:14.284
+The implication of all this is that volatility is,
+
+00:01:14.284 --> 00:01:15.519
+to a large extent,
+
+00:01:15.519 --> 00:01:17.594
+caused by trading itself.
+
+00:01:17.594 --> 00:01:20.329
+This idea is consistent with the observation
+
+00:01:20.329 --> 00:01:23.614
+that volatility and volume are frequently correlated.
+
+00:01:23.614 --> 00:01:26.119
+All other things being equal,
+
+00:01:26.120 --> 00:01:29.120
+greater trading volume means greater volatility.
+
+00:01:29.120 --> 00:01:32.270
+But during a time when volatility is high because
+
+00:01:32.269 --> 00:01:35.899
+lots of trading is happening and the price goes up,
+
+00:01:35.900 --> 00:01:39.290
+you might reasonably expect the price to go back down.
+
+00:01:39.290 --> 00:01:40.825
+If there was no news,
+
+00:01:40.825 --> 00:01:45.129
+the price probably didn't increase because the company's performance improved.
+
+00:01:45.129 --> 00:01:49.759
+It probably increased because people wanted to trade large numbers of
+
+00:01:49.760 --> 00:01:55.055
+stocks and sellers charged a premium for that ability to trade, or liquidity.
+
+00:01:55.055 --> 00:01:59.450
+This means that for equity strategies in high volatility times,
+
+00:01:59.450 --> 00:02:04.490
+a type of strategy considered more likely to do well is a type of strategy based on
+
+00:02:04.489 --> 00:02:09.854
+the idea that prices will return to their running mean when they go way up or down.
+
+00:02:09.854 --> 00:02:13.044
+These are called mean reversion strategies.
+
+00:02:13.044 --> 00:02:15.125
+In low volatility times,
+
+00:02:15.125 --> 00:02:17.479
+momentum strategies may work better.
+
+00:02:17.479 --> 00:02:22.414
+There are other general patterns in market behavior with respect to volatility.
+
+00:02:22.414 --> 00:02:25.789
+One is that market volatility tends to be high when
+
+00:02:25.789 --> 00:02:29.754
+the market is going down and low when the market is going up.
+
+00:02:29.754 --> 00:02:36.019
+Because of this, volatility is often quoted in the popular media as the gauge for fear.
+
+00:02:36.020 --> 00:02:37.939
+To see this most clearly,
+
+00:02:37.939 --> 00:02:42.349
+let's look at an index that essentially measures market volatility.
+
+00:02:42.349 --> 00:02:45.199
+You might have heard of the VIX Index,
+
+00:02:45.199 --> 00:02:51.530
+which is a market index measuring the volatility of 30-day S&amp;P 500 Index options.
+
+00:02:51.530 --> 00:02:57.884
+The value of the VIX index represents the annualized volatility of the S&amp;P 500 Index.
+
+00:02:57.884 --> 00:03:01.969
+This plot of the VIX Index and S&amp;P 500 Index over
+
+00:03:01.969 --> 00:03:06.465
+the same periods shows that the VIX spikes when the S&amp;P dips.
+
+00:03:06.465 --> 00:03:10.115
+For example, between 1990 and 2015,
+
+00:03:10.115 --> 00:03:15.480
+VIX spiked to a record 80 during October and November of 2008 when,
+
+00:03:15.479 --> 00:03:19.129
+as you remember, the markets were roiling from a huge crisis.
+
+00:03:19.129 --> 00:03:20.549
+I know what you're thinking,
+
+00:03:20.550 --> 00:03:22.925
+can you trade the VIX itself?
+
+00:03:22.925 --> 00:03:26.885
+You guessed it. Humans will turn anything into tradeable securities.
+
+00:03:26.884 --> 00:03:30.949
+You can trade futures and options on the VIX Index which
+
+00:03:30.949 --> 00:03:35.539
+essentially amounts to making a bet on the volatility of the S&amp;P 500.
+
+00:03:35.539 --> 00:03:39.824
+The VIX is published by the Chicago Board Options Exchange,
+
+00:03:39.824 --> 00:03:43.729
+which publishes a range of other volatility indices on stock
+
+00:03:43.729 --> 00:03:48.215
+and commodity indices currencies and some individual stocks.
+
+00:03:48.215 --> 00:03:53.930
+There's even a Volatility Index of the VIX Index, the VVIX.
+

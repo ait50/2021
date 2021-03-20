@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.240
+Another way to model time series is to think of
+
+00:00:03.240 --> 00:00:06.380
+the stock return hovering around in moving average.
+
+00:00:06.379 --> 00:00:11.589
+As an analogy, imagine that you're walking at night while holding a lantern,
+
+00:00:11.589 --> 00:00:13.994
+a moth flies around the lantern,
+
+00:00:13.994 --> 00:00:15.504
+moving a bit randomly,
+
+00:00:15.505 --> 00:00:18.910
+but still following the general path of your lantern.
+
+00:00:18.910 --> 00:00:23.350
+In this analogy, the lantern represents the average position.
+
+00:00:23.350 --> 00:00:28.285
+The moth's smaller movements relative to the lantern are the residuals.
+
+00:00:28.285 --> 00:00:31.429
+The moth's movement relative to the ground is
+
+00:00:31.429 --> 00:00:36.479
+a combination of the lantern's movement and the moth's relative movements.
+
+00:00:36.479 --> 00:00:38.628
+In the moving average model,
+
+00:00:38.628 --> 00:00:41.184
+often called an MA model,
+
+00:00:41.185 --> 00:00:43.325
+we started with the average Mu.
+
+00:00:43.325 --> 00:00:45.795
+To get the value at time T,
+
+00:00:45.795 --> 00:00:50.660
+we add a linear combination of residuals from the previous time periods.
+
+00:00:50.659 --> 00:00:52.879
+In financial time series,
+
+00:00:52.880 --> 00:00:56.645
+the residuals represent the new unpredictable information
+
+00:00:56.645 --> 00:00:59.900
+that cannot be captured by the past data points.
+
+00:00:59.899 --> 00:01:02.299
+The residuals are the difference between
+
+00:01:02.299 --> 00:01:06.109
+the model's past predictions with the actual values that occurred.
+
+00:01:06.109 --> 00:01:12.439
+Moving average models are defined as MAQ where Q is the lag.
+
+00:01:12.439 --> 00:01:16.954
+To decide the best value for Q in an MAQ model,
+
+00:01:16.954 --> 00:01:19.920
+you can draw an autocorrelation plot.
+
+00:01:19.920 --> 00:01:23.060
+Correlation between two variables is a measure of
+
+00:01:23.060 --> 00:01:26.969
+how much one variable moves when the other variable moves.
+
+00:01:26.969 --> 00:01:31.114
+Correlation ranges between negative one and one.
+
+00:01:31.114 --> 00:01:33.769
+Autocorrelation is a measure of how much
+
+00:01:33.769 --> 00:01:38.125
+the current value moves in relation to one of its previous values.
+
+00:01:38.125 --> 00:01:42.469
+For example, let's say we noticed that the current stock return is usually
+
+00:01:42.469 --> 00:01:47.025
+positive when its previous value is positive, and vice versa.
+
+00:01:47.025 --> 00:01:53.420
+Then, we can say that the stock has a positive autocorrelation with it's T minus 1 value.
+
+00:01:53.420 --> 00:01:58.689
+Note how an autocorrelation plot is different from performing a multiple regression.
+
+00:01:58.689 --> 00:02:04.579
+Correlation measures the pairwise relationship between exactly two periods at a time.
+
+00:02:04.579 --> 00:02:07.340
+Multiple regression measures how a set of
+
+00:02:07.340 --> 00:02:12.435
+independent variables collectively influence the value of the dependent variable.
+
+00:02:12.435 --> 00:02:14.900
+When we view an autocorrelation plot,
+
+00:02:14.900 --> 00:02:20.289
+we want to use the lag that contains highly positive or highly negative correlations.
+
+00:02:20.289 --> 00:02:23.639
+When we reach some time periods with little correlation,
+
+00:02:23.639 --> 00:02:26.329
+we can choose the lag to ignore those values
+
+00:02:26.330 --> 00:02:29.400
+and any other time periods further back in time.
+

@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.794
+Trading might use metrics availability to define trading signals.
+
+00:00:04.794 --> 00:00:08.560
+For example, you can take a fix length rolling window and
+
+00:00:08.560 --> 00:00:13.350
+calculate the mean and standard deviation of prices within that window.
+
+00:00:13.349 --> 00:00:15.309
+If we draw a line,
+
+00:00:15.310 --> 00:00:19.690
+two standard deviations above and below the rolling mean,
+
+00:00:19.690 --> 00:00:24.020
+we can get a sense of the trend and tendency to fluctuate of prices,
+
+00:00:24.019 --> 00:00:27.100
+these lines are called Bollinger Bands.
+
+00:00:27.100 --> 00:00:30.700
+We can use Bollinger Bands to generate trading signals.
+
+00:00:30.699 --> 00:00:34.269
+For example, we might think that if the price is below
+
+00:00:34.270 --> 00:00:39.130
+the lower band and starts to cross back inside towards the mean,
+
+00:00:39.130 --> 00:00:42.594
+that the price is still fairly low and on the rise,
+
+00:00:42.594 --> 00:00:44.975
+this might be a good time to buy.
+
+00:00:44.975 --> 00:00:47.960
+We might also think that if the price is above
+
+00:00:47.960 --> 00:00:51.049
+the upper band and starts to move back towards the mean,
+
+00:00:51.049 --> 00:00:53.339
+that this might be a good time to sell.
+
+00:00:53.340 --> 00:00:56.750
+This is one type of strategy you might use to take advantage of
+
+00:00:56.750 --> 00:01:01.310
+situations when the stock price continually returns to its running mean.
+
+00:01:01.310 --> 00:01:04.820
+Alternatively, when the price hits the upper band,
+
+00:01:04.819 --> 00:01:07.729
+you may think that is going to keep going that it's breaking
+
+00:01:07.730 --> 00:01:10.880
+out to take advantage of these situations,
+
+00:01:10.879 --> 00:01:13.694
+you can define a slightly different type of strategy.
+
+00:01:13.694 --> 00:01:18.744
+If the price of a stock is not very variable but continues to increase,
+
+00:01:18.745 --> 00:01:22.850
+you can get a situation where it keeps increasing but never hits
+
+00:01:22.849 --> 00:01:27.384
+the upper Bollinger Band defined by the standard deviation of the prices.
+
+00:01:27.385 --> 00:01:33.980
+Instead, you can use an upper band defined by the maximum value within a rolling window.
+
+00:01:33.980 --> 00:01:36.710
+If the price continues to increase,
+
+00:01:36.709 --> 00:01:41.234
+it will continue to reach new maxima and will hit that upper band.
+
+00:01:41.234 --> 00:01:47.329
+One strategy you might take defined by this signal is to enter a long position
+
+00:01:47.329 --> 00:01:50.179
+on the stock when it hits the rolling max
+
+00:01:50.180 --> 00:01:53.800
+and enter a short position when it hits the rolling min.
+

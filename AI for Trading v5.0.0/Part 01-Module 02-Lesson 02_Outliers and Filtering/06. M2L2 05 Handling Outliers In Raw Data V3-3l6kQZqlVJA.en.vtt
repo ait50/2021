@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.065
+So, what do you do when you find outliers and raw price data?
+
+00:00:04.065 --> 00:00:07.205
+Well, although at least large institutions,
+
+00:00:07.205 --> 00:00:11.129
+co- traders usually have a team of people to clean data for them.
+
+00:00:11.130 --> 00:00:14.745
+They may run into situations where they need results fast.
+
+00:00:14.744 --> 00:00:19.394
+The easiest and quickest way to determine if the extreme value is real,
+
+00:00:19.394 --> 00:00:24.250
+or fill in a missing data point is to cross check with another data source.
+
+00:00:24.250 --> 00:00:26.089
+If it's a one off point,
+
+00:00:26.089 --> 00:00:31.059
+you can remove or replace it with data from a secondary source manually.
+
+00:00:31.059 --> 00:00:36.469
+You might think of replacing these data with some mean of the surrounding data.
+
+00:00:36.469 --> 00:00:40.054
+This is not done often because it risks incorporating
+
+00:00:40.054 --> 00:00:43.545
+information from the future into those days data.
+
+00:00:43.545 --> 00:00:48.289
+Inaccuracy due to the use of information that would not have been known or
+
+00:00:48.289 --> 00:00:53.335
+available during the period being analyzed is called Lookahead Bias.
+
+00:00:53.335 --> 00:00:58.250
+Think about it. If you were trying to fill in that missing datum by averaging
+
+00:00:58.250 --> 00:01:03.244
+data from the surrounding days on the day for which the datum is missing,
+
+00:01:03.244 --> 00:01:08.694
+you wouldn't be able to because you wouldn't know what the price would be in the future.
+
+00:01:08.694 --> 00:01:12.319
+Lookahead bias is a bias because using
+
+00:01:12.319 --> 00:01:17.139
+unknowable data from the future will consistently make your results look better.
+
+00:01:17.140 --> 00:01:21.560
+The main problem with using future data in signal research is that
+
+00:01:21.560 --> 00:01:26.150
+any kind of strategy based on that research would be impossible to execute.
+
+00:01:26.150 --> 00:01:30.200
+One common mistake is to use closing prices of
+
+00:01:30.200 --> 00:01:36.030
+the current day or a future date to calculate the trading signal for the same day.
+
+00:01:36.030 --> 00:01:40.189
+But of course, a strategy that says to make a trade during
+
+00:01:40.189 --> 00:01:45.939
+the day based on a closing price for that same day would be impossible to implement.
+
+00:01:45.939 --> 00:01:49.280
+It may not seem to make much of a difference in cases where you
+
+00:01:49.280 --> 00:01:52.649
+were using the data for some kind of historical analysis,
+
+00:01:52.649 --> 00:01:55.713
+but to be safe, it makes sense to simply substitute
+
+00:01:55.713 --> 00:02:00.204
+a missing closing price with the previous closing price during signal research.
+
+00:02:00.204 --> 00:02:04.789
+However, keep in mind that it is recommended to keep the missing data
+
+00:02:04.790 --> 00:02:09.715
+during back testing because they may represent a real non-tradable event.
+
+00:02:09.715 --> 00:02:13.099
+For example, stock A may not have traded for
+
+00:02:13.099 --> 00:02:16.864
+a day and thus it's closing price would have been missing.
+
+00:02:16.865 --> 00:02:20.150
+In your back test your data should reflect this and
+
+00:02:20.150 --> 00:02:24.670
+your strategy should not attempt to place trades on stock a during that day.
+
