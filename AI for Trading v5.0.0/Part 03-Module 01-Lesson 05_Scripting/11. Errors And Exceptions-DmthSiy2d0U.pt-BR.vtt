@@ -1,0 +1,158 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.400
+Como você viu
+no último vídeo,
+
+00:00:03.033 --> 00:00:05.467
+tentar lidar
+com todo tipo de cenário
+
+00:00:05.667 --> 00:00:08.933
+ao trabalhar com uma entrada
+inesperada pode ser um pouco demais.
+
+00:00:09.433 --> 00:00:11.300
+Na verdade,
+há uma maneira muito mais fácil
+
+00:00:11.334 --> 00:00:13.333
+de lidar com isso no Python.
+
+00:00:13.567 --> 00:00:15.900
+Aqui você aprende
+a lidar com erros
+
+00:00:15.934 --> 00:00:17.867
+com os blocos
+"try" e "except".
+
+00:00:18.767 --> 00:00:22.567
+Primeiro vamos aprender mais
+sobre o que são erros no Python.
+
+00:00:22.601 --> 00:00:26.300
+Neste curso, vimos mensagens de erro
+devido a vários motivos,
+
+00:00:26.800 --> 00:00:31.933
+e podemos separá-las em dois tipos,
+erros de sintaxe e exceções.
+
+00:00:32.600 --> 00:00:34.033
+Erros de sintaxe ocorrem
+
+00:00:34.067 --> 00:00:36.367
+quando o Python não consegue
+interpretar o nosso código,
+
+00:00:36.401 --> 00:00:39.567
+já que não seguimos
+a sintaxe correta para Python.
+
+00:00:40.500 --> 00:00:43.500
+Você terá esses erros
+quando digitar errado
+
+00:00:43.733 --> 00:00:45.933
+ou ao começar
+a aprender Python.
+
+00:00:46.133 --> 00:00:49.800
+Aqui tenho um erro de sintaxe
+porque esqueci a aspa final
+
+00:00:49.834 --> 00:00:51.333
+no fim de uma string.
+
+00:00:51.367 --> 00:00:53.367
+Posso ver isso
+na mensagem de erro:
+
+00:00:53.401 --> 00:00:57.300
+"SyntaxError: End of line
+when scanning string literal".
+
+00:00:57.833 --> 00:01:00.100
+Outro tipo de erro
+são as exceções,
+
+00:01:00.134 --> 00:01:02.267
+quando coisas inesperadas
+acontecem
+
+00:01:02.301 --> 00:01:04.600
+durante
+a execução do código.
+
+00:01:04.900 --> 00:01:07.900
+Aqui, embora o nosso código
+esteja sintaticamente correto,
+
+00:01:07.934 --> 00:01:12.000
+encontramos uma exceção
+porque a grafia da string 10
+
+00:01:12.034 --> 00:01:15.000
+não é um argumento válido
+para a função "Int".
+
+00:01:15.034 --> 00:01:18.000
+Existem diferentes tipos de exceções
+integradas no Python,
+
+00:01:18.467 --> 00:01:21.467
+e você pode ver qual exceção
+está sendo aplicada aqui
+
+00:01:21.501 --> 00:01:23.000
+na mensagem de erro.
+
+00:01:23.034 --> 00:01:25.600
+"Value error"
+é um tipo de exceção.
+
+00:01:26.133 --> 00:01:29.467
+Ocorre quando uma operação
+ou função integrada
+
+00:01:29.800 --> 00:01:32.433
+recebe um argumento
+com o tipo correto,
+
+00:01:32.867 --> 00:01:34.733
+mas um valor incorreto.
+
+00:01:34.933 --> 00:01:37.333
+Aqui temos outro exemplo
+de uma exceção.
+
+00:01:37.900 --> 00:01:40.233
+Aqui tentamos referenciar
+um nome de variável
+
+00:01:40.267 --> 00:01:41.733
+que ainda não definimos.
+
+00:01:41.767 --> 00:01:44.000
+Então temos uma exceção
+"Name Error".
+
+00:01:44.700 --> 00:01:47.633
+Mais uma vez, o código está
+sintaticamente correto,
+
+00:01:47.667 --> 00:01:50.133
+mas, quando o Python chega
+a esta linha no código,
+
+00:01:50.333 --> 00:01:53.700
+não consegue encontrar o valor
+da variável quando tenta executá-la.
+
+00:01:54.000 --> 00:01:56.667
+Então ele cria uma exceção
+e interrompe o código.
+

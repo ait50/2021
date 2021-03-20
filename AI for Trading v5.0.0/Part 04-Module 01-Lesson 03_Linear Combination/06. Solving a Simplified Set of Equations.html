@@ -1,0 +1,762 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Solving a Simplified Set of Equations
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Linear Combination
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Linear Combination. Part 1.html">
+       01. Linear Combination. Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Linear Combination. Part 2.html">
+       02. Linear Combination. Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Linear Combination and Span.html">
+       03. Linear Combination and Span
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Linear Combination -Quiz 1.html">
+       04. Linear Combination -Quiz 1
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Linear Dependency .html">
+       05. Linear Dependency
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Solving a Simplified Set of Equations.html">
+       06. Solving a Simplified Set of Equations
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Linear Combination - Quiz 2.html">
+       07. Linear Combination - Quiz 2
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Linear Combination - Quiz 3.html">
+       08. Linear Combination - Quiz 3
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Solving a Simplified Set of Equations
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="solving-a-simplified-set-of-equations">
+          Solving a Simplified Set of Equations
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          A linear combination of vector by scalars brings us to our next important topic:
+          <br/>
+          <strong>
+           A system of Linear Equations
+          </strong>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          In this Linear Algebra lesson we will dive only into a system of two linear equations with two unknowns.
+         </p>
+         <p>
+          In a broader Linear Algebra class you will find
+          <a href="https://en.wikipedia.org/wiki/System_of_linear_equations" rel="noopener noreferrer" target="_blank">
+           more information
+          </a>
+          about a system of
+          <span class="mathquill ud-math">
+           n
+          </span>
+          linear equations, where
+          <span class="mathquill ud-math">
+           n
+          </span>
+          can be any number.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Assume that we have two vectors:
+         </p>
+         <ul>
+          <li>
+           <p>
+            <span class="mathquill ud-math">
+             \vec{x}=\begin{bmatrix} -14\\2\end{bmatrix}
+            </span>
+           </p>
+          </li>
+          <li>
+           <p>
+            <span class="mathquill ud-math">
+             \vec{y}=\begin{bmatrix} 5\\-1\end{bmatrix}
+            </span>
+           </p>
+          </li>
+         </ul>
+         <p>
+          and we would like to represent a new vector:
+          <br/>
+          <span class="mathquill ud-math">
+           \begin{bmatrix} -13\\3\end{bmatrix}
+          </span>
+          as a linear combination of
+          <span class="mathquill ud-math">
+           \vec{x}
+          </span>
+          and
+          <br/>
+          <span class="mathquill ud-math">
+           \vec{y}
+          </span>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          In other words, we are looking for a two scalars, lets call them
+          <span class="mathquill ud-math">
+           a
+          </span>
+          and
+          <span class="mathquill ud-math">
+           b
+          </span>
+          , that will hold the following equation:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <span class="mathquill ud-math">
+           a\begin{bmatrix} -14\\2\end{bmatrix}+b\begin{bmatrix} 5\\-1\end{bmatrix}=\begin{bmatrix} -13\\3\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          <em>
+           Equation  9
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          We now know how to multiply a vector by a scalar, so lets do that:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix} (-14)a\\2a\end{bmatrix}+\begin{bmatrix} 5b\\(-1)b\end{bmatrix}=\begin{bmatrix} -13\\3\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          <em>
+           Equation 10
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The equation above will give us two separate equations:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-01-26-at-10.16.48-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The Above set of equations is referred to in literature as a
+          <em>
+           set of two equations with two unknowns
+          </em>
+          .
+         </p>
+         <p>
+          This set can be solved using three theoretical methods:
+         </p>
+         <ul>
+          <li>
+           Graphical method
+          </li>
+          <li>
+           Substitution method
+          </li>
+          <li>
+           Elimination method
+          </li>
+         </ul>
+         <p>
+          We will go through all methods here.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           Graphical solution:
+          </strong>
+         </p>
+         <p>
+          Draw both lines (linear plots) and find the intersection.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The intersection is the solution to
+          <span class="mathquill ud-math">
+           (a,b)
+          </span>
+          as it is the only point on both lines. Or, in other words, it is the only point that satisfied both equations.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-01-26-at-11.05.49-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          We can clearly see that:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           a= -0.5
+          </span>
+         </p>
+         <p>
+          and
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           b= -4
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           Substitution:
+          </strong>
+         </p>
+         <p>
+          Isolate a variable from one of the equations and substitute it in the second.
+         </p>
+         <p>
+          This method will reduce our system of equations to a single equation with a single unknown.
+         </p>
+         <p>
+          In our example:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          (1)
+          <span class="mathquill ud-math">
+           -14a+5b=-13
+          </span>
+         </p>
+         <p>
+          (2)
+          <span class="mathquill ud-math">
+           2a-b=3
+          </span>
+         </p>
+         <p>
+          from (1)
+          <span class="mathquill ud-math">
+           2a-b=3\Rightarrow b=2a-3
+          </span>
+         </p>
+         <p>
+          Substitute b in equation (2)
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           -14a+5(2a-3)=-13
+          </span>
+          and solve for
+          <span class="mathquill ud-math">
+           a
+          </span>
+          .
+         </p>
+         <p>
+          Simple algebra will result in
+          <span class="mathquill ud-math">
+           a=-0.5
+          </span>
+         </p>
+         <p>
+          Substitute
+          <span class="mathquill ud-math">
+           a
+          </span>
+          in equation (1) or (2) above and you will find that
+          <span class="mathquill ud-math">
+           b=-4
+          </span>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           Elimination:
+          </strong>
+         </p>
+         <p>
+          In this method we will eliminate one of the variables, by enforcing the same absolute value to one of the scalars (or coefficients) .
+         </p>
+         <p>
+          Let's look at the equations again:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-01-26-at-11.16.45-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          If we multiply equation 2 by 5 we will have the following set of equations:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-01-26-at-11.21.42-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          (Notice the the absolute value of the scalar multiplying
+          <span class="mathquill ud-math">
+           b
+          </span>
+          , the coefficient of
+          <span class="mathquill ud-math">
+           b
+          </span>
+          , is 5 on both equations).
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Now let's add them up.
+         </p>
+         <p>
+          We will have the following single equation with a single unknown:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           -4a+0b=2
+          </span>
+         </p>
+         <p>
+          or:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           -4a=2\Rightarrow a=-0.5
+          </span>
+         </p>
+         <p>
+          Substitute
+          <span class="mathquill ud-math">
+           a
+          </span>
+          in any of the equations and you will find that
+          <span class="mathquill ud-math">
+           b=-4
+          </span>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Final answer:
+         </p>
+         <p>
+          We found scalars
+          <span class="mathquill ud-math">
+           a
+          </span>
+          and
+          <span class="mathquill ud-math">
+           b
+          </span>
+          that represent vector
+          <br/>
+          <span class="mathquill ud-math">
+           \begin{bmatrix} -13\\3\end{bmatrix}
+          </span>
+          as a linear combination of
+          <span class="mathquill ud-math">
+           \vec{x}
+          </span>
+          and
+          <br/>
+          <span class="mathquill ud-math">
+           \vec{y}
+          </span>
+          .
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           a\begin{bmatrix} -14\\2\end{bmatrix}+b\begin{bmatrix} 5\\-1\end{bmatrix}=\begin{bmatrix} -13\\3\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          The single solution is:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           a=-0.5
+          </span>
+          and
+          <br/>
+          <span class="mathquill ud-math">
+           b=-4
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          In this example, one coefficient was positive and the other was negative. Ask yourself, what would you have done if they were both positive, or both negative?
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Let's think about another question:
+         </p>
+         <p>
+          Will a set of two linear equations with two unknowns always have a solution? And if so, will it always be a single solution?
+         </p>
+         <p>
+          The next set of quizzes will help us answer this question.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. Linear Combination - Quiz 2.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Solving a Simplified Set of Equations')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

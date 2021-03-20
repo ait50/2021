@@ -1,0 +1,373 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.133 --> 00:00:01.767
+"NÃO HÁ TEORIA MAIS BÁSICA DO QUE
+A ÁLGEBRA LINEAR,
+
+00:00:01.801 --> 00:00:03.601
+EMBORA GERAÇÕES
+DE PROFESSORES E LIVROS
+
+00:00:03.634 --> 00:00:05.434
+TENHAM OCULTADO
+SUA SIMPLICIDADE
+
+00:00:05.467 --> 00:00:07.200
+COM CÁLCULOS ABSURDOS
+COM MATRIZES."
+
+00:00:07.534 --> 00:00:08.734
+Oi, pessoal.
+
+00:00:08.767 --> 00:00:12.033
+Estou animado com os próximos
+vídeos que estou fazendo.
+
+00:00:12.067 --> 00:00:15.200
+Serão sobre álgebra linear
+que, como você sabe,
+
+00:00:15.234 --> 00:00:19.667
+é uma das matérias exigidas para
+qualquer disciplina técnica.
+
+00:00:19.701 --> 00:00:22.767
+Mas eu também notei
+que é pouco compreendida
+
+00:00:22.801 --> 00:00:25.334
+por alunos que a aprendem
+pela primeira vez.
+
+00:00:25.367 --> 00:00:28.267
+Um aluno pode fazer uma aula
+e aprender a calcular coisas,
+
+00:00:28.300 --> 00:00:30.033
+como multiplicação
+de matrizes,
+
+00:00:30.067 --> 00:00:31.634
+ou o determinante,
+
+00:00:31.667 --> 00:00:34.267
+ou produtos vetoriais,
+que usam o determinante,
+
+00:00:34.300 --> 00:00:36.267
+ou valores próprios.
+
+00:00:36.300 --> 00:00:38.701
+Mas ele pode sair da aula
+sem entender
+
+00:00:38.734 --> 00:00:42.200
+por que a multiplicação de
+matrizes é definida dessa forma,
+
+00:00:42.234 --> 00:00:45.367
+por que o produto vetorial tem
+algo a ver com o determinante,
+
+00:00:45.400 --> 00:00:48.234
+e o que um valor próprio
+realmente representa.
+
+00:00:48.267 --> 00:00:50.434
+Muitas vezes,
+os alunos sabem fazer bem
+
+00:00:50.467 --> 00:00:52.534
+as operações numéricas
+das matrizes,
+
+00:00:52.567 --> 00:00:55.267
+mas estão pouco cientes
+das intuições geométricas
+
+00:00:55.300 --> 00:00:56.767
+por trás disso tudo.
+
+00:00:56.834 --> 00:00:58.234
+Há uma diferença básica
+
+00:00:58.267 --> 00:01:01.100
+entre entender álgebra linear
+em nível numérico
+
+00:01:01.133 --> 00:01:03.400
+e entendê-la
+em um nível geométrico.
+
+00:01:03.434 --> 00:01:06.067
+Cada um tem o seu lugar
+mas, de modo simplificado,
+
+00:01:06.100 --> 00:01:08.701
+o entendimento geométrico
+é o que faz você decidir
+
+00:01:08.734 --> 00:01:11.567
+que ferramentas usar para
+solucionar certos problemas,
+
+00:01:11.601 --> 00:01:15.367
+sentir por que elas funcionam
+e interpretar os resultados.
+
+00:01:15.400 --> 00:01:16.767
+E o entendimento numérico
+
+00:01:16.801 --> 00:01:21.000
+é o que faz você pôr
+em prática essas ferramentas.
+
+00:01:21.067 --> 00:01:24.467
+Se você aprender álgebra linear
+sem uma base sólida
+
+00:01:24.501 --> 00:01:26.467
+dessa
+compreensão geométrica,
+
+00:01:26.501 --> 00:01:28.601
+os problemas podem passar
+despercebidos por um tempo,
+
+00:01:28.634 --> 00:01:31.801
+até você ir mais fundo
+na área que quer trabalhar.
+
+00:01:31.834 --> 00:01:34.501
+Quando estiver numa aula
+ou em um emprego
+
+00:01:34.534 --> 00:01:36.767
+que necessite fluência
+em álgebra linear,
+
+00:01:36.801 --> 00:01:40.467
+o modo como seus professores ou
+colegas colocam isso em prática
+
+00:01:40.501 --> 00:01:42.133
+pode parecer mágica.
+
+00:01:42.167 --> 00:01:44.634
+Eles saberão logo
+qual ferramenta usar
+
+00:01:44.667 --> 00:01:46.767
+e terão ideia da resposta
+
+00:01:46.801 --> 00:01:49.434
+de um modo que parecerá
+magia computacional
+
+00:01:49.467 --> 00:01:52.701
+se imaginar que estão calculando
+todos os números de cabeça.
+
+00:01:53.467 --> 00:01:55.100
+Aqui, por exemplo.
+
+00:01:55.133 --> 00:01:58.767
+Imagine quando você aprendeu
+a função seno em trigonometria.
+
+00:01:58.801 --> 00:02:01.400
+Você viu
+esse polinômio infinito.
+
+00:02:01.434 --> 00:02:05.367
+É assim que a sua calculadora
+avalia a função seno.
+
+00:02:05.400 --> 00:02:07.601
+Como lição de casa,
+você teria que calcular
+
+00:02:07.634 --> 00:02:09.601
+aproximações dessa função
+
+00:02:09.634 --> 00:02:11.567
+ao colocar diversos números
+na fórmula
+
+00:02:11.601 --> 00:02:14.067
+e a tirá-los
+em determinado momento.
+
+00:02:14.501 --> 00:02:16.601
+Digamos
+que você tivesse uma ideia
+
+00:02:16.634 --> 00:02:18.834
+de que isso tinha a ver
+com triângulos,
+
+00:02:19.000 --> 00:02:21.300
+mas como isso acontecia
+nunca foi claro
+
+00:02:21.334 --> 00:02:23.767
+e não era o foco do curso.
+
+00:02:23.801 --> 00:02:26.000
+Depois,
+em um curso de física,
+
+00:02:26.033 --> 00:02:28.567
+quando senos e cossenos
+eram usados por toda parte,
+
+00:02:28.601 --> 00:02:31.667
+e as pessoas sabiam dizer
+como aplicá-los
+
+00:02:31.701 --> 00:02:34.567
+e qual seria o seno aproximado
+de um certo valor,
+
+00:02:34.601 --> 00:02:37.167
+você ficava bem intimidado,
+não ficava?
+
+00:02:37.200 --> 00:02:40.234
+É como se as únicas pessoas
+boas em física
+
+00:02:40.267 --> 00:02:42.434
+fossem aquelas com computadores
+nos cérebros,
+
+00:02:42.467 --> 00:02:46.634
+e você se sentia tonto por levar
+tanto tempo em cada problema.
+
+00:02:46.667 --> 00:02:48.701
+Não é tão diferente
+na álgebra linear.
+
+00:02:48.734 --> 00:02:51.601
+Felizmente,
+assim como em trigonometria,
+
+00:02:51.634 --> 00:02:54.434
+há diversas intuições,
+intuições visuais,
+
+00:02:54.467 --> 00:02:56.300
+subjacentes ao assunto.
+
+00:02:56.334 --> 00:02:57.734
+E, ao contrário
+da trigonometria,
+
+00:02:57.767 --> 00:03:01.601
+a conexão entre o cálculo
+e essas intuições visuais
+
+00:03:01.634 --> 00:03:03.701
+é bem simples.
+
+00:03:03.734 --> 00:03:05.267
+Quando você digere isso
+
+00:03:05.300 --> 00:03:08.834
+e entende a relação
+entre a geometria e os números,
+
+00:03:08.901 --> 00:03:12.400
+os detalhes do assunto,
+assim como a sua prática,
+
+00:03:12.434 --> 00:03:14.501
+passam a ser
+mais aceitáveis.
+
+00:03:15.067 --> 00:03:17.100
+Para ser justo, a maioria
+dos professores tentam
+
+00:03:17.133 --> 00:03:19.100
+ensinar esse
+entendimento geométrico.
+
+00:03:19.167 --> 00:03:21.100
+O exemplo do seno
+é meio extremo.
+
+00:03:21.133 --> 00:03:25.334
+Mas eu acho que muitos cursos
+fazem alunos passar tempo demais
+
+00:03:25.367 --> 00:03:27.267
+no lado numérico das coisas,
+
+00:03:27.300 --> 00:03:32.100
+ainda mais porque hoje os
+computadores fazem essa parte,
+
+00:03:32.133 --> 00:03:35.334
+enquanto, na prática, os humanos
+se preocupam com o conceito.
+
+00:03:35.801 --> 00:03:38.033
+Isso me leva
+aos próximos vídeos.
+
+00:03:38.067 --> 00:03:40.467
+O objetivo é criar
+uma série curta
+
+00:03:40.501 --> 00:03:42.267
+ilustrando essas intuições,
+
+00:03:42.300 --> 00:03:45.300
+desde a base dos vetores
+até os tópicos fundamentais
+
+00:03:45.334 --> 00:03:47.734
+que formam
+a essência da álgebra linear.
+
+00:03:47.767 --> 00:03:50.133
+Farei o possível
+para manter um ritmo bom,
+
+00:03:50.167 --> 00:03:54.133
+mas é difícil levar em conta
+o que cada pessoa sabe
+
+00:03:54.167 --> 00:03:55.434
+e suas zonas de conforto.
+
+00:03:55.467 --> 00:03:58.033
+Então eu encorajo você
+a pausar e ponderar,
+
+00:03:58.067 --> 00:03:59.734
+caso ache necessário.
+
+00:03:59.767 --> 00:04:02.767
+Na verdade, dou essa dica para
+qualquer vídeo de matemática,
+
+00:04:02.801 --> 00:04:04.501
+mesmo que pareça meio lento,
+
+00:04:04.534 --> 00:04:07.133
+já que o raciocínio
+que você faz no seu tempo
+
+00:04:07.167 --> 00:04:09.734
+é quando o aprendizado acontece,
+não acha?
+
+00:04:09.767 --> 00:04:12.801
+Com essa introdução,
+vejo você no próximo vídeo.
+

@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.165
+Congratulations on completing this lesson on functions.
+
+00:00:04.165 --> 00:00:07.724
+You learned about functions, variable scope,
+
+00:00:07.724 --> 00:00:13.439
+documentation, lambda expressions, iterators, and generators.
+
+00:00:13.439 --> 00:00:15.989
+Next, you'll learn how to write scripts in
+
+00:00:15.990 --> 00:00:19.765
+local environments with many functions pieced together.
+
+00:00:19.765 --> 00:00:21.355
+That's a lot of stuff.
+
+00:00:21.355 --> 00:00:24.089
+It's okay if you haven't mastered everything yet.
+
+00:00:24.089 --> 00:00:27.855
+You've already accomplished a ton by getting this far.
+
+00:00:27.855 --> 00:00:31.000
+We'll practice more of these concepts in the next lesson.
+

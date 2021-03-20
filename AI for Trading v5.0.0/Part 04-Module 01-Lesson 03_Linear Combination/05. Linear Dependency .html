@@ -1,0 +1,372 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Linear Dependency
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Linear Combination
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Linear Combination. Part 1.html">
+       01. Linear Combination. Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Linear Combination. Part 2.html">
+       02. Linear Combination. Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Linear Combination and Span.html">
+       03. Linear Combination and Span
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Linear Combination -Quiz 1.html">
+       04. Linear Combination -Quiz 1
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Linear Dependency .html">
+       05. Linear Dependency
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Solving a Simplified Set of Equations.html">
+       06. Solving a Simplified Set of Equations
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Linear Combination - Quiz 2.html">
+       07. Linear Combination - Quiz 2
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Linear Combination - Quiz 3.html">
+       08. Linear Combination - Quiz 3
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Linear Dependency
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="linear-dependency">
+          Linear Dependency
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Lets look again at two of the vectors we saw in the previous quiz:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <ul>
+          <li>
+           <p>
+            <span class="mathquill ud-math">
+             \vec{v_2}=\begin{bmatrix} 2\\ 2\\ 2\end{bmatrix}
+            </span>
+           </p>
+           <ul>
+            <li>
+             <span class="mathquill ud-math">
+              \vec{v_3}=\begin{bmatrix} 8\\ 8\\ 8\end{bmatrix}
+             </span>
+            </li>
+           </ul>
+          </li>
+         </ul>
+         <p>
+          We stated that one vector can be derived from the other by a simple mathematical linear combination.
+         </p>
+         <p>
+          For example:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           4\vec{v_2} =\vec{v_3}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          When one vector
+          <strong>
+           can
+          </strong>
+          be defined as a linear combination of the other vectors, they are a set of
+          <strong>
+           linearly dependent
+          </strong>
+          vectors.
+         </p>
+         <p>
+          When each vector in a set of vectors  vector
+          <strong>
+           can not
+          </strong>
+          be defined as a linear combination of the other vectors, they are a set of
+          <strong>
+           linearly independent
+          </strong>
+          vectors.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          In our example,
+         </p>
+         <ul>
+          <li>
+           <p>
+            {
+            <span class="mathquill ud-math">
+             \vec{v_2}
+            </span>
+            ,
+            <span class="mathquill ud-math">
+             \vec{v_3}
+            </span>
+            } is a linearly dependent set
+           </p>
+          </li>
+          <li>
+           <p>
+            {
+            <span class="mathquill ud-math">
+             \vec{v_1}
+            </span>
+            ,
+            <span class="mathquill ud-math">
+             \vec{v_2}
+            </span>
+            } is a linearly independent set
+           </p>
+          </li>
+         </ul>
+         <p>
+          and
+         </p>
+         <ul>
+          <li>
+           {
+           <span class="mathquill ud-math">
+            \vec{v_1}
+           </span>
+           ,
+           <span class="mathquill ud-math">
+            \vec{v_3}
+           </span>
+           } is a linearly independent set
+          </li>
+         </ul>
+         <p>
+          (
+          <span class="mathquill ud-math">
+           \vec{v_1}
+          </span>
+          is defined in the previous quiz as:
+          <span class="mathquill ud-math">
+           \begin{bmatrix} 1\\ 2\\ 3\end{bmatrix}
+          </span>
+          )
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The easiest way to know if a set of vectors is linear dependent or not, is with the use of
+          <strong>
+           determinants
+          </strong>
+          .
+          <br/>
+          Determinants are beyond the scope of our Linear Algebra Essentials and we will not focus on that.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Solving a Simplified Set of Equations.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Linear Dependency ')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

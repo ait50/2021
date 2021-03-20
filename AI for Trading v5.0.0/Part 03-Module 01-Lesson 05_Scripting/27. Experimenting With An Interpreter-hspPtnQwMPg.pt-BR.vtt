@@ -1,0 +1,226 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.100 --> 00:00:02.833
+Se abrirmos o terminal
+e digitarmos "Python",
+
+00:00:02.867 --> 00:00:05.233
+veremos algo assim.
+
+00:00:05.267 --> 00:00:08.433
+Este é o intérprete interativo
+do Python.
+
+00:00:08.467 --> 00:00:11.800
+Podemos digitar para interagir
+diretamente com o Python.
+
+00:00:11.833 --> 00:00:14.267
+Basta digitar o código,
+dar enter,
+
+00:00:14.301 --> 00:00:17.500
+e o resultado aparecerá
+na linha seguinte.
+
+00:00:17.534 --> 00:00:19.467
+Este é um bom lugar
+para experimentar
+
+00:00:19.500 --> 00:00:22.500
+partes de códigos Python.
+
+00:00:22.534 --> 00:00:26.433
+Perceba que não precisei imprimir
+o tipo para ver o resultado.
+
+00:00:26.467 --> 00:00:29.633
+No intérprete,
+o valor da última linha do "prompt"
+
+00:00:29.667 --> 00:00:31.800
+será dado automaticamente.
+
+00:00:31.833 --> 00:00:34.967
+Se quisermos obter
+valores de saída de várias linhas,
+
+00:00:35.001 --> 00:00:37.000
+ainda assim usaríamos
+a impressão.
+
+00:00:37.034 --> 00:00:39.033
+Ao começar a definir
+uma função,
+
+00:00:39.900 --> 00:00:41.867
+veremos uma alteração
+no "prompt"
+
+00:00:41.901 --> 00:00:45.067
+significando que esta
+é uma linha de continuação.
+
+00:00:45.100 --> 00:00:49.033
+É preciso incluir a indentação
+ao definir a função.
+
+00:00:49.900 --> 00:00:51.613
+Uma desvantagem
+do intérprete
+
+00:00:51.647 --> 00:00:53.833
+é a dificuldade
+de adicionar códigos.
+
+00:00:53.867 --> 00:00:56.233
+Se cometemos um erro
+ao digitar a função
+
+00:00:56.267 --> 00:00:58.833
+ou nos esquecemos
+de indentar o corpo da função,
+
+00:00:58.867 --> 00:01:02.433
+não podemos utilizar o mouse
+para levar o cursor até o local.
+
+00:01:02.467 --> 00:01:04.800
+É preciso navegar
+com as setas do teclado
+
+00:01:04.833 --> 00:01:07.967
+para mover o cursor
+para frente e para trás na linha,
+
+00:01:08.000 --> 00:01:09.300
+para editar.
+
+00:01:09.333 --> 00:01:13.800
+Será útil aprender atalhos
+para ações como ir ao início
+
+00:01:13.833 --> 00:01:15.700
+ou fim da linha.
+
+00:01:15.733 --> 00:01:19.133
+Podemos referenciar qualquer objeto
+definido anteriormente
+
+00:01:19.167 --> 00:01:20.833
+no intérprete.
+
+00:01:22.767 --> 00:01:25.867
+Um truque é utilizar
+as setas para cima e para baixo
+
+00:01:25.900 --> 00:01:29.867
+para visualizar os comandos recentes
+no prompt interativo.
+
+00:01:29.900 --> 00:01:31.700
+Isso é útil
+para rodar novamente
+
+00:01:31.733 --> 00:01:34.367
+ou para adaptar
+um código que foi utilizado.
+
+00:01:34.400 --> 00:01:36.833
+Para sair do intérprete
+interativo do Python,
+
+00:01:36.867 --> 00:01:39.733
+utilize o comando "exit"
+com parênteses,
+
+00:01:40.367 --> 00:01:43.133
+pressione Ctrl+D
+no Mac ou Linux
+
+00:01:43.167 --> 00:01:46.267
+ou Ctrl+Z e Enter
+no Windows.
+
+00:01:47.000 --> 00:01:49.367
+Existe uma alternativa
+muito boa
+
+00:01:49.400 --> 00:01:52.700
+para o intérprete Python padrão,
+o IPython,
+
+00:01:52.733 --> 00:01:54.900
+que vem com muitos
+recursos adicionais,
+
+00:01:55.600 --> 00:01:58.967
+como o preenchimento tab,
+que completa palavras
+
+00:01:59.001 --> 00:02:02.733
+ou exibe opções disponíveis,
+se houver mais de uma.
+
+00:02:02.767 --> 00:02:05.533
+Isso é útil para quando
+queremos ver quais métodos
+
+00:02:05.567 --> 00:02:07.467
+estão disponíveis
+para um objeto.
+
+00:02:07.501 --> 00:02:09.667
+Outro truque é este
+ponto de interrogação
+
+00:02:09.700 --> 00:02:12.600
+para obter detalhes
+de um objeto em particular.
+
+00:02:12.634 --> 00:02:14.833
+Podemos ver
+o que a função faz
+
+00:02:14.867 --> 00:02:17.333
+sem precisar procurar
+na documentação.
+
+00:02:17.367 --> 00:02:19.700
+Podemos executar
+comandos do sistema
+
+00:02:19.733 --> 00:02:21.700
+utilizando
+um ponto de exclamação,
+
+00:02:21.733 --> 00:02:24.567
+sendo que alguns comuns
+não exigem isso.
+
+00:02:26.100 --> 00:02:29.433
+Podemos ver mais sobre IPython
+nas anotações.
+
+00:02:29.467 --> 00:02:31.833
+Utilizar um intérprete
+pode ser muito útil
+
+00:02:31.867 --> 00:02:34.733
+para experimentar e testar
+o código Python.
+
+00:02:34.767 --> 00:02:38.033
+Isso não é necessariamente
+só para experimentação.
+
+00:02:38.067 --> 00:02:41.000
+Eu também utilizo
+quando quero investigar
+
+00:02:41.033 --> 00:02:43.200
+arquivos modificados
+utilizando o Python.
+

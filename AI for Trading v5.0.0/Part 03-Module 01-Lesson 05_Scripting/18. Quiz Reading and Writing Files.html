@@ -1,0 +1,614 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: Reading and Writing Files
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Scripting
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Python Installation.html">
+       02. Python Installation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Install Python Using Anaconda.html">
+       03. Install Python Using Anaconda
+      </a>
+     </li>
+     <li class="">
+      <a href="04. [For Windows] Configuring Git Bash to Run Python.html">
+       04. [For Windows] Configuring Git Bash to Run Python
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Running a Python Script.html">
+       05. Running a Python Script
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Programming Environment Setup.html">
+       06. Programming Environment Setup
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Editing a Python Script.html">
+       07. Editing a Python Script
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Scripting with Raw Input.html">
+       08. Scripting with Raw Input
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Scripting with Raw Input.html">
+       09. Quiz: Scripting with Raw Input
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Solution Scripting with Raw Input.html">
+       10. Solution: Scripting with Raw Input
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Errors and Exceptions.html">
+       11. Errors and Exceptions
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Errors and Exceptions.html">
+       12. Errors and Exceptions
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Handling Errors.html">
+       13. Handling Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Practice Handling Input Errors.html">
+       14. Practice: Handling Input Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Handling Input Errors.html">
+       15. Solution: Handling Input Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Accessing Error Messages.html">
+       16. Accessing Error Messages
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Reading and Writing Files.html">
+       17. Reading and Writing Files
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Quiz Reading and Writing Files.html">
+       18. Quiz: Reading and Writing Files
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Solution Reading and Writing Files.html">
+       19. Solution: Reading and Writing Files
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Importing Local Scripts.html">
+       20. Importing Local Scripts
+      </a>
+     </li>
+     <li class="">
+      <a href="21. The Standard Library.html">
+       21. The Standard Library
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Quiz The Standard Library.html">
+       22. Quiz: The Standard Library
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Solution The Standard Library.html">
+       23. Solution: The Standard Library
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Techniques for Importing Modules.html">
+       24. Techniques for Importing Modules
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Quiz Techniques for Importing Modules.html">
+       25. Quiz: Techniques for Importing Modules
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Third-Party Libraries.html">
+       26. Third-Party Libraries
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Experimenting with an Interpreter.html">
+       27. Experimenting with an Interpreter
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Online Resources.html">
+       28. Online Resources
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Conclusion.html">
+       29. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          18. Quiz: Reading and Writing Files
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="calling-the-read-method-with-an-integer">
+          Calling the
+          <code>
+           read
+          </code>
+          Method with an Integer
+         </h3>
+         <p>
+          In the code you saw earlier, the call to
+          <code>
+           f.read()
+          </code>
+          had no arguments passed to it. This defaults to reading all the remainder of the file from its current position - the whole file. If you pass the
+          <code>
+           read
+          </code>
+          method an integer argument, it will read up to that number of characters, output all of them, and keep the 'window' at that position ready to read on.
+         </p>
+         <p>
+          Let's see this in an example that uses the following file,
+          <code>
+           camelot.txt
+          </code>
+          :
+         </p>
+         <pre><code class="txt language-txt">We're the knights of the round table
+We dance whenever we're able</code></pre>
+         <p>
+          Here's a script that reads in the file a little at a time by passing an integer argument to
+          <code>
+           .read()
+          </code>
+          .
+         </p>
+         <pre><code class="python language-python">with open("camelot.txt") as song:
+    print(song.read(2))
+    print(song.read(8))
+    print(song.read())</code></pre>
+         <p>
+          Outputs:
+         </p>
+         <pre><code class="txt language-txt">We
+'re the 
+knights of the round table
+We dance whenever we're able</code></pre>
+         <p>
+          You can try out this example by creating your own
+          <code>
+           camelot.txt
+          </code>
+          and
+          <code>
+           example.py
+          </code>
+          files with the text above.
+         </p>
+         <p>
+          Each time we called
+          <code>
+           read
+          </code>
+          on the file with an integer argument, it read up to that number of characters, outputted them, and kept the 'window' at that position for the next call to
+          <code>
+           read
+          </code>
+          . This makes moving around in the open file a little tricky, as there aren't many landmarks to navigate by.
+         </p>
+         <h3 id="reading-line-by-line">
+          Reading Line by Line
+         </h3>
+         <p>
+          <code>
+           \n
+          </code>
+          s in blocks of text are newline characters. The newline character marks the end of a line, and tells a program (such as a text editor) to go down to the next line. However, looking at the stream of characters in the file,
+          <code>
+           \n
+          </code>
+          is just another character.
+         </p>
+         <p>
+          Fortunately, Python knows that these are special characters and you can ask it to read one line at a time. Let's try it!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Read the next line
+         </p>
+        </h3>
+        <div>
+         <div>
+          <p>
+           <strong>
+            QUESTION:
+           </strong>
+           <p>
+            Use the
+            <a href="https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files" rel="noopener noreferrer" target="_blank">
+             relevant part of the Python documentation
+            </a>
+            to find a method that reads the next line of a file. Put the name of the method in the box.
+           </p>
+          </p>
+          <div class="" form-group"="">
+           <label for="answer">
+            <strong>
+             ANSWER:
+            </strong>
+           </label>
+           <textarea class="form-control" id="answer"></textarea>
+          </div>
+         </div>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <p>
+           <i>
+            NOTE: The solutions are expressed in RegEx pattern. Udacity uses these patterns to check the given answer
+           </i>
+          </p>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Conveniently, Python will loop over the lines of a file using the syntax
+          <code>
+           for line in file
+          </code>
+          .
+          <br/>
+          I can use this to create a list of lines in the file. Because each line still has its newline character attached, I remove this using
+          <code>
+           .strip()
+          </code>
+          .
+         </p>
+         <pre><code class="python language-python">camelot_lines = []
+with open("camelot.txt") as f:
+    for line in f:
+        camelot_lines.append(line.strip())
+
+print(camelot_lines)</code></pre>
+         <p>
+          Outputs:
+         </p>
+         <pre><code class="txt language-txt">["We're the knights of the round table", "We dance whenever we're able"]</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-flying-circus-cast-list">
+          Quiz: Flying Circus Cast List
+         </h1>
+         <p>
+          You're going to create a list of the actors who appeared in the television programme Monty Python's Flying Circus.
+         </p>
+         <p>
+          Write a function called
+          <code>
+           create_cast_list
+          </code>
+          that takes a filename as input and returns a list of actors' names.
+          <br/>
+          It will be run on the file
+          <code>
+           flying_circus_cast.txt
+          </code>
+          (this information was collected from imdb.com). Each line of that file consists of an actor's name, a comma, and then some (messy) information about roles they played in the programme. You'll need to extract
+          <em>
+           only
+          </em>
+          the name and add it to a list. You might use the
+          <a href="https://docs.python.org/3/library/stdtypes.html#str.split" rel="noopener noreferrer" target="_blank">
+           <code>
+            .split()
+           </code>
+           method
+          </a>
+          to process each line.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="521284-cast_list-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#521284-cast_list-py" id="tab-521284-cast_list-py" role="tab">
+            cast_list.py
+           </a>
+           <a aria-controls="521284-flying_circus_cast-txt" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#521284-flying_circus_cast-txt" id="tab-521284-flying_circus_cast-txt" role="tab">
+            flying_circus_cast.txt
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-521284-cast_list-py" class="tab-pane active show" id="521284-cast_list-py" role="tabpanel">
+            <pre><code></code>def create_cast_list(filename):
+    cast_list = []
+    #use with to open the file filename
+    #use the for loop syntax to process each line
+    #and add the actor name to cast_list
+
+    return cast_list
+
+cast_list = create_cast_list('flying_circus_cast.txt')
+for actor in cast_list:
+    print(actor)</pre>
+           </div>
+           <div aria-labelledby="tab-521284-flying_circus_cast-txt" class="tab-pane" id="521284-flying_circus_cast-txt" role="tabpanel">
+            <pre><code></code>Graham Chapman,  Various / ... (46 episodes, 1969-1974)
+Eric Idle,  Various / ... (46 episodes, 1969-1974)
+Terry Jones,  Various / ... (46 episodes, 1969-1974)
+Michael Palin,  It's Man / ... (46 episodes, 1969-1974)
+Terry Gilliam,  Various / ... (46 episodes, 1969-1974)
+John Cleese,  Announcer / ... (40 episodes, 1969-1973)
+Carol Cleveland,  Various / ... (34 episodes, 1969-1974)
+Ian Davidson,  Algy Braithwaite / ... (8 episodes, 1969-1970)
+John Hughman,  Alfred Lord Tennyson / ... (8 episodes, 1970-1974)
+The Fred Tomlinson Singers,  Amantillado Chorus / ... (7 episodes, 1969-1973)
+Connie Booth,  Animated Mother / ... (6 episodes, 1969-1974)
+Bob Raymond,  'Dad' / ... (5 episodes, 1974)
+Lyn Ashley,  Algon Girl / ... (5 episodes, 1970-1972)
+Rita Davies,  Argument Secretary / ... (4 episodes, 1969-1972)
+Stanley Mason,  Clapper Man / ... (4 episodes, 1970-1971)
+David Ballantyne,  Ivan the Terrible / ... (3 episodes, 1970-1971)
+Donna Reading,  Girl in Bikini with Its Man / ... (3 episodes, 1969)
+Peter Brett,  Door-to-Door Martial Arts Salesman (2 episodes, 1974)
+Maureen Flanagan,  Anona Winn / ... (2 episodes, 1969-1970)
+Katya Wyeth,  Elsie / ... (2 episodes, 1969)
+Frank Lester,  The Late Professor Thynne (2 episodes, 1972-1974)
+Neil Innes,  Hesitant guitarist / ... (2 episodes, 1974)
+Dick Vosburgh,  Van der Berg (1 episode, 1969)
+Sandra Richards,  'Semprini' Girl / ... (1 episode, 1970)
+Julia Breck,  Puss In Boots / ... (1 episode, 1972)
+Nicki Howorth,  Miss Bladder (1 episode, 1972)
+Jimmy Hill,  Himself (1 episode, 1974)
+Barry Cryer,  Herman Rodrigues (1 episode, 1969)
+Jeannette Wild,  Second Secretary (1 episode, 1970)
+Marjorie Wilde,  Dear Old Lady (1 episode, 1970)
+Marie Anderson,  Girl interviewing the announcer (1 episode, 1972)
+Caron Gardner,  Mary (1 episode, 1973)
+Nosher Powell,  Jack Bodell (1 episode, 1973)
+Carolae Donoghue,  Vera's Husband's Mistress (1 episode, 1969)
+Vincent Wong,  Mr. Kamikaze (1 episode, 1970)
+Helena Clayton,  Various Roles (1 episode, 1971)
+Nigel Jones,  Various (1 episode, 1972)
+Roy Gunson, (1 episode, 1970)
+Daphne Davey,  Various Roles (1 episode, 1971)
+Stenson Falke, (1 episode, 1974)
+Alexander Curry,  Various (1 episode, 1970)
+Frank Williams,  Clerk of the Court (1 episode, 1972)
+Ralph Wood, (1 episode, 1970)
+Rosalind Bailey,  Elizabethan Girl (1 episode, 1972)
+Marion Mould, (1 episode, 1974)
+Sheila Sands,  Stripper / ... (uncredited) (2 episodes, 1969)
+Richard Baker,  Himself - BBC News Anchor (uncredited) (3 episodes, 1972-1973)
+Douglas Adams,  Dr. Emile Koning - Surgeon / ... (uncredited) (2 episodes, 1974)
+Ewa Aulin,  Harrassed Woman (uncredited) (1 episode, 1969)
+Reginald Bosanquet,  Himself (uncredited) (1 episode, 1970)
+Barbara Lindley,  Bride (uncredited) (1 episode, 1970)
+Roy Brent,  Armoured Knight (uncredited) (1 episode, 1972)
+Jonas Card,  Armoured Knight (uncredited) (1 episode, 1972)
+Tony Christopher,  Armoured Knight (uncredited) (1 episode, 1972)
+Beulah Hughes, (uncredited) (1 episode, 1972)
+Peter Kodak,  Armoured Knight (uncredited) (1 episode, 1972)
+Lulu,  Herself (uncredited) (1 episode, 1972)
+Jay Neill,  Armoured Knight (uncredited) (1 episode, 1972)
+Graham Skidmore,  Armoured Knight (uncredited) (1 episode, 1972)
+Ringo Starr,  Himself (uncredited) (1 episode, 1972)
+Fred Tomlinson,  Superintendent McGough (uncredited) (1 episode, 1972)
+David Hamilton,  Himself - Thames TV Announcer (uncredited) (1 episode, 1973)
+Suzy Mandel,  German Girl (uncredited) (1 episode, 1974)
+Peter Woods,  BBC Presenter (uncredited) (1 episode, 1974)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="19. Solution Reading and Writing Files.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('18. Quiz: Reading and Writing Files')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

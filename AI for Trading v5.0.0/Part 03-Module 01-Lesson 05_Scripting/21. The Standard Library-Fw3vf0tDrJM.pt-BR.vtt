@@ -1,0 +1,171 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:04.333
+Você viu como seria útil importar
+seus próprios módulos.
+
+00:00:04.700 --> 00:00:07.733
+Mas e se eu te dissesse
+que havia uma biblioteca inteira
+
+00:00:07.767 --> 00:00:10.800
+de módulos integrados
+que só vêm com o Python?
+
+00:00:11.133 --> 00:00:13.467
+Esta é a biblioteca padrão
+do Python.
+
+00:00:14.133 --> 00:00:17.967
+Até aqui você viu objetos integrados
+que usamos durante o curso,
+
+00:00:18.567 --> 00:00:22.133
+como funções integradas,
+tipos de dados e exceções.
+
+00:00:22.667 --> 00:00:26.767
+Além desses, há muitos módulos úteis
+que você pode importar.
+
+00:00:27.300 --> 00:00:28.400
+Pense nessa biblioteca
+
+00:00:28.434 --> 00:00:30.433
+como um conjunto muito grande
+de ferramentas
+
+00:00:30.467 --> 00:00:33.433
+que você pode usar para ajudá-lo
+a programar em Python.
+
+00:00:33.933 --> 00:00:37.000
+Elas fornecem novos tipos de objetos
+e funções
+
+00:00:37.034 --> 00:00:39.800
+para muitas tarefas comuns
+e específicas.
+
+00:00:40.367 --> 00:00:42.933
+Outras pessoas já escreveram
+esse código
+
+00:00:43.133 --> 00:00:46.067
+e colocaram em módulos úteis
+para você usar.
+
+00:00:46.767 --> 00:00:49.667
+Usar os módulos da biblioteca padrão
+do Python
+
+00:00:49.933 --> 00:00:52.800
+para acessar e usar com facilidade
+o código existente
+
+00:00:52.834 --> 00:00:55.100
+dá muito poder
+à programação.
+
+00:00:55.667 --> 00:00:58.933
+A biblioteca padrão do Python
+é organizada em módulos.
+
+00:00:59.800 --> 00:01:02.267
+Muitos módulos são simplesmente
+arquivos Python,
+
+00:01:02.301 --> 00:01:05.633
+como os scripts Python
+que você já escreveu e importou.
+
+00:01:06.100 --> 00:01:08.233
+Vamos importar
+este módulo de matemática.
+
+00:01:09.067 --> 00:01:12.733
+Novamente, uma instrução "import"
+executa o código no módulo.
+
+00:01:13.133 --> 00:01:15.900
+Os módulos geralmente
+contêm muitas definições
+
+00:01:16.233 --> 00:01:18.400
+e não mostram
+qualquer saída.
+
+00:01:18.967 --> 00:01:21.700
+A execução do código fará
+com que todas as funções
+
+00:01:21.734 --> 00:01:24.767
+e tipos de objetos dos módulos
+estejam disponíveis para uso.
+
+00:01:24.801 --> 00:01:28.867
+"Math" tem uma função fatorial,
+que encontra o produto de um número
+
+00:01:28.901 --> 00:01:31.300
+e todos os inteiros positivos
+menores que ele.
+
+00:01:32.100 --> 00:01:35.533
+Quatro vezes três, vezes dois,
+vezes um é igual a 24,
+
+00:01:36.067 --> 00:01:39.000
+então "math.factorial (4)"
+exibe "24".
+
+00:01:39.600 --> 00:01:42.700
+A biblioteca padrão do Python
+tem uma documentação boa
+
+00:01:42.734 --> 00:01:44.400
+para cada um
+dos seus módulos,
+
+00:01:44.434 --> 00:01:48.433
+e é uma boa ideia ler a página
+relevante sempre que você usa um.
+
+00:01:49.233 --> 00:01:51.900
+Temos aqui a documentação
+para o módulo de matemática.
+
+00:01:52.333 --> 00:01:56.367
+Até agora, você viu apenas um módulo
+na biblioteca padrão do Python.
+
+00:01:56.900 --> 00:01:59.667
+É um módulo bom,
+porém há muitos.
+
+00:02:00.000 --> 00:02:01.800
+Se você estudar
+a documentação
+
+00:02:01.834 --> 00:02:04.200
+de toda a biblioteca padrão
+do Python,
+
+00:02:04.867 --> 00:02:08.100
+verá os módulos listados em grupos
+com base no uso.
+
+00:02:08.433 --> 00:02:12.067
+Clicar em um nome leva você
+à documentação desse módulo,
+
+00:02:12.367 --> 00:02:14.400
+que geralmente inclui
+um código de exemplo
+
+00:02:14.434 --> 00:02:16.367
+que você pode testar
+à vontade.
+

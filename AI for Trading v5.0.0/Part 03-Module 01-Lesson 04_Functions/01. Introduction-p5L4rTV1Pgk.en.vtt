@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.480 --> 00:00:03.940
+Welcome to this lesson on functions.
+
+00:00:03.940 --> 00:00:07.574
+Previously, we used several of Python's built-in functions.
+
+00:00:07.575 --> 00:00:10.900
+Here, we will write functions of our own.
+
+00:00:10.900 --> 00:00:16.199
+Functions are useful chunks of code that allow you to encapsulate a task.
+
+00:00:16.199 --> 00:00:22.239
+Encapsulation is a way to carry out a whole series of steps with one simple command.
+
+00:00:22.239 --> 00:00:25.269
+For example, imagine you want to bake a cake.
+
+00:00:25.269 --> 00:00:26.949
+You would need to buy the ingredients,
+
+00:00:26.949 --> 00:00:31.004
+mix them together in a certain way for specific amounts of time,
+
+00:00:31.004 --> 00:00:33.894
+put it all in the oven, and then let it cool.
+
+00:00:33.895 --> 00:00:36.475
+In computer programming, functions
+
+00:00:36.475 --> 00:00:40.840
+encapsulate all the steps of a process into one command.
+
+00:00:40.840 --> 00:00:42.655
+In this case, we might just have
+
+00:00:42.655 --> 00:00:47.875
+a bake cake function and throw all of these directions into this one function.
+
+00:00:47.875 --> 00:00:50.409
+Now any, time you want to bake a cake,
+
+00:00:50.409 --> 00:00:54.969
+we just use this function without worrying about all the specifics.
+
+00:00:54.969 --> 00:01:00.039
+Functions are also used to help organize and optimize code. Let's get started.
+

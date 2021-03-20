@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.980
+There are many ways to setup
+
+00:00:01.980 --> 00:00:06.914
+a programming environment and there isn't a right or wrong way to go about it.
+
+00:00:06.915 --> 00:00:10.724
+However, if you're just starting out programming in Python,
+
+00:00:10.724 --> 00:00:14.550
+you might like to see this setup to get some ideas.
+
+00:00:14.550 --> 00:00:16.519
+Over here is a text editor.
+
+00:00:16.519 --> 00:00:19.390
+This particular editor is called atom.
+
+00:00:19.390 --> 00:00:23.440
+But there are many additional editors I recommend in the notes below.
+
+00:00:23.440 --> 00:00:27.145
+A text editor is really different from a word processor,
+
+00:00:27.144 --> 00:00:28.917
+so don't mix them up.
+
+00:00:28.917 --> 00:00:33.189
+Code needs to be written line-by-line with intentional line breaks and
+
+00:00:33.189 --> 00:00:38.004
+indentations that fundamentally change how the code is read and run.
+
+00:00:38.005 --> 00:00:39.820
+Good text editors have
+
+00:00:39.820 --> 00:00:45.159
+simple but vital features such as line numbers and syntax highlighting.
+
+00:00:45.159 --> 00:00:49.000
+You can see the different ways atom highlights a text based on
+
+00:00:49.000 --> 00:00:52.965
+the types of words and objects it recognizes from the Python language.
+
+00:00:52.965 --> 00:00:57.740
+Syntax highlighting really helps make code more readable and organized.
+
+00:00:57.740 --> 00:01:01.483
+It can also prevent us from making some syntax errors.
+
+00:01:01.482 --> 00:01:05.149
+For example, if I forgot a quote at the end of the string,
+
+00:01:05.150 --> 00:01:09.395
+I'll know I missed it when the rest of the line is highlighted like a string.
+
+00:01:09.394 --> 00:01:11.659
+Atom knows to use syntax highlighting for
+
+00:01:11.659 --> 00:01:15.734
+Python because of this.py at the end of the file name.
+
+00:01:15.734 --> 00:01:19.000
+This tells atom it's dealing with a Python file.
+
+00:01:19.000 --> 00:01:22.719
+Editors are highly customizable to suit your style.
+
+00:01:22.719 --> 00:01:27.609
+One setting that I use is soft tabs with the top length of four.
+
+00:01:27.609 --> 00:01:31.930
+Which means that when I press tab it is converted into four spaces.
+
+00:01:31.930 --> 00:01:34.495
+You can also add cool add-ons.
+
+00:01:34.495 --> 00:01:36.355
+Like this Python linter,
+
+00:01:36.355 --> 00:01:39.910
+that uses Pylint to point out helpful things in my code.
+
+00:01:39.909 --> 00:01:42.189
+For example, in this line,
+
+00:01:42.189 --> 00:01:45.909
+pylint gives me a warning because I'm not following
+
+00:01:45.909 --> 00:01:49.989
+PEP 8 guidelines by including a space before my closing bracket.
+
+00:01:49.989 --> 00:01:54.750
+I also have this cool add-on which let's me use my terminal in my editor.
+
+00:01:54.750 --> 00:01:58.349
+Atom isn't the only thing on my screen right now.
+
+00:01:58.349 --> 00:02:01.439
+I do use this terminal add-on from time to time but
+
+00:02:01.439 --> 00:02:06.719
+generally I like to have a separate window for my terminal where I can run my scripts.
+
+00:02:06.719 --> 00:02:10.830
+Generally, I can't write a whole lot of code in one go because
+
+00:02:10.830 --> 00:02:14.862
+something will go wrong and I'll need to find the issue and debug it.
+
+00:02:14.861 --> 00:02:18.060
+When there's an error it will show up here when I run the script.
+
+00:02:18.060 --> 00:02:20.280
+I make small changes to the code in
+
+00:02:20.280 --> 00:02:23.759
+a text editor and then run the script again to see the output.
+
+00:02:23.759 --> 00:02:29.134
+If I see a problem I'll try to fix it or if things seem to be working I'll move on.
+
+00:02:29.134 --> 00:02:34.519
+I've also got the Udacity classroom and results from a question I googled in my browser.
+
+00:02:34.520 --> 00:02:38.344
+Normally, I'll need a browser open to look up documentation
+
+00:02:38.344 --> 00:02:42.367
+or search for the solution to a bug I encounter along the way.
+
+00:02:42.367 --> 00:02:46.460
+From now on, we recommend that you try out all your code in this way.
+
+00:02:46.460 --> 00:02:52.250
+Put code into a new file in your text editor and don't forget the.py extension.
+
+00:02:52.250 --> 00:02:57.000
+Make sure you're in the correct directory in your terminal and then run your script.
+

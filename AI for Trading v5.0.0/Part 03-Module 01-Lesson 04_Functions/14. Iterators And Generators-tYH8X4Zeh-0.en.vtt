@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.860 --> 00:00:04.200
+If you recall from the previous lesson,
+
+00:00:04.200 --> 00:00:09.500
+iterables are objects that can return one of its elements at a time.
+
+00:00:09.500 --> 00:00:13.559
+Lists are one of the most common iterables you have used.
+
+00:00:13.560 --> 00:00:17.519
+It turns out many of the built-in functions we've used so far,
+
+00:00:17.519 --> 00:00:22.567
+such as enumerate, returns something called an iterator.
+
+00:00:22.568 --> 00:00:26.964
+An iterator is an object that represents a stream of data.
+
+00:00:26.963 --> 00:00:30.449
+This is different from a list which is also an iterable
+
+00:00:30.449 --> 00:00:34.950
+but not an iterator since it is not a stream of data.
+
+00:00:34.950 --> 00:00:41.322
+Soon, you'll see some reasons that iterators are favored in different situations.
+
+00:00:41.322 --> 00:00:46.155
+Here we will learn how to create iterators using generators.
+
+00:00:46.155 --> 00:00:51.030
+Generators are a simple way to create iterators using functions.
+
+00:00:51.030 --> 00:00:54.539
+However, it's not the only way to create iterators.
+
+00:00:54.539 --> 00:00:57.539
+You can read more about this in the notes below.
+
+00:00:57.539 --> 00:01:00.710
+These terms may be a little confusing.
+
+00:01:00.710 --> 00:01:05.055
+The term generator is often used to refer to the generator function,
+
+00:01:05.055 --> 00:01:09.935
+but it's also used to refer to the iterator object produced by the function.
+
+00:01:09.935 --> 00:01:15.954
+Here I'll differentiate these by referring to the function as a generator function,
+
+00:01:15.954 --> 00:01:19.015
+and what it produces as the iterator.
+
+00:01:19.015 --> 00:01:23.200
+Here is a generator function called 'my range' that
+
+00:01:23.200 --> 00:01:27.640
+produces a stream of numbers from zero to x minus one.
+
+00:01:27.640 --> 00:01:33.334
+Notice that instead of using the return keyword, this uses yield.
+
+00:01:33.334 --> 00:01:37.045
+This allows the function to return values one at a time
+
+00:01:37.045 --> 00:01:41.481
+and start where it left off each time it's called.
+
+00:01:41.481 --> 00:01:47.530
+This yield keyword is what differentiates a generator from a typical function.
+
+00:01:47.530 --> 00:01:48.795
+As you can see here,
+
+00:01:48.795 --> 00:01:55.454
+calling my range four returns an iterator that we can then iterate through.
+
+00:01:55.454 --> 00:01:56.760
+Using a for loop,
+
+00:01:56.760 --> 00:01:59.520
+we can print values from this stream of data.
+
+00:01:59.519 --> 00:02:04.590
+Here this prints zero, one, two and three.
+
+00:02:04.590 --> 00:02:06.314
+In the next section,
+
+00:02:06.314 --> 00:02:10.710
+you'll get some practice writing generator functions to create your own iterators
+

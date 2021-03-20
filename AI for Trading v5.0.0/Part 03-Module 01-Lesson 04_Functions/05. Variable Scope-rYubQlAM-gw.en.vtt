@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.660 --> 00:00:10.539
+Scope refers to which parts of a program a variable can be referenced or used from.
+
+00:00:10.539 --> 00:00:13.959
+If a variable is created inside a function,
+
+00:00:13.960 --> 00:00:17.390
+it can only be used within that function.
+
+00:00:17.390 --> 00:00:19.330
+Consider these two functions,
+
+00:00:19.329 --> 00:00:22.389
+word count and nearest square.
+
+00:00:22.390 --> 00:00:27.300
+The first function uses answer to count words in a document.
+
+00:00:27.300 --> 00:00:33.674
+The second function uses answer to check values while searching for the nearest square.
+
+00:00:33.674 --> 00:00:36.714
+Both functions include this answer variable,
+
+00:00:36.715 --> 00:00:39.100
+but they are distinct variables that can
+
+00:00:39.100 --> 00:00:43.115
+only be referenced within their respective functions.
+
+00:00:43.115 --> 00:00:48.445
+Alternatively, we might have a variable defined outside of functions, like this.
+
+00:00:48.445 --> 00:00:53.625
+And we can access it anywhere outside or within these functions.
+
+00:00:53.625 --> 00:00:58.975
+Scope is essential to understanding how information is passed throughout programs,
+
+00:00:58.975 --> 00:01:02.000
+in Python, and really any programming language.
+

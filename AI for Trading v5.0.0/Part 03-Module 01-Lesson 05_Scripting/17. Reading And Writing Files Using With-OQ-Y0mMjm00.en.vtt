@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.169
+It could be easy to forget to close a file when you're done using it.
+
+00:00:04.169 --> 00:00:08.214
+So Python provides a special syntax that auto closes it.
+
+00:00:08.214 --> 00:00:11.605
+This with keyword allows you to open a file,
+
+00:00:11.605 --> 00:00:13.394
+do operations on it,
+
+00:00:13.394 --> 00:00:17.960
+and automatically close it after the indented code is executed,
+
+00:00:17.960 --> 00:00:20.549
+in this case, reading from the file.
+
+00:00:20.550 --> 00:00:23.505
+Now, we don't have to call f.close.
+
+00:00:23.504 --> 00:00:26.309
+This code, as f assigns
+
+00:00:26.309 --> 00:00:30.524
+the file object created by the open function to the variable name,
+
+00:00:30.524 --> 00:00:34.964
+f. This line of code is basically this line of code,
+
+00:00:34.965 --> 00:00:37.990
+except you can only access the file object,
+
+00:00:37.990 --> 00:00:40.275
+f within this block.
+
+00:00:40.274 --> 00:00:42.339
+This is another kind of scope.
+
+00:00:42.340 --> 00:00:44.265
+Once you leave this indented block,
+
+00:00:44.265 --> 00:00:48.594
+the file is closed and you are no longer able to interact with it.
+
+00:00:48.594 --> 00:00:55.394
+For example, trying to call f.read outside this block like this would return an error.
+
+00:00:55.395 --> 00:01:00.210
+However, just because you closed the file doesn't mean you lose the data.
+
+00:01:00.210 --> 00:01:03.750
+Here, we read in the file in this line and get
+
+00:01:03.750 --> 00:01:07.844
+this file data string that has the text contained in the file.
+
+00:01:07.844 --> 00:01:11.174
+Calling file data outside the block works fine.
+
+00:01:11.174 --> 00:01:17.000
+We can use all the usual string methods on this file data string to process its contents.
+

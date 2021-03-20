@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.955
+If you open your terminal and type python,
+
+00:00:02.955 --> 00:00:04.950
+you should see something like this.
+
+00:00:04.950 --> 00:00:08.464
+This is the python interactive interpreter.
+
+00:00:08.464 --> 00:00:11.935
+You can type here to interact with Python directly.
+
+00:00:11.935 --> 00:00:13.394
+You just type your code,
+
+00:00:13.394 --> 00:00:17.634
+press enter and the output will appear on the following line.
+
+00:00:17.635 --> 00:00:22.080
+This is a good place to experiment and try bits of Python code at a time.
+
+00:00:22.079 --> 00:00:26.234
+Notice here, I didn't have to print the type to see the output.
+
+00:00:26.234 --> 00:00:28.875
+In the interpreter, the value of the last line
+
+00:00:28.875 --> 00:00:31.695
+in a prompt will be outputted automatically.
+
+00:00:31.695 --> 00:00:35.210
+If you had multiple lines where you'd want output values,
+
+00:00:35.210 --> 00:00:36.825
+you'd still have to print.
+
+00:00:36.825 --> 00:00:39.495
+If you start to define a function,
+
+00:00:39.494 --> 00:00:45.155
+you will see a change in the prompt to signify that this is a continuation line.
+
+00:00:45.155 --> 00:00:50.024
+You'll have to include your own indentation as you defined the function.
+
+00:00:50.024 --> 00:00:53.699
+A drawback of the interpreter is that it's tricky to edit code.
+
+00:00:53.700 --> 00:00:55.410
+If you made a mistake when typing
+
+00:00:55.409 --> 00:00:58.439
+this function or forgot to indent the body of the function,
+
+00:00:58.439 --> 00:01:02.085
+you can't use a mouse to click your cursor where you want it.
+
+00:01:02.085 --> 00:01:05.250
+You have to navigate with the arrow keys to move
+
+00:01:05.250 --> 00:01:09.254
+the cursor forwards and backwards to the line itself for editing.
+
+00:01:09.254 --> 00:01:11.969
+It would be helpful for you to learn useful shortcuts
+
+00:01:11.969 --> 00:01:15.474
+for actions like moving to the beginning or end of the line.
+
+00:01:15.474 --> 00:01:21.454
+Notice, I can reference any objects I defined earlier in the interpreter.
+
+00:01:21.454 --> 00:01:25.875
+One useful trick is using the up and down arrow
+
+00:01:25.875 --> 00:01:29.545
+to cycle through your recent commands at the interactive prompt.
+
+00:01:29.545 --> 00:01:34.599
+This can be useful to rerun or adapt code you've already tried.
+
+00:01:34.599 --> 00:01:37.114
+To quit the python interactive interpreter,
+
+00:01:37.114 --> 00:01:41.280
+use the command exit with parentheses or hit control
+
+00:01:41.280 --> 00:01:46.379
+D on mac or linux or control Z and enter for Windows.
+
+00:01:46.379 --> 00:01:51.579
+There's actually a really good alternative to the default python interpreter.
+
+00:01:51.579 --> 00:01:55.900
+IPython which comes as many additional features like
+
+00:01:55.900 --> 00:01:58.675
+tab completion which completes words for you
+
+00:01:58.674 --> 00:02:02.590
+or shows what options are available if there are multiple.
+
+00:02:02.590 --> 00:02:07.570
+This can be useful if you want to see what methods are available for an object.
+
+00:02:07.569 --> 00:02:12.715
+Another useful check is this question mark to get details about a particular object.
+
+00:02:12.720 --> 00:02:17.400
+I can quickly see what this function does without looking up the documentation.
+
+00:02:17.400 --> 00:02:20.100
+You can also execute system shell commands using
+
+00:02:20.100 --> 00:02:26.040
+an exclamation point and some common ones don't even require it.
+
+00:02:26.050 --> 00:02:29.590
+You can learn more about IPython in the notes below.
+
+00:02:29.590 --> 00:02:35.045
+Using an interpreter can be really helpful for experimenting and testing python code.
+
+00:02:35.044 --> 00:02:38.134
+Those not necessarily just for experimentation.
+
+00:02:38.134 --> 00:02:40.479
+I also used an interpreter when I want to quickly
+
+00:02:40.479 --> 00:02:43.000
+investigate or modify files using Python.
+

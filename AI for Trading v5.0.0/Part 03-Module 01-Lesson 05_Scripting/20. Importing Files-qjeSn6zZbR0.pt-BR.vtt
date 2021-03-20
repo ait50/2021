@@ -1,0 +1,372 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.333 --> 00:00:02.867
+Além de ler dados
+dos arquivos,
+
+00:00:03.367 --> 00:00:06.833
+podemos importar o código Python
+de outros scripts.
+
+00:00:07.233 --> 00:00:11.067
+Isto é muito útil se você estiver
+trabalhando em um projeto maior
+
+00:00:11.400 --> 00:00:14.633
+onde quer organizar seu código
+em vários arquivos
+
+00:00:14.933 --> 00:00:17.100
+e reutilizar o código
+nesses arquivos.
+
+00:00:17.433 --> 00:00:19.467
+Se o script Python
+que você quer importar
+
+00:00:19.501 --> 00:00:22.100
+estiver no mesmo diretório
+que o seu script atual,
+
+00:00:22.633 --> 00:00:24.100
+você digita "import",
+
+00:00:24.134 --> 00:00:27.967
+seguido do nome do arquivo
+sem a extensão ".py".
+
+00:00:28.400 --> 00:00:31.933
+As instruções "import" são escritas
+na parte superior do script Python,
+
+00:00:31.967 --> 00:00:33.900
+cada uma
+em uma linha separada.
+
+00:00:34.133 --> 00:00:36.600
+O Python ainda será executado
+se as instruções "import"
+
+00:00:36.634 --> 00:00:38.533
+forem incluídas mais tarde
+no script,
+
+00:00:38.567 --> 00:00:41.833
+mas é prática comum
+elas sempre estarem no topo.
+
+00:00:42.133 --> 00:00:45.667
+Você só pode acessar o que importou
+após essa instrução,
+
+00:00:46.000 --> 00:00:48.667
+é menos confuso escrever
+elas primeiro.
+
+00:00:49.000 --> 00:00:52.233
+Também é bom para os leitores
+ver do que um script depende
+
+00:00:52.267 --> 00:00:54.500
+antes de ler
+o resto do código.
+
+00:00:54.733 --> 00:00:57.067
+Vamos começar
+com um exemplo muito simples.
+
+00:00:57.267 --> 00:01:01.033
+Aqui eu tenho um arquivo Python
+chamado "other_script.py"
+
+00:01:01.300 --> 00:01:03.500
+que só exibe "2+3".
+
+00:01:03.867 --> 00:01:06.167
+Neste arquivo, "demo.py",
+
+00:01:06.433 --> 00:01:09.200
+eu importei "other_script"
+e então exibi quatro.
+
+00:01:09.467 --> 00:01:11.633
+Quando executamos "demo.py",
+
+00:01:12.133 --> 00:01:14.033
+esta instrução "import"
+diz ao Python
+
+00:01:14.067 --> 00:01:17.500
+para executar o código
+desse arquivo que exibe "5".
+
+00:01:18.033 --> 00:01:20.467
+Ele então continua a executar
+o resto do código
+
+00:01:20.501 --> 00:01:22.167
+neste arquivo que exibe "4".
+
+00:01:22.600 --> 00:01:26.667
+Se em vez disso este arquivo
+tivesse a linha "num=2+3"
+
+00:01:27.567 --> 00:01:30.333
+e tentássemos acessar isso
+no "demo.py",
+
+00:01:31.167 --> 00:01:35.167
+referenciá-lo apenas com o nome
+da variável retornaria um erro.
+
+00:01:35.633 --> 00:01:38.367
+Para acessar objetos
+em "other_script.py",
+
+00:01:38.667 --> 00:01:42.067
+precisamos usar o nome do arquivo
+seguido de um ponto,
+
+00:01:42.333 --> 00:01:44.767
+seguido pelo objeto
+para dizer ao Python
+
+00:01:44.801 --> 00:01:48.433
+para procurar esse objeto no arquivo
+"other_script" que importamos.
+
+00:01:48.767 --> 00:01:51.533
+Agora ele acessa
+as variáveis com sucesso.
+
+00:01:51.733 --> 00:01:53.433
+Quando o Python
+executa o script,
+
+00:01:53.467 --> 00:01:57.167
+ele só tem acesso direto
+aos objetos definidos no script.
+
+00:01:57.500 --> 00:02:00.267
+Um desses objetos é um módulo
+chamado "other_script".
+
+00:02:00.467 --> 00:02:02.100
+O módulo é apenas um arquivo
+
+00:02:02.134 --> 00:02:04.267
+com definições e instruções
+do Python.
+
+00:02:04.667 --> 00:02:06.900
+Quando importamos um arquivo Python
+como esse,
+
+00:02:07.267 --> 00:02:09.400
+ele cria um objeto chamado
+"other_script"
+
+00:02:09.434 --> 00:02:11.000
+com um módulo de tipo.
+
+00:02:11.367 --> 00:02:14.933
+Vamos ver um exemplo mais útil
+de importação de módulo.
+
+00:02:15.267 --> 00:02:18.800
+Aqui, temos um arquivo Python
+que contém funções úteis
+
+00:02:18.834 --> 00:02:20.300
+que gostaríamos de usar.
+
+00:02:20.334 --> 00:02:22.567
+Uma que retorna
+a média de uma lista
+
+00:02:22.800 --> 00:02:25.767
+e uma que adiciona cinco
+a cada elemento de uma lista.
+
+00:02:25.801 --> 00:02:28.400
+Podemos importá-las
+para "demo.py",
+
+00:02:28.800 --> 00:02:32.600
+e digitar "useful_functions" ponto
+o nome da função para usá-las.
+
+00:02:32.867 --> 00:02:35.100
+Você pode imaginar
+que isso seria muito útil
+
+00:02:35.433 --> 00:02:38.967
+se tivéssemos muitas funções usadas
+em muitos arquivos diferentes.
+
+00:02:39.001 --> 00:02:42.167
+Embora pareça um pouco chato
+ter que digitar
+
+00:02:42.201 --> 00:02:43.867
+o nome inteiro do arquivo
+
+00:02:44.067 --> 00:02:46.433
+sempre que queremos usar
+uma função a partir dele,
+
+00:02:46.467 --> 00:02:49.433
+podemos simplificar isso
+adicionando um apelido.
+
+00:02:49.867 --> 00:02:53.733
+Aqui criei um apelido para o módulo
+"useful_function": " UF".
+
+00:02:54.033 --> 00:02:57.533
+Agora posso digitar "UF"
+em vez do nome inteiro do módulo
+
+00:02:57.567 --> 00:02:59.267
+ao chamar funções
+a partir dele.
+
+00:02:59.700 --> 00:03:02.600
+Isso é útil quando temos objetos
+que queremos importar
+
+00:03:02.634 --> 00:03:05.067
+de outros scripts Python,
+como funções.
+
+00:03:05.101 --> 00:03:08.567
+Mas e se esse script também incluir
+instruções executáveis,
+
+00:03:08.601 --> 00:03:12.133
+além de definições de funções
+que não queremos importar?
+
+00:03:12.700 --> 00:03:17.900
+Por exemplo, e se "use_functions.py"
+tiver um código no final do script
+
+00:03:18.200 --> 00:03:20.700
+que testa suas funções
+e exibe os resultados?
+
+00:03:21.267 --> 00:03:24.633
+Esse código é bom se executarmos
+"useful_functions.py"
+
+00:03:24.667 --> 00:03:26.267
+para testar essas funções,
+
+00:03:27.033 --> 00:03:29.133
+mas desnecessário se estamos
+apenas tentando
+
+00:03:29.167 --> 00:03:31.200
+usar essas funções
+em outro script.
+
+00:03:31.767 --> 00:03:35.433
+Aqui podemos usar essa instrução
+se o nome permanecer igual.
+
+00:03:36.267 --> 00:03:38.500
+Ao incluir
+essas instruções executáveis
+
+00:03:38.534 --> 00:03:40.500
+dentro do bloco "main",
+
+00:03:40.767 --> 00:03:43.067
+dizemos ao Python para executar
+esse código
+
+00:03:43.367 --> 00:03:46.167
+somente quando o programa "main"
+que está sendo executado
+
+00:03:46.201 --> 00:03:48.567
+é "useful_functions.py".
+
+00:03:48.601 --> 00:03:50.233
+Se executarmos esse arquivo,
+
+00:03:50.267 --> 00:03:52.733
+o código dentro desse bloco
+é executado.
+
+00:03:53.133 --> 00:03:55.333
+No entanto,
+se executamos outro script
+
+00:03:55.367 --> 00:03:58.033
+que só importou
+"useful_function.py",
+
+00:03:58.467 --> 00:04:00.133
+esse código não é executado.
+
+00:04:00.567 --> 00:04:03.967
+No geral, é uma boa prática
+escrever instruções executáveis
+
+00:04:04.001 --> 00:04:07.367
+dentro do bloco de nome "if" ou,
+de forma alternativa,
+
+00:04:07.401 --> 00:04:09.533
+incluí-las em uma função
+chamada "main"
+
+00:04:09.833 --> 00:04:11.833
+e chamá-las
+no bloco de nome "if".
+
+00:04:12.200 --> 00:04:13.633
+Você provavelmente
+está se perguntando
+
+00:04:13.667 --> 00:04:15.500
+o que são "name" e "main".
+
+00:04:15.867 --> 00:04:17.867
+Sempre que executamos
+um script como este,
+
+00:04:17.901 --> 00:04:20.967
+o Python realmente define
+uma variável especial integrada
+
+00:04:21.001 --> 00:04:26.267
+chamada "name" com dois underscore
+antes e depois para qualquer módulo.
+
+00:04:26.833 --> 00:04:30.000
+Aqui, já que executamos
+"demo.py" no Python,
+
+00:04:30.467 --> 00:04:34.000
+ele reconhece esse módulo
+como o programa principal
+
+00:04:34.267 --> 00:04:38.433
+e define a variável "name"
+deste módulo para a string "main".
+
+00:04:39.567 --> 00:04:42.300
+Para quaisquer módulos
+que sejam importantes no script,
+
+00:04:42.500 --> 00:04:44.100
+a variável integrada "name"
+
+00:04:44.134 --> 00:04:46.433
+é configurada apenas
+para o nome desse módulo.
+

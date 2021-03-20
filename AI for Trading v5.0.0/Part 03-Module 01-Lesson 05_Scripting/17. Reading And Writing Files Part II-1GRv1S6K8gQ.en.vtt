@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.889
+Let's see how we read information from a file into Python.
+
+00:00:04.889 --> 00:00:06.629
+To read from a file,
+
+00:00:06.629 --> 00:00:08.294
+we first need to open it,
+
+00:00:08.294 --> 00:00:12.240
+which we can accomplish with the built-in function open.
+
+00:00:12.240 --> 00:00:14.789
+We include a string with the path to
+
+00:00:14.789 --> 00:00:19.414
+the file along with any optional parameters we want to specify.
+
+00:00:19.414 --> 00:00:22.910
+The open function returns a file object which is
+
+00:00:22.910 --> 00:00:27.469
+a Python object through which Python interacts with the file itself.
+
+00:00:27.469 --> 00:00:31.714
+Here we assigned this file object to the variable f.
+
+00:00:31.714 --> 00:00:37.429
+This second optional parameter specifies the mode in which we open the file.
+
+00:00:37.429 --> 00:00:40.744
+In this case r, or read only.
+
+00:00:40.744 --> 00:00:44.976
+We are using this mode since we only want to read from the file.
+
+00:00:44.976 --> 00:00:47.554
+We don't want to change any of its contents.
+
+00:00:47.554 --> 00:00:51.530
+This parameter isn't really necessary for us to include here,
+
+00:00:51.530 --> 00:00:56.054
+though, since the mode defaults to read only if unspecified.
+
+00:00:56.054 --> 00:00:59.820
+Once we opened a file and created a file object,
+
+00:00:59.820 --> 00:01:04.140
+we can use the read method to access the contents of this file.
+
+00:01:04.140 --> 00:01:09.795
+This read method takes the text contained in a file and puts it into a string.
+
+00:01:09.795 --> 00:01:15.810
+Here we assign the string returned from this method into the variable file_data.
+
+00:01:15.810 --> 00:01:19.650
+When we are finished with the file f, we should close it.
+
+00:01:19.650 --> 00:01:23.850
+This will free up any system resources taken up by the file.
+
+00:01:23.849 --> 00:01:28.474
+Here's an example that uses this file, some_file.txt.
+
+00:01:28.474 --> 00:01:30.189
+It's important to remember
+
+00:01:30.189 --> 00:01:34.584
+to always close files we have opened once we no longer need them.
+
+00:01:34.584 --> 00:01:37.959
+If we open a lot of files without closing them,
+
+00:01:37.959 --> 00:01:43.059
+we can run out of file handles and we won't be able to open any new files.
+
+00:01:43.060 --> 00:01:46.150
+Exactly how many files you can open before
+
+00:01:46.150 --> 00:01:49.795
+running out of handles will depend on your operating system.
+
+00:01:49.795 --> 00:01:55.329
+To convince yourself, you can try running the following script in Python.
+
+00:01:55.329 --> 00:01:59.094
+At some point for a large enough number,
+
+00:01:59.094 --> 00:02:00.700
+you will receive an error.
+
+00:02:00.700 --> 00:02:05.170
+We can see that at 7164 open files,
+
+00:02:05.170 --> 00:02:09.865
+the system no longer had available resources to open any new files.
+
+00:02:09.865 --> 00:02:14.784
+To avoid this, it is always a good idea to close any files you no longer need.
+
+00:02:14.784 --> 00:02:19.569
+Opening a file object is like opening a window to look into a file.
+
+00:02:19.569 --> 00:02:21.144
+To be more precise,
+
+00:02:21.145 --> 00:02:23.350
+it's a window that's only one character
+
+00:02:23.349 --> 00:02:27.474
+wide and it always starts off at the very start of the file.
+
+00:02:27.474 --> 00:02:31.169
+This is very different from reading a book or a document,
+
+00:02:31.169 --> 00:02:34.309
+where you can look at multiple words or even pages at once.
+
+00:02:34.310 --> 00:02:38.840
+Think instead of the file as a long stream of characters.
+
+00:02:38.840 --> 00:02:43.205
+The file object can look at just one character at a time and order.
+
+00:02:43.205 --> 00:02:45.455
+In addition to reading from a file,
+
+00:02:45.455 --> 00:02:47.585
+you can also write to a file,
+
+00:02:47.585 --> 00:02:51.245
+in which case you will change the content of the file.
+
+00:02:51.245 --> 00:02:54.905
+To do so, you must open the file in writing mode.
+
+00:02:54.905 --> 00:02:58.340
+Be careful, once you open a file in writing mode,
+
+00:02:58.340 --> 00:03:02.224
+anything that it contained previously will be deleted.
+
+00:03:02.224 --> 00:03:07.074
+If you're interested in adding to an existing file without deleting its content,
+
+00:03:07.074 --> 00:03:09.539
+you should use append instead of write.
+
+00:03:09.539 --> 00:03:12.239
+You can visit the Python documentation for
+
+00:03:12.240 --> 00:03:16.170
+more information on the different modes in which you can open a file.
+
+00:03:16.169 --> 00:03:20.444
+Since we're in write mode and I don't want to delete what's in this file,
+
+00:03:20.444 --> 00:03:22.229
+let's use another one.
+
+00:03:22.229 --> 00:03:24.584
+If the file does not exist,
+
+00:03:24.585 --> 00:03:26.504
+Python will create it for you.
+
+00:03:26.504 --> 00:03:29.400
+We can now write to the file like this,
+
+00:03:29.400 --> 00:03:34.275
+and after we're done we will close it like good citizens.
+
+00:03:34.275 --> 00:03:41.000
+Here you can see that Python created another file which contains the text "Hello World!"
+

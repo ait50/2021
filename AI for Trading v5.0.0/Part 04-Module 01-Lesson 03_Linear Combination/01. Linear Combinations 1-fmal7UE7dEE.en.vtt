@@ -1,0 +1,244 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:11.289 --> 00:00:16.059
+In the last video, along with the ideas of vector addition and scalar multiplication,
+
+00:00:16.059 --> 00:00:17.984
+I described vector coordinates,
+
+00:00:17.984 --> 00:00:19.829
+where there's this back and forth between,
+
+00:00:19.829 --> 00:00:23.359
+for example, pairs of numbers and two-dimensional vectors.
+
+00:00:23.359 --> 00:00:27.234
+Now, I imagined the vector coordinates were already familiar to a lot of you,
+
+00:00:27.234 --> 00:00:30.375
+but there's another kind of interesting way to think about these coordinates,
+
+00:00:30.375 --> 00:00:32.454
+which is pretty central to linear algebra.
+
+00:00:32.454 --> 00:00:35.405
+When you have a pair of numbers that's meant to describe a vector,
+
+00:00:35.405 --> 00:00:37.370
+like three negative two,
+
+00:00:37.369 --> 00:00:40.500
+I want you to think about each coordinate as a scalar.
+
+00:00:40.500 --> 00:00:44.810
+Meaning, think about how each one stretches or squishes vectors.
+
+00:00:44.810 --> 00:00:46.725
+In the x, y coordinate system,
+
+00:00:46.725 --> 00:00:48.745
+there are two very special vectors,
+
+00:00:48.744 --> 00:00:51.004
+the one pointing to the right with length one,
+
+00:00:51.005 --> 00:00:54.710
+commonly called i hat or the unit vector in the x-direction,
+
+00:00:54.710 --> 00:00:57.310
+and the one pointing straight up with length one,
+
+00:00:57.310 --> 00:01:01.795
+commonly called j hat or the univector in the y-direction.
+
+00:01:01.795 --> 00:01:06.784
+Now, think of the x-coordinate of our vector as a scalar that scales i hat,
+
+00:01:06.784 --> 00:01:12.004
+stretching it by a factor of three and the y-coordinate as a scalar that scales j hat,
+
+00:01:12.004 --> 00:01:14.584
+flipping it and stretching it by a factor of two.
+
+00:01:14.584 --> 00:01:17.299
+In this sense, the vector that these coordinates
+
+00:01:17.299 --> 00:01:20.730
+describe is the sum of two scaled vectors.
+
+00:01:20.730 --> 00:01:22.770
+That's a surprisingly important concept,
+
+00:01:22.769 --> 00:01:26.454
+this idea of adding together two scaled vectors.
+
+00:01:26.454 --> 00:01:29.170
+Those two vectors, i hat and j hat,
+
+00:01:29.170 --> 00:01:30.644
+have a special name by the way.
+
+00:01:30.644 --> 00:01:33.905
+Together, they're called the basis of a coordinate system.
+
+00:01:33.905 --> 00:01:38.000
+What this means basically is that when you think about coordinates as scalars,
+
+00:01:38.000 --> 00:01:42.060
+the basis vectors are what those scalars actually scale.
+
+00:01:42.060 --> 00:01:44.344
+There's also a more technical definition,
+
+00:01:44.344 --> 00:01:46.579
+but I'll get to that later.
+
+00:01:46.590 --> 00:01:51.585
+By framing our coordinate system in terms of these two special basis vectors,
+
+00:01:51.584 --> 00:01:54.149
+it raises a pretty interesting and subtle point.
+
+00:01:54.150 --> 00:01:57.460
+We could have chosen different basis vectors and gotten
+
+00:01:57.459 --> 00:02:00.829
+a completely reasonable new coordinate system.
+
+00:02:00.829 --> 00:02:03.409
+For example, take some vector pointing up and to
+
+00:02:03.409 --> 00:02:07.254
+the right along with some other vector pointing down and to the right in some way.
+
+00:02:07.254 --> 00:02:09.930
+Take a moment to think about all the different vectors that
+
+00:02:09.930 --> 00:02:12.640
+you can get by choosing two scalars,
+
+00:02:12.639 --> 00:02:15.424
+using each one to scale one of the vectors,
+
+00:02:15.425 --> 00:02:17.450
+then adding together what you get.
+
+00:02:17.449 --> 00:02:22.549
+Which two-dimensional vectors can you reach by altering the choices of scalars?
+
+00:02:23.710 --> 00:02:28.295
+The answer is that you can reach every possible two-dimensional vector.
+
+00:02:28.294 --> 00:02:31.399
+And I think it's a good puzzle to contemplate why.
+
+00:02:31.400 --> 00:02:35.860
+A new pair of bases vectors like this still gives us a valid way to
+
+00:02:35.860 --> 00:02:39.630
+go back and forth between pairs of numbers and two-dimensional vectors,
+
+00:02:39.629 --> 00:02:42.710
+but the association is definitely different from the one that you
+
+00:02:42.710 --> 00:02:46.030
+get using the more standard basis of i hat and j hat.
+
+00:02:46.030 --> 00:02:48.759
+That anytime we described vectors numerically,
+
+00:02:48.759 --> 00:02:52.834
+it depends on an implicit choice of what basis vectors we're using.
+
+00:02:52.835 --> 00:02:56.534
+So, anytime that you're scaling two vectors and adding them like this,
+
+00:02:56.534 --> 00:03:00.710
+it's called a linear combination of those two vectors.
+
+00:03:01.300 --> 00:03:03.640
+Where does this word linear come from?
+
+00:03:03.639 --> 00:03:05.579
+Why does this have anything to do with lines?
+
+00:03:05.580 --> 00:03:07.155
+Well, this isn't the etymology,
+
+00:03:07.155 --> 00:03:10.000
+but one way I like to think about it is that if you fix one
+
+00:03:10.000 --> 00:03:13.125
+of those scalars and let the other one change its value freely,
+
+00:03:13.125 --> 00:03:17.490
+the tip of the resulting vector draws a straight line.
+
+00:03:19.020 --> 00:03:21.760
+Now, if you let both scalars range
+
+00:03:21.759 --> 00:03:24.995
+freely and consider every possible vector that you can get,
+
+00:03:24.995 --> 00:03:26.860
+there are two things that can happen.
+
+00:03:26.860 --> 00:03:28.555
+For most pairs of vectors,
+
+00:03:28.555 --> 00:03:31.254
+you'll be able to reach every possible point in the plane.
+
+00:03:31.254 --> 00:03:34.144
+Every two-dimensional vector is within your grasp.
+
+00:03:34.145 --> 00:03:38.330
+However, in the unlucky case where your two original vectors happen to line up,
+
+00:03:38.330 --> 00:03:40.820
+the tip of the resulting vector is limited
+
+00:03:40.819 --> 00:03:44.094
+to just the single line passing through the origin.
+
+00:03:44.094 --> 00:03:47.189
+Actually, technically, there's a third possibility too,
+
+00:03:47.189 --> 00:03:51.710
+both your vectors could be zero in which case you'd just be stuck at the origin.
+
+00:03:51.710 --> 00:03:53.590
+Here's some more terminology.
+
+00:03:53.590 --> 00:03:57.840
+The set of all possible vectors that you can reach with a linear combination of
+
+00:03:57.840 --> 00:04:02.879
+a given pair of vectors is called the span of those two vectors.
+
+00:04:04.490 --> 00:04:07.765
+So, restating what we just saw in this lingo,
+
+00:04:07.764 --> 00:04:11.934
+the span of most pairs of 2D vectors is all vectors of 2D space.
+
+00:04:11.935 --> 00:04:17.350
+But when they line up, their span is all vectors whose tip sits on a certain line.
+
+00:04:17.350 --> 00:04:19.805
+Remember how I said that linear algebra
+
+00:04:19.805 --> 00:04:22.800
+revolves around vector addition and scalar multiplication?
+
+00:04:22.800 --> 00:04:26.980
+Well, the span of two vectors is basically a way of asking what are
+
+00:04:26.980 --> 00:04:31.555
+all the possible vectors you can reach using only these two fundamental operations,
+
+00:04:31.555 --> 00:04:34.439
+vector addition and scalar multiplication?
+

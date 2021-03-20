@@ -1,0 +1,78 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:01.534
+FUNÇÕES:
+INTRODUÇÃO
+
+00:00:01.601 --> 00:00:04.167
+Bem-vindo a esta aula
+sobre funções.
+
+00:00:04.200 --> 00:00:07.934
+Já usamos várias funções built-in
+do Python.
+
+00:00:07.968 --> 00:00:11.367
+Aqui vamos escrever
+nossas próprias funções.
+
+00:00:11.400 --> 00:00:16.501
+Funções são pedaços úteis de código
+que permitem encapsular tarefas.
+
+00:00:16.534 --> 00:00:20.234
+Encapsular é uma forma de realizar
+toda uma série de etapas
+
+00:00:20.267 --> 00:00:22.300
+com um comando simples.
+
+00:00:22.334 --> 00:00:25.367
+Por exemplo, imagine que você
+quer preparar um bolo.
+
+00:00:25.400 --> 00:00:27.234
+Você deve comprar
+os ingredientes,
+
+00:00:27.267 --> 00:00:31.100
+misturá-los de certo modo
+por um tempo específico,
+
+00:00:31.133 --> 00:00:34.367
+colocar tudo no forno
+e depois deixar esfriar.
+
+00:00:34.400 --> 00:00:37.367
+Em programação de computadores,
+as funções encapsulam
+
+00:00:37.400 --> 00:00:40.567
+todos os passos de um processo
+em um comando.
+
+00:00:40.601 --> 00:00:44.234
+Nesse caso, poderíamos ter
+uma função de preparar bolos
+
+00:00:44.267 --> 00:00:47.968
+e jogar todas as instruções
+nessa função.
+
+00:00:48.000 --> 00:00:50.634
+Agora, toda vez que quiser
+preparar um bolo,
+
+00:00:50.667 --> 00:00:54.734
+é só usar a função, sem se preocupar
+com as especificidades.
+
+00:00:54.767 --> 00:00:56.801
+Funções também são usadas
+
+00:00:56.834 --> 00:01:00.100
+para ajudar a organizar e otimizar
+códigos. Vamos começar.
+

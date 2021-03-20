@@ -1,0 +1,168 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.333 --> 00:00:03.700
+Agora que você tem o seu ambiente
+local de programação configurado,
+
+00:00:04.100 --> 00:00:06.367
+está na hora de tentar
+entradas diferentes.
+
+00:00:06.401 --> 00:00:08.700
+Os programas podem ser
+muito mais interessantes
+
+00:00:08.933 --> 00:00:11.733
+quando podem interagir
+com informações externas.
+
+00:00:11.767 --> 00:00:14.867
+Primeiro vamos tentar obter
+os dados brutos do usuário.
+
+00:00:15.433 --> 00:00:16.733
+Aqui está o que quero dizer.
+
+00:00:17.167 --> 00:00:20.133
+Este programa solicita ao usuário
+que insira um nome
+
+00:00:20.400 --> 00:00:23.933
+e escolha essa entrada
+como uma string para usar no código.
+
+00:00:28.933 --> 00:00:30.167
+Esta função de entrada
+
+00:00:30.201 --> 00:00:33.000
+é o que foi pego na entrada
+do usuário como uma string.
+
+00:00:33.333 --> 00:00:36.167
+Tem um argumento opcional
+que você pode usar
+
+00:00:36.367 --> 00:00:38.833
+para especificar o prompt mostrado
+ao usuário.
+
+00:00:39.300 --> 00:00:42.533
+Como a função de entrada interpreta
+a entrada como uma string,
+
+00:00:42.833 --> 00:00:45.833
+o resultado precisa ser encapsulado
+com "Int" ou "Float",
+
+00:00:46.033 --> 00:00:47.867
+se quiser usá-lo
+como um número.
+
+00:00:55.067 --> 00:00:58.233
+Se você não fizer isso e tentar usar
+a entrada como um número,
+
+00:00:58.433 --> 00:00:59.867
+receberá um erro.
+
+00:00:59.901 --> 00:01:03.600
+Aqui encapsulei a entrada com "Int"
+e adicionei 20 a ela.
+
+00:01:05.267 --> 00:01:08.133
+Mas e se o usuário inserir
+um número não inteiro?
+
+00:01:08.867 --> 00:01:10.333
+Você pode encapsular
+como um "Float"
+
+00:01:10.367 --> 00:01:12.733
+para também capturar
+números não inteiros.
+
+00:01:14.700 --> 00:01:16.467
+Mas se precisar
+de um número inteiro,
+
+00:01:16.501 --> 00:01:18.567
+como se você estivesse
+multiplicando uma string
+
+00:01:18.601 --> 00:01:20.900
+para repeti-la
+um determinado número de vezes?
+
+00:01:21.333 --> 00:01:24.633
+Isso não funcionaria com o "Float",
+mesmo que seja um número inteiro.
+
+00:01:25.233 --> 00:01:27.667
+Na verdade, podemos encapsular
+este "Int" com "Float",
+
+00:01:27.701 --> 00:01:30.067
+e depois convertê-lo
+em um "Int" como este.
+
+00:01:30.667 --> 00:01:32.167
+Certo, isso funciona.
+
+00:01:32.400 --> 00:01:34.467
+Claramente, você está tentando
+imaginar e lidar
+
+00:01:34.501 --> 00:01:35.800
+com todos as possibilidades
+
+00:01:36.000 --> 00:01:38.633
+caso a entrada do usuário
+se complique.
+
+00:01:39.300 --> 00:01:41.100
+Abordamos alguns casos aqui,
+
+00:01:41.433 --> 00:01:44.533
+mas também há muitos outros casos
+que não abordamos,
+
+00:01:44.567 --> 00:01:46.467
+que podem levar
+a mais erros.
+
+00:01:46.833 --> 00:01:49.133
+Aprenderemos uma maneira melhor
+de lidar com esses cenários
+
+00:01:49.167 --> 00:01:50.367
+na próxima seção.
+
+00:01:50.667 --> 00:01:52.333
+Antes de irmos
+para a prática,
+
+00:01:52.367 --> 00:01:55.333
+temos outra maneira de interpretar
+a entrada do usuário.
+
+00:01:55.900 --> 00:01:59.233
+"Eval" é uma função integrada
+que avalia uma string
+
+00:01:59.267 --> 00:02:00.933
+como uma linha Python.
+
+00:02:01.467 --> 00:02:04.600
+Você até pode incluir variáveis
+em strings como essa.
+
+00:02:06.133 --> 00:02:07.733
+Vamos escrever
+alguns scripts divertidos
+
+00:02:07.767 --> 00:02:09.167
+para interagirem
+com a entrada do usuário.
+

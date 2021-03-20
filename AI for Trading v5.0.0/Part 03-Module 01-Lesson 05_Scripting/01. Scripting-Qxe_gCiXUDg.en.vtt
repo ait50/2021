@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.330
+Welcome to this lesson on scripting.
+
+00:00:03.330 --> 00:00:07.379
+Here, you'll learn how to combine all the concepts you've learned throughout
+
+00:00:07.379 --> 00:00:12.464
+this course to write and run your own scripts locally on your computer.
+
+00:00:12.464 --> 00:00:15.539
+You'll learn about good scripting practices,
+
+00:00:15.539 --> 00:00:18.164
+working with raw input from users,
+
+00:00:18.164 --> 00:00:22.349
+reading and writing files, handling errors,
+
+00:00:22.350 --> 00:00:28.660
+importing local scripts, and working with different libraries. Let's get started.
+

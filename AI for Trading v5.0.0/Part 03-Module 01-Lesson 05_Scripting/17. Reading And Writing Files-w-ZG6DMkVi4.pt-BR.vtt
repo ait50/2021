@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.467 --> 00:00:03.100
+Para que um programa
+seja realmente útil,
+
+00:00:03.667 --> 00:00:06.200
+ele precisa interagir
+com dados do mundo real.
+
+00:00:06.701 --> 00:00:09.567
+Imagens, páginas da web
+e bancos de dados
+
+00:00:09.601 --> 00:00:11.434
+são exemplos de arquivos,
+
+00:00:11.467 --> 00:00:14.968
+e nós rotineiramente criamos,
+movemos, manipulamos
+
+00:00:15.000 --> 00:00:17.834
+e lemos esses arquivos diariamente
+em nossa vida digital.
+
+00:00:18.267 --> 00:00:20.133
+Todos os dados
+que usamos até agora
+
+00:00:20.167 --> 00:00:22.701
+foram definidos dentro
+do script Python
+
+00:00:23.100 --> 00:00:26.634
+ou dos dados brutos do usuário
+durante a execução do script.
+
+00:00:27.267 --> 00:00:31.767
+Agora vamos aumentar massivamente
+a variedade do que podemos fazer
+
+00:00:31.801 --> 00:00:33.501
+na programação Python,
+
+00:00:33.534 --> 00:00:37.067
+ao introduzir como ler e escrever
+arquivos no Python.
+
+00:00:37.701 --> 00:00:40.400
+Isso nos permitirá interagir
+e processar
+
+00:00:40.634 --> 00:00:43.801
+quantidades maiores de informações
+de muitas outras fontes.
+
+00:00:44.667 --> 00:00:45.934
+Todos
+os tipos de arquivos têm
+
+00:00:45.968 --> 00:00:48.067
+uma estrutura semelhante
+no computador.
+
+00:00:48.334 --> 00:00:51.801
+Existem strings de caracteres
+que codificam algumas informações.
+
+00:00:52.501 --> 00:00:54.067
+O formato específico
+do arquivo,
+
+00:00:54.100 --> 00:00:58.300
+geralmente indicado pela extensão
+do nome do arquivo como ".py",
+
+00:00:58.334 --> 00:01:02.434
+TXT, HTM, CSV e muito mais,
+
+00:01:03.167 --> 00:01:05.901
+indicará como esses caracteres
+são organizados.
+
+00:01:06.701 --> 00:01:09.000
+Os caracteres de um arquivo
+são interpretados
+
+00:01:09.033 --> 00:01:11.734
+pelos vários programas
+que usamos para interagir com eles.
+
+00:01:12.234 --> 00:01:14.701
+Por exemplo,
+um programa de edição de imagem
+
+00:01:14.734 --> 00:01:17.968
+interpretará a informação
+de um arquivo de fotografia digital
+
+00:01:18.000 --> 00:01:19.968
+e exibirá a imagem.
+
+00:01:20.000 --> 00:01:23.901
+Se editamos a imagem no programa,
+usamos este programa
+
+00:01:23.934 --> 00:01:26.300
+para fazer alterações
+nos caracteres no arquivo.
+
+00:01:26.934 --> 00:01:30.200
+No Python, podemos ler direto
+esses caracteres do arquivo.
+
+00:01:30.534 --> 00:01:32.334
+A experiência parece
+muito diferente
+
+00:01:32.367 --> 00:01:35.067
+de abrir um arquivo
+em uma aplicação desktop.
+
+00:01:35.901 --> 00:01:40.267
+Abrir arquivos no Python nos fornece
+uma interface programática comum
+
+00:01:40.300 --> 00:01:41.968
+para todos
+os tipos de arquivos,
+
+00:01:42.000 --> 00:01:44.734
+sem a necessidade
+de uma interface gráfica do usuário,
+
+00:01:45.267 --> 00:01:47.234
+o que significa que podemos
+automatizar tarefas
+
+00:01:47.267 --> 00:01:49.300
+envolvendo arquivos
+com programas Python.
+

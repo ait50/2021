@@ -1,0 +1,229 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.029
+In addition to reading in data from files,
+
+00:00:03.029 --> 00:00:07.134
+we can actually import Python code from other scripts.
+
+00:00:07.134 --> 00:00:11.849
+This is especially helpful if you're working on a bigger project where you want to
+
+00:00:11.849 --> 00:00:17.339
+organize your code into multiple files and reuse code in those files.
+
+00:00:17.339 --> 00:00:22.170
+If the Python script you want to import is in the same directory as your current script,
+
+00:00:22.170 --> 00:00:23.910
+you just type import,
+
+00:00:23.910 --> 00:00:28.054
+followed by the name of the file without the dot PY extension.
+
+00:00:28.054 --> 00:00:31.679
+Imports statements are written at the top of a Python script,
+
+00:00:31.679 --> 00:00:33.659
+each one on a separate line.
+
+00:00:33.659 --> 00:00:38.349
+Python will still run if imports statements are included later in the script,
+
+00:00:38.350 --> 00:00:41.920
+but it's common practice to always have these at the top.
+
+00:00:41.920 --> 00:00:46.050
+You're only able to access what you've imported after this statement so,
+
+00:00:46.049 --> 00:00:48.864
+it's just less confusing to have these written first.
+
+00:00:48.865 --> 00:00:51.240
+It's also nice for readers to see what a script
+
+00:00:51.240 --> 00:00:54.195
+depends on before reading the rest of the code.
+
+00:00:54.195 --> 00:00:56.905
+Let's start with a really simple example.
+
+00:00:56.905 --> 00:01:03.439
+Here, I have a Python file called other_script.py that just prints two plus three.
+
+00:01:03.439 --> 00:01:05.569
+In this file demo.py,
+
+00:01:05.569 --> 00:01:09.114
+I import other_script and then print four.
+
+00:01:09.114 --> 00:01:11.824
+When we run demo.py,
+
+00:01:11.825 --> 00:01:17.890
+this import statement tells Python to run code from that file which prints five.
+
+00:01:17.890 --> 00:01:22.049
+It then continues to execute the rest of the code in this file printing four.
+
+00:01:22.049 --> 00:01:26.950
+If instead this file had the line num equals two plus three,
+
+00:01:26.950 --> 00:01:30.625
+and we try to access this in demo.py,
+
+00:01:30.625 --> 00:01:35.373
+referencing it with just the name of the variable would return an error.
+
+00:01:35.373 --> 00:01:38.469
+To access objects in other_script.py,
+
+00:01:38.469 --> 00:01:41.980
+we need to use the name of the file followed by a dot,
+
+00:01:41.980 --> 00:01:45.040
+followed by the object to tell Python to look
+
+00:01:45.040 --> 00:01:48.475
+for this object in the other_script file we imported.
+
+00:01:48.474 --> 00:01:51.429
+Now, it accesses the variables successfully.
+
+00:01:51.430 --> 00:01:53.375
+When Python runs the script.
+
+00:01:53.375 --> 00:01:57.283
+It only has direct access to objects defined in the script.
+
+00:01:57.283 --> 00:02:00.260
+One of these objects is a module called other_script.
+
+00:02:00.260 --> 00:02:04.570
+A module is just a file with Python definitions and statements.
+
+00:02:04.569 --> 00:02:06.954
+When we import a Python file like this,
+
+00:02:06.954 --> 00:02:11.044
+it creates an object called other_script with a type module.
+
+00:02:11.044 --> 00:02:14.974
+Let's see a more useful example of importing a module.
+
+00:02:14.974 --> 00:02:20.155
+Here, we have a Python file that contains useful functions we would like to use.
+
+00:02:20.155 --> 00:02:25.719
+One, that returns the mean of a list and one that adds five to each element of a list.
+
+00:02:25.719 --> 00:02:28.199
+We can import them into demo.py,
+
+00:02:28.199 --> 00:02:32.560
+and type useful_functions dot the name of the function to use them.
+
+00:02:32.560 --> 00:02:35.500
+You can imagine this would be very helpful if
+
+00:02:35.500 --> 00:02:38.830
+we had many functions used a lot in different files.
+
+00:02:38.830 --> 00:02:42.100
+Although, it seems a little annoying that we have to type out
+
+00:02:42.099 --> 00:02:46.180
+the whole name of the file each time we want to use a function from it.
+
+00:02:46.180 --> 00:02:49.385
+We can make this much simpler by adding an alias.
+
+00:02:49.384 --> 00:02:53.944
+Here, I made an alias for the useful_function module UF.
+
+00:02:53.944 --> 00:02:59.149
+Now, I can just type UF instead of the whole module name when calling functions from it.
+
+00:02:59.149 --> 00:03:01.849
+This is useful when we have objects we want
+
+00:03:01.849 --> 00:03:04.810
+to import from other Python scripts like functions.
+
+00:03:04.810 --> 00:03:07.060
+But, what if that script also includes
+
+00:03:07.060 --> 00:03:12.219
+executable statements in addition to function definitions that we don't want to import.
+
+00:03:12.219 --> 00:03:16.585
+For example, what if useful_functions.py has code
+
+00:03:16.585 --> 00:03:21.000
+at the bottom of the script that tests its functions and prints the results?
+
+00:03:21.000 --> 00:03:26.455
+This code is nice if we run useful_functions.py to test out these functions,
+
+00:03:26.455 --> 00:03:31.550
+but unnecessary if we're just trying to use these functions in another script.
+
+00:03:31.550 --> 00:03:35.615
+Here is where we can use this statement if name equals main.
+
+00:03:35.615 --> 00:03:40.450
+By including these executable statements inside this if main block,
+
+00:03:40.449 --> 00:03:43.810
+we tell Python to execute this code only when
+
+00:03:43.810 --> 00:03:48.490
+the main program being executed is this useful_functions.py.
+
+00:03:48.490 --> 00:03:52.995
+If we run this file the code inside this block is run.
+
+00:03:52.995 --> 00:03:56.375
+However, if we run another script that simply imports
+
+00:03:56.375 --> 00:03:59.873
+useful_function.py this code is not run.
+
+00:03:59.873 --> 00:04:04.629
+Generally, it's good practice to write executable statements inside
+
+00:04:04.629 --> 00:04:07.870
+an if name block or alternatively include them
+
+00:04:07.870 --> 00:04:11.865
+in a function called Main and call this in the if name block.
+
+00:04:11.865 --> 00:04:15.475
+You're probably wondering what this Name and Main stuff is.
+
+00:04:15.474 --> 00:04:17.675
+Whenever we run a script like this,
+
+00:04:17.675 --> 00:04:21.370
+Python actually sets a special built in variable called
+
+00:04:21.370 --> 00:04:26.305
+Name with two underscores before and after it for any module.
+
+00:04:26.305 --> 00:04:30.009
+Here, since we ran Python demo.py,
+
+00:04:30.009 --> 00:04:34.000
+Python recognizes this module as the main program
+
+00:04:34.000 --> 00:04:38.824
+and sets the name variable for this module to the string Main.
+
+00:04:38.824 --> 00:04:42.314
+For any modules that are imported in the script,
+
+00:04:42.314 --> 00:04:46.110
+this built-in name variable is just set to the name of that module.
+

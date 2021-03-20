@@ -1,0 +1,247 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:03.267
+Há várias maneiras de configurar
+um ambiente de programação
+
+00:00:03.767 --> 00:00:06.867
+e não há uma maneira correta
+ou errada de fazer isso.
+
+00:00:07.467 --> 00:00:10.567
+No entanto, se você está começando
+a programar em Python,
+
+00:00:10.867 --> 00:00:13.967
+pode gostar de ver esta configuração
+para ter algumas ideias.
+
+00:00:14.667 --> 00:00:16.667
+Temos aqui
+um editor de texto.
+
+00:00:16.900 --> 00:00:19.533
+Este editor específico
+é chamado de "Atom".
+
+00:00:19.567 --> 00:00:23.367
+Mas há muitos outros editores
+que recomendo nas notas abaixo.
+
+00:00:23.733 --> 00:00:27.200
+Um editor de texto é muito diferente
+de um processador de texto,
+
+00:00:27.234 --> 00:00:28.667
+então não os confunda.
+
+00:00:28.933 --> 00:00:31.333
+O código precisa ser escrito
+linha a linha,
+
+00:00:31.367 --> 00:00:34.133
+com quebras de linha intencionais
+e recuos
+
+00:00:34.167 --> 00:00:38.167
+que basicamente mudam o modo
+como o código é lido e executado.
+
+00:00:38.201 --> 00:00:41.833
+Bons editores de texto têm
+recursos simples, mas necessários,
+
+00:00:41.867 --> 00:00:45.133
+como números de linha
+e destaque de sintaxe.
+
+00:00:45.500 --> 00:00:48.433
+Você pode ver as diferentes formas
+com que o Atom destaca um texto
+
+00:00:48.467 --> 00:00:51.633
+com base nos tipos de palavras
+e objetos reconhecidos
+
+00:00:51.667 --> 00:00:53.100
+pela linguagem Python.
+
+00:00:53.134 --> 00:00:55.267
+O destaque da sintaxe
+realmente ajuda
+
+00:00:55.301 --> 00:00:57.667
+a tornar o código mais legível
+e organizado.
+
+00:00:58.133 --> 00:01:01.400
+Também pode nos impedir de cometer
+alguns erros de sintaxe.
+
+00:01:01.434 --> 00:01:05.333
+Por exemplo, se esqueci uma aspa
+no final da string,
+
+00:01:05.367 --> 00:01:06.600
+sei que esqueci
+
+00:01:06.634 --> 00:01:09.333
+quando o resto da linha
+é destacado como uma string.
+
+00:01:09.667 --> 00:01:12.400
+O Atom sabe usar
+o destaque de sintaxe para o Python
+
+00:01:12.767 --> 00:01:15.700
+por causa deste ".py"
+no final do nome do arquivo.
+
+00:01:16.233 --> 00:01:19.000
+Isso diz ao Atom que ele está
+lidando com um arquivo Python.
+
+00:01:19.034 --> 00:01:21.400
+Os editores
+são altamente personalizáveis
+
+00:01:21.434 --> 00:01:22.867
+para se adequarem
+ao seu estilo.
+
+00:01:23.133 --> 00:01:25.767
+Uma configuração que uso
+são as "soft tabs",
+
+00:01:25.967 --> 00:01:27.733
+com espaçamento de quatro.
+
+00:01:27.933 --> 00:01:29.567
+O que significa que,
+quando pressiono "tab",
+
+00:01:29.601 --> 00:01:31.967
+isso é convertido
+para quatro espaços.
+
+00:01:32.300 --> 00:01:34.367
+Você também pode adicionar
+complementos legais.
+
+00:01:35.000 --> 00:01:36.500
+Com este "Linter" do Python,
+
+00:01:36.534 --> 00:01:39.867
+que usa o "Pylint" para indicar
+coisas úteis no meu código.
+
+00:01:40.300 --> 00:01:43.867
+Por exemplo, nesta linha,
+o "Pylint" emite um aviso
+
+00:01:44.767 --> 00:01:47.233
+porque não estou seguindo
+a diretriz PEP8
+
+00:01:47.267 --> 00:01:50.167
+ao incluir um espaço
+antes do parênteses de fechamento.
+
+00:01:50.201 --> 00:01:52.033
+Também tenho
+esse ótimo complemento
+
+00:01:52.067 --> 00:01:54.800
+que permite usar o terminal
+no editor.
+
+00:01:55.100 --> 00:01:57.767
+O Atom não é a única coisa
+na minha tela agora.
+
+00:01:58.367 --> 00:02:01.033
+Eu uso este complemento de terminal
+de vez em quando,
+
+00:02:01.367 --> 00:02:04.033
+mas em geral, gosto de ter
+uma janela separada
+
+00:02:04.067 --> 00:02:06.767
+para o terminal onde posso
+executar meus scripts.
+
+00:02:07.067 --> 00:02:10.367
+Geralmente, não consigo escrever
+muito código de uma só vez
+
+00:02:10.600 --> 00:02:12.233
+porque algo pode dar errado
+
+00:02:12.267 --> 00:02:14.800
+e precisarei encontrar o problema
+e corrigi-lo.
+
+00:02:14.834 --> 00:02:18.033
+Quando tem erro, ele aparecerá aqui
+quando eu executar o script.
+
+00:02:18.300 --> 00:02:21.233
+Faço pequenas alterações no código
+no editor de texto
+
+00:02:21.567 --> 00:02:24.000
+e então executo o script novamente
+para ver a saída.
+
+00:02:24.034 --> 00:02:26.300
+Se eu vir um problema,
+tentarei corrigi-lo,
+
+00:02:26.533 --> 00:02:29.167
+ou se as coisas parecem
+estar funcionando, continuo.
+
+00:02:29.533 --> 00:02:31.600
+Também tenho
+a sala de aula Udacity
+
+00:02:31.634 --> 00:02:34.667
+e os resultados de uma pergunta
+que fiz no meu navegador.
+
+00:02:34.900 --> 00:02:36.767
+Normalmente,
+preciso do navegador aberto
+
+00:02:36.801 --> 00:02:38.467
+para procurar a documentação
+
+00:02:38.501 --> 00:02:42.100
+ou pesquisar a solução
+para um bug que encontrei.
+
+00:02:42.134 --> 00:02:43.333
+De agora em diante,
+
+00:02:43.367 --> 00:02:46.333
+recomendamos que você teste
+todo o seu código assim.
+
+00:02:46.933 --> 00:02:49.667
+Coloque o código em um novo arquivo
+no editor de texto
+
+00:02:50.000 --> 00:02:52.233
+e não esqueça
+a extensão ".py".
+
+00:02:52.267 --> 00:02:55.467
+Certifique-se de estar no diretório
+correto no seu terminal,
+
+00:02:55.501 --> 00:02:56.633
+e então execute o script.
+

@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.589
+Some of the modules in the Python Standard Library have a lot in them.
+
+00:00:05.589 --> 00:00:07.298
+In order to manage the code better,
+
+00:00:07.298 --> 00:00:12.285
+they're split down into sub-modules that are contained within a package.
+
+00:00:12.285 --> 00:00:17.144
+A package is simply a module that contains sub-modules.
+
+00:00:17.144 --> 00:00:21.614
+A sub-module is specified with the usual dot notation.
+
+00:00:21.614 --> 00:00:24.359
+For example, the OS module,
+
+00:00:24.359 --> 00:00:29.879
+which is useful for dealing with file systems has a sub-module os.path,
+
+00:00:29.879 --> 00:00:33.299
+which is used specifically for dealing with path names.
+
+00:00:33.299 --> 00:00:36.779
+Modules that are sub-modules are specified by
+
+00:00:36.780 --> 00:00:41.777
+the package name and then the sub-module name separated by a dot.
+
+00:00:41.777 --> 00:00:45.884
+You can import the sub-module os.path like this.
+
+00:00:45.884 --> 00:00:50.129
+You can then use the objects from the sub-module in the usual way.
+
+00:00:50.130 --> 00:00:55.275
+However, this syntax for importing will only work for sub-modules.
+
+00:00:55.274 --> 00:00:58.920
+You cannot import a function from a module in this way.
+
+00:00:58.920 --> 00:01:02.579
+If you want to use other parts of the OS module two,
+
+00:01:02.579 --> 00:01:08.784
+you could import OS instead and everything in the os.path will still be accessible.
+
+00:01:08.784 --> 00:01:13.804
+Sometimes, naming can be a point of confusion when working with modules.
+
+00:01:13.805 --> 00:01:16.730
+For example, a module might be named after
+
+00:01:16.730 --> 00:01:19.790
+one of the important classes or functions within it.
+
+00:01:19.790 --> 00:01:24.185
+In this case, you will need to think carefully about your import statements.
+
+00:01:24.185 --> 00:01:29.150
+This imports the datetime class from the datetime module.
+
+00:01:29.150 --> 00:01:32.120
+Note that after this, using datetime,
+
+00:01:32.120 --> 00:01:36.070
+will refer to the datetime class, not the module.
+

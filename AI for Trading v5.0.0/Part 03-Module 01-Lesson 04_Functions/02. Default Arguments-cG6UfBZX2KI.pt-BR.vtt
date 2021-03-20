@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:01.172
+FUNÇÕES
+ARGUMENTOS PADRÃO
+
+00:00:01.205 --> 00:00:03.764
+Vamos revisitar a função
+cylinder_volume,
+
+00:00:03.797 --> 00:00:05.699
+mas com uma modificação.
+
+00:00:05.993 --> 00:00:08.698
+Esta função inclui
+um argumento padrão.
+
+00:00:08.731 --> 00:00:10.958
+Se o raio
+não for especificado,
+
+00:00:10.992 --> 00:00:13.842
+então o raio da variável
+será padronizado para 5
+
+00:00:13.876 --> 00:00:15.999
+quando for usado
+no corpo da função.
+
+00:00:16.272 --> 00:00:21.425
+Chamar a função assim
+seria o mesmo que chamar assim,
+
+00:00:21.823 --> 00:00:23.835
+porque o raio está
+definido para 5
+
+00:00:23.869 --> 00:00:26.426
+se não for especificado
+com outro valor.
+
+00:00:26.747 --> 00:00:30.416
+Os argumentos padrão permitem
+que as funções usem valores padrão
+
+00:00:30.450 --> 00:00:32.924
+quando esses argumentos
+são omitidos.
+
+00:00:32.958 --> 00:00:36.152
+Isso é útil porque pode tornar
+seu código mais conciso
+
+00:00:36.186 --> 00:00:38.872
+nos cenários
+em que há um valor comum
+
+00:00:38.905 --> 00:00:40.843
+que você pode usar
+para uma variável,
+
+00:00:40.877 --> 00:00:43.745
+embora você ainda queira
+que seja personalizável.
+
+00:00:44.130 --> 00:00:47.410
+Neste exemplo,
+o raio padrão é 5,
+
+00:00:47.444 --> 00:00:49.556
+mas ainda podemos mudar isso.
+
+00:00:49.991 --> 00:00:52.407
+Desta vez,
+quando chamamos a função,
+
+00:00:52.441 --> 00:00:55.436
+estamos substituindo
+o valor padrão de 5
+
+00:00:55.470 --> 00:00:57.725
+e em vez disso,
+calculando o volume do cilindro
+
+00:00:57.759 --> 00:01:01.101
+para um cilindro
+com um raio 7.
+
+00:01:01.785 --> 00:01:03.347
+Também observe que aqui
+
+00:01:03.381 --> 00:01:06.671
+estamos passando valores
+aos argumentos por posição.
+
+00:01:06.967 --> 00:01:09.992
+É possível passar valores
+de duas formas,
+
+00:01:10.025 --> 00:01:12.581
+por posição e por nome.
+
+00:01:13.148 --> 00:01:16.775
+Cada uma dessas funções
+é avaliada da mesma maneira.
+
+00:01:17.368 --> 00:01:20.532
+Esta simplesmente está
+pegando os argumentos por posição,
+
+00:01:20.565 --> 00:01:24.201
+enquanto esta função está
+aceitando argumentos por nome.
+
+00:01:24.234 --> 00:01:26.926
+Existem algumas nuances
+para quando você pode executar
+
+00:01:26.960 --> 00:01:30.099
+a passagem de valores
+em cada uma dessas maneiras.
+
+00:01:30.132 --> 00:01:33.667
+Você verá mais aplicações disso
+nas sessões de teste a seguir.
+

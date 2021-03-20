@@ -1,0 +1,122 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.333 --> 00:00:02.767
+Aqui o código
+no bloco "except"
+
+00:00:03.100 --> 00:00:05.467
+acontece quando ocorre
+qualquer tipo de exceção
+
+00:00:05.501 --> 00:00:07.067
+ao executar o bloco "try",
+
+00:00:07.400 --> 00:00:11.067
+apesar de só querermos ajustar
+a exceção "ValueError".
+
+00:00:11.833 --> 00:00:14.700
+Se eu tentar sair do programa
+com "Ctrl + C",
+
+00:00:15.500 --> 00:00:17.133
+isso não interrompe
+o programa,
+
+00:00:17.167 --> 00:00:19.533
+porque "except" lida
+com qualquer erro,
+
+00:00:19.567 --> 00:00:21.867
+incluindo o erro
+"KeyboardInterrupt".
+
+00:00:22.167 --> 00:00:25.900
+Na verdade, podemos especificar
+qual erro queremos manipular assim.
+
+00:00:26.367 --> 00:00:28.867
+Agora ele captura
+a exceção "ValueError",
+
+00:00:28.901 --> 00:00:31.833
+mas não outras exceções,
+como "KeyboardInterrupt".
+
+00:00:31.867 --> 00:00:34.767
+Observe que neste caso,
+quando pressiono "Ctrl + C",
+
+00:00:35.100 --> 00:00:36.800
+ele encerra o programa.
+
+00:00:36.834 --> 00:00:40.200
+Isso ocorre porque a exceção
+"KeyboardInterrupt" foi criada,
+
+00:00:40.467 --> 00:00:43.000
+o que não é tratado
+por esta instrução "try".
+
+00:00:43.467 --> 00:00:46.167
+Observe também que
+embora o programa tenha falhado,
+
+00:00:46.201 --> 00:00:50.033
+este código do último bloco
+ainda foi executado.
+
+00:00:50.300 --> 00:00:52.000
+"Attempted Input" é exibida,
+
+00:00:52.034 --> 00:00:55.467
+independentemente do programa sair
+da instrução "try",
+
+00:00:55.867 --> 00:00:58.167
+mesmo que isso signifique
+encerrar o programa.
+
+00:00:58.201 --> 00:00:59.900
+Se quisermos
+que este manipulador
+
+00:00:59.934 --> 00:01:02.033
+aborde mais do que um
+tipo de exceção,
+
+00:01:02.567 --> 00:01:05.033
+podemos incluir uma tupla
+depois de "except"
+
+00:01:05.333 --> 00:01:06.867
+com essa exceção.
+
+00:01:07.233 --> 00:01:10.267
+Ou se queremos executar
+diferentes blocos de código,
+
+00:01:10.301 --> 00:01:11.933
+dependendo da exceção,
+
+00:01:11.967 --> 00:01:14.733
+podemos ter vários blocos "except"
+como este.
+
+00:01:15.667 --> 00:01:17.533
+Aqui
+tenho dois manipuladores,
+
+00:01:17.567 --> 00:01:20.867
+um para "ValueError"
+e um para "KeyboardInterrupt".
+
+00:01:21.400 --> 00:01:22.933
+Quando pressiono "Ctrl + C",
+
+00:01:22.967 --> 00:01:26.000
+ele diz "sem tentativa de entrada"
+e interrompe o loop "while".
+

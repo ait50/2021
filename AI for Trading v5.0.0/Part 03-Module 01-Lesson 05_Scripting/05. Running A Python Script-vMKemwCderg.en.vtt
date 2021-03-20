@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.955
+Now that you've successfully installed Python,
+
+00:00:02.955 --> 00:00:06.169
+let's try to run a script in your terminal.
+
+00:00:06.169 --> 00:00:09.689
+First, download the file first_script.py
+
+00:00:09.689 --> 00:00:14.334
+attached at the bottom of this page and move it to an appropriate directory.
+
+00:00:14.335 --> 00:00:19.190
+I put my file here by dragging it from the downloads folder to this folder.
+
+00:00:19.190 --> 00:00:21.075
+This might be a good time to set up
+
+00:00:21.074 --> 00:00:24.730
+a new directory for your learning if you don't have one already.
+
+00:00:24.730 --> 00:00:27.600
+Next, open your terminal and use CD
+
+00:00:27.600 --> 00:00:31.340
+to navigate to the directory containing the downloaded file.
+
+00:00:31.339 --> 00:00:38.070
+I can double check that the file is located here by typing ls or dir on Windows.
+
+00:00:38.070 --> 00:00:40.409
+Now that you're in the directory with the file,
+
+00:00:40.409 --> 00:00:43.319
+you can run it by typing python followed by
+
+00:00:43.320 --> 00:00:47.304
+the name of the file like this. Then press enter.
+
+00:00:47.304 --> 00:00:51.134
+You'll know you've run the scripts successfully if you see this message.
+
+00:00:51.134 --> 00:00:55.844
+Whenever you type Python followed by the file name for a Python script,
+
+00:00:55.844 --> 00:01:00.664
+that script is run and the output is shown immediately afterwards.
+
+00:01:00.664 --> 00:01:02.429
+Once the codes finished running,
+
+00:01:02.429 --> 00:01:04.379
+and all the output has been shown,
+
+00:01:04.379 --> 00:01:07.074
+your command line prompt reappears.
+
+00:01:07.075 --> 00:01:10.920
+Note if you typed and entered just Python without a script to run,
+
+00:01:10.920 --> 00:01:14.340
+it'll start an interactive interpreter for Python.
+
+00:01:14.340 --> 00:01:16.480
+You'll learn more about this later.
+
+00:01:16.480 --> 00:01:21.885
+For now, you can just type in exit with parentheses to get out or alternatively,
+
+00:01:21.885 --> 00:01:27.719
+control D on Mac and Linux or control Z and enter on Windows.
+
+00:01:27.719 --> 00:01:30.269
+Now, I'm back to the command line prompt.
+
+00:01:30.269 --> 00:01:35.000
+It's your turn. Download the file below and run the script in your terminal.
+

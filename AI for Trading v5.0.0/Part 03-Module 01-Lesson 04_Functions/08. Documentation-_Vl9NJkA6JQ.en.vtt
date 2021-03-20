@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.660
+One of the key advantages of functions is that
+
+00:00:03.660 --> 00:00:07.560
+they can help break a program down into smaller chunks.
+
+00:00:07.559 --> 00:00:13.567
+This makes code easier to write and also easier to read because the pieces of your code,
+
+00:00:13.567 --> 00:00:16.649
+the functions, are reusable.
+
+00:00:16.649 --> 00:00:20.234
+If a program needs to calculate volumes of multiple cylinders,
+
+00:00:20.234 --> 00:00:23.785
+it can call the cylinder volume function multiple times,
+
+00:00:23.785 --> 00:00:29.070
+which is much cleaner than writing out the formula over and over again.
+
+00:00:29.070 --> 00:00:35.230
+Functions make code easier to read because they give human readable names to processes.
+
+00:00:35.229 --> 00:00:38.989
+While the cylinder volume formula isn't that complicated,
+
+00:00:38.990 --> 00:00:43.410
+it is still harder to recognize than a precisely-named function.
+
+00:00:43.409 --> 00:00:47.444
+There is an additional technique that makes functions more readable,
+
+00:00:47.445 --> 00:00:51.100
+documentation strings or docstrings.
+
+00:00:51.100 --> 00:00:54.530
+Docstrings are a type of comment used to explain
+
+00:00:54.530 --> 00:00:58.274
+the purpose of a function and how it should be used.
+
+00:00:58.274 --> 00:01:02.489
+Here is a function for population density with a docstring.
+
+00:01:02.490 --> 00:01:06.195
+Docstrings are surrounded by triple quotes.
+
+00:01:06.194 --> 00:01:11.589
+The first line of the docstring is a brief explanation of the function's purpose.
+
+00:01:11.590 --> 00:01:14.582
+If you feel that this is sufficient documentation,
+
+00:01:14.582 --> 00:01:16.780
+you can end the docstring here.
+
+00:01:16.780 --> 00:01:20.415
+Single line docstrings are perfectly acceptable.
+
+00:01:20.415 --> 00:01:25.965
+If you think that the function is complicated enough to want a longer description,
+
+00:01:25.965 --> 00:01:29.990
+you can add a more thorough paragraph after the one-line summary.
+
+00:01:29.989 --> 00:01:35.949
+The next element of a docstring is an explanation of the function's arguments.
+
+00:01:35.950 --> 00:01:38.173
+Here, you list the arguments,
+
+00:01:38.173 --> 00:01:42.359
+state their purpose and what types the arguments should be.
+
+00:01:42.359 --> 00:01:47.840
+Finally, it's common to provide some description of the output of the function.
+
+00:01:47.840 --> 00:01:51.230
+Every piece of the docstring is optional.
+
+00:01:51.230 --> 00:01:55.250
+However, docstrings are part of good coding practice.
+
+00:01:55.250 --> 00:02:00.140
+They assist you and future users in understanding the code you produced.
+
+00:02:00.140 --> 00:02:05.239
+You can read a more thorough explanation of docstring conventions in the link below.
+

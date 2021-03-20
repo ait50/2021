@@ -1,0 +1,335 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Lambda Expressions
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Functions
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Defining Functions.html">
+       02. Defining Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Defining Functions.html">
+       03. Quiz: Defining Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Defining Functions.html">
+       04. Solution: Defining Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Variable Scope.html">
+       05. Variable Scope
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Variable Scope.html">
+       06. Variable Scope
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Solution Variable Scope.html">
+       07. Solution: Variable Scope
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Documentation.html">
+       08. Documentation
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Documentation.html">
+       09. Quiz: Documentation
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Solution Documentation.html">
+       10. Solution: Documentation
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Lambda Expressions.html">
+       11. Lambda Expressions
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Quiz Lambda Expressions.html">
+       12. Quiz: Lambda Expressions
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Solution Lambda Expressions.html">
+       13. Solution: Lambda Expressions
+      </a>
+     </li>
+     <li class="">
+      <a href="14. [Optional] Iterators and Generators.html">
+       14. [Optional] Iterators and Generators
+      </a>
+     </li>
+     <li class="">
+      <a href="15. [Optional] Quiz Iterators and Generators.html">
+       15. [Optional] Quiz: Iterators and Generators
+      </a>
+     </li>
+     <li class="">
+      <a href="16. [Optional] Solution Iterators and Generators.html">
+       16. [Optional] Solution: Iterators and Generators
+      </a>
+     </li>
+     <li class="">
+      <a href="17. [Optional] Generator Expressions.html">
+       17. [Optional] Generator Expressions
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Conclusion.html">
+       18. Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Further Learning.html">
+       19. Further Learning
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          11. Lambda Expressions
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L4 08 Lambda Expressions V3
+         </p>
+        </h3>
+        <video controls="">
+         <source src="11. L4 08 Lambda Expressions V3-wkEmPz1peJM.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="11. L4 08 Lambda Expressions V3-wkEmPz1peJM.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="11. L4 08 Lambda Expressions V3-wkEmPz1peJM.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="true" kind="subtitles" label="en" src="11. L4 08 Lambda Expressions V3-wkEmPz1peJM.en.vtt" srclang="en"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="lambda-expressions">
+          Lambda Expressions
+         </h1>
+         <p>
+          You can use lambda expressions to create anonymous functions. That is, functions that don’t have a name. They are helpful for creating quick functions that aren’t needed later in your code. This can be especially useful for higher order functions, or functions that take in other functions as arguments.
+         </p>
+         <p>
+          With a lambda expression, this function:
+         </p>
+         <pre><code class="python language-python">def multiply(x, y):
+    return x * y</code></pre>
+         <p>
+          can be reduced to:
+         </p>
+         <pre><code class="python language-python">multiply = lambda x, y: x * y</code></pre>
+         <p>
+          Both of these functions are used in the same way. In either case, we can call
+          <code>
+           multiply
+          </code>
+          like this:
+         </p>
+         <pre><code class="python language-python">multiply(4, 7)</code></pre>
+         <p>
+          This returns 28.
+         </p>
+         <h3 id="components-of-a-lambda-function">
+          Components of a Lambda Function
+         </h3>
+         <ol>
+          <li>
+           The
+           <code>
+            lambda
+           </code>
+           keyword is used to indicate that this is a lambda expression.
+          </li>
+          <li>
+           Following
+           <code>
+            lambda
+           </code>
+           are one or more arguments for the anonymous function separated by commas, followed by a colon
+           <code>
+            :
+           </code>
+           . Similar to functions, the way the arguments are named in a lambda expression is arbitrary.
+          </li>
+          <li>
+           Last is an expression that is evaluated and returned in this function. This is a lot like an expression you might see as a return statement in a function.
+          </li>
+         </ol>
+         <p>
+          With this structure, lambda expressions aren’t ideal for complex functions, but can be very useful for short, simple functions.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="12. Quiz Lambda Expressions.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('11. Lambda Expressions')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

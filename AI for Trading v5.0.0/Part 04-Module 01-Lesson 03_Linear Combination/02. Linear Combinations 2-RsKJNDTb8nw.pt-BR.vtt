@@ -1,0 +1,370 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.133 --> 00:00:02.234
+Vamos falar
+de como as pessoas pensam
+
+00:00:02.267 --> 00:00:04.167
+em vetores
+como se fossem pontos.
+
+00:00:04.200 --> 00:00:08.100
+É bem complicado pensar
+em vários vetores em uma linha.
+
+00:00:08.133 --> 00:00:12.000
+E mais complicado pensar em
+todos os vetores 3D de uma vez,
+
+00:00:12.033 --> 00:00:13.467
+preenchendo o plano.
+
+00:00:13.501 --> 00:00:18.100
+Com vários vetores assim,
+é comum representar cada um
+
+00:00:18.133 --> 00:00:20.133
+com apenas
+um ponto no espaço.
+
+00:00:20.167 --> 00:00:22.033
+O ponto na extremidade
+do vetor,
+
+00:00:22.067 --> 00:00:26.467
+onde devemos pensar
+no vetor com a cauda na origem.
+
+00:00:26.801 --> 00:00:31.734
+Se quiser pensar em cada vetor
+cuja extremidade fica na linha,
+
+00:00:31.767 --> 00:00:34.467
+pense na linha em si.
+
+00:00:36.367 --> 00:00:40.434
+E se você pensar em todos
+os vetores 2D ao mesmo tempo,
+
+00:00:40.467 --> 00:00:43.934
+interprete cada um como um ponto
+onde fica a sua extremidade.
+
+00:00:44.000 --> 00:00:47.434
+Então, na verdade, você pensará
+na própria folha plana infinita
+
+00:00:47.467 --> 00:00:49.334
+de espaços bidimensionais,
+
+00:00:49.367 --> 00:00:51.400
+deixando as setas de fora.
+
+00:00:52.400 --> 00:00:56.601
+Em geral, se pensar num
+vetor sozinho, pense numa seta.
+
+00:00:56.634 --> 00:00:58.767
+E se você lidar
+com vários vetores,
+
+00:00:58.801 --> 00:01:01.467
+é melhor pensar em todos eles
+como pontos.
+
+00:01:01.501 --> 00:01:03.200
+Para o exemplo
+de espaço vetorial,
+
+00:01:03.234 --> 00:01:05.100
+o espaço da maioria
+dos pares de vetores
+
+00:01:05.133 --> 00:01:08.501
+acaba sendo toda a folha
+de espaço bidimensional.
+
+00:01:08.534 --> 00:01:11.667
+Mas, se eles se alinharem,
+o espaço é só uma linha.
+
+00:01:14.801 --> 00:01:17.534
+Espaço vetorial
+fica mais interessante
+
+00:01:17.567 --> 00:01:20.267
+se pensarmos em vetores
+em espaço 3D.
+
+00:01:20.300 --> 00:01:23.501
+Por exemplo, se pegarmos
+dois vetores em espaço 3D
+
+00:01:23.534 --> 00:01:25.534
+que não estão apontados
+na mesma direção,
+
+00:01:25.567 --> 00:01:28.234
+o que significa
+calcular o seu espaço vetorial?
+
+00:01:29.534 --> 00:01:30.701
+O espaço vetorial deles
+
+00:01:30.734 --> 00:01:33.834
+é um conjunto de todas as
+possíveis combinações lineares
+
+00:01:34.000 --> 00:01:35.367
+desses dois vetores.
+
+00:01:35.400 --> 00:01:37.567
+Ou seja,
+todos os vetores possíveis
+
+00:01:37.601 --> 00:01:40.234
+ao fazer a escala dos dois
+de alguma forma
+
+00:01:40.267 --> 00:01:42.267
+e depois somá-los.
+
+00:01:42.300 --> 00:01:44.767
+Você pode imaginar a rotação
+de duas maçanetas
+
+00:01:44.801 --> 00:01:47.601
+para mudar os dois escalares
+e definir a combinação linear,
+
+00:01:47.634 --> 00:01:50.367
+adicionando os vetores em escala
+e seguindo a extremidade
+
+00:01:50.400 --> 00:01:52.267
+do vetor resultante.
+
+00:01:52.300 --> 00:01:55.200
+Essa extremidade vai traçar
+um tipo de folha plana,
+
+00:01:55.234 --> 00:01:58.133
+passando pela origem
+do espaço 3D.
+
+00:01:58.167 --> 00:02:01.367
+Essa folha plana
+é o espaço dos dois vetores.
+
+00:02:01.400 --> 00:02:04.100
+Ou, mais precisamente,
+o conjunto de todos os vetores
+
+00:02:04.133 --> 00:02:06.167
+cujas extremidades
+estão naquela folha plana
+
+00:02:06.200 --> 00:02:08.267
+são o espaço
+daqueles dois vetores.
+
+00:02:08.334 --> 00:02:10.367
+Essa não é uma linda
+imagem mental?
+
+00:02:11.133 --> 00:02:13.400
+E se adicionássemos
+um terceiro vetor
+
+00:02:13.434 --> 00:02:16.367
+e considerássemos o espaço
+de cada um desses 3 vetores?
+
+00:02:16.801 --> 00:02:19.501
+A combinação linear de 3 vetores
+é definida
+
+00:02:19.534 --> 00:02:21.501
+quase do mesmo modo
+que a de 2 vetores.
+
+00:02:21.534 --> 00:02:24.400
+Você escolherá
+3 escalares diferentes,
+
+00:02:24.434 --> 00:02:27.267
+fará a escala de cada um
+e somará os 3.
+
+00:02:32.601 --> 00:02:34.734
+Mais uma vez,
+o espaço desses vetores
+
+00:02:34.767 --> 00:02:38.300
+é o conjunto de todas as
+possíveis combinações lineares.
+
+00:02:40.767 --> 00:02:42.634
+Duas coisas podem acontecer.
+
+00:02:42.667 --> 00:02:46.734
+Se o seu terceiro vetor estiver
+no espaço dos dois primeiros,
+
+00:02:46.767 --> 00:02:48.234
+o espaço não muda.
+
+00:02:48.267 --> 00:02:50.734
+Você estará preso
+naquela folha plana.
+
+00:02:50.767 --> 00:02:53.667
+Ou seja, adicionar uma versão
+em escala daquele terceiro vetor
+
+00:02:53.701 --> 00:02:55.200
+à combinação linear
+
+00:02:55.234 --> 00:02:58.100
+não te dá acesso
+a novos vetores.
+
+00:02:59.100 --> 00:03:01.367
+Mas se você escolher
+aleatoriamente um 3º vetor,
+
+00:03:01.400 --> 00:03:05.100
+é quase certeza que não estará
+no espaço dos dois primeiros.
+
+00:03:05.133 --> 00:03:07.367
+Como estará
+numa direção diferente,
+
+00:03:07.400 --> 00:03:11.300
+ele abrirá o acesso
+a todos os vetores 3D possíveis.
+
+00:03:11.334 --> 00:03:13.334
+Gosto de pensar nisso
+de uma forma:
+
+00:03:13.367 --> 00:03:16.300
+à medida que você fizer a escala
+desse 3º vetor,
+
+00:03:16.334 --> 00:03:19.234
+ele se move pelo espaço vetorial
+dos dois primeiros,
+
+00:03:19.267 --> 00:03:21.634
+varrendo todo o espaço.
+
+00:03:21.667 --> 00:03:24.601
+Também podemos pensar
+que estamos usando totalmente
+
+00:03:24.634 --> 00:03:28.033
+os 3 escalares que temos
+ao nosso dispor
+
+00:03:28.067 --> 00:03:30.767
+para acessar
+as 3 dimensões do espaço.
+
+00:03:33.167 --> 00:03:37.601
+Quando o 3º vetor estiver
+no espaço dos dois primeiros,
+
+00:03:37.634 --> 00:03:39.767
+ou quando dois vetores
+se alinham,
+
+00:03:39.801 --> 00:03:42.167
+queremos uma terminologia
+para dizer
+
+00:03:42.200 --> 00:03:44.501
+que um desses vetores
+é redundante
+
+00:03:44.534 --> 00:03:47.133
+e não adiciona nada
+ao nosso espaço.
+
+00:03:47.167 --> 00:03:49.434
+Quando há múltiplos vetores
+
+00:03:49.467 --> 00:03:52.167
+e você pode remover um
+sem reduzir o espaço,
+
+00:03:52.200 --> 00:03:56.601
+a terminologia relevante é dizer
+que são linearmente dependentes.
+
+00:03:56.634 --> 00:03:59.534
+Um outro modo seria dizer
+que um dos vetores
+
+00:03:59.567 --> 00:04:02.667
+pode ser expressado como uma
+combinação linear dos outros,
+
+00:04:02.701 --> 00:04:05.767
+já que está no espaço vetorial
+dos outros.
+
+00:04:09.234 --> 00:04:13.634
+Mas, se cada vetor adicionar
+outra dimensão ao espaço,
+
+00:04:13.667 --> 00:04:16.567
+eles serão chamados
+de "linearmente independentes".
+
+00:04:22.701 --> 00:04:26.701
+Com toda essa terminologia
+e boas imagens mentais,
+
+00:04:26.734 --> 00:04:29.100
+vou deixá-lo com um enigma
+antes de irmos.
+
+00:04:29.133 --> 00:04:32.000
+A definição técnica
+da base de um espaço
+
+00:04:32.033 --> 00:04:35.033
+é "um conjunto de vetores
+linearmente independentes
+
+00:04:35.067 --> 00:04:37.634
+que se estende
+ao longo do espaço".
+
+00:04:38.200 --> 00:04:41.133
+Com base na minha descrição
+anterior da base
+
+00:04:41.167 --> 00:04:42.801
+e no seu entendimento
+dos termos
+
+00:04:42.834 --> 00:04:45.701
+"espaço vetorial"
+e "linearmente independente",
+
+00:04:45.767 --> 00:04:48.601
+pense no porquê essa definição
+faria sentido.
+
+00:04:50.400 --> 00:04:53.834
+Na próxima, falarei de matrizes
+e de transformação do espaço.
+
+00:04:54.000 --> 00:04:55.434
+Até lá.
+

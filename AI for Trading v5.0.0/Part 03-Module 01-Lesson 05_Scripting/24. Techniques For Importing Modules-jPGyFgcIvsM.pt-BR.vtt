@@ -1,0 +1,253 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:02.733
+Até agora
+importamos módulos
+
+00:00:02.767 --> 00:00:05.633
+utilizando import
+seguido pelo nome do módulo,
+
+00:00:05.667 --> 00:00:09.467
+tornando todas as classes
+de objetos e funções do módulo
+
+00:00:09.500 --> 00:00:12.100
+disponíveis
+por meio da notação de ponto.
+
+00:00:12.133 --> 00:00:17.100
+Existem outras formas de importação
+que são úteis em outras situações.
+
+00:00:17.133 --> 00:00:20.067
+Podemos importar uma função
+ou classe individual
+
+00:00:20.100 --> 00:00:22.433
+de um módulo desta forma:
+
+00:00:22.467 --> 00:00:26.700
+"from", o nome do módulo,
+'import" e o nome do objeto.
+
+00:00:26.733 --> 00:00:29.333
+Isso garante acesso
+somente ao defaultdict
+
+00:00:29.367 --> 00:00:31.200
+do módulo "collections".
+
+00:00:31.233 --> 00:00:34.200
+O defaultdict ficará acessível
+por meio do próprio nome,
+
+00:00:34.233 --> 00:00:36.467
+sem colocar
+o nome do módulo antes.
+
+00:00:36.501 --> 00:00:41.133
+Tentar acessar "collections"
+ou chamar "collections.defaultdict"
+
+00:00:41.167 --> 00:00:42.967
+nos dará um "NameError".
+
+00:00:44.233 --> 00:00:47.000
+Importar objetos individuais
+de um módulo
+
+00:00:47.034 --> 00:00:49.100
+significa pegar somente
+o que precisamos,
+
+00:00:49.134 --> 00:00:52.633
+sem utilizar a notação de ponto
+para acessá-los.
+
+00:00:52.667 --> 00:00:56.267
+Podemos importar vários
+objetos individuais de um módulo
+
+00:00:56.300 --> 00:00:59.033
+separando-os por vírgulas.
+
+00:00:59.067 --> 00:01:02.000
+Essa técnica é muito comum
+ao importar partes
+
+00:01:02.034 --> 00:01:03.967
+de grandes bibliotecas.
+
+00:01:04.001 --> 00:01:05.733
+Como vimos antes,
+
+00:01:05.767 --> 00:01:08.800
+podemos importar um módulo
+e dar a ele um nome diferente
+
+00:01:08.834 --> 00:01:11.100
+e geralmente abreviado,
+como este.
+
+00:01:11.134 --> 00:01:14.233
+Se o nome de um módulo
+for especialmente longo,
+
+00:01:14.267 --> 00:01:18.033
+ou se houver um choque
+com um nome igual ou parecido,
+
+00:01:18.067 --> 00:01:21.333
+renomear o módulo desta forma
+pode ser útil.
+
+00:01:21.367 --> 00:01:23.967
+Confira os exemplos de código
+na documentação,
+
+00:01:24.001 --> 00:01:27.067
+pois ela costuma apresentar
+uma abreviação padrão,
+
+00:01:27.100 --> 00:01:29.400
+caso haja uma para o módulo.
+
+00:01:29.433 --> 00:01:32.600
+Utilizar uma abreviação
+consistente com outras
+
+00:01:32.633 --> 00:01:34.767
+deixará o código
+mais legível.
+
+00:01:34.800 --> 00:01:37.433
+Por exemplo, a abreviação
+
+00:01:37.467 --> 00:01:40.633
+para o módulo
+de multiprocessamento é "MP".
+
+00:01:40.667 --> 00:01:43.667
+Podemos combinar as duas partes
+da sintaxe anterior
+
+00:01:43.700 --> 00:01:45.700
+para adicionar um item
+de um módulo
+
+00:01:45.734 --> 00:01:47.433
+e alterar o nome dele.
+
+00:01:47.467 --> 00:01:51.867
+Poderemos acessar diretamente
+o item individual
+
+00:01:51.900 --> 00:01:54.033
+com o novo nome específico,
+
+00:01:54.067 --> 00:01:56.333
+não sendo necessária
+a notação de ponto.
+
+00:01:56.367 --> 00:01:59.167
+Isso pode ser útil
+quando temos múltiplos objetos
+
+00:01:59.200 --> 00:02:00.433
+com nomes parecidos
+
+00:02:00.467 --> 00:02:02.900
+de diferentes pacotes
+do "namespace".
+
+00:02:02.934 --> 00:02:07.400
+Por exemplo, queremos
+um leitor CSV e um JSON.
+
+00:02:07.433 --> 00:02:10.167
+Podemos importá-los
+dos módulos respectivos
+
+00:02:10.200 --> 00:02:12.233
+e nomeá-los
+de forma descritiva.
+
+00:02:12.267 --> 00:02:15.767
+Outra forma de importar
+que vemos em outros códigos,
+
+00:02:15.800 --> 00:02:18.333
+mas que não devemos utilizar,
+é esta:
+
+00:02:19.133 --> 00:02:23.133
+o uso deste asterisco importará
+todos os objetos de um módulo
+
+00:02:23.167 --> 00:02:26.867
+de forma individual
+e permitirá acessá-los diretamente
+
+00:02:26.900 --> 00:02:28.333
+por meio do nome deles.
+
+00:02:28.367 --> 00:02:30.067
+O problema disso
+
+00:02:30.100 --> 00:02:32.800
+é que os módulos
+podem conter vários objetos,
+
+00:02:32.833 --> 00:02:34.667
+cada um com um nome.
+
+00:02:34.701 --> 00:02:39.000
+Incluir todos os nomes
+pode sobrescrever
+
+00:02:39.033 --> 00:02:42.000
+outros nomes
+já utilizados no programa.
+
+00:02:42.034 --> 00:02:45.767
+A importação estrela também
+impossibilita que colaboradores
+
+00:02:45.800 --> 00:02:48.867
+encontrem onde um objeto importado
+foi definido.
+
+00:02:48.900 --> 00:02:51.867
+Um leitor pode pesquisar
+por uma definição de uma função
+
+00:02:51.900 --> 00:02:55.400
+e não encontrá-la, assim não saberá
+qual instrução estrela
+
+00:02:55.433 --> 00:02:57.333
+introduziu a função.
+
+00:02:57.367 --> 00:03:00.267
+Esses problemas
+causam muita confusão.
+
+00:03:00.300 --> 00:03:03.967
+Não utilizem "from,
+nome do módulo e import *".
+
+00:03:04.001 --> 00:03:07.733
+Se quiser utilizar todos os objetos
+do módulo Random,
+
+00:03:07.767 --> 00:03:11.367
+utilize o padrão
+"import random"
+
+00:03:11.400 --> 00:03:14.267
+e acesse cada um dos objetos
+com a notação de ponto.
+

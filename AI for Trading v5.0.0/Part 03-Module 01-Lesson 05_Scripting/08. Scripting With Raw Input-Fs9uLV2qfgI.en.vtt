@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.765
+Now that you have your local program environment all set up,
+
+00:00:03.765 --> 00:00:06.150
+it's time to try out different inputs.
+
+00:00:06.150 --> 00:00:08.625
+Programs can get a lot more interesting
+
+00:00:08.625 --> 00:00:11.789
+when they can interact with external information.
+
+00:00:11.789 --> 00:00:15.024
+First, let's try getting raw input from the user.
+
+00:00:15.025 --> 00:00:16.663
+Here's what I mean.
+
+00:00:16.663 --> 00:00:20.115
+This program prompts the user to enter a name,
+
+00:00:20.114 --> 00:00:25.519
+and picks in that input as a string to use in its code.
+
+00:00:26.850 --> 00:00:33.195
+This input function is what takes in the user's input as a string.
+
+00:00:33.195 --> 00:00:38.859
+It has an optional argument that you can use to specify a prompt shown to the user.
+
+00:00:38.859 --> 00:00:42.664
+Since the input function interprets input as a string,
+
+00:00:42.664 --> 00:00:53.320
+you'll need to wrap the result with int or float if you want to use it as a number.
+
+00:00:53.320 --> 00:00:59.479
+If you don't do this and try to use the input as a number, you'll get an error.
+
+00:00:59.479 --> 00:01:04.049
+Here, I wrap the input with int and added 20 to it.
+
+00:01:04.049 --> 00:01:08.670
+But what if the user inputs a non integer number?
+
+00:01:08.670 --> 00:01:14.484
+You can just wrap it as a float to catch non integer numbers as well.
+
+00:01:14.484 --> 00:01:16.319
+But what if you need an integer,
+
+00:01:16.319 --> 00:01:21.154
+like if you're multiplying a string by it to repeat it a certain number of times?
+
+00:01:21.155 --> 00:01:24.635
+This wouldn't work with the float even if it's an integer number.
+
+00:01:24.635 --> 00:01:27.550
+We can actually wrap this int with float,
+
+00:01:27.549 --> 00:01:30.170
+and then convert it into an int like this.
+
+00:01:30.170 --> 00:01:32.055
+Okay, that works.
+
+00:01:32.055 --> 00:01:34.335
+Clearly, you're trying to imagine and handle
+
+00:01:34.334 --> 00:01:39.019
+every possible case with user input can quickly get complicated.
+
+00:01:39.019 --> 00:01:41.099
+We addressed some cases here,
+
+00:01:41.099 --> 00:01:46.644
+but there are also loads of other cases we didn't address that could lead to more errors.
+
+00:01:46.644 --> 00:01:50.174
+We'll learn a better way to handle these scenarios in the next section.
+
+00:01:50.174 --> 00:01:52.325
+Before we move on to practice,
+
+00:01:52.325 --> 00:01:55.680
+here's another way we can interpret user input.
+
+00:01:55.680 --> 00:02:01.360
+Eval is a built-in function that evaluates a string as a line of Python.
+
+00:02:01.359 --> 00:02:05.099
+You can even include variables in the string like this.
+
+00:02:05.099 --> 00:02:09.120
+Now, let's write some fun scripts that interact with user input.
+

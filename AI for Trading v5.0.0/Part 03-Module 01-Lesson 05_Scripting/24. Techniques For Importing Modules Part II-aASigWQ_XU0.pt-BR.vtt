@@ -1,0 +1,108 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.267 --> 00:00:03.467
+Alguns módulos da biblioteca
+padrão do Python
+
+00:00:03.501 --> 00:00:05.233
+são muito grandes.
+
+00:00:05.267 --> 00:00:07.433
+Para gerenciar
+melhor o código,
+
+00:00:07.467 --> 00:00:12.400
+eles são divididos
+em submódulos de um pacote.
+
+00:00:12.433 --> 00:00:16.933
+Um pacote é um módulo
+que contém submódulos,
+
+00:00:17.667 --> 00:00:21.967
+um submódulo especificado
+com a notação de ponto.
+
+00:00:22.000 --> 00:00:24.367
+Por exemplo, o módulo OS,
+
+00:00:24.400 --> 00:00:26.967
+que é útil
+para lidar com sistemas de arquivo,
+
+00:00:27.000 --> 00:00:30.000
+possui o submódulo
+"os.path",
+
+00:00:30.033 --> 00:00:33.433
+que é utilizado especificamente
+para lidar com caminhos de nomes.
+
+00:00:33.467 --> 00:00:35.600
+Módulos que são submódulos
+
+00:00:35.634 --> 00:00:38.467
+são especificados
+pelo nome do pacote
+
+00:00:38.500 --> 00:00:42.100
+e pelo nome do submódulo
+separado por um ponto.
+
+00:00:42.134 --> 00:00:46.133
+Podemos importar o submódulo
+"os.path" desta forma.
+
+00:00:46.167 --> 00:00:50.533
+Podemos utilizar os objetos
+do submódulo da mesma forma.
+
+00:00:50.567 --> 00:00:55.400
+Porém, esta sintaxe de importação
+só funcionará para submódulos.
+
+00:00:55.433 --> 00:00:59.033
+Não podemos importar uma função
+de um módulo desta forma.
+
+00:00:59.067 --> 00:01:02.667
+Se quisermos utilizar
+outras partes do módulo OS,
+
+00:01:02.700 --> 00:01:04.767
+podemos importar o OS,
+
+00:01:04.801 --> 00:01:08.500
+e tudo no "os.path"
+se tornará acessível.
+
+00:01:09.267 --> 00:01:13.900
+Às vezes, nomear pode ser confuso
+ao trabalharmos com módulos.
+
+00:01:13.933 --> 00:01:16.633
+Por exemplo, um módulo
+pode ser nomeado
+
+00:01:16.667 --> 00:01:20.100
+a partir das classes de importação
+ou das funções dentro dele.
+
+00:01:20.133 --> 00:01:24.567
+Nesse caso, precisamos pensar melhor
+sobre as instruções de importação.
+
+00:01:24.601 --> 00:01:29.300
+Isto importa a classe "datetime"
+do módulo "datetime".
+
+00:01:29.334 --> 00:01:32.200
+Depois disso,
+ao utilizarmos "datetime",
+
+00:01:32.233 --> 00:01:35.633
+faremos referência
+à classe "datetime", não ao módulo.
+

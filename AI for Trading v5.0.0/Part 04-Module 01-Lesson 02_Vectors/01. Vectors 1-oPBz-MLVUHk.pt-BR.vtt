@@ -1,0 +1,233 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:04.434 --> 00:00:07.567
+"A INTRODUÇÃO DE NÚMEROS
+COMO COORDENADAS
+
+00:00:07.601 --> 00:00:10.868
+É UM ATO DE VIOLÊNCIA."
+
+00:00:10.901 --> 00:00:14.634
+A essência de tudo,
+a base da álgebra linear,
+
+00:00:14.667 --> 00:00:15.734
+é o vetor.
+
+00:00:15.767 --> 00:00:20.334
+Então é bom sabermos
+exatamente o que é um vetor.
+
+00:00:20.367 --> 00:00:21.868
+De modo geral,
+
+00:00:21.901 --> 00:00:24.868
+há 3 ideias distintas
+e relacionadas, sobre vetores,
+
+00:00:24.901 --> 00:00:27.000
+que chamarei de "perspectiva
+do aluno de física",
+
+00:00:27.033 --> 00:00:28.934
+"perspectiva do aluno
+de ciência da computação"
+
+00:00:28.968 --> 00:00:30.734
+e "perspectiva
+do matemático".
+
+00:00:30.767 --> 00:00:33.501
+A do aluno de física
+é que vetores são setas
+
+00:00:33.534 --> 00:00:35.033
+apontadas para o espaço.
+
+00:00:35.067 --> 00:00:39.234
+O que define um vetor é o
+seu comprimento e a sua direção.
+
+00:00:39.267 --> 00:00:41.000
+Mas se os dois fatos
+forem iguais,
+
+00:00:41.033 --> 00:00:43.934
+você pode movê-lo por toda parte
+e permanecerá o mesmo.
+
+00:00:43.968 --> 00:00:46.534
+Aqueles da superfície plana
+são bidimensionais,
+
+00:00:46.567 --> 00:00:49.167
+e os que ficam num espaço mais
+amplo, onde eu e você estamos,
+
+00:00:49.200 --> 00:00:50.767
+são tridimensionais.
+
+00:00:51.667 --> 00:00:53.334
+A perspectiva
+da ciência da computação
+
+00:00:53.367 --> 00:00:56.167
+é que vetores são
+listas ordenadas de números.
+
+00:00:56.200 --> 00:00:59.767
+Digamos que você esteja
+analisando preços de casas,
+
+00:00:59.801 --> 00:01:03.200
+e você só se importasse
+com a metragem e o preço.
+
+00:01:03.234 --> 00:01:05.734
+Talvez você represente cada casa
+com um par de números.
+
+00:01:05.767 --> 00:01:07.467
+O primeiro indicando
+os metros quadrados,
+
+00:01:07.501 --> 00:01:09.267
+e o segundo
+indicando o preço.
+
+00:01:09.300 --> 00:01:11.334
+Note que a ordem aqui
+é importante.
+
+00:01:12.734 --> 00:01:16.200
+Você estaria representando casas
+como vetores bidimensionais.
+
+00:01:16.234 --> 00:01:20.300
+Nesse caso, "vetor" é
+uma palavra chique para "lista".
+
+00:01:20.334 --> 00:01:21.934
+E o que a torna
+bidimensional
+
+00:01:21.968 --> 00:01:24.400
+é o fato de
+o comprimento dela ser 2.
+
+00:01:25.734 --> 00:01:29.767
+O matemático, por outro lado,
+busca generalizar essas ideias,
+
+00:01:29.801 --> 00:01:32.033
+dizendo que um vetor
+pode ser qualquer coisa
+
+00:01:32.067 --> 00:01:34.601
+onde haja a noção
+de adicionar dois vetores
+
+00:01:34.634 --> 00:01:36.567
+e multiplicar um vetor
+por um número.
+
+00:01:36.601 --> 00:01:39.033
+Operações das quais
+falarei depois neste vídeo.
+
+00:01:39.501 --> 00:01:41.767
+Os detalhes dessa perspectiva
+são bem abstratos,
+
+00:01:41.801 --> 00:01:44.501
+mas eu os menciono
+porque dão uma noção
+
+00:01:44.534 --> 00:01:48.167
+de que adição de vetores
+e multiplicação usando números
+
+00:01:48.200 --> 00:01:51.100
+farão um papel importante
+ao longo da álgebra linear.
+
+00:01:51.133 --> 00:01:53.067
+Mas antes de eu falar
+dessas operações,
+
+00:01:53.100 --> 00:01:56.067
+vamos falar de um pensamento
+específico para ter em mente
+
+00:01:56.100 --> 00:01:57.968
+quando eu falar
+a palavra "vetor".
+
+00:01:58.000 --> 00:02:00.367
+Com base no foco geométrico
+que estou dando,
+
+00:02:00.400 --> 00:02:03.000
+quando eu introduzir um tópico
+relacionado a vetores,
+
+00:02:03.033 --> 00:02:05.334
+quero que primeiro pense
+em uma seta.
+
+00:02:05.367 --> 00:02:09.367
+Pense numa seta dentro
+de um sistema de coordenadas,
+
+00:02:09.400 --> 00:02:10.901
+como o plano cartesiano,
+
+00:02:10.934 --> 00:02:12.968
+com sua cauda
+iniciando na origem.
+
+00:02:13.000 --> 00:02:15.634
+Isso é diferente da perspectiva
+do aluno de física
+
+00:02:15.667 --> 00:02:18.667
+em que o vetor pode ficar
+onde quiser.
+
+00:02:18.701 --> 00:02:24.334
+Na álgebra linear, o vetor quase
+sempre tem início na origem.
+
+00:02:24.367 --> 00:02:26.501
+Daí, quando você entender
+o conceito
+
+00:02:26.534 --> 00:02:28.701
+no contexto
+de setas no espaço,
+
+00:02:28.734 --> 00:02:31.601
+traduziremos para o ponto
+de vista da lista de números,
+
+00:02:31.634 --> 00:02:34.634
+ao considerarmos
+as coordenadas do vetor.
+
+00:02:34.667 --> 00:02:38.334
+Embora muitos já conheçam
+o sistema de coordenadas,
+
+00:02:38.367 --> 00:02:39.901
+é importante revê-lo,
+
+00:02:39.934 --> 00:02:43.133
+já que é aqui onde
+o vai e vem importante acontece
+
+00:02:43.167 --> 00:02:44.968
+entre as duas perspectivas
+de álgebra linear.
+

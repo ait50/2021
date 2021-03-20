@@ -1,0 +1,364 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:04.467 --> 00:00:06.133
+MATEMÁTICA REQUER
+UMA PEQUENA DOSE
+
+00:00:06.167 --> 00:00:09.367
+NÃO DE GENIALIDADE,
+MAS DE UMA LIBERDADE IMAGINATIVA
+
+00:00:09.400 --> 00:00:11.834
+QUE, EM QUANTIDADE MAIOR,
+SERIA INSANIDADE.
+
+00:00:11.934 --> 00:00:13.133
+No último vídeo,
+
+00:00:13.167 --> 00:00:16.033
+além de adição de vetores
+e multiplicação escalar,
+
+00:00:16.067 --> 00:00:19.167
+descrevi coordenadas de vetores
+como uma troca
+
+00:00:19.200 --> 00:00:23.367
+entre pares de números
+em vetores bidimensionais.
+
+00:00:23.400 --> 00:00:27.200
+Imagino que as coordenadas
+de vetores fossem familiares,
+
+00:00:27.234 --> 00:00:30.334
+mas há uma forma interessante
+de se pensar nelas.
+
+00:00:30.367 --> 00:00:32.901
+E isso é essencial
+para a álgebra linear.
+
+00:00:32.934 --> 00:00:35.334
+Quando temos um par de números
+que descreve um vetor,
+
+00:00:35.367 --> 00:00:37.434
+como 3 e -2,
+
+00:00:37.467 --> 00:00:40.534
+quero que pense em
+cada coordenada como um escalar.
+
+00:00:40.567 --> 00:00:45.000
+Pense em como cada uma
+estica ou encolhe os vetores.
+
+00:00:45.033 --> 00:00:46.767
+No sistema de coordenadas
+cartesiano,
+
+00:00:46.801 --> 00:00:48.734
+há dois vetores
+muito especiais:
+
+00:00:48.767 --> 00:00:51.067
+o que aponta para a direita,
+com comprimento 1,
+
+00:00:51.100 --> 00:00:52.767
+chamado de "i-chapéu",
+
+00:00:52.801 --> 00:00:55.100
+ou o vetor unitário
+na direção x,
+
+00:00:55.133 --> 00:00:57.334
+e aquele que aponta para cima,
+com o comprimento 1,
+
+00:00:57.367 --> 00:01:01.968
+chamado de "j-chapéu",
+ou vetor unitário na direção y.
+
+00:01:02.000 --> 00:01:04.467
+Agora, pense na coordenada x
+do nosso vetor,
+
+00:01:04.501 --> 00:01:06.801
+como um escalar que
+faz a escala do i-chapéu,
+
+00:01:06.834 --> 00:01:08.868
+esticando-o por um fator 3,
+
+00:01:08.901 --> 00:01:11.968
+e a coordenada y, um escalar que
+faz a escala do j-chapéu,
+
+00:01:12.000 --> 00:01:14.634
+invertendo-o e esticando-o
+por um fator 2.
+
+00:01:14.667 --> 00:01:17.934
+Nesse sentido, o vetor descrito
+por essas coordenadas
+
+00:01:17.968 --> 00:01:20.901
+é a soma de dois vetores
+em escala.
+
+00:01:20.934 --> 00:01:22.667
+É um conceito importante,
+
+00:01:22.701 --> 00:01:26.400
+a ideia de adicionar
+dois vetores com escala.
+
+00:01:27.067 --> 00:01:29.100
+Esses dois vetores,
+i-chapéu e j-chapéu,
+
+00:01:29.133 --> 00:01:30.734
+têm um nome especial.
+
+00:01:30.767 --> 00:01:34.067
+Juntos são chamados de
+"base do sistema de coordenadas".
+
+00:01:34.100 --> 00:01:38.000
+Ou seja, quando pensamos
+em coordenadas como escalares,
+
+00:01:38.033 --> 00:01:41.968
+os vetores da base são aquilo
+que os escalares escalam.
+
+00:01:42.033 --> 00:01:45.934
+Há uma definição mais técnica,
+mas falarei dela depois.
+
+00:01:47.400 --> 00:01:48.801
+Ao estruturarmos
+o sistema de coordenadas
+
+00:01:48.834 --> 00:01:51.601
+dentro desses
+fatores de base,
+
+00:01:51.634 --> 00:01:54.300
+uma questão interessante
+e sutil é levantada.
+
+00:01:54.334 --> 00:01:56.834
+Poderíamos ter escolhido
+fatores de base diferentes
+
+00:01:56.868 --> 00:02:00.934
+e ter conseguido um sistema
+de coordenadas novo e razoável.
+
+00:02:00.968 --> 00:02:03.901
+Por exemplo, pegue algum vetor
+que aponte para a direita
+
+00:02:03.934 --> 00:02:07.434
+e um outro vetor apontando
+para a direita.
+
+00:02:07.467 --> 00:02:10.567
+Pense em quantos vetores
+diferentes você poderia ter
+
+00:02:10.601 --> 00:02:12.734
+ao escolher dois escalares,
+
+00:02:12.767 --> 00:02:15.501
+usando cada um para
+fazer a escala de cada vetor
+
+00:02:15.534 --> 00:02:17.767
+e faça a soma
+do que você obteve.
+
+00:02:17.801 --> 00:02:19.501
+Quais vetores 2D
+você consegue
+
+00:02:19.534 --> 00:02:22.167
+ao alterar as escolhas
+de escalares?
+
+00:02:24.534 --> 00:02:28.367
+A resposta é que você pode
+alcançar quaisquer vetores 2D,
+
+00:02:28.400 --> 00:02:31.067
+e eu acho que é um bom enigma
+pensar no por quê.
+
+00:02:32.167 --> 00:02:34.367
+Um novo par de vetores de base
+como esse
+
+00:02:34.400 --> 00:02:38.000
+nos dá um modo válido para ir
+e voltar entre pares de números
+
+00:02:38.033 --> 00:02:39.734
+e vetores bidimensionais.
+
+00:02:39.767 --> 00:02:42.834
+Mas a associação é diferente
+daquela que você consegue
+
+00:02:42.868 --> 00:02:46.133
+usando a base mais padrão com
+i-chapéu e j-chapéu,
+
+00:02:46.167 --> 00:02:48.767
+quando sempre que descrevemos
+vetores numericamente,
+
+00:02:48.801 --> 00:02:50.467
+isso depende
+de uma escolha implícita
+
+00:02:50.501 --> 00:02:53.100
+de quais vetores base
+usaremos.
+
+00:02:53.133 --> 00:02:56.567
+Sempre que fizermos a escala
+de dois vetores e a soma deles,
+
+00:02:56.601 --> 00:03:00.267
+isso se chama "combinação linear"
+desses vetores.
+
+00:03:02.133 --> 00:03:05.601
+De onde vem a palavra "linear"?
+O que tem a ver com linhas?
+
+00:03:05.634 --> 00:03:07.033
+Isso não é etimologia,
+
+00:03:07.067 --> 00:03:08.868
+mas gosto de pensar assim:
+
+00:03:08.901 --> 00:03:13.133
+se você fixar um dos escalares
+e mudar o valor do outro,
+
+00:03:13.167 --> 00:03:16.934
+a extremidade do vetor
+resultante traça uma linha reta.
+
+00:03:19.868 --> 00:03:22.234
+Se deixarmos os dois escalares
+se alterar livremente
+
+00:03:22.267 --> 00:03:25.067
+e considerarmos
+qualquer vetor possível,
+
+00:03:25.100 --> 00:03:26.734
+há duas coisas
+que podem acontecer.
+
+00:03:27.200 --> 00:03:28.501
+Para a maioria
+dos pares de vetores,
+
+00:03:28.534 --> 00:03:31.300
+você pode atingir qualquer
+ponto possível no plano.
+
+00:03:31.334 --> 00:03:34.234
+Qualquer vetor bidimensional
+está ao seu alcance.
+
+00:03:34.267 --> 00:03:38.334
+mas no caso infeliz
+de os dois vetores se alinharem,
+
+00:03:38.367 --> 00:03:40.033
+a extremidade
+do vetor resultante
+
+00:03:40.067 --> 00:03:43.934
+é limitada a uma linha única
+passando pela origem.
+
+00:03:44.667 --> 00:03:47.234
+Na verdade, há uma terceira
+possibilidade também.
+
+00:03:47.267 --> 00:03:51.467
+Ambos os vetores podem ser 0,
+e você ficaria preso na origem.
+
+00:03:52.133 --> 00:03:53.667
+Aqui vai mais terminologia.
+
+00:03:53.701 --> 00:03:56.167
+O conjunto de todos
+os vetores possíveis
+
+00:03:56.200 --> 00:03:59.200
+com uma combinação linear
+de um par de vetores
+
+00:03:59.234 --> 00:04:02.234
+é chamado de "espaço vetorial"
+desses dois vetores.
+
+00:04:05.367 --> 00:04:07.701
+Então, reafirmando
+o que acabamos de ver:
+
+00:04:07.734 --> 00:04:10.000
+o espaço vetorial da maioria
+dos vetores 2D
+
+00:04:10.033 --> 00:04:12.000
+são todos os vetores
+do espaço 2D,
+
+00:04:12.033 --> 00:04:13.100
+mas quando se alinham,
+
+00:04:13.133 --> 00:04:15.267
+o espaço vetorial são todos
+os vetores cujas extremidades
+
+00:04:15.300 --> 00:04:17.234
+ficam numa
+determinada linha.
+
+00:04:17.834 --> 00:04:19.667
+Lembra-se de quando eu disse
+que a álgebra linear
+
+00:04:19.701 --> 00:04:23.000
+gira em torno de adição de
+vetores e multiplicação escalar?
+
+00:04:23.033 --> 00:04:26.501
+O espaço vetorial de 2 vetores
+é um modo de perguntar:
+
+00:04:26.534 --> 00:04:28.601
+quais são todos os vetores
+que se pode alcançar
+
+00:04:28.634 --> 00:04:31.534
+usando apenas essas
+duas operações fundamentais,
+
+00:04:31.567 --> 00:04:33.901
+adição de vetores
+e multiplicação escalar?
+

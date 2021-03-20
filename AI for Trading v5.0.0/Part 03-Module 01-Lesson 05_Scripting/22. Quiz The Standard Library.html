@@ -1,0 +1,832 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: The Standard Library
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Scripting
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Python Installation.html">
+       02. Python Installation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Install Python Using Anaconda.html">
+       03. Install Python Using Anaconda
+      </a>
+     </li>
+     <li class="">
+      <a href="04. [For Windows] Configuring Git Bash to Run Python.html">
+       04. [For Windows] Configuring Git Bash to Run Python
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Running a Python Script.html">
+       05. Running a Python Script
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Programming Environment Setup.html">
+       06. Programming Environment Setup
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Editing a Python Script.html">
+       07. Editing a Python Script
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Scripting with Raw Input.html">
+       08. Scripting with Raw Input
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Scripting with Raw Input.html">
+       09. Quiz: Scripting with Raw Input
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Solution Scripting with Raw Input.html">
+       10. Solution: Scripting with Raw Input
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Errors and Exceptions.html">
+       11. Errors and Exceptions
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Errors and Exceptions.html">
+       12. Errors and Exceptions
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Handling Errors.html">
+       13. Handling Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Practice Handling Input Errors.html">
+       14. Practice: Handling Input Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Handling Input Errors.html">
+       15. Solution: Handling Input Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Accessing Error Messages.html">
+       16. Accessing Error Messages
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Reading and Writing Files.html">
+       17. Reading and Writing Files
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Quiz Reading and Writing Files.html">
+       18. Quiz: Reading and Writing Files
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Solution Reading and Writing Files.html">
+       19. Solution: Reading and Writing Files
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Importing Local Scripts.html">
+       20. Importing Local Scripts
+      </a>
+     </li>
+     <li class="">
+      <a href="21. The Standard Library.html">
+       21. The Standard Library
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Quiz The Standard Library.html">
+       22. Quiz: The Standard Library
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Solution The Standard Library.html">
+       23. Solution: The Standard Library
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Techniques for Importing Modules.html">
+       24. Techniques for Importing Modules
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Quiz Techniques for Importing Modules.html">
+       25. Quiz: Techniques for Importing Modules
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Third-Party Libraries.html">
+       26. Third-Party Libraries
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Experimenting with an Interpreter.html">
+       27. Experimenting with an Interpreter
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Online Resources.html">
+       28. Online Resources
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Conclusion.html">
+       29. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          22. Quiz: The Standard Library
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-compute-an-exponent">
+          Quiz: Compute an Exponent
+         </h1>
+         <p>
+          It's your turn to import and use the
+          <code>
+           math
+          </code>
+          module. Use the
+          <code>
+           math
+          </code>
+          module to calculate
+          <code>
+           e
+          </code>
+          to the power of 3.
+          <code>
+           print
+          </code>
+          the answer.
+         </p>
+         <p>
+          Refer to the
+          <a href="https://docs.python.org/3.6/library/math.html?highlight=math%20module#module-math" rel="noopener noreferrer" target="_blank">
+           math module's documentation
+          </a>
+          to find the function you need!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="521218-expquiz-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#521218-expquiz-py" id="tab-521218-expquiz-py" role="tab">
+            expquiz.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-521218-expquiz-py" class="tab-pane active show" id="521218-expquiz-py" role="tabpanel">
+            <pre><code></code># print e to the power of 3 using the math module</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-password-generator">
+          Quiz: Password Generator
+         </h1>
+         <p>
+          Write a function called
+          <code>
+           generate_password
+          </code>
+          that selects three random words from the list of words
+          <code>
+           word_list
+          </code>
+          and concatenates them into a single string. Your function should not accept any arguments and should reference the global variable
+          <code>
+           word_list
+          </code>
+          to build the password.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="521257-password_generator-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#521257-password_generator-py" id="tab-521257-password_generator-py" role="tab">
+            password_generator.py
+           </a>
+           <a aria-controls="521257-words-txt" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#521257-words-txt" id="tab-521257-words-txt" role="tab">
+            words.txt
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-521257-password_generator-py" class="tab-pane active show" id="521257-password_generator-py" role="tabpanel">
+            <pre><code></code># Use an import statement at the top
+
+word_file = "words.txt"
+word_list = []
+
+#fill up the word_list
+with open(word_file,'r') as words:
+	for line in words:
+		# remove white space and make everything lowercase
+		word = line.strip().lower()
+		# don't include words that are too long or too short
+		if 3 &lt; len(word) &lt; 8:
+			word_list.append(word)
+
+# Add your function generate_password here
+# It should return a string consisting of three random words 
+# concatenated together without spaces
+
+
+
+# test your function
+print(generate_password())</pre>
+           </div>
+           <div aria-labelledby="tab-521257-words-txt" class="tab-pane" id="521257-words-txt" role="tabpanel">
+            <pre><code></code>Alice
+was
+beginning
+to
+get
+very
+tired
+of
+sitting
+by
+her
+sister
+bank
+having
+nothing
+Once
+twice
+she
+had
+peeped
+into
+the
+book
+her
+sister
+was
+reading
+but
+it
+had
+no
+pictures
+or
+conversations
+in
+it
+and
+what
+is
+the
+use
+of
+a
+book
+thought
+Alice
+without
+pictures
+or
+conversations</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="explore-the-standard-library">
+          Explore the Standard Library
+         </h1>
+         <p>
+          In the following quizzes, enter the name of the module that solves each problem. Note that capitalization is important! Every module in the standard library is lowercased.
+          <a href="https://docs.python.org/3/library/" rel="noopener noreferrer" target="_blank">
+           You can browse the library documentation here.
+          </a>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Which Module? 1
+         </p>
+        </h3>
+        <div>
+         <div>
+          <p>
+           <strong>
+            QUESTION:
+           </strong>
+           <p>
+            Which module can tell you the current time and date?
+           </p>
+          </p>
+          <div class="" form-group"="">
+           <label for="answer">
+            <strong>
+             ANSWER:
+            </strong>
+           </label>
+           <textarea class="form-control" id="answer"></textarea>
+          </div>
+         </div>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <p>
+           <i>
+            NOTE: The solutions are expressed in RegEx pattern. Udacity uses these patterns to check the given answer
+           </i>
+          </p>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Which Module? 2
+         </p>
+        </h3>
+        <div>
+         <div>
+          <p>
+           <strong>
+            QUESTION:
+           </strong>
+           <p>
+            Which module has a method for changing the current working directory?
+           </p>
+          </p>
+          <div class="" form-group"="">
+           <label for="answer">
+            <strong>
+             ANSWER:
+            </strong>
+           </label>
+           <textarea class="form-control" id="answer"></textarea>
+          </div>
+         </div>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <p>
+           <i>
+            NOTE: The solutions are expressed in RegEx pattern. Udacity uses these patterns to check the given answer
+           </i>
+          </p>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Which Module? 3
+         </p>
+        </h3>
+        <div>
+         <div>
+          <p>
+           <strong>
+            QUESTION:
+           </strong>
+           <p>
+            Which module can read data from a comma separated values (.csv) file into Python dictionaries for each row?
+           </p>
+          </p>
+          <div class="" form-group"="">
+           <label for="answer">
+            <strong>
+             ANSWER:
+            </strong>
+           </label>
+           <textarea class="form-control" id="answer"></textarea>
+          </div>
+         </div>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <p>
+           <i>
+            NOTE: The solutions are expressed in RegEx pattern. Udacity uses these patterns to check the given answer
+           </i>
+          </p>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Which Module? 4
+         </p>
+        </h3>
+        <div>
+         <div>
+          <p>
+           <strong>
+            QUESTION:
+           </strong>
+           <p>
+            Which module can help extract all of the files from a zip file?
+           </p>
+          </p>
+          <div class="" form-group"="">
+           <label for="answer">
+            <strong>
+             ANSWER:
+            </strong>
+           </label>
+           <textarea class="form-control" id="answer"></textarea>
+          </div>
+         </div>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <p>
+           <i>
+            NOTE: The solutions are expressed in RegEx pattern. Udacity uses these patterns to check the given answer
+           </i>
+          </p>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Which Module? 5
+         </p>
+        </h3>
+        <div>
+         <div>
+          <p>
+           <strong>
+            QUESTION:
+           </strong>
+           <p>
+            Which module can say how long your code took to run?
+           </p>
+          </p>
+          <div class="" form-group"="">
+           <label for="answer">
+            <strong>
+             ANSWER:
+            </strong>
+           </label>
+           <textarea class="form-control" id="answer"></textarea>
+          </div>
+         </div>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <p>
+           <i>
+            NOTE: The solutions are expressed in RegEx pattern. Udacity uses these patterns to check the given answer
+           </i>
+          </p>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="our-favourite-modules-">
+          Our favourite modules
+         </h1>
+         <p>
+          The Python Standard Library has a lot of modules! To help you get familiar with what's available, here are a selection of our favourite Python Standard Library modules and why we use them!
+         </p>
+         <ul>
+          <li>
+           <a href="https://docs.python.org/3/library/csv.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             csv
+            </code>
+           </a>
+           : very convenient for reading and writing csv files
+          </li>
+          <li>
+           <a href="https://docs.python.org/3/library/collections.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             collections
+            </code>
+           </a>
+           : useful extensions of the usual data types including
+           <code>
+            OrderedDict
+           </code>
+           ,
+           <code>
+            defaultdict
+           </code>
+           and
+           <code>
+            namedtuple
+           </code>
+          </li>
+          <li>
+           <a href="https://docs.python.org/3/library/random.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             random
+            </code>
+           </a>
+           : generates pseudo-random numbers, shuffles sequences randomly and chooses random items
+          </li>
+          <li>
+           <a href="https://docs.python.org/3/library/string.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             string
+            </code>
+           </a>
+           : more functions on strings. This module also contains useful collections of letters like
+           <code>
+            string.digits
+           </code>
+           (a string containing all characters which are valid digits).
+          </li>
+          <li>
+           <a href="https://docs.python.org/3/library/re.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             re
+            </code>
+           </a>
+           : pattern-matching in strings via regular expressions
+          </li>
+          <li>
+           <a href="https://docs.python.org/3/library/math.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             math
+            </code>
+           </a>
+           : some standard mathematical functions
+          </li>
+          <li>
+           <a href="https://docs.python.org/3/library/os.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             os
+            </code>
+           </a>
+           : interacting with operating systems
+          </li>
+          <li>
+           <a href="https://docs.python.org/3/library/os.path.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             os.path
+            </code>
+           </a>
+           : submodule of
+           <code>
+            os
+           </code>
+           for manipulating path names
+          </li>
+          <li>
+           <a href="https://docs.python.org/3/library/sys.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             sys
+            </code>
+           </a>
+           : work directly with the Python interpreter
+          </li>
+          <li>
+           <a href="https://docs.python.org/3/library/json.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             json
+            </code>
+           </a>
+           : good for reading and writing json files (good for web work)
+          </li>
+         </ul>
+         <p>
+          We hope you find these useful!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="23. Solution The Standard Library.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('22. Quiz: The Standard Library')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

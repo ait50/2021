@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.470 --> 00:00:04.049
+Let's revisit the cylinder volume function,
+
+00:00:04.049 --> 00:00:06.014
+but with one modification.
+
+00:00:06.014 --> 00:00:08.865
+This function includes a default argument.
+
+00:00:08.865 --> 00:00:11.144
+If radius is not specified,
+
+00:00:11.144 --> 00:00:16.125
+then the variable radius will default to five when used in the function body.
+
+00:00:16.125 --> 00:00:21.574
+Calling the function like this would be the same thing as calling it like this,
+
+00:00:21.574 --> 00:00:26.559
+because radius is set to five if not specified as another value.
+
+00:00:26.559 --> 00:00:32.890
+Default arguments allow functions to use default values when those arguments are omitted.
+
+00:00:32.890 --> 00:00:36.789
+This is helpful because it can make your code more concise in
+
+00:00:36.789 --> 00:00:40.805
+scenarios where there is a common value you can use for a variable,
+
+00:00:40.805 --> 00:00:43.914
+although you still want it to be customizable.
+
+00:00:43.914 --> 00:00:49.825
+In this example, the default radius is five but we can still change this.
+
+00:00:49.825 --> 00:00:52.495
+This time when we call the function,
+
+00:00:52.494 --> 00:00:56.649
+we are overriding the default value of five and calculating
+
+00:00:56.649 --> 00:01:01.574
+the cylinder volume for a cylinder with a radius of seven instead.
+
+00:01:01.575 --> 00:01:06.930
+Also notice here, we're passing values to our arguments by position.
+
+00:01:06.930 --> 00:01:10.305
+It's possible to pass values in two ways,
+
+00:01:10.305 --> 00:01:13.080
+by position and by name.
+
+00:01:13.079 --> 00:01:17.234
+Each of these function is evaluated in the same way.
+
+00:01:17.234 --> 00:01:19.829
+This one is simply taking the arguments by
+
+00:01:19.829 --> 00:01:24.435
+position while this function is accepting arguments by name.
+
+00:01:24.435 --> 00:01:27.240
+There are some nuances for when you can perform
+
+00:01:27.239 --> 00:01:30.224
+the passing of values in each of these ways.
+
+00:01:30.224 --> 00:01:34.250
+You'll see more applications of this in the following quiz section.
+

@@ -1,0 +1,281 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.067 --> 00:00:03.567
+Agora, adição e multiplicação
+de vetores com números.
+
+00:00:03.601 --> 00:00:08.434
+Afinal, tudo em álgebra linear
+gira em torno dessas operações.
+
+00:00:08.467 --> 00:00:11.567
+Felizmente,
+elas são bem fáceis de definir.
+
+00:00:11.601 --> 00:00:15.067
+Digamos que temos dois vetores:
+um para cima e para a direita,
+
+00:00:15.100 --> 00:00:17.334
+e o outro para a direita
+e para baixo.
+
+00:00:17.367 --> 00:00:20.167
+Para adicionar os dois vetores,
+mova o segundo
+
+00:00:20.200 --> 00:00:23.367
+até que sua cauda fique
+na extremidade do primeiro.
+
+00:00:23.400 --> 00:00:25.667
+Daí, se desenhar
+um novo vetor
+
+00:00:25.701 --> 00:00:29.767
+da cauda do primeiro
+até a extremidade do segundo,
+
+00:00:29.801 --> 00:00:32.300
+esse novo vetor
+é a soma.
+
+00:00:32.334 --> 00:00:36.601
+Essa definição de adição é o
+único momento em álgebra linear
+
+00:00:36.634 --> 00:00:40.033
+que deixamos o vetor
+sair de perto da origem.
+
+00:00:40.067 --> 00:00:42.167
+Por que
+isso é algo aceitável?
+
+00:00:42.200 --> 00:00:45.067
+Por que essa é a definição
+de adição e não outra?
+
+00:00:45.734 --> 00:00:50.167
+Gosto de pensar que cada vetor
+representa um movimento,
+
+00:00:50.200 --> 00:00:53.501
+um passo com uma certa distância
+e direção no espaço.
+
+00:00:54.467 --> 00:00:57.200
+Se dermos um passo ao longo
+do primeiro vetor,
+
+00:00:57.234 --> 00:01:00.434
+depois dermos um passo na
+direção e distância do segundo,
+
+00:01:00.467 --> 00:01:05.734
+é como se movêssemos ao longo
+da soma de ambos os vetores.
+
+00:01:05.767 --> 00:01:10.467
+É como se pensarmos em adicionar
+números numa linha numérica.
+
+00:01:10.501 --> 00:01:14.100
+Ensinamos as crianças a pensar
+nisso, com 2 + 5, por exemplo,
+
+00:01:14.133 --> 00:01:18.801
+movendo 2 passos para a direita
+e depois mais 5 para a direita.
+
+00:01:18.834 --> 00:01:23.000
+O efeito final é como se tivesse
+dado 7 passos para a direita.
+
+00:01:23.033 --> 00:01:26.434
+Vamos ver numericamente
+como fica a adição de vetores.
+
+00:01:26.467 --> 00:01:29.467
+O primeiro vetor
+tem coordenadas 1 e 2.
+
+00:01:30.133 --> 00:01:33.033
+E o segundo
+tem coordenadas 3 e -1.
+
+00:01:34.801 --> 00:01:37.767
+Ao somar os vetores
+com esse método
+
+00:01:37.801 --> 00:01:39.400
+pensamos
+num percurso de 4 passos
+
+00:01:39.434 --> 00:01:42.167
+da origem
+à extremidade do segundo vetor.
+
+00:01:42.200 --> 00:01:44.200
+Ande 1 para a direita,
+2 para cima,
+
+00:01:44.234 --> 00:01:46.534
+3 para a direita
+e 1 para baixo.
+
+00:01:46.567 --> 00:01:50.601
+Reorganize os passos para fazer
+antes movimentos para direita,
+
+00:01:50.634 --> 00:01:52.334
+depois
+os movimentos verticais.
+
+00:01:52.367 --> 00:01:55.767
+Você pode ler isso dizendo:
+"Mova 1 + 3 para a direita,
+
+00:01:55.801 --> 00:01:59.133
+depois mova 2 - 1
+para cima."
+
+00:02:00.601 --> 00:02:03.400
+O novo vetor tem
+coordenadas 1 + 3
+
+00:02:03.434 --> 00:02:05.834
+e coordenadas 2 + (-1).
+
+00:02:06.033 --> 00:02:09.467
+Em geral, adição de vetores,
+no conceito de lista numérica,
+
+00:02:09.501 --> 00:02:12.801
+é como combinar os termos
+e adicioná-los.
+
+00:02:15.267 --> 00:02:17.133
+A outra operação de vetores
+fundamental
+
+00:02:17.167 --> 00:02:19.100
+é a multiplicação
+por um número.
+
+00:02:19.133 --> 00:02:22.234
+É mais fácil entender
+com alguns exemplos.
+
+00:02:22.267 --> 00:02:25.567
+Se pegarmos o número 2 e
+o multiplicarmos por um vetor,
+
+00:02:25.601 --> 00:02:27.634
+significa
+que esticamos esse vetor
+
+00:02:27.667 --> 00:02:30.667
+para que fique duas vezes
+mais longo do que no início.
+
+00:02:30.701 --> 00:02:33.467
+Se multiplicarmos o vetor
+por 1/3,
+
+00:02:33.501 --> 00:02:35.167
+significa que o encolhemos
+
+00:02:35.200 --> 00:02:37.801
+até chegar
+a 1/3 do comprimento original.
+
+00:02:37.834 --> 00:02:41.801
+Quando multiplicamos por
+um número negativo, como -1.8,
+
+00:02:41.834 --> 00:02:44.167
+o vetor deve ser invertido,
+
+00:02:44.200 --> 00:02:47.133
+depois esticado
+pelo fator de 1,8.
+
+00:02:47.567 --> 00:02:52.000
+O processo de esticar, encolher
+ou inverter a direção do vetor
+
+00:02:52.033 --> 00:02:53.667
+é chamado de "scaling".
+
+00:02:53.701 --> 00:02:57.734
+E quando pegamos um número
+como 2, 1/3 ou -1.8,
+
+00:02:57.767 --> 00:03:02.200
+ao fazer o scaling,
+chamamos isso de "escalar".
+
+00:03:02.234 --> 00:03:06.067
+Em álgebra linear, uma das
+ações principais dos números
+
+00:03:06.100 --> 00:03:07.534
+é dar escala aos vetores.
+
+00:03:07.567 --> 00:03:12.234
+Então é comum usar a palavra
+"escalar" no lugar de "número".
+
+00:03:12.267 --> 00:03:15.701
+Numericamente, esticar um vetor
+por um fator 2
+
+00:03:15.734 --> 00:03:20.534
+corresponde a multiplicar cada
+componente por esse fator 2.
+
+00:03:20.567 --> 00:03:23.167
+Quando o conceito de vetores
+é de uma lista de números,
+
+00:03:23.200 --> 00:03:25.400
+multiplicar um vetor
+por um escalar
+
+00:03:25.434 --> 00:03:29.100
+significa multiplicar cada
+componente por esse escalar.
+
+00:03:30.701 --> 00:03:32.534
+Você verá nos vídeos
+o que quero dizer
+
+00:03:32.567 --> 00:03:34.367
+quando digo
+que tópicos de álgebra linear
+
+00:03:34.400 --> 00:03:37.634
+giram em torno dessas
+duas operações fundamentais:
+
+00:03:37.667 --> 00:03:39.801
+adição de vetores
+e multiplicação escalar.
+
+00:03:41.267 --> 00:03:42.567
+Essa é a base sobre vetores.
+
+00:03:42.601 --> 00:03:46.234
+No próximo vídeo, conceitos
+legais relacionados a vetores,
+
+00:03:46.267 --> 00:03:48.734
+como espaço vetorial,
+base e dependência linear.
+
+00:03:48.767 --> 00:03:50.167
+Até lá.
+

@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.859 --> 00:00:05.599
+In all of the previous lessons,
+
+00:00:05.599 --> 00:00:09.619
+we've been using these boxes to represent a code editor where
+
+00:00:09.619 --> 00:00:13.844
+we wrote our Python code and output window where we viewed results.
+
+00:00:13.845 --> 00:00:15.245
+And in the classroom,
+
+00:00:15.244 --> 00:00:18.705
+you use these programming quizzes to write Python and run
+
+00:00:18.705 --> 00:00:22.850
+your code but instead of running your code online in the classroom,
+
+00:00:22.850 --> 00:00:26.240
+you can run Python on your own computer by installing
+
+00:00:26.239 --> 00:00:29.989
+Python and useful tools for your programming environment.
+
+00:00:29.989 --> 00:00:33.394
+Since Python is a popular open-source programming language,
+
+00:00:33.395 --> 00:00:34.700
+it's free to download,
+
+00:00:34.700 --> 00:00:39.140
+change and use and the fact that it's already popular means
+
+00:00:39.140 --> 00:00:41.240
+there are online instructions to help you get it
+
+00:00:41.240 --> 00:00:44.150
+installed for most common operating systems.
+
+00:00:44.149 --> 00:00:46.949
+Because it's popular and open-source,
+
+00:00:46.950 --> 00:00:50.660
+there's a large global community working on developing Python.
+
+00:00:50.659 --> 00:00:52.669
+For you, as a Python user,
+
+00:00:52.670 --> 00:00:57.760
+that means there'll be new versions coming out as Python is improved by the community.
+
+00:00:57.759 --> 00:01:02.299
+You might find yourself needing to update Python from time to time especially if you're
+
+00:01:02.299 --> 00:01:04.640
+collaborating with other people as you write
+
+00:01:04.640 --> 00:01:08.534
+Python programs that are compatible with the version they're using.
+
+00:01:08.534 --> 00:01:11.000
+Now, it's time for you to install Python.
+

@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.359
+Here, the code in the except block occurs
+
+00:00:03.359 --> 00:00:07.264
+when any kind of exception occurs while executing the try block.
+
+00:00:07.264 --> 00:00:11.309
+Really though we just want to adjust the ValueError exception.
+
+00:00:11.310 --> 00:00:14.600
+If I try to exit the program with Ctrl C,
+
+00:00:14.599 --> 00:00:19.364
+it doesn't stop the program because the except handles any error,
+
+00:00:19.364 --> 00:00:21.664
+including the KeyboardInterrupt error.
+
+00:00:21.664 --> 00:00:26.280
+We can actually specify which error we want to handle like this.
+
+00:00:26.280 --> 00:00:28.770
+Now it catches the ValueError exception,
+
+00:00:28.769 --> 00:00:31.745
+but not other exceptions like KeyboardInterrupt.
+
+00:00:31.745 --> 00:00:34.814
+Notice in this case when I press Ctrl C,
+
+00:00:34.814 --> 00:00:36.809
+it ends the program.
+
+00:00:36.810 --> 00:00:40.185
+This is because a KeyboardInterrupt exception was raised,
+
+00:00:40.185 --> 00:00:43.350
+which isn't handled by this try statement.
+
+00:00:43.350 --> 00:00:46.215
+Also notice that although the program crashed,
+
+00:00:46.215 --> 00:00:50.010
+this code in the finally block was still executed.
+
+00:00:50.009 --> 00:00:55.585
+Attempted Input is printed no matter what as the program is exiting this try statement,
+
+00:00:55.585 --> 00:00:57.945
+even if that means exiting the program.
+
+00:00:57.945 --> 00:01:02.115
+If we want this handler to address more than one type of exception,
+
+00:01:02.115 --> 00:01:06.915
+we can include a tuple after the except with the exception like this.
+
+00:01:06.915 --> 00:01:11.865
+Or if we want to execute different blocks of code depending on the exception,
+
+00:01:11.864 --> 00:01:15.015
+you can have multiple except blocks like this.
+
+00:01:15.015 --> 00:01:17.349
+Here, I have two handlers,
+
+00:01:17.349 --> 00:01:20.559
+one for ValueError and one for KeyboardInterrupt.
+
+00:01:20.560 --> 00:01:22.795
+When I press Ctrl C,
+
+00:01:22.795 --> 00:01:26.890
+it says No input taken and breaks from the while loop.
+

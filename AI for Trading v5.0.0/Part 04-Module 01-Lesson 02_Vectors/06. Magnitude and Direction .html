@@ -1,0 +1,440 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Magnitude and Direction
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Vectors
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. What's a Vector.html">
+       01. What's a Vector?
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Vectors, what even are they  Part 2.html">
+       02. Vectors, what even are they?  Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Vectors, what even are they  Part 3.html">
+       03. Vectors, what even are they?  Part 3
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Vectors- Mathematical definition .html">
+       04. Vectors- Mathematical definition
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Transpose.html">
+       05. Transpose
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Magnitude and Direction .html">
+       06. Magnitude and Direction
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Vectors- Quiz 1.html">
+       07. Vectors- Quiz 1
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Operations in the Field.html">
+       08. Operations in the Field
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Vector Addition.html">
+       09. Vector Addition
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Vectors- Quiz 2.html">
+       10. Vectors- Quiz 2
+      </a>
+     </li>
+     <li class="">
+      <a href="11.    Scalar by Vector Multiplication.html">
+       11.    Scalar by Vector Multiplication
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Vectors Quiz 3.html">
+       12. Vectors Quiz 3
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Vectors Quiz Answers.html">
+       13. Vectors Quiz Answers
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Magnitude and Direction
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="magnitude-and-direction">
+          Magnitude and Direction
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Each vector holds the magnitude as well as the direction of the movement.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Lets calculate both for vector
+          <span class="mathquill ud-math">
+           \vec{x}=\begin{bmatrix} 4\\2\end{bmatrix}
+          </span>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The symbol we use for the
+          <strong>
+           magnitude
+          </strong>
+          is
+          <span class="mathquill ud-math">
+           \left |    \right |
+          </span>
+          .
+         </p>
+         <p>
+          To calculate the
+          <strong>
+           magnitude
+          </strong>
+          of a
+          <span class="mathquill ud-math">
+           2D
+          </span>
+          vector we will use the
+          <a href="https://en.wikipedia.org/wiki/Pythagorean_theorem" rel="noopener noreferrer" target="_blank">
+           <strong>
+            Pythagorean Theorem
+           </strong>
+          </a>
+          .
+         </p>
+         <p>
+          In our example the magnitude will be calculated the following way:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \left |\vec{x}  \right |=\sqrt{4^2+2^2}
+          </span>
+         </p>
+         <p>
+          Where 4 is the horizontal component of the vector and 2 is the vertical.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          To calculate the
+          <strong>
+           direction of the movement
+          </strong>
+          we will use an angle.  We can use Degrees or Radians. In this example we will focus on Degree.  (It is always possible to
+          <a href="http://www.mathwarehouse.com/trigonometry/radians/convert-degee-to-radians.php" rel="noopener noreferrer" target="_blank">
+           move Degrees to Radians and vice versa
+          </a>
+          ).
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          lets look at the vector
+          <span class="mathquill ud-math">
+           \vec{x}
+          </span>
+          again. It has an angle
+          <span class="mathquill ud-math">
+           \theta
+          </span>
+          with respect to the horizontal axis.
+         </p>
+         <p>
+          Please take a look at the picture below for an illustration:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-01-24-at-3.13.49-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          To calculate
+          <span class="mathquill ud-math">
+           \theta
+          </span>
+          we will use what we remember from Trigonometry!
+         </p>
+         <p>
+          In the specific angle illustrated below
+          <span class="mathquill ud-math">
+           \theta
+          </span>
+          is calculated the following way:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \theta=tan^{-1}\frac{y}{x}
+          </span>
+         </p>
+         <p>
+          <em>
+           Equation 3
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-03-21-at-2.40.42-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Therefore, in our case
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \theta=tan^{-1}\frac{2}{4}=26.56505^{\circ}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          For further information on magnitude and direction of a 2D vector, please use the following
+          <a href="http://www.softschools.com/math/pre_calculus/direction_angles_of_vectors/" rel="noopener noreferrer" target="_blank">
+           link
+          </a>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. Vectors- Quiz 1.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Magnitude and Direction ')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

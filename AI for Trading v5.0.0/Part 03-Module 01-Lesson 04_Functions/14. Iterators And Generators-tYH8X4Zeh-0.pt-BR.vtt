@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.501 --> 00:00:01.767
+FUNÇÕES:
+ITERADORES E GERADORES
+
+00:00:01.834 --> 00:00:05.901
+Se você se lembra da aula anterior,
+iteráveis são objetos
+
+00:00:05.934 --> 00:00:09.200
+que devolvem um de seus elementos
+por vez.
+
+00:00:09.234 --> 00:00:13.934
+Listas são um dos iteráveis
+mais comuns que você já usou.
+
+00:00:13.968 --> 00:00:17.934
+Acontece que muitas das funções
+integradas (built-in) que usamos até agora,
+
+00:00:17.968 --> 00:00:22.434
+como enumerar, devolvem algo
+chamado "iterador".
+
+00:00:22.467 --> 00:00:26.868
+Um iterador é um objeto
+que representa um fluxo de dados.
+
+00:00:26.901 --> 00:00:30.501
+É diferente de uma lista,
+que também é um iterável,
+
+00:00:30.567 --> 00:00:32.734
+mas não um iterador,
+
+00:00:32.767 --> 00:00:35.434
+já que não é um fluxo de dados.
+
+00:00:35.467 --> 00:00:39.067
+Logo você verá algumas razões
+em que iteradores são favorecidos
+
+00:00:39.100 --> 00:00:41.300
+em diferentes situações.
+
+00:00:41.334 --> 00:00:46.701
+Aqui vamos aprender a criar
+iteradores usando geradores.
+
+00:00:46.734 --> 00:00:51.234
+Geradores são meios simples
+de criar iteradores usando funções.
+
+00:00:51.267 --> 00:00:54.767
+Porém, não é a única forma
+de se criar iteradores.
+
+00:00:54.801 --> 00:00:58.133
+Você pode ler mais a respeito
+nas notas abaixo.
+
+00:00:58.167 --> 00:01:00.601
+Esses termos podem ser
+um pouco confusos.
+
+00:01:00.634 --> 00:01:04.968
+O termo "gerador" costuma ser usado
+para se referir à função geradora,
+
+00:01:05.033 --> 00:01:08.167
+mas também é usado para se referir
+ao objeto iterador
+
+00:01:08.200 --> 00:01:10.400
+produzido pela função.
+
+00:01:10.434 --> 00:01:14.133
+Aqui vou diferenciá-los
+me referindo à função
+
+00:01:14.167 --> 00:01:16.200
+como 'função geradora"
+
+00:01:16.234 --> 00:01:19.634
+e ao que ela produz
+como "iterador".
+
+00:01:19.667 --> 00:01:23.067
+Esta é uma função geradora
+chamada "my_range" ("meu_intervalo")
+
+00:01:23.100 --> 00:01:27.868
+que produz um fluxo de números
+de zero a X menos um.
+
+00:01:27.901 --> 00:01:31.133
+Observe que em vez de usar
+a palavra-chave "return",
+
+00:01:31.167 --> 00:01:33.267
+ela usa o "yield".
+
+00:01:33.300 --> 00:01:37.133
+Isso permite à função
+devolver valores, um por vez,
+
+00:01:37.167 --> 00:01:41.434
+e começar de onde havia parado
+a cada vez que é chamada.
+
+00:01:41.467 --> 00:01:44.667
+A palavra-chave "rendimento"
+diferencia um gerador
+
+00:01:44.701 --> 00:01:47.300
+de uma função típica.
+
+00:01:47.334 --> 00:01:48.968
+Como se pode ver aqui,
+
+00:01:49.000 --> 00:01:52.067
+meu intervalo quatro
+devolve um iterador
+
+00:01:52.100 --> 00:01:55.400
+para que possamos iterar
+com ele.
+
+00:01:55.434 --> 00:01:59.834
+Usando um loop "for", podemos
+imprimir valores do fluxo de dados.
+
+00:01:59.868 --> 00:02:04.934
+Aqui ele imprime
+zero, um, dois e três.
+
+00:02:04.968 --> 00:02:08.467
+Na próxima seção, você vai praticar
+escrevendo funções geradoras
+
+00:02:08.501 --> 00:02:10.601
+para criar
+seus próprios iteradores.
+

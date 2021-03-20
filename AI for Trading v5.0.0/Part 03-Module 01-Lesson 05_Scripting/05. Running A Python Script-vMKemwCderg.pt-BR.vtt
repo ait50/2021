@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:02.933
+Agora que você instalou
+o Python com sucesso,
+
+00:00:03.300 --> 00:00:05.633
+vamos tentar executar
+um script no seu terminal.
+
+00:00:06.133 --> 00:00:09.733
+Primeiro faça o download
+do arquivo "first_script.py"
+
+00:00:09.933 --> 00:00:13.867
+anexo ao final desta página e mova-o
+para um diretório apropriado.
+
+00:00:14.433 --> 00:00:15.967
+Coloquei meu arquivo aqui,
+
+00:00:16.001 --> 00:00:19.033
+arrastando-o da pasta "Downloads"
+para esta pasta.
+
+00:00:19.333 --> 00:00:21.833
+Pode ser um bom momento
+para configurar um novo diretório
+
+00:00:21.867 --> 00:00:24.467
+para o seu aprendizado,
+se você já não tiver um.
+
+00:00:24.933 --> 00:00:29.300
+Então abra o seu terminal e use "CD"
+para navegar até o diretório
+
+00:00:29.334 --> 00:00:31.233
+que contém
+o arquivo baixado.
+
+00:00:31.267 --> 00:00:34.167
+Posso verificar de novo
+se o arquivo está localizado aqui
+
+00:00:34.201 --> 00:00:37.667
+ao digitar "LS" ou "DIR"
+no Windows.
+
+00:00:38.200 --> 00:00:40.400
+Agora que você está
+no diretório do arquivo,
+
+00:00:40.667 --> 00:00:45.300
+pode executá-lo ao digitar "Python"
+e depois o nome do arquivo assim.
+
+00:00:45.833 --> 00:00:47.167
+Então pressione "enter".
+
+00:00:47.500 --> 00:00:49.567
+Você saberá que executou
+o script com sucesso
+
+00:00:49.601 --> 00:00:51.133
+se aparecer esta mensagem.
+
+00:00:51.600 --> 00:00:54.533
+Sempre que você digita "Python"
+seguido pelo nome do arquivo
+
+00:00:54.567 --> 00:00:56.067
+para um script Python,
+
+00:00:56.101 --> 00:01:00.267
+esse script é executado
+e a saída aparece imediatamente.
+
+00:01:00.833 --> 00:01:02.633
+Quando os códigos terminam
+de ser executados
+
+00:01:02.667 --> 00:01:04.633
+e todas as saídas
+já foram mostradas,
+
+00:01:04.667 --> 00:01:06.800
+o prompt da linha de comando
+reaparece.
+
+00:01:07.133 --> 00:01:09.567
+Observe que, se você digitou
+e apertou "enter" após Python
+
+00:01:09.601 --> 00:01:11.133
+sem um script para executar,
+
+00:01:11.167 --> 00:01:14.233
+uma interpretação interativa
+para o Python será iniciada.
+
+00:01:14.533 --> 00:01:16.433
+Você aprenderá
+mais sobre isso depois.
+
+00:01:16.667 --> 00:01:20.467
+Por enquanto, você pode digitar
+"exit" e parênteses para sair
+
+00:01:20.833 --> 00:01:24.300
+ou "control + D"
+no Mac e Linux
+
+00:01:24.733 --> 00:01:27.333
+ou "control Z + enter"
+no Windows.
+
+00:01:27.867 --> 00:01:30.167
+Voltei ao prompt
+da linha de comando.
+
+00:01:30.201 --> 00:01:31.433
+É a sua vez.
+
+00:01:31.467 --> 00:01:34.900
+Faça o download do arquivo abaixo
+e execute o script no seu terminal.
+

@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.609
+As you saw in the last video,
+
+00:00:02.609 --> 00:00:05.730
+trying to handle every kind of scenario when
+
+00:00:05.730 --> 00:00:09.330
+dealing with unexpected input can be a bit much.
+
+00:00:09.330 --> 00:00:13.080
+There's actually a much simpler way of dealing with this in Python.
+
+00:00:13.080 --> 00:00:18.570
+Here, you learn how to handle errors with try and except blocks.
+
+00:00:18.570 --> 00:00:22.644
+First, let's learn more about what errors in Python are.
+
+00:00:22.644 --> 00:00:26.429
+We've seen error messages due to several reasons in this course,
+
+00:00:26.429 --> 00:00:29.195
+and we can separate them into two types,
+
+00:00:29.195 --> 00:00:32.075
+syntax errors and exceptions.
+
+00:00:32.075 --> 00:00:35.450
+Syntax errors occur when Python can't interpret
+
+00:00:35.450 --> 00:00:39.850
+our code since we didn't follow the correct syntax for Python.
+
+00:00:39.850 --> 00:00:43.484
+These are errors you're likely to get when you make a typo,
+
+00:00:43.484 --> 00:00:45.585
+or you're first starting to learn Python.
+
+00:00:45.585 --> 00:00:48.149
+Here, I get a syntax error because I
+
+00:00:48.149 --> 00:00:51.269
+missed the ending quotation mark at the end of the string.
+
+00:00:51.270 --> 00:00:53.325
+I can see this in the error message,
+
+00:00:53.325 --> 00:00:57.680
+SyntaxError: End of line when scanning string literal.
+
+00:00:57.679 --> 00:00:58.979
+The other kind of error,
+
+00:00:58.979 --> 00:01:04.409
+exceptions occur when unexpected things happen during the execution of the code.
+
+00:01:04.409 --> 00:01:07.694
+Here, although our code is syntactically correct,
+
+00:01:07.694 --> 00:01:11.114
+we run into an exception because a string spelling out
+
+00:01:11.114 --> 00:01:14.899
+10 isn't a valid argument for the int function.
+
+00:01:14.900 --> 00:01:18.045
+There are different types of built-in exceptions in Python,
+
+00:01:18.045 --> 00:01:22.769
+and you can see which exception is being thrown here in the error message.
+
+00:01:22.769 --> 00:01:25.694
+Value error is one type of exception.
+
+00:01:25.694 --> 00:01:29.879
+It occurs when a built-in operation or function is
+
+00:01:29.879 --> 00:01:34.539
+given an argument with the correct type but an inappropriate value.
+
+00:01:34.540 --> 00:01:37.300
+Here's another example that there was an exception.
+
+00:01:37.299 --> 00:01:41.489
+Here, we try to reference a variable name that we didn't define yet.
+
+00:01:41.489 --> 00:01:44.114
+So, we get a name error exception.
+
+00:01:44.114 --> 00:01:47.399
+Again, this code is syntactically correct,
+
+00:01:47.400 --> 00:01:50.150
+but when Python gets to this line of code,
+
+00:01:50.150 --> 00:01:53.590
+it can't find the value for this variable when it tries to run it.
+
+00:01:53.590 --> 00:01:56.530
+So, it raises an exception and stops the code.
+

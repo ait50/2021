@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.233 --> 00:00:02.933
+É bem fácil esquecer
+de fechar um arquivo
+
+00:00:02.967 --> 00:00:04.333
+quando terminar de usá-lo.
+
+00:00:04.567 --> 00:00:07.000
+Então o Python fornece
+uma sintaxe especial
+
+00:00:07.034 --> 00:00:08.467
+que automaticamente fecha
+o arquivo.
+
+00:00:08.501 --> 00:00:11.667
+Isso é feito com uma palavra-chave
+que permite abrir um arquivo,
+
+00:00:12.000 --> 00:00:13.567
+fazer operações nele,
+
+00:00:13.767 --> 00:00:17.667
+e o fecha automaticamente após
+o código "indented" ser executado.
+
+00:00:18.100 --> 00:00:20.233
+Neste caso,
+lido a partir do arquivo.
+
+00:00:20.700 --> 00:00:23.300
+Agora não precisamos
+chamar "f.close".
+
+00:00:23.967 --> 00:00:27.500
+Este código, "as f." atribui
+o objeto de arquivo
+
+00:00:27.534 --> 00:00:31.300
+criado pela função "open"
+para o nome da variável, "f".
+
+00:00:31.600 --> 00:00:34.900
+Esta linha de código
+é basicamente esta linha de código,
+
+00:00:34.934 --> 00:00:38.700
+exceto que você só pode acessar
+o objeto de arquivo, "f",
+
+00:00:38.734 --> 00:00:40.267
+dentro deste bloco.
+
+00:00:40.301 --> 00:00:42.267
+Este é outro tipo de escopo.
+
+00:00:42.500 --> 00:00:45.800
+Quando você sai do bloco "indented",
+o arquivo é fechado,
+
+00:00:45.834 --> 00:00:48.433
+e você não consegue
+mais interagir com ele.
+
+00:00:48.467 --> 00:00:49.767
+Por exemplo,
+
+00:00:49.801 --> 00:00:54.867
+tentar chamar "f.read"
+fora deste bloco retornaria um erro.
+
+00:00:55.500 --> 00:00:59.967
+Mas só porque você fechou o arquivo
+não significa que perdeu os dados.
+
+00:01:00.400 --> 00:01:02.933
+Aqui lemos o arquivo
+nesta linha
+
+00:01:03.433 --> 00:01:05.300
+e temos essa string de dados
+do arquivo,
+
+00:01:05.500 --> 00:01:07.967
+que contém
+o texto do aquivo.
+
+00:01:08.300 --> 00:01:11.067
+Chamar os dados do arquivos
+fora do bloco também funciona.
+
+00:01:11.600 --> 00:01:13.667
+Podemos usar todos os métodos
+de string comuns
+
+00:01:13.701 --> 00:01:16.867
+nesta string de dados do arquivo,
+para processar o seu conteúdo.
+

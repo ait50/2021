@@ -1,0 +1,506 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Linear Combination and Span
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Linear Combination
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Linear Combination. Part 1.html">
+       01. Linear Combination. Part 1
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Linear Combination. Part 2.html">
+       02. Linear Combination. Part 2
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Linear Combination and Span.html">
+       03. Linear Combination and Span
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Linear Combination -Quiz 1.html">
+       04. Linear Combination -Quiz 1
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Linear Dependency .html">
+       05. Linear Dependency
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Solving a Simplified Set of Equations.html">
+       06. Solving a Simplified Set of Equations
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Linear Combination - Quiz 2.html">
+       07. Linear Combination - Quiz 2
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Linear Combination - Quiz 3.html">
+       08. Linear Combination - Quiz 3
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Linear Combination and Span
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="linear-combination-and-span--theoretical-definitions">
+          Linear Combination and Span- Theoretical Definitions
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          In general terms, the simple definition of a
+          <strong>
+           linear combination
+          </strong>
+          is a multiplication of a scalar to a variable  and addition of those terms.
+         </p>
+         <p>
+          For example:
+         </p>
+         <p>
+          If
+          <br/>
+          <span class="mathquill ud-math">
+           x
+          </span>
+          ,
+          <span class="mathquill ud-math">
+           y
+          </span>
+          and
+          <span class="mathquill ud-math">
+           z
+          </span>
+          are variables,
+         </p>
+         <p>
+          and
+          <span class="mathquill ud-math">
+           a_1
+          </span>
+          ,
+          <span class="mathquill ud-math">
+           a_2
+          </span>
+          and
+          <span class="mathquill ud-math">
+           a_3
+          </span>
+          are scalars,
+         </p>
+         <p>
+          the following equations will be a linear combination:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           v=a_1x+a_2y+a_3z
+          </span>
+         </p>
+         <p>
+          <em>
+           Equation 6
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Let's now put it into the Linear Algebra context.
+         </p>
+         <p>
+          Our variables will now be vectors:
+          <span class="mathquill ud-math">
+           \vec{x}
+          </span>
+          ,
+          <span class="mathquill ud-math">
+           \vec{y}
+          </span>
+          and
+          <span class="mathquill ud-math">
+           \vec{z}
+          </span>
+          are variables.
+         </p>
+         <p>
+          The scalars can remain the same:
+          <br/>
+          <span class="mathquill ud-math">
+           a_1
+          </span>
+          ,
+          <span class="mathquill ud-math">
+           a_2
+          </span>
+          and
+          <span class="mathquill ud-math">
+           a_3
+          </span>
+          .
+         </p>
+         <p>
+          A linear combination of a scalar by a vector will be a new vector:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \vec{v}=a_1\vec{x}+a_2\vec{y}+a_3\vec{z}
+          </span>
+         </p>
+         <p>
+          <em>
+           Equation 7
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-01-29-at-11.49.47-am.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          A linear combination can be of a single addition, or (as shown in equations 4 above) of any number of additions.
+         </p>
+         <p>
+          The general notation of a vector by a scalar linear combination will be:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \sum_{1}^{n}a_i\vec{v_i}
+          </span>
+         </p>
+         <p>
+          <em>
+           Equation 8
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          What is the
+          <strong>
+           Span
+          </strong>
+          ?
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-01-29-at-11.51.35-am.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          If
+          <span class="mathquill ud-math">
+           \vec{v_1}, \vec{v_2},….., \vec{v_n}\in \mathbb{R}
+          </span>
+          <br/>
+          then
+         </p>
+         <p>
+          the
+          <strong>
+           Span
+          </strong>
+          of those vectors (sometimes also referred to as the Linear Span) is the set of all possible linear combinations of those vectors.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Mathematically, the span of the set of vectors
+          <span class="mathquill ud-math">
+           \vec{v_1}, \vec{v_2},….., \vec{v_n}
+          </span>
+          is written as:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           Sp(\vec{v_1}, \vec{v_2},….., \vec{v_n})
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          For example:
+         </p>
+         <p>
+          The three following vectors:
+          <span class="mathquill ud-math">
+           \vec{v_1}=\begin{bmatrix} 1\\0\\0\end{bmatrix}
+          </span>
+          ,
+          <span class="mathquill ud-math">
+           \vec{v_2}=\begin{bmatrix} 0\\1\\0\end{bmatrix}
+          </span>
+          and
+          <span class="mathquill ud-math">
+           \vec{v_3}=\begin{bmatrix} 0\\0\\1\end{bmatrix}
+          </span>
+          span any vector in
+          <span class="mathquill ud-math">
+           \mathbb{R}^3
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          To prove that,  we will take a random vector
+          <span class="mathquill ud-math">
+           \vec{v}=\begin{bmatrix} p\\q\\t\end{bmatrix}
+          </span>
+          and show that it can be generated as a linear combination of of vectors
+          <span class="mathquill ud-math">
+           \vec{v_1}, \vec{v_2}
+          </span>
+          and
+          <span class="mathquill ud-math">
+           \vec{v_3}
+          </span>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          In a quick observation we can see that:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \vec{v}= p\begin{bmatrix} 1\\0\\0\end{bmatrix}+q\begin{bmatrix} 0\\1\\0\end{bmatrix}+t\begin{bmatrix} 0\\0\\1\end{bmatrix}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. Linear Combination -Quiz 1.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Linear Combination and Span')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

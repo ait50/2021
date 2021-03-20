@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.767 --> 00:00:03.567
+FUNÇÕES:
+ESCOPO VARIÁVEL
+
+00:00:04.734 --> 00:00:07.501
+O escopo se refere a quais partes
+de um programa
+
+00:00:07.534 --> 00:00:10.901
+uma variável pode ser
+referenciada ou usada.
+
+00:00:10.934 --> 00:00:14.033
+Se uma variável é criada
+dentro de uma função,
+
+00:00:14.067 --> 00:00:17.467
+só pode ser usada
+dentro dessa função.
+
+00:00:17.501 --> 00:00:19.467
+Considere estas duas funções:
+
+00:00:19.501 --> 00:00:22.434
+contagem de palavras
+e número quadrado mais próximo.
+
+00:00:22.467 --> 00:00:27.300
+A primeira função usa resposta
+para contar palavras num documento.
+
+00:00:27.334 --> 00:00:30.801
+A segunda função usa resposta
+para verificar valores
+
+00:00:30.834 --> 00:00:33.767
+enquanto busca o número quadrado
+mais próximo.
+
+00:00:33.801 --> 00:00:36.968
+As duas funções incluem
+essa resposta variável,
+
+00:00:37.000 --> 00:00:40.267
+mas são variáveis distintas,
+que só podem ser referenciadas
+
+00:00:40.300 --> 00:00:43.033
+dentro das
+respectivas funções.
+
+00:00:43.067 --> 00:00:47.434
+Como alternativa, podemos ter uma
+variável definida fora de funções,
+
+00:00:47.467 --> 00:00:48.934
+como essa.
+
+00:00:48.968 --> 00:00:51.067
+E podemos acessá-la
+de qualquer lugar,
+
+00:00:51.100 --> 00:00:53.934
+dentro ou fora
+dessas funções.
+
+00:00:53.968 --> 00:00:57.757
+O escopo é essencial para entender
+como a informação é passada
+
+00:00:57.791 --> 00:00:59.863
+de um programa a outro
+no Python
+
+00:00:59.897 --> 00:01:01.894
+ou em outras linguagens
+de programação.
+

@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:01.933
+Comparado
+a muitas linguagens,
+
+00:00:01.967 --> 00:00:04.667
+o Python possui
+uma biblioteca padrão grande.
+
+00:00:04.700 --> 00:00:08.467
+Na verdade, dizem que o Python
+vem com baterias incluídas,
+
+00:00:08.500 --> 00:00:12.333
+pois tem as bibliotecas necessárias
+para trabalharmos.
+
+00:00:12.367 --> 00:00:16.667
+Porém, a biblioteca padrão
+não vem com tudo que queremos.
+
+00:00:16.700 --> 00:00:19.833
+Algumas tarefas são específicas
+demais para serem acomodadas
+
+00:00:19.867 --> 00:00:21.633
+pela biblioteca padrão.
+
+00:00:21.667 --> 00:00:25.567
+Felizmente, existem milhares
+de bibliotecas de terceiros
+
+00:00:25.600 --> 00:00:27.967
+criadas por desenvolvedores
+independentes.
+
+00:00:28.000 --> 00:00:33.100
+Como obtemos esses pacotes,
+se não estão inclusos no Python?
+
+00:00:33.134 --> 00:00:35.533
+Podemos instalar bibliotecas
+utilizando o pip,
+
+00:00:35.567 --> 00:00:39.100
+um gerenciador de pacote
+incluso no Python 3.
+
+00:00:39.134 --> 00:00:42.300
+O pip é um gerenciador
+de pacote padrão do Python,
+
+00:00:42.333 --> 00:00:44.133
+mas não é o único.
+
+00:00:44.167 --> 00:00:47.467
+Uma alternativa popular
+é o Anaconda,
+
+00:00:47.501 --> 00:00:50.633
+projetado especificamente
+para a ciência de dados.
+
+00:00:50.667 --> 00:00:54.900
+Aqui utilizaremos o pip,
+que é um padrão geral.
+
+00:00:54.933 --> 00:00:57.367
+Vamos usá-lo
+para instalar esta biblioteca
+
+00:00:57.401 --> 00:00:59.700
+utilizada para trabalhar
+com fusos horários,
+
+00:00:59.733 --> 00:01:02.000
+uma tarefa
+notoriamente complicada.
+
+00:01:02.033 --> 00:01:04.700
+Este comando baixará
+e instalará o pacote
+
+00:01:04.734 --> 00:01:07.700
+para que ele possa ser
+importado nos programas.
+
+00:01:07.734 --> 00:01:09.033
+Uma vez instalado,
+
+00:01:09.067 --> 00:01:11.067
+podemos importar
+pacotes de terceiros
+
+00:01:11.101 --> 00:01:15.867
+utilizando a mesma sintaxe
+para importar da biblioteca padrão.
+
+00:01:15.900 --> 00:01:18.733
+Neste exemplo, importamos
+o pacote de fuso horário
+
+00:01:18.767 --> 00:01:22.033
+junto com o DateTime
+da biblioteca padrão.
+
+00:01:22.067 --> 00:01:24.967
+O padrão é alocar
+as instruções import
+
+00:01:25.000 --> 00:01:26.667
+das bibliotecas de terceiros
+
+00:01:26.700 --> 00:01:30.033
+depois das importações
+da biblioteca padrão.
+
+00:01:30.067 --> 00:01:32.667
+Este exemplo armazena
+o tempo atual,
+
+00:01:32.700 --> 00:01:37.167
+expressado em Tempo
+Universal Coordenado, ou UTC,
+
+00:01:37.200 --> 00:01:38.867
+na variável "now".
+
+00:01:38.901 --> 00:01:44.000
+Ele traduz o tempo em IST,
+o horário padrão indiano,
+
+00:01:44.033 --> 00:01:46.967
+e o armazena
+na variável "ist_now".
+
+00:01:47.000 --> 00:01:48.667
+Programas Python maiores
+
+00:01:48.700 --> 00:01:51.767
+podem depender de vários
+pacotes de terceiros.
+
+00:01:51.800 --> 00:01:54.467
+Para facilitar o compartilhamento
+dos programas,
+
+00:01:54.500 --> 00:01:57.300
+os programadores listam
+as dependências dos projetos
+
+00:01:57.333 --> 00:02:00.700
+em um arquivo
+chamado "requirements.txt".
+
+00:02:00.734 --> 00:02:05.167
+Este é um exemplo
+de um arquivo desse tipo.
+
+00:02:05.200 --> 00:02:08.267
+Cada linha do arquivo
+inclui o nome do pacote
+
+00:02:08.301 --> 00:02:10.000
+e o número de versão.
+
+00:02:10.033 --> 00:02:12.500
+O número de versão
+é tecnicamente opcional,
+
+00:02:12.533 --> 00:02:15.167
+mas geralmente
+deve ser incluído.
+
+00:02:15.201 --> 00:02:19.067
+As versões das bibliotecas podem
+mudar de forma sutil ou marcante,
+
+00:02:19.101 --> 00:02:22.200
+então é importante usar
+as mesmas versões de biblioteca
+
+00:02:22.233 --> 00:02:25.467
+utilizadas
+pelo autor do programa.
+
+00:02:25.500 --> 00:02:29.767
+Podemos usar pip para instalar
+todas as dependências de um projeto
+
+00:02:29.800 --> 00:02:31.300
+com este comando.
+

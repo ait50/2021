@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.040
+Compared to most languages,
+
+00:00:02.040 --> 00:00:04.605
+Python has a large standard library.
+
+00:00:04.605 --> 00:00:07.770
+In fact, people say Python comes with batteries
+
+00:00:07.769 --> 00:00:12.195
+included because it comes with the libraries you need to get right to work.
+
+00:00:12.195 --> 00:00:16.635
+However, the standard library doesn't come with everything you might want.
+
+00:00:16.635 --> 00:00:21.500
+Some tasks are too specialized to be accommodated by the standard library.
+
+00:00:21.500 --> 00:00:24.265
+Fortunately, there are tens of thousands of
+
+00:00:24.265 --> 00:00:27.894
+third-party libraries written by independent developers.
+
+00:00:27.894 --> 00:00:30.262
+How do we get these packages though,
+
+00:00:30.263 --> 00:00:32.920
+if they aren't included with Python itself?
+
+00:00:32.920 --> 00:00:35.515
+We can install libraries using pip,
+
+00:00:35.515 --> 00:00:38.965
+a package manager that is included with Python 3.
+
+00:00:38.965 --> 00:00:43.510
+Pip is a standard package manager for Python, but it isn't the only one.
+
+00:00:43.509 --> 00:00:47.454
+One popular alternative is Anaconda,
+
+00:00:47.454 --> 00:00:50.585
+which is designed specifically for data science.
+
+00:00:50.585 --> 00:00:52.545
+Here, we'll use pip,
+
+00:00:52.545 --> 00:00:54.615
+which is a general standard.
+
+00:00:54.615 --> 00:00:57.405
+Let's use pip to install this library,
+
+00:00:57.405 --> 00:01:01.755
+which is used for working with time zones or remarkably complicated task.
+
+00:01:01.755 --> 00:01:04.725
+This command will download and install the package,
+
+00:01:04.724 --> 00:01:07.679
+so that it's available to import in our programs.
+
+00:01:07.680 --> 00:01:11.115
+Once installed, we can import third-party packages
+
+00:01:11.114 --> 00:01:15.435
+using the same syntax we used to import from the standard library.
+
+00:01:15.435 --> 00:01:17.609
+In this example, I import
+
+00:01:17.609 --> 00:01:21.930
+a time zone package along with a datetime from the standard library.
+
+00:01:21.930 --> 00:01:25.275
+It's standard practice to put the import statements for
+
+00:01:25.275 --> 00:01:29.810
+third-party libraries after imports from the standard library.
+
+00:01:29.810 --> 00:01:33.920
+This example stores the current time expressed in terms of
+
+00:01:33.920 --> 00:01:38.930
+Coordinated Universal Time or UTC in the variable now.
+
+00:01:38.930 --> 00:01:42.395
+It then translates this time into IST,
+
+00:01:42.394 --> 00:01:46.759
+Indian Standard Time and stores that in the variable ist_now.
+
+00:01:46.760 --> 00:01:51.755
+Larger Python programs might depend on dozens of third-party packages.
+
+00:01:51.754 --> 00:01:54.354
+To make it easier to share these programs,
+
+00:01:54.355 --> 00:02:00.390
+programmers often list of projects dependencies in a file called requirements.txt.
+
+00:02:00.390 --> 00:02:04.799
+This is an example of a requirements.txt file.
+
+00:02:04.799 --> 00:02:09.810
+Each line of the file includes the name of a package and it's version number.
+
+00:02:09.810 --> 00:02:12.487
+The version number is technically optional,
+
+00:02:12.487 --> 00:02:14.805
+but it usually should be included.
+
+00:02:14.805 --> 00:02:19.200
+Libraries can change subtly or dramatically between versions,
+
+00:02:19.199 --> 00:02:20.429
+so it's important to use
+
+00:02:20.430 --> 00:02:25.365
+the same library versions that the program's author used when they wrote the program.
+
+00:02:25.365 --> 00:02:31.600
+You can use pip to install all of the project's dependencies at once with this command.
+

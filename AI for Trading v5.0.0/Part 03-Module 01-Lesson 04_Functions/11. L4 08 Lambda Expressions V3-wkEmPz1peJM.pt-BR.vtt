@@ -1,0 +1,141 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.134 --> 00:00:03.136
+FUNÇÕES
+EXPRESSÕES LAMBDA
+
+00:00:03.504 --> 00:00:06.440
+No Python,
+você pode usar expressões lambda
+
+00:00:06.473 --> 00:00:08.275
+para criar funções anônimas.
+
+00:00:08.775 --> 00:00:11.445
+Ou seja,
+funções que não têm nome.
+
+00:00:12.079 --> 00:00:14.781
+Isso é muito útil
+para criar funções rápidas
+
+00:00:15.048 --> 00:00:18.118
+que não serão muito necessárias
+mais tarde no programa.
+
+00:00:18.151 --> 00:00:21.021
+Depois vamos aprender
+funções de ordem mais alta,
+
+00:00:21.388 --> 00:00:24.791
+que são funções que aceitam
+outras funções como argumento
+
+00:00:25.392 --> 00:00:28.462
+e é aí que as expressões lambda
+se tornam muito úteis.
+
+00:00:28.962 --> 00:00:31.198
+Vamos comparar
+a estrutura de uma função
+
+00:00:31.465 --> 00:00:33.200
+e uma expressão lambda.
+
+00:00:33.901 --> 00:00:37.004
+Aqui temos uma função simples
+que dobra um número.
+
+00:00:37.704 --> 00:00:39.473
+Ela pega um número x
+
+00:00:39.873 --> 00:00:42.409
+e retorna x
+multiplicado por 2.
+
+00:00:43.143 --> 00:00:45.812
+Chamar o dobro de 3
+retorna 6.
+
+00:00:47.114 --> 00:00:49.883
+Aqui está o equivalente
+em uma expressão lambda.
+
+00:00:50.384 --> 00:00:51.485
+A palavra-chave lambda
+
+00:00:51.518 --> 00:00:54.588
+é usada para indicar
+que esta é uma expressão lambda.
+
+00:00:55.189 --> 00:00:57.925
+Depois de lambda temos
+um ou mais argumentos
+
+00:00:57.958 --> 00:00:59.426
+para a função anônima
+
+00:00:59.726 --> 00:01:01.295
+e depois dois pontos.
+
+00:01:02.396 --> 00:01:04.064
+Essas duas são equivalentes,
+
+00:01:04.264 --> 00:01:07.935
+assim como o nome dos argumentos
+é arbitrário.
+
+00:01:09.336 --> 00:01:12.139
+Por último, temos uma expressão
+que é avaliada
+
+00:01:12.172 --> 00:01:13.907
+e retornada nesta função.
+
+00:01:14.641 --> 00:01:17.177
+É parecido com uma
+expressão que você poderia ver
+
+00:01:17.211 --> 00:01:19.746
+como uma declaração de retorno
+de uma função.
+
+00:01:20.280 --> 00:01:21.448
+Com essa estrutura,
+
+00:01:21.481 --> 00:01:24.685
+expressões lambda não são ideais
+para funções complexas,
+
+00:01:24.718 --> 00:01:28.088
+mas podem ser muito úteis
+para funções simples e curtas.
+
+00:01:28.822 --> 00:01:32.593
+Se você quiser especificar vários
+argumentos em uma função lambda,
+
+00:01:32.626 --> 00:01:34.862
+dá para incluí-los
+antes dos dois pontos
+
+00:01:34.895 --> 00:01:36.330
+separados por vírgula.
+
+00:01:37.197 --> 00:01:40.501
+Aqui temos uma função lambda
+que multiplica dois números.
+
+00:01:41.869 --> 00:01:43.270
+No quiz a seguir,
+
+00:01:43.303 --> 00:01:45.739
+você vai praticar o uso
+de funções lambda
+
+00:01:45.939 --> 00:01:48.075
+e vai ver como elas
+podem ser úteis.
+
