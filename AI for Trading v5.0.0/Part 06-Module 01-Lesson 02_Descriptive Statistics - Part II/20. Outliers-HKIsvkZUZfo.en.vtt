@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.020 --> 00:00:03.955
+In this video, we want to look at the final aspect
+
+00:00:03.955 --> 00:00:08.344
+used to describe quantitative variables, Outliers.
+
+00:00:08.345 --> 00:00:13.804
+Outliers are data points that fall very far from the rest of the values in our data set.
+
+00:00:13.804 --> 00:00:17.550
+In order to determine what is very far,
+
+00:00:17.550 --> 00:00:19.714
+there are a number of different methods.
+
+00:00:19.714 --> 00:00:24.179
+My usual method for detecting outliers isn't very scientific.
+
+00:00:24.179 --> 00:00:27.420
+Usually, I just look at a histogram and see if
+
+00:00:27.420 --> 00:00:31.665
+the point is really far from any of the other data points.
+
+00:00:31.664 --> 00:00:34.469
+Again, a quick plot of your data can
+
+00:00:34.469 --> 00:00:38.159
+often help you understand a lot in a short amount of time.
+
+00:00:38.159 --> 00:00:41.459
+In order to illustrate the impact that outliers can
+
+00:00:41.460 --> 00:00:45.000
+have on the way we report summary statistics,
+
+00:00:45.000 --> 00:00:48.085
+let's consider the salaries of entrepreneurs.
+
+00:00:48.085 --> 00:00:51.719
+Imagine I select ten entrepreneur earnings and I
+
+00:00:51.719 --> 00:00:55.615
+pull these nine values here as earnings in thousands of dollars,
+
+00:00:55.615 --> 00:00:58.950
+and the tenth is the CEO of Facebook.
+
+00:00:58.950 --> 00:01:02.984
+According to a post by CNN in 2016,
+
+00:01:02.984 --> 00:01:09.409
+he earned 4.4 million dollars per day.
+
+00:01:09.409 --> 00:01:13.099
+Here, we can calculate the mean of these salaries for
+
+00:01:13.099 --> 00:01:19.434
+entrepreneurs based on this data to be approximately 160 million dollars.
+
+00:01:19.435 --> 00:01:21.590
+This is incredibly misleading.
+
+00:01:21.590 --> 00:01:25.760
+Literally zero of the entrepreneurs earned this salary.
+
+00:01:25.760 --> 00:01:29.719
+None of the ten salaries are even close to this amount.
+
+00:01:29.719 --> 00:01:32.905
+A better measure of center would certainly be the median.
+
+00:01:32.905 --> 00:01:37.370
+The median here is calculated at 62,000 dollars a year and is
+
+00:01:37.370 --> 00:01:43.070
+a better indication of what an entrepreneur is likely to earn based on our data.
+
+00:01:43.069 --> 00:01:46.894
+Our standard deviation is also not a great measure in this case.
+
+00:01:46.894 --> 00:01:50.379
+At approximately 482 million dollars,
+
+00:01:50.379 --> 00:01:55.454
+all this suggests is that our earnings for entrepreneurs are really spread out,
+
+00:01:55.454 --> 00:01:57.914
+but that really isn't fair either.
+
+00:01:57.915 --> 00:02:01.675
+Just one point is really far from the rest.
+
+00:02:01.674 --> 00:02:04.000
+Like really really far.
+

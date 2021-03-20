@@ -1,0 +1,474 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Text: Introduction to the Standard Deviation and Variance
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Descriptive Statistics - Part II
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Video What are Measures of Spread.html">
+       01. Video: What are Measures of Spread?
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Video Histograms.html">
+       02. Video: Histograms
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Video Weekdays vs. Weekends What is the Difference.html">
+       03. Video: Weekdays vs. Weekends: What is the Difference
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Video Introduction to Five Number Summary.html">
+       04. Video: Introduction to Five Number Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz 5 Number Summary Practice.html">
+       05. Quiz: 5 Number Summary Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Video What if We Only Want One Number.html">
+       06. Video: What if We Only Want One Number?
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Video Introduction to Standard Deviation and Variance.html">
+       07. Video: Introduction to Standard Deviation and Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Video Standard Deviation Calculation.html">
+       08. Video: Standard Deviation Calculation
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Measures of Spread (Calculation and Units).html">
+       09. Measures of Spread (Calculation and Units)
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Text Introduction to the Standard Deviation and Variance.html">
+       10. Text: Introduction to the Standard Deviation and Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Video Why the Standard Deviation.html">
+       11. Video: Why the Standard Deviation?
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Video Important Final Points.html">
+       12. Video: Important Final Points
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Advanced Standard Deviation and Variance.html">
+       13. Advanced: Standard Deviation and Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Applied Standard Deviation and Variance.html">
+       14. Quiz: Applied Standard Deviation and Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Homework 1 Final Quiz on Measures Spread.html">
+       15. Homework 1: Final Quiz on Measures Spread
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Text Measures of Center and Spread Summary.html">
+       16. Text: Measures of Center and Spread Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Video Shape.html">
+       17. Video: Shape
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Video The Shape For Data In The World.html">
+       18. Video: The Shape For Data In The World
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Quiz Shape and Outliers (What's the Impact).html">
+       19. Quiz: Shape and Outliers (What's the Impact?)
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Video Shape and Outliers.html">
+       20. Video: Shape and Outliers
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Video Working With Outliers.html">
+       21. Video: Working With Outliers
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Video Working With Outliers My Advice.html">
+       22. Video: Working With Outliers My Advice
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Shape and Outliers (Comparing Distributions).html">
+       23. Quiz: Shape and Outliers (Comparing Distributions)
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Quiz Shape and Outliers (Visuals).html">
+       24. Quiz: Shape and Outliers (Visuals)
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Quiz Shape and Outliers (Final Quiz).html">
+       25. Quiz: Shape and Outliers (Final Quiz)
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Text Descriptive Statistics Summary .html">
+       26. Text: Descriptive Statistics Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Video Descriptive vs. Inferential Statistics.html">
+       27. Video: Descriptive vs. Inferential Statistics
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Quiz Descriptive vs. Inferential (Udacity Students).html">
+       28. Quiz: Descriptive vs. Inferential (Udacity Students)
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Quiz Descriptive vs. Inferential (Bagels).html">
+       29. Quiz: Descriptive vs. Inferential (Bagels)
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Text Descriptive vs. Inferential Summary.html">
+       30. Text: Descriptive vs. Inferential Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Video Summary.html">
+       31. Video: Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          10. Text: Introduction to the Standard Deviation and Variance
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="other-measures-of-spread">
+          Other Measures of Spread
+         </h2>
+         <h4 id="5-number-summary">
+          5 Number Summary
+         </h4>
+         <p>
+          In the previous sections, we have seen how to calculate the values associated with the
+          <strong>
+           five number summary
+          </strong>
+          (
+          <strong>
+           min
+          </strong>
+          ,
+          <span class="mathquill ud-math">
+           Q_1
+          </span>
+          ,
+          <span class="mathquill ud-math">
+           Q_2
+          </span>
+          ,
+          <span class="mathquill ud-math">
+           Q_3
+          </span>
+          ,
+          <strong>
+           max
+          </strong>
+          ), as well as the measures of spread associated with these values (
+          <strong>
+           range
+          </strong>
+          and
+          <strong>
+           IQR
+          </strong>
+          ).
+         </p>
+         <p>
+          For datasets that are
+          <strong>
+           not symmetric
+          </strong>
+          , the five number summary and a corresponding box plot are a great way to get started with understanding the spread of your data.
+          <strong>
+           Although I still prefer a histogram in most cases, box plots can be easier to compare two or more groups.
+          </strong>
+          You will see this in the quizzes towards the end of this lesson.
+         </p>
+         <h4 id="variance-and-standard-deviation">
+          Variance and Standard Deviation
+         </h4>
+         <p>
+          Two additional
+          <strong>
+           measures of spread
+          </strong>
+          that are used all the time are the
+          <strong>
+           variance
+          </strong>
+          and
+          <strong>
+           standard deviation
+          </strong>
+          .  At first glance, the variance and standard deviation can seem overwhelming.  If you do not understand the expressions below, don't panic! In this section, I just want to give you an overview of what the next sections will cover. We will walk through each of these parts thoroughly in the next few sections, but the big picture goal is to generally understand the following:
+         </p>
+         <ol>
+          <li>
+           How the mean, variance and standard deviation are calculated.
+          </li>
+          <li>
+           Why the measures of variance and standard deviation make sense to capture the spread of our data.
+          </li>
+          <li>
+           Fields where you might see these values used.
+          </li>
+          <li>
+           Why we might use the standard deviation or variance as opposed to the values associated with the 5 number summary for a particular dataset.
+          </li>
+         </ol>
+         <h4 id="calculation">
+          Calculation
+         </h4>
+         <p>
+          We calculate the variance in the following way:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \frac{1}{n}\sum\limits_{i=1}^n(x_i - \bar{x})^2
+          </span>
+         </p>
+         <p>
+          The variance is
+          <strong>
+           the average squared difference of each observation from the mean
+          </strong>
+          .
+         </p>
+         <p>
+          To calculate the variance of a set of 10 values in a spreadsheet application, with our 10 data points in column A, we would create a new column B by typing in something like
+          <strong>
+           =A1-AVERAGE(A$1:A$10)
+          </strong>
+          and copying this down for all 10 rows. This would find us the difference between each data point and the mean average of all the data. Then we create a new column C having the square of these differences, using the formula
+          <strong>
+           =B1^2
+          </strong>
+          in cell C1, and copying that down for all rows. Then in the cell below this new column, cell C11, type in
+          <strong>
+           =SUM(C1:C10)
+          </strong>
+          . This adds up all these values in column C. Finally in cell C12, we divide this sum by the number of data points we have, in this case ten:
+          <strong>
+           =C11/10
+          </strong>
+          . This cell C12 now contains the variance for our 10 data points.
+         </p>
+         <p>
+          More detailed guidance on using spreadsheets like this may be included in a future lesson in your program.
+         </p>
+         <p>
+          The standard deviation is the square root of the variance.  Therefore, the formula for the standard deviation is the following:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \sqrt{\frac{1}{n}\sum\limits_{i=1}^n(x_i - \bar{x})^2}
+          </span>
+         </p>
+         <p>
+          In the same spreadsheet as above, to find the standard deviation of our same set of 10 data values, we would use another cell like C13 to take the square root of our variance measure, by typing in
+          <strong>
+           =sqrt(C12)
+          </strong>
+          .
+         </p>
+         <p>
+          The standard deviation is a measurement that has the same units as our original data, while the units of the variance are the square of the units in our original data. For example, if the units in our original data were dollars, then units of the standard deviation would also be dollars, while the units of the variance would be dollars squared.
+         </p>
+         <p>
+          Again,
+          <strong>
+           this section is designed as background knowledge for the following sections
+          </strong>
+          .  If it doesn't make sense on this first pass, do not worry. You will be guided in future sections in performing these calculations, and building your intuition, as you work through an example using the salary data. Then we will provide context about why these calculations are important, and where you might see them!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="11. Video Why the Standard Deviation.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('10. Text: Introduction to the Standard Deviation and Variance')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

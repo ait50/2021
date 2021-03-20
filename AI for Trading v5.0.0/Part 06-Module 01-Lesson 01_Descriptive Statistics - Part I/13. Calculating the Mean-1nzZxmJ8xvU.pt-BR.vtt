@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.499 --> 00:00:05.566
+Ao analisar dados quantitativos
+discretos e contínuos,
+
+00:00:05.899 --> 00:00:08.766
+geralmente falamos sobre
+quatro aspectos principais:
+
+00:00:09.399 --> 00:00:13.999
+a posição, a dispersão,
+a forma e as exceções.
+
+00:00:14.566 --> 00:00:15.799
+Nesta lição,
+
+00:00:15.866 --> 00:00:17.799
+iremos focar
+nas medidas de posição.
+
+00:00:18.366 --> 00:00:21.166
+Existem três medidas de posição
+amplamente aceitas:
+
+00:00:21.566 --> 00:00:24.533
+a média, a mediana e a moda.
+
+00:00:25.266 --> 00:00:27.999
+Para ilustrar como cada uma
+dessas medidas é calculada,
+
+00:00:28.399 --> 00:00:30.566
+considere esta tabela
+do número de cães
+
+00:00:30.666 --> 00:00:32.499
+que vi no café em uma semana.
+
+00:00:33.199 --> 00:00:34.266
+Na tabela,
+
+00:00:34.333 --> 00:00:36.966
+podemos ver que na segunda-feira
+vi cinco cães.
+
+00:00:37.266 --> 00:00:39.266
+Na terça-feira, vi três cães.
+
+00:00:39.566 --> 00:00:42.566
+Na quarta-feira,
+vi oito cães, e assim por diante.
+
+00:00:43.399 --> 00:00:44.666
+Um amigo pode perguntar
+
+00:00:44.999 --> 00:00:47.999
+quantos cães eu esperaria ver
+em um determinado dia.
+
+00:00:48.799 --> 00:00:51.833
+Podemos optar por responder a isso
+de muitas maneiras diferentes.
+
+00:00:51.999 --> 00:00:55.533
+Como: "Depende do dia
+ou depende da semana."
+
+00:00:56.099 --> 00:00:59.866
+Mas, geralmente, a palavra "espera"
+está associada à média
+
+00:00:59.933 --> 00:01:02.033
+ou valor médio
+do nosso conjunto de dados.
+
+00:01:02.866 --> 00:01:04.199
+A média é calculada
+
+00:01:04.266 --> 00:01:07.199
+como a soma de todos os valores
+em nosso conjunto de dados
+
+00:01:07.333 --> 00:01:09.699
+dividida por quantos pontos
+de dados nós temos.
+
+00:01:10.666 --> 00:01:12.466
+Como você pode ver calculado aqui,
+
+00:01:12.866 --> 00:01:15.266
+esse valor é de 12,57 cães.
+
+00:01:15.766 --> 00:01:19.266
+Ou seja, a soma do número de cães
+observados em cada dia
+
+00:01:19.566 --> 00:01:21.699
+dividida pelo número de dias
+em uma semana.
+
+00:01:22.499 --> 00:01:25.433
+A média nem sempre é
+a melhor medida de posição.
+
+00:01:25.866 --> 00:01:28.599
+Para este conjunto de dados,
+você pode ver que a média
+
+00:01:28.766 --> 00:01:31.699
+não parece realmente estar
+no meio dos dados.
+
+00:01:32.566 --> 00:01:35.033
+Há apenas dois dos sete dias
+
+00:01:35.333 --> 00:01:38.099
+que registraram mais cães
+do que a média relatada.
+
+00:01:39.133 --> 00:01:41.966
+Ela também está dividindo os cães
+em valores decimais,
+
+00:01:42.266 --> 00:01:44.966
+que parecerão estranhos
+quando respondermos a nosso amigo.
+

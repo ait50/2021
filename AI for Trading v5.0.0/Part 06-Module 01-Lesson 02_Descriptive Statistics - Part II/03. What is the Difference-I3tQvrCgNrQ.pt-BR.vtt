@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.467 --> 00:00:04.200
+Aqui estão dois histogramas
+comparando o número de cães
+
+00:00:04.234 --> 00:00:06.200
+que vi em um dia da semana
+com o número de cães
+
+00:00:06.234 --> 00:00:09.400
+que eu vi nos fins de semana
+do ano passado.
+
+00:00:09.434 --> 00:00:11.734
+Você vai notar que
+os compartimentos mais altos,
+
+00:00:11.801 --> 00:00:14.167
+tanto nos dias de semana
+quanto nos fins de semana,
+
+00:00:14.234 --> 00:00:16.734
+estão associados a 13 cães.
+
+00:00:16.767 --> 00:00:20.634
+O número de cães que eu espero ver
+é essencialmente o mesmo,
+
+00:00:20.667 --> 00:00:23.133
+nos dias da semana
+e nos fins de semana.
+
+00:00:23.167 --> 00:00:26.534
+As medidas do centro
+seriam basicamente as mesmas aqui.
+
+00:00:26.567 --> 00:00:29.701
+Ambas têm uma média,
+uma mediana e uma moda,
+
+00:00:29.734 --> 00:00:31.968
+que são cerca de 13 cães.
+
+00:00:32.001 --> 00:00:35.100
+Mas há algo de diferente
+nessas duas distribuições.
+
+00:00:35.133 --> 00:00:37.133
+O que será?
+
+00:00:37.167 --> 00:00:42.834
+A diferença é a propagação
+das informações para cada grupo
+
+00:00:42.868 --> 00:00:46.534
+Você vê que o número de cães
+que eu vi em dias de semana
+
+00:00:46.567 --> 00:00:49.000
+varia de 10 a 16.
+
+00:00:49.033 --> 00:00:53.067
+Nos fins de semana,
+varia entre 6 e 18.
+
+00:00:53.100 --> 00:00:57.767
+Nas próximas seções,
+vamos ver as formas mais comuns
+
+00:00:57.801 --> 00:01:00.701
+de medir a dispersão
+de nossos dados.
+

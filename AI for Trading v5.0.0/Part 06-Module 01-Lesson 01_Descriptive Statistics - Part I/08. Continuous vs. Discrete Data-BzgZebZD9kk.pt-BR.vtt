@@ -1,0 +1,87 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.666 --> 00:00:03.566
+Também podemos dividir
+os tipos de dados quantitativos.
+
+00:00:04.299 --> 00:00:06.433
+Suponho que a maioria
+das minhas interações positivas
+
+00:00:06.499 --> 00:00:07.899
+ocorra com cães mais velhos,
+
+00:00:08.133 --> 00:00:09.799
+já que tiveram
+mais tempo para treinar.
+
+00:00:10.399 --> 00:00:13.833
+A idade de um cão é um tipo
+de dado quantitativo contínuo,
+
+00:00:14.366 --> 00:00:16.266
+enquanto o número de cães
+com os quais interagi
+
+00:00:16.333 --> 00:00:18.733
+é um tipo
+de dado quantitativo discreto.
+
+00:00:19.233 --> 00:00:21.966
+No mundo, geramos
+todo tipo de dado discreto,
+
+00:00:22.133 --> 00:00:23.833
+então pode ser difícil ver
+a diferença
+
+00:00:23.899 --> 00:00:25.999
+entre discreto e contínuo.
+
+00:00:26.633 --> 00:00:29.499
+Dados contínuos podem assumir
+qualquer valor numérico,
+
+00:00:29.666 --> 00:00:31.133
+incluindo valores decimais,
+
+00:00:31.366 --> 00:00:33.666
+e, algumas vezes,
+até números negativos.
+
+00:00:33.766 --> 00:00:38.199
+A idade de um cão, nessa situação,
+é um exemplo de dado contínuo,
+
+00:00:38.533 --> 00:00:42.333
+já que podemos dividir esta variável
+em pedaços cada vez menores,
+
+00:00:42.499 --> 00:00:44.266
+e ainda existir algo.
+
+00:00:44.633 --> 00:00:47.333
+Por exemplo, podemos falar
+sobre a idade em termos de anos,
+
+00:00:47.699 --> 00:00:52.699
+ou meses ou dias,
+horas, minutos ou segundos,
+
+00:00:52.799 --> 00:00:55.166
+e ainda haver unidades
+que são menores.
+
+00:00:55.466 --> 00:00:57.499
+Isso é verdadeiro
+para dados contínuos.
+
+00:00:57.799 --> 00:01:00.633
+No entanto, dados discretos,
+como o número de cães,
+
+00:01:00.933 --> 00:01:02.833
+somente aceitam números contáveis.
+

@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.004
+In the next concepts,
+
+00:00:02.004 --> 00:00:07.544
+we are going to combine what we know about how to calculate the mean with notation.
+
+00:00:07.544 --> 00:00:11.699
+The purpose of this video is not to relearn how to calculate the mean
+
+00:00:11.699 --> 00:00:17.114
+but rather to introduce notation using a measure you already know.
+
+00:00:17.114 --> 00:00:21.709
+Let's consider the amount of time someone spends on our website in minutes.
+
+00:00:21.710 --> 00:00:26.219
+Imagine we collect the amount of time spent on our site for five individuals.
+
+00:00:26.219 --> 00:00:27.899
+From the last video,
+
+00:00:27.899 --> 00:00:30.904
+we saw that we could label the values in this way,
+
+00:00:30.905 --> 00:00:33.140
+x1 for the first value,
+
+00:00:33.140 --> 00:00:35.210
+x2 for the second value,
+
+00:00:35.210 --> 00:00:38.660
+x3 for the third value and so on.
+
+00:00:38.659 --> 00:00:42.029
+Imagine we want to add the first two numbers together.
+
+00:00:42.030 --> 00:00:47.969
+We could write this in notation as x1 plus x2 which in this example,
+
+00:00:47.969 --> 00:00:51.159
+would be the same as 15 plus 10.
+
+00:00:51.159 --> 00:00:54.229
+If we wanted to add more than just two values,
+
+00:00:54.229 --> 00:00:57.919
+it would be tedious to continue the same process.
+
+00:00:57.920 --> 00:01:00.469
+Imagine if we had 100 values.
+
+00:01:00.469 --> 00:01:05.239
+We would have a, x1 plus x2 plus x3
+
+00:01:05.239 --> 00:01:10.544
+plus and we'd have to continue this process until x 100.
+
+00:01:10.545 --> 00:01:14.150
+Someone must have come up with a better way to notate this.
+
+00:01:14.150 --> 00:01:17.000
+And it turns out, there is a better way.
+

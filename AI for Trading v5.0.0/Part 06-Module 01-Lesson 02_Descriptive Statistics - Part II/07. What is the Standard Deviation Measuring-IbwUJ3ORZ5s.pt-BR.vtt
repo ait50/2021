@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.567 --> 00:00:03.734
+O meio mais comum
+de os profissionais medirem
+
+00:00:03.767 --> 00:00:07.033
+a dispersão de um conjunto
+de informações com um só valor
+
+00:00:07.067 --> 00:00:10.033
+é com o desvio padrão
+ou a variância.
+
+00:00:10.067 --> 00:00:13.334
+Aqui, vamos nos concentrar
+no desvio padrão.
+
+00:00:13.367 --> 00:00:18.033
+Mas, na verdade, vamos aprender
+a calcular a variância no processo.
+
+00:00:18.067 --> 00:00:20.767
+Se você nunca ouviu falar
+dessas medidas,
+
+00:00:20.801 --> 00:00:24.300
+esse cálculo pode parecer
+bem complexo.
+
+00:00:24.334 --> 00:00:27.234
+Quando explicarmos tudo
+sobre esse cálculo,
+
+00:00:27.267 --> 00:00:32.734
+o desvio padrão nos dirá, em média,
+a distância de cada ponto
+
+00:00:32.767 --> 00:00:35.300
+da média do ponto.
+
+00:00:35.334 --> 00:00:38.934
+Como uma rápida imagem mental,
+imagine que queremos saber
+
+00:00:38.968 --> 00:00:42.434
+a distância entre a moradia do
+funcionário e seu local de trabalho.
+
+00:00:42.467 --> 00:00:45.434
+Uma pessoa pode morar
+a 24km.
+
+00:00:45.467 --> 00:00:49.534
+Outra, a 56.
+E outra, a apenas 1,6km.
+
+00:00:49.567 --> 00:00:53.267
+E outra pode trabalhar de casa,
+pois mora a quase 166km.
+
+00:00:53.334 --> 00:00:55.734
+Podemos agregar todas
+essas distâncias
+
+00:00:55.767 --> 00:00:59.634
+para mostrar que a média
+da distância entre funcionários
+
+00:00:59.667 --> 00:01:02.501
+e o local de trabalho
+é de quase 29km.
+
+00:01:02.534 --> 00:01:06.300
+Mas agora queremos saber
+como a distância do trabalho
+
+00:01:06.334 --> 00:01:09.167
+varia de um funcionário
+para o outro.
+
+00:01:09.200 --> 00:01:12.734
+Podemos usar o resumo
+de cinco números como descrição.
+
+00:01:12.767 --> 00:01:17.033
+Mas se quisermos somente um número
+para falar sobre a dispersão,
+
+00:01:17.067 --> 00:01:19.901
+provavelmente vamos escolher
+o desvio padrão.
+
+00:01:19.934 --> 00:01:25.300
+O desvio padrão é, em média,
+o quanto cada observação
+
+00:01:25.334 --> 00:01:26.968
+varia da média.
+
+00:01:27.000 --> 00:01:31.434
+Nesse exemplo, isso é quanto,
+em média, cada pessoa
+
+00:01:31.467 --> 00:01:33.434
+está distante de seu trabalho.
+
+00:01:33.467 --> 00:01:37.834
+É diferente da distância média
+de todos eles do trabalho.
+
+00:01:37.868 --> 00:01:41.667
+Este funcionário está quase
+5km mais longe,
+
+00:01:41.701 --> 00:01:46.000
+enquanto este está 6km
+mais próximo do que a média.
+
+00:01:46.033 --> 00:01:51.100
+O desvio padrão é o quanto
+cada pessoa está distante
+
+00:01:51.133 --> 00:01:54.200
+a partir dessa
+distância média.
+
+00:01:54.234 --> 00:01:58.734
+É meio como a média de todas
+essas distâncias.
+
+00:01:58.767 --> 00:02:02.100
+Vamos observar isso mais de perto,
+mas espero que isso lhe dê
+
+00:02:02.133 --> 00:02:03.968
+uma compreensão
+conceitual forte
+
+00:02:03.968 --> 00:02:06.501
+do que vamos calcular
+nas próximas sessões.
+

@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.544
+Looking back at the distributions we found for the number of dogs I see,
+
+00:00:04.544 --> 00:00:09.390
+we can mark the values of our five number summary like this.
+
+00:00:09.390 --> 00:00:11.714
+If we take just these marks,
+
+00:00:11.714 --> 00:00:16.125
+this makes a common plot for data known as a box plot.
+
+00:00:16.125 --> 00:00:19.179
+Though I prefer a histogram in most cases,
+
+00:00:19.179 --> 00:00:22.170
+a box plot can be useful for quickly
+
+00:00:22.170 --> 00:00:26.415
+comparing the spread of two data sets across some key metrics,
+
+00:00:26.414 --> 00:00:29.684
+like our quartiles, and the maximum and minimum.
+
+00:00:29.684 --> 00:00:33.659
+From both the histogram and the five-number summary,
+
+00:00:33.659 --> 00:00:36.599
+we can quickly see that the number of dogs I see on
+
+00:00:36.600 --> 00:00:42.085
+weekends varies much more than the number of dogs I see on weekdays.
+
+00:00:42.085 --> 00:00:47.564
+We can also visualize the distance from here to here as the range,
+
+00:00:47.564 --> 00:00:52.099
+while the distance from here to here is the interquartile range.
+
+00:00:52.100 --> 00:00:56.160
+There are lots of useful metrics we can get from these box plots.
+
+00:00:56.159 --> 00:01:00.750
+But what if we want to compare the spreads of these distributions without having to carry
+
+00:01:00.750 --> 00:01:05.159
+around all five of these values for each distribution?
+
+00:01:05.159 --> 00:01:11.000
+What if I wanted just a single value to be able to compare the two distributions spreads?
+

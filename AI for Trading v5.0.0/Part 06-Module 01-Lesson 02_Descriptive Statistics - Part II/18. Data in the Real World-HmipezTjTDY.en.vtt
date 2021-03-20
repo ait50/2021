@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.290 --> 00:00:02.730
+If you're working with data,
+
+00:00:02.730 --> 00:00:07.109
+you can always build a Quick Plot to see the shape.
+
+00:00:07.110 --> 00:00:09.134
+Just to apply some context,
+
+00:00:09.134 --> 00:00:15.291
+some examples of approximately Bell-Shaped data include heights and weights,
+
+00:00:15.291 --> 00:00:19.050
+standardized test scores, precipitation amounts,
+
+00:00:19.050 --> 00:00:20.894
+the mean of a distribution,
+
+00:00:20.894 --> 00:00:23.669
+or errors in manufacturing processes.
+
+00:00:23.670 --> 00:00:27.825
+Common data that follow Left Skewed Distributions include GPAs,
+
+00:00:27.824 --> 00:00:29.804
+the age of death,
+
+00:00:29.804 --> 00:00:32.329
+and asset price changes.
+
+00:00:32.329 --> 00:00:34.199
+Common data that follow approximately
+
+00:00:34.200 --> 00:00:38.978
+Right Skewed Distributions include the amount of drug left in your bloodstream over time,
+
+00:00:38.978 --> 00:00:40.575
+the distribution of wealth,
+
+00:00:40.575 --> 00:00:43.054
+and human athletic abilities.
+
+00:00:43.054 --> 00:00:44.429
+There are links below in
+
+00:00:44.429 --> 00:00:48.390
+the instructor notes in case you want to learn more about each of these cases.
+
+00:00:48.390 --> 00:00:51.000
+Though these three, Right Skewed,
+
+00:00:51.000 --> 00:00:53.070
+Left Skewed and Symmetric,
+
+00:00:53.070 --> 00:00:55.185
+are the most common distributions,
+
+00:00:55.185 --> 00:01:00.480
+data in the real world can be messy and it might not follow any of these distributions.
+
+00:01:00.479 --> 00:01:04.269
+We will talk about this more in the next section.
+

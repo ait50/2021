@@ -1,0 +1,80 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.734 --> 00:00:02.367
+Nos próximos conceitos,
+
+00:00:02.434 --> 00:00:05.734
+vamos combinar o que sabemos
+sobre calcular a média
+
+00:00:05.767 --> 00:00:07.801
+com notação.
+
+00:00:07.834 --> 00:00:12.033
+O objetivo deste vídeo não é
+reaprender a calcular a média,
+
+00:00:12.067 --> 00:00:17.367
+mas sim introduzir a notação
+usando uma medida que você conhece.
+
+00:00:17.434 --> 00:00:21.801
+Vamos considerar o tempo em minutos
+que alguém passa em nosso site.
+
+00:00:21.834 --> 00:00:26.667
+Imagine que coletamos o tempo
+que cinco pessoas passaram no site.
+
+00:00:26.701 --> 00:00:31.334
+No último vídeo, vimos que podemos
+rotular os valores dessa forma:
+
+00:00:31.367 --> 00:00:35.534
+x1 para o primeiro valor,
+x2 para o segundo valor,
+
+00:00:35.567 --> 00:00:38.834
+x3 para o terceiro,
+e assim sucessivamente.
+
+00:00:38.868 --> 00:00:42.400
+Imagine que queremos adicionar
+os dois primeiros números juntos.
+
+00:00:42.434 --> 00:00:46.968
+Podemos escrever isso em notação
+como x1 mais x2.
+
+00:00:47.033 --> 00:00:51.734
+Neste exemplo, seria o mesmo
+que 15 mais 10.
+
+00:00:51.767 --> 00:00:54.501
+Se quiséssemos adicionar mais do que
+dois valores,
+
+00:00:54.534 --> 00:00:58.000
+seria tedioso usar
+o mesmo processo.
+
+00:00:58.033 --> 00:01:00.901
+Imagine que temos 100 valores.
+
+00:01:00.934 --> 00:01:05.501
+Teríamos x1 mais x2 mais x3
+
+00:01:05.534 --> 00:01:10.634
+e teríamos que continuar
+o processo até x100.
+
+00:01:10.701 --> 00:01:13.334
+Alguém deve ter tido
+uma ideia melhor
+
+00:01:13.367 --> 00:01:17.234
+para fazer essa notação.
+E existe mesmo uma maneira melhor.
+

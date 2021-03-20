@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.070 --> 00:00:02.974
+If you're the one doing the reporting,
+
+00:00:02.975 --> 00:00:06.544
+here are some of my personal guidelines when analyzing data.
+
+00:00:06.544 --> 00:00:09.625
+First, plot your data.
+
+00:00:09.625 --> 00:00:12.154
+Second, if you have outliers,
+
+00:00:12.154 --> 00:00:14.209
+determine how you should handle them.
+
+00:00:14.210 --> 00:00:17.650
+This might require a domain expert of the field.
+
+00:00:17.649 --> 00:00:18.919
+Should you remove them?
+
+00:00:18.920 --> 00:00:21.760
+Should you fix them? Should you keep them?
+
+00:00:21.760 --> 00:00:25.984
+Third, if you're working with data that are normally distributed,
+
+00:00:25.984 --> 00:00:28.050
+the bell shape that we saw before,
+
+00:00:28.050 --> 00:00:30.920
+you can find out every little detail about
+
+00:00:30.920 --> 00:00:35.314
+the data with only the mean and the standard deviation.
+
+00:00:35.314 --> 00:00:38.479
+This may seem surprising but it's true.
+
+00:00:38.479 --> 00:00:41.524
+However, if our data are skewed,
+
+00:00:41.524 --> 00:00:45.019
+the five-number summary provides much more information for
+
+00:00:45.020 --> 00:00:49.345
+these data sets than the mean and the standard deviation can provide.
+
+00:00:49.344 --> 00:00:56.420
+Again, the most useful and informative summary you can get is frequently a visual.
+
+00:00:56.420 --> 00:00:59.060
+In upcoming lessons, we will focus
+
+00:00:59.060 --> 00:01:03.000
+specifically on the visuals that will best convey our message.
+

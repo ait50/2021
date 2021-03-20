@@ -1,0 +1,147 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.267 --> 00:00:05.300
+Conectar este círculo cheio,
+estas letras maiúsculas, X e Y,
+
+00:00:05.334 --> 00:00:07.300
+se relaciona com uma
+variável aleatória.
+
+00:00:07.334 --> 00:00:09.434
+Esta é uma ideia abstrata.
+
+00:00:09.467 --> 00:00:12.167
+Quanto tempo uma pessoa passa
+no nosso site
+
+00:00:12.200 --> 00:00:14.567
+pode ter vários
+valores diferentes.
+
+00:00:14.601 --> 00:00:18.267
+Então este X não é um número,
+
+00:00:18.300 --> 00:00:21.634
+é um conjunto
+de possíveis valores.
+
+00:00:21.667 --> 00:00:26.267
+Podemos pensar no X como uma
+incógnita para qualquer um
+
+00:00:26.300 --> 00:00:28.300
+desses possíveis valores.
+
+00:00:28.334 --> 00:00:31.701
+Quando vemos o resultado individual
+da nossa variável aleatória,
+
+00:00:31.734 --> 00:00:34.634
+damos a ela significado
+com uma letra minúscula.
+
+00:00:34.667 --> 00:00:37.267
+A letra minúscula costuma ter
+um subscript,
+
+00:00:37.300 --> 00:00:39.267
+que nos ajuda a anexar
+uma notação
+
+00:00:39.300 --> 00:00:42.234
+a cada valor específico
+do nosso conjunto de dados.
+
+00:00:42.267 --> 00:00:45.567
+Para este conjunto de dados,
+diríamos que a quantidade de tempo
+
+00:00:45.601 --> 00:00:47.868
+que uma pessoa passa
+em nosso site
+
+00:00:47.901 --> 00:00:52.567
+é fornecida por um montante,
+cuja notação seria um X.
+
+00:00:52.601 --> 00:00:55.400
+O primeiro visitante passa cinco
+minutos no site
+
+00:00:55.434 --> 00:00:57.934
+e a notação seria x1.
+
+00:00:57.968 --> 00:01:00.634
+Observe que este é
+um x minúsculo.
+
+00:01:00.667 --> 00:01:05.934
+O segundo visitante passa dez
+minutos no site, e a notação é x2.
+
+00:01:05.968 --> 00:01:10.734
+Novamente, já que este é um valor
+observado, o x é minúsculo.
+
+00:01:10.767 --> 00:01:12.367
+A rotulagem pode continuar
+
+00:01:12.367 --> 00:01:15.467
+até o visitante final
+do nosso conjunto de dados,
+
+00:01:15.501 --> 00:01:17.968
+que chamamos de "visitante nth".
+
+00:01:18.000 --> 00:01:23.334
+Este valor seria rotulado como xn.
+Novamente, em letras minúsculas.
+
+00:01:23.367 --> 00:01:28.100
+A notação é uma ferramenta vital
+para comunicar ideias matemáticas.
+
+00:01:28.167 --> 00:01:31.234
+Nós discutimos a ideia de que
+letras maiúsculas
+
+00:01:31.267 --> 00:01:34.167
+são usadas como notações
+para variáveis aleatórias.
+
+00:01:34.200 --> 00:01:35.300
+Quando observemos
+
+00:01:35.367 --> 00:01:37.701
+um valor particular
+de uma variável aleatória,
+
+00:01:37.734 --> 00:01:40.567
+usamos uma letra minúscula,
+com um subscript
+
+00:01:40.601 --> 00:01:43.968
+que significa o valor específico
+da variável aleatória
+
+00:01:44.000 --> 00:01:45.567
+que estamos considerando.
+
+00:01:45.601 --> 00:01:47.501
+Notações podem ser complicadas.
+
+00:01:47.534 --> 00:01:50.801
+Antes de irmos mais fundo,
+verifique se você entendeu tudo.
+
+00:01:50.834 --> 00:01:53.367
+Há testes disponíveis
+no próximo módulo,
+
+00:01:53.400 --> 00:01:56.133
+para assegurar que você compreendeu
+os conceitos que apresentamos.
+

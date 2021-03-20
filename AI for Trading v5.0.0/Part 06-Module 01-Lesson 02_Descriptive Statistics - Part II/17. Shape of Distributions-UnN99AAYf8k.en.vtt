@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.355
+Now that we've discussed how to build a histogram,
+
+00:00:03.355 --> 00:00:07.550
+we can use this to determine the shape associated with our data.
+
+00:00:07.549 --> 00:00:09.875
+Here we have three histograms,
+
+00:00:09.875 --> 00:00:13.300
+showing the shape for three different data sets.
+
+00:00:13.300 --> 00:00:17.675
+The histogram that has shorter bins on the left and taller bins on the right,
+
+00:00:17.675 --> 00:00:20.420
+is considered a left skewed shape.
+
+00:00:20.420 --> 00:00:24.530
+This histogram that has shorter bins on the right and taller bins on the left,
+
+00:00:24.530 --> 00:00:26.859
+is considered a right skewed shape.
+
+00:00:26.859 --> 00:00:30.669
+Any distribution where you can draw a line down the middle and
+
+00:00:30.670 --> 00:00:35.289
+the right side mirrors the left side is considered symmetric.
+
+00:00:35.289 --> 00:00:38.100
+One of the most common symmetric distributions,
+
+00:00:38.100 --> 00:00:42.765
+is known as a normal distribution and it's also called the Bell Curve.
+
+00:00:42.765 --> 00:00:46.109
+The shape of the distribution can actually tell us
+
+00:00:46.109 --> 00:00:49.628
+a lot about the measures of center and spread.
+
+00:00:49.628 --> 00:00:54.829
+Symmetric distributions, like this one have a mean that's equal to the median,
+
+00:00:54.829 --> 00:00:57.359
+which also equals the mode.
+
+00:00:57.359 --> 00:01:00.719
+Each of these measures sits here in the center.
+
+00:01:00.719 --> 00:01:05.194
+The mode is essentially the tallest bar in our histogram.
+
+00:01:05.194 --> 00:01:07.729
+When we have skewed distributions,
+
+00:01:07.730 --> 00:01:11.140
+it's the case of the mean is pulled by the tail of the distribution,
+
+00:01:11.140 --> 00:01:13.579
+while the median stays closer to the mode.
+
+00:01:13.579 --> 00:01:16.685
+For example, in this right skewed distribution,
+
+00:01:16.685 --> 00:01:18.439
+the mean would be pulled higher,
+
+00:01:18.439 --> 00:01:21.575
+resulting in a mean that's greater than our median.
+
+00:01:21.575 --> 00:01:24.962
+Alternatively, in a left skewed distribution,
+
+00:01:24.962 --> 00:01:26.719
+our mean is pulled down here,
+
+00:01:26.719 --> 00:01:30.454
+resulting in a mean that's less than our median.
+
+00:01:30.454 --> 00:01:33.674
+In order to relate this to the visual of a histogram,
+
+00:01:33.674 --> 00:01:37.379
+back to the five number summary we saw on the earlier lessons,
+
+00:01:37.379 --> 00:01:42.060
+here are the corresponding box plots below each histogram.
+
+00:01:42.060 --> 00:01:45.240
+Notice how the whiskers stretch in the direction of the skew,
+
+00:01:45.239 --> 00:01:47.489
+for each of the skewed distributions.
+
+00:01:47.489 --> 00:01:50.354
+That is the longer whisker is on the left,
+
+00:01:50.355 --> 00:01:53.070
+for a left skewed distribution and it's on the right,
+
+00:01:53.069 --> 00:01:55.099
+for the right skewed distribution.
+
+00:01:55.099 --> 00:02:01.000
+Alternatively, the symmetric histogram also has a symmetric box spot.
+

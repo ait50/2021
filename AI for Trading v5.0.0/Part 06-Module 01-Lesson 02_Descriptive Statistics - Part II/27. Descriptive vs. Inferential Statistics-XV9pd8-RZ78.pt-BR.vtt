@@ -1,0 +1,177 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:02.803
+Os assuntos que vimos até agora
+
+00:00:02.803 --> 00:00:06.874
+foram sobre estatística
+descritiva.
+
+00:00:06.907 --> 00:00:09.977
+Ou seja, descreveram
+os dados que coletamos.
+
+00:00:10.010 --> 00:00:13.280
+Existe todo um outro campo
+da estatística
+
+00:00:13.280 --> 00:00:15.315
+conhecido como
+estatística inferencial,
+
+00:00:15.349 --> 00:00:19.286
+cujo objetivo é obter conclusões
+sobre uma população de indivíduos
+
+00:00:19.286 --> 00:00:23.657
+baseando-se somente em uma amostra
+de indivíduos daquela população.
+
+00:00:23.690 --> 00:00:26.894
+Imagine que eu queira entender
+qual é a proporção
+
+00:00:26.927 --> 00:00:30.330
+de todos os alunos da Udacity
+que bebem café.
+
+00:00:30.364 --> 00:00:33.767
+Sabemos que você é ocupado,
+e para fazer seus projetos a tempo,
+
+00:00:33.800 --> 00:00:37.304
+supomos que você
+bebe muito café.
+
+00:00:37.337 --> 00:00:41.341
+Eu mando um e-mail para todos
+os ex-alunos e atuais estudantes
+
+00:00:41.375 --> 00:00:44.845
+da Udacity e pergunto:
+"Você bebe café?"
+
+00:00:44.878 --> 00:00:47.981
+Para o propósito deste exercício,
+digamos que a lista
+
+00:00:48.015 --> 00:00:50.817
+contenha 100 mil e-mails.
+
+00:00:50.817 --> 00:00:54.521
+Infelizmente, nem todos respondem
+à minha pergunta.
+
+00:00:54.555 --> 00:00:57.357
+Alguns e-mails sequer
+são enviados.
+
+00:00:57.391 --> 00:01:00.861
+Portanto, eu só recebo
+5 mil respostas
+
+00:01:00.894 --> 00:01:05.766
+e descubro que 73% das pessoas
+que responderam ao meu e-mail
+
+00:01:05.799 --> 00:01:09.102
+dizem que bebem café.
+
+00:01:09.136 --> 00:01:13.407
+Estatística descritiva é descrever
+os dados que temos.
+
+00:01:13.407 --> 00:01:16.944
+Ou seja, qualquer informação
+que temos e compartilhamos
+
+00:01:16.977 --> 00:01:21.148
+a respeito das 5 mil respostas
+é descritiva.
+
+00:01:21.181 --> 00:01:24.518
+Na estatística inferencial,
+nós obtemos conclusões
+
+00:01:24.551 --> 00:01:29.523
+a respeito dos hábitos dos alunos
+da Udacity de beber café,
+
+00:01:29.556 --> 00:01:33.026
+usando somente os dados
+das 5 mil respostas.
+
+00:01:33.026 --> 00:01:36.330
+Portanto, a estatística inferencial,
+no nosso exemplo,
+
+00:01:36.363 --> 00:01:41.668
+serve para tirar conclusões sobre
+todos os 100 mil alunos da Udacity
+
+00:01:41.702 --> 00:01:45.639
+usando apenas as 5 mil respostas
+da nossa amostra.
+
+00:01:45.672 --> 00:01:50.811
+A linguagem geral associada
+a este cenário é mostrada aqui.
+
+00:01:50.811 --> 00:01:54.581
+Temos uma população que é todo
+o nosso grupo de interesse,
+
+00:01:54.615 --> 00:01:57.751
+em nosso caso,
+os 100 mil alunos.
+
+00:01:57.784 --> 00:02:00.320
+Coletamos uma subparte
+dessa população,
+
+00:02:00.354 --> 00:02:02.055
+que chamamos de amostra
+
+00:02:02.089 --> 00:02:05.425
+e que, em nosso caso,
+eram 5 mil alunos.
+
+00:02:05.459 --> 00:02:08.929
+Qualquer resumo numérico
+calculado da amostra
+
+00:02:08.962 --> 00:02:10.898
+é chamado de estatística.
+
+00:02:10.898 --> 00:02:15.903
+Em nosso caso, os 73% dos 5 mil
+que bebem café.
+
+00:02:15.936 --> 00:02:19.139
+Estes 73% são a estatística.
+
+00:02:19.173 --> 00:02:23.544
+Um resumo numérico da população
+é conhecido como parâmetro.
+
+00:02:23.577 --> 00:02:27.648
+Em nosso caso, não conhecemos
+esse valor como um número
+
+00:02:27.681 --> 00:02:31.919
+que exige informações de todos
+os alunos da Udacity.
+
+00:02:31.952 --> 00:02:34.821
+Obter conclusões
+a respeito de um parâmetro
+
+00:02:34.855 --> 00:02:38.258
+baseado em nossas estatísticas
+é conhecido como inferência.
+
+00:02:38.258 --> 00:02:39.258
+*END*
+

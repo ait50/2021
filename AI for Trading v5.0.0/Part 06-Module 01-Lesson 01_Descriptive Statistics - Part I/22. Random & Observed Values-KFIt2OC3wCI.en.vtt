@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.210 --> 00:00:02.890
+Connecting this full circle,
+
+00:00:02.890 --> 00:00:07.169
+these capital letters X and Y relate to a random variable.
+
+00:00:07.169 --> 00:00:09.304
+This is an abstract idea.
+
+00:00:09.304 --> 00:00:12.064
+How much time an individual spends on our website,
+
+00:00:12.064 --> 00:00:14.394
+can take on lots of different values.
+
+00:00:14.394 --> 00:00:18.070
+So, this capital letter X is not a number,
+
+00:00:18.070 --> 00:00:21.635
+it's an entire set of possible values.
+
+00:00:21.635 --> 00:00:27.950
+We can think of capital X as a placeholder for any of these possible values.
+
+00:00:27.949 --> 00:00:31.434
+When we look at an individual outcome of our random variable,
+
+00:00:31.434 --> 00:00:34.359
+we signify this with a lower case letter.
+
+00:00:34.359 --> 00:00:36.894
+Often the lower case letter has a subscript,
+
+00:00:36.895 --> 00:00:41.710
+that helps us attach notation to each specific value in our dataset.
+
+00:00:41.710 --> 00:00:45.325
+For this dataset, we would say the amount of time
+
+00:00:45.325 --> 00:00:49.325
+an individual spends on our site is provided by an amount,
+
+00:00:49.325 --> 00:00:52.095
+which we would notate with a capital X.
+
+00:00:52.094 --> 00:00:55.149
+The first visitor spends five minutes on the site,
+
+00:00:55.149 --> 00:00:57.475
+which we would notate with x1.
+
+00:00:57.475 --> 00:01:00.399
+Notice, this is a lowercase x.
+
+00:01:00.399 --> 00:01:03.159
+The second visitor spends 10 minutes on the site,
+
+00:01:03.159 --> 00:01:05.849
+which we wouldn't notate as x2.
+
+00:01:05.849 --> 00:01:10.359
+Again, since this is an observed value this is a lowercase x.
+
+00:01:10.359 --> 00:01:15.234
+The labeling could continue until we reach the final visitor in our dataset,
+
+00:01:15.234 --> 00:01:17.545
+who we'd called the nth visitor.
+
+00:01:17.545 --> 00:01:19.620
+We would label this value as xn.
+
+00:01:19.620 --> 00:01:23.035
+Again, this is a lowercase value.
+
+00:01:23.034 --> 00:01:27.959
+Notation is an essential tool for us to communicate mathematical ideas.
+
+00:01:27.959 --> 00:01:30.009
+We have now discussed the idea that
+
+00:01:30.010 --> 00:01:33.980
+capital letters are used as notation for random variables.
+
+00:01:33.980 --> 00:01:39.159
+When we observe a particular value of the random variable we use a lowercase letter,
+
+00:01:39.159 --> 00:01:41.200
+with a subscript that signifies
+
+00:01:41.200 --> 00:01:45.439
+the specific value of the random variable we are considering.
+
+00:01:45.439 --> 00:01:47.144
+Notation can be tricky.
+
+00:01:47.144 --> 00:01:50.689
+Before we dive deeper, check your understanding.
+
+00:01:50.689 --> 00:01:53.090
+There are quizzes available in the next module
+
+00:01:53.090 --> 00:01:56.000
+to assure you've mastered the concepts we've introduced.
+

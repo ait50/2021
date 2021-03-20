@@ -1,0 +1,261 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.599 --> 00:00:01.999
+Como primeiro exemplo,
+
+00:00:02.166 --> 00:00:04.366
+vamos aplicar
+essa nova ideia de notação
+
+00:00:04.433 --> 00:00:06.233
+em algo que você já usou.
+
+00:00:06.533 --> 00:00:07.699
+Planilhas.
+
+00:00:08.299 --> 00:00:11.666
+As planilhas são uma maneira comum
+de dispor dados no mundo real.
+
+00:00:12.666 --> 00:00:15.533
+Em nossa planilha,
+temos linhas e colunas.
+
+00:00:16.466 --> 00:00:19.433
+Para entender melhor como usamos
+as planilhas para dispor dados,
+
+00:00:19.866 --> 00:00:21.533
+vamos trabalhar com um exemplo.
+
+00:00:21.999 --> 00:00:23.766
+Antes mesmo de coletar dados,
+
+00:00:23.933 --> 00:00:26.699
+geralmente começamos com uma
+ou muitas perguntas.
+
+00:00:27.633 --> 00:00:29.299
+Considere que tenho um blog
+
+00:00:29.599 --> 00:00:31.566
+sobre as minhas melhores
+e piores experiências
+
+00:00:31.633 --> 00:00:33.499
+com os cães no café
+
+00:00:33.999 --> 00:00:36.766
+e que também vende bugigangas
+relacionadas a essas experiências.
+
+00:00:37.433 --> 00:00:39.933
+Tudo, de brinquedos a coleiras,
+
+00:00:40.399 --> 00:00:42.799
+a bolsas de transportes
+e tudo o mais.
+
+00:00:43.866 --> 00:00:45.433
+As perguntas que tenho são:
+
+00:00:45.633 --> 00:00:47.333
+quantas pessoas visitam meu site?
+
+00:00:47.633 --> 00:00:50.133
+Quanto tempo os visitantes gastam
+no meu site?
+
+00:00:50.633 --> 00:00:54.133
+Existem diferenças no tráfego
+dependendo do dia da semana?
+
+00:00:54.766 --> 00:00:57.299
+Quantos visitantes compram
+um item no blog?
+
+00:00:58.699 --> 00:01:00.533
+Para responder a essas perguntas,
+
+00:01:00.633 --> 00:01:03.366
+vamos monitorar a data da visita,
+
+00:01:03.966 --> 00:01:05.399
+o dia da semana da visita,
+
+00:01:05.566 --> 00:01:07.233
+a quantidade de tempo gasta no site
+
+00:01:07.299 --> 00:01:10.099
+e se um indivíduo comprou ou não
+um item.
+
+00:01:10.566 --> 00:01:13.166
+Podemos pensar em cada uma
+como uma coluna.
+
+00:01:14.166 --> 00:01:15.299
+Uma coluna no conjunto de dados
+
+00:01:15.366 --> 00:01:17.533
+está associada
+a uma variável aleatória.
+
+00:01:17.899 --> 00:01:21.033
+Explicar o que é uma variável
+aleatória na minha língua
+
+00:01:21.099 --> 00:01:22.366
+é complicado,
+
+00:01:22.599 --> 00:01:24.366
+mas, em notação, é simples.
+
+00:01:24.799 --> 00:01:26.299
+Na minha língua,
+
+00:01:26.366 --> 00:01:28.533
+uma variável aleatória
+é um espaço reservado
+
+00:01:28.599 --> 00:01:31.633
+para os possíveis valores
+de algum processo.
+
+00:01:32.299 --> 00:01:34.333
+Em notação, é "X".
+
+00:01:35.266 --> 00:01:37.633
+Para o nosso site, a data da visita,
+
+00:01:37.699 --> 00:01:39.666
+o dia da semana da visita,
+
+00:01:39.833 --> 00:01:41.599
+a quantidade de tempo gasta
+no site
+
+00:01:41.699 --> 00:01:44.333
+e se um indivíduo compra ou não
+um item
+
+00:01:44.399 --> 00:01:46.233
+são todas variáveis.
+
+00:01:46.966 --> 00:01:50.499
+Digamos que temos um visitante
+na quinta-feira, 15 de junho.
+
+00:01:51.266 --> 00:01:55.699
+O visitante fica no site
+cinco minutos e não compra um item.
+
+00:01:56.266 --> 00:01:58.433
+Então um segundo visitante
+entra no site
+
+00:01:58.499 --> 00:02:03.099
+no mesmo dia por 10 minutos
+e compra um item.
+
+00:02:03.833 --> 00:02:05.733
+Observe como cada um
+desses indivíduos
+
+00:02:05.799 --> 00:02:07.633
+foi adicionado à planilha.
+
+00:02:08.533 --> 00:02:10.533
+Podemos ter muitos outros visitantes
+
+00:02:10.599 --> 00:02:12.833
+e podemos atualizar a planilha
+de acordo.
+
+00:02:14.266 --> 00:02:15.499
+Ao usar planilhas,
+
+00:02:15.566 --> 00:02:18.099
+normalmente analisamos
+uma coluna inteira
+
+00:02:18.166 --> 00:02:20.066
+para responder
+às nossas questões de interesse.
+
+00:02:20.533 --> 00:02:22.599
+Por exemplo,
+para responder à pergunta
+
+00:02:22.666 --> 00:02:25.533
+sobre quanto tempo
+os visitantes gastam no site,
+
+00:02:25.799 --> 00:02:27.533
+precisamos olhar para esta coluna.
+
+00:02:28.066 --> 00:02:29.466
+Para responder à pergunta
+
+00:02:29.566 --> 00:02:32.733
+se existem diferenças no tráfego,
+dependendo do dia da semana,
+
+00:02:33.166 --> 00:02:34.866
+precisamos olhar para esta coluna.
+
+00:02:35.833 --> 00:02:37.066
+E para responder à pergunta
+
+00:02:37.133 --> 00:02:39.499
+de quantas compras ocorrem
+através do blog,
+
+00:02:39.833 --> 00:02:41.466
+precisamos olhar para esta coluna.
+
+00:02:41.933 --> 00:02:43.399
+Matematicamente,
+
+00:02:43.466 --> 00:02:45.833
+geralmente consideramos
+uma variável aleatória
+
+00:02:45.899 --> 00:02:48.533
+ou coluna usando
+uma letra maiúscula.
+
+00:02:49.399 --> 00:02:51.866
+Normalmente,
+usamos a letra maiúscula X,
+
+00:02:52.299 --> 00:02:57.466
+mas facilmente podemos usar Y,
+Z ou qualquer outra letra maiúscula.
+
+00:02:58.266 --> 00:03:01.366
+Podemos dizer para considerar
+a variável aleatória X,
+
+00:03:01.666 --> 00:03:05.266
+que significa a quantidade de tempo
+que um indivíduo gasta no site.
+
+00:03:05.699 --> 00:03:09.033
+Portanto,
+X corresponde a toda essa coluna.
+
+00:03:09.733 --> 00:03:12.166
+Considere também que temos
+uma variável aleatória Y,
+
+00:03:12.533 --> 00:03:16.233
+que significa se um indivíduo compra
+ou não um item do site,
+
+00:03:16.399 --> 00:03:19.466
+então Y corresponde
+a toda essa coluna.
+

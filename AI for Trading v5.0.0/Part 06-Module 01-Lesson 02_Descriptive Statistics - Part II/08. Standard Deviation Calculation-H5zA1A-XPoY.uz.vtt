@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: uz
+
+00:00:00.000 --> 00:00:01.409
+Oxirgi videoda,
+
+00:00:01.409 --> 00:00:05.599
+standart chetlashish nimani o‘lchashi haqida fikrga ega bo‘ldik.
+
+00:00:05.599 --> 00:00:07.710
+Bu videoda biz qarab chiqamiz
+
+00:00:07.710 --> 00:00:11.849
+bu o‘lchovni hisoblashda yuzaga keladigan matematikani.
+
+00:00:11.849 --> 00:00:18.260
+Bu o‘lchovni hisoblashda ma’lumotlar bilan shuningdek belgilar bilan birga ishlaymiz.
+
+00:00:18.260 --> 00:00:21.059
+Bu darsdan keyin qayd qilishga arziydi,
+
+00:00:21.059 --> 00:00:25.065
+balki siz yana qayta bu o‘lchovni qo‘lda hisoblamassiz.,
+
+00:00:25.065 --> 00:00:27.765
+chunki siz uchun bu ishni qilib beradigan programmani o‘rganasiz.
+
+00:00:27.765 --> 00:00:34.049
+O‘zini o‘zi hisoblash sizga aslida nima qilayotgani haqida belgi beradi.
+
+00:00:34.049 --> 00:00:37.450
+Va bu belgi yaxshi bo‘lishi kerak
+
+00:00:37.450 --> 00:00:42.564
+ma’lumotlarni tushunish va vaziyatingiz uchun to‘g‘ri tahlilni tanlashdan.
+
+00:00:42.564 --> 00:00:45.615
+Tasavvur qiling bizda to‘rt qiymatli ma’lumotlar to‘plami mavjud,
+
+00:00:45.615 --> 00:00:49.604
+10, 14, 10, va 6.
+
+00:00:49.604 --> 00:00:55.219
+Standart chetlashishni hisoblash uchun qilishimiz kerak bo‘lgan birinchi narsa bu qiymatni topishdir.
+
+00:00:55.219 --> 00:00:58.850
+Belgilarda oladigan bo‘lsak, bu bizda X chizig‘i sufatida bor.
+
+00:00:58.850 --> 00:01:01.700
+Qiymatlar uchun,umumiy miqdor 40,
+
+00:01:01.700 --> 00:01:04.010
+va bizda to‘rtta raqam bor.
+
+00:01:04.010 --> 00:01:09.114
+So the mean is 40 over 4 or 10.
+
+00:01:09.114 --> 00:01:14.170
+Keyin bu qiymatdan har bir kuzatuvning masofasiga qaraymiz.
+
+00:01:14.170 --> 00:01:18.515
+Bu kuzatuvlarning ikkitasi aniq shu qiymatga teng.
+
+00:01:18.515 --> 00:01:21.204
+Shunday qilib bu yerda masofa nolga teng.
+
+00:01:21.204 --> 00:01:24.150
+Biri 14 dan 4 marta kattaroq,
+
+00:01:24.150 --> 00:01:27.879
+boshqa biri 6 dan 4 marta kichik.
+
+00:01:27.879 --> 00:01:34.540
+Belgilarda bularning har biri  XI minus X bar.
+
+00:01:34.540 --> 00:01:37.995
+Keyin agar biz bu masofalarni qaytarib qo‘ysak,
+
+00:01:37.995 --> 00:01:41.219
+musbat manfiy qiymat bilan bekor qilinadi.
+
+00:01:41.219 --> 00:01:45.525
+Va bu yerda nol qiymati tarqalishning katta qiymati emas.
+
+00:01:45.525 --> 00:01:52.049
+Nol bu yerda shuni bildiradiki, barcha qiymatlar bir xil yoki hech qanday tarqalish yo‘q.
+
+00:01:52.049 --> 00:01:56.605
+Buning o‘rniga biz barcha qiymatlarni musbat olishimiz kerak.
+
+00:01:56.605 --> 00:02:02.459
+ Standart chetlashishni hisoblashda bajaradigan usul bu barcha qiymatlarni kvadratga bo‘lishdir.
+
+00:02:02.459 --> 00:02:03.760
+Agar biz buni bu yerda bajarsak,
+
+00:02:03.760 --> 00:02:09.419
+ musbat va manfiy 4 qiymatimiz 16 bo‘ladi.
+
+00:02:09.419 --> 00:02:13.405
+Hozir biz o‘rtacha qiymatni topish uchun bularni hisoblaymiz.
+
+00:02:13.405 --> 00:02:18.250
+ O‘rtacha qiymatdan har bir kuzatuvning kvadrad masofasi.
+
+00:02:18.250 --> 00:02:20.810
+Bu dispersiya (varience) deb ataladi.
+
+00:02:20.810 --> 00:02:24.430
+O‘rtacha qiymatni topish biz oldin bajarganimizday,
+
+00:02:24.430 --> 00:02:29.064
+bu shunday ma’no anglatadiki, barcha qiymatlarni qo‘shish va qancha bo‘lsa o‘shanga bo‘lish.
+
+00:02:29.064 --> 00:02:33.115
+Bu holatda bizda 0, 16, bor
+
+00:02:33.115 --> 00:02:38.800
+0, 16 va biz 4 ga bo‘lamiz chunki bizda 4 ta kuzatishlar bor.
+
+00:02:38.800 --> 00:02:41.740
+ Biroq bu o‘rtacha qiymati
+
+00:02:41.740 --> 00:02:48.039
+Biz birinchi navbatda musbat qiymat olish uchun bajargan kvadrat qiymatlarning
+
+00:02:48.039 --> 00:02:49.870
+Shunday qilib, standart chetlashishni topish uchun,
+
+00:02:49.870 --> 00:02:53.087
+ushbu tugatish qiymatining kvadrat ildizini olamiz.
+
+00:02:53.087 --> 00:02:57.930
+Bu yerda standart chetlashish 2.83.
+
+00:02:57.930 --> 00:03:03.280
+ Bu ma’lumotlar to‘plamidagi har bir nuqta asosiy qiymatdan qancha uzoqda ekanligining o‘rtacha qiymatidir.
+
+00:03:03.280 --> 00:03:07.000
+Bu standart chetlashishning ta’rifi.
+

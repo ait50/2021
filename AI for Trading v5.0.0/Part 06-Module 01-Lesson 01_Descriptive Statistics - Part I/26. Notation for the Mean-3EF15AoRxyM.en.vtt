@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.769
+But now, if we want to sum all the values in our original example,
+
+00:00:04.769 --> 00:00:08.044
+we no longer need to write out all of the xs.
+
+00:00:08.044 --> 00:00:15.710
+Instead, we can write our summation starting at i=1 and ending at the fifth value.
+
+00:00:15.710 --> 00:00:22.175
+This is way better when wanting to extend to 10 or 20 or even 100 values.
+
+00:00:22.175 --> 00:00:25.589
+We no longer need to write out all of those xs.
+
+00:00:25.589 --> 00:00:29.515
+However, we can be even more efficient than this.
+
+00:00:29.515 --> 00:00:32.024
+Each time our data set changes,
+
+00:00:32.024 --> 00:00:37.192
+I have to change this number at the top to indicate how many values I'm summing.
+
+00:00:37.192 --> 00:00:40.024
+If we really just want to sum all of our values,
+
+00:00:40.024 --> 00:00:47.164
+we can replace this top value with n. Now our notation will work for any data set.
+
+00:00:47.164 --> 00:00:50.189
+So far, we have a way to sum all of
+
+00:00:50.189 --> 00:00:53.669
+our values regardless of how many are in our data set.
+
+00:00:53.670 --> 00:00:56.825
+In order to finish this calculation of the mean,
+
+00:00:56.825 --> 00:01:01.215
+we need to divide our sum by how many values are in our data set.
+
+00:01:01.215 --> 00:01:07.465
+But this is just n. You would commonly see the mean of the data set notated like this,
+
+00:01:07.465 --> 00:01:10.305
+which we pronounce as x-bar,
+
+00:01:10.305 --> 00:01:14.955
+and it is calculated with this notation which says you sum
+
+00:01:14.954 --> 00:01:17.219
+all of the values in the data set and then
+
+00:01:17.219 --> 00:01:20.150
+divide by the number of values in the data set.
+
+00:01:20.150 --> 00:01:22.805
+Learning notation can be tough.
+
+00:01:22.805 --> 00:01:25.720
+Don't be afraid to watch this video more than once.
+
+00:01:25.719 --> 00:01:28.299
+Before we move on to the next sections,
+
+00:01:28.299 --> 00:01:30.909
+there are quizzes available in the next module to
+
+00:01:30.909 --> 00:01:34.000
+assure you've mastered the concepts we've introduced here.
+

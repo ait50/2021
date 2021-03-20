@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.201 --> 00:00:04.471
+Como devemos trabalhar
+com elementos atípicos na prática?
+
+00:00:04.505 --> 00:00:05.772
+No mínimo,
+
+00:00:05.806 --> 00:00:07.808
+devemos notar
+que eles existem.
+
+00:00:07.841 --> 00:00:10.143
+Precisamos entender o impacto
+que eles têm
+
+00:00:10.177 --> 00:00:12.212
+nas nossas estatísticas
+de resumo.
+
+00:00:12.246 --> 00:00:15.148
+Nesse caso, aumentando bastante
+nossa média
+
+00:00:15.182 --> 00:00:17.251
+e nosso desvio padrão.
+
+00:00:17.284 --> 00:00:19.286
+Se os elementos atípicos são
+erros de digitação
+
+00:00:19.319 --> 00:00:21.021
+ou erros de entrada de dados,
+
+00:00:21.054 --> 00:00:23.557
+esta é uma razão
+para remover esses pontos.
+
+00:00:23.590 --> 00:00:25.626
+Ou se sabemos
+o que eles deveriam ser,
+
+00:00:25.659 --> 00:00:28.295
+podemos mudá-los
+para os valores corretos.
+
+00:00:28.328 --> 00:00:30.864
+Em casos como
+o exemplo acima,
+
+00:00:30.898 --> 00:00:32.266
+podemos tentar entender
+
+00:00:32.299 --> 00:00:34.835
+o que havia de tão diferente
+entre o elemento atípico
+
+00:00:34.868 --> 00:00:36.803
+quando comparado
+aos outros elementos.
+
+00:00:36.837 --> 00:00:40.240
+Como este empreendedor se tornou
+tão bem-sucedido?
+
+00:00:40.274 --> 00:00:43.677
+E por que os ganhos são
+tão grandes, em comparação?
+
+00:00:43.710 --> 00:00:45.579
+Existe um campo inteiro
+
+00:00:45.612 --> 00:00:48.882
+dedicado à ideia,
+chamado de detecção de anomalias.
+
+00:00:48.916 --> 00:00:52.119
+Você verá que medidas associadas
+com o sumário de cinco números,
+
+00:00:52.152 --> 00:00:56.523
+como o mínimo, o máximo,
+e os quartis um, dois e três,
+
+00:00:56.557 --> 00:00:59.826
+são mais informativos quando
+elementos atípicos estão presentes.
+
+00:00:59.860 --> 00:01:04.298
+Este exemplo mostra que você deve
+ter cuidado ao partilhar resultados
+
+00:01:04.331 --> 00:01:06.767
+e declarar conclusões usando
+estatísticas de resumo
+
+00:01:06.800 --> 00:01:10.437
+quando há elementos atípicos.
+
+00:01:10.470 --> 00:01:14.341
+Um único número número pode
+causar enganos sobre o que ocorre
+
+00:01:14.374 --> 00:01:15.909
+nos nossos dados.
+
+00:01:15.943 --> 00:01:19.880
+Algumas estatísticas
+levam mais a erros do que outras.
+
+00:01:19.913 --> 00:01:24.751
+Se você consome informações
+baseadas em dados, como todos nós,
+
+00:01:24.751 --> 00:01:28.021
+é importante saber
+como fazer as perguntas certas
+
+00:01:28.055 --> 00:01:30.057
+a respeito das estatísticas
+ao seu redor.
+
+00:01:30.057 --> 00:01:31.057
+*END*
+

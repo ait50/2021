@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.634 --> 00:00:04.767
+Uma das formas mais comuns de medir
+o spread da nossa informação
+
+00:00:04.801 --> 00:00:07.534
+é observar o resumo
+de cinco números,
+
+00:00:07.567 --> 00:00:10.400
+que nos dá valores
+para calcular a amplitude
+
+00:00:10.434 --> 00:00:12.834
+e a amplitude interquartil.
+
+00:00:12.868 --> 00:00:16.467
+O resumo de cinco número
+consiste em cinco valores:
+
+00:00:16.501 --> 00:00:20.167
+o máximo, o mínimo,
+o primeiro quartil,
+
+00:00:20.200 --> 00:00:23.434
+o segundo quartil,
+que também é a mediana,
+
+00:00:23.501 --> 00:00:25.501
+e o terceiro quartil.
+
+00:00:25.534 --> 00:00:28.300
+Considere que temos este
+conjunto de informações:
+
+00:00:28.367 --> 00:00:32.100
+a primeira coisa a fazer para calcular
+o resumo de cinco números
+
+00:00:32.133 --> 00:00:34.601
+é ordenar os valores.
+
+00:00:34.634 --> 00:00:40.300
+Quando ordenados, os valores mínimo
+e máximo são fáceis de identificar,
+
+00:00:40.334 --> 00:00:43.701
+como os valores menores
+e maiores.
+
+00:00:43.734 --> 00:00:47.200
+À medida que calculamos na seção
+de medidas do centro,
+
+00:00:47.234 --> 00:00:51.200
+a mediana é o valor do meio
+no conjunto de informações.
+
+00:00:51.234 --> 00:00:55.601
+Também o chamamos de Q2,
+ou segundo quartil.
+
+00:00:55.634 --> 00:00:59.067
+Porque 50% de nossas informações,
+ou dois quartos,
+
+00:00:59.100 --> 00:01:01.601
+estão abaixo desse valor.
+
+00:01:01.667 --> 00:01:07.934
+Os dois valores restantes para completar
+o resumo de cinco números são o Q1 e o Q3.
+
+00:01:07.968 --> 00:01:12.267
+Esses valores podem ser pensados
+como as medianas da informação
+
+00:01:12.267 --> 00:01:18.834
+de cada lado do Q2, ou seja, a mediana
+desses pontos de dados é o Q1.
+
+00:01:18.868 --> 00:01:23.801
+Esse valor é tal que 25% da nossa
+informação fica abaixo dele,
+
+00:01:23.834 --> 00:01:29.033
+e a mediana desses pontos de dados
+é o Q3, ou o terceiro quartil.
+
+00:01:29.067 --> 00:01:32.133
+Esse valor é tão grande que 75%
+da nossa informação
+
+00:01:32.167 --> 00:01:34.200
+fica abaixo dessa marca.
+
+00:01:34.234 --> 00:01:38.834
+Observe que o Q2 não era
+um conjunto de pontos
+
+00:01:38.868 --> 00:01:44.300
+usado para calcular o Q1 ou o Q3.
+Esse é o resumo dos cinco números,
+
+00:01:44.334 --> 00:01:46.434
+como se segue.
+
+00:01:46.467 --> 00:01:49.901
+Vamos considerar outro exemplo.
+Quando o conjunto de informações
+
+00:01:49.934 --> 00:01:51.501
+tem um número par
+de valores.
+
+00:01:51.534 --> 00:01:54.934
+Novamente, primeiro temos
+que ordenar os valores.
+
+00:01:54.968 --> 00:01:58.968
+Logo identificamos o máximo
+e o mínimo.
+
+00:01:58.968 --> 00:02:03.968
+Lembre-se: com um número par
+de valores, a mediana, ou Q2,
+
+00:02:04.033 --> 00:02:07.400
+nos dá a média
+desses dois valores aqui.
+
+00:02:07.434 --> 00:02:12.033
+Para achar o Q1 e o Q3, dividimos
+o conjunto de informações
+
+00:02:12.067 --> 00:02:15.467
+entre os dois valores que usamos
+para encontrar a mediana.
+
+00:02:15.501 --> 00:02:18.834
+Isso fornece os dois
+conjuntos de informação.
+
+00:02:18.868 --> 00:02:24.634
+Encontrar a mediana de cada um
+desses fornecerá o Q1 e Q3.
+
+00:02:24.667 --> 00:02:29.534
+Para este conjunto de informações,
+Q1 será a média desses dois valores.
+
+00:02:29.567 --> 00:02:33.300
+E Q3 será a média
+desses dois valores.
+
+00:02:33.334 --> 00:02:37.200
+Isso fornece nosso resumo
+de cinco números como se segue.
+
+00:02:37.234 --> 00:02:41.200
+Quando calculamos todos os valores
+do resumo de cinco números,
+
+00:02:41.200 --> 00:02:45.033
+achar a amplitude
+e a amplitude interquartil é simples.
+
+00:02:45.067 --> 00:02:47.634
+Para o primeiro conjunto
+de informações, a amplitude
+
+00:02:47.634 --> 00:02:50.767
+é calculada pelo máximo
+menos o mínimo.
+
+00:02:50.801 --> 00:02:55.334
+Para o primeiro conjunto de
+informações, são 10 menos 1, ou 9.
+
+00:02:55.367 --> 00:02:57.767
+E a amplitude interquartil
+é calculada
+
+00:02:57.801 --> 00:03:03.467
+com Q3 menos Q1,
+8 menos 2, ou 6.
+

@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.315
+We can also divide quantitative data types further.
+
+00:00:04.315 --> 00:00:07.930
+I assume most of my positive interactions occur with older dogs,
+
+00:00:07.929 --> 00:00:09.955
+as they've had more time to train.
+
+00:00:09.955 --> 00:00:13.539
+The age of a dog is a continuous quantitative data type,
+
+00:00:13.539 --> 00:00:18.744
+while the number of dogs I interact with is a discrete quantitative data type.
+
+00:00:18.745 --> 00:00:21.925
+In the world, we kind of make all data discrete,
+
+00:00:21.925 --> 00:00:26.170
+so it can be difficult to see the difference between discrete and continuous.
+
+00:00:26.170 --> 00:00:31.120
+Continuous data can take on any numeric value including decimal values,
+
+00:00:31.120 --> 00:00:33.700
+and sometimes even negative numbers.
+
+00:00:33.700 --> 00:00:38.490
+The age of a dog in this situation is an example of continuous data,
+
+00:00:38.490 --> 00:00:42.250
+as we could split this variable into smaller and smaller pieces,
+
+00:00:42.250 --> 00:00:44.524
+and still something exists.
+
+00:00:44.524 --> 00:00:47.394
+For example, we could talk about age in terms of years,
+
+00:00:47.395 --> 00:00:49.465
+or months, or days,
+
+00:00:49.465 --> 00:00:51.445
+or hours, or minutes,
+
+00:00:51.445 --> 00:00:55.405
+or seconds, and still there are units that are smaller.
+
+00:00:55.405 --> 00:00:57.520
+This is true of continuous data.
+
+00:00:57.520 --> 00:01:00.700
+However, discrete data like the number of dogs,
+
+00:01:00.700 --> 00:01:03.220
+only takes on countable values.
+

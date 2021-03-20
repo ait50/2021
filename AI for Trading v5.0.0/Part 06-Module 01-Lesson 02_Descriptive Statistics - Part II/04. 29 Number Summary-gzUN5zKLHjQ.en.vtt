@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.569
+One of the most common ways to measure the spread
+
+00:00:03.569 --> 00:00:07.094
+of our data is by looking at the Five Number Summary,
+
+00:00:07.094 --> 00:00:12.564
+which gives us values for calculating the range and interquartile range.
+
+00:00:12.564 --> 00:00:17.622
+The Five Number Summary consists of five values, the maximum,
+
+00:00:17.623 --> 00:00:19.785
+the minimum, the first quartile,
+
+00:00:19.785 --> 00:00:24.176
+the second quartile which is also the median, and the third quartile.
+
+00:00:24.176 --> 00:00:28.239
+Consider we have the following dataset.
+
+00:00:28.239 --> 00:00:30.599
+The first thing we need to do to calculate
+
+00:00:30.600 --> 00:00:34.105
+the Five Number Summary is to order our values.
+
+00:00:34.104 --> 00:00:38.239
+Once ordered, the minimum and the maximum values
+
+00:00:38.240 --> 00:00:43.270
+are easy to identify as the smallest and largest values.
+
+00:00:43.270 --> 00:00:47.055
+As we calculate it in the section on measures of center,
+
+00:00:47.054 --> 00:00:51.280
+the median is the middle value in our dataset.
+
+00:00:51.280 --> 00:00:55.880
+We also call this Q2 or the second quartile because
+
+00:00:55.880 --> 00:01:01.460
+50% of our data or two quarters fall below this value.
+
+00:01:01.460 --> 00:01:07.820
+The remaining two values to complete the Five Number Summary are Q1 and Q3.
+
+00:01:07.819 --> 00:01:13.455
+These values can be thought of as the medians of the data on either side of Q2.
+
+00:01:13.456 --> 00:01:18.189
+That is the median of these data points is Q1,
+
+00:01:18.189 --> 00:01:23.234
+this value is such that 25% of our data fall below it,
+
+00:01:23.234 --> 00:01:28.254
+and the median of these data points is Q3 or the third quartile.
+
+00:01:28.254 --> 00:01:33.640
+This value is such that 75% of our data fall below this mark.
+
+00:01:33.640 --> 00:01:41.680
+Notice, Q2 was not an either a set of these points used to calculate Q1 or Q3.
+
+00:01:41.680 --> 00:01:46.365
+This provides our Five Number Summary as the following.
+
+00:01:46.364 --> 00:01:51.409
+Let's consider another example for in our dataset has an even set of values.
+
+00:01:51.409 --> 00:01:54.810
+Again, we first need to order the values.
+
+00:01:54.810 --> 00:01:58.920
+We can quickly identify the maximum and the minimum.
+
+00:01:58.920 --> 00:02:01.605
+Remember, with an even number of values,
+
+00:02:01.605 --> 00:02:07.340
+the median or Q2 is given as the mean of these two values here.
+
+00:02:07.340 --> 00:02:10.185
+In order to find Q1 and Q3,
+
+00:02:10.185 --> 00:02:15.354
+we divide our dataset between the two values we use to find the median.
+
+00:02:15.354 --> 00:02:18.304
+This provides these two datasets.
+
+00:02:18.305 --> 00:02:24.175
+Finding the median of each of these will provide Q1 and Q3.
+
+00:02:24.175 --> 00:02:29.285
+For this dataset, Q1 will be the mean of these two values,
+
+00:02:29.284 --> 00:02:33.155
+and Q3, will be the mean of these two values.
+
+00:02:33.155 --> 00:02:36.765
+This provides our Five Number Summary as the following.
+
+00:02:36.764 --> 00:02:40.839
+Once we've calculated all the values for the Five Number Summary,
+
+00:02:40.840 --> 00:02:44.905
+finding the range and interquartile range is no problem.
+
+00:02:44.905 --> 00:02:46.770
+For the first dataset,
+
+00:02:46.770 --> 00:02:50.455
+the range is calculated as the maximum minus the minimum.
+
+00:02:50.455 --> 00:02:51.965
+For the first dataset,
+
+00:02:51.965 --> 00:02:54.865
+this was 10 minus 1 or 9.
+
+00:02:54.865 --> 00:02:59.680
+And the interquartile range is calculated as Q3 minus Q1,
+
+00:02:59.680 --> 00:03:03.000
+which is 8 minus 2 or 6.
+

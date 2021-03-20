@@ -1,0 +1,199 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:05.767
+No último vídeo, tivemos uma ideia
+do que o desvio padrão mede.
+
+00:00:05.801 --> 00:00:09.968
+Neste vídeo, vamos observar
+a matemática que ocorre
+
+00:00:09.968 --> 00:00:12.434
+quando se calcula esta medida.
+
+00:00:12.467 --> 00:00:15.200
+Vamos trabalhar com dados
+para calcular essa medida,
+
+00:00:15.267 --> 00:00:18.300
+assim como com a notação
+associada a ela.
+
+00:00:18.334 --> 00:00:22.300
+Vale a pena notar que, após
+esta aula, você provavelmente
+
+00:00:22.334 --> 00:00:25.501
+não vai calcular essa média
+à mão nunca mais.
+
+00:00:25.534 --> 00:00:28.501
+Porque existe um software
+que faz isso por você.
+
+00:00:28.567 --> 00:00:31.734
+Fazer o cálculo sozinho
+vai lhe dar a intuição
+
+00:00:31.767 --> 00:00:34.133
+por trás do que realmente
+está acontecendo.
+
+00:00:34.167 --> 00:00:39.067
+E essa intuição é necessária para
+se tornar bom em entender dados
+
+00:00:39.133 --> 00:00:42.667
+e escolher a melhor análise
+para a sua situação.
+
+00:00:42.701 --> 00:00:45.934
+Imagine que temos um conjunto
+de informações com quatro valores:
+
+00:00:45.968 --> 00:00:49.634
+10, 14, 10 e 6.
+
+00:00:49.701 --> 00:00:52.267
+A primeira coisa
+a fazer para calcular
+
+00:00:52.300 --> 00:00:55.734
+o desvio padrão é achar a média.
+
+00:00:55.767 --> 00:00:59.501
+Na notação, temos isso
+como a barra.
+
+00:00:59.534 --> 00:01:04.100
+Para os nossos valores, a soma
+é 40 e temos quatro números.
+
+00:01:04.167 --> 00:01:09.334
+A média, então, é 40 dividido
+por 4, que é igual a 10.
+
+00:01:09.367 --> 00:01:14.801
+Então queremos ver a distância
+de cada observação dessa média.
+
+00:01:14.834 --> 00:01:18.667
+Duas dessas observações
+são iguais à média.
+
+00:01:18.734 --> 00:01:21.767
+A distância aqui, então,
+é zero.
+
+00:01:21.801 --> 00:01:24.567
+Uma é quatro vezes maior,
+14,
+
+00:01:24.601 --> 00:01:28.467
+e a outra é quatro vezes
+menor, o seis.
+
+00:01:28.534 --> 00:01:34.501
+Na notação, cada uma dessas
+é xi menos a barra.
+
+00:01:34.534 --> 00:01:38.367
+Se formos calcular a média
+dessas distâncias,
+
+00:01:38.400 --> 00:01:41.567
+o positivo seria cancelado
+pelo número negativo.
+
+00:01:41.634 --> 00:01:45.968
+E o número zero não é uma
+grande medida da dispersão aqui.
+
+00:01:45.968 --> 00:01:50.200
+Zero sugeriria que todos os valores
+são os mesmos,
+
+00:01:50.234 --> 00:01:52.367
+ou que não existe dispersão.
+
+00:01:52.434 --> 00:01:57.167
+Em vez disso, precisamos tornar
+todos esses valores positivos.
+
+00:01:57.234 --> 00:02:00.267
+A maneira de fazer isso quando
+se calcula o desvio padrão
+
+00:02:00.300 --> 00:02:02.567
+é elevar todos ao quadrado.
+
+00:02:02.601 --> 00:02:06.868
+Se fizermos isso aqui, os valores
+positivos e negativos
+
+00:02:06.934 --> 00:02:09.501
+se tornarão dois 16.
+
+00:02:09.567 --> 00:02:15.300
+Agora, podemos calcular essa média
+para achar a distância ao quadrado
+
+00:02:15.334 --> 00:02:18.367
+média de cada observação
+da média.
+
+00:02:18.400 --> 00:02:21.501
+Esta é a variância.
+
+00:02:21.534 --> 00:02:24.767
+Achar a média,
+como fizemos antes,
+
+00:02:24.801 --> 00:02:29.467
+significa adicionar todos esses valores
+e dividi-los por quantos eles são.
+
+00:02:29.501 --> 00:02:33.467
+Neste caso, temos o zero, 16,
+
+00:02:33.501 --> 00:02:36.968
+zero, 16, e dividimos
+por quatro,
+
+00:02:37.033 --> 00:02:38.968
+porque temos quatro
+observações.
+
+00:02:39.000 --> 00:02:43.601
+Contudo, essa é uma média
+de valores ao quadrado,
+
+00:02:43.634 --> 00:02:48.167
+que só fizemos para obter valores
+positivos, em primeiro lugar.
+
+00:02:48.200 --> 00:02:51.567
+Para obter o desvio padrão,
+pegamos a raiz quadrada
+
+00:02:51.601 --> 00:02:53.467
+do valor final.
+
+00:02:53.501 --> 00:02:58.033
+Aqui, o desvio padrão
+é 2,83.
+
+00:02:58.067 --> 00:03:01.467
+Então, em média, essa é
+a distância de que cada ponto
+
+00:03:01.501 --> 00:03:03.701
+do nosso conjunto de
+informações está da média.
+
+00:03:03.767 --> 00:03:06.467
+O que é a definição
+de desvio padrão.
+

@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.868 --> 00:00:03.570
+Agora que discutimos como
+construir um histograma,
+
+00:00:03.604 --> 00:00:07.608
+podemos usar isso para determinar
+o formato associado ao nosso dado.
+
+00:00:07.641 --> 00:00:13.380
+Aqui, temos três histogramas
+mostrando três conjuntos de dados.
+
+00:00:13.413 --> 00:00:16.416
+O histograma que tem compartimentos
+menores dos lados
+
+00:00:16.450 --> 00:00:20.454
+e maiores à direita é considerado
+uma forma oblíqua à esquerda.
+
+00:00:20.454 --> 00:00:23.090
+O histograma com compartimentos
+menores à direita
+
+00:00:23.090 --> 00:00:27.194
+e maiores à direita é considerado
+uma forma oblíqua à direita.
+
+00:00:27.261 --> 00:00:30.597
+Qualquer distribuição em que se possa
+desenhar uma linha no meio
+
+00:00:30.631 --> 00:00:33.100
+e o lado direito é igual
+ao lado esquerdo
+
+00:00:33.133 --> 00:00:35.402
+é considerada simétrica.
+
+00:00:35.435 --> 00:00:38.305
+Uma das distribuições simétricas
+mais comuns é conhecida
+
+00:00:38.338 --> 00:00:43.243
+como distribuição normal,
+também chamada "curva de sino".
+
+00:00:43.277 --> 00:00:46.914
+O formato da distribuição
+diz bastante
+
+00:00:46.947 --> 00:00:49.650
+sobre a medida do centro
+e a dispersão.
+
+00:00:49.683 --> 00:00:55.155
+Distribuições simétricas, como esta,
+têm a média igual à mediana,
+
+00:00:55.189 --> 00:00:57.658
+que também é igual à moda.
+
+00:00:57.691 --> 00:01:00.727
+Cada uma dessas medidas fica aqui,
+no centro.
+
+00:01:00.761 --> 00:01:05.599
+A moda é essencialmente a barra
+mais alta do nosso histograma.
+
+00:01:05.632 --> 00:01:09.136
+Quando temos distribuições
+oblíquas, é o caso da média
+
+00:01:09.169 --> 00:01:11.205
+ser puxada pela ponta
+da distribuição,
+
+00:01:11.238 --> 00:01:13.807
+enquanto a mediana fica
+mais próxima da moda.
+
+00:01:13.841 --> 00:01:17.477
+Por exemplo, nesta distribuição
+oblíqua à direita, a média
+
+00:01:17.511 --> 00:01:21.682
+seria posta para cima, resultando
+em uma média maior que o mediano.
+
+00:01:21.715 --> 00:01:25.052
+Como alternativa, em uma
+distribuição oblíqua à esquerda,
+
+00:01:25.085 --> 00:01:30.457
+a média é posta aqui, resultando
+em uma média menor que a mediana.
+
+00:01:30.490 --> 00:01:34.061
+Para relacionar isso com o visual
+do histograma,
+
+00:01:34.094 --> 00:01:37.764
+de volta ao resumo dos cinco números
+visto nas aulas anteriores,
+
+00:01:37.764 --> 00:01:40.167
+eis os gráficos de caixa
+correspondentes
+
+00:01:40.200 --> 00:01:42.269
+abaixo de cada histograma.
+
+00:01:42.302 --> 00:01:45.672
+Observe como as linhas se esticam
+na direção do ângulo
+
+00:01:45.672 --> 00:01:47.908
+para cada distribuição de ângulo.
+
+00:01:47.941 --> 00:01:51.211
+Ou seja, a linha mais longa
+está à esquerda na distribuição
+
+00:01:51.245 --> 00:01:55.349
+à esquerda e está à direita
+na distribuição à direita.
+
+00:01:55.382 --> 00:01:58.986
+Como alternativa, o histograma
+simétrico também tem
+
+00:01:59.019 --> 00:02:00.621
+um gráfico de caixa simétrico.
+

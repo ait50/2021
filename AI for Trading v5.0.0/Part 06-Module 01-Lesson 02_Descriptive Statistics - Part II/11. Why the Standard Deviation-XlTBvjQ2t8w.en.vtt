@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.360 --> 00:00:05.275
+So it might seem absurd to do this calculation of the standard deviation.
+
+00:00:05.275 --> 00:00:08.419
+I mean, it's such a complicated way to measure the spread
+
+00:00:08.419 --> 00:00:11.984
+of our data compared to the five number summary we saw earlier.
+
+00:00:11.984 --> 00:00:16.250
+But it turns out that the standard deviation is used all the
+
+00:00:16.250 --> 00:00:21.140
+time to get a single number to compare the spread of two data sets.
+
+00:00:21.140 --> 00:00:25.339
+It is kind of nice to be able to talk about how spread out our data are from one
+
+00:00:25.339 --> 00:00:30.000
+another without having to report an entire table of values.
+
+00:00:30.000 --> 00:00:32.240
+We can just compare the standard deviation for
+
+00:00:32.240 --> 00:00:35.315
+one group to the standard deviation of another group.
+
+00:00:35.314 --> 00:00:39.149
+And we have a way to tell which dataset is more spread out.
+
+00:00:39.149 --> 00:00:42.379
+Having one number simplifies the amount of
+
+00:00:42.380 --> 00:00:46.230
+information that the person you're reporting to needs to consume.
+
+00:00:46.229 --> 00:00:48.544
+Having the single value also has
+
+00:00:48.545 --> 00:00:52.844
+other advantages with regard to what is known as inferential statistics,
+
+00:00:52.844 --> 00:00:55.054
+but that's beyond what we need to know now.
+
+00:00:55.054 --> 00:00:59.210
+For now, we just need to know that we have a way to take all of
+
+00:00:59.210 --> 00:01:01.579
+our values and get a single number
+
+00:01:01.579 --> 00:01:04.280
+that tells us how spread out they are from one another.
+

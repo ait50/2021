@@ -1,0 +1,105 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.000 --> 00:00:05.000
+Alguns pontos finais para se ter
+em mente sobre o desvio padrão.
+
+00:00:05.001 --> 00:00:09.001
+O primeiro é que o desvio padrão
+é usado frequentemente
+
+00:00:09.033 --> 00:00:11.367
+para comparar a dispersão
+de grupos diferentes,
+
+00:00:11.400 --> 00:00:14.167
+para determinar em qual
+deles ela é maior.
+
+00:00:14.234 --> 00:00:17.501
+O segundo é que quando
+a informação diz respeito
+
+00:00:17.601 --> 00:00:20.467
+a dinheiro ou à economia,
+ter um desvio padrão mais alto
+
+00:00:20.501 --> 00:00:23.067
+é associado
+com riscos maiores.
+
+00:00:23.167 --> 00:00:26.601
+Comparando preços de ações,
+uma com preço que muda
+
+00:00:26.634 --> 00:00:28.934
+com um desvio de padrão alto
+com o tempo
+
+00:00:28.968 --> 00:00:32.033
+é considerada mais arriscada
+do que uma ação que flutua
+
+00:00:32.067 --> 00:00:34.534
+com desvios padrões
+mais baixos.
+
+00:00:34.601 --> 00:00:37.834
+O terceiro é que, para fazer
+uma comparação justa,
+
+00:00:37.868 --> 00:00:40.634
+todas as informações devem estar
+nas mesmas unidades.
+
+00:00:40.667 --> 00:00:43.501
+Se você está medindo em dólares
+um conjunto de informações
+
+00:00:43.534 --> 00:00:47.234
+e outro em euros, não é justo
+comparar esses conjuntos
+
+00:00:47.300 --> 00:00:50.167
+para determinar qual deles
+tem o maior dispersão.
+
+00:00:50.200 --> 00:00:53.601
+E finalmente, a variância
+tem quadrados unitários
+
+00:00:53.634 --> 00:00:55.334
+das suas medidas originais.
+
+00:00:55.367 --> 00:01:00.033
+Por exemplo, se você mede renda
+em dólares, a variância
+
+00:01:00.067 --> 00:01:05.000
+tem unidades em dólar ao quadrado,
+o que não é particularmente útil.
+
+00:01:05.033 --> 00:01:07.801
+Por essa razão, o desvio padrão,
+
+00:01:07.834 --> 00:01:09.968
+que é a raiz quadrada
+da variância,
+
+00:01:10.001 --> 00:01:13.868
+é muitas vezes considerada
+uma medida mais útil de dispersão,
+
+00:01:13.968 --> 00:01:17.200
+porque compartilha as unidades
+do conjunto de informações original.
+
+00:01:17.234 --> 00:01:21.467
+Se você medir receita em dólares,
+o desvio padrão também terá
+
+00:01:21.501 --> 00:01:23.067
+unidades em dólares.
+

@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.420 --> 00:00:05.650
+When analyzing both discrete and continuous quantitative data,
+
+00:00:05.650 --> 00:00:08.995
+we generally discuss four main aspects.
+
+00:00:08.994 --> 00:00:11.484
+The center, the spread,
+
+00:00:11.484 --> 00:00:14.199
+the shape and outliers.
+
+00:00:14.199 --> 00:00:18.219
+In this lesson, we will focus on measures of center.
+
+00:00:18.219 --> 00:00:21.484
+There are three widely accepted measures of center.
+
+00:00:21.484 --> 00:00:24.934
+The mean, the median and the mode.
+
+00:00:24.934 --> 00:00:28.224
+To illustrate how each of these measures is calculated,
+
+00:00:28.225 --> 00:00:32.829
+consider this table of the number of dogs I see at the coffee shop in a week.
+
+00:00:32.829 --> 00:00:37.030
+From the table, we can see that on Monday, I saw five dogs.
+
+00:00:37.030 --> 00:00:39.475
+On Tuesday, I saw three dogs.
+
+00:00:39.475 --> 00:00:43.350
+On Wednesday, I saw eight dogs and so on.
+
+00:00:43.350 --> 00:00:44.695
+A friend might ask you,
+
+00:00:44.695 --> 00:00:48.375
+how many dogs would you expect to see on any given day?
+
+00:00:48.375 --> 00:00:51.979
+We might choose to respond to this in a lot of different ways.
+
+00:00:51.979 --> 00:00:55.890
+Like, it depends on the day or it depends on the week.
+
+00:00:55.890 --> 00:01:02.750
+But commonly, the word expect is associated with the mean or the average of our data set.
+
+00:01:02.750 --> 00:01:05.719
+The mean is calculated as the sum of all of
+
+00:01:05.719 --> 00:01:10.099
+the values in our data set divided by how many data points we have.
+
+00:01:10.099 --> 00:01:12.589
+As you can see calculated here,
+
+00:01:12.590 --> 00:01:15.590
+this value is 12.57 dogs.
+
+00:01:15.590 --> 00:01:18.350
+That is, the sum of the number of dogs observed on
+
+00:01:18.349 --> 00:01:21.969
+each day divided by the number of days in a week.
+
+00:01:21.969 --> 00:01:25.609
+The mean isn't always the best measure of center.
+
+00:01:25.609 --> 00:01:27.325
+For this data set,
+
+00:01:27.325 --> 00:01:32.385
+you can see that the mean doesn't really seem like it's in the middle of the data at all.
+
+00:01:32.385 --> 00:01:39.020
+There are only two of the seven days that have recorded more dogs than the reported mean.
+
+00:01:39.019 --> 00:01:40.719
+It also is splitting our dogs into
+
+00:01:40.719 --> 00:01:45.000
+decimal values which will seem strange when we're reporting back to our friend.
+

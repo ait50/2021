@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.069
+As a first example,
+
+00:00:02.069 --> 00:00:06.449
+let's apply this new idea of notation to something you've used before.
+
+00:00:06.450 --> 00:00:11.835
+Spreadsheets. Spreadsheets are a common way we hold data in the real world.
+
+00:00:11.835 --> 00:00:15.825
+In our spreadsheet, we have rows and columns.
+
+00:00:15.824 --> 00:00:19.774
+To better understand how we use spreadsheets to hold data,
+
+00:00:19.774 --> 00:00:21.779
+let's work through an example.
+
+00:00:21.780 --> 00:00:23.945
+Before even collecting data,
+
+00:00:23.945 --> 00:00:27.570
+we usually start with a question or many questions.
+
+00:00:27.570 --> 00:00:29.820
+Consider I run a small blog about my
+
+00:00:29.820 --> 00:00:33.585
+best and worst adventures with the dogs at the coffee shop.
+
+00:00:33.585 --> 00:00:37.399
+Which also sells trinkets related to those adventures.
+
+00:00:37.399 --> 00:00:40.049
+Everything from fetch toys to leashes,
+
+00:00:40.049 --> 00:00:43.140
+to doggie bags, and everything in between.
+
+00:00:43.140 --> 00:00:47.265
+Questions I might have are: How many people visit my site?
+
+00:00:47.265 --> 00:00:50.505
+Or how much time do visitors spend on my site?
+
+00:00:50.505 --> 00:00:52.285
+Are there differences in traffic,
+
+00:00:52.284 --> 00:00:54.280
+depending on the day of the week?
+
+00:00:54.280 --> 00:00:57.975
+How many visitors purchase an item through the blog?
+
+00:00:57.975 --> 00:01:00.645
+In order to answer these questions,
+
+00:01:00.645 --> 00:01:03.450
+say we keep track of the date of the visit,
+
+00:01:03.450 --> 00:01:05.484
+the day of the week of the visit,
+
+00:01:05.484 --> 00:01:07.275
+the amount of time spent on the site,
+
+00:01:07.275 --> 00:01:10.260
+and whether or not an individual buys an item.
+
+00:01:10.260 --> 00:01:13.344
+We can think of each of these as a column.
+
+00:01:13.344 --> 00:01:17.795
+A column in our dataset is associated with a random variable.
+
+00:01:17.795 --> 00:01:22.180
+Explaining what a random variable is in English is complicated.
+
+00:01:22.180 --> 00:01:24.695
+But in notation, it's simple.
+
+00:01:24.694 --> 00:01:31.829
+In English, a random variable is a placeholder for the possible values of some process.
+
+00:01:31.829 --> 00:01:34.614
+In notation, it's X.
+
+00:01:34.614 --> 00:01:37.574
+For our website, the date of the visit,
+
+00:01:37.575 --> 00:01:39.730
+the day of the week of the visit,
+
+00:01:39.730 --> 00:01:41.715
+the amount of time spent on the site,
+
+00:01:41.715 --> 00:01:46.825
+and whether or not an individual buys an item are all variables.
+
+00:01:46.825 --> 00:01:50.760
+Let's say we have a visitor on Thursday, June 15.
+
+00:01:50.760 --> 00:01:56.130
+The visitor stays on our site for five minutes and doesn't buy an item.
+
+00:01:56.129 --> 00:01:57.375
+Then a second visitor,
+
+00:01:57.375 --> 00:02:03.659
+visits the site on the exact same day for 10 minutes and they do buy an item.
+
+00:02:03.659 --> 00:02:08.400
+Notice how each of these individuals has been added to our spreadsheet.
+
+00:02:08.400 --> 00:02:10.485
+We might have many more visitors,
+
+00:02:10.485 --> 00:02:13.565
+and we could update our spreadsheet accordingly.
+
+00:02:13.564 --> 00:02:16.219
+When using spreadsheets, we frequently
+
+00:02:16.219 --> 00:02:20.104
+analyze a full column to answer our questions of interest.
+
+00:02:20.104 --> 00:02:25.709
+For example, to answer the question of how much time do visitors spend on our site?
+
+00:02:25.710 --> 00:02:28.099
+We need to look at this column.
+
+00:02:28.099 --> 00:02:29.569
+To answer the question of,
+
+00:02:29.569 --> 00:02:31.364
+Are there differences in traffic,
+
+00:02:31.365 --> 00:02:33.100
+depending on the day of the week?
+
+00:02:33.099 --> 00:02:35.125
+We need to look at this column.
+
+00:02:35.125 --> 00:02:37.074
+And to answer the question of,
+
+00:02:37.074 --> 00:02:39.634
+How many purchases occur through our blog?
+
+00:02:39.634 --> 00:02:41.685
+We need to look at this column.
+
+00:02:41.685 --> 00:02:49.395
+Mathematically, we usually consider a random variable or column using a capital letter.
+
+00:02:49.395 --> 00:02:52.115
+Commonly, we use the capital letter X,
+
+00:02:52.115 --> 00:02:54.950
+but we can just as easily use Y,
+
+00:02:54.949 --> 00:02:58.134
+Z or any other capital letter.
+
+00:02:58.134 --> 00:03:01.414
+We might say, consider the random variable X,
+
+00:03:01.414 --> 00:03:05.655
+which signifies the amount of time an individual spends on our website.
+
+00:03:05.655 --> 00:03:09.680
+Therefore, X relates to this entire column.
+
+00:03:09.680 --> 00:03:11.990
+Consider we also have a random variable Y,
+
+00:03:11.990 --> 00:03:16.379
+which signifies whether or not an individual purchases an item from the website,
+
+00:03:16.379 --> 00:03:20.250
+so Y relates to this entire column.
+

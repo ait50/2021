@@ -1,0 +1,476 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Video: Capital vs. Lower
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Descriptive Statistics - Part I
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01.  Introduce Instructors.html">
+       01.  Introduce Instructors
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Text Optional Lessons Note.html">
+       02. Text: Optional Lessons Note
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Video Welcome!.html">
+       03. Video: Welcome!
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Video What is Data Why is it important.html">
+       04. Video: What is Data? Why is it important?
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Video Data Types (Quantitative vs. Categorical).html">
+       05. Video: Data Types (Quantitative vs. Categorical)
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Data Types (Quantitative vs. Categorical).html">
+       06. Quiz: Data Types (Quantitative vs. Categorical)
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Video Data Types (Ordinal vs. Nominal).html">
+       07. Video: Data Types (Ordinal vs. Nominal)
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Video Data Types (Continuous vs. Discrete).html">
+       08. Video: Data Types (Continuous vs. Discrete)
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Video Data Types Summary.html">
+       09. Video: Data Types Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Text + Quiz Data Types (Ordinal vs. Nominal).html">
+       10. Text + Quiz: Data Types (Ordinal vs. Nominal)
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Data Types (Continuous vs. Discrete).html">
+       11. Data Types (Continuous vs. Discrete)
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Video Introduction to Summary Statistics.html">
+       12. Video: Introduction to Summary Statistics
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Video Measures of Center (Mean).html">
+       13. Video: Measures of Center (Mean)
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Measures of Center (Mean).html">
+       14. Measures of Center (Mean)
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Video Measures of Center (Median).html">
+       15. Video: Measures of Center (Median)
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Measures of Center (Median).html">
+       16. Measures of Center (Median)
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Video Measures of Center (Mode).html">
+       17. Video: Measures of Center (Mode)
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Measures of Center (Mode).html">
+       18. Measures of Center (Mode)
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Video What is Notation.html">
+       19. Video: What is Notation?
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Video Random Variables.html">
+       20. Video: Random Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Quiz Variable Types.html">
+       21. Quiz: Variable Types
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Video Capital vs. Lower.html">
+       22. Video: Capital vs. Lower
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Introduction to Notation.html">
+       23. Quiz: Introduction to Notation
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Video Better Way.html">
+       24. Video: Better Way?
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Video Summation.html">
+       25. Video: Summation
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Video Notation for the Mean.html">
+       26. Video: Notation for the Mean
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Quiz Summation.html">
+       27. Quiz: Summation
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Quiz Notation for the Mean.html">
+       28. Quiz: Notation for the Mean
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Text Summary on Notation.html">
+       29. Text: Summary on Notation
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          22. Video: Capital vs. Lower
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Random &amp; Observed Values
+         </p>
+        </h3>
+        <video controls="">
+         <source src="22. Random &amp; Observed Values-KFIt2OC3wCI.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="22. Random &amp; Observed Values-KFIt2OC3wCI.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="22. Random &amp; Observed Values-KFIt2OC3wCI.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="false" kind="subtitles" label="uz" src="22. Random &amp; Observed Values-KFIt2OC3wCI.uz.vtt" srclang="uz"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="22. Random &amp; Observed Values-KFIt2OC3wCI.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="false" kind="subtitles" label="ar" src="22. Random &amp; Observed Values-KFIt2OC3wCI.ar.vtt" srclang="ar"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="capital-vs-lower-case-letters">
+          Capital vs. Lower Case Letters
+         </h2>
+         <p>
+          <strong>
+           Random variables
+          </strong>
+          are represented by capital letters.  Once we observe an outcome of these random variables, we notate it as a lower case of the same letter.
+         </p>
+         <h4 id="example-1">
+          Example 1
+         </h4>
+         <p>
+          For example, the
+          <strong>
+           amount of time someone spends on our site
+          </strong>
+          is a
+          <strong>
+           random variable
+          </strong>
+          (we are not sure what the outcome will be for any particular visitor), and we would notate this with
+          <strong>
+           X
+          </strong>
+          .  Then when the first person visits the website, if they spend 5 minutes, we have now observed this outcome of our random variable.  We would notate any outcome as a lowercase letter with a subscript associated with the order that we observed the outcome.
+         </p>
+         <p>
+          If 5 individuals visit our website, the first spends 10 minutes, the second spends 20 minutes, the third spends 45 mins, the fourth spends 12 minutes, and the fifth spends 8 minutes; we can notate this problem in the following way:
+         </p>
+         <p>
+          <strong>
+           X
+          </strong>
+          is the amount of time an individual spends on the website.
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \bold{x_1}
+          </span>
+          = 10,
+          <span class="mathquill ud-math">
+           \bold{x_2}
+          </span>
+          = 20
+          <span class="mathquill ud-math">
+           \bold{x_3}
+          </span>
+          = 45
+          <span class="mathquill ud-math">
+           \bold{x_4}
+          </span>
+          = 12
+          <span class="mathquill ud-math">
+           \bold{x_5}
+          </span>
+          = 8.
+         </p>
+         <p>
+          The capital
+          <strong>
+           X
+          </strong>
+          is associated with this idea of a
+          <strong>
+           random variable
+          </strong>
+          , while the observations of the random variable take on lowercase
+          <strong>
+           x
+          </strong>
+          values.
+         </p>
+         <h4 id="example-2">
+          Example 2
+         </h4>
+         <p>
+          Taking this one step further, we could ask:
+         </p>
+         <p>
+          <strong>
+           What is the probability someone spends more than 20 minutes in our website?
+          </strong>
+         </p>
+         <p>
+          In notation, we would write:
+         </p>
+         <p>
+          <strong>
+           P(X &gt; 20)?
+          </strong>
+         </p>
+         <p>
+          Here
+          <strong>
+           P
+          </strong>
+          stands for
+          <strong>
+           probability
+          </strong>
+          , while the parentheses encompass the statement for which we would like to find the probability.  Since
+          <strong>
+           X
+          </strong>
+          represents the amount of time spent on the website, this notation represents the probability the amount of time on the website is greater than 20.
+         </p>
+         <p>
+          We could find this in the above example by noticing that only one of the 5 observations exceeds 20.  So, we would say there is a
+          <strong>
+           1
+          </strong>
+          (the 45)
+          <strong>
+           in 5 or 20%
+          </strong>
+          chance that an individual spends more than 20 minutes on our website (based on this dataset).
+         </p>
+         <h4 id="example-3">
+          Example 3
+         </h4>
+         <p>
+          If we asked:
+          <strong>
+           What is the probability of an individual spending 20 or more minutes on our website?
+          </strong>
+          We could notate this as:
+         </p>
+         <p>
+          <strong>
+           P(X
+           <span class="mathquill ud-math">
+            \geq
+           </span>
+           20)?
+          </strong>
+         </p>
+         <p>
+          We could then find this by noticing there are two out of the five individuals that spent 20 or more minutes on the website.  So this probability is
+          <strong>
+           2 out of 5 or 40%
+          </strong>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="23. Quiz Introduction to Notation.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('22. Video: Capital vs. Lower')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

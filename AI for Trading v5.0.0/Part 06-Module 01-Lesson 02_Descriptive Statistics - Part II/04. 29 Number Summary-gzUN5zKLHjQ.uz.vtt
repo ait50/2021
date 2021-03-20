@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: uz
+
+00:00:00.000 --> 00:00:03.569
+Ma’lumotlarimizning tarqalishini o‘lchashning eng ommalashgan turlaridan
+
+00:00:03.569 --> 00:00:07.094
+biri "Five Number Summary" - besh sonli xulosaga qarashdir,
+
+00:00:07.094 --> 00:00:12.564
+qaysiki diapazon va kvartil oralig‘ini hisoblash uchun qiymatlar beruvchi.
+
+00:00:12.564 --> 00:00:17.623
+Besh sonli xulosa beshta qiymatdan tashkil topgan: maksimum,
+
+00:00:17.623 --> 00:00:19.785
+minimum, birinchi kvartil,
+
+00:00:19.785 --> 00:00:24.176
+ikkinchi kvartil, shuningdek, mediana va uchinchi kvartil.
+
+00:00:24.176 --> 00:00:28.239
+Faraz qiling, bizda quyidagi ma’lumotlar bazasi bor.
+
+00:00:28.239 --> 00:00:30.600
+Biz birinchi bo‘lib qilishimiz kerak bo‘lgan narsa - qiymatlarning buyurtmasi
+
+00:00:30.600 --> 00:00:34.104
+uchun the Besh sonli xulosani hisoblashdir.
+
+00:00:34.104 --> 00:00:38.240
+Buyurtma qilingan zahoti, minimal va maksimal qiymatlar
+
+00:00:38.240 --> 00:00:43.270
+eng katta va eng kichik qiymat sifatida payqashga oson bo‘ladi.
+
+00:00:43.270 --> 00:00:47.054
+Biz uni markaz o‘lchovlari bo‘limida hisoblaganimizdek,
+
+00:00:47.054 --> 00:00:51.280
+mediana ma’lumot bazamizdagi o‘rta qiymatdir.
+
+00:00:51.280 --> 00:00:55.880
+Biz buni shuningdek Q2 yoki ikkinchi chorak (kvartil) deb ataymiz, chunki
+
+00:00:55.880 --> 00:01:01.460
+ma’lumotlarimizning 50% yoki 2-choragi ushbu qiymat ostiga tushadi.
+
+00:01:01.460 --> 00:01:07.819
+Qolgan Besh sonli xulosani to‘ldiruvchi ikki qiymat Q1 va Q3 dir.
+
+00:01:07.819 --> 00:01:13.456
+Bu qiymatlarni Q2 ning har bir tomonidagi ma’lumot medianasi sifatida ko‘rilishi mumkin.
+
+00:01:13.456 --> 00:01:18.189
+Bu Q1 ni ifodalovchi berilgan ma’lumotning medianasi,
+
+00:01:18.189 --> 00:01:23.234
+bu ma’lumotlarimizning 25% ostiga tushuvchi qiymatdir,
+
+00:01:23.234 --> 00:01:28.254
+va ushbu ma’lumotlar medianasi Q3 orqali ifodalanadi (uchinchi kvartil).
+
+00:01:28.254 --> 00:01:33.640
+Ma’lumotlarning 75% ni tashkil qilgan bu qiymat ushbu belgi ostiga tushadi.
+
+00:01:33.640 --> 00:01:41.680
+Payqang, Q2, Q1 va Q3 ni hisoblashda ishlatiladigan bu nuqtalarning ham to‘plami emas edi.
+
+00:01:41.680 --> 00:01:46.364
+Bu quyidagicha Besh sonli xulosani beradi.
+
+00:01:46.364 --> 00:01:51.409
+Keling ma’lumot va qiymatlar bazasi uchun boshqa misol o‘ylaylik.
+
+00:01:51.409 --> 00:01:54.810
+Yana bir bor qiymatlar uchun buyurtma berishimiz kerak.
+
+00:01:54.810 --> 00:01:58.920
+Tezda maksimum va minimumni aniqlay olamiz.
+
+00:01:58.920 --> 00:02:01.605
+Yodda tuting, qiymatlar raqamlari bilan,
+
+00:02:01.605 --> 00:02:07.340
+mediana yoki Q2 shu yerdagi ushbu ikki qiymatga oraliq sifatida beriladi.
+
+00:02:07.340 --> 00:02:10.185
+Q1 va Q3 ni topish uchun,
+
+00:02:10.185 --> 00:02:15.354
+Ma’lumotlar to‘plamini medianani topishda ishlatiladigan ikki qiymat o‘rtasida taqsimlaymiz.
+
+00:02:15.354 --> 00:02:18.305
+Bu ikkita ma’lumot to‘plamini beradi.
+
+00:02:18.305 --> 00:02:24.175
+Har ikkisining medianasi topilganda Q1 va Q3 kelib chiqadi.
+
+00:02:24.175 --> 00:02:29.284
+Bu ma’lumot bazasi uchun Q1 ushbu ikki qiymat oralig‘i bo‘ladi,
+
+00:02:29.284 --> 00:02:33.155
+va Q3 ushbu ikki qiymatga oraliq bo‘ladi.
+
+00:02:33.155 --> 00:02:36.764
+Bu quyidagicha Besh sonli xulosani beradi.
+
+00:02:36.764 --> 00:02:40.840
+Besh sonli xulosa uchun barcha qiymatlarni hisoblaganimizdan keyin,
+
+00:02:40.840 --> 00:02:44.905
+diapazon va to‘rtburchaklar diapazonini topish muammo emas.
+
+00:02:44.905 --> 00:02:46.770
+Birinchi ma’lumotlar to‘plami uchun,
+
+00:02:46.770 --> 00:02:50.455
+diapazon maksimum minus minimum sifatida hisoblandi.
+
+00:02:50.455 --> 00:02:51.965
+Birinchi ma’lumotlar to‘plami uchun
+
+00:02:51.965 --> 00:02:54.865
+bu 10 minus 1 yoki 9.
+
+00:02:54.865 --> 00:02:59.680
+Va to‘rtburchak diapazoni Q3 minus Q1 sifatida hisoblandi,
+
+00:02:59.680 --> 00:03:03.000
+8 minus 2 yoki 6 .
+

@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.559
+A few quick final points to keep in mind about the standard deviation.
+
+00:00:04.559 --> 00:00:08.969
+First, the standard deviation is frequently used to compare
+
+00:00:08.970 --> 00:00:13.589
+the spread of different groups to determine which is more spread out.
+
+00:00:13.589 --> 00:00:18.295
+Second, when data pertains to money or the economy,
+
+00:00:18.295 --> 00:00:22.625
+having higher standard deviation is associated with having higher risk.
+
+00:00:22.625 --> 00:00:24.609
+In comparing stock prices,
+
+00:00:24.609 --> 00:00:29.379
+a stock price that changes with higher standard deviation over time is considered more
+
+00:00:29.379 --> 00:00:35.219
+risky than a stock price that fluctuates with lower standard deviation.
+
+00:00:35.219 --> 00:00:37.229
+Third, for a comparison to be fair,
+
+00:00:37.229 --> 00:00:40.329
+all data must be in the same units.
+
+00:00:40.329 --> 00:00:42.945
+If you're measuring in dollars for one data set,
+
+00:00:42.945 --> 00:00:44.674
+but euros for another,
+
+00:00:44.674 --> 00:00:49.519
+it's not fair to compare these data sets to determine which has the greatest spread.
+
+00:00:49.520 --> 00:00:55.120
+Finally, the variance has squared units of your original measurements.
+
+00:00:55.119 --> 00:00:58.949
+For example, if you were measuring revenue in dollars,
+
+00:00:58.950 --> 00:01:02.040
+the variance has units of dollars squared,
+
+00:01:02.039 --> 00:01:04.469
+which isn't particularly useful.
+
+00:01:04.469 --> 00:01:07.409
+For this reason, the standard deviation,
+
+00:01:07.409 --> 00:01:09.509
+which is the square root of the variance,
+
+00:01:09.510 --> 00:01:12.329
+is often deemed a more useful measurement of
+
+00:01:12.329 --> 00:01:16.655
+spread as it shares the units of the original data set.
+
+00:01:16.655 --> 00:01:19.055
+If you measure revenue in dollars,
+
+00:01:19.055 --> 00:01:23.000
+the standard deviation also has units of dollars.
+

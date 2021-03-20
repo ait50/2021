@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.501 --> 00:00:03.133
+Observando de novo as distribuições
+que achamos
+
+00:00:03.167 --> 00:00:04.968
+para o número de cães
+que eu vejo,
+
+00:00:04.968 --> 00:00:07.968
+podemos marcar os valores do nosso
+resumo de cinco números
+
+00:00:08.033 --> 00:00:09.467
+desta maneira:
+
+00:00:09.501 --> 00:00:12.067
+se pegarmos apenas estas marcas,
+
+00:00:12.133 --> 00:00:14.501
+elas formam um gráfico comum
+para informações,
+
+00:00:14.534 --> 00:00:16.400
+conhecida como
+diagrama de caixa.
+
+00:00:16.434 --> 00:00:19.667
+Embora eu prefira um histograma
+na maioria das vezes,
+
+00:00:19.701 --> 00:00:23.033
+um diagrama de caixa pode ser útil
+para comparar rapidamente
+
+00:00:23.067 --> 00:00:24.968
+a dispersão de dois
+conjuntos de informações
+
+00:00:24.968 --> 00:00:28.033
+em algumas métricas-chave,
+como os nossos quartis
+
+00:00:28.067 --> 00:00:30.334
+e o máximo e o mínimo.
+
+00:00:30.367 --> 00:00:33.968
+Tanto no histograma quanto
+no resumo de cinco números,
+
+00:00:34.033 --> 00:00:37.701
+vemos rapidamente que o número
+de cães que vejo nos fins de semana
+
+00:00:37.767 --> 00:00:42.167
+é bem maior do que a quantidade
+que vejo nos dias de semana.
+
+00:00:42.234 --> 00:00:47.934
+Também podemos ver a distância
+daqui para cá como a amplitude.
+
+00:00:47.934 --> 00:00:52.167
+Enquanto essa distância menor
+é a amplitude interquartil.
+
+00:00:52.200 --> 00:00:56.567
+Existem várias métricas úteis
+geradas pelos diagramas de caixa.
+
+00:00:56.601 --> 00:00:59.767
+Mas e se quisermos comparar
+a dispersão dessas distribuições
+
+00:00:59.801 --> 00:01:05.167
+sem precisar ter conosco todos os
+cinco valores de cada distribuição?
+
+00:01:05.200 --> 00:01:07.934
+E se eu quiser apenas um valor
+
+00:01:07.968 --> 00:01:10.968
+para comparar as dispersões
+das duas distribuições?
+

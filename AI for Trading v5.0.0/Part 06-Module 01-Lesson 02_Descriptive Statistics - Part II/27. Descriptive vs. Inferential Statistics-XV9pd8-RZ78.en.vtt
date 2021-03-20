@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.565
+The topics covered this far have all been aimed at descriptive statistics.
+
+00:00:06.565 --> 00:00:09.949
+That is, describing the data we've collected.
+
+00:00:09.949 --> 00:00:13.029
+There's an entire other field of statistics
+
+00:00:13.029 --> 00:00:16.149
+known as inferential statistics that's aimed at drawing
+
+00:00:16.149 --> 00:00:19.104
+conclusions about a population of individuals
+
+00:00:19.105 --> 00:00:23.375
+based only on a sample of individuals from that population.
+
+00:00:23.375 --> 00:00:30.199
+Imagine I want to understand what proportion of all Udacity students drink coffee.
+
+00:00:30.199 --> 00:00:31.504
+We know you're busy,
+
+00:00:31.504 --> 00:00:33.570
+and in order to get projects in on time,
+
+00:00:33.570 --> 00:00:37.289
+we assume you almost drink a ton of coffee.
+
+00:00:37.289 --> 00:00:40.469
+I send out an email to all Udacity alumni and
+
+00:00:40.469 --> 00:00:44.295
+current students asking the question, do you drink coffee?
+
+00:00:44.295 --> 00:00:46.510
+For purposes of this exercise,
+
+00:00:46.509 --> 00:00:50.640
+let's say the list contained 100,000 emails.
+
+00:00:50.640 --> 00:00:54.445
+Unfortunately, not everyone responds to my email blast.
+
+00:00:54.445 --> 00:00:57.060
+Some of the emails don't even go through.
+
+00:00:57.060 --> 00:01:00.900
+Therefore, I only receive 5,000 responses.
+
+00:01:00.899 --> 00:01:05.834
+I find that 73% of the individuals that responded to my email blast,
+
+00:01:05.834 --> 00:01:08.424
+say they do drink coffee.
+
+00:01:08.424 --> 00:01:13.049
+Descriptive statistics is about describing the data we have.
+
+00:01:13.049 --> 00:01:20.765
+That is, any information we have and share regarding the 5,000 responses is descriptive.
+
+00:01:20.765 --> 00:01:24.469
+Inferential statistics is about drawing conclusions
+
+00:01:24.469 --> 00:01:28.655
+regarding the coffee drinking habits of all Udacity students,
+
+00:01:28.655 --> 00:01:32.734
+only using the data from the 5,000 responses.
+
+00:01:32.734 --> 00:01:38.120
+Therefore, inferential statistics in our example is all about drawing conclusions
+
+00:01:38.120 --> 00:01:45.620
+regarding all 100,000 Udacity students using only the 5,000 responses from our sample.
+
+00:01:45.620 --> 00:01:50.564
+The general language associated with this scenario is as shown here.
+
+00:01:50.564 --> 00:01:54.394
+We have a population which is our entire group of interest.
+
+00:01:54.394 --> 00:01:57.334
+In our case, the 100,000 students.
+
+00:01:57.334 --> 00:02:01.859
+We collect a subset from this population which we call a sample.
+
+00:02:01.859 --> 00:02:05.109
+In our case, the 5,000 students.
+
+00:02:05.109 --> 00:02:10.590
+Any numeric summary calculated from the sample is called a statistic.
+
+00:02:10.590 --> 00:02:15.485
+In our case, the 73% of the 5,000 that drink coffee.
+
+00:02:15.485 --> 00:02:18.935
+This 73% is the statistic.
+
+00:02:18.935 --> 00:02:23.474
+A numeric summary of the population is known as a parameter.
+
+00:02:23.474 --> 00:02:27.049
+In our case, we don't know this value as it's
+
+00:02:27.050 --> 00:02:31.495
+a number that requires information from all Udacity students.
+
+00:02:31.495 --> 00:02:38.110
+Drawing conclusions regarding a parameter based on our statistics is known as inference.
+

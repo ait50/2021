@@ -1,0 +1,490 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Video: Summation
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Descriptive Statistics - Part I
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01.  Introduce Instructors.html">
+       01.  Introduce Instructors
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Text Optional Lessons Note.html">
+       02. Text: Optional Lessons Note
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Video Welcome!.html">
+       03. Video: Welcome!
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Video What is Data Why is it important.html">
+       04. Video: What is Data? Why is it important?
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Video Data Types (Quantitative vs. Categorical).html">
+       05. Video: Data Types (Quantitative vs. Categorical)
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Data Types (Quantitative vs. Categorical).html">
+       06. Quiz: Data Types (Quantitative vs. Categorical)
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Video Data Types (Ordinal vs. Nominal).html">
+       07. Video: Data Types (Ordinal vs. Nominal)
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Video Data Types (Continuous vs. Discrete).html">
+       08. Video: Data Types (Continuous vs. Discrete)
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Video Data Types Summary.html">
+       09. Video: Data Types Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Text + Quiz Data Types (Ordinal vs. Nominal).html">
+       10. Text + Quiz: Data Types (Ordinal vs. Nominal)
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Data Types (Continuous vs. Discrete).html">
+       11. Data Types (Continuous vs. Discrete)
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Video Introduction to Summary Statistics.html">
+       12. Video: Introduction to Summary Statistics
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Video Measures of Center (Mean).html">
+       13. Video: Measures of Center (Mean)
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Measures of Center (Mean).html">
+       14. Measures of Center (Mean)
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Video Measures of Center (Median).html">
+       15. Video: Measures of Center (Median)
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Measures of Center (Median).html">
+       16. Measures of Center (Median)
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Video Measures of Center (Mode).html">
+       17. Video: Measures of Center (Mode)
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Measures of Center (Mode).html">
+       18. Measures of Center (Mode)
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Video What is Notation.html">
+       19. Video: What is Notation?
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Video Random Variables.html">
+       20. Video: Random Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Quiz Variable Types.html">
+       21. Quiz: Variable Types
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Video Capital vs. Lower.html">
+       22. Video: Capital vs. Lower
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Introduction to Notation.html">
+       23. Quiz: Introduction to Notation
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Video Better Way.html">
+       24. Video: Better Way?
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Video Summation.html">
+       25. Video: Summation
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Video Notation for the Mean.html">
+       26. Video: Notation for the Mean
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Quiz Summation.html">
+       27. Quiz: Summation
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Quiz Notation for the Mean.html">
+       28. Quiz: Notation for the Mean
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Text Summary on Notation.html">
+       29. Text: Summary on Notation
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          25. Video: Summation
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Aggregations
+         </p>
+        </h3>
+        <video controls="">
+         <source src="25. Aggregations-ADx1x2ljFB4.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="25. Aggregations-ADx1x2ljFB4.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="25. Aggregations-ADx1x2ljFB4.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="25. Aggregations-ADx1x2ljFB4.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="false" kind="subtitles" label="ar" src="25. Aggregations-ADx1x2ljFB4.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="uz" src="25. Aggregations-ADx1x2ljFB4.uz.vtt" srclang="uz"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="aggregations">
+          Aggregations
+         </h2>
+         <p>
+          An
+          <strong>
+           aggregation
+          </strong>
+          is a way to turn multiple numbers into fewer numbers (commonly one number).
+         </p>
+         <p>
+          <strong>
+           Summation
+          </strong>
+          is a common aggregation.  The notation used to sum our values is a greek symbol called sigma
+          <span class="mathquill ud-math">
+           \Sigma
+          </span>
+          .
+         </p>
+         <h4 id="example-1">
+          Example 1
+         </h4>
+         <p>
+          Imagine we are looking at the amount of time individuals spend on our website.  We collect data from nine individuals:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \bold{x_1}
+          </span>
+          = 10,
+          <span class="mathquill ud-math">
+           \bold{x_2}
+          </span>
+          = 20
+          <span class="mathquill ud-math">
+           \bold{x_3}
+          </span>
+          = 45
+          <span class="mathquill ud-math">
+           \bold{x_4}
+          </span>
+          = 12
+          <span class="mathquill ud-math">
+           \bold{x_5}
+          </span>
+          = 8
+          <span class="mathquill ud-math">
+           \bold{x_6}
+          </span>
+          = 12,
+          <span class="mathquill ud-math">
+           \bold{x_7}
+          </span>
+          = 3
+          <span class="mathquill ud-math">
+           \bold{x_8}
+          </span>
+          = 68
+          <span class="mathquill ud-math">
+           \bold{x_9}
+          </span>
+          = 5
+         </p>
+         <p>
+          If we want to sum the
+          <strong>
+           first three values
+          </strong>
+          together in our previous notation, we write:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \bold{x_1} + \bold{x_2} + \bold{x_3}
+          </span>
+         </p>
+         <p>
+          In our new notation, we can write:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \sum\limits_{i = 1}^3 x_i
+          </span>
+          .
+         </p>
+         <p>
+          Notice, our notation starts at the first observation (
+          <span class="mathquill ud-math">
+           i=1
+          </span>
+          ) and ends at 3 (the number at the top of our summation).
+         </p>
+         <p>
+          So all of the following are equal to one another:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \sum\limits_{i = 1}^3 x_i
+          </span>
+          <strong>
+           =
+          </strong>
+          <span class="mathquill ud-math">
+           \bold{x_1} + \bold{x_2} + \bold{x_3}
+          </span>
+          <strong>
+           = 10 + 20 + 45 = 75
+          </strong>
+         </p>
+         <h4 id="example-2">
+          Example 2
+         </h4>
+         <p>
+          Now, imagine we want to sum the
+          <strong>
+           last three values
+          </strong>
+          together.
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \bold{x_7} + \bold{x_8} + \bold{x_9}
+          </span>
+         </p>
+         <p>
+          In our new notation, we can write:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \sum\limits_{i = 7}^9 x_i
+          </span>
+          .
+         </p>
+         <p>
+          Notice, our notation starts at the seventh observation (
+          <span class="mathquill ud-math">
+           i=7
+          </span>
+          ) and ends at 9 (the number at the top of our summation).
+         </p>
+         <h4 id="other-aggregations">
+          Other Aggregations
+         </h4>
+         <p>
+          The
+          <span class="mathquill ud-math">
+           \Sigma
+          </span>
+          sign is used for aggregating using summation, but we might choose to aggregate in other ways.  Summing is one of the most common ways to need to aggregate.  However, we might need to aggregate in alternative ways.  If we wanted to multiply all of our values together we would use a product sign **
+          <span class="mathquill ud-math">
+           \Pi
+          </span>
+          **, capital Greek letter pi.  The way we aggregate continuous values is with something known as integration (a common technique in calculus), which uses the following symbol
+          <span class="mathquill ud-math">
+           \int
+          </span>
+          which is just a long s.  We will not be using integrals or products for quizzes in this class, but you may see them in the future!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="26. Video Notation for the Mean.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('25. Video: Summation')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.050 --> 00:00:03.989
+How should we work with these outliers in practice?
+
+00:00:03.990 --> 00:00:05.565
+At the very least,
+
+00:00:05.565 --> 00:00:07.385
+we should note that they exist.
+
+00:00:07.384 --> 00:00:11.939
+We need to realize the impact they have on our summary statistics.
+
+00:00:11.939 --> 00:00:16.835
+In this case, greatly increasing our mean and our standard deviation.
+
+00:00:16.835 --> 00:00:20.705
+If the outliers are typos or data entry errors,
+
+00:00:20.704 --> 00:00:23.104
+this is a reason to remove these points.
+
+00:00:23.105 --> 00:00:25.205
+Or if we know what they should be,
+
+00:00:25.204 --> 00:00:28.369
+we could change them with the correct values.
+
+00:00:28.370 --> 00:00:30.380
+In cases like the example above,
+
+00:00:30.379 --> 00:00:32.119
+we might try to understand,
+
+00:00:32.119 --> 00:00:36.530
+what was so different about the outlier when compared to the other individuals?
+
+00:00:36.530 --> 00:00:39.770
+How did this entrepreneur become so successful?
+
+00:00:39.770 --> 00:00:43.665
+And why are the earnings so large in comparison?
+
+00:00:43.664 --> 00:00:48.729
+There is an entire field aimed at this idea called the anomaly detection.
+
+00:00:48.729 --> 00:00:53.209
+You will notice measures associated with the five number summary, like the minimum,
+
+00:00:53.210 --> 00:00:56.060
+the maximum and the quartiles one, two,
+
+00:00:56.060 --> 00:00:59.770
+three, are more informative when outliers are present.
+
+00:00:59.770 --> 00:01:04.549
+This example shows that you need to be careful about how we share our results and
+
+00:01:04.549 --> 00:01:09.979
+state our conclusions using summary statistics when we have outliers.
+
+00:01:09.980 --> 00:01:15.625
+A single number can be very misleading about what is actually happening in our data.
+
+00:01:15.625 --> 00:01:19.420
+Some statistics are more misleading than others.
+
+00:01:19.420 --> 00:01:22.954
+If you are the consumer of information based on data,
+
+00:01:22.954 --> 00:01:24.510
+which we all are,
+
+00:01:24.510 --> 00:01:26.480
+it's important to know how to ask
+
+00:01:26.480 --> 00:01:30.000
+the right questions regarding the statistics around you.
+

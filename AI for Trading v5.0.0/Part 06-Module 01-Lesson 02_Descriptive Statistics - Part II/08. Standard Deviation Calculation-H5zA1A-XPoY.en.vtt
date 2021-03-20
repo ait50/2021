@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.409
+In the last video,
+
+00:00:01.409 --> 00:00:05.600
+we got an idea of what the standard deviation is measuring.
+
+00:00:05.599 --> 00:00:07.709
+In this video, we will look at
+
+00:00:07.710 --> 00:00:11.849
+the math that actually occurs when calculating this measure.
+
+00:00:11.849 --> 00:00:18.259
+We will work with data to calculate this measure as well as associate notation with it.
+
+00:00:18.260 --> 00:00:21.060
+It is worth noting that after this lesson,
+
+00:00:21.059 --> 00:00:25.064
+you probably won't calculate this measure by hand ever again,
+
+00:00:25.065 --> 00:00:27.765
+because you'll learn software to do it for you.
+
+00:00:27.765 --> 00:00:34.049
+The calculating it yourself will give you intuition behind what it's actually doing.
+
+00:00:34.049 --> 00:00:37.449
+And this intuition is necessary to become good at
+
+00:00:37.450 --> 00:00:42.565
+understanding data and choosing the right analysis for your situation.
+
+00:00:42.564 --> 00:00:45.614
+Imagine we have a data set with four values,
+
+00:00:45.615 --> 00:00:49.605
+10, 14, 10, and 6.
+
+00:00:49.604 --> 00:00:55.219
+The first thing we need to do to calculate the standard deviation is to find the mean.
+
+00:00:55.219 --> 00:00:58.850
+In notation, we have this as X bar.
+
+00:00:58.850 --> 00:01:01.700
+For our values, the sum is 40,
+
+00:01:01.700 --> 00:01:04.010
+and we have four numbers.
+
+00:01:04.010 --> 00:01:09.115
+So the mean is 40 over 4 or 10.
+
+00:01:09.114 --> 00:01:14.169
+Then we want to look at the distance of each observation from this mean.
+
+00:01:14.170 --> 00:01:18.515
+Two of these observations are exactly equal to the mean.
+
+00:01:18.515 --> 00:01:21.204
+So the distance here is zero.
+
+00:01:21.204 --> 00:01:24.149
+One is 4 larger the 14,
+
+00:01:24.150 --> 00:01:27.880
+while the other is 4 smaller the 6.
+
+00:01:27.879 --> 00:01:34.539
+In notation, each of these is XI minus X bar.
+
+00:01:34.540 --> 00:01:37.995
+Then, if we were to average these distances,
+
+00:01:37.995 --> 00:01:41.219
+the positive would cancel with the negative value.
+
+00:01:41.219 --> 00:01:45.525
+And the value of zero isn't a great measure of the spread here.
+
+00:01:45.525 --> 00:01:52.050
+Zero would suggest that all the values are the same or that there's no spread.
+
+00:01:52.049 --> 00:01:56.604
+So instead, we need to make all of these values positive.
+
+00:01:56.605 --> 00:02:02.460
+The way we do this when calculating the standard deviation is by squaring them all.
+
+00:02:02.459 --> 00:02:03.759
+If we do that here,
+
+00:02:03.760 --> 00:02:09.420
+our negative and positive 4 values will become 16s.
+
+00:02:09.419 --> 00:02:13.405
+Now, we could average these to find the average
+
+00:02:13.405 --> 00:02:18.250
+squared distance of each observation from the mean.
+
+00:02:18.250 --> 00:02:20.810
+This is called the variance.
+
+00:02:20.810 --> 00:02:24.430
+Finding the average, just as we did before,
+
+00:02:24.430 --> 00:02:29.064
+means adding all of these values and dividing by how many there are.
+
+00:02:29.064 --> 00:02:33.115
+In our case, we had 0, 16,
+
+00:02:33.115 --> 00:02:38.800
+0, 16 and we divide by 4 because we have four observations.
+
+00:02:38.800 --> 00:02:41.740
+However, this is an average of
+
+00:02:41.740 --> 00:02:48.040
+squared values which we only did to get positive values in the first place.
+
+00:02:48.039 --> 00:02:49.870
+So to get our standard deviation,
+
+00:02:49.870 --> 00:02:53.087
+we take the square root of this ending value.
+
+00:02:53.087 --> 00:02:57.930
+Here, our standard deviation is 2.83.
+
+00:02:57.930 --> 00:03:03.280
+So this is on average how far each point in our data set is from the mean,
+
+00:03:03.280 --> 00:03:07.000
+which is the definition of the standard deviation.
+

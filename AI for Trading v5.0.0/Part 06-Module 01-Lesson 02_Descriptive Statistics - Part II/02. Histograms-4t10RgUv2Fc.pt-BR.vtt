@@ -1,0 +1,89 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.667 --> 00:00:04.534
+É mais fácil entender a dispersão
+de nossas informações visualmente.
+
+00:00:04.567 --> 00:00:07.868
+A forma visual mais comum
+de dados quantitativos
+
+00:00:07.901 --> 00:00:10.067
+é conhecida como histograma.
+
+00:00:10.067 --> 00:00:15.567
+Neste vídeo, vamos ver exatamente
+como histogramas são feitos.
+
+00:00:15.601 --> 00:00:19.033
+Para entender como eles
+são construídos,
+
+00:00:19.067 --> 00:00:21.868
+considere que temos o seguinte
+conjunto de informações.
+
+00:00:21.901 --> 00:00:24.634
+Primeiramente, temos
+que arrumar nossos dados.
+
+00:00:24.667 --> 00:00:27.100
+Você, como criador
+do histograma,
+
+00:00:27.133 --> 00:00:30.133
+acaba escolhendo como fazê-lo.
+
+00:00:30.167 --> 00:00:35.100
+Aqui, eu escolhi juntá-los
+como 1 a 4, 5 a 8,
+
+00:00:35.133 --> 00:00:38.267
+9 a 12 e 13 a 16.
+
+00:00:38.267 --> 00:00:41.767
+Como esses primeiros valores
+estão entre 1 e 4,
+
+00:00:41.801 --> 00:00:43.934
+eles entram
+no primeiro compartimento.
+
+00:00:43.968 --> 00:00:48.934
+Os próximos 3 valores, entre 5 e 8,
+vão no compartimento seguinte.
+
+00:00:48.968 --> 00:00:51.767
+Estes dois valores
+seguem para este compartimento
+
+00:00:51.801 --> 00:00:54.467
+e o 15 entra
+no último compartimento.
+
+00:00:54.501 --> 00:00:59.000
+O número de valores
+em cada compartimento determina
+
+00:00:59.033 --> 00:01:00.634
+a altura da barra
+de cada histograma.
+
+00:01:00.667 --> 00:01:04.968
+Mudar os compartimentos vai resultar
+em uma leve diferença visual.
+
+00:01:05.000 --> 00:01:08.701
+Não existe uma resposta certa
+para escolher os compartimentos,
+
+00:01:08.734 --> 00:01:11.701
+e na maioria dos casos,
+um software escolhe
+
+00:01:11.734 --> 00:01:15.100
+os mais adequados para nós.
+Mas é preciso estar ligado nisso.
+

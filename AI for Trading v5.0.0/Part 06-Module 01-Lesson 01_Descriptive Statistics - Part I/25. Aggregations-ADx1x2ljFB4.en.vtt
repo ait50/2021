@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.254
+There are common ways to notate most aggregations.
+
+00:00:04.254 --> 00:00:09.234
+An aggregation is just a way to turn multiple numbers into fewer numbers,
+
+00:00:09.234 --> 00:00:11.664
+usually just one number.
+
+00:00:11.664 --> 00:00:16.105
+Common aggregations include the measures of center we introduced earlier,
+
+00:00:16.105 --> 00:00:19.429
+like the mean, the median, and the mode.
+
+00:00:19.429 --> 00:00:22.300
+Each of these takes many numbers and provides
+
+00:00:22.300 --> 00:00:26.070
+a single value to give information about the data set.
+
+00:00:26.070 --> 00:00:31.730
+In this example, we want to aggregate all the values into a single sum.
+
+00:00:31.730 --> 00:00:34.054
+In other words, add them up.
+
+00:00:34.054 --> 00:00:38.429
+The Greek alphabet is a popular place to pull notation.
+
+00:00:38.429 --> 00:00:44.144
+Similar to English, there are both lower and upper case letters in the Greek alphabet.
+
+00:00:44.145 --> 00:00:46.609
+For summing many values together,
+
+00:00:46.609 --> 00:00:49.329
+we use a Greek symbol known as Sigma.
+
+00:00:49.329 --> 00:00:52.304
+Specifically, we use the uppercase Sigma.
+
+00:00:52.304 --> 00:00:55.966
+We generally use the symbol in the following way:
+
+00:00:55.966 --> 00:00:59.515
+you will notice that instead of writing multiple x values,
+
+00:00:59.515 --> 00:01:01.369
+each with a different subscript,
+
+00:01:01.369 --> 00:01:05.700
+we write a single x with a subscript of i.
+
+00:01:05.700 --> 00:01:12.525
+Here, the I is a placeholder that tells us which x values we'll be summing up.
+
+00:01:12.525 --> 00:01:14.185
+In our first case,
+
+00:01:14.185 --> 00:01:16.510
+summing only the first two values,
+
+00:01:16.510 --> 00:01:21.070
+we want this i to be the value of either one or two.
+
+00:01:21.069 --> 00:01:22.569
+Now you might be asking,
+
+00:01:22.569 --> 00:01:27.489
+how does this notation show which values we're summing together.
+
+00:01:27.489 --> 00:01:29.854
+This is a great question.
+
+00:01:29.855 --> 00:01:32.965
+If we would like to sum just the first two values,
+
+00:01:32.965 --> 00:01:35.200
+we would write something like this.
+
+00:01:35.200 --> 00:01:36.370
+Notice at the bottom,
+
+00:01:36.370 --> 00:01:38.320
+we are giving our starting point.
+
+00:01:38.319 --> 00:01:43.949
+That is, we would like the first x value to be where i equals one.
+
+00:01:43.950 --> 00:01:47.484
+You can imagine replacing the one into this subscript.
+
+00:01:47.484 --> 00:01:52.599
+Then the value at the top gives us an ending point for where we stop.
+
+00:01:52.599 --> 00:01:55.604
+Here, our ending is two.
+
+00:01:55.605 --> 00:01:58.560
+The Sigma tells us we would like to sum from
+
+00:01:58.560 --> 00:02:04.725
+this bottom value up through all the values until we hit this top value.
+
+00:02:04.724 --> 00:02:07.515
+The new notation, with the summation symbol,
+
+00:02:07.515 --> 00:02:12.250
+is the same as our original notation of x1 + x2.
+

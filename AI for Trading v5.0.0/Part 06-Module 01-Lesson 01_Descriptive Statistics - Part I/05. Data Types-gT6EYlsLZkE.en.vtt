@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.020 --> 00:00:02.910
+In this video, we'll be taking a look at
+
+00:00:02.910 --> 00:00:06.224
+the different data types that exists in the world around us.
+
+00:00:06.224 --> 00:00:07.830
+When sitting at coffee shops,
+
+00:00:07.830 --> 00:00:09.914
+I enjoy watching the dogs pass.
+
+00:00:09.914 --> 00:00:12.814
+I often wonder, how many crossed my path?
+
+00:00:12.814 --> 00:00:16.530
+I wonder if more pass on weekdays or weekends.
+
+00:00:16.530 --> 00:00:20.045
+Maybe the number differs from Mondays to Tuesdays.
+
+00:00:20.045 --> 00:00:23.170
+I also pay attention to the breeds of the dogs.
+
+00:00:23.170 --> 00:00:26.950
+I wonder if more collies stopped by on Monday than on Wednesday.
+
+00:00:26.949 --> 00:00:29.054
+I wonder what's the most common breed.
+
+00:00:29.054 --> 00:00:32.625
+Is that breed the most common at all coffee shops?
+
+00:00:32.625 --> 00:00:35.070
+If I walked across the street to my favorite breed,
+
+00:00:35.070 --> 00:00:37.259
+would the most common breed change?
+
+00:00:37.259 --> 00:00:41.714
+This introduces two main data types: quantitative data,
+
+00:00:41.715 --> 00:00:43.200
+like the number of dogs,
+
+00:00:43.200 --> 00:00:45.870
+and categorical data, like the breed.
+
+00:00:45.869 --> 00:00:47.759
+Quantitative data takes on
+
+00:00:47.759 --> 00:00:52.034
+numeric values that allow us to perform mathematical operations.
+
+00:00:52.034 --> 00:00:53.754
+In the previous example,
+
+00:00:53.755 --> 00:00:56.050
+we saw this with the number of dogs.
+
+00:00:56.049 --> 00:00:58.094
+If I see five dogs on Monday,
+
+00:00:58.094 --> 00:01:00.009
+and six dogs on Tuesday,
+
+00:01:00.009 --> 00:01:03.479
+I've seen a total of 11 dogs so far this week.
+
+00:01:03.479 --> 00:01:09.989
+Alternatively, categorical data frequently are used to label a group or set of items.
+
+00:01:09.989 --> 00:01:12.059
+We saw this with the breeds of the dogs.
+

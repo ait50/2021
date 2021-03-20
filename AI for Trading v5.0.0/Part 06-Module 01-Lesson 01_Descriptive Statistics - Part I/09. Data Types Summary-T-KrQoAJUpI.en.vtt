@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.615
+To summarize, we have two main data types,
+
+00:00:03.615 --> 00:00:05.880
+each with two subgroups.
+
+00:00:05.879 --> 00:00:09.855
+Quantitative data can be divided into continuous and discrete.
+
+00:00:09.855 --> 00:00:14.039
+Categorical can be split into nominal and ordinal.
+
+00:00:14.039 --> 00:00:16.679
+Identifying data types is important,
+
+00:00:16.679 --> 00:00:19.259
+as it allows us to understand the types of
+
+00:00:19.260 --> 00:00:23.054
+analyses that we can perform and the plots that we can build.
+
+00:00:23.054 --> 00:00:26.370
+Before we dive deeper, check your understanding.
+
+00:00:26.370 --> 00:00:29.070
+There are quizzes available in the next module to
+
+00:00:29.070 --> 00:00:31.800
+assure that you've mastered the concepts we've introduced.
+

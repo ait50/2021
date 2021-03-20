@@ -1,0 +1,134 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.066 --> 00:00:04.133
+Neste caso, uma medida mais adequada
+pode ser a mediana.
+
+00:00:04.799 --> 00:00:07.599
+A mediana é um valor que divide
+nosso conjunto de dados,
+
+00:00:07.666 --> 00:00:09.933
+de modo que 50% dos valores
+são maiores,
+
+00:00:10.199 --> 00:00:12.633
+enquanto os 50% restantes
+são menores.
+
+00:00:13.233 --> 00:00:15.999
+Para nosso conjunto de dados,
+temos a mediana de oito.
+
+00:00:16.366 --> 00:00:17.999
+É uma resposta muito melhor
+
+00:00:18.166 --> 00:00:20.566
+do que os 12,5 cães
+relatados pela média.
+
+00:00:21.099 --> 00:00:23.866
+O oito não somente está
+no meio do nosso conjunto de dados,
+
+00:00:24.033 --> 00:00:26.133
+como também não divide
+nenhum dos cães ao meio.
+
+00:00:26.999 --> 00:00:28.933
+Como uma observação
+sobre o cálculo da mediana,
+
+00:00:29.266 --> 00:00:31.433
+o cálculo real da mediana
+
+00:00:31.499 --> 00:00:33.699
+depende se estamos trabalhando
+com um conjunto de dados
+
+00:00:33.766 --> 00:00:37.233
+com um número par
+ou um número ímpar de valores.
+
+00:00:37.766 --> 00:00:40.733
+Vamos considerar alguns exemplos
+para ilustrar este ponto.
+
+00:00:41.433 --> 00:00:42.899
+A primeira coisa que devemos fazer
+
+00:00:42.966 --> 00:00:46.066
+é ordenar os valores
+do menor para o maior.
+
+00:00:46.633 --> 00:00:49.599
+No caso de cima,
+estamos trabalhando com 7 valores.
+
+00:00:50.099 --> 00:00:53.033
+Na notação podemos dizer
+que "n" é igual a sete.
+
+00:00:53.333 --> 00:00:54.999
+Como este número é ímpar,
+
+00:00:55.466 --> 00:00:58.566
+nós temos a mediana
+como o valor médio exato,
+
+00:00:59.333 --> 00:01:01.299
+neste caso, o número três.
+
+00:01:02.033 --> 00:01:03.199
+No segundo caso,
+
+00:01:03.299 --> 00:01:05.733
+vamos considerar "n" um valor par.
+
+00:01:06.299 --> 00:01:08.566
+Vamos encontrar a mediana
+da seguinte lista.
+
+00:01:09.299 --> 00:01:12.399
+Mais uma vez, primeiro devemos
+colocar esses valores em ordem.
+
+00:01:13.033 --> 00:01:15.266
+Como não existe
+um valor central exato,
+
+00:01:15.733 --> 00:01:16.733
+iremos, neste caso,
+
+00:01:16.799 --> 00:01:20.733
+pegar a média dos dois valores
+do centro como nossa mediana.
+
+00:01:21.566 --> 00:01:24.833
+Observe, isso nem precisa ser
+um número no conjunto de dados.
+
+00:01:25.233 --> 00:01:27.899
+Como "n" é igual a oito
+neste exemplo,
+
+00:01:28.099 --> 00:01:30.833
+a média do quarto e do quinto valor
+
+00:01:31.066 --> 00:01:33.766
+fornecerá a mediana
+para este conjunto de dados.
+
+00:01:34.499 --> 00:01:36.933
+Mover quatro valores
+de cada um dos lados
+
+00:01:37.266 --> 00:01:40.666
+faz com que peguemos
+a média de três e cinco
+
+00:01:41.366 --> 00:01:42.999
+para ter a média de quatro.
+

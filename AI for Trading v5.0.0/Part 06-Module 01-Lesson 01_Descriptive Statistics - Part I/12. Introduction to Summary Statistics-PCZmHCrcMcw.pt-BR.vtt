@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.933 --> 00:00:02.199
+Nas próximas lições,
+
+00:00:02.266 --> 00:00:06.499
+falaremos de como usar estatística
+para descrever dados quantitativos.
+
+00:00:07.233 --> 00:00:10.733
+Você terá conhecimento do processo
+de como os dados são coletados
+
+00:00:11.033 --> 00:00:13.799
+e como responder a perguntas
+usando seus dados.
+
+00:00:14.533 --> 00:00:15.733
+Ao longo desta lição,
+
+00:00:15.799 --> 00:00:18.766
+espero que você aprenda
+a ser crítico com sua análise
+
+00:00:18.833 --> 00:00:20.066
+do que aconteceu internamente
+
+00:00:20.133 --> 00:00:22.633
+e o que os números
+realmente significam.
+
+00:00:23.233 --> 00:00:26.366
+Como exemplo de uma análise
+que fazemos aqui na Udacity,
+
+00:00:26.833 --> 00:00:29.499
+observamos quanto tempo
+os alunos levam
+
+00:00:29.566 --> 00:00:31.333
+para concluir
+um programa Nanodegree.
+
+00:00:31.899 --> 00:00:33.533
+Tentamos fornecer uma estimativa
+
+00:00:33.633 --> 00:00:36.966
+do número de meses ou horas
+que os estudantes gastarão.
+
+00:00:37.799 --> 00:00:39.266
+Uma maneira de começar
+
+00:00:39.333 --> 00:00:41.299
+é analisar
+a quantidade média de tempo
+
+00:00:41.599 --> 00:00:43.766
+que leva para completar
+o programa Nanodegree.
+
+00:00:44.166 --> 00:00:45.666
+Mas isso não é tudo.
+
+00:00:46.566 --> 00:00:49.066
+Tenho certeza de que há diferenças
+na conclusão,
+
+00:00:49.233 --> 00:00:52.599
+dependendo do que os alunos sabiam
+antes de entrar no programa.
+
+00:00:53.233 --> 00:00:54.399
+A menor quantidade de tempo
+necessária
+
+00:00:54.433 --> 00:00:58.166
+para completar o programa Nanodegree
+pode ser de apenas algumas semanas.
+
+00:00:58.633 --> 00:01:01.199
+Como essas pessoas concluíram
+o curso tão rápido?
+
+00:01:02.299 --> 00:01:05.366
+Bem, a mais longa
+pode ser alguns anos.
+
+00:01:06.099 --> 00:01:09.099
+Qual proporção de alunos
+terminam antes de dois meses?
+
+00:01:09.499 --> 00:01:11.466
+Qual proporção demora
+mais de oito meses?
+
+00:01:12.299 --> 00:01:15.399
+Usar uma variedade de medidas,
+como medidas de posição,
+
+00:01:15.799 --> 00:01:18.366
+dá uma ideia da média dos alunos.
+
+00:01:19.033 --> 00:01:20.399
+Medidas de dispersão
+
+00:01:20.566 --> 00:01:22.933
+dão uma ideia
+de como os alunos diferem.
+
+00:01:23.733 --> 00:01:26.633
+As imagens podem nos fornecer
+um cenário mais completo
+
+00:01:26.899 --> 00:01:30.199
+de quanto tempo qualquer aluno leva
+para concluir o programa.
+
+00:01:30.833 --> 00:01:34.733
+O material nas próximas seções
+irá mostrar como usar estas medidas
+
+00:01:34.799 --> 00:01:38.799
+de uma forma informativa
+e compreensível para os outros.
+

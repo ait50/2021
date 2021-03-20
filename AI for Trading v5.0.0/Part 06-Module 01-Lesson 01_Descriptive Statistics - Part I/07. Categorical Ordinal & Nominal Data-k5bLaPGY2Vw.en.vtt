@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.089
+We can divide categorical data types further into
+
+00:00:03.089 --> 00:00:06.125
+categorical ordinal and categorical nominal.
+
+00:00:06.125 --> 00:00:09.870
+First, let's look at categorical ordinal data.
+
+00:00:09.869 --> 00:00:11.954
+Remember those dogs at the coffee shop?
+
+00:00:11.955 --> 00:00:15.550
+Let's say I give each a rating of how nice it is to me.
+
+00:00:15.550 --> 00:00:19.589
+Sometimes I shake hands with the dog and we become best friends.
+
+00:00:19.589 --> 00:00:22.074
+Other times, it pees on my shoe.
+
+00:00:22.074 --> 00:00:25.934
+I rate these interactions from very positive to very negative.
+
+00:00:25.934 --> 00:00:31.000
+These ranked categories are known as categorical ordinal data.
+
+00:00:31.000 --> 00:00:33.255
+Notice, this is different than the breeds,
+
+00:00:33.255 --> 00:00:36.120
+which are known as categorical nominal data,
+
+00:00:36.119 --> 00:00:38.119
+and do not have a rank order.
+

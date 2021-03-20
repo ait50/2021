@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.833
+The most common way that professionals measure the spread of a data
+
+00:00:04.833 --> 00:00:09.779
+set with a single value is with the standard deviation or variance.
+
+00:00:09.779 --> 00:00:13.064
+Here, we will focus on the standard deviation,
+
+00:00:13.064 --> 00:00:17.994
+but we will actually learn how to calculate the variance in the process.
+
+00:00:17.995 --> 00:00:20.535
+If you have never heard of these measures before,
+
+00:00:20.535 --> 00:00:23.940
+this calculation will probably look pretty complex.
+
+00:00:23.940 --> 00:00:26.670
+When all's said and done with this calculation,
+
+00:00:26.670 --> 00:00:30.375
+the standard deviation will tell us on average
+
+00:00:30.375 --> 00:00:35.155
+how far every point is from the mean of the points.
+
+00:00:35.155 --> 00:00:37.000
+As a quick mental picture,
+
+00:00:37.000 --> 00:00:42.019
+imagine we wanted to know how far employees were located from their place of work.
+
+00:00:42.020 --> 00:00:45.090
+One person might be 15 miles,
+
+00:00:45.090 --> 00:00:49.170
+another 35, another only one mile,
+
+00:00:49.170 --> 00:00:52.655
+and another might be remote and is 103 miles.
+
+00:00:52.655 --> 00:00:56.890
+We could aggregate all of these distances together to show that
+
+00:00:56.890 --> 00:01:02.359
+the average distance employees are located from their work is 18 miles.
+
+00:01:02.359 --> 00:01:09.099
+But now, we want to know how the distance to work varies from one employee to the next.
+
+00:01:09.099 --> 00:01:12.519
+We could use the five number summary as a description.
+
+00:01:12.519 --> 00:01:16.780
+But if we wanted just one number to talk about the spread,
+
+00:01:16.780 --> 00:01:19.570
+we'd probably choose the standard deviation.
+
+00:01:19.569 --> 00:01:26.704
+The standard deviation is on average how much each observation varies from the mean.
+
+00:01:26.704 --> 00:01:28.480
+For this example this is,
+
+00:01:28.480 --> 00:01:32.170
+how much on average the distance each person is from
+
+00:01:32.170 --> 00:01:37.915
+work differs from the average distance all of them are from work.
+
+00:01:37.915 --> 00:01:41.280
+So, this one is three miles farther from work than the average
+
+00:01:41.280 --> 00:01:45.534
+while this individual is four miles closer to work than the average.
+
+00:01:45.534 --> 00:01:48.974
+The standard deviation is how far on
+
+00:01:48.974 --> 00:01:54.089
+average are individuals located from this mean distance.
+
+00:01:54.090 --> 00:01:58.500
+So, it is like the average of all of these distances.
+
+00:01:58.500 --> 00:02:01.829
+We will take a closer look at this but hopefully this gives you
+
+00:02:01.829 --> 00:02:07.000
+a strong conceptual understanding of what we'll be calculating in the next sections.
+

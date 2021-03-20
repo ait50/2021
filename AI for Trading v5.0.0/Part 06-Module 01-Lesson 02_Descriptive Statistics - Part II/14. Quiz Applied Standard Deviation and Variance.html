@@ -1,0 +1,731 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: Applied Standard Deviation and Variance
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Descriptive Statistics - Part II
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Video What are Measures of Spread.html">
+       01. Video: What are Measures of Spread?
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Video Histograms.html">
+       02. Video: Histograms
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Video Weekdays vs. Weekends What is the Difference.html">
+       03. Video: Weekdays vs. Weekends: What is the Difference
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Video Introduction to Five Number Summary.html">
+       04. Video: Introduction to Five Number Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz 5 Number Summary Practice.html">
+       05. Quiz: 5 Number Summary Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Video What if We Only Want One Number.html">
+       06. Video: What if We Only Want One Number?
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Video Introduction to Standard Deviation and Variance.html">
+       07. Video: Introduction to Standard Deviation and Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Video Standard Deviation Calculation.html">
+       08. Video: Standard Deviation Calculation
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Measures of Spread (Calculation and Units).html">
+       09. Measures of Spread (Calculation and Units)
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Text Introduction to the Standard Deviation and Variance.html">
+       10. Text: Introduction to the Standard Deviation and Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Video Why the Standard Deviation.html">
+       11. Video: Why the Standard Deviation?
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Video Important Final Points.html">
+       12. Video: Important Final Points
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Advanced Standard Deviation and Variance.html">
+       13. Advanced: Standard Deviation and Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Applied Standard Deviation and Variance.html">
+       14. Quiz: Applied Standard Deviation and Variance
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Homework 1 Final Quiz on Measures Spread.html">
+       15. Homework 1: Final Quiz on Measures Spread
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Text Measures of Center and Spread Summary.html">
+       16. Text: Measures of Center and Spread Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Video Shape.html">
+       17. Video: Shape
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Video The Shape For Data In The World.html">
+       18. Video: The Shape For Data In The World
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Quiz Shape and Outliers (What's the Impact).html">
+       19. Quiz: Shape and Outliers (What's the Impact?)
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Video Shape and Outliers.html">
+       20. Video: Shape and Outliers
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Video Working With Outliers.html">
+       21. Video: Working With Outliers
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Video Working With Outliers My Advice.html">
+       22. Video: Working With Outliers My Advice
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Shape and Outliers (Comparing Distributions).html">
+       23. Quiz: Shape and Outliers (Comparing Distributions)
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Quiz Shape and Outliers (Visuals).html">
+       24. Quiz: Shape and Outliers (Visuals)
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Quiz Shape and Outliers (Final Quiz).html">
+       25. Quiz: Shape and Outliers (Final Quiz)
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Text Descriptive Statistics Summary .html">
+       26. Text: Descriptive Statistics Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Video Descriptive vs. Inferential Statistics.html">
+       27. Video: Descriptive vs. Inferential Statistics
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Quiz Descriptive vs. Inferential (Udacity Students).html">
+       28. Quiz: Descriptive vs. Inferential (Udacity Students)
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Quiz Descriptive vs. Inferential (Bagels).html">
+       29. Quiz: Descriptive vs. Inferential (Bagels)
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Text Descriptive vs. Inferential Summary.html">
+       30. Text: Descriptive vs. Inferential Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Video Summary.html">
+       31. Video: Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          14. Quiz: Applied Standard Deviation and Variance
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="investment-data">
+          Investment Data
+         </h3>
+         <p>
+          Consider we have two investment opportunities:
+         </p>
+         <table>
+          <thead>
+           <tr>
+            <th id="">
+            </th>
+            <th id="">
+            </th>
+            <th id="">
+            </th>
+            <th id="**returns**">
+             <strong>
+              Returns
+             </strong>
+            </th>
+            <th id="">
+            </th>
+            <th id="">
+            </th>
+            <th id="">
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td>
+            </td>
+            <td>
+             <strong>
+              Year 1
+             </strong>
+            </td>
+            <td>
+             <strong>
+              Year 2
+             </strong>
+            </td>
+            <td>
+             <strong>
+              Year 3
+             </strong>
+            </td>
+            <td>
+             ** Year 4**
+            </td>
+            <td>
+             <strong>
+              Year 5
+             </strong>
+            </td>
+            <td>
+             <strong>
+              Year 6
+             </strong>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <strong>
+              Investment 1
+             </strong>
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <strong>
+              Investment 2
+             </strong>
+            </td>
+            <td>
+             12%
+            </td>
+            <td>
+             -2%
+            </td>
+            <td>
+             10%
+            </td>
+            <td>
+             0%
+            </td>
+            <td>
+             7%
+            </td>
+            <td>
+             3%
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          The returns for 6 consecutive years for each investment are shown above.  Use this information to answer the questions below.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         Unknown quiz type. Please contact the developer to make it compatible with this atom type!
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         Unknown quiz type. Please contact the developer to make it compatible with this atom type!
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="investment-data">
+          Investment Data
+         </h3>
+         <p>
+          In the previous two questions, you should have found that these investments have the same mean!  That is, regardless of which investment opportunity you choose, you are expected to earn the same amount.  So how are they different?  Let's look at some additional questions to see if we can find some differences.
+         </p>
+         <p>
+          The same data as above is provided again (to minimize scrolling).
+         </p>
+         <table>
+          <thead>
+           <tr>
+            <th id="">
+            </th>
+            <th id="">
+            </th>
+            <th id="">
+            </th>
+            <th id="**returns**">
+             <strong>
+              Returns
+             </strong>
+            </th>
+            <th id="">
+            </th>
+            <th id="">
+            </th>
+            <th id="">
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td>
+            </td>
+            <td>
+             <strong>
+              Year 1
+             </strong>
+            </td>
+            <td>
+             <strong>
+              Year 2
+             </strong>
+            </td>
+            <td>
+             <strong>
+              Year 3
+             </strong>
+            </td>
+            <td>
+             ** Year 4**
+            </td>
+            <td>
+             <strong>
+              Year 5
+             </strong>
+            </td>
+            <td>
+             <strong>
+              Year 6
+             </strong>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <strong>
+              Investment 1
+             </strong>
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+            <td>
+             5%
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <strong>
+              Investment 2
+             </strong>
+            </td>
+            <td>
+             12%
+            </td>
+            <td>
+             -2%
+            </td>
+            <td>
+             10%
+            </td>
+            <td>
+             0%
+            </td>
+            <td>
+             7%
+            </td>
+            <td>
+             3%
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          The returns for 6 consecutive years for each investment are shown above.  Use this information to answer the questions below.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Using the information above, mark all of the below that are
+             <strong>
+              true
+             </strong>
+             statements.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1500929790911" name="350009" type="checkbox" value="a1500929790911"/>
+           <label for="a1500929790911">
+            <p>
+             The risk associated with investment 1 is lower than the risk associated with Investment 2.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1500929895017" name="350009" type="checkbox" value="a1500929895017"/>
+           <label for="a1500929895017">
+            <p>
+             The standard deviation associated with Investment 1 is smaller than the standard deviation associated with Investment 2.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1500930072916" name="350009" type="checkbox" value="a1500930072916"/>
+           <label for="a1500930072916">
+            <p>
+             Knowing the mean return amount across all the years for each investment provides us with all of the information necessary to understand which investment we should choose.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            The risk associated with investment 1 is lower than the risk associated with Investment 2.
+           </li>
+           <li>
+            The standard deviation associated with Investment 1 is smaller than the standard deviation associated with Investment 2.
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Based on the observed data, which of the above two investments has the best opportunity of earning more than 7%?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1500930783324" name="350016" type="radio" value="a1500930783324"/>
+           <label for="a1500930783324">
+            <p>
+             Investment 1
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1500930908269" name="350016" type="radio" value="a1500930908269"/>
+           <label for="a1500930908269">
+            <p>
+             Investment 2
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1500930912503" name="350016" type="radio" value="a1500930912503"/>
+           <label for="a1500930912503">
+            <p>
+             Neither.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1500930917196" name="350016" type="radio" value="a1500930917196"/>
+           <label for="a1500930917196">
+            <p>
+             We cannot tell.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          Investment 2
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4 id="useful-insight">
+          Useful Insight
+         </h4>
+         <p>
+          The above example is a simplified version of the real world, but does point out something useful that you may have heard before.  Notice if you were not fully invested in either
+          <strong>
+           Investment 1
+          </strong>
+          or fully invested in
+          <strong>
+           Investment 2
+          </strong>
+          , but instead you were diversified across both investment options, you could earn more than either investment individually.  This is the benefit of diversifying your portfolio for long term gains.  For short term gains, you might not need or want to diversify.  You could get lucky and hit short term gains associated with the upswings (12%, 10%, or 7%) of Investment 2.  However, you might also get unlucky, and hit a down term and earn nothing or even lose money on your investment using this same strategy.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="15. Homework 1 Final Quiz on Measures Spread.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('14. Quiz: Applied Standard Deviation and Variance')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

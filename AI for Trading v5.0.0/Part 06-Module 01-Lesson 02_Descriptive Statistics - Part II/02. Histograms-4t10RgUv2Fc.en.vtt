@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.434
+It is easy as to understand the spread of our data visually.
+
+00:00:04.434 --> 00:00:09.779
+The most common visual for quantitative data is known as a histogram.
+
+00:00:09.779 --> 00:00:15.164
+In this video, we will take a look at exactly how histograms are constructed.
+
+00:00:15.164 --> 00:00:18.771
+In order to understand how histograms are constructed,
+
+00:00:18.771 --> 00:00:21.639
+consider we have the following data-set.
+
+00:00:21.640 --> 00:00:24.399
+First, we need to bin our data.
+
+00:00:24.399 --> 00:00:29.609
+You as the histogram creator ultimately choose how the binning occurs.
+
+00:00:29.609 --> 00:00:33.625
+Here, I have chosen our bins as one to four,
+
+00:00:33.625 --> 00:00:37.929
+five to eight, 9-12 and 13-16.
+
+00:00:37.929 --> 00:00:41.698
+Because these first four values are between one and four,
+
+00:00:41.698 --> 00:00:43.494
+they go into the first bin.
+
+00:00:43.494 --> 00:00:46.869
+These next three values are between five and eight,
+
+00:00:46.869 --> 00:00:48.399
+so they fall in the next bin,
+
+00:00:48.399 --> 00:00:54.039
+then these two values fall in this bin and 15 falls into our last bin.
+
+00:00:54.039 --> 00:01:00.070
+The number of values in each bin determine the height of each histogram bar.
+
+00:01:00.070 --> 00:01:04.859
+Changing the bins will result in a slightly different visual.
+
+00:01:04.859 --> 00:01:08.340
+There really isn't a right answer to choosing our bins,
+
+00:01:08.340 --> 00:01:12.875
+and in most cases software will choose the appropriate bins for us.
+
+00:01:12.875 --> 00:01:15.000
+But it is something to be aware of.
+

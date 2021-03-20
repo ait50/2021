@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: uz
+
+00:00:00.000 --> 00:00:04.254
+Aggregatsiya hosil qilishning bir nechta usullari mavjud.
+
+00:00:04.254 --> 00:00:09.234
+Aggregatsiya ko‘plab raqamlarni kamroq raqamlarga aylantirish usuli,
+
+00:00:09.234 --> 00:00:11.664
+odatda faqat birgina raqamga.
+
+00:00:11.664 --> 00:00:16.105
+Ko‘p uchraydigan aggregatsiyalar avvalroq tanishtirilgan markaz o‘lchovlarini o‘z ichiga oladi,
+
+00:00:16.105 --> 00:00:19.429
+xuddi oraliq, mediana, usul singari.
+
+00:00:19.429 --> 00:00:22.300
+Bularning har biri ko‘plab raqamlarni oladi va ma’lumot to‘plami haqida
+
+00:00:22.300 --> 00:00:26.070
+ma'lumot berish uchun yolg‘iz qiymatni ta’minlaydi.
+
+00:00:26.070 --> 00:00:31.730
+Bu misolda biz barcha qiymatlarni yolg‘iz bitta qiymat ko‘rinishiga keltishni xohlaymiz.
+
+00:00:31.730 --> 00:00:34.054
+Boshqacha qilib aytganda, ular jamlanadi.
+
+00:00:34.054 --> 00:00:38.429
+Yunon alifbosi notatsiya uchun ommaviy bo‘lgan.
+
+00:00:38.429 --> 00:00:44.145
+Ingliz tili singari yunon alifbosida ham katta va kichik harflar mavjud.
+
+00:00:44.145 --> 00:00:46.609
+Ko‘plab qiymatlarni jamlash uchun,
+
+00:00:46.609 --> 00:00:49.329
+Biz Sigma deb tanilgan yunon harfidan foydalanamiz.
+
+00:00:49.329 --> 00:00:52.304
+Aniqroq aytganda, biz katta harfdagi Sigma harfini qo‘llaymiz.
+
+00:00:52.304 --> 00:00:55.966
+Biz odatda belgidan quyidagi usulda foydalanamiz:
+
+00:00:55.966 --> 00:00:59.515
+Turlicha bo‘lgan x qiymatlarga turli subskriptlar
+
+00:00:59.515 --> 00:01:01.369
+yozishning o‘rniga,
+
+00:01:01.369 --> 00:01:05.700
+biz birgina i subskriptiga ega x ni yozamiz.
+
+00:01:05.700 --> 00:01:12.525
+Bu yerda i bizga qaysi x qiymatni jamlayotganimizni aytuvchi o‘rindosh simvol.
+
+00:01:12.525 --> 00:01:14.185
+Birinchi holatda,
+
+00:01:14.185 --> 00:01:16.510
+faqatgina dastlabki ikki qiymatni jamlash,
+
+00:01:16.510 --> 00:01:21.069
+biz i ning bir yoki ikkiga teng bo‘lishini xohlaymiz.
+
+00:01:21.069 --> 00:01:22.569
+Hozir siz so‘rashingiz mumkin,
+
+00:01:22.569 --> 00:01:27.489
+qanday qilib bu notatsiya qaysi qiymatni jamlayotganimizni ko‘rsatadi.
+
+00:01:27.489 --> 00:01:29.855
+Bu ajoyib savol.
+
+00:01:29.855 --> 00:01:32.965
+Agar biz faqat dastlabki ikki qiymatni jamlashni xohlasak,
+
+00:01:32.965 --> 00:01:35.200
+biz shunga o‘xshash nimadir yozamiz.
+
+00:01:35.200 --> 00:01:36.370
+Quyidagi belgida,
+
+00:01:36.370 --> 00:01:38.319
+biz boshlang‘ich nuqtani beryapmiz.
+
+00:01:38.319 --> 00:01:43.950
+Bunda, biz birinchi x qiymati i birga teng holatidagi kabi bo‘lishini xohlaymiz.
+
+00:01:43.950 --> 00:01:47.484
+Siz birni bu subskriptga o‘zgartirishni tasavvur qila olasiz.
+
+00:01:47.484 --> 00:01:52.599
+Keyin yuqoridagi qiymat biz to‘xtaydigan oxirgi nuqtani beradi.
+
+00:01:52.599 --> 00:01:55.605
+Bu yerda yakunimiz ikki.
+
+00:01:55.605 --> 00:01:58.560
+Sigma bizga quyi qiymatdan boshlab barcha qiymatlar orqali yuqori
+
+00:01:58.560 --> 00:02:04.724
+qiymatga yetib borguncha jamlashni xohlashimiz haqida aytadi.
+
+00:02:04.724 --> 00:02:07.515
+Qo‘shimcha simvollik notatsiya,
+
+00:02:07.515 --> 00:02:12.250
+haqiqiy x1 + x2 notatsiya bilan bir xil.
+
