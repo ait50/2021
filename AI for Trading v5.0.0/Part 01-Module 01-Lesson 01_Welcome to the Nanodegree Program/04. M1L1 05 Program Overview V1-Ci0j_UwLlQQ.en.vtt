@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.779
+Now let's take a deep dive into the program,
+
+00:00:02.779 --> 00:00:05.324
+and talk about what you will learn in the next few months.
+
+00:00:05.325 --> 00:00:07.815
+First of all, to get the most out of this program,
+
+00:00:07.815 --> 00:00:12.109
+you'll ideally have Intermediate Python skills including Numpy and Pandas,
+
+00:00:12.109 --> 00:00:14.309
+and prior exposure to statistics,
+
+00:00:14.310 --> 00:00:16.449
+linear algebra, and calculus.
+
+00:00:16.449 --> 00:00:20.910
+We've designed this program to be accessible to anyone who is passionate
+
+00:00:20.910 --> 00:00:25.829
+about using advanced data analytics to make sense of financial data.
+
+00:00:25.829 --> 00:00:30.799
+With that in mind, we will review certain bath encoding concepts as they are
+
+00:00:30.800 --> 00:00:36.310
+used or point you to other Udacity resources to refresh your background knowledge.
+
+00:00:36.310 --> 00:00:39.135
+The Nadir degree program has two terms.
+
+00:00:39.134 --> 00:00:43.594
+Each term contains four projects and will take three months to complete.
+
+00:00:43.594 --> 00:00:45.339
+Prior to each project,
+
+00:00:45.340 --> 00:00:47.270
+there's a set of lessons, quizzes,
+
+00:00:47.270 --> 00:00:52.275
+and exercises that will introduce you to a topic and prepare you for the project.
+
+00:00:52.274 --> 00:00:55.579
+You will then practice what you've learned by completing the project.
+
+00:00:55.579 --> 00:00:59.659
+Note that much of your learning will come from working on the project,
+
+00:00:59.659 --> 00:01:01.729
+trying different things and even going
+
+00:01:01.729 --> 00:01:05.379
+beyond what is required as you explore what's possible.
+
+00:01:05.379 --> 00:01:07.899
+We highly encourage you to take the time,
+
+00:01:07.900 --> 00:01:10.609
+to make each project your own unique
+
+00:01:10.609 --> 00:01:14.844
+reflection of what you have learned and what you are capable of.
+
+00:01:14.844 --> 00:01:20.099
+Students who successfully complete term one are eligible to enroll in term two.
+
+00:01:20.099 --> 00:01:21.804
+At the end of term two,
+
+00:01:21.805 --> 00:01:25.610
+you will embark on a Capstone Project which will give you the opportunity to use
+
+00:01:25.609 --> 00:01:30.034
+everything you've learned to design and evaluate quantitative trading strategies.
+
+00:01:30.034 --> 00:01:35.045
+In term one, you will learn about the Fundamentals of Quantitative Finance.
+
+00:01:35.045 --> 00:01:38.239
+You will apply quantitative methods that are practiced in
+
+00:01:38.239 --> 00:01:41.434
+the financial industry including regression,
+
+00:01:41.435 --> 00:01:44.820
+optimization, and trading signal generation.
+
+00:01:44.819 --> 00:01:47.329
+You will work on projects that reflect
+
+00:01:47.329 --> 00:01:50.920
+the actual quant workflow as it's done in financial firms,
+
+00:01:50.920 --> 00:01:52.814
+with real data sets.
+
+00:01:52.814 --> 00:01:56.689
+Term one is designed to prepare you for term two,
+
+00:01:56.689 --> 00:02:00.009
+which applies more advanced methods to the quant workflow.
+
+00:02:00.010 --> 00:02:04.865
+In term two, you'll use machine learning algorithms to generate trading signals.
+
+00:02:04.864 --> 00:02:07.459
+You'll use natural language processing to analyze
+
+00:02:07.459 --> 00:02:11.775
+financial statements and apply recurrent neural networks to analyze news data.
+
+00:02:11.775 --> 00:02:14.314
+You'll get hands on practice with backtesting,
+
+00:02:14.314 --> 00:02:19.585
+which is a realistic simulation designed to evaluate the effectiveness of a strategy.
+
+00:02:19.585 --> 00:02:22.610
+Finally, you will use advanced techniques to
+
+00:02:22.610 --> 00:02:26.365
+combine several trading signals together to optimize a portfolio.
+
+00:02:26.365 --> 00:02:28.710
+We hope that sounds exciting to you.
+
+00:02:28.710 --> 00:02:31.879
+We can't wait to see you in the classroom.
+
