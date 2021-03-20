@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.894
+Another possibility involves adjusting
+
+00:00:02.894 --> 00:00:06.240
+the bagging procedure inside the random forest model.
+
+00:00:06.240 --> 00:00:09.480
+The idea is to pick a smaller number of samples for
+
+00:00:09.480 --> 00:00:13.949
+each bag in order to reduce the influence of redundant information.
+
+00:00:13.949 --> 00:00:19.859
+Changing the bag size is not an option within scikit-learn random forest implementations.
+
+00:00:19.859 --> 00:00:22.980
+For these models, the number of rows in each bag is
+
+00:00:22.980 --> 00:00:26.475
+always the same as the number of rows in the original dataset.
+
+00:00:26.475 --> 00:00:30.690
+However, scikit-learn does offer another classifier called bagging
+
+00:00:30.690 --> 00:00:36.929
+classifier that allows you to adjust the bag size with a parameter called max samples.
+

@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.509
+So next, this is also going to look at the start and end of particular date ranges.
+
+00:00:06.509 --> 00:00:08.699
+So, the start and end of the week, month,
+
+00:00:08.699 --> 00:00:12.404
+and quarter may have structural differences in trading activity.
+
+00:00:12.404 --> 00:00:15.689
+So we're going to use pandas.daterange here.
+
+00:00:15.689 --> 00:00:18.554
+So here's the documentation for that.
+
+00:00:18.554 --> 00:00:24.030
+Okay. So it takes three parameters: start date,
+
+00:00:24.030 --> 00:00:26.535
+end date, and also frequency.
+
+00:00:26.535 --> 00:00:29.730
+The frequency for end of the month is BM,
+
+00:00:29.730 --> 00:00:34.094
+which you can look at in other documentation which is the time-series frequency.
+
+00:00:34.094 --> 00:00:37.829
+Okay. So here you can see that
+
+00:00:37.829 --> 00:00:44.060
+BM is the code to say we want to get the end of the business month.
+
+00:00:44.060 --> 00:00:47.045
+Okay. So that's the frequency that we would use.
+
+00:00:47.045 --> 00:00:48.995
+Okay. So here's an example.
+
+00:00:48.994 --> 00:00:51.839
+So if we were to say pd.daterange,
+
+00:00:51.840 --> 00:00:56.415
+so I'm going to try this in new cell, pd, pandas.daterange,
+
+00:00:56.414 --> 00:01:03.079
+and we're just going to say from the start is here,
+
+00:01:03.079 --> 00:01:07.579
+and then the end is date.
+
+00:01:07.579 --> 00:01:11.849
+Okay. We're going to set the frequency equal to enter the business month.
+
+00:01:11.849 --> 00:01:14.125
+Okay. So what does that do?
+
+00:01:14.125 --> 00:01:16.819
+Notice here that these dates represent
+
+00:01:16.819 --> 00:01:21.689
+the last business day of that particular month, all right?
+

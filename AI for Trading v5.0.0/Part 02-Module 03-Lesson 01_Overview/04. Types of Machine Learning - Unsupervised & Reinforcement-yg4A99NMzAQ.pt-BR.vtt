@@ -1,0 +1,74 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.967 --> 00:00:05.133
+TIPOS DE APRENDIZADO DE MÁQUINA
+NÃO SUPERVISIONADO
+
+00:00:06.400 --> 00:00:09.067
+A categoria seguinte
+do aprendizado de máquina,
+
+00:00:09.100 --> 00:00:12.233
+o aprendizado não supervisionado,
+cria modelos para dados
+
+00:00:12.267 --> 00:00:15.333
+quando não há rótulos
+pré-existentes para treinar.
+
+00:00:15.367 --> 00:00:19.067
+Então, de certa forma, ele pode ser
+chamado de não supervisionado.
+
+00:00:19.100 --> 00:00:23.733
+Acontece que as aplicações
+dessas técnicas são muito vastas,
+
+00:00:23.767 --> 00:00:27.300
+desde reduzir um conjunto de dados
+a um número menor de recursos úteis
+
+00:00:27.333 --> 00:00:29.233
+a agrupar itens semelhantes
+
+00:00:29.267 --> 00:00:32.067
+e construir sistemas
+de recomendação de música.
+
+00:00:32.100 --> 00:00:34.067
+O último tipo
+de aprendizado de máquina
+
+00:00:34.100 --> 00:00:36.333
+é chamado
+de aprendizado por reforço,
+
+00:00:36.367 --> 00:00:40.800
+e é usado para treinar algoritmos
+que aprendem realizando certas ações
+
+00:00:40.833 --> 00:00:44.200
+e recebendo recompensas
+por essas ações.
+
+00:00:44.233 --> 00:00:48.133
+As aplicações do aprendizado
+por reforço incluem carros autônomos
+
+00:00:48.167 --> 00:00:49.900
+e agentes autônomos,
+
+00:00:49.933 --> 00:00:53.900
+como o que derrotou especialistas
+no jogo Go recentemente.
+
+00:00:53.933 --> 00:00:57.867
+Este mapa dá uma boa visão geral
+das áreas proeminentes
+
+00:00:57.900 --> 00:01:00.067
+do aprendizado de máquina
+em uso atualmente.
+

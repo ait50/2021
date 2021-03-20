@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.129
+Now, we're going to create the targets,
+
+00:00:02.129 --> 00:00:03.809
+also called the labels.
+
+00:00:03.810 --> 00:00:08.265
+So we want the model to try to predict the go forward one week return.
+
+00:00:08.265 --> 00:00:11.339
+But instead of using the returns directly,
+
+00:00:11.339 --> 00:00:13.619
+we want to convert them into quantiles.
+
+00:00:13.619 --> 00:00:17.894
+The reason we want to do this is to make the target market neutral
+
+00:00:17.894 --> 00:00:22.844
+and also to normalize it to changing volatility and dispersion over time.
+
+00:00:22.844 --> 00:00:28.019
+So in other words, we're trying to make the target robust to changes in market regimes.
+
+00:00:28.019 --> 00:00:30.660
+First, we're going to create a pipeline,
+
+00:00:30.660 --> 00:00:35.320
+a new pipeline object for the target because we had another pipeline for the features.
+
+00:00:35.320 --> 00:00:37.865
+Here's an example of what we want to do.
+
+00:00:37.865 --> 00:00:40.270
+We create a returns object.
+
+00:00:40.270 --> 00:00:41.935
+Because it's weekly returns,
+
+00:00:41.935 --> 00:00:44.660
+we set a window length of five trading days and
+
+00:00:44.659 --> 00:00:48.064
+also remember to set the mask to our defined universe.
+
+00:00:48.064 --> 00:00:51.559
+We use this quantiles function to convert
+
+00:00:51.560 --> 00:00:55.704
+that into quantiles and we want to choose two quantiles.
+
+00:00:55.704 --> 00:00:58.769
+Then, we can add it to the target.
+
+00:00:58.770 --> 00:01:02.075
+So the quiz is asking you to do something quite similar,
+
+00:01:02.075 --> 00:01:07.930
+but convert the weekly returns into five quantiles which are also called quintiles.
+
+00:01:07.930 --> 00:01:09.780
+So go ahead and try this out,
+
+00:01:09.780 --> 00:01:11.980
+create it, add it to the pipeline,
+
+00:01:11.980 --> 00:01:14.240
+and then this code is already set to have
+
+00:01:14.239 --> 00:01:18.094
+you run the pipeline and you'll get the data from that.
+
+00:01:18.094 --> 00:01:20.269
+Once you're done trying it out,
+
+00:01:20.269 --> 00:01:23.089
+please check out the solution video. Thanks.
+

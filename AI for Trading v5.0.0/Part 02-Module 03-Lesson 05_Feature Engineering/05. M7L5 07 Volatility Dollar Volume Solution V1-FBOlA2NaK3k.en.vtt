@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.345
+Okay. So let's look at the solution to these quizzes.
+
+00:00:03.345 --> 00:00:05.849
+So the first quiz was,
+
+00:00:05.849 --> 00:00:09.869
+the annualized volatility window length is 252 by default,
+
+00:00:09.869 --> 00:00:11.910
+because it's the one-year volatility.
+
+00:00:11.910 --> 00:00:14.280
+Try to adjust the call to the constructor of
+
+00:00:14.279 --> 00:00:18.554
+annualized volatility so that this represents one month volatility.
+
+00:00:18.554 --> 00:00:24.269
+Okay. So we can call the constructor annualized volatility.
+
+00:00:24.269 --> 00:00:27.329
+But instead, we'll update
+
+00:00:27.329 --> 00:00:33.905
+the window length to be 20 trading days which represents one month.
+
+00:00:33.905 --> 00:00:36.259
+So this means that it's going to use
+
+00:00:36.259 --> 00:00:42.329
+20 returns observations and calculating the standard deviation,
+
+00:00:42.329 --> 00:00:48.589
+and that's the annualized volatility over a 20 day period or one month period.
+
+00:00:48.590 --> 00:00:50.420
+So now this is saying,
+
+00:00:50.420 --> 00:00:52.039
+to store these into variables,
+
+00:00:52.039 --> 00:00:56.179
+create the annualized volatility object for 20 days and 120 days.
+
+00:00:56.179 --> 00:00:58.640
+That's one month and six month time windows.
+
+00:00:58.640 --> 00:01:01.880
+Also remember to set the mass parameters to the universe.
+
+00:01:01.880 --> 00:01:07.850
+Okay? So that means we want to create annualized volatility.
+
+00:01:07.849 --> 00:01:10.189
+By the way, I'm just hitting the tab button in order
+
+00:01:10.189 --> 00:01:13.549
+to auto-complete this in Jupyter Notebooks.
+
+00:01:13.549 --> 00:01:18.079
+So window length for one month is 20 trading days.
+
+00:01:18.079 --> 00:01:20.614
+We want to set the mask equal to universe.
+
+00:01:20.614 --> 00:01:23.089
+Okay? We also want to rank it.
+
+00:01:23.090 --> 00:01:27.380
+So we want to convert these volatilities into ranks,
+
+00:01:27.379 --> 00:01:30.049
+and we want to convert those ranks into Z scores.
+
+00:01:30.049 --> 00:01:32.869
+Okay? So we're going to do something similar here
+
+00:01:32.870 --> 00:01:36.469
+for the sixth month annualized volatility.
+
+00:01:36.469 --> 00:01:41.209
+We're going to set the window length this time to a 120 trading days.
+
+00:01:41.209 --> 00:01:47.189
+The mask filters the other tickers to be on those in the universe,
+
+00:01:47.189 --> 00:01:53.489
+and also convert those into ranks and convert those ranks into Z scores.
+
+00:01:53.489 --> 00:01:59.044
+Okay. We're just going to add those to the pipeline as well.
+
+00:01:59.045 --> 00:02:01.275
+Okay. The next quiz.
+
+00:02:01.275 --> 00:02:04.125
+So average dollar volume, okay?
+
+00:02:04.125 --> 00:02:07.980
+We want to create features out of that as well.
+
+00:02:07.980 --> 00:02:10.325
+So average dollar volume.
+
+00:02:10.324 --> 00:02:14.780
+We want, again, one month and six month time period.
+
+00:02:14.780 --> 00:02:18.395
+So we set the window length to 20 for here.
+
+00:02:18.395 --> 00:02:21.330
+Also remember to set the mask.
+
+00:02:21.830 --> 00:02:25.280
+We want to convert the average dollar volume into ranks
+
+00:02:25.280 --> 00:02:28.205
+and convert those ranks into Z scores.
+
+00:02:28.205 --> 00:02:34.930
+So similarly, average dollar volume for a six month period is a 120 trading days.
+
+00:02:34.930 --> 00:02:39.515
+The mask is also going to filter by the tickers,
+
+00:02:39.514 --> 00:02:42.484
+the top 500 tickers by average dollar volume.
+
+00:02:42.485 --> 00:02:46.280
+We're going to convert those average dollar volumes into
+
+00:02:46.280 --> 00:02:50.745
+ranks and also convert those ranks into Z scores, okay?
+
+00:02:50.745 --> 00:02:55.055
+Again, we're going to add these features to the pipeline as well.
+
+00:02:55.055 --> 00:03:00.395
+Great. So now you can continue on with the lesson which will
+
+00:03:00.395 --> 00:03:06.330
+then introduce you to the other parts that you'll see in this notebook. Okay? Thanks.
+

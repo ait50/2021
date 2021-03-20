@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.320
+Let's discuss a useful performance metric that you can use whenever
+
+00:00:04.320 --> 00:00:08.699
+your ensemble algorithm utilizes bagging or a random row selection.
+
+00:00:08.699 --> 00:00:13.679
+Remember that bagging involves drawing a sample of the original datasets rows,
+
+00:00:13.679 --> 00:00:17.609
+with replacement for each tree in the ensemble.
+
+00:00:17.609 --> 00:00:20.309
+It can be shown, that on average,
+
+00:00:20.309 --> 00:00:24.899
+each tree makes use of about two-thirds of the observations.
+
+00:00:24.899 --> 00:00:28.724
+The remaining one-third of the observations not used
+
+00:00:28.725 --> 00:00:32.789
+to fit a given tree are called the out-of-bag observations.
+
+00:00:32.789 --> 00:00:34.734
+For a given observation,
+
+00:00:34.734 --> 00:00:38.149
+we can calculate something called the out-of-bag score.
+
+00:00:38.149 --> 00:00:41.539
+This is the aggregated prediction of all the trees that
+
+00:00:41.539 --> 00:00:45.259
+did not have that observation in their bag.
+
+00:00:45.259 --> 00:00:51.189
+Since, on average, each bag makes use of two-thirds of the original observations,
+
+00:00:51.189 --> 00:00:54.754
+a given sample will be in two-thirds of the bags,
+
+00:00:54.755 --> 00:00:58.280
+and not in one-third of the bags on average.
+
+00:00:58.280 --> 00:01:02.179
+So if B is the number of trees in the ensemble,
+
+00:01:02.179 --> 00:01:08.090
+that will be B divided by three out-of-bag predictions for a given observation.
+
+00:01:08.090 --> 00:01:11.405
+These predictions can be aggregated to obtain
+
+00:01:11.405 --> 00:01:15.385
+a single out-of-bag prediction for each observation.
+
+00:01:15.385 --> 00:01:17.190
+For a regression model,
+
+00:01:17.189 --> 00:01:18.269
+they can be averaged,
+
+00:01:18.269 --> 00:01:20.024
+and for a classification model,
+
+00:01:20.025 --> 00:01:22.295
+the majority vote can be used.
+
+00:01:22.295 --> 00:01:27.799
+Then the out-of-bag error can be calculated for the entire dataset.
+
+00:01:27.799 --> 00:01:32.030
+This is a useful way to obtain a test error metric,
+
+00:01:32.030 --> 00:01:35.015
+since the trees used to obtain the prediction for
+
+00:01:35.015 --> 00:01:39.870
+each observation were not fit using that observation.
+

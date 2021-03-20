@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.500
+Supervised Machine Learning models require training data,
+
+00:00:04.500 --> 00:00:06.689
+that is, inputs and outputs.
+
+00:00:06.690 --> 00:00:08.730
+We call the inputs features,
+
+00:00:08.730 --> 00:00:11.070
+and we call the outputs labels.
+
+00:00:11.070 --> 00:00:14.070
+Instead of feeding raw data into the model,
+
+00:00:14.070 --> 00:00:18.224
+it's often helpful to use our domain knowledge to enhance those features,
+
+00:00:18.224 --> 00:00:23.414
+and also the labels to make them more meaningful to the Machine Learning model.
+
+00:00:23.414 --> 00:00:29.140
+This process of tailoring features and labels is called Feature Engineering.
+
+00:00:29.140 --> 00:00:33.725
+You've actually practiced a bit of Feature Engineering in past projects.
+
+00:00:33.725 --> 00:00:37.649
+For instance, converting price into returns,
+
+00:00:37.649 --> 00:00:41.964
+and even calculating overnight returns using open and close prices.
+
+00:00:41.965 --> 00:00:45.755
+We'll look at some useful features that I often use
+
+00:00:45.755 --> 00:00:50.160
+as well as the rationale for creating these features and labels.
+

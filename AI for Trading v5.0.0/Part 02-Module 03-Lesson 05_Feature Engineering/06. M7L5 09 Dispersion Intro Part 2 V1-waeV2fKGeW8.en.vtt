@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.474
+Once you've implemented market dispersion,
+
+00:00:02.474 --> 00:00:05.210
+create the object and apply
+
+00:00:05.209 --> 00:00:08.759
+two separate smoothing operations using simple moving average.
+
+00:00:08.759 --> 00:00:10.844
+You can click on the link for the documentation.
+
+00:00:10.845 --> 00:00:13.679
+So one simple moving average is for one month,
+
+00:00:13.679 --> 00:00:14.849
+which is 20 trading days,
+
+00:00:14.849 --> 00:00:16.440
+and the other is for a six month,
+
+00:00:16.440 --> 00:00:18.600
+which is 120 trading days.
+
+00:00:18.600 --> 00:00:23.054
+Then, you see there's code to add these two features to the pipeline.
+
+00:00:23.054 --> 00:00:24.960
+So just some quick hints.
+
+00:00:24.960 --> 00:00:27.868
+When you instantiate market dispersion,
+
+00:00:27.868 --> 00:00:32.149
+remember you probably need to set the mask to something.
+
+00:00:32.149 --> 00:00:36.634
+When you implement simple moving average,
+
+00:00:36.634 --> 00:00:40.730
+you're going to be setting the inputs to something,
+
+00:00:40.729 --> 00:00:45.034
+and you're going to be setting the window length to something.
+
+00:00:45.034 --> 00:00:48.709
+Okay? So these are just some hints to help you get started.
+
+00:00:48.710 --> 00:00:50.570
+Try it out yourself and when you're done,
+
+00:00:50.570 --> 00:00:53.570
+check out the solution video. Thanks.
+

@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.225
+Okay. So now, we're going to add date part features.
+
+00:00:03.225 --> 00:00:05.370
+So we will make features that might capture
+
+00:00:05.370 --> 00:00:08.849
+a trader investor behavior due to calendar anomalies.
+
+00:00:08.849 --> 00:00:12.285
+So we can get the dates from the index of the dataframe,
+
+00:00:12.285 --> 00:00:15.960
+so that's the all factors dataframe that we've been working with.
+
+00:00:15.960 --> 00:00:19.080
+So, notice that we can use this function,
+
+00:00:19.079 --> 00:00:23.419
+so from the dataframe index we can get leveled
+
+00:00:23.420 --> 00:00:28.100
+values and then we can choose which level of the index,
+
+00:00:28.100 --> 00:00:29.870
+if it's a multi-level index.
+
+00:00:29.870 --> 00:00:34.640
+So in this case remember the dates are in the level zero,
+
+00:00:34.640 --> 00:00:41.299
+so if we were to call our dataframe.index and then.get_level_ values,
+
+00:00:41.299 --> 00:00:44.254
+you can see here that we have the dates here.
+
+00:00:44.255 --> 00:00:48.335
+If we were to use index level get_level_ values one,
+
+00:00:48.335 --> 00:00:50.210
+then that would be the tickers,
+
+00:00:50.210 --> 00:00:53.640
+so we're going to use level zero.
+
+00:00:54.020 --> 00:00:58.609
+So here's a link to the datetime index attributes.
+
+00:00:58.609 --> 00:01:01.445
+Let me just close some of these.
+
+00:01:01.445 --> 00:01:04.444
+Datetime index attributes.
+
+00:01:04.444 --> 00:01:06.289
+If you scroll down here,
+
+00:01:06.290 --> 00:01:09.830
+you can see that there are some attributes we can use, all right?
+
+00:01:09.829 --> 00:01:11.875
+So I'll come back to this in a bit.
+
+00:01:11.875 --> 00:01:16.728
+So, the month attribute is a numpy array with one for January,
+
+00:01:16.728 --> 00:01:21.344
+two for February and all the way to 12 for December.
+
+00:01:21.344 --> 00:01:25.250
+We can use a comparison operator such as
+
+00:01:25.250 --> 00:01:29.090
+the double equals to return a series of true false values.
+
+00:01:29.090 --> 00:01:32.150
+As mentioned earlier, it's going to be easier to work
+
+00:01:32.150 --> 00:01:35.690
+with all numeric values later on in another lesson,
+
+00:01:35.689 --> 00:01:40.159
+so we're just going to use the as type operator to convert those booleans,
+
+00:01:40.159 --> 00:01:43.549
+the true falses into ones and zeros.
+
+00:01:43.549 --> 00:01:47.119
+So, here's an example of some code,
+
+00:01:47.120 --> 00:01:49.990
+I'm going to type it out a little bit on time.
+
+00:01:49.989 --> 00:01:52.239
+So here's our dataframe,
+
+00:01:52.239 --> 00:01:55.390
+we're going to get it's index and then we're going to call
+
+00:01:55.390 --> 00:02:01.960
+this function get_level_values and we're going to get level zero which is the dates.
+
+00:02:02.000 --> 00:02:05.825
+Notice here that in this documentation,
+
+00:02:05.825 --> 00:02:09.265
+you can see that there's this month attribute right here.
+
+00:02:09.264 --> 00:02:13.484
+So, month is January is one, December is 12.
+
+00:02:13.485 --> 00:02:20.870
+So we can say.month and then that's going to return,
+
+00:02:20.870 --> 00:02:27.064
+in this case, these are ones which means that these particular dates fell on a January.
+
+00:02:27.064 --> 00:02:32.764
+We're going to use the equal operator to say equals January for instance,
+
+00:02:32.764 --> 00:02:36.759
+and now you can see that it's now an array of booleans,
+
+00:02:36.759 --> 00:02:40.524
+is true when it is January it's false otherwise.
+
+00:02:40.525 --> 00:02:46.360
+Then last thing is we can also just convert those booleans into numbers.
+
+00:02:46.360 --> 00:02:48.865
+So, one is for true, zero is false.
+
+00:02:48.865 --> 00:02:53.670
+So that's what this set of code is telling you right here.
+

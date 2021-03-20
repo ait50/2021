@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:03.003
+Vamos ver a segunda métrica,
+a revocação,
+
+00:00:03.036 --> 00:00:05.305
+que é a resposta
+da seguinte pergunta:
+
+00:00:05.338 --> 00:00:07.674
+"Dos pontos marcados
+como positivos,
+
+00:00:07.707 --> 00:00:10.644
+quantos foram corretamente
+marcados como positivo?"
+
+00:00:10.677 --> 00:00:14.080
+No modelo médico, revocação
+responde à seguinte pergunta:
+
+00:00:14.114 --> 00:00:15.582
+"Dos pacientes doentes,
+
+00:00:15.615 --> 00:00:18.151
+quantos corretamente
+diagnosticamos como doentes?"
+
+00:00:18.185 --> 00:00:21.454
+A precisão era: "Dos pacientes
+diagnosticados como doentes,
+
+00:00:21.488 --> 00:00:24.090
+quantos estavam doentes?"
+Revocação é o oposto:
+
+00:00:24.124 --> 00:00:25.592
+"Dos pacientes doentes,
+
+00:00:25.625 --> 00:00:28.395
+quantos corretamente
+diagnosticamos como doentes?"
+
+00:00:28.428 --> 00:00:30.597
+Pode ser visto como o alcance
+do algoritmo.
+
+00:00:30.630 --> 00:00:33.567
+Quantos pontos positivos
+consegui pegar?
+
+00:00:33.600 --> 00:00:35.602
+A resposta é calculada
+nesta linha.
+
+00:00:35.635 --> 00:00:40.106
+Como podemos ver, esta linha pega
+um caso crítico rotulado por um X,
+
+00:00:40.140 --> 00:00:42.943
+assim vemos que revocação
+é importante no modelo médico.
+
+00:00:42.976 --> 00:00:45.579
+Para calcular a revocação,
+fazemos o seguinte:
+
+00:00:45.612 --> 00:00:47.380
+dos 1.200 pacientes doentes,
+
+00:00:47.414 --> 00:00:49.416
+quantos diagnosticamos
+corretamente?
+
+00:00:49.449 --> 00:00:52.452
+1.000 dividido 1.200,
+
+00:00:52.485 --> 00:00:54.688
+que é 83,3%.
+
+00:00:54.721 --> 00:00:57.890
+O modelo precisa de revocação alta,
+para apontarmos corretamente
+
+00:00:57.924 --> 00:01:00.093
+quantas pessoas doentes
+for possível.
+
+00:01:00.126 --> 00:01:02.963
+No modelo de e-mail,
+a revocação é similar.
+
+00:01:02.996 --> 00:01:04.364
+É calculada assim:
+
+00:01:04.397 --> 00:01:05.932
+dos e-mails de spam,
+
+00:01:05.966 --> 00:01:09.603
+quantos mandamos corretamente
+para a pasta de spam?
+
+00:01:09.636 --> 00:01:11.471
+A resposta está nesta linha.
+
+00:01:11.505 --> 00:01:14.174
+Temos 100 corretamente enviados
+para a pasta de spam
+
+00:01:14.207 --> 00:01:17.110
+divididos por 270,
+total de e-mails spam.
+
+00:01:17.143 --> 00:01:19.913
+É um número baixo: 37%.
+
+00:01:19.946 --> 00:01:24.184
+Mas estamos preocupados
+em evitar este X aqui,
+
+00:01:24.217 --> 00:01:26.786
+já que não importa
+se não pegarmos todos os spams,
+
+00:01:26.820 --> 00:01:28.855
+desde que os que pegamos
+sejam spam.
+
+00:01:28.889 --> 00:01:31.224
+Então este modelo
+pode ter revocação baixa.
+
+00:01:31.258 --> 00:01:33.927
+Vamos fazer um exercício similar
+ao que já fizemos.
+
+00:01:33.960 --> 00:01:35.695
+Neste modelo linear,
+
+00:01:35.729 --> 00:01:37.497
+qual é a revocação?
+
+00:01:37.531 --> 00:01:39.933
+Coloque sua resposta abaixo.
+

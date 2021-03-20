@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.984
+So now, let's look at the solution to calculate targets.
+
+00:00:03.984 --> 00:00:06.324
+So we created the pipeline.
+
+00:00:06.325 --> 00:00:09.990
+Here's the example where we're adding one target,
+
+00:00:09.990 --> 00:00:15.210
+which is converting the returns into 2-quantiles and adding to the pipeline.
+
+00:00:15.210 --> 00:00:17.730
+So here we're going to do something quite similar.
+
+00:00:17.730 --> 00:00:19.815
+We're going to create the returns.
+
+00:00:19.815 --> 00:00:23.790
+The window length is five trading days for one week as before.
+
+00:00:23.789 --> 00:00:26.445
+Set the mask to our defined universe,
+
+00:00:26.445 --> 00:00:28.304
+and use the quantiles function.
+
+00:00:28.304 --> 00:00:31.320
+This time we want to choose 5-quantiles.
+
+00:00:31.320 --> 00:00:38.564
+We can go ahead and add that to the pipeline that we created, pipeline target.
+
+00:00:38.564 --> 00:00:41.909
+We're adding this quantized returns object.
+
+00:00:41.909 --> 00:00:45.149
+Return five day, 5-quantiles,
+
+00:00:45.149 --> 00:00:52.045
+and then I'll just give the column name the same name.
+
+00:00:52.045 --> 00:00:56.510
+Then, we already have code here that will run the pipeline and put the data into
+
+00:00:56.509 --> 00:01:00.949
+this dataframe. All right.
+
+00:01:00.950 --> 00:01:04.465
+So you can see now we have two columns,
+
+00:01:04.465 --> 00:01:08.640
+five-day, 2-quantile and five-day, 5-quantile.
+
+00:01:08.640 --> 00:01:10.500
+Great. Thanks for watching.
+
+00:01:10.500 --> 00:01:14.260
+You can also check out the solution notebook as well. Thanks.
+

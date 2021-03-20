@@ -1,0 +1,711 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Decision Trees in sklearn
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Decision Trees
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Welcome.html">
+       01. Welcome
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Intro.html">
+       02. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Recommending Apps 1.html">
+       03. Recommending Apps 1
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Recommending Apps 2.html">
+       04. Recommending Apps 2
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Recommending Apps 3.html">
+       05. Recommending Apps 3
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Tree Anatomy.html">
+       06. Tree Anatomy
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Quiz Student Admissions.html">
+       07. Quiz: Student Admissions
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Solution Student Admissions.html">
+       08. Solution: Student Admissions
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Entropy.html">
+       09. Entropy
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Entropy Formula 1.html">
+       10. Entropy Formula 1
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Entropy Formula 2.html">
+       11. Entropy Formula 2
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Entropy Formula 3.html">
+       12. Entropy Formula 3
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Quiz Do You Know Your Entropy.html">
+       13. Quiz: Do You Know Your Entropy?
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Multiclass Entropy.html">
+       14. Multiclass Entropy
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Quiz Information Gain.html">
+       15. Quiz: Information Gain
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Solution Information Gain.html">
+       16. Solution: Information Gain
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Maximizing Information Gain.html">
+       17. Maximizing Information Gain
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Calculating Information Gain on a Dataset.html">
+       18. Calculating Information Gain on a Dataset
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Gini Impurity.html">
+       19. Gini Impurity
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Hyperparameters.html">
+       20. Hyperparameters
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Decision Trees in sklearn.html">
+       21. Decision Trees in sklearn
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Titanic Survival Model with Decision Trees.html">
+       22. Titanic Survival Model with Decision Trees
+      </a>
+     </li>
+     <li class="">
+      <a href="23. [Solution] Titanic Survival Model.html">
+       23. [Solution] Titanic Survival Model
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Visualizing Your Tree.html">
+       24. Visualizing Your Tree
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Visualizing Your Tree Exercise.html">
+       25. Visualizing Your Tree Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Outro.html">
+       26. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          21. Decision Trees in sklearn
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="decision-trees-in-sklearn">
+          Decision Trees in sklearn
+         </h1>
+         <p>
+          In this section, you'll use decision trees to fit a given sample dataset.
+         </p>
+         <p>
+          Before you do that, let's go over the tools required to build this model.
+         </p>
+         <p>
+          For your decision tree model, you'll be using scikit-learn's
+          <a href="http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            Decision Tree Classifier
+           </code>
+          </a>
+          class.  This class provides the functions to define and fit the model to your data.
+         </p>
+         <pre><code class="python language-python">&gt;&gt;&gt; from sklearn.tree import DecisionTreeClassifier
+&gt;&gt;&gt; model = DecisionTreeClassifier()
+&gt;&gt;&gt; model.fit(x_values, y_values)</code></pre>
+         <p>
+          In the example above, the
+          <code>
+           model
+          </code>
+          variable is a decision tree model that has been fitted to the data
+          <code>
+           x_values
+          </code>
+          and
+          <code>
+           y_values
+          </code>
+          .  Fitting the model means finding the best tree that fits the training data.  Let's make two predictions using the model's
+          <code>
+           predict()
+          </code>
+          function.
+         </p>
+         <pre><code class="python language-python">&gt;&gt;&gt; print(model.predict([ [0.2, 0.8], [0.5, 0.4] ]))
+[[ 0., 1.]]</code></pre>
+         <p>
+          The model returned an array of predictions, one prediction for each input array.  The first input,
+          <code>
+           [0.2, 0.8]
+          </code>
+          , got a prediction of
+          <code>
+           0.
+          </code>
+          .  The second input,
+          <code>
+           [0.5, 0.4]
+          </code>
+          , got a prediction of
+          <code>
+           1.
+          </code>
+          .
+         </p>
+         <h3 id="hyperparameters">
+          Hyperparameters
+         </h3>
+         <p>
+          When we define the model, we can specify the hyperparameters. In practice, the most common ones are
+         </p>
+         <ul>
+          <li>
+           <code>
+            max_depth
+           </code>
+           : The maximum number of levels in the tree.
+          </li>
+          <li>
+           <code>
+            min_samples_leaf
+           </code>
+           : The minimum number of samples allowed in a leaf.
+          </li>
+          <li>
+           <code>
+            min_samples_split
+           </code>
+           : The minimum number of samples required to split an internal node.
+          </li>
+         </ul>
+         <p>
+          For example, here we define a model where the maximum depth of the trees
+          <code>
+           max_depth
+          </code>
+          is 7, and the minimum number of elements in each leaf
+          <code>
+           min_samples_leaf
+          </code>
+          is 10.
+         </p>
+         <pre><code class="python language-python">&gt;&gt;&gt; model = DecisionTreeClassifier(max_depth = 7, min_samples_leaf = 10)</code></pre>
+         <h2 id="decision-tree-quiz">
+          Decision Tree Quiz
+         </h2>
+         <p>
+          In this quiz, you'll be given the following sample dataset, and your goal is to define a model that gives 100% accuracy on it.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-01-06-at-8.13.20-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The data file can be found under the "data.csv" tab in the quiz below. It includes three columns, the first 2 comprising of the coordinates of the points, and the third one of the label.
+         </p>
+         <p>
+          The data will be loaded for you, and split into features
+          <code>
+           X
+          </code>
+          and labels
+          <code>
+           y
+          </code>
+          .
+         </p>
+         <h3 id="youll-need-to-complete-each-of-the-following-steps">
+          You'll need to complete each of the following steps:
+         </h3>
+         <p>
+          <strong>
+           1. Build a decision tree model
+          </strong>
+         </p>
+         <ul>
+          <li>
+           Create a decision tree classification model using scikit-learn's
+           <a href="http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             DecisionTreeClassifier
+            </code>
+           </a>
+           and assign it to the variable
+           <code>
+            model
+           </code>
+           .
+          </li>
+         </ul>
+         <p>
+          <strong>
+           2. Fit the model to the data
+          </strong>
+         </p>
+         <ul>
+          <li>
+           You won't need to specify any of the hyperparameters, since the default ones will yield a model that perfectly classifies the training data. However, we encourage you to play with hyperparameters such as
+           <code>
+            max_depth
+           </code>
+           and
+           <code>
+            min_samples_leaf
+           </code>
+           to try to find the
+           <em>
+            simplest possible
+           </em>
+           model.
+          </li>
+         </ul>
+         <p>
+          <strong>
+           3. Predict using the model
+          </strong>
+         </p>
+         <ul>
+          <li>
+           Predict the labels for the training set, and assign this list to the variable
+           <code>
+            y_pred
+           </code>
+           .
+          </li>
+         </ul>
+         <p>
+          <strong>
+           4. Calculate the accuracy of the model
+          </strong>
+         </p>
+         <ul>
+          <li>
+           For this, use the function sklearn function
+           <a href="http://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             accuracy_score
+            </code>
+           </a>
+           . A model's
+           <strong>
+            accuracy
+           </strong>
+           is the fraction of all data points that it correctly classified.
+          </li>
+         </ul>
+         <p>
+          When you hit
+          <strong>
+           Test Run
+          </strong>
+          , you'll be able to see the boundary region of your model, which will help you tune the correct parameters, in case you need them.
+         </p>
+         <p>
+          <strong>
+           <em>
+            Note:
+           </em>
+          </strong>
+          This quiz requires you to find an accuracy of 100% on the training set. This is like memorizing the training data! A model designed to have 100% accuracy on training data is unlikely to generalize well to new data. If you pick very large values for your parameters, the model will fit the training set very well, but may not generalize well. Try to find the smallest possible parameters that do the job—then the model will be more likely to generalize well. (This aspect of the exercise won't be graded.)
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="498621-quiz-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#498621-quiz-py" id="tab-498621-quiz-py" role="tab">
+            quiz.py
+           </a>
+           <a aria-controls="498621-data-csv" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#498621-data-csv" id="tab-498621-data-csv" role="tab">
+            data.csv
+           </a>
+           <a aria-controls="498621-solution-py" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#498621-solution-py" id="tab-498621-solution-py" role="tab">
+            solution.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-498621-quiz-py" class="tab-pane active show" id="498621-quiz-py" role="tabpanel">
+            <pre><code></code># Import statements 
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+import pandas as pd
+import numpy as np
+
+# Read the data.
+data = np.asarray(pd.read_csv('data.csv', header=None))
+# Assign the features to the variable X, and the labels to the variable y. 
+X = data[:,0:2]
+y = data[:,2]
+
+# TODO: Create the decision tree model and assign it to the variable model.
+# You won't need to, but if you'd like, play with hyperparameters such
+# as max_depth and min_samples_leaf and see what they do to the decision
+# boundary.
+model = None
+
+# TODO: Fit the model.
+
+# TODO: Make predictions. Store them in the variable y_pred.
+y_pred = None
+
+# TODO: Calculate the accuracy and assign it to the variable acc.
+acc = None</pre>
+           </div>
+           <div aria-labelledby="tab-498621-data-csv" class="tab-pane" id="498621-data-csv" role="tabpanel">
+            <pre><code></code>0.24539,0.81725,0
+0.21774,0.76462,0
+0.20161,0.69737,0
+0.20161,0.58041,0
+0.2477,0.49561,0
+0.32834,0.44883,0
+0.39516,0.48099,0
+0.39286,0.57164,0
+0.33525,0.62135,0
+0.33986,0.71199,0
+0.34447,0.81433,0
+0.28226,0.82602,0
+0.26613,0.75,0
+0.26613,0.63596,0
+0.32604,0.54825,0
+0.28917,0.65643,0
+0.80069,0.71491,0
+0.80069,0.64181,0
+0.80069,0.50146,0
+0.79839,0.36988,0
+0.73157,0.25,0
+0.63249,0.18275,0
+0.60023,0.27047,0
+0.66014,0.34649,0
+0.70161,0.42251,0
+0.70853,0.53947,0
+0.71544,0.63304,0
+0.74309,0.72076,0
+0.75,0.63596,0
+0.75,0.46345,0
+0.72235,0.35526,0
+0.66935,0.28509,0
+0.20622,0.94298,1
+0.26613,0.8962,1
+0.38134,0.8962,1
+0.42051,0.94591,1
+0.49885,0.86404,1
+0.31452,0.93421,1
+0.53111,0.72076,1
+0.45276,0.74415,1
+0.53571,0.6038,1
+0.60484,0.71491,1
+0.60945,0.58333,1
+0.51267,0.47807,1
+0.50806,0.59211,1
+0.46198,0.30556,1
+0.5288,0.41082,1
+0.38594,0.35819,1
+0.31682,0.31433,1
+0.29608,0.20906,1
+0.36982,0.27632,1
+0.42972,0.18275,1
+0.51498,0.10965,1
+0.53111,0.20906,1
+0.59793,0.095029,1
+0.73848,0.086257,1
+0.83065,0.18275,1
+0.8629,0.10965,1
+0.88364,0.27924,1
+0.93433,0.30848,1
+0.93433,0.19444,1
+0.92512,0.43421,1
+0.87903,0.43421,1
+0.87903,0.58626,1
+0.9182,0.71491,1
+0.85138,0.8348,1
+0.85599,0.94006,1
+0.70853,0.94298,1
+0.70853,0.87281,1
+0.59793,0.93129,1
+0.61175,0.83187,1
+0.78226,0.82895,1
+0.78917,0.8962,1
+0.90668,0.89912,1
+0.14862,0.92251,1
+0.15092,0.85819,1
+0.097926,0.85819,1
+0.079493,0.91374,1
+0.079493,0.77632,1
+0.10945,0.79678,1
+0.12327,0.67982,1
+0.077189,0.6886,1
+0.081797,0.58626,1
+0.14862,0.58041,1
+0.14862,0.5307,1
+0.14171,0.41959,1
+0.08871,0.49269,1
+0.095622,0.36696,1
+0.24539,0.3962,1
+0.1947,0.29678,1
+0.16935,0.22368,1
+0.15553,0.13596,1
+0.23848,0.12427,1
+0.33065,0.12427,1
+0.095622,0.2617,1
+0.091014,0.20322,1
+</pre>
+           </div>
+           <div aria-labelledby="tab-498621-solution-py" class="tab-pane" id="498621-solution-py" role="tabpanel">
+            <pre><code></code># Import statements 
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+import pandas as pd
+import numpy as np
+
+# Read the data.
+data = np.asarray(pd.read_csv('data.csv', header=None))
+# Assign the features to the variable X, and the labels to the variable y. 
+X = data[:,0:2]
+y = data[:,2]
+
+# TODO: Create the decision tree model and assign it to the variable model.
+model = DecisionTreeClassifier()
+
+# TODO: Fit the model.
+model.fit(X,y)
+
+# TODO: Make predictions. Store them in the variable y_pred.
+y_pred = model.predict(X)
+
+# TODO: Calculate the accuracy and assign it to the variable acc.
+acc = accuracy_score(y, y_pred)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="22. Titanic Survival Model with Decision Trees.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('21. Decision Trees in sklearn')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

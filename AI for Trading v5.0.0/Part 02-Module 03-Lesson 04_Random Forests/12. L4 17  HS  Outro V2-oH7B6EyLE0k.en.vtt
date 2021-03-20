@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.724
+In this lesson, we learned about a class of ensemble methods that uses
+
+00:00:04.724 --> 00:00:10.754
+random subsets of rows and columns to create a forest of different decision trees.
+
+00:00:10.755 --> 00:00:13.350
+We also learned a few reasons why they are
+
+00:00:13.349 --> 00:00:17.070
+a good fit for some of the types of problems we encounter in finance.
+
+00:00:17.070 --> 00:00:21.390
+You may notice that certain Alphas perform better or worse,
+
+00:00:21.390 --> 00:00:23.175
+depending on market conditions.
+
+00:00:23.175 --> 00:00:28.109
+For instance, you may observe that a model that works well when the markets are calm,
+
+00:00:28.109 --> 00:00:31.695
+no longer performs as well when the markets are very volatile.
+
+00:00:31.695 --> 00:00:34.859
+If we can create additional inputs that give
+
+00:00:34.859 --> 00:00:38.094
+a model more context about market conditions,
+
+00:00:38.094 --> 00:00:41.719
+the model can learn to adjust its predictions accordingly.
+
+00:00:41.719 --> 00:00:46.009
+The process of creating useful model inputs is called feature engineering,
+
+00:00:46.009 --> 00:00:49.149
+which we'll learn more about in the next lesson.
+

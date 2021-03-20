@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.930
+So next, here's the Average Dollar Volume feature.
+
+00:00:03.930 --> 00:00:05.849
+So we've been using the Average Dollar Volume in
+
+00:00:05.849 --> 00:00:08.955
+the past to use that to choose the stock universe.
+
+00:00:08.955 --> 00:00:14.474
+So based off of the stocks that have the most dollar volume over a certain time period,
+
+00:00:14.474 --> 00:00:16.574
+we choose those stock tickers.
+
+00:00:16.574 --> 00:00:21.314
+We can also use this as a feature that's input into the predictive model.
+
+00:00:21.315 --> 00:00:22.800
+So the question is,
+
+00:00:22.800 --> 00:00:27.825
+please use 20 day and 120 day window_lengths for average dollar volume,
+
+00:00:27.824 --> 00:00:30.030
+and also convert the average dollar volumes into
+
+00:00:30.030 --> 00:00:33.465
+ranks and convert those ranks into zscores.
+
+00:00:33.465 --> 00:00:35.790
+So as an example,
+
+00:00:35.789 --> 00:00:39.390
+we would have AverageDollarVolume.
+
+00:00:39.390 --> 00:00:42.390
+We set the window_length to something.
+
+00:00:42.390 --> 00:00:45.405
+We set the mask equal to something.
+
+00:00:45.405 --> 00:00:52.630
+Remember, there's also a rank and a zscore function.
+
+00:00:52.909 --> 00:00:56.914
+So we'll stop there. Go ahead and try it out.
+
+00:00:56.914 --> 00:00:58.414
+Then when you're done,
+
+00:00:58.414 --> 00:01:02.679
+you can also look at the solution video that's coming up next. Thanks.
+

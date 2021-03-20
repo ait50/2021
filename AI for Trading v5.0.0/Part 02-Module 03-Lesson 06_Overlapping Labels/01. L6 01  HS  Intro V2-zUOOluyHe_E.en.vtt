@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.845
+As we mentioned before,
+
+00:00:01.845 --> 00:00:05.294
+if features are inputs to a supervised learning model,
+
+00:00:05.294 --> 00:00:07.544
+then the targets, also called labels,
+
+00:00:07.544 --> 00:00:09.269
+are the outputs of the model.
+
+00:00:09.269 --> 00:00:11.699
+In the last lesson, you learned how to create
+
+00:00:11.699 --> 00:00:15.765
+several features that may be useful for improving your model's performance.
+
+00:00:15.765 --> 00:00:19.515
+The features help by providing context about market conditions,
+
+00:00:19.515 --> 00:00:22.394
+which are useful in the decision-making of the model.
+
+00:00:22.394 --> 00:00:25.984
+You also learned how to create targets or labels that
+
+00:00:25.984 --> 00:00:29.780
+allow the model to work well in changing market conditions.
+
+00:00:29.780 --> 00:00:33.500
+In this section, we're going to talk about a particular problem with
+
+00:00:33.500 --> 00:00:38.615
+the labels that applications of machine learning to finance frequently encounter.
+
+00:00:38.615 --> 00:00:40.984
+We've heard a bit about this issue already.
+
+00:00:40.984 --> 00:00:45.140
+It has to do with what happens when the labels are not independent.
+
+00:00:45.140 --> 00:00:47.869
+This violates a core assumption of many of
+
+00:00:47.869 --> 00:00:50.554
+the machine-learning algorithms we would like to use.
+
+00:00:50.554 --> 00:00:53.530
+Let's learn a bit more about this issue.
+

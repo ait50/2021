@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.745
+Random forests take advantage of perturbations applied to both columns and rows.
+
+00:00:05.745 --> 00:00:09.780
+Let's take a moment to describe how to generate a random forest model.
+
+00:00:09.779 --> 00:00:12.614
+Let's say we're working with this dataset.
+
+00:00:12.615 --> 00:00:17.250
+We know we're going to generate many trees and combine their predictions together.
+
+00:00:17.250 --> 00:00:20.594
+We first choose the number of trees to generate.
+
+00:00:20.594 --> 00:00:25.574
+This is a hyper parameter of the algorithm that the user chooses in advance.
+
+00:00:25.574 --> 00:00:28.530
+Now, let's start growing the first tree.
+
+00:00:28.530 --> 00:00:33.929
+First, we'll generate the dataset that this tree will be trained on using bagging.
+
+00:00:33.929 --> 00:00:36.630
+There are n rows in the original dataset.
+
+00:00:36.630 --> 00:00:40.219
+So let's select one row n times
+
+00:00:40.219 --> 00:00:44.630
+each time picking a row from the entire original set of rows.
+
+00:00:44.630 --> 00:00:47.045
+In other words, with replacement.
+
+00:00:47.045 --> 00:00:49.520
+By sampling with replacement,
+
+00:00:49.520 --> 00:00:53.420
+some of the original rows may be repeated in the new dataset.
+
+00:00:53.420 --> 00:00:57.260
+This kind of sample is called a bootstrap sample.
+
+00:00:57.259 --> 00:01:00.934
+Now that we have the dataset for the single tree,
+
+00:01:00.935 --> 00:01:02.734
+let's start growing the tree.
+
+00:01:02.734 --> 00:01:06.379
+At each split, we pick m features to
+
+00:01:06.379 --> 00:01:10.204
+consider when determining which will provide the best split.
+
+00:01:10.204 --> 00:01:14.030
+In this example, let's assume m equals three.
+
+00:01:14.030 --> 00:01:16.099
+So, to generate the first split,
+
+00:01:16.099 --> 00:01:18.994
+let's randomly choose three features.
+
+00:01:18.995 --> 00:01:24.605
+Among these features, we calculate the gender or hobby provide the best split.
+
+00:01:24.605 --> 00:01:29.465
+Let's pick gender. Now, let's keep developing the tree.
+
+00:01:29.465 --> 00:01:34.540
+We'll randomly choose another three features for the split on the male node.
+
+00:01:34.540 --> 00:01:39.135
+In this case, age or platform provide the best split.
+
+00:01:39.135 --> 00:01:44.270
+Let's use age. Now, all the leaves are pure.
+
+00:01:44.269 --> 00:01:46.099
+If this were not the case,
+
+00:01:46.099 --> 00:01:48.919
+we would continue to randomly pick three features to
+
+00:01:48.920 --> 00:01:52.954
+consider for each split until the tree was fully grown.
+
+00:01:52.954 --> 00:01:55.819
+Great. We've created the first tree.
+
+00:01:55.819 --> 00:02:02.904
+Now, we repeat this procedure to grow all the other trees in the forest and we're done.
+
+00:02:02.905 --> 00:02:05.099
+Now, we have quite a few trees,
+
+00:02:05.099 --> 00:02:07.744
+and hopefully, they are all quite different.
+
+00:02:07.745 --> 00:02:12.950
+Remember, they were trained on different datasets and at each split of each tree,
+
+00:02:12.949 --> 00:02:15.500
+a different set of features was considered.
+
+00:02:15.500 --> 00:02:19.413
+Now, when we have a new observation we want to classify,
+
+00:02:19.413 --> 00:02:21.169
+we just let the trees vote.
+
+00:02:21.169 --> 00:02:24.859
+Each of the trees classifies that observation and
+
+00:02:24.860 --> 00:02:29.610
+the class with the most predictions is the prediction of the ensemble.
+

@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.725
+So, here's a quiz.
+
+00:00:01.725 --> 00:00:04.650
+We can see that the returns window length is two,
+
+00:00:04.650 --> 00:00:06.945
+because we are dealing with daily returns,
+
+00:00:06.945 --> 00:00:10.140
+which are calculated as the percent change from one day to the following day.
+
+00:00:10.140 --> 00:00:11.985
+So, it's two days.
+
+00:00:11.984 --> 00:00:17.024
+The annualized volatility window length is 252 by default,
+
+00:00:17.024 --> 00:00:19.214
+because it's the one-year volatility.
+
+00:00:19.214 --> 00:00:20.579
+So, that means it's using
+
+00:00:20.579 --> 00:00:27.644
+252 returns sample points in calculating the standard deviation of that.
+
+00:00:27.644 --> 00:00:31.679
+So, now the question is, try to adjust the call to the constructor of
+
+00:00:31.679 --> 00:00:36.075
+annualized volatility so that this represents one-month volatility.
+
+00:00:36.075 --> 00:00:37.875
+So, it's still annualized,
+
+00:00:37.875 --> 00:00:41.359
+but it's calculated over time window of 20 trading days.
+
+00:00:41.359 --> 00:00:43.234
+So, what I mean by that is,
+
+00:00:43.234 --> 00:00:47.590
+when you look at the function here.
+
+00:00:47.590 --> 00:00:52.430
+So, if you were to change it so that the window length is 20,
+
+00:00:52.429 --> 00:00:55.219
+to represent 20 trading days or one month,
+
+00:00:55.219 --> 00:01:02.810
+then imagine you would have a DataFrame in here that has 20 rows instead of 252 rows,
+
+00:01:02.810 --> 00:01:06.545
+and it uses that to calculate the standard deviation.
+
+00:01:06.545 --> 00:01:09.680
+So, I can give you a quick hint.
+
+00:01:09.680 --> 00:01:16.845
+Start with annualized volatility and window length equals something.
+
+00:01:16.844 --> 00:01:20.745
+Okay. All right.
+
+00:01:20.745 --> 00:01:23.454
+So, after you do that,
+
+00:01:23.454 --> 00:01:29.004
+the next quiz is, create one month and six month annualized volatility.
+
+00:01:29.004 --> 00:01:34.384
+Create annualized volatility objects for a 20 day and 120 day time windows.
+
+00:01:34.385 --> 00:01:37.505
+In other words, one month and six month time windows.
+
+00:01:37.504 --> 00:01:43.239
+Remember to set the mask parameters to the universe object created earlier.
+
+00:01:43.239 --> 00:01:46.909
+So, this filters the stocks to match the list in the universe.
+
+00:01:46.909 --> 00:01:49.519
+So, this means that, we don't want to use all the stocks,
+
+00:01:49.519 --> 00:01:52.670
+we want to filter to a certain list of
+
+00:01:52.670 --> 00:01:57.859
+stock tickers in this universe object we actually created back up here.
+
+00:01:57.859 --> 00:02:03.500
+So, we'll take a look. So, based on the average dollar volume over the past six months,
+
+00:02:03.500 --> 00:02:05.540
+over the past 120 trading days,
+
+00:02:05.540 --> 00:02:08.390
+take the top 500,
+
+00:02:08.389 --> 00:02:11.994
+and that's the list of tickers that we'll use here.
+
+00:02:11.995 --> 00:02:16.710
+So, we could actually just double check what it looks like.
+
+00:02:19.300 --> 00:02:23.015
+So, universe is this object,
+
+00:02:23.014 --> 00:02:26.379
+but you can actually just pass it in here.
+
+00:02:26.379 --> 00:02:28.305
+I'll give you a hint here.
+
+00:02:28.305 --> 00:02:30.575
+So, we had annualized volatility.
+
+00:02:30.574 --> 00:02:33.994
+Okay. We can set the window length
+
+00:02:33.995 --> 00:02:38.200
+equal to something and we can set the mask equal to something.
+
+00:02:38.199 --> 00:02:42.544
+It also says, convert these two ranks and convert those ranks to scores.
+
+00:02:42.544 --> 00:02:50.734
+So, you may recall that there's a rank function and there's a zscore function.
+
+00:02:50.735 --> 00:02:53.640
+So, those are some hints.
+
+00:02:54.229 --> 00:02:56.804
+Once you store those into variables,
+
+00:02:56.805 --> 00:03:00.129
+then go ahead and add them to the pipeline.
+

@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.430
+Another possibility is based on
+
+00:00:02.430 --> 00:00:05.790
+the observation that if we're working with weekly returns,
+
+00:00:05.790 --> 00:00:10.379
+there are five different sets of non-overlapping labels we could use,
+
+00:00:10.380 --> 00:00:14.519
+depending on which day of the week we calculate the returns from.
+
+00:00:14.519 --> 00:00:17.489
+The idea is to train separate,
+
+00:00:17.489 --> 00:00:19.769
+random forest models on each set of
+
+00:00:19.769 --> 00:00:24.679
+non-overlapping labels and then ensemble these together.
+

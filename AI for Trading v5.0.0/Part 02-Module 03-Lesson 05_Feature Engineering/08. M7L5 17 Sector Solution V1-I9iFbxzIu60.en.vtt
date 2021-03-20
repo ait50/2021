@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.580
+Okay. Let's take a look at the solution.
+
+00:00:02.580 --> 00:00:04.800
+First of all, we're just running this through a loop.
+
+00:00:04.799 --> 00:00:08.849
+So just to remind you that we're actually looping through,
+
+00:00:08.849 --> 00:00:14.369
+and this letter S is just storing those sector categories which are these integers.
+
+00:00:14.369 --> 00:00:20.280
+So first of all, we want to check if it's equal to that particular sector.
+
+00:00:20.280 --> 00:00:23.970
+So remember we're looking at the all factors DataFrame,
+
+00:00:23.969 --> 00:00:27.564
+and we're looking at the column sector code,
+
+00:00:27.565 --> 00:00:31.304
+when it's equal to S. Then,
+
+00:00:31.304 --> 00:00:34.304
+this thing itself returns a series of Booleans.
+
+00:00:34.304 --> 00:00:37.005
+We're just going to convert that to an integer type.
+
+00:00:37.005 --> 00:00:39.810
+Okay. That's what we were doing up here,
+
+00:00:39.810 --> 00:00:43.545
+we took this equals operator which gives us a series of Booleans,
+
+00:00:43.545 --> 00:00:46.245
+we convert that into integer.
+
+00:00:46.244 --> 00:00:50.954
+Let's just store this in another column, so all factors.
+
+00:00:50.954 --> 00:00:53.219
+Let's give it a certain column names.
+
+00:00:53.219 --> 00:00:56.009
+I'm going to use the F-string in Python.
+
+00:00:56.009 --> 00:01:03.884
+Sector code and S in curly braces.
+
+00:01:03.884 --> 00:01:06.814
+So let's take a look at what happens there.
+
+00:01:06.814 --> 00:01:10.054
+If I look at the columns now,
+
+00:01:10.055 --> 00:01:11.970
+then if it worked out okay.
+
+00:01:11.969 --> 00:01:15.359
+You can see here now I've sector code two, three, four,
+
+00:01:15.359 --> 00:01:19.049
+five, all the way to 10 negative one.
+
+00:01:19.049 --> 00:01:24.439
+Great. Please continue on with the lesson. Cheers.
+

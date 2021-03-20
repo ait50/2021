@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.765
+Features are slightly more general than alpha factors.
+
+00:00:03.765 --> 00:00:07.349
+Recall that alpha factors are signals that are ideally
+
+00:00:07.349 --> 00:00:12.719
+predictive of whether future stock returns maybe positive or negative, and by how much.
+
+00:00:12.720 --> 00:00:15.540
+Features are similar, but they don't
+
+00:00:15.539 --> 00:00:18.765
+have as high a requirement to be predictive on their own.
+
+00:00:18.765 --> 00:00:22.230
+A good feature is one that may be useful in combination
+
+00:00:22.230 --> 00:00:26.129
+with other features perhaps used to split other features.
+
+00:00:26.129 --> 00:00:30.274
+In other words, a good feature can be a conditional factor.
+
+00:00:30.274 --> 00:00:35.600
+You may recall that concept of conditional factors such as idiosyncratic volatility,
+
+00:00:35.600 --> 00:00:40.210
+which on their own may not tell the direction of the future returns.
+
+00:00:40.210 --> 00:00:44.120
+However, in combination with other features or factors,
+
+00:00:44.119 --> 00:00:47.959
+these conditional factors can be predictive of returns.
+
+00:00:47.960 --> 00:00:51.799
+Recall that idiosyncratic volatility could be interpreted as
+
+00:00:51.799 --> 00:00:55.519
+magnifying the signal of some other momentum or reversal signal.
+
+00:00:55.520 --> 00:01:00.380
+So, features are like that and that when combined with other features,
+
+00:01:00.380 --> 00:01:02.960
+they can be useful as alpha factors even
+
+00:01:02.960 --> 00:01:06.230
+if they aren't sufficient as alpha factors on their own.
+
+00:01:06.230 --> 00:01:11.734
+I'll start off with sharing some of what I call universal quan features.
+
+00:01:11.734 --> 00:01:14.629
+Universal quan features are broadly useful for
+
+00:01:14.629 --> 00:01:18.349
+quan research and for input into machine learning models.
+
+00:01:18.349 --> 00:01:20.959
+Two important ones I often see,
+
+00:01:20.959 --> 00:01:26.809
+and that you'll practice making are stock volatility and stock dollar volume.
+
+00:01:26.810 --> 00:01:30.740
+Both of these can be interpreted as conditional factors that
+
+00:01:30.739 --> 00:01:34.429
+adjust the impact of some other predictive feature.
+
+00:01:34.430 --> 00:01:39.470
+For instance, high dollar volume over a window of time may indicate that
+
+00:01:39.469 --> 00:01:45.109
+some momentum factor is more significant compared to when there's lower dollar volume.
+
+00:01:45.109 --> 00:01:50.780
+Stock volatility is the variation of each stock's return over a specified time horizon.
+
+00:01:50.780 --> 00:01:54.620
+We will use one month and six month time horizons.
+
+00:01:54.620 --> 00:01:59.885
+So the one month and six month volatility of each stock can be a useful feature.
+
+00:01:59.885 --> 00:02:04.640
+Stock dollar volume is the dollar amount of trades over a time horizon.
+
+00:02:04.640 --> 00:02:09.033
+Again, we'll use one month and six month time horizons
+
+00:02:09.033 --> 00:02:12.004
+and take the daily average over these horizons.
+
+00:02:12.004 --> 00:02:15.319
+Each stock's average daily volume over a one month and
+
+00:02:15.319 --> 00:02:20.120
+six month horizon can be a useful feature in a predictive model.
+

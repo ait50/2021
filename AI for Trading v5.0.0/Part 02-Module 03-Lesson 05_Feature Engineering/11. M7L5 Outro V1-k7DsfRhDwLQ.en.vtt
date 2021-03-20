@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.089
+Let's review what we've learned in this lesson.
+
+00:00:03.089 --> 00:00:06.764
+Machine learning models trained on features and targets.
+
+00:00:06.764 --> 00:00:10.425
+Features can be more general than Alpha factors,
+
+00:00:10.425 --> 00:00:14.820
+in that they can also be used for splitting on other features or vectors.
+
+00:00:14.820 --> 00:00:20.175
+Two universal quantum features are stock volatility and stock dollar volume.
+
+00:00:20.175 --> 00:00:24.480
+Two regime features are market volatility and market dispersion.
+
+00:00:24.480 --> 00:00:29.954
+Additional useful features or sector or industry and also date parts,
+
+00:00:29.954 --> 00:00:32.384
+such as the beginning or end of the week,
+
+00:00:32.384 --> 00:00:34.350
+month, quarter or year.
+
+00:00:34.350 --> 00:00:39.965
+Lastly, we learned to create targets by quantizing foray returns.
+
+00:00:39.965 --> 00:00:43.715
+This makes the targets robust to changes in market regimes,
+
+00:00:43.715 --> 00:00:46.550
+and also makes the targets [inaudible].
+

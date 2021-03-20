@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.149
+The term market regime is another way to describe
+
+00:00:03.149 --> 00:00:08.189
+marketing additions that broadly affect how stocks behave during a period of time.
+
+00:00:08.189 --> 00:00:10.859
+Market regimes change over time,
+
+00:00:10.859 --> 00:00:15.449
+so it's helpful to generate features that capture changes in these market conditions.
+
+00:00:15.449 --> 00:00:18.855
+There are two market regime features that we will work with.
+
+00:00:18.855 --> 00:00:23.475
+One is market dispersion and the other is market volatility.
+
+00:00:23.475 --> 00:00:28.800
+Market dispersion looks at the cross-section of stocks and how spread out they are.
+
+00:00:28.800 --> 00:00:30.975
+To think about this conceptually,
+
+00:00:30.975 --> 00:00:36.274
+we can just look at the top-performing and lowest-performing stock on a single day.
+
+00:00:36.274 --> 00:00:39.625
+The difference between them can vary from day-to-day.
+
+00:00:39.625 --> 00:00:45.049
+On days when the best and worst performing stock are not that much far apart,
+
+00:00:45.049 --> 00:00:50.329
+there isn't much benefit from correctly choosing the correct stocks to go long or short.
+
+00:00:50.329 --> 00:00:54.049
+On the other hand, on days when the best stock is doing
+
+00:00:54.049 --> 00:00:57.844
+very well and the worst stock is doing very poorly,
+
+00:00:57.844 --> 00:01:01.070
+then choosing the correct stocks to go long or short
+
+00:01:01.070 --> 00:01:04.849
+has a more significant impact on a fund's performance.
+
+00:01:04.849 --> 00:01:08.524
+Market dispersion can be calculated as a standard deviation.
+
+00:01:08.525 --> 00:01:10.385
+To visualize this idea,
+
+00:01:10.385 --> 00:01:14.120
+we can think of looking at the Stock Universe on a single day
+
+00:01:14.120 --> 00:01:18.460
+and seeing how dispersed or spread out they are from the center.
+
+00:01:18.459 --> 00:01:20.379
+As with other features,
+
+00:01:20.379 --> 00:01:24.739
+we will utilize time horizons of one and six months.
+
+00:01:24.739 --> 00:01:30.259
+Market dispersion measures how much investors are making a distinction between stocks.
+
+00:01:30.260 --> 00:01:33.260
+If cross-sectional dispersion is low,
+
+00:01:33.260 --> 00:01:35.960
+it means all stocks are correlated.
+
+00:01:35.959 --> 00:01:38.689
+If a major company stock goes up,
+
+00:01:38.689 --> 00:01:40.129
+others go with it.
+
+00:01:40.129 --> 00:01:43.219
+If cross-sectional dispersion is high,
+
+00:01:43.219 --> 00:01:47.155
+the stocks are likely moving in different directions.
+
+00:01:47.155 --> 00:01:49.474
+So people are paying attention to
+
+00:01:49.474 --> 00:01:54.750
+idiosyncratic aspects of stocks rather than common factors of stocks.
+

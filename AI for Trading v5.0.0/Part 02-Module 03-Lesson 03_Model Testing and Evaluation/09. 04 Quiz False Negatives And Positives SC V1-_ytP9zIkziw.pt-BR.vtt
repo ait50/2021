@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:02.169
+Vamos voltar
+aos dois exemplos:
+
+00:00:02.202 --> 00:00:04.571
+o modelo médico
+e o modelo de spam no e-mail.
+
+00:00:04.604 --> 00:00:07.941
+Para o modelo médico,
+temos quatro possibilidades:
+
+00:00:08.445 --> 00:00:11.578
+positivo verdadeiro,
+quando o paciente está doente,
+
+00:00:11.611 --> 00:00:13.847
+e o diagnosticamos
+como doente;
+
+00:00:13.880 --> 00:00:17.184
+verdadeiro negativo,
+quando o paciente não está doente
+
+00:00:17.217 --> 00:00:19.886
+e o diagnosticamos
+como não doente;
+
+00:00:19.920 --> 00:00:22.556
+falso positivo,
+quando o paciente está saudável
+
+00:00:22.589 --> 00:00:24.925
+e o diagnosticamos
+como doente;
+
+00:00:24.958 --> 00:00:27.994
+e falso negativo,
+quando o paciente está doente,
+
+00:00:28.028 --> 00:00:30.397
+e o diagnosticamos
+como saudável.
+
+00:00:30.430 --> 00:00:34.501
+Vamos esquecer os dois corretos
+e nos concentrar só nos erros.
+
+00:00:34.534 --> 00:00:36.303
+Abaixo, teremos um quiz.
+
+00:00:36.336 --> 00:00:38.171
+Qual você acha pior,
+
+00:00:38.205 --> 00:00:40.841
+um falso positivo
+ou um falso negativo?
+
+00:00:40.874 --> 00:00:43.510
+Em outras palavras,
+qual é o pior erro,
+
+00:00:43.543 --> 00:00:45.811
+diagnosticar um paciente saudável
+como doente
+
+00:00:45.845 --> 00:00:48.114
+ou um doente como saudável?
+
+00:00:48.148 --> 00:00:50.917
+Vamos voltar ao modelo
+de spam no e-mail.
+
+00:00:50.951 --> 00:00:55.055
+Temos dois e-mails: um da vovó
+dizendo que assou cookies
+
+00:00:55.088 --> 00:00:57.457
+e um spam
+de uma fonte questionável.
+
+00:00:57.490 --> 00:01:01.061
+Para este modelo,
+temos quatro possibilidades:
+
+00:01:01.094 --> 00:01:05.532
+positivo verdadeiro, quando o spam
+é enviado para a pasta de spam;
+
+00:01:05.565 --> 00:01:06.766
+negativo verdadeiro,
+
+00:01:06.800 --> 00:01:10.070
+quando o e-mail da vovó
+é enviado para o inbox.
+
+00:01:10.103 --> 00:01:12.205
+Falso positivo,
+quando o e-mail da vovó
+
+00:01:12.239 --> 00:01:14.441
+é enviado por engano
+para a pasta de spam;
+
+00:01:14.474 --> 00:01:16.009
+e falso negativo,
+
+00:01:16.042 --> 00:01:19.012
+quando um spam é enviado
+por engano para o inbox.
+
+00:01:19.045 --> 00:01:23.116
+Vamos esquecer os dois corretos
+e nos concentrar nos erros.
+
+00:01:23.149 --> 00:01:25.018
+Abaixo, terá um novo quiz.
+
+00:01:25.051 --> 00:01:26.786
+Qual você acha pior?
+
+00:01:26.820 --> 00:01:29.289
+Um falso positivo
+ou um falso negativo?
+
+00:01:29.322 --> 00:01:31.658
+Em outras palavras,
+o que é um erro pior,
+
+00:01:31.691 --> 00:01:34.694
+enviar por engano o e-mail da vovó
+para a pasta de spam
+
+00:01:34.728 --> 00:01:38.098
+ou enviar por engano
+o spam para seu inbox?
+
+00:01:38.131 --> 00:01:40.800
+Coloque suas respostas abaixo.
+

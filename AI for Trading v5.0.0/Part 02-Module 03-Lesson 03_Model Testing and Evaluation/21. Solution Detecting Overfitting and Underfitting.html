@@ -1,0 +1,428 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Solution: Detecting Overfitting and Underfitting
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Model Testing and Evaluation
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Outline.html">
+       02. Outline
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Testing your models.html">
+       03. Testing your models
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Confusion Matrix.html">
+       04. Confusion Matrix
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Confusion Matrix 2.html">
+       05. Confusion Matrix 2
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Accuracy.html">
+       06. Accuracy
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Accuracy 2.html">
+       07. Accuracy 2
+      </a>
+     </li>
+     <li class="">
+      <a href="08. When accuracy won't work.html">
+       08. When accuracy won't work
+      </a>
+     </li>
+     <li class="">
+      <a href="09. False Negatives and Positives.html">
+       09. False Negatives and Positives
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Precision and Recall.html">
+       10. Precision and Recall
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Precision.html">
+       11. Precision
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Recall.html">
+       12. Recall
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Types of Errors.html">
+       13. Types of Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Model Complexity Graph.html">
+       14. Model Complexity Graph
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Cross Validation.html">
+       15. Cross Validation
+      </a>
+     </li>
+     <li class="">
+      <a href="16. K-Fold Cross Validation.html">
+       16. K-Fold Cross Validation
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Cross Validation for Time Series.html">
+       17. Cross Validation for Time Series
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Validation for Financial Data.html">
+       18. Validation for Financial Data
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Learning Curves.html">
+       19. Learning Curves
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Detecting Overfitting and Underfitting with Learning Curves.html">
+       20. Detecting Overfitting and Underfitting with Learning Curves
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Solution Detecting Overfitting and Underfitting.html">
+       21. Solution: Detecting Overfitting and Underfitting
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Outro.html">
+       22. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          21. Solution: Detecting Overfitting and Underfitting
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="solution-using-learning-curves-to-detect-overfitting-and-underfitting">
+          Solution: Using Learning Curves to Detect Overfitting and Underfitting
+         </h1>
+         <p>
+          Congratulations! That was not an easy quiz. Here are the curves you should have obtained:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/learning-curves.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          We can observe from the curves that:
+         </p>
+         <ul>
+          <li>
+           The
+           <strong>
+            Logistic Regression
+           </strong>
+           model has a low training and testing score.
+          </li>
+          <li>
+           The
+           <strong>
+            Decision Tree
+           </strong>
+           model has a high training and testing score.
+          </li>
+          <li>
+           The
+           <strong>
+            Support Vector Machine
+           </strong>
+           model has a high training score, and a low testing score.
+          </li>
+         </ul>
+         <p>
+          From here, we can determine that the Logistic Regression model underfits, the SVM model overfits, and the Decision Tree model is just right.
+         </p>
+         <p>
+          Equivalently, we can flip this curves (as they measure score, and our original curves measure error), and compare them with the following three curves, we can see that they look a lot like the three curves we saw before. (
+          <em>
+           Note: The fact that we flip the curves doesn't mean that the error is 1 minus the score. It only means that as the model gets better, the error decreases, and the score increases.)
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/learning-curves.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Now, we should check if this is visible in the actual model. When we plot the boundary curves for each one of these models, we get the following:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/models.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          When we look at the models above, does it make sense that the first one underfits, the second one is right, and the third one overfits? It does, right? We can see that the data is correctly bounded by a circle, or a square. What our models do, is the following:
+         </p>
+         <ul>
+          <li>
+           The
+           <strong>
+            Logistic Regression
+           </strong>
+           model uses a line, which is too simplistic. It doesn't do very well on the training set. Thus, it
+           <strong>
+            underfits
+           </strong>
+           .
+          </li>
+          <li>
+           The
+           <strong>
+            Decision Tree
+           </strong>
+           model uses a square, which is a pretty good fit, and generalizes well. Thus, this model is
+           <strong>
+            good
+           </strong>
+           .
+          </li>
+          <li>
+           The
+           <strong>
+            Support Vector Machine
+           </strong>
+           model actually draws a tiny circle around each point. This is clearly just memorizing the training set, and won't generalize well. Thus, it
+           <strong>
+            overfits
+           </strong>
+           .
+          </li>
+         </ul>
+         <p>
+          It's always good to do a reality check when we can, and see that our models actually do have the behavior that the metrics tell us.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="22. Outro.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('21. Solution: Detecting Overfitting and Underfitting')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

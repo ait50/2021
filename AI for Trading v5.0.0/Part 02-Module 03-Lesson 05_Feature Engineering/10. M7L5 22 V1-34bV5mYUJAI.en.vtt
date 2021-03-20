@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.790
+Now, let's look at the data that goes in
+
+00:00:02.790 --> 00:00:06.285
+the other end of the machine learning training process.
+
+00:00:06.285 --> 00:00:09.449
+These are the outputs that we want the model to learn.
+
+00:00:09.449 --> 00:00:12.449
+They're often called labels or targets.
+
+00:00:12.449 --> 00:00:15.059
+I'll refer to these as targets.
+
+00:00:15.060 --> 00:00:19.335
+If you think back to when we proposed and tested potential output factors,
+
+00:00:19.335 --> 00:00:22.335
+can you think of what the targets were in those cases?
+
+00:00:22.335 --> 00:00:25.575
+They were the forward returns of each stock.
+
+00:00:25.574 --> 00:00:31.184
+But recall that given the low signal to noise ratio typical of financial data,
+
+00:00:31.184 --> 00:00:34.890
+we may want to process the returns data into a signal that
+
+00:00:34.890 --> 00:00:38.939
+is easier for the machine learning model to train on.
+
+00:00:38.939 --> 00:00:42.018
+One way to simplify the targets would be to classify
+
+00:00:42.018 --> 00:00:46.729
+all the positive returns as one label and all the non-positive returns as
+
+00:00:46.729 --> 00:00:50.524
+another label then the machine learning model would train to determine
+
+00:00:50.524 --> 00:00:55.114
+based on the inputs whether the following returns are positive or not.
+
+00:00:55.115 --> 00:00:59.090
+The downside to having just two classes is that the model can't distinguish
+
+00:00:59.090 --> 00:01:03.200
+between small positive returns and very large positive returns.
+
+00:01:03.200 --> 00:01:06.710
+An approach that you may see in books or in the literature is to
+
+00:01:06.709 --> 00:01:10.424
+choose various thresholds and bucket the returns into,
+
+00:01:10.424 --> 00:01:12.658
+say, low positive returns,
+
+00:01:12.659 --> 00:01:17.040
+medium positive returns, and high positive returns.
+
+00:01:17.040 --> 00:01:21.360
+This approach also runs into another issue which is namely,
+
+00:01:21.359 --> 00:01:23.804
+what should these thresholds be?
+
+00:01:23.805 --> 00:01:29.060
+We may pick a threshold that neatly buckets the returns during one period.
+
+00:01:29.060 --> 00:01:30.500
+But if you recall,
+
+00:01:30.500 --> 00:01:32.900
+market regimes are not constant.
+
+00:01:32.900 --> 00:01:37.640
+For example, the overall market volatility varies at different points in time,
+
+00:01:37.640 --> 00:01:42.019
+and the market return is also changing over time.
+
+00:01:42.019 --> 00:01:45.679
+Constant thresholds for bucketing these returns wouldn't give
+
+00:01:45.680 --> 00:01:49.835
+us useful targets due to these market changes.
+
+00:01:49.834 --> 00:01:52.569
+We can think about why that is.
+
+00:01:52.569 --> 00:01:57.679
+Let's say we have constant thresholds that have three categories for small, medium,
+
+00:01:57.680 --> 00:01:59.509
+and large positive returns,
+
+00:01:59.509 --> 00:02:01.650
+and another three categories for small,
+
+00:02:01.650 --> 00:02:04.265
+medium, and large negative returns.
+
+00:02:04.265 --> 00:02:09.259
+If the market is rallying so that all the stock returns are positive,
+
+00:02:09.259 --> 00:02:14.074
+then the targets all end up in the positive region.
+
+00:02:14.074 --> 00:02:17.780
+You may recall our discussion about the importance of neutralizing
+
+00:02:17.780 --> 00:02:21.680
+major risk factors such as market and sector risks.
+
+00:02:21.680 --> 00:02:27.409
+Having constant thresholds does not allow us to create targets that are market neutral.
+
+00:02:27.409 --> 00:02:30.490
+Can you think of what else we could try?
+
+00:02:30.490 --> 00:02:35.495
+Well, there are lots of complex approaches to creating targets.
+
+00:02:35.495 --> 00:02:39.080
+The approach that follows is quite good at handling changing
+
+00:02:39.080 --> 00:02:43.594
+market regimes and also benefits from a simple implementation.
+
+00:02:43.594 --> 00:02:47.180
+This approach is to quantize the target.
+
+00:02:47.180 --> 00:02:54.170
+In other words, categorize the targets into quantiles that are determined for each day.
+
+00:02:54.169 --> 00:02:58.405
+This allows us to account for changing market volatility,
+
+00:02:58.405 --> 00:03:02.120
+market dispersion, and market risks.
+

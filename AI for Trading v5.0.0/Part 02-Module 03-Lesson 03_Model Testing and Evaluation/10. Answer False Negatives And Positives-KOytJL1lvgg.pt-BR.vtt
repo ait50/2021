@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:01.735
+Para o modelo médico,
+
+00:00:01.768 --> 00:00:04.905
+é melhor diagnosticar
+um paciente saudável como doente
+
+00:00:04.938 --> 00:00:06.573
+e mandá-lo para mais exames
+
+00:00:06.606 --> 00:00:09.142
+do que diagnosticar um doente
+como saudável
+
+00:00:09.176 --> 00:00:10.810
+e deixá-lo sem tratamento.
+
+00:00:10.844 --> 00:00:14.414
+Aqui, um falso positivo
+é bem pior que um falso negativo.
+
+00:00:14.447 --> 00:00:15.882
+A regra deste modelo é:
+
+00:00:15.916 --> 00:00:17.951
+"Quero achar
+todas as pessoas doentes.
+
+00:00:17.984 --> 00:00:20.854
+Tudo bem marcar alguns
+que não estão doentes por engano,
+
+00:00:20.887 --> 00:00:23.023
+mas preciso achar
+todos os doentes."
+
+00:00:23.056 --> 00:00:25.825
+Vejamos o modelo de spam
+no e-mail.
+
+00:00:25.859 --> 00:00:29.362
+Um falso negativo significa
+que um spam chegou no seu inbox,
+
+00:00:29.396 --> 00:00:32.332
+e só é preciso deletá-lo.
+É só inconveniência.
+
+00:00:32.365 --> 00:00:34.601
+Por outro lado,
+o que é um falso positivo?
+
+00:00:34.634 --> 00:00:37.404
+Sua avó, a pobre senhora
+aprendeu a digitar um e-mail
+
+00:00:37.437 --> 00:00:39.506
+só para dizer a você
+que assou cookies,
+
+00:00:39.539 --> 00:00:41.608
+e você deleta o e-mail.
+Isto é terrível.
+
+00:00:41.641 --> 00:00:44.211
+Então queremos punir
+falsos positivos
+
+00:00:44.244 --> 00:00:45.612
+mais que falsos negativos.
+
+00:00:45.645 --> 00:00:47.480
+Este modelo basicamente diz:
+
+00:00:47.514 --> 00:00:50.417
+"Não ligo se achar todos
+os e-mails com spam,
+
+00:00:50.450 --> 00:00:51.785
+mas uma coisa é certa,
+
+00:00:51.818 --> 00:00:55.121
+se eu digo que um é spam,
+é melhor que seja spam."
+
+00:00:55.155 --> 00:00:59.159
+O modelo médico e o modelo do e-mail
+são bem diferentes.
+
+00:00:59.192 --> 00:01:02.295
+No modelo médico,
+tudo bem ter falsos positivos,
+
+00:01:02.329 --> 00:01:03.697
+mas não falsos negativos.
+
+00:01:03.730 --> 00:01:06.433
+Tudo bem marcar
+pacientes saudáveis como doentes,
+
+00:01:06.466 --> 00:01:08.235
+desde que achemos
+todos os doentes.
+
+00:01:08.268 --> 00:01:11.137
+No modelo de e-mail,
+tudo bem ter falsos negativos,
+
+00:01:11.171 --> 00:01:12.639
+mas não falsos positivos,
+
+00:01:12.672 --> 00:01:15.876
+porque não precisamos achar
+todos os e-mails de spam.
+
+00:01:15.909 --> 00:01:17.410
+Mas uma coisa é certa,
+
+00:01:17.444 --> 00:01:20.814
+se rotularmos algo como spam,
+é melhor que seja spam.
+
+00:01:20.847 --> 00:01:22.849
+Para isto,
+introduzimos duas métricas:
+
+00:01:22.883 --> 00:01:24.384
+precisão e revocação.
+
+00:01:24.417 --> 00:01:27.387
+Elas vão medir exatamente
+o que queremos:
+
+00:01:27.420 --> 00:01:30.824
+o modelo médico precisa ter
+uma revocação alta,
+
+00:01:30.857 --> 00:01:34.027
+e o modelo de e-mail precisa ser
+de alta precisão.
+
+00:01:34.060 --> 00:01:38.064
+Falaremos deles em mais detalhes
+nos próximos vídeos.
+

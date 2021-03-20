@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.825
+Hi everyone. We're going to look at some Universal Quant Features.
+
+00:00:03.825 --> 00:00:06.720
+The first one is stock volatility.
+
+00:00:06.719 --> 00:00:13.515
+Zipline has a custom factor called AnnualizedVolatility and the source code is here.
+
+00:00:13.515 --> 00:00:15.375
+So, we can take a look here.
+
+00:00:15.375 --> 00:00:21.030
+You can see that we're looking inside zipline, pipeline, factors, basic.py.
+
+00:00:21.030 --> 00:00:23.670
+If we search for AnnualizedVolatility,
+
+00:00:23.670 --> 00:00:28.875
+we can see that there's this class defined here which we will be able to use,
+
+00:00:28.875 --> 00:00:34.200
+and just note that I actually copied this source code into the notebook.
+
+00:00:34.200 --> 00:00:36.435
+So, if we went back to the notebook,
+
+00:00:36.435 --> 00:00:40.844
+we can see that I just pasted the code here, right?
+
+00:00:40.844 --> 00:00:45.009
+So, let's first just get familiar with this class.
+
+00:00:45.009 --> 00:00:50.869
+So, volatility has a standard deviation call.
+
+00:00:50.869 --> 00:00:54.905
+So, it's taking the standard deviation of returns.
+
+00:00:54.905 --> 00:01:01.710
+Okay? And then it's going to annualize it from daily to annual returns.
+
+00:01:01.710 --> 00:01:05.659
+Okay? By multiplying by the square root of 252.
+
+00:01:05.659 --> 00:01:11.719
+So, notice that this variable is actually defined outside of the function here.
+
+00:01:11.719 --> 00:01:15.109
+So, we have a variable params which is a dictionary.
+
+00:01:15.109 --> 00:01:18.015
+One of its keys is annualization factor,
+
+00:01:18.015 --> 00:01:20.189
+and the value is 252.
+
+00:01:20.189 --> 00:01:23.009
+So, there's some things going on behind the scenes,
+
+00:01:23.010 --> 00:01:28.175
+but the annualization factor that you defined here and the value here,
+
+00:01:28.174 --> 00:01:29.989
+ends up right here.
+
+00:01:29.989 --> 00:01:36.119
+Okay? So, you could have also hard-coded 252 for instance.
+
+00:01:36.459 --> 00:01:40.204
+Also, the inputs are the daily returned.
+
+00:01:40.204 --> 00:01:43.730
+So, we're actually using class returns,
+
+00:01:43.730 --> 00:01:46.189
+and we're setting the window length to two.
+
+00:01:46.189 --> 00:01:48.649
+Because for daily returns,
+
+00:01:48.650 --> 00:01:51.980
+we need the price data of the previous day
+
+00:01:51.980 --> 00:01:56.195
+and then the following day to calculate the daily return.
+
+00:01:56.194 --> 00:02:00.804
+Here the window length is by default 252.
+
+00:02:00.805 --> 00:02:05.299
+So, that means that we're getting 252 daily returns,
+
+00:02:05.299 --> 00:02:12.455
+and then we're calculating the standard deviation of that sample of 252 returns.
+
+00:02:12.455 --> 00:02:20.720
+So again, notice that because we are in zipline, pipeline,
+
+00:02:20.719 --> 00:02:23.479
+factors, you'll notice that when we import,
+
+00:02:23.479 --> 00:02:30.199
+we go from zipline.pipeline.factors and then we import that class, AnnualizedVolatility.
+
+00:02:30.199 --> 00:02:34.324
+We can make an instant of it by calling the constructor.
+
+00:02:34.324 --> 00:02:36.569
+So, you can see that here.
+

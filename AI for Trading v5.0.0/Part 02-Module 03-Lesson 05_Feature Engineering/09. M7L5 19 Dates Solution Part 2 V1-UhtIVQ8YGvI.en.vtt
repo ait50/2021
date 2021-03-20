@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.565
+Now, we'll do the quiz for getting the start and end of the quarter or month.
+
+00:00:05.565 --> 00:00:09.820
+So this was some sample code that we can take a look at.
+
+00:00:14.929 --> 00:00:17.535
+Okay. So the question is,
+
+00:00:17.535 --> 00:00:21.059
+create a feature that indicates the first business day of each month.
+
+00:00:21.059 --> 00:00:25.559
+So it's very similar to how we do it for the end of the month.
+
+00:00:25.559 --> 00:00:29.699
+You can take a look at this example for instance, we use pd.date_range,
+
+00:00:29.699 --> 00:00:34.490
+and the start is going to
+
+00:00:34.490 --> 00:00:40.780
+be the factors start date and the end is going to be the universe end date.
+
+00:00:40.780 --> 00:00:48.939
+The frequency is going to be BMS for business month start.
+
+00:00:49.429 --> 00:00:53.210
+So now, this has a series of the first days of the month.
+
+00:00:53.210 --> 00:01:00.785
+So now, we want to check if each date is in that set of first days of the month or not.
+
+00:01:00.784 --> 00:01:10.125
+So all_factors.index.get_level_values(0).isin, so this keyword,
+
+00:01:10.125 --> 00:01:13.625
+well, let us check, is it in the first day of the month?
+
+00:01:13.625 --> 00:01:19.250
+First_day_of_month, so this is going to
+
+00:01:19.250 --> 00:01:25.265
+be a series of Booleans then and we're just going to convert that into integer.
+
+00:01:25.265 --> 00:01:27.709
+All right. So similarly,
+
+00:01:27.709 --> 00:01:30.259
+for quarter let's do the create
+
+00:01:30.260 --> 00:01:34.105
+a column that's checking whether it's the end of the quarter or not.
+
+00:01:34.105 --> 00:01:38.219
+So summarize before pd.date_range,
+
+00:01:38.219 --> 00:01:44.689
+start equals factor start date and is equal to universe and date,
+
+00:01:44.689 --> 00:01:51.840
+frequency is equal to BQ for end of the business quarter.
+
+00:01:52.069 --> 00:01:56.299
+Now we're going to create the column that checks whether
+
+00:01:56.299 --> 00:01:59.989
+it is in the end of the quarter or not end of the quarter.
+
+00:01:59.989 --> 00:02:08.044
+So all_factors is our data frame dot index_get_level_values (0) for the dates.
+
+00:02:08.044 --> 00:02:13.349
+Check if it is in the last day of the quarter,
+
+00:02:13.599 --> 00:02:18.210
+and then this is a set of Booleans,
+
+00:02:18.210 --> 00:02:22.050
+we just going to convert that into integers.
+
+00:02:23.560 --> 00:02:26.599
+Okay. This was just a double-check.
+
+00:02:26.599 --> 00:02:33.810
+The column quarter end will be zero if false or one if it is at the end of the quarter.
+
+00:02:33.810 --> 00:02:37.765
+Similarly, for quarters start we'll do something very similar,
+
+00:02:37.764 --> 00:02:43.559
+pd.date_range, start is equal to factor_start_date,
+
+00:02:43.560 --> 00:02:45.944
+end is equal to universe_end_date,
+
+00:02:45.944 --> 00:02:54.329
+frequency is equal to BQS for business quarter start.
+
+00:02:54.330 --> 00:02:57.790
+Then now, let's create that column.
+
+00:03:02.030 --> 00:03:10.889
+All_factors.index.get_level_values(0).isin first day of the quarter,
+
+00:03:10.889 --> 00:03:13.589
+and now we have a series of Booleans,
+
+00:03:13.590 --> 00:03:16.439
+we are just going to convert that to integers.
+
+00:03:17.530 --> 00:03:25.115
+So we can double-check and view all of the factors here and we
+
+00:03:25.115 --> 00:03:29.480
+also can create a list containing all the features that we're
+
+00:03:29.479 --> 00:03:33.965
+going to use later to put into the machine learning model.
+
+00:03:33.965 --> 00:03:35.539
+Notice here we're just excluding
+
+00:03:35.539 --> 00:03:39.659
+the sector code column because we had already one cut encoded here.
+
+00:03:39.659 --> 00:03:46.479
+All right. Great. Thanks for watching and please continue on with the lesson.
+

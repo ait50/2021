@@ -1,0 +1,146 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:03.403
+Precisão pode nem sempre ser
+a melhor métrica a ser usada.
+
+00:00:03.436 --> 00:00:04.871
+Vamos ver este exemplo.
+
+00:00:04.905 --> 00:00:07.474
+Ele consiste em achar fraudes
+no cartão de crédito.
+
+00:00:07.507 --> 00:00:11.011
+Temos os dados na forma
+de transações de cartão de crédito.
+
+00:00:11.044 --> 00:00:13.013
+Alguns são bons,
+como os da esquerda,
+
+00:00:13.046 --> 00:00:15.749
+outros são fraudulentos,
+como os da direita.
+
+00:00:15.782 --> 00:00:17.284
+Vamos ver os números.
+
+00:00:17.317 --> 00:00:21.192
+Existem
+284.335 transações boas
+
+00:00:21.226 --> 00:00:24.457
+e 472 transações fraudulentas.
+
+00:00:24.491 --> 00:00:26.026
+São dados verdadeiros.
+
+00:00:26.059 --> 00:00:28.528
+Vamos criar um modelo
+com ótima precisão,
+
+00:00:28.562 --> 00:00:31.097
+que está correto
+na maior parte do tempo.
+
+00:00:31.131 --> 00:00:35.702
+Pode me ajudar a pensar num modelo
+que tenha mais de 99% de precisão?
+
+00:00:36.536 --> 00:00:39.639
+Aqui está um modelo que tem
+mais de 99% de precisão,
+
+00:00:39.673 --> 00:00:42.676
+o que significa que está correto
+mais de 99% do tempo.
+
+00:00:42.709 --> 00:00:46.413
+O modelo diz
+que todas as transações são boas.
+
+00:00:46.446 --> 00:00:48.615
+Qual é a precisão
+deste modelo,
+
+00:00:48.648 --> 00:00:51.218
+ou seja, quantas vezes
+ele está correto?
+
+00:00:51.251 --> 00:00:55.730
+Ele está correto 284.335 vezes
+
+00:00:55.780 --> 00:01:00.460
+de 284.887.
+
+00:01:00.493 --> 00:01:03.897
+E isto é 99,83%.
+
+00:01:03.930 --> 00:01:06.900
+O modelo deve ser ótimo
+se a precisão é bem alta, certo?
+
+00:01:06.933 --> 00:01:08.034
+Na verdade, não.
+
+00:01:08.067 --> 00:01:10.737
+Este modelo não está pegando
+nenhuma transação ruim,
+
+00:01:10.770 --> 00:01:14.307
+e a função do modelo é pegar
+transações fraudulentas.
+
+00:01:14.341 --> 00:01:15.842
+Vamos ver outro modelo.
+
+00:01:15.876 --> 00:01:18.645
+Podemos criar um
+que pegue as transações ruins?
+
+00:01:18.678 --> 00:01:20.013
+Podemos pensar em um?
+
+00:01:20.046 --> 00:01:21.146
+Aqui está um.
+
+00:01:21.180 --> 00:01:24.251
+Vou rotular todas as transações
+como fraudulentas.
+
+00:01:24.284 --> 00:01:27.220
+Agora estamos pegando
+todas as transações fraudulentas.
+
+00:01:27.254 --> 00:01:28.688
+Este é um bom modelo?
+
+00:01:28.722 --> 00:01:30.290
+Não. É um modelo horrível,
+
+00:01:30.323 --> 00:01:32.757
+porque está pegando
+todas as transações boas.
+
+00:01:32.791 --> 00:01:34.394
+É complexo, não é?
+
+00:01:34.427 --> 00:01:37.731
+É difícil olhar só a precisão
+e usar isto para avaliar o modelo,
+
+00:01:37.764 --> 00:01:41.368
+porque ele pode errar feio
+quando os dados são alterados.
+
+00:01:41.401 --> 00:01:44.037
+Nesta seção,
+estudaremos diferentes métricas
+
+00:01:44.070 --> 00:01:46.273
+que podem pegar
+as fraudes facilmente.
+

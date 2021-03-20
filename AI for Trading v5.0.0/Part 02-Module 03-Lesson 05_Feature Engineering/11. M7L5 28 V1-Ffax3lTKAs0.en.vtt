@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.609
+Here's a preview of what we'll learn next.
+
+00:00:02.609 --> 00:00:05.009
+You may have heard often how overfitting in
+
+00:00:05.009 --> 00:00:07.769
+machine learning is a problem that we wish to avoid.
+
+00:00:07.769 --> 00:00:12.539
+Over fitting with financial data is also a significant issue we have to deal
+
+00:00:12.539 --> 00:00:14.849
+with If we hope for our models to perform
+
+00:00:14.849 --> 00:00:17.925
+well and out-of-sample testing and in real trading.
+
+00:00:17.925 --> 00:00:20.460
+Let's look at how financial time series data,
+
+00:00:20.460 --> 00:00:24.344
+in particular, may need special handling to address overfitting.
+
+00:00:24.344 --> 00:00:30.794
+We often want to train our model on a multi-day forward return, say, weekly returns.
+
+00:00:30.795 --> 00:00:35.130
+We do this because we expect the training and turnover to be lower than say,
+
+00:00:35.130 --> 00:00:38.130
+a model trained on a single day for a return.
+
+00:00:38.130 --> 00:00:46.035
+We calculate weekly returned data from the most recent Monday and the prior Monday.
+
+00:00:46.034 --> 00:00:47.934
+Then, for the next return,
+
+00:00:47.935 --> 00:00:53.015
+we calculate the weekly return from the most recent Tuesday to the prior Tuesday.
+
+00:00:53.015 --> 00:00:56.674
+We repeat this for Wednesday, Thursday, and Friday.
+
+00:00:56.674 --> 00:00:59.704
+We could use each of these weekly returns,
+
+00:00:59.704 --> 00:01:03.280
+quantized, as our targets in a machine learning model.
+
+00:01:03.280 --> 00:01:09.265
+But recall that supervised learning models work better with independent observations.
+
+00:01:09.265 --> 00:01:13.519
+Let's think about the weekly returns data that are calculated every day.
+
+00:01:13.519 --> 00:01:15.754
+Do you notice something?
+
+00:01:15.754 --> 00:01:20.269
+The time periods of these weekly returns overlap.
+
+00:01:20.269 --> 00:01:23.414
+This is an issue called overlapping samples,
+
+00:01:23.415 --> 00:01:26.210
+and it leads to models that overfit on
+
+00:01:26.209 --> 00:01:31.429
+the training data and therefore perform worse on the validation and test data.
+
+00:01:31.430 --> 00:01:34.100
+I'll cover ways to handle this.
+
+00:01:34.099 --> 00:01:37.394
+You won't find this in any textbooks,
+
+00:01:37.394 --> 00:01:40.289
+and I'm really excited to share my insights with you.
+

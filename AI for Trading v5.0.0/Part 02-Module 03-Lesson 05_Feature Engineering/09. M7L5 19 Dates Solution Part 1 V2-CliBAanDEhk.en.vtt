@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.790
+All right. So let's check out the solution.
+
+00:00:02.790 --> 00:00:05.984
+So for the first question,
+
+00:00:05.985 --> 00:00:11.730
+it was asking us to create a column to say whether it's January or not.
+
+00:00:11.730 --> 00:00:13.365
+So we'll start with,
+
+00:00:13.365 --> 00:00:15.449
+and we can check out these examples here.
+
+00:00:15.449 --> 00:00:17.218
+We'll start with our dataframe,
+
+00:00:17.219 --> 00:00:21.855
+reference the index, and from the index we're going to get the level values.
+
+00:00:21.855 --> 00:00:24.539
+Specify zero for the dates only,
+
+00:00:24.539 --> 00:00:27.960
+and this is the month attribute.
+
+00:00:27.960 --> 00:00:31.559
+So when the month is equal to one for January,
+
+00:00:31.559 --> 00:00:34.634
+this expression is now a series of Booleans,
+
+00:00:34.634 --> 00:00:37.649
+and we can just convert that into integer.
+
+00:00:37.649 --> 00:00:41.140
+So we'll do something similar for December.
+
+00:00:41.140 --> 00:00:43.119
+To determine when is December,
+
+00:00:43.119 --> 00:00:44.765
+we start with our dataframe,
+
+00:00:44.765 --> 00:00:48.424
+reference its index, get level values,
+
+00:00:48.424 --> 00:00:50.500
+zero for the dates.
+
+00:00:50.500 --> 00:00:52.500
+This is the month attribute.
+
+00:00:52.500 --> 00:00:55.380
+When the month is equal to 12 for December,
+
+00:00:55.380 --> 00:00:58.050
+this is now a series of Booleans.
+
+00:00:58.049 --> 00:01:04.424
+So we'll convert that to integers and add these as columns to the dataframe.
+
+00:01:04.424 --> 00:01:07.875
+Next, let's do weekday and quarter.
+
+00:01:07.875 --> 00:01:11.659
+So here's some example code that we can look at.
+
+00:01:11.659 --> 00:01:13.384
+You can see that the weekday,
+
+00:01:13.385 --> 00:01:15.010
+goes from zero to four,
+
+00:01:15.010 --> 00:01:17.250
+zero is Monday, four is Friday,
+
+00:01:17.250 --> 00:01:20.250
+and the quarter goes from one to four.
+
+00:01:20.250 --> 00:01:22.730
+So let's first add the weekday.
+
+00:01:22.730 --> 00:01:25.924
+We'll start with our dataframe, index,
+
+00:01:25.924 --> 00:01:32.799
+get level values zero for the date.weekday.
+
+00:01:32.799 --> 00:01:35.789
+Similarly, for all factors dot index,
+
+00:01:35.790 --> 00:01:39.300
+dot get level values zero,
+
+00:01:39.299 --> 00:01:44.189
+dot quarter, and all factors dot index,
+
+00:01:44.189 --> 00:01:47.054
+dot get level values zero,
+
+00:01:47.055 --> 00:01:50.060
+dot year. All right?
+

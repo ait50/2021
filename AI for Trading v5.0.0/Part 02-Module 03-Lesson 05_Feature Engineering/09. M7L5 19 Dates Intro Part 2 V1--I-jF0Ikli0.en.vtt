@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.865
+Okay, so next here's the quiz.
+
+00:00:02.865 --> 00:00:05.205
+Create a numpy array that has one,
+
+00:00:05.205 --> 00:00:08.054
+when the month is January and zero otherwise,
+
+00:00:08.054 --> 00:00:11.564
+and store it in a column in the all factors dataframe,
+
+00:00:11.564 --> 00:00:16.244
+and you'll add another similar column to indicate when the month is December, right?
+
+00:00:16.245 --> 00:00:17.894
+Okay, once you try that out,
+
+00:00:17.894 --> 00:00:19.304
+you'll do something similar,
+
+00:00:19.304 --> 00:00:21.689
+you can do weekdays and quarter as well,
+
+00:00:21.690 --> 00:00:24.480
+so add columns to the all factors dataframe
+
+00:00:24.480 --> 00:00:28.125
+that specifies the weekday, quarter, and year.
+
+00:00:28.125 --> 00:00:31.370
+So if we look at the documentation datetime index,
+
+00:00:31.370 --> 00:00:35.314
+weekday, quarter, and year are also attributes that we can use.
+
+00:00:35.314 --> 00:00:38.509
+So here's year, weekday,
+
+00:00:38.509 --> 00:00:40.974
+and quarter. All right.
+
+00:00:40.975 --> 00:00:45.620
+You can use these in a similar way that you use to the month variable.
+
+00:00:45.619 --> 00:00:48.079
+If you get a little lost,
+
+00:00:48.079 --> 00:00:50.629
+just check out the sample code here,
+
+00:00:50.630 --> 00:00:53.615
+and also try to do the months first.
+
+00:00:53.615 --> 00:00:59.054
+All right. Now, this is just saying add those features for weekday,
+
+00:00:59.054 --> 00:01:02.679
+quarter, and year as columns in the dataframe.
+

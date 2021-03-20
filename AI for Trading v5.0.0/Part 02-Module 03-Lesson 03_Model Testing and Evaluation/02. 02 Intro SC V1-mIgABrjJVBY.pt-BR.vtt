@@ -1,0 +1,71 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.153 --> 00:00:02.170
+Este é o resumo dessa aula.
+
+00:00:02.203 --> 00:00:04.530
+No aprendizado de máquina,
+temos um problema.
+
+00:00:04.563 --> 00:00:08.465
+Ele costuma necessitar de avaliação
+de dados e realização de previsões.
+
+00:00:08.498 --> 00:00:11.753
+O problema é representado
+por este carro quebrado.
+
+00:00:11.786 --> 00:00:14.538
+Para resolvê-lo,
+temos algumas ferramentas.
+
+00:00:14.571 --> 00:00:18.675
+Elas são os algoritmos, isto é,
+regressão linear ou logística,
+
+00:00:18.708 --> 00:00:21.717
+MVSs, redes neurais,
+árvores de decisão etc.
+
+00:00:22.322 --> 00:00:24.610
+E como sabemos
+qual é a melhor ferramenta?
+
+00:00:24.643 --> 00:00:27.353
+Para isso, temos
+ferramentas de avaliação,
+
+00:00:27.386 --> 00:00:30.245
+que usamos para avaliar
+todos os algoritmos.
+
+00:00:30.278 --> 00:00:32.951
+Quando avaliamos os algoritmos
+e seus parâmetros
+
+00:00:32.984 --> 00:00:35.187
+e decidimos quais são melhores
+para o problema,
+
+00:00:35.220 --> 00:00:37.474
+prosseguimos e resolvemos
+o nosso problema.
+
+00:00:37.879 --> 00:00:40.730
+Nesta lição, vamos aprender
+sobre as ferramentas de avaliação.
+
+00:00:40.763 --> 00:00:43.330
+Isto é, as métricas
+e as técnicas que nos dizem
+
+00:00:43.363 --> 00:00:45.826
+se um algoritmo funciona
+bem com os dados
+
+00:00:45.859 --> 00:00:48.658
+e como podemos ajustá-lo
+para funcionar melhor para a gente.
+

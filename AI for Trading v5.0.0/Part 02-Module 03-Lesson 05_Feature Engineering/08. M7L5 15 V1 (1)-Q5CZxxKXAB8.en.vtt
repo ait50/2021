@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.894
+We've seen that sector is a major factor that affects stock movements,
+
+00:00:05.894 --> 00:00:09.390
+we've also practice neutralizing sector exposure.
+
+00:00:09.390 --> 00:00:15.405
+The sector or industry classification of a stock can also be used as a feature.
+
+00:00:15.404 --> 00:00:17.669
+Other than the fact that stocks in
+
+00:00:17.670 --> 00:00:21.365
+the same sector tend to move together in the same direction,
+
+00:00:21.364 --> 00:00:25.039
+it's also useful to know that certain Alpha factors may
+
+00:00:25.039 --> 00:00:28.939
+be relevant or not relevant depending on the sector.
+
+00:00:28.940 --> 00:00:35.090
+For instance, a value factored doesn't make much sense for a bank because banks are
+
+00:00:35.090 --> 00:00:37.985
+not valued in the same way as other companies
+
+00:00:37.984 --> 00:00:41.435
+that create and sell physical products or services.
+
+00:00:41.435 --> 00:00:47.540
+Return on sales would not apply the banks because they don't create and sell products.
+
+00:00:47.539 --> 00:00:49.219
+Return on sales, however,
+
+00:00:49.219 --> 00:00:52.174
+would likely apply to consumer companies.
+
+00:00:52.174 --> 00:00:54.649
+By including the sector as a feature,
+
+00:00:54.649 --> 00:00:58.039
+we can train a model to learn when some other factors are
+
+00:00:58.039 --> 00:01:02.039
+relevant or not relevant to stocks in each sector.
+

@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.205
+So how will we use this?
+
+00:00:02.205 --> 00:00:04.859
+Create a Datetimeindex that stores
+
+00:00:04.860 --> 00:00:08.160
+the dates which are the last business day of each month.
+
+00:00:08.160 --> 00:00:09.780
+So that's what we just did above.
+
+00:00:09.779 --> 00:00:12.184
+We have the last business day of each month.
+
+00:00:12.185 --> 00:00:18.510
+We can use this function.isin and pass in these last days of
+
+00:00:18.510 --> 00:00:22.545
+the month to check if that particular date
+
+00:00:22.545 --> 00:00:26.790
+in the all factors DataFrame is the last business day of the month or is not.
+
+00:00:26.789 --> 00:00:30.494
+So that returns a series of trues and falses.
+
+00:00:30.495 --> 00:00:35.265
+Then the last thing is we're just convert those Booleans into integers.
+
+00:00:35.265 --> 00:00:37.384
+So here's an example.
+
+00:00:37.384 --> 00:00:44.554
+We created this series of dates which are the last business days of the month,
+
+00:00:44.554 --> 00:00:49.865
+and then from our data here, all_factors.index.get_level_values.
+
+00:00:49.865 --> 00:00:53.785
+So here are the dates, here's the Datetimeindex.
+
+00:00:53.784 --> 00:00:58.640
+We want to check if it's in the last day of a month series.
+
+00:00:58.640 --> 00:01:02.494
+If it is, then it's going to return true, otherwise false.
+
+00:01:02.494 --> 00:01:05.299
+So you can see here we have an array of Booleans,
+
+00:01:05.299 --> 00:01:09.370
+and then we're just going to convert those Booleans into integers.
+
+00:01:09.370 --> 00:01:13.040
+Go ahead, and in this case,
+
+00:01:13.040 --> 00:01:17.890
+we can store that as another column in our DataFrame.
+
+00:01:17.890 --> 00:01:21.965
+Okay. So we're going to do something very similar to get the start of the month,
+
+00:01:21.965 --> 00:01:25.250
+and the hint here is that the frequency is
+
+00:01:25.250 --> 00:01:28.834
+BMS which you can also find when you look at the documentation.
+
+00:01:28.834 --> 00:01:33.474
+BMS stands for Business Months Start frequency.
+
+00:01:33.474 --> 00:01:37.250
+You'll do something quite similar with quarters as well.
+
+00:01:37.250 --> 00:01:42.170
+So the hint here is to use BQ for the last business day of the quarter,
+
+00:01:42.170 --> 00:01:45.909
+and BQS for the first business day of the quarter.
+
+00:01:45.909 --> 00:01:50.000
+So, again, you'll store these features as columns in the DataFrame.
+
+00:01:50.000 --> 00:01:54.875
+Once you're done, just take a look at all of the columns that you have.
+
+00:01:54.875 --> 00:01:56.719
+Here, we're just going to be
+
+00:01:56.719 --> 00:02:00.864
+setting a list that contains all the features that we want to use.
+
+00:02:00.864 --> 00:02:02.844
+So go ahead and try this out,
+
+00:02:02.844 --> 00:02:06.929
+and when you're done please check out the solution video. Thanks.
+

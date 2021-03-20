@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.279
+Welcome back. Right now,
+
+00:00:02.279 --> 00:00:05.294
+we're two projects into the term with two more to go.
+
+00:00:05.294 --> 00:00:09.120
+So far, you've mainly learned about basic and advanced techniques in
+
+00:00:09.119 --> 00:00:11.594
+natural language processing that you can use
+
+00:00:11.595 --> 00:00:14.700
+to generate alpha signals from alternative data.
+
+00:00:14.699 --> 00:00:18.000
+Now we're going to switch gears a little bit and think about
+
+00:00:18.000 --> 00:00:22.109
+combining several alpha signals together to build a portfolio.
+
+00:00:22.109 --> 00:00:25.559
+We did this before in the multi-factor models project,
+
+00:00:25.559 --> 00:00:28.079
+but then we just combined alpha signals and
+
+00:00:28.079 --> 00:00:32.719
+a robust but fairly simple linear way by averaging them.
+
+00:00:32.719 --> 00:00:35.899
+In this project, we're going to combine the alpha factors in
+
+00:00:35.899 --> 00:00:40.504
+a much smarter non-linear way using machine learning to help us.
+
+00:00:40.505 --> 00:00:44.810
+I'm especially excited about the next set of lessons and project,
+
+00:00:44.810 --> 00:00:46.429
+not only because they were designed by
+
+00:00:46.429 --> 00:00:50.119
+Jonathan Larkin but also because they will teach you one way to
+
+00:00:50.119 --> 00:00:55.789
+apply AI in a finance context in a manner that suits the strengths of the algorithm,
+
+00:00:55.789 --> 00:00:59.859
+avoids overfitting and aligns with industry practice.
+

@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.419
+So the quizzes, we're going to create another column,
+
+00:00:03.419 --> 00:00:06.689
+and actually one column for each category.
+
+00:00:06.690 --> 00:00:08.835
+So please choose column names that look like this,
+
+00:00:08.835 --> 00:00:12.960
+sector _code_, and then the category.
+
+00:00:12.960 --> 00:00:15.900
+Then, store the value as one when the row
+
+00:00:15.900 --> 00:00:19.949
+matches the sector code of that column and zero otherwise.
+
+00:00:19.949 --> 00:00:22.304
+So try it out in a for-loop here.
+
+00:00:22.304 --> 00:00:25.425
+So this is just looping through all the sector codes from
+
+00:00:25.425 --> 00:00:30.160
+negative one to negative one all the way to 10.
+
+00:00:31.010 --> 00:00:36.609
+When you're done trying it out, go ahead and check out the solution video. Thanks.
+

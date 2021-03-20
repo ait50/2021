@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.740
+Hi everyone. We're going to calculate some market regime features,
+
+00:00:04.740 --> 00:00:07.995
+and we're going to try to capture market wide regimes.
+
+00:00:07.995 --> 00:00:12.884
+Market wide means, we'll look at the aggregate movement of the entire universe of stocks.
+
+00:00:12.884 --> 00:00:16.949
+So we're calculating a single value for the entire universe of stocks.
+
+00:00:16.949 --> 00:00:19.634
+First one is high and low dispersion,
+
+00:00:19.635 --> 00:00:23.510
+and dispersion is looking at the dispersion or standard deviation of
+
+00:00:23.510 --> 00:00:27.280
+a cross section of all the stocks at each period of time.
+
+00:00:27.280 --> 00:00:30.679
+So that means if you were to plot the stock returns,
+
+00:00:30.679 --> 00:00:33.875
+and look at a single slice on a single day,
+
+00:00:33.875 --> 00:00:36.810
+then you want to see how spread apart are those returns.
+
+00:00:36.810 --> 00:00:38.075
+If they're very spread apart,
+
+00:00:38.075 --> 00:00:39.995
+then there's higher dispersion.
+
+00:00:39.994 --> 00:00:45.179
+So first quiz which will help you fill out this line of code,
+
+00:00:45.179 --> 00:00:49.835
+is if the inputs to our market dispersion factor are daily returns.
+
+00:00:49.835 --> 00:00:53.179
+We plan to calculate the market dispersion on each day.
+
+00:00:53.179 --> 00:00:57.085
+Then what should be the window length of the market dispersion class?
+
+00:00:57.085 --> 00:01:00.615
+So this is saying, how many rows of data
+
+00:01:00.615 --> 00:01:04.954
+should the number array be when it reaches the compute function.
+
+00:01:04.954 --> 00:01:09.069
+Okay. So to implement this function,
+
+00:01:09.069 --> 00:01:11.164
+here are the formulas that you want to implement.
+
+00:01:11.165 --> 00:01:14.660
+So we're going to create a class that inherits from custom factor.
+
+00:01:14.659 --> 00:01:17.179
+We're overriding the compute function,
+
+00:01:17.180 --> 00:01:19.430
+which you see here to calculate
+
+00:01:19.430 --> 00:01:24.400
+the population standard deviation of all the stocks over a specified window of time.
+
+00:01:24.400 --> 00:01:26.205
+So here this is just saying,
+
+00:01:26.204 --> 00:01:30.784
+take the average of the returns across all stocks in all time periods,
+
+00:01:30.784 --> 00:01:35.750
+and this is saying, calculate the variance and then take the square root.
+
+00:01:35.750 --> 00:01:37.668
+So that's the standard deviation,
+
+00:01:37.668 --> 00:01:39.935
+and thus market dispersion.
+
+00:01:39.935 --> 00:01:44.450
+One thing to keep in mind for any custom factor is that,
+
+00:01:44.450 --> 00:01:48.189
+when you set the inputs this is an iterable.
+
+00:01:48.189 --> 00:01:50.250
+So notice this is a list,
+
+00:01:50.250 --> 00:01:56.090
+and everything that you put inside this list gets unpacked over here.
+
+00:01:56.090 --> 00:02:01.460
+So after these standard parameters then you can see anything after that.
+
+00:02:01.459 --> 00:02:05.780
+These are the individual elements of that input being unpacked.
+
+00:02:05.780 --> 00:02:07.939
+So whatever daily returns is,
+
+00:02:07.939 --> 00:02:09.840
+that's what you see here.
+

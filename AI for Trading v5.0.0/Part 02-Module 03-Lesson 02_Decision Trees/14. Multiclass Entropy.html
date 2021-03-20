@@ -1,0 +1,408 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Multiclass Entropy
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Decision Trees
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Welcome.html">
+       01. Welcome
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Intro.html">
+       02. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Recommending Apps 1.html">
+       03. Recommending Apps 1
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Recommending Apps 2.html">
+       04. Recommending Apps 2
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Recommending Apps 3.html">
+       05. Recommending Apps 3
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Tree Anatomy.html">
+       06. Tree Anatomy
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Quiz Student Admissions.html">
+       07. Quiz: Student Admissions
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Solution Student Admissions.html">
+       08. Solution: Student Admissions
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Entropy.html">
+       09. Entropy
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Entropy Formula 1.html">
+       10. Entropy Formula 1
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Entropy Formula 2.html">
+       11. Entropy Formula 2
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Entropy Formula 3.html">
+       12. Entropy Formula 3
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Quiz Do You Know Your Entropy.html">
+       13. Quiz: Do You Know Your Entropy?
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Multiclass Entropy.html">
+       14. Multiclass Entropy
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Quiz Information Gain.html">
+       15. Quiz: Information Gain
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Solution Information Gain.html">
+       16. Solution: Information Gain
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Maximizing Information Gain.html">
+       17. Maximizing Information Gain
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Calculating Information Gain on a Dataset.html">
+       18. Calculating Information Gain on a Dataset
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Gini Impurity.html">
+       19. Gini Impurity
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Hyperparameters.html">
+       20. Hyperparameters
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Decision Trees in sklearn.html">
+       21. Decision Trees in sklearn
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Titanic Survival Model with Decision Trees.html">
+       22. Titanic Survival Model with Decision Trees
+      </a>
+     </li>
+     <li class="">
+      <a href="23. [Solution] Titanic Survival Model.html">
+       23. [Solution] Titanic Survival Model
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Visualizing Your Tree.html">
+       24. Visualizing Your Tree
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Visualizing Your Tree Exercise.html">
+       25. Visualizing Your Tree Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Outro.html">
+       26. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          14. Multiclass Entropy
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="multi-class-entropy">
+          Multi-class Entropy
+         </h1>
+         <p>
+          Last time, you saw this equation for entropy for a bucket with
+          <span class="mathquill ud-math">
+           m
+          </span>
+          red balls and
+          <span class="mathquill ud-math">
+           n
+          </span>
+          blue balls:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-05-22-at-12.25.34-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          We can state this in terms of probabilities instead for the number of red balls as
+          <span class="mathquill ud-math">
+           p_1
+          </span>
+          and the number of blue balls as
+          <span class="mathquill ud-math">
+           p_2
+          </span>
+          :
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-05-22-at-12.27.22-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-05-22-at-12.27.55-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <span class="mathquill ud-math">
+           entropy = -p_1\log_2(p_1)-p_2\log_2(p_2)
+          </span>
+         </p>
+         <p>
+          This entropy equation can be extended to the multi-class case, where we have three or more possible values:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           entropy = -p_1\log_2(p_1) - p_2\log_2(p_2) - … - p_n\log_2(p_n) = -\sum\limits_{i=1}^n p_i\log_2(p_i)
+          </span>
+         </p>
+         <p>
+          The minimum value is still 0, when all elements are of the same value. The maximum value is still achieved when the outcome probabilities are the same, but the upper limit increases with the number of different outcomes. (For example, you can verify the maximum entropy is 2 if there are four different possibilities, each with probability 0.25.)
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         Unknown quiz type. Please contact the developer to make it compatible with this atom type!
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="15. Quiz Information Gain.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('14. Multiclass Entropy')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

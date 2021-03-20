@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.430
+We've had dates in our data for a while.
+
+00:00:02.430 --> 00:00:06.224
+But, how do we use date information in a model?
+
+00:00:06.224 --> 00:00:08.939
+You can imagine trying to directly feed
+
+00:00:08.939 --> 00:00:12.419
+the raw data into the model and not getting anything useful out of it.
+
+00:00:12.419 --> 00:00:18.000
+Well, we can apply our domain knowledge to engineer useful date features.
+
+00:00:18.000 --> 00:00:21.254
+To motivate the idea of using date information.
+
+00:00:21.254 --> 00:00:25.439
+Let's talk about two anomalies well-studied by academics.
+
+00:00:25.440 --> 00:00:28.230
+The first is called a window dressing;
+
+00:00:28.230 --> 00:00:33.000
+this is a term that refers to actions that some firms may take to make
+
+00:00:33.000 --> 00:00:35.130
+their firms look better when they report
+
+00:00:35.130 --> 00:00:38.234
+their holdings to investors at the end of each quarter.
+
+00:00:38.234 --> 00:00:40.320
+Near the end of each quarter,
+
+00:00:40.320 --> 00:00:46.179
+some firms may sell low performing stocks and buy high performing stocks,
+
+00:00:46.179 --> 00:00:49.250
+so that when they report their stock holdings to investors,
+
+00:00:49.250 --> 00:00:54.679
+the constituents look better compared to what was actually held during the quarter.
+
+00:00:54.679 --> 00:00:56.240
+At the end of the quarter,
+
+00:00:56.240 --> 00:01:00.289
+this behavior may impact low performing stocks by pushing their returns even
+
+00:01:00.289 --> 00:01:06.469
+lower and may impact high performing stocks by increasing their short-term returns.
+
+00:01:06.469 --> 00:01:10.039
+The second effect is called the January effect;
+
+00:01:10.040 --> 00:01:13.850
+investors often sell poorly performing stocks near
+
+00:01:13.849 --> 00:01:17.884
+the end of the year and then buy them back at the beginning of the year.
+
+00:01:17.885 --> 00:01:20.630
+They may do this in order to realize losses,
+
+00:01:20.629 --> 00:01:23.094
+to help offset other capital gains.
+
+00:01:23.094 --> 00:01:28.010
+As such, you can imagine that knowing a stocks recent trading patterns and
+
+00:01:28.010 --> 00:01:33.460
+knowing we are about to cross into January could be informative for a trading signal.
+
+00:01:33.459 --> 00:01:36.484
+Also, we may see different trading activity
+
+00:01:36.484 --> 00:01:39.560
+at the end of each month or on different days of the week.
+
+00:01:39.560 --> 00:01:42.500
+For instance, short-term traders may prefer to
+
+00:01:42.500 --> 00:01:45.534
+close out some of their positions before the weekend.
+
+00:01:45.534 --> 00:01:49.909
+So, there may be different trading activity at the beginning and end of the week.
+
+00:01:49.909 --> 00:01:54.018
+Because of all these kinds of seasonal and calendar effects,
+
+00:01:54.019 --> 00:01:57.680
+it could be beneficial for a machine-learning model to use
+
+00:01:57.680 --> 00:02:01.655
+features that indicate whether a date is at the end of the year,
+
+00:02:01.655 --> 00:02:03.004
+end of the quarter,
+
+00:02:03.004 --> 00:02:05.359
+end of the month, or end of the week.
+
+00:02:05.359 --> 00:02:10.085
+Similarly, we can create features that indicate the start of the year,
+
+00:02:10.085 --> 00:02:11.885
+quarter, month, or week.
+
+00:02:11.884 --> 00:02:16.245
+Note that unlike when we created potential alpha factors,
+
+00:02:16.245 --> 00:02:21.890
+we don't have to specify which direction we expect the stock returns to go,
+
+00:02:21.889 --> 00:02:23.509
+as features can be
+
+00:02:23.509 --> 00:02:28.204
+purely conditional factors that interacts with other features and factors.
+
+00:02:28.205 --> 00:02:34.219
+So even if the price movements don't follow the January effect for a particular year,
+
+00:02:34.219 --> 00:02:38.254
+a feature indicating the end of the year may still become useful
+
+00:02:38.254 --> 00:02:43.139
+in capturing other trading activity that occurs around the end of the year.
+

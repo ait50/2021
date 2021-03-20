@@ -1,0 +1,323 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Random Forest Hyperparameters
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Random Forests
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Review Decision Trees.html">
+       02. Review Decision Trees
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Ensemble Methods.html">
+       03. Ensemble Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Perturbations on Columns.html">
+       04. Perturbations on Columns
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Perturbations on Rows.html">
+       05. Perturbations on Rows
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Forests of Randomized Trees.html">
+       06. Forests of Randomized Trees
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Random Forests Exercise.html">
+       07. Random Forests Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="08. The Out-of-Bag Estimate.html">
+       08. The Out-of-Bag Estimate
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Random Forest Hyperparameters.html">
+       09. Random Forest Hyperparameters
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Choosing Hyperparameter Values.html">
+       10. Choosing Hyperparameter Values
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Random Forests for Alpha Combination.html">
+       11. Random Forests for Alpha Combination
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Outro.html">
+       12. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          09. Random Forest Hyperparameters
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="random-forest-hyperparametershttpsscikit-learnorgstablemodulesgeneratedsklearnensemblerandomforestclassifierhtmlsklearnensemblerandomforestclassifierpredict_proba">
+          <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.predict_proba" rel="noopener noreferrer" target="_blank">
+           Random Forest Hyperparameters
+          </a>
+         </h2>
+         <p>
+          You may have noticed that the values of several hyperparameters were set to default values when we instantiated the Random Forest model in the last exercise. Let's discuss a few of these hyperparameters and learn how they influence the model.
+         </p>
+         <p>
+          We've seen a few of the Random Forest hyperparameters before because they are also hyperparameters of the individual decision trees in the forest.
+         </p>
+         <h3 id="min_samples_leaf">
+          <code>
+           min_samples_leaf
+          </code>
+         </h3>
+         <p>
+          As before, this is the minimum number of observations allowed at a leaf. Setting this hyperparameter keeps the algorithm from further splitting nodes with very few observations.
+         </p>
+         <h3 id="min_samples_split">
+          <code>
+           min_samples_split
+          </code>
+         </h3>
+         <p>
+          As before, this is the minimum number of observations required to be at node before it can be split. Setting this hyperparameter keeps the algorithm from further splitting nodes with very few observations.
+         </p>
+         <p>
+          However, as stated earlier, this hyperparameter does not actually prevent very small leaf nodes from being created. If a node has at least
+          <code>
+           min_samples_split
+          </code>
+          observations, then it can be split, and this split can result in a leaf with fewer than
+          <code>
+           min_samples_split
+          </code>
+          observations.
+         </p>
+         <h3 id="max_features">
+          <code>
+           max_features
+          </code>
+         </h3>
+         <p>
+          This sets the maximum number of features to evaluate when randomly sampling features at each split and deciding which feature to use to create the next split. The default value is the square root of the total number of features in the dataset.
+         </p>
+         <p>
+          In fact this is also a hyperparameter of the single decision tree classes, so it's possible to randomly choose subsets of features to evaluate at each split even when growing a single decision tree.
+         </p>
+         <h3 id="n_estimators">
+          <code>
+           n_estimators
+          </code>
+         </h3>
+         <p>
+          This is not a hyperparameter of individual decision trees because it's only applicable when growing forests—this is the number of trees to grow in the forest.
+         </p>
+         <h3 id="oob_score">
+          <code>
+           oob_score
+          </code>
+         </h3>
+         <p>
+          This is a boolean hyperparameter that you set to
+          <code>
+           True
+          </code>
+          if you want the out-of-bag score to be calculated as an estimate of out-of-sample accuracy.
+         </p>
+         <h3 id="bootstrap">
+          <code>
+           bootstrap
+          </code>
+         </h3>
+         <p>
+          This is a boolean hyperparameter that sets whether or not bootstrap samples are used to grow the trees. If
+          <code>
+           False
+          </code>
+          , the entire original dataset is used to grow each tree.
+         </p>
+         <h3 id="n_jobs">
+          <code>
+           n_jobs
+          </code>
+         </h3>
+         <p>
+          This parameter allows you to use parallel threads to perform some parts of the algorithm's computations. Set
+          <code>
+           n_jobs = -1
+          </code>
+          to use all available CPUs. Most often, parallelism happens in fitting, but sometimes, as for random forests, it happens during prediction.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="10. Choosing Hyperparameter Values.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('09. Random Forest Hyperparameters')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

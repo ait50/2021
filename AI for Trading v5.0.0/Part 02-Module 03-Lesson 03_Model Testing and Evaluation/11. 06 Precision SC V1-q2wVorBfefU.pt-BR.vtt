@@ -1,0 +1,141 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:03.103
+Vamos definir
+a métrica de precisão.
+
+00:00:03.136 --> 00:00:05.906
+Aqui está a matriz de confusão
+do modelo médico.
+
+00:00:05.939 --> 00:00:09.309
+Adicionamos um X vermelho
+no lugar que queremos evitar,
+
+00:00:09.342 --> 00:00:10.710
+os falsos negativos.
+
+00:00:10.744 --> 00:00:12.712
+Precisão é a resposta
+para a pergunta:
+
+00:00:12.746 --> 00:00:15.682
+"De todos os pontos previstos
+como positivos,
+
+00:00:15.715 --> 00:00:18.952
+quantos eram positivos mesmo?"
+
+00:00:19.348 --> 00:00:22.155
+Neste caso, a questão é:
+
+00:00:22.189 --> 00:00:25.525
+"De todos os pacientes
+que diagnosticamos como doentes,
+
+00:00:25.559 --> 00:00:27.961
+quantos estavam
+doentes mesmo?"
+
+00:00:27.994 --> 00:00:29.596
+A precisão é esta coluna,
+
+00:00:29.629 --> 00:00:33.333
+com os pacientes doentes
+corretamente diagnosticados.
+
+00:00:33.366 --> 00:00:35.836
+Então são os 1.000
+que estavam corretos
+
+00:00:35.869 --> 00:00:38.805
+divididos por 1.800,
+
+00:00:38.839 --> 00:00:41.842
+o número total de pacientes
+diagnosticados como doentes.
+
+00:00:41.875 --> 00:00:44.678
+Este número é 55,6%.
+
+00:00:44.711 --> 00:00:47.647
+Não é um número alto
+porque não é um modelo preciso.
+
+00:00:47.681 --> 00:00:50.584
+Mas não tem problema,
+porque o que estamos fazendo
+
+00:00:50.617 --> 00:00:52.586
+é evitar este X vermelho.
+
+00:00:52.619 --> 00:00:54.888
+Agora vamos ver o modelo
+de spam no e-mail.
+
+00:00:54.921 --> 00:00:56.456
+Qual é a precisão?
+
+00:00:56.489 --> 00:01:00.093
+Sabemos que, neste modelo,
+precisão é muito importante,
+
+00:01:00.126 --> 00:01:03.029
+porque o X vermelho
+está nesta coluna.
+
+00:01:03.063 --> 00:01:05.131
+O X é o e-mail que não é spam
+
+00:01:05.165 --> 00:01:07.334
+enviado por engano
+para a pasta de spam.
+
+00:01:07.367 --> 00:01:10.704
+São 30 erros bem ruins,
+e queremos evitá-los.
+
+00:01:10.737 --> 00:01:14.508
+A precisão diz: "Dos e-mails
+enviados para a pasta de spam,
+
+00:01:14.541 --> 00:01:16.610
+quantos eram spam mesmo?"
+
+00:01:16.643 --> 00:01:19.513
+Temos 100, que estão corretos,
+
+00:01:19.546 --> 00:01:21.781
+dividido por 130,
+
+00:01:21.815 --> 00:01:24.284
+que são os que enviamos
+para a pasta de spam.
+
+00:01:24.317 --> 00:01:28.355
+Este número é 76,9%,
+o que é mais alto.
+
+00:01:28.388 --> 00:01:31.258
+É melhor. Este modelo
+precisa de alta precisão,
+
+00:01:31.291 --> 00:01:32.993
+então o número precisa
+ser grande.
+
+00:01:33.026 --> 00:01:34.694
+Vamos fazer um exercício.
+
+00:01:34.728 --> 00:01:36.863
+Vamos para um modelo linear.
+
+00:01:36.897 --> 00:01:39.399
+Qual é a precisão
+deste modelo linear?
+
+00:01:39.432 --> 00:01:41.334
+Coloque sua resposta abaixo.
+

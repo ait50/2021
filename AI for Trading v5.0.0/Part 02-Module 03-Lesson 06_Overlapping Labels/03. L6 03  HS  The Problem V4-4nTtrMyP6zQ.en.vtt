@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:07.870
+The core problem is that if every day we calculate, say weekly returns,
+
+00:00:07.870 --> 00:00:13.185
+then the weekly return on a given day will be correlated with the weekly returns
+
+00:00:13.185 --> 00:00:19.105
+of the day's surrounding it because they draw on data from the same time period.
+
+00:00:19.105 --> 00:00:24.120
+This is a problem for lots of Machine Learning models which frequently rely on
+
+00:00:24.120 --> 00:00:30.855
+the assumption that each data row is independent and identically distributed, or IID.
+
+00:00:30.855 --> 00:00:33.734
+In the case of random forests,
+
+00:00:33.734 --> 00:00:35.579
+if the bootstrap samples for
+
+00:00:35.579 --> 00:00:39.849
+individual decision trees are made on highly overlapping labels,
+
+00:00:39.850 --> 00:00:44.929
+then observations within the bag are likely to be similar to each other,
+
+00:00:44.929 --> 00:00:48.320
+and also similar to observations outside the bag.
+
+00:00:48.320 --> 00:00:52.355
+The individual decision trees are likely to be similar.
+
+00:00:52.354 --> 00:00:55.339
+The forest error rate depends on
+
+00:00:55.340 --> 00:00:59.510
+the correlation between predictions made by the trees in the forest.
+
+00:00:59.509 --> 00:01:02.960
+If the algorithm is trained on correlated rows,
+
+00:01:02.960 --> 00:01:05.855
+it will produce a forest of correlated trees,
+
+00:01:05.855 --> 00:01:11.225
+and this will increase the rate of classification error made by the forest.
+
+00:01:11.224 --> 00:01:16.759
+Furthermore, because the in-bag samples are similar to the out-of-bag ones,
+
+00:01:16.760 --> 00:01:20.545
+the out-of-bag error rate is likely to be inflated.
+
+00:01:20.545 --> 00:01:22.870
+In the next few videos,
+
+00:01:22.870 --> 00:01:25.760
+we'll talk about a few of the approaches you can take to
+
+00:01:25.760 --> 00:01:29.810
+mitigate this problem if you're using a random forest model.
+

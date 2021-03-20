@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.485
+The simplest solution to this problem is to just sub-sample
+
+00:00:04.485 --> 00:00:10.214
+the rows of the original data set so that the labels do not overlap in time.
+
+00:00:10.214 --> 00:00:14.009
+In other words, if you are calculating weekly returns,
+
+00:00:14.009 --> 00:00:17.850
+you would just use the weekly returns of non-overlapping weeks.
+
+00:00:17.850 --> 00:00:21.465
+That is the weekly returns every Friday for example.
+
+00:00:21.464 --> 00:00:24.239
+This is commonly done in production models.
+
+00:00:24.239 --> 00:00:29.234
+However, the downside to this option is the loss of data from those other periods.
+
+00:00:29.234 --> 00:00:32.219
+If you're using the monthly or yearly returns,
+
+00:00:32.219 --> 00:00:35.369
+you might already have relatively few data points and
+
+00:00:35.369 --> 00:00:38.804
+be very keen to maximize the potential of the data you have.
+
+00:00:38.804 --> 00:00:41.280
+So what else can you try?
+

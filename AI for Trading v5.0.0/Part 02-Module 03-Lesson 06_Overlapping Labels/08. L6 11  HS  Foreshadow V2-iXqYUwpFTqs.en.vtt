@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.024
+So far, in these lessons,
+
+00:00:02.024 --> 00:00:03.764
+you've learned a ton about using
+
+00:00:03.765 --> 00:00:07.394
+decision tree models to build high performing trading strategies.
+
+00:00:07.394 --> 00:00:10.439
+You've gained insights about the algorithms themselves,
+
+00:00:10.439 --> 00:00:14.070
+how they work on the inside and also the data themselves,
+
+00:00:14.070 --> 00:00:18.390
+how to engineer features to be most useful and how to generate labels.
+
+00:00:18.390 --> 00:00:21.420
+In this lesson, you learned about a particular problem with
+
+00:00:21.420 --> 00:00:26.895
+correlated labels that comes up frequently in financial machine learning applications.
+
+00:00:26.894 --> 00:00:29.730
+What if you've done everything we taught you,
+
+00:00:29.730 --> 00:00:31.469
+your model works really well,
+
+00:00:31.469 --> 00:00:34.049
+and you're trying to convince the portfolio manager to
+
+00:00:34.049 --> 00:00:37.034
+use it as the basis of a major trading strategy?
+
+00:00:37.034 --> 00:00:39.179
+You want to tell her all about it,
+
+00:00:39.179 --> 00:00:40.454
+your use of data,
+
+00:00:40.454 --> 00:00:42.070
+the design decisions you made,
+
+00:00:42.070 --> 00:00:43.715
+and the model's predictions.
+
+00:00:43.715 --> 00:00:46.970
+How do you explain to her why and how it works,
+
+00:00:46.969 --> 00:00:49.429
+which of the features you created are the most predictive?
+
+00:00:49.429 --> 00:00:52.039
+In other words, how can we interpret the model,
+
+00:00:52.039 --> 00:00:56.655
+and also identify which features are most relevant in its decision-making?
+
+00:00:56.655 --> 00:00:59.859
+This is what you'll get to learn about in the next lesson.
+

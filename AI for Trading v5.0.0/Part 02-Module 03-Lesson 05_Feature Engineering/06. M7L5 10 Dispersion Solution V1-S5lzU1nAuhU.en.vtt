@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.009
+Okay. So now we're going to go over the solution to implement market dispersion.
+
+00:00:05.009 --> 00:00:06.809
+So,the first question was,
+
+00:00:06.809 --> 00:00:10.484
+what is the window length that we set for the market dispersion factor?
+
+00:00:10.484 --> 00:00:14.609
+When you think about it, we want to look at a single data time and
+
+00:00:14.609 --> 00:00:18.059
+calculate the standard deviation across all the stocks for a single day.
+
+00:00:18.059 --> 00:00:21.314
+So we actually want to set the window length equal to one,
+
+00:00:21.315 --> 00:00:22.830
+which means right here,
+
+00:00:22.829 --> 00:00:24.629
+when we define the mark dispersion class,
+
+00:00:24.629 --> 00:00:26.989
+we reset the window length equal to one.
+
+00:00:26.989 --> 00:00:29.579
+Next, we also want to calculate
+
+00:00:29.579 --> 00:00:34.259
+the average of the returns across all the socks and all the time periods.
+
+00:00:34.259 --> 00:00:39.390
+So that's just taking the average on the returns.
+
+00:00:39.390 --> 00:00:41.789
+Then we want to calculate the standard deviation,
+
+00:00:41.789 --> 00:00:49.365
+so that would be the returns minus the mean returns,
+
+00:00:49.365 --> 00:00:55.140
+and all of that is going to be squared.
+
+00:00:55.140 --> 00:00:57.480
+Then you see here,
+
+00:00:57.479 --> 00:01:00.364
+that we're just going to take the average across again,
+
+00:01:00.365 --> 00:01:03.905
+all the stocks and all the time periods,
+
+00:01:03.905 --> 00:01:06.349
+and then finally, that's the variance.
+
+00:01:06.349 --> 00:01:08.089
+So to get the standard deviation,
+
+00:01:08.090 --> 00:01:13.215
+we take the square root of n. Okay.
+
+00:01:13.215 --> 00:01:16.810
+So once you've implemented the market dispersion class,
+
+00:01:16.810 --> 00:01:22.030
+then you can instantiate it, so market dispersion.
+
+00:01:22.280 --> 00:01:27.245
+Remember, you want to set the mask equal to I defined universe,
+
+00:01:27.245 --> 00:01:29.540
+and we also want to calculate
+
+00:01:29.540 --> 00:01:33.415
+the simple moving average of the dispersion to smooth it out.
+
+00:01:33.415 --> 00:01:39.355
+So one would be the 20-day moving average 20 trading days is one month.
+
+00:01:39.355 --> 00:01:41.130
+So looks simple moving average,
+
+00:01:41.129 --> 00:01:43.114
+you want to set the inputs equal to something,
+
+00:01:43.114 --> 00:01:46.744
+and we also want to set the window length equal to something.
+
+00:01:46.745 --> 00:01:49.564
+In this case, the inputs are going to be
+
+00:01:49.564 --> 00:01:53.099
+the dispersion object that we just instantiate it,
+
+00:01:53.099 --> 00:01:55.869
+and the window length is going to be 20 trading days.
+
+00:01:55.870 --> 00:02:01.993
+Similarly, for the six months simple moving average, simple moving average,
+
+00:02:01.993 --> 00:02:05.959
+the input is going to be the dispersion feature that we just calculated,
+
+00:02:05.959 --> 00:02:10.055
+and the window length is equal to a 120 trading days, which is six months.
+
+00:02:10.055 --> 00:02:13.260
+So,once you create those,
+
+00:02:13.259 --> 00:02:14.894
+you can add those to the pipeline.
+
+00:02:14.895 --> 00:02:17.100
+All right. Thanks for watching,
+
+00:02:17.099 --> 00:02:20.310
+and continue on with the lesson. Thanks.
+

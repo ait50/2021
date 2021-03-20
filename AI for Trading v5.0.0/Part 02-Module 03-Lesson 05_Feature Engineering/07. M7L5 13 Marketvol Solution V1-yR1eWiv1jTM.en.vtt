@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.665
+All right. So, let's take a look at how to implement market volatility.
+
+00:00:04.665 --> 00:00:09.759
+First, we want to calculate the market returns which is this formula up here,
+
+00:00:09.759 --> 00:00:14.105
+market returns, and notice we said for each day,
+
+00:00:14.105 --> 00:00:15.290
+we want to calculate this.
+
+00:00:15.289 --> 00:00:22.530
+So, to specify that each day in the DataFrame is going to be a single row.
+
+00:00:22.530 --> 00:00:27.570
+So, if you were to set axis equal to one it's going to calculate an average for each row.
+
+00:00:27.570 --> 00:00:29.640
+So, that's what we want.
+
+00:00:29.640 --> 00:00:36.140
+So, we want to use numpy.nanmean on the returns and we want to set
+
+00:00:36.140 --> 00:00:42.935
+axis equal to one so that we can calculate a value for each row, for each day.
+
+00:00:42.935 --> 00:00:45.770
+All right. Then after that,
+
+00:00:45.770 --> 00:00:53.330
+we can take the average of these market returns like this and then,
+
+00:00:53.329 --> 00:00:57.500
+we can implement this formula to get the standard deviation right here.
+
+00:00:57.500 --> 00:01:03.515
+So, we'll start out by taking the difference between the market returns and
+
+00:01:03.515 --> 00:01:11.359
+the market returns mu the average and that's going to be squared,
+
+00:01:11.359 --> 00:01:14.209
+then we're going to, as you can see here,
+
+00:01:14.209 --> 00:01:17.899
+we're going to take the average of those square differences.
+
+00:01:17.900 --> 00:01:23.210
+So, numpy.nanmean then you
+
+00:01:23.209 --> 00:01:26.839
+can see that we will annualize it before taking the square root.
+
+00:01:26.840 --> 00:01:32.075
+So, we can actually make use of the annualization factor variable that's defined here.
+
+00:01:32.075 --> 00:01:37.430
+So, we can say, annualization factor times that.
+
+00:01:37.430 --> 00:01:41.190
+Then the last step is to take the square root of that.
+
+00:01:41.650 --> 00:01:44.630
+So, once we've defined market volatility,
+
+00:01:44.629 --> 00:01:49.739
+we can create objects from there, so market volatility.
+
+00:01:50.150 --> 00:01:54.859
+So, for this one, will take the one month so that means that will set
+
+00:01:54.859 --> 00:01:59.480
+the window length equal to 20 training days and also,
+
+00:01:59.480 --> 00:02:03.430
+we'll set the mask to our defined universe.
+
+00:02:03.430 --> 00:02:09.670
+So, similarly for the six month market volatility,
+
+00:02:09.669 --> 00:02:15.875
+will set the window length equal to 120 trading days also set the mask.
+
+00:02:15.875 --> 00:02:22.020
+Okay. So, first define the class and then,
+
+00:02:22.020 --> 00:02:24.040
+instantiate the objects, and then,
+
+00:02:24.039 --> 00:02:25.444
+add them to the pipeline.
+
+00:02:25.444 --> 00:02:30.039
+Great. Thanks for watching and please continue on with the lesson.
+

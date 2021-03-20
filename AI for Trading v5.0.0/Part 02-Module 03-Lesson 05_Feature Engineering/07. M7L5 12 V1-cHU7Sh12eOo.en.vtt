@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.775
+Market volatility is the volatility of the stock universe over a time horizon.
+
+00:00:05.775 --> 00:00:11.339
+Varying levels of market volatility may affect how stock selection strategies perform.
+
+00:00:11.339 --> 00:00:16.125
+For instance, during the financial crisis originating in September 2008,
+
+00:00:16.125 --> 00:00:21.929
+there was high market volatility in every asset class and across virtually all stocks.
+
+00:00:21.929 --> 00:00:25.559
+If you simulate a meaner version signal during this period,
+
+00:00:25.559 --> 00:00:28.754
+you will see that it performed very well.
+
+00:00:28.754 --> 00:00:30.469
+Why is that?
+
+00:00:30.469 --> 00:00:32.149
+We can't say for sure,
+
+00:00:32.149 --> 00:00:33.740
+but we can posit that when risk is
+
+00:00:33.740 --> 00:00:37.630
+high market participants manage that risk by trading more.
+
+00:00:37.630 --> 00:00:39.835
+When market participants trade more,
+
+00:00:39.835 --> 00:00:45.245
+they create temporary market impact which reverts when their liquidity demand dries up.
+
+00:00:45.244 --> 00:00:49.399
+On the other hand, during low volatility periods you
+
+00:00:49.399 --> 00:00:53.134
+might expect to see factors that depend on company fundamentals do well.
+
+00:00:53.134 --> 00:00:56.119
+Again, we can say for certain why this is,
+
+00:00:56.119 --> 00:00:59.945
+but logically one could posit that in periods of lower volatility,
+
+00:00:59.945 --> 00:01:03.320
+idiosyncratic developments in company fundamentals
+
+00:01:03.320 --> 00:01:07.234
+are not drowned out by market-wide high volatility.
+
+00:01:07.234 --> 00:01:11.030
+One way to generate a signal that indicates a shift into
+
+00:01:11.030 --> 00:01:15.980
+high market volatility is by comparing short-term and long-term volatility.
+
+00:01:15.980 --> 00:01:20.870
+For example, one month is short-term and six month is long-term.
+
+00:01:20.870 --> 00:01:24.790
+When short-term volatility is higher than long-term volatility,
+
+00:01:24.790 --> 00:01:31.190
+this can be a signal that the market has shifted into a high market volatility regime.
+
+00:01:31.189 --> 00:01:35.329
+We could typically measure a rolling standard deviation of a market
+
+00:01:35.329 --> 00:01:39.819
+ETF such as the S&amp;P 500 SPDR.
+
+00:01:39.819 --> 00:01:42.619
+A way to approximate the market whoever is to take
+
+00:01:42.620 --> 00:01:46.969
+the equal weighted average of all the stocks in the defined universe.
+
+00:01:46.969 --> 00:01:49.939
+Then, calculate the standard deviation of
+
+00:01:49.939 --> 00:01:54.969
+these returns over a time horizon such as one or six months.
+
+00:01:54.969 --> 00:02:01.204
+Market volatility is a useful indicator of the state of the market over that time period.
+
+00:02:01.204 --> 00:02:05.420
+As just described, during periods of high market volatility and
+
+00:02:05.420 --> 00:02:09.905
+mean reversion alpha factor and maybe more relevant for predicting future returns.
+
+00:02:09.905 --> 00:02:12.814
+Whereas during periods of low market volatility,
+
+00:02:12.814 --> 00:02:16.319
+fundamental factors may be more relevant.
+

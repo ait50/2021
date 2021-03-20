@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.554
+Okay. So now we're going to add the sector as a feature.
+
+00:00:04.554 --> 00:00:07.544
+So note that this variable here,
+
+00:00:07.544 --> 00:00:08.990
+that we're adding to the pipeline,
+
+00:00:08.990 --> 00:00:10.810
+we had actually set earlier above.
+
+00:00:10.810 --> 00:00:13.570
+So if I scroll back up to the make factor section,
+
+00:00:13.570 --> 00:00:15.640
+that's at the beginning of the notebook.
+
+00:00:15.640 --> 00:00:17.740
+I can also search sector,
+
+00:00:17.739 --> 00:00:19.729
+just so I can highlight where it is.
+
+00:00:19.730 --> 00:00:23.160
+So I scroll back up and in this section, make factors,
+
+00:00:23.160 --> 00:00:24.545
+and within this cell,
+
+00:00:24.545 --> 00:00:29.245
+you can see that I said sector is equal to project_helper.Sector.
+
+00:00:29.245 --> 00:00:34.149
+Okay. So this was setting this variable so that
+
+00:00:34.149 --> 00:00:39.729
+each stock ticker has a particular sector category associated with it.
+
+00:00:39.729 --> 00:00:44.334
+We use this inside some of these factors to demean by sector,
+
+00:00:44.335 --> 00:00:46.100
+for example, in this case.
+
+00:00:46.100 --> 00:00:49.399
+But now we're going to add it to the pipeline to use as a feature itself.
+
+00:00:49.399 --> 00:00:54.710
+So if I go back to the sector and industry section right here,
+
+00:00:54.710 --> 00:00:58.370
+we're just going to add this sector to the pipeline,
+
+00:00:58.369 --> 00:01:01.140
+and then we're also going to run the pipeline,
+
+00:01:01.140 --> 00:01:05.510
+so that we can actually extract the data into this dataframe, all factors.
+
+00:01:05.510 --> 00:01:10.564
+So you can see here there's a couple of factors here and features that we've created,
+
+00:01:10.564 --> 00:01:12.939
+and there's also the sector code right here.
+
+00:01:12.939 --> 00:01:16.293
+Notice these are numbers representing the categories,
+
+00:01:16.293 --> 00:01:19.670
+and so because we know this is a categorical variable,
+
+00:01:19.670 --> 00:01:24.859
+we're going to one-hot encoded because these numbers don't have a real ordering.
+

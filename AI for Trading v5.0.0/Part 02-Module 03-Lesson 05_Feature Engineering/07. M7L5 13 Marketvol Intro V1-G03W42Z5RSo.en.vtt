@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.759
+Okay. So now, we'll look at another universe quant feature which is market volatility.
+
+00:00:05.759 --> 00:00:08.219
+So we're also going to build another class for
+
+00:00:08.220 --> 00:00:11.955
+market volatility which also inherits from custom factor.
+
+00:00:11.955 --> 00:00:16.365
+This will measure the standard deviation of the returns of the market.
+
+00:00:16.364 --> 00:00:19.289
+In this case, we're approximating the market as
+
+00:00:19.289 --> 00:00:23.910
+the equal weighted average return of all the stocks in the stock universe.
+
+00:00:23.910 --> 00:00:27.530
+So here are some formulas that we'll implement in code.
+
+00:00:27.530 --> 00:00:30.380
+First, the market return is just taking
+
+00:00:30.379 --> 00:00:36.594
+the simple equal weighted average of the returns of all the stocks for each day.
+
+00:00:36.594 --> 00:00:39.769
+Next, we'll just take the average market return which is taking
+
+00:00:39.770 --> 00:00:45.010
+the averages of these for each day over a particular window length.
+
+00:00:45.009 --> 00:00:49.445
+Then, from there we're going to calculate the standard deviation of the market returns.
+
+00:00:49.445 --> 00:00:52.594
+We're also going to annualize from daily to annual.
+
+00:00:52.594 --> 00:00:55.204
+Okay. So here's some hints.
+
+00:00:55.204 --> 00:00:57.229
+Use numpy.nanmean.
+
+00:00:57.229 --> 00:01:02.944
+Also, think about whether you need to set the access to equal to zero or equal to one.
+
+00:01:02.945 --> 00:01:05.734
+Okay. So you can think about this for a bit.
+
+00:01:05.734 --> 00:01:09.230
+Also, one thing to note here is that we're setting
+
+00:01:09.230 --> 00:01:12.570
+a variable annualization factor in this way.
+
+00:01:12.569 --> 00:01:15.529
+So you can actually use a variable
+
+00:01:15.530 --> 00:01:19.355
+called annualization factor within the compute function.
+
+00:01:19.355 --> 00:01:22.088
+It's just set this way params is a dictionary,
+
+00:01:22.088 --> 00:01:25.620
+and the key is annualization factor and the value is 252.
+
+00:01:25.620 --> 00:01:27.590
+Okay. Then, you can use a variable called
+
+00:01:27.590 --> 00:01:31.265
+annualization factor within the compute function.
+
+00:01:31.265 --> 00:01:35.224
+So once you've defined market volatility,
+
+00:01:35.224 --> 00:01:36.640
+you can instantiate it,
+
+00:01:36.640 --> 00:01:38.549
+and then add it to the pipeline.
+
+00:01:38.549 --> 00:01:40.064
+So please try it out,
+
+00:01:40.064 --> 00:01:41.265
+and when you're done,
+
+00:01:41.265 --> 00:01:44.209
+have a look at the solution video. Thanks.
+
