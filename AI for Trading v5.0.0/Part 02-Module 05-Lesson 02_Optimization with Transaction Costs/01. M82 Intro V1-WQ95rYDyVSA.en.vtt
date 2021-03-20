@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.120
+Hi. In this lesson,
+
+00:00:02.120 --> 00:00:06.370
+we'll show you how to design the portfolio optimizer for a back-test.
+
+00:00:06.370 --> 00:00:09.949
+The major theme of this lesson is how to design the back-test,
+
+00:00:09.949 --> 00:00:13.629
+so that it's realistic enough that it's results are meaningful.
+
+00:00:13.630 --> 00:00:17.125
+You'll get familiar with data provided by Bara,
+
+00:00:17.125 --> 00:00:19.824
+which is widely used in the quant industry.
+
+00:00:19.824 --> 00:00:24.294
+You'll practice adding the time delay that exist during live trading.
+
+00:00:24.295 --> 00:00:28.775
+You'll learn more about design considerations in the optimization,
+
+00:00:28.774 --> 00:00:33.445
+and we'll also learn to incorporate transaction costs in the optimizer.
+
+00:00:33.445 --> 00:00:35.770
+By the time you complete this lesson,
+
+00:00:35.770 --> 00:00:40.325
+I hope you'll have a good foundation that you can build upon during the project.
+
+00:00:40.325 --> 00:00:42.880
+All right. Let's get started.
+

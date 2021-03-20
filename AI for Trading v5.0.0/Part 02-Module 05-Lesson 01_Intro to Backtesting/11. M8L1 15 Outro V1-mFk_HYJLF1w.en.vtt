@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.339
+In this lesson, you learned about how backtesting fits into the quant research process,
+
+00:00:05.339 --> 00:00:08.039
+common mistakes that lead to misleading backtest,
+
+00:00:08.039 --> 00:00:11.129
+and best practices needed to produce a successful backtest.
+
+00:00:11.130 --> 00:00:14.220
+Now, that we've understood these important principles,
+
+00:00:14.220 --> 00:00:18.390
+we're ready to start setting up a real backtest. Let's get to it.
+

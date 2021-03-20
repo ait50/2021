@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.139
+Proper statistical methodology in general and proper use of
+
+00:00:04.139 --> 00:00:08.445
+a test set in particular give a clear path detect overfitting.
+
+00:00:08.445 --> 00:00:11.609
+Essentially, when the model's performance on the test set is
+
+00:00:11.609 --> 00:00:14.614
+noticeably lower than on the training and validation sets,
+
+00:00:14.615 --> 00:00:17.760
+then this is evidence that the model may have been over fit.
+
+00:00:17.760 --> 00:00:21.600
+Of course, it is also possible that there was a structural change.
+
+00:00:21.600 --> 00:00:23.670
+Meaning that the structure of the market was
+
+00:00:23.670 --> 00:00:26.535
+different over the period used as the test set.
+
+00:00:26.535 --> 00:00:28.980
+This is a distinct kind of problem,
+
+00:00:28.980 --> 00:00:33.530
+as even good researchers can be negatively impacted by structural change,
+
+00:00:33.530 --> 00:00:36.664
+whereas good researchers are definitionally
+
+00:00:36.664 --> 00:00:40.655
+never guilty of overfitting by definition of good research.
+
+00:00:40.655 --> 00:00:43.925
+Structural changes may be possible to anticipate.
+
+00:00:43.924 --> 00:00:49.009
+An example would be regulatory changes which fundamentally alter market structure.
+
+00:00:49.009 --> 00:00:52.390
+Such changes are often announced before they're implemented.
+
+00:00:52.390 --> 00:00:56.450
+Nevertheless, in both cases overfitting and structural change,
+
+00:00:56.450 --> 00:00:58.685
+the practical implications are the same.
+
+00:00:58.685 --> 00:01:02.920
+One does not expect the model to continue to perform in the out-of-sample period,
+
+00:01:02.920 --> 00:01:04.850
+which is the coming year or two,
+
+00:01:04.849 --> 00:01:07.699
+and use of the model in unadulterated form could
+
+00:01:07.700 --> 00:01:11.150
+lead to overtrading and or investment losses.
+
+00:01:11.150 --> 00:01:14.375
+The future is the ultimate out-of-sample test set.
+
+00:01:14.375 --> 00:01:18.650
+It is a dataset which we know for sure hasn't been seen before or used in
+
+00:01:18.650 --> 00:01:21.109
+research or biased the strategy development
+
+00:01:21.109 --> 00:01:24.094
+in some subtle way that is hard to even fathom.
+
+00:01:24.094 --> 00:01:27.968
+Before one can believe the Sharpe ratio of a back-test,
+
+00:01:27.968 --> 00:01:30.349
+one must first believe that the back-test in
+
+00:01:30.349 --> 00:01:35.119
+some past year represents the state of knowledge that one had back then,
+
+00:01:35.120 --> 00:01:37.685
+basing that period as if it were the future.
+
+00:01:37.685 --> 00:01:39.680
+This is harder than it sounds.
+
+00:01:39.680 --> 00:01:44.660
+We must want to see the world as it truly is and not as we wish it to be.
+

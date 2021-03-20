@@ -1,0 +1,282 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Gradient Boosting
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Intro to Backtesting
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. What is a Backtest.html">
+       02. What is a Backtest?
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Backtest Validity.html">
+       03. Backtest Validity
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Backtest Overfitting.html">
+       04. Backtest Overfitting
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Overtrading.html">
+       05. Overtrading
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Backtest Best Practices.html">
+       06. Backtest Best Practices
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Structural Changes.html">
+       07. Structural Changes
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Gradient Boosting.html">
+       08. Gradient Boosting
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Overfitting Exercise.html">
+       09. Overfitting Exercise
+      </a>
+     </li>
+     <li class="">
+      <a href="10. AI in Finance Interview.html">
+       10. AI in Finance Interview
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Outro.html">
+       11. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          08. Gradient Boosting
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="gradient-boosting">
+          Gradient Boosting
+         </h2>
+         <p>
+          In our exercise about overfitting, we're going to use a type of model that we haven't yet encountered in the course, but that's popular and well-known, and has been used successfully in machine learning competitions: gradient boosted trees. Here we're going to give you a short introduction to gradient boosting so that you have an intuition for how the model works.
+         </p>
+         <p>
+          We've already studied ensembling; well, boosting is another type of ensembling, or combining weak learners into a strong learner. It's also typically done with decision trees as the weak learners. The video below will give you a quick introduction to boosting by telling you about the first successful boosting algorithm, Adaboost.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          MLND SL EM 03 AdaBoost V1 MAIN V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="08. MLND SL EM 03 AdaBoost V1 MAIN V1-HD6SRBWKGUE.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="08. MLND SL EM 03 AdaBoost V1 MAIN V1-HD6SRBWKGUE.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="08. MLND SL EM 03 AdaBoost V1 MAIN V1-HD6SRBWKGUE.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="08. MLND SL EM 03 AdaBoost V1 MAIN V1-HD6SRBWKGUE.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          This video only scratched the surface, but you can see that Adaboost basically works in the following way:
+         </p>
+         <ul>
+          <li>
+           Fit an additive model (ensemble) in a forward stage-wise manner.
+          </li>
+          <li>
+           In each stage, introduce a weak learner to compensate the shortcomings of existing weak learners.
+          </li>
+          <li>
+           In Adaboost,“shortcomings” are identified by high-weight datapoints (this is what is meant in the video by making the points "bigger").
+          </li>
+         </ul>
+         <p>
+          Gradient boosting is very similar. In essence, it allows the user to customize the method used to identify the "shortcomings" of existing weak learners (the
+          <strong>
+           cost function
+          </strong>
+          ). If you want to learn more about the details,
+          <a href="http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/" rel="noopener noreferrer" target="_blank">
+           try this page
+          </a>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="09. Overfitting Exercise.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Gradient Boosting')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

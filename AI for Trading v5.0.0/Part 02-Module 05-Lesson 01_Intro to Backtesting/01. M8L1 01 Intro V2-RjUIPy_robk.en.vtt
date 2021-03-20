@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.605
+Welcome back. In the next several lessons,you're going to learn about back-testing,
+
+00:00:04.605 --> 00:00:08.550
+which is how quantum simulate as rigorously as possible.
+
+00:00:08.550 --> 00:00:11.160
+What would have happened if a trading strategy was
+
+00:00:11.160 --> 00:00:14.160
+deployed in production over a historical period,
+
+00:00:14.160 --> 00:00:17.910
+in order to try to understand how it might perform in the future?
+
+00:00:17.910 --> 00:00:20.265
+As we mentioned earlier in the course,
+
+00:00:20.265 --> 00:00:24.810
+back-testing is the last thing you'll do when researching and testing a strategy.
+
+00:00:24.809 --> 00:00:26.309
+As you can probably guess,
+
+00:00:26.309 --> 00:00:29.910
+there are lots of important subtle considerations you need to keep in mind,
+
+00:00:29.910 --> 00:00:32.625
+in order to make this simulation useful.
+
+00:00:32.625 --> 00:00:36.609
+Let's keep going to learn the principles of back-testing.
+

@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.835
+Now, we'll discuss additional ways in which we can improve on the portfolio optimization.
+
+00:00:05.835 --> 00:00:09.599
+Let's think about the covariance matrix of factors.
+
+00:00:09.599 --> 00:00:13.619
+If we have 70 risk factors in our model,
+
+00:00:13.619 --> 00:00:18.644
+then the covariance matrix of factors is a 70 by 70 square matrix.
+
+00:00:18.644 --> 00:00:22.469
+The diagonal contains the variances of each factor,
+
+00:00:22.469 --> 00:00:28.799
+while the off-diagonals contain the pairwise covariances of two different risk factors.
+
+00:00:28.800 --> 00:00:35.280
+In general, it's good to have a healthy suspicion of correlations and covariances,
+
+00:00:35.280 --> 00:00:41.405
+and to ask if correlation data adds information or just more noise.
+
+00:00:41.405 --> 00:00:44.480
+One way to be conservative about the information in
+
+00:00:44.479 --> 00:00:50.439
+a covariance matrix is to shrink the covariances or even reduce them to zero.
+
+00:00:50.439 --> 00:00:54.500
+In other words, we could keep just the variances along the
+
+00:00:54.500 --> 00:00:59.840
+diagonal and set the covariances in the off-diagonals to zero.
+
+00:00:59.840 --> 00:01:04.445
+In the case where we're using the covariance matrix in a risk factor model,
+
+00:01:04.444 --> 00:01:08.089
+there's also some additional intuition for why we can use
+
+00:01:08.090 --> 00:01:12.530
+just the variances and discard the covariances.
+
+00:01:12.530 --> 00:01:19.030
+The goal of the optimizer is to reduce the portfolio's exposure to these risk factors.
+
+00:01:19.030 --> 00:01:22.760
+So if the optimizer reduces the portfolio's exposure to
+
+00:01:22.760 --> 00:01:27.365
+risk factor one and also reduces its exposure to risk factor two,
+
+00:01:27.364 --> 00:01:32.060
+then it's less important to know exactly how factor one varies with factor two
+
+00:01:32.060 --> 00:01:37.775
+since the optimizer is already working to reduce portfolio exposure to both factors.
+
+00:01:37.775 --> 00:01:41.359
+In other words, you can still achieve the goal of reducing
+
+00:01:41.359 --> 00:01:46.254
+portfolio exposure to all the factors if you're using just the variances,
+
+00:01:46.254 --> 00:01:50.329
+whether you include the factor covariances or not.
+
+00:01:50.329 --> 00:01:53.329
+You may wonder, "What are the benefits of throwing
+
+00:01:53.329 --> 00:01:55.774
+away the information about covariance?"
+
+00:01:55.775 --> 00:01:57.620
+In addition to making your model more
+
+00:01:57.620 --> 00:02:00.969
+conservative and limiting possible noise in your data,
+
+00:02:00.969 --> 00:02:05.510
+a diagonal matrix also makes matrix operations more efficient.
+
+00:02:05.510 --> 00:02:09.080
+This theme of computational efficiency is one that you'll come
+
+00:02:09.080 --> 00:02:13.015
+across in many use cases including backtesting.
+
+00:02:13.014 --> 00:02:17.359
+Backtesting is a computationally and time-intensive process.
+
+00:02:17.360 --> 00:02:19.610
+So the more efficient you can make it,
+
+00:02:19.610 --> 00:02:25.070
+the more quickly you can test your alphas and iterate to make improvements.
+

@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.769
+Let's look at another step in the optimization that can be made more computationally
+
+00:00:04.769 --> 00:00:10.050
+efficient and that may be necessary to make the computation feasible.
+
+00:00:10.050 --> 00:00:15.720
+Recall that this is the formula for the factor model of portfolio variance.
+
+00:00:15.720 --> 00:00:18.980
+In particular, let's focus on the part of
+
+00:00:18.980 --> 00:00:23.149
+the portfolio variance that is explained by the risk factors.
+
+00:00:23.149 --> 00:00:27.649
+This is the factor variance matrix wrapped on both sides by
+
+00:00:27.649 --> 00:00:33.679
+the factor exposure matrices which is then surrounded by the portfolio holdings vectors.
+
+00:00:33.679 --> 00:00:39.170
+Let's take a look at the shape of the matrices particularly the ones in the middle,
+
+00:00:39.170 --> 00:00:45.215
+which are the factor exposure matrix and the factor variance matrix.
+
+00:00:45.215 --> 00:00:50.590
+The factor exposure matrix has a row for each of the n assets.
+
+00:00:50.590 --> 00:00:52.740
+So it's very tall.
+
+00:00:52.740 --> 00:00:57.704
+Similarly, its transpose is very wide.
+
+00:00:57.704 --> 00:01:02.030
+Note that when we multiply the three matrices together,
+
+00:01:02.030 --> 00:01:07.409
+this forms a very large covariance matrix of n rows by n columns,
+
+00:01:07.409 --> 00:01:09.694
+where n is the number of assets.
+
+00:01:09.694 --> 00:01:12.994
+If we have 2,000 stocks in the stock universe,
+
+00:01:12.995 --> 00:01:16.325
+this is a 2,000 by 2,000 matrix.
+
+00:01:16.325 --> 00:01:18.769
+You could very well be waiting hours to run
+
+00:01:18.769 --> 00:01:22.564
+the optimization or end up with memory overflow.
+
+00:01:22.564 --> 00:01:27.280
+If we go back and take another look at the matrices and their shapes,
+
+00:01:27.280 --> 00:01:33.510
+can you think of some way to avoid creating the n by n covariance matrix?
+

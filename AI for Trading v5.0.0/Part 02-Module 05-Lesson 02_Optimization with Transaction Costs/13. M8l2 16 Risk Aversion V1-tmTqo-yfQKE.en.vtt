@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.784
+The risk aversion term,
+
+00:00:01.784 --> 00:00:05.339
+is set to target a particular size for the portfolio.
+
+00:00:05.339 --> 00:00:07.080
+When we say "size",
+
+00:00:07.080 --> 00:00:10.740
+this could be any measure of size such as gross market value,
+
+00:00:10.740 --> 00:00:15.269
+value at risk, volatility, or leverage.
+
+00:00:15.269 --> 00:00:21.494
+The risk aversion parameter maps one-to-one onto any of these size metrics.
+
+00:00:21.495 --> 00:00:28.050
+By that, I mean that decreasing the risk parameter increases the size of the portfolio,
+
+00:00:28.050 --> 00:00:30.330
+and increasing the risk parameter,
+
+00:00:30.329 --> 00:00:33.524
+decreases the size of the portfolio.
+
+00:00:33.524 --> 00:00:39.614
+The risk aversion parameter allows you to target whatever size metric that you prefer.
+
+00:00:39.615 --> 00:00:42.469
+The gross market value is the dollar value of
+
+00:00:42.469 --> 00:00:45.769
+the absolute value of the long and short holdings,
+
+00:00:45.770 --> 00:00:48.350
+also called the L1 norm.
+
+00:00:48.350 --> 00:00:52.414
+When we think about what it means to take more risks when investing,
+
+00:00:52.414 --> 00:00:57.185
+taking bigger bets with more money is a way to take on more risk.
+
+00:00:57.185 --> 00:01:00.320
+The risk aversion term controls how much risk we
+
+00:01:00.320 --> 00:01:03.679
+take by controlling the dollar amount of our positions,
+
+00:01:03.679 --> 00:01:06.329
+which is the gross market value.
+

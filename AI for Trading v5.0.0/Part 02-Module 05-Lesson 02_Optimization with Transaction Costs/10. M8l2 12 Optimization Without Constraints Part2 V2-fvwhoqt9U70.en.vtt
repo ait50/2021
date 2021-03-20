@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.899
+Let's discuss how minimizing the terms in the objective function
+
+00:00:03.899 --> 00:00:08.369
+serves a similar purpose as some commonly used constraints.
+
+00:00:08.369 --> 00:00:12.119
+The parts of the objective function that we've seen before are
+
+00:00:12.119 --> 00:00:16.814
+the portfolio's risk explained by the factors called the common risk.
+
+00:00:16.815 --> 00:00:19.844
+There's the specific risk of the portfolio
+
+00:00:19.844 --> 00:00:23.565
+that's due to individual assets in the portfolio.
+
+00:00:23.565 --> 00:00:26.865
+There's also the expected portfolio return.
+
+00:00:26.864 --> 00:00:31.634
+The transaction costs term is the cost due to trading.
+
+00:00:31.635 --> 00:00:37.410
+First, there's the market neutral constraint that the sum of the holdings is zero.
+
+00:00:37.409 --> 00:00:43.189
+In other words, the sum of long positions equals the sum of short positions.
+
+00:00:43.189 --> 00:00:48.250
+When the optimizer minimizes the common risk that's due to the risk factors,
+
+00:00:48.250 --> 00:00:51.049
+it is also adjusting the holdings in order to
+
+00:00:51.049 --> 00:00:54.184
+reduce the imbalance between longs and shorts.
+
+00:00:54.185 --> 00:00:57.500
+Remember that market risk is also a factor.
+
+00:00:57.500 --> 00:01:00.469
+So the way an optimization can reduce exposure
+
+00:01:00.469 --> 00:01:03.890
+to the market is by being close to dollar neutral.
+
+00:01:03.890 --> 00:01:07.219
+So this has a similar effect as the hard constraint that
+
+00:01:07.219 --> 00:01:11.090
+requires the sum of holdings to be exactly zero.
+
+00:01:11.090 --> 00:01:16.579
+Next, let's think about constraining the risk due to large positions.
+
+00:01:16.579 --> 00:01:20.884
+The leverage constraint limits the maximum of the absolute values
+
+00:01:20.885 --> 00:01:25.910
+to below a certain threshold in order to limit this position size risk.
+
+00:01:25.909 --> 00:01:28.549
+If we look at the objective function,
+
+00:01:28.549 --> 00:01:30.530
+the risk aversion parameter in
+
+00:01:30.530 --> 00:01:34.864
+the objective function sets the total dollar risk of the portfolio.
+
+00:01:34.864 --> 00:01:40.314
+This means that the risk aversion parameter helps to control the portfolio size,
+
+00:01:40.314 --> 00:01:45.454
+which is the gross market value or sum of the magnitudes of the holdings.
+
+00:01:45.454 --> 00:01:50.194
+Now, let's think about the constraint that attempts to diversify the portfolio
+
+00:01:50.194 --> 00:01:54.949
+by setting a limit on the maximum holding on any single asset.
+
+00:01:54.950 --> 00:02:00.530
+Can you think of which terms in the objective function may serve a similar purpose?
+
+00:02:00.530 --> 00:02:04.284
+Notice that we have a term for a specific risk,
+
+00:02:04.284 --> 00:02:07.340
+also called idiosyncratic risk.
+
+00:02:07.340 --> 00:02:11.784
+This is the risk that is specific to each individual asset.
+
+00:02:11.784 --> 00:02:16.090
+When the optimizer attempts to minimize the specific risk,
+
+00:02:16.090 --> 00:02:19.240
+this also serves to diversify the portfolio by
+
+00:02:19.240 --> 00:02:22.960
+limiting the portfolio's exposure to any single asset.
+
+00:02:22.960 --> 00:02:27.040
+In other words, minimizing the specific risk helps to keep
+
+00:02:27.039 --> 00:02:31.099
+the holding on any single asset from getting too large.
+
+00:02:31.099 --> 00:02:34.359
+Note that the transaction cost term would limit
+
+00:02:34.360 --> 00:02:38.440
+the speed at which a concentrated position would be built,
+
+00:02:38.439 --> 00:02:42.919
+but would not prevent that holding from increasing over time.
+

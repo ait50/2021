@@ -1,0 +1,226 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.654
+Hello everyone, we're back with Gordon,
+
+00:00:02.654 --> 00:00:05.264
+and we're going to talk about reinforcement learning.
+
+00:00:05.264 --> 00:00:08.910
+So Gordon, you're most well known in the quant and
+
+00:00:08.910 --> 00:00:13.605
+academic communities for your work on applying reinforcement learning in finance.
+
+00:00:13.605 --> 00:00:17.730
+How's reinforcement learning being applied in finance right now,
+
+00:00:17.730 --> 00:00:21.205
+and what do you think it will be used for in the future?
+
+00:00:21.204 --> 00:00:23.599
+Well, right now, inside of some of
+
+00:00:23.600 --> 00:00:27.505
+the largest investment banks that do algorithmic execution,
+
+00:00:27.504 --> 00:00:30.980
+reinforcement learning is being used to help those algorithms make
+
+00:00:30.980 --> 00:00:34.564
+better decisions at the microstructure level.
+
+00:00:34.564 --> 00:00:37.039
+This is because reinforcement learning
+
+00:00:37.039 --> 00:00:40.714
+does very well in situations where you have a lot of data,
+
+00:00:40.715 --> 00:00:43.265
+and yet a finite action space.
+
+00:00:43.265 --> 00:00:45.649
+So for example in execution,
+
+00:00:45.649 --> 00:00:49.039
+the available actions typically take the form of choosing to
+
+00:00:49.039 --> 00:00:53.210
+place limit orders at the bid or the ask or canceling orders.
+
+00:00:53.210 --> 00:00:56.030
+So it's a discrete action space and that makes
+
+00:00:56.030 --> 00:00:58.490
+traditional optimization methods usually based on
+
+00:00:58.490 --> 00:01:02.255
+a continuous space more challenging to apply.
+
+00:01:02.255 --> 00:01:04.400
+In the future, there are a lot of
+
+00:01:04.400 --> 00:01:06.890
+potential applications for reinforcement learning to solve
+
+00:01:06.890 --> 00:01:11.620
+various kinds of optimal hedging and optimal execution problems,
+
+00:01:11.620 --> 00:01:14.960
+especially for options and other derivatives.
+
+00:01:14.959 --> 00:01:17.209
+Interestingly, in some sense,
+
+00:01:17.209 --> 00:01:19.009
+the derivatives community has been using
+
+00:01:19.010 --> 00:01:23.405
+reinforcement learning all along without necessarily even realizing it.
+
+00:01:23.405 --> 00:01:25.310
+What I mean by that is,
+
+00:01:25.310 --> 00:01:27.379
+financial derivatives are priced according to
+
+00:01:27.379 --> 00:01:32.000
+the optimal value function of the replicating strategy.
+
+00:01:32.000 --> 00:01:34.609
+Reinforcement learning is simply a way of finding
+
+00:01:34.609 --> 00:01:38.870
+the optimal value function in a very general and often model-free way,
+
+00:01:38.870 --> 00:01:42.435
+in a way that makes it easier to incorporate transaction costs.
+
+00:01:42.435 --> 00:01:46.430
+Is there enough interest in reinforcement learning right now in the quant community?
+
+00:01:46.430 --> 00:01:48.150
+Does it show a lot of promise?
+
+00:01:48.150 --> 00:01:50.760
+Is it an active area of research?
+
+00:01:50.760 --> 00:01:53.545
+I think it's a very active area of research.
+
+00:01:53.545 --> 00:01:58.329
+For example, my longtime friend and collaborator, Peter Comb,
+
+00:01:58.329 --> 00:02:01.825
+and I were invited to contribute an article to
+
+00:02:01.825 --> 00:02:06.234
+the first inaugural issue of the Journal of Financial Data Science.
+
+00:02:06.234 --> 00:02:10.150
+Our article was on dynamic hedging of
+
+00:02:10.150 --> 00:02:14.844
+option positions in illiquid markets using reinforcement learning.
+
+00:02:14.844 --> 00:02:18.655
+There have also been a number of very interesting papers by
+
+00:02:18.655 --> 00:02:23.544
+my colleague Igor Halperin from the NYU Tandon School of Engineering.
+
+00:02:23.544 --> 00:02:26.679
+Great. Are there any hedge funds or
+
+00:02:26.680 --> 00:02:30.135
+trading firms that are using reinforcement learning right now?
+
+00:02:30.134 --> 00:02:35.129
+Yes. I believe the largest investment banks who are also the most sophisticated on
+
+00:02:35.129 --> 00:02:38.144
+the algorithmic execution side have actually
+
+00:02:38.145 --> 00:02:42.844
+been researching it and potentially using it for years.
+
+00:02:42.844 --> 00:02:45.349
+That means that hedge funds are then using it indirectly
+
+00:02:45.349 --> 00:02:49.189
+because they rely on those banks for execution services.
+
+00:02:49.189 --> 00:02:52.520
+Great. Are there any limitations or
+
+00:02:52.520 --> 00:02:56.870
+problems that you foresee in applying reinforcement learning through finance?
+
+00:02:56.870 --> 00:03:00.515
+Yes. I think the technology itself needs to get better.
+
+00:03:00.514 --> 00:03:04.174
+There has been a lot of excitement around deep reinforcement learning,
+
+00:03:04.175 --> 00:03:07.019
+where the nonlinear function approximator
+
+00:03:07.019 --> 00:03:10.115
+that is used to approximate the optimal value function,
+
+00:03:10.115 --> 00:03:14.784
+is everyone's favorite function approximator on neural network.
+
+00:03:14.784 --> 00:03:16.650
+So in this area, unfortunately,
+
+00:03:16.650 --> 00:03:20.539
+the technology is often rather slow to converge.
+
+00:03:20.539 --> 00:03:23.959
+Sometimes requiring days to train,
+
+00:03:23.960 --> 00:03:26.795
+and even that is on specialized hardware.
+
+00:03:26.794 --> 00:03:28.929
+For example, AlphaGo Zero.
+
+00:03:28.930 --> 00:03:30.870
+Certain key theoretical results,
+
+00:03:30.870 --> 00:03:35.240
+the one would ideally like to have on convergence of the method, are also lacking.
+
+00:03:35.240 --> 00:03:39.025
+Neural networks can get stuck in local minima, for example,
+
+00:03:39.025 --> 00:03:44.480
+that prevents proving a lot of convergence results that we have for simpler methods.
+
+00:03:44.479 --> 00:03:47.539
+So is there a different nonlinear function approximator
+
+00:03:47.539 --> 00:03:49.495
+that will be more convenient to work with?
+
+00:03:49.495 --> 00:03:52.099
+Maybe, but a lot more research needs to be done.
+
+00:03:52.099 --> 00:03:55.250
+It feels like we're at the stage of development right now that
+
+00:03:55.250 --> 00:03:58.685
+standard optimization methods were out in the 1960s.
+
+00:03:58.685 --> 00:04:00.814
+Well, thank you so much Gordon for your time.
+
+00:04:00.814 --> 00:04:02.719
+Looking forward to seeing you again soon.
+
+00:04:02.719 --> 00:04:04.419
+Thanks for having me.
+

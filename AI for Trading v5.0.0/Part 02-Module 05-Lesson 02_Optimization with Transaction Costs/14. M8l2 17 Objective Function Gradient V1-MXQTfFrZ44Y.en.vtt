@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.970
+When doing optimization, you are usually write
+
+00:00:02.970 --> 00:00:06.269
+the objective function and also its gradient.
+
+00:00:06.269 --> 00:00:10.169
+Then you'll input both of these into an optimizer of your choice.
+
+00:00:10.169 --> 00:00:12.330
+It's good practice to be able to write
+
+00:00:12.330 --> 00:00:16.035
+both the objective function and its gradient in code.
+
+00:00:16.035 --> 00:00:19.844
+Even though some software packages calculate the gradient for you,
+
+00:00:19.844 --> 00:00:24.974
+in most cases, you want to be able to code the gradient explicitly by yourself.
+
+00:00:24.975 --> 00:00:28.290
+There are also different optimizers to choose from.
+
+00:00:28.289 --> 00:00:32.765
+For example, if you check out the sai pi.optimize documentation,
+
+00:00:32.765 --> 00:00:35.600
+you'll see several optimizers listed.
+
+00:00:35.600 --> 00:00:39.984
+The BFGS method is a commonly recommended optimizer.
+
+00:00:39.984 --> 00:00:43.835
+In particular, the L-BFGS method
+
+00:00:43.835 --> 00:00:48.289
+is designed to more efficiently handle large-scale problems.
+
+00:00:48.289 --> 00:00:53.253
+You can also try out other methods that are suitable for large-scale problems,
+
+00:00:53.253 --> 00:00:54.820
+such as the Powell,
+
+00:00:54.820 --> 00:00:59.350
+Nelder-Mead, or Conjugate Gradient methods.
+

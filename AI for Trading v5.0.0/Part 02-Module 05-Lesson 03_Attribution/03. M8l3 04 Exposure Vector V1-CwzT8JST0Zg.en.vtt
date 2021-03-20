@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.265
+Let's say we have a portfolio.
+
+00:00:02.265 --> 00:00:04.830
+That means we've calculated a holdings vector.
+
+00:00:04.830 --> 00:00:10.169
+So we have a vector that tells us how much money we want to invest in each asset.
+
+00:00:10.169 --> 00:00:15.585
+The holdings vector is an n-dimensional vector with one value for each company.
+
+00:00:15.585 --> 00:00:21.344
+If we take the dot product of the holdings vector and each factor exposure vector,
+
+00:00:21.344 --> 00:00:26.820
+we have what we call the exposure of the portfolio to each factor.
+
+00:00:26.820 --> 00:00:29.469
+If we put these values in a vector,
+
+00:00:29.469 --> 00:00:33.484
+we have what we call the exposure vector of the portfolio.
+
+00:00:33.484 --> 00:00:38.990
+Each of these values represents the portfolio's exposure to a single factor.
+
+00:00:38.990 --> 00:00:42.770
+We can write what we just did in the following way as
+
+00:00:42.770 --> 00:00:47.350
+the transpose of the factor exposure matrix times the holdings vector.
+
+00:00:47.350 --> 00:00:51.890
+Now, we have the exposures of the portfolio to each factor.
+
+00:00:51.890 --> 00:00:55.590
+That is to say, the exposure vector.
+

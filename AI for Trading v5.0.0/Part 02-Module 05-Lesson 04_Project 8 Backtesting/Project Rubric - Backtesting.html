@@ -1,0 +1,732 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Backtesting
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Project 8: Backtesting
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Project Description.html">
+       01. Project Description
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Project 8 Workspace.html">
+       02. Project 8 Workspace
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Congratulations!.html">
+       03. Congratulations!
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Description - Backtesting.html">
+       Project Description - Backtesting
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Rubric - Backtesting.html">
+       Project Rubric - Backtesting
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          Backtesting
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div>
+        <h2>
+         <p>
+          Shift Daily Returns Data
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Shift Daily Returns Data
+            </p>
+           </td>
+           <td>
+            <p>
+             The variable
+             <code>
+              frames
+             </code>
+             contains the data from
+             <code>
+              daily_return
+             </code>
+             and
+             <code>
+              data
+             </code>
+             correctly shifted.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Build Universe Based on Filters
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Build Universe of Stocks
+            </p>
+           </td>
+           <td>
+            <p>
+             The function
+             <code>
+              get_universe
+             </code>
+             correctly creates a stock universe by selecting only those companies that have a market capitalization of at least 1 billion dollars (1e9) OR that are in the previous day's holdings, even if on the current day, the company no longer meets the 1 billion dollar criteria.
+            </p>
+            <p>
+             They should use the
+             <code>
+              .copy()
+             </code>
+             attribute to create a copy of the data and they should drop the column containing the daily return from the universe dataframe.
+            </p>
+            <p>
+             The returned
+             <code>
+              universe
+             </code>
+             dataframe should have a shape of (2265, 93)
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Factor covariance matrix
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Create the factor covariance matrix
+            </p>
+           </td>
+           <td>
+            <p>
+             The function
+             <code>
+              diagonal_factor_cov
+             </code>
+             correctly creates the factor covariance matrix. The factor matrix must be scaled by (0.01**2).  They must use the given
+             <code>
+              colnames
+             </code>
+             function to get the column names from
+             <code>
+              X
+             </code>
+             and use the statement 'covariance[date]' to get the covariances for the given
+             <code>
+              date
+             </code>
+             .
+            </p>
+            <p>
+             The returned factor covariance matrix should have shape (77, 77)
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Alpha Combination
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             create a matrix of alpha factors
+            </p>
+           </td>
+           <td>
+            <p>
+             The function
+             <code>
+              get_B_alpha
+             </code>
+             correctly creates a matrix of alpha factors. They must use the given
+             <code>
+              get_formula
+             </code>
+             and
+             <code>
+              model_matrix
+             </code>
+             functions.
+            </p>
+            <p>
+             The returned
+             <code>
+              B_alpha
+             </code>
+             should be of type patsy.design_info.DesignMatrix and it should have shape (2265, 4). The 4 columns of this matrix should correspond to the 4 alpha factors chosen at the beginning, namely:
+            </p>
+            <p>
+             "USFASTD_1DREVRSL"
+             <br/>
+             "USFASTD_EARNYILD"
+             <br/>
+             "USFASTD_VALUE"
+             <br/>
+             "USFASTD_SENTMT"
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             Create an alpha vector
+            </p>
+           </td>
+           <td>
+            <p>
+             The function
+             <code>
+              get_alpha_vec
+             </code>
+             correctly creates a vector of alpha factors. To do this, they must add the rows of the Matrix of Alpha Factors and multiply the result by 1e-4.
+            </p>
+            <p>
+             The returned
+             <code>
+              alpha_vac
+             </code>
+             should have shape (2265,)
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Objective function
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Create the objective function to be minimized
+            </p>
+           </td>
+           <td>
+            <p>
+             The
+             <code>
+              obj_func(h)
+             </code>
+             function correctly implements the objective function. The equation of the objective function is given in the notebook.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Gradient
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Create the gradient of the objective function
+            </p>
+           </td>
+           <td>
+            <p>
+             The
+             <code>
+              grad_func(h)
+             </code>
+             function correctly implements the gradient of the objective function. The equation of the gradient of the objective function is given in the notebook.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Optimize
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Optimize the objective function
+            </p>
+           </td>
+           <td>
+            <p>
+             The function
+             <code>
+              get_h_star
+             </code>
+             correctly optimizes the objective function using the following functions
+             <code>
+              obj_func
+             </code>
+             ,
+             <code>
+              grad_func
+             </code>
+             , and
+             <code>
+              scipy.optimize.fmin_l_bfgs_b
+             </code>
+             .
+            </p>
+            <p>
+             The returned
+             <code>
+              h_star
+             </code>
+             should have shape (2265,)
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Risk Exposures
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Calculate the portfolio's Risk Exposure
+            </p>
+           </td>
+           <td>
+            <p>
+             The function
+             <code>
+              get_risk_exposures
+             </code>
+             correctly calculates the portfolio's risk exposures
+            </p>
+            <p>
+             The returned
+             <code>
+              risk_exposures
+             </code>
+             Pandas series should have shape (77,). The index of this Pandas Series should correspond to the risk factors such as 'USFASTD_AERODEF', 'USFASTD_AIRLINES', 'USFASTD_ALUMSTEL', ……
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             Calculate the portfolio's Alpha Exposure
+            </p>
+           </td>
+           <td>
+            <p>
+             The function
+             <code>
+              get_portfolio_alpha_exposure
+             </code>
+             correctly calculates the portfolio's alpha exposures.
+            </p>
+            <p>
+             The returned
+             <code>
+              portfolio_alpha_exposure
+             </code>
+             Pandas series should have shape (4,). The index of this Pandas Series should should correspond to the 4 alpha factors chosen at the beginning, namely:
+            </p>
+            <p>
+             "USFASTD_1DREVRSL"
+             <br/>
+             "USFASTD_EARNYILD"
+             <br/>
+             "USFASTD_VALUE"
+             <br/>
+             "USFASTD_SENTMT"
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Transaction Costs
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Calculate Total Transaction Costs
+            </p>
+           </td>
+           <td>
+            <p>
+             The function
+             <code>
+              get_total_transaction_costs
+             </code>
+             correctly calculates the total transaction costs according to the equation given in the notebook.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Profit-and-Loss (PnL) attribution
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Profit and Loss attribution
+            </p>
+           </td>
+           <td>
+            <p>
+             Correctly calculate the PnL attributed to the alpha factors, the PnL attributed to the risk factors, and attribution to cost.
+            </p>
+            <p>
+             To calculate the alpha and risk exposures they must use the provided
+             <code>
+              partial_dot_product
+             </code>
+             function
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Build portfolio characteristics
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             build portfolio characteristics
+            </p>
+           </td>
+           <td>
+            <p>
+             Correctly calculates the sum of long positions, short positions, net positions, gross market value, and amount of dollars traded.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('Backtesting')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

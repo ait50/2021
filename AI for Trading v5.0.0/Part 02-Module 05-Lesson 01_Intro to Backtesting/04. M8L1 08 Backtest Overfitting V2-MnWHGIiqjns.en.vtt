@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.679
+Another way a back-test could benefit from hindsight and hence be an illusion,
+
+00:00:04.679 --> 00:00:08.429
+is if the modelers have statistically over fit the training data,
+
+00:00:08.429 --> 00:00:13.649
+and or failed to observe good statistical practices concerning testing sets.
+
+00:00:13.650 --> 00:00:16.484
+Typically, when statistical models are used,
+
+00:00:16.484 --> 00:00:17.625
+there's a training set,
+
+00:00:17.625 --> 00:00:19.585
+a validation set, and a test set.
+
+00:00:19.585 --> 00:00:23.745
+Or in certain statistical procedures such as cross-validation,
+
+00:00:23.745 --> 00:00:25.920
+the same data set is used to generate
+
+00:00:25.920 --> 00:00:29.415
+multiple training sets and validation sets by re-sampling.
+
+00:00:29.414 --> 00:00:32.969
+But in such cases, proper statistical practice,
+
+00:00:32.969 --> 00:00:35.744
+dictates that there must still be a test set,
+
+00:00:35.744 --> 00:00:41.774
+which is only examined after all modeling choices have been made and the model is fixed.
+
+00:00:41.774 --> 00:00:45.259
+If the model's performance on this test set is poor,
+
+00:00:45.259 --> 00:00:47.619
+you should discard the strategy.
+
+00:00:47.619 --> 00:00:53.284
+We have already discussed basic principles of statistical over fitting in prior lessons.
+
+00:00:53.284 --> 00:00:58.039
+If you want to read a more detailed discussion of this topic and related procedures,
+
+00:00:58.039 --> 00:01:01.039
+check out the book, Elements of Statistical Learning,
+
+00:01:01.039 --> 00:01:04.099
+which is available for free online as a PDF.
+
+00:01:04.099 --> 00:01:08.969
+Certain statistical machine learning methods are more proned over fitting than others,
+
+00:01:08.969 --> 00:01:11.344
+and it is important to understand the differences
+
+00:01:11.344 --> 00:01:14.015
+among them if one is using those techniques.
+
+00:01:14.015 --> 00:01:15.680
+Without a test set,
+
+00:01:15.680 --> 00:01:19.520
+it is impossible to guess the models generalization performance.
+
+00:01:19.519 --> 00:01:23.149
+That is, its accuracy on data that it hasn't seen yet.
+
+00:01:23.150 --> 00:01:27.900
+Live trading strategies are always being run on data they haven't seen yet,
+
+00:01:27.900 --> 00:01:29.940
+the real-time data of the world.
+
+00:01:29.939 --> 00:01:34.144
+So, the only thing that matters is generalization performance.
+
+00:01:34.144 --> 00:01:37.399
+If the model are repeatedly tweaks the model,
+
+00:01:37.400 --> 00:01:39.260
+examines the test set performance,
+
+00:01:39.260 --> 00:01:40.625
+and then tweaks again,
+
+00:01:40.625 --> 00:01:45.859
+only accepting those model tweaks which seemed to improve performance on the test set,
+
+00:01:45.859 --> 00:01:50.719
+then this represents a research process which is fundamentally broken.
+
+00:01:50.719 --> 00:01:54.304
+The test set in such cases can no longer be used to
+
+00:01:54.305 --> 00:01:58.385
+generate an estimate of the models through generalization performance.
+
+00:01:58.385 --> 00:02:02.689
+In which case, there is no estimate of generalization performance.
+

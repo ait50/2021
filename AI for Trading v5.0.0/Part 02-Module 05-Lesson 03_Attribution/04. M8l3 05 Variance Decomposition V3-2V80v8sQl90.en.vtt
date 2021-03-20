@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.540
+When we've described our portfolio in terms of several factors,
+
+00:00:03.540 --> 00:00:06.299
+we can also use that information to decompose
+
+00:00:06.299 --> 00:00:10.109
+the portfolio risk in terms of the risk due to these factors,
+
+00:00:10.109 --> 00:00:13.004
+and the idiosyncratic risk due to the error term.
+
+00:00:13.005 --> 00:00:16.500
+Let's start with the expression for the portfolio variance.
+
+00:00:16.500 --> 00:00:21.509
+First, we write down the variance of the asset returns in terms of the factors.
+
+00:00:21.510 --> 00:00:25.410
+You'll recognize this expression from previous lessons.
+
+00:00:25.410 --> 00:00:29.280
+Then we multiply by the holdings vector on either side.
+
+00:00:29.280 --> 00:00:32.399
+This is now the variance of our portfolio.
+
+00:00:32.399 --> 00:00:36.589
+We can take the holdings vector inside the parentheses.
+
+00:00:36.590 --> 00:00:40.280
+We also see that the combination of the holdings vector and
+
+00:00:40.280 --> 00:00:43.460
+the factor matrix is the portfolio exposure vector.
+
+00:00:43.460 --> 00:00:47.899
+Now, we see that the portfolio variance is the sum of two terms.
+
+00:00:47.899 --> 00:00:50.945
+One is the idiosyncratic variance,
+
+00:00:50.945 --> 00:00:53.825
+and the other is due to the factors.
+
+00:00:53.825 --> 00:00:57.200
+If we divide the expression by the total variance,
+
+00:00:57.200 --> 00:01:00.760
+we get what we call a variance decomposition.
+
+00:01:00.759 --> 00:01:07.579
+Note that the factor covariance matrix times the exposure vector is itself a vector.
+
+00:01:07.579 --> 00:01:10.444
+So that quantity times the exposure vector
+
+00:01:10.444 --> 00:01:13.254
+is like a weighted sum of terms for each factor,
+
+00:01:13.254 --> 00:01:16.474
+with the elements of the exposure vector as weights.
+
+00:01:16.474 --> 00:01:20.659
+We'll expand out the vector matrix multiplication of
+
+00:01:20.659 --> 00:01:24.289
+the exposure vector and the factor covariance matrix a little,
+
+00:01:24.290 --> 00:01:27.130
+so that we can see the sum over factors.
+
+00:01:27.129 --> 00:01:30.259
+Now, there's a term for each factor
+
+00:01:30.260 --> 00:01:34.190
+and a term for the idiosyncratic variants which sum to one.
+
+00:01:34.189 --> 00:01:39.364
+This expression makes the relative contributions of different terms easier to interpret.
+
+00:01:39.364 --> 00:01:43.324
+Note that the idiosyncratic variance term is never negative,
+
+00:01:43.325 --> 00:01:46.710
+but the variance contribution from a factor can be negative,
+
+00:01:46.709 --> 00:01:49.099
+if the factor is acting as a hedge and
+
+00:01:49.099 --> 00:01:52.629
+reducing variants caused by exposure to other factors.
+
+00:01:52.629 --> 00:01:54.765
+Note that in this expression,
+
+00:01:54.765 --> 00:02:00.694
+we assume that the sum over factors is over both risk and Alpha factors.
+
+00:02:00.694 --> 00:02:03.769
+So although in previous parts of the course,
+
+00:02:03.769 --> 00:02:08.750
+we left the Alpha factors out of the exposure and factor return matrices,
+
+00:02:08.750 --> 00:02:14.479
+B, which is wrapped up in E and F. Here, we include them.
+
+00:02:14.479 --> 00:02:18.289
+So in the sum, a few of the terms in the sum over I
+
+00:02:18.289 --> 00:02:23.280
+represent the Alpha factors and the others represent the risk factors.
+

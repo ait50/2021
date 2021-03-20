@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.575
+Now that you have some intuition of how transaction costs arise,
+
+00:00:04.575 --> 00:00:09.330
+let's discuss how to model transaction costs as a function of the trade.
+
+00:00:09.330 --> 00:00:12.839
+Well, think about what's called a Linear Impact Model.
+
+00:00:12.839 --> 00:00:18.585
+So we're looking for an independent variable that has an effect on a dependent variable.
+
+00:00:18.585 --> 00:00:23.760
+The dependent variable is some measure that describes transaction cost.
+
+00:00:23.760 --> 00:00:28.605
+As we saw in our prior discussion about temporary and permanent price impact,
+
+00:00:28.605 --> 00:00:33.585
+the transaction cost comes from a change in the market price of the asset.
+
+00:00:33.585 --> 00:00:39.270
+Next, let's think about the independent variable that drives the change in price,
+
+00:00:39.270 --> 00:00:41.609
+and hence the transaction cost.
+
+00:00:41.609 --> 00:00:43.740
+Based on our prior discussion,
+
+00:00:43.740 --> 00:00:47.000
+it's fair to assume that the larger the trade,
+
+00:00:47.000 --> 00:00:50.119
+the larger the impact on the market price.
+
+00:00:50.119 --> 00:00:52.640
+But let's think about this for a moment.
+
+00:00:52.640 --> 00:00:55.460
+If you trade $10,000 of a stock,
+
+00:00:55.460 --> 00:00:59.465
+is that considered a large trade or a small trade?
+
+00:00:59.465 --> 00:01:03.230
+You might want to know how many total dollars of that stock
+
+00:01:03.229 --> 00:01:07.295
+were traded on that day by all market participants,
+
+00:01:07.295 --> 00:01:12.314
+in order to decide whether $10,000 is a lot or a little.
+
+00:01:12.314 --> 00:01:14.700
+If our trade makes up one-tenth of
+
+00:01:14.700 --> 00:01:18.245
+one percent of the total dollars traded for that stock,
+
+00:01:18.245 --> 00:01:21.400
+this might be considered a small amount.
+
+00:01:21.400 --> 00:01:27.890
+If our trade makes up 10 percent of the total dollars traded for that stock on that day,
+
+00:01:27.890 --> 00:01:33.665
+then they would be considered a large trade and would be more likely to affect the price.
+
+00:01:33.665 --> 00:01:37.100
+So we can calculate the independent variable as
+
+00:01:37.099 --> 00:01:40.774
+a fraction of total dollars traded that day.
+
+00:01:40.775 --> 00:01:44.520
+We'll call this the trade size.
+
+00:01:44.590 --> 00:01:50.000
+If we had execution data from market makers such as major banks,
+
+00:01:50.000 --> 00:01:52.385
+we could estimate the slope of that line.
+
+00:01:52.385 --> 00:01:55.430
+Since most of us don't have access to this data,
+
+00:01:55.430 --> 00:01:59.300
+another way to find this slope is to look in academic papers,
+
+00:01:59.299 --> 00:02:05.370
+especially ones where the researchers estimated this using real execution data.
+
+00:02:05.409 --> 00:02:09.710
+A good estimate that we can use for our purposes,
+
+00:02:09.710 --> 00:02:13.040
+is that each one percent of the average daily volume
+
+00:02:13.039 --> 00:02:17.314
+traded moves the price by 10 basis points.
+
+00:02:17.314 --> 00:02:24.125
+The cost in dollar terms is the percent change in price times the dollar amount traded.
+
+00:02:24.125 --> 00:02:26.870
+Note that a Linear Impact Model gives
+
+00:02:26.870 --> 00:02:32.150
+a readily understandable description of how trade impacts price.
+
+00:02:32.150 --> 00:02:36.705
+There is also evidence to support a Square Root Impact Model.
+
+00:02:36.705 --> 00:02:39.713
+That is to say, as trades get larger,
+
+00:02:39.713 --> 00:02:45.539
+the impact on price is not as strong as one would expect from a Linear Model.
+

@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+Assume transaction cost is linearly related to
+
+00:00:03.390 --> 00:00:07.230
+the trade size as a fraction of the average daily volume.
+
+00:00:07.230 --> 00:00:12.015
+Since we won't know the actual daily volume until the day that we're executing,
+
+00:00:12.015 --> 00:00:17.399
+we want to use past data as an estimate for future daily volume.
+
+00:00:17.399 --> 00:00:22.324
+This will be kind of noisy if we simply use the prior day's daily volume,
+
+00:00:22.324 --> 00:00:27.500
+so we'd prefer a more stable estimate like a 30-day rolling average.
+
+00:00:27.500 --> 00:00:32.719
+A commonly used estimate for linear market impact is that if a trade size is
+
+00:00:32.719 --> 00:00:38.875
+one percent of the average daily, volume this moves the price by 10 basis points.
+
+00:00:38.875 --> 00:00:43.174
+Note that this is 10 basis points as a fraction of the original price,
+
+00:00:43.174 --> 00:00:45.890
+so it's a percent change in price.
+
+00:00:45.890 --> 00:00:48.155
+Let's define two terms;
+
+00:00:48.155 --> 00:00:51.605
+trade and trade size.
+
+00:00:51.604 --> 00:00:54.949
+The trade is the dollar amount to be traded,
+
+00:00:54.950 --> 00:00:59.375
+which is the desired position minus the previous day's position.
+
+00:00:59.375 --> 00:01:05.944
+The trade size on the other hand is the trade divided by the average dollar volume.
+
+00:01:05.944 --> 00:01:09.604
+The impact of trading is a percent change in price,
+
+00:01:09.605 --> 00:01:13.145
+so it's the change in price as a fraction of the original price.
+
+00:01:13.144 --> 00:01:18.890
+Let's see how to define the price impact in terms of variables that we've seen here.
+
+00:01:18.890 --> 00:01:21.230
+We'll write out this ratio,
+
+00:01:21.230 --> 00:01:24.935
+change in price divided by the trade size.
+
+00:01:24.935 --> 00:01:28.010
+This includes the assumption that a trade size,
+
+00:01:28.010 --> 00:01:34.135
+which is one percent of average daily volume moves the price by 10 basis points.
+
+00:01:34.135 --> 00:01:41.325
+Remember that 10 basis points is 10 divided by 10 raised to the fourth power.
+
+00:01:41.325 --> 00:01:46.585
+Also, recall that one percent is one divided by 100.
+
+00:01:46.584 --> 00:01:50.329
+If we do some simplifications and substitutions,
+
+00:01:50.329 --> 00:01:53.674
+and isolate the percent change of price on one side,
+
+00:01:53.674 --> 00:01:55.670
+it looks like this.
+
+00:01:55.670 --> 00:02:00.349
+Don't worry about all the steps that it took to get to this version of the formula,
+
+00:02:00.349 --> 00:02:04.939
+because you'll see the step-by-step derivation in the notebook of the coding exercise.
+
+00:02:04.939 --> 00:02:10.085
+The point is that we can estimate the price impact based on data that we have.
+
+00:02:10.085 --> 00:02:12.510
+There's the current day's optimal holding,
+
+00:02:12.509 --> 00:02:15.149
+which is found with portfolio optimization.
+
+00:02:15.150 --> 00:02:17.659
+There's also the previous day's holding.
+
+00:02:17.659 --> 00:02:22.210
+Finally, there's the estimate for that day's average daily volume.
+
+00:02:22.210 --> 00:02:26.240
+For convenience, we'll collect the two values that are not
+
+00:02:26.240 --> 00:02:30.230
+the holdings and refer to them as one term, lambda.
+
+00:02:30.229 --> 00:02:35.634
+Remember that the lambda term contains one divided by the average daily volume.
+
+00:02:35.634 --> 00:02:39.199
+So now, we have the percent change in price that can be
+
+00:02:39.199 --> 00:02:43.069
+estimated as lambda times the trade.
+
+00:02:43.069 --> 00:02:48.354
+Let's go from the price impact to the cost of trading itself.
+
+00:02:48.354 --> 00:02:51.194
+The transaction cost is in dollars,
+
+00:02:51.194 --> 00:02:55.864
+and it's the percent change in price times the amount to traded.
+
+00:02:55.865 --> 00:02:58.145
+The larger the change in price,
+
+00:02:58.145 --> 00:02:59.710
+the higher the cost.
+
+00:02:59.710 --> 00:03:02.430
+Also, the more that is traded,
+
+00:03:02.430 --> 00:03:04.245
+the higher the cost.
+
+00:03:04.245 --> 00:03:10.009
+We had just defined the percent change in price in terms of lambda and the trade,
+
+00:03:10.009 --> 00:03:12.769
+so we can do some substitution here.
+
+00:03:12.770 --> 00:03:15.439
+Notice that the trade term appears twice,
+
+00:03:15.439 --> 00:03:17.569
+so we can clean up the notation a bit,
+
+00:03:17.569 --> 00:03:19.954
+so that the trade term is in squared.
+
+00:03:19.955 --> 00:03:26.155
+That's the linear estimate of transaction cost for a single asset on a single day.
+
+00:03:26.155 --> 00:03:28.754
+For the portfolio as a whole,
+
+00:03:28.754 --> 00:03:32.840
+we'll add up the individual transaction costs of each asset that is traded
+
+00:03:32.840 --> 00:03:38.134
+that day to get an estimate of total transaction cost for that day.
+
+00:03:38.134 --> 00:03:43.169
+You'll see the step-by-step derivation of this in the coding notebook.
+

@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.339
+Recall that the mid-point price is the middle of the bid-ask spread.
+
+00:00:05.339 --> 00:00:08.414
+Before we begin to execute a parent order,
+
+00:00:08.414 --> 00:00:10.469
+the mid-point price can serve as
+
+00:00:10.470 --> 00:00:14.280
+the benchmark from which we estimate the transaction cost.
+
+00:00:14.279 --> 00:00:16.994
+For each child order that is traded,
+
+00:00:16.995 --> 00:00:19.920
+the difference between the price paid and
+
+00:00:19.920 --> 00:00:25.410
+this benchmark is a measure of the trade cost which is called slippage.
+
+00:00:25.410 --> 00:00:30.410
+We can think of slippage as the sum of two kinds of price impact.
+
+00:00:30.410 --> 00:00:35.659
+There's the temporary price impact and permanent price impact.
+
+00:00:35.659 --> 00:00:39.169
+Temporary impact refers to the slippage that always
+
+00:00:39.170 --> 00:00:42.890
+exists even when the bid-ask spread does not change.
+
+00:00:42.890 --> 00:00:45.829
+This is because, the price you pay when buying
+
+00:00:45.829 --> 00:00:50.539
+the asset is always a bit more than the mid-point benchmark price.
+
+00:00:50.539 --> 00:00:54.379
+The permanent impact refers to an actual shift in
+
+00:00:54.380 --> 00:00:58.280
+the bid-ask spread and therefore, the mid-point price.
+
+00:00:58.280 --> 00:01:01.490
+This is what we refer to when we say a trade is
+
+00:01:01.490 --> 00:01:05.875
+large enough that it begins to impact the market price.
+
+00:01:05.875 --> 00:01:11.459
+Here's an example of how a sell order is broken up into several child orders,
+
+00:01:11.459 --> 00:01:14.524
+where the orders are shown as red triangles.
+
+00:01:14.525 --> 00:01:18.005
+Looking at the chart from left to right, we can see that,
+
+00:01:18.004 --> 00:01:20.390
+during the execution of the sell order,
+
+00:01:20.390 --> 00:01:25.040
+the price initially drops quite a bit which becomes a cost of the transaction.
+
+00:01:25.040 --> 00:01:29.240
+Some of this price shift may have been due to the market participants as a whole
+
+00:01:29.239 --> 00:01:34.179
+and some of it could have been due to the individual trader himself.
+
+00:01:34.180 --> 00:01:38.030
+Note that, we can't be sure what part of the price drop is caused
+
+00:01:38.030 --> 00:01:41.719
+by our own trading or by the rest of the markets trading.
+
+00:01:41.719 --> 00:01:46.234
+It could be the case that the price would have dropped without us making any trades.
+
+00:01:46.234 --> 00:01:50.329
+In which case, our decision to sell the asset was a good decision.
+
+00:01:50.329 --> 00:01:53.420
+It could also be that our trades make up enough of
+
+00:01:53.420 --> 00:01:57.430
+the total volume traded that we're moving the market price.
+
+00:01:57.430 --> 00:01:59.185
+Near the middle of the chart,
+
+00:01:59.185 --> 00:02:03.620
+we can see additional sell orders where the price did not drop significantly.
+
+00:02:03.620 --> 00:02:06.980
+Here, we can assume more of the slippage is due to
+
+00:02:06.980 --> 00:02:09.770
+temporary price impact unless it's due
+
+00:02:09.770 --> 00:02:13.840
+to a permanent impact that has shifted the market price.
+

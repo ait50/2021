@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.359
+Welcome to the final project of the Nanodegree program.
+
+00:00:03.359 --> 00:00:06.119
+You'll get to build a backtester using borrow data,
+
+00:00:06.120 --> 00:00:09.000
+which is widely used in the quant and finance industry.
+
+00:00:09.000 --> 00:00:12.345
+We had Gordon here, who designed and built the project.
+
+00:00:12.345 --> 00:00:16.950
+So, Gordon could you tell us a little bit about your experience in building backtesters?
+
+00:00:16.949 --> 00:00:21.239
+Sure. I built a number of backtesting frameworks over the years.
+
+00:00:21.239 --> 00:00:24.464
+I think the most important thing that an actual quant fund,
+
+00:00:24.464 --> 00:00:27.239
+is to have the backtest correspond as closely as
+
+00:00:27.239 --> 00:00:31.004
+possible to a simulation of how you would actually trade in production,
+
+00:00:31.004 --> 00:00:35.939
+and to accurately reflect various sources of costs such as market impact.
+
+00:00:35.939 --> 00:00:38.579
+Also very important, is that you're
+
+00:00:38.579 --> 00:00:41.280
+aware of when you would have known each piece of data.
+
+00:00:41.280 --> 00:00:44.359
+If it's the last price of the day for example,
+
+00:00:44.359 --> 00:00:46.839
+you could not have used it to trade on that day.
+
+00:00:46.840 --> 00:00:49.510
+The soon as you could have used it is the next day.
+
+00:00:49.509 --> 00:00:52.219
+So, this project is a pretty good foundation for
+
+00:00:52.219 --> 00:00:55.039
+what students can do to understand backtesting.
+
+00:00:55.039 --> 00:00:57.619
+Could you give some suggestions for how they could make
+
+00:00:57.619 --> 00:01:00.919
+this project their own and add some additional features to it?
+
+00:01:00.920 --> 00:01:04.159
+Sure. One thing they could try for starters,
+
+00:01:04.159 --> 00:01:08.375
+is to backtest on different time periods and interpret the final results.
+
+00:01:08.375 --> 00:01:11.689
+For instance, the year 2007 is quite interesting
+
+00:01:11.689 --> 00:01:16.774
+because of the quant crisis that occurred in August of 2007.
+
+00:01:16.775 --> 00:01:21.140
+Two thousand eight is also a unique year because of the financial crisis.
+
+00:01:21.140 --> 00:01:24.859
+In 2008, we expect market neutral strategies such as
+
+00:01:24.859 --> 00:01:29.075
+the one we are backtesting here to outperform traditional strategies.
+
+00:01:29.075 --> 00:01:31.939
+Also, students can try different factors to be
+
+00:01:31.939 --> 00:01:35.120
+their alphas in addition to the ones that I chose for the project.
+
+00:01:35.120 --> 00:01:38.570
+Or even better, invent their own alphas and use those,
+
+00:01:38.569 --> 00:01:42.139
+including ones they've looked at in previous projects in this course.
+
+00:01:42.140 --> 00:01:45.185
+There are also other ways to combine the alphas.
+
+00:01:45.185 --> 00:01:50.540
+We can go beyond the simple equal weighted alpha combination that I did here.
+
+00:01:50.540 --> 00:01:53.720
+For example, by choosing different weights for each alpha
+
+00:01:53.719 --> 00:01:57.500
+based on some metric that tells us how confident we are in that alpha.
+
+00:01:57.500 --> 00:01:59.780
+Another way to make your project unique,
+
+00:01:59.780 --> 00:02:02.885
+is to try to make the transaction cost model more realistic.
+
+00:02:02.885 --> 00:02:05.630
+For instance, instead of a unique price impact model,
+
+00:02:05.629 --> 00:02:07.819
+you could try a square root impact model.
+
+00:02:07.819 --> 00:02:11.239
+To choose the parameters of a square root impact model however,
+
+00:02:11.240 --> 00:02:14.330
+I'd recommend reading research papers that study this,
+
+00:02:14.330 --> 00:02:19.715
+because they typically have access to large databases of real trades to fit their model.
+
+00:02:19.715 --> 00:02:21.765
+One paper I recommend is called,
+
+00:02:21.764 --> 00:02:24.799
+Crossover from linear to square-Root market impact.
+
+00:02:24.800 --> 00:02:27.810
+That's a good overview of different transaction costs models,
+
+00:02:27.810 --> 00:02:30.729
+and also references other papers that are useful.
+
+00:02:30.729 --> 00:02:34.054
+Great. Thanks for your advice on how students can customize the project.
+
+00:02:34.055 --> 00:02:36.819
+Is there any other advice you'd like to give to the students?
+
+00:02:36.819 --> 00:02:40.459
+Wherever you choose, I just hope you have fun with the project and good luck.
+
+00:02:40.460 --> 00:02:41.960
+Great. Thanks Gordon.
+
+00:02:41.960 --> 00:02:43.930
+Good luck to you students.
+

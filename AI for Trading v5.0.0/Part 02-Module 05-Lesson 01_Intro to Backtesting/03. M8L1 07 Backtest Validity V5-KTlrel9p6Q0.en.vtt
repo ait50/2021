@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.865
+A backtest is said to be valid or
+
+00:00:02.865 --> 00:00:07.004
+admissible if it satisfies at least the following two conditions.
+
+00:00:07.004 --> 00:00:10.844
+The first condition is that the profit calculation is realistic,
+
+00:00:10.845 --> 00:00:15.510
+which means that the simulated profit and loss could actually have been achieved by
+
+00:00:15.509 --> 00:00:20.550
+trading the same instruments in the same way that the backtest code implies.
+
+00:00:20.550 --> 00:00:23.850
+The second condition is that the strategy construction does not
+
+00:00:23.850 --> 00:00:27.240
+benefit from look-ahead bias or from hindsight.
+
+00:00:27.239 --> 00:00:31.079
+In other words, at the historical dates in the backtest,
+
+00:00:31.079 --> 00:00:34.409
+a hypothetical trader would have possessed all of the knowledge
+
+00:00:34.409 --> 00:00:39.344
+necessary to have actually implemented the strategy on those days.
+
+00:00:39.344 --> 00:00:45.094
+There are many kinds of mistakes which would render a backtest invalid or inadmissible.
+
+00:00:45.094 --> 00:00:46.939
+We will give a few examples.
+
+00:00:46.939 --> 00:00:50.134
+Using a model for trading costs which
+
+00:00:50.134 --> 00:00:54.309
+underestimates the true cost is a violation of condition one.
+
+00:00:54.310 --> 00:01:00.094
+Often, this means that whole categories of assets need to be excluded because they are so
+
+00:01:00.094 --> 00:01:02.795
+illiquid that they would be impossible to trade
+
+00:01:02.795 --> 00:01:06.290
+at any significant size without prohibitive costs.
+
+00:01:06.290 --> 00:01:09.590
+Similarly, ignoring categories of costs such as
+
+00:01:09.590 --> 00:01:13.415
+financing or taxes also violates condition one.
+
+00:01:13.415 --> 00:01:17.120
+Moreover, the backtest should not assume that it would have been able to
+
+00:01:17.120 --> 00:01:21.090
+trade in volumes that are large relative to the actual volume,
+
+00:01:21.090 --> 00:01:23.795
+and it should not assume that it could have executed
+
+00:01:23.795 --> 00:01:27.170
+during the day at the close price of that day.
+
+00:01:27.170 --> 00:01:30.575
+Yet another example of a violation of one is assuming
+
+00:01:30.575 --> 00:01:34.775
+the backtest could borrow more shares than what actually available to borrow.
+
+00:01:34.775 --> 00:01:40.760
+The know hindsight condition two is even more subtle and it's even more prone to abuses,
+
+00:01:40.760 --> 00:01:43.520
+which render many backtest inadmissible for
+
+00:01:43.519 --> 00:01:46.954
+reasons that range from very obvious to very subtle.
+
+00:01:46.954 --> 00:01:48.734
+On the very obvious side,
+
+00:01:48.734 --> 00:01:54.484
+the backtest must be coded in such a way that prevents the use of tomorrow's news today.
+
+00:01:54.484 --> 00:02:00.319
+Ideally, every data point that is being used will have a knowledge timestamp representing
+
+00:02:00.319 --> 00:02:06.500
+the time in history that the relevant data point became available to be used for trading.
+
+00:02:06.500 --> 00:02:08.870
+Many kinds of data become available in
+
+00:02:08.870 --> 00:02:12.469
+the evenings after the major stock exchanges have closed.
+
+00:02:12.469 --> 00:02:17.270
+A backtest cannot assume that data which would have been published in the evening on
+
+00:02:17.270 --> 00:02:22.355
+day T could be used for trading on day T. Similarly,
+
+00:02:22.354 --> 00:02:23.840
+the final price of the day,
+
+00:02:23.840 --> 00:02:27.920
+the close price on day T cannot be used for trading on day T.
+
+00:02:27.919 --> 00:02:31.069
+Failing to adhere to these principles will
+
+00:02:31.069 --> 00:02:35.569
+result in a backtest that may look great but the greatness in that case would be
+
+00:02:35.569 --> 00:02:41.044
+an illusion that is impossible to translate into the performance of real investments.
+
+00:02:41.044 --> 00:02:44.000
+The use of technologies which did not exist in
+
+00:02:44.000 --> 00:02:47.735
+the past can also lead to overly rosy calculations.
+
+00:02:47.735 --> 00:02:51.950
+For example, assuming the use of an LSTM neural network in
+
+00:02:51.949 --> 00:02:58.159
+the 1990s when no one had this technology must be regarded with some skepticism.
+
+00:02:58.159 --> 00:03:01.069
+Today, this technology is readily available.
+
+00:03:01.069 --> 00:03:02.269
+So at the very least,
+
+00:03:02.270 --> 00:03:06.710
+there's likely to be more competition going forward than there could have been during
+
+00:03:06.710 --> 00:03:11.680
+a historical period when it is very likely there was no one using the method.
+

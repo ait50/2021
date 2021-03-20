@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.009
+An important thing to remember about
+
+00:00:02.009 --> 00:00:05.789
+backtesting is that we're attempting to simulate live trading.
+
+00:00:05.790 --> 00:00:10.169
+So let's say we have some data from which we construct an Alpha,
+
+00:00:10.169 --> 00:00:14.504
+and we also have the daily returns data that we use to
+
+00:00:14.505 --> 00:00:19.185
+realize gains or losses for our portfolio.
+
+00:00:19.184 --> 00:00:22.934
+If we look at the returns data recorded on Monday,
+
+00:00:22.934 --> 00:00:27.750
+we can't use data from that same day to construct the Alpha because
+
+00:00:27.750 --> 00:00:33.060
+we may not actually have that data available until the market closes on that day.
+
+00:00:33.060 --> 00:00:39.800
+Now, what if we use Monday's data and returns from the next day on Tuesday?
+
+00:00:39.799 --> 00:00:44.854
+Well, it means that we'd have the data before the market opens on Tuesday.
+
+00:00:44.854 --> 00:00:49.144
+But it would also assume that we make all our trades instantly
+
+00:00:49.145 --> 00:00:53.905
+that Tuesday morning in order to realize the returns for Tuesday.
+
+00:00:53.905 --> 00:00:57.649
+In reality, it takes time to execute a trade.
+
+00:00:57.649 --> 00:01:00.619
+If you're updating portfolio positions daily,
+
+00:01:00.619 --> 00:01:04.730
+then you'll also allocate a day to execute your trades.
+
+00:01:04.730 --> 00:01:08.855
+So a more realistic re-creation of live training would be to expect
+
+00:01:08.855 --> 00:01:11.689
+a two-day delay between when the data is
+
+00:01:11.689 --> 00:01:15.459
+received and when the portfolio returns are realized.
+
+00:01:15.459 --> 00:01:18.279
+This would mean that by the end of Monday,
+
+00:01:18.280 --> 00:01:23.495
+we'd have the data to run portfolio optimization and choose the ideal positions,
+
+00:01:23.495 --> 00:01:26.484
+as well as decide how much to trade.
+
+00:01:26.484 --> 00:01:28.679
+We take the next day,
+
+00:01:28.680 --> 00:01:33.785
+Tuesday to execute the trades that get us to the desired positions.
+
+00:01:33.784 --> 00:01:37.250
+Finally, on the day after on Wednesday,
+
+00:01:37.250 --> 00:01:42.504
+we'd have the desired positions and realize the returns through that day.
+
+00:01:42.504 --> 00:01:45.699
+In other words, when constructing your backtest,
+
+00:01:45.700 --> 00:01:49.430
+the data used to determine portfolio positions occurs
+
+00:01:49.430 --> 00:01:54.820
+two days earlier than the returns that are realized on those portfolio positions.
+
+00:01:54.819 --> 00:01:58.934
+In general, to make sure that your backtest is being setup properly,
+
+00:01:58.935 --> 00:02:00.859
+it helps to imagine yourself in
+
+00:02:00.859 --> 00:02:04.204
+the situation where you're gathering the data on each day,
+
+00:02:04.204 --> 00:02:07.774
+making trade decisions, executing those trades,
+
+00:02:07.775 --> 00:02:10.145
+then realizing those returns.
+
+00:02:10.145 --> 00:02:15.469
+For instance, even though you may know that a certain company is bankrupt today,
+
+00:02:15.469 --> 00:02:19.159
+your backtest data should still include that stock if
+
+00:02:19.159 --> 00:02:23.539
+it's testing on a period in which that company was not yet bankrupt.
+
+00:02:23.539 --> 00:02:28.459
+Another thing you may notice is that we're realizing returns every day,
+
+00:02:28.460 --> 00:02:32.270
+but we're also executing trades every day.
+
+00:02:32.270 --> 00:02:34.880
+For example, on Wednesday,
+
+00:02:34.879 --> 00:02:38.960
+we realized returns based on data received on Monday.
+
+00:02:38.960 --> 00:02:45.370
+Also on Wednesday, we are executing trades based on data received on Tuesday.
+
+00:02:45.370 --> 00:02:47.115
+So in live trading,
+
+00:02:47.115 --> 00:02:50.719
+the portfolio holdings are constantly changing throughout the day,
+
+00:02:50.719 --> 00:02:54.955
+since trade executions occur every day, throughout the day.
+
+00:02:54.955 --> 00:02:56.810
+The portfolio holdings on
+
+00:02:56.810 --> 00:03:00.545
+any given morning will have changed by the end of that same day,
+
+00:03:00.544 --> 00:03:02.239
+and we can expect this to have
+
+00:03:02.240 --> 00:03:06.575
+a constant negative impact on the portfolio's expected return.
+
+00:03:06.574 --> 00:03:12.004
+We can account for this negative impact as part of the estimate of transaction costs,
+
+00:03:12.004 --> 00:03:14.519
+which we'll learn about in this lesson.
+

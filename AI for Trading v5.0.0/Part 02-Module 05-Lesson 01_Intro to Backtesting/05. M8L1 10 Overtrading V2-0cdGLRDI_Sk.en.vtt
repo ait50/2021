@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.309
+Overtrading is defined as trading in larger sizes than would be optimal.
+
+00:00:05.309 --> 00:00:10.710
+If the expected size of a mispricing or an arbitrage is 10 basis points,
+
+00:00:10.710 --> 00:00:15.990
+then no model should trade in such a way as to have 15 basis points of market impact,
+
+00:00:15.990 --> 00:00:18.914
+as this cannot be sustainably profitable.
+
+00:00:18.914 --> 00:00:23.429
+In extreme cases, overtrading can completely kill an entire strategy.
+
+00:00:23.429 --> 00:00:27.179
+A telltale sign, is that if a strategy coincidentally stops
+
+00:00:27.179 --> 00:00:31.739
+working as soon as it is turned on in real markets at noticeable size,
+
+00:00:31.739 --> 00:00:34.004
+then it is most likely overtrading.
+
+00:00:34.005 --> 00:00:37.130
+Further evidence, would be if the backtest appears to
+
+00:00:37.130 --> 00:00:40.310
+begin working again when the live model is turned off.
+
+00:00:40.310 --> 00:00:44.780
+Given that trading is costly and all trades have an impact on the market,
+
+00:00:44.780 --> 00:00:46.880
+overfitting can lead to overtrading.
+
+00:00:46.880 --> 00:00:48.865
+If the modeler has overfit,
+
+00:00:48.865 --> 00:00:51.440
+then the models predicted Alpha will often be
+
+00:00:51.439 --> 00:00:54.724
+larger than the true Alpha which exists in the world.
+
+00:00:54.725 --> 00:00:59.800
+In a world where trading is costly and market frictions of all kinds abound,
+
+00:00:59.799 --> 00:01:04.804
+unless you can be extremely certain that an advanced statistical method is not overfit,
+
+00:01:04.805 --> 00:01:09.980
+you may indeed achieve better true out-of-sample performance by applying
+
+00:01:09.980 --> 00:01:15.670
+the Occam's razor principle and employing a model which has relatively few parameters.
+

@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.894
+To get some intuition on transaction costs and the reason that trading impacts prices,
+
+00:00:05.894 --> 00:00:09.960
+let's look at what's called a limit order book which is a list of
+
+00:00:09.960 --> 00:00:15.195
+all the bids and asks for an asset that are made by market participants.
+
+00:00:15.195 --> 00:00:20.600
+Bids are commitments to buy a certain quantity of an asset at a specified price.
+
+00:00:20.600 --> 00:00:23.080
+Asks also called offers,
+
+00:00:23.079 --> 00:00:28.109
+are promises to sell a certain quantity of the asset at a specified price.
+
+00:00:28.109 --> 00:00:32.189
+The lowest offer price is called the best offer,
+
+00:00:32.189 --> 00:00:34.949
+because it's the one that is most likely to be picked up
+
+00:00:34.950 --> 00:00:38.010
+by another participant who wishes to buy.
+
+00:00:38.009 --> 00:00:42.859
+Similarly, the highest bid price is called a best bid,
+
+00:00:42.859 --> 00:00:47.104
+since it's the highest price that a participant has committed to buy it.
+
+00:00:47.104 --> 00:00:51.049
+This means that another participant who wishes to sell will first
+
+00:00:51.049 --> 00:00:55.309
+sell to this participant before selling at the other lower bids.
+
+00:00:55.310 --> 00:01:01.204
+The distance between the best bid and best offer is called the spread,
+
+00:01:01.204 --> 00:01:04.010
+as in, the bid-ask spread.
+
+00:01:04.010 --> 00:01:09.890
+The point at the middle of the bid-ask spread is called the midpoint price.
+
+00:01:09.890 --> 00:01:16.674
+The midpoint price is used as a benchmark from which to calculate transaction costs.
+
+00:01:16.674 --> 00:01:20.069
+We'll come back to the midpoint price in a little bit.
+
+00:01:20.069 --> 00:01:25.699
+Let's say the execution desk of a hedge fund wishes to buy 300 shares of a stock.
+
+00:01:25.700 --> 00:01:31.010
+They can take a look at the existing offers to sell from other market participants.
+
+00:01:31.010 --> 00:01:35.045
+Notice how they could buy 100 shares at a particular price,
+
+00:01:35.045 --> 00:01:39.740
+but then they would either wait for other participants to offer at the same price,
+
+00:01:39.739 --> 00:01:43.009
+or they could decide to pay slightly more to buy
+
+00:01:43.010 --> 00:01:46.880
+additional shares because of what's being offered in the market.
+
+00:01:46.879 --> 00:01:51.304
+In general, the total amount of shares that you may want to buy
+
+00:01:51.305 --> 00:01:56.855
+probably won't all be available from a single seller at a single price.
+
+00:01:56.855 --> 00:02:03.290
+So your original parent order is broken up into smaller child orders.
+

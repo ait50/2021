@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.589
+In previous projects, you've learned about various constraints that you might
+
+00:00:04.589 --> 00:00:09.524
+apply to an optimization in order to adhere to certain requirements.
+
+00:00:09.525 --> 00:00:13.875
+A constraint in an optimization falls into one of two categories.
+
+00:00:13.875 --> 00:00:17.190
+Either the constraint does nothing to the solution,
+
+00:00:17.190 --> 00:00:21.420
+or the constraint makes the solution sub-optimal.
+
+00:00:21.420 --> 00:00:25.560
+Constraints can also cause the optimizer to run more slowly,
+
+00:00:25.559 --> 00:00:28.154
+and time is a real cost when your back-testing,
+
+00:00:28.155 --> 00:00:32.250
+as you want to be able to iterate and test in a reasonable amount of time.
+
+00:00:32.250 --> 00:00:36.509
+Also, we may choose from a different set of optimization algorithms,
+
+00:00:36.509 --> 00:00:39.869
+and some may not support inequality constraints.
+
+00:00:39.869 --> 00:00:42.769
+So in general, it would be better to avoid setting
+
+00:00:42.770 --> 00:00:46.445
+explicit constraints unless it's mandated by the fund.
+
+00:00:46.445 --> 00:00:49.880
+For instance, if you're managing a long only fund,
+
+00:00:49.880 --> 00:00:52.429
+then you would still need to constrain the holdings to be
+
+00:00:52.429 --> 00:00:55.810
+positive only to avoid short positions.
+
+00:00:55.810 --> 00:00:59.480
+The good news is, we can still satisfy the goals of
+
+00:00:59.479 --> 00:01:03.875
+various constraints with the terms that we put into the objective function.
+
+00:01:03.875 --> 00:01:06.019
+Let's think about some constraints,
+
+00:01:06.019 --> 00:01:08.854
+such as making the positions market neutral,
+
+00:01:08.855 --> 00:01:13.445
+limiting risk from large positions which is the leverage constraint,
+
+00:01:13.444 --> 00:01:16.714
+and limiting the exposure to any single stock
+
+00:01:16.715 --> 00:01:20.920
+which is a maximum holding constraint for a single stock.
+

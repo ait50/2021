@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.835
+A backtest is a simulation of running
+
+00:00:02.835 --> 00:00:06.390
+a trading strategy through some historical period of time.
+
+00:00:06.389 --> 00:00:10.649
+Ideally, the backtest should simulate as accurately as possible
+
+00:00:10.648 --> 00:00:14.910
+what would have actually happened in real-time production processes.
+
+00:00:14.910 --> 00:00:19.649
+If aspects of real-time production trading are left out of the simulation,
+
+00:00:19.649 --> 00:00:22.034
+then even after backtesting,
+
+00:00:22.035 --> 00:00:25.065
+there's no reference for how these aspects might
+
+00:00:25.065 --> 00:00:29.655
+affect strategy performance in the future and this is dangerous.
+
+00:00:29.655 --> 00:00:33.240
+You have already performed rudimentary backtests in
+
+00:00:33.240 --> 00:00:37.620
+this course when you have tested your trading strategies on historical data,
+
+00:00:37.619 --> 00:00:40.349
+but these tests which you performed as part of
+
+00:00:40.350 --> 00:00:42.469
+the Alpha research process are not
+
+00:00:42.469 --> 00:00:46.519
+sophisticated enough to inspire confidence in the trading strategy.
+
+00:00:46.520 --> 00:00:52.440
+One could call anything that simulates trades using historical data of backtest,
+
+00:00:52.439 --> 00:00:55.519
+but this is like calling throwing a paper airplane into the air,
+
+00:00:55.520 --> 00:00:57.830
+a test of rocket spaceflight.
+
+00:00:57.829 --> 00:01:00.259
+NASA is very professional about making
+
+00:01:00.259 --> 00:01:02.905
+rockets because they really don't want them to blow up.
+
+00:01:02.905 --> 00:01:07.519
+Likewise, quants who designed trading strategies for a living are very
+
+00:01:07.519 --> 00:01:09.334
+professional about making backtests
+
+00:01:09.334 --> 00:01:12.409
+because they really don't want their strategies to blow up.
+
+00:01:12.409 --> 00:01:15.709
+The goal of strategy development is to optimize
+
+00:01:15.709 --> 00:01:19.114
+the potential performance of what is yet to come in the future,
+
+00:01:19.114 --> 00:01:21.484
+in other words, what hasn't happened yet.
+
+00:01:21.484 --> 00:01:26.194
+When used appropriately, a backtest can be a useful means towards that end.
+
+00:01:26.194 --> 00:01:27.914
+When not used appropriately,
+
+00:01:27.915 --> 00:01:31.670
+a backtest can also be a hindrance or counterproductive,
+
+00:01:31.670 --> 00:01:35.885
+especially if it convinces the modeler of something that isn't true.
+
+00:01:35.885 --> 00:01:38.719
+One must always keep in mind that the goal is to
+
+00:01:38.719 --> 00:01:42.394
+optimize the performance of the strategy next year
+
+00:01:42.394 --> 00:01:45.259
+and the year after that and so on and
+
+00:01:45.260 --> 00:01:49.325
+not to optimize the backtest appearance of performance.
+
+00:01:49.325 --> 00:01:53.030
+A backtest must report among other metrics,
+
+00:01:53.030 --> 00:01:56.825
+a number of dollars or euros or other currency
+
+00:01:56.825 --> 00:02:01.745
+representing the simulated profit and loss in each time period.
+
+00:02:01.745 --> 00:02:04.640
+Even if the strategy trades intraday,
+
+00:02:04.640 --> 00:02:10.234
+the profit and loss is often aggregated up to the daily level for reporting purposes,
+
+00:02:10.234 --> 00:02:13.105
+we call this the profit calculation.
+
+00:02:13.104 --> 00:02:15.829
+Like anything, the profit calculation can be
+
+00:02:15.830 --> 00:02:19.260
+done with varying levels of accuracy and realism.
+

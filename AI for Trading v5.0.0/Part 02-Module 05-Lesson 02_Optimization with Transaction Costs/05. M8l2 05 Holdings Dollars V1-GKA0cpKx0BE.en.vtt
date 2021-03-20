@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.785
+Now that we've moved beyond the Alpha research phase and into backtesting,
+
+00:00:04.785 --> 00:00:08.339
+we're going to refer to the set of positions on assets and
+
+00:00:08.339 --> 00:00:13.320
+the portfolio as holdings as opposed to weights.
+
+00:00:13.320 --> 00:00:15.030
+In the research stage,
+
+00:00:15.029 --> 00:00:18.224
+the weights are considered percentages of the portfolios
+
+00:00:18.224 --> 00:00:22.574
+notional and the notional doesn't need to be specified at this point.
+
+00:00:22.574 --> 00:00:27.344
+In backtesting, in order to increase the realism of the situation,
+
+00:00:27.344 --> 00:00:32.729
+the holdings are dollar amounts and we're testing with a specific portfolio size,
+
+00:00:32.729 --> 00:00:35.294
+such as $50 million.
+
+00:00:35.295 --> 00:00:37.500
+Let's review how we define things in
+
+00:00:37.500 --> 00:00:42.480
+the earlier factor modeling project and explain what's changed and why this matters.
+
+00:00:42.479 --> 00:00:45.875
+Recall that in the factor modeling lesson and project,
+
+00:00:45.875 --> 00:00:47.740
+we're performing Alpha research.
+
+00:00:47.740 --> 00:00:51.740
+So we're not yet applying strategies to any particular portfolio.
+
+00:00:51.740 --> 00:00:56.359
+For standardization, we find weights whose sum of absolute values is one,
+
+00:00:56.359 --> 00:01:01.414
+as in 100 percent of some portfolio size that is not yet defined.
+
+00:01:01.414 --> 00:01:04.400
+We do this by choosing to constrain the sum of
+
+00:01:04.400 --> 00:01:08.885
+the absolute values of the positions to be less than or equal to one.
+
+00:01:08.885 --> 00:01:12.740
+Note that a strict equality constraint tends to make the optimization
+
+00:01:12.739 --> 00:01:16.954
+infeasible which is why we set this to an inequality constraint.
+
+00:01:16.954 --> 00:01:20.405
+If the sum of the absolute values is less than 100 percent,
+
+00:01:20.405 --> 00:01:26.000
+we can assume this is as if we leave some cash on hand that isn't used to buy assets.
+
+00:01:26.000 --> 00:01:31.355
+If we assume no liquidity issues and no cost for executing trades,
+
+00:01:31.355 --> 00:01:35.540
+then we could apply the portfolio weights to a notional of for example
+
+00:01:35.540 --> 00:01:41.980
+$50 million to convert those weights into holdings in units of dollars.
+
+00:01:41.980 --> 00:01:45.469
+When we're backtesting, we need to introduce
+
+00:01:45.469 --> 00:01:49.700
+additional realities such as the cost of executing trades.
+
+00:01:49.700 --> 00:01:53.990
+We need to specify an actual portfolio size because
+
+00:01:53.989 --> 00:01:58.280
+the size of a portfolio affects the cost of trade execution,
+
+00:01:58.280 --> 00:02:03.055
+which in turn affects how well certain Alpha strategies perform.
+
+00:02:03.055 --> 00:02:07.180
+The size of the portfolio affects the size of the positions.
+
+00:02:07.180 --> 00:02:13.765
+The size of the positions in turn affects how costly it becomes to execute trades.
+
+00:02:13.764 --> 00:02:16.688
+Note that we'll define the size of the portfolio
+
+00:02:16.688 --> 00:02:20.094
+as the sum of the absolute values of the positions.
+
+00:02:20.094 --> 00:02:23.305
+So in backtesting, there's a difference between
+
+00:02:23.305 --> 00:02:28.080
+a $50 million portfolio and a $500 million portfolio.
+
+00:02:28.080 --> 00:02:29.890
+Strategies that may work on
+
+00:02:29.889 --> 00:02:34.224
+a small portfolio may not work as well with a much larger portfolio.
+
+00:02:34.224 --> 00:02:37.120
+You may have heard about firms that purposely limit
+
+00:02:37.120 --> 00:02:39.939
+their fund size in part because larger funds
+
+00:02:39.939 --> 00:02:42.639
+encounter the challenge that there's an upper limit to
+
+00:02:42.639 --> 00:02:46.024
+how much capital that can be deployed to a given Alpha strategy.
+
+00:02:46.025 --> 00:02:49.730
+This is due to limits in liquidity and transaction costs.
+
+00:02:49.729 --> 00:02:53.090
+To make the distinction that the positions are dollar values,
+
+00:02:53.090 --> 00:02:57.789
+we'll refer to the positions as holdings and not as weights.
+
+00:02:57.789 --> 00:03:00.500
+We'll make the distinction that these are holdings in order to be
+
+00:03:00.500 --> 00:03:03.213
+more clear about what these positions represent,
+
+00:03:03.213 --> 00:03:09.819
+namely dollar values in a portfolio of a specified size as opposed to weights.
+

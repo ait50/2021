@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.625
+In this lesson, you learned about some core steps that you take to design a backtest.
+
+00:00:05.625 --> 00:00:09.960
+You practiced incorporating a time delay to account for when information is
+
+00:00:09.960 --> 00:00:14.280
+received and to allow for trading into the desired position.
+
+00:00:14.279 --> 00:00:17.730
+You also learn to model transaction costs and design
+
+00:00:17.730 --> 00:00:21.855
+the optimization with computational efficiency in mind.
+
+00:00:21.855 --> 00:00:24.210
+I hope you'll have some fun adjusting
+
+00:00:24.210 --> 00:00:28.980
+the backtest design and seeing how this affects your backtest results.
+
+00:00:28.980 --> 00:00:33.164
+You'll also get a chance to customize your backtest in the project.
+
+00:00:33.164 --> 00:00:38.399
+Coming up next, we'll look at how to interpret the Profit and Loss of your alphas by
+
+00:00:38.399 --> 00:00:44.085
+identifying what factors contributed to the final P&amp;L and by how much.
+
+00:00:44.085 --> 00:00:47.329
+This process is called performance attribution.
+
+00:00:47.329 --> 00:00:51.219
+It's what you'll learn in the next lesson. Stay tuned.
+

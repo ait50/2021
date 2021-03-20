@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.845
+Great to see you again Gordon,
+
+00:00:01.845 --> 00:00:05.384
+I have a few more questions for you about AI and finance.
+
+00:00:05.384 --> 00:00:08.169
+How is AI being used in finance today?
+
+00:00:08.169 --> 00:00:12.705
+What applications have you seen used successfully or unsuccessfully?
+
+00:00:12.705 --> 00:00:15.300
+AI is being used in a lot of places.
+
+00:00:15.300 --> 00:00:17.160
+So first of all,
+
+00:00:17.160 --> 00:00:19.740
+some of the same technologies that are useful in
+
+00:00:19.739 --> 00:00:24.134
+many industries such as image recognition are also very useful in finance.
+
+00:00:24.135 --> 00:00:27.365
+Just as the post office needs to recognize zip codes,
+
+00:00:27.364 --> 00:00:31.143
+banks need to recognize cheques,
+
+00:00:31.143 --> 00:00:35.134
+they need to recognize images of people for security purposes,
+
+00:00:35.134 --> 00:00:40.369
+firms that trade oil are using images of oil tankers
+
+00:00:40.369 --> 00:00:45.905
+from satellite data to predict oil supply and demand et cetera.
+
+00:00:45.905 --> 00:00:50.590
+Beyond that, there are various machine learning technologies that deal with prediction.
+
+00:00:50.590 --> 00:00:53.720
+So, I think anything can appear intelligent if it
+
+00:00:53.719 --> 00:00:56.929
+makes sufficiently accurate predictions.
+
+00:00:56.929 --> 00:01:00.079
+So, examples there, it might include a prediction of whether
+
+00:01:00.079 --> 00:01:06.275
+a given credit transaction will turn out to have been fraudulent based on its attributes.
+
+00:01:06.275 --> 00:01:11.855
+Another important example in finance there is algorithmic order execution.
+
+00:01:11.855 --> 00:01:13.760
+So, predicting whether or not
+
+00:01:13.760 --> 00:01:17.840
+a given order placement strategy will actually result in the order getting filled,
+
+00:01:17.840 --> 00:01:20.585
+is a prediction problem that AI has been applied to.
+
+00:01:20.584 --> 00:01:23.674
+Those are all examples of successful applications.
+
+00:01:23.674 --> 00:01:29.729
+Where I have not seen much success to date is applying AI to asset return prediction,
+
+00:01:29.730 --> 00:01:32.810
+at least not without a lot of human guidance behind it.
+
+00:01:32.810 --> 00:01:37.780
+What advice would you give to someone looking to apply AI in finance?
+
+00:01:37.780 --> 00:01:40.370
+Well, if you want to apply AI in finance,
+
+00:01:40.370 --> 00:01:44.344
+you should definitely remember to consider the signal to noise ratio in the data,
+
+00:01:44.344 --> 00:01:46.474
+and the potential for overfitting.
+
+00:01:46.474 --> 00:01:49.089
+We talk about this a bit in the project.
+
+00:01:49.090 --> 00:01:53.270
+So traditionally, AI does not do very well in data
+
+00:01:53.269 --> 00:01:58.144
+scarce situations where you have relatively low signal-to-noise ratios.
+
+00:01:58.144 --> 00:02:00.939
+How do you think AI will change finance?
+
+00:02:00.939 --> 00:02:05.179
+I think AI will change finance by enabling humans to sift through
+
+00:02:05.180 --> 00:02:09.800
+and effectively utilize the petabytes of data that are now being created,
+
+00:02:09.800 --> 00:02:13.330
+and use those data in their trading decisions.
+
+00:02:13.330 --> 00:02:16.670
+So for example, imagine a terminal that could show
+
+00:02:16.669 --> 00:02:20.679
+you the exact news stories that are relevant to the problem you've been thinking about,
+
+00:02:20.680 --> 00:02:23.590
+and predict a trade that you're likely to do based on that news,
+
+00:02:23.590 --> 00:02:27.640
+and predict what the cost of that trade will be with various brokers.
+
+00:02:27.639 --> 00:02:29.054
+So things like that.
+
+00:02:29.055 --> 00:02:31.730
+Right now, sifting and sorting through huge masses of
+
+00:02:31.729 --> 00:02:35.439
+financial data is still not completely straightforward,
+
+00:02:35.439 --> 00:02:40.789
+and I think firms like investment banks that have a lot of valuable data are only just
+
+00:02:40.789 --> 00:02:42.859
+now learning how to collect it and
+
+00:02:42.860 --> 00:02:45.800
+present it to their clients to help them make trading decisions.
+
+00:02:45.800 --> 00:02:49.430
+What types of career opportunities do you see now and
+
+00:02:49.430 --> 00:02:53.545
+envision in the future for someone with skills in both AI and finance?
+
+00:02:53.544 --> 00:02:56.599
+I think there are lots and lots of career opportunities,
+
+00:02:56.599 --> 00:02:58.939
+and there will be for the foreseeable future.
+
+00:02:58.939 --> 00:03:02.719
+I don't think this is some passing fad.
+
+00:03:02.719 --> 00:03:06.699
+In fact, I think every financial firm in the world,
+
+00:03:06.699 --> 00:03:11.314
+if you talk to them they would most likely be able to find a prediction problem
+
+00:03:11.314 --> 00:03:16.609
+where they wish they can make predictions in an automated and more accurate way,
+
+00:03:16.610 --> 00:03:20.380
+and that's essentially what machine learning is about.
+
+00:03:20.379 --> 00:03:23.549
+Someone once said machine learning is prediction.
+
+00:03:23.550 --> 00:03:27.860
+For example, even something like mobile robot navigation is prediction.
+
+00:03:27.860 --> 00:03:32.095
+The robot is trying to predict what will happen if it moves its motors in a certain way.
+
+00:03:32.094 --> 00:03:34.384
+Well, that's all the questions I have.
+
+00:03:34.384 --> 00:03:36.530
+Thanks so much for talking with me Gordon.
+
+00:03:36.530 --> 00:03:38.219
+Thank you very much.
+
