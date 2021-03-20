@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.467 --> 00:00:02.801
+BOOLEANOS, OPERADORES
+DE COMPARAÇÃO E LÓGICOS
+
+00:00:02.834 --> 00:00:06.334
+Vimos dois tipos
+de dados Python até agora:
+
+00:00:06.400 --> 00:00:08.467
+ints e floats,
+
+00:00:08.501 --> 00:00:13.667
+Utilizamos operadores aritméticos,
+como a adição e a exponenciação,
+
+00:00:13.734 --> 00:00:15.834
+para trabalhar
+com tais valores.
+
+00:00:15.868 --> 00:00:17.868
+Outro tipo é o bool,
+
+00:00:17.934 --> 00:00:22.434
+que é utilizado para representar
+os valores verdadeiros e falsos.
+
+00:00:22.501 --> 00:00:25.567
+"Bool" é a abreviação
+de "booleano".
+
+00:00:25.601 --> 00:00:28.267
+A álgebra booleana
+é uma ramificação da álgebra,
+
+00:00:28.300 --> 00:00:32.667
+que lida com variáveis
+de valores verdadeiros ou falsos.
+
+00:00:32.701 --> 00:00:37.467
+A álgebra booleana recebeu o nome
+do seu inventor, George Bool.
+
+00:00:37.501 --> 00:00:40.567
+A lógica booleana sustenta
+todos os dispositivos digitais
+
+00:00:40.601 --> 00:00:44.000
+existentes em quase todas as linhas
+do código computacional
+
+00:00:44.067 --> 00:00:47.000
+e transformou a forma
+como vivemos.
+
+00:00:47.033 --> 00:00:50.767
+Você pode ler mais sobre isso
+nas anotações.
+
+00:00:50.834 --> 00:00:54.100
+Podemos associar
+valores booleanos desta forma.
+
+00:00:54.133 --> 00:00:57.100
+Ele não é muito útil
+sozinho.
+
+00:00:57.133 --> 00:00:59.300
+Podemos utilizar
+operadores de comparação
+
+00:00:59.367 --> 00:01:01.567
+como "menos do que"
+e "maior do que"
+
+00:01:01.634 --> 00:01:05.000
+para comparar valores
+e produzir um resultado booleano.
+
+00:01:05.033 --> 00:01:09.033
+42 não é maior do que 43.
+
+00:01:09.067 --> 00:01:12.901
+Mostrar o resultado
+fornece o falso booleano.
+
+00:01:12.934 --> 00:01:17.868
+Esta é a lista dos operadores
+de comparação do Python:
+
+00:01:17.934 --> 00:01:20.400
+menos do que, maior do que,
+
+00:01:20.434 --> 00:01:22.767
+menor ou igual a,
+
+00:01:22.834 --> 00:01:24.868
+maior ou igual a,
+
+00:01:24.934 --> 00:01:28.067
+igual a e não igual a.
+
+00:01:28.100 --> 00:01:30.367
+Perceba que a avaliação
+da igualdade
+
+00:01:30.434 --> 00:01:32.667
+é realizada
+com dois sinais de igual,
+
+00:01:32.701 --> 00:01:36.133
+e o não igual
+utiliza o ponto de exclamação.
+
+00:01:36.167 --> 00:01:39.400
+Isso é um pouco diferente
+do Excel ou do SQL.
+
+00:01:40.267 --> 00:01:42.701
+Além dos operadores
+de comparação,
+
+00:01:42.734 --> 00:01:45.534
+estes operadores lógicos
+são muito úteis
+
+00:01:45.567 --> 00:01:47.667
+quando trabalhamos
+com booleanos
+
+00:01:47.734 --> 00:01:51.234
+"and" avalia se ambos os lados
+são verdadeiros,
+
+00:01:51.300 --> 00:01:54.734
+"or" avalia se pelo menos
+um lado é verdadeiro
+
+00:01:54.801 --> 00:01:58.000
+e "not" inverte
+o tipo booleano.
+
+00:01:58.033 --> 00:02:03.767
+Este exemplo avalia se a idade
+pertence a de um adolescente.
+
+00:02:04.133 --> 00:02:09.434
+Imaginem 14 alocado
+nos dois lugares,
+
+00:02:09.501 --> 00:02:11.767
+então, se ambos
+forem verdadeiros,
+
+00:02:11.801 --> 00:02:14.701
+o verdadeiro será associado
+à variável "is_teen".
+
+00:02:15.400 --> 00:02:16.567
+Em outras palavras,
+
+00:02:16.634 --> 00:02:19.167
+se a pessoa
+tiver mais do que 12 anos
+
+00:02:19.200 --> 00:02:21.000
+e menos do que 20,
+
+00:02:21.033 --> 00:02:23.400
+ela será adolescente.
+
+00:02:23.434 --> 00:02:25.234
+Aqui o "not" entra em ação
+
+00:02:25.267 --> 00:02:28.367
+invertendo o tipo booleano
+da mesma instrução.
+

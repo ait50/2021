@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.210 --> 00:00:05.720
+In the elements dictionary we saw earlier,
+
+00:00:05.720 --> 00:00:11.675
+element names which are strings are mapped to their atomic numbers which are integers.
+
+00:00:11.675 --> 00:00:15.595
+But what if we wanted to store more information about each element,
+
+00:00:15.595 --> 00:00:17.770
+like their weight and symbol.
+
+00:00:17.770 --> 00:00:21.660
+We can do that by adjusting this dictionary so that it maps
+
+00:00:21.660 --> 00:00:26.360
+the element names to another dictionary that stores that collection of data.
+
+00:00:26.360 --> 00:00:29.190
+We can look up information about an entry in
+
+00:00:29.190 --> 00:00:32.840
+this nested dictionary in the same ways we did before,
+
+00:00:32.840 --> 00:00:35.775
+with square brackets or the GET method.
+
+00:00:35.775 --> 00:00:40.575
+We can look up specific information from the helium dictionary like this.
+
+00:00:40.575 --> 00:00:45.490
+This code is first looking up the key helium in the elements dictionary,
+
+00:00:45.490 --> 00:00:48.245
+producing the helium dictionary.
+
+00:00:48.245 --> 00:00:50.340
+The second lookup weight,
+
+00:00:50.340 --> 00:00:56.160
+then looks up the weight key in that helium dictionary to find helium's atomic weight.
+

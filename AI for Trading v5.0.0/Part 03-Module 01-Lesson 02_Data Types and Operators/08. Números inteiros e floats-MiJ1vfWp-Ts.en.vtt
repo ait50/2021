@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.260 --> 00:00:08.019
+So far, most of the numbers we've been working with have been whole numbers or integers.
+
+00:00:08.019 --> 00:00:13.390
+However, as you may have noticed other types of numbers do exist in Python.
+
+00:00:13.390 --> 00:00:21.804
+Here, dividing one integer by another gives us a number that isn't an integer 0.75.
+
+00:00:21.804 --> 00:00:24.714
+In Python and computing in general,
+
+00:00:24.714 --> 00:00:27.550
+we represent such a number as a float,
+
+00:00:27.550 --> 00:00:30.385
+which is short for floating point number.
+
+00:00:30.385 --> 00:00:33.295
+A float is a real number that uses
+
+00:00:33.295 --> 00:00:37.460
+a decimal point to allow numbers with fractional values.
+
+00:00:37.460 --> 00:00:41.174
+Even if one integer divides another exactly,
+
+00:00:41.174 --> 00:00:43.429
+the result will be a float.
+
+00:00:43.429 --> 00:00:47.850
+The int and float are actually two kinds of data types.
+
+00:00:47.850 --> 00:00:52.215
+In Python, every object you encounter will have a type.
+
+00:00:52.215 --> 00:00:55.740
+An object's type defines which operators and
+
+00:00:55.740 --> 00:00:59.460
+functions will work on that object and how they work.
+
+00:00:59.460 --> 00:01:05.445
+You can check the type of any object directly using the built-in function type.
+
+00:01:05.444 --> 00:01:09.209
+Here you can see that the type of a number without
+
+00:01:09.209 --> 00:01:14.222
+a decimal and a number with a decimal are different in Python.
+
+00:01:14.222 --> 00:01:15.390
+To make an int,
+
+00:01:15.390 --> 00:01:18.269
+just give a whole number without a decimal point.
+
+00:01:18.269 --> 00:01:20.280
+Here is an int.
+
+00:01:20.280 --> 00:01:23.805
+To make a float, include a decimal point.
+
+00:01:23.805 --> 00:01:27.135
+If the number itself is actually a whole number,
+
+00:01:27.135 --> 00:01:32.070
+that's okay, you don't even have to put anything after the decimal point.
+
+00:01:32.069 --> 00:01:34.679
+These are both floats.
+
+00:01:34.680 --> 00:01:40.620
+An operation involving an int and a float always produces a float.
+
+00:01:40.620 --> 00:01:46.170
+Sometimes, you might need to manually convert one numeric type to another.
+
+00:01:46.170 --> 00:01:52.129
+And you can do that by constructing new objects of those types with int and float.
+
+00:01:52.129 --> 00:01:54.844
+When we convert a float to an int,
+
+00:01:54.844 --> 00:01:57.664
+the part of the number after the decimal point
+
+00:01:57.665 --> 00:02:01.085
+is cut off which means that no rounding occurs.
+
+00:02:01.084 --> 00:02:05.299
+49.7 is cut to 49.
+
+00:02:05.299 --> 00:02:10.115
+4.0 calculated from 16 divided by 4 is cut to 4.
+
+00:02:10.115 --> 00:02:16.820
+Converting from int to float adds decimal zero to the end of the number.
+
+00:02:16.819 --> 00:02:20.996
+So, we've seen Python's two main numeric types:
+
+00:02:20.997 --> 00:02:25.405
+integers and floating point numbers. What are they good for?
+
+00:02:25.405 --> 00:02:28.930
+There are many times when you might need to count items or
+
+00:02:28.930 --> 00:02:32.830
+need to rely on the result of a computation being an integer.
+
+00:02:32.830 --> 00:02:38.425
+For example, let's say you want to count how many people showed up at your dinner party.
+
+00:02:38.425 --> 00:02:42.203
+You can't count 0.47 of a person,
+
+00:02:42.203 --> 00:02:44.050
+so you use an integer.
+
+00:02:44.050 --> 00:02:47.935
+If what you're working on isn't necessarily a whole number,
+
+00:02:47.935 --> 00:02:50.140
+a float is the type you're looking for.
+
+00:02:50.139 --> 00:02:53.289
+For example, let's say you made five pies for
+
+00:02:53.289 --> 00:02:57.162
+your dinner party and you want to keep track of the amount of pie left.
+
+00:02:57.163 --> 00:03:00.355
+People usually take one-sixth of a slice.
+
+00:03:00.354 --> 00:03:02.304
+Once one slice is taken,
+
+00:03:02.305 --> 00:03:05.075
+you're down to 4.83 pies,
+
+00:03:05.075 --> 00:03:06.682
+so you use a float.
+
+00:03:06.682 --> 00:03:11.769
+Floating point numbers are approximations of the numbers they're opposed to represent.
+
+00:03:11.770 --> 00:03:16.344
+This is necessary because floats can represent an enormous range of numbers.
+
+00:03:16.344 --> 00:03:19.585
+So, in order to fit numbers in computer memory,
+
+00:03:19.585 --> 00:03:22.965
+Python must use approximations.
+
+00:03:22.965 --> 00:03:26.395
+This trade off can sometimes have surprising results.
+
+00:03:26.395 --> 00:03:34.373
+Because the float or approximation for 0.1 is actually slightly more than zero 0.1,
+
+00:03:34.372 --> 00:03:38.254
+when add several of them together we can see a difference
+
+00:03:38.254 --> 00:03:42.995
+between the mathematically correct answer and the one that Python creates.
+
+00:03:42.995 --> 00:03:46.520
+In most contexts, these small differences are
+
+00:03:46.520 --> 00:03:50.189
+irrelevant but it's important to know that they're there.
+
+00:03:50.189 --> 00:03:53.620
+You can read more about this in the instructor notes.
+

@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.567 --> 00:00:03.934
+TIPOS DE DADOS E OPERADORES.
+ESPAÇO EM BRANCO.
+
+00:00:04.000 --> 00:00:07.868
+Você deve ter notado que,
+em uma linha simples do Python,
+
+00:00:07.901 --> 00:00:11.801
+o espaço em branco não afeta
+o funcionamento do código.
+
+00:00:11.868 --> 00:00:17.734
+Por exemplo, isto dará
+o mesmo resultado deste.
+
+00:00:17.767 --> 00:00:20.434
+Porém, isso não significa
+que essas linhas
+
+00:00:20.501 --> 00:00:23.033
+sejam linhas de código boas.
+
+00:00:23.100 --> 00:00:25.901
+Aprender a criar códigos
+claros e legíveis
+
+00:00:25.968 --> 00:00:28.267
+é fundamental
+para que outras pessoas,
+
+00:00:28.300 --> 00:00:31.234
+e você no futuro,
+possam entendê-lo.
+
+00:00:31.300 --> 00:00:35.400
+Vamos apresentar boas práticas
+de estilo de código no Python.
+
+00:00:35.467 --> 00:00:37.901
+Quando chamamos uma função
+com "PRINT",
+
+00:00:37.968 --> 00:00:42.934
+colocamos os parênteses logo após
+o nome da função, como aqui.
+
+00:00:43.567 --> 00:00:45.067
+Não faça assim.
+
+00:00:45.701 --> 00:00:50.033
+Não adicione espaços
+dentro dos parênteses.
+
+00:00:50.100 --> 00:00:53.801
+Aquilo funciona, mas isto não.
+
+00:00:53.868 --> 00:00:57.033
+Ao misturar operadores
+com diferentes prioridades,
+
+00:00:57.067 --> 00:00:59.767
+tal como multiplicação
+com subtração,
+
+00:00:59.834 --> 00:01:03.300
+adicione um espaço
+entre a menor prioridade,
+
+00:01:03.334 --> 00:01:05.200
+neste caso, a subtração,
+
+00:01:05.234 --> 00:01:07.834
+para facilitar
+a leitura do código.
+
+00:01:07.901 --> 00:01:11.067
+Notou como este é um pouco
+mais difícil de se entender
+
+00:01:11.100 --> 00:01:12.834
+na ordem de operação?
+
+00:01:14.100 --> 00:01:16.968
+Não escreva linhas de código
+longas demais.
+
+00:01:17.000 --> 00:01:19.033
+Elas são difíceis
+de serem entendidas.
+
+00:01:19.067 --> 00:01:21.334
+As pessoas geralmente
+se limitam
+
+00:01:21.367 --> 00:01:25.801
+a linhas
+de 79 a 99 caracteres.
+
+00:01:25.834 --> 00:01:28.534
+Se você precisa compor
+linhas maiores,
+
+00:01:28.567 --> 00:01:31.300
+reescreva, simplifique
+
+00:01:31.334 --> 00:01:34.267
+ou separe seu código
+em várias linhas.
+
+00:01:35.067 --> 00:01:38.734
+Essas convenções vêm do guia
+dos desenvolvedores Python,
+
+00:01:38.767 --> 00:01:41.501
+que tem um guia de estilo
+chamado PEP 8,
+
+00:01:41.534 --> 00:01:43.300
+que está no link abaixo.
+
+00:01:43.334 --> 00:01:45.067
+Há muita coisa nele,
+
+00:01:45.133 --> 00:01:48.868
+mas você não precisa
+aprender tudo agora.
+
+00:01:48.901 --> 00:01:51.834
+Por que as convenções
+são importantes?
+
+00:01:51.901 --> 00:01:56.000
+Embora as composições do seu código
+não afetem o funcionamento,
+
+00:01:56.033 --> 00:02:00.234
+seguir os padrões facilita
+a leitura do código
+
+00:02:00.300 --> 00:02:03.901
+e o torna consistente
+entre os desenvolvedores da equipe.
+
+00:02:03.968 --> 00:02:08.901
+É bom seguir os padrões
+mesmo nas expressões de uma linha.
+
+00:02:09.501 --> 00:02:13.167
+Será útil consultar o PEP 8
+de vez em quando
+
+00:02:13.200 --> 00:02:15.300
+para seguir
+o estilo do Python.
+
+00:02:16.033 --> 00:02:18.501
+Mais tarde veremos
+ferramentas
+
+00:02:18.567 --> 00:02:20.501
+que verificam o seu código
+para você,
+
+00:02:20.567 --> 00:02:23.834
+e oferecem sugestões baseadas
+nos padrões da PEP 8.
+

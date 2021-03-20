@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.420 --> 00:00:05.919
+Understanding how to perform arithmetic in Python is useful.
+
+00:00:05.919 --> 00:00:11.814
+But understanding how to use variables can turn Python into more than just a calculator.
+
+00:00:11.814 --> 00:00:17.469
+Using variables, as opposed to just raw numbers, has many advantages.
+
+00:00:17.469 --> 00:00:22.149
+Let's get started. Creating a new variable in Python is simple.
+
+00:00:22.149 --> 00:00:25.909
+Here's one which stores the population of mountain view.
+
+00:00:25.910 --> 00:00:30.910
+The variable name in this example is mv_population.
+
+00:00:30.910 --> 00:00:38.509
+The equal sign is the assignment operator and the value of the variable is 74,728.
+
+00:00:38.509 --> 00:00:44.969
+Notice, this isn't simply an expression of equality like in Math where x equals y,
+
+00:00:44.969 --> 00:00:47.504
+and y equals x mean the same thing.
+
+00:00:47.505 --> 00:00:51.270
+In Python, the equal sign is an operator that assigns
+
+00:00:51.270 --> 00:00:55.415
+the value on the right to the variable name on the left.
+
+00:00:55.414 --> 00:00:57.570
+In other words, whatever term is on
+
+00:00:57.570 --> 00:01:02.344
+the left side is now a name for whatever value is on the right side.
+
+00:01:02.344 --> 00:01:05.000
+Let's see another example.
+
+00:01:05.000 --> 00:01:08.120
+The first line here defines x as 2,
+
+00:01:08.120 --> 00:01:15.145
+and the second line defines y as the value of x which is printed in the third line.
+
+00:01:15.144 --> 00:01:19.119
+Notice we can use a variable's name to access its value.
+
+00:01:19.120 --> 00:01:26.425
+In this line, we only needed the name of the variable x to define y as its value two.
+
+00:01:26.424 --> 00:01:29.200
+Similarly, in this next line,
+
+00:01:29.200 --> 00:01:33.655
+we were able to print the value of y just by using the name y.
+
+00:01:33.655 --> 00:01:36.474
+If you try to access the value of a variable
+
+00:01:36.474 --> 00:01:39.474
+that was never defined, you'll get this error.
+
+00:01:39.474 --> 00:01:42.054
+It's explained pretty clearly in the error message,
+
+00:01:42.055 --> 00:01:44.870
+name z was not defined.
+

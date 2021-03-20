@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.419 --> 00:00:06.835
+As you have just seen, indentation is important.
+
+00:00:06.835 --> 00:00:11.384
+It's how we tell Python what code is in the body of an if statement,
+
+00:00:11.384 --> 00:00:13.695
+and what code is outside of it.
+
+00:00:13.695 --> 00:00:17.144
+Indentation doesn't just matter in if statements.
+
+00:00:17.144 --> 00:00:20.280
+Soon, you'll see it used in other contexts.
+
+00:00:20.280 --> 00:00:26.100
+Some other languages use braces to show where blocks of code begin and end.
+
+00:00:26.100 --> 00:00:30.975
+In Python, we use indentation to enclose blocks of code.
+
+00:00:30.975 --> 00:00:36.329
+This indentation conventionally comes in multiples of four spaces.
+
+00:00:36.329 --> 00:00:40.329
+It's important to be strict about following this convention because
+
+00:00:40.329 --> 00:00:44.780
+changing the indentation can completely change the meaning of the code.
+
+00:00:44.780 --> 00:00:48.314
+If you are working on a team of Python programmers,
+
+00:00:48.314 --> 00:00:52.059
+it's important that everyone follows the same indentation convention.
+

@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.367 --> 00:00:05.634
+Entender como executar
+a aritmética no Python é útil.
+
+00:00:06.367 --> 00:00:08.601
+Mas entender como usar variáveis
+
+00:00:08.734 --> 00:00:11.801
+pode transformar o Python em mais
+do que apenas uma calculadora.
+
+00:00:12.234 --> 00:00:15.467
+O uso de variáveis
+em oposição a números brutos
+
+00:00:15.567 --> 00:00:17.167
+tem muitas vantagens.
+
+00:00:17.501 --> 00:00:18.601
+Vamos começar.
+
+00:00:19.200 --> 00:00:22.000
+Criar uma nova variável
+no Python é simples.
+
+00:00:22.501 --> 00:00:25.567
+Aqui temos uma que armazena
+a população de Mountain View.
+
+00:00:26.400 --> 00:00:30.133
+O nome da variável neste exemplo
+é "mv_population".
+
+00:00:30.501 --> 00:00:33.267
+O sinal de igualdade
+é o operador de atribuição,
+
+00:00:33.734 --> 00:00:38.167
+e o valor da variável é 74.728.
+
+00:00:39.100 --> 00:00:42.267
+Observe. Essa não é simplesmente
+uma expressão de igualdade
+
+00:00:42.534 --> 00:00:45.067
+como na matemática,
+em que X igual a Y,
+
+00:00:45.133 --> 00:00:47.400
+e Y igual a X
+significam a mesma coisa.
+
+00:00:48.067 --> 00:00:50.667
+No Python, o sinal de igualdade
+é um operador
+
+00:00:50.701 --> 00:00:54.634
+que atribui o valor à direita
+ao nome da variável à esquerda.
+
+00:00:55.267 --> 00:00:56.467
+Em outras palavras,
+
+00:00:56.534 --> 00:00:58.567
+qualquer termo que está
+no lado esquerdo
+
+00:00:58.634 --> 00:01:02.267
+agora é um nome para qualquer valor
+que está no lado direito.
+
+00:01:02.701 --> 00:01:04.367
+Vamos ver outro exemplo.
+
+00:01:05.067 --> 00:01:08.067
+A primeira linha aqui
+define X como 2,
+
+00:01:08.501 --> 00:01:12.133
+e a segunda linha define Y
+como o valor de X,
+
+00:01:12.434 --> 00:01:14.367
+que é exibido na terceira linha.
+
+00:01:15.200 --> 00:01:17.300
+Observe que podemos usar
+o nome de uma variável
+
+00:01:17.367 --> 00:01:19.000
+para acessar seu valor.
+
+00:01:19.567 --> 00:01:23.234
+Nessa linha, só precisamos
+do nome da variável X
+
+00:01:23.367 --> 00:01:26.100
+para definir Y
+com o seu valor: dois.
+
+00:01:27.167 --> 00:01:29.100
+Da mesma forma,
+nessa próxima linha,
+
+00:01:29.300 --> 00:01:33.300
+conseguimos exibir o valor de Y
+usando apenas o nome "Y".
+
+00:01:34.234 --> 00:01:36.501
+Se você tentar acessar o valor
+de uma variável
+
+00:01:36.534 --> 00:01:39.200
+que nunca foi definida,
+retornará esse erro.
+
+00:01:39.467 --> 00:01:41.801
+É explicado claramente
+na mensagem de erro:
+
+00:01:42.234 --> 00:01:44.133
+"O nome 'Z' não foi definido."
+

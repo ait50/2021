@@ -1,0 +1,716 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: Type and Type Conversion
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Types and Operators
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Arithmetic Operators.html">
+       02. Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Arithmetic Operators.html">
+       03. Quiz: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Arithmetic Operators.html">
+       04. Solution: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Variables and Assignment Operators.html">
+       05. Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Variables and Assignment Operators.html">
+       06. Quiz: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Solution Variables and Assignment Operators.html">
+       07. Solution: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Integers and Floats.html">
+       08. Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Integers and Floats.html">
+       09. Quiz: Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Booleans, Comparison Operators, and Logical Operators.html">
+       10. Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz Booleans, Comparison Operators, and Logical Operators.html">
+       11. Quiz: Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution Booleans, Comparison and Logical Operators.html">
+       12. Solution: Booleans, Comparison and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Strings.html">
+       13. Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Strings.html">
+       14. Quiz: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Strings.html">
+       15. Solution: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Type and Type Conversion.html">
+       16. Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Quiz Type and Type Conversion.html">
+       17. Quiz: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Solution Type and Type Conversion.html">
+       18. Solution: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="19. String Methods.html">
+       19. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="20. String Methods.html">
+       20. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Another String Method - Split.html">
+       21. Another String Method - Split
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Lists and Membership Operators.html">
+       22. Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Lists and Membership Operators.html">
+       23. Quiz: Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Solution List and Membership Operators.html">
+       24. Solution: List and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="25. List Methods.html">
+       25. List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Quiz List Methods.html">
+       26. Quiz: List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Tuples.html">
+       27. Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Quiz Tuples.html">
+       28. Quiz: Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Sets.html">
+       29. Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Quiz Sets.html">
+       30. Quiz: Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Dictionaries and Identity Operators.html">
+       31. Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Quiz Dictionaries and Identity Operators.html">
+       32. Quiz: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Solution Dictionaries and Identity Operators.html">
+       33. Solution: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Quiz More With Dictionaries.html">
+       34. Quiz: More With Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Compound Data Structures.html">
+       35. Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Quiz Compound Data Structures.html">
+       36. Quiz: Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Solution Compound Data Structions.html">
+       37. Solution: Compound Data Structions
+      </a>
+     </li>
+     <li class="">
+      <a href="38. Conclusion.html">
+       38. Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="39. Summary.html">
+       39. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          17. Quiz: Type and Type Conversion
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-what-type-do-these-objects-have">
+          Quiz: What Type Do These Objects Have?
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Which Type? I
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What type does this object have?
+             <code>
+              "12"
+             </code>
+             . There is a coding environment further down this page that you can use for experimentation. Enter your code and run it with the "Test Run" button.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512676199072" name="473997" type="radio" value="a1512676199072"/>
+           <label for="a1512676199072">
+            <p>
+             str
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676210194" name="473997" type="radio" value="a1512676210194"/>
+           <label for="a1512676210194">
+            <p>
+             float
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676210662" name="473997" type="radio" value="a1512676210662"/>
+           <label for="a1512676210662">
+            <p>
+             int
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676211111" name="473997" type="radio" value="a1512676211111"/>
+           <label for="a1512676211111">
+            <p>
+             bool
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          str
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Which Type? II
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What type does this object have?
+             <code>
+              12.3
+             </code>
+             There is a coding environment further down this page that you can use for experimentation. Enter your code and run it with the "Test Run" button.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512676371616" name="473998" type="radio" value="a1512676371616"/>
+           <label for="a1512676371616">
+            <p>
+             str
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676421553" name="473998" type="radio" value="a1512676421553"/>
+           <label for="a1512676421553">
+            <p>
+             float
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676422101" name="473998" type="radio" value="a1512676422101"/>
+           <label for="a1512676422101">
+            <p>
+             int
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676422657" name="473998" type="radio" value="a1512676422657"/>
+           <label for="a1512676422657">
+            <p>
+             bool
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          float
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Which Type? III
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What type does this object have?
+             <code>
+              len("my_string")
+             </code>
+             There is a coding environment further down this page that you can use for experimentation. Enter your code and run it with the "Test Run" button.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512676566033" name="474003" type="radio" value="a1512676566033"/>
+           <label for="a1512676566033">
+            <p>
+             str
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676588230" name="474003" type="radio" value="a1512676588230"/>
+           <label for="a1512676588230">
+            <p>
+             float
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676588723" name="474003" type="radio" value="a1512676588723"/>
+           <label for="a1512676588723">
+            <p>
+             int
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676589198" name="474003" type="radio" value="a1512676589198"/>
+           <label for="a1512676589198">
+            <p>
+             bool
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          int
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Which Type? IV
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What type does this object have?
+             <code>
+              "hippo" *12
+             </code>
+             There is a coding environment further down this page that you can use for experimentation. Enter your code and run it with the "Test Run" button.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512676669887" name="474004" type="radio" value="a1512676669887"/>
+           <label for="a1512676669887">
+            <p>
+             str
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676701253" name="474004" type="radio" value="a1512676701253"/>
+           <label for="a1512676701253">
+            <p>
+             float
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676701852" name="474004" type="radio" value="a1512676701852"/>
+           <label for="a1512676701852">
+            <p>
+             int
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512676702353" name="474004" type="radio" value="a1512676702353"/>
+           <label for="a1512676702353">
+            <p>
+             bool
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          str
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="type-playground">
+          Type Playground
+         </h1>
+         <p>
+          Use this programming space with Test Run to experiment with types of objects. Don't forget to use
+          <code>
+           print
+          </code>
+          to see the output of your code.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="474006-play-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#474006-play-py" id="tab-474006-play-py" role="tab">
+            play.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-474006-play-py" class="tab-pane active show" id="474006-play-py" role="tabpanel">
+            <pre><code></code></pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-total-sales">
+          Quiz: Total Sales
+         </h1>
+         <p>
+          In this quiz, you’ll need to change the types of the input and output data in order to get the result you want.
+         </p>
+         <p>
+          Calculate and print the total sales for the week from the data provided. Print out a string of the form
+          <code>
+           "This week's total sales: xxx"
+          </code>
+          , where xxx will be the actual total of all the numbers. You’ll need to change the type of the input data in order to calculate that total.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="474010-sales-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#474010-sales-py" id="tab-474010-sales-py" role="tab">
+            sales.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-474010-sales-py" class="tab-pane active show" id="474010-sales-py" role="tabpanel">
+            <pre><code></code>mon_sales = "121"
+tues_sales = "105"
+wed_sales = "110"
+thurs_sales = "98"
+fri_sales = "95"
+
+#TODO: Print a string with this format: This week's total sales: xxx
+# You will probably need to write some lines of code before the print statement.</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="18. Solution Type and Type Conversion.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('17. Quiz: Type and Type Conversion')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

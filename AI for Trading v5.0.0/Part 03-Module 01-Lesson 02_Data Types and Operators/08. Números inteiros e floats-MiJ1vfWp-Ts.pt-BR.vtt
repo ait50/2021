@@ -1,0 +1,271 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.534 --> 00:00:02.167
+INTEIROS E DECIMAIS
+
+00:00:02.200 --> 00:00:05.133
+Até agora a maioria dos números
+com os quais trabalhamos
+
+00:00:05.200 --> 00:00:08.267
+foram números inteiros, ou "ints".
+
+00:00:08.300 --> 00:00:10.300
+Porém,
+como você deve ter notado,
+
+00:00:10.334 --> 00:00:13.400
+existem outros tipos de números
+no Python.
+
+00:00:13.434 --> 00:00:16.834
+Aqui dividir
+um inteiro por outro
+
+00:00:16.868 --> 00:00:19.567
+nos dá um número
+não inteiro,
+
+00:00:19.601 --> 00:00:21.901
+0,75.
+
+00:00:21.968 --> 00:00:24.634
+No Python,
+e na computação em geral,
+
+00:00:24.667 --> 00:00:27.601
+representamos tais números
+como floats,
+
+00:00:27.634 --> 00:00:30.534
+que são números decimais.
+
+00:00:30.567 --> 00:00:34.300
+Um float é um número real
+que utiliza um ponto decimal
+
+00:00:34.367 --> 00:00:37.534
+que nos permite utilizar números
+com valores fracionados.
+
+00:00:37.567 --> 00:00:41.234
+Mesmo quando um inteiro
+divide o outro exatamente,
+
+00:00:41.267 --> 00:00:43.467
+o resultado será um float.
+
+00:00:43.534 --> 00:00:48.033
+O int e o float
+são dois tipos de dados.
+
+00:00:48.067 --> 00:00:52.501
+No Python, todo objeto
+terá um tipo.
+
+00:00:52.567 --> 00:00:56.334
+O tipo do objeto define
+quais operadores e funções
+
+00:00:56.367 --> 00:00:59.834
+funcionarão naquele objeto
+e como isso acontecerá.
+
+00:00:59.868 --> 00:01:02.701
+Podemos conferir o tipo
+de qualquer objeto diretamente
+
+00:01:02.734 --> 00:01:05.767
+utilizando a função
+integrada "type".
+
+00:01:05.801 --> 00:01:10.033
+Aqui vemos que o tipo
+de um número sem decimal
+
+00:01:10.100 --> 00:01:14.200
+e um com decimal
+são diferentes no Python.
+
+00:01:14.267 --> 00:01:18.400
+Para criar um int,
+use um número sem ponto decimal.
+
+00:01:18.434 --> 00:01:20.734
+Este é um int.
+
+00:01:20.767 --> 00:01:23.567
+Para criar o float,
+inclua um ponto decimal.
+
+00:01:24.234 --> 00:01:28.334
+Se o número for inteiro,
+tudo bem,
+
+00:01:28.367 --> 00:01:32.200
+não precisamos colocar nada
+após o ponto decimal.
+
+00:01:32.267 --> 00:01:34.501
+Estes dois são floats.
+
+00:01:35.167 --> 00:01:38.467
+Uma operação
+envolvendo um int e um float
+
+00:01:38.501 --> 00:01:41.067
+sempre produzirá um float.
+
+00:01:41.100 --> 00:01:43.901
+Às vezes, precisaremos
+converter manualmente
+
+00:01:43.934 --> 00:01:46.067
+um tipo numérico em outro.
+
+00:01:46.100 --> 00:01:50.033
+Podemos fazer isso construindo
+novos objetos do tipo
+
+00:01:50.067 --> 00:01:52.534
+com int e float.
+
+00:01:52.567 --> 00:01:54.934
+Ao converter um float
+em um int,
+
+00:01:54.968 --> 00:01:58.868
+a parte do número
+após o ponto decimal é retirada
+
+00:01:58.901 --> 00:02:01.067
+e ele não é arredondado.
+
+00:02:01.100 --> 00:02:04.667
+49,7 será reduzido a 49.
+
+00:02:04.734 --> 00:02:09.167
+4.0, calculado
+de 16 dividido por 4,
+
+00:02:09.200 --> 00:02:10.901
+será reduzido a 4.
+
+00:02:10.934 --> 00:02:13.367
+Converter de int para float
+
+00:02:13.400 --> 00:02:16.534
+adiciona um zero decimal
+ao fim do número.
+
+00:02:17.267 --> 00:02:20.868
+Vimos os dois principais
+tipos numéricos no Python:
+
+00:02:20.901 --> 00:02:25.634
+inteiros e números decimais.
+Para que eles servem?
+
+00:02:25.667 --> 00:02:28.567
+Haverá momentos nos quais
+precisaremos contar itens
+
+00:02:28.634 --> 00:02:32.934
+cujo resultado
+será um inteiro.
+
+00:02:33.000 --> 00:02:38.534
+Por exemplo, a contagem de pessoas
+que irão à sua festa.
+
+00:02:38.567 --> 00:02:41.968
+Não podemos considerar
+0,47 como pessoa.
+
+00:02:42.033 --> 00:02:44.367
+Para isso,
+usamos um inteiro.
+
+00:02:44.400 --> 00:02:47.834
+Se você não estiver trabalhando
+com um resultado inteiro,
+
+00:02:47.901 --> 00:02:50.267
+o float
+será o mais adequado.
+
+00:02:50.300 --> 00:02:54.167
+Por exemplo, imagine
+cinco tortas para a sua festa,
+
+00:02:54.234 --> 00:02:57.434
+e você quer saber
+a quantidade de torta que sobrou.
+
+00:02:57.467 --> 00:03:00.434
+As pessoas geralmente comem
+1/6 de uma fatia.
+
+00:03:00.501 --> 00:03:04.767
+Após a primeira fatia,
+você terá 4,83 tortas.
+
+00:03:04.834 --> 00:03:07.200
+Para isso,
+utilizamos o float.
+
+00:03:07.234 --> 00:03:11.834
+Números decimais são aproximações
+do valor que devem representar.
+
+00:03:11.901 --> 00:03:16.400
+Eles podem representar
+uma enorme gama de valores.
+
+00:03:16.467 --> 00:03:19.434
+Para colocar números
+na memória do computador,
+
+00:03:19.501 --> 00:03:22.834
+o Python utiliza
+a aproximação.
+
+00:03:22.868 --> 00:03:26.601
+Isso pode apresentar
+resultados surpreendentes,
+
+00:03:26.667 --> 00:03:30.734
+porque o decimal
+ou a aproximação para 0,1
+
+00:03:30.767 --> 00:03:34.534
+é um pouco mais do que 0,1.
+
+00:03:34.601 --> 00:03:36.868
+Quando juntamos
+vários do mesmo,
+
+00:03:36.901 --> 00:03:40.701
+vemos a diferença entre a resposta
+matematicamente correta
+
+00:03:40.734 --> 00:03:43.033
+e aquela que o Python dá.
+
+00:03:43.100 --> 00:03:44.734
+Na maioria dos casos,
+
+00:03:44.767 --> 00:03:47.534
+essas pequenas diferenças
+são irrelevantes,
+
+00:03:47.601 --> 00:03:50.267
+mas é importante saber
+que elas existem.
+
+00:03:50.300 --> 00:03:53.200
+Você pode ler sobre isso
+nas anotações.
+

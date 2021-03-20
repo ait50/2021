@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.934 --> 00:00:05.467
+Até agora vimos duas formas
+de processar dados no Python:
+
+00:00:05.534 --> 00:00:08.334
+com operadores e funções.
+
+00:00:08.367 --> 00:00:10.601
+Utilizamos os operadores
+dessa forma,
+
+00:00:10.667 --> 00:00:14.767
+processando dois valores
+em qualquer lado do operador.
+
+00:00:14.834 --> 00:00:18.801
+Também utilizamos funções
+como "PRINT" e "LEN".
+
+00:00:18.834 --> 00:00:21.667
+As funções se parecem
+com os operadores.
+
+00:00:21.701 --> 00:00:25.634
+Na verdade, a única diferença
+é na aparência.
+
+00:00:25.667 --> 00:00:28.234
+As entradas de função
+são colocadas em parênteses
+
+00:00:28.267 --> 00:00:31.133
+em vez de colocadas
+ao lado do operador,
+
+00:00:31.200 --> 00:00:35.901
+e as funções têm nomes descritivos
+em vez de símbolos.
+
+00:00:35.934 --> 00:00:40.601
+Existe uma terceira técnica
+de operar valores, a de métodos.
+
+00:00:40.667 --> 00:00:43.033
+A melhor forma de aprender
+sobre métodos
+
+00:00:43.100 --> 00:00:45.000
+é com um exemplo.
+
+00:00:45.033 --> 00:00:47.100
+Observe este método "TITLE".
+
+00:00:47.133 --> 00:00:49.467
+Os métodos estão relacionados
+com as funções,
+
+00:00:49.501 --> 00:00:52.400
+mas, diferentemente,
+estão associados
+
+00:00:52.467 --> 00:00:54.968
+a tipos específicos
+de objetos.
+
+00:00:55.033 --> 00:01:00.934
+Existem métodos diferentes
+para cada tipo de dado.
+
+00:01:01.000 --> 00:01:03.767
+Neste exemplo,
+o objeto é uma string
+
+00:01:03.834 --> 00:01:06.267
+com o valor
+"Sebastian Thrun",
+
+00:01:06.300 --> 00:01:08.901
+e nós chamamos
+o método "TITLE" dele.
+
+00:01:08.934 --> 00:01:12.367
+O método retorna uma string
+do caso do título,
+
+00:01:12.400 --> 00:01:17.133
+ou seja, a primeira letra
+de cada palavra fica maiúscula.
+
+00:01:17.200 --> 00:01:21.534
+Então os métodos são funções
+que pertencem a um objeto.
+
+00:01:21.567 --> 00:01:24.767
+Um objeto, por exemplo,
+é uma string.
+
+00:01:24.834 --> 00:01:27.901
+Vamos ver outro método string,
+o islower.
+
+00:01:27.934 --> 00:01:33.601
+Ele confere se um dos caracteres
+de uma string estão em caixa baixa.
+
+00:01:33.634 --> 00:01:37.334
+Neste caso, o objeto string
+é Sebastian Thrun.
+
+00:01:37.367 --> 00:01:39.567
+Islower retorna verdadeiro,
+
+00:01:39.601 --> 00:01:42.200
+pois não há nenhuma letra
+em caixa alta.
+
+00:01:42.234 --> 00:01:45.367
+Você deve ter notado
+que chamamos o islower,
+
+00:01:45.434 --> 00:01:46.734
+nos métodos "TITLE",
+
+00:01:46.767 --> 00:01:48.400
+utilizando parênteses,
+
+00:01:48.434 --> 00:01:53.334
+mas não colocamos nada dentro,
+como na chamada das funções.
+
+00:01:53.367 --> 00:01:57.267
+As entradas nos parênteses
+são chamadas de argumentos.
+
+00:01:57.300 --> 00:01:59.934
+Como os métodos
+são tipos especiais de funções
+
+00:01:59.968 --> 00:02:02.067
+que pertencem a um objeto,
+
+00:02:02.100 --> 00:02:06.033
+o objeto é sempre
+o primeiro argumento de um método.
+
+00:02:06.100 --> 00:02:10.100
+Então islower e "TITLE"
+tinham um argumento,
+
+00:02:10.167 --> 00:02:13.133
+embora não houvesse nada
+entre os parênteses.
+
+00:02:13.200 --> 00:02:17.501
+O argumento fica camuflado
+como o objeto string.
+
+00:02:17.534 --> 00:02:19.901
+Vamos ver um método
+que pega mais argumentos
+
+00:02:19.934 --> 00:02:22.834
+do que só o objeto,
+o count.
+
+00:02:22.901 --> 00:02:26.534
+Aqui o método "count"
+retorna quantas vezes
+
+00:02:26.567 --> 00:02:30.234
+a substring "fish"
+aparece na string.
+
+00:02:30.300 --> 00:02:33.133
+O objeto é a string "one fish,
+
+00:02:33.167 --> 00:02:36.167
+two fish, red fish, blue fish".
+
+00:02:36.200 --> 00:02:39.167
+E o método é ".count".
+
+00:02:39.200 --> 00:02:43.000
+Existem quatro ocorrências
+da palavra "fish" na string.
+

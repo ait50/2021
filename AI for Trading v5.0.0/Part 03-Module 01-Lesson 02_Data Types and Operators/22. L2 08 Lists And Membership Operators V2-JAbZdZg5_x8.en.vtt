@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.020 --> 00:00:07.470
+In addition to accessing individual elements from a list,
+
+00:00:07.470 --> 00:00:12.525
+we can use Python slicing notation to access a subsequence of a list.
+
+00:00:12.525 --> 00:00:19.230
+Slicing means using indices to slice off parts of an object like a string or a list.
+
+00:00:19.230 --> 00:00:21.780
+An example makes it super clear.
+
+00:00:21.780 --> 00:00:25.170
+Again, consider this list of months.
+
+00:00:25.170 --> 00:00:30.405
+We can slice the third quarter of the year from the months' list like this.
+
+00:00:30.405 --> 00:00:32.925
+The index to the left of the colon,
+
+00:00:32.925 --> 00:00:35.565
+six, is where the slice begin.
+
+00:00:35.565 --> 00:00:39.520
+The slice continues up to the second index, nine.
+
+00:00:39.520 --> 00:00:42.980
+Notice that the six is the index of July,
+
+00:00:42.980 --> 00:00:45.620
+but nine is the index of October.
+
+00:00:45.620 --> 00:00:50.825
+The lower bound is inclusive but the upper bound is exclusive.
+
+00:00:50.825 --> 00:00:55.850
+There are a couple of slicing shortcuts that simplify common situations.
+
+00:00:55.850 --> 00:01:00.785
+If you would like to make a slice that begins at the very beginning of the original list,
+
+00:01:00.785 --> 00:01:03.940
+you can omit the starting index like this.
+
+00:01:03.940 --> 00:01:09.385
+Or, if you'd like to make a slice that ends at the very end of the original list,
+
+00:01:09.385 --> 00:01:12.425
+you can omit the ending index like this.
+
+00:01:12.425 --> 00:01:17.020
+List is a type just like string, float and int.
+
+00:01:17.020 --> 00:01:18.810
+Of the types we've seen,
+
+00:01:18.810 --> 00:01:21.720
+lists are more similar to string.
+
+00:01:21.720 --> 00:01:26.805
+Both types support the LEN function, indexing and slicing.
+
+00:01:26.805 --> 00:01:31.010
+Here, you can see that the length of the string is the number of
+
+00:01:31.010 --> 00:01:35.990
+characters and the length of the list is a number of elements it holds.
+
+00:01:35.990 --> 00:01:38.720
+Zero indexing is supported for both,
+
+00:01:38.720 --> 00:01:41.960
+as well as slicing based on the indices shown here.
+
+00:01:41.960 --> 00:01:47.360
+Another thing, they both support our membership operators, in and not.
+
+00:01:47.360 --> 00:01:50.690
+In evaluate if the object on the left side is
+
+00:01:50.690 --> 00:01:53.690
+included in the object on the right side and
+
+00:01:53.690 --> 00:01:55.940
+not in evaluate if the object on
+
+00:01:55.940 --> 00:01:59.960
+the left side is not included in the object on the right side.
+
+00:01:59.960 --> 00:02:05.785
+Here, we can check if the string "her" is in this string, which is right here.
+
+00:02:05.785 --> 00:02:11.090
+However, Sunday is not in our list as it only holds the month.
+

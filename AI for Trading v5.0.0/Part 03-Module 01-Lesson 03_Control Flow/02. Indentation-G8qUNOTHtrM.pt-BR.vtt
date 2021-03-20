@@ -1,0 +1,68 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.834 --> 00:00:03.133
+INSTRUÇÕES CONDICIONAIS,
+INDENTAÇÃO
+
+00:00:03.200 --> 00:00:06.834
+Como você acabou de ver,
+indentação é importante.
+
+00:00:06.901 --> 00:00:08.334
+É como você diz ao Python
+
+00:00:08.400 --> 00:00:11.300
+que código está no corpo
+de uma instrução "if"
+
+00:00:11.334 --> 00:00:13.734
+e qual está fora.
+
+00:00:13.801 --> 00:00:16.834
+Indentação não importa só
+em instruções "if".
+
+00:00:16.901 --> 00:00:20.534
+Logo você verá seus usos
+em outros contextos.
+
+00:00:20.601 --> 00:00:22.734
+Outras linguagens usam chaves
+
+00:00:22.801 --> 00:00:26.200
+para definir onde começa
+e termina um bloco de código.
+
+00:00:26.234 --> 00:00:31.300
+Em Python, usamos indentação
+para delimitar blocos de código.
+
+00:00:31.334 --> 00:00:33.701
+Por convenção,
+essa indentação ocorre
+
+00:00:33.734 --> 00:00:36.033
+em múltiplos
+de quatro espaços.
+
+00:00:36.100 --> 00:00:39.801
+É importante seguir
+essa convenção à risca,
+
+00:00:39.834 --> 00:00:41.734
+pois mudar a indentação
+
+00:00:41.801 --> 00:00:44.901
+pode mudar radicalmente
+o significado do código.
+
+00:00:44.934 --> 00:00:48.000
+Se estiver trabalhando em uma equipe
+de programadores Python,
+
+00:00:48.033 --> 00:00:52.501
+é importante que todos sigam
+a mesma convenção de indentação.
+

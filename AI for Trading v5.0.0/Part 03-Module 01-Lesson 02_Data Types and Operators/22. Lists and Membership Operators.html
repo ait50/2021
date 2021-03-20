@@ -1,0 +1,637 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Lists and Membership Operators
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Types and Operators
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Arithmetic Operators.html">
+       02. Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Arithmetic Operators.html">
+       03. Quiz: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Arithmetic Operators.html">
+       04. Solution: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Variables and Assignment Operators.html">
+       05. Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Variables and Assignment Operators.html">
+       06. Quiz: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Solution Variables and Assignment Operators.html">
+       07. Solution: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Integers and Floats.html">
+       08. Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Integers and Floats.html">
+       09. Quiz: Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Booleans, Comparison Operators, and Logical Operators.html">
+       10. Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz Booleans, Comparison Operators, and Logical Operators.html">
+       11. Quiz: Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution Booleans, Comparison and Logical Operators.html">
+       12. Solution: Booleans, Comparison and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Strings.html">
+       13. Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Strings.html">
+       14. Quiz: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Strings.html">
+       15. Solution: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Type and Type Conversion.html">
+       16. Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Quiz Type and Type Conversion.html">
+       17. Quiz: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Solution Type and Type Conversion.html">
+       18. Solution: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="19. String Methods.html">
+       19. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="20. String Methods.html">
+       20. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Another String Method - Split.html">
+       21. Another String Method - Split
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Lists and Membership Operators.html">
+       22. Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Lists and Membership Operators.html">
+       23. Quiz: Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Solution List and Membership Operators.html">
+       24. Solution: List and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="25. List Methods.html">
+       25. List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Quiz List Methods.html">
+       26. Quiz: List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Tuples.html">
+       27. Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Quiz Tuples.html">
+       28. Quiz: Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Sets.html">
+       29. Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Quiz Sets.html">
+       30. Quiz: Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Dictionaries and Identity Operators.html">
+       31. Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Quiz Dictionaries and Identity Operators.html">
+       32. Quiz: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Solution Dictionaries and Identity Operators.html">
+       33. Solution: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Quiz More With Dictionaries.html">
+       34. Quiz: More With Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Compound Data Structures.html">
+       35. Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Quiz Compound Data Structures.html">
+       36. Quiz: Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Solution Compound Data Structions.html">
+       37. Solution: Compound Data Structions
+      </a>
+     </li>
+     <li class="">
+      <a href="38. Conclusion.html">
+       38. Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="39. Summary.html">
+       39. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          22. Lists and Membership Operators
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="list-and-membership-operators">
+          List and Membership Operators
+         </h3>
+         <p>
+          There are three videos as a part of this page.  Be sure to check them out along with the additional helpful reminders!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L2 09 Lists And Membership Operators V2
+         </p>
+        </h3>
+        <video controls="">
+         <source src="22. L2 09 Lists And Membership Operators V2-rNV_E50wcWM.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="22. L2 09 Lists And Membership Operators V2-rNV_E50wcWM.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="22. L2 09 Lists And Membership Operators V2-rNV_E50wcWM.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="lists">
+          Lists!
+         </h1>
+         <p>
+          <strong>
+           Data structures
+          </strong>
+          are containers that organize and group data types together in different ways. A
+          <strong>
+           list
+          </strong>
+          is one of the most common and basic data structures in Python.
+         </p>
+         <p>
+          You saw here that you can create a list with square brackets.  Lists can contain any mix and match of the data types you have seen so far.
+         </p>
+         <pre><code>list_of_random_things = [1, 3.4, 'a string', True]</code></pre>
+         <p>
+          This is a list of 4 elements.  All ordered containers (like lists) are indexed in python using a starting index of 0.  Therefore, to pull the first value from the above list, we can write:
+         </p>
+         <pre><code>&gt;&gt;&gt; list_of_random_things[0]
+1</code></pre>
+         <p>
+          It might seem like you can pull the last element with the following code, but this actually won't work:
+         </p>
+         <pre><code>&gt;&gt;&gt; list_of_random_things[len(list_of_random_things)] 
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+&lt;ipython-input-34-f88b03e5c60e&gt; in &lt;module&gt;()
+----&gt; 1 lst[len(lst)]
+
+IndexError: list index out of range</code></pre>
+         <p>
+          However, you can retrieve the last element by reducing the index by 1.  Therefore, you can do the following:
+         </p>
+         <pre><code>&gt;&gt;&gt; list_of_random_things[len(list_of_random_things) - 1] 
+True</code></pre>
+         <p>
+          Alternatively, you can index from the end of a list by using negative values, where -1 is the last element, -2 is the second to last element and so on.
+         </p>
+         <pre><code>&gt;&gt;&gt; list_of_random_things[-1] 
+True
+&gt;&gt;&gt; list_of_random_things[-2] 
+a string</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L2 08 Lists And Membership Operators V2
+         </p>
+        </h3>
+        <video controls="">
+         <source src="22. L2 08 Lists And Membership Operators V2-JAbZdZg5_x8.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="22. L2 08 Lists And Membership Operators V2-JAbZdZg5_x8.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="22. L2 08 Lists And Membership Operators V2-JAbZdZg5_x8.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="slice-and-dice-with-lists">
+          Slice and Dice with Lists
+         </h1>
+         <p>
+          You saw that we can pull more than one value from a list at a time by using
+          <strong>
+           slicing
+          </strong>
+          .  When using slicing, it is important to remember that the
+          <code>
+           lower
+          </code>
+          index is
+          <code>
+           inclusive
+          </code>
+          and the
+          <code>
+           upper
+          </code>
+          index is
+          <code>
+           exclusive
+          </code>
+          .
+         </p>
+         <p>
+          Therefore, this:
+         </p>
+         <pre><code>&gt;&gt;&gt; list_of_random_things = [1, 3.4, 'a string', True]
+&gt;&gt;&gt; list_of_random_things[1:2]
+[3.4]</code></pre>
+         <p>
+          will only return
+          <strong>
+           3.4
+          </strong>
+          in a list.  Notice this is still different than just indexing a single element, because you get a list back with this indexing. The colon tells us to go from the starting value on the left of the colon up to, but not including, the element on the right.
+         </p>
+         <p>
+          If you know that you want to start at the beginning, of the list you can also leave out this value.
+         </p>
+         <pre><code>&gt;&gt;&gt; list_of_random_things[:2]
+[1, 3.4]</code></pre>
+         <p>
+          or to return all of the elements to the end of the list, we can leave off a final element.
+         </p>
+         <pre><code>&gt;&gt;&gt; list_of_random_things[1:]
+[3.4, 'a string', True]</code></pre>
+         <p>
+          This type of indexing works exactly the same on strings, where the returned value will be a string.
+         </p>
+         <h1 id="are-you-in-or-not-in">
+          Are you
+          <code>
+           in
+          </code>
+          OR
+          <code>
+           not in
+          </code>
+          ?
+         </h1>
+         <p>
+          You saw that we can also use
+          <code>
+           in
+          </code>
+          and
+          <code>
+           not in
+          </code>
+          to return a
+          <strong>
+           bool
+          </strong>
+          of whether an element exists within our list, or if one string is a substring of another.
+         </p>
+         <pre><code class="python language-python">&gt;&gt;&gt; 'this' in 'this is a string'
+True
+&gt;&gt;&gt; 'in' in 'this is a string'
+True
+&gt;&gt;&gt; 'isa' in 'this is a string'
+False
+&gt;&gt;&gt; 5 not in [1, 2, 3, 4, 6]
+True
+&gt;&gt;&gt; 5 in [1, 2, 3, 4, 6]
+False</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L2 07 Lists And Membership Operators II V3
+         </p>
+        </h3>
+        <video controls="">
+         <source src="22. L2 07 Lists And Membership Operators II V3-3Nj-b-ZzqH8.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="22. L2 07 Lists And Membership Operators II V3-3Nj-b-ZzqH8.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="22. L2 07 Lists And Membership Operators II V3-3Nj-b-ZzqH8.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="mutability-and-order">
+          Mutability and Order
+         </h1>
+         <p>
+          <strong>
+           Mutability
+          </strong>
+          is about whether or not we can change an object once it has been created.  If an object (like a list or string) can be changed (like a list can), then it is called
+          <strong>
+           mutable
+          </strong>
+          .  However, if an object cannot be changed without creating a completely new object (like strings), then the object is considered
+          <strong>
+           immutable
+          </strong>
+          .
+         </p>
+         <pre><code>&gt;&gt;&gt; my_lst = [1, 2, 3, 4, 5]
+&gt;&gt;&gt; my_lst[0] = 'one'
+&gt;&gt;&gt; print(my_lst)
+['one', 2, 3, 4, 5]</code></pre>
+         <p>
+          As shown above, you are able to replace 1 with 'one' in the above list.  This is because lists are
+          <strong>
+           mutable
+          </strong>
+          .
+         </p>
+         <p>
+          However,  the following does not work:
+         </p>
+         <pre><code>&gt;&gt;&gt; greeting = "Hello there"
+&gt;&gt;&gt; greeting[0] = 'M'</code></pre>
+         <p>
+          This is because strings are
+          <strong>
+           immutable
+          </strong>
+          .  This means to change this string, you will need to create a completely new string.
+         </p>
+         <p>
+          There are two things to keep in mind for each of the data types you are using:
+         </p>
+         <ol>
+          <li>
+           Are they
+           <strong>
+            mutable
+           </strong>
+           ?
+          </li>
+          <li>
+           Are they
+           <strong>
+            ordered
+           </strong>
+           ?
+          </li>
+         </ol>
+         <p>
+          ** Order** is about whether the position of an element in the object can be used to access the element. ** Both strings and lists are ordered.** We can use the order to access parts of a list and string.
+         </p>
+         <p>
+          However, you will see some data types in the next sections that will be unordered.  For each of the upcoming data structures you see, it is useful to understand how you index, are they mutable, and are they ordered.  Knowing this about the data structure is really useful!
+         </p>
+         <p>
+          Additionally, you will see how these each have different methods, so why you would use one data structure vs. another is largely dependent on these properties, and what you can easily do with it!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="23. Quiz Lists and Membership Operators.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('22. Lists and Membership Operators')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

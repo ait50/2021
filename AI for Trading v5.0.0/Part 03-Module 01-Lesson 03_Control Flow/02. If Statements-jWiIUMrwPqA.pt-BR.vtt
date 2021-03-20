@@ -1,0 +1,162 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.801 --> 00:00:02.801
+INSTRUÇÕES CONDICIONAIS,
+INSTRUÇÕES "IF"
+
+00:00:02.834 --> 00:00:04.100
+Temos aprendido códigos
+
+00:00:04.133 --> 00:00:07.133
+que simplesmente executam
+as linhas uma a uma,
+
+00:00:07.200 --> 00:00:09.000
+de cima para baixo.
+
+00:00:09.033 --> 00:00:10.300
+Muitas vezes, no entanto,
+
+00:00:10.334 --> 00:00:14.534
+só queremos executar um código
+sob determinada condição.
+
+00:00:14.601 --> 00:00:16.334
+Para demonstrar esse conceito,
+
+00:00:16.400 --> 00:00:18.434
+vamos dar uma olhada
+nesse sistema de cobrança
+
+00:00:18.501 --> 00:00:21.033
+para um plano de telefonia
+pré-pago.
+
+00:00:21.100 --> 00:00:24.033
+Digamos que o cliente
+tenha um crédito de telefonia
+
+00:00:24.100 --> 00:00:27.400
+que pode usar para ligações
+e SMS.
+
+00:00:27.434 --> 00:00:30.434
+O cliente pode criar uma ligação
+com a própria conta bancária
+
+00:00:30.501 --> 00:00:34.400
+para, caso seus créditos
+caiam para certo valor,
+
+00:00:34.434 --> 00:00:36.634
+neste caso 5 dólares,
+
+00:00:36.701 --> 00:00:39.334
+mais 10 dólares de crédito
+sejam adicionados
+
+00:00:39.400 --> 00:00:41.934
+e a cobrança seja feita
+na conta.
+
+00:00:42.000 --> 00:00:46.501
+Eis uma forma simples de representar
+esse sistema de cobrança em código.
+
+00:00:46.534 --> 00:00:49.133
+Se os créditos telefônicos
+forem menores do que 5,
+
+00:00:49.200 --> 00:00:53.601
+adicionar 10 aos créditos
+e subtrair 10 do saldo da conta.
+
+00:00:53.634 --> 00:00:56.934
+Este é um exemplo
+de instrução "if".
+
+00:00:57.000 --> 00:00:59.501
+Uma instrução "if"
+é uma instrução condicional
+
+00:00:59.534 --> 00:01:01.634
+que executa ou pula o código
+
+00:01:01.701 --> 00:01:05.534
+dependendo de uma condição
+ser verdadeira ou falsa.
+
+00:01:05.601 --> 00:01:06.834
+Em uma instrução "if",
+
+00:01:06.901 --> 00:01:10.334
+a palavra-chave "if" é seguida
+da condição a ser verificada,
+
+00:01:10.400 --> 00:01:13.400
+neste caso
+"phone_balance &lt; 5:",
+
+00:01:13.434 --> 00:01:15.100
+seguida de dois pontos.
+
+00:01:15.133 --> 00:01:18.133
+A condição é especificada
+usando uma expressão booleana
+
+00:01:18.200 --> 00:01:21.634
+que avalia como verdadeiro
+ou falso.
+
+00:01:21.701 --> 00:01:24.901
+Depois dessa linha,
+um código indentado
+
+00:01:24.934 --> 00:01:27.934
+é executado
+se a condição for verdadeira.
+
+00:01:28.000 --> 00:01:31.534
+Neste caso, essas linhas
+só serão executadas
+
+00:01:31.601 --> 00:01:35.434
+se "phone_balance"
+for menor que 5.
+
+00:01:35.501 --> 00:01:39.501
+Se "phone_balance" for 3,
+essa condição procede,
+
+00:01:39.534 --> 00:01:43.033
+e as linhas indentadas de código
+são executadas.
+
+00:01:43.100 --> 00:01:46.100
+Você pode observar as mudanças
+na saída.
+
+00:01:46.133 --> 00:01:48.334
+Se "phone_balance"
+for 8, contudo,
+
+00:01:48.400 --> 00:01:53.400
+essa condição é falsa,
+e as linhas não são executadas.
+
+00:01:53.434 --> 00:01:55.100
+Como se vê na saída,
+
+00:01:55.133 --> 00:01:57.801
+não há diferença nos créditos
+telefônicos ou bancários,
+
+00:01:57.834 --> 00:01:59.634
+exatamente como esperávamos,
+
+00:01:59.701 --> 00:02:03.100
+já que a condição
+da instrução "if" era falsa.
+

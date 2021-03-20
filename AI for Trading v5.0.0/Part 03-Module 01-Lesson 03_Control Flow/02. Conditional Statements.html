@@ -1,0 +1,699 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Conditional Statements
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Control Flow
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Conditional Statements.html">
+       02. Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Practice Conditional Statements.html">
+       03. Practice: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Conditional Statements.html">
+       04. Solution: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz Conditional Statements.html">
+       05. Quiz: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Solution Conditional Statements.html">
+       06. Solution: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Boolean Expressions for Conditions.html">
+       07. Boolean Expressions for Conditions
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Quiz Boolean Expressions for Conditions.html">
+       08. Quiz: Boolean Expressions for Conditions
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Solution Boolean Expressions for Conditions.html">
+       09. Solution: Boolean Expressions for Conditions
+      </a>
+     </li>
+     <li class="">
+      <a href="10. For Loops.html">
+       10. For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Practice For Loops.html">
+       11. Practice: For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution For Loops Practice.html">
+       12. Solution: For Loops Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Quiz For Loops.html">
+       13. Quiz: For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Solution For Loops Quiz.html">
+       14. Solution: For Loops Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Quiz Match Inputs To Outputs.html">
+       15. Quiz: Match Inputs To Outputs
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Building Dictionaries.html">
+       16. Building Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Iterating Through Dictionaries with For Loops.html">
+       17. Iterating Through Dictionaries with For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Quiz Iterating Through Dictionaries.html">
+       18. Quiz: Iterating Through Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Solution Iterating Through Dictionaries.html">
+       19. Solution: Iterating Through Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="20. While Loops.html">
+       20. While Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Practice While Loops.html">
+       21. Practice: While Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Solution While Loops Practice.html">
+       22. Solution: While Loops Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz While Loops.html">
+       23. Quiz: While Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Solution While Loops Quiz.html">
+       24. Solution: While Loops Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Break, Continue.html">
+       25. Break, Continue
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Quiz Break, Continue.html">
+       26. Quiz: Break, Continue
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Solution Break, Continue.html">
+       27. Solution: Break, Continue
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Zip and Enumerate.html">
+       28. Zip and Enumerate
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Quiz Zip and Enumerate.html">
+       29. Quiz: Zip and Enumerate
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Solution Zip and Enumerate.html">
+       30. Solution: Zip and Enumerate
+      </a>
+     </li>
+     <li class="">
+      <a href="31. List Comprehensions.html">
+       31. List Comprehensions
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Quiz List Comprehensions.html">
+       32. Quiz: List Comprehensions
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Solution List Comprehensions.html">
+       33. Solution: List Comprehensions
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Conclusion.html">
+       34. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. Conditional Statements
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          If Statements
+         </p>
+        </h3>
+        <video controls="">
+         <source src="02. If Statements-jWiIUMrwPqA.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="02. If Statements-jWiIUMrwPqA.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="02. If Statements-jWiIUMrwPqA.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="false" kind="subtitles" label="ar" src="02. If Statements-jWiIUMrwPqA.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="02. If Statements-jWiIUMrwPqA.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="if-statement">
+          If Statement
+         </h1>
+         <p>
+          An
+          <code>
+           if
+          </code>
+          statement is a conditional statement that runs or skips code based on whether a condition is true or false. Here's a simple example.
+         </p>
+         <pre><code class="python language-python">if phone_balance &lt; 5:
+    phone_balance += 10
+    bank_balance -= 10</code></pre>
+         <p>
+          Let's break this down.
+         </p>
+         <ol>
+          <li>
+           An
+           <code>
+            if
+           </code>
+           statement starts with the
+           <code>
+            if
+           </code>
+           keyword, followed by the condition to be checked, in this case
+           <code>
+            phone_balance &lt; 5
+           </code>
+           , and then a colon. The condition is specified in a boolean expression that evaluates to either True or False.
+           <br/>
+           <br/>
+          </li>
+          <li>
+           After this line is an indented block of code to be executed if that condition is true. Here, the lines that increment
+           <code>
+            phone_balance
+           </code>
+           and decrement
+           <code>
+            bank_balance
+           </code>
+           only execute if it is true that
+           <code>
+            phone_balance
+           </code>
+           is less than 5. If not, the code in this
+           <code>
+            if
+           </code>
+           block is simply skipped.
+          </li>
+         </ol>
+         <h3 id="use-comparison-operators-in-conditional-statements">
+          Use Comparison Operators in Conditional Statements
+         </h3>
+         <p>
+          You have learned about Python's comparison operators (e.g.
+          <code>
+           ==
+          </code>
+          and
+          <code>
+           !=
+          </code>
+          ) and how they are different from assignment operators (e.g.
+          <code>
+           =
+          </code>
+          ). In conditional statements, you want to use comparison operators. For example, you'd want to use
+          <code>
+           if x == 5
+          </code>
+          rather than
+          <code>
+           if x = 5
+          </code>
+          . If your conditional statement is causing a syntax error or doing something unexpected, check whether you have written
+          <code>
+           ==
+          </code>
+          or
+          <code>
+           =
+          </code>
+          !
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          If Elif and Else
+         </p>
+        </h3>
+        <video controls="">
+         <source src="02. If Elif and Else-KZubH5XT0eU.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="02. If Elif and Else-KZubH5XT0eU.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="false" kind="subtitles" label="ar" src="02. If Elif and Else-KZubH5XT0eU.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="02. If Elif and Else-KZubH5XT0eU.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="true" kind="subtitles" label="en" src="02. If Elif and Else-KZubH5XT0eU.en.vtt" srclang="en"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="if-elif-else">
+          If, Elif, Else
+         </h1>
+         <p>
+          In addition to the
+          <code>
+           if
+          </code>
+          clause, there are two other optional clauses often used with an
+          <code>
+           if
+          </code>
+          statement. For example:
+         </p>
+         <pre><code class="python language-python">if season == 'spring':
+    print('plant the garden!')
+elif season == 'summer':
+    print('water the garden!')
+elif season == 'fall':
+    print('harvest the garden!')
+elif season == 'winter':
+    print('stay indoors!')
+else:
+    print('unrecognized season')</code></pre>
+         <ol>
+          <li>
+           <code>
+            if
+           </code>
+           : An
+           <code>
+            if
+           </code>
+           statement must always start with an
+           <code>
+            if
+           </code>
+           clause, which contains the first condition that is checked. If this evaluates to True, Python runs the code indented in this
+           <code>
+            if
+           </code>
+           block and then skips to the rest of the code after the
+           <code>
+            if
+           </code>
+           statement.
+           <br/>
+           <br/>
+          </li>
+          <li>
+           <code>
+            elif
+           </code>
+           :
+           <code>
+            elif
+           </code>
+           is short for "else if." An
+           <code>
+            elif
+           </code>
+           clause is used to check for an additional condition if the conditions in the previous clauses in the
+           <code>
+            if
+           </code>
+           statement evaluate to False. As you can see in the example, you can have multiple
+           <code>
+            elif
+           </code>
+           blocks to handle different situations.
+           <br/>
+           <br/>
+          </li>
+          <li>
+           <code>
+            else
+           </code>
+           : Last is the
+           <code>
+            else
+           </code>
+           clause, which must come at the end of an
+           <code>
+            if
+           </code>
+           statement if used. This clause doesn't require a condition. The code in an
+           <code>
+            else
+           </code>
+           block is run if all conditions above that in the
+           <code>
+            if
+           </code>
+           statement evaluate to False.
+          </li>
+         </ol>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Indentation
+         </p>
+        </h3>
+        <video controls="">
+         <source src="02. Indentation-G8qUNOTHtrM.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="02. Indentation-G8qUNOTHtrM.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="02. Indentation-G8qUNOTHtrM.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="false" kind="subtitles" label="ar" src="02. Indentation-G8qUNOTHtrM.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="02. Indentation-G8qUNOTHtrM.zh-CN.vtt" srclang="zh-CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="indentation">
+          Indentation
+         </h1>
+         <p>
+          Some other languages use braces to show where blocks of code begin and end. In Python we use indentation to enclose blocks of code. For example,
+          <code>
+           if
+          </code>
+          statements use indentation to tell Python what code is inside and outside of different clauses.
+         </p>
+         <p>
+          In Python, indents conventionally come in multiples of four spaces. Be strict about following this convention, because changing the indentation can completely change the meaning of the code. If you are working on a team of Python programmers, it's important that everyone follows the same indentation convention!
+         </p>
+         <h4 id="spaces-or-tabs">
+          Spaces or Tabs?
+         </h4>
+         <p>
+          The
+          <a href="https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces" rel="noopener noreferrer" target="_blank">
+           Python Style Guide
+          </a>
+          recommends using 4 spaces to indent, rather than using a tab. Whichever you use, be aware that "Python 3 disallows mixing the use of tabs and spaces for indentation."
+         </p>
+         <hr/>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="try-it-out">
+          Try It Out!
+         </h1>
+         <p>
+          Use Test Run to execute the following code, which includes several examples of
+          <code>
+           if
+          </code>
+          statements. Experiment with different inputs and see what is printed out. Can you follow the flow of logic to figure out which code lines will get run? If you're not sure, you can insert additional
+          <code>
+           print
+          </code>
+          statements to help you figure out how it works.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="521314-conditional_statements_playground-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#521314-conditional_statements_playground-py" id="tab-521314-conditional_statements_playground-py" role="tab">
+            conditional_statements_playground.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-521314-conditional_statements_playground-py" class="tab-pane active show" id="521314-conditional_statements_playground-py" role="tabpanel">
+            <pre><code></code>#First Example - try changing the value of phone_balance
+phone_balance = 10
+bank_balance = 50
+
+if phone_balance &lt; 10:
+    phone_balance += 10
+    bank_balance -= 10
+
+print(phone_balance)
+print(bank_balance)
+
+#Second Example - try changing the value of number
+
+number = 145
+if number % 2 == 0:
+    print("Number " + str(number) + " is even.")
+else:
+    print("Number " + str(number) + " is odd.")
+
+#Third Example - try to change the value of age
+age = 35
+
+# Here are the age limits for bus fares
+free_up_to_age = 4
+child_up_to_age = 18
+senior_from_age = 65
+
+# These lines determine the bus fare prices
+concession_ticket = 1.25
+adult_ticket = 2.50
+
+# Here is the logic for bus fare prices
+if age &lt;= free_up_to_age:
+    ticket_price = 0
+elif age &lt;= child_up_to_age:
+    ticket_price = concession_ticket
+elif age &gt;= senior_from_age:
+    ticket_price = concession_ticket
+else:
+    ticket_price = adult_ticket
+
+message = "Somebody who is {} years old will pay ${} to ride the bus.".format(age, ticket_price)
+print(message)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. Practice Conditional Statements.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. Conditional Statements')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

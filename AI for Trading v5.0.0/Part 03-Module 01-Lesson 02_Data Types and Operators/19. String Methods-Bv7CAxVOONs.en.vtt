@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.169
+So far, we've seen two distinct ways to process
+
+00:00:04.169 --> 00:00:08.519
+data with Python, operators and functions.
+
+00:00:08.519 --> 00:00:10.529
+We've used operators like these,
+
+00:00:10.529 --> 00:00:14.904
+which process the two values on either side of the operator.
+
+00:00:14.904 --> 00:00:18.460
+We've also used functions like print and len.
+
+00:00:18.460 --> 00:00:21.780
+Functions are very similar to operators.
+
+00:00:21.780 --> 00:00:25.400
+In fact, the only real difference is in how they look.
+
+00:00:25.399 --> 00:00:30.919
+Function Inputs are put in parentheses rather than being placed next to an operator,
+
+00:00:30.920 --> 00:00:35.525
+and functions have descriptive names rather than short symbols.
+
+00:00:35.524 --> 00:00:40.725
+There is a third technique for operating on values, methods.
+
+00:00:40.725 --> 00:00:44.695
+The best way to learn about methods is with an example.
+
+00:00:44.695 --> 00:00:47.466
+Consider this title method.
+
+00:00:47.466 --> 00:00:49.375
+Methods are related to functions,
+
+00:00:49.375 --> 00:00:55.024
+but unlike functions, methods are associated with specific types of objects.
+
+00:00:55.024 --> 00:01:00.640
+That is, there are different methods depending on the type of data you're working with.
+
+00:01:00.640 --> 00:01:04.564
+In this example, the object is a string with the value
+
+00:01:04.564 --> 00:01:08.694
+Sebastian Thrun and we are calling its title method.
+
+00:01:08.694 --> 00:01:12.527
+The method returns a string in title case,
+
+00:01:12.528 --> 00:01:16.885
+meaning the first letter of each word is capitalized.
+
+00:01:16.885 --> 00:01:20.728
+So methods are functions that belong to an object,
+
+00:01:20.728 --> 00:01:24.799
+an object, for example, being a string.
+
+00:01:24.799 --> 00:01:27.750
+Let's try another string method, islower().
+
+00:01:27.750 --> 00:01:33.719
+The lower method checks one of the characters in a string or lowercase.
+
+00:01:33.719 --> 00:01:37.510
+In this case, the string object is sebastian thrun.
+
+00:01:37.510 --> 00:01:40.020
+Is lower returns true since there are
+
+00:01:40.019 --> 00:01:43.109
+no uppercase letters you've probably
+
+00:01:43.109 --> 00:01:46.635
+noticed that when we call the is lower and title methods,
+
+00:01:46.635 --> 00:01:49.350
+we use parentheses, but we haven't put
+
+00:01:49.349 --> 00:01:53.079
+anything in them like we did when calling functions.
+
+00:01:53.079 --> 00:01:56.989
+Those inputs in the parentheses are called arguments.
+
+00:01:56.989 --> 00:02:02.024
+Since methods or special types of functions that belong to an object,
+
+00:02:02.025 --> 00:02:06.090
+the object is always the first argument to a method.
+
+00:02:06.090 --> 00:02:09.330
+So, is lower and title actually did have
+
+00:02:09.330 --> 00:02:13.285
+an argument although there was nothing in the parentheses.
+
+00:02:13.284 --> 00:02:17.250
+The argument is disguised as the string object.
+
+00:02:17.250 --> 00:02:22.500
+Let's try a method that takes more arguments than just the object, count.
+
+00:02:22.500 --> 00:02:30.064
+Here, the count method returns how many times the substring fish occurs in the string.
+
+00:02:30.064 --> 00:02:33.079
+The object is the string, one fish,
+
+00:02:33.080 --> 00:02:36.230
+two fish, red fish, blue fish,
+
+00:02:36.229 --> 00:02:39.109
+and the method is dot count,
+
+00:02:39.110 --> 00:02:43.000
+and four occurrences of the word fish exist in the string.
+

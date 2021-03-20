@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.630 --> 00:00:06.725
+Sets, are simple data structures,
+
+00:00:06.725 --> 00:00:10.190
+and they have one main use, collecting unique elements.
+
+00:00:10.190 --> 00:00:11.920
+Our next data structures,
+
+00:00:11.920 --> 00:00:14.355
+dictionaries, are more flexible.
+
+00:00:14.355 --> 00:00:18.555
+Rather than storing single objects like lists and sets do,
+
+00:00:18.555 --> 00:00:23.295
+dictionaries store pairs of elements, keys and values.
+
+00:00:23.295 --> 00:00:25.990
+In this example, we define a dictionary,
+
+00:00:25.990 --> 00:00:28.080
+where the keys are element names,
+
+00:00:28.080 --> 00:00:31.440
+and their values are their corresponding atomic numbers.
+
+00:00:31.440 --> 00:00:33.950
+We can look up values in the dictionary,
+
+00:00:33.950 --> 00:00:36.790
+by using square brackets enclosing a key.
+
+00:00:36.790 --> 00:00:41.490
+We can also insert new values into the dictionary, with square brackets.
+
+00:00:41.490 --> 00:00:43.525
+Here, we are adding lithium,
+
+00:00:43.525 --> 00:00:45.720
+and giving it a value of three.
+
+00:00:45.720 --> 00:00:49.030
+Dictionary keys are similar to list indices.
+
+00:00:49.030 --> 00:00:51.710
+We can select elements from the data structure,
+
+00:00:51.710 --> 00:00:54.190
+by putting the key in square brackets.
+
+00:00:54.190 --> 00:01:00.290
+Unlike lists, dictionaries can have keys of any immutable type, not just integers.
+
+00:01:00.290 --> 00:01:03.915
+The element dictionary uses strings for its keys.
+
+00:01:03.915 --> 00:01:08.685
+However, it's not even necessary for every key to have the same type.
+
+00:01:08.685 --> 00:01:12.310
+We can check whether a value is in a dictionary,
+
+00:01:12.310 --> 00:01:15.650
+the same way we check whether a value is in a list or set,
+
+00:01:15.650 --> 00:01:17.295
+with the in keyword.
+
+00:01:17.295 --> 00:01:19.410
+We can use in to verify,
+
+00:01:19.410 --> 00:01:22.820
+whether a key is in the dictionary, before looking it up.
+
+00:01:22.820 --> 00:01:24.385
+If there's a possibility,
+
+00:01:24.385 --> 00:01:26.165
+that the key is not there.
+
+00:01:26.165 --> 00:01:30.985
+Mithril, was not part of our elements dictionary, so false is printed.
+
+00:01:30.985 --> 00:01:33.610
+Dictionaries have a related method,
+
+00:01:33.610 --> 00:01:35.960
+that's also useful, "get".
+
+00:01:35.960 --> 00:01:38.350
+"Get" looks up values in a dictionary,
+
+00:01:38.350 --> 00:01:40.060
+but unlike square brackets,
+
+00:01:40.060 --> 00:01:43.830
+"get" returns none, or a default value of your choice,
+
+00:01:43.830 --> 00:01:45.770
+if the key is not found.
+
+00:01:45.770 --> 00:01:48.160
+The dilithium is not in our dictionary,
+
+00:01:48.160 --> 00:01:50.800
+so none is returned, and then printed.
+
+00:01:50.800 --> 00:01:53.670
+If you expect lookups to sometimes fail,
+
+00:01:53.670 --> 00:01:57.135
+Get might be a better tool than normal square bracket lookups,
+
+00:01:57.135 --> 00:02:00.550
+because errors can crash your program, which isn't good.
+
+00:02:00.550 --> 00:02:04.695
+You can check if a key return none with the "is" operator,
+
+00:02:04.695 --> 00:02:08.505
+or you can check for the opposite using "is not".
+
+00:02:08.505 --> 00:02:11.390
+These are called identity operators.
+
+00:02:11.390 --> 00:02:14.165
+You will learn more about identity operators,
+
+00:02:14.165 --> 00:02:17.200
+and how they differ from using these equals to,
+
+00:02:17.200 --> 00:02:21.720
+or not equals to, comparison operators in the quizzes that follow.
+

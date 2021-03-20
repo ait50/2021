@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.790 --> 00:00:06.120
+We've seen two kinds of Python data types so far,
+
+00:00:06.120 --> 00:00:09.539
+ints and floats and we've used
+
+00:00:09.539 --> 00:00:16.044
+arithmetic operators like addition and exponentiation to work with these values.
+
+00:00:16.045 --> 00:00:22.206
+Another type is Bool which is used to represent the values true and false.
+
+00:00:22.205 --> 00:00:26.085
+Bool is an abbreviation of boolean.
+
+00:00:26.085 --> 00:00:29.060
+Boolean Algebra is a branch of algebra dealing with
+
+00:00:29.059 --> 00:00:32.475
+variables whose values are true or false.
+
+00:00:32.475 --> 00:00:37.685
+Boolean algebra is named for its inventor George Bool.
+
+00:00:37.685 --> 00:00:42.880
+Boolean logic underpins all digital devices existing in almost every line of
+
+00:00:42.880 --> 00:00:45.969
+computer code and has transformed the way we live
+
+00:00:45.969 --> 00:00:50.854
+our lives which you can read more about in the instructor notes below.
+
+00:00:50.854 --> 00:00:54.269
+We can assign boolean values like this.
+
+00:00:54.270 --> 00:00:57.055
+It's not very useful on its own though.
+
+00:00:57.054 --> 00:01:00.659
+We can use comparison operators like less than and
+
+00:01:00.659 --> 00:01:04.674
+greater than to compare values and produce a boolean result.
+
+00:01:04.674 --> 00:01:08.905
+Here, 42 is not greater than 43.
+
+00:01:08.905 --> 00:01:12.974
+So printing the result provides the boolean false.
+
+00:01:12.974 --> 00:01:18.629
+Here, you can see a full list of the comparison operators in Python: less than,
+
+00:01:18.629 --> 00:01:22.530
+greater than, less than or equal to,
+
+00:01:22.530 --> 00:01:24.825
+greater than or equal to,
+
+00:01:24.825 --> 00:01:27.659
+equal to, and not equal to.
+
+00:01:27.659 --> 00:01:31.109
+Notice that evaluating equality is performed with
+
+00:01:31.109 --> 00:01:36.420
+two equal signs and a not equal uses an exclamation point.
+
+00:01:36.420 --> 00:01:40.439
+This is a bit different than Excel or SQL.
+
+00:01:40.439 --> 00:01:42.879
+In addition to comparison operators,
+
+00:01:42.879 --> 00:01:46.349
+these logical operators are very useful when working with
+
+00:01:46.349 --> 00:01:50.099
+booleans and evaluates if both sides are
+
+00:01:50.099 --> 00:01:58.185
+true or evaluates if at least one side is true and not inverse as a boolean type.
+
+00:01:58.185 --> 00:02:03.650
+Here's an example that evaluates whether age is within the range of a teenager.
+
+00:02:03.650 --> 00:02:09.629
+Here, you can imagine the 14 being placed in these two spots.
+
+00:02:09.629 --> 00:02:11.500
+Then, if both are true,
+
+00:02:11.500 --> 00:02:15.539
+true will be assigned to the variable is_teen.
+
+00:02:15.539 --> 00:02:23.044
+In other words if the person is older than 12 and younger than 20 this person is a teen.
+
+00:02:23.044 --> 00:02:28.189
+And here's not an action inversing the boolean type of same statement.
+

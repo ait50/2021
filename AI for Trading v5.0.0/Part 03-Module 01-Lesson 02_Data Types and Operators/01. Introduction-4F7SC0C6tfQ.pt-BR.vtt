@@ -1,0 +1,135 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.767 --> 00:00:03.767
+Bem-vindo a esta lição
+sobre tipos de dados e operadores.
+
+00:00:04.200 --> 00:00:06.067
+É uma lição muito importante,
+
+00:00:06.100 --> 00:00:09.300
+porque vai aprender sobre
+os blocos de construção do Python:
+
+00:00:09.400 --> 00:00:11.267
+tipos de dados e operadores.
+
+00:00:12.033 --> 00:00:15.033
+Os estudantes tendem a aprender
+a programar em ritmos diferentes.
+
+00:00:15.267 --> 00:00:17.434
+Leve o tempo que precisar
+para entender cada um dos conceitos
+
+00:00:17.501 --> 00:00:20.667
+que se seguem e praticar
+as atividades desta lição.
+
+00:00:21.367 --> 00:00:24.133
+Ter um domínio firme
+sobre esses blocos de construção
+
+00:00:24.167 --> 00:00:26.701
+proporcionará uma base sólida
+para lições futuras
+
+00:00:26.734 --> 00:00:27.964
+e habilidades essenciais
+
+00:00:27.998 --> 00:00:30.250
+para continuar a programação
+além deste curso.
+
+00:00:30.967 --> 00:00:32.100
+Durante este curso,
+
+00:00:32.167 --> 00:00:34.767
+passaremos por exemplos de códigos
+usando essas caixas.
+
+00:00:35.267 --> 00:00:37.701
+A primeira caixa representa
+o editor de código,
+
+00:00:37.767 --> 00:00:40.133
+onde inserimos o código Python.
+
+00:00:40.367 --> 00:00:43.033
+A segunda caixa representa
+a janela de saída,
+
+00:00:43.067 --> 00:00:45.200
+que é onde os resultados
+serão exibidos.
+
+00:00:45.234 --> 00:00:48.634
+Você pode acompanhar com os exemplos
+dos vídeos na aula
+
+00:00:48.667 --> 00:00:52.167
+ao digitar no editor de código
+embaixo de cada vídeo.
+
+00:00:52.367 --> 00:00:55.100
+Clique no botão "Test Run"
+para executar o seu código
+
+00:00:55.234 --> 00:00:57.434
+e visualizar os resultados
+na janela de saída.
+
+00:00:58.234 --> 00:01:01.067
+Você verá a função "PRINT"
+com frequência.
+
+00:01:01.234 --> 00:01:03.634
+Isso nos ajuda a ver o que está
+acontecendo no código.
+
+00:01:04.167 --> 00:01:08.133
+Por exemplo, vamos dizer
+que você quer calcular "3 + 5".
+
+00:01:08.334 --> 00:01:10.300
+Se executarmos
+essa linha de código,
+
+00:01:10.434 --> 00:01:14.400
+o Python somaria três e cinco,
+mas não veríamos o resultado
+
+00:01:14.701 --> 00:01:17.467
+porque não dissemos ao Python
+para fazer algo com isso.
+
+00:01:18.167 --> 00:01:21.200
+"PRINT" é uma função integrada
+útil no Python
+
+00:01:21.467 --> 00:01:24.033
+que podemos usar
+para exibir nossos resultados.
+
+00:01:24.267 --> 00:01:26.434
+Tudo o que temos a fazer
+é digitar "PRINT"
+
+00:01:26.701 --> 00:01:30.067
+seguido de parênteses ao redor
+do que queremos que seja exibido.
+
+00:01:30.634 --> 00:01:32.467
+Você vai usar "PRINT"
+muitas vezes,
+
+00:01:32.501 --> 00:01:35.033
+conforme conhece
+os blocos de construção do Python,
+
+00:01:35.100 --> 00:01:36.634
+seus tipos
+de dados e operadores.
+

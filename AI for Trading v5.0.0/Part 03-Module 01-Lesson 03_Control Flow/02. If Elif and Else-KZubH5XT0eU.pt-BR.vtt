@@ -1,0 +1,168 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.834 --> 00:00:03.234
+INSTRUÇÕES CONDICIONAIS
+IF, ELIF, ELSE
+
+00:00:03.300 --> 00:00:06.300
+Agora você sabe como executar
+um bloco de código
+
+00:00:06.334 --> 00:00:08.501
+se a condição for verdadeira.
+
+00:00:08.534 --> 00:00:11.033
+Mas e se você tiver
+um outro bloco de código
+
+00:00:11.100 --> 00:00:14.801
+que queira executar
+se a condição for falsa?
+
+00:00:14.834 --> 00:00:17.501
+Você pode usar
+a palavra-chave "else".
+
+00:00:17.534 --> 00:00:20.000
+Considere este código,
+que imprime uma mensagem
+
+00:00:20.033 --> 00:00:24.734
+indicando se um inteiro N
+é par ou ímpar.
+
+00:00:24.801 --> 00:00:27.901
+Se for par,
+a linha é executada.
+
+00:00:27.934 --> 00:00:30.801
+Se não, esta linha é executada.
+
+00:00:30.834 --> 00:00:33.000
+O código indentado sob "else"
+
+00:00:33.033 --> 00:00:37.100
+é o que acontece
+caso essa condição seja falsa.
+
+00:00:37.133 --> 00:00:40.100
+A palavra-chave "else"
+é sempre seguida de dois pontos
+
+00:00:40.133 --> 00:00:42.834
+e não exige
+expressão booleana.
+
+00:00:42.901 --> 00:00:46.701
+Então, se determinarmos
+que N é 4...
+
+00:00:46.734 --> 00:00:49.634
+esta instrução "if"
+será verdadeira
+
+00:00:49.701 --> 00:00:52.534
+e a string seguinte
+será impressa.
+
+00:00:52.601 --> 00:00:56.000
+No entanto, se determinarmos
+que N é 15,
+
+00:00:56.033 --> 00:00:58.734
+esta condição será falsa,
+
+00:00:58.801 --> 00:01:03.534
+então pularemos este bloco
+e executaremos o código sob "else".
+
+00:01:03.601 --> 00:01:06.234
+Se você tiver mais
+de duas possibilidades,
+
+00:01:06.300 --> 00:01:10.033
+também pode usar "elif",
+abreviação de "else if",
+
+00:01:10.100 --> 00:01:12.234
+para lidar com a situação.
+
+00:01:12.300 --> 00:01:15.634
+Isso dispensa as várias indentações
+que seriam necessárias
+
+00:01:15.701 --> 00:01:16.901
+se usássemos "else"
+
+00:01:16.934 --> 00:01:20.634
+e outra instrução "if"
+no bloco do "else".
+
+00:01:20.701 --> 00:01:22.701
+Assim como "if",
+instruções "elif"
+
+00:01:22.734 --> 00:01:25.634
+sempre requerem
+uma expressão condicional.
+
+00:01:25.701 --> 00:01:28.133
+Por exemplo:
+digamos que queremos imprimir
+
+00:01:28.200 --> 00:01:31.934
+o que fazer no jardim
+de acordo com a estação do ano.
+
+00:01:32.000 --> 00:01:35.501
+Se determinarmos que a estação
+é a primavera, assim,
+
+00:01:35.534 --> 00:01:38.434
+veremos que "plantar"
+é impresso,
+
+00:01:38.501 --> 00:01:42.234
+já que a primeira condição
+é verdadeira.
+
+00:01:42.300 --> 00:01:45.501
+Por outro lado,
+se determinarmos que é inverno,
+
+00:01:45.534 --> 00:01:48.834
+todas as condições grifadas
+serão falsas
+
+00:01:48.901 --> 00:01:52.400
+até chegarmos a esta condição,
+que será verdadeira
+
+00:01:52.434 --> 00:01:54.734
+e imprimirá "fique em casa".
+
+00:01:54.801 --> 00:01:58.133
+Perceba que estamos usando
+dois sinais de igual de novo.
+
+00:01:58.200 --> 00:02:01.334
+Lembre-se: um único sinal de igual
+é para atribuição,
+
+00:02:01.400 --> 00:02:02.601
+como fizemos aqui
+
+00:02:02.634 --> 00:02:06.734
+quando estávamos definindo
+uma estação como uma string.
+
+00:02:06.801 --> 00:02:10.300
+Dois sinais são para comparação,
+quando estamos verificando
+
+00:02:10.334 --> 00:02:13.300
+se uma condição
+é verdadeira ou falsa.
+

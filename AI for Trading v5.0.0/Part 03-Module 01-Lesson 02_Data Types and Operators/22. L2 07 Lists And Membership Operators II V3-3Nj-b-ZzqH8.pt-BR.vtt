@@ -1,0 +1,123 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.601 --> 00:00:03.466
+LISTAS E OPERADORES DE ASSOCIAÇÃO,
+PARTE 3
+
+00:00:03.508 --> 00:00:06.166
+Como as listas são diferentes
+das strings?
+
+00:00:06.208 --> 00:00:09.199
+Ambas suportam
+a indexação, o fatiamento
+
+00:00:09.241 --> 00:00:10.933
+e o operador in.
+
+00:00:10.975 --> 00:00:13.466
+A diferença mais obvia
+é que as strings
+
+00:00:13.508 --> 00:00:15.234
+são sequências de letras,
+
+00:00:15.276 --> 00:00:18.832
+enquanto os elementos da lista podem
+ser de qualquer tipo de objeto.
+
+00:00:18.874 --> 00:00:22.566
+Uma diferença mais sutil é que
+as listas podem ser modificadas,
+
+00:00:22.608 --> 00:00:24.733
+mas as strings não podem.
+
+00:00:24.775 --> 00:00:28.466
+Aqui podemos alterar
+o quarto elemento, o índice três,
+
+00:00:28.508 --> 00:00:31.233
+para sexta-feira
+se quisermos.
+
+00:00:31.275 --> 00:00:33.266
+Mas aqui recebemos um erro
+
+00:00:33.308 --> 00:00:36.600
+se tentamos alterar
+o terceiro elemento de uma string.
+
+00:00:36.642 --> 00:00:39.933
+O termo técnico que descreve
+um objeto que pode ser modificado
+
+00:00:39.975 --> 00:00:43.066
+após a criação
+é mutabilidade.
+
+00:00:43.108 --> 00:00:45.733
+Podemos modificar os valores
+das listas,
+
+00:00:45.775 --> 00:00:48.433
+portanto, a lista
+é um tipo de dado mutável.
+
+00:00:48.475 --> 00:00:50.366
+Não podemos
+modificar strings,
+
+00:00:50.408 --> 00:00:53.234
+portanto, elas são
+tipos de dados imutáveis.
+
+00:00:53.868 --> 00:00:55.967
+Conforme vemos
+mais tipos de dados,
+
+00:00:56.009 --> 00:00:59.533
+existem dois fatores
+que continuaremos considerando:
+
+00:00:59.575 --> 00:01:03.933
+um é o da mutabilidade
+e o outro, o da ordem.
+
+00:01:03.975 --> 00:01:08.299
+"Order" é se a ordem do conteúdo
+de um objeto importa
+
+00:01:08.341 --> 00:01:13.299
+e se parte do objeto
+pode ser acessado usando "order".
+
+00:01:13.341 --> 00:01:16.266
+Strings e listas
+são ordenadas,
+
+00:01:16.308 --> 00:01:19.132
+e é por isso que a indexação
+funciona bem com elas.
+
+00:01:19.174 --> 00:01:23.099
+Porém uma é mutável
+e a outra, não.
+
+00:01:23.141 --> 00:01:28.833
+Veremos mais tipos de dados
+de diferentes seções desta grade.
+
+00:01:28.875 --> 00:01:32.199
+Por ora, exploraremos
+os métodos e as funções
+
+00:01:32.241 --> 00:01:33.733
+que funcionam com listas
+
+00:01:33.775 --> 00:01:37.267
+e usaremos a mutabilidade da lista
+nos nossos programas.
+

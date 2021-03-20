@@ -1,0 +1,199 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.344
+Previously, when we created a variable,
+
+00:00:03.344 --> 00:00:05.240
+that held an immutable object,
+
+00:00:05.240 --> 00:00:09.010
+the value of that immutable object was saved in memory.
+
+00:00:09.010 --> 00:00:12.380
+Here, we create a name with value Jim,
+
+00:00:12.380 --> 00:00:15.560
+and assign it to another variable, called Student.
+
+00:00:15.560 --> 00:00:17.340
+It is the value Jim,
+
+00:00:17.340 --> 00:00:19.145
+that is assigned to student.
+
+00:00:19.145 --> 00:00:21.025
+So, when we reassign name,
+
+00:00:21.025 --> 00:00:22.890
+to update it to Tim,
+
+00:00:22.890 --> 00:00:26.470
+this change is not reflected in the value of student.
+
+00:00:26.470 --> 00:00:28.950
+Lists are different from strings,
+
+00:00:28.950 --> 00:00:30.410
+as they are mutable.
+
+00:00:30.410 --> 00:00:33.150
+Here, we create a list of scores,
+
+00:00:33.150 --> 00:00:37.215
+and assign the same list to the variable grades: B,
+
+00:00:37.215 --> 00:00:40.425
+C, A, D, B,
+
+00:00:40.425 --> 00:00:41.940
+A, six of them.
+
+00:00:41.940 --> 00:00:45.660
+When we change, or mutate the score's list,
+
+00:00:45.660 --> 00:00:48.770
+making the fourth grade B instead of D,
+
+00:00:48.770 --> 00:00:52.345
+this affects both scores and grades.
+
+00:00:52.345 --> 00:00:57.525
+Both scores and grades are variable names for the same underlying list,
+
+00:00:57.525 --> 00:01:01.750
+and either name can be used to access and change that lists.
+
+00:01:01.750 --> 00:01:06.790
+The behavior of variables containing mutable and immutable objects,
+
+00:01:06.790 --> 00:01:10.400
+are very different and might even seem surprising at times.
+
+00:01:10.400 --> 00:01:15.460
+Experiment used to print functions and double check your work where you can,
+
+00:01:15.460 --> 00:01:19.520
+to make sure that your programs correctly keep track of their data.
+
+00:01:19.520 --> 00:01:22.070
+While you experiment with lists,
+
+00:01:22.070 --> 00:01:25.105
+there are some useful functions you should get familiar with.
+
+00:01:25.105 --> 00:01:28.960
+Len, retains how many elements are in a list.
+
+00:01:28.960 --> 00:01:32.465
+Max, retains the greatest element of a list.
+
+00:01:32.465 --> 00:01:34.990
+How the greatest element is determined,
+
+00:01:34.990 --> 00:01:38.545
+depends on what type of objects are in your list.
+
+00:01:38.545 --> 00:01:41.449
+The maximum element in a list of numbers,
+
+00:01:41.449 --> 00:01:43.125
+is the largest number.
+
+00:01:43.125 --> 00:01:46.245
+The maximum element in a list of strings,
+
+00:01:46.245 --> 00:01:48.740
+is the element that would occur last,
+
+00:01:48.740 --> 00:01:51.275
+if the list was sorted alphabetically.
+
+00:01:51.275 --> 00:01:54.395
+That's reticulated python for this list.
+
+00:01:54.395 --> 00:01:57.420
+R is the largest letter alphabetically.
+
+00:01:57.420 --> 00:02:00.330
+In other words, greater than B,
+
+00:02:00.330 --> 00:02:02.475
+A, B, and A.
+
+00:02:02.475 --> 00:02:05.390
+This works because the max function,
+
+00:02:05.390 --> 00:02:09.430
+is defined in terms of the greater than comparison operator.
+
+00:02:09.430 --> 00:02:11.900
+The greater than comparison operator,
+
+00:02:11.900 --> 00:02:14.605
+is defined for many non-numeric types.
+
+00:02:14.605 --> 00:02:18.125
+If you're working with objects that can be compared with this,
+
+00:02:18.125 --> 00:02:21.160
+then you can use max on a list of the objects.
+
+00:02:21.160 --> 00:02:24.890
+For strings, the standard comparison is alphabetical.
+
+00:02:24.890 --> 00:02:26.990
+So the maximum of this list,
+
+00:02:26.990 --> 00:02:29.875
+is the element that appears last alphabetically.
+
+00:02:29.875 --> 00:02:31.750
+Although you can create lists,
+
+00:02:31.750 --> 00:02:36.920
+that hold a mix of elements of many types as you see here, integers and texts.
+
+00:02:36.920 --> 00:02:39.530
+The max function is undefined for lists,
+
+00:02:39.530 --> 00:02:42.925
+that contain elements from different incomparable types.
+
+00:02:42.925 --> 00:02:45.075
+Here, you can see it breaks,
+
+00:02:45.075 --> 00:02:47.280
+with this mix of datatypes.
+
+00:02:47.280 --> 00:02:49.760
+Min is the opposite of max,
+
+00:02:49.760 --> 00:02:52.690
+and returns the smallest element in a list.
+
+00:02:52.690 --> 00:02:55.580
+Sorted returns a copy of a list,
+
+00:02:55.580 --> 00:02:57.815
+in order from smallest to largest,
+
+00:02:57.815 --> 00:03:00.495
+leaving the original lists unchanged.
+
+00:03:00.495 --> 00:03:03.235
+Here, for a list called sizes,
+
+00:03:03.235 --> 00:03:05.200
+the order is ascending.
+
+00:03:05.200 --> 00:03:07.910
+You can sort from largest to smallest,
+
+00:03:07.910 --> 00:03:11.195
+by adding the optional argument, reverse equals true.
+
+00:03:11.195 --> 00:03:13.760
+Now, the order is descending.
+

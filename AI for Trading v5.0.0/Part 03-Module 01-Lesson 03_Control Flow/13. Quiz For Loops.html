@@ -1,0 +1,714 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: For Loops
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Control Flow
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Conditional Statements.html">
+       02. Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Practice Conditional Statements.html">
+       03. Practice: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Conditional Statements.html">
+       04. Solution: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz Conditional Statements.html">
+       05. Quiz: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Solution Conditional Statements.html">
+       06. Solution: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Boolean Expressions for Conditions.html">
+       07. Boolean Expressions for Conditions
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Quiz Boolean Expressions for Conditions.html">
+       08. Quiz: Boolean Expressions for Conditions
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Solution Boolean Expressions for Conditions.html">
+       09. Solution: Boolean Expressions for Conditions
+      </a>
+     </li>
+     <li class="">
+      <a href="10. For Loops.html">
+       10. For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Practice For Loops.html">
+       11. Practice: For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution For Loops Practice.html">
+       12. Solution: For Loops Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Quiz For Loops.html">
+       13. Quiz: For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Solution For Loops Quiz.html">
+       14. Solution: For Loops Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Quiz Match Inputs To Outputs.html">
+       15. Quiz: Match Inputs To Outputs
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Building Dictionaries.html">
+       16. Building Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Iterating Through Dictionaries with For Loops.html">
+       17. Iterating Through Dictionaries with For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Quiz Iterating Through Dictionaries.html">
+       18. Quiz: Iterating Through Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Solution Iterating Through Dictionaries.html">
+       19. Solution: Iterating Through Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="20. While Loops.html">
+       20. While Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Practice While Loops.html">
+       21. Practice: While Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Solution While Loops Practice.html">
+       22. Solution: While Loops Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz While Loops.html">
+       23. Quiz: While Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Solution While Loops Quiz.html">
+       24. Solution: While Loops Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Break, Continue.html">
+       25. Break, Continue
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Quiz Break, Continue.html">
+       26. Quiz: Break, Continue
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Solution Break, Continue.html">
+       27. Solution: Break, Continue
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Zip and Enumerate.html">
+       28. Zip and Enumerate
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Quiz Zip and Enumerate.html">
+       29. Quiz: Zip and Enumerate
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Solution Zip and Enumerate.html">
+       30. Solution: Zip and Enumerate
+      </a>
+     </li>
+     <li class="">
+      <a href="31. List Comprehensions.html">
+       31. List Comprehensions
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Quiz List Comprehensions.html">
+       32. Quiz: List Comprehensions
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Solution List Comprehensions.html">
+       33. Solution: List Comprehensions
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Conclusion.html">
+       34. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          13. Quiz: For Loops
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-create-usernames">
+          Quiz: Create Usernames
+         </h1>
+         <p>
+          Write a
+          <code>
+           for
+          </code>
+          loop that iterates over the
+          <code>
+           names
+          </code>
+          list to create a
+          <code>
+           usernames
+          </code>
+          list. To create a username for each name, make everything lowercase and replace spaces with underscores. Running your
+          <code>
+           for
+          </code>
+          loop over the list:
+         </p>
+         <p>
+          <code>
+           names = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
+          </code>
+         </p>
+         <p>
+          should create the list:
+         </p>
+         <p>
+          <code>
+           usernames = ["joey_tribbiani", "monica_geller", "chandler_bing", "phoebe_buffay"]
+          </code>
+         </p>
+         <p>
+          <strong>
+           HINT:
+          </strong>
+          Use the
+          <a href="https://docs.python.org/3/library/stdtypes.html#str.replace" rel="noopener noreferrer" target="_blank">
+           <code>
+            .replace()
+           </code>
+          </a>
+          method to replace the spaces with underscores. Check out how to use this method in this
+          <a href="https://stackoverflow.com/a/12723785" rel="noopener noreferrer" target="_blank">
+           Stack Overflow answer
+          </a>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="528025-usernames-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#528025-usernames-py" id="tab-528025-usernames-py" role="tab">
+            usernames.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-528025-usernames-py" class="tab-pane active show" id="528025-usernames-py" role="tabpanel">
+            <pre><code></code>names = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
+usernames = []
+
+# write your for loop here
+
+
+print(usernames)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Why
+          <code>
+           range
+          </code>
+          ?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Let's say instead of creating a new list, we want to modify the
+             <code>
+              names
+             </code>
+             list itself with the changes and write the following code. What would this do?
+            </p>
+            <pre><code class="python language-python">names = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
+
+for name in names:
+    name = name.lower().replace(" ", "_")
+
+print(names)</code></pre>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1516599455045" name="513908" type="radio" value="a1516599455045"/>
+           <label for="a1516599455045">
+            <p>
+             Modifies the
+             <code>
+              names
+             </code>
+             list so that each name is lowercase and separated by underscores
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1516599470763" name="513908" type="radio" value="a1516599470763"/>
+           <label for="a1516599470763">
+            <p>
+             Causes a runtime error
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1516599471265" name="513908" type="radio" value="a1516599471265"/>
+           <label for="a1516599471265">
+            <p>
+             The printed output for the
+             <code>
+              names
+             </code>
+             list will look exactly like it did in the first line
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1516599471869" name="513908" type="radio" value="a1516599471869"/>
+           <label for="a1516599471869">
+            <p>
+             Deletes the list
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          The printed output for the `names` list will look exactly like it did in the first line
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-modify-usernames-with-range">
+          Quiz: Modify Usernames with Range
+         </h1>
+         <p>
+          Write a
+          <code>
+           for
+          </code>
+          loop that uses
+          <code>
+           range()
+          </code>
+          to iterate over the positions in
+          <code>
+           usernames
+          </code>
+          to modify the list. Like you did in the previous quiz, change each name to be lowercase and replace spaces with underscores. After running your loop, this list
+         </p>
+         <p>
+          <code>
+           usernames = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
+          </code>
+         </p>
+         <p>
+          should change to this:
+         </p>
+         <p>
+          <code>
+           usernames = ["joey_tribbiani", "monica_geller", "chandler_bing", "phoebe_buffay"]
+          </code>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="528065-usernames_range-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#528065-usernames_range-py" id="tab-528065-usernames_range-py" role="tab">
+            usernames_range.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-528065-usernames_range-py" class="tab-pane active show" id="528065-usernames_range-py" role="tabpanel">
+            <pre><code></code>usernames = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
+
+# write your for loop here
+
+
+print(usernames)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-tag-counter">
+          Quiz: Tag Counter
+         </h1>
+         <p>
+          Write a
+          <code>
+           for
+          </code>
+          loop that iterates over a list of strings,
+          <code>
+           tokens
+          </code>
+          , and counts how many of them are
+          <a href="https://en.wikipedia.org/wiki/XML" rel="noopener noreferrer" target="_blank">
+           XML tags
+          </a>
+          . XML is a data language similar to HTML. You can tell if a string is an XML tag if it begins with a left angle bracket "&lt;" and ends with a right angle bracket "&gt;". Keep track of the number of tags using the variable
+          <code>
+           count
+          </code>
+          .
+         </p>
+         <p>
+          You can assume that the list of strings will not contain empty strings.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="528058-xml_tag_counter-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#528058-xml_tag_counter-py" id="tab-528058-xml_tag_counter-py" role="tab">
+            xml_tag_counter.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-528058-xml_tag_counter-py" class="tab-pane active show" id="528058-xml_tag_counter-py" role="tabpanel">
+            <pre><code></code>tokens = ['&lt;greeting&gt;', 'Hello World!', '&lt;/greeting&gt;']
+count = 0
+
+# write your for loop here
+
+
+print(count)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-create-an-html-list">
+          Quiz: Create an HTML List
+         </h1>
+         <p>
+          Write some code, including a
+          <code>
+           for
+          </code>
+          loop, that iterates over a list of strings and creates a single string,
+          <code>
+           html_str
+          </code>
+          , which is an HTML list. For example, if the list is
+          <code>
+           items = ['first string', 'second string']
+          </code>
+          , printing
+          <code>
+           html_str
+          </code>
+          should output:
+         </p>
+         <pre><code class="txt language-txt">&lt;ul&gt;
+&lt;li&gt;first string&lt;/li&gt;
+&lt;li&gt;second string&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+         <p>
+          That is, the string's first line should be the opening tag
+          <code>
+           &lt;ul&gt;
+          </code>
+          . Following that is one line per element in the source list, surrounded by
+          <code>
+           &lt;li&gt;
+          </code>
+          and
+          <code>
+           &lt;/li&gt;
+          </code>
+          tags. The final line of the string should be the closing tag
+          <code>
+           &lt;/ul&gt;
+          </code>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="513910-htmllist-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#513910-htmllist-py" id="tab-513910-htmllist-py" role="tab">
+            htmllist.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-513910-htmllist-py" class="tab-pane active show" id="513910-htmllist-py" role="tabpanel">
+            <pre><code></code>items = ['first string', 'second string']
+html_str = "&lt;ul&gt;\n"  # "\ n" is the character that marks the end of the line, it does
+                     # the characters that are after it in html_str are on the next line
+
+# write your code here
+
+
+print(html_str)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="14. Solution For Loops Quiz.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('13. Quiz: For Loops')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

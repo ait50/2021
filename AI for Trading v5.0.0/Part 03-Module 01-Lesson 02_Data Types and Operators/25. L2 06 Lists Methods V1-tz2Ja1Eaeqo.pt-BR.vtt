@@ -1,0 +1,239 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.828 --> 00:00:03.323
+Anteriormente, quando criamos
+uma variável
+
+00:00:03.365 --> 00:00:05.123
+com um objeto imutável,
+
+00:00:05.165 --> 00:00:09.154
+o valor do objeto imutável
+era salvo na memória.
+
+00:00:09.196 --> 00:00:12.459
+Aqui criamos name
+com o valor Jim
+
+00:00:12.501 --> 00:00:15.770
+e o atribuímos a outra variável
+chamada "student".
+
+00:00:15.812 --> 00:00:19.139
+É o valor Jim que é atribuído
+à student.
+
+00:00:19.181 --> 00:00:22.651
+Ao associarmos name
+ao Tim,
+
+00:00:22.693 --> 00:00:26.622
+a alteração não será refletida
+no valor de student.
+
+00:00:26.664 --> 00:00:28.844
+As listas são diferentes
+das strings,
+
+00:00:28.886 --> 00:00:30.459
+pois são mutáveis.
+
+00:00:30.501 --> 00:00:33.050
+Aqui criamos a lista scores
+
+00:00:33.092 --> 00:00:36.513
+e associamos a mesma lista
+à variável grades -
+
+00:00:36.555 --> 00:00:40.902
+B, C, A, D, B, A -
+
+00:00:40.944 --> 00:00:42.494
+que serão seis.
+
+00:00:42.536 --> 00:00:45.740
+Ao alterarmos ou mudarmos
+a lista scores,
+
+00:00:45.782 --> 00:00:48.763
+fazendo de B a quarta nota
+em vez de D,
+
+00:00:48.805 --> 00:00:52.432
+isso afetará tanto scores
+quanto grades,
+
+00:00:52.474 --> 00:00:57.425
+pois ambas são nomes de variáveis
+da mesma lista
+
+00:00:57.467 --> 00:01:01.898
+e podem ser usadas para acessar
+e alterar a lista.
+
+00:01:01.940 --> 00:01:05.087
+O comportamento das variáveis
+contendo objetos mutáveis
+
+00:01:05.129 --> 00:01:07.881
+e imutáveis
+são muito diferentes
+
+00:01:07.923 --> 00:01:10.610
+e podem parecer
+surpreendentes.
+
+00:01:10.652 --> 00:01:15.205
+Experimente, use as funções print
+e confira seu trabalho
+
+00:01:15.247 --> 00:01:19.270
+para garantir que seu programa
+rastreia corretamente os dados.
+
+00:01:19.889 --> 00:01:22.264
+Enquanto estiver experimentando
+com as listas,
+
+00:01:22.306 --> 00:01:25.439
+existem funções úteis com as quais
+devemos nos familiarizar:
+
+00:01:25.481 --> 00:01:28.980
+a len() retorna quantos elementos
+existem na lista,
+
+00:01:29.022 --> 00:01:32.667
+e a max() retorna o maior elemento
+de uma lista.
+
+00:01:32.709 --> 00:01:34.884
+O que determina
+o maior elemento
+
+00:01:34.926 --> 00:01:38.852
+dependerá dos tipos de objetos
+da lista.
+
+00:01:38.894 --> 00:01:41.372
+O maior elemento
+em uma lista de números
+
+00:01:41.414 --> 00:01:43.196
+será o maior número.
+
+00:01:43.238 --> 00:01:46.557
+O maior elemento
+em uma lista de strings
+
+00:01:46.599 --> 00:01:48.654
+será o elemento
+que ocorre menos,
+
+00:01:48.696 --> 00:01:51.458
+se a lista estiver organizada
+de forma alfabética.
+
+00:01:51.500 --> 00:01:54.479
+No caso do "Reticulated Python",
+desta lista,
+
+00:01:54.521 --> 00:01:57.578
+o R é a maior letra
+alfabeticamente,
+
+00:01:57.620 --> 00:02:02.727
+em outras palavras,
+maior do que B, A, B e A.
+
+00:02:02.769 --> 00:02:05.143
+Isso funciona porque
+a função max()
+
+00:02:05.185 --> 00:02:09.615
+é definida a partir
+do operador de comparação &gt;.
+
+00:02:09.657 --> 00:02:11.766
+O operador de comparação &gt;
+
+00:02:11.808 --> 00:02:14.783
+é definido para muitos tipos
+não numéricos.
+
+00:02:14.825 --> 00:02:18.276
+Se trabalharmos com objetos
+que podem ser comparados assim
+
+00:02:18.318 --> 00:02:21.326
+então usaremos max()
+na lista de objetos.
+
+00:02:21.368 --> 00:02:25.075
+Para strings,
+a comparação padrão é a alfabética,
+
+00:02:25.117 --> 00:02:26.918
+então o máximo desta lista
+
+00:02:26.960 --> 00:02:29.862
+será o elemento que aparece
+por último alfabeticamente.
+
+00:02:29.904 --> 00:02:34.127
+Embora possamos criar listas
+com uma mistura de elementos,
+
+00:02:34.169 --> 00:02:37.015
+como vemos aqui -
+de inteiros e de texto -,
+
+00:02:37.057 --> 00:02:39.479
+a função max()
+não é definida para listas
+
+00:02:39.521 --> 00:02:43.072
+que contenham elementos
+incomparáveis de tipos diferentes.
+
+00:02:43.114 --> 00:02:47.594
+Aqui vemos que ele quebra
+com a mistura de tipos de dados.
+
+00:02:47.636 --> 00:02:49.699
+A min() é o oposto da max()
+
+00:02:49.741 --> 00:02:53.130
+e retorna o menor elemento
+de uma lista.
+
+00:02:53.172 --> 00:02:55.310
+A sorted() retorna
+uma cópia da lista
+
+00:02:55.352 --> 00:02:57.774
+ordenada do menor
+para o maior
+
+00:02:57.816 --> 00:03:00.663
+deixando a lista original
+inalterada.
+
+00:03:00.705 --> 00:03:05.543
+Nesta lista chamada "sizes"
+a ordem é ascendente.
+
+00:03:05.585 --> 00:03:07.839
+Podemos organizar
+do maior para o menor
+
+00:03:07.881 --> 00:03:11.194
+adicionando o argumento opcional
+reverse=True,
+
+00:03:11.236 --> 00:03:13.359
+assim a ordem
+será descendente.
+

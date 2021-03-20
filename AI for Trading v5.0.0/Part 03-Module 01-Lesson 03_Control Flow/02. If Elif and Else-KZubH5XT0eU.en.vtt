@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.509 --> 00:00:08.404
+Now you know how to execute a block of code if a condition is true.
+
+00:00:08.404 --> 00:00:11.459
+But what if you have a different block of code that you
+
+00:00:11.460 --> 00:00:14.810
+want to execute when that condition is false?
+
+00:00:14.810 --> 00:00:17.675
+You can use the 'else' keyword to do so.
+
+00:00:17.675 --> 00:00:20.910
+Consider this code, which prints a message indicating
+
+00:00:20.910 --> 00:00:25.050
+whether an integer N is even or odd.
+
+00:00:25.050 --> 00:00:26.283
+If N is even,
+
+00:00:26.283 --> 00:00:27.759
+this line is run.
+
+00:00:27.760 --> 00:00:30.525
+Otherwise, this line is run.
+
+00:00:30.524 --> 00:00:37.424
+Code indented under the 'else' is what happens when this condition evaluates to false.
+
+00:00:37.424 --> 00:00:42.659
+The 'else' keyword is always followed by a colon and doesn't need a Boolean expression.
+
+00:00:42.659 --> 00:00:46.544
+So, if we set N to be 4 like this,
+
+00:00:46.545 --> 00:00:52.820
+the if statement here would evaluate to true and we would print the following string.
+
+00:00:52.820 --> 00:00:56.363
+Alternatively, if we set N to be 15,
+
+00:00:56.363 --> 00:00:59.789
+this condition would evaluate to false so we would skip
+
+00:00:59.789 --> 00:01:03.704
+this block and execute the code under the else.
+
+00:01:03.704 --> 00:01:06.385
+If you have more than two possible cases,
+
+00:01:06.385 --> 00:01:08.350
+you can also use elif,
+
+00:01:08.349 --> 00:01:10.269
+short for 'else if',
+
+00:01:10.269 --> 00:01:12.424
+to deal with the situation.
+
+00:01:12.424 --> 00:01:16.000
+This saves the multiple indentation that would be needed if
+
+00:01:16.000 --> 00:01:20.234
+we used 'else' and then another 'if' statement inside the 'else' block.
+
+00:01:20.234 --> 00:01:25.873
+Like 'if', an elif statement always requires a conditional expression.
+
+00:01:25.873 --> 00:01:28.609
+For example, let's say we wanted to print what
+
+00:01:28.609 --> 00:01:32.084
+to do with the garden based on the current season.
+
+00:01:32.084 --> 00:01:35.479
+If we set season equal to spring, like this,
+
+00:01:35.480 --> 00:01:37.850
+then we can see that plant the garden is
+
+00:01:37.849 --> 00:01:42.059
+printed as its first condition evaluates to true.
+
+00:01:42.060 --> 00:01:45.469
+Alternatively, if we set season to winter,
+
+00:01:45.469 --> 00:01:49.685
+then each of these conditions will evaluate to false until we had
+
+00:01:49.685 --> 00:01:54.945
+this condition which will evaluate as true and print stay indoors.
+
+00:01:54.944 --> 00:01:58.299
+Notice here we're using double equal sign again.
+
+00:01:58.299 --> 00:02:02.030
+Remember, a single equal sign is for assignment like we did
+
+00:02:02.030 --> 00:02:07.150
+here when we were setting a season as a particular string.
+
+00:02:07.150 --> 00:02:13.000
+Two equal sign is for evaluation where we are evaluating a condition as true or false.
+

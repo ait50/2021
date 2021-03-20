@@ -1,0 +1,247 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.069 --> 00:00:05.674
+Now that you've learned about conditional statements,
+
+00:00:05.674 --> 00:00:07.302
+let's move on to loops,
+
+00:00:07.302 --> 00:00:10.150
+which allow us to repeat blocks of code.
+
+00:00:10.150 --> 00:00:12.365
+Python has two kinds,
+
+00:00:12.365 --> 00:00:15.160
+for loops and while loops.
+
+00:00:15.160 --> 00:00:17.832
+Let's first take a look at the for loop,
+
+00:00:17.832 --> 00:00:21.542
+which we can use to iterate over an iterable.
+
+00:00:21.542 --> 00:00:26.649
+An iterable is an object that can return one of its elements at a time.
+
+00:00:26.649 --> 00:00:30.549
+This can include sequence types such as strings, lists,
+
+00:00:30.550 --> 00:00:36.820
+and tuples as well as non-sequenced types such as dictionaries and files.
+
+00:00:36.820 --> 00:00:41.994
+You can define objects within iter method to allow them to be used as an iterable,
+
+00:00:41.994 --> 00:00:46.515
+which you can find more information on in the notes below.
+
+00:00:46.515 --> 00:00:50.299
+Consider this for loop that iterates through a list of cities,
+
+00:00:50.299 --> 00:00:53.844
+capitalizes each one, and prints it.
+
+00:00:53.844 --> 00:00:57.420
+The for keyword signals that this is a for loop.
+
+00:00:57.420 --> 00:01:03.115
+Cities is the iterable and city is the loop's iteration variable.
+
+00:01:03.115 --> 00:01:06.594
+That is the variable that represents the element
+
+00:01:06.594 --> 00:01:10.314
+in the iterable that the loop is currently processing.
+
+00:01:10.314 --> 00:01:12.603
+So, in the first iteration,
+
+00:01:12.603 --> 00:01:14.969
+city would be New York City.
+
+00:01:14.969 --> 00:01:16.900
+In the second iteration,
+
+00:01:16.900 --> 00:01:19.734
+it would be Mountain View,and so on.
+
+00:01:19.734 --> 00:01:22.929
+We can use the city variable to refer to an element
+
+00:01:22.930 --> 00:01:27.640
+within the indented body of a for loop during any iteration.
+
+00:01:27.640 --> 00:01:32.625
+This indented body is executed once for each element in cities.
+
+00:01:32.625 --> 00:01:35.439
+You can name iteration variables however you
+
+00:01:35.439 --> 00:01:39.909
+like though this example demonstrates a common pattern.
+
+00:01:39.909 --> 00:01:44.096
+The name of the list cities is the plural form of city,
+
+00:01:44.096 --> 00:01:46.329
+the name of the iteration variable.
+
+00:01:46.329 --> 00:01:50.515
+Naming lists and iteration variables in this style makes it
+
+00:01:50.515 --> 00:01:54.849
+easier for other programmers to understand the purpose of each variable.
+
+00:01:54.849 --> 00:01:59.544
+So far, the loops we've written extract information from lists.
+
+00:01:59.545 --> 00:02:04.135
+We can also use for loops to create lists and to modify lists.
+
+00:02:04.135 --> 00:02:05.969
+To create a new list,
+
+00:02:05.969 --> 00:02:07.689
+we can start with an empty list,
+
+00:02:07.689 --> 00:02:11.405
+and then use the append method to add new items.
+
+00:02:11.405 --> 00:02:18.449
+This for loop iterates through each city and cities and appends it to capitalized cities.
+
+00:02:18.449 --> 00:02:25.034
+Modifying a list is a bit more involved and requires a use of a new function, range.
+
+00:02:25.034 --> 00:02:30.490
+Range is a built in function used to create immutable sequences of numbers.
+
+00:02:30.490 --> 00:02:33.899
+It has three arguments which must all be integers;
+
+00:02:33.899 --> 00:02:37.194
+start, stop, and step.
+
+00:02:37.194 --> 00:02:40.000
+Start is the first number of the sequence.
+
+00:02:40.000 --> 00:02:43.389
+Stop is one above the last number of the sequence.
+
+00:02:43.389 --> 00:02:47.284
+And step is the difference between the numbers in the sequence.
+
+00:02:47.284 --> 00:02:52.900
+If unspecified, start defaults to zero and step defaults to one.
+
+00:02:52.900 --> 00:02:57.340
+Calling range with one integer will make that the stop argument and
+
+00:02:57.340 --> 00:03:02.405
+return a sequence of numbers from zero to that integer minus one.
+
+00:03:02.405 --> 00:03:07.784
+So, range four returns zero through four minus one, which is three.
+
+00:03:07.784 --> 00:03:12.764
+Calling range with two integers will make those the start and stop,
+
+00:03:12.764 --> 00:03:18.299
+and return a sequence of numbers from the first number to the second number minus one.
+
+00:03:18.300 --> 00:03:23.650
+Range two, six returns a sequence from two to five.
+
+00:03:23.650 --> 00:03:28.435
+Calling range with three integers will return a sequence of numbers
+
+00:03:28.435 --> 00:03:33.585
+from the first to the second minus one separated by the third.
+
+00:03:33.585 --> 00:03:35.335
+So, range 1, 10,
+
+00:03:35.335 --> 00:03:40.810
+2 returns a sequence from one to nine incremented by two.
+
+00:03:40.810 --> 00:03:43.284
+Notice in these examples,
+
+00:03:43.284 --> 00:03:46.650
+we adopt range in a list before printing it.
+
+00:03:46.650 --> 00:03:52.355
+This is because printing just the output of range only shows you a range object.
+
+00:03:52.354 --> 00:03:55.509
+You can view the values in the range object by
+
+00:03:55.509 --> 00:03:59.984
+converting it to a list or iterating through it in a for loop.
+
+00:03:59.985 --> 00:04:02.240
+Back in our cities example,
+
+00:04:02.240 --> 00:04:08.775
+we can use the range function to generate the indices of each value in the cities list.
+
+00:04:08.775 --> 00:04:13.939
+This let's us access the elements of the list with cities bracket index.
+
+00:04:13.939 --> 00:04:18.204
+So, that we can modify the values in the cities list in place.
+
+00:04:18.204 --> 00:04:20.990
+Let's go through one iteration of this to
+
+00:04:20.990 --> 00:04:24.240
+show exactly how all these pieces work together.
+
+00:04:24.240 --> 00:04:26.800
+Len cities provides four,
+
+00:04:26.800 --> 00:04:31.280
+so the list will be a range from zero to three.
+
+00:04:31.279 --> 00:04:35.709
+The index will take on each of these values one at a time.
+
+00:04:35.709 --> 00:04:37.310
+So, in this first iteration,
+
+00:04:37.310 --> 00:04:39.519
+we'll have an index of zero.
+
+00:04:39.519 --> 00:04:44.474
+This part here will then index the first city, New York City,
+
+00:04:44.475 --> 00:04:46.802
+capitalize it using title,
+
+00:04:46.802 --> 00:04:51.455
+then place it back in place of the original New York City spot.
+
+00:04:51.454 --> 00:04:56.000
+This same process would then occur for each of the additional cities.
+
+00:04:56.000 --> 00:05:01.689
+We can use print to see the change in the cities list at each iteration.
+
+00:05:01.689 --> 00:05:05.706
+By getting a list of indices with the range function,
+
+00:05:05.706 --> 00:05:11.480
+we were able to index into each element of a list in a for loop to apply a change.
+
+00:05:11.480 --> 00:05:15.720
+While this modification is one application of the range function,
+
+00:05:15.720 --> 00:05:18.285
+that isn't the only thing it's useful for.
+
+00:05:18.285 --> 00:05:23.000
+You will frequently use range to repeat an action a certain number of times.
+

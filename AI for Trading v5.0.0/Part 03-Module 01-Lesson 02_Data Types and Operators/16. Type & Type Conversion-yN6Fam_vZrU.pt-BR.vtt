@@ -1,0 +1,206 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.401 --> 00:00:02.736
+Até agora
+
+00:00:02.769 --> 00:00:05.372
+nós discutimos quatro
+tipo de dados em Python:
+
+00:00:05.906 --> 00:00:09.510
+int, float, bool e string.
+
+00:00:10.444 --> 00:00:12.479
+Se você lembrar
+de um vídeo anterior,
+
+00:00:12.880 --> 00:00:15.916
+dá para conferir diretamente
+o tipo de qualquer objeto
+
+00:00:16.116 --> 00:00:18.519
+usando a função built-in
+type.
+
+00:00:19.319 --> 00:00:22.389
+Usando type,
+observamos que o mesmo número
+
+00:00:22.689 --> 00:00:24.658
+pode ser expresso
+em tipos diferentes,
+
+00:00:24.691 --> 00:00:27.461
+cada um com seus próprios
+comportamentos.
+
+00:00:28.028 --> 00:00:29.129
+Só para observar,
+
+00:00:29.162 --> 00:00:31.665
+aqui estamos chamando
+uma função print
+
+00:00:31.698 --> 00:00:34.535
+na saída de outra função,
+type.
+
+00:00:35.302 --> 00:00:37.638
+Usamos parênteses
+para definir a ordem
+
+00:00:37.671 --> 00:00:39.573
+em que as funções
+são executadas.
+
+00:00:39.973 --> 00:00:42.609
+O que está contido
+entre parênteses
+
+00:00:42.943 --> 00:00:44.811
+precisa ser avaliado
+primeiro
+
+00:00:45.045 --> 00:00:48.015
+antes de ser usado como entrada
+da próxima função.
+
+00:00:49.149 --> 00:00:51.552
+Aqui, a função type
+é executada primeiro
+
+00:00:51.785 --> 00:00:53.620
+e depois a sua saída
+é impressa.
+
+00:00:54.788 --> 00:00:57.291
+Tipos diferentes
+têm propriedades diferentes.
+
+00:00:57.324 --> 00:00:59.726
+Quando você está criando
+um programa,
+
+00:01:00.127 --> 00:01:02.462
+é preciso escolher os tipos
+para seus dados
+
+00:01:02.496 --> 00:01:04.598
+dependendo de como
+pretende usá-los.
+
+00:01:05.232 --> 00:01:06.433
+Por exemplo:
+
+00:01:06.466 --> 00:01:09.736
+se você quiser usar um número
+como parte de uma sentença,
+
+00:01:09.970 --> 00:01:12.673
+será mais fácil
+se esse número for uma string.
+
+00:01:13.473 --> 00:01:16.076
+Se quiser programar
+um valor verdadeiro-falso,
+
+00:01:16.476 --> 00:01:19.279
+será muito mais fácil manipular
+um valor booleano
+
+00:01:19.313 --> 00:01:20.547
+do que uma string.
+
+00:01:20.914 --> 00:01:22.149
+Por que é mais fácil?
+
+00:01:22.416 --> 00:01:24.384
+Há funções criadas
+especialmente
+
+00:01:24.418 --> 00:01:26.486
+para trabalhar com cada
+tipo de dado.
+
+00:01:26.920 --> 00:01:28.655
+Você vai aprender isso
+em breve.
+
+00:01:29.323 --> 00:01:31.124
+Também pode haver situações
+
+00:01:31.158 --> 00:01:34.328
+em que você não controla
+o tipo de dado que recebe,
+
+00:01:34.361 --> 00:01:36.163
+mas tem que usar
+mesmo assim.
+
+00:01:36.430 --> 00:01:40.434
+A boa notícia é que dá para criar
+novos objetos a partir dos antigos,
+
+00:01:40.467 --> 00:01:42.202
+mudando o tipo
+no processo.
+
+00:01:43.003 --> 00:01:46.273
+Vimos nisso no vídeo de números
+inteiros e ponto flutuante.
+
+00:01:46.573 --> 00:01:47.708
+Por exemplo,
+
+00:01:47.741 --> 00:01:50.377
+aqui criamos um int
+a partir de um float
+
+00:01:50.611 --> 00:01:53.013
+e o atribuímos
+à variável count.
+
+00:01:53.914 --> 00:01:57.284
+Aqui criamos uma string
+com o numero_casa
+
+00:01:57.551 --> 00:02:00.454
+e a usamos para fazer
+uma string de endereço maior.
+
+00:02:00.921 --> 00:02:02.956
+Primeiro,
+pegamos numero_casa
+
+00:02:02.990 --> 00:02:05.726
+e a rua e o nome_cidade.
+
+00:02:06.360 --> 00:02:09.062
+Veja que numero_casa
+é um int.
+
+00:02:09.730 --> 00:02:12.199
+Podemos transformá-la
+em uma string, assim,
+
+00:02:12.232 --> 00:02:15.736
+e usar o operador "+"
+para criar o endereço completo.
+
+00:02:16.537 --> 00:02:19.640
+Também dá para criar um número
+com uma string, assim.
+
+00:02:20.541 --> 00:02:23.443
+Aqui começamos
+com a string "35".
+
+00:02:23.810 --> 00:02:26.246
+Mas colocando-a dentro
+de uma função float,
+
+00:02:26.280 --> 00:02:28.382
+reparamos que o tipo muda.
+

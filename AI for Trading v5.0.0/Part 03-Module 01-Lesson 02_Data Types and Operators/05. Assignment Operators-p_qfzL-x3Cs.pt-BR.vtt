@@ -1,0 +1,108 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.135 --> 00:00:01.628
+TIPOS DE DADOS E OPERADORES.
+
+00:00:01.662 --> 00:00:03.634
+VARIÁVEIS E OPERADORES
+DE ASSOCIAÇÃO.
+
+00:00:03.667 --> 00:00:07.601
+Já configuramos este valor
+como "mv_population",
+
+00:00:07.667 --> 00:00:11.667
+mas e se quisermos atualizá-lo
+agora que a população mudou?
+
+00:00:11.701 --> 00:00:15.467
+Podemos atribuir a variável
+ao novo valor,
+
+00:00:15.501 --> 00:00:19.667
+que é de 78.128.
+
+00:00:19.701 --> 00:00:21.968
+Se tivermos o novo valor,
+
+00:00:22.000 --> 00:00:24.901
+pois sabemos que 4 mil
+foram para Mountain View
+
+00:00:24.934 --> 00:00:27.067
+e 600 se mudaram de lá,
+
+00:00:27.100 --> 00:00:31.300
+podemos aplicar as alterações
+diretamente na variável.
+
+00:00:31.334 --> 00:00:34.634
+Nesta linha,
+a variável "mv_population"
+
+00:00:34.667 --> 00:00:39.567
+foi atribuída a ela mesma
+mais 4 mil e menos 600,
+
+00:00:39.601 --> 00:00:43.067
+o que resulta em 78.128.
+
+00:00:43.100 --> 00:00:47.334
+Como esse tipo de operação
+de aumento e reatribuição é comum,
+
+00:00:47.400 --> 00:00:51.701
+o Python oferece operadores
+de atribuição especiais para isso.
+
+00:00:51.734 --> 00:00:55.467
+Em vez de utilizar "mv_population"
+duas vezes em uma linha,
+
+00:00:55.501 --> 00:00:59.434
+podemos utilizar o operador "+="
+para informar ao Python
+
+00:00:59.501 --> 00:01:02.000
+que estamos aumentando
+a variável à esquerda
+
+00:01:02.067 --> 00:01:04.367
+pelo valor da direita.
+
+00:01:04.400 --> 00:01:09.334
+"+=" é um exemplo de outro
+operador de atribuição no Python.
+
+00:01:09.367 --> 00:01:11.467
+E "-=" é outro exemplo.
+
+00:01:11.501 --> 00:01:13.300
+Existem muitos outros.
+
+00:01:13.334 --> 00:01:19.033
+Eles são os operadores aritméticos
+seguidos pelo sinal de "=".
+
+00:01:19.100 --> 00:01:22.734
+Todos os operadores
+aplicam as operações aritméticas
+
+00:01:22.801 --> 00:01:26.267
+à variável à esquerda
+com o valor à direita
+
+00:01:26.300 --> 00:01:29.767
+e deixam o código
+mais conciso.
+
+00:01:29.801 --> 00:01:31.701
+Confira no texto abaixo
+deste vídeo
+
+00:01:31.767 --> 00:01:33.634
+outros
+operadores de atribuição.
+

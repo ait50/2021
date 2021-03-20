@@ -1,0 +1,443 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Solution: Conditional Statements
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Control Flow
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Conditional Statements.html">
+       02. Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Practice Conditional Statements.html">
+       03. Practice: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Conditional Statements.html">
+       04. Solution: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz Conditional Statements.html">
+       05. Quiz: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Solution Conditional Statements.html">
+       06. Solution: Conditional Statements
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Boolean Expressions for Conditions.html">
+       07. Boolean Expressions for Conditions
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Quiz Boolean Expressions for Conditions.html">
+       08. Quiz: Boolean Expressions for Conditions
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Solution Boolean Expressions for Conditions.html">
+       09. Solution: Boolean Expressions for Conditions
+      </a>
+     </li>
+     <li class="">
+      <a href="10. For Loops.html">
+       10. For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Practice For Loops.html">
+       11. Practice: For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution For Loops Practice.html">
+       12. Solution: For Loops Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Quiz For Loops.html">
+       13. Quiz: For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Solution For Loops Quiz.html">
+       14. Solution: For Loops Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Quiz Match Inputs To Outputs.html">
+       15. Quiz: Match Inputs To Outputs
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Building Dictionaries.html">
+       16. Building Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Iterating Through Dictionaries with For Loops.html">
+       17. Iterating Through Dictionaries with For Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Quiz Iterating Through Dictionaries.html">
+       18. Quiz: Iterating Through Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Solution Iterating Through Dictionaries.html">
+       19. Solution: Iterating Through Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="20. While Loops.html">
+       20. While Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Practice While Loops.html">
+       21. Practice: While Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Solution While Loops Practice.html">
+       22. Solution: While Loops Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz While Loops.html">
+       23. Quiz: While Loops
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Solution While Loops Quiz.html">
+       24. Solution: While Loops Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Break, Continue.html">
+       25. Break, Continue
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Quiz Break, Continue.html">
+       26. Quiz: Break, Continue
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Solution Break, Continue.html">
+       27. Solution: Break, Continue
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Zip and Enumerate.html">
+       28. Zip and Enumerate
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Quiz Zip and Enumerate.html">
+       29. Quiz: Zip and Enumerate
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Solution Zip and Enumerate.html">
+       30. Solution: Zip and Enumerate
+      </a>
+     </li>
+     <li class="">
+      <a href="31. List Comprehensions.html">
+       31. List Comprehensions
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Quiz List Comprehensions.html">
+       32. Quiz: List Comprehensions
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Solution List Comprehensions.html">
+       33. Solution: List Comprehensions
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Conclusion.html">
+       34. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Solution: Conditional Statements
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-solution-which-prize">
+          Quiz Solution: Which Prize
+         </h1>
+         <p>
+          Here's my solution for this quiz!
+         </p>
+         <pre><code class="python language-python">points = 174
+
+if points &lt;= 50:
+    result = "Congratulations! You won a wooden rabbit!"
+elif points &lt;= 150:
+    result = "Oh dear, no prize this time."
+elif points &lt;= 180:
+    result = "Congratulations! You won a wafer-thin mint!"
+else:
+    result = "Congratulations! You won a penguin!"
+
+print(result)</code></pre>
+         <h3 id="output">
+          Output:
+         </h3>
+         <pre><code class="txt language-txt">Congratulations! You won a wafer-thin mint!</code></pre>
+         <p>
+          We use
+          <code>
+           &lt;=
+          </code>
+          instead of the
+          <code>
+           &lt;
+          </code>
+          operator, since it was stated that the upper bound is inclusive. Notice that in each condition, we check if
+          <code>
+           points
+          </code>
+          is in a prize bracket by checking if
+          <code>
+           points
+          </code>
+          is less than or equal to the upper bound; we didn't have to check if it was greater than the lower bound. Let's see why this is the case.
+         </p>
+         <ul>
+          <li>
+           <p>
+            When
+            <code>
+             points = 174
+            </code>
+            , it first checks if
+            <code>
+             points &lt;= 50
+            </code>
+            , which evaluates to False. We don't have to check if it is also greater than 0, since it is stated in the problem that
+            <code>
+             points
+            </code>
+            will always be a positive integer up to 200.
+           </p>
+          </li>
+          <li>
+           <p>
+            Since the first condition evaluates to False,  it moves on to check the next condition,
+            <code>
+             points &lt;= 150
+            </code>
+            .
+            <strong>
+             We don't need to check if it is also greater than 50 here!
+            </strong>
+            We already know this is the case because the first condition has to have evaluated to False in order to get to this point. If we know
+            <code>
+             points &lt;= 50
+            </code>
+            is False, then
+            <code>
+             points &gt; 50
+            </code>
+            must be True!
+           </p>
+          </li>
+          <li>
+           <p>
+            Finally, we check if
+            <code>
+             points &lt;= 180
+            </code>
+            , which evaluates to True. We now know that
+            <code>
+             points
+            </code>
+            is in the 151 - 180 bracket.
+           </p>
+          </li>
+          <li>
+           <p>
+            The last prize bracket, 181-200, is caught in the
+            <code>
+             else
+            </code>
+            clause, since there is no other possible value of the prize after checking the previous conditions.
+           </p>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Quiz Conditional Statements.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Solution: Conditional Statements')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,361 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.634 --> 00:00:03.033
+FLUXO DE CONTROLE:
+LOOPS "FOR"
+
+00:00:03.067 --> 00:00:05.834
+Agora que você aprendeu sobre
+declarações condicionais,
+
+00:00:05.868 --> 00:00:07.601
+vamos passar aos loops,
+
+00:00:07.634 --> 00:00:10.634
+que nos permitem repetir
+blocos de código.
+
+00:00:10.667 --> 00:00:15.434
+O Python tem dois tipos:
+loops "for" e loops "while".
+
+00:00:15.467 --> 00:00:18.567
+Primeiro vamos ver o loop "for",
+que podemos usar
+
+00:00:18.601 --> 00:00:21.334
+para iterar sobre um iterável.
+
+00:00:21.367 --> 00:00:26.667
+Um objeto iterável pode devolver
+um de seus elementos por vez.
+
+00:00:26.701 --> 00:00:28.612
+Isso pode incluir
+tipos de sequência,
+
+00:00:28.646 --> 00:00:31.901
+como strings, listas e tuplas,
+
+00:00:31.934 --> 00:00:36.667
+assim como tipos não sequenciais,
+como dicionários e arquivos.
+
+00:00:36.701 --> 00:00:39.399
+Você pode definir objetos
+dentro do método "iter"
+
+00:00:39.433 --> 00:00:42.300
+para permitir que eles sejam usados
+como iteráveis
+
+00:00:42.334 --> 00:00:46.534
+e pode saber mais sobre eles
+nas notas.
+
+00:00:46.567 --> 00:00:47.868
+Considere este loop "for"
+
+00:00:47.901 --> 00:00:52.434
+que faz iteração com uma lista
+de cidades, as nomeia em maiúsculas
+
+00:00:52.467 --> 00:00:53.901
+e imprime.
+
+00:00:53.934 --> 00:00:57.634
+A palavra-chave "for" sinaliza
+que este é um loop "for".
+
+00:00:57.667 --> 00:01:03.200
+"Cidades" é o iterável e "cidade"
+é a variável de iteração do loop.
+
+00:01:03.234 --> 00:01:07.734
+Ou seja, é a variável que representa
+o elemento no iterável
+
+00:01:07.767 --> 00:01:10.634
+que o loop está processando
+no momento.
+
+00:01:10.667 --> 00:01:15.300
+Na primeira iteração,
+"cidade" seria Nova York.
+
+00:01:15.334 --> 00:01:19.534
+Na segunda iteração, seria
+Mountain View. E por aí vai.
+
+00:01:19.567 --> 00:01:22.868
+Podemos usar a variável da cidade
+como referência a um elemento
+
+00:01:22.901 --> 00:01:25.501
+dentro do corpo recuado
+de um loop "for"
+
+00:01:25.534 --> 00:01:27.501
+durante qualquer iteração.
+
+00:01:27.534 --> 00:01:30.434
+Esse corpo recuado
+é executado uma vez,
+
+00:01:30.467 --> 00:01:33.167
+para cada elemento
+em cidades.
+
+00:01:33.200 --> 00:01:36.434
+Você pode nomear as variáveis
+de iteração como quiser,
+
+00:01:36.467 --> 00:01:39.968
+apesar de esse exemplo mostrar
+um padrão comum.
+
+00:01:40.033 --> 00:01:44.100
+O nome da lista de cidades
+é o plural de "cidade",
+
+00:01:44.133 --> 00:01:46.667
+o nome da variável de iteração.
+
+00:01:46.701 --> 00:01:50.167
+Nomear listas e variáveis
+de iteração nesse estilo
+
+00:01:50.200 --> 00:01:53.434
+facilita que outros programadores
+entendam o propósito
+
+00:01:53.467 --> 00:01:55.033
+de cada variável.
+
+00:01:55.067 --> 00:01:59.501
+Até agora os loops que escrevemos
+extraem informações de listas.
+
+00:01:59.534 --> 00:02:04.400
+Também podemos usar loops "for"
+para criar e modificar listas.
+
+00:02:04.434 --> 00:02:07.834
+Para criar uma nova lista,
+podemos começar com uma vazia
+
+00:02:07.868 --> 00:02:11.934
+e usar o método de anexar
+para adicionar novos itens.
+
+00:02:11.968 --> 00:02:15.267
+Esse loop "for" iterage
+cada cidade e cidades
+
+00:02:15.300 --> 00:02:18.567
+e as anexa às cidades
+com letra maiúscula.
+
+00:02:18.601 --> 00:02:21.067
+Modificar uma lista
+é um pouco mais complicado
+
+00:02:21.100 --> 00:02:25.501
+e exige o uso de uma
+nova função: "range".
+
+00:02:25.534 --> 00:02:28.033
+"Range" é uma função built-in
+usada para criar
+
+00:02:28.067 --> 00:02:30.434
+sequências imutáveis
+de números.
+
+00:02:30.467 --> 00:02:33.968
+Ela tem três argumentos,
+que devem ser todos Integers:
+
+00:02:34.033 --> 00:02:37.000
+"start", "stop" e "step".
+
+00:02:37.033 --> 00:02:40.133
+"Start" é o primeiro número
+da sequência.
+
+00:02:40.167 --> 00:02:43.634
+"Stop" é o número acima
+do último número da sequência.
+
+00:02:43.667 --> 00:02:47.267
+E "step" é a diferença entre
+os números da sequência.
+
+00:02:47.300 --> 00:02:50.901
+Se não for especificado, "start"
+padroniza para zero,
+
+00:02:50.934 --> 00:02:53.133
+e "step" padroniza para um.
+
+00:02:53.167 --> 00:02:56.934
+Chamar "range" com um Integer
+fará com que o argumento do "stop"
+
+00:02:56.968 --> 00:03:02.501
+devolva uma sequência de números
+de zero àquele Integer menos um.
+
+00:03:02.567 --> 00:03:08.234
+Então o "range" quatro devolve zero
+por meio de 4-1=3.
+
+00:03:08.267 --> 00:03:12.801
+Chamar o "range" com dois Integers
+os fará começar, parar
+
+00:03:12.834 --> 00:03:16.067
+e retornar uma sequência de números
+do primeiro número
+
+00:03:16.100 --> 00:03:20.968
+ao segundo número menos um. O range
+dois/seis retorna uma sequência
+
+00:03:21.000 --> 00:03:23.934
+de dois a cinco.
+
+00:03:23.968 --> 00:03:28.400
+Chamar um "range" com três Integers
+retornará uma sequência de números
+
+00:03:28.434 --> 00:03:33.534
+do primeiro ao segundo menos um,
+separados pelo terceiro.
+
+00:03:33.567 --> 00:03:38.901
+Então o "range" um/dez/dois
+devolve uma sequência de um a nove
+
+00:03:38.934 --> 00:03:41.200
+incrementada por dois.
+
+00:03:41.234 --> 00:03:44.868
+Veja nesses exemplos que adotamos
+"range" em uma lista,
+
+00:03:44.901 --> 00:03:46.567
+antes de imprimi-la.
+
+00:03:46.601 --> 00:03:49.901
+Isso é porque imprimir
+só a saída do "range"
+
+00:03:49.934 --> 00:03:52.601
+mostra apenas
+um objeto "range".
+
+00:03:52.634 --> 00:03:55.400
+Você pode ver os valores
+no objeto "range"
+
+00:03:55.434 --> 00:03:57.367
+convertendo-os em uma lista
+
+00:03:57.400 --> 00:04:00.300
+ou iteragindo-o
+em um loop "for".
+
+00:04:00.334 --> 00:04:04.200
+De volta ao exemplo das cidades,
+podemos usar a função "range"
+
+00:04:04.267 --> 00:04:08.734
+para gerar índices de cada valor
+na lista das cidades.
+
+00:04:08.767 --> 00:04:11.481
+Isso nos deixa acessar
+elementos da lista
+
+00:04:11.515 --> 00:04:13.934
+com cidade, colchete, índice.
+
+00:04:13.968 --> 00:04:18.200
+Então podemos modificar os valores
+na lista de cidades em ordem.
+
+00:04:18.234 --> 00:04:21.834
+Vamos ver uma iteração dessas,
+para mostrar exatamente
+
+00:04:21.868 --> 00:04:24.801
+como todas essas peças
+trabalham juntas.
+
+00:04:24.834 --> 00:04:29.100
+Cidades "len" fornecem quatro,
+então a lista será um "range"
+
+00:04:29.133 --> 00:04:31.267
+de zero a três.
+
+00:04:31.334 --> 00:04:34.868
+O índice vai pegar
+cada valor desses por vez.
+
+00:04:35.801 --> 00:04:40.067
+Nesta primeira iteração,
+o índice será zero.
+
+00:04:40.100 --> 00:04:44.834
+Esta parte aqui vai classificar
+a primeira cidade, Nova York,
+
+00:04:44.868 --> 00:04:47.100
+colocá-la em maiúsculas
+usando "title"
+
+00:04:47.133 --> 00:04:51.300
+e colocá-la de volta
+no lugar original.
+
+00:04:51.334 --> 00:04:56.501
+O mesmo processo vai ocorrer
+com todas as cidades adicionais.
+
+00:04:56.534 --> 00:05:00.000
+Podemos usar "imprimir" para ver
+a mudança na lista de cidades
+
+00:05:00.033 --> 00:05:02.167
+a cada iteração.
+
+00:05:02.200 --> 00:05:05.534
+Ao obter uma lista de índices
+com a função "range",
+
+00:05:05.567 --> 00:05:09.767
+podemos classificar cada elemento
+de uma lista em um loop "for"
+
+00:05:09.801 --> 00:05:11.701
+para aplicar uma mudança.
+
+00:05:11.734 --> 00:05:15.634
+Enquanto essa modificação é uma
+aplicação da função "range",
+
+00:05:15.667 --> 00:05:18.567
+não é apenas para isso
+que ela serve.
+
+00:05:18.601 --> 00:05:21.400
+Você usará "range" frequentemente
+para repetir uma ação
+
+00:05:21.434 --> 00:05:23.100
+um determinado número de vezes.
+

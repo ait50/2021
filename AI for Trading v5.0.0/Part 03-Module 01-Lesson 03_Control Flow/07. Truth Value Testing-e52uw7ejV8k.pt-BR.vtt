@@ -1,0 +1,113 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.133 --> 00:00:03.400
+BOOLEANAS PARA CONDIÇÕES,
+VERIFICAÇÃO DE VERDADE
+
+00:00:03.434 --> 00:00:06.000
+Até agora,
+as condições que usamos
+
+00:00:06.033 --> 00:00:07.334
+eram expressões booleanas
+
+00:00:07.400 --> 00:00:10.200
+que avaliavam
+um objeto booleano
+
+00:00:10.234 --> 00:00:12.734
+como verdadeiro ou falso.
+
+00:00:12.801 --> 00:00:17.501
+Se pusermos um outro objeto
+não booleano na instrução "if",
+
+00:00:17.534 --> 00:00:20.100
+o Python verificará
+o valor de verdade
+
+00:00:20.133 --> 00:00:24.701
+e decidirá se executa ou não
+o código indentado.
+
+00:00:24.734 --> 00:00:27.734
+Aqui a condição
+é uma variável inteira
+
+00:00:27.801 --> 00:00:30.133
+e avalia como "true".
+
+00:00:30.200 --> 00:00:33.133
+A documentação Python
+lista todos os objetos
+
+00:00:33.200 --> 00:00:36.300
+considerados falsos
+nessa situação.
+
+00:00:36.334 --> 00:00:37.934
+Tudo que não esteja listado
+
+00:00:38.000 --> 00:00:40.200
+com "false"
+como valor de verdade
+
+00:00:40.234 --> 00:00:42.634
+avalia como "true".
+
+00:00:42.701 --> 00:00:46.100
+Neste código, "errors"
+tem valor de verdade "true"
+
+00:00:46.133 --> 00:00:48.601
+porque é um número
+diferente de zero.
+
+00:00:48.634 --> 00:00:50.934
+Então a mensagem de erro
+é impressa.
+
+00:00:51.000 --> 00:00:55.234
+Essa é uma forma boa de escrever
+uma instrução "if" sucinta.
+
+00:00:55.300 --> 00:00:58.634
+Da mesma forma,
+nesse exemplo visto anteriormente,
+
+00:00:58.701 --> 00:01:01.801
+a string da segunda parte
+da condição
+
+00:01:01.834 --> 00:01:03.934
+avalia como "true",
+
+00:01:04.000 --> 00:01:07.200
+então essa instrução
+sempre avalia como "true",
+
+00:01:07.234 --> 00:01:10.901
+independentemente
+do valor armazenado em "weather".
+
+00:01:10.934 --> 00:01:14.400
+Por outro lado,
+isto avalia como "true"
+
+00:01:14.434 --> 00:01:17.100
+se "weather"
+for a string "snow"
+
+00:01:17.133 --> 00:01:21.033
+e avalia como "false" se "weather"
+for qualquer outra string.
+
+00:01:21.901 --> 00:01:25.801
+No entanto, esse tipo de condição
+não é de conhecimento geral
+
+00:01:25.834 --> 00:01:28.033
+e não é comum na prática.
+

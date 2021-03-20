@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.510 --> 00:00:05.940
+So, how are list different from strings?
+
+00:00:05.940 --> 00:00:08.400
+You saw that both support indexing,
+
+00:00:08.400 --> 00:00:10.665
+slicing and the in operator.
+
+00:00:10.665 --> 00:00:12.450
+The most obvious difference,
+
+00:00:12.450 --> 00:00:18.585
+is that strings are sequences of letters while list elements can be any type of object.
+
+00:00:18.585 --> 00:00:24.320
+Or more subtle difference is that lists can be modified but strings can't.
+
+00:00:24.320 --> 00:00:31.170
+Here, we can change the fourth element index three of this list to Friday if we want.
+
+00:00:31.170 --> 00:00:36.310
+But here, we get an error if we tried to change the third element of a string.
+
+00:00:36.310 --> 00:00:39.140
+The technical term for whether an object can be
+
+00:00:39.140 --> 00:00:42.985
+modified after its creation is mutability.
+
+00:00:42.985 --> 00:00:45.490
+We can modify the values of lists.
+
+00:00:45.490 --> 00:00:48.155
+So, a list is an immutable data type.
+
+00:00:48.155 --> 00:00:50.380
+We can't modify strings.
+
+00:00:50.380 --> 00:00:53.465
+So, a string is an immutable data type.
+
+00:00:53.465 --> 00:00:59.375
+As we introduce more data types there are two factors that we will continue to consider.
+
+00:00:59.375 --> 00:01:03.590
+One, is mutability and the other is order.
+
+00:01:03.590 --> 00:01:08.185
+Order is whether the order of contents for an object matters,
+
+00:01:08.185 --> 00:01:13.045
+and whether or not path of the object can be accessed using this order.
+
+00:01:13.045 --> 00:01:16.165
+Both strings and lists are ordered,
+
+00:01:16.165 --> 00:01:18.935
+which is why indexing works well for them.
+
+00:01:18.935 --> 00:01:22.955
+However, one is mutable while the other is not.
+
+00:01:22.955 --> 00:01:25.490
+We will see more data types that fall under
+
+00:01:25.490 --> 00:01:28.675
+different sections of this grid as we continue.
+
+00:01:28.675 --> 00:01:33.665
+For now, we'll explore the methods and functions that work on lists.
+
+00:01:33.665 --> 00:01:37.730
+And we'll take advantage of lists mutability in our programs.
+

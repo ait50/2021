@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.850 --> 00:00:09.619
+Python also has a useful way to assign multiple variables at once.
+
+00:00:09.619 --> 00:00:13.009
+These three assignments can be abbreviated using
+
+00:00:13.009 --> 00:00:17.814
+multiple assignments like this: x is still assigned to two,
+
+00:00:17.815 --> 00:00:21.635
+y to three, and z to five.
+
+00:00:21.635 --> 00:00:25.510
+You can use this when you're assigning closely related variables like
+
+00:00:25.510 --> 00:00:30.495
+the width and height of an object or an object coordinates.
+
+00:00:30.495 --> 00:00:32.899
+In this example, we used x,
+
+00:00:32.899 --> 00:00:35.494
+y, and z as variable names.
+
+00:00:35.494 --> 00:00:39.409
+However, normally, we'd want something more descriptive.
+
+00:00:39.409 --> 00:00:41.329
+x, y, and z would be
+
+00:00:41.329 --> 00:00:46.155
+appropriate variable names for something like coordinates in a 3D space.
+
+00:00:46.155 --> 00:00:49.539
+But for most other situations, we can do better.
+
+00:00:49.539 --> 00:00:53.490
+For example, if you were computing the population density of
+
+00:00:53.490 --> 00:00:58.140
+Mountain View by dividing the population by the land area,
+
+00:00:58.140 --> 00:01:01.335
+this is one way to compute the correct answer.
+
+00:01:01.335 --> 00:01:05.010
+But it's much clear with these variable names,
+
+00:01:05.010 --> 00:01:08.734
+which are actually descriptive of the values they represent.
+
+00:01:08.734 --> 00:01:10.939
+In addition to being descriptive,
+
+00:01:10.939 --> 00:01:15.444
+there are a few things to watch out for when naming variables in Python.
+
+00:01:15.444 --> 00:01:19.034
+First, only use ordinary letters,
+
+00:01:19.034 --> 00:01:22.229
+numbers, or underscores in your variable names.
+
+00:01:22.230 --> 00:01:27.734
+They can't have spaces and need to start with a letter or underscore.
+
+00:01:27.734 --> 00:01:30.480
+Second, you can't use reserved words or
+
+00:01:30.480 --> 00:01:34.275
+built-in identifiers that have important purposes in Python,
+
+00:01:34.275 --> 00:01:37.560
+which you'll learn about throughout this course.
+
+00:01:37.560 --> 00:01:42.010
+There are also links below. Using them as variable names will lead to
+
+00:01:42.010 --> 00:01:47.950
+errors or problematic situations when you try to use that word for its intended purpose.
+
+00:01:47.950 --> 00:01:51.760
+Third, the pythonic way to name variables is to
+
+00:01:51.760 --> 00:01:55.359
+use all lowercase letters and underscores to separate words.
+

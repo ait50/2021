@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.460 --> 00:00:05.850
+"For loops" are an example of definite iteration,
+
+00:00:05.850 --> 00:00:10.560
+meaning that the loop's body is run a predefined number of times.
+
+00:00:10.560 --> 00:00:12.720
+A "for loop" over a list,
+
+00:00:12.720 --> 00:00:16.500
+executes the body once for each element in the list.
+
+00:00:16.500 --> 00:00:19.200
+A "for loop" using the range function will
+
+00:00:19.200 --> 00:00:23.070
+execute the number of times specified by the range function.
+
+00:00:23.070 --> 00:00:25.980
+This differs from indefinite iteration,
+
+00:00:25.980 --> 00:00:28.680
+which is when a loop repeats an unknown number of
+
+00:00:28.680 --> 00:00:32.175
+times and ends when some condition is met.
+
+00:00:32.175 --> 00:00:37.800
+Consider this "while loop" that simulates a blackjack dealer by drawing cards from
+
+00:00:37.800 --> 00:00:41.180
+a deck list into a hand list stopping when
+
+00:00:41.180 --> 00:00:45.440
+the value of the cards in the hand is 17 or more.
+
+00:00:45.440 --> 00:00:51.620
+This example features a new function "sum" and a new list method "pop".
+
+00:00:51.620 --> 00:00:53.780
+Sum is pretty intuitive,
+
+00:00:53.780 --> 00:00:56.780
+it returns the sum of the elements in a list.
+
+00:00:56.780 --> 00:00:59.810
+Pop is the inverse of the append method,
+
+00:00:59.810 --> 00:01:03.470
+it removes the last element from a list and returns it.
+
+00:01:03.470 --> 00:01:07.415
+You can read more about this in the official documentation.
+
+00:01:07.415 --> 00:01:10.460
+In this line, we are computing the sum of
+
+00:01:10.460 --> 00:01:15.255
+the list hand and checking if that is less than or equal to 17.
+
+00:01:15.255 --> 00:01:18.460
+In this line, we're popping the last element
+
+00:01:18.460 --> 00:01:22.105
+from card deck and appending that to the hand list.
+
+00:01:22.105 --> 00:01:25.825
+Let's talk about how this "while loop" works.
+
+00:01:25.825 --> 00:01:30.010
+The while keyword indicates that this is a while loop.
+
+00:01:30.010 --> 00:01:32.200
+Next is the condition.
+
+00:01:32.200 --> 00:01:36.910
+In this example, sum hand is less than or equal to 17.
+
+00:01:36.910 --> 00:01:39.190
+If this condition is true,
+
+00:01:39.190 --> 00:01:41.605
+the loop's body will be executed.
+
+00:01:41.605 --> 00:01:44.185
+Each time the loop's body runs,
+
+00:01:44.185 --> 00:01:46.825
+the condition is evaluated again.
+
+00:01:46.825 --> 00:01:50.080
+This process of checking the condition and then running
+
+00:01:50.080 --> 00:01:54.100
+the loop repeats until the expression becomes false.
+
+00:01:54.100 --> 00:01:59.965
+The indented body of the loop should modify at least one variable in the test expression.
+
+00:01:59.965 --> 00:02:03.130
+If the value of the test expression never changes,
+
+00:02:03.130 --> 00:02:05.410
+the result is an infinite loop.
+
+00:02:05.410 --> 00:02:09.895
+In this example, the loop's body appends numbers to the hand lists,
+
+00:02:09.895 --> 00:02:12.610
+which increases the value of sum hand.
+
+00:02:12.610 --> 00:02:18.580
+Eventually, the value of sum hand becomes large enough that the condition becomes false.
+

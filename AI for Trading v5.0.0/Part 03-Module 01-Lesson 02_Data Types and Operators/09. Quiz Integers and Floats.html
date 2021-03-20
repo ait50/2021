@@ -1,0 +1,545 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: Integers and Floats
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Types and Operators
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Arithmetic Operators.html">
+       02. Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Arithmetic Operators.html">
+       03. Quiz: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Arithmetic Operators.html">
+       04. Solution: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Variables and Assignment Operators.html">
+       05. Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Variables and Assignment Operators.html">
+       06. Quiz: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Solution Variables and Assignment Operators.html">
+       07. Solution: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Integers and Floats.html">
+       08. Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Integers and Floats.html">
+       09. Quiz: Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Booleans, Comparison Operators, and Logical Operators.html">
+       10. Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz Booleans, Comparison Operators, and Logical Operators.html">
+       11. Quiz: Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution Booleans, Comparison and Logical Operators.html">
+       12. Solution: Booleans, Comparison and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Strings.html">
+       13. Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Strings.html">
+       14. Quiz: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Strings.html">
+       15. Solution: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Type and Type Conversion.html">
+       16. Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Quiz Type and Type Conversion.html">
+       17. Quiz: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Solution Type and Type Conversion.html">
+       18. Solution: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="19. String Methods.html">
+       19. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="20. String Methods.html">
+       20. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Another String Method - Split.html">
+       21. Another String Method - Split
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Lists and Membership Operators.html">
+       22. Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Lists and Membership Operators.html">
+       23. Quiz: Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Solution List and Membership Operators.html">
+       24. Solution: List and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="25. List Methods.html">
+       25. List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Quiz List Methods.html">
+       26. Quiz: List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Tuples.html">
+       27. Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Quiz Tuples.html">
+       28. Quiz: Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Sets.html">
+       29. Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Quiz Sets.html">
+       30. Quiz: Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Dictionaries and Identity Operators.html">
+       31. Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Quiz Dictionaries and Identity Operators.html">
+       32. Quiz: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Solution Dictionaries and Identity Operators.html">
+       33. Solution: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Quiz More With Dictionaries.html">
+       34. Quiz: More With Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Compound Data Structures.html">
+       35. Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Quiz Compound Data Structures.html">
+       36. Quiz: Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Solution Compound Data Structions.html">
+       37. Solution: Compound Data Structions
+      </a>
+     </li>
+     <li class="">
+      <a href="38. Conclusion.html">
+       38. Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="39. Summary.html">
+       39. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          09. Quiz: Integers and Floats
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="int-vs-float">
+          <code>
+           int
+          </code>
+          vs.
+          <code>
+           float
+          </code>
+         </h2>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             In the fishy situation below, some of the quantities are of type
+             <code>
+              int
+             </code>
+             and some are of type
+             <code>
+              float
+             </code>
+             . Check all the ones that should be of type
+             <code>
+              float
+             </code>
+             .
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512606294049" name="469862" type="checkbox" value="a1512606294049"/>
+           <label for="a1512606294049">
+            <p>
+             How many people came on your fishing trip
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512606305845" name="469862" type="checkbox" value="a1512606305845"/>
+           <label for="a1512606305845">
+            <p>
+             Length of a fish you caught, in meters
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512606306417" name="469862" type="checkbox" value="a1512606306417"/>
+           <label for="a1512606306417">
+            <p>
+             Number of fish caught on a fishing trip
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512606307039" name="469862" type="checkbox" value="a1512606307039"/>
+           <label for="a1512606307039">
+            <p>
+             Length of time it took to catch the first fish, in hours
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            Length of a fish you caught, in meters
+           </li>
+           <li>
+            Length of time it took to catch the first fish, in hours
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="divide-by-zero">
+          Divide By Zero?
+         </h1>
+         <p>
+          What happens if you divide by zero in Python? Try it out! Test run this code and see what happens.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="469865-quiz-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#469865-quiz-py" id="tab-469865-quiz-py" role="tab">
+            quiz.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-469865-quiz-py" class="tab-pane active show" id="469865-quiz-py" role="tabpanel">
+            <pre><code></code>print(5/0)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Here's what you should have seen when you submitted the Divide by Zero code above:
+         </p>
+         <p>
+          ```text
+          <br/>
+          Traceback (most recent call last):
+          <br/>
+          File "/tmp/vmuser_tnryxwdmhw/quiz.py", line 1, in
+          <module>
+           <br/>
+           print(5/0)
+          </module>
+         </p>
+         <p>
+          ZeroDivisionError: division by zero```
+         </p>
+         <p>
+          Traceback means "What was the programming doing when it broke"!   This part is usually less helpful than the very last line of your error.  Though you can dig through the rest of the error, looking at just the final line
+          <code>
+           ZeroDivisionError
+          </code>
+          , and the message says we divided by zero. Python is enforcing the rules of arithmetic!
+         </p>
+         <p>
+          In general, there are two types of errors to look out for
+         </p>
+         <ul>
+          <li>
+           <strong>
+            Exceptions
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Syntax
+           </strong>
+          </li>
+         </ul>
+         <p>
+          An
+          <strong>
+           Exception
+          </strong>
+          is a problem that occurs when the code is running, but a 'Syntax Error' is a problem detected when Python checks the code before it runs it.  For more information, see the Python tutorial page on
+          <a href="https://docs.python.org/3/tutorial/errors.html" rel="noopener noreferrer" target="_blank">
+           Errors and Exceptions
+          </a>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="10. Booleans, Comparison Operators, and Logical Operators.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('09. Quiz: Integers and Floats')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.730 --> 00:00:05.174
+Welcome to this lesson on Control Flow.
+
+00:00:05.174 --> 00:00:08.309
+Here, you'll learn how to add more functionality to
+
+00:00:08.310 --> 00:00:12.554
+your code by being able to use conditional statements and loops.
+
+00:00:12.554 --> 00:00:16.170
+You'll learn how to implement decision-making with if statements,
+
+00:00:16.170 --> 00:00:19.170
+repeat code with for and while loops,
+
+00:00:19.170 --> 00:00:22.410
+exit or skip loops with break and continue,
+
+00:00:22.410 --> 00:00:26.070
+use helpful built-in functions like zip and enumerate,
+
+00:00:26.070 --> 00:00:30.240
+and combine some of these concepts in concise list comprehensions.
+
+00:00:30.239 --> 00:00:35.189
+With these tools, you'll be able to bring together the data types and operators you
+
+00:00:35.189 --> 00:00:40.379
+learned from the previous lesson in more complex and creative ways. Let's get started.
+

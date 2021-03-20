@@ -1,0 +1,650 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: Strings
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Types and Operators
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Arithmetic Operators.html">
+       02. Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Arithmetic Operators.html">
+       03. Quiz: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Arithmetic Operators.html">
+       04. Solution: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Variables and Assignment Operators.html">
+       05. Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Variables and Assignment Operators.html">
+       06. Quiz: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Solution Variables and Assignment Operators.html">
+       07. Solution: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Integers and Floats.html">
+       08. Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Integers and Floats.html">
+       09. Quiz: Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Booleans, Comparison Operators, and Logical Operators.html">
+       10. Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz Booleans, Comparison Operators, and Logical Operators.html">
+       11. Quiz: Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution Booleans, Comparison and Logical Operators.html">
+       12. Solution: Booleans, Comparison and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Strings.html">
+       13. Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Strings.html">
+       14. Quiz: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Strings.html">
+       15. Solution: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Type and Type Conversion.html">
+       16. Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Quiz Type and Type Conversion.html">
+       17. Quiz: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Solution Type and Type Conversion.html">
+       18. Solution: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="19. String Methods.html">
+       19. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="20. String Methods.html">
+       20. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Another String Method - Split.html">
+       21. Another String Method - Split
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Lists and Membership Operators.html">
+       22. Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Lists and Membership Operators.html">
+       23. Quiz: Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Solution List and Membership Operators.html">
+       24. Solution: List and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="25. List Methods.html">
+       25. List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Quiz List Methods.html">
+       26. Quiz: List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Tuples.html">
+       27. Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Quiz Tuples.html">
+       28. Quiz: Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Sets.html">
+       29. Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Quiz Sets.html">
+       30. Quiz: Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Dictionaries and Identity Operators.html">
+       31. Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Quiz Dictionaries and Identity Operators.html">
+       32. Quiz: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Solution Dictionaries and Identity Operators.html">
+       33. Solution: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Quiz More With Dictionaries.html">
+       34. Quiz: More With Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Compound Data Structures.html">
+       35. Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Quiz Compound Data Structures.html">
+       36. Quiz: Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Solution Compound Data Structions.html">
+       37. Solution: Compound Data Structions
+      </a>
+     </li>
+     <li class="">
+      <a href="38. Conclusion.html">
+       38. Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="39. Summary.html">
+       39. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          14. Quiz: Strings
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-fix-the-quote">
+          Quiz: Fix the Quote
+         </h1>
+         <p>
+          The line of code in the following quiz will cause a SyntaxError, thanks to the misuse of quotation marks. First run it with Test Run to view the error message. Then resolve the problem so that the quote (from
+          <a href="https://www.goodreads.com/author/quotes/203714.Henry_Ford" rel="noopener noreferrer" target="_blank">
+           Henry Ford
+          </a>
+          ) is correctly assigned to the variable
+          <code>
+           ford_quote
+          </code>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="473969-quotes-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#473969-quotes-py" id="tab-473969-quotes-py" role="tab">
+            quotes.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-473969-quotes-py" class="tab-pane active show" id="473969-quotes-py" role="tabpanel">
+            <pre><code></code># TODO: Fix this string!
+ford_quote = 'Whether you think you can, or you think you can't--you're right.'</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Operators and Strings
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             We’ve already seen that the type of objects will affect how operators work on them. What will be the output of this code?
+            </p>
+            <pre><code class="python language-python">coconut_count = "34"
+mango_count = "15"
+tropical_fruit_count = coconut_count + mango_count
+print(tropical_fruit_count)</code></pre>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512672161756" name="473973" type="radio" value="a1512672161756"/>
+           <label for="a1512672161756">
+            <p>
+             49 (and tropical_fruit_count is a string)
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512672201829" name="473973" type="radio" value="a1512672201829"/>
+           <label for="a1512672201829">
+            <p>
+             49 (and tropical_fruit_count is an integer)
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512672202413" name="473973" type="radio" value="a1512672202413"/>
+           <label for="a1512672202413">
+            <p>
+             3415 (and tropical_fruit_count is a string)
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512672202889" name="473973" type="radio" value="a1512672202889"/>
+           <label for="a1512672202889">
+            <p>
+             3415 (and tropical_fruit_count is an integer)
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          3415 (and tropical_fruit_count is a string)
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-write-a-server-log-message">
+          Quiz: Write a Server Log Message
+         </h1>
+         <p>
+          In this programming quiz, you’re going to use what you’ve learned about strings to write a logging message for a server.
+         </p>
+         <p>
+          You’ll be provided with example data for a user, the time of their visit and the site they accessed. You should use the variables provided and the techniques you’ve learned to print a log message like this one (with the username, url, and timestamp replaced with values from the appropriate variables):
+         </p>
+         <p>
+          <code>
+           Yogesh accessed the site http://petshop.com/pets/reptiles/pythons at 16:20.
+          </code>
+         </p>
+         <p>
+          Use the Test Run button to see your results as you work on coding this piece by piece.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="473977-Logs-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#473977-Logs-py" id="tab-473977-Logs-py" role="tab">
+            Logs.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-473977-Logs-py" class="tab-pane active show" id="473977-Logs-py" role="tabpanel">
+            <pre><code></code>username = "Kinari"
+timestamp = "04:50"
+url = "http://petshop.com/pets/mammals/cats"
+
+# TODO: print a log message using the variables above.
+# The message should have the same format as this one:
+# "Yogesh accessed the site http://petshop.com/pets/reptiles/pythons at 16:20."
+</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-len">
+          Quiz:
+          <code>
+           len()
+          </code>
+         </h1>
+         <p>
+          Use string concatenation and the
+          <code>
+           len()
+          </code>
+          function to find the length of a certain movie star's actual full name. Store that length in the
+          <code>
+           name_length
+          </code>
+          variable. Don't forget that there are spaces in between the different parts of a name!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="473991-bradley-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#473991-bradley-py" id="tab-473991-bradley-py" role="tab">
+            bradley.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-473991-bradley-py" class="tab-pane active show" id="473991-bradley-py" role="tabpanel">
+            <pre><code></code>given_name = "William"
+middle_names = "Bradley"
+family_name = "Pitt"
+
+name_length = #todo: calculate how long this name is
+
+# Now we check to make sure that the name fits within the driving license character limit
+# Nothing you need to do here
+driving_license_character_limit = 28
+print(name_length &lt;= driving_license_character_limit)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          <code>
+           len
+          </code>
+          and Integers
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             We've just used the
+             <code>
+              len
+             </code>
+             function to find the length of strings. What does the
+             <code>
+              len
+             </code>
+             function return when we give it the integer 835 instead of a string?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512675531720" name="473993" type="radio" value="a1512675531720"/>
+           <label for="a1512675531720">
+            <p>
+             835
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512675551716" name="473993" type="radio" value="a1512675551716"/>
+           <label for="a1512675551716">
+            <p>
+             3
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512675552214" name="473993" type="radio" value="a1512675552214"/>
+           <label for="a1512675552214">
+            <p>
+             2
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512675552721" name="473993" type="radio" value="a1512675552721"/>
+           <label for="a1512675552721">
+            <p>
+             Error
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          Error
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="15. Solution Strings.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('14. Quiz: Strings')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

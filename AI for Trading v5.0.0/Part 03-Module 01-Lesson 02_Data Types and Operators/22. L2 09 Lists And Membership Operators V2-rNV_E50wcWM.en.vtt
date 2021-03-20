@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.460 --> 00:00:06.735
+We've seen individual pieces of data like a string or a number.
+
+00:00:06.735 --> 00:00:09.900
+These are great, but Python's capability to write
+
+00:00:09.900 --> 00:00:15.810
+powerful programs is maximized when we can work with something called containers of data,
+
+00:00:15.810 --> 00:00:19.555
+which contain other datatypes and even other containers.
+
+00:00:19.555 --> 00:00:23.865
+So, let's introduce our first Python container: lists.
+
+00:00:23.865 --> 00:00:30.360
+A list is a data structure in Python that is a mutable ordered sequence of elements.
+
+00:00:30.360 --> 00:00:33.840
+More on the mutable ordered part later.
+
+00:00:34.240 --> 00:00:38.090
+This code defines a variable months,
+
+00:00:38.090 --> 00:00:40.100
+which contains a list of strings.
+
+00:00:40.100 --> 00:00:43.715
+Each element in the list is a month of the year.
+
+00:00:43.715 --> 00:00:47.030
+A list is defined using square brackets and
+
+00:00:47.030 --> 00:00:50.795
+always holds other data which are separated by commas.
+
+00:00:50.795 --> 00:00:55.685
+This data could be a mix of any of the datatypes you've already seen.
+
+00:00:55.685 --> 00:00:57.650
+Lists have an order,
+
+00:00:57.650 --> 00:01:00.170
+or more appropriately, are ordered.
+
+00:01:00.170 --> 00:01:04.595
+We can look up individual elements in the list by their index.
+
+00:01:04.595 --> 00:01:07.775
+We can look up values in a list like this.
+
+00:01:07.775 --> 00:01:09.590
+We type in the list name,
+
+00:01:09.590 --> 00:01:11.614
+followed by square brackets,
+
+00:01:11.614 --> 00:01:15.815
+with an integer indicating its position or index.
+
+00:01:15.815 --> 00:01:19.340
+Notice that the first element in the list, January,
+
+00:01:19.340 --> 00:01:23.450
+is located at index zero rather than index one.
+
+00:01:23.450 --> 00:01:28.955
+Many programming languages follow this convention called zero-based indexing.
+
+00:01:28.955 --> 00:01:31.775
+If zero-based indexing is confusing,
+
+00:01:31.775 --> 00:01:33.230
+consider it this way.
+
+00:01:33.230 --> 00:01:38.945
+An element's index describes how far the element is from the beginning of the list.
+
+00:01:38.945 --> 00:01:42.995
+The first element is zero elements away from the beginning.
+
+00:01:42.995 --> 00:01:46.925
+The second one is one element away and so on.
+
+00:01:46.925 --> 00:01:50.000
+We can also index from the end of the list,
+
+00:01:50.000 --> 00:01:51.215
+rather than the front,
+
+00:01:51.215 --> 00:01:53.075
+like we've been doing so far.
+
+00:01:53.075 --> 00:01:55.925
+To do this, we use negative indices.
+
+00:01:55.925 --> 00:01:59.510
+For example, we can get the last month of the year.
+
+00:01:59.510 --> 00:02:03.755
+The index negative one refers to the last element of the list,
+
+00:02:03.755 --> 00:02:07.880
+negative two to the second to last, and so on.
+
+00:02:07.880 --> 00:02:11.460
+Note that while zero is the first index of the list,
+
+00:02:11.460 --> 00:02:13.729
+negative zero is not the last,
+
+00:02:13.729 --> 00:02:15.515
+which can be a bit confusing.
+
+00:02:15.515 --> 00:02:20.750
+If you attempt to access an index in a list that does not exist,
+
+00:02:20.750 --> 00:02:23.885
+you will get a list index exception.
+
+00:02:23.885 --> 00:02:26.870
+This is Python's way of telling you that you are trying
+
+00:02:26.870 --> 00:02:30.065
+to access an index that is not in the list.
+
+00:02:30.065 --> 00:02:33.310
+Since the index 25 does not exist,
+
+00:02:33.310 --> 00:02:35.670
+we receive this error.
+
+00:02:35.670 --> 00:02:38.455
+Getting index errors is quite common,
+
+00:02:38.455 --> 00:02:41.330
+especially if you're not used to indexing in Python.
+
+00:02:41.330 --> 00:02:44.495
+You might get these errors quite a lot in the beginning.
+
+00:02:44.495 --> 00:02:50.450
+The most common reason for getting an index error is using an index that's off by one,
+
+00:02:50.450 --> 00:02:54.050
+but there may be other reasons why you would get such an error.
+
+00:02:54.050 --> 00:02:59.720
+It is always a good idea to use the print function and debug with the small example.
+
+00:02:59.720 --> 00:03:04.110
+This can tell you if your indexing is off and by how much.
+

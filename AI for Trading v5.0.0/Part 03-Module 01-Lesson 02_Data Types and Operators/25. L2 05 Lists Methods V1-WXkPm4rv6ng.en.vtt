@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.240 --> 00:00:06.425
+Let's introduce a new string method that works with lists.
+
+00:00:06.425 --> 00:00:10.145
+Join. Join takes a list as an argument,
+
+00:00:10.145 --> 00:00:13.260
+and returns a string consisting of the list elements,
+
+00:00:13.260 --> 00:00:15.200
+joined by separator string.
+
+00:00:15.200 --> 00:00:19.080
+In this example, we use a string backslash and,
+
+00:00:19.080 --> 00:00:22.965
+as a separator, so that there's a new line between each element.
+
+00:00:22.965 --> 00:00:29.185
+Fore newline, aft newline, starboard newline, port.
+
+00:00:29.185 --> 00:00:32.885
+We can also use other strings as separators would join.
+
+00:00:32.885 --> 00:00:35.055
+Here, we use a hyphen.
+
+00:00:35.055 --> 00:00:37.860
+It's important to remember to separate each of
+
+00:00:37.860 --> 00:00:41.000
+the items in the list you're joining, with a comma.
+
+00:00:41.000 --> 00:00:43.985
+Forgetting to do so, will not trigger an error,
+
+00:00:43.985 --> 00:00:46.720
+but will also give you unexpected results.
+
+00:00:46.720 --> 00:00:48.575
+In the example below,
+
+00:00:48.575 --> 00:00:51.790
+omitting a comma between Garcia and Okelly,
+
+00:00:51.790 --> 00:00:54.470
+results in the following: Notice how
+
+00:00:54.470 --> 00:00:58.520
+the hyphen separator is missing between Garcia and Okelly,
+
+00:00:58.520 --> 00:01:01.655
+and instead, the two strings were appended.
+
+00:01:01.655 --> 00:01:06.455
+This happens because of Python's default string literal appending.
+
+00:01:06.455 --> 00:01:09.790
+If join returns different results than expected,
+
+00:01:09.790 --> 00:01:11.890
+check for missing commas.
+
+00:01:11.890 --> 00:01:15.285
+Also, note that join will trigger an error,
+
+00:01:15.285 --> 00:01:18.145
+if we try to join anything other than strings.
+
+00:01:18.145 --> 00:01:19.920
+We get an error here,
+
+00:01:19.920 --> 00:01:23.020
+because an integer was included in the list.
+
+00:01:23.020 --> 00:01:26.280
+Lastly, a helpful method called append,
+
+00:01:26.280 --> 00:01:28.750
+adds an element to the end of the list.
+
+00:01:28.750 --> 00:01:31.550
+Next, you'll practice working with lists,
+
+00:01:31.550 --> 00:01:33.520
+and explore more list methods.
+

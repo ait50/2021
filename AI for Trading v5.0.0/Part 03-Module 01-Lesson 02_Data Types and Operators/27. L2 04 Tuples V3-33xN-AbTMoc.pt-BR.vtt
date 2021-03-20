@@ -1,0 +1,140 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.580 --> 00:00:02.715
+TIPOS DE DADOS E OPERADORES
+TUPLAS
+
+00:00:02.757 --> 00:00:07.499
+O Python fornece
+outro contêiner útil, Tuplas.
+
+00:00:07.541 --> 00:00:11.462
+As tuplas são usadas para armazenar
+informações relacionadas.
+
+00:00:11.504 --> 00:00:14.559
+Uma tupla é uma estrutura de dados,
+no Python,
+
+00:00:14.601 --> 00:00:18.022
+que é uma sequência de elementos
+ordenada imutável.
+
+00:00:18.064 --> 00:00:22.176
+Observe este exemplo
+com latitude e longitude.
+
+00:00:22.856 --> 00:00:24.784
+As tuplas são parecidas
+com as listas
+
+00:00:24.826 --> 00:00:27.678
+e armazenam uma coleção
+ordenada de objetos
+
+00:00:27.720 --> 00:00:30.319
+que podem ser acessados
+a partir dos índices.
+
+00:00:30.361 --> 00:00:34.646
+Por exemplo, a localização zero
+e a localização um.
+
+00:00:34.688 --> 00:00:38.472
+Diferente das listas,
+as tuplas são imutáveis,
+
+00:00:38.514 --> 00:00:41.694
+não podemos adicionar,
+remover itens das tuplas,
+
+00:00:41.736 --> 00:00:43.895
+nem mudá-los de lugar.
+
+00:00:43.937 --> 00:00:45.271
+Porque usamos tuplas
+
+00:00:45.313 --> 00:00:48.159
+se são como as listas
+e têm menos recursos?
+
+00:00:48.201 --> 00:00:51.199
+As tuplas são úteis
+quando temos dois ou mais valores
+
+00:00:51.241 --> 00:00:55.079
+que são tão próximos
+que sempre serão usados juntos -
+
+00:00:55.121 --> 00:00:58.327
+como as coordenadas
+de latitude e de longitude.
+
+00:00:58.369 --> 00:01:02.058
+As tuplas também podem ser usadas
+para atribuir múltiplas variáveis
+
+00:01:02.100 --> 00:01:03.738
+de forma compacta.
+
+00:01:03.780 --> 00:01:06.896
+Perceba que os valores atribuídos
+às dimensões tuplas
+
+00:01:06.938 --> 00:01:11.035
+não estão entre parênteses
+como nos exemplos anteriores.
+
+00:01:11.077 --> 00:01:14.107
+Os parênteses são opcionais
+ao criar as tuplas,
+
+00:01:14.149 --> 00:01:17.155
+e os programadores frequentemente
+omitem os parênteses
+
+00:01:17.197 --> 00:01:19.533
+quando eles não ajudam
+a esclarecer o código.
+
+00:01:19.575 --> 00:01:22.306
+Na segunda linha,
+três variáveis são atribuídas
+
+00:01:22.348 --> 00:01:24.714
+ao conteúdo
+das dimensões tuplas.
+
+00:01:24.756 --> 00:01:27.480
+Isso é chamado
+de "desempacotamento de tupla".
+
+00:01:27.522 --> 00:01:31.581
+Podemos usá-lo para atribuir
+informações de uma tupla
+
+00:01:31.623 --> 00:01:33.368
+para múltiplas variáveis
+
+00:01:33.410 --> 00:01:36.265
+sem precisar acessá-las
+uma a uma
+
+00:01:36.307 --> 00:01:39.144
+e para criar instruções
+de atribuição múltipla.
+
+00:01:39.186 --> 00:01:43.559
+Neste exemplo, se não precisaremos
+usar as dimensões diretamente,
+
+00:01:43.601 --> 00:01:45.790
+poderemos resumir
+as duas linhas de código
+
+00:01:45.832 --> 00:01:49.799
+em uma linha única que atribui
+três variáveis de uma vez.
+

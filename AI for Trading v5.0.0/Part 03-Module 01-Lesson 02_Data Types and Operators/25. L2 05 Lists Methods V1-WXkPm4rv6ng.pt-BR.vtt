@@ -1,0 +1,122 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.236 --> 00:00:03.131
+TIPOS DE DADOS E OPERADORES
+MÉTODOS DE LISTAS - PARTE 2
+
+00:00:03.173 --> 00:00:06.475
+Apresentarei um novo método string
+que funciona com as listas,
+
+00:00:06.517 --> 00:00:07.804
+o join().
+
+00:00:07.846 --> 00:00:10.035
+Ele pega uma lista
+como argumento
+
+00:00:10.077 --> 00:00:13.036
+e retorna uma string
+com os elementos da lista
+
+00:00:13.078 --> 00:00:15.283
+unidos por uma string
+de separação.
+
+00:00:15.325 --> 00:00:20.146
+Neste exemplo, usamos uma string \n
+como separador,
+
+00:00:20.188 --> 00:00:23.108
+então haverá uma nova linha
+entre cada elemento:
+
+00:00:23.150 --> 00:00:26.498
+fore, nova linha,
+aft, nova linha,
+
+00:00:26.540 --> 00:00:29.443
+starboard, nova linha, port.
+
+00:00:29.485 --> 00:00:33.010
+Também podemos usar outras strings
+como separadores com o join().
+
+00:00:33.052 --> 00:00:35.076
+Aqui usamos um hífen.
+
+00:00:35.118 --> 00:00:38.260
+É importante separar
+cada um dos itens
+
+00:00:38.302 --> 00:00:41.074
+da lista que estamos unindo
+com uma vírgula.
+
+00:00:41.116 --> 00:00:43.866
+Esquecer isso
+não engatilhará um erro,
+
+00:00:43.908 --> 00:00:46.825
+mas teremos
+resultados inesperados.
+
+00:00:46.867 --> 00:00:51.700
+No exemplo abaixo, omitir a vírgula
+entre Garcia e O'Kelly
+
+00:00:51.742 --> 00:00:53.639
+teve o seguinte resultado.
+
+00:00:53.681 --> 00:00:56.575
+Perceba como o separador hífen
+está faltando
+
+00:00:56.617 --> 00:00:58.592
+entre Garcia e O'Kelly.
+
+00:00:58.634 --> 00:01:01.864
+Nesse caso, as duas strings
+foram unidas.
+
+00:01:01.906 --> 00:01:06.704
+Isso acontece graças ao padrão
+de anexação de strings do Python.
+
+00:01:06.746 --> 00:01:09.728
+Se join() retornar um resultado
+que não seja o esperado,
+
+00:01:09.770 --> 00:01:11.400
+confira as vírgulas.
+
+00:01:12.337 --> 00:01:15.143
+Perceba que join()
+engatilhará um erro
+
+00:01:15.185 --> 00:01:18.367
+se tentarmos unir qualquer coisa
+além de strings.
+
+00:01:18.409 --> 00:01:22.657
+Obtivemos um erro aqui porque
+um inteiro foi incluído à lista.
+
+00:01:23.544 --> 00:01:26.224
+Por fim, um método útil
+chamado append
+
+00:01:26.266 --> 00:01:29.056
+adicionará um elemento
+ao fim da lista.
+
+00:01:29.098 --> 00:01:31.495
+A seguir, continuaremos
+vendo as listas
+
+00:01:31.537 --> 00:01:33.225
+explorando
+mais métodos de lista.
+

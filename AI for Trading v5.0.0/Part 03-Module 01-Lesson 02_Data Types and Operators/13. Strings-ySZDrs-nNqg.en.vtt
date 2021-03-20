@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.290 --> 00:00:08.879
+Often programming involves more than numbers and arithmetic.
+
+00:00:08.880 --> 00:00:12.615
+There may be situations where you need to work with text.
+
+00:00:12.615 --> 00:00:14.935
+To work with text in Python,
+
+00:00:14.935 --> 00:00:16.920
+you will need to use a string,
+
+00:00:16.920 --> 00:00:20.835
+which is an immutable ordered series of characters.
+
+00:00:20.835 --> 00:00:24.375
+More on the immutable ordered part later.
+
+00:00:24.375 --> 00:00:27.359
+You can create a string by using quotes.
+
+00:00:27.359 --> 00:00:30.794
+Single or double quotes work equally well,
+
+00:00:30.795 --> 00:00:34.410
+although there are some edge cases, which we will work through.
+
+00:00:34.409 --> 00:00:41.564
+In each of these cases I printed the string "hello" and got the output "hello".
+
+00:00:41.564 --> 00:00:46.974
+We can set a variable to be a string the same way we did with numbers.
+
+00:00:46.975 --> 00:00:49.225
+Strings can include any characters,
+
+00:00:49.225 --> 00:00:53.320
+even spaces, punctuation and numbers.
+
+00:00:53.320 --> 00:00:58.859
+However, what do we do when we want quotation marks in our string?
+
+00:00:58.859 --> 00:01:02.034
+Since we use quotation marks to define our strings,
+
+00:01:02.034 --> 00:01:04.435
+this presents a small problem.
+
+00:01:04.435 --> 00:01:08.325
+Here the code doesn't work the way we want it to.
+
+00:01:08.325 --> 00:01:12.510
+Python offers two solutions to this problem.
+
+00:01:12.510 --> 00:01:19.140
+The first is to place the string in single quotes rather than double quotes, like this.
+
+00:01:19.140 --> 00:01:23.768
+You can use either type of quote to define strings,
+
+00:01:23.768 --> 00:01:30.750
+but sometimes you'll need to define a string that includes both single and double quotes.
+
+00:01:30.750 --> 00:01:33.165
+What then? In that case,
+
+00:01:33.165 --> 00:01:36.535
+you can use the backslash to escape quotes.
+
+00:01:36.534 --> 00:01:40.959
+Here the string is delimited by single quotes.
+
+00:01:40.959 --> 00:01:46.919
+The single quote within the string is preceded by a backslash so that Python
+
+00:01:46.920 --> 00:01:49.375
+knows that it should be interpreted as part of
+
+00:01:49.375 --> 00:01:53.123
+the string rather than the quote that ends the string.
+
+00:01:53.123 --> 00:01:55.550
+Once our strings are defined,
+
+00:01:55.549 --> 00:01:58.519
+there are a few operations that are used for
+
+00:01:58.519 --> 00:02:03.319
+integers and floats that we can also use for strings.
+
+00:02:03.319 --> 00:02:07.684
+For example, we can use the plus sign to put strings together,
+
+00:02:07.685 --> 00:02:11.509
+and we can use multiplication to repeat strings.
+
+00:02:11.509 --> 00:02:14.544
+Let's look at an example of each.
+
+00:02:14.544 --> 00:02:18.359
+Here our variables are holding two words.
+
+00:02:18.360 --> 00:02:24.955
+We can use the plus sign to concatenate the two strings together and print the result.
+
+00:02:24.955 --> 00:02:28.794
+This is fundamentally different from numeric addition.
+
+00:02:28.794 --> 00:02:32.870
+However, notice the two names have been squished together.
+
+00:02:32.870 --> 00:02:34.939
+We're missing a space.
+
+00:02:34.939 --> 00:02:38.930
+Python is completely literal when working with strings.
+
+00:02:38.930 --> 00:02:41.900
+We need to explicitly include spaces and
+
+00:02:41.900 --> 00:02:45.875
+punctuation if we want what we write to make sense.
+
+00:02:45.875 --> 00:02:49.444
+This time we got a string that makes sense,
+
+00:02:49.444 --> 00:02:53.969
+putting the two words together with a space in between.
+
+00:02:53.969 --> 00:02:57.520
+Note that previously I said a white space doesn't matter in
+
+00:02:57.520 --> 00:03:01.936
+between parentheses in bits of code, like print statements.
+
+00:03:01.936 --> 00:03:09.069
+Here with strings, you can see that spaces do matter in between the quotation marks.
+
+00:03:09.069 --> 00:03:12.794
+Let's try another mathematical operation.
+
+00:03:12.794 --> 00:03:16.639
+Turns out we can use the multiplication operator as well.
+
+00:03:16.639 --> 00:03:20.375
+It repeats the string as many times as you multiply it.
+
+00:03:20.375 --> 00:03:22.780
+Here five times.
+
+00:03:22.780 --> 00:03:27.439
+Although addition and multiplication have different applications for strings,
+
+00:03:27.439 --> 00:03:30.530
+subtraction and division do not.
+
+00:03:30.530 --> 00:03:37.157
+Here we get an error that a string is an unsupported type for the division operator.
+
+00:03:37.157 --> 00:03:40.189
+A useful function that's built into Python
+
+00:03:40.189 --> 00:03:44.579
+is Len which can tell us the length of a string.
+
+00:03:44.580 --> 00:03:48.025
+This is just the number of characters in the string.
+
+00:03:48.025 --> 00:03:52.159
+Len is like print in that it's a built-in function that
+
+00:03:52.159 --> 00:03:56.750
+takes in a value in parentheses to perform an action.
+
+00:03:56.750 --> 00:04:03.335
+Len differs from print in that it returns a value that can be stored in a variable.
+
+00:04:03.335 --> 00:04:07.985
+In this example, the Len function outputs to number seven,
+
+00:04:07.985 --> 00:04:11.535
+which is stored in the Udacity length variable.
+
+00:04:11.534 --> 00:04:16.404
+Built-in just means Python provides these functions for us.
+
+00:04:16.404 --> 00:04:19.519
+Later, we'll learn how to define our own functions.
+

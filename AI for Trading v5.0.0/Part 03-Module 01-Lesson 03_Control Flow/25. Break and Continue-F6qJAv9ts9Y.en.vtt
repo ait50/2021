@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.209 --> 00:00:06.915
+For loops iterate over every element in a sequence,
+
+00:00:06.915 --> 00:00:11.693
+and while loops iterate until they're stopping condition is met.
+
+00:00:11.694 --> 00:00:14.430
+This is sufficient for most purposes but we
+
+00:00:14.429 --> 00:00:18.314
+sometimes need more precise control over when a loop should end.
+
+00:00:18.315 --> 00:00:22.050
+In these cases, we use the break keyword.
+
+00:00:22.050 --> 00:00:26.990
+A loop will terminate immediately if it encounters a break statement.
+
+00:00:26.989 --> 00:00:32.018
+We can use this to end the loop if we detect that some condition has been met.
+
+00:00:32.018 --> 00:00:36.359
+The break keyword can be used in both for and while loops.
+
+00:00:36.359 --> 00:00:42.554
+For example, suppose you want to load a cargo ship with a list of items called manifest.
+
+00:00:42.554 --> 00:00:46.664
+This list contains tuples of items and their weights.
+
+00:00:46.664 --> 00:00:50.039
+Ideally, you would like to load all the items on
+
+00:00:50.039 --> 00:00:53.579
+the ship but the ship has a maximum weight capacity.
+
+00:00:53.579 --> 00:00:56.820
+Therefore, when the ship's capacity is reached,
+
+00:00:56.820 --> 00:00:58.755
+you want to stop loading.
+
+00:00:58.755 --> 00:01:02.615
+To accomplish this, let's use a for loop loading
+
+00:01:02.615 --> 00:01:07.594
+each item and keeping track of the weight of all the items we have loaded so far.
+
+00:01:07.594 --> 00:01:11.390
+Here, we check if the ship's total cargo weight reaches
+
+00:01:11.390 --> 00:01:15.605
+its maximum capacity of 100 with each addition of cargo.
+
+00:01:15.605 --> 00:01:19.740
+If it does, we use a break statement to stop loading.
+
+00:01:19.739 --> 00:01:23.299
+If not, we load the next item and add on its weight.
+
+00:01:23.299 --> 00:01:25.715
+Here's what we end up loading.
+
+00:01:25.715 --> 00:01:27.388
+That's not good.
+
+00:01:27.388 --> 00:01:30.890
+The boat is severely over its weight limit of 100.
+
+00:01:30.890 --> 00:01:33.799
+The break statement did prevent us from putting every item on
+
+00:01:33.799 --> 00:01:38.129
+the boat but we still exceeded the limit by 111.
+
+00:01:38.129 --> 00:01:41.829
+It's difficult to see what's gone wrong.
+
+00:01:41.829 --> 00:01:46.060
+One strategy we can use is to add print statements in the code.
+
+00:01:46.060 --> 00:01:49.885
+This is a really handy technique as it can give us some insight
+
+00:01:49.885 --> 00:01:53.770
+into what happens in the code as it's running step-by-step.
+
+00:01:53.769 --> 00:01:57.640
+Having print statements frequently that give context can
+
+00:01:57.640 --> 00:02:01.430
+really assist us in understanding what went wrong here.
+
+00:02:01.430 --> 00:02:04.536
+Here's the loop with debugging statements added.
+
+00:02:04.536 --> 00:02:09.372
+Debugging is the process of identifying and removing errors in your code.
+
+00:02:09.372 --> 00:02:13.845
+Here, we can see that we didn't break until the weight exceeded 100,
+
+00:02:13.844 --> 00:02:17.414
+when really, we should break before that item is added.
+
+00:02:17.414 --> 00:02:20.849
+Additionally, we can see that the cheeses still could
+
+00:02:20.849 --> 00:02:24.120
+have fit if the machine wasn't added.
+
+00:02:24.120 --> 00:02:26.159
+This brings us to another statement.
+
+00:02:26.159 --> 00:02:29.685
+Sometimes, rather than breaking out of the loop completely,
+
+00:02:29.685 --> 00:02:34.680
+there will be times we want to skip simply one iteration of the loop.
+
+00:02:34.680 --> 00:02:38.439
+In this case, we would use the continue keyword.
+
+00:02:38.439 --> 00:02:40.990
+In this example, we iterate through a list of
+
+00:02:40.990 --> 00:02:45.115
+foods and increment account if the food is a fruit.
+
+00:02:45.115 --> 00:02:50.784
+Here, we terminate an iteration if the food is not found in fruit.
+
+00:02:50.784 --> 00:02:53.995
+Otherwise, we add one to fruit count.
+
+00:02:53.995 --> 00:02:57.730
+So when food is hummus or toast in this loop,
+
+00:02:57.729 --> 00:03:00.539
+the rest of the loop is completely skipped.
+

@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.209 --> 00:00:10.134
+We'll go over some good and bad examples of Boolean expressions used in if statements.
+
+00:00:10.134 --> 00:00:13.594
+While true is a valid Boolean expression,
+
+00:00:13.595 --> 00:00:18.769
+it's not exactly useful as a condition as it always evaluates to true.
+
+00:00:18.769 --> 00:00:21.589
+So the intended code will always get run.
+
+00:00:21.589 --> 00:00:25.975
+Similarly, if false is not a condition you should run either,
+
+00:00:25.975 --> 00:00:29.460
+the condition and the if statement would never occur.
+
+00:00:29.460 --> 00:00:33.524
+In this example, is cold or not is cold,
+
+00:00:33.524 --> 00:00:35.939
+will always evaluate to true.
+
+00:00:35.939 --> 00:00:39.339
+If it is cold, then is cold will be true.
+
+00:00:39.340 --> 00:00:43.095
+If it is not cold, then not is code will be true.
+
+00:00:43.094 --> 00:00:48.034
+This has no use as a condition because the indented code will always get run.
+
+00:00:48.034 --> 00:00:50.859
+This code is valid in Python,
+
+00:00:50.859 --> 00:00:52.975
+but it is not a Boolean expression,
+
+00:00:52.975 --> 00:00:55.109
+although it reads like one.
+
+00:00:55.109 --> 00:00:57.670
+The reason is that the expression to the right of
+
+00:00:57.670 --> 00:01:01.505
+or is not a Boolean expression, it's a string.
+
+00:01:01.505 --> 00:01:04.859
+Later, we'll discuss what happens when you use
+
+00:01:04.859 --> 00:01:09.164
+a non-boolean type object in place of Boolean.
+
+00:01:09.165 --> 00:01:11.030
+It takes a few more characters,
+
+00:01:11.030 --> 00:01:14.695
+but this is now unambiguously a Boolean expression.
+
+00:01:14.694 --> 00:01:21.199
+The expressions on both sides of the logical operator or are each checking something.
+
+00:01:21.200 --> 00:01:23.269
+This is a valid condition,
+
+00:01:23.269 --> 00:01:26.589
+but we could express it more briefly and clearly.
+
+00:01:26.590 --> 00:01:30.170
+Is cold is a Booolean expression on its own right,
+
+00:01:30.170 --> 00:01:35.525
+so we can make the code more readable by using the variable itself instead.
+
+00:01:35.525 --> 00:01:38.705
+If you want to check whether a Boolean is false,
+
+00:01:38.704 --> 00:01:41.310
+you can use the "not" operator.
+
+00:01:41.310 --> 00:01:45.370
+Let's summarize the lessons from these examples.
+
+00:01:45.370 --> 00:01:48.060
+True and False are both Booleans,
+
+00:01:48.060 --> 00:01:52.000
+but it doesn't make sense to use if True or if False.
+
+00:01:52.000 --> 00:01:54.969
+Logical operators and, or,
+
+00:01:54.969 --> 00:01:57.519
+and not have specific meanings that
+
+00:01:57.519 --> 00:02:01.239
+aren't quite the same as their meanings in plain English.
+
+00:02:01.239 --> 00:02:06.569
+Make sure your Boolean expressions are being evaluated the way you expect them to.
+
+00:02:06.569 --> 00:02:12.129
+Don't compare a variable that is a Boolean with equals true or equals false.
+
+00:02:12.129 --> 00:02:17.069
+This comparison isn't necessary since the variable itself is a Boolean expression.
+

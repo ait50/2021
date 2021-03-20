@@ -1,0 +1,132 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.901 --> 00:00:03.467
+Olhando de volta
+para a nossa lista de cargas,
+
+00:00:03.501 --> 00:00:07.167
+observe que cada elemento
+é uma tupla de tamanho dois.
+
+00:00:07.200 --> 00:00:11.834
+Iteragir uma lista com valores
+múltiplos pode ser bem útil.
+
+00:00:11.868 --> 00:00:15.934
+Na verdade, é muito fácil combinar
+e separar listas assim.
+
+00:00:16.834 --> 00:00:20.100
+Se começamos originalmente
+com essas duas listas separadas,
+
+00:00:20.133 --> 00:00:21.734
+"items" e "weights" ("pesos"),
+
+00:00:21.767 --> 00:00:25.734
+e quisermos combiná-las para criar
+uma lista como "manifest",
+
+00:00:25.767 --> 00:00:29.133
+podemos usar uma função
+integrada chamada "zip".
+
+00:00:29.167 --> 00:00:33.267
+"Zip" devolve um iterador, então
+precisamos convertê-lo a uma lista
+
+00:00:33.300 --> 00:00:34.801
+para ver os elementos.
+
+00:00:34.834 --> 00:00:37.534
+Ou iterá-lo com um loop "for"
+
+00:00:37.567 --> 00:00:41.067
+se quisermos imprimir os valores,
+semelhante ao intervalo.
+
+00:00:41.100 --> 00:00:43.334
+Também podemos
+"desempacotar" cada tupla
+
+00:00:43.367 --> 00:00:45.801
+em um loop "for" como esse.
+
+00:00:45.834 --> 00:00:49.868
+Além de "zipar" duas listas juntas,
+você também pode "deszipá-la"
+
+00:00:49.901 --> 00:00:51.801
+usando um asterisco.
+
+00:00:51.834 --> 00:00:55.267
+Por exemplo, usando a lista
+"manifesto" desse jeito,
+
+00:00:55.300 --> 00:01:00.067
+você pode separá-la em uma lista
+de itens e uma de pesos, como essa.
+
+00:01:00.100 --> 00:01:03.267
+A próxima função que veremos
+é a de enumerar.
+
+00:01:03.300 --> 00:01:07.100
+Muitas vezes, será útil iterar
+os valores de uma lista
+
+00:01:07.133 --> 00:01:09.200
+junto com o index.
+
+00:01:09.234 --> 00:01:11.801
+Essa é uma forma
+de fazer isso.
+
+00:01:11.834 --> 00:01:15.234
+Usa-se um loop "for" para iterar
+uma lista de tuplas
+
+00:01:15.267 --> 00:01:19.801
+contendo o index e o valor
+de cada item da lista.
+
+00:01:19.868 --> 00:01:21.367
+Os índices são criados
+
+00:01:21.400 --> 00:01:23.968
+quando se obtém um objeto
+de intervalo do zero
+
+00:01:24.000 --> 00:01:26.467
+até a extensão dos itens
+menos um
+
+00:01:26.501 --> 00:01:29.267
+e "zipando-os"
+com os valores em itens.
+
+00:01:29.300 --> 00:01:31.934
+Enumerar é uma função
+integrada (built-in) especial,
+
+00:01:31.968 --> 00:01:34.234
+que torna a tarefa
+muito mais fácil.
+
+00:01:34.267 --> 00:01:39.000
+Enumerar devolve essas tuplas
+com índices e valores de uma lista
+
+00:01:39.033 --> 00:01:41.567
+em um iterável para você.
+
+00:01:41.601 --> 00:01:44.834
+Você vai praticar
+usando o "zip" e enumerar
+
+00:01:44.868 --> 00:01:47.701
+e verá o quanto podem ser úteis
+no próximo teste.
+

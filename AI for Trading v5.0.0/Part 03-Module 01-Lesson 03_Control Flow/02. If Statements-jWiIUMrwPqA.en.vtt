@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.120 --> 00:00:08.745
+We've been running code that simply executes every line one by one from the top down.
+
+00:00:08.744 --> 00:00:14.339
+Many times however, we want to run code only if a particular condition holds.
+
+00:00:14.339 --> 00:00:16.364
+To demonstrate this concept,
+
+00:00:16.364 --> 00:00:20.894
+let's take a look at this billing system for a pay-as-you-go mobile phone.
+
+00:00:20.894 --> 00:00:23.429
+Say a customer has a credit balance for
+
+00:00:23.429 --> 00:00:27.225
+their phone which they can use for calls and messages.
+
+00:00:27.225 --> 00:00:31.080
+The customer can then set up a link to their bank account so that
+
+00:00:31.079 --> 00:00:34.769
+if their phone credit balance goes below a threshold amount,
+
+00:00:34.770 --> 00:00:36.765
+in this case five dollars,
+
+00:00:36.765 --> 00:00:41.689
+then 10 more dollars of credit are added and their bank balance is build.
+
+00:00:41.689 --> 00:00:46.429
+Here is a simple way of representing this billing system in code.
+
+00:00:46.429 --> 00:00:49.009
+If the phone balance is below five,
+
+00:00:49.009 --> 00:00:53.629
+add 10 to phone balance and subtract 10 from bank balance.
+
+00:00:53.630 --> 00:00:56.795
+This is an example of an if statement.
+
+00:00:56.795 --> 00:01:00.770
+An if statement is a conditional statement that runs or
+
+00:01:00.770 --> 00:01:05.465
+skips code based on whether a condition is true or false.
+
+00:01:05.465 --> 00:01:10.475
+In an if statement, the if keyword is followed by the condition to be checked,
+
+00:01:10.474 --> 00:01:13.131
+in this case, phone balanced less than five,
+
+00:01:13.132 --> 00:01:15.380
+and then a colon.
+
+00:01:15.379 --> 00:01:16.989
+The condition is specified in
+
+00:01:16.989 --> 00:01:21.664
+a Boolean expression that evaluates to either true or false.
+
+00:01:21.665 --> 00:01:27.815
+After this line is an indented block of code to be executed if the condition is true.
+
+00:01:27.814 --> 00:01:29.435
+So in this case,
+
+00:01:29.435 --> 00:01:35.030
+these lines will only execute if it is true that phone balance is less than five.
+
+00:01:35.030 --> 00:01:36.909
+If phone balance is three,
+
+00:01:36.909 --> 00:01:42.859
+this condition evaluates to true and these indented lines of code are executed.
+
+00:01:42.859 --> 00:01:46.549
+You can observe these changes in the output.
+
+00:01:46.549 --> 00:01:48.439
+If phone balance is eight however,
+
+00:01:48.439 --> 00:01:53.370
+this condition evaluates to false and these lines are not executed.
+
+00:01:53.370 --> 00:01:55.290
+As you see in the output,
+
+00:01:55.290 --> 00:01:58.109
+there were no changes to phone or bank balance,
+
+00:01:58.109 --> 00:02:03.200
+which is what we expect to happen since the condition in this if statement was false.
+

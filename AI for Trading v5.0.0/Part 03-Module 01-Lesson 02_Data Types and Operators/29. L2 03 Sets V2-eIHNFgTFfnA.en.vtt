@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.720 --> 00:00:06.330
+Imagine that you run a popular search engine,
+
+00:00:06.330 --> 00:00:09.815
+and you've surveyed your users to see where they're browsing from.
+
+00:00:09.815 --> 00:00:15.900
+You've collected the 785 responses and have assembled them into a list of countries.
+
+00:00:15.900 --> 00:00:19.195
+There aren't 785 countries in the world,
+
+00:00:19.195 --> 00:00:22.645
+which means that there are duplicate entries in the country's list.
+
+00:00:22.645 --> 00:00:26.880
+Slicing the list to see the first few elements confirms this.
+
+00:00:26.880 --> 00:00:30.080
+It will be useful to remove the duplicates to
+
+00:00:30.080 --> 00:00:33.760
+produce a list of all the countries that users browse from.
+
+00:00:33.760 --> 00:00:37.025
+Well, a set in Python does exactly that.
+
+00:00:37.025 --> 00:00:41.875
+Sets our containers of unique elements without any particular ordering.
+
+00:00:41.875 --> 00:00:45.320
+We can create a set from a list like this.
+
+00:00:45.320 --> 00:00:49.100
+Set removes the duplicates and the print function prints
+
+00:00:49.100 --> 00:00:53.245
+the unique values of which there are 196 countries.
+
+00:00:53.245 --> 00:00:57.405
+Sets support the in operator the same way lists do.
+
+00:00:57.405 --> 00:00:59.865
+India is in this set.
+
+00:00:59.865 --> 00:01:02.900
+You can add elements to sets where you
+
+00:01:02.900 --> 00:01:05.665
+don't use the append method like you do with lists,
+
+00:01:05.665 --> 00:01:08.455
+instead, sets have the add method.
+
+00:01:08.455 --> 00:01:10.685
+Here, Italy is added.
+
+00:01:10.685 --> 00:01:14.250
+Sets also have a pop method just like lists.
+
+00:01:14.250 --> 00:01:16.620
+When you pop an element from a set,
+
+00:01:16.620 --> 00:01:18.725
+a random element is removed.
+
+00:01:18.725 --> 00:01:21.430
+Remember that sets, unlike lists,
+
+00:01:21.430 --> 00:01:24.935
+are unordered, so there is no last element.
+
+00:01:24.935 --> 00:01:27.920
+Other operations you can perform with sets,
+
+00:01:27.920 --> 00:01:30.415
+include those of mathematical sets.
+
+00:01:30.415 --> 00:01:33.480
+Methods like union, intersection,
+
+00:01:33.480 --> 00:01:36.830
+and difference are easy to perform with sets and
+
+00:01:36.830 --> 00:01:40.760
+are much faster than such operators with other containers.
+

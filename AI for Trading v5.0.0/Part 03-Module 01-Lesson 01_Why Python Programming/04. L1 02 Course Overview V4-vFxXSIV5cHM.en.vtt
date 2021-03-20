@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.299 --> 00:00:07.710
+Whether you're a beginner in programming or have experience in other languages,
+
+00:00:07.710 --> 00:00:13.000
+this course is well-structured to help you develop fluency in Python.
+
+00:00:13.000 --> 00:00:15.015
+Each lesson includes videos,
+
+00:00:15.015 --> 00:00:19.710
+text summaries, quizzes and coding activities for each concept.
+
+00:00:19.710 --> 00:00:22.245
+If you'd like to move through the course faster,
+
+00:00:22.245 --> 00:00:26.250
+you can skip directly to text summaries and quizzes to test your knowledge,
+
+00:00:26.250 --> 00:00:29.085
+and go back to videos if you get stuck.
+
+00:00:29.085 --> 00:00:31.964
+However, if you are new to programming,
+
+00:00:31.964 --> 00:00:37.009
+I strongly recommend watching the videos for a detailed walk-through of each topic.
+
+00:00:37.009 --> 00:00:39.989
+Here's an overview of what you learn.
+
+00:00:39.990 --> 00:00:43.575
+You'll start off learning about the basics of python in lesson two;
+
+00:00:43.575 --> 00:00:46.310
+data types and operators.
+
+00:00:46.310 --> 00:00:50.195
+These are the building blocks you use to write your programs.
+
+00:00:50.195 --> 00:00:54.429
+In lesson three, you'll dive into control flow tools.
+
+00:00:54.429 --> 00:00:56.740
+You learn about conditional statements,
+
+00:00:56.740 --> 00:01:00.609
+loops, built-in functions, and list comprehensions.
+
+00:01:00.609 --> 00:01:02.545
+With control flow tools,
+
+00:01:02.545 --> 00:01:06.055
+you'll be able to write more complex and creative code.
+
+00:01:06.055 --> 00:01:10.945
+In lesson four, you'll learn about function definitions, variable scope,
+
+00:01:10.944 --> 00:01:16.479
+documentation, lambda expressions, iterators, and generators.
+
+00:01:16.480 --> 00:01:19.000
+This is where things can become a little tricky.
+
+00:01:19.000 --> 00:01:20.650
+But these are also some of
+
+00:01:20.650 --> 00:01:25.450
+the most important tools you'll need to use in day-to-day practice.
+
+00:01:25.450 --> 00:01:28.600
+Finally, the last lesson will show you how to run your code
+
+00:01:28.599 --> 00:01:33.265
+locally and scripts that take in raw input and work with files.
+
+00:01:33.265 --> 00:01:37.480
+You'll also learn about error handling and importing different libraries.
+
+00:01:37.480 --> 00:01:40.030
+I know this looks like a lot of content,
+
+00:01:40.030 --> 00:01:42.144
+but there's plenty of review and practice
+
+00:01:42.144 --> 00:01:45.000
+throughout the course to reinforce what you're learning.
+

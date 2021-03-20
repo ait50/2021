@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.283
+Welcome to this lesson on data types and operators.
+
+00:00:04.283 --> 00:00:07.410
+This is a very important lesson because it's where you'll learn about
+
+00:00:07.410 --> 00:00:11.445
+the building blocks of Python datatypes and operators.
+
+00:00:11.445 --> 00:00:14.880
+Students tend to learn how to program at different rates.
+
+00:00:14.880 --> 00:00:17.609
+Take your time understanding each of the concepts that
+
+00:00:17.609 --> 00:00:21.285
+follow and getting practice with activities in this lesson.
+
+00:00:21.285 --> 00:00:25.740
+Having a firm grasp on these building blocks will provide a strong foundation
+
+00:00:25.739 --> 00:00:30.464
+for future lessons and essential skills to continue programming beyond this course.
+
+00:00:30.464 --> 00:00:34.979
+Throughout this course, we'll go through code examples using these boxes.
+
+00:00:34.979 --> 00:00:40.064
+This first box represents the Code Editor which is where we will input our Python code,
+
+00:00:40.064 --> 00:00:41.849
+and the second box represents
+
+00:00:41.850 --> 00:00:45.045
+the output window which is where our results will be displayed.
+
+00:00:45.045 --> 00:00:47.910
+You can follow along with the video examples in
+
+00:00:47.909 --> 00:00:51.974
+the classroom by typing in the code editor below each video.
+
+00:00:51.975 --> 00:00:58.230
+Click the Test Run button to run your code and view the results in the output window.
+
+00:00:58.229 --> 00:01:01.079
+You'll be seeing this print function pretty often.
+
+00:01:01.079 --> 00:01:03.824
+It helps us see what's going on in our code.
+
+00:01:03.825 --> 00:01:08.335
+For example, let's say you wanted to compute three plus five.
+
+00:01:08.334 --> 00:01:10.519
+If we run this line of code,
+
+00:01:10.519 --> 00:01:13.789
+Python would still add three and five but we wouldn't see
+
+00:01:13.790 --> 00:01:17.734
+the result because we didn't tell Python to do anything with it.
+
+00:01:17.734 --> 00:01:24.432
+Print is a useful built-in function in Python that we can use to display our results.
+
+00:01:24.433 --> 00:01:27.080
+All we have to do is type in Print followed by
+
+00:01:27.079 --> 00:01:30.679
+parentheses around whatever we want printed.
+
+00:01:30.680 --> 00:01:34.835
+You will be using Print often as you get to know the building blocks of Python,
+
+00:01:34.834 --> 00:01:36.849
+its data types and operators.
+

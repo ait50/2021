@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.950 --> 00:00:07.515
+We've already set mv_ population to this value.
+
+00:00:07.514 --> 00:00:11.509
+But what if we want to update it now that the population changed?
+
+00:00:11.509 --> 00:00:17.100
+We can just assign this variable again to its new value which we found to be 78,128 or
+
+00:00:17.100 --> 00:00:27.190
+if we got this new value because we knew 4,000 moved to Mountain View and 600 moved away,
+
+00:00:27.190 --> 00:00:30.920
+we could just apply those changes directly to this variable.
+
+00:00:30.920 --> 00:00:35.730
+In this line, the variable mv_population is being assigned to
+
+00:00:35.729 --> 00:00:42.089
+itself plus 4000 minus 600 which results in 78,128.
+
+00:00:42.090 --> 00:00:47.280
+Because this kind of increment and reassign operation is very common,
+
+00:00:47.280 --> 00:00:51.375
+Python actually has special assignment operators for this.
+
+00:00:51.375 --> 00:00:55.594
+Instead of using mv_population twice in one line,
+
+00:00:55.594 --> 00:00:58.890
+we can actually use this plus equals operator to tell
+
+00:00:58.890 --> 00:01:03.965
+Python we are incrementing the variable on the left by the value on the right.
+
+00:01:03.965 --> 00:01:09.055
+Plus equals is one example of another assignment operator in Python,
+
+00:01:09.055 --> 00:01:11.625
+minus equals is another,
+
+00:01:11.625 --> 00:01:13.545
+and there are a bunch more.
+
+00:01:13.545 --> 00:01:19.105
+These are actually just all the arithmetic operators followed by an equal sign.
+
+00:01:19.105 --> 00:01:23.800
+All of these operators just apply the arithmetic operation to the variable on
+
+00:01:23.799 --> 00:01:29.959
+the left with the value on the right and makes your code more concise which is good.
+
+00:01:29.959 --> 00:01:34.000
+Check out the text below this video for more assignment operators.
+

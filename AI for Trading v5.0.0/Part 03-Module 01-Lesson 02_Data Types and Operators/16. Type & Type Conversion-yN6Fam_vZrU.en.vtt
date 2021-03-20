@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.540 --> 00:00:06.669
+Up until now, we've discussed four data types in Python: Int,
+
+00:00:06.669 --> 00:00:10.015
+float, bool, and string.
+
+00:00:10.015 --> 00:00:12.669
+If you recall from our previous video,
+
+00:00:12.669 --> 00:00:18.740
+you can check the type of any object directly using the built-in function type.
+
+00:00:18.739 --> 00:00:24.554
+Using type, we can observe that the same number can be coded in different types,
+
+00:00:24.554 --> 00:00:27.509
+each with their own set of behaviors.
+
+00:00:27.510 --> 00:00:29.775
+As a side note, here,
+
+00:00:29.774 --> 00:00:34.789
+we're calling a function print on the output of another function type.
+
+00:00:34.789 --> 00:00:39.670
+We use parenthesis to define the order in which functions get run.
+
+00:00:39.670 --> 00:00:43.450
+What's contained in one set of parenthesis needs to be
+
+00:00:43.450 --> 00:00:48.435
+evaluated first before being given as input to the next function.
+
+00:00:48.435 --> 00:00:54.079
+Here, the type function is run first and then its output is printed.
+
+00:00:54.079 --> 00:00:57.229
+Different types have different properties.
+
+00:00:57.229 --> 00:00:59.824
+And when you're designing on computer program,
+
+00:00:59.825 --> 00:01:05.075
+you'll need to choose the types for your data based on how you're going to use them.
+
+00:01:05.075 --> 00:01:09.719
+For example, if you want to use a number as a part of a sentence,
+
+00:01:09.719 --> 00:01:13.525
+it'll be easiest if that number is a string.
+
+00:01:13.525 --> 00:01:16.185
+If you want to encode a true-false value,
+
+00:01:16.185 --> 00:01:20.850
+it'll be much easier to manipulate as a boolean than a string.
+
+00:01:20.849 --> 00:01:22.384
+Why is it easier?
+
+00:01:22.385 --> 00:01:26.960
+There are specially designed functions for working with each data type.
+
+00:01:26.959 --> 00:01:28.804
+You'll learn about these soon.
+
+00:01:28.805 --> 00:01:34.205
+You might also have situations where you don't control the type of data that you receive,
+
+00:01:34.204 --> 00:01:36.429
+but you still need to use it.
+
+00:01:36.430 --> 00:01:38.230
+The good news is that you can create
+
+00:01:38.230 --> 00:01:42.560
+new objects from old and change a type in the process.
+
+00:01:42.560 --> 00:01:46.135
+We went over this in the integers and floats video.
+
+00:01:46.135 --> 00:01:53.219
+For example, here, we create an int from a float and assign it to a variable count.
+
+00:01:53.219 --> 00:01:56.329
+Here, we create a string out of
+
+00:01:56.329 --> 00:02:00.944
+the house_number and use that to build a larger address string.
+
+00:02:00.944 --> 00:02:03.084
+First, we have the house_number,
+
+00:02:03.084 --> 00:02:06.274
+as well as the street and town_name.
+
+00:02:06.275 --> 00:02:09.344
+You can see that the house_number is currently an int.
+
+00:02:09.344 --> 00:02:12.359
+We can change it to a string, like this,
+
+00:02:12.360 --> 00:02:16.560
+and use the plus operator to create the full address.
+
+00:02:16.560 --> 00:02:20.099
+You can also build a number from a string like this.
+
+00:02:20.099 --> 00:02:23.564
+Here, we start with a string of 35.
+
+00:02:23.564 --> 00:02:25.789
+But by wrapping it in a float function,
+
+00:02:25.789 --> 00:02:28.009
+we can see the type has now changed.
+

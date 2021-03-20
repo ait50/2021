@@ -1,0 +1,764 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: Dictionaries and Identity Operators
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Types and Operators
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Arithmetic Operators.html">
+       02. Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Arithmetic Operators.html">
+       03. Quiz: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Arithmetic Operators.html">
+       04. Solution: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Variables and Assignment Operators.html">
+       05. Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Variables and Assignment Operators.html">
+       06. Quiz: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Solution Variables and Assignment Operators.html">
+       07. Solution: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Integers and Floats.html">
+       08. Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Integers and Floats.html">
+       09. Quiz: Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Booleans, Comparison Operators, and Logical Operators.html">
+       10. Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz Booleans, Comparison Operators, and Logical Operators.html">
+       11. Quiz: Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution Booleans, Comparison and Logical Operators.html">
+       12. Solution: Booleans, Comparison and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Strings.html">
+       13. Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Strings.html">
+       14. Quiz: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Strings.html">
+       15. Solution: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Type and Type Conversion.html">
+       16. Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Quiz Type and Type Conversion.html">
+       17. Quiz: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Solution Type and Type Conversion.html">
+       18. Solution: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="19. String Methods.html">
+       19. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="20. String Methods.html">
+       20. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Another String Method - Split.html">
+       21. Another String Method - Split
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Lists and Membership Operators.html">
+       22. Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Lists and Membership Operators.html">
+       23. Quiz: Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Solution List and Membership Operators.html">
+       24. Solution: List and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="25. List Methods.html">
+       25. List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Quiz List Methods.html">
+       26. Quiz: List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Tuples.html">
+       27. Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Quiz Tuples.html">
+       28. Quiz: Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Sets.html">
+       29. Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Quiz Sets.html">
+       30. Quiz: Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Dictionaries and Identity Operators.html">
+       31. Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Quiz Dictionaries and Identity Operators.html">
+       32. Quiz: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Solution Dictionaries and Identity Operators.html">
+       33. Solution: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Quiz More With Dictionaries.html">
+       34. Quiz: More With Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Compound Data Structures.html">
+       35. Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Quiz Compound Data Structures.html">
+       36. Quiz: Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Solution Compound Data Structions.html">
+       37. Solution: Compound Data Structions
+      </a>
+     </li>
+     <li class="">
+      <a href="38. Conclusion.html">
+       38. Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="39. Summary.html">
+       39. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          32. Quiz: Dictionaries and Identity Operators
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="quiz-define-a-dictionary">
+          Quiz: Define a Dictionary
+         </h2>
+         <p>
+          Define a dictionary named
+          <code>
+           population
+          </code>
+          that contains this data:
+         </p>
+         <table>
+          <thead>
+           <tr>
+            <th id="**keys**">
+             <strong>
+              Keys
+             </strong>
+            </th>
+            <th id="**values**">
+             <strong>
+              Values
+             </strong>
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td>
+             Shanghai
+            </td>
+            <td>
+             17.8
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Istanbul
+            </td>
+            <td>
+             13.3
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Karachi
+            </td>
+            <td>
+             13.0
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Mumbai
+            </td>
+            <td>
+             12.5
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="474113-popdict-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#474113-popdict-py" id="tab-474113-popdict-py" role="tab">
+            popdict.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-474113-popdict-py" class="tab-pane active show" id="474113-popdict-py" role="tabpanel">
+            <pre><code></code># Define a Dictionary, population,
+# that provides information
+# on the world's largest cities.
+# The key is the name of a city
+# (a string), and the associated
+# value is its population in
+# millions of people.
+
+#   Key     |   Value
+# Shanghai  |   17.8
+# Istanbul  |   13.3
+# Karachi   |   13.0
+# Mumbai    |   12.5</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Immutable Keys
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Which of these could be used as the key for a dictionary? (Choose all that apply.)
+             <br/>
+             Hint: Dictionary keys must be immutable, that is, they must be of a type that is not modifiable.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512763384298" name="474250" type="checkbox" value="a1512763384298"/>
+           <label for="a1512763384298">
+            <p>
+             <code>
+              str
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512763421020" name="474250" type="checkbox" value="a1512763421020"/>
+           <label for="a1512763421020">
+            <p>
+             <code>
+              list
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512763421545" name="474250" type="checkbox" value="a1512763421545"/>
+           <label for="a1512763421545">
+            <p>
+             <code>
+              int
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512763422063" name="474250" type="checkbox" value="a1512763422063"/>
+           <label for="a1512763422063">
+            <p>
+             <code>
+              float
+             </code>
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            `str`
+           </li>
+           <li>
+            `int`
+           </li>
+           <li>
+            `float`
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Quiz: Looking Up What Isn't There
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What happens if we look up a value that isn't in the dictionary? Create a test dictionary and use the square brackets to look up a value that you haven't defined. What happens?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512763525117" name="474252" type="radio" value="a1512763525117"/>
+           <label for="a1512763525117">
+            <p>
+             The lookup returns
+             <code>
+              None
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512763543169" name="474252" type="radio" value="a1512763543169"/>
+           <label for="a1512763543169">
+            <p>
+             The key is added to the dictionary with a default value of None
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512763543691" name="474252" type="radio" value="a1512763543691"/>
+           <label for="a1512763543691">
+            <p>
+             A
+             <code>
+              KeyError
+             </code>
+             occurs
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512763544153" name="474252" type="radio" value="a1512763544153"/>
+           <label for="a1512763544153">
+            <p>
+             Python searches the Internet for an appropriate value
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          A `KeyError` occurs
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="get-with-a-default-value">
+          <code>
+           get
+          </code>
+          with a Default Value
+         </h2>
+         <p>
+          Dictionaries have a related method that's also useful,
+          <code>
+           get()
+          </code>
+          .
+          <code>
+           get()
+          </code>
+          looks up values in a dictionary, but unlike looking up values with square brackets,
+          <code>
+           get()
+          </code>
+          returns
+          <code>
+           None
+          </code>
+          (or a default value of your choice) if the key isn't found. If you expect lookups to sometimes fail,
+          <code>
+           get()
+          </code>
+          might be a better tool than normal square bracket lookups.
+         </p>
+         <pre><code class="python language-python">&gt;&gt;&gt; elements.get('dilithium')
+None
+&gt;&gt;&gt; elements['dilithium']
+KeyError: 'dilithium'
+&gt;&gt;&gt; elements.get('kryptonite', 'There\'s no such element!')
+"There's no such element!"</code></pre>
+         <p>
+          In the last example we specified a default value (the string 'There's no such element!') to be returned instead of
+          <code>
+           None
+          </code>
+          when the key is not found.
+         </p>
+         <h2 id="checking-for-equality-vs-identity--vs-is">
+          Checking for Equality vs. Identity:
+          <code>
+           ==
+          </code>
+          vs.
+          <code>
+           is
+          </code>
+         </h2>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Checking for Equality vs. Identity
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What will the output of the following code be? (Treat the commas in the multiple choice answers as newlines.)
+            </p>
+            <pre><code class="python language-python">a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+
+print(a == b)
+print(a is b)
+print(a == c)
+print(a is c)</code></pre>
+            <p>
+             There is a playground workspace further down this page that you can use to try it out.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512764280834" name="474259" type="radio" value="a1512764280834"/>
+           <label for="a1512764280834">
+            <p>
+             True, True, True, True
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512764503835" name="474259" type="radio" value="a1512764503835"/>
+           <label for="a1512764503835">
+            <p>
+             True, False, True, False
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512764504391" name="474259" type="radio" value="a1512764504391"/>
+           <label for="a1512764504391">
+            <p>
+             True, True, True, False
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512764504903" name="474259" type="radio" value="a1512764504903"/>
+           <label for="a1512764504903">
+            <p>
+             True, True, False, False
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          True, True, True, False
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="474261-equality_identity-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#474261-equality_identity-py" id="tab-474261-equality_identity-py" role="tab">
+            equality_identity.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-474261-equality_identity-py" class="tab-pane active show" id="474261-equality_identity-py" role="tabpanel">
+            <pre><code></code># Test the code here if you'd like
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="33. Solution Dictionaries and Identity Operators.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('32. Quiz: Dictionaries and Identity Operators')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

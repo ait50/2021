@@ -1,0 +1,231 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:02.333
+LISTAS E OPERADORES DE ASSOCIAÇÃO,
+PARTE 1
+
+00:00:02.375 --> 00:00:04.700
+Vimos pedaços individuais
+de dados
+
+00:00:04.742 --> 00:00:06.900
+como a string e o número.
+
+00:00:06.942 --> 00:00:08.099
+Eles são bons,
+
+00:00:08.141 --> 00:00:11.132
+mas a capacidade do Python
+de compor programas poderosos
+
+00:00:11.174 --> 00:00:12.466
+é amplificada
+
+00:00:12.508 --> 00:00:15.733
+quando trabalhamos
+com os contêineres de dados,
+
+00:00:15.775 --> 00:00:17.566
+que contém outros tipos
+de dados
+
+00:00:17.608 --> 00:00:19.700
+e até mesmo
+outros contêineres.
+
+00:00:19.742 --> 00:00:24.166
+Vejamos nosso primeiro
+container Python, lista.
+
+00:00:24.208 --> 00:00:26.999
+Ele é uma estrutura de dados
+no Python
+
+00:00:27.041 --> 00:00:30.533
+que é uma sequência ordenada
+mutável de elementos.
+
+00:00:30.575 --> 00:00:33.300
+Falaremos mais
+sobre a parte mutável depois.
+
+00:00:35.000 --> 00:00:38.099
+Esse código define
+a variável months,
+
+00:00:38.141 --> 00:00:40.299
+que contém uma lista
+de strings.
+
+00:00:40.341 --> 00:00:43.434
+Cada elemento da lista
+é um mês do ano.
+
+00:00:44.067 --> 00:00:46.633
+Uma lista é definida
+com colchetes
+
+00:00:46.675 --> 00:00:51.132
+e sempre contém dados
+separados por vírgulas.
+
+00:00:51.174 --> 00:00:55.933
+Os dados podem ser uma mistura
+de qualquer tipo de dados.
+
+00:00:55.975 --> 00:01:00.366
+A lista possui uma ordem ou,
+melhor dizendo, é ordenada.
+
+00:01:00.408 --> 00:01:03.266
+Podemos procurar
+elementos individuais na lista
+
+00:01:03.308 --> 00:01:04.967
+pelo índice deles.
+
+00:01:05.009 --> 00:01:08.032
+Podemos procurar por valores
+desta forma:
+
+00:01:08.074 --> 00:01:11.600
+digitamos o nome da lista
+seguido por colchetes
+
+00:01:11.642 --> 00:01:15.933
+com um inteiro indicando
+a posição dele ou o índice.
+
+00:01:15.975 --> 00:01:19.366
+Perceba que o primeiro elemento
+da lista, "January",
+
+00:01:19.408 --> 00:01:23.600
+está localizado no índice zero,
+e não no índice um.
+
+00:01:23.642 --> 00:01:26.800
+Muitas linguagens de programação
+seguem essa convenção.
+
+00:01:26.842 --> 00:01:29.232
+Chamamos isso de "indexação
+a partir do zero".
+
+00:01:29.274 --> 00:01:31.833
+Se isso for confuso,
+
+00:01:31.875 --> 00:01:33.433
+pense da seguinte forma:
+
+00:01:33.475 --> 00:01:37.066
+o índice de um elemento
+descreve a distância dele
+
+00:01:37.108 --> 00:01:39.066
+em relação
+ao início da lista.
+
+00:01:39.108 --> 00:01:43.233
+O primeiro está a zero elemento
+de distância do início,
+
+00:01:43.275 --> 00:01:47.066
+o segundo está a um elemento
+de distância, e assim por diante.
+
+00:01:47.108 --> 00:01:50.032
+Também podemos indexar
+a partir do fim da lista,
+
+00:01:50.074 --> 00:01:53.333
+e não a partir do início,
+como fizemos até agora.
+
+00:01:53.375 --> 00:01:56.032
+Para isso, utilizamos
+índices negativos.
+
+00:01:56.074 --> 00:01:59.800
+Por exemplo, podemos pegar
+o último mês do ano.
+
+00:01:59.842 --> 00:02:03.867
+O índice -1 faz referência
+ao último elemento da lista,
+
+00:02:03.909 --> 00:02:08.099
+-2, ao penúltimo,
+e assim por diante.
+
+00:02:08.141 --> 00:02:11.600
+Perceba que embora zero
+seja o primeiro índice da lista,
+
+00:02:11.642 --> 00:02:13.766
+zero negativo
+não será o último,
+
+00:02:13.808 --> 00:02:15.900
+e isso pode ser
+um pouco confuso.
+
+00:02:15.942 --> 00:02:20.833
+Ao tentar acessar um índice
+em uma lista que não existe,
+
+00:02:20.875 --> 00:02:23.900
+você receberá uma lista
+de exceções de índice.
+
+00:02:23.942 --> 00:02:28.099
+É assim que o Python informa
+que tentamos acessar um índice
+
+00:02:28.141 --> 00:02:30.366
+que não está na lista.
+
+00:02:30.408 --> 00:02:33.433
+Como o índice 25 não existe,
+
+00:02:33.475 --> 00:02:35.501
+recebemos este erro.
+
+00:02:36.167 --> 00:02:38.500
+Os erros de índice
+são algo comum,
+
+00:02:38.542 --> 00:02:41.633
+principalmente quando não estamos
+acostumados a fazer isso.
+
+00:02:41.675 --> 00:02:44.733
+Podemos ver muitos erros
+no começo.
+
+00:02:44.775 --> 00:02:47.666
+A razão mais comum
+para um erro de índice
+
+00:02:47.708 --> 00:02:50.600
+é utilizar um índice
+que perde por um,
+
+00:02:50.642 --> 00:02:54.299
+mas pode haver outros motivos
+para um erro.
+
+00:02:54.341 --> 00:02:57.333
+É sempre bom utilizar
+a função print
+
+00:02:57.375 --> 00:02:59.833
+e depurar
+com um pequeno exemplo.
+
+00:02:59.875 --> 00:03:03.667
+Isso informará se o índice
+está fora e por qual valor.
+

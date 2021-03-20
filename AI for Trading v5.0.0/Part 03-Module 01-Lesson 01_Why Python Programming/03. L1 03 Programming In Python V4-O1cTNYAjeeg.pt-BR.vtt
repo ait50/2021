@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.034 --> 00:00:02.402
+INTRODUÇÃO AO PYTHON
+
+00:00:02.436 --> 00:00:03.804
+PROGRAMANDO EM PYTHON
+
+00:00:04.538 --> 00:00:06.773
+Ao aprender Python
+neste curso,
+
+00:00:06.806 --> 00:00:09.376
+você precisa manter
+algumas coisas em mente.
+
+00:00:10.043 --> 00:00:12.546
+Primeiro, diferente de linguagens
+como SQL,
+
+00:00:12.813 --> 00:00:15.082
+o Python diferencia
+a caixa alta e baixa.
+
+00:00:15.115 --> 00:00:18.418
+Ou seja, estas duas palavras
+significam coisas diferentes.
+
+00:00:19.119 --> 00:00:21.755
+Segundo, o espaçamento
+é importante no Python.
+
+00:00:22.356 --> 00:00:25.325
+Python não depende muito da sintaxe,
+como outras linguagens,
+
+00:00:25.359 --> 00:00:27.494
+então depende muito
+dos espaços.
+
+00:00:27.528 --> 00:00:29.496
+Isso pode confundir
+no começo,
+
+00:00:29.796 --> 00:00:33.333
+mas depois que você se acostumar,
+verá que é muito bom e limpo.
+
+00:00:33.867 --> 00:00:36.904
+Terceiro, você vai cometer erros
+neste curso.
+
+00:00:37.671 --> 00:00:40.541
+Lembre-se: erros não fazem de você
+um mau programador.
+
+00:00:40.874 --> 00:00:43.677
+Eles são só o computador dizendo
+que não entendeu.
+
+00:00:44.244 --> 00:00:45.646
+Use as mensagens de erro
+
+00:00:45.679 --> 00:00:47.447
+para aprender
+a escrever código
+
+00:00:47.481 --> 00:00:50.184
+que possa ser interpretado
+do jeito que você quer.
+
+00:00:50.217 --> 00:00:51.552
+Vamos começar.
+

@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.314
+Looking back at our list of cargo,
+
+00:00:03.314 --> 00:00:06.824
+notice each element is a tuple of size two.
+
+00:00:06.825 --> 00:00:09.855
+Iterating through a list with multiple values,
+
+00:00:09.855 --> 00:00:11.445
+can be pretty helpful.
+
+00:00:11.445 --> 00:00:16.140
+It's actually really easy to combine and split lists like this.
+
+00:00:16.140 --> 00:00:18.225
+If we originally started,
+
+00:00:18.225 --> 00:00:21.645
+with these two separate lists, items and weights,
+
+00:00:21.644 --> 00:00:24.210
+and wanted to combine them to create a list,
+
+00:00:24.210 --> 00:00:28.710
+like manifest, we can use a built-in function called zip.
+
+00:00:28.710 --> 00:00:31.275
+Zip, returns an iterator.
+
+00:00:31.274 --> 00:00:35.055
+So, we need to convert it to a list to see the elements.
+
+00:00:35.055 --> 00:00:37.544
+Or, iterate through it with a for loop,
+
+00:00:37.545 --> 00:00:40.815
+if we want to print the values, similar to range.
+
+00:00:40.814 --> 00:00:45.299
+You could also unpack each tuple in a for loop like this.
+
+00:00:45.299 --> 00:00:48.164
+In addition to zipping two lists together,
+
+00:00:48.164 --> 00:00:51.479
+you can also unzip a list using an asterisk.
+
+00:00:51.479 --> 00:00:55.244
+For example, using the manifest lists like this,
+
+00:00:55.244 --> 00:00:59.564
+you can separate it into an items and weights list, like this.
+
+00:00:59.564 --> 00:01:03.015
+The next function we'll look at, is enumerate.
+
+00:01:03.015 --> 00:01:07.260
+Many times, you'll find it useful to iterate through the values of a list,
+
+00:01:07.260 --> 00:01:09.000
+along with the index.
+
+00:01:09.000 --> 00:01:11.355
+This is one way you could do it.
+
+00:01:11.355 --> 00:01:16.560
+This uses a for loop to iterate through a list of tuples containing the index,
+
+00:01:16.560 --> 00:01:19.379
+and value of each item in the list.
+
+00:01:19.379 --> 00:01:23.739
+The indices are created by getting a range object from zero,
+
+00:01:23.739 --> 00:01:26.219
+to the length of items minus one,
+
+00:01:26.219 --> 00:01:29.144
+and zipping that with the values in items.
+
+00:01:29.144 --> 00:01:34.436
+Enumerate, is a special built-in function that makes this a lot simpler.
+
+00:01:34.436 --> 00:01:36.329
+Enumerate returns these tuples,
+
+00:01:36.329 --> 00:01:39.105
+containing the indices and values of a list,
+
+00:01:39.105 --> 00:01:41.100
+in an iterable for you.
+
+00:01:41.099 --> 00:01:46.500
+You'll be getting some practice using Zip and Enumerate and see how helpful they can be,
+
+00:01:46.500 --> 00:01:48.120
+in the following quiz section.
+

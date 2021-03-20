@@ -1,0 +1,185 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.534 --> 00:00:02.200
+FLUXO DE CONTROLE:
+COMPREENSÃO DE LISTAS
+
+00:00:02.234 --> 00:00:06.601
+No Phyton, você pode criar listas
+muito rapidamente e de modo conciso,
+
+00:00:06.634 --> 00:00:09.868
+com uma ferramenta ótima
+chamada "Compreensão de Listas".
+
+00:00:09.901 --> 00:00:12.200
+No exemplo de antes,
+das cidades,
+
+00:00:12.234 --> 00:00:15.133
+criamos uma lista de cidades
+com letra maiúscula
+
+00:00:15.167 --> 00:00:17.934
+da lista de cidades
+em um loop "for".
+
+00:00:17.968 --> 00:00:23.167
+Com "List Comprehension", podemos
+obter o mesmo resultado, assim.
+
+00:00:23.200 --> 00:00:27.267
+Essa ferramenta nos permite
+criar uma lista usando um loop "for"
+
+00:00:27.300 --> 00:00:29.133
+em uma só etapa.
+
+00:00:29.167 --> 00:00:32.167
+Você cria uma "List Comprehension"
+com colchetes,
+
+00:00:32.200 --> 00:00:37.267
+incluindo uma expressão para avaliar
+cada elemento em um iterável.
+
+00:00:37.300 --> 00:00:41.868
+Esta linha, chamada "city.title",
+para cada elemento em "cidades",
+
+00:00:41.901 --> 00:00:45.067
+serve para criar cada elemento
+na nova lista.
+
+00:00:45.100 --> 00:00:48.534
+Observe que esta parte
+é igual à primeira linha
+
+00:00:48.567 --> 00:00:51.300
+de um loop "for"
+sem os dois-pontos,
+
+00:00:51.334 --> 00:00:53.801
+e a ação que você quer praticar
+em cada elemento
+
+00:00:53.834 --> 00:00:57.767
+é pegar o elemento aqui
+e anexá-lo a essa nova lista.
+
+00:00:58.734 --> 00:01:00.267
+Em "List Comprehension",
+
+00:01:00.300 --> 00:01:02.868
+não é necessário criar
+uma nova lista antes
+
+00:01:02.901 --> 00:01:06.400
+e anexar os elementos,
+como faríamos em um loop "for".
+
+00:01:06.434 --> 00:01:09.834
+"Compreensão de Listas" não existe
+em outras linguagens,
+
+00:01:09.868 --> 00:01:12.734
+mas são muito comuns
+no Python.
+
+00:01:12.767 --> 00:01:16.200
+Eis outro exemplo que cria
+uma lista de números quadrados
+
+00:01:16.234 --> 00:01:18.834
+de 0 a 64.
+
+00:01:18.868 --> 00:01:22.133
+Esta linha chama
+"X elevado ao quadrado"
+
+00:01:22.167 --> 00:01:24.601
+para cada elemento
+no intervalo nove
+
+00:01:24.634 --> 00:01:27.100
+para criar cada elemento
+na nova lista,
+
+00:01:27.133 --> 00:01:28.734
+de números quadrados.
+
+00:01:28.801 --> 00:01:31.067
+Podemos escrever isso
+como "List Comprehension"
+
+00:01:31.100 --> 00:01:32.901
+dessa maneira.
+
+00:01:32.934 --> 00:01:35.534
+Novamente, estamos apenas
+executando o loop
+
+00:01:35.567 --> 00:01:39.033
+cada elemento nesse iterável
+e avaliando essa expressão
+
+00:01:39.067 --> 00:01:41.734
+para obter cada novo elemento
+na nossa lista.
+
+00:01:41.767 --> 00:01:43.767
+Você também pode
+adicionar condicionais
+
+00:01:43.801 --> 00:01:45.467
+à "Compreensão de Listas".
+
+00:01:45.667 --> 00:01:48.601
+Depois do iterável, você pode usar
+a palavra-chave "if"
+
+00:01:48.634 --> 00:01:51.534
+para verificar uma condição
+em cada iteração.
+
+00:01:51.567 --> 00:01:55.100
+Nesse exemplo,
+X elevado ao quadrado
+
+00:01:55.133 --> 00:01:58.734
+só é avaliado
+se X for número par.
+
+00:01:58.767 --> 00:02:01.834
+Isso nos dá uma lista
+que só inclui números quadrados
+
+00:02:01.868 --> 00:02:04.033
+de números pares.
+
+00:02:04.067 --> 00:02:08.601
+Se quiser adicionar um "else",
+vai ocorrer um erro de sintaxe.
+
+00:02:08.634 --> 00:02:10.634
+Se você gostaria
+de adicionar um "else",
+
+00:02:10.667 --> 00:02:12.300
+é necessário mover
+as condicionais
+
+00:02:12.334 --> 00:02:14.701
+para o início
+da "Compreensão de Listas"
+
+00:02:14.868 --> 00:02:17.734
+logo depois da expressão,
+dessa forma.
+
+00:02:17.767 --> 00:02:20.868
+Detalhes sobre a razão disso
+estão nas notas.
+
