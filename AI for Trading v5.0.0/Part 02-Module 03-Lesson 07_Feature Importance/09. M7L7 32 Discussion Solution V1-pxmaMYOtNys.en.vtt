@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.370
+Okay, so let's answer these questions.
+
+00:00:02.370 --> 00:00:05.474
+Given that the training data is simulating an AND operation,
+
+00:00:05.474 --> 00:00:07.229
+do you think these values make sense,
+
+00:00:07.230 --> 00:00:08.865
+and I think it does.
+
+00:00:08.865 --> 00:00:11.280
+So do you think feature zero and one are equally
+
+00:00:11.279 --> 00:00:14.309
+important or is one more important than the other?
+
+00:00:14.310 --> 00:00:18.000
+So conceptually, both of these features should be equally
+
+00:00:18.000 --> 00:00:21.899
+important and we see that in the calculation of the Shapley values.
+
+00:00:21.899 --> 00:00:26.074
+Also, does the feature importance of feature two also make sense?
+
+00:00:26.074 --> 00:00:28.969
+So it does make sense because feature two
+
+00:00:28.969 --> 00:00:31.729
+is not helping the model to make its prediction,
+
+00:00:31.730 --> 00:00:34.840
+and its feature importance is calculated to be zero.
+
+00:00:34.840 --> 00:00:37.400
+So now, the question is how does this compare to
+
+00:00:37.399 --> 00:00:40.835
+the feature importance that's built into scikit-learn?
+
+00:00:40.835 --> 00:00:46.365
+Now, if we go back to the previous notebook, sklearn_feature_importance,
+
+00:00:46.365 --> 00:00:53.495
+let's open that up, and we check out what the built-in feature importance calculates.
+
+00:00:53.494 --> 00:00:55.969
+Remember, for one of the features,
+
+00:00:55.969 --> 00:01:00.034
+it give it twice as much importance as the other feature.
+
+00:01:00.034 --> 00:01:03.979
+So if we were to compare these two methods,
+
+00:01:03.979 --> 00:01:08.810
+the one that's built into scikit-learn and this one that we're introducing here,
+
+00:01:08.810 --> 00:01:13.680
+it seems like this one is more consistent with what we expect,
+
+00:01:13.680 --> 00:01:15.460
+and just one final note,
+
+00:01:15.459 --> 00:01:18.049
+this method is general enough that it works for
+
+00:01:18.049 --> 00:01:20.869
+any model and not just for tree-based models.
+
+00:01:20.870 --> 00:01:23.540
+Now, there's an optimized way to calculate
+
+00:01:23.540 --> 00:01:28.610
+the Shapley values when the complex model being explained is a tree-based model.
+
+00:01:28.609 --> 00:01:31.179
+So we're going to look at that next.
+

@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.139
+So now, let's implement F given S with the starter code.
+
+00:00:04.139 --> 00:00:07.589
+First is, checking if the node is a leaf,
+
+00:00:07.589 --> 00:00:09.179
+and then if it is leaf,
+
+00:00:09.179 --> 00:00:12.820
+multiply the weight times the node prediction.
+
+00:00:12.820 --> 00:00:21.405
+So that means we take the weight times the node prediction.
+
+00:00:21.405 --> 00:00:24.240
+If you go back to the definition of our tree class,
+
+00:00:24.239 --> 00:00:27.989
+you can see that we implemented a function called node prediction.
+
+00:00:27.989 --> 00:00:31.784
+So if I'm back in the tree class implementation,
+
+00:00:31.785 --> 00:00:35.189
+notice that I have defined node prediction,
+
+00:00:35.189 --> 00:00:37.559
+which returns the value for node i,
+
+00:00:37.560 --> 00:00:41.380
+and that value is the prediction for that node.
+
+00:00:41.710 --> 00:00:49.090
+So here, I multiply the weight times the trees node prediction for node i.
+
+00:00:49.090 --> 00:00:53.365
+Next, if the feature index is in S,
+
+00:00:53.365 --> 00:00:57.335
+that means we are going to be using that in that tree,
+
+00:00:57.335 --> 00:01:03.115
+then we decide whether it's going to go traverse the left subtree or the right subtree.
+
+00:01:03.115 --> 00:01:06.879
+So in the case when the feature value is less than or equal to the threshold,
+
+00:01:06.879 --> 00:01:09.369
+then we traverse the left subtree.
+
+00:01:09.370 --> 00:01:14.070
+So we're going to say, "Recursively traverse."
+
+00:01:14.069 --> 00:01:23.264
+That means call the function inside the function traverse tree towards the left child.
+
+00:01:23.265 --> 00:01:25.230
+So the left child,
+
+00:01:25.230 --> 00:01:29.300
+and also traverse tree takes in the weight.
+
+00:01:29.299 --> 00:01:34.209
+So we're just going to pass the weight along, down the sub tree.
+
+00:01:34.209 --> 00:01:36.289
+Now, for the right subtree,
+
+00:01:36.290 --> 00:01:38.000
+we're going to do something very similar.
+
+00:01:38.000 --> 00:01:44.989
+We're going to recursively call the function going down the right subtree,
+
+00:01:44.989 --> 00:01:46.474
+the right child is time,
+
+00:01:46.474 --> 00:01:50.125
+and also we're going to pass the weight alone.
+
+00:01:50.125 --> 00:01:51.859
+Now, for the last part,
+
+00:01:51.859 --> 00:01:54.060
+when the feature is not in the subset S,
+
+00:01:54.060 --> 00:01:58.025
+that means we're pretending that we're not splitting on that feature.
+
+00:01:58.025 --> 00:02:02.390
+So first, traverse the left subtree and update the weight to be
+
+00:02:02.390 --> 00:02:07.430
+the current weight times the proportion of samples in the left child node.
+
+00:02:07.430 --> 00:02:10.280
+So I'm just going to set up some variables here,
+
+00:02:10.280 --> 00:02:13.745
+left subtree is equal to something, which I'll fill in.
+
+00:02:13.745 --> 00:02:16.909
+The right subtree is also equal to something.
+
+00:02:16.909 --> 00:02:18.484
+The last step says,
+
+00:02:18.485 --> 00:02:20.210
+"Return the sum of both of these."
+
+00:02:20.210 --> 00:02:26.135
+So return left subtree plus right subtree.
+
+00:02:26.134 --> 00:02:30.465
+Okay. So filling in left subtree,
+
+00:02:30.465 --> 00:02:37.615
+we're going to traverse the tree for the left child.
+
+00:02:37.615 --> 00:02:40.045
+We're going to pass into weight,
+
+00:02:40.044 --> 00:02:41.559
+but scaled by something,
+
+00:02:41.560 --> 00:02:46.219
+and that's going to be the proportion of samples in the left child node.
+
+00:02:46.219 --> 00:02:49.099
+So if we go back to our class tree,
+
+00:02:49.099 --> 00:02:53.710
+we'll see that we defined the proportion of samples in the left child.
+
+00:02:53.710 --> 00:02:56.599
+So we're going to go ahead and use that.
+
+00:02:56.599 --> 00:03:04.944
+So it's the trees proportion of samples on left child for node i.
+
+00:03:04.944 --> 00:03:08.394
+Similarly, we can do the same for the right subtree.
+
+00:03:08.395 --> 00:03:10.715
+We're going to traverse the tree,
+
+00:03:10.715 --> 00:03:17.750
+going down to the right child and passing the wait times some scalar.
+
+00:03:17.750 --> 00:03:19.675
+So it was tree dot,
+
+00:03:19.675 --> 00:03:29.640
+it's going to be proportion of samples in the right child of node i.
+

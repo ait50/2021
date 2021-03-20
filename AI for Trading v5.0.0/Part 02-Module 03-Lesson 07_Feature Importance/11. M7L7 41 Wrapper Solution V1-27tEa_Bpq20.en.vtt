@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.720
+So let's implement the tree class.
+
+00:00:03.720 --> 00:00:06.554
+First, let's implement is leaf.
+
+00:00:06.554 --> 00:00:09.434
+So the question is, when is it a leaf?
+
+00:00:09.435 --> 00:00:12.359
+It's a leaf when the left child pointer
+
+00:00:12.359 --> 00:00:15.494
+and a right child pointer are not pointing to a node.
+
+00:00:15.494 --> 00:00:19.199
+In other words, they're both equal to no node.
+
+00:00:19.199 --> 00:00:24.239
+So it is going to be returning something and something.
+
+00:00:24.239 --> 00:00:28.154
+So notice here it's or and here it's and.
+
+00:00:28.155 --> 00:00:33.789
+So if the children left,
+
+00:00:33.799 --> 00:00:37.500
+is equal to no node,
+
+00:00:37.500 --> 00:00:43.710
+and if the children right,
+
+00:00:43.710 --> 00:00:47.850
+is equal to no node, then it's a leaf.
+
+00:00:47.850 --> 00:00:52.130
+Now, let's implement grabbing the right child.
+
+00:00:52.130 --> 00:01:00.870
+So it's very similar to getting the left child, self.children_ right.
+
+00:01:01.609 --> 00:01:07.230
+Great. Now, let's implement the proportion of samples in the left child.
+
+00:01:07.500 --> 00:01:11.519
+We can use the unknown samples,
+
+00:01:11.519 --> 00:01:16.810
+using weighted unknown samples also works as well just be consistent.
+
+00:01:16.810 --> 00:01:23.594
+So we'll just take self.n_node_samples of something,
+
+00:01:23.594 --> 00:01:25.164
+and we'll fill this in in a bit,
+
+00:01:25.165 --> 00:01:29.330
+divided by self.n_node_samples of something else.
+
+00:01:29.329 --> 00:01:33.584
+Okay. So the denominator is going to be node i,
+
+00:01:33.584 --> 00:01:38.149
+and the numerator is going to be the left child of node i.
+
+00:01:38.150 --> 00:01:42.020
+So we can reuse this function, left child,
+
+00:01:42.019 --> 00:01:47.459
+self.left_child and passing node i.
+
+00:01:47.459 --> 00:01:54.399
+So this is grabbing the left child value for the numerator.
+
+00:01:54.409 --> 00:01:59.849
+Similarly, we'll do this for the right child,
+
+00:01:59.849 --> 00:02:05.579
+n_node_samples divided by self.n_node_samples.
+
+00:02:05.579 --> 00:02:12.289
+Okay. The numerator is going to take in the right child of node i,
+
+00:02:12.289 --> 00:02:15.454
+whereas the denominator will be node i.
+
+00:02:15.455 --> 00:02:20.215
+Great. So now we've implemented the class tree.
+
+00:02:20.215 --> 00:02:27.515
+We can run that and create an instance of that tree called tree wrap.
+
+00:02:27.514 --> 00:02:30.869
+Awesome. Please continue on with the lesson.
+

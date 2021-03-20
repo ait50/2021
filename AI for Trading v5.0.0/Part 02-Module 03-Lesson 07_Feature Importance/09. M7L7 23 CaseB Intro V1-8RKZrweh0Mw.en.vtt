@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.685
+Now, let's look at case B.
+
+00:00:02.685 --> 00:00:05.310
+So, calculate the prediction of a model that uses
+
+00:00:05.309 --> 00:00:08.669
+features zero and two, which is right here.
+
+00:00:08.669 --> 00:00:12.109
+Calculate the prediction of a model that uses feature two,
+
+00:00:12.109 --> 00:00:16.454
+which is right here, and then calculate the difference.
+
+00:00:16.454 --> 00:00:24.445
+So, here, you can actually follow the example A very closely to fill this out.
+
+00:00:24.445 --> 00:00:27.570
+But also before you run them,
+
+00:00:27.570 --> 00:00:31.375
+we can also look at the actual feature and label
+
+00:00:31.375 --> 00:00:35.755
+data to decide ourselves what the output should be.
+
+00:00:35.755 --> 00:00:38.070
+Then, we can compare it with code,
+
+00:00:38.070 --> 00:00:41.045
+with what our conceptual understanding should be.
+
+00:00:41.045 --> 00:00:44.480
+So, for instance, when we're using features zero and two,
+
+00:00:44.479 --> 00:00:49.459
+then feature two actually doesn't help with the predictions because remember,
+
+00:00:49.460 --> 00:00:52.030
+when we looked at all the features,
+
+00:00:52.030 --> 00:00:56.399
+only features zero and one are creating the end operator,
+
+00:00:56.399 --> 00:01:00.399
+and feature two is actually zero everywhere.
+
+00:01:00.439 --> 00:01:06.420
+So, when feature zero is one as in our sample observation,
+
+00:01:06.420 --> 00:01:08.745
+then half of the labels are zero,
+
+00:01:08.745 --> 00:01:11.579
+and the other half of the labels are one because this was
+
+00:01:11.579 --> 00:01:14.905
+just how our made-up data set was defined.
+
+00:01:14.905 --> 00:01:18.275
+So, when half of the labels are zero,
+
+00:01:18.275 --> 00:01:19.460
+have the labels are one,
+
+00:01:19.459 --> 00:01:22.084
+the average prediction is 0.5.
+
+00:01:22.084 --> 00:01:24.694
+So, if you look at Y for instance,
+
+00:01:24.694 --> 00:01:27.739
+in the case when feature zero is one,
+
+00:01:27.739 --> 00:01:31.484
+which is these cases here,
+
+00:01:31.484 --> 00:01:34.304
+then in those cases, half of the time,
+
+00:01:34.305 --> 00:01:36.060
+the Y labels are one,
+
+00:01:36.060 --> 00:01:38.534
+and the other half of the time the labels are zero.
+
+00:01:38.534 --> 00:01:41.045
+So, the average of that is 0.5,
+
+00:01:41.045 --> 00:01:44.359
+and you'll just verify this when we implement the code.
+
+00:01:44.359 --> 00:01:46.140
+So, we'll do something similar,
+
+00:01:46.140 --> 00:01:51.620
+calculate the model's prediction when it's trained only on feature two and remember,
+
+00:01:51.620 --> 00:01:54.695
+since feature two doesn't help with predicting the labels in y,
+
+00:01:54.694 --> 00:01:56.994
+and feature two is zero,
+
+00:01:56.995 --> 00:01:58.605
+for all the training observations,
+
+00:01:58.605 --> 00:02:03.305
+the prediction of the model is actually just the average of all the 100 training labels.
+
+00:02:03.305 --> 00:02:05.660
+So, one fourth of the labels are one,
+
+00:02:05.659 --> 00:02:06.994
+and the rest are zero.
+
+00:02:06.995 --> 00:02:09.819
+So, the average of that is 0.25.
+
+00:02:09.819 --> 00:02:12.629
+And again, you can inspect the labels.
+
+00:02:12.629 --> 00:02:16.564
+So, when the features actually don't help,
+
+00:02:16.564 --> 00:02:18.935
+then you just take the average of
+
+00:02:18.935 --> 00:02:22.854
+all the labels and you see that one fourth of them are one.
+
+00:02:22.854 --> 00:02:26.284
+So again, you'll verify this when you implement the code.
+
+00:02:26.284 --> 00:02:29.389
+Then, just take the difference between those two predictions.
+
+00:02:29.389 --> 00:02:36.014
+So, that's the marginal contribution of feature zero and then calculate the weight,
+
+00:02:36.014 --> 00:02:40.459
+and go ahead and use the calc weight function that we defined earlier.
+
+00:02:40.460 --> 00:02:44.375
+We expect it should give you a weight of one divided by six.
+
+00:02:44.375 --> 00:02:48.469
+So, please try it out, and then check out the solution video. Thanks.
+

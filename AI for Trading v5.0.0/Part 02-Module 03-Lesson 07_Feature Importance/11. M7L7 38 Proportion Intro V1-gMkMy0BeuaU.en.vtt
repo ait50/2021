@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.055
+So, here's a quick quiz.
+
+00:00:02.055 --> 00:00:06.984
+What proportion of samples went to the left child and right child of the root node?
+
+00:00:06.985 --> 00:00:09.960
+So, you can actually use the information we
+
+00:00:09.960 --> 00:00:12.915
+gave earlier and then calculate the proportion.
+
+00:00:12.914 --> 00:00:16.574
+Also, you can take a look at the algorithm as well,
+
+00:00:16.574 --> 00:00:18.824
+which is back up here.
+
+00:00:18.824 --> 00:00:20.849
+You can see here,
+
+00:00:20.850 --> 00:00:24.915
+this might give you some intuition about what we're going to be doing later.
+
+00:00:24.914 --> 00:00:29.280
+But for now, just calculate how many training observations went
+
+00:00:29.280 --> 00:00:33.840
+to the left child compared to how many came from the parent node?
+
+00:00:33.840 --> 00:00:36.510
+So, go ahead and try out in filling out these two lines,
+
+00:00:36.509 --> 00:00:38.489
+and then, check out the solution.
+

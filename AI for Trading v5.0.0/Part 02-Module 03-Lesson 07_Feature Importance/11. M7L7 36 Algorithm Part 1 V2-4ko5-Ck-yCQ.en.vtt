@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.069
+Now, let's take a look at the algorithm.
+
+00:00:02.069 --> 00:00:06.629
+So, here's the algorithm used to calculate the prediction of a tree,
+
+00:00:06.629 --> 00:00:08.745
+given a subset of features.
+
+00:00:08.744 --> 00:00:11.070
+You can check out the paper Consistent
+
+00:00:11.070 --> 00:00:14.054
+Individualized Feature Attribution for Tree Ensembles,
+
+00:00:14.054 --> 00:00:16.679
+page 4 algorithm 1.
+
+00:00:16.679 --> 00:00:21.359
+If I went to the paper itself and I scroll down to page 4,
+
+00:00:21.359 --> 00:00:24.314
+in section 3.1, it describes
+
+00:00:24.315 --> 00:00:26.850
+this simple algorithm and I've actually taken
+
+00:00:26.850 --> 00:00:29.445
+a screenshot of this and put it into the Notebook.
+
+00:00:29.445 --> 00:00:31.754
+So that's what we're going to go over.
+
+00:00:31.754 --> 00:00:38.325
+Back to the Notebook. So, I'll go over each of the variables and describe them.
+
+00:00:38.325 --> 00:00:40.530
+Don't worry if you don't get this at first,
+
+00:00:40.530 --> 00:00:45.835
+because it takes a while to get used to what all these variables are and also,
+
+00:00:45.835 --> 00:00:48.950
+get more comfortable with how they're related to each other.
+
+00:00:48.950 --> 00:00:51.515
+So, here G is a function.
+
+00:00:51.515 --> 00:00:54.109
+You can see that procedure G is defined here,
+
+00:00:54.109 --> 00:00:55.585
+all the way through here.
+
+00:00:55.585 --> 00:00:58.295
+Procedure G is a function that gets called
+
+00:00:58.295 --> 00:01:02.704
+recursively to walk down the tree starting at the root node.
+
+00:01:02.704 --> 00:01:07.025
+W is the weight given to the predictions of each node.
+
+00:01:07.025 --> 00:01:11.960
+You see w being used right here in w times something.
+
+00:01:11.959 --> 00:01:15.794
+Now, v is the prediction of a leaf node,
+
+00:01:15.795 --> 00:01:18.795
+so you can see a v is used here.
+
+00:01:18.795 --> 00:01:23.115
+R sub a sub j and r sub b sub j.
+
+00:01:23.114 --> 00:01:24.594
+So these r values,
+
+00:01:24.594 --> 00:01:30.289
+are the number of data points in the left and right child nodes of a node that's
+
+00:01:30.290 --> 00:01:36.910
+defined by index j. R sub j is the number of data points in row j.
+
+00:01:36.909 --> 00:01:41.689
+What they're saying is that the r variables are representing the number
+
+00:01:41.689 --> 00:01:46.685
+of training samples that are sitting inside a particular node.
+
+00:01:46.685 --> 00:01:53.105
+We actually see the r's used in this line of the procedure.
+
+00:01:53.105 --> 00:01:57.560
+So now we'll look at the specific parts of this algorithm in more detail.
+
+00:01:57.560 --> 00:02:02.460
+Feel free to pause here, if you want to look at it on the Notebook yourself.
+

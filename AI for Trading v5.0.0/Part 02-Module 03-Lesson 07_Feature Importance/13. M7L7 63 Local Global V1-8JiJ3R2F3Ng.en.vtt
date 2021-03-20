@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.370
+Local to global feature importance.
+
+00:00:02.370 --> 00:00:07.020
+SHAP calculates local feature importance for every training observation,
+
+00:00:07.019 --> 00:00:08.669
+so for every single row.
+
+00:00:08.669 --> 00:00:11.339
+To calculate global feature importance,
+
+00:00:11.339 --> 00:00:14.925
+take the absolute values of the local feature importances,
+
+00:00:14.925 --> 00:00:18.449
+and then take the average across all the samples.
+
+00:00:18.449 --> 00:00:22.199
+So, that's described in this formula here where
+
+00:00:22.199 --> 00:00:26.054
+we have N samples and i denotes a particular feature.
+
+00:00:26.054 --> 00:00:28.980
+We can use the built-in function to plot
+
+00:00:28.980 --> 00:00:31.679
+the features sorted by global feature importance.
+
+00:00:31.679 --> 00:00:34.289
+So, what this function is doing under the hood is,
+
+00:00:34.289 --> 00:00:37.079
+it's taking the average of the absolute values of
+
+00:00:37.079 --> 00:00:41.984
+the SHAP values for each feature to get the global feature importance.
+
+00:00:41.984 --> 00:00:45.945
+So, we call this the SHAP library summary plot.
+
+00:00:45.945 --> 00:00:48.689
+Pass in the SHAP values that we got earlier,
+
+00:00:48.689 --> 00:00:50.669
+pass in the training data.
+
+00:00:50.670 --> 00:00:52.539
+We can see here,
+
+00:00:52.539 --> 00:00:57.695
+this is a rank of the features by how important they are to the model.
+
+00:00:57.695 --> 00:01:01.174
+Notice that the plot shows the first 20 features.
+
+00:01:01.174 --> 00:01:04.519
+We can write our own function to calculate global feature importance.
+
+00:01:04.519 --> 00:01:08.719
+So that way we can see global feature importance for all of our features.
+
+00:01:08.719 --> 00:01:11.079
+Please continue with the lesson.
+

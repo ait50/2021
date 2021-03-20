@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.094
+We'll also use the Shap library to determine feature importance.
+
+00:00:04.094 --> 00:00:07.740
+Let's import the Shap library and we'll also initialize
+
+00:00:07.740 --> 00:00:11.865
+JavaScript so that when we make plots, we can see them.
+
+00:00:11.865 --> 00:00:15.900
+Now, here's some documentation for this function that we'll use.
+
+00:00:15.900 --> 00:00:21.315
+If you went here, you can look for the Shap values function,
+
+00:00:21.315 --> 00:00:25.065
+and I've also put the documentation in the notebook.
+
+00:00:25.065 --> 00:00:29.670
+Shap values take sin x which is a matrix of samples,
+
+00:00:29.670 --> 00:00:31.870
+number of samples by number of features,
+
+00:00:31.870 --> 00:00:36.454
+so these are the rows and these are the columns on which to explain the model's output.
+
+00:00:36.454 --> 00:00:40.295
+Tree limit, limits the number of trees used by the model.
+
+00:00:40.295 --> 00:00:44.240
+We do want to set this to save runtime and then
+
+00:00:44.240 --> 00:00:48.890
+approximate runs fast but only roughly approximates the tree Shap values.
+
+00:00:48.890 --> 00:00:51.295
+Let's set this to false.
+
+00:00:51.295 --> 00:00:54.255
+For models with a single output,
+
+00:00:54.255 --> 00:00:57.429
+this returns a matrix of Shap values,
+
+00:00:57.429 --> 00:01:00.170
+number of samples by number of features.
+
+00:01:00.170 --> 00:01:02.990
+For models with vector outputs,
+
+00:01:02.990 --> 00:01:07.400
+this returns a list of such matrices one for each output.
+
+00:01:07.400 --> 00:01:11.810
+This is what we will see because we have a couple quantiles in
+
+00:01:11.810 --> 00:01:17.250
+our labels and so we'll have a list of these matrices.
+
+00:01:17.359 --> 00:01:21.715
+Here's an example of how we would use these functions.
+
+00:01:21.715 --> 00:01:26.965
+We take shap.TreeExplainer, we pass in that tree-based model,
+
+00:01:26.965 --> 00:01:31.810
+that random forest and it creates a tree explainer object.
+
+00:01:31.810 --> 00:01:36.025
+From there, we can use that and call a member function Shap values.
+
+00:01:36.025 --> 00:01:39.100
+We'll pass in the training data and to save runtime,
+
+00:01:39.099 --> 00:01:42.019
+we'll set the tree limit to five.
+
+00:01:42.349 --> 00:01:47.530
+The classifier has five distinct outputs one for each quintile.
+
+00:01:47.530 --> 00:01:51.820
+The Shap values is a list of five numpy arrays.
+
+00:01:51.819 --> 00:01:56.254
+This finished running, so let's see that, the labels.
+
+00:01:56.254 --> 00:01:57.599
+You see we have zero,
+
+00:01:57.599 --> 00:01:58.649
+one, two, three, four,
+
+00:01:58.650 --> 00:02:04.575
+there's five different values and then the return of Shap values function,
+
+00:02:04.575 --> 00:02:08.145
+you can see it's also length of five,
+
+00:02:08.145 --> 00:02:10.835
+so there's five matrices inside of this.
+
+00:02:10.835 --> 00:02:14.990
+Each element of Shap values has one row for
+
+00:02:14.990 --> 00:02:20.010
+each training data point and one column for each feature.
+
+00:02:20.270 --> 00:02:24.090
+We were to look at just the zeroth element of that,
+
+00:02:24.090 --> 00:02:26.205
+we can see there's the matrix,
+
+00:02:26.205 --> 00:02:28.094
+these are the number of rows,
+
+00:02:28.094 --> 00:02:29.939
+and these are the number of columns,
+
+00:02:29.939 --> 00:02:32.895
+and the columns are the number of features.
+
+00:02:32.895 --> 00:02:35.540
+All right, please continue on with the lesson.
+

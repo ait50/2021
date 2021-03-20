@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.925
+So now let's look at another example,
+
+00:00:02.925 --> 00:00:05.940
+which is when feature zero has a value of
+
+00:00:05.940 --> 00:00:09.915
+one and then the other two features have a value of zero.
+
+00:00:09.915 --> 00:00:12.385
+So first of all, we can verify that
+
+00:00:12.385 --> 00:00:17.315
+our calculation is the same as the shaft library calculation.
+
+00:00:17.315 --> 00:00:21.245
+So feature zero has an importance value of 0.125,
+
+00:00:21.245 --> 00:00:26.120
+and feature one has an importance value of negative 0.375.
+
+00:00:26.120 --> 00:00:29.570
+Again, the expected value when you have no features is
+
+00:00:29.570 --> 00:00:33.770
+0.25 and the sum of the sharply values for all these features.
+
+00:00:33.770 --> 00:00:37.990
+So the sum of these two values is negative 0.25.
+
+00:00:37.990 --> 00:00:43.520
+So you can see that these two push the prediction in different directions,
+
+00:00:43.520 --> 00:00:48.935
+but the sum of their predictions gives the model's prediction of zero.
+
+00:00:48.935 --> 00:00:51.050
+So you can think about this and pause
+
+00:00:51.050 --> 00:00:54.670
+the video because I'll go over the interpretation here.
+
+00:00:54.670 --> 00:00:57.185
+So the interpretation is that,
+
+00:00:57.185 --> 00:01:01.895
+remember we're simulating the end operator with our data.
+
+00:01:01.895 --> 00:01:06.395
+So when feature zero has a value of one,
+
+00:01:06.395 --> 00:01:09.440
+it's getting a bit closer to that one case
+
+00:01:09.440 --> 00:01:12.875
+where if both features are one feature one are one,
+
+00:01:12.875 --> 00:01:15.185
+then the output is one.
+
+00:01:15.185 --> 00:01:20.510
+On the other hand, since feature one has a value of zero,
+
+00:01:20.510 --> 00:01:22.790
+it's like a true-false table.
+
+00:01:22.790 --> 00:01:24.905
+When at least one of them is false,
+
+00:01:24.905 --> 00:01:27.100
+then the output has to be false.
+
+00:01:27.100 --> 00:01:32.165
+So this zero is pushing the prediction downward by this amount,
+
+00:01:32.165 --> 00:01:38.490
+and notice that this zero is pushing the prediction downward more by a larger amount.
+
+00:01:38.490 --> 00:01:44.770
+So the magnitude of this is 0.375 whereas the magnitude of this is 0.125.
+
+00:01:44.770 --> 00:01:46.640
+You can think about that conceptually,
+
+00:01:46.640 --> 00:01:51.590
+it makes sense because when you have a true-false table with the AND operator,
+
+00:01:51.590 --> 00:01:53.615
+then the false case,
+
+00:01:53.615 --> 00:01:55.850
+having a single value of
+
+00:01:55.850 --> 00:01:59.840
+single feature being false has a stronger pull on the final result.
+
+00:01:59.840 --> 00:02:02.510
+Because when you know that at least one of them is false,
+
+00:02:02.510 --> 00:02:04.330
+then the output will be false.
+
+00:02:04.330 --> 00:02:09.575
+Whereas what you need both inputs to be true in order for the output to be true.
+
+00:02:09.575 --> 00:02:15.090
+So move on to Test 3 for one more example.
+

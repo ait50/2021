@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.089
+When we feed a set of features into a model,
+
+00:00:03.089 --> 00:00:07.695
+how do we determine which ones are important to the predictions of the model?
+
+00:00:07.695 --> 00:00:10.995
+In other words, what is the feature importance?
+
+00:00:10.994 --> 00:00:14.039
+In tree-based models such as random forest,
+
+00:00:14.039 --> 00:00:17.204
+scikit-learn calculates the feature importance of
+
+00:00:17.204 --> 00:00:21.439
+each feature by measuring the amount of impurity in
+
+00:00:21.440 --> 00:00:25.339
+the samples of a node and comparing it to the impurity of
+
+00:00:25.339 --> 00:00:29.964
+its child nodes after splitting on the feature.
+
+00:00:29.964 --> 00:00:36.350
+Since the goal of splitting on a feature is to reduce the impurity of the set of samples,
+
+00:00:36.350 --> 00:00:41.105
+if a feature can reduce the impurity of each sub sample, after splitting,
+
+00:00:41.104 --> 00:00:47.319
+this is a measure of how important that feature is in the decision-making of the model.
+

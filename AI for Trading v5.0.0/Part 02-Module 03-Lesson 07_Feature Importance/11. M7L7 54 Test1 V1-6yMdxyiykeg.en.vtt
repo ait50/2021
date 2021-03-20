@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.730
+Okay. So, now we're going to just make sure that
+
+00:00:02.730 --> 00:00:07.679
+our model's predictions that we wrote by hand matches the shap library.
+
+00:00:07.679 --> 00:00:11.730
+Okay. So, we're testing the case where we'll input
+
+00:00:11.730 --> 00:00:16.094
+a simple observation where all the features have a value of zero.
+
+00:00:16.094 --> 00:00:20.904
+All right, and then here is our calculation of the set values.
+
+00:00:20.905 --> 00:00:23.645
+Also note that the expected value
+
+00:00:23.644 --> 00:00:28.100
+is what we refer to when there are no features to train on.
+
+00:00:28.100 --> 00:00:30.440
+So, it's just the average of all the labels.
+
+00:00:30.440 --> 00:00:35.329
+So, here's going to print the result for our code.
+
+00:00:35.329 --> 00:00:38.479
+The shap library will also print out the result,
+
+00:00:38.479 --> 00:00:40.159
+and we hope that they'll be the same.
+
+00:00:40.159 --> 00:00:41.914
+So, actually I've run this already,
+
+00:00:41.914 --> 00:00:43.519
+but you can see that they're the same.
+
+00:00:43.520 --> 00:00:46.550
+So, that's good, and now we're going to interpret that.
+
+00:00:46.549 --> 00:00:50.244
+So, the expected value is 0.25.
+
+00:00:50.244 --> 00:00:55.564
+The sum of the shapley values for all the features is negative 0.25,
+
+00:00:55.564 --> 00:00:58.294
+and the model prediction is zero.
+
+00:00:58.295 --> 00:01:00.050
+So, the question is, how do you interpret
+
+00:01:00.049 --> 00:01:02.869
+the shapley values of each feature in this case,
+
+00:01:02.869 --> 00:01:04.539
+when all of these are zero?
+
+00:01:04.540 --> 00:01:08.960
+So, pause the video because then I'll go over the solution in this video.
+
+00:01:08.959 --> 00:01:13.339
+Okay. So, you can see that the way to interpret this is that,
+
+00:01:13.340 --> 00:01:16.100
+when the model has no features to train on,
+
+00:01:16.099 --> 00:01:20.269
+its best guess, the expected value, is 0.25.
+
+00:01:20.269 --> 00:01:23.629
+Now, what happens when it's giving information from
+
+00:01:23.629 --> 00:01:29.149
+feature importance the shap value is that this negative value.
+
+00:01:29.150 --> 00:01:34.650
+So, it's pushing the prediction of the model downward by this amount,
+
+00:01:34.650 --> 00:01:42.005
+and then feature one is also pushing the model's prediction downward by negative 0.125.
+
+00:01:42.004 --> 00:01:44.719
+So, just to make it easier to see,
+
+00:01:44.719 --> 00:01:51.090
+if you add up negative 0.125 plus negative 0.125, that's negative 0.25.
+
+00:01:51.090 --> 00:01:57.100
+Notice now that the model's prediction when it's given all three features is zero.
+
+00:01:57.099 --> 00:01:58.739
+So, what happened was,
+
+00:01:58.739 --> 00:02:01.339
+these features are pushing the prediction
+
+00:02:01.340 --> 00:02:06.424
+from the expected value of 0.25 to the prediction of zero.
+
+00:02:06.424 --> 00:02:09.895
+They're both equally important in doing so.
+
+00:02:09.895 --> 00:02:13.330
+Great. So, now I'll move on to Test Case two.
+

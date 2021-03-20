@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.969
+We're going to set up the notebook by doing a couple library installations.
+
+00:00:05.969 --> 00:00:10.425
+Once we're done, we're going to import those libraries.
+
+00:00:10.425 --> 00:00:19.589
+Let's see. Yes. It shouldn't take too long. Good, it's done.
+
+00:00:19.589 --> 00:00:25.245
+So, first, we will generate features and labels that formed the 'and' operator.
+
+00:00:25.245 --> 00:00:30.015
+So, that means when feature zero and feature one are both one,
+
+00:00:30.015 --> 00:00:32.505
+then the label output is one,
+
+00:00:32.505 --> 00:00:34.920
+else the label is zero.
+
+00:00:34.920 --> 00:00:36.885
+So, what I mean by that,
+
+00:00:36.884 --> 00:00:42.375
+this is just saying true and true equals true,
+
+00:00:42.375 --> 00:00:46.784
+true and false equals false,
+
+00:00:46.784 --> 00:00:50.159
+false and true equals false,
+
+00:00:50.159 --> 00:00:53.354
+and false and false equals false.
+
+00:00:53.354 --> 00:00:56.529
+Okay. So, that's the and operator.
+
+00:00:57.259 --> 00:00:59.875
+Except when we say true,
+
+00:00:59.875 --> 00:01:02.479
+then we denote that with the number one,
+
+00:01:02.479 --> 00:01:03.529
+and when we say false,
+
+00:01:03.530 --> 00:01:06.230
+we denote that with the number zero.
+
+00:01:06.230 --> 00:01:09.650
+So, here, when we create the data,
+
+00:01:09.650 --> 00:01:13.405
+let's take a look at what the data looks like.
+
+00:01:13.405 --> 00:01:14.939
+Here, are the features.
+
+00:01:14.939 --> 00:01:20.370
+So, you can see that features zero and one are the ones that form the 'and' operator.
+
+00:01:20.370 --> 00:01:23.175
+You'll see this one will show the target.
+
+00:01:23.174 --> 00:01:27.944
+The feature two, this third column right here,
+
+00:01:27.944 --> 00:01:31.479
+you'll notice that it's always the same and therefore,
+
+00:01:31.480 --> 00:01:33.920
+it's not going to have any feature importance.
+
+00:01:33.920 --> 00:01:36.820
+So, we're expecting this third feature right in
+
+00:01:36.819 --> 00:01:40.779
+here to not have any significance to the model.
+
+00:01:40.780 --> 00:01:44.239
+Okay. So, here's the targets also called labels.
+
+00:01:44.239 --> 00:01:49.375
+You can see that the first 25 percent of these data points have the value one,
+
+00:01:49.375 --> 00:01:52.094
+and that coincides with the features,
+
+00:01:52.094 --> 00:01:54.030
+features zero and one.
+
+00:01:54.030 --> 00:01:56.325
+So, this first column and this middle column,
+
+00:01:56.325 --> 00:01:57.870
+they're are both one.
+
+00:01:57.870 --> 00:02:00.750
+So, it's like true and true is true.
+
+00:02:00.750 --> 00:02:02.390
+Otherwise, in all the other cases,
+
+00:02:02.390 --> 00:02:07.144
+you can see either one or the other is zero,
+
+00:02:07.144 --> 00:02:11.254
+and therefore, the label is also zero for all the rest.
+
+00:02:11.254 --> 00:02:15.574
+Okay? So, now, let's train a decision tree on this data.
+
+00:02:15.574 --> 00:02:23.794
+So, tree.decisiontreeclassifier and then fit it on the data that we generated, x and y.
+
+00:02:23.794 --> 00:02:27.109
+We'll also just visualize what this looks like.
+
+00:02:27.110 --> 00:02:31.715
+So, you can see that it's splitting on feature one.
+
+00:02:31.715 --> 00:02:35.090
+So, one is less than or equal to 0.5,
+
+00:02:35.090 --> 00:02:37.524
+then go to the left sub-tree,
+
+00:02:37.524 --> 00:02:40.569
+otherwise, go to the right sub-tree.
+
+00:02:40.569 --> 00:02:43.629
+And then here, it's splitting on feature zero.
+
+00:02:43.629 --> 00:02:45.870
+If it's less than or equal to 0.5,
+
+00:02:45.870 --> 00:02:47.534
+then go to the left sub-tree,
+
+00:02:47.534 --> 00:02:50.264
+otherwise, go to the right sub tree.
+
+00:02:50.264 --> 00:02:54.424
+So, this one leaf node here is actually the case.
+
+00:02:54.425 --> 00:03:00.719
+When feature one is true and when feature zero is also true.
+
+00:03:00.719 --> 00:03:03.615
+So, when true and true then true.
+
+00:03:03.615 --> 00:03:09.080
+Otherwise, all the other cases are false and you won't see the labels here,
+
+00:03:09.080 --> 00:03:11.510
+but this is what it means.
+

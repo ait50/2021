@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.094
+Now we're going to look at how feature importance is implemented in sci-kit learn.
+
+00:00:04.094 --> 00:00:05.699
+So to get started,
+
+00:00:05.700 --> 00:00:08.910
+I'd recommend you open up the notebook in a separate tab,
+
+00:00:08.910 --> 00:00:11.789
+so that you can follow along with the videos in a separate tab.
+
+00:00:11.789 --> 00:00:15.734
+So if you hover your mouse over the Jupyter icon where you see it,
+
+00:00:15.734 --> 00:00:18.269
+it says Jupyter, just right-click,
+
+00:00:18.269 --> 00:00:20.234
+open link in new tab.
+
+00:00:20.234 --> 00:00:23.925
+Now in this new tab, you'll see this directory of the files.
+
+00:00:23.925 --> 00:00:27.675
+Were working on SKLearn feature importance notebook,
+
+00:00:27.675 --> 00:00:29.625
+so go ahead and open that.
+
+00:00:29.625 --> 00:00:34.215
+So we'll get a sense of how feature importance is calculated in sci-kit learn,
+
+00:00:34.215 --> 00:00:37.795
+and also see where it gives results that we wouldn't expect.
+
+00:00:37.795 --> 00:00:39.859
+So that's a key part of lesson is that,
+
+00:00:39.859 --> 00:00:43.130
+it gives results that we probably wouldn't expect.
+
+00:00:43.130 --> 00:00:48.335
+Sci-kit learn uses gini impurity to calculate a measure of impurity for each node.
+
+00:00:48.335 --> 00:00:50.670
+Gini impurity, like entropy,
+
+00:00:50.670 --> 00:00:53.940
+is a way to measure how dis-organized the observations
+
+00:00:53.939 --> 00:00:58.429
+are before and after splitting them using a feature.
+
+00:00:58.429 --> 00:01:01.719
+So there's an impurity measure for each node.
+
+00:01:01.719 --> 00:01:03.699
+So think of impurity as,
+
+00:01:03.700 --> 00:01:06.560
+you have many different colored socks in your drawer,
+
+00:01:06.560 --> 00:01:08.390
+the more variety of colors there are,
+
+00:01:08.390 --> 00:01:11.435
+the more impure your drawer of sock is.
+
+00:01:11.435 --> 00:01:16.894
+In the formula, frequency sub i is the frequency of label i.
+
+00:01:16.894 --> 00:01:20.125
+C is the number of unique labels at that node.
+
+00:01:20.125 --> 00:01:25.359
+So for instance, the data that we'll have just has two different label values.
+
+00:01:25.359 --> 00:01:29.344
+So in this case, the letter C would have the value of two.
+
+00:01:29.344 --> 00:01:31.640
+So this is the formula,
+
+00:01:31.640 --> 00:01:35.165
+the frequency times 1 minus the frequency.
+
+00:01:35.165 --> 00:01:39.130
+The node importance in sci kit learn is calculated as a difference,
+
+00:01:39.129 --> 00:01:42.089
+between the gini impurity of the node
+
+00:01:42.090 --> 00:01:45.875
+and the gini impurity of its left and right children.
+
+00:01:45.875 --> 00:01:48.530
+Okay. So, ignore the w's for now,
+
+00:01:48.530 --> 00:01:53.424
+and just notice you have the impurity of a particular node such as the root node,
+
+00:01:53.424 --> 00:01:58.594
+and then you subtract the sum of the impurity from that nodes;
+
+00:01:58.594 --> 00:02:02.459
+left child and its right child.
+
+00:02:02.629 --> 00:02:05.929
+Next. These gini impurities are weighted by
+
+00:02:05.930 --> 00:02:09.050
+the number of data points that reach each node.
+
+00:02:09.050 --> 00:02:16.219
+So these weights, represent the number of nodes that are in the parent node,
+
+00:02:16.219 --> 00:02:20.300
+and the number of nodes that get filtered down to the left node or the right node.
+
+00:02:20.300 --> 00:02:22.490
+Okay. So just a reminder,
+
+00:02:22.490 --> 00:02:24.844
+if the parent node had a 100,
+
+00:02:24.844 --> 00:02:29.789
+then the sum of the left and right child's in terms of the number
+
+00:02:29.789 --> 00:02:34.629
+of observations will sum up to the number of observations in the parent.
+
+00:02:34.629 --> 00:02:36.490
+Okay. So there's a 100 here,
+
+00:02:36.490 --> 00:02:38.120
+there might be 40 here,
+
+00:02:38.120 --> 00:02:41.689
+and that means there would be 60 in this other node.
+
+00:02:41.689 --> 00:02:47.030
+The importance of a feature is the importance of the node that it was split on,
+
+00:02:47.030 --> 00:02:51.080
+divided by the sum of all the node importance's in the tree.
+
+00:02:51.080 --> 00:02:54.140
+So the sum of all the node importance's of the tree,
+
+00:02:54.139 --> 00:02:57.084
+this is a way to normalize this result.
+
+00:02:57.085 --> 00:03:03.365
+Okay. So you've got to practice this in the notebook below, this notebook.
+
+00:03:03.365 --> 00:03:08.455
+For additional reading please check out this blog: The Mathematics of Decision Trees,
+
+00:03:08.455 --> 00:03:12.585
+Random Forests and Feature Importance in Sci-Kit learn and Spark.
+
+00:03:12.585 --> 00:03:17.390
+So it's this blog right here which is very well-written.
+
+00:03:17.389 --> 00:03:21.219
+You can also continue on with the lesson first.
+

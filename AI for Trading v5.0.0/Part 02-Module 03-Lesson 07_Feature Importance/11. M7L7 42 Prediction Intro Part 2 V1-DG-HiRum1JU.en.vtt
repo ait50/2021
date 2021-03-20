@@ -1,0 +1,241 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.230
+Great. So, here's some starter code to implement f given
+
+00:00:05.230 --> 00:00:11.394
+s. The prediction given the particular subset of features that we're going to use.
+
+00:00:11.394 --> 00:00:15.240
+So, it's taking as input the tree,
+
+00:00:15.240 --> 00:00:19.644
+and it's of the same class as the tree wrapper that we just defined.
+
+00:00:19.644 --> 00:00:21.969
+S will be the set of integers representing
+
+00:00:21.969 --> 00:00:25.119
+the features that are used to train that model,
+
+00:00:25.120 --> 00:00:27.250
+and lowercase x is
+
+00:00:27.250 --> 00:00:31.719
+the sample observation on which to calculate the prediction of the model.
+
+00:00:31.719 --> 00:00:35.289
+So, we have starting node is going to be
+
+00:00:35.289 --> 00:00:38.539
+the root node and the starting weight is going to be one.
+
+00:00:38.539 --> 00:00:40.844
+You can see that in the algorithm itself,
+
+00:00:40.844 --> 00:00:42.659
+I'm going back to the paper.
+
+00:00:42.659 --> 00:00:45.084
+You can see here,
+
+00:00:45.085 --> 00:00:48.439
+when it calls that recursive algorithm for the first time,
+
+00:00:48.439 --> 00:00:50.195
+is passing in one comma one.
+
+00:00:50.195 --> 00:00:52.645
+In this case, this is representing the root node,
+
+00:00:52.645 --> 00:00:55.755
+but in the code is going to be the root node is zero,
+
+00:00:55.755 --> 00:00:58.590
+and one is the starting weight.
+
+00:00:58.590 --> 00:01:03.050
+So, back to the code. So, we're defining traverse tree.
+
+00:01:03.049 --> 00:01:06.289
+So, this is the procedure G that we saw in
+
+00:01:06.290 --> 00:01:11.965
+the algorithm is taking in the node and also a weight.
+
+00:01:11.965 --> 00:01:15.500
+The first thing is we're going to implement this part.
+
+00:01:15.500 --> 00:01:19.379
+So, if the node is a leaf, then do something.
+
+00:01:19.379 --> 00:01:22.659
+In that's multiply the weight times the node prediction.
+
+00:01:22.659 --> 00:01:27.304
+So, we had actually defined a prediction function inside that tree wrapper,
+
+00:01:27.305 --> 00:01:30.560
+and we're implementing going back to the paper,
+
+00:01:30.560 --> 00:01:33.314
+we're implementing this line right here,
+
+00:01:33.314 --> 00:01:35.715
+weight times the prediction.
+
+00:01:35.715 --> 00:01:41.840
+Next, is else if it's an internal node, what do we do?
+
+00:01:41.840 --> 00:01:43.520
+So, first of all,
+
+00:01:43.519 --> 00:01:45.454
+let's go over what these are doing right here.
+
+00:01:45.454 --> 00:01:48.530
+This is grabbing some values that we're
+
+00:01:48.530 --> 00:01:52.415
+going to use when we implement the rest of these if-else statements.
+
+00:01:52.415 --> 00:01:56.930
+First of all, look at here it says feature that's split into four node i.
+
+00:01:56.930 --> 00:02:01.880
+So, this is grabbing the feature that was split at a particular node.
+
+00:02:01.879 --> 00:02:05.209
+So, this is going to be returning an integer,
+
+00:02:05.209 --> 00:02:11.314
+and then we're saying that for the sample input lowercase x,
+
+00:02:11.314 --> 00:02:15.055
+grab the value for that particular feature.
+
+00:02:15.055 --> 00:02:18.775
+So, we start out here. Next, we're getting
+
+00:02:18.775 --> 00:02:22.330
+the threshold that was used for splitting at node i.
+
+00:02:22.330 --> 00:02:27.540
+So, we're going to be comparing the feature value to that threshold,
+
+00:02:27.539 --> 00:02:32.304
+and we're also grabbing the left and right child nodes,
+
+00:02:32.305 --> 00:02:35.215
+the integers representing the left and right child.
+
+00:02:35.215 --> 00:02:39.490
+So, first, if feature index is in S,
+
+00:02:39.490 --> 00:02:41.980
+so if that means if the feature is in
+
+00:02:41.979 --> 00:02:45.354
+this subset of the features that we're going to be using in this case,
+
+00:02:45.354 --> 00:02:48.459
+then implement these right here.
+
+00:02:48.460 --> 00:02:54.070
+So, if the feature value is less than or equal to the threshold,
+
+00:02:54.069 --> 00:02:56.859
+then going to the left subtree,
+
+00:02:56.860 --> 00:02:59.320
+otherwise go into the right subtree.
+
+00:02:59.319 --> 00:03:02.754
+So, this part of the code is implementing,
+
+00:03:02.754 --> 00:03:04.284
+if I go back to the algorithm,
+
+00:03:04.284 --> 00:03:07.069
+is implementing this right here.
+
+00:03:07.069 --> 00:03:12.564
+So, this is the case when the feature is in the subset S,
+
+00:03:12.564 --> 00:03:17.139
+check the threshold, and use the threshold
+
+00:03:17.139 --> 00:03:22.429
+to decide whether we go to the left subtree or the right subtree.
+
+00:03:23.219 --> 00:03:26.859
+So, now, let's look at this else section.
+
+00:03:26.860 --> 00:03:30.920
+So, if the feature is not in the subset S, then what do we do?
+
+00:03:30.919 --> 00:03:36.889
+We have to pretend that the feature was not used for splitting in this tree.
+
+00:03:36.889 --> 00:03:40.909
+So, the two is saying traverse the left subtree,
+
+00:03:40.909 --> 00:03:43.805
+and update the weight to be the current weight
+
+00:03:43.805 --> 00:03:48.545
+times the proportion of samples in a left-child node.
+
+00:03:48.544 --> 00:03:51.814
+So, might help to look at the algorithm.
+
+00:03:51.814 --> 00:03:55.805
+We're implementing this part actually right here,
+
+00:03:55.805 --> 00:03:57.365
+only this part right here.
+
+00:03:57.365 --> 00:04:02.195
+So, we make a recursive call passing the left child,
+
+00:04:02.194 --> 00:04:05.778
+but notice here we're taking the weight from node i
+
+00:04:05.778 --> 00:04:09.199
+and we're scaling it by this fraction,
+
+00:04:09.199 --> 00:04:13.289
+this proportion of training samples that are in the left
+
+00:04:13.289 --> 00:04:18.680
+node relative to the current parent node node j.
+
+00:04:18.680 --> 00:04:21.545
+So, that's what we want to implement here.
+
+00:04:21.545 --> 00:04:26.290
+This is very similar do the same thing for the right subtree and in the algorithm,
+
+00:04:26.290 --> 00:04:29.915
+we are implementing this right here,
+
+00:04:29.915 --> 00:04:32.420
+and once you're done, add them together.
+
+00:04:32.420 --> 00:04:35.665
+So, last part is just add them together.
+
+00:04:35.665 --> 00:04:38.560
+Great. So, please do take your time,
+
+00:04:38.560 --> 00:04:40.814
+this is quite fun to implement.
+
+00:04:40.814 --> 00:04:46.129
+So, you can either try doing it yourself or go-ahead work the starter code,
+
+00:04:46.129 --> 00:04:49.199
+and when you're done, please check out the solution.
+

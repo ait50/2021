@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.665
+Now that we have the node importance is let's calculate the feature importances.
+
+00:00:04.665 --> 00:00:09.255
+So to summarize which feature is used to split at each node,
+
+00:00:09.255 --> 00:00:12.825
+we can check the feature attribute,
+
+00:00:12.825 --> 00:00:17.550
+and from here we can see that feature 0 was used to split on node 2,
+
+00:00:17.550 --> 00:00:23.145
+feature 1 was used to split at node 0 and feature 2 was not used for splitting at all.
+
+00:00:23.145 --> 00:00:25.290
+You can see there's no number 2 here.
+
+00:00:25.290 --> 00:00:29.290
+Just to verify, so node 2 at 0, 1,
+
+00:00:29.290 --> 00:00:32.385
+2 position 2, that's feature 0,
+
+00:00:32.385 --> 00:00:34.710
+and then feature 1 was split at node 0.
+
+00:00:34.710 --> 00:00:37.690
+So at position 0, you see number 1 right here.
+
+00:00:37.690 --> 00:00:40.700
+So let's calculate the importance of the features.
+
+00:00:40.700 --> 00:00:44.420
+The importance of a feature is the importance of the node that
+
+00:00:44.420 --> 00:00:48.530
+was used for splitting divided by the total number of importances.
+
+00:00:48.530 --> 00:00:52.060
+Calculate the importance of features 0, 1, and 2.
+
+00:00:52.060 --> 00:00:55.750
+When you're done, we can double check it with scikit-learn.
+
+00:00:55.750 --> 00:00:58.070
+So if we went to the documentation,
+
+00:00:58.070 --> 00:01:01.699
+you can see that this attribute feature importances underscore,
+
+00:01:01.699 --> 00:01:07.525
+is going to be a list that contains a feature importances for each of those features.
+
+00:01:07.525 --> 00:01:09.559
+So once you double-check,
+
+00:01:09.559 --> 00:01:13.715
+you'll want to see that the feature importance is that we calculated by hand
+
+00:01:13.715 --> 00:01:18.700
+are the same ones that you see when you run the scikit-learn function.
+
+00:01:18.700 --> 00:01:22.860
+Once you're done, please check out the solution video. Thanks.
+

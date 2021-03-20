@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.910
+We'll now introduce the current state of the art in
+
+00:00:02.910 --> 00:00:07.350
+feature importance which is called Shapley Additive Explanations.
+
+00:00:07.349 --> 00:00:11.189
+This method calculates something called Shapley values,
+
+00:00:11.189 --> 00:00:13.859
+and is based on coalition game theory.
+
+00:00:13.859 --> 00:00:16.140
+But first, let's get some intuition about
+
+00:00:16.140 --> 00:00:19.920
+this method of measuring feature importance with an example.
+
+00:00:19.920 --> 00:00:24.810
+If you have a basketball team with three players A, B, and C,
+
+00:00:24.809 --> 00:00:31.029
+how would you determine how much each player contributes to the final score of the team?
+
+00:00:31.030 --> 00:00:33.880
+Well, one way to check how player A
+
+00:00:33.880 --> 00:00:37.399
+contributes is to see how the team performs with player A,
+
+00:00:37.399 --> 00:00:40.429
+and see how the team performs without player A.
+
+00:00:40.429 --> 00:00:43.835
+We can actually try every sequence of players,
+
+00:00:43.835 --> 00:00:48.079
+either with or without player A and measure the impact of player A as
+
+00:00:48.079 --> 00:00:52.614
+the difference between the team's performance with or without player A.
+
+00:00:52.615 --> 00:00:56.905
+This is the mean intuition of Shapley Additive Explanations.
+
+00:00:56.905 --> 00:01:01.670
+We estimate how important a feature is by seeing how well the model performs
+
+00:01:01.670 --> 00:01:06.799
+with and without that feature for every combination of features.
+
+00:01:06.799 --> 00:01:13.090
+Note also that Shapley Additive Explanations computes local feature importance for
+
+00:01:13.090 --> 00:01:16.570
+every observation which is different from the method used in
+
+00:01:16.569 --> 00:01:20.514
+Scikit-learn which computes global feature importance.
+
+00:01:20.515 --> 00:01:23.200
+You can imagine that the importance of
+
+00:01:23.200 --> 00:01:26.590
+a feature may not be the same for every data point.
+
+00:01:26.590 --> 00:01:29.170
+So, local feature importance calculates
+
+00:01:29.170 --> 00:01:32.424
+the importance of each feature for each data point.
+
+00:01:32.424 --> 00:01:38.424
+Global feature importance refers to a single ranking of features for the model.
+
+00:01:38.424 --> 00:01:40.239
+You may be wondering,
+
+00:01:40.239 --> 00:01:44.669
+when it might help to calculate local feature importance on a single data point?
+
+00:01:44.670 --> 00:01:48.280
+One example is when a model is used to accept or deny
+
+00:01:48.280 --> 00:01:52.954
+a loan application where each data point is an individual person.
+
+00:01:52.954 --> 00:01:55.039
+Companies that make loan decisions,
+
+00:01:55.040 --> 00:01:58.250
+can identify the main features that the model used in
+
+00:01:58.250 --> 00:02:02.135
+deciding whether to accept or reject an individual's loan application.
+
+00:02:02.135 --> 00:02:05.810
+This is important to ensure fairness and transparency.
+
+00:02:05.810 --> 00:02:10.189
+For our purposes, we'll just use global feature importance and we can
+
+00:02:10.189 --> 00:02:14.359
+aggregate local feature importances into global feature importance,
+
+00:02:14.360 --> 00:02:17.600
+which you'll see how to do later in the lesson
+

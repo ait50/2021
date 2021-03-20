@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.180
+Okay. So let's go ahead and implement Case D.
+
+00:00:03.180 --> 00:00:09.375
+So S_union_i will use the get_subset function,
+
+00:00:09.375 --> 00:00:12.480
+pass in the set of all features,
+
+00:00:12.480 --> 00:00:15.990
+and we're going to grab just feature zero.
+
+00:00:15.990 --> 00:00:18.839
+F_S_union_i is going to contain an instance
+
+00:00:18.839 --> 00:00:20.910
+of a decision tree regressors,
+
+00:00:20.910 --> 00:00:25.089
+so sklearn.tree.DecisionTreeRegressor,
+
+00:00:25.100 --> 00:00:31.155
+and we're going to fit it to the data S_union_i,
+
+00:00:31.155 --> 00:00:33.945
+which contains just feature zero,
+
+00:00:33.945 --> 00:00:36.465
+and the labels are in y.
+
+00:00:36.465 --> 00:00:41.655
+So the sample input is just going to be a single value of one,
+
+00:00:41.655 --> 00:00:44.475
+and we're going to reshape it,
+
+00:00:44.475 --> 00:00:47.230
+so that it has one row,
+
+00:00:47.500 --> 00:00:56.310
+then we'll do a prediction with this model on the sample input.
+
+00:00:58.149 --> 00:01:02.009
+So it's going to be 0.5.
+
+00:01:02.060 --> 00:01:08.004
+Now next, how would the model predict if it had no features to train on?
+
+00:01:08.004 --> 00:01:13.119
+So this is actually just going to be the average of all the labels,
+
+00:01:13.120 --> 00:01:15.535
+so if we looked at y,
+
+00:01:15.534 --> 00:01:19.239
+you see that one-fourth of them have a value of one,
+
+00:01:19.239 --> 00:01:22.324
+and the other three-fourths has a value of zero.
+
+00:01:22.325 --> 00:01:29.245
+So we can expect if we just take the average of the labels,
+
+00:01:29.245 --> 00:01:32.725
+then that's the prediction that the model would make.
+
+00:01:32.724 --> 00:01:34.824
+When there's no features,
+
+00:01:34.825 --> 00:01:37.159
+it will predict 0.25.
+
+00:01:37.159 --> 00:01:41.215
+So let's calculate the difference which is the prediction
+
+00:01:41.215 --> 00:01:46.329
+of S_union_i minus the prediction thathas S.
+
+00:01:46.329 --> 00:01:53.769
+So the difference is 0.5 minus 0.25, which is 0.25.
+
+00:01:53.769 --> 00:01:56.119
+Last step is to calculate the weight.
+
+00:01:56.120 --> 00:01:59.375
+So the size of set S, the empty set,
+
+00:01:59.375 --> 00:02:03.019
+is zero, the empty set has a size of zero,
+
+00:02:03.019 --> 00:02:06.295
+and let's calculate the weight.
+
+00:02:06.295 --> 00:02:13.159
+Remember, we input size S and also the total number of features,
+
+00:02:13.159 --> 00:02:15.465
+and the weight is one-third,
+
+00:02:15.465 --> 00:02:18.310
+as we expect from this formula here.
+
+00:02:18.310 --> 00:02:21.560
+Great. So now, we can calculate Shapley value.
+
+00:02:21.560 --> 00:02:24.420
+So check out the next video for that.
+

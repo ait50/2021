@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.504
+Okay. So now, I'm just going to explain some code that I've already written for you.
+
+00:00:05.504 --> 00:00:08.519
+This is just to tie things up so
+
+00:00:08.519 --> 00:00:13.785
+that notice that we only calculated the feature importance for a single feature.
+
+00:00:13.785 --> 00:00:17.594
+So we just will create this function shap_tree_explainer,
+
+00:00:17.594 --> 00:00:19.529
+and it will take that tree object,
+
+00:00:19.530 --> 00:00:21.464
+it will take that sample data point,
+
+00:00:21.464 --> 00:00:23.804
+and it will just loop through
+
+00:00:23.804 --> 00:00:30.045
+all features and call that shap_feature_i function that we just defined earlier,
+
+00:00:30.045 --> 00:00:32.340
+and then append that to a list.
+
+00:00:32.340 --> 00:00:36.330
+Then it will return that list as a NumPy array.
+
+00:00:36.329 --> 00:00:43.619
+One last step, we can start from an actual SKLearn model itself, and from there,
+
+00:00:43.619 --> 00:00:48.109
+so here's the function shap_tree_model_explainer is going to take
+
+00:00:48.109 --> 00:00:52.850
+the SKLearn model itself and just extract that SKLearn tree,
+
+00:00:52.850 --> 00:00:56.195
+wrap it inside the tree class that we had defined earlier,
+
+00:00:56.195 --> 00:01:00.625
+and then go ahead and call that shap_tree_explainer which is defined here.
+
+00:01:00.625 --> 00:01:04.189
+Okay. So now, the next video is going to conceptually give you
+
+00:01:04.189 --> 00:01:08.649
+an explanation for additive feature attribution. So stay tuned.
+

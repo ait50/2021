@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.965
+So let's look at the Leaf Nodes.
+
+00:00:01.965 --> 00:00:04.424
+Look at the line that handles leaf nodes,
+
+00:00:04.424 --> 00:00:06.629
+which is this section right here.
+
+00:00:06.629 --> 00:00:11.980
+It takes the prediction of that leaf node and multiplies it by some weight.
+
+00:00:11.980 --> 00:00:14.350
+So, here's the prediction v,
+
+00:00:14.349 --> 00:00:16.320
+and here's some weight.
+
+00:00:16.320 --> 00:00:19.289
+The weight is determined by the proportion of
+
+00:00:19.289 --> 00:00:23.294
+training data points that end up reaching that leaf node.
+
+00:00:23.295 --> 00:00:31.035
+So, this part of the code you can actually see it right here in the original algorithm.
+
+00:00:31.035 --> 00:00:33.030
+Ignoring the feature.
+
+00:00:33.030 --> 00:00:37.049
+Next, let's look at the case when the feature that's used at
+
+00:00:37.049 --> 00:00:41.559
+a node is not within the subset of features that we want to split on.
+
+00:00:41.560 --> 00:00:46.265
+In other words, it's not in that subset capital S. So,
+
+00:00:46.265 --> 00:00:49.850
+we want to pretend that we didn't train the model on this feature.
+
+00:00:49.850 --> 00:00:54.429
+In that case, in order to pretend that we're not splitting on that feature,
+
+00:00:54.429 --> 00:01:00.350
+we take the sum of the weighted predictions from both its left and right subtree.
+
+00:01:00.350 --> 00:01:04.340
+So, you can see here that there r values represent
+
+00:01:04.340 --> 00:01:08.555
+the number of training samples in each of those three nodes.
+
+00:01:08.555 --> 00:01:11.960
+So, j is a parent node,
+
+00:01:11.959 --> 00:01:20.214
+a sub j is the left child of node j and b sub j is the right child of node j.
+
+00:01:20.215 --> 00:01:24.579
+So, there's three nodes we're looking at and r represents
+
+00:01:24.579 --> 00:01:29.469
+the number of training samples that end up trickling down into each of those nodes.
+
+00:01:29.469 --> 00:01:33.998
+So, you might notice that when you have a parent node and two child nodes,
+
+00:01:33.998 --> 00:01:37.959
+then the number of training samples in the parent node will
+
+00:01:37.959 --> 00:01:41.949
+get split somehow between the left child or the right child.
+
+00:01:41.950 --> 00:01:44.094
+It will either go to the left or right child.
+
+00:01:44.094 --> 00:01:47.935
+So, this part of the algorithm you can see back here.
+
+00:01:47.935 --> 00:01:50.034
+Here's this whole statement right here.
+
+00:01:50.034 --> 00:01:55.079
+We have g and then we have the a's the for the left child,
+
+00:01:55.079 --> 00:01:56.670
+b for the right child,
+
+00:01:56.670 --> 00:02:02.870
+and then the r's represent the number of training samples in each of those three nodes.
+
+00:02:03.420 --> 00:02:06.299
+Okay. Now, Including a Feature.
+
+00:02:06.299 --> 00:02:09.550
+Finally for cases when the feature at that node
+
+00:02:09.550 --> 00:02:12.640
+is within the subset of features that we want to use,
+
+00:02:12.639 --> 00:02:16.959
+then we can just follow the left subtree or the right subtree,
+
+00:02:16.960 --> 00:02:21.170
+whichever path that the input data gets assigned to buy the split.
+
+00:02:21.169 --> 00:02:24.804
+So, this is saying, if the feature is in
+
+00:02:24.805 --> 00:02:29.305
+our set S of features that we want to assume are being used.
+
+00:02:29.305 --> 00:02:31.115
+Let's start with this "if" statement.
+
+00:02:31.115 --> 00:02:34.510
+So, this "if" statement is checking the value of
+
+00:02:34.509 --> 00:02:39.144
+the feature comparing it to the threshold.
+
+00:02:39.145 --> 00:02:42.490
+So, that's what's deciding whether to go down
+
+00:02:42.490 --> 00:02:45.409
+to the left child node or to the right child node.
+
+00:02:45.409 --> 00:02:47.544
+So, if it goes to the left child node,
+
+00:02:47.544 --> 00:02:51.769
+then just return the prediction from the left child sub-tree.
+
+00:02:51.770 --> 00:02:54.170
+If it's going to the right child node,
+
+00:02:54.169 --> 00:02:57.234
+then just return the prediction from the right subtree.
+
+00:02:57.235 --> 00:03:01.190
+Again, it's okay if this seems a little bit high level right now,
+
+00:03:01.189 --> 00:03:03.574
+but we're going to implement this procedure,
+
+00:03:03.574 --> 00:03:06.259
+this algorithm in code next.
+

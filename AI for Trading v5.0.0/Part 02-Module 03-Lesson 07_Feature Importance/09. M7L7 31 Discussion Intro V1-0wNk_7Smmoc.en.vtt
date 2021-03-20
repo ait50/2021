@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.365
+So now let's discuss if these results make sense to us.
+
+00:00:04.365 --> 00:00:07.995
+The shap library outputs the shap values for feature 0,
+
+00:00:07.995 --> 00:00:10.890
+1, and 2 which is what we see here.
+
+00:00:10.890 --> 00:00:15.825
+We can see that the Shapley value for feature 0 matches what we calculated.
+
+00:00:15.825 --> 00:00:18.400
+We calculated 0.375.
+
+00:00:18.400 --> 00:00:23.205
+The Shapley value for feature 1 is also given the same importance as feature 0.
+
+00:00:23.205 --> 00:00:26.835
+So feature 1 also has a 0.375.
+
+00:00:26.835 --> 00:00:29.160
+So let's think about some of these questions.
+
+00:00:29.160 --> 00:00:32.924
+Given that the training data is simulating the AND operator,
+
+00:00:32.924 --> 00:00:35.775
+do you think that these values make sense?
+
+00:00:35.775 --> 00:00:39.060
+Next, do you think feature 0 and 1 are equally
+
+00:00:39.060 --> 00:00:42.585
+important or is one more important than the other?
+
+00:00:42.585 --> 00:00:47.795
+Does the importance of feature 2 make sense as well because it's zero.
+
+00:00:47.795 --> 00:00:50.975
+So now think back to the previous exercise,
+
+00:00:50.975 --> 00:00:54.805
+and when we looked at how scikit-learn implements feature importance.
+
+00:00:54.805 --> 00:01:00.020
+How does this compare to the feature importance method in scikit-learn?
+
+00:01:00.020 --> 00:01:04.320
+Think this over and then check out the solution video.
+

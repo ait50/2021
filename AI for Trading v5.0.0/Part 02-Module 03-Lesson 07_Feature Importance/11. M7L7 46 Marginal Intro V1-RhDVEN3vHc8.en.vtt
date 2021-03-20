@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.585
+So calculate the marginal contribution for a single feature.
+
+00:00:03.585 --> 00:00:05.910
+In other words, calculate this.
+
+00:00:05.910 --> 00:00:09.179
+So fill in the function that takes in the custom tree object,
+
+00:00:09.179 --> 00:00:11.714
+just here, a sample data point,
+
+00:00:11.714 --> 00:00:13.469
+which is this lowercase x,
+
+00:00:13.470 --> 00:00:15.540
+and a list containing the set of features in
+
+00:00:15.539 --> 00:00:20.280
+set S. So S is a set of features that does not include feature I.
+
+00:00:20.280 --> 00:00:23.640
+Also, taking the feature for which we want to
+
+00:00:23.640 --> 00:00:26.880
+calculate the marginal contribution. So here's a hint.
+
+00:00:26.879 --> 00:00:30.824
+The Python set class has the number function.add,
+
+00:00:30.824 --> 00:00:36.195
+and also note that you may need to use the.copy function as well. Here's what I mean.
+
+00:00:36.195 --> 00:00:40.674
+So let's just create some temporary variable,
+
+00:00:40.674 --> 00:00:42.570
+and let's create a set,
+
+00:00:42.570 --> 00:00:45.310
+let's say contains feature zero.
+
+00:00:47.000 --> 00:00:55.730
+So now, if we took that set and we did add and let's say we add feature one,
+
+00:00:55.729 --> 00:01:00.799
+notice now that temp has been modified in place,
+
+00:01:00.799 --> 00:01:04.584
+so now is a set containing both zero and one.
+
+00:01:04.584 --> 00:01:10.444
+So you can imagine if we start with set S and we want to add feature I,
+
+00:01:10.444 --> 00:01:16.069
+then we'll be changing the original variable set S. So to avoid doing that,
+
+00:01:16.069 --> 00:01:18.379
+consider using the copy function.
+
+00:01:18.379 --> 00:01:20.289
+So go ahead and try to implement this,
+
+00:01:20.290 --> 00:01:23.030
+and then you can check out the solution video.
+

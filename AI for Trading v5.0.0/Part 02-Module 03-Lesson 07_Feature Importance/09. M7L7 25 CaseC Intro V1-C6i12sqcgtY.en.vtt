@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:07.049
+So now, let's introduce Case C. So it's going to follow this similar formula of steps.
+
+00:00:07.049 --> 00:00:11.564
+You can definitely look at Case B and Case A to help you do this.
+
+00:00:11.564 --> 00:00:15.330
+But now, we're just checking how does the model perform when
+
+00:00:15.330 --> 00:00:21.210
+it's trained on all three features versus when it's only trained on features one and two.
+
+00:00:21.210 --> 00:00:23.519
+So in this case, we calculate the prediction of
+
+00:00:23.519 --> 00:00:27.405
+the model when it has all three features to work with.
+
+00:00:27.405 --> 00:00:29.414
+When we have all three features,
+
+00:00:29.414 --> 00:00:32.490
+the model is able to predict that if feature
+
+00:00:32.490 --> 00:00:36.315
+zero and feature one are both one and the label is one.
+
+00:00:36.314 --> 00:00:40.949
+So we expect the prediction of this model to be one.
+
+00:00:41.210 --> 00:00:46.204
+This case when the model has only features one and two,
+
+00:00:46.204 --> 00:00:50.929
+then its training data tells it that half of the time when feature one is one,
+
+00:00:50.929 --> 00:00:52.594
+the label is zero,
+
+00:00:52.594 --> 00:00:54.814
+and half the time the label is one.
+
+00:00:54.814 --> 00:00:58.079
+So on average is going to be 0.5,
+
+00:00:58.079 --> 00:01:00.704
+and that's the prediction that we'll expect from here.
+
+00:01:00.704 --> 00:01:05.584
+So then, again, calculate the difference between them to get the marginal contribution,
+
+00:01:05.584 --> 00:01:10.774
+and then calculate the weight that's associated with that marginal contribution,
+
+00:01:10.775 --> 00:01:15.500
+which is that expression containing the factorials.
+
+00:01:15.500 --> 00:01:18.959
+Go ahead and try it out, and then check out the solution video.
+

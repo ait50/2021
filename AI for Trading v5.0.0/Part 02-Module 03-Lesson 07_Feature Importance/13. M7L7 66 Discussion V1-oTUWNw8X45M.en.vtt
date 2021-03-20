@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.355
+So, let's discuss sector a bit.
+
+00:00:02.355 --> 00:00:06.615
+The random forests can still work with categorical features that are numbers.
+
+00:00:06.615 --> 00:00:10.065
+For instance, to filter features by sector five,
+
+00:00:10.064 --> 00:00:15.734
+is possible for a tree to learn to split on a sector less than six and then below that,
+
+00:00:15.734 --> 00:00:18.000
+split on sector greater than four.
+
+00:00:18.000 --> 00:00:21.589
+So, one of the reasons tree-based models are greatest is because they can
+
+00:00:21.589 --> 00:00:25.280
+still try to interpret data that hasn't been fully cleaned or processed.
+
+00:00:25.280 --> 00:00:28.580
+However, it's still best practice to one-hot encode
+
+00:00:28.579 --> 00:00:30.979
+categorical features as this will help to
+
+00:00:30.980 --> 00:00:34.130
+reduce noise and hopefully help them model's performance.
+
+00:00:34.130 --> 00:00:38.450
+So, you'll one-hot encode the sector with sector labels in the project.
+
+00:00:38.450 --> 00:00:41.270
+Please see some code here that can be useful when you
+
+00:00:41.270 --> 00:00:44.545
+assign a categorical labels to each sector.
+
+00:00:44.545 --> 00:00:47.875
+So, we'll be importing some table,
+
+00:00:47.875 --> 00:00:50.719
+and then we'll just do some processing so that you can see
+
+00:00:50.719 --> 00:00:54.185
+healthcare is actually sector_id zero for instance.
+
+00:00:54.185 --> 00:00:57.230
+So here's more sample code that you can use in the project.
+
+00:00:57.229 --> 00:00:59.195
+So one question is,
+
+00:00:59.195 --> 00:01:03.369
+are there other features here that you could also one-hot encode besides sector?
+
+00:01:03.369 --> 00:01:06.969
+If so, you can try to one-hot encode them in the project.
+
+00:01:06.969 --> 00:01:09.579
+Now, let's see if we can improve date features.
+
+00:01:09.579 --> 00:01:13.149
+Now, the low-frequency date parts like end of month
+
+00:01:13.150 --> 00:01:17.045
+and end of quarter have low importance based on our rankings.
+
+00:01:17.045 --> 00:01:19.000
+So this should not be surprising since we are
+
+00:01:19.000 --> 00:01:21.444
+looking at only a couple years of training history,
+
+00:01:21.444 --> 00:01:22.929
+and there are only say,
+
+00:01:22.930 --> 00:01:24.595
+four quarters in a year.
+
+00:01:24.594 --> 00:01:27.775
+End of month trading activity may actually occur
+
+00:01:27.775 --> 00:01:30.850
+some days before the last business day of the month.
+
+00:01:30.849 --> 00:01:35.269
+So to better capture what we think of as end of month trading,
+
+00:01:35.269 --> 00:01:40.109
+we can try including the last five business days of the month and similarly,
+
+00:01:40.109 --> 00:01:43.420
+we can try including the last two weeks of each quarter.
+
+00:01:43.420 --> 00:01:50.045
+So go from a single day to either the last five days or the last 10 trading days.
+
+00:01:50.045 --> 00:01:52.670
+So here's some helper code that you can use in
+
+00:01:52.670 --> 00:01:56.015
+the project to help you try to enhance your features.
+
+00:01:56.015 --> 00:02:01.254
+So, we can use BDay to offset our date range by a specified number of business days,
+
+00:02:01.254 --> 00:02:03.109
+and also here is documentation for
+
+00:02:03.109 --> 00:02:06.334
+frequencies to choose from such as monthly or quarterly.
+
+00:02:06.334 --> 00:02:08.989
+So here's an example that you can use
+
+00:02:08.990 --> 00:02:12.695
+to help you understand how to use it in the project.
+
+00:02:12.694 --> 00:02:16.159
+There's also the union function which you might find it
+
+00:02:16.159 --> 00:02:19.895
+useful as well to union these date-time indices together.
+
+00:02:19.895 --> 00:02:23.284
+Now, the last note is about pruning features.
+
+00:02:23.284 --> 00:02:25.549
+In the project, you'll try to improve some of
+
+00:02:25.550 --> 00:02:28.215
+the features and then check their feature importance is.
+
+00:02:28.215 --> 00:02:30.060
+See if they change if at all.
+
+00:02:30.060 --> 00:02:33.604
+Then you can prune your feature list and that means you choose
+
+00:02:33.604 --> 00:02:37.594
+the features that you really want to use in your model and you discard the rest.
+
+00:02:37.594 --> 00:02:40.250
+Here's the link to the solution notebook,
+
+00:02:40.250 --> 00:02:44.250
+and I wish you best of luck on your project. Thanks.
+

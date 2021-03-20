@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.270
+Now, let's take a look at the Tree SHAP algorithm.
+
+00:00:03.270 --> 00:00:07.169
+So to get a sense of the SHAP library that we'll be using later,
+
+00:00:07.169 --> 00:00:10.544
+let's implement a simple version of the Tree SHAP algorithm.
+
+00:00:10.544 --> 00:00:12.810
+This is based on Scott Lumber's paper,
+
+00:00:12.810 --> 00:00:17.085
+Consistent Individualized Feature Attribution for Tree Ensembles.
+
+00:00:17.085 --> 00:00:20.769
+So that's a link to the paper here.
+
+00:00:21.440 --> 00:00:24.915
+Training and reusing a single tree model.
+
+00:00:24.914 --> 00:00:28.949
+You may notice that calculating SHAP values for every feature and
+
+00:00:28.949 --> 00:00:33.164
+for every individual data point is very computationally expensive.
+
+00:00:33.164 --> 00:00:34.814
+For example, we would be training
+
+00:00:34.814 --> 00:00:39.195
+multiple models just to calculate the importance of one feature,
+
+00:00:39.195 --> 00:00:41.909
+which is what we did in the previous exercise.
+
+00:00:41.909 --> 00:00:47.449
+With decision trees, we can actually train a decision tree on all the features and then
+
+00:00:47.450 --> 00:00:53.870
+we use that single tree to calculate Shapley values using subsets of that single tree.
+
+00:00:53.869 --> 00:00:57.229
+So here's just a visual of what we were doing
+
+00:00:57.229 --> 00:01:01.834
+before where we would create a new instance of a tree model,
+
+00:01:01.835 --> 00:01:04.385
+train it on features one and two,
+
+00:01:04.385 --> 00:01:06.755
+create a separate instance of a tree model,
+
+00:01:06.754 --> 00:01:08.619
+train it just on feature two.
+
+00:01:08.620 --> 00:01:12.660
+So, we're going to look at a more efficient way of doing this.
+
+00:01:13.030 --> 00:01:18.049
+For some intuition, let's look at a model that has just two features.
+
+00:01:18.049 --> 00:01:23.125
+The tree splits on feature one first and then on feature two.
+
+00:01:23.125 --> 00:01:28.474
+If we wanted to see how a model would perform if it only used the first feature,
+
+00:01:28.474 --> 00:01:33.049
+we would look at the subtree that consists of the top three nodes of this tree.
+
+00:01:33.049 --> 00:01:37.629
+So that's these three blue nodes right here.
+
+00:01:37.629 --> 00:01:40.819
+Similarly, if we wanted to see how a model would make
+
+00:01:40.819 --> 00:01:43.744
+predictions if it used only feature two,
+
+00:01:43.745 --> 00:01:47.240
+we could look at the subtree containing the bottom three nodes,
+
+00:01:47.239 --> 00:01:50.375
+starting at the node that splits on feature two.
+
+00:01:50.375 --> 00:01:53.974
+So that's these three nodes right here.
+
+00:01:53.974 --> 00:01:56.599
+Another example with three features.
+
+00:01:56.599 --> 00:02:00.394
+Now, let's look at a tree that has trained on three features.
+
+00:02:00.394 --> 00:02:02.569
+Let's say it's splits on feature one,
+
+00:02:02.569 --> 00:02:06.119
+then feature two, and then on feature three.
+
+00:02:06.120 --> 00:02:09.379
+So how do we simulate the prediction of a tree that
+
+00:02:09.379 --> 00:02:12.310
+was only trained on features one and three,
+
+00:02:12.310 --> 00:02:14.784
+but not on feature two?
+
+00:02:14.784 --> 00:02:18.655
+So in other words, only feature one and feature three.
+
+00:02:18.655 --> 00:02:21.794
+Well, if we didn't split on feature two,
+
+00:02:21.794 --> 00:02:24.859
+that means that we would include the training samples in both
+
+00:02:24.860 --> 00:02:28.865
+the left and right subtree of that node when making a prediction.
+
+00:02:28.865 --> 00:02:33.085
+This is how we can simulate that the tree never split on feature two.
+
+00:02:33.085 --> 00:02:35.819
+So in other words, we'll see in the algorithm,
+
+00:02:35.818 --> 00:02:41.298
+how do we combine so that we pretend that we actually didn't split on feature two,
+
+00:02:41.299 --> 00:02:46.075
+even though we trained this tree on all the features including feature two?
+
+00:02:46.074 --> 00:02:51.049
+Let's also think about how we handle the predictions when we split on the feature.
+
+00:02:51.050 --> 00:02:53.299
+If we split on feature three,
+
+00:02:53.299 --> 00:02:57.510
+down here and that particular data point we're making a prediction for,
+
+00:02:57.509 --> 00:02:59.389
+so that's our sample input.
+
+00:02:59.389 --> 00:03:04.250
+If that ends up in the left child node in green here then we
+
+00:03:04.250 --> 00:03:09.185
+can use the prediction based on training samples in this left subtree,
+
+00:03:09.185 --> 00:03:13.430
+and ignore the training samples in the right subtree.
+
+00:03:13.430 --> 00:03:16.760
+So this is some intuition about what
+
+00:03:16.759 --> 00:03:20.539
+the algorithm will be doing when we look at the actual algorithm.
+
+00:03:20.539 --> 00:03:23.689
+So we're going to walk through the algorithm in the next video,
+
+00:03:23.689 --> 00:03:28.449
+but feel free to look over this part of the notebook before continuing on.
+

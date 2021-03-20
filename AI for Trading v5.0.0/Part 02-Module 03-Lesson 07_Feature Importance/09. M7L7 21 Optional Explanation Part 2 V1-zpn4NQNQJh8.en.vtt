@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.104
+So to create this expression,
+
+00:00:03.104 --> 00:00:07.859
+let's divide up this adding of sequences to the coalition into two parts.
+
+00:00:07.860 --> 00:00:12.195
+So there's the sequence of features before adding feature i,
+
+00:00:12.195 --> 00:00:17.940
+and there's the sequence of features that are added after we add feature i.
+
+00:00:17.940 --> 00:00:22.120
+For the set of features that are added before we add feature i,
+
+00:00:22.120 --> 00:00:27.589
+We're going to call this set S. S is what we saw in the formula above.
+
+00:00:27.589 --> 00:00:31.565
+For the set of features that are added after we add feature i,
+
+00:00:31.565 --> 00:00:33.515
+we'll call this Q,
+
+00:00:33.515 --> 00:00:35.825
+and Q is not in the formula,
+
+00:00:35.825 --> 00:00:40.105
+but I'm using Q so that is easier to follow this example.
+
+00:00:40.104 --> 00:00:43.699
+So given the sixth sequences that we saw earlier,
+
+00:00:43.700 --> 00:00:47.719
+and also given that we're looking at feature x sub two,
+
+00:00:47.719 --> 00:00:51.379
+here's what sets S and Q are for each sequence.
+
+00:00:51.380 --> 00:00:54.380
+So notice we added feature zero and then one.
+
+00:00:54.380 --> 00:00:57.590
+So these all occur before adding feature two.
+
+00:00:57.590 --> 00:00:59.465
+After adding feature two,
+
+00:00:59.465 --> 00:01:00.680
+there are no other features.
+
+00:01:00.679 --> 00:01:02.359
+So Q is an empty set.
+
+00:01:02.359 --> 00:01:04.579
+Okay. So the second example is,
+
+00:01:04.579 --> 00:01:07.840
+if we had feature zero and then next is feature two.
+
+00:01:07.840 --> 00:01:11.299
+So set S is just the set with feature zero,
+
+00:01:11.299 --> 00:01:13.295
+and after we add feature two,
+
+00:01:13.295 --> 00:01:15.150
+we're going to add a feature one.
+
+00:01:15.150 --> 00:01:18.695
+So Q is the set that contains feature one.
+
+00:01:18.694 --> 00:01:22.549
+So you can pause here and look at all six of these examples.
+
+00:01:22.549 --> 00:01:25.444
+So for the first and third sequences,
+
+00:01:25.444 --> 00:01:30.004
+these have the same set S contains features zero and one.
+
+00:01:30.004 --> 00:01:32.599
+They also have the same set Q,
+
+00:01:32.599 --> 00:01:34.500
+where Q is the empty set.
+
+00:01:34.500 --> 00:01:38.674
+So another way to calculate that there are two of these sequences,
+
+00:01:38.674 --> 00:01:42.094
+that there's this one and that there's this one,
+
+00:01:42.094 --> 00:01:47.034
+is to take S factorial times Q factorial which is two.
+
+00:01:47.034 --> 00:01:50.899
+So similarly, for these two which are the same,
+
+00:01:50.900 --> 00:01:53.300
+the fifth and sixth series,
+
+00:01:53.299 --> 00:01:59.099
+the set S is the empty set and Q contains features zero and one.
+
+00:01:59.099 --> 00:02:02.914
+So another way to calculate that there are two of these sequences,
+
+00:02:02.915 --> 00:02:07.740
+is to take S factorial times Q factorial which is two.
+

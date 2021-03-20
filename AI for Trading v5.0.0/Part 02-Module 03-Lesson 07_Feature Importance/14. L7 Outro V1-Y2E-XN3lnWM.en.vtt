@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.290
+In this lesson, you've learned about the need to be able to interpret
+
+00:00:04.290 --> 00:00:10.574
+complex models and to identify which features are important to model's prediction.
+
+00:00:10.574 --> 00:00:14.969
+You've also learned how feature importance is implemented in scikit-learn,
+
+00:00:14.970 --> 00:00:18.780
+as well as how sharply additive explanations are implemented.
+
+00:00:18.780 --> 00:00:22.920
+Finally, you also practice ranking features by their importance to
+
+00:00:22.920 --> 00:00:27.120
+a model in order to limit your model to the most relevant features.
+
+00:00:27.120 --> 00:00:33.179
+Next, you'll get to combine all that you've learned in the alpha combination project.
+
+00:00:33.179 --> 00:00:35.899
+Good luck and have fun.
+

@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.930
+So let's implement model SHAP importances with the starter code.
+
+00:00:03.930 --> 00:00:06.554
+First we'll calculate the SHAP values.
+
+00:00:06.554 --> 00:00:07.919
+So if you'll recall,
+
+00:00:07.919 --> 00:00:11.654
+let's go back up to see how we call that function.
+
+00:00:11.654 --> 00:00:14.459
+The first step was we take the SHAP library.
+
+00:00:14.460 --> 00:00:15.675
+It has a tree explainer,
+
+00:00:15.675 --> 00:00:18.045
+we create that object passing in the model,
+
+00:00:18.045 --> 00:00:21.735
+and then from that tree explainer objects we call SHAP values,
+
+00:00:21.734 --> 00:00:23.204
+pass in the training data,
+
+00:00:23.204 --> 00:00:25.904
+and also we can set the tree limit to save time.
+
+00:00:25.905 --> 00:00:29.234
+So I'm going to copy this, so we can look at it when we work with it.
+
+00:00:29.234 --> 00:00:40.350
+So here, we can say shap.TreeExplainer, pass in the model
+
+00:00:40.350 --> 00:00:45.090
+which we have passed in here. Then, from that tree explainer object,
+
+00:00:45.090 --> 00:00:47.235
+we can call a SHAP values,
+
+00:00:47.234 --> 00:00:50.954
+pass in the data which is here,
+
+00:00:50.954 --> 00:00:53.554
+and also set the tree limit,
+
+00:00:53.554 --> 00:00:55.920
+let's set it to five as well.
+
+00:00:57.859 --> 00:01:02.299
+Next, let's concatenate the SHAP values that are output from it.
+
+00:01:02.299 --> 00:01:06.049
+So we can do numpy.concatenate,
+
+00:01:06.049 --> 00:01:09.114
+concatenating the SHAP values list.
+
+00:01:09.114 --> 00:01:14.209
+Then, we can take the absolute value of that SHAP values matrix,
+
+00:01:14.209 --> 00:01:17.069
+and then we can take the average of that.
+
+00:01:17.349 --> 00:01:20.494
+Can set axis equal to zero,
+
+00:01:20.495 --> 00:01:22.490
+same as the example that we saw here.
+
+00:01:22.489 --> 00:01:26.344
+So it takes an average one for each column.
+
+00:01:26.344 --> 00:01:30.155
+All right, get the indices sorted in descending order. All right.
+
+00:01:30.155 --> 00:01:36.495
+So numpy.argsort, the global importances,
+
+00:01:36.495 --> 00:01:38.609
+and that's going to be in ascending order,
+
+00:01:38.609 --> 00:01:40.704
+so let's just reverse it.
+
+00:01:40.704 --> 00:01:43.159
+So let's try it out.
+
+00:01:43.159 --> 00:01:46.254
+It's going to take a few seconds to run.
+
+00:01:46.254 --> 00:01:51.250
+But then, we can check out the result.
+
+00:01:52.930 --> 00:01:57.095
+Great. So now, we can see that we sorted
+
+00:01:57.094 --> 00:02:01.539
+in descending order by importance using SHAP values.
+
+00:02:01.540 --> 00:02:03.970
+All right, please continue with the lesson.
+

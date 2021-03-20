@@ -1,0 +1,211 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.194
+Okay. So now, let's calculate case B.
+
+00:00:03.194 --> 00:00:07.035
+Calculate the prediction of a model that uses features zero and two.
+
+00:00:07.035 --> 00:00:10.484
+Then calculate the prediction of the model that uses just feature two,
+
+00:00:10.484 --> 00:00:12.219
+and then get the difference.
+
+00:00:12.220 --> 00:00:16.380
+So here, S_union_i, is going to include features zero and two.
+
+00:00:16.379 --> 00:00:21.210
+So let's use the get_subset function that we defined earlier.
+
+00:00:21.210 --> 00:00:23.475
+So X contains all the features,
+
+00:00:23.475 --> 00:00:25.320
+and we have a list that says,
+
+00:00:25.320 --> 00:00:27.914
+I want to get zero and two.
+
+00:00:27.914 --> 00:00:32.339
+Now this f_S union_i is just going to contain an instance of
+
+00:00:32.340 --> 00:00:38.770
+the decision tree regressor, sklearn.tree.Decision.Tree.Regressor.
+
+00:00:38.780 --> 00:00:44.615
+We're going to fit it to the data which is just going to be S_union_i,
+
+00:00:44.615 --> 00:00:47.940
+and the label, Y.
+
+00:00:47.950 --> 00:00:53.734
+Now, the sample input is going to be one comma one.
+
+00:00:53.734 --> 00:00:57.240
+So it's a numpy array like this.
+
+00:00:57.590 --> 00:01:00.360
+Because feature zero is one,
+
+00:01:00.359 --> 00:01:03.589
+and feature two is one for that sample observation.
+
+00:01:03.590 --> 00:01:07.575
+Now, remember that we have to reshape it to be a two-dimensional array.
+
+00:01:07.575 --> 00:01:09.719
+So it's going to have one row,
+
+00:01:09.719 --> 00:01:12.875
+and it's going to have however many columns
+
+00:01:12.875 --> 00:01:16.430
+that makes sense for this to be reshaped in this case.
+
+00:01:16.430 --> 00:01:19.145
+So negative one to saying choose it for us,
+
+00:01:19.144 --> 00:01:21.469
+and that's actually going to be two columns.
+
+00:01:21.469 --> 00:01:24.515
+Now, the prediction of
+
+00:01:24.515 --> 00:01:28.864
+this model on this sample input is going to be stored in this variable.
+
+00:01:28.864 --> 00:01:37.699
+So we're going to take f_S union_ i.model.predict on the sample input.
+
+00:01:37.700 --> 00:01:45.379
+So it's 0.5 as we expect in this discussion here.
+
+00:01:45.379 --> 00:01:49.819
+Okay. So now, for the model when it only has feature two,
+
+00:01:49.819 --> 00:01:51.049
+let's go ahead and calculate this.
+
+00:01:51.049 --> 00:01:55.144
+So S is equal to get_subset X,
+
+00:01:55.144 --> 00:01:58.959
+and it's going to be grabbing feature two.
+
+00:01:58.959 --> 00:02:06.759
+This is f_S is going to contain another decision tree regressor.
+
+00:02:06.760 --> 00:02:12.740
+We're going to fit that model to the data which is S contains the features,
+
+00:02:12.740 --> 00:02:14.985
+and Y contains the labels.
+
+00:02:14.985 --> 00:02:18.500
+Now, the sample input is just going to be a single value of one.
+
+00:02:18.500 --> 00:02:22.995
+So we're just going to create a numpy array containing one,
+
+00:02:22.995 --> 00:02:29.150
+and remember we want to reshape it to have one row and how many columns are needed.
+
+00:02:29.150 --> 00:02:32.555
+In this case, it's actually going to be one column as well.
+
+00:02:32.555 --> 00:02:36.659
+Then this is going to store the prediction of that model.
+
+00:02:36.939 --> 00:02:40.805
+We're going to predict on the sample input.
+
+00:02:40.805 --> 00:02:47.150
+Okay. So it's 0.25. and that makes sense as per this discussion here.
+
+00:02:47.150 --> 00:02:49.735
+So now, we'll just calculate the difference.
+
+00:02:49.735 --> 00:02:57.725
+So it's going to be the prediction S_union_i minus the prediction
+
+00:02:57.724 --> 00:03:06.810
+when it just has S. So that's difference is 0.5 minus 0.25, which is 0.25.
+
+00:03:06.810 --> 00:03:09.080
+So that's the marginal contribution.
+
+00:03:09.080 --> 00:03:11.075
+Now, let's calculate the weight,
+
+00:03:11.074 --> 00:03:13.294
+and remember this is calculating
+
+00:03:13.294 --> 00:03:17.484
+that term in the original formula that contains all those factorials.
+
+00:03:17.485 --> 00:03:20.130
+So first of all, let's get the size of S,
+
+00:03:20.129 --> 00:03:26.419
+which we know in this case is to be one because here we have a single feature.
+
+00:03:26.419 --> 00:03:29.944
+But programmatically, we can do that by saying,
+
+00:03:29.944 --> 00:03:33.775
+so in a new cell, I can say, S.shape.
+
+00:03:33.775 --> 00:03:38.480
+Notice there's a 100 observations and there's one feature.
+
+00:03:38.479 --> 00:03:43.969
+So S.shape index one gives us one, right?
+
+00:03:43.969 --> 00:03:47.085
+So here, the weight,
+
+00:03:47.085 --> 00:03:50.594
+let's use the function calc_weight.
+
+00:03:50.594 --> 00:03:54.889
+If I do shift tab I can see the arguments it takes.
+
+00:03:54.889 --> 00:03:57.934
+So size S and also the number of features.
+
+00:03:57.935 --> 00:04:01.145
+The number of features is actually stored in a variable,
+
+00:04:01.145 --> 00:04:04.100
+M. But if you don't remember that,
+
+00:04:04.099 --> 00:04:08.104
+you can also take X-variable, check its shape.
+
+00:04:08.104 --> 00:04:10.250
+Notice that it has three features.
+
+00:04:10.250 --> 00:04:11.944
+So at index one,
+
+00:04:11.944 --> 00:04:14.509
+we can also grab the value here,
+
+00:04:14.509 --> 00:04:19.175
+and that will be the same as using the variable M,
+
+00:04:19.175 --> 00:04:21.685
+which also stores the number three.
+
+00:04:21.685 --> 00:04:24.540
+Okay. So the weight should be one divided by six,
+
+00:04:24.540 --> 00:04:26.235
+which is what we see here.
+
+00:04:26.235 --> 00:04:31.920
+Awesome. So let's continue on to the next video to introduce case C.
+

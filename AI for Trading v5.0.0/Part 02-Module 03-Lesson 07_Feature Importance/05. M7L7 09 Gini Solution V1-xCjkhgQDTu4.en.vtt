@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.410
+Okay. So, when both classes are 50 percent,
+
+00:00:04.410 --> 00:00:05.955
+what is the impurity?
+
+00:00:05.955 --> 00:00:11.265
+So, frequency is 0.5 for both.
+
+00:00:11.265 --> 00:00:13.964
+Let's type all this formula,
+
+00:00:13.964 --> 00:00:18.914
+which is actually the same thing that you see right here, but let's just type it out.
+
+00:00:18.914 --> 00:00:21.899
+So, negative one times frequency one,
+
+00:00:21.899 --> 00:00:24.329
+times one minus frequency one,
+
+00:00:24.329 --> 00:00:28.889
+plus minus one times frequency two,
+
+00:00:28.890 --> 00:00:33.100
+times one minus frequency two.
+
+00:00:33.289 --> 00:00:37.019
+We say they're variable in impurity, printed it out.
+
+00:00:37.020 --> 00:00:42.150
+So, you can see that when is evenly split between these two frequencies,
+
+00:00:42.149 --> 00:00:46.619
+then the impurity is negative 0.5.
+
+00:00:46.619 --> 00:00:49.195
+So, now the question is asking,
+
+00:00:49.195 --> 00:00:52.460
+is the impurity larger or smaller when the sample,
+
+00:00:52.460 --> 00:00:54.439
+in magnitude absolute value,
+
+00:00:54.439 --> 00:00:57.304
+when the samples are dominated by a single class?
+
+00:00:57.304 --> 00:01:00.929
+So, essentially, we're comparing this case
+
+00:01:00.929 --> 00:01:05.170
+when one was 90 percent and the other was 0.01,
+
+00:01:05.170 --> 00:01:07.715
+versus when they were evenly split.
+
+00:01:07.715 --> 00:01:09.920
+So, in terms of absolute values,
+
+00:01:09.920 --> 00:01:17.325
+you can see that 0.18 is smaller closer to zero compared to 0.5.
+
+00:01:17.325 --> 00:01:23.340
+So, impurity is smaller in magnitude when
+
+00:01:23.340 --> 00:01:29.954
+samples are dominated by a single class,
+
+00:01:29.954 --> 00:01:33.405
+that's the 90 percent, 10 percent example.
+
+00:01:33.405 --> 00:01:35.870
+The second question is very similar,
+
+00:01:35.870 --> 00:01:38.329
+is the impurity larger or smaller when
+
+00:01:38.329 --> 00:01:41.704
+the frequency of each class is more evenly distributed among classes?
+
+00:01:41.704 --> 00:01:45.609
+So, the impurity is larger in magnitude
+
+00:01:45.609 --> 00:01:51.724
+when samples are more evenly distributed among classes.
+
+00:01:51.724 --> 00:01:55.879
+That's the 50 percent, 50 percent example.
+
+00:01:55.879 --> 00:02:00.109
+Great. Please continue on with the lesson. Thanks.
+

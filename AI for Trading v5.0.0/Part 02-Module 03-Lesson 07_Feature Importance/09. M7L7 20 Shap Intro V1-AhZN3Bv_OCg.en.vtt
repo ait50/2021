@@ -1,0 +1,199 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.200
+Hey. So, now we're going to learn about calculating Shapley values.
+
+00:00:04.200 --> 00:00:08.894
+So, as before, you can go ahead and right-click this Jupyter icon,
+
+00:00:08.894 --> 00:00:13.589
+open link in new tab so that way you can follow along in the videos in
+
+00:00:13.589 --> 00:00:19.379
+the classroom and also you can work with the code without the extra horizontal headers.
+
+00:00:19.379 --> 00:00:20.989
+So go to calculate shop,
+
+00:00:20.989 --> 00:00:23.339
+this is the notebook that we'll work with.
+
+00:00:23.339 --> 00:00:25.905
+Great. So, let's calculate Shapley values.
+
+00:00:25.905 --> 00:00:28.830
+Shapley values, as used in coalition game theory,
+
+00:00:28.829 --> 00:00:31.904
+were introduced by William Shapley in 1953,
+
+00:00:31.905 --> 00:00:34.274
+and so they're named after William Shapley.
+
+00:00:34.274 --> 00:00:40.579
+Scott Lundburg applied Shapley values for calculating feature importance in 2017.
+
+00:00:40.579 --> 00:00:44.140
+So, here's just a link to Scott Luneburg's page.
+
+00:00:44.140 --> 00:00:50.750
+Here's a link to the article published by Scott Luneburg and Su-In Lee,
+
+00:00:50.750 --> 00:00:53.950
+A Unified Approach to Interpreting Model Predictions.
+
+00:00:53.950 --> 00:00:56.790
+So, if you would like to read the paper,
+
+00:00:56.789 --> 00:00:58.344
+which is good practice,
+
+00:00:58.344 --> 00:01:02.435
+then I'd recommend certain sections so you don't have to read the whole thing.
+
+00:01:02.435 --> 00:01:04.519
+So, read the abstract.
+
+00:01:04.519 --> 00:01:06.994
+Number one, Part two.
+
+00:01:06.995 --> 00:01:10.564
+Skip ahead a little bit and go to classic Shapley Value Estimation.
+
+00:01:10.564 --> 00:01:13.355
+So, what I mean is, if you go to the paper,
+
+00:01:13.355 --> 00:01:14.840
+the link of it is here,
+
+00:01:14.840 --> 00:01:16.370
+if you go to the paper,
+
+00:01:16.370 --> 00:01:18.265
+just read the abstract,
+
+00:01:18.265 --> 00:01:22.635
+rad the introduction, read this part of Section 2.
+
+00:01:22.635 --> 00:01:26.594
+When you get to Line 2.1s you can skip that,
+
+00:01:26.594 --> 00:01:34.480
+skip 2.2, skip 2.3 and just jump to 2.4 classic Shapley Value Estimation.
+
+00:01:34.480 --> 00:01:39.405
+Read this section and you can stop at the end of Page three.
+
+00:01:39.405 --> 00:01:41.900
+All right. So that's optional if you want to read the paper
+
+00:01:41.900 --> 00:01:44.630
+yourself first, which is good practice.
+
+00:01:44.629 --> 00:01:47.994
+Otherwise, we continue on with Notebook, or with this video.
+
+00:01:47.995 --> 00:01:51.980
+So Lundberg calls this feature importance method SHAP,
+
+00:01:51.980 --> 00:01:55.174
+which stands for Shapley additive explanations.
+
+00:01:55.174 --> 00:01:59.269
+Here's the formula for calculating Shapley values, So,
+
+00:01:59.269 --> 00:02:01.765
+this Greek symbol is called Phi,
+
+00:02:01.765 --> 00:02:05.989
+Phi sub i, where i refers to a particular feature.
+
+00:02:05.989 --> 00:02:08.104
+So, for instance if we had three features,
+
+00:02:08.104 --> 00:02:10.429
+then I would be index 0,
+
+00:02:10.430 --> 00:02:13.390
+1, 2 for each of those features.
+
+00:02:13.389 --> 00:02:19.369
+A key part of this is the difference between the model's prediction with feature i,
+
+00:02:19.370 --> 00:02:21.879
+and the model's prediction without feature i,
+
+00:02:21.879 --> 00:02:24.685
+which is this part of the formula right here.
+
+00:02:24.685 --> 00:02:28.759
+So, S refers to a subset of features that doesn't
+
+00:02:28.759 --> 00:02:33.304
+include the feature for which we're calculating Phi sub i, okay?
+
+00:02:33.305 --> 00:02:35.950
+So, S is a set of features,
+
+00:02:35.949 --> 00:02:40.414
+it doesn't include the feature for which we're calculating its importance.
+
+00:02:40.414 --> 00:02:47.275
+So that's why we're going to have a difference between the model with just features in S,
+
+00:02:47.275 --> 00:02:53.510
+and the model with features in S including and adding on feature i.
+
+00:02:53.509 --> 00:02:59.389
+Now S union i is the subset that includes features in S plus feature i,
+
+00:02:59.389 --> 00:03:01.764
+okay? So that's right here.
+
+00:03:01.764 --> 00:03:06.349
+Now this expression which you see here in the formula,
+
+00:03:06.349 --> 00:03:08.479
+so this in the summation symbol,
+
+00:03:08.479 --> 00:03:11.149
+it's saying all sets S that are subsets of
+
+00:03:11.150 --> 00:03:15.865
+the full set of features M excluding feature i.
+
+00:03:15.865 --> 00:03:19.939
+So, this is saying, we can create different combinations of the features,
+
+00:03:19.939 --> 00:03:23.990
+all the features the entire list of features is in M,
+
+00:03:23.990 --> 00:03:25.729
+and all the subsets,
+
+00:03:25.729 --> 00:03:30.440
+S,are the ones that don't include the feature i.
+
+00:03:30.439 --> 00:03:33.289
+So now you have some options for your learning.
+
+00:03:33.289 --> 00:03:35.359
+If you're okay with using this formula,
+
+00:03:35.360 --> 00:03:38.630
+then you can skip ahead to the code section below.
+
+00:03:38.629 --> 00:03:42.109
+If you would like an explanation for what this formula is doing,
+
+00:03:42.110 --> 00:03:44.240
+especially this part with the factorials,
+
+00:03:44.240 --> 00:03:47.120
+then please continue either watching the optional video,
+
+00:03:47.120 --> 00:03:50.460
+or reading along in the notebook. Thanks.
+

@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.424
+Now, let's look at Gini impurity and practice calculating in code.
+
+00:00:04.424 --> 00:00:09.179
+So, Gini impurity like entropy is a way to measure how disorganized the observations
+
+00:00:09.179 --> 00:00:14.324
+are before and after splitting them using a feature.
+
+00:00:14.324 --> 00:00:18.149
+So, there's an impurity value calculated for each node.
+
+00:00:18.149 --> 00:00:22.424
+In the formula, frequency sub I over here,
+
+00:00:22.425 --> 00:00:25.140
+is the frequency of label I.
+
+00:00:25.140 --> 00:00:28.455
+C is the number of unique labels at that node.
+
+00:00:28.454 --> 00:00:32.250
+So, in this case, C stands for a class, as in classifier.
+
+00:00:32.250 --> 00:00:34.664
+So, here's some practice examples.
+
+00:00:34.664 --> 00:00:38.024
+What is the impurity if there's a single class?
+
+00:00:38.024 --> 00:00:40.515
+So, that means that the frequency sub zero,
+
+00:00:40.515 --> 00:00:42.655
+is one per 100 percent,
+
+00:00:42.655 --> 00:00:45.995
+and the impurity we use this formula, negative one,
+
+00:00:45.994 --> 00:00:49.339
+times the frequency of this class,
+
+00:00:49.340 --> 00:00:51.790
+times one, minus the frequency.
+
+00:00:51.789 --> 00:00:54.518
+So, if you print out the impurity,
+
+00:00:54.518 --> 00:00:59.704
+impurity of a homogeneous sample with a single label is zero.
+
+00:00:59.704 --> 00:01:01.774
+The next example is,
+
+00:01:01.774 --> 00:01:03.559
+what is the impurity if there are
+
+00:01:03.560 --> 00:01:08.015
+two classes and there are 90 percent of samples for one label,
+
+00:01:08.015 --> 00:01:09.859
+and 10 percent for the other?
+
+00:01:09.859 --> 00:01:17.859
+So, this is saying frequency sub one is 0.9 and frequency sub two is 0.1.
+
+00:01:17.859 --> 00:01:22.495
+So, again, we just implement this formula that we see here.
+
+00:01:22.495 --> 00:01:26.400
+Negative one, times the frequency sub one times one,
+
+00:01:26.400 --> 00:01:29.290
+minus frequency sub one then plus,
+
+00:01:29.290 --> 00:01:31.280
+because we're doing a summation here,
+
+00:01:31.280 --> 00:01:33.859
+negative one times frequency sub two,
+
+00:01:33.859 --> 00:01:36.290
+times one minus frequency sub two.
+
+00:01:36.290 --> 00:01:39.470
+So, the impurity when 90 percent are of one label,
+
+00:01:39.469 --> 00:01:43.135
+and 10 percent are of the other, is negative 0.18.
+
+00:01:43.135 --> 00:01:44.815
+So, it's no longer zero.
+
+00:01:44.814 --> 00:01:47.149
+In absolute values, it's more than zero,
+
+00:01:47.150 --> 00:01:49.250
+in absolute value terms.
+
+00:01:49.250 --> 00:01:51.665
+So, try out this quiz.
+
+00:01:51.665 --> 00:01:54.785
+What is the impurity if there are two classes of label,
+
+00:01:54.784 --> 00:01:59.974
+and there are 50 percent of samples for one label and 50 percent for the other?
+
+00:01:59.974 --> 00:02:02.125
+So, once you try it out,
+
+00:02:02.125 --> 00:02:03.689
+try to answer these questions.
+
+00:02:03.689 --> 00:02:07.310
+Is the impurity larger or smaller in magnitude,
+
+00:02:07.310 --> 00:02:08.884
+in terms of absolute value,
+
+00:02:08.884 --> 00:02:12.484
+when the samples are dominated by a single class?
+
+00:02:12.485 --> 00:02:17.955
+Second question, is the impurity larger or smaller in magnitude,
+
+00:02:17.955 --> 00:02:19.695
+in terms of absolute value,
+
+00:02:19.694 --> 00:02:25.044
+when the frequency of each class is more evenly distributed among classes?
+
+00:02:25.044 --> 00:02:27.084
+Go ahead and try this out,
+
+00:02:27.085 --> 00:02:31.170
+answer these questions and then check out the solution video. Thanks.
+

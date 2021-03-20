@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.730
+Calculate Shapley value for one feature.
+
+00:00:02.730 --> 00:00:05.849
+Implement a function that calculates the Shapley value for
+
+00:00:05.849 --> 00:00:10.980
+a single feature by iterating across all subsets S. So,
+
+00:00:10.980 --> 00:00:15.345
+this is the formula you may be familiar with from the previous exercise.
+
+00:00:15.345 --> 00:00:18.480
+We're going to implement this in code here.
+
+00:00:18.480 --> 00:00:21.945
+So, as a bonus, you can try to implement this yourself,
+
+00:00:21.945 --> 00:00:24.240
+otherwise continue with the rest of
+
+00:00:24.239 --> 00:00:27.734
+this video where I'll give an overview of the starter code.
+
+00:00:27.734 --> 00:00:31.550
+So, I'll explain these three lines here.
+
+00:00:31.550 --> 00:00:36.859
+So, what I'm trying to do is set the all features, in our case,
+
+00:00:36.859 --> 00:00:43.129
+it's going to be zero, one, two representing integers for all of those three features.
+
+00:00:43.130 --> 00:00:47.975
+Remember that X has three columns,
+
+00:00:47.975 --> 00:00:49.399
+so it has three features.
+
+00:00:49.399 --> 00:00:52.710
+So, let's just grab the first row from that.
+
+00:00:53.659 --> 00:00:57.144
+Okay. So, for the single row,
+
+00:00:57.145 --> 00:01:00.470
+let's set all features more programmatically.
+
+00:01:00.469 --> 00:01:04.789
+So, what we can do instead is numpy.arange,
+
+00:01:04.790 --> 00:01:09.900
+and we can say from zero to three for instance.
+
+00:01:10.159 --> 00:01:13.379
+This still gives us what we want.
+
+00:01:13.379 --> 00:01:16.530
+So now, instead of saying three hard-coded,
+
+00:01:16.530 --> 00:01:18.390
+let's just say x.shape,
+
+00:01:18.390 --> 00:01:21.625
+so lowercase x.shape gives a tuple,
+
+00:01:21.625 --> 00:01:25.834
+so if I grab the index zero position we get that integer.
+
+00:01:25.834 --> 00:01:33.569
+So, let's replace this with x.shape(0) and all feature is like this. All right.
+
+00:01:34.540 --> 00:01:40.200
+Okay. So, now we're going to create all the features minus i,
+
+00:01:40.200 --> 00:01:43.130
+and to do that, I'm going to actually
+
+00:01:43.129 --> 00:01:47.435
+convert this to a set so then I can use this function remove.
+
+00:01:47.435 --> 00:01:49.820
+Because right now it's a numpy array,
+
+00:01:49.819 --> 00:01:57.709
+so all_features., there's no remove function for instance in here.
+
+00:01:57.709 --> 00:02:00.004
+So, in order to make this work,
+
+00:02:00.004 --> 00:02:07.079
+I want to put the numpy array inside the set constructor.
+
+00:02:07.079 --> 00:02:12.120
+So, now it's a set, so now I can call the remove function,
+
+00:02:12.120 --> 00:02:14.219
+and we can see here.
+
+00:02:14.219 --> 00:02:18.210
+Now it's removed feature zero.
+
+00:02:18.210 --> 00:02:22.379
+Okay. So, notice that this was changed in place
+
+00:02:22.379 --> 00:02:27.115
+so I need to first make a copy of this so that's what this copying is doing,
+
+00:02:27.115 --> 00:02:30.270
+so that I don't overwrite the original variable.
+
+00:02:30.270 --> 00:02:32.344
+So, here we start here,
+
+00:02:32.344 --> 00:02:40.469
+we go all_features.copy and then save it as all_features_minus_i
+
+00:02:40.469 --> 00:02:46.689
+and then all_features_minus_i.remove let's
+
+00:02:46.689 --> 00:02:50.004
+say we'll just remove feature zero for instance.
+
+00:02:50.004 --> 00:02:57.919
+So we go here, here, here.
+
+00:02:57.919 --> 00:03:04.304
+So, I know all_features_minus_i is just a copy and then after we remove it,
+
+00:03:04.305 --> 00:03:09.974
+then it's excluding i now.
+
+00:03:09.974 --> 00:03:12.504
+Okay. So, that's what these three lines of code are.
+
+00:03:12.504 --> 00:03:14.504
+Now, for S list,
+
+00:03:14.504 --> 00:03:20.840
+generate all subsets S. This you can actually call the function that we defined earlier,
+
+00:03:20.840 --> 00:03:26.305
+phi will initialize it to some value so you can think about what that would be,
+
+00:03:26.305 --> 00:03:31.730
+and the number of total features is the length of this all features variable.
+
+00:03:31.729 --> 00:03:39.125
+So, now we would just go through a loop of all these sets that's S
+
+00:03:39.125 --> 00:03:42.229
+and we would add on
+
+00:03:42.229 --> 00:03:46.699
+the weights on the marginal contribution times the marginal contribution of i.
+
+00:03:46.699 --> 00:03:48.500
+So, this part is actually,
+
+00:03:48.500 --> 00:03:50.449
+if I go back to the formula,
+
+00:03:50.449 --> 00:03:54.494
+here's the weight and then here's the marginal contribution.
+
+00:03:54.495 --> 00:03:56.629
+Notice that we've already created functions that
+
+00:03:56.629 --> 00:04:00.215
+calculate this and another function that calculates this.
+
+00:04:00.215 --> 00:04:05.420
+The last tint for the starter code is notice that I do check if
+
+00:04:05.419 --> 00:04:10.714
+none is in the set S because we use none as a place holder to say an empty set,
+
+00:04:10.715 --> 00:04:13.715
+but if we were to count the number of
+
+00:04:13.715 --> 00:04:17.899
+elements in some set or list then none would still be counted.
+
+00:04:17.899 --> 00:04:24.754
+So, you just want to check and you want to define the number of
+
+00:04:24.754 --> 00:04:32.560
+elements in S a bit differently when it's got the keyword none as part of that subset.
+
+00:04:32.560 --> 00:04:34.464
+So, once you're done trying this out,
+
+00:04:34.464 --> 00:04:37.579
+you can go ahead and try the function after you've implemented it,
+
+00:04:37.579 --> 00:04:40.560
+and then you can move on to the solution video.
+

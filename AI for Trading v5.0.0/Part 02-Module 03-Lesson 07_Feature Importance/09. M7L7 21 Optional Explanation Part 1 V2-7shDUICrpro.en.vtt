@@ -1,0 +1,208 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.450
+Welcome to the optional explanation of this formula.
+
+00:00:03.450 --> 00:00:07.950
+So the part of the formula with the factorials calculates the number of
+
+00:00:07.950 --> 00:00:12.300
+ways to generate the collection of features where the order matters.
+
+00:00:12.300 --> 00:00:15.630
+This will make much more sense as we go along this notebook.
+
+00:00:15.630 --> 00:00:20.054
+But we're trying to explain this part of the formula right here.
+
+00:00:20.054 --> 00:00:23.429
+So it's this part of the formula right here.
+
+00:00:23.429 --> 00:00:26.554
+So we're adding features to a coalition.
+
+00:00:26.554 --> 00:00:29.660
+The following concept comes from coalition game theory.
+
+00:00:29.660 --> 00:00:31.714
+So when we say coalition,
+
+00:00:31.714 --> 00:00:34.909
+think of it as a team were the members of the team are
+
+00:00:34.909 --> 00:00:38.494
+added one after another in a particular order.
+
+00:00:38.494 --> 00:00:42.169
+Let's imagine that we're creating a coalition of features by adding
+
+00:00:42.170 --> 00:00:46.370
+one feature at a time to the coalition and including all M features.
+
+00:00:46.369 --> 00:00:48.934
+Now, M is the set of features.
+
+00:00:48.935 --> 00:00:52.070
+So the absolute value symbols are saying the size of
+
+00:00:52.070 --> 00:00:55.909
+our set M. Let's say we have three features total.
+
+00:00:55.909 --> 00:00:59.539
+Here are all the possible ways that we can create this coalition of features.
+
+00:00:59.539 --> 00:01:01.655
+So we could add features zero,
+
+00:01:01.655 --> 00:01:03.335
+followed by feature one,
+
+00:01:03.335 --> 00:01:05.450
+then followed by feature two,
+
+00:01:05.450 --> 00:01:08.734
+and these are all the six ways that we can do that.
+
+00:01:08.734 --> 00:01:12.739
+Notice that for M equals three features there's three
+
+00:01:12.739 --> 00:01:17.179
+factorial or six possible ways to create the coalition.
+
+00:01:17.180 --> 00:01:20.995
+Now, let's look at the marginal contribution of a feature.
+
+00:01:20.995 --> 00:01:24.439
+For each of the six ways to create a coalition,
+
+00:01:24.439 --> 00:01:29.629
+let's see how to calculate the marginal contribution of feature X_2.
+
+00:01:29.629 --> 00:01:33.405
+So, for example, if we added feature zero first,
+
+00:01:33.405 --> 00:01:34.905
+then followed by feature one,
+
+00:01:34.905 --> 00:01:36.629
+followed by feature two,
+
+00:01:36.629 --> 00:01:38.719
+notice that we can say,
+
+00:01:38.719 --> 00:01:44.530
+how does the model perform if it only is given information from feature zero and one.
+
+00:01:44.530 --> 00:01:47.585
+So that's this right here. How does a model do?
+
+00:01:47.584 --> 00:01:52.804
+Compare that to when the model also has feature two.
+
+00:01:52.805 --> 00:01:58.895
+Similarly, here's a case where we first have feature zero and then picture two.
+
+00:01:58.894 --> 00:02:00.319
+So in this case,
+
+00:02:00.319 --> 00:02:05.119
+we want to see how does the model do if it only knows feature zero,
+
+00:02:05.120 --> 00:02:06.950
+that's this right here.
+
+00:02:06.950 --> 00:02:12.675
+Then how does the model do when it's also given feature two as well as feature zero.
+
+00:02:12.675 --> 00:02:14.540
+So that's this expression here.
+
+00:02:14.539 --> 00:02:17.074
+So that's why the order of the sequence matters.
+
+00:02:17.074 --> 00:02:22.969
+We're seeing how did the model do up until right before we add feature two,
+
+00:02:22.969 --> 00:02:28.194
+and then we say, how does a model do when we then add a feature two as well.
+
+00:02:28.194 --> 00:02:32.465
+So you can pause here to look at the other examples here;
+
+00:02:32.465 --> 00:02:33.800
+3, 4, 5, 6.
+
+00:02:33.800 --> 00:02:36.260
+I'll just go over this one which is how does
+
+00:02:36.259 --> 00:02:39.169
+the model do when it doesn't have any features?
+
+00:02:39.169 --> 00:02:44.119
+Because in this series you see that the first feature we add is feature two.
+
+00:02:44.120 --> 00:02:47.599
+So the comparison we're making is how did the model do when it doesn't
+
+00:02:47.599 --> 00:02:52.009
+have any other features compared to when it has feature two.
+
+00:02:52.009 --> 00:02:53.840
+So when it doesn't have any of the features,
+
+00:02:53.840 --> 00:02:57.875
+we'll see this later in the code but it will just take a simple average
+
+00:02:57.875 --> 00:03:02.884
+of the labels to give its best prediction of the output.
+
+00:03:02.884 --> 00:03:05.449
+So again, you can pause here to read through
+
+00:03:05.449 --> 00:03:08.209
+all of these examples, but I'll continue on here.
+
+00:03:08.210 --> 00:03:12.094
+So notice that some of these marginal contributions look the same.
+
+00:03:12.094 --> 00:03:16.294
+For example, the first and third sequences would get the same result.
+
+00:03:16.294 --> 00:03:18.905
+So here's the first sequence.
+
+00:03:18.905 --> 00:03:21.485
+Notice it's the difference between when it has
+
+00:03:21.485 --> 00:03:26.375
+all three features compared to when the model only has features zero and one,
+
+00:03:26.375 --> 00:03:28.789
+and this third sequence is actually the same thing.
+
+00:03:28.789 --> 00:03:30.590
+There's just different order.
+
+00:03:30.590 --> 00:03:32.870
+So how does a model do with all the features
+
+00:03:32.870 --> 00:03:35.735
+compared when it only has feature one and zero?
+
+00:03:35.735 --> 00:03:38.974
+So same with the fifth and sixth sequences,
+
+00:03:38.973 --> 00:03:40.909
+these are actually the same thing.
+
+00:03:40.909 --> 00:03:44.599
+So we can use factorials to help us calculate the number of
+
+00:03:44.599 --> 00:03:48.844
+permutations that result in the same marginal contribution.
+
+00:03:48.844 --> 00:03:51.210
+So that's what we're going to see next.
+

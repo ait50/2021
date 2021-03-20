@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.089
+Okay. So first let's get the feature importance from
+
+00:00:03.089 --> 00:00:06.839
+the model and here the variable M is the model.
+
+00:00:06.839 --> 00:00:11.219
+We can get feature importance like so,
+
+00:00:11.220 --> 00:00:14.490
+and then sort the importances in descending order,
+
+00:00:14.490 --> 00:00:17.309
+and store the indices of that sort okay.
+
+00:00:17.309 --> 00:00:22.664
+So, if you did it numpy.argsort of the importances,
+
+00:00:22.664 --> 00:00:24.869
+that would be in ascending order.
+
+00:00:24.870 --> 00:00:27.750
+So let's make it descending order.
+
+00:00:27.750 --> 00:00:30.045
+So if we run this,
+
+00:00:30.045 --> 00:00:32.789
+we can check out the model importances,
+
+00:00:32.789 --> 00:00:35.339
+and you can see [inaudible].
+
+00:00:35.340 --> 00:00:37.200
+So the most important one is on top,
+
+00:00:37.200 --> 00:00:40.140
+and then the least important is on the bottom,
+
+00:00:40.140 --> 00:00:45.929
+and as well you can see the value associated with that feature importance.
+

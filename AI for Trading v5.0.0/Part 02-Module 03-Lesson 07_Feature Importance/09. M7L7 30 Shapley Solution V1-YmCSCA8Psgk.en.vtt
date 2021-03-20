@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.509
+Okay. So we'll just write this expression out in code.
+
+00:00:03.509 --> 00:00:07.019
+So it's a sum of a couple of these multiplications.
+
+00:00:07.019 --> 00:00:15.525
+So we're going to say, weight_A times diff_A plus weight_B times
+
+00:00:15.525 --> 00:00:26.280
+diff_B plus weight_C times diff_C plus weight_D times diff_D.
+
+00:00:26.280 --> 00:00:31.830
+So the Shapley value for feature 0 is 0.375.
+
+00:00:31.829 --> 00:00:35.719
+Now let's verify this with the actual Shapley library itself.
+
+00:00:35.719 --> 00:00:39.070
+So this is the value we calculated by hand,
+
+00:00:39.070 --> 00:00:43.060
+and it matches the Shapley Value of feature 0 as well.
+
+00:00:43.060 --> 00:00:48.660
+Okay. Awesome. Please check out the next video to continue on with the notebook.
+

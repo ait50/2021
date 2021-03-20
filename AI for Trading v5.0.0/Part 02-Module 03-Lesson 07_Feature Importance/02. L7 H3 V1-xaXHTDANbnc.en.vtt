@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.819
+One way of interpreting a model is by measuring
+
+00:00:02.819 --> 00:00:06.134
+how much each feature contributed to the model's prediction.
+
+00:00:06.134 --> 00:00:08.640
+We call this feature importance.
+
+00:00:08.640 --> 00:00:09.915
+In the upcoming project,
+
+00:00:09.914 --> 00:00:12.493
+feature importance will allow you to understand
+
+00:00:12.493 --> 00:00:16.574
+which features are making the most impact in your model's decision-making.
+
+00:00:16.574 --> 00:00:20.869
+You can then act on this by removing features that have low importance to
+
+00:00:20.870 --> 00:00:23.179
+the model and focusing your energies on
+
+00:00:23.179 --> 00:00:26.000
+making improvements to the more significant features.
+
+00:00:26.000 --> 00:00:28.579
+Studying feature importance allows you to
+
+00:00:28.579 --> 00:00:31.804
+further improve the performance of your predictive model.
+
+00:00:31.804 --> 00:00:36.979
+You can make a parsimonious subset of the most relevant features to feed into your model.
+
+00:00:36.979 --> 00:00:40.219
+By including only the most important features,
+
+00:00:40.219 --> 00:00:43.939
+this can improve your model's out-of-sample accuracy.
+
+00:00:43.939 --> 00:00:46.939
+There are many ways to calculate feature importance.
+
+00:00:46.939 --> 00:00:51.905
+We'll go over the method that's built into Scikit-learn and also introduce you
+
+00:00:51.905 --> 00:00:57.280
+to the current state of the art which is called SHapley additive explanations.
+

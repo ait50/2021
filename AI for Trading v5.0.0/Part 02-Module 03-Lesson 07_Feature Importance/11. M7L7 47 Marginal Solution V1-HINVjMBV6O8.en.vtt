@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.980
+Now, let's implement the marginal contribution of the feature.
+
+00:00:04.980 --> 00:00:12.420
+First thing is, we want to get S_union_i, and so first,
+
+00:00:12.419 --> 00:00:16.980
+we want to make a copy of set S and
+
+00:00:16.980 --> 00:00:22.949
+then we can call the in-place function that adds feature i to it.
+
+00:00:22.949 --> 00:00:25.550
+Now, we want to return the difference between
+
+00:00:25.550 --> 00:00:28.670
+the prediction with feature i and without feature i,
+
+00:00:28.670 --> 00:00:35.240
+so the prediction of something minus the prediction of something.
+
+00:00:35.240 --> 00:00:38.100
+Recall that it takes in a tree,
+
+00:00:38.100 --> 00:00:39.844
+so I did shift tab there.
+
+00:00:39.844 --> 00:00:43.159
+Tree takes the set of features,
+
+00:00:43.159 --> 00:00:47.719
+so in this case S_union_i and it takes the sample observations.
+
+00:00:47.719 --> 00:00:54.229
+Here, it's going to be the tree as well just set S and X.
+
+00:00:54.229 --> 00:00:57.109
+Once we've defined it, let's try it out.
+
+00:00:57.109 --> 00:01:00.409
+Here, let's say that feature i is going to be feature
+
+00:01:00.409 --> 00:01:04.349
+zero and set S includes feature one.
+
+00:01:04.349 --> 00:01:09.544
+Now, we're just going to grab one data point to calculate the marginal contribution on.
+
+00:01:09.545 --> 00:01:16.070
+What I mean is, x remember has a 100 rows with three features each.
+
+00:01:16.069 --> 00:01:23.729
+We'll just grab the first one where feature zero is one and feature one is also one.
+
+00:01:23.760 --> 00:01:30.225
+The marginal contribution we expect to be 0.05 and that's the case.
+
+00:01:30.224 --> 00:01:34.789
+The marginal contribution of feature zero is 0.5.
+
+00:01:34.790 --> 00:01:39.765
+This means that the prediction of the model when feature zero is present is
+
+00:01:39.765 --> 00:01:45.424
+0.5 greater than the model's prediction when it only has feature one.
+
+00:01:45.424 --> 00:01:49.685
+If you remember that feature zero and one form the and operator,
+
+00:01:49.685 --> 00:01:53.775
+when the model only knows of feature one,
+
+00:01:53.775 --> 00:01:58.065
+then it's going to predict 0.5 on average,
+
+00:01:58.064 --> 00:02:00.719
+so half the time the label would be zero,
+
+00:02:00.719 --> 00:02:04.299
+half the time that the labels in the training set are one.
+
+00:02:04.299 --> 00:02:09.079
+But when it knows both features to help make the decision that it's the and operator,
+
+00:02:09.080 --> 00:02:13.640
+then the prediction when features zero and one are both one,
+
+00:02:13.639 --> 00:02:15.739
+the prediction is one,
+
+00:02:15.740 --> 00:02:19.995
+so one minus 0.5 is 0.5.
+
+00:02:19.995 --> 00:02:22.550
+Please continue on with the lesson.
+

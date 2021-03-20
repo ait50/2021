@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.850
+Let's talk about a topic of growing importance,
+
+00:00:02.850 --> 00:00:05.234
+which is a machine learning interpretability.
+
+00:00:05.235 --> 00:00:07.860
+It's often the case that in business applications,
+
+00:00:07.860 --> 00:00:11.115
+companies may choose to use a simple linear model
+
+00:00:11.115 --> 00:00:15.240
+rather than a complex nonlinear model for the sake of interpretability.
+
+00:00:15.240 --> 00:00:17.010
+When you build a model,
+
+00:00:17.010 --> 00:00:19.320
+you'll need to be able to understand how it's
+
+00:00:19.320 --> 00:00:21.914
+using the features to generate its predictions.
+
+00:00:21.914 --> 00:00:24.299
+This is because you want to know when it might work
+
+00:00:24.300 --> 00:00:27.164
+well and when it may need human intervention.
+
+00:00:27.164 --> 00:00:31.320
+You may also have to explain your model to the portfolio managers,
+
+00:00:31.320 --> 00:00:35.115
+and even to the clients who are considering investing in your fund.
+
+00:00:35.115 --> 00:00:37.844
+If a complex model is like a black box,
+
+00:00:37.844 --> 00:00:40.019
+in that humans can't interpret it,
+
+00:00:40.020 --> 00:00:43.910
+then the company may still prefer to stay with a simpler model like regression.
+
+00:00:43.909 --> 00:00:46.174
+Which is more easily explainable.
+
+00:00:46.174 --> 00:00:50.750
+This is sometimes called the black box white-box trade-off.
+
+00:00:50.750 --> 00:00:56.034
+Researchers have been building models to help interpret machine learning models,
+
+00:00:56.034 --> 00:01:01.144
+and this is very relevant because by making complex models interpretable and explainable,
+
+00:01:01.145 --> 00:01:05.060
+this opens the door for complex models to be more readily
+
+00:01:05.060 --> 00:01:10.269
+acceptable and used in business applications including in finance.
+

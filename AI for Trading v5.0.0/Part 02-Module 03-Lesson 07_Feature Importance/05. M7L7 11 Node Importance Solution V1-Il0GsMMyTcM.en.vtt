@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.129
+Okay, so the quiz is asking us to calculate the node importance of node two.
+
+00:00:05.129 --> 00:00:08.519
+So it's quite similar to what we did up here.
+
+00:00:08.519 --> 00:00:13.230
+We're going to get the weighted number of
+
+00:00:13.230 --> 00:00:18.579
+samples for node two times the impurity of node two,
+
+00:00:18.890 --> 00:00:25.695
+and then compare that to the impurities of its children.
+
+00:00:25.695 --> 00:00:28.560
+We're getting node samples.
+
+00:00:28.559 --> 00:00:33.254
+So its left child is node three,
+
+00:00:33.255 --> 00:00:37.125
+and its right child is node four.
+
+00:00:37.125 --> 00:00:40.149
+So we get the node samples.
+
+00:00:41.030 --> 00:00:45.484
+So the importance of node two is 25.
+
+00:00:45.484 --> 00:00:47.179
+Okay, and just a reminder,
+
+00:00:47.179 --> 00:00:48.770
+the other node are leaf nodes,
+
+00:00:48.770 --> 00:00:52.580
+so there's no decrease in impurity that we can calculate.
+
+00:00:52.579 --> 00:00:55.074
+So sum up the node importances.
+
+00:00:55.075 --> 00:00:59.555
+So that's just the importance of node zero plus the importance of node two.
+
+00:00:59.554 --> 00:01:03.394
+So that's the total of the node importances.
+
+00:01:03.395 --> 00:01:07.159
+Great, so please continue on with the lesson to
+
+00:01:07.159 --> 00:01:11.019
+learn about calculating the importances of the features. Thanks.
+

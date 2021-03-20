@@ -1,0 +1,184 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.955
+Great. So now let's implement this algorithm in code.
+
+00:00:02.955 --> 00:00:06.389
+First step, let's install some libraries,
+
+00:00:06.389 --> 00:00:09.970
+and we'll also import them.
+
+00:00:17.089 --> 00:00:19.350
+Okay, so while that's running,
+
+00:00:19.350 --> 00:00:21.950
+I just want to point out that we're simulating
+
+00:00:21.949 --> 00:00:26.780
+some simple data that is similar to the previous exercises where feature
+
+00:00:26.780 --> 00:00:30.500
+zero and feature one formed the AND operator in feature
+
+00:00:30.500 --> 00:00:34.640
+two does not contribute to the prediction on the label, because it's always zero.
+
+00:00:34.640 --> 00:00:37.054
+So that's this right here.
+
+00:00:37.054 --> 00:00:43.789
+Or, if you wanted to, you could also just take a look at here's the feature matrix,
+
+00:00:43.789 --> 00:00:48.365
+with the three features and y contains the labels.
+
+00:00:48.365 --> 00:00:50.765
+Now, let's train a decision tree.
+
+00:00:50.765 --> 00:00:54.649
+What's cool is we're going to only train one decision tree,
+
+00:00:54.649 --> 00:00:56.469
+and we're going to reuse it.
+
+00:00:56.469 --> 00:00:59.670
+So we're going to train it on all the features.
+
+00:01:00.759 --> 00:01:05.629
+Again, here's the visual that we've seen from previous exercises.
+
+00:01:05.629 --> 00:01:07.774
+Here's our simple tree.
+
+00:01:07.775 --> 00:01:11.555
+Now, let's review some tree attributes that we're going to be using.
+
+00:01:11.555 --> 00:01:17.930
+So this is from sklearn.tree.tree, which is here.
+
+00:01:17.930 --> 00:01:20.780
+So underscore tree, and so some of
+
+00:01:20.780 --> 00:01:23.840
+the texts here that you see here is taken from the source code.
+
+00:01:23.840 --> 00:01:28.159
+So the binary tree is represented as a number of parallel arrays.
+
+00:01:28.159 --> 00:01:33.140
+So the i-th element of each array holds information about node i,
+
+00:01:33.140 --> 00:01:36.109
+and node zero is the tree's root.
+
+00:01:36.109 --> 00:01:40.750
+So here, we can grab that tree object and then we can work with it.
+
+00:01:40.750 --> 00:01:43.775
+So for instance there's the left and right child nodes.
+
+00:01:43.775 --> 00:01:45.680
+You may recall this from before.
+
+00:01:45.680 --> 00:01:48.605
+So for the root node at index zero,
+
+00:01:48.605 --> 00:01:54.409
+it's left child is called node one and its right child is called node two.
+
+00:01:54.409 --> 00:01:58.399
+So similarly, we have an array of features.
+
+00:01:58.400 --> 00:02:01.535
+So this is saying that at node zero,
+
+00:02:01.534 --> 00:02:04.579
+because its index zero feature one is used,
+
+00:02:04.579 --> 00:02:06.950
+and then at node zero, one, two,
+
+00:02:06.950 --> 00:02:11.199
+at node two, features zero is used for splitting.
+
+00:02:11.199 --> 00:02:14.704
+We also have thresholds that are used for splitting.
+
+00:02:14.705 --> 00:02:18.570
+The thresholds divide the data points using the chosen features.
+
+00:02:18.569 --> 00:02:23.479
+Less than equal to 0.5 and the data goes to the left child,
+
+00:02:23.479 --> 00:02:27.465
+greater than 0.5, and the data goes to the right child.
+
+00:02:27.465 --> 00:02:32.539
+So you can see here is the thresholds used or these two features.
+
+00:02:32.539 --> 00:02:37.099
+So this was at node zero and this is at node zero, one, two.
+
+00:02:37.099 --> 00:02:40.534
+There is also the value list.
+
+00:02:40.534 --> 00:02:43.965
+Value is the average prediction for each node.
+
+00:02:43.965 --> 00:02:47.360
+Node zero predicts 0.25 on average,
+
+00:02:47.360 --> 00:02:49.205
+because at that point,
+
+00:02:49.205 --> 00:02:50.860
+there's no splitting done yet.
+
+00:02:50.860 --> 00:02:54.005
+So it's just a simple average of all the labels.
+
+00:02:54.004 --> 00:02:57.724
+Node two produce 0.5 on average.
+
+00:02:57.724 --> 00:02:59.479
+We can notice zero,
+
+00:02:59.479 --> 00:03:01.954
+one, two, three, four.
+
+00:03:01.955 --> 00:03:04.390
+The last node on the right predicts one.
+
+00:03:04.389 --> 00:03:07.129
+So that's the case when both features
+
+00:03:07.129 --> 00:03:10.699
+zero and one are the value of one. In other words, true.
+
+00:03:10.699 --> 00:03:16.655
+Node samples, so we can use either n_node_samples or weighted_node_samples,
+
+00:03:16.655 --> 00:03:21.620
+and these are telling us how many training samples are in each node,
+
+00:03:21.620 --> 00:03:24.664
+as they trickled down from the top to the bottom.
+
+00:03:24.664 --> 00:03:27.109
+We can actually use either of these,
+
+00:03:27.110 --> 00:03:30.485
+because we'll use these to calculate proportions of
+
+00:03:30.485 --> 00:03:34.610
+samples that go from a parent node to its left and right child nodes.
+
+00:03:34.610 --> 00:03:37.800
+So we'll just go ahead and use a weighted_n_node_samples.
+
+00:03:37.960 --> 00:03:42.930
+Okay. Continue on to the next video that introduces a short quiz.
+

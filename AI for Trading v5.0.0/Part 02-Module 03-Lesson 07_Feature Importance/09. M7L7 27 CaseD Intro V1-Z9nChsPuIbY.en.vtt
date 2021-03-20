@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.559
+All right, let's look at case D. Remember to include the empty set.
+
+00:00:04.559 --> 00:00:07.199
+So the empty set is also a set,
+
+00:00:07.200 --> 00:00:10.603
+we'll compare how the model does when it has no features,
+
+00:00:10.603 --> 00:00:13.259
+so that's this case right here and see
+
+00:00:13.259 --> 00:00:16.440
+how that compares to when it gets feature zero, as input.
+
+00:00:16.440 --> 00:00:21.450
+Calculate the prediction of a model that uses feature zero, which is this,
+
+00:00:21.449 --> 00:00:25.364
+also calculate the prediction of the model that uses no features,
+
+00:00:25.364 --> 00:00:29.189
+which is here, and then we're going to calculate the difference.
+
+00:00:29.190 --> 00:00:34.590
+So everything's quite similar as before except here when you have no features,
+
+00:00:34.590 --> 00:00:37.935
+you don't actually need to create an instance of the model,
+
+00:00:37.935 --> 00:00:42.270
+you can just calculate the prediction that the model would take.
+
+00:00:42.270 --> 00:00:45.180
+So, go ahead and try it out,
+
+00:00:45.179 --> 00:00:47.054
+everything else is about the same,
+
+00:00:47.054 --> 00:00:50.329
+and when you're done, please check out the solution video.
+

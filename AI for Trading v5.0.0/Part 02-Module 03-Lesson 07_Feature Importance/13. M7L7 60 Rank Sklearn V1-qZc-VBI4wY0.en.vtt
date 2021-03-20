@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.049
+Rank features by feature importance with sklearn.
+
+00:00:04.049 --> 00:00:08.490
+We'll define a function that uses the built-in sklearn feature importances,
+
+00:00:08.490 --> 00:00:11.730
+and source the features by their feature importance.
+
+00:00:11.730 --> 00:00:16.320
+Note that there's a numpy.argsort function that returns a list of
+
+00:00:16.320 --> 00:00:19.050
+the original index locations of a list
+
+00:00:19.050 --> 00:00:22.995
+in the order that would make them sorted in ascending order.
+
+00:00:22.995 --> 00:00:24.825
+Here's a small example,
+
+00:00:24.824 --> 00:00:28.785
+if we were to sort this list that's 10, 30, and 20.
+
+00:00:28.785 --> 00:00:31.079
+You can see that it's saying,
+
+00:00:31.079 --> 00:00:35.210
+first put the value from index to zero which is 10,
+
+00:00:35.210 --> 00:00:38.355
+and the value from index two which is 20,
+
+00:00:38.354 --> 00:00:42.064
+and then finally the value at index one which is 30.
+
+00:00:42.064 --> 00:00:44.530
+So now, it would be 10, 20, 30.
+
+00:00:44.530 --> 00:00:47.870
+Now, another tip, one way to reverse the order of a list or array is to
+
+00:00:47.869 --> 00:00:50.989
+use the notation, ::-1.
+
+00:00:50.990 --> 00:00:52.640
+So for instance, three, two,
+
+00:00:52.640 --> 00:00:55.414
+one can be reversed to be one, two, three.
+
+00:00:55.414 --> 00:00:59.329
+So go ahead and fill in this function and this will let
+
+00:00:59.329 --> 00:01:03.439
+us sort the features by their feature importance.
+
+00:01:03.439 --> 00:01:06.519
+When you're done, check out the solution video.
+

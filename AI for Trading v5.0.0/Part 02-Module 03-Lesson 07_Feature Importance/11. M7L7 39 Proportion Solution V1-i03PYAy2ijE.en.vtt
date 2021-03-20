@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.770
+Okay. So, what proportion of
+
+00:00:01.770 --> 00:00:05.629
+samples went to the left and right child nodes of the root node?
+
+00:00:05.629 --> 00:00:08.884
+So, first of all, if you'll recall,
+
+00:00:08.884 --> 00:00:14.265
+tree zero dot children left looks like this.
+
+00:00:14.265 --> 00:00:19.530
+Tree zero dot children right looks like this.
+
+00:00:19.530 --> 00:00:28.365
+We want to work with the tree zero dot weighted n node samples, which is right here.
+
+00:00:28.364 --> 00:00:31.049
+So, if we just visually inspect this,
+
+00:00:31.050 --> 00:00:33.285
+we're talking about the root node.
+
+00:00:33.284 --> 00:00:38.204
+So, the root node starts out with 100 training samples.
+
+00:00:38.204 --> 00:00:45.119
+Then, we can see that the left child of the root node is node
+
+00:00:45.119 --> 00:00:52.195
+one and the right child of the root node is node two.
+
+00:00:52.195 --> 00:00:55.575
+So node one, you can see here.
+
+00:00:55.575 --> 00:00:59.385
+How many weighted n node samples does node one have, the left child?
+
+00:00:59.384 --> 00:01:01.545
+It's zero, one. It has 50.
+
+00:01:01.545 --> 00:01:05.325
+Okay. How about node two?
+
+00:01:05.325 --> 00:01:07.484
+In node two, zero one two,
+
+00:01:07.484 --> 00:01:09.254
+index zero one two.
+
+00:01:09.254 --> 00:01:13.739
+Node two, the right child of the root node has 50 as well.
+
+00:01:13.739 --> 00:01:18.689
+So, we're going to expect to see 50 divided by 100 for each of those.
+
+00:01:18.689 --> 00:01:20.509
+But, let's write this out in code.
+
+00:01:20.510 --> 00:01:23.825
+So, tree zero dot weighted n node samples
+
+00:01:23.825 --> 00:01:27.890
+of the left child of the root node which is one,
+
+00:01:27.890 --> 00:01:34.745
+divided by the weighted n node samples for the root node which is node zero.
+
+00:01:34.745 --> 00:01:37.325
+Similarly, for the right child,
+
+00:01:37.325 --> 00:01:40.055
+tree zero dot weighted n node samples.
+
+00:01:40.055 --> 00:01:43.975
+The right child is node two as you can see here,
+
+00:01:43.974 --> 00:01:49.984
+and let's divide that by the number of samples in the root node.
+
+00:01:49.984 --> 00:01:54.769
+Okay. So, we run that, you can see that it does take 50 divided by 100.
+
+00:01:54.769 --> 00:02:00.469
+So, the proportions are 0.5 and 0.5. Awesome.
+

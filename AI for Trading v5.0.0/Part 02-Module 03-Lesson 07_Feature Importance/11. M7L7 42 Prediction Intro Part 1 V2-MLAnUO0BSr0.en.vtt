@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.290
+Calculate the prediction of a tree model given a subset of features.
+
+00:00:04.290 --> 00:00:07.830
+So we'll implement algorithm one of Scott Lundberg's paper.
+
+00:00:07.830 --> 00:00:11.129
+So I'm referring to the one that we paste it at the top of this notebook.
+
+00:00:11.130 --> 00:00:14.700
+Then, you can also see if you go to the paper itself,
+
+00:00:14.699 --> 00:00:17.835
+we're implementing this algorithm right here.
+
+00:00:17.835 --> 00:00:22.589
+So this is a way to use a single trained tree to estimate
+
+00:00:22.589 --> 00:00:28.394
+predictions of other trees that would be trained on a subset of the features.
+
+00:00:28.394 --> 00:00:30.629
+So here's a bonus challenge.
+
+00:00:30.629 --> 00:00:33.659
+Try to implement this function completely by yourself.
+
+00:00:33.659 --> 00:00:36.109
+So here would be the starter code if you want to
+
+00:00:36.109 --> 00:00:40.085
+implement this algorithm right here in your own way.
+
+00:00:40.085 --> 00:00:42.424
+So this is great practice for you.
+
+00:00:42.424 --> 00:00:47.569
+It's okay if you get stuck because we'll also have starter code that you can use as well.
+
+00:00:47.570 --> 00:00:51.829
+So you can stop here in the video if you want to try it out yourself
+
+00:00:51.829 --> 00:00:53.780
+or you can continue watching the rest of
+
+00:00:53.780 --> 00:00:57.770
+this video and I'll explain a bit about the starter code.
+

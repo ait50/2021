@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.444
+Great. So now we have all the pieces.
+
+00:00:02.444 --> 00:00:06.060
+So let's calculate the Shapley value for our feature zero.
+
+00:00:06.059 --> 00:00:08.234
+So for a single observation,
+
+00:00:08.234 --> 00:00:11.834
+where feature zero is one and feature one is also one,
+
+00:00:11.835 --> 00:00:13.605
+feature two is also one,
+
+00:00:13.605 --> 00:00:16.320
+calculate the Shapley value of feature
+
+00:00:16.320 --> 00:00:20.519
+zero as the weighted sum of the differences in predictions.
+
+00:00:20.519 --> 00:00:25.649
+So notice here, those diff variables that we calculated for cases A, B, C,
+
+00:00:25.649 --> 00:00:28.904
+and D, that's this expression here,
+
+00:00:28.905 --> 00:00:30.629
+and the weight that we calculated,
+
+00:00:30.629 --> 00:00:34.609
+which is actually that expression with the factorials,
+
+00:00:34.609 --> 00:00:38.509
+we stored in the variables called weight A, B,
+
+00:00:38.509 --> 00:00:42.500
+C, and D. This summation is just saying sum across all of those.
+
+00:00:42.500 --> 00:00:44.585
+So go ahead and do that.
+
+00:00:44.585 --> 00:00:48.170
+Then, when you're done, you can verify with the Shap library.
+
+00:00:48.170 --> 00:00:50.914
+So the Shap library is written by Scott Lundberg,
+
+00:00:50.914 --> 00:00:54.174
+the creator of Shapley Additive Explanations.
+
+00:00:54.174 --> 00:00:56.594
+So here's a link to it.
+
+00:00:56.594 --> 00:00:58.725
+Here's the GitHub repo.
+
+00:00:58.725 --> 00:01:00.344
+But we've already installed it.
+
+00:01:00.344 --> 00:01:02.284
+So we can actually call it this way.
+
+00:01:02.284 --> 00:01:03.799
+So from the Shap library,
+
+00:01:03.799 --> 00:01:07.759
+create a TreeExplainer and pass in the model.
+
+00:01:07.760 --> 00:01:11.704
+This is the model that we trained initially with all three features.
+
+00:01:11.704 --> 00:01:18.295
+Then, call shap_values and pass in this NumPy array of one, one, one.
+
+00:01:18.295 --> 00:01:20.340
+So when you print this out,
+
+00:01:20.340 --> 00:01:25.310
+you'll see the Shap value that we calculated by hand with our own code,
+
+00:01:25.310 --> 00:01:28.340
+and also the one from the Shap library itself.
+
+00:01:28.340 --> 00:01:30.094
+So these two should match.
+
+00:01:30.094 --> 00:01:33.575
+We didn't calculate the Shapley values for features one and two,
+
+00:01:33.575 --> 00:01:35.630
+but we'll print this out as well.
+
+00:01:35.629 --> 00:01:39.579
+So this will help when we think about what this means.
+
+00:01:39.579 --> 00:01:42.890
+Go ahead and try it out and then check out the solution video.
+

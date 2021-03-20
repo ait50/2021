@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.145
+Rank features using SHAP.
+
+00:00:02.145 --> 00:00:04.033
+There are a couple of classes,
+
+00:00:04.033 --> 00:00:05.445
+one for each quintile.
+
+00:00:05.445 --> 00:00:11.714
+So the list returned by shap_values function has one element for each of those classes.
+
+00:00:11.714 --> 00:00:14.969
+We'll explore how to get the absolute values and then
+
+00:00:14.970 --> 00:00:17.969
+average of those absolute values for each of the features.
+
+00:00:17.969 --> 00:00:20.744
+Then, we can put that code into a function.
+
+00:00:20.745 --> 00:00:24.060
+So remember, here's the formula to aggregate
+
+00:00:24.059 --> 00:00:27.929
+local feature importances into global feature importances.
+
+00:00:27.929 --> 00:00:32.939
+First, we can concatenate the 2D arrays in the list shap_values.
+
+00:00:32.939 --> 00:00:36.119
+So a shap_values as a list of matrices.
+
+00:00:36.119 --> 00:00:38.309
+If we use numpy.concatenate,
+
+00:00:38.310 --> 00:00:42.950
+we can see that they're just stacking all the rows on top of each other.
+
+00:00:42.950 --> 00:00:44.630
+So we still have 21 columns,
+
+00:00:44.630 --> 00:00:48.695
+but we have five times as many rows.
+
+00:00:48.695 --> 00:00:52.840
+We can use numpy.absolute value like this.
+
+00:00:52.840 --> 00:00:56.565
+Then, we can use numpy.nanmean.
+
+00:00:56.564 --> 00:00:59.089
+If we want to take the average for each column,
+
+00:00:59.090 --> 00:01:01.525
+we set axis equal to zero.
+
+00:01:01.524 --> 00:01:05.239
+So for the quiz, please try to implement the function that
+
+00:01:05.239 --> 00:01:08.349
+calculates global feature importance using Shapley values,
+
+00:01:08.349 --> 00:01:10.819
+and then sorts the features by importance.
+
+00:01:10.819 --> 00:01:12.918
+So it's your choice as a challenge,
+
+00:01:12.918 --> 00:01:15.295
+you can just implement it from scratch.
+
+00:01:15.295 --> 00:01:19.924
+If you get stuck, then you can also work with the starter code.
+
+00:01:19.924 --> 00:01:24.079
+When you're done, try out your function and then see how your features are ranked.
+
+00:01:24.079 --> 00:01:26.829
+Then, you can also check out the solution video.
+

@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.600
+All right. So, to make the tree object easier to work with,
+
+00:00:03.600 --> 00:00:06.150
+we'll wrap it inside our custom Tree class.
+
+00:00:06.150 --> 00:00:10.500
+So, please complete the functions within the Tree class below, which is here.
+
+00:00:10.500 --> 00:00:12.480
+But here's a bonus challenge.
+
+00:00:12.480 --> 00:00:15.810
+Try implementing your own wrapper class for the tree object.
+
+00:00:15.810 --> 00:00:17.850
+So, here's some hints for if you want to
+
+00:00:17.850 --> 00:00:20.070
+try to implement this yourself in this cell here.
+
+00:00:20.070 --> 00:00:24.600
+Think about the attributes that you may need in order to implement algorithm one.
+
+00:00:24.600 --> 00:00:30.150
+Algorithm one refers to that algorithm that we saw in the paper itself.
+
+00:00:30.149 --> 00:00:35.015
+For example, how do we know when a node is an internal or a leaf node?
+
+00:00:35.015 --> 00:00:40.159
+What fraction of samples are in the left child relative to its parent node?
+
+00:00:40.159 --> 00:00:43.149
+On which node is each feature split on?
+
+00:00:43.149 --> 00:00:47.000
+So, if you want to try this challenge on your own,
+
+00:00:47.000 --> 00:00:49.159
+then you can go ahead and stop the video
+
+00:00:49.159 --> 00:00:53.284
+and work with a notebook and try to implement it yourself.
+
+00:00:53.284 --> 00:00:57.349
+Otherwise, if you want to work with the starter code and want an intro to it then,
+
+00:00:57.350 --> 00:01:00.020
+just continue watching until the end of this video.
+
+00:01:00.020 --> 00:01:03.605
+So, here's some starter code with the constructor.
+
+00:01:03.604 --> 00:01:05.944
+So, most of these are set for you.
+
+00:01:05.944 --> 00:01:09.729
+We just want you to implement the function is leaf.
+
+00:01:09.730 --> 00:01:12.225
+So, it will return true if it's a leaf node.
+
+00:01:12.224 --> 00:01:15.069
+It will return false if it's an internal node.
+
+00:01:15.069 --> 00:01:17.509
+Also, implement right child,
+
+00:01:17.510 --> 00:01:20.180
+which is just returning the right child.
+
+00:01:20.180 --> 00:01:23.860
+Also, implement proportion of samples in left child,
+
+00:01:23.859 --> 00:01:27.170
+proportion of samples in the right child.
+
+00:01:27.170 --> 00:01:30.064
+So, once you're done either way,
+
+00:01:30.064 --> 00:01:33.140
+continue on to the solution video.
+

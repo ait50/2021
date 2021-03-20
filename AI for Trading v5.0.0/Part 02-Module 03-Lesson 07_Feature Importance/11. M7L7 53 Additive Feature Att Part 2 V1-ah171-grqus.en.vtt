@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.935
+Okay. So, for more detail,
+
+00:00:01.935 --> 00:00:03.555
+let's go over an example,
+
+00:00:03.555 --> 00:00:06.084
+which will help to make this a little more concrete.
+
+00:00:06.084 --> 00:00:09.495
+So let's say we've trained a complex model on three features.
+
+00:00:09.494 --> 00:00:12.104
+If it's given no inputs to make a prediction,
+
+00:00:12.105 --> 00:00:16.620
+then its prediction would be the equal weighted average of all this training samples.
+
+00:00:16.620 --> 00:00:21.015
+We saw this earlier when we say the model has no information.
+
+00:00:21.015 --> 00:00:22.350
+What's its best guess?
+
+00:00:22.350 --> 00:00:27.240
+Its best guess is just taking the average of all the training labels.
+
+00:00:27.239 --> 00:00:32.509
+Let's say that equal weighted average of the training labels is 100.
+
+00:00:32.509 --> 00:00:36.844
+In other words, if a model is given no features and asked to make a prediction,
+
+00:00:36.844 --> 00:00:38.210
+it would predict 100.
+
+00:00:38.210 --> 00:00:40.655
+So this is just an example that is 100.
+
+00:00:40.655 --> 00:00:44.905
+So 100 is the expected value based on the training labels.
+
+00:00:44.905 --> 00:00:47.685
+Now, let's say, we give the complex model
+
+00:00:47.685 --> 00:00:51.350
+a single sample observation with
+
+00:00:51.350 --> 00:00:55.910
+all three features and a complex model gives a prediction of 200.
+
+00:00:55.909 --> 00:00:57.729
+So now given all three features,
+
+00:00:57.729 --> 00:01:01.509
+it now makes a more informed decision of 200.
+
+00:01:01.509 --> 00:01:04.924
+So, as an example, the additive feature attribution model
+
+00:01:04.924 --> 00:01:08.829
+may assign feature importance is to the three features like this.
+
+00:01:08.829 --> 00:01:11.094
+So we have features 0, 1 and 2.
+
+00:01:11.094 --> 00:01:16.525
+Feature 0 has an importance value of positive 50,
+
+00:01:16.525 --> 00:01:21.695
+feature 1 has positive 90 and feature 2 has negative 40.
+
+00:01:21.694 --> 00:01:29.064
+So these are the attributions of how each feature moved the needle from 100 to 200.
+
+00:01:29.064 --> 00:01:34.340
+So, this is saying that feature 0 pushed the complex model's prediction up by 50.
+
+00:01:34.340 --> 00:01:35.945
+So starting at the 100,
+
+00:01:35.944 --> 00:01:40.569
+starting position features are pushed the model's prediction up by 50.
+
+00:01:40.569 --> 00:01:43.519
+Feature one pushed the complex model's prediction up by
+
+00:01:43.519 --> 00:01:48.274
+90 and feature 2 pushed the model's prediction down by 40.
+
+00:01:48.275 --> 00:01:53.920
+The end result was to go from the expected value of 100 to the prediction of 200.
+
+00:01:53.920 --> 00:01:56.060
+So, just to give you a visual of this,
+
+00:01:56.060 --> 00:01:57.905
+if we go back to the paper,
+
+00:01:57.905 --> 00:02:02.555
+and in the paper, we go to the top of page three.
+
+00:02:02.555 --> 00:02:04.370
+You can see this visual.
+
+00:02:04.370 --> 00:02:06.469
+This is a similar example.
+
+00:02:06.469 --> 00:02:10.039
+Let's imagine we have a couple of features represented by these arrows.
+
+00:02:10.039 --> 00:02:15.754
+So, feature 0 is starting from the expected value which in this case is 0.
+
+00:02:15.754 --> 00:02:20.180
+Feature 0 is pushing the prediction in a positive direction,
+
+00:02:20.180 --> 00:02:24.150
+feature 1 and feature 2 and feature 3, all these red arrows.
+
+00:02:24.150 --> 00:02:26.480
+They have feature importances that are pushing
+
+00:02:26.479 --> 00:02:28.759
+the final prediction in the positive direction.
+
+00:02:28.759 --> 00:02:32.959
+Whereas feature 4 is pushing the prediction in the negative direction,
+
+00:02:32.960 --> 00:02:36.564
+and so f of x the final prediction,
+
+00:02:36.564 --> 00:02:41.359
+given all of these five features from 0-4.
+
+00:02:41.360 --> 00:02:46.010
+Okay. So the shapley value that we just calculated are these values that pushed
+
+00:02:46.009 --> 00:02:48.019
+the model's prediction from the average of
+
+00:02:48.020 --> 00:02:50.765
+the training labels to the mode's final prediction.
+
+00:02:50.764 --> 00:02:54.159
+When we add up the shapley values for all features,
+
+00:02:54.159 --> 00:02:56.435
+they should add up to the model's prediction.
+
+00:02:56.435 --> 00:02:59.224
+In other words, when we add up the shapley values here,
+
+00:02:59.224 --> 00:03:03.354
+they should add up to the model's prediction, 200.
+
+00:03:03.354 --> 00:03:06.799
+So now let's continue to three examples that we
+
+00:03:06.800 --> 00:03:10.100
+can talk through it to make this a little bit more concrete.
+

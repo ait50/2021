@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.339
+So now, after we've defined this F given S, let's test it out.
+
+00:00:05.339 --> 00:00:11.189
+So in this case, sample values are going to be one for all three features,
+
+00:00:11.189 --> 00:00:13.649
+and the subset S is just going to say,
+
+00:00:13.650 --> 00:00:19.875
+we only want to look at feature two as if the model only knew about feature two.
+
+00:00:19.875 --> 00:00:22.920
+Okay. So we expect because feature two doesn't
+
+00:00:22.920 --> 00:00:25.980
+actually help with any of the models prediction,
+
+00:00:25.980 --> 00:00:31.304
+is actually going to be a simple average of all the labels which is going to be 0.25.
+
+00:00:31.304 --> 00:00:34.725
+Okay. Great. So we see that it's 0.25.
+
+00:00:34.725 --> 00:00:37.289
+Let's also test the empty set.
+
+00:00:37.289 --> 00:00:42.269
+So if S contains the set of just nothing,
+
+00:00:42.270 --> 00:00:46.580
+then we also expect the output to be 0.25, Great.
+
+00:00:46.579 --> 00:00:48.350
+So we see it 0.25.
+
+00:00:48.350 --> 00:00:52.490
+Great. So now you've calculated F given S and tested it out.
+
+00:00:52.490 --> 00:00:55.100
+So please continue on with the lesson.
+

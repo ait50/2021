@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.655
+Now let's calculate, how do model performance if it only has feature one?
+
+00:00:04.655 --> 00:00:07.535
+So we use this function to say,
+
+00:00:07.535 --> 00:00:10.414
+"Okay, let's just grab feature one."
+
+00:00:10.414 --> 00:00:15.074
+Let's also create another decision tree and we'll fit the data,
+
+00:00:15.074 --> 00:00:17.384
+we'll fit the model to the data.
+
+00:00:17.385 --> 00:00:22.140
+So the sample input for feature one is one because remember in this case,
+
+00:00:22.140 --> 00:00:26.490
+we were choosing an observation where all the features would be
+
+00:00:26.489 --> 00:00:32.460
+one and we're going to use re-shape to make sure that it has the correct dimensions.
+
+00:00:32.460 --> 00:00:39.570
+Okay. So, the model's prediction when it only takes feature one is 0.5.
+
+00:00:39.570 --> 00:00:42.189
+So, when feature one is one,
+
+00:00:42.189 --> 00:00:44.234
+then the prediction of the model 0.5.
+
+00:00:44.234 --> 00:00:45.969
+If you look at the data in x,
+
+00:00:45.969 --> 00:00:49.969
+this makes sense because when feature one is one,
+
+00:00:49.969 --> 00:00:56.869
+half the time the label in y is zero and half of the time the label and Y is one.
+
+00:00:56.869 --> 00:00:59.489
+So on average, the prediction is 0.5.
+
+00:00:59.490 --> 00:01:02.770
+So what I mean by that is, if you look at the data,
+
+00:01:02.770 --> 00:01:04.710
+sample data that we created.
+
+00:01:04.709 --> 00:01:11.504
+So feature one is this column in the middle and the labels,
+
+00:01:11.504 --> 00:01:12.839
+I'll create a new cell for that,
+
+00:01:12.840 --> 00:01:16.230
+the labels are in Y.
+
+00:01:19.129 --> 00:01:24.750
+This middle column is the value one. What are the labels?
+
+00:01:24.750 --> 00:01:29.599
+Half of the time the labels are one and half of the time the labels are zero.
+
+00:01:29.599 --> 00:01:33.099
+In the case when this middle column is one.
+
+00:01:33.099 --> 00:01:36.799
+So that's why the model's predicting that the output of
+
+00:01:36.799 --> 00:01:41.450
+the model would be 0.5 if it only knows about this middle column.
+
+00:01:41.450 --> 00:01:45.109
+Okay. So once we've gotten the prediction of the model,
+
+00:01:45.109 --> 00:01:49.489
+with S including I and take the difference from that
+
+00:01:49.489 --> 00:01:54.769
+from when the model only knows set S. Then here's the difference.
+
+00:01:54.769 --> 00:01:59.959
+This is essentially saying the prediction of S union I which is one,
+
+00:01:59.959 --> 00:02:01.569
+which we saw up here,
+
+00:02:01.569 --> 00:02:07.969
+the prediction of S union I is one minus the prediction when it's just the set S,
+
+00:02:07.969 --> 00:02:11.689
+which is 0.51 minus 0.5 is 0.5.
+
+00:02:11.689 --> 00:02:13.189
+Okay. Last step is,
+
+00:02:13.189 --> 00:02:16.685
+calculate the weight assigned to the marginal contribution.
+
+00:02:16.685 --> 00:02:18.935
+In other words, what are those factorials?
+
+00:02:18.935 --> 00:02:22.069
+In this case, if the marginal contribution occurs one
+
+00:02:22.069 --> 00:02:25.069
+out of the six possible permutations of the features then
+
+00:02:25.069 --> 00:02:27.680
+its weight would be one sixth and we can
+
+00:02:27.680 --> 00:02:31.370
+verify that by going ahead and using that function.
+
+00:02:31.370 --> 00:02:35.730
+So remember we're passing in the size of set S, okay?
+
+00:02:35.800 --> 00:02:38.945
+The size of set S is one.
+
+00:02:38.944 --> 00:02:40.625
+We can verify that as well.
+
+00:02:40.625 --> 00:02:46.215
+Size S is one and so the weight is one sixth.
+
+00:02:46.215 --> 00:02:47.460
+We can verify that again.
+
+00:02:47.460 --> 00:02:50.795
+One divided by six is what we get here.
+
+00:02:50.794 --> 00:02:53.329
+Great. So now continue onto the next video that
+
+00:02:53.330 --> 00:02:57.260
+introduces case B which you'll try in the quiz. Thanks.
+

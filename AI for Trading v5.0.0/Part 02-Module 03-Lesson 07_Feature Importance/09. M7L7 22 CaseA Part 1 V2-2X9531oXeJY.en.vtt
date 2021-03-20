@@ -1,0 +1,214 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.475
+So now let's practice this in code.
+
+00:00:02.475 --> 00:00:05.310
+We're going to install a couple libraries.
+
+00:00:05.309 --> 00:00:10.500
+Notice here we're also installing the shap library which is created by Scott Lundbergh.
+
+00:00:10.500 --> 00:00:13.289
+You can actually search right here,
+
+00:00:13.289 --> 00:00:16.739
+shap library on GitHub.
+
+00:00:16.739 --> 00:00:18.974
+So it's this right here.
+
+00:00:18.975 --> 00:00:21.210
+So don't worry about that too much,
+
+00:00:21.210 --> 00:00:24.554
+we're actually going to implement everything by scratch in Python.
+
+00:00:24.554 --> 00:00:27.809
+Then we're just going to use this library to verify that
+
+00:00:27.809 --> 00:00:31.384
+what we did matches what this library is going to give us.
+
+00:00:31.385 --> 00:00:36.719
+We'll go ahead and import the libraries that we installed and generate input data,
+
+00:00:36.719 --> 00:00:38.679
+and then we'll fit it to a tree.
+
+00:00:38.679 --> 00:00:40.850
+So we're doing what we did in
+
+00:00:40.850 --> 00:00:45.020
+the previous exercise where we create data with three features.
+
+00:00:45.020 --> 00:00:48.330
+Features zero and one form the and operator,
+
+00:00:48.329 --> 00:00:52.810
+which means when both feature zero and feature one have the value one,
+
+00:00:52.810 --> 00:00:55.725
+then the output, the label will also be one,
+
+00:00:55.725 --> 00:00:58.995
+otherwise, the output label will be zero.
+
+00:00:58.994 --> 00:01:03.140
+Feature two does not contribute to the prediction because it's always zero.
+
+00:01:03.140 --> 00:01:07.879
+We're going to fit that data to a decision tree regressor,
+
+00:01:07.879 --> 00:01:11.539
+and we will visualize it here.
+
+00:01:11.540 --> 00:01:14.240
+Now we'll calculate shap values.
+
+00:01:14.239 --> 00:01:19.219
+Will try to calculate the local feature importance of feature zero.
+
+00:01:19.219 --> 00:01:22.234
+Remember we have features 0, 1, 2.
+
+00:01:22.234 --> 00:01:25.685
+We have three features. For feature x_0,
+
+00:01:25.685 --> 00:01:30.650
+determine what the model predicts with or without feature x_0.
+
+00:01:30.650 --> 00:01:36.315
+Subsets S that exclude feature x_0 are the empty set,
+
+00:01:36.314 --> 00:01:38.370
+the set with just feature one,
+
+00:01:38.370 --> 00:01:39.945
+the set with just feature two,
+
+00:01:39.944 --> 00:01:42.359
+and the set with features one and two.
+
+00:01:42.359 --> 00:01:45.250
+We want to see what the model predicts with
+
+00:01:45.250 --> 00:01:49.810
+feature x_0 compared to when the model does not have feature x_0.
+
+00:01:49.810 --> 00:01:53.810
+So these are the marginal contributions that we want to calculate.
+
+00:01:53.810 --> 00:01:56.555
+So there's 1, 2, 3, 4 cases.
+
+00:01:56.555 --> 00:01:58.790
+I'm going to call them cases A, B, C,
+
+00:01:58.790 --> 00:02:02.210
+and D. We'll also have sampled data.
+
+00:02:02.209 --> 00:02:05.104
+So we'll have a single sample data point
+
+00:02:05.105 --> 00:02:08.390
+for which we'll calculate the local feature importance.
+
+00:02:08.389 --> 00:02:10.729
+So in this case, we're just going to choose a case
+
+00:02:10.729 --> 00:02:14.000
+where all the features have a value of one.
+
+00:02:14.000 --> 00:02:15.995
+So we'll just create that in code.
+
+00:02:15.995 --> 00:02:18.784
+So we're going to create a numpy array for
+
+00:02:18.784 --> 00:02:22.924
+these three features where each of the features has a value of one.
+
+00:02:22.925 --> 00:02:26.960
+We'll see more of how we're using this sample values in a bit.
+
+00:02:26.960 --> 00:02:30.170
+So first we have some helper functions to make things easier.
+
+00:02:30.169 --> 00:02:32.839
+So to create the subset S,
+
+00:02:32.840 --> 00:02:35.659
+we're going to use this function gets subset.
+
+00:02:35.659 --> 00:02:39.289
+So it takes the entire feature set M. In this case,
+
+00:02:39.289 --> 00:02:40.834
+we create a variable called x,
+
+00:02:40.835 --> 00:02:42.439
+which will pass in here.
+
+00:02:42.439 --> 00:02:46.280
+Also, it takes in a list of the features that we want.
+
+00:02:46.280 --> 00:02:51.094
+For example, if we want a subset that contains only features zero and one for instance,
+
+00:02:51.094 --> 00:02:56.050
+then we can specify that we only want column zero and one from this matrix.
+
+00:02:56.050 --> 00:02:59.420
+If you're curious about how I came up with this,
+
+00:02:59.419 --> 00:03:02.104
+you can actually just try it out in a separate cell,
+
+00:03:02.104 --> 00:03:05.689
+and you can see that, for example,
+
+00:03:05.689 --> 00:03:11.509
+x if we want to grab feature one for instance, it looks like this.
+
+00:03:11.509 --> 00:03:18.229
+But because it's a 1D array we just want to reshape it so that it has one column,
+
+00:03:18.229 --> 00:03:21.199
+and then this negative one means to choose the number of
+
+00:03:21.199 --> 00:03:24.954
+rows such that the dimensions match.
+
+00:03:24.955 --> 00:03:29.010
+So this is saying because there were 100 of these elements,
+
+00:03:29.009 --> 00:03:31.489
+that negative one would have been the same as
+
+00:03:31.490 --> 00:03:35.180
+saying you want a 100 rows and you want one column.
+
+00:03:35.180 --> 00:03:40.670
+But negative one just lets numpy do the calculation for you.
+
+00:03:40.669 --> 00:03:43.384
+But go ahead and just use this function if you want.
+
+00:03:43.384 --> 00:03:45.469
+Then here's how you would use it.
+
+00:03:45.469 --> 00:03:48.289
+You would pass in the X matrix,
+
+00:03:48.289 --> 00:03:49.729
+and then you would say, for instance,
+
+00:03:49.729 --> 00:03:52.549
+I want to choose features zero and feature two,
+
+00:03:52.550 --> 00:03:56.540
+and that's what you'll get output from that function.
+

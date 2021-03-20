@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.314
+So now let's rank the features by their importance.
+
+00:00:03.314 --> 00:00:06.839
+The creator of Shapley Additive Explanations, Scott Lundberg,
+
+00:00:06.839 --> 00:00:10.310
+has written an efficient implementation that we can install and use.
+
+00:00:10.310 --> 00:00:14.564
+We'll be able to use this to determine both local feature importance,
+
+00:00:14.564 --> 00:00:16.754
+which means for a single observation,
+
+00:00:16.754 --> 00:00:18.809
+and also global feature importance,
+
+00:00:18.809 --> 00:00:21.674
+which is for all training samples as a whole.
+
+00:00:21.675 --> 00:00:25.920
+To aggregate local feature importance into global feature importance,
+
+00:00:25.920 --> 00:00:30.690
+we can take the absolute value of the local feature importances, and then average them.
+
+00:00:30.690 --> 00:00:33.405
+We'll practice this in the code below.
+
+00:00:33.405 --> 00:00:39.245
+We can calculate the feature importance using sklearn and using the Shap library.
+
+00:00:39.244 --> 00:00:41.149
+Based on the feature importances,
+
+00:00:41.149 --> 00:00:44.104
+we can think about modifying features to improve them.
+
+00:00:44.104 --> 00:00:47.204
+Then we can re-train the model on modified features.
+
+00:00:47.204 --> 00:00:49.144
+You'll get to do this in the project.
+
+00:00:49.145 --> 00:00:53.570
+So finally, we can prune the feature set to just use the most relevant features.
+
+00:00:53.570 --> 00:00:56.755
+Again, that part, you will practice in the project.
+
+00:00:56.755 --> 00:01:01.460
+So first, let's just run some of the starter code to get started.
+
+00:01:01.460 --> 00:01:06.500
+So this is going to get the data, create the features,
+
+00:01:06.500 --> 00:01:10.370
+and then when we get to that part it's going
+
+00:01:10.370 --> 00:01:16.155
+to train a model on these features and labels.
+
+00:01:16.155 --> 00:01:19.040
+So let's split, train,
+
+00:01:19.040 --> 00:01:23.130
+train validation test, and then okay.
+
+00:01:23.129 --> 00:01:26.420
+Great. So we're going to fit random forest.
+
+00:01:26.420 --> 00:01:29.090
+Great. So the next video we'll go over a
+
+00:01:29.090 --> 00:01:34.320
+ranking by feature importance using the sklearn library.
+

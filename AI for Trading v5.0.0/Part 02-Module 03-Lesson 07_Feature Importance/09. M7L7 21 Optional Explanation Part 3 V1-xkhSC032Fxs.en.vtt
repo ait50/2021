@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.430
+Now let's look at the original formula.
+
+00:00:02.430 --> 00:00:05.040
+So, let's scroll back up a little bit.
+
+00:00:05.040 --> 00:00:08.849
+The original formula, we're looking at this part of the original formula as
+
+00:00:08.849 --> 00:00:13.425
+factorial times quantity M minus S minus one factorial,
+
+00:00:13.425 --> 00:00:15.045
+divided by M factorial.
+
+00:00:15.044 --> 00:00:19.620
+So, we're putting together all that we've seen to create this formula.
+
+00:00:19.620 --> 00:00:22.289
+To use the notation of the original formula,
+
+00:00:22.289 --> 00:00:27.960
+note that we're going to replace Q with M minus S minus one.
+
+00:00:27.960 --> 00:00:32.945
+So, that's saying, remember these absolute values are saying the size of those sets.
+
+00:00:32.945 --> 00:00:34.460
+So, the size of set M,
+
+00:00:34.460 --> 00:00:39.590
+the number of total features minus the number of features in set S minus one,
+
+00:00:39.590 --> 00:00:44.275
+because we have that feature for which we're trying to calculate the Shapley value,
+
+00:00:44.274 --> 00:00:47.210
+and that gives us the size of set Q.
+
+00:00:47.210 --> 00:00:49.340
+To make this clear for yourself,
+
+00:00:49.340 --> 00:00:51.410
+you can just look at some of these examples.
+
+00:00:51.409 --> 00:00:54.259
+For example, the size of set S is two,
+
+00:00:54.259 --> 00:00:58.539
+the size of set M is three because there's three total features.
+
+00:00:58.539 --> 00:01:01.509
+Three minus two minus one,
+
+00:01:01.509 --> 00:01:03.475
+because we have this feature too,
+
+00:01:03.475 --> 00:01:07.234
+gives us zero which is the size of the set Q.
+
+00:01:07.234 --> 00:01:10.954
+Recall that to calculate that there are six total sequences,
+
+00:01:10.954 --> 00:01:13.414
+we can use M factorial,
+
+00:01:13.415 --> 00:01:17.015
+which is three factorial which is six in this example.
+
+00:01:17.015 --> 00:01:19.924
+So, we're going to divide this expression,
+
+00:01:19.924 --> 00:01:24.620
+S factorial times M minus S minus one factorial.
+
+00:01:24.620 --> 00:01:27.950
+We're going to divide that by M factorial to
+
+00:01:27.950 --> 00:01:31.865
+get the proportion assigned to each marginal contribution.
+
+00:01:31.864 --> 00:01:36.664
+So, this is the weight that will be applied to each of those marginal contributions.
+
+00:01:36.665 --> 00:01:38.870
+Remember when I say marginal contribution,
+
+00:01:38.870 --> 00:01:41.939
+I'm just saying how does the model do with
+
+00:01:41.939 --> 00:01:45.524
+feature i compared to how does the model do without feature i.
+
+00:01:45.525 --> 00:01:47.955
+So, that's the marginal contribution.
+
+00:01:47.954 --> 00:01:51.314
+So, that's how we get this formula here.
+
+00:01:51.314 --> 00:01:54.405
+Think of this as just a way to say
+
+00:01:54.405 --> 00:02:00.579
+this particular marginal contribution may occur more often than others,
+
+00:02:00.579 --> 00:02:03.995
+so we want to give it more weight in that case.
+
+00:02:03.995 --> 00:02:08.400
+For example, sometimes it occurs twice,
+
+00:02:08.400 --> 00:02:11.569
+sometimes it only occurs once for instance.
+
+00:02:11.569 --> 00:02:14.194
+So, we want to do this for each set,
+
+00:02:14.194 --> 00:02:17.539
+which is a subset of M excluding i.
+
+00:02:17.539 --> 00:02:22.655
+So, we can sum up the weighted marginal contributions for all sets S,
+
+00:02:22.655 --> 00:02:26.539
+and this represents the importance of feature i.
+
+00:02:26.539 --> 00:02:31.699
+So, you'll get to practice this in the code coming up. Thanks for watching.
+

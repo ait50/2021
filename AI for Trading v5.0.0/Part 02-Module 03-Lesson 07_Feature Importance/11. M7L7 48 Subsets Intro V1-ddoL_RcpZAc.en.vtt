@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.384
+Generate all subsets, fill in a function that generates all possible subsets
+
+00:00:05.384 --> 00:00:08.759
+S. We'll use itertools.combinations
+
+00:00:08.759 --> 00:00:12.224
+which takes in a list and also the size of each subset.
+
+00:00:12.224 --> 00:00:15.629
+So you can see here we're importing from itertools combinations,
+
+00:00:15.630 --> 00:00:17.085
+and when we use combinations,
+
+00:00:17.085 --> 00:00:20.280
+we first pass in the list of all the features,
+
+00:00:20.280 --> 00:00:25.350
+and then we also want to choose the size of the subset that we wanted to output.
+
+00:00:25.350 --> 00:00:27.960
+So it returns an iterable object which is
+
+00:00:27.960 --> 00:00:31.260
+here that contains tuples of all the combinations.
+
+00:00:31.260 --> 00:00:35.405
+So if we were to loop through all the items inside the iterable,
+
+00:00:35.405 --> 00:00:42.350
+you can see that we have all the combinations of these features of size two.
+
+00:00:42.350 --> 00:00:44.524
+The tuples are all of size two.
+
+00:00:44.524 --> 00:00:48.589
+So now, fill in the function generate all subsets.
+
+00:00:48.590 --> 00:00:53.960
+Keep in mind that since the iterable returned by combinations holds tuples,
+
+00:00:53.960 --> 00:00:59.185
+we can create sets out of the tuples by using set and passing in the tuple.
+
+00:00:59.185 --> 00:01:03.140
+We'll store the S sets as set types since we
+
+00:01:03.140 --> 00:01:07.540
+defined the F given S function to take S as a type set.
+
+00:01:07.540 --> 00:01:10.385
+Remember to also include the empty set,
+
+00:01:10.385 --> 00:01:13.450
+we can do this using the keyword none.
+
+00:01:13.450 --> 00:01:17.159
+So bonus challenge, try to implement this function yourself.
+
+00:01:17.159 --> 00:01:20.810
+Otherwise, you can also try it with the starter code over here.
+
+00:01:20.810 --> 00:01:23.480
+When you're done, try out the function,
+
+00:01:23.480 --> 00:01:26.189
+and then check out the solution video.
+
