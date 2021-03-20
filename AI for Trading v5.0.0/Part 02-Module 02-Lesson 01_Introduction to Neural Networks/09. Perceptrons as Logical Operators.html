@@ -1,0 +1,938 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Perceptrons as Logical Operators
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Introduction to Neural Networks
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructor.html">
+       01. Instructor
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Introduction.html">
+       02. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Classification Problems 1.html">
+       03. Classification Problems 1
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Classification Problems 2.html">
+       04. Classification Problems 2
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Linear Boundaries.html">
+       05. Linear Boundaries
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Higher Dimensions.html">
+       06. Higher Dimensions
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Perceptrons.html">
+       07. Perceptrons
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Why Neural Networks.html">
+       08. Why "Neural Networks"?
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Perceptrons as Logical Operators.html">
+       09. Perceptrons as Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Perceptron Trick.html">
+       10. Perceptron Trick
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Perceptron Algorithm.html">
+       11. Perceptron Algorithm
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Non-Linear Regions.html">
+       12. Non-Linear Regions
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Error Functions.html">
+       13. Error Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Log-loss Error Function.html">
+       14. Log-loss Error Function
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Discrete vs Continuous.html">
+       15. Discrete vs Continuous
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Softmax.html">
+       16. Softmax
+      </a>
+     </li>
+     <li class="">
+      <a href="17. One-Hot Encoding.html">
+       17. One-Hot Encoding
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Maximum Likelihood.html">
+       18. Maximum Likelihood
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Maximizing Probabilities.html">
+       19. Maximizing Probabilities
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Cross-Entropy 1.html">
+       20. Cross-Entropy 1
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Cross-Entropy 2.html">
+       21. Cross-Entropy 2
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Multi-Class Cross Entropy.html">
+       22. Multi-Class Cross Entropy
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Logistic Regression.html">
+       23. Logistic Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Gradient Descent.html">
+       24. Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Logistic Regression Algorithm.html">
+       25. Logistic Regression Algorithm
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Pre-Notebook Gradient Descent.html">
+       26. Pre-Notebook: Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Notebook Gradient Descent.html">
+       27. Notebook: Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Perceptron vs Gradient Descent.html">
+       28. Perceptron vs Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Continuous Perceptrons.html">
+       29. Continuous Perceptrons
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Non-linear Data.html">
+       30. Non-linear Data
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Non-Linear Models.html">
+       31. Non-Linear Models
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Neural Network Architecture.html">
+       32. Neural Network Architecture
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Feedforward.html">
+       33. Feedforward
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Backpropagation.html">
+       34. Backpropagation
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Pre-Notebook Analyzing Student Data.html">
+       35. Pre-Notebook: Analyzing Student Data
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Notebook Analyzing Student Data.html">
+       36. Notebook: Analyzing Student Data
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Outro.html">
+       37. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          09. Perceptrons as Logical Operators
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="perceptrons-as-logical-operators">
+          Perceptrons as Logical Operators
+         </h1>
+         <p>
+          In this lesson, we'll see one of the many great applications of perceptrons. As logical operators! You'll have the chance to create the perceptrons for the most common of these, the
+          <strong>
+           AND
+          </strong>
+          ,
+          <strong>
+           OR
+          </strong>
+          , and
+          <strong>
+           NOT
+          </strong>
+          operators. And then, we'll see what to do about the elusive
+          <strong>
+           XOR
+          </strong>
+          operator. Let's dive in!
+         </p>
+         <h1 id="and-perceptron">
+          AND Perceptron
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          DL 08 AND And OR Perceptrons
+         </p>
+        </h3>
+        <video controls="">
+         <source src="09. DL 08 AND And OR Perceptrons-Y-ImuxNpS40.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="09. DL 08 AND And OR Perceptrons-Y-ImuxNpS40.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="09. DL 08 AND And OR Perceptrons-Y-ImuxNpS40.zh-CN.vtt" srclang="zh-CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Note: The second and third rows of the third column from 1:50-onward should be blue in color (they have the correct value of 1) for the OR perceptron.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/and-quiz.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="what-are-the-weights-and-bias-for-the-and-perceptron">
+          What are the weights and bias for the AND perceptron?
+         </h2>
+         <p>
+          Set the weights (
+          <code>
+           weight1
+          </code>
+          ,
+          <code>
+           weight2
+          </code>
+          )  and bias (
+          <code>
+           bias
+          </code>
+          ) to values that will correctly determine the AND operation as shown above.
+          <br/>
+          More than one set of values will work!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="307783-quiz-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#307783-quiz-py" id="tab-307783-quiz-py" role="tab">
+            quiz.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-307783-quiz-py" class="tab-pane active show" id="307783-quiz-py" role="tabpanel">
+            <pre><code></code>import pandas as pd
+
+# TODO: Set weight1, weight2, and bias
+weight1 = 0.0
+weight2 = 0.0
+bias = 0.0
+
+
+# DON'T CHANGE ANYTHING BELOW
+# Inputs and outputs
+test_inputs = [(0, 0), (0, 1), (1, 0), (1, 1)]
+correct_outputs = [False, False, False, True]
+outputs = []
+
+# Generate and check output
+for test_input, correct_output in zip(test_inputs, correct_outputs):
+    linear_combination = weight1 * test_input[0] + weight2 * test_input[1] + bias
+    output = int(linear_combination &gt;= 0)
+    is_correct_string = 'Yes' if output == correct_output else 'No'
+    outputs.append([test_input[0], test_input[1], linear_combination, output, is_correct_string])
+
+# Print output
+num_wrong = len([output[4] for output in outputs if output[4] == 'No'])
+output_frame = pd.DataFrame(outputs, columns=['Input 1', '  Input 2', '  Linear Combination', '  Activation Output', '  Is Correct'])
+if not num_wrong:
+    print('Nice!  You got it all correct.\n')
+else:
+    print('You got {} wrong.  Keep trying!\n'.format(num_wrong))
+print(output_frame.to_string(index=False))
+</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="or-perceptron">
+          OR Perceptron
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/or-quiz.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The OR perceptron is very similar to an AND perceptron.  In the image below, the OR perceptron has the same line as the AND perceptron, except the line is shifted down.  What can you do to the weights and/or bias to achieve this?  Use the following AND perceptron to create an OR Perceptron.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/and-to-or.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          OR Perceptron Quiz
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What are two ways to go from an AND perceptron to an OR perceptron?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1494182870768" name="308242" type="checkbox" value="a1494182870768"/>
+           <label for="a1494182870768">
+            <p>
+             Increase the weights
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1494182883245" name="308242" type="checkbox" value="a1494182883245"/>
+           <label for="a1494182883245">
+            <p>
+             Decrease the weights
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1494182884153" name="308242" type="checkbox" value="a1494182884153"/>
+           <label for="a1494182884153">
+            <p>
+             Increase a single weight
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1494182884879" name="308242" type="checkbox" value="a1494182884879"/>
+           <label for="a1494182884879">
+            <p>
+             Decrease a single weight
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1494182885650" name="308242" type="checkbox" value="a1494182885650"/>
+           <label for="a1494182885650">
+            <p>
+             Increase the magnitude of the bias
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1494182887943" name="308242" type="checkbox" value="a1494182887943"/>
+           <label for="a1494182887943">
+            <p>
+             Decrease the magnitude of the bias
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            Increase the weights
+           </li>
+           <li>
+            Decrease the magnitude of the bias
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="not-perceptron">
+          NOT Perceptron
+         </h1>
+         <p>
+          Unlike the other perceptrons we looked at, the NOT operation only cares about one input.  The operation returns a
+          <code>
+           0
+          </code>
+          if the input is
+          <code>
+           1
+          </code>
+          and a
+          <code>
+           1
+          </code>
+          if it's a
+          <code>
+           0
+          </code>
+          .  The other inputs to the perceptron are ignored.
+         </p>
+         <p>
+          In this quiz, you'll set the weights (
+          <code>
+           weight1
+          </code>
+          ,
+          <code>
+           weight2
+          </code>
+          )  and bias
+          <code>
+           bias
+          </code>
+          to the values that calculate the NOT operation on the second input and ignores the first input.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="308217-quiz-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#308217-quiz-py" id="tab-308217-quiz-py" role="tab">
+            quiz.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-308217-quiz-py" class="tab-pane active show" id="308217-quiz-py" role="tabpanel">
+            <pre><code></code>import pandas as pd
+
+# TODO: Set weight1, weight2, and bias
+weight1 = 0.0
+weight2 = 0.0
+bias = 0.0
+
+
+# DON'T CHANGE ANYTHING BELOW
+# Inputs and outputs
+test_inputs = [(0, 0), (0, 1), (1, 0), (1, 1)]
+correct_outputs = [True, False, True, False]
+outputs = []
+
+# Generate and check output
+for test_input, correct_output in zip(test_inputs, correct_outputs):
+    linear_combination = weight1 * test_input[0] + weight2 * test_input[1] + bias
+    output = int(linear_combination &gt;= 0)
+    is_correct_string = 'Yes' if output == correct_output else 'No'
+    outputs.append([test_input[0], test_input[1], linear_combination, output, is_correct_string])
+
+# Print output
+num_wrong = len([output[4] for output in outputs if output[4] == 'No'])
+output_frame = pd.DataFrame(outputs, columns=['Input 1', '  Input 2', '  Linear Combination', '  Activation Output', '  Is Correct'])
+if not num_wrong:
+    print('Nice!  You got it all correct.\n')
+else:
+    print('You got {} wrong.  Keep trying!\n'.format(num_wrong))
+print(output_frame.to_string(index=False))</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          DL 09 XOR Perceptron
+         </p>
+        </h3>
+        <video controls="">
+         <source src="09. DL 09 XOR Perceptron--z9K49fdE3g.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="09. DL 09 XOR Perceptron--z9K49fdE3g.en.vtt" srclang="en"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="xor-perceptron">
+          XOR Perceptron
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/xor.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-build-an-xor-multi-layer-perceptron">
+          Quiz: Build an XOR Multi-Layer Perceptron
+         </h1>
+         <p>
+          Now, let's build a multi-layer perceptron from the AND, NOT, and OR perceptrons to create XOR logic!
+         </p>
+         <p>
+          The neural network below contains 3 perceptrons, A, B, and C. The last one (AND) has been given for you. The input to the neural network is from the first node. The output comes out of the last node.
+         </p>
+         <p>
+          The multi-layer perceptron below calculates XOR.  Each perceptron is a logic operation of AND, OR, and NOT.   However, the perceptrons A, B, and C don't indicate their operation.  In the following quiz, set the correct operations for the perceptrons to calculate XOR.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/xor-quiz.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Set the operations for the perceptrons in the XOR neural network.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           A
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           B
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           C
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Perceptron
+            </p>
+           </th>
+           <th>
+            <p>
+             Operators
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             AND
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             OR
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             NOT
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Perceptron
+             </p>
+            </th>
+            <th>
+             <p>
+              Operators
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              AND
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               A
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              OR
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               B
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              NOT
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               C
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="10. Perceptron Trick.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('09. Perceptrons as Logical Operators')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

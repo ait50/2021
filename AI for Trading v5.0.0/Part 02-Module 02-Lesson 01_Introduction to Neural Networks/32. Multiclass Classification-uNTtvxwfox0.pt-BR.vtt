@@ -1,0 +1,117 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:03.234
+Nós falamos sobre
+classificação multiclasse,
+
+00:00:03.268 --> 00:00:05.300
+mas eu serei
+mais específico.
+
+00:00:05.334 --> 00:00:08.167
+Parece que as redes neurais
+funcionam bem
+
+00:00:08.201 --> 00:00:10.367
+ao classificar duas classes.
+
+00:00:10.401 --> 00:00:13.234
+Por exemplo, se o modelo
+prevê a probabilidade
+
+00:00:13.268 --> 00:00:15.100
+de receber
+um presente ou não,
+
+00:00:15.134 --> 00:00:18.601
+então a resposta será a saída
+de uma rede neural.
+
+00:00:18.635 --> 00:00:20.701
+Mas o que ocorre
+se tivermos mais classes?
+
+00:00:20.735 --> 00:00:23.701
+Imagine um modelo
+que diga se a imagem é um pato,
+
+00:00:23.735 --> 00:00:26.767
+um castor ou uma morsa.
+
+00:00:26.801 --> 00:00:28.767
+Nós podemos criar
+uma rede neural
+
+00:00:28.801 --> 00:00:30.868
+para prever se a imagem
+será um pato,
+
+00:00:30.902 --> 00:00:34.000
+outra rede neural para prever
+se a imagem será um castor
+
+00:00:34.034 --> 00:00:37.567
+e uma terceira para prever
+se a imagem será uma morsa.
+
+00:00:37.601 --> 00:00:39.234
+Nós podemos
+utilizar o softmax
+
+00:00:39.268 --> 00:00:42.267
+ou escolher a resposta
+com maior probabilidade.
+
+00:00:42.301 --> 00:00:44.934
+Mas isso parece demais.
+
+00:00:44.968 --> 00:00:47.667
+As primeiras camadas da rede
+neural deveriam informar
+
+00:00:47.701 --> 00:00:48.934
+coisas sobre a imagem
+
+00:00:48.968 --> 00:00:52.067
+e a última deveria informar
+qual é o animal.
+
+00:00:52.868 --> 00:00:56.267
+Na verdade, como vimos
+na seção sobre CNN,
+
+00:00:56.301 --> 00:00:58.367
+este é exatamente o caso.
+
+00:00:58.401 --> 00:01:01.601
+Nós precisamos adicionar nós
+à camada de saída,
+
+00:01:01.635 --> 00:01:05.267
+sendo que cada nó dará
+a probabilidade de a imagem
+
+00:01:05.301 --> 00:01:07.601
+ser um dos animais.
+
+00:01:07.635 --> 00:01:10.601
+Nós pegamos as pontuações
+e aplicamos a função softmax
+
+00:01:10.635 --> 00:01:12.367
+definida previamente
+
+00:01:12.401 --> 00:01:14.701
+para obter probabilidades
+bem definidas.
+
+00:01:15.701 --> 00:01:17.434
+É assim que
+as redes neurais
+
+00:01:17.468 --> 00:01:19.634
+fazem a classificação
+multiclasse.
+

@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.067 --> 00:00:02.167
+Vamos observar o modelo
+
+00:00:02.200 --> 00:00:04.733
+de aceitar e rejeitar alunos.
+
+00:00:04.767 --> 00:00:07.367
+Imagine o aluno 4
+que tirou 9 na prova de admissão,
+
+00:00:07.400 --> 00:00:09.167
+mas tem 1 de média escolar.
+
+00:00:09.200 --> 00:00:11.533
+De acordo com o modelo,
+ele é aceito,
+
+00:00:11.567 --> 00:00:15.667
+pois ele fica aqui,
+na região positiva da linha.
+
+00:00:15.700 --> 00:00:19.133
+Mas nós não queremos isso,
+pois se as notas forem ruins,
+
+00:00:19.167 --> 00:00:22.300
+não importa o que ele tira
+na prova, pois não será aceito.
+
+00:00:22.333 --> 00:00:25.533
+Os dados devem parecer
+mais com isso.
+
+00:00:25.567 --> 00:00:28.533
+Este modelo é mais realista,
+mas nós temos um problema,
+
+00:00:28.567 --> 00:00:32.267
+pois os dados não podem
+ser separados por uma linha.
+
+00:00:32.300 --> 00:00:35.667
+Qual seria a outra opção?
+Talvez um círculo?
+
+00:00:35.700 --> 00:00:37.233
+Isso funcionaria.
+
+00:00:37.267 --> 00:00:40.467
+Talvez duas linhas.
+Isso funcionaria também.
+
+00:00:40.500 --> 00:00:43.733
+Ou talvez uma curva como esta,
+que também funcionaria.
+
+00:00:43.767 --> 00:00:45.333
+Vamos optar pela curva.
+
+00:00:45.967 --> 00:00:49.667
+Infelizmente o algoritmo
+perceptron não funcionará.
+
+00:00:49.700 --> 00:00:51.733
+Nós precisamos de algo
+mais complexo,
+
+00:00:51.767 --> 00:00:56.500
+e a solução será redefinir
+o algoritmo perceptron
+
+00:00:56.533 --> 00:00:59.800
+de forma que ele generalize
+outros tipos de curvas.
+

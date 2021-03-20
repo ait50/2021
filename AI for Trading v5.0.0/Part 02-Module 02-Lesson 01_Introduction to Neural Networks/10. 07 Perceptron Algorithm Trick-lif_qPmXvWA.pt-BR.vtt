@@ -1,0 +1,221 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:03.750
+Vou te mostrar um truque para deixar
+a linha mais perto de um ponto.
+
+00:00:03.800 --> 00:00:09.000
+Digamos que nossa equação linear
+seja 3x1+4x2-10=0.
+
+00:00:09.050 --> 00:00:11.200
+Essa equação linear
+dá uma linha
+
+00:00:11.250 --> 00:00:13.750
+que liga os pontos
+onde a equação é 0
+
+00:00:13.800 --> 00:00:14.900
+e duas regiões.
+
+00:00:14.950 --> 00:00:16.800
+A região positiva, em azul,
+
+00:00:16.850 --> 00:00:19.950
+onde 3x1+4x2-10 é positivo,
+
+00:00:20.000 --> 00:00:22.200
+e a negativa, em vermelho,
+
+00:00:22.250 --> 00:00:26.100
+onde 3x1+4x2-10 é negativo.
+
+00:00:26.600 --> 00:00:29.000
+Aqui temos um ponto
+classificado incorretamente,
+
+00:00:29.050 --> 00:00:32.500
+o ponto (4, 5),
+um ponto vermelho na área azul.
+
+00:00:32.550 --> 00:00:34.750
+Esse ponto diz: "Aproxime-se!"
+
+00:00:34.800 --> 00:00:37.800
+E como trazemos o ponto
+para mais perto da linha?
+
+00:00:38.400 --> 00:00:41.050
+A ideia é usarmos o 4 e o 5
+
+00:00:41.100 --> 00:00:44.150
+para modificar
+a equação da linha
+
+00:00:44.200 --> 00:00:47.300
+de forma que a linha
+se aproxime do ponto.
+
+00:00:48.050 --> 00:00:50.150
+Aqui estão
+os parâmetros da linha:
+
+00:00:50.200 --> 00:00:52.350
+3, 4 e -10.
+
+00:00:52.400 --> 00:00:54.500
+As coordenadas do ponto
+são 4 e 5,
+
+00:00:54.550 --> 00:00:57.600
+e vamos adicionar 1 aqui
+da unidade de viés.
+
+00:00:57.650 --> 00:00:59.550
+O que faremos é subtrair
+esses números
+
+00:00:59.600 --> 00:01:01.650
+dos parâmetros da linha,
+
+00:01:01.700 --> 00:01:06.950
+chegando a 3-4, 4-5 e -10-1.
+
+00:01:07.950 --> 00:01:12.450
+A nova linha terá
+os parâmetros -1, -1 e -11.
+
+00:01:13.000 --> 00:01:15.300
+Essa linha se aproximará muito
+do ponto,
+
+00:01:15.350 --> 00:01:18.800
+quem sabe até passando por ele
+e colocando-o na área correta.
+
+00:01:18.850 --> 00:01:20.550
+Como temos
+muitos outros pontos,
+
+00:01:20.600 --> 00:01:22.500
+não queremos
+nenhum movimento abrupto
+
+00:01:22.550 --> 00:01:25.850
+para não classificar incorretamente
+todos os demais pontos.
+
+00:01:26.450 --> 00:01:28.800
+Queremos mover a linha de leve
+em direção ao ponto.
+
+00:01:28.850 --> 00:01:32.200
+Para tanto, precisamos dar
+pequenos passos no sentido dele.
+
+00:01:33.050 --> 00:01:35.600
+É aqui que entra
+o conceito de taxa de aprendizado.
+
+00:01:35.650 --> 00:01:39.200
+A taxa de aprendizado é
+um número pequeno, como 0,1.
+
+00:01:39.250 --> 00:01:44.250
+O que ela faz, em vez de subtrair
+4, 5 e 1 das coordenadas da linha,
+
+00:01:44.300 --> 00:01:47.750
+é multiplicar esses números
+por 0.1
+
+00:01:47.800 --> 00:01:50.600
+e então subtraí-los
+da equação da linha.
+
+00:01:50.950 --> 00:01:54.500
+Isso significa
+que subtrairemos 0,4, 0,5 e 0,1
+
+00:01:54.550 --> 00:01:56.350
+da equação da linha,
+
+00:01:56.400 --> 00:01:58.050
+chegando a uma nova equação
+
+00:01:58.100 --> 00:02:04.200
+de 2,6x1+3,5x2-10,1=0.
+
+00:02:04.550 --> 00:02:07.450
+Essa nova linha
+se aproximará do ponto.
+
+00:02:08.350 --> 00:02:11.000
+Da mesma forma, se tivermos
+um ponto azul na área vermelha,
+
+00:02:11.050 --> 00:02:13.000
+por exemplo, o ponto 1,1,
+
+00:02:13.050 --> 00:02:15.900
+rotulado positivamente
+na área negativa.
+
+00:02:16.600 --> 00:02:18.450
+Ele também foi classificado
+incorretamente
+
+00:02:18.500 --> 00:02:20.700
+e diz: "Aproxime-se!"
+
+00:02:20.750 --> 00:02:22.150
+Aqui fazemos o mesmo,
+
+00:02:22.200 --> 00:02:25.850
+só que, em vez de subtrair
+as coordenadas dos parâmetros,
+
+00:02:25.900 --> 00:02:27.400
+nós as somamos.
+
+00:02:27.450 --> 00:02:31.400
+Novamente, multiplicamos pela taxa
+de aprendizado para ir aos poucos.
+
+00:02:31.450 --> 00:02:33.650
+Aqui pegamos as coordenadas
+do ponto (1,1)
+
+00:02:33.700 --> 00:02:36.350
+e adicionamos mais um 1
+da constante de viés.
+
+00:02:36.400 --> 00:02:40.300
+E agora multiplicamos tudo
+pela taxa de aprendizado, 0.1.
+
+00:02:40.350 --> 00:02:43.400
+Agora, as somamos
+aos parâmetros da linha...
+
+00:02:43.450 --> 00:02:45.850
+e obtemos uma nova linha
+de equação:
+
+00:02:45.900 --> 00:02:50.700
+3,1x1+4,1x2-9,9.
+
+00:02:51.250 --> 00:02:53.950
+E, voilà, a linha está
+mais próxima do ponto.
+
+00:02:54.550 --> 00:02:56.800
+Esse é um truque
+que usaremos repetidamente
+
+00:02:56.850 --> 00:02:58.650
+para o algoritmo perceptron.
+

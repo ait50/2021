@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.790
+Up until now, we've learned some basic concepts in
+
+00:00:02.790 --> 00:00:05.580
+natural language processing including bag-of-words,
+
+00:00:05.580 --> 00:00:08.294
+stop words, stemming, lemmatization,
+
+00:00:08.294 --> 00:00:12.990
+and term frequency inverse document frequency or TFIDF.
+
+00:00:12.990 --> 00:00:14.820
+In our coding exercise,
+
+00:00:14.820 --> 00:00:17.070
+we've implemented these algorithms using Python.
+
+00:00:17.070 --> 00:00:19.890
+We've also learned about financial statement data collected by
+
+00:00:19.890 --> 00:00:24.149
+the US Securities and Exchange Commission and how to access them on the Internet.
+
+00:00:24.149 --> 00:00:27.449
+These concepts can be used to systematically interpret
+
+00:00:27.449 --> 00:00:30.750
+textual financial data to create stock selection models.
+
+00:00:30.750 --> 00:00:33.164
+Good fundamental analysts investigate
+
+00:00:33.164 --> 00:00:36.000
+all relevant information regarding the stocks they follow.
+
+00:00:36.000 --> 00:00:39.435
+This includes financial statements required by the regulatory authorities
+
+00:00:39.435 --> 00:00:44.105
+like 10-Ks which are published annually and 10-Qs which are published quarterly.
+
+00:00:44.104 --> 00:00:48.484
+This is a lot of work for the analyst who covers approximately 30 to 40 stocks.
+
+00:00:48.484 --> 00:00:53.119
+Using NLP techniques, a quantitative analyst can quickly analyze sections
+
+00:00:53.119 --> 00:00:58.339
+from all 10-Ks and 10-Qs for all the companies required to file with the SCC.
+
+00:00:58.340 --> 00:01:02.825
+That's approximately 3,000 to 4,000 companies every quarter.
+
+00:01:02.825 --> 00:01:07.085
+In this project, we're going to access the SCC website to download
+
+00:01:07.084 --> 00:01:11.299
+annual 10-K filings and extract key sections for NLP analysis.
+
+00:01:11.299 --> 00:01:13.879
+We'll use several Python libraries to implement
+
+00:01:13.879 --> 00:01:17.375
+the analysis and create a text-based stock selection model.
+
+00:01:17.375 --> 00:01:20.329
+This stock selection model was originally described
+
+00:01:20.329 --> 00:01:23.185
+in an academic paper called Lazy Prices,
+
+00:01:23.185 --> 00:01:25.034
+authored by Lauren Cohen,
+
+00:01:25.034 --> 00:01:28.289
+Christopher Malloy, and Quoc Nguyen.
+
+00:01:28.290 --> 00:01:31.010
+Their research investigates how changes in
+
+00:01:31.010 --> 00:01:35.225
+particular sections of the financial statements can be used for picking stocks.
+
+00:01:35.224 --> 00:01:38.629
+These concepts we'll learn in this project are important in
+
+00:01:38.629 --> 00:01:40.189
+many textual data modeling
+
+00:01:40.189 --> 00:01:43.340
+techniques that are employed by quantitative investment managers.
+
+00:01:43.340 --> 00:01:48.740
+From analyzing financial documents to processing news articles and social media posts,
+
+00:01:48.739 --> 00:01:54.125
+these basic NLP concepts form part of the core toolkits for quantitative managers.
+
+00:01:54.125 --> 00:01:56.644
+I'm really excited to share this methodology with you,
+
+00:01:56.644 --> 00:01:58.339
+and I hope you enjoy the project.
+
