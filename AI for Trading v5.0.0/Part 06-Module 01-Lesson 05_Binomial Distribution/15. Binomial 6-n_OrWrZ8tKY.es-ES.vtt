@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Y la respuesta aproximada es 0.236
+
+00:00:05.000 --> 00:00:09.000
+La probabilidad de exactamente 9 caras de 12 giros
+
+00:00:09.000 --> 00:00:12.000
+Para esta moneda altamente cargada que te da la mayoría de veces cara
+
+00:00:12.000 --> 00:00:20.000
+Y la respuesta es 12!/12-9. Esto es 3!*9!
+
+00:00:20.000 --> 00:00:25.000
+Entonces tenemos que calcular la probabilidad de que sea (0.8)⁹
+
+00:00:25.000 --> 09:59:59.000
+Y 1-0.8 es 0.2³ y este es el número de aquí.
+

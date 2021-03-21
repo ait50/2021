@@ -1,0 +1,111 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:03.834
+O principal a notar
+é que isto aqui
+
+00:00:03.901 --> 00:00:07.734
+é n!/(n-k)!.
+
+00:00:07.801 --> 00:00:11.801
+Para enxergar isso, voltemos
+para o caso das 4 caras.
+
+00:00:11.834 --> 00:00:13.701
+No caso das 4 caras,
+
+00:00:13.734 --> 00:00:16.834
+não multiplicamos
+até chegar em 5,
+
+00:00:16.901 --> 00:00:19.801
+só multiplicamos até o 7.
+
+00:00:19.834 --> 00:00:21.601
+São as 4 caras que colocamos.
+
+00:00:21.634 --> 00:00:25.434
+Então n! vai de 10 até 1,
+
+00:00:25.501 --> 00:00:29.934
+e (n-k)! vai de 10-4, ou 6,
+
+00:00:30.000 --> 00:00:31.234
+até o 1.
+
+00:00:31.300 --> 00:00:33.734
+Esta expressão azul aqui
+
+00:00:33.801 --> 00:00:39.400
+vai de 10x9x8
+e segue até x1
+
+00:00:40.133 --> 00:00:42.601
+sobre (n-k).
+
+00:00:42.634 --> 00:00:44.601
+10-4=6.
+
+00:00:44.634 --> 00:00:47.534
+6x5x4...
+
+00:00:47.601 --> 00:00:50.901
+Perceba que este 6x5x4...
+também ocorre em cima.
+
+00:00:52.100 --> 00:00:57.434
+Então podemos cortar,
+e o que sobra é 10x9x8x7.
+
+00:00:57.501 --> 00:00:58.601
+Isto aqui.
+
+00:00:58.634 --> 00:01:00.601
+Quando colocamos as 4 caras,
+
+00:01:01.400 --> 00:01:04.400
+temos que dividir por 4!,
+
+00:01:04.434 --> 00:01:08.234
+que é uma forma diferente de pôr
+as 4 moedas nas casas predefinidas.
+
+00:01:09.200 --> 00:01:13.200
+Trocando em miúdos,
+isto é k!.
+
+00:01:13.234 --> 00:01:14.634
+Juntando isso tudo,
+
+00:01:14.701 --> 00:01:18.200
+dá n! sobre...
+
+00:01:19.634 --> 00:01:23.634
+(n-k)!*k!
+
+00:01:23.701 --> 00:01:25.334
+Esta é a expressão.
+
+00:01:26.400 --> 00:01:28.434
+Vamos praticar uma última vez.
+
+00:01:28.501 --> 00:01:30.701
+Digamos que tenha 125 moedas.
+
+00:01:30.734 --> 00:01:35.033
+Quantas formas há
+de sair cara em 3 moedas?
+
+00:01:35.801 --> 00:01:39.534
+Qual é o resultado?
+
+00:01:39.601 --> 00:01:43.234
+Cuidado ao usar a calculadora.
+Pode dar algum erro.
+
+00:01:43.300 --> 00:01:45.334
+Mas a resposta é fácil
+de computar.
+

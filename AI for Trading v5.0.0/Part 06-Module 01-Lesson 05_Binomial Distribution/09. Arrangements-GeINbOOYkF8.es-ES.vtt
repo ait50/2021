@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:08.000
+La observación clave es esta cosa de aquí, que es n!/(n-k)!
+
+00:00:08.000 --> 00:00:12.000
+Y para ver esto vamos a regresarnos al caso donde tenemos 4 caras
+
+00:00:12.000 --> 00:00:17.000
+En el caso de las 4 caras, multiplicamos todo el camino por 5 de aquí
+
+00:00:17.000 --> 00:00:22.000
+Multiplicamos todo el camino hasta 7. Estos son las 4 caras que hemos puesto
+
+00:00:22.000 --> 00:00:31.000
+Entonces n! va de 10 hasta 1. (n-k)! va de 10 - 4 y esto es 6 hasta 1
+
+00:00:31.000 --> 00:00:40.000
+Entonces esta expresión de azul de aquí va de 10 x 9 x 8 y así sucesivamente hasta 1
+
+00:00:40.000 --> 00:00:47.000
+Sobre este n - k, 10 -4 que es 654 y así sucesivamente
+
+00:00:47.000 --> 00:00:52.000
+Cuando observas esto, el 654 sucede que también está arriba
+
+00:00:52.000 --> 00:00:59.000
+Entonces podemos cortar esos y lo que queda es 1098*7. Este de aquí
+
+00:00:59.000 --> 00:01:04.000
+Ahora cuando ponemos 4 caras, tenemos que dividir por 4 factorial
+
+00:01:04.000 --> 00:01:09.000
+Que es una forma diferente de poner estos 4 puntos dentro de contenedores predefinidos
+
+00:01:09.000 --> 00:01:24.000
+Entonces poniéndolo diferente, este es k! entonces si ponemos todo esto junto obtenemos n!/(n-k)!*k!
+
+00:01:24.000 --> 00:01:29.000
+Esta es la expresión de aquí. Vamos a practicar esto una última vez
+
+00:01:29.000 --> 00:01:36.000
+Digamos que tienes 125 monedas y te pregunto cuantas maneras hay de que 3 monedas den cara
+
+00:01:36.000 --> 00:01:42.000
+¿Cuál será el resultado esperado? Ten cuidado cuando uses tu calculadora
+
+00:01:42.000 --> 09:59:59.000
+Esto puede resultar en un desborde, pero la respuesta es fácil de calcular.
+

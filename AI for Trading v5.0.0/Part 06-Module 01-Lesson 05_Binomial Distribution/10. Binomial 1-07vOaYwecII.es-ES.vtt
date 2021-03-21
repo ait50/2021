@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Ahora sabemos de nuestra consideración anterior
+
+00:00:03.000 --> 00:00:07.000
+Que hay cinco formas en el que el número de caras puede ser uno
+
+00:00:07.000 --> 00:00:12.000
+5!/4!1 sucede que es 5
+
+00:00:12.000 --> 00:00:18.000
+Sabemos que hay 32 posibles resultados. Esto es 2⁵=32 resultados
+
+00:00:18.000 --> 00:00:24.000
+Este es el tamaño de la tabla de la verdad. [br]Entonces 5 de 32 resultados es exactamente 1 cara
+
+00:00:24.000 --> 00:00:32.000
+Entonces sugiero que la respuesta es 5/32 y mi calculadora me dice que es 0.15625
+
+00:00:32.000 --> 00:00:34.000
+Entonces esto es realmente interesante
+
+00:00:34.000 --> 00:00:39.000
+Si giras una moneda cinco veces, hay una posibilidad de que salga cara exactamente una vez
+
+00:00:39.000 --> 09:59:59.000
+Y esta es la probabilidad de 0.15625
+

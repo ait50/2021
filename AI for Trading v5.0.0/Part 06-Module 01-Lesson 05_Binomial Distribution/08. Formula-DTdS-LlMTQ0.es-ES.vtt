@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:07.000
+Entonces dame tu fórmula matemática, que muy seguramente estés familiarizado
+
+00:00:07.000 --> 00:00:23.000
+n! para cualquier número n que es lo mismo que n(n-1)(n-2) hasta 1
+
+00:00:23.000 --> 00:00:31.000
+Esto se llama factorial. Entonces 10 factorial por ejemplo será 109876 y así sucesivamente
+
+00:00:31.000 --> 00:00:36.000
+Si observas esta ecuación de aquí, te voy a dar un par de opciones de como escribirlo.
+
+00:00:36.000 --> 00:00:48.000
+Puedes ser n!, esto puede ser n!/k! donde este de aquí es k, que corresponde a 5
+
+00:00:48.000 --> 00:00:51.000
+Y este de aquí es n
+
+00:00:51.000 --> 00:01:04.000
+Puede ser n!/k!*k! o puede ser n!/k!*(n-k)!
+
+00:01:04.000 --> 00:01:09.000
+Estas son cuatro opciones. Uno de estos es actualmente la fórmula correcta
+
+00:01:09.000 --> 00:01:12.000
+Que hemos calculado antes
+
+00:01:12.000 --> 09:59:59.000
+Escoge la correcta.
+

@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Y el log es 10 de nuevo. Hay dos pruebas
+
+00:00:02.000 --> 00:00:06.000
+Uno es que puedo girar cara en cara. Entonces tres caras significa dos cruces
+
+00:00:06.000 --> 00:00:12.000
+Puedo darte el mismo juego como antes, donde pongo cruz da como opuesto a cara
+
+00:00:12.000 --> 00:00:16.000
+Y me da la misma ecuación que antes, pero vamos a hacerlo de la nueva forma, tres caras.
+
+00:00:16.000 --> 00:00:24.000
+Puedo poner 543 -- la primera caras, la segunda y la tercera.**
+
+00:00:24.000 --> 00:00:28.000
+Para la primera, tengo cinco posiciones, para el segundo -- cuatro y por el tercer -- faltan tres
+
+00:00:28.000 --> 00:00:32.000
+Esto me da la red común para estas caras, pero ahora estoy sobre contando.
+
+00:00:32.000 --> 00:00:34.000
+¿Cuánto voy a contar de más?
+
+00:00:34.000 --> 00:00:41.000
+Entonces supongo estoy comprometido de poner, estas tres caras en estos tres espacios de aquí
+
+00:00:41.000 --> 00:00:44.000
+Y solo me pregunto en que orden los tengo que poner
+
+00:00:44.000 --> 00:00:47.000
+Entonces pongo estos primeros de aquí, este primero de aquí y este primero de aquí
+
+00:00:47.000 --> 00:00:56.000
+Entonces para el primer lugar ponerlo aquí, aquí hay tres diferentes forma de colocarlo
+
+00:00:56.000 --> 00:00:59.000
+Para el segundo, hay dos diferentes formas de ponerlo
+
+00:00:59.000 --> 00:01:03.000
+Para el tercero, no es determinismo -- hay un sólo espacio faltante
+
+00:01:03.000 --> 00:01:08.000
+Entonces sobre cuento esto por un factor de 6 -- hay 6 diferentes formas de poner estas tres caras
+
+00:01:08.000 --> 00:01:17.000
+Dentro de estos tres espacios, entonces el resultado es 543/321 que produce 5*2 = 10.
+
+00:01:17.000 --> 00:01:21.000
+Y esto es interesante.
+

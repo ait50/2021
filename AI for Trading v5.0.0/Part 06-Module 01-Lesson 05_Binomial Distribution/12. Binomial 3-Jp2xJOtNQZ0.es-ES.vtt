@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Ahora lo voy a hacer realmente difícil. Voy a darte una moneda -- vamos a llamarla cargada
+
+00:00:05.000 --> 00:00:14.000
+Entonces la probabilidad de cara ahora es 0.8 y por lo tanto la probabilidad de cruz es 0.2
+
+00:00:14.000 --> 00:00:17.000
+Para hacerlo más fácil, asumimos sólo 3 giros de moneda
+
+00:00:17.000 --> 00:00:21.000
+Y te pregunto la probabilidad de que salga exactamente una vez cara
+
+00:00:21.000 --> 00:00:26.000
+¿Cuál es la probabilidad de la moneda cargada sin que te de una cara?
+
+00:00:26.000 --> 09:59:59.000
+Te recomiendo responderlo usando una tabla de la verdad.
+

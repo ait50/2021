@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:03.334
+O interessante é que podemos fazer
+o mesmo truque de antes,
+
+00:00:03.367 --> 00:00:07.701
+5! sobre 4! vezes 1!,
+
+00:00:07.734 --> 00:00:11.334
+que é o número de resultados
+de quatro caras
+
+00:00:11.367 --> 00:00:12.634
+e que sabemos que dá 5.
+
+00:00:12.667 --> 00:00:14.868
+Quatro caras
+significa uma coroa.
+
+00:00:14.901 --> 00:00:16.868
+São cinco formas
+de isso ocorrer,
+
+00:00:16.901 --> 00:00:18.634
+e uma coroa aqui.
+
+00:00:18.667 --> 00:00:20.667
+A pergunta é: qual é
+a probabilidade desses?
+
+00:00:20.701 --> 00:00:23.634
+Bom, cara apareceu
+quatro vezes,
+
+00:00:23.667 --> 00:00:27.300
+0,8 elevado
+à quarta potência.
+
+00:00:27.334 --> 00:00:28.968
+E coroa uma vez,
+
+00:00:29.000 --> 00:00:31.734
+0,2 elevado
+à primeira potência.
+
+00:00:31.767 --> 00:00:34.868
+Então multiplicamos
+
+00:00:34.901 --> 00:00:38.801
+o número total de resultados
+que têm essa propriedade
+
+00:00:38.834 --> 00:00:40.834
+com cada uma
+das probabilidades,
+
+00:00:40.901 --> 00:00:43.767
+que é a mesma
+porque temos quatro caras
+
+00:00:43.801 --> 00:00:45.934
+e uma coroa,
+
+00:00:45.968 --> 00:00:51.667
+e esses números multiplicados
+resultam em 0,4096.
+
+00:00:52.534 --> 00:00:57.634
+Isto aqui dá de fato 0,4096.
+
+00:00:58.667 --> 00:01:02.000
+E 5 vezes 0,2
+cancela os outros.
+
+00:01:02.033 --> 00:01:04.367
+É o resultado,
+neste caso em particular.
+
+00:01:04.400 --> 00:01:07.868
+O cancelamento não ocorre sempre,
+é uma circunstância rara.
+

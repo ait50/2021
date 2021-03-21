@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+Entonces esta es mi tabla de la verdad de estos 8 diferentes resultados
+
+00:00:04.000 --> 00:00:10.000
+Los que tienen exactamente una cara son este, este y este
+
+00:00:10.000 --> 00:00:13.000
+Pero no son igualmente probables
+
+00:00:13.000 --> 00:00:16.000
+Cara, cara, cara es mucho más probable que cruz, cruz, cruz
+
+00:00:16.000 --> 00:00:19.000
+Porque cara tiene una probabilidad de 0.8
+
+00:00:19.000 --> 00:00:26.000
+Estos de aquí tienen una probabilidad de salida de 0.8³ , mientras que este tiene una probabilidad de salida de 0.2³
+
+00:00:26.000 --> 00:00:30.000
+Estos verdes tienen la misma probabilidad de salida
+
+00:00:30.000 --> 00:00:36.000
+Estos tienen exactamente una cara 0.8 y dos cruces
+
+00:00:36.000 --> 00:00:41.000
+Entonces como antes, tomamos la probabilidad de uno de estos en la tabla de la verdad
+
+00:00:41.000 --> 00:00:50.000
+Esta vez cada uno tiene una probabilidad de 0.032. Esto es cada uno para los tres
+
+00:00:50.000 --> 00:00:56.000
+Ahora tenemos que considerar los tres resultados, que significa que vamos a agregar 0.032
+
+00:00:56.000 --> 00:01:02.000
+Para cada uno de estos tres amigos de aquí y esto me da una respuesta de 0.096
+
+00:01:02.000 --> 09:59:59.000
+Esta no es una respuesta trivial
+

@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:11.000
+Digamos que tengo 10 monedas. Digamos que tienes 10 de estas monedas brillantes. Entonces tienes 10 monedas
+
+00:00:11.000 --> 00:00:17.000
+Y obtengo 4 caras en estas 10 monedas y aplicamos la misma lógica para encontrar la respuesta
+
+00:00:17.000 --> 00:00:19.000
+La primera vez lo voy a hacer por ti
+
+00:00:19.000 --> 00:00:28.000
+Puedo poner esas caras en 1098*7 diferentes espacios si se cuentan
+
+00:00:28.000 --> 00:00:36.000
+Ahora estoy comprometido de escoger estos espacios, las implementaciones de estos son 432*1
+
+00:00:36.000 --> 00:00:50.000
+Esto me da 5,040/24, tan bien conocido como 210, entonces es 210 de 2 a 10 salidas
+
+00:00:50.000 --> 00:00:56.000
+Que es 1024 en donde exactamente se observan 4 caras y 5 cruces
+
+00:00:56.000 --> 09:59:59.000
+Ahora es tu turno, 5 caras de 10. Una de estas resultan ser caras.
+

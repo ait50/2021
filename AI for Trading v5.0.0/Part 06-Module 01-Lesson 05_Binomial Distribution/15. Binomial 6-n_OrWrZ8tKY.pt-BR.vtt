@@ -1,0 +1,41 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.467 --> 00:00:04.567
+A resposta aproximada
+é 0,236.
+
+00:00:04.601 --> 00:00:08.567
+É a probabilidade de cara aparecer
+9 vezes em 12.
+
+00:00:08.601 --> 00:00:12.033
+Uma moeda viciada que mostra
+cara em boa parte do tempo.
+
+00:00:12.100 --> 00:00:13.767
+Novamente, a resposta é
+
+00:00:13.801 --> 00:00:18.334
+12! sobre 12 menos 9,
+que é igual a 3!.
+
+00:00:18.367 --> 00:00:20.000
+E 9!.
+
+00:00:20.033 --> 00:00:22.267
+Então calculamos
+as probabilidades
+
+00:00:22.300 --> 00:00:25.267
+como 0,8 elevado
+à nona potência
+
+00:00:25.300 --> 00:00:29.033
+e 1 menos 0,8
+é igual a 0,2 ao cubo.
+
+00:00:29.067 --> 00:00:31.067
+E o número é este.
+

@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.234 --> 00:00:03.167
+Agora sabemos,
+pelas considerações anteriores,
+
+00:00:03.200 --> 00:00:06.868
+que há cinco formas de o número
+de caras ser igual a 1.
+
+00:00:06.901 --> 00:00:11.901
+5! sobre 4! sobre 1!
+é igual a 5.
+
+00:00:11.934 --> 00:00:15.300
+Também sabemos que há
+32 resultados possíveis.
+
+00:00:15.334 --> 00:00:18.267
+2 elevado à quinta potência
+é igual a 32 resultados.
+
+00:00:18.300 --> 00:00:20.133
+É o tamanho
+da tabela-verdade.
+
+00:00:20.167 --> 00:00:24.534
+5 dos 32 resultados
+têm exatamente uma cara.
+
+00:00:24.567 --> 00:00:27.434
+Então eu sugiro que a resposta
+seja 5 sobre 32.
+
+00:00:27.467 --> 00:00:31.767
+E minha calculadora mostra
+que esse valor é 0,15625.
+
+00:00:31.801 --> 00:00:35.868
+É interessante. Se você
+lançar uma moeda cinco vezes,
+
+00:00:35.901 --> 00:00:39.400
+a chance é que cara
+só apareça uma vez.
+
+00:00:39.434 --> 00:00:42.601
+A probabilidade
+é esta: 0,15625.
+

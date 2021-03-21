@@ -1,0 +1,110 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:02.400
+E é 10 de novo.
+Há duas provas.
+
+00:00:02.434 --> 00:00:04.200
+Só é possível cara ou coroa,
+
+00:00:04.234 --> 00:00:06.300
+então 3 caras
+implicam 2 coroas.
+
+00:00:06.334 --> 00:00:09.033
+Posso fazer
+a mesma coisa de antes
+
+00:00:09.100 --> 00:00:11.434
+mas usando coroas
+em vez de caras.
+
+00:00:11.501 --> 00:00:13.534
+A equação é a mesma.
+
+00:00:13.601 --> 00:00:15.801
+Mas vamos fazer do jeito novo.
+Três caras...
+
+00:00:15.834 --> 00:00:20.300
+Posso pôr em 5x4x3.
+
+00:00:20.334 --> 00:00:24.033
+A primeira cara,
+a segunda e a terceira.
+
+00:00:24.100 --> 00:00:25.534
+Na primeira, tenho 5 casas,
+
+00:00:25.601 --> 00:00:28.000
+na segunda, 4,
+e na terceira, 3.
+
+00:00:28.033 --> 00:00:31.133
+Isso me dá a combinatória
+das caras.
+
+00:00:31.200 --> 00:00:33.934
+Mas agora estou contando a mais.
+Quanto a mais?
+
+00:00:34.000 --> 00:00:36.534
+Bem, digamos
+que eu esteja decidido
+
+00:00:36.601 --> 00:00:39.534
+a pôr as três caras
+nestas três casas.
+
+00:00:39.601 --> 00:00:41.200
+Isso não muda.
+
+00:00:41.234 --> 00:00:44.000
+Só preciso saber
+em que ordem vou pô-las.
+
+00:00:44.033 --> 00:00:47.701
+Posso pôr a primeira aqui,
+aqui e aqui.
+
+00:00:47.734 --> 00:00:50.200
+Então para a primeira,
+colocada aqui,
+
+00:00:50.234 --> 00:00:52.133
+há três formas distintas...
+
+00:00:54.100 --> 00:00:55.234
+de colocá-la.
+
+00:00:56.100 --> 00:00:59.334
+Para a segunda,
+há duas formas de colocar.
+
+00:00:59.400 --> 00:01:03.200
+Para a terceira,
+só sobrou uma casa.
+
+00:01:03.234 --> 00:01:05.234
+Então eu contei a mais
+em um fator de 6.
+
+00:01:05.300 --> 00:01:07.434
+Há 6 formas de colocar
+essas 3 caras
+
+00:01:07.501 --> 00:01:09.400
+nestas 3 casas.
+
+00:01:09.434 --> 00:01:14.634
+Então o resultado
+é 5x4x3/3x2x1,
+
+00:01:14.701 --> 00:01:17.300
+que dá 5x2=10.
+
+00:01:17.334 --> 00:01:18.934
+E isso é esclarecedor.
+

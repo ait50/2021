@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:07.000
+Entonces curiosamente podemos hacer el truco de antes 5!/4!*1!
+
+00:00:07.000 --> 00:00:12.000
+Donde el número de salida es exactamente 4 caras y sabemos que son 5
+
+00:00:12.000 --> 00:00:18.000
+Cuatro caras significa una cruz. Hay cinco formas de tomar un lugar y una cruz y una aquí
+
+00:00:18.000 --> 00:00:21.000
+La pregunta es ¿cual es la probabilidad de esto?
+
+00:00:21.000 --> 00:00:32.000
+Bueno tienes cara cuatro ocasiones (0.8)⁴ y cruz será (0.2)¹
+
+00:00:32.000 --> 00:00:38.000
+Entonces hacemos esto al multiplicar el número total de salidas que tienen esta propiedad
+
+00:00:38.000 --> 00:00:44.000
+Con cada probabilidad, que resulta ser la misma por que se obtienen exactamente cuatro caras
+
+00:00:44.000 --> 00:00:52.000
+Y 1 vez cruz y multiplicamos estas cosas juntas nos da 0.4096
+
+00:00:52.000 --> 00:01:02.000
+Esta de aquí es 0.4096 y es 5*0.2 cancela las otras
+
+00:01:02.000 --> 00:01:04.000
+Entonces este es el resultado de este caso en específico
+
+00:01:04.000 --> 09:59:59.000
+La cancelación no siempre sucede. Es una rara circunstancia.
+
