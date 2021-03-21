@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.280 --> 00:00:03.950
+Agora, quero mostrar uma ferramenta de visualização que encontrei online
+
+00:00:03.950 --> 00:00:09.350
+e que acredito que ajuda bastante a ver o que o agrupamento k-means significa.
+
+00:00:09.350 --> 00:00:12.160
+Ela deve dar uma boa ideia de como ele funciona.
+
+00:00:12.160 --> 00:00:15.800
+Eu gostaria de agradecer à Naftali Harris,
+
+00:00:15.800 --> 00:00:19.890
+que criou esta visualização e nos permitiu usá-la.
+
+00:00:19.890 --> 00:00:22.990
+Colocarei um link para este site nas Notas do instrutor. Você pode
+
+00:00:22.990 --> 00:00:24.640
+acessá-lo e brincar com ela sozinho.
+
+00:00:24.640 --> 00:00:29.720
+Ela começa me perguntando como escolher os centroides iniciais dos clusters.
+
+00:00:29.720 --> 00:00:32.530
+Começarei com Randomly agora.
+
+00:00:32.530 --> 00:00:34.490
+Que tipo de dados quero usar?
+
+00:00:34.490 --> 00:00:35.800
+Há coisas diferentes aqui.
+
+00:00:35.800 --> 00:00:37.500
+Sugiro que você brinque com elas.
+
+00:00:37.500 --> 00:00:40.630
+Gaussian Mixture é bem semelhante a um dos exemplos simples que vimos
+
+00:00:40.630 --> 00:00:41.670
+até agora.
+
+00:00:41.670 --> 00:00:43.490
+Dados Gaussian Mixture se parecem com isto.
+
+00:00:43.490 --> 00:00:45.460
+Estes são todos os pontos que temos que classificar.
+
+00:00:45.460 --> 00:00:46.540
+A primeira pergunta é:
+
+00:00:46.540 --> 00:00:49.470
+quantos centroides você acha que é o número correto nestes dados?
+

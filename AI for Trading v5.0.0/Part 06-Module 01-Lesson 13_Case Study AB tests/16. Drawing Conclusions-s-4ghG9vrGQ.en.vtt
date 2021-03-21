@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.470
+How do we make a recommendation when three out of
+
+00:00:03.470 --> 00:00:08.044
+our four metrics had a significant difference for testing each metric individually,
+
+00:00:08.044 --> 00:00:11.914
+but insignificant differences when we use the Bonferroni correction?
+
+00:00:11.914 --> 00:00:14.819
+The Bonferroni method is a conservative one,
+
+00:00:14.820 --> 00:00:17.846
+and since we expect the metrics to be correlated,
+
+00:00:17.846 --> 00:00:19.129
+this would be best handled by
+
+00:00:19.129 --> 00:00:23.464
+a more sophisticated method that ideally takes this correlation into account.
+
+00:00:23.464 --> 00:00:24.897
+In the instructor notes,
+
+00:00:24.897 --> 00:00:28.684
+there is a list of possible other methods that are less conservative.
+
+00:00:28.684 --> 00:00:31.049
+Should you choose one of these methods,
+
+00:00:31.050 --> 00:00:35.810
+you should ensure that the assumptions of the method are truly met in your scenario.
+
+00:00:35.810 --> 00:00:41.060
+Choosing a poorly suited test that simply provides the results that you want is
+
+00:00:41.060 --> 00:00:44.060
+not only bad practice but will likely lead to
+
+00:00:44.060 --> 00:00:48.000
+misguided decisions that harm your company's performance in the long run.
+

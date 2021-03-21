@@ -1,0 +1,167 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.256 --> 00:00:02.921
+No último vídeo, aprendemos
+a reduzir a função de erro
+
+00:00:02.954 --> 00:00:06.355
+caminhando na direção
+do valor negativo do gradiente.
+
+00:00:06.388 --> 00:00:09.963
+Neste vídeo, aprenderemos fórmulas
+para essas funções de erro.
+
+00:00:09.996 --> 00:00:12.461
+As funções de erro mais comuns
+de regressão linear
+
+00:00:12.494 --> 00:00:16.016
+são o erro absoluto médio
+e o erro quadrático médio.
+
+00:00:16.049 --> 00:00:17.955
+Primeiro veremos
+o erro absoluto médio.
+
+00:00:17.988 --> 00:00:20.385
+Aqui há um ponto e uma linha.
+
+00:00:20.418 --> 00:00:22.587
+O ponto tem coordenadas (x,y),
+
+00:00:22.620 --> 00:00:25.473
+e a linha se chama "ŷ",
+já que é a predição.
+
+00:00:25.506 --> 00:00:28.118
+Então a predição neste ponto
+será o ponto na linha
+
+00:00:28.151 --> 00:00:30.102
+com a mesma coordenada x
+do nosso ponto,
+
+00:00:30.135 --> 00:00:32.437
+isto é, o ponto (x,ŷ).
+
+00:00:32.470 --> 00:00:37.859
+Então a distância vertical
+do ponto até a linha é y-ŷ,
+
+00:00:37.892 --> 00:00:40.720
+e é assim
+que chamaremos o erro.
+
+00:00:40.753 --> 00:00:42.928
+Essa não é
+a distância real até a linha,
+
+00:00:42.961 --> 00:00:44.863
+que deve ser
+um segmento perpendicular,
+
+00:00:44.896 --> 00:00:47.874
+mas é a distância vertical
+do ponto até a linha,
+
+00:00:47.907 --> 00:00:50.864
+que é a distância
+entre o ponto e sua predição.
+
+00:00:50.897 --> 00:00:53.809
+O erro total será
+a soma de todas as distâncias
+
+00:00:53.842 --> 00:00:56.158
+de todos os pontos
+do conjunto de dados.
+
+00:00:56.191 --> 00:00:58.170
+Às vezes isso será
+o nosso erro,
+
+00:00:58.203 --> 00:01:01.087
+mas aqui usaremos a média,
+ou o erro absoluto médio,
+
+00:01:01.120 --> 00:01:04.173
+que é a soma de todos os erros
+dividida por m,
+
+00:01:04.206 --> 00:01:06.517
+que é o número de pontos
+do conjunto de dados.
+
+00:01:06.550 --> 00:01:09.175
+Usar a soma ou a média
+não mudará o algoritmo,
+
+00:01:09.208 --> 00:01:12.530
+já que isso só vai alterar o erro
+através da constante m.
+
+00:01:12.563 --> 00:01:16.742
+Note que temos um valor absoluto
+ao lado de y-ŷ.
+
+00:01:16.775 --> 00:01:20.535
+Se o ponto estiver acima da linha,
+a distância será y-ŷ,
+
+00:01:20.568 --> 00:01:24.359
+mas, se estiver abaixo da linha,
+será ŷ-y.
+
+00:01:24.392 --> 00:01:26.409
+Queremos que o erro
+sempre seja positivo,
+
+00:01:26.442 --> 00:01:30.145
+senão os erros negativos
+vão cancelar os erros positivos.
+
+00:01:30.178 --> 00:01:33.594
+Por isso pegamos
+o valor absoluto de y-ŷ.
+
+00:01:33.940 --> 00:01:37.444
+Então o erro absoluto médio é
+a média de todos os erros absolutos
+
+00:01:37.477 --> 00:01:38.652
+ou, em outras palavras,
+
+00:01:38.685 --> 00:01:42.914
+a soma de todos os valores absolutos
+dividida pelo número de pontos,
+
+00:01:42.947 --> 00:01:44.622
+que é m.
+
+00:01:44.655 --> 00:01:47.580
+Vamos assinalar esse erro
+neste gráfico.
+
+00:01:47.613 --> 00:01:51.007
+Obviamente, como já mencionamos,
+o gráfico tem mais dimensões,
+
+00:01:51.040 --> 00:01:54.353
+mas esta é uma versão simplificada
+em 2-D do gráfico.
+
+00:01:54.386 --> 00:01:56.787
+Conforme descemos,
+usando gradiente descendente,
+
+00:01:56.820 --> 00:02:00.271
+obtemos uma linha cada vez melhor,
+até encontrarmos o encaixe ideal,
+
+00:02:00.304 --> 00:02:02.585
+com o menor
+erro absoluto médio possível.
+

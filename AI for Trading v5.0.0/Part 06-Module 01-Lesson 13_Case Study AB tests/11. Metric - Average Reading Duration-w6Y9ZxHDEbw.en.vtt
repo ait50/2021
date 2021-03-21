@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.685
+In addition to computing the enrollment rate,
+
+00:00:02.685 --> 00:00:06.790
+we can also compute the average reading durations with this dataset.
+
+00:00:06.790 --> 00:00:10.157
+The two analyses so far were comparing proportions.
+
+00:00:10.157 --> 00:00:14.039
+With this metric, we'll be analyzing the difference in means.
+
+00:00:14.039 --> 00:00:16.454
+This analysis will be quite similar.
+
+00:00:16.454 --> 00:00:18.910
+Since we're comparing reading durations,
+
+00:00:18.911 --> 00:00:21.304
+we only care about view action.
+
+00:00:21.304 --> 00:00:23.609
+So let's filter by that first.
+
+00:00:23.609 --> 00:00:28.019
+And let's only count each unique user once by finding
+
+00:00:28.019 --> 00:00:32.465
+their average reading duration if they visited the site more than once.
+
+00:00:32.465 --> 00:00:34.230
+Well, also group by group,
+
+00:00:34.229 --> 00:00:38.004
+just so we keep track of that information.
+
+00:00:38.005 --> 00:00:40.920
+This isn't necessary, but resetting the index is
+
+00:00:40.920 --> 00:00:44.899
+nice just so we keep the ID and group as column names.
+
+00:00:44.899 --> 00:00:51.320
+And it also let's us continue working in a data frame instead of a multi index series.
+
+00:00:51.320 --> 00:00:56.750
+Now, we can find the average reading durations for each group like this.
+
+00:00:56.750 --> 00:01:00.390
+On average, it looks like users in the experiment group spent
+
+00:01:00.390 --> 00:01:05.444
+15 more seconds on the course overview page than those in the control group.
+
+00:01:05.444 --> 00:01:07.994
+To see if this difference is significant,
+
+00:01:07.995 --> 00:01:10.140
+let's simulate the sampling distribution for
+
+00:01:10.140 --> 00:01:14.299
+the difference in mean reading durations with bootstrapping.
+
+00:01:14.299 --> 00:01:18.230
+Here's what the sampling distribution looks like.
+
+00:01:18.230 --> 00:01:20.100
+Now to find the P value,
+
+00:01:20.099 --> 00:01:23.069
+let's simulate the distribution under the null and find
+
+00:01:23.069 --> 00:01:26.619
+the probability that our observed statistic came from this distribution.
+
+00:01:26.620 --> 00:01:29.335
+We'll create the distribution centered at zero
+
+00:01:29.334 --> 00:01:33.634
+and they're having the same spread as our sampling distribution.
+
+00:01:33.635 --> 00:01:36.630
+Here's our null distribution.
+
+00:01:36.629 --> 00:01:40.179
+And here is where I observed statistic falls.
+
+00:01:40.180 --> 00:01:43.985
+Our statistic definitely doesn't look like it came from this null distribution.
+
+00:01:43.984 --> 00:01:47.000
+Looks like the difference we observed is significant.
+

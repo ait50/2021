@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.840 --> 00:00:06.950
+When companies want to test new features or versions of a web page,
+
+00:00:06.950 --> 00:00:09.980
+they often use a method called A/B testing.
+
+00:00:09.980 --> 00:00:12.695
+The way this works is that one set of users
+
+00:00:12.695 --> 00:00:15.530
+called the control group is shown the old version
+
+00:00:15.529 --> 00:00:18.320
+of a page while another set of users called the
+
+00:00:18.320 --> 00:00:21.469
+experiment group is shown the new version of a page.
+
+00:00:21.469 --> 00:00:24.079
+Based on how both groups respond,
+
+00:00:24.079 --> 00:00:28.039
+we can determine if the new version is better and should be launched.
+
+00:00:28.039 --> 00:00:30.289
+This is actually just an application of
+
+00:00:30.289 --> 00:00:33.469
+hypothesis testing where the null hypothesis would
+
+00:00:33.469 --> 00:00:35.929
+be that the new version is no better or
+
+00:00:35.929 --> 00:00:38.990
+even worse than the old version and the alternative,
+
+00:00:38.990 --> 00:00:42.780
+would be that the new version is better than the old version.
+
+00:00:42.780 --> 00:00:46.730
+A ton of companies use A/B testing to try out changes in features,
+
+00:00:46.729 --> 00:00:52.484
+layouts and even colors to increase a metric that measures interest from their users.
+
+00:00:52.484 --> 00:00:56.390
+For example, you could perform an A/B test to see if a new look for
+
+00:00:56.390 --> 00:00:58.490
+your site's landing page increases
+
+00:00:58.490 --> 00:01:01.760
+the likelihood of a visit or subscribing to your mailing list.
+
+00:01:01.759 --> 00:01:04.894
+Or you could perform an A/B test to see if offering
+
+00:01:04.894 --> 00:01:09.634
+personalized recommendations on a shopping site increases purchases.
+
+00:01:09.635 --> 00:01:13.520
+One thing to be aware of is that although A/B testing can be good to
+
+00:01:13.519 --> 00:01:18.289
+test if a new feature or version of a feature is better on a page,
+
+00:01:18.290 --> 00:01:20.945
+it's not useful for everything.
+
+00:01:20.944 --> 00:01:26.404
+For example, A/B testing can tell you the best way to rank a set of products on a site
+
+00:01:26.405 --> 00:01:28.760
+but it can't tell you that the site would really
+
+00:01:28.760 --> 00:01:33.045
+benefit from having two additional products added to the site.
+
+00:01:33.045 --> 00:01:36.560
+It's also not always great for testing whole new experiences for
+
+00:01:36.560 --> 00:01:41.710
+existing users due to factors like change aversion and novelty effect.
+
+00:01:41.709 --> 00:01:45.679
+Existing users may give an unfair advantage to the older version
+
+00:01:45.680 --> 00:01:51.340
+simply because they're unhappy with a change even if it's ultimately for the better.
+
+00:01:51.340 --> 00:01:55.340
+Alternatively, they may give an unfair advantage to the new version
+
+00:01:55.340 --> 00:02:00.689
+because they're excited or drawn to the change even if it isn't for the better.
+
+00:02:00.689 --> 00:02:01.984
+In addition to these,
+
+00:02:01.984 --> 00:02:06.390
+there are many other factors that can bias the results of an A/B test.
+
+00:02:06.390 --> 00:02:09.000
+You'll learn more about those in this lesson.
+

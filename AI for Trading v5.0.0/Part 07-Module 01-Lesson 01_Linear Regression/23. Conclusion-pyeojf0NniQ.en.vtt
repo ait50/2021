@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.215
+Well that was it. In this lesson,
+
+00:00:02.215 --> 00:00:05.235
+you have learned linear regression and some of its generalizations.
+
+00:00:05.235 --> 00:00:07.170
+You have also gone hands-on and implemented
+
+00:00:07.170 --> 00:00:09.560
+the gradient descent algorithm for linear regression.
+
+00:00:09.560 --> 00:00:12.690
+You are now ready for the upcoming project in which you'll be implementing
+
+00:00:12.690 --> 00:00:16.880
+a regression neural network to analyze real data. Great job.
+

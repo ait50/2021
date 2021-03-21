@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.640 --> 00:00:04.550
+Depois da etapa de atribuição, você pode ver estas linhas azuis aqui
+
+00:00:04.550 --> 00:00:07.550
+que os pontos de dados associados apontam para os centros de cluster.
+
+00:00:07.550 --> 00:00:09.650
+E agora vamos pensar nesses elásticos.
+
+00:00:09.650 --> 00:00:13.460
+São elásticos que querem ser o mais curto possível.
+
+00:00:13.460 --> 00:00:18.290
+Na etapa de otimização, não temos permissão para mover o centro do cluster
+
+00:00:18.290 --> 00:00:22.320
+para um ponto em que o total de nosso elástico seja minimizado.
+

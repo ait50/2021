@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.100 --> 00:00:02.840
+Agora, eu demonstrarei outro conjunto de dados que não funcionará tão
+
+00:00:02.840 --> 00:00:06.580
+perfeitamente, mas, ainda assim, você poderá perceber como é o agrupamento k-means.
+
+00:00:06.580 --> 00:00:10.100
+O tipo de dados que eu usarei neste exemplo são os pontos uniformes.
+
+00:00:10.100 --> 00:00:11.690
+Esta é a aparência dos pontos uniformes.
+
+00:00:11.690 --> 00:00:13.430
+Eles ficam espalhados por toda a parte.
+
+00:00:13.430 --> 00:00:16.810
+Ao analisar isso, eu não diria que aqui há claramente clusters que eu quero
+
+00:00:16.810 --> 00:00:21.000
+escolher, mas eu ainda poderia ser capaz de descrever que estes pontos
+
+00:00:21.000 --> 00:00:24.700
+aqui são mais semelhantes entre si do que estes pontos aqui.
+
+00:00:24.700 --> 00:00:28.430
+E o agrupamento k-means poderia ser um modo de descrever matematicamente
+
+00:00:28.430 --> 00:00:29.710
+essa realidade dos dados.
+
+00:00:29.710 --> 00:00:33.660
+A princípio, eu não tenho o número de centroides que quero usar aqui,
+
+00:00:33.660 --> 00:00:35.400
+portanto, usarei dois.
+
+00:00:35.400 --> 00:00:37.200
+Parece ser um número razoável.
+
+00:00:37.200 --> 00:00:38.040
+Um, dois.
+
+00:00:38.040 --> 00:00:40.390
+Vejamos o que acontece nesse caso.
+
+00:00:40.390 --> 00:00:41.950
+Alguns pontos serão reatribuídos.
+
+00:00:41.950 --> 00:00:42.740
+Mova os centroides.
+
+00:00:42.740 --> 00:00:46.780
+Se você observar, há mais alguns pequenos ajustes aqui.
+
+00:00:46.780 --> 00:00:52.560
+Mas, no final das contas, ele acaba dividindo os dados ao longo deste eixo.
+
+00:00:52.560 --> 00:00:56.930
+Se eu tentar de novo, dependendo das condições iniciais e
+
+00:00:56.930 --> 00:00:59.470
+dos detalhes de como esses pontos estão dispostos,
+
+00:00:59.470 --> 00:01:02.080
+o resultado poderá ser um pouco diferente.
+
+00:01:02.080 --> 00:01:02.980
+Você pode ver aqui que eu
+
+00:01:02.980 --> 00:01:05.519
+acabei dividindo os dados verticalmente, em vez de horizontalmente.
+
+00:01:05.519 --> 00:01:08.360
+O que você deve ter em mente é que o posicionamento inicial dos
+
+00:01:08.360 --> 00:01:13.360
+centroides é, de modo geral, aleatório e muito importante.
+
+00:01:13.360 --> 00:01:16.410
+E dependendo das condições iniciais,
+
+00:01:16.410 --> 00:01:20.770
+você pode ter, no final, agrupamentos com aparências completamente diferentes.
+
+00:01:20.770 --> 00:01:22.750
+Neste momento, isso parece ser um grande problema, mas
+
+00:01:22.750 --> 00:01:26.150
+há uma maneira muito eficaz de resolver isso.
+
+00:01:26.150 --> 00:01:27.020
+Vamos falar sobre ela.
+

@@ -1,0 +1,53 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.089 --> 00:00:01.425
+Foi um quiz difícil.
+
+00:00:01.458 --> 00:00:03.491
+Se você respondeu "ambos",
+acertou,
+
+00:00:03.524 --> 00:00:05.959
+porque deslocar esta linha
+para cima e para baixo
+
+00:00:05.992 --> 00:00:08.836
+não altera em nada
+o erro absoluto médio.
+
+00:00:08.869 --> 00:00:10.940
+Percebemos isso
+ao olhar para esta imagem
+
+00:00:10.973 --> 00:00:13.480
+e ver que, ao mover a linha
+para cima e para baixo,
+
+00:00:13.513 --> 00:00:16.028
+adicionamos um segmento
+a dois dos erros
+
+00:00:16.061 --> 00:00:18.367
+e removemos um
+de mesmo comprimento
+
+00:00:18.400 --> 00:00:20.120
+dos outros dois erros.
+
+00:00:20.153 --> 00:00:23.004
+Vamos repetir o quiz
+com o erro quadrático médio.
+
+00:00:23.037 --> 00:00:25.935
+A pergunta é:
+qual destas linhas, A, B ou C,
+
+00:00:25.968 --> 00:00:28.622
+fornece o menor
+erro quadrático médio?
+
+00:00:28.655 --> 00:00:30.135
+Digite sua resposta abaixo.
+

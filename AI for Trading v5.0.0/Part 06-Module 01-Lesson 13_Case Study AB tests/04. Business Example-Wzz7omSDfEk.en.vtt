@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.439 --> 00:00:04.564
+In this case study,
+
+00:00:04.565 --> 00:00:10.089
+you'll be analyzing AB test results for an online education company called Audacity,
+
+00:00:10.089 --> 00:00:13.804
+that offers courses on finance.
+
+00:00:13.804 --> 00:00:18.379
+Let's first see what a typical user flow might look like on Audacity site.
+
+00:00:18.379 --> 00:00:21.122
+New users would land on the home page,
+
+00:00:21.123 --> 00:00:22.640
+and if they're interested,
+
+00:00:22.640 --> 00:00:24.859
+they would click to explore courses.
+
+00:00:24.859 --> 00:00:26.960
+As they browse the course list,
+
+00:00:26.960 --> 00:00:28.505
+a course may catch their eye,
+
+00:00:28.504 --> 00:00:30.804
+and they click on it to learn more.
+
+00:00:30.804 --> 00:00:32.899
+Once they're on the course overview page,
+
+00:00:32.899 --> 00:00:34.814
+they may decide to enroll.
+
+00:00:34.814 --> 00:00:37.835
+After enrolling, they'd hopefully complete the course.
+
+00:00:37.835 --> 00:00:40.995
+In this flow, commonly called the customer funnel,
+
+00:00:40.994 --> 00:00:44.824
+users lose interest, and leave at different stages of the funnel,
+
+00:00:44.825 --> 00:00:46.800
+and few make it to the end.
+
+00:00:46.799 --> 00:00:48.904
+Of course, this is a simplistic model,
+
+00:00:48.905 --> 00:00:51.825
+and isn't how all user experiences would play out.
+
+00:00:51.825 --> 00:00:54.620
+But it does capture pretty well the main steps from
+
+00:00:54.619 --> 00:00:59.299
+an initial exposure to course completion in order of decreasing probability.
+
+00:00:59.299 --> 00:01:01.609
+To increase student engagement,
+
+00:01:01.609 --> 00:01:05.224
+Audacity wants to perform AB tests to try out changes,
+
+00:01:05.224 --> 00:01:07.459
+at different points in this funnel.
+
+00:01:07.459 --> 00:01:08.684
+In this case study,
+
+00:01:08.685 --> 00:01:12.605
+we'll analyze test results for two particular changes they have in mind,
+
+00:01:12.605 --> 00:01:16.490
+and then make a recommendation on whether they should launch each change.
+

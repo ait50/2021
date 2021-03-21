@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.370 --> 00:00:03.480
+Aqui está um exemplo que deve deixar intuitivamente claro que a soma de agrupamentos
+
+00:00:03.480 --> 00:00:04.560
+não faz sentido.
+
+00:00:04.560 --> 00:00:08.900
+Vamos usar Katie e eu como exemplo; nós temos uma coleção de filmes em casa.
+
+00:00:08.900 --> 00:00:14.390
+Imagine que cada um de nós analisa os filmes do outro, todos os filmes,
+
+00:00:14.390 --> 00:00:20.034
+e Katie os classifica do pior para o melhor.
+
+00:00:20.034 --> 00:00:24.310
+E eu tenho que classificar os mesmo filmes do pior para o melhor.
+
+00:00:24.310 --> 00:00:28.600
+Mas Katie e eu temos gostos muito diferentes.
+
+00:00:28.600 --> 00:00:33.720
+Talvez alguns filmes que eu adore, como todos os do James Bond,
+
+00:00:33.720 --> 00:00:34.790
+a Katie não goste tanto.
+
+00:00:34.790 --> 00:00:40.680
+E há outros, como essas comédias românticas, que Katie adora, mas eu não.
+
+00:00:40.680 --> 00:00:42.720
+Exagerando um pouco.
+
+00:00:42.720 --> 00:00:46.220
+Pode ser que nossos filmes caiam em classes diferentes,
+
+00:00:46.220 --> 00:00:49.270
+dependendo de quem gosta de quais filmes.
+
+00:00:49.270 --> 00:00:51.330
+Digamos que você seja o Netflix,
+
+00:00:51.330 --> 00:00:57.010
+e olhe para a minha fila e a da Katie e faça um gráfico assim.
+
+00:00:57.010 --> 00:01:02.010
+Então, você pode concluir que há duas classes diferentes de filmes.
+
+00:01:02.010 --> 00:01:03.730
+Sem saber mais nada sobre filmes,
+
+00:01:03.730 --> 00:01:07.270
+você diria que aqui estão a classe A e a classe B.
+
+00:01:07.270 --> 00:01:09.640
+E elas têm características muito diferentes.
+
+00:01:09.640 --> 00:01:14.740
+E o motivo para o Netflix querer saber isso é que, na próxima vez que Katie aparecer,
+
+00:01:14.740 --> 00:01:19.080
+você proporá um filme que se encaixe na classe B, e não na classe A.
+
+00:01:19.080 --> 00:01:21.780
+Senão, é pouco provável que ela assista a esse filme.
+
+00:01:21.780 --> 00:01:24.700
+Em contrapartida, para mim, você quer atingir a classe A, e não a classe B.
+
+00:01:24.700 --> 00:01:26.800
+Na verdade, se você analisasse esses filmes,
+
+00:01:26.800 --> 00:01:30.440
+poderia descobrir que filmes antigos de faroeste estão bem aqui.
+
+00:01:30.440 --> 00:01:32.420
+E comédias românticas modernas podem estar bem aqui.
+
+00:01:32.420 --> 00:01:33.460
+Quem sabe?
+
+00:01:33.460 --> 00:01:34.830
+Mas isso é um exemplo de agrupamento.
+
+00:01:34.830 --> 00:01:37.360
+Porque aqui, não são fornecidos rótulos de destino.
+
+00:01:37.360 --> 00:01:40.220
+Eles se moveriam para você, se as classes A e B existissem.
+
+00:01:40.220 --> 00:01:42.360
+Mas, após analisar os dados, você poderia,
+
+00:01:42.360 --> 00:01:46.160
+por meio do agrupamento, deduzi-los como duas classes diferentes e até analisar
+
+00:01:46.160 --> 00:01:48.660
+os títulos dos filmes, para entender sobre o que são essas classes.
+

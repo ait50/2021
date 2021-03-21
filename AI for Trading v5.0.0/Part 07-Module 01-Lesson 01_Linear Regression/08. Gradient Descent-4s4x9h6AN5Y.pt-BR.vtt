@@ -1,0 +1,268 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:02.869
+Já aprendemos o método absoluto,
+o método quadrado
+
+00:00:02.903 --> 00:00:04.804
+e como os usamos
+em regressão linear,
+
+00:00:04.838 --> 00:00:08.608
+mas queremos saber mais
+sobre como as coisas funcionam.
+
+00:00:08.642 --> 00:00:10.911
+Estes métodos parecem
+mágicos demais,
+
+00:00:10.944 --> 00:00:12.546
+e queremos achar sua origem.
+
+00:00:12.579 --> 00:00:14.714
+Então faremos isto
+de um jeito mais formal.
+
+00:00:14.748 --> 00:00:16.249
+Digamos que temos pontos,
+
+00:00:16.283 --> 00:00:18.251
+e o plano é desenvolver
+um algoritmo
+
+00:00:18.285 --> 00:00:21.888
+que ache a reta que melhor
+se ajuste a estes pontos.
+
+00:00:21.922 --> 00:00:23.623
+E o algoritmo funciona assim:
+
+00:00:23.657 --> 00:00:27.160
+ele desenha uma reta aleatória
+e calcula o erro.
+
+00:00:27.194 --> 00:00:32.299
+O erro é uma medida da distância
+que os pontos estão da reta.
+
+00:00:32.332 --> 00:00:36.736
+Aqui, é a soma destas distâncias,
+mas pode ser qualquer medida
+
+00:00:36.770 --> 00:00:38.938
+que diga a distância
+que estamos dos pontos.
+
+00:00:38.971 --> 00:00:43.210
+Agora vamos mover a reta
+e ver se diminuímos o erro.
+
+00:00:43.243 --> 00:00:44.945
+Nós movemos nesta direção
+
+00:00:44.978 --> 00:00:49.282
+e vemos que o erro aumenta,
+então não é o jeito certo.
+
+00:00:49.316 --> 00:00:53.987
+Depois movemos na outra direção
+e vemos que o erro diminuiu,
+
+00:00:54.020 --> 00:00:56.489
+então escolhemos este
+e ficamos com ele.
+
+00:00:56.523 --> 00:00:59.526
+Agora vamos repetir o processo
+várias vezes,
+
+00:00:59.559 --> 00:01:03.797
+sempre diminuindo o erro um pouco
+até atingirmos a reta perfeita.
+
+00:01:03.830 --> 00:01:07.267
+Para minimizar o erro,
+usaremos o gradiente descendente.
+
+00:01:07.300 --> 00:01:09.336
+Vamos falar
+do gradiente descendente.
+
+00:01:09.369 --> 00:01:11.972
+Estamos no topo
+de uma montanha.
+
+00:01:12.005 --> 00:01:13.640
+É a Montanha Rainierror,
+
+00:01:13.673 --> 00:01:15.742
+e ela mede o tamanho do erro.
+
+00:01:16.147 --> 00:01:18.545
+E queremos descer da montanha.
+
+00:01:18.578 --> 00:01:22.349
+Para descer da montanha,
+precisamos minimizar a altura.
+
+00:01:22.679 --> 00:01:26.019
+E à esquerda, temos um problema
+de ajustar a reta aos dados,
+
+00:01:26.052 --> 00:01:28.388
+o que podemos fazer
+minimizando o erro
+
+00:01:28.421 --> 00:01:31.157
+ou a distância da reta
+aos pontos.
+
+00:01:31.191 --> 00:01:36.029
+Descer da montanha é equivalente
+a aproximar a reta dos pontos.
+
+00:01:36.062 --> 00:01:39.799
+Para descer da montanha,
+veja as direções para onde descer
+
+00:01:39.833 --> 00:01:42.969
+e ache o caminho
+que nos faça descer mais.
+
+00:01:43.003 --> 00:01:44.804
+Digamos
+que seja nesta direção,
+
+00:01:44.838 --> 00:01:47.040
+então descemos um pouco
+nesta direção.
+
+00:01:47.073 --> 00:01:51.278
+Isto é equivalente a aproximar
+um pouco a reta dos pontos.
+
+00:01:51.311 --> 00:01:54.147
+A altura é menor porque estamos
+mais perto dos pontos,
+
+00:01:54.181 --> 00:01:56.149
+já que a distância
+para eles é menor.
+
+00:01:56.553 --> 00:02:00.089
+E veremos várias vezes o que nos faz
+descer mais da montanha.
+
+00:02:00.122 --> 00:02:02.222
+Digamos que chegamos aqui.
+
+00:02:02.255 --> 00:02:04.658
+Estamos num ponto
+onde descemos da montanha
+
+00:02:04.691 --> 00:02:08.695
+e, à direita, achamos a reta
+que é bem próxima aos pontos.
+
+00:02:08.728 --> 00:02:10.697
+Portanto,
+resolvemos o problema.
+
+00:02:10.730 --> 00:02:12.434
+E esse é
+o gradiente descendente.
+
+00:02:12.468 --> 00:02:15.202
+De um jeito mais matemático,
+o que acontece é:
+
+00:02:15.235 --> 00:02:17.671
+temos um gráfico
+de duas dimensões.
+
+00:02:17.704 --> 00:02:20.740
+Na vida real, o gráfico estaria
+em dimensões mais altas.
+
+00:02:20.774 --> 00:02:24.309
+Os pesos ficam no eixo x,
+e o erro fica no eixo y.
+
+00:02:24.342 --> 00:02:27.247
+E temos uma função de erro
+que fica assim.
+
+00:02:27.478 --> 00:02:28.915
+Estamos aqui em cima,
+
+00:02:28.949 --> 00:02:32.085
+e o jeito de descer é pegar
+o derivativo ou gradiente
+
+00:02:32.118 --> 00:02:34.554
+da função de erro
+em respeito aos pesos.
+
+00:02:34.588 --> 00:02:38.525
+Este gradiente vai apontar a direção
+onde a função mais cresce.
+
+00:02:38.558 --> 00:02:40.493
+Assim, o negativo do gradiente
+
+00:02:40.527 --> 00:02:44.264
+vai apontar a direção
+onde a função mais diminui.
+
+00:02:44.297 --> 00:02:48.969
+Então damos um passo na direção
+do negativo do gradiente.
+
+00:02:49.002 --> 00:02:51.638
+Isto significa que estamos pegando
+nossos pesos wi
+
+00:02:51.671 --> 00:02:54.741
+e os mudando para wi
+menos o derivativo do erro
+
+00:02:54.774 --> 00:02:56.610
+com respeito a wi.
+
+00:02:56.643 --> 00:03:00.080
+Vamos multiplicar o derivativo
+pela taxa de aprendizado,
+
+00:03:00.113 --> 00:03:01.982
+já que queremos
+dar pequenos passos.
+
+00:03:02.015 --> 00:03:04.184
+Então a função de erro
+está diminuindo,
+
+00:03:04.217 --> 00:03:05.952
+e estamos próximos do mínimo.
+
+00:03:05.986 --> 00:03:09.322
+Se fizermos isto várias vezes,
+chegamos num mínimo
+
+00:03:09.356 --> 00:03:11.625
+ou num valor muito bom,
+onde o erro é pequeno.
+
+00:03:11.658 --> 00:03:14.494
+Ao chegarmos a este ponto,
+alcançamos uma solução
+
+00:03:14.528 --> 00:03:16.363
+para o problema
+de regressão linear,
+
+00:03:16.396 --> 00:03:18.865
+e é assim que funciona
+o gradiente descendente.
+

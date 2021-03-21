@@ -1,0 +1,174 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.415 --> 00:00:02.436
+Eis uma observação
+interessante.
+
+00:00:02.469 --> 00:00:04.369
+Para minimizar
+o erro quadrático médio,
+
+00:00:04.402 --> 00:00:07.246
+não precisamos usar
+gradiente descendente ou os métodos.
+
+00:00:07.279 --> 00:00:09.808
+Podemos fazer isso
+através de uma fórmula fechada.
+
+00:00:09.841 --> 00:00:11.033
+Eu vou mostrar.
+
+00:00:11.364 --> 00:00:14.577
+Estes são os nossos dados,
+x1y1 até xmym,
+
+00:00:14.610 --> 00:00:16.646
+e, neste caso, m é 5.
+
+00:00:16.679 --> 00:00:20.231
+E as áreas dos quadrados representam
+o nosso erro quadrático.
+
+00:00:20.264 --> 00:00:24.481
+Então o input é x1 até xm,
+e os rótulos são y1 até ym.
+
+00:00:24.514 --> 00:00:29.899
+E as predições são expressas
+por ŷi=w1xi+w2,
+
+00:00:29.932 --> 00:00:34.403
+onde w1 é a inclinação da linha
+e w2 é a interseção em y.
+
+00:00:34.436 --> 00:00:37.309
+E o erro quadrático médio
+é definido por esta fórmula.
+
+00:00:37.342 --> 00:00:40.641
+Note que escrevi o erro
+como uma função de w1 e w2,
+
+00:00:40.674 --> 00:00:42.647
+já que, dado qualquer valor
+de w1 e w2,
+
+00:00:42.680 --> 00:00:45.091
+podemos calcular
+as predições e o erro
+
+00:00:45.124 --> 00:00:48.189
+com base nesses valores
+de w1 e w2.
+
+00:00:48.222 --> 00:00:50.880
+Como o cálculo mostra,
+para minimizar o erro,
+
+00:00:50.913 --> 00:00:53.947
+devemos pegar as derivadas
+relacionadas às variáveis do input,
+
+00:00:53.980 --> 00:00:57.832
+w1 e w2, e defini-las como 0.
+
+00:00:57.865 --> 00:00:59.087
+Calculamos as derivadas,
+
+00:00:59.120 --> 00:01:01.485
+como você pode ver
+nas notas do instrutor,
+
+00:01:01.518 --> 00:01:03.443
+e obtemos estas duas fórmulas.
+
+00:01:03.476 --> 00:01:06.352
+Agora só temos
+que descobrir w1 e w2,
+
+00:01:06.385 --> 00:01:08.865
+de modo que essas equações
+resultem em 0.
+
+00:01:08.898 --> 00:01:10.107
+O que temos agora?
+
+00:01:10.140 --> 00:01:13.343
+Temos um sistema de 2 equações
+e 2 termos desconhecidos.
+
+00:01:13.376 --> 00:01:16.506
+Podemos resolvê-lo facilmente
+com álgebra linear.
+
+00:01:16.539 --> 00:01:19.832
+Agora a pergunta é:
+por que não fazemos isso sempre?
+
+00:01:19.865 --> 00:01:22.412
+Por que executar passos
+de gradiente descendente,
+
+00:01:22.445 --> 00:01:25.713
+em vez de resolver um sistema
+de equações e termos desconhecidos?
+
+00:01:25.746 --> 00:01:27.041
+Bom, pense o seguinte:
+
+00:01:27.074 --> 00:01:29.476
+se você não tivesse
+apenas 2 dimensões no input,
+
+00:01:29.509 --> 00:01:30.809
+e sim n dimensões,
+
+00:01:30.842 --> 00:01:34.658
+você teria n equações
+com n termos desconhecidos.
+
+00:01:34.691 --> 00:01:38.358
+E resolver um sistema desses
+é muito custoso,
+
+00:01:38.391 --> 00:01:39.865
+porque, se n for grande,
+
+00:01:39.898 --> 00:01:44.075
+em algum momento da solução,
+teremos que inverter uma matriz nxn.
+
+00:01:44.108 --> 00:01:48.517
+Inverter uma grande matriz requer
+muito tempo e poder computacional,
+
+00:01:48.550 --> 00:01:50.457
+então não é viável.
+
+00:01:50.847 --> 00:01:53.652
+Por isso,
+usamos gradiente descendente.
+
+00:01:53.685 --> 00:01:56.322
+Não vamos obter
+a resposta exata,
+
+00:01:56.355 --> 00:01:58.882
+mas chegaremos bem perto
+da melhor resposta,
+
+00:01:58.915 --> 00:02:02.122
+o que nos dará uma solução
+que se encaixa bem nos dados.
+
+00:02:02.155 --> 00:02:04.224
+Mas, com um poder
+computacional infinito,
+
+00:02:04.257 --> 00:02:07.806
+resolveríamos o sistema
+e a regressão linear de uma só vez.
+

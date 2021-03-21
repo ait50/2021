@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.299 --> 00:00:05.099
+As you've seen in previous lessons,
+
+00:00:05.099 --> 00:00:06.839
+the more things that you test,
+
+00:00:06.839 --> 00:00:11.594
+the more likely you are to observe significant differences just by chance.
+
+00:00:11.595 --> 00:00:15.990
+This happens when we run evaluations from multiple metrics at the same time.
+
+00:00:15.990 --> 00:00:21.594
+The probability of any false positive increases as you increase the number of metrics.
+
+00:00:21.594 --> 00:00:24.000
+Luckily, this is something that we can fix.
+

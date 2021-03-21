@@ -1,0 +1,146 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.087 --> 00:00:01.253
+No exemplo anterior,
+
+00:00:01.286 --> 00:00:03.838
+havia uma coluna no input
+e uma coluna no output.
+
+00:00:03.871 --> 00:00:07.110
+O input era o tamanho da casa,
+e o output era o preço.
+
+00:00:07.143 --> 00:00:09.710
+Então era
+um problema bidimensional.
+
+00:00:09.743 --> 00:00:12.135
+A nossa predição do preço
+é uma linha
+
+00:00:12.168 --> 00:00:16.347
+cuja equação era uma constante
+vezes tamanho mais outra constante.
+
+00:00:16.380 --> 00:00:20.419
+E se houvesse mais colunas no input,
+como tamanho e qualidade da escola?
+
+00:00:20.452 --> 00:00:22.204
+Teríamos
+um gráfico tridimensional,
+
+00:00:22.237 --> 00:00:25.389
+com 2 dimensões para o input
+e outra para o output.
+
+00:00:25.422 --> 00:00:27.230
+Agora os pontos não ficam
+no plano,
+
+00:00:27.263 --> 00:00:30.940
+mas parecem pontos voando
+por um espaço tridimensional.
+
+00:00:30.973 --> 00:00:34.020
+Aqui passaremos um plano,
+em vez de uma linha,
+
+00:00:34.053 --> 00:00:36.043
+e a equação não será
+uma constante
+
+00:00:36.076 --> 00:00:38.963
+vezes uma variável
+mais outra constante.
+
+00:00:38.996 --> 00:00:41.937
+Será uma constante
+vezes qualidade da escola
+
+00:00:41.970 --> 00:00:46.148
+mais outra constante vezes tamanho
+mais uma 3ª constante.
+
+00:00:46.181 --> 00:00:48.881
+Isso é o que acontece
+num espaço de 3 dimensões.
+
+00:00:48.914 --> 00:00:51.171
+E num espaço
+de n dimensões?
+
+00:00:51.204 --> 00:00:56.628
+Nós teríamos colunas n-1 no input
+e outra no output.
+
+00:00:56.661 --> 00:00:58.947
+Os inputs seriam tamanho,
+qualidade da escola,
+
+00:00:58.980 --> 00:01:01.070
+número de quartos etc.
+
+00:01:01.103 --> 00:01:02.432
+Agora temos a mesma coisa,
+
+00:01:02.465 --> 00:01:05.548
+mas os dados ficam
+num espaço n-dimensional.
+
+00:01:05.581 --> 00:01:11.521
+No input, temos variáveis n-1,
+isto é, x1, x2 até xn-1.
+
+00:01:11.554 --> 00:01:16.304
+E, no output da predição,
+só temos uma variável, ŷ.
+
+00:01:16.337 --> 00:01:19.921
+A nossa predição seria
+um hiperplano de n-1 dimensões
+
+00:01:19.954 --> 00:01:21.720
+num espaço de n dimensões.
+
+00:01:21.753 --> 00:01:23.528
+Como é difícil imaginar
+n dimensões,
+
+00:01:23.561 --> 00:01:25.979
+pense numa equação linear
+em n variáveis,
+
+00:01:26.012 --> 00:01:31.098
+como ŷ=w1x1+w2x2+...
+
+00:01:31.131 --> 00:01:35.795
+wn-1xn-1+wn.
+
+00:01:35.828 --> 00:01:38.282
+Assim obtemos predições
+para dimensões superiores.
+
+00:01:38.315 --> 00:01:41.010
+Para encontrar os pesos
+w1 até wn,
+
+00:01:41.043 --> 00:01:44.820
+o algoritmo é exatamente o mesmo
+para duas variáveis.
+
+00:01:44.853 --> 00:01:47.354
+Podemos usar o método
+absoluto ou do quadrado
+
+00:01:47.387 --> 00:01:50.725
+ou calcular o erro absoluto
+ou quadrático médio
+
+00:01:50.758 --> 00:01:53.039
+e minimizá-lo
+usando gradiente descendente.
+

@@ -1,0 +1,42 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.373 --> 00:00:02.666
+ESTATÍSTICA PRÁTICA
+ANALISANDO VÁRIAS MÉTRICAS
+
+00:00:03.051 --> 00:00:05.164
+Como você viu
+nas lições anteriores,
+
+00:00:05.404 --> 00:00:07.001
+quanto mais coisas você testa,
+
+00:00:07.035 --> 00:00:10.087
+mais provável é que você observe
+diferenças significativas
+
+00:00:10.325 --> 00:00:11.424
+apenas por acaso.
+
+00:00:11.672 --> 00:00:13.858
+Isso acontece
+quando executamos avaliações
+
+00:00:13.892 --> 00:00:15.664
+de várias métricas
+ao mesmo tempo.
+
+00:00:16.120 --> 00:00:19.515
+A probabilidade de qualquer
+falso positivo aumenta
+
+00:00:19.549 --> 00:00:21.619
+conforme você aumenta
+o número de métricas.
+
+00:00:21.653 --> 00:00:23.889
+Por sorte, isso é algo
+que podemos consertar.
+

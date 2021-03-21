@@ -1,0 +1,243 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.501 --> 00:00:02.304
+Até agora aprendemos
+dois algoritmos
+
+00:00:02.337 --> 00:00:04.387
+que passam uma linha
+entre vários pontos.
+
+00:00:04.420 --> 00:00:06.104
+Um deles usa um dos métodos,
+
+00:00:06.137 --> 00:00:08.295
+isto é, o método absoluto
+ou do quadrado,
+
+00:00:08.328 --> 00:00:11.007
+e o outro minimiza
+uma das funções de erro,
+
+00:00:11.040 --> 00:00:14.271
+isto é, o erro absoluto médio
+ou o erro quadrático médio.
+
+00:00:14.304 --> 00:00:17.663
+O interessante é que estes dois
+são exatamente a mesma coisa.
+
+00:00:17.696 --> 00:00:20.408
+Quero dizer que, ao minimizarmos
+o erro absoluto médio,
+
+00:00:20.441 --> 00:00:22.445
+usamos um passo
+de gradiente descendente,
+
+00:00:22.478 --> 00:00:25.039
+e esse passo é exatamente
+a mesma coisa
+
+00:00:25.072 --> 00:00:26.617
+que o método absoluto.
+
+00:00:26.650 --> 00:00:28.612
+Ao minimizarmos
+o erro quadrático médio,
+
+00:00:28.645 --> 00:00:31.089
+o passo de gradiente descendente
+é a mesma coisa
+
+00:00:31.122 --> 00:00:32.430
+que o método do quadrado.
+
+00:00:32.463 --> 00:00:33.862
+Vejamos por quê.
+
+00:00:33.895 --> 00:00:35.955
+Vamos começar
+pelo erro quadrático médio.
+
+00:00:35.988 --> 00:00:37.908
+Temos um ponto
+com as coordenadas (x,y)
+
+00:00:37.941 --> 00:00:43.117
+e uma linha com a equação
+ŷ=w1x+w2.
+
+00:00:43.150 --> 00:00:44.441
+Ŷ é a nossa predição,
+
+00:00:44.474 --> 00:00:47.260
+e a linha prevê
+a coordenada y desse ponto.
+
+00:00:47.293 --> 00:00:49.204
+Essa predição fornece
+um ponto na linha
+
+00:00:49.237 --> 00:00:52.209
+que coincide com a coordenada x
+do ponto (x,y),
+
+00:00:52.242 --> 00:00:55.171
+ou seja, o ponto (x,ŷ).
+
+00:00:55.204 --> 00:00:59.999
+Agora o erro desse ponto é
+1/2(y-ŷ)²,
+
+00:01:00.032 --> 00:01:02.496
+e o erro quadrático médio
+desse conjunto de pontos
+
+00:01:02.529 --> 00:01:04.506
+é a média
+de todos esses erros.
+
+00:01:04.539 --> 00:01:06.195
+Mas a média é
+uma função linear,
+
+00:01:06.228 --> 00:01:09.298
+então qualquer coisa que fizermos
+se aplicará ao erro inteiro.
+
+00:01:09.331 --> 00:01:12.950
+Sabemos que o passo de gradiente
+descendente usa 2 derivadas:
+
+00:01:12.983 --> 00:01:16.076
+a derivada com respeito
+à inclinação, w1,
+
+00:01:16.109 --> 00:01:19.618
+e a derivada com respeito
+à interseção em y, w2.
+
+00:01:19.651 --> 00:01:21.053
+Se nós as calcularmos,
+
+00:01:21.086 --> 00:01:23.890
+e você pode ver esses cálculos
+nas notas do instrutor,
+
+00:01:23.923 --> 00:01:29.530
+obtemos -(y-ŷ)x para a derivada
+relacionada à inclinação,
+
+00:01:29.563 --> 00:01:32.720
+e -(y-ŷ)
+
+00:01:32.753 --> 00:01:36.106
+para a derivada relacionada
+à interseção em y, w2.
+
+00:01:36.139 --> 00:01:38.355
+Note que o comprimento
+do segmento vermelho
+
+00:01:38.388 --> 00:01:41.220
+é precisamente (y-ŷ).
+
+00:01:41.253 --> 00:01:45.143
+E o comprimento do segmento verde
+é precisamente x.
+
+00:01:45.176 --> 00:01:47.633
+Lembre-se:
+o método do quadrado mostrou
+
+00:01:47.666 --> 00:01:49.421
+que temos que atualizar
+a inclinação
+
+00:01:49.454 --> 00:01:53.965
+adicionando (y-ŷ) vezes x
+vezes a taxa de aprendizado alfa
+
+00:01:53.998 --> 00:01:55.512
+e atualizar a interseção em y
+
+00:01:55.545 --> 00:01:59.570
+adicionando (y-ŷ)
+vezes a taxa de aprendizado alfa.
+
+00:01:59.603 --> 00:02:03.395
+Isso é exatamente o que este passo
+de gradiente descendente faz.
+
+00:02:03.428 --> 00:02:07.857
+Se quiser, pause o vídeo
+ou anote num pedaço de papel,
+
+00:02:07.890 --> 00:02:10.799
+para ver que é exatamente
+o mesmo cálculo.
+
+00:02:12.021 --> 00:02:14.200
+O passo de gradiente
+descendente usa,
+
+00:02:14.233 --> 00:02:16.077
+ao minimizar
+o erro quadrático médio,
+
+00:02:16.110 --> 00:02:18.354
+a mesma coisa
+que o método do quadrado.
+
+00:02:18.387 --> 00:02:21.731
+Podemos fazer o mesmo
+com o método absoluto.
+
+00:02:21.764 --> 00:02:23.068
+O procedimento é parecido,
+
+00:02:23.101 --> 00:02:25.760
+mas temos que ter cuidado
+com o sinal.
+
+00:02:25.793 --> 00:02:30.636
+Este é o nosso erro:
+o valor absoluto de y-ŷ.
+
+00:02:30.669 --> 00:02:33.910
+E as derivadas do erro
+relacionadas a w1 e w2
+
+00:02:33.943 --> 00:02:36.608
+são ±x e ±1,
+
+00:02:36.641 --> 00:02:39.612
+dependendo se o ponto
+estiver acima ou abaixo da linha.
+
+00:02:39.645 --> 00:02:41.277
+Como esta distância é x,
+
+00:02:41.310 --> 00:02:44.988
+isso é o que o passo
+de gradiente descendente faz
+
+00:02:45.021 --> 00:02:47.461
+quando minimizamos
+o erro absoluto médio.
+
+00:02:47.494 --> 00:02:49.711
+É isso. É por isso
+que minimizar os erros
+
+00:02:49.744 --> 00:02:51.967
+com gradiente descendente
+é a mesma coisa
+
+00:02:52.000 --> 00:02:54.497
+que usar os métodos
+absoluto e do quadrado.
+

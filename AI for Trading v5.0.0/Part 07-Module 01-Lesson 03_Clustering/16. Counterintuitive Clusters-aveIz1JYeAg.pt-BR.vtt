@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.380 --> 00:00:02.350
+Então, vamos fazer outro conjunto de dados.
+
+00:00:02.350 --> 00:00:04.910
+Neste caso, você escolherá três centros do cluster e,
+
+00:00:04.910 --> 00:00:09.770
+depois, convenientemente, vamos desenhar três clusters no diagrama.
+
+00:00:09.770 --> 00:00:13.060
+Obviamente, para três centros dos clusters, você irá querer um cluster aqui, outro aqui e
+
+00:00:13.060 --> 00:00:14.230
+outro aqui.
+
+00:00:15.300 --> 00:00:19.620
+Então, esta é minha pergunta: é possível que todos esses pontos
+
+00:00:19.620 --> 00:00:22.950
+de dados aqui sejam representados por um cluster e
+
+00:00:22.950 --> 00:00:26.370
+esses aqui por dois clusters separados.
+
+00:00:26.370 --> 00:00:29.750
+Tendo como base o que sabe sobre k-means, você acha que pode acontecer
+
+00:00:29.750 --> 00:00:33.702
+de todos esses pontos aqui sejam incluídos em um cluster e esses
+
+00:00:33.702 --> 00:00:37.200
+sejam divididos em dois clusters, no que é chamado de mínimo local para agrupamento.
+

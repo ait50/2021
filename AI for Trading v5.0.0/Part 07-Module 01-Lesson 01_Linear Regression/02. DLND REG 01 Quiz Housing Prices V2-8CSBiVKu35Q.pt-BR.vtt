@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.096 --> 00:00:01.841
+Estamos estudando
+o mercado imobiliário
+
+00:00:01.891 --> 00:00:05.742
+e nossa tarefa é prever o preço
+de uma casa dado seu tamanho.
+
+00:00:05.792 --> 00:00:09.181
+Temos uma casa pequena,
+de US$ 70.000,
+
+00:00:09.231 --> 00:00:12.331
+e uma casa grande,
+de US$ 160.000.
+
+00:00:12.810 --> 00:00:16.500
+Gostaríamos de estimar o preço
+desta casa de médio porte.
+
+00:00:17.044 --> 00:00:18.732
+Como fazemos?
+
+00:00:18.782 --> 00:00:21.025
+Primeiro nós as colocamos
+em um gráfico
+
+00:00:21.075 --> 00:00:25.005
+cujo eixo x representa
+a área da casa
+
+00:00:25.055 --> 00:00:28.131
+e o eixo y representa o preço.
+
+00:00:29.363 --> 00:00:30.481
+Para nos auxiliar,
+
+00:00:30.531 --> 00:00:34.193
+coletamos dados anteriores
+representados pelos pontos azuis.
+
+00:00:34.825 --> 00:00:36.356
+São casas que analisamos
+
+00:00:36.406 --> 00:00:39.647
+e cujos preços registramos
+juntamente com a área.
+
+00:00:39.697 --> 00:00:43.570
+Aqui vemos uma casa pequena
+avaliada em US$ 70.000...
+
+00:00:43.944 --> 00:00:47.426
+e uma grande, em US$ 160,000.
+
+00:00:47.476 --> 00:00:49.466
+Hora de uma breve pergunta.
+
+00:00:49.516 --> 00:00:51.778
+Qual você acha
+que é a melhor estimativa
+
+00:00:51.828 --> 00:00:55.659
+de valor da casa média
+considerando os dados?
+
+00:00:56.207 --> 00:00:58.670
+Seria US$ 80.000,
+
+00:00:58.720 --> 00:01:02.827
+US$ 120.000 ou US$ 190.000?
+
+00:01:02.877 --> 00:01:04.798
+Marque sua resposta abaixo.
+

@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.430 --> 00:00:05.630
+Agora, sabemos que esses quatro pontos correspondem
+
+00:00:05.630 --> 00:00:08.630
+às classes presentes em uma, aleatoriamente escolhidas.
+
+00:00:08.630 --> 00:00:14.130
+Estes três pontos aqui correspondem às classes no meio.
+
+00:00:14.130 --> 00:00:15.200
+Essa é a etapa de atribuição.
+
+00:00:15.200 --> 00:00:16.910
+Obviamente, não é boa o suficiente.
+
+00:00:16.910 --> 00:00:18.780
+Agora, temos que otimizar.
+
+00:00:18.780 --> 00:00:24.840
+Nossa otimização é minimizar a distância quadrática total
+
+00:00:24.840 --> 00:00:26.610
+do centro do cluster até os pontos.
+
+00:00:26.610 --> 00:00:29.330
+Agora estamos livres para mover o centro do cluster.
+
+00:00:29.330 --> 00:00:32.290
+Estas linhas azuis aqui são como elásticos. Estamos tentando
+
+00:00:32.290 --> 00:00:35.040
+encontrar o estado de energia mínima para os elásticos,
+
+00:00:35.040 --> 00:00:38.490
+no qual o erro cinético total é minimizado.
+
+00:00:38.490 --> 00:00:41.760
+Para o da parte superior, darei três opções.
+
+00:00:41.760 --> 00:00:42.760
+São todas aproximadas, mas
+
+00:00:42.760 --> 00:00:44.990
+escolha uma que parece ser a melhor em termos de minimização.
+
+00:00:44.990 --> 00:00:47.640
+Esta não é uma pergunta trivial.
+
+00:00:47.640 --> 00:00:50.560
+Portanto, uma pode estar certa aqui, outra aqui e
+
+00:00:50.560 --> 00:00:52.800
+outra aqui.
+
+00:00:52.800 --> 00:00:57.730
+Qual delas você acredita que melhor minimiza, das três posições,
+
+00:00:57.730 --> 00:01:00.080
+o comprimento quadrático total desses elásticos?
+

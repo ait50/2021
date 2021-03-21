@@ -1,0 +1,238 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.160 --> 00:00:03.230
+Agora que expliquei a teoria do agrupamento k-means para você,
+
+00:00:03.230 --> 00:00:07.500
+mostrarei como usar a implementação do scikit-learn para implantá-lo
+
+00:00:07.500 --> 00:00:08.780
+em seus próprios estudos.
+
+00:00:08.780 --> 00:00:10.340
+Então, começo do zero aqui no Google e
+
+00:00:10.340 --> 00:00:13.810
+encontro uma página inteira sobre agrupamento no scikit-learn.
+
+00:00:13.810 --> 00:00:15.890
+A primeira coisa que observo quando acesso esta página é
+
+00:00:15.890 --> 00:00:20.020
+que há muitos tipos de agrupamento além do k-means.
+
+00:00:20.020 --> 00:00:23.510
+Todas estas colunas diferentes aqui são tipos diferentes de agrupamento.
+
+00:00:23.510 --> 00:00:27.720
+Não vamos passar por todos eles. Quero usar esta página para navegar até
+
+00:00:27.720 --> 00:00:30.620
+a documentação do k-means na qual você pode ter uma ideia melhor de
+
+00:00:30.620 --> 00:00:32.509
+como isso é processado no scikit-learn.
+
+00:00:32.509 --> 00:00:35.540
+Aqui tem uma lista dos diferentes métodos de agrupamento.
+
+00:00:35.540 --> 00:00:39.320
+O primeiro item da lista é K-Means e
+
+00:00:39.320 --> 00:00:41.350
+algumas informações resumidas sobre o algoritmo.
+
+00:00:41.350 --> 00:00:43.725
+Bem, um dos parâmetros que você tem de definir para o
+
+00:00:43.725 --> 00:00:45.760
+k-means é o número de clusters.
+
+00:00:45.760 --> 00:00:50.330
+Lembre-se de que tivemos de dizer no início quantos clusters queremos buscar e
+
+00:00:50.330 --> 00:00:53.225
+essa pode ser uma das tarefas mais difíceis no uso do
+
+00:00:53.225 --> 00:00:55.870
+k-means: decidir quantos cluster você quer testar.
+
+00:00:57.170 --> 00:01:00.220
+Depois, ele nos dá algumas informações sobre a escalabilidade, que basicamente
+
+00:01:00.220 --> 00:01:02.700
+nos revela o desempenho do algoritmo quando você começa a ter
+
+00:01:02.700 --> 00:01:04.928
+inúmeros dados ou clusters.
+
+00:01:04.928 --> 00:01:08.390
+Um caso de uso, que nos dá um pouco de informações úteis para
+
+00:01:08.390 --> 00:01:11.710
+fins gerais quando há clusters com números pares de
+
+00:01:11.710 --> 00:01:13.510
+pontos e assim por diante.
+
+00:01:13.510 --> 00:01:16.660
+Por fim, a maneira como o agrupamento k-means funciona baseia-se
+
+00:01:16.660 --> 00:01:18.480
+nas distâncias entre os pontos.
+
+00:01:18.480 --> 00:01:21.720
+Portanto, o conteúdo é muito consistente com o que vimos até aqui.
+
+00:01:21.720 --> 00:01:23.320
+Vamos nos aprofundar um pouco mais.
+
+00:01:23.320 --> 00:01:25.790
+Agora, estamos na página de documentação do k-means.
+
+00:01:25.790 --> 00:01:28.460
+E há três parâmetros para os quais quero chamar sua
+
+00:01:28.460 --> 00:01:29.470
+atenção.
+
+00:01:29.470 --> 00:01:32.410
+O primeiro e mais importante é o n_clusters.
+
+00:01:32.410 --> 00:01:35.270
+O valor padrão de n_clusters é oito.
+
+00:01:35.270 --> 00:01:38.970
+Mas, é claro que sabemos que o número de clusters no algoritmo é algo
+
+00:01:38.970 --> 00:01:42.790
+que você precisa definir sozinho, com base no que faz mais sentido para você.
+
+00:01:42.790 --> 00:01:45.260
+Você pode até brincar um pouco com esse parâmetro.
+
+00:01:45.260 --> 00:01:47.560
+Você sempre deve considerar se quer mesmo
+
+00:01:47.560 --> 00:01:50.910
+usar este valor padrão ou se quer alterá-lo para outro valor.
+
+00:01:50.910 --> 00:01:53.170
+Posso garantir que, na maioria das vezes, você o alterará para
+
+00:01:53.170 --> 00:01:54.320
+outro valor.
+
+00:01:54.320 --> 00:01:57.990
+O segundo parâmetro para o qual quero chamar sua atenção é o max_iter=300.
+
+00:01:57.990 --> 00:02:01.620
+Lembre-se de que, durante a execução do agrupamento k-means,
+
+00:02:01.620 --> 00:02:05.320
+passamos por uma iteração ao localizar os clusters,
+
+00:02:05.320 --> 00:02:10.500
+em que atribuímos cada ponto a um centroide e depois movemos o centroide.
+
+00:02:10.500 --> 00:02:12.090
+Em seguida, reatribuímos os pontos.
+
+00:02:12.090 --> 00:02:13.770
+E movemos os centroides novamente.
+
+00:02:13.770 --> 00:02:17.020
+Cada uma dessas etapas de atribuição e movimentação
+
+00:02:17.020 --> 00:02:20.078
+é uma iteração do algoritmo.
+
+00:02:20.078 --> 00:02:23.660
+Então, na verdade, max_Iter revela por quantas iterações
+
+00:02:23.660 --> 00:02:25.995
+do algoritmo você quer que ele passe.
+
+00:02:25.995 --> 00:02:29.440
+Geralmente, 300 será um valor bem razoável para você.
+
+00:02:29.440 --> 00:02:32.120
+Eu diria que, na maioria das vezes, as iterações
+
+00:02:32.120 --> 00:02:35.700
+terminarão antes de chegarem ao seu número máximo.
+
+00:02:35.700 --> 00:02:38.690
+Mas, se você quiser um nível maior de controle sobre o algoritmo e quiser saber
+
+00:02:38.690 --> 00:02:41.680
+quantas vezes ele passará por esse processo de iteração, este
+
+00:02:41.680 --> 00:02:42.520
+é o parâmetro mais adequado.
+
+00:02:42.520 --> 00:02:45.280
+E o último parâmetro que vou mencionar,
+
+00:02:45.280 --> 00:02:46.840
+também outro muito importante,
+
+00:02:46.840 --> 00:02:50.240
+é o número de diferentes inicializações que você dá a ele.
+
+00:02:50.240 --> 00:02:53.240
+Lembre-se de que o agrupamento k-means tem este desafio:
+
+00:02:53.240 --> 00:02:55.800
+dependendo das condições iniciais,
+
+00:02:55.800 --> 00:02:58.220
+você pode, às vezes, ter agrupamentos diferentes no final.
+
+00:02:58.220 --> 00:03:01.320
+Então, você precisará repetir o algoritmo várias vezes caso algum
+
+00:03:01.320 --> 00:03:05.250
+desses agrupamentos esteja errado, mas em geral,
+
+00:03:05.250 --> 00:03:08.850
+o conjunto de todos os agrupamentos resultará em algo que faz sentido.
+
+00:03:08.850 --> 00:03:10.320
+É isso que este parâmetro controla.
+
+00:03:10.320 --> 00:03:13.470
+É basicamente quantas vezes ele inicializa o algoritmo,
+
+00:03:13.470 --> 00:03:16.320
+quantas vezes ele gera clusters.
+
+00:03:16.320 --> 00:03:19.360
+Você pode ver que, por padrão, ele passa por isso dez vezes.
+
+00:03:19.360 --> 00:03:23.750
+Se você achar, por algum motivo, que seu agrupamento está suscetível a
+
+00:03:23.750 --> 00:03:25.050
+inicializações incorretas ou
+
+00:03:25.050 --> 00:03:29.910
+inicializações difíceis, este é o parâmetro que deve ser alterado,
+
+00:03:29.910 --> 00:03:33.570
+talvez aumentando-o para um maior número de inicializações.
+
+00:03:33.570 --> 00:03:36.400
+Novamente, só para reiterar, de todos esses parâmetros,
+
+00:03:36.400 --> 00:03:39.580
+o número de clusters é certamente o mais importante.
+
+00:03:39.580 --> 00:03:41.610
+É com ele que você deve brincar mais e
+
+00:03:41.610 --> 00:03:43.570
+é nele que você deve pensar mais.
+

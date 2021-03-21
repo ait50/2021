@@ -1,0 +1,183 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.143 --> 00:00:01.656
+ESTATÍSTICA PRÁTICA
+TESTE A/B
+
+00:00:02.944 --> 00:00:05.306
+Quando as empresas
+querem testar novos recursos
+
+00:00:05.340 --> 00:00:07.057
+ou versões
+de uma página da web,
+
+00:00:07.091 --> 00:00:09.825
+elas costumam usar um método
+chamado teste A/B.
+
+00:00:10.157 --> 00:00:12.843
+Funciona assim:
+um conjunto de usuários,
+
+00:00:12.877 --> 00:00:16.221
+chamado grupo de controle,
+vê a versão antiga de uma página
+
+00:00:16.618 --> 00:00:18.113
+e outro conjunto de usuários,
+
+00:00:18.147 --> 00:00:19.467
+chamado grupo de experimento,
+
+00:00:19.501 --> 00:00:21.556
+vê a nova versão da página.
+
+00:00:21.866 --> 00:00:23.931
+Com base em como
+os grupos respondem,
+
+00:00:24.223 --> 00:00:26.588
+podemos determinar
+se a nova versão é melhor
+
+00:00:26.622 --> 00:00:27.882
+e deve ser lançada.
+
+00:00:28.167 --> 00:00:31.570
+Isso é, na verdade, apenas
+uma aplicação do teste de hipóteses,
+
+00:00:31.961 --> 00:00:35.621
+em que a hipótese nula seria
+que a nova versão não é melhor
+
+00:00:35.655 --> 00:00:38.980
+nem pior do que a versão antiga,
+e a alternativa
+
+00:00:39.262 --> 00:00:42.024
+seria que a nova versão é melhor
+do que a versão antiga.
+
+00:00:42.929 --> 00:00:46.668
+Muitas empresas usam o teste A/B
+para testar mudanças nos recursos,
+
+00:00:46.955 --> 00:00:50.229
+layouts e até nas cores
+para aumentar uma métrica
+
+00:00:50.263 --> 00:00:52.404
+que mensura o interesse
+dos usuários.
+
+00:00:52.658 --> 00:00:55.086
+Por exemplo, você pode
+realizar um teste A/B
+
+00:00:55.120 --> 00:00:57.864
+para ver se um novo visual
+na página de destino do seu site
+
+00:00:57.898 --> 00:00:59.250
+aumenta a probabilidade
+
+00:00:59.284 --> 00:01:01.784
+de uma visita ou inscrição
+na sua lista de endereçamento.
+
+00:01:01.818 --> 00:01:04.898
+Ou você pode realizar um teste A/B
+para ver se a oferta
+
+00:01:05.104 --> 00:01:07.597
+de recomendações personalizadas
+em um site de compras
+
+00:01:07.906 --> 00:01:09.515
+aumenta as compras.
+
+00:01:09.715 --> 00:01:13.666
+Uma coisa a considerar é que,
+embora o teste A/B seja bom
+
+00:01:13.700 --> 00:01:16.563
+para testar se um novo recurso
+ou a versão de um recurso
+
+00:01:16.866 --> 00:01:20.600
+é melhor em uma página,
+ele não é útil para tudo.
+
+00:01:21.096 --> 00:01:24.819
+Por exemplo, o teste A/B pode dizer
+a melhor maneira de classificar
+
+00:01:24.853 --> 00:01:26.938
+um conjunto de produtos
+em um site,
+
+00:01:26.972 --> 00:01:29.600
+mas não pode dizer se o site
+realmente se beneficiaria
+
+00:01:29.634 --> 00:01:32.782
+de ter dois produtos extras
+adicionados ao site.
+
+00:01:33.152 --> 00:01:36.477
+Também não é sempre bom
+para testar novas experiências
+
+00:01:36.511 --> 00:01:37.912
+para usuários existentes,
+
+00:01:38.144 --> 00:01:40.048
+devido a fatores
+como aversão à mudança
+
+00:01:40.082 --> 00:01:41.619
+e "efeito novidade".
+
+00:01:41.653 --> 00:01:44.532
+Os usuários existentes
+podem dar uma vantagem injusta
+
+00:01:44.566 --> 00:01:45.858
+à versão anterior,
+
+00:01:45.892 --> 00:01:48.582
+simplesmente porque estão
+infelizes com a mudança,
+
+00:01:48.879 --> 00:01:51.153
+mesmo que seja para melhor.
+
+00:01:51.563 --> 00:01:55.436
+Por outro lado, podem dar
+uma vantagem injusta à nova versão
+
+00:01:55.470 --> 00:01:58.166
+porque estão empolgados
+ou atraídos pela mudança,
+
+00:01:58.200 --> 00:02:00.197
+mesmo que não seja melhor.
+
+00:02:00.742 --> 00:02:02.065
+Além disso,
+
+00:02:02.099 --> 00:02:03.988
+existem muitos outros fatores
+
+00:02:04.022 --> 00:02:06.492
+que podem prejudicar
+os resultados de um teste A/B.
+
+00:02:06.526 --> 00:02:08.769
+Você aprenderá mais sobre eles
+nesta lição.
+

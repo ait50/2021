@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.240 --> 00:00:02.820
+A resposta é positiva, e vou provar isso para você.
+
+00:00:02.820 --> 00:00:07.228
+Suponhamos que você coloque um centro do cluster bem no meio destes dois pontos e
+
+00:00:07.228 --> 00:00:09.110
+os outros dois em algum lugar por aqui.
+
+00:00:09.110 --> 00:00:11.380
+Nem tem mesmo um erro.
+
+00:00:11.380 --> 00:00:15.520
+Em sua etapa de atribuição, você verá que praticamente todo o restante
+
+00:00:15.520 --> 00:00:20.330
+desta linha será alocado ao centro do cluster esquerdo.
+
+00:00:20.330 --> 00:00:21.262
+Como resultado,
+
+00:00:21.262 --> 00:00:25.142
+este é o ponto onde a distância total do elástico é minimizada.
+
+00:00:25.142 --> 00:00:27.410
+Então, este cluster é muito estável.
+
+00:00:27.410 --> 00:00:28.400
+Estes dois caras aqui,
+
+00:00:28.400 --> 00:00:33.500
+porém, se separam entre os dados à direita.
+
+00:00:33.500 --> 00:00:36.350
+Eles vão lutar pelos os mesmos pontos de dados e
+
+00:00:36.350 --> 00:00:39.920
+acabam particionando a nuvem à direita em algum momento.
+
+00:00:39.920 --> 00:00:44.456
+E essa é uma solução estável porque, na etapa de atribuição, nada muda.
+
+00:00:44.456 --> 00:00:47.350
+Este cara ainda vai corresponder a todos os caras aqui, e
+
+00:00:47.350 --> 00:00:49.380
+estes caras vão corresponder a estes caras aqui.
+
+00:00:49.380 --> 00:00:51.498
+Isso é chamado de mínimo local.
+
+00:00:51.498 --> 00:00:54.960
+E isso realmente depende da inicialização dos centros dos clusters.
+
+00:00:54.960 --> 00:00:58.710
+Se você tivesse escolhido estes três centros dos clusters como palpites iniciais,
+
+00:00:58.710 --> 00:01:00.600
+você nunca teria se distanciado disso.
+
+00:01:00.600 --> 00:01:04.300
+Assim, é realmente importante no agrupamento estar ciente
+
+00:01:04.300 --> 00:01:07.200
+do fato que ele é um algoritmo de escalada local.
+
+00:01:07.200 --> 00:01:10.600
+E ele pode lhe dar soluções abaixo do ideal que, se você dividi-las novamente,
+
+00:01:10.600 --> 00:01:11.520
+pode ter uma solução melhor.
+
+00:01:11.520 --> 00:01:14.110
+Obviamente, neste caso com três centros dos clusters,
+
+00:01:14.110 --> 00:01:18.250
+você vai querer eles aqui, aqui e apenas um no lado direito, aqui.
+

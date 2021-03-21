@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.250 --> 00:00:02.490
+Agora, veremos os limites do que o k-means pode
+
+00:00:02.490 --> 00:00:04.689
+ou não fazer e você tentará ultrapassá-lo.
+
+00:00:04.689 --> 00:00:08.530
+E falar especificamente sobre mínimo local. Para fazer isso, quero fazer uma
+
+00:00:08.530 --> 00:00:11.760
+pergunta para que você pense e responda corretamente.
+
+00:00:11.760 --> 00:00:15.360
+Suponha que você use um número fixo de centros do cluster, 2, 3 ou 4.
+
+00:00:16.500 --> 00:00:22.680
+O resultado para qualquer conjunto de treinamento fixo será sempre o mesmo?
+
+00:00:22.680 --> 00:00:26.743
+Então, dado um conjunto de erro fixo, um número fixo de centros do cluster,
+
+00:00:26.743 --> 00:00:29.610
+[INAUDIBLE] você chegará sempre ao mesmo resultado?
+
+00:00:30.660 --> 00:00:31.610
+Faça sua melhor estimativa.
+

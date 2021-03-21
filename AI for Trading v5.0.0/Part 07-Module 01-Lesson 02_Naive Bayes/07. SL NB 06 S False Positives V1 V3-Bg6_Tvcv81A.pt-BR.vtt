@@ -1,0 +1,345 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.149 --> 00:00:03.476
+Vamos usar o teorema
+de Bayes para calcular.
+
+00:00:03.509 --> 00:00:05.437
+Usaremos a seguinte notação.
+
+00:00:05.470 --> 00:00:07.060
+S significará doente,
+
+00:00:07.093 --> 00:00:09.100
+H significará saudável
+
+00:00:09.133 --> 00:00:12.636
+e o sinal de mais
+significará positivo.
+
+00:00:12.669 --> 00:00:15.516
+Como 1 em cada 10.000 pessoas
+está doente,
+
+00:00:15.549 --> 00:00:20.326
+temos que P de S
+é igual a 0,0001.
+
+00:00:20.359 --> 00:00:24.111
+Da mesma forma,
+P de H é igual a 0,9999.
+
+00:00:24.718 --> 00:00:27.047
+Como o exame
+tem 99% de precisão,
+
+00:00:27.080 --> 00:00:29.613
+tanto para pacientes doentes
+como para saudáveis,
+
+00:00:29.646 --> 00:00:32.948
+vemos que P de +,
+
+00:00:32.981 --> 00:00:36.702
+dado S, é igual a 0,99,
+
+00:00:36.735 --> 00:00:41.493
+a probabilidade de que o doente
+seja diagnosticado corretamente.
+
+00:00:41.526 --> 00:00:46.084
+E que P de +,
+dado H, igual a 0,01,
+
+00:00:46.117 --> 00:00:50.975
+é a probabilidade de que o saudável
+seja diagnosticado incorretamente.
+
+00:00:51.008 --> 00:00:52.911
+Colocando isso
+na nova fórmula,
+
+00:00:52.944 --> 00:00:55.582
+a probabilidade
+de ser diagnosticado como positivo
+
+00:00:55.615 --> 00:00:59.527
+quando se está doente
+é de exatamente 0,0098,
+
+00:00:59.560 --> 00:01:02.247
+que é inferior a 1%.
+
+00:01:02.280 --> 00:01:04.263
+Sério? Menos de 1%?
+
+00:01:04.296 --> 00:01:06.926
+Mas o exame não tem
+99% de precisão?
+
+00:01:06.959 --> 00:01:10.191
+Isso é estranho, mas acho
+que essa é a resposta para o teste.
+
+00:01:10.224 --> 00:01:14.294
+Menos de 1% está
+na categoria de 0% a 20%.
+
+00:01:14.327 --> 00:01:16.543
+Ainda estou intrigado,
+por que menos de 1%
+
+00:01:16.576 --> 00:01:19.831
+se o exame está correto
+em 99% do tempo?
+
+00:01:19.864 --> 00:01:23.190
+Vamos explorar.
+Vejamos a árvore das possibilidades.
+
+00:01:23.223 --> 00:01:26.040
+Digamos que começamos
+com 1 milhão de pacientes,
+
+00:01:26.073 --> 00:01:28.792
+e eles têm duas opções:
+saudável ou doente.
+
+00:01:28.825 --> 00:01:31.847
+Como 1 a cada 10.000 pacientes
+está doente,
+
+00:01:31.880 --> 00:01:34.192
+então, desse grupo
+de 1 milhão de pacientes,
+
+00:01:34.225 --> 00:01:35.839
+100 estarão doentes
+
+00:01:35.872 --> 00:01:40.478
+e os 999.900 restantes
+estarão saudáveis.
+
+00:01:40.511 --> 00:01:43.143
+Para cada 100 pacientes,
+
+00:01:43.176 --> 00:01:47.542
+99 são diagnosticados corretamente
+e 1 é diagnosticado incorretamente.
+
+00:01:47.575 --> 00:01:51.217
+Isso acontece tanto para pacientes
+doentes quanto para saudáveis.
+
+00:01:51.250 --> 00:01:53.998
+Vejamos quantos desses pacientes
+serão diagnosticados
+
+00:01:54.031 --> 00:01:55.800
+positiva ou negativamente.
+
+00:01:55.833 --> 00:01:57.992
+Dos 100 doentes,
+
+00:01:58.025 --> 00:02:01.281
+99 serão diagnosticados
+corretamente como positivo
+
+00:02:01.314 --> 00:02:05.280
+e 1 será incorretamente
+diagnosticado como negativo.
+
+00:02:05.313 --> 00:02:06.889
+Agora, entre os saudáveis,
+
+00:02:06.922 --> 00:02:12.497
+1%, ou 9.999, será incorretamente
+diagnosticado como positivo
+
+00:02:12.530 --> 00:02:17.887
+e os 99% restantes,
+ou 989.901,
+
+00:02:17.920 --> 00:02:20.458
+serão diagnosticados corretamente
+como negativos.
+
+00:02:20.491 --> 00:02:22.536
+Vamos examinar
+os quatro grupos.
+
+00:02:22.569 --> 00:02:24.566
+O primeiro
+é o das pessoas doentes
+
+00:02:24.599 --> 00:02:27.390
+que refarão os exames
+ou farão o tratamento.
+
+00:02:27.423 --> 00:02:31.805
+O segundo será o dos azarados
+que irão para casa sem tratamento.
+
+00:02:31.838 --> 00:02:34.843
+O terceiro é o das pessoas saudáveis
+ligeiramente confusas
+
+00:02:34.876 --> 00:02:37.359
+que deverão
+fazer mais exames.
+
+00:02:37.392 --> 00:02:39.206
+E o quarto grupo,
+ou o da maioria,
+
+00:02:39.239 --> 00:02:42.896
+é o das pessoas que estão saudáveis
+e foram diagnosticadas corretamente.
+
+00:02:42.929 --> 00:02:44.504
+Agora é que vem o problema.
+
+00:02:44.537 --> 00:02:48.696
+Sabemos que o exame deu positivo,
+então estamos em um dos dois grupos,
+
+00:02:48.729 --> 00:02:51.335
+o das pessoas doentes
+que testaram positivo
+
+00:02:51.368 --> 00:02:54.865
+ou o das pessoas saudáveis
+que testaram positivo.
+
+00:02:54.898 --> 00:02:58.728
+Um grupo é muito maior,
+tem 9.999 pessoas,
+
+00:02:58.761 --> 00:03:01.631
+enquanto o outro
+tem apenas 99 pessoas.
+
+00:03:01.664 --> 00:03:04.000
+A probabilidade
+de estarmos neste grupo
+
+00:03:04.033 --> 00:03:07.471
+é muito maior
+do que a de estarmos neste grupo.
+
+00:03:07.504 --> 00:03:11.271
+A probabilidade
+de estarmos no grupo menor
+
+00:03:11.304 --> 00:03:14.347
+é 99 dividido pela soma -
+
+00:03:14.380 --> 00:03:18.605
+99 + 9.999 -,
+
+00:03:18.638 --> 00:03:22.789
+que é igual a 0,0098
+
+00:03:22.822 --> 00:03:25.420
+e menor do que 1%.
+
+00:03:25.453 --> 00:03:28.288
+Esta é a probabilidade
+de se estar doente
+
+00:03:28.321 --> 00:03:31.239
+quando diagnosticado
+como positivo.
+
+00:03:31.272 --> 00:03:34.890
+Por que o grupo de pessoas saudáveis
+que testou positivo é tão maior
+
+00:03:34.923 --> 00:03:37.931
+do que o grupo de doentes
+que testaram positivo?
+
+00:03:37.964 --> 00:03:42.013
+A razão é porque, mesmo
+que o exame falhe em apenas 1%,
+
+00:03:42.046 --> 00:03:44.418
+esse 1% é muito maior
+
+00:03:44.451 --> 00:03:49.051
+do que a taxa de 1 para 10.000
+doentes da população.
+
+00:03:49.084 --> 00:03:50.380
+Em outras palavras,
+
+00:03:50.413 --> 00:03:52.893
+em um grupo
+de 10.000 pessoas saudáveis,
+
+00:03:53.564 --> 00:03:57.571
+1%, ou 100 delas,
+será diagnosticada como doente.
+
+00:03:57.604 --> 00:04:00.639
+Por outro lado,
+em um grupo de 10.000 pessoas,
+
+00:04:00.672 --> 00:04:02.752
+mais ou menos 1
+estará doente.
+
+00:04:02.785 --> 00:04:04.188
+Isso é muito menos.
+
+00:04:04.221 --> 00:04:06.741
+Então, se o seu exame
+deu positivo,
+
+00:04:06.774 --> 00:04:10.671
+você tem mais chances de estar
+entre os 100 erros
+
+00:04:10.704 --> 00:04:12.583
+do que entre os doentes.
+
+00:04:12.616 --> 00:04:15.279
+E qual é a probabilidade?
+De cerca de 100 vezes.
+
+00:04:15.312 --> 00:04:17.121
+A probabilidade
+de se estar doente
+
+00:04:17.154 --> 00:04:20.931
+e de ser diagnosticado positivo
+é de cerca de 1%.
+
+00:04:20.964 --> 00:04:23.254
+Esse fenômeno
+é chamado de "falso positivo",
+
+00:04:23.287 --> 00:04:25.823
+e tem sido um pesadelo
+para o mundo médico, legal
+
+00:04:25.856 --> 00:04:27.141
+e muitos outros.
+
+00:04:27.174 --> 00:04:29.029
+Pesquise falsos positivos
+no Google,
+
+00:04:29.062 --> 00:04:32.228
+e você verá muitos casos
+de erro de diagnóstico,
+
+00:04:32.261 --> 00:04:34.573
+de erros de julgamento etc.
+
+00:04:34.606 --> 00:04:38.036
+Esteja ciente dos falsos positivos,
+pois são muito perigosos.
+

@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.233 --> 00:00:02.921
+Vejamos uma versão formal
+do teorema de Bayes.
+
+00:00:02.954 --> 00:00:04.960
+Começaremos com um evento,
+
+00:00:04.993 --> 00:00:07.290
+e esse evento
+poderia ser A ou B.
+
+00:00:07.323 --> 00:00:09.448
+As probabilidades de cada um
+estão aqui,
+
+00:00:09.481 --> 00:00:12.234
+P de A e P de B.
+
+00:00:12.267 --> 00:00:14.312
+Agora observamos
+um terceiro evento,
+
+00:00:14.345 --> 00:00:18.219
+e esse evento pode
+ou não acontecer,
+
+00:00:18.252 --> 00:00:20.913
+tanto para A como para B.
+
+00:00:20.946 --> 00:00:23.857
+R nos ajudará a encontrar
+probabilidades mais exatas
+
+00:00:23.890 --> 00:00:26.897
+para A e B
+da seguinte maneira.
+
+00:00:26.930 --> 00:00:31.914
+Digamos que podemos calcular
+a probabilidade de R, dado A,
+
+00:00:31.947 --> 00:00:37.945
+e, também, do complemento R,
+que não é R, dado A.
+
+00:00:37.978 --> 00:00:40.121
+Da mesma forma,
+para R, dado B,
+
+00:00:40.154 --> 00:00:42.441
+e R complemento, dado B.
+
+00:00:42.474 --> 00:00:45.793
+Agora o conjunto de cenários
+são estes quatro:
+
+00:00:45.826 --> 00:00:48.737
+R e A, R complemento e A,
+
+00:00:48.770 --> 00:00:52.441
+R e B e R complemento e B.
+
+00:00:52.474 --> 00:00:54.721
+Como sabemos que R ocorreu,
+
+00:00:54.754 --> 00:00:58.266
+sabemos que o segundo e o quarto
+eventos não são possíveis,
+
+00:00:58.299 --> 00:01:01.937
+então nosso novo universo
+consiste nos dois eventos,
+
+00:01:01.970 --> 00:01:05.529
+R e A e R e B.
+
+00:01:05.562 --> 00:01:10.425
+Calculamos a probabilidade de A e R
+ou equivalentemente A interseção R,
+
+00:01:10.458 --> 00:01:12.603
+e, pela Lei da Probabilidade
+Condicional,
+
+00:01:12.636 --> 00:01:16.050
+isto é P de A
+vezes P de R, dado A.
+
+00:01:16.083 --> 00:01:19.433
+O mesmo ocorre
+para a interseção B, R.
+
+00:01:19.466 --> 00:01:22.994
+Agora, como as probabilidades
+não se somam a 1,
+
+00:01:23.027 --> 00:01:25.698
+dividimos as duas pela soma
+
+00:01:25.731 --> 00:01:29.755
+para que as novas probabilidades
+normalizadas se somem a 1.
+
+00:01:29.788 --> 00:01:34.489
+Assim, obtemos as seguintes fórmulas
+para P de A, dado R,
+
+00:01:34.522 --> 00:01:37.151
+e para P de B, dado R.
+
+00:01:37.184 --> 00:01:39.787
+Estas são nossas probabilidades
+novas e melhoradas
+
+00:01:39.820 --> 00:01:43.688
+para A e B depois
+de sabermos que R ocorreu.
+
+00:01:43.721 --> 00:01:47.204
+P de A e P de B são chamados
+de "probabilidades anteriores",
+
+00:01:47.237 --> 00:01:51.215
+que é o que sabíamos
+antes de sabermos que R ocorreu.
+
+00:01:51.248 --> 00:01:53.968
+P de A, dado R,
+e P de B, dado R,
+
+00:01:54.001 --> 00:01:56.187
+são probabilidades
+posteriores,
+
+00:01:56.220 --> 00:02:00.042
+que é o que inferimos depois
+de sabermos que R ocorreu.
+
+00:02:00.075 --> 00:02:01.371
+E aqui está
+
+00:02:01.404 --> 00:02:03.243
+a fórmula
+para o teorema de Bayes.
+

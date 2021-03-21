@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.649 --> 00:00:06.410
+The first change Audacity wants to try is on their home page.
+
+00:00:06.410 --> 00:00:07.884
+They hope that this new,
+
+00:00:07.884 --> 00:00:12.684
+more engaging design will increase the number of users that explore their courses.
+
+00:00:12.685 --> 00:00:15.870
+That is, move on to the second stage of the funnel.
+
+00:00:15.869 --> 00:00:18.109
+Now that we know the change we want to make,
+
+00:00:18.109 --> 00:00:20.905
+we need to choose a metric that measures that change.
+
+00:00:20.905 --> 00:00:24.000
+To measure how many people move on to the next stage,
+
+00:00:24.000 --> 00:00:25.809
+we can track how many people click on
+
+00:00:25.809 --> 00:00:30.784
+the Explore Courses button on the home page with the new design and the old design.
+
+00:00:30.785 --> 00:00:34.479
+However, using just the number of users doesn't make
+
+00:00:34.479 --> 00:00:39.509
+sense if more total users view the page in one version of the experiment.
+
+00:00:39.509 --> 00:00:42.504
+More total clicks could occur in one version
+
+00:00:42.505 --> 00:00:46.900
+even if there is a greater percentage of clicks in the other version.
+
+00:00:46.899 --> 00:00:51.534
+So instead, we could use the fraction of page visitors who clicked.
+
+00:00:51.534 --> 00:00:53.979
+That is the number of clicks on
+
+00:00:53.979 --> 00:00:59.049
+The View Courses button divided by the number of page views to the home page.
+
+00:00:59.049 --> 00:01:03.339
+This metric is commonly called click-through rate or CTR.
+
+00:01:03.340 --> 00:01:06.670
+You could take this metric one step further and make it
+
+00:01:06.670 --> 00:01:10.299
+the number of unique visitors who clicked at least once,
+
+00:01:10.299 --> 00:01:14.519
+divided by the number of unique visitors to view the page.
+
+00:01:14.519 --> 00:01:15.994
+Now that we have our metric,
+
+00:01:15.995 --> 00:01:18.825
+let's set up our known alternative hypothesis.
+
+00:01:18.825 --> 00:01:22.750
+Our alternative hypothesis is what we want to prove to be true.
+
+00:01:22.750 --> 00:01:25.930
+In this case, the new home page design has
+
+00:01:25.930 --> 00:01:29.500
+a higher click-through rate than the old home page design.
+
+00:01:29.500 --> 00:01:34.734
+And the new hypothesis is what we assumed to be true before analyzing any data,
+
+00:01:34.734 --> 00:01:38.560
+which is that the new home page design has a click-through rate that is
+
+00:01:38.560 --> 00:01:43.010
+less than or equal to that of our old home page design.
+
+00:01:43.010 --> 00:01:44.440
+As you've seen before,
+
+00:01:44.439 --> 00:01:47.289
+we can rearrange our hypothesis to look like this.
+

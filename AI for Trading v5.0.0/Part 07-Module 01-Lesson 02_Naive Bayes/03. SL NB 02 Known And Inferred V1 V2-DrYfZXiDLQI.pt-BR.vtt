@@ -1,0 +1,66 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.318 --> 00:00:02.625
+Vimos um exemplo
+do teorema de Bayes,
+
+00:00:02.658 --> 00:00:06.432
+mas aqui está a ideia principal
+de um teorema muito poderoso.
+
+00:00:06.465 --> 00:00:12.137
+Ele muda o que sabemos
+para o que inferimos.
+
+00:00:12.170 --> 00:00:15.736
+O que sabemos é a probabilidade
+de Alex vestir vermelho
+
+00:00:15.769 --> 00:00:18.713
+e a probabilidade de Brenda
+vestir vermelho.
+
+00:00:18.746 --> 00:00:20.251
+E inferimos o oposto,
+
+00:00:20.284 --> 00:00:23.350
+a probabilidade de que alguém
+vestindo vermelho seja o Alex
+
+00:00:23.383 --> 00:00:25.910
+ou de que alguém vestindo
+vermelho seja a Brenda.
+
+00:00:25.943 --> 00:00:29.871
+Inicialmente sabemos
+a probabilidade de um evento A.
+
+00:00:29.904 --> 00:00:31.438
+Para termos mais informações,
+
+00:00:31.471 --> 00:00:35.509
+apresentamos um novo evento R
+relacionado a A.
+
+00:00:35.542 --> 00:00:37.847
+Sabemos a probabilidade
+de R dado A.
+
+00:00:37.880 --> 00:00:40.359
+O teorema de Bayes,
+a partir desses dois,
+
+00:00:40.392 --> 00:00:43.534
+infere a probabilidade de A
+dado R.
+
+00:00:43.567 --> 00:00:46.118
+Esta será
+a nova probabilidade de A
+
+00:00:46.151 --> 00:00:49.067
+quando soubermos
+que o evento R ocorreu.
+

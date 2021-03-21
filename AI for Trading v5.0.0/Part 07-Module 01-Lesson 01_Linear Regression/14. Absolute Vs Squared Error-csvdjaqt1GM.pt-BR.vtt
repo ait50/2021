@@ -1,0 +1,42 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.308 --> 00:00:02.106
+Tenho uma pergunta:
+o que é melhor,
+
+00:00:02.139 --> 00:00:05.023
+o erro absoluto médio
+ou o erro quadrático médio?
+
+00:00:05.775 --> 00:00:07.126
+Não há resposta.
+
+00:00:07.159 --> 00:00:09.270
+Ambos são usados
+para objetivos diferentes.
+
+00:00:09.303 --> 00:00:12.158
+Mas há uma propriedade
+que diferencia os dois.
+
+00:00:12.191 --> 00:00:15.047
+Este é um conjunto de dados,
+e tentaremos abrangê-lo
+
+00:00:15.080 --> 00:00:17.686
+minimizando
+o erro absoluto médio.
+
+00:00:17.719 --> 00:00:22.854
+Digamos que temos a linha A,
+a linha B e a linha C.
+
+00:00:22.887 --> 00:00:27.972
+A pergunta é: qual dessas linhas
+fornece o menor erro absoluto médio?
+
+00:00:28.005 --> 00:00:29.684
+Digite sua reposta abaixo.
+

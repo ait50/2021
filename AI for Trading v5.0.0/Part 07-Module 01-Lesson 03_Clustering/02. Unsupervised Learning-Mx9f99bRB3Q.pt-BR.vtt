@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.240 --> 00:00:03.140
+Então, Katie, esta será uma unidade sobre aprendizagem não supervisionada.
+
+00:00:03.140 --> 00:00:07.060
+A aprendizagem não supervisionada é algo muito importante,
+
+00:00:07.060 --> 00:00:10.250
+porque na maioria das vezes, os dados que você obtém no mundo real não têm
+
+00:00:10.250 --> 00:00:13.210
+pequenos sinalizadores que digam a você qual é a resposta correta.
+
+00:00:13.210 --> 00:00:15.730
+Então, o que você faz como um aluno de máquina neste caso?
+
+00:00:15.730 --> 00:00:19.120
+Você usa técnicas não supervisionadas para ainda descobrir algo
+
+00:00:19.120 --> 00:00:20.620
+sobre esses dados.
+
+00:00:20.620 --> 00:00:22.310
+Ok. Vamos falar sobre elas.
+
+00:00:22.310 --> 00:00:27.930
+Considerando que um conjunto de dados sem rótulos sobre todos os pontos de dados são da mesma classe,
+
+00:00:27.930 --> 00:00:32.530
+algumas vezes, ainda há algo que se possa fazer para extrair informações úteis.
+
+00:00:32.530 --> 00:00:37.200
+Como este conjunto de dados aqui. Eu diria que este conjunto de dados é estruturado
+
+00:00:37.200 --> 00:00:41.190
+de modo a reconhecer um algoritmo de aprendizado de máquina.
+
+00:00:41.190 --> 00:00:44.480
+Aqui, parece que há conglomerados ou
+
+00:00:44.480 --> 00:00:46.060
+clusters nos dados.
+
+00:00:46.060 --> 00:00:50.560
+Se pudermos identificar esses conglomerados ou clusters, talvez possamos dizer algo
+
+00:00:50.560 --> 00:00:54.730
+sobre um novo ponto de dados desconhecido e qual pode ser a aparência de seus vizinhos.
+
+00:00:54.730 --> 00:00:56.710
+Este é um segundo exemplo de dados.
+
+00:00:56.710 --> 00:00:58.850
+Talvez os dados tenham esta aparência.
+
+00:00:58.850 --> 00:01:01.050
+Há algo que podemos dizer aqui também.
+
+00:01:01.050 --> 00:01:01.910
+Certo.
+
+00:01:01.910 --> 00:01:05.410
+Parece que todos os dados neste exemplo estão em uma espécie de linha ou assumem
+
+00:01:05.410 --> 00:01:08.960
+uma forma complicada que você está desenhando agora.
+
+00:01:08.960 --> 00:01:12.582
+Sim! E isso costumava ser um espaço bidimensional, com x e
+
+00:01:12.582 --> 00:01:13.710
+y aqui.
+
+00:01:13.710 --> 00:01:16.200
+Mas podemos reduzir um pouco disso em uma linha unidimensional.
+
+00:01:16.200 --> 00:01:17.580
+Como se chama isso?
+
+00:01:17.580 --> 00:01:19.830
+Isso normalmente é chamado de redução da dimensionalidade.
+
+00:01:19.830 --> 00:01:21.089
+Redução da dimensionalidade.
+
+00:01:21.089 --> 00:01:23.200
+Nós aprendemos um pouco sobre agrupamento.
+
+00:01:23.200 --> 00:01:25.830
+Agrupamento é o que vamos aprender nesta aula.
+
+00:01:25.830 --> 00:01:29.288
+E você pode ver aqui um exemplo de algo chamado aprendizagem
+
+00:01:29.288 --> 00:01:31.890
+não supervisionada de redução da dimensionalidade.
+
+00:01:31.890 --> 00:01:34.010
+Falaremos sobre isso em outra aula.
+
+00:01:34.010 --> 00:01:37.792
+Portanto, esse tipo de coisas em que encontramos estrutura nos dados sem rótulos
+
+00:01:37.792 --> 00:01:39.938
+é denominado aprendizagem não supervisionada.
+
+00:01:39.938 --> 00:01:42.350
+Agora, vamos mergulhar no
+
+00:01:42.350 --> 00:01:45.040
+mundo mágico da aprendizagem não supervisionada.
+
+00:01:45.040 --> 00:01:46.100
+Ótimo, vamos lá.
+

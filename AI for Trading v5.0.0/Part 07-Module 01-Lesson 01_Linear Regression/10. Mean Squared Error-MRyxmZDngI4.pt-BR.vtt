@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.238 --> 00:00:02.778
+Neste vídeo, aprenderemos
+o erro quadrático médio.
+
+00:00:02.811 --> 00:00:06.073
+O erro quadrático médio é similar
+ao erro absoluto médio.
+
+00:00:06.106 --> 00:00:08.965
+De novo, aqui temos um ponto
+e a nossa predição.
+
+00:00:08.998 --> 00:00:10.280
+Mas, em vez da distância,
+
+00:00:10.313 --> 00:00:12.928
+traçaremos um quadrado
+cujo lado será este segmento,
+
+00:00:12.961 --> 00:00:16.870
+então a área será
+precisamente (y-ŷ)².
+
+00:00:16.903 --> 00:00:18.264
+Isso é sempre não negativo,
+
+00:00:18.297 --> 00:00:21.062
+então não vamos nos preocupar
+com valores absolutos.
+
+00:00:21.095 --> 00:00:24.669
+E o erro quadrático médio será
+a média das séries de quadrados,
+
+00:00:24.702 --> 00:00:28.463
+e esse fator adicional de 1/2
+será conveniente mais adiante.
+
+00:00:28.496 --> 00:00:34.087
+Então a área é 1/2 vezes a média
+da soma de todos os (y-ŷ)².
+
+00:00:34.120 --> 00:00:37.038
+Podemos obter a soma e chamá-la
+de "erro quadrático total",
+
+00:00:37.071 --> 00:00:40.904
+mas obtemos a média,
+e isso não vai alterar o algoritmo.
+
+00:00:40.937 --> 00:00:44.057
+Note que, se o ponto estiver
+acima ou abaixo da linha,
+
+00:00:44.090 --> 00:00:46.520
+o quadrado sempre será
+um número não negativo,
+
+00:00:46.553 --> 00:00:50.610
+porque o quadrado de um número real
+sempre será não negativo.
+
+00:00:50.643 --> 00:00:52.564
+O fator 1/2 está aqui
+por conveniência,
+
+00:00:52.597 --> 00:00:55.595
+porque depois usaremos
+a derivada desse erro.
+
+00:00:55.628 --> 00:00:57.757
+Se multiplicarmos o erro
+por uma constante,
+
+00:00:57.790 --> 00:01:00.439
+o processo de minimizá-lo
+será exatamente o mesmo,
+
+00:01:00.472 --> 00:01:03.454
+então o fator 1/2
+não afetará nada.
+
+00:01:03.487 --> 00:01:05.757
+Esta é uma representação pictórica
+do erro.
+
+00:01:05.790 --> 00:01:08.145
+Aqui temos os pontos,
+a linha
+
+00:01:08.178 --> 00:01:12.290
+e o erro é a média das áreas
+de todos estes quadrados.
+
+00:01:12.323 --> 00:01:13.977
+E este é o gráfico do erro.
+
+00:01:14.010 --> 00:01:15.500
+Ao descermos esta montanha,
+
+00:01:15.533 --> 00:01:18.020
+chegamos ao local
+onde o erro é o menor possível,
+
+00:01:18.053 --> 00:01:22.665
+o que é a mesma coisa que minimizar
+a média das áreas dos quadrados.
+

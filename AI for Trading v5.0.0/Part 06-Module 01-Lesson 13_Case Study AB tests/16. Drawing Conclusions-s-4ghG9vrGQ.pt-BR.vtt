@@ -1,0 +1,83 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.936 --> 00:00:02.476
+Como fazemos uma recomendação
+
+00:00:02.698 --> 00:00:04.481
+quando três
+das nossas quatro métricas
+
+00:00:04.515 --> 00:00:05.968
+têm uma diferença
+significativa
+
+00:00:06.002 --> 00:00:08.246
+ao testar cada métrica
+individualmente,
+
+00:00:08.280 --> 00:00:10.086
+mas diferenças insignificantes
+
+00:00:10.120 --> 00:00:12.039
+quando usamos
+o Teste de Bonferroni?
+
+00:00:12.073 --> 00:00:14.726
+O método de Bonferroni
+é conservador
+
+00:00:15.175 --> 00:00:17.763
+e, como esperamos que as métricas
+sejam correlacionadas,
+
+00:00:17.797 --> 00:00:20.795
+isso seria melhor gerenciado
+por um método mais sofisticado,
+
+00:00:21.017 --> 00:00:23.593
+que idealmente leva
+essa correlação em consideração.
+
+00:00:23.992 --> 00:00:25.147
+Nas notas do instrutor,
+
+00:00:25.181 --> 00:00:27.260
+há uma lista de possíveis
+outros métodos
+
+00:00:27.294 --> 00:00:28.853
+que são menos conservadores.
+
+00:00:28.887 --> 00:00:31.097
+Se você escolher
+um desses métodos,
+
+00:00:31.131 --> 00:00:33.504
+deve garantir
+que as suposições dele
+
+00:00:33.735 --> 00:00:35.815
+realmente sejam atendidas
+no seu cenário.
+
+00:00:36.191 --> 00:00:37.962
+Escolher um teste
+pouco adequado
+
+00:00:37.996 --> 00:00:40.754
+que simplesmente fornece
+os resultados que você quer
+
+00:00:40.976 --> 00:00:42.825
+não é apenas má prática,
+
+00:00:43.079 --> 00:00:45.634
+mas provavelmente levará
+a decisões equivocadas
+
+00:00:45.668 --> 00:00:48.104
+que prejudicam o desempenho
+da sua empresa a longo prazo.
+

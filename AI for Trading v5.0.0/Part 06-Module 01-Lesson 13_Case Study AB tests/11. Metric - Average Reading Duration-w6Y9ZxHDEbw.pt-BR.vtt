@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.502 --> 00:00:02.518
+Além de computar
+a taxa de matrícula,
+
+00:00:02.815 --> 00:00:05.474
+também podemos calcular
+as médias das durações de leitura
+
+00:00:05.508 --> 00:00:06.603
+com este conjunto de dados.
+
+00:00:06.637 --> 00:00:09.887
+Até agora, as duas análises
+comparavam as proporções.
+
+00:00:09.921 --> 00:00:13.580
+Com essa métrica, estaremos
+analisando a diferença das médias.
+
+00:00:13.916 --> 00:00:16.069
+Esta análise será
+bastante semelhante.
+
+00:00:16.855 --> 00:00:18.875
+Já que estamos comparando
+durações de leitura,
+
+00:00:18.909 --> 00:00:21.192
+vamos só nos preocupar
+com a ação de visualização.
+
+00:00:21.226 --> 00:00:23.429
+Então vamos filtrar por isso
+primeiro.
+
+00:00:24.028 --> 00:00:27.232
+E vamos apenas contar
+cada usuário distinto uma vez
+
+00:00:27.266 --> 00:00:29.464
+ao encontrar a média
+da duração da leitura
+
+00:00:29.728 --> 00:00:32.209
+se eles visitaram
+o site mais de uma vez.
+
+00:00:32.243 --> 00:00:33.980
+Bem, também grupo por grupo,
+
+00:00:34.014 --> 00:00:36.494
+apenas para acompanhar
+essa informação.
+
+00:00:37.955 --> 00:00:39.226
+Isso não é necessário,
+
+00:00:39.260 --> 00:00:42.724
+mas redefinir o índice é legal
+apenas para manter a ID
+
+00:00:42.758 --> 00:00:44.831
+e o grupo
+como nomes de colunas.
+
+00:00:44.865 --> 00:00:47.538
+E também nos permite continuar
+trabalhando na estrutura de dados
+
+00:00:47.572 --> 00:00:49.673
+em vez de em uma série
+de vários índices.
+
+00:00:51.221 --> 00:00:54.162
+Agora podemos encontrar
+a média das durações de leitura
+
+00:00:54.196 --> 00:00:55.805
+para cada grupo como este.
+
+00:00:56.636 --> 00:00:57.747
+Na média,
+
+00:00:57.781 --> 00:00:59.775
+parece que os usuários
+do grupo de experimento
+
+00:00:59.809 --> 00:01:03.278
+passaram 15 segundos a mais
+na página de visão geral do curso
+
+00:01:03.524 --> 00:01:05.311
+do que aqueles
+do grupo de controle.
+
+00:01:05.918 --> 00:01:07.931
+Para ver se essa diferença
+é significativa,
+
+00:01:07.965 --> 00:01:09.985
+vamos simular
+a distribuição da amostragem
+
+00:01:10.019 --> 00:01:12.252
+para a diferença na média
+das durações de leitura
+
+00:01:12.286 --> 00:01:13.688
+com inicialização.
+
+00:01:14.944 --> 00:01:17.093
+Aqui temos o aspecto
+da distribuição de amostragem.
+
+00:01:18.165 --> 00:01:20.003
+Para encontrar o valor P,
+
+00:01:20.037 --> 00:01:22.323
+vamos simular a distribuição
+sob a nula
+
+00:01:22.357 --> 00:01:25.156
+e encontrar a probabilidade
+de que a estatística observada
+
+00:01:25.190 --> 00:01:26.667
+tenha vindo
+dessa distribuição.
+
+00:01:26.701 --> 00:01:29.079
+Criaremos a distribuição
+centrada em zero,
+
+00:01:29.574 --> 00:01:32.773
+e ela terá a mesma propagação
+que a distribuição de amostragem.
+
+00:01:34.011 --> 00:01:35.629
+Aqui está a distribuição nula.
+
+00:01:36.558 --> 00:01:39.096
+Foi aqui onde observei
+a queda estatística.
+
+00:01:40.088 --> 00:01:41.471
+Nossa estatística
+definitivamente
+
+00:01:41.505 --> 00:01:43.778
+não parece vir
+dessa distribuição nula.
+
+00:01:43.812 --> 00:01:46.637
+Parece que a diferença
+que observamos é significativa.
+

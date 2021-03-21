@@ -1,0 +1,514 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Multiple Linear Regression
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Linear Regression
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Quiz Housing Prices.html">
+       02. Quiz: Housing Prices
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Solution Housing Prices.html">
+       03. Solution: Housing Prices
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Fitting a Line Through Data.html">
+       04. Fitting a Line Through Data
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Moving a Line.html">
+       05. Moving a Line
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Absolute Trick.html">
+       06. Absolute Trick
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Square Trick.html">
+       07. Square Trick
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Gradient Descent.html">
+       08. Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Mean Absolute Error.html">
+       09. Mean Absolute Error
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Mean Squared Error.html">
+       10. Mean Squared Error
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Minimizing Error Functions.html">
+       11. Minimizing Error Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Mean vs Total Error.html">
+       12. Mean vs Total Error
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Mini-batch Gradient Descent.html">
+       13. Mini-batch Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Absolute Error vs Squared Error.html">
+       14. Absolute Error vs Squared Error
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Linear Regression in scikit-learn.html">
+       15. Linear Regression in scikit-learn
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Higher Dimensions.html">
+       16. Higher Dimensions
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Multiple Linear Regression.html">
+       17. Multiple Linear Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Closed Form Solution.html">
+       18. Closed Form Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="19. (Optional) Closed form Solution Math.html">
+       19. (Optional) Closed form Solution Math
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Linear Regression Warnings.html">
+       20. Linear Regression Warnings
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Polynomial Regression.html">
+       21. Polynomial Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Regularization.html">
+       22. Regularization
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Outro.html">
+       23. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          17. Multiple Linear Regression
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="multiple-linear-regression">
+          Multiple Linear Regression
+         </h1>
+         <p>
+          In the last section, you saw how we can predict life expectancy using BMI. Here, BMI was the
+          <strong>
+           predictor
+          </strong>
+          , also known as an independent variable. A predictor is a variable you're looking at in order to make predictions about other variables, while the values you are trying to predict are known as dependent variables. In this case, life expectancy was the dependent variable.
+         </p>
+         <p>
+          Now, let’s say we get new data on each person’s heart rate as well. Can we create a prediction of life expectancy using both BMI and heart rate?
+         </p>
+         <p>
+          Absolutely! As we saw in the previous video, we can do that using multiple linear regression.
+         </p>
+         <p>
+          If the outcome you want to predict depends on more than one variable, you can make a more complicated model that takes this into account. As long as they're relevant to the situation, using more independent/predictor variables can help you get a better prediction.
+         </p>
+         <p>
+          When there's just one predictor, the linear regression model is a line, but as you add more predictor variables, you're adding more dimensions to the picture.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          When you have one predictor variable, the equation of the line is
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           y = m x + b
+          </span>
+         </p>
+         <p>
+          and the plot might look something like this:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Linear regression with one predictor variable" class="img img-fluid" src="img/just-a-simple-lin-reg.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Linear regression with one predictor variable
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Adding a predictor variable to go to two predictor variables means that the predicting equation is:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           y = m_1 x_1 + m_2 x_2 + b
+          </span>
+         </p>
+         <p>
+          To represent this graphically, we'll need a three-dimensional plot, with the linear regression model represented as a plane:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Linear regression with two predictor variables" class="img img-fluid" src="img/just-a-2d-reg.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Linear regression with two predictor variables
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          You can use more than two predictor variables - in fact, you should use as many as is useful! If you use
+          <span class="mathquill ud-math">
+           n
+          </span>
+          predictor variables, then the model can be represented by the equation
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           y = m_{1} x_{1} + m_{2} x_{2} + m_{3} x_{3}+ … +m_{n} x_{n} + b
+          </span>
+         </p>
+         <p>
+          As you make a model with more predictor variables, it becomes harder to visualise, but luckily, everything else about linear regression stays the same. We can still fit models and make predictions in exactly the same way - time to try it!
+         </p>
+         <h1 id="programming-quiz-multiple-linear-regression">
+          Programming Quiz: Multiple Linear Regression
+         </h1>
+         <p>
+          In this quiz, you'll be using the
+          <a href="https://archive.ics.uci.edu/ml/machine-learning-databases/housing/" rel="noopener noreferrer" target="_blank">
+           Boston house-prices dataset
+          </a>
+          .  The dataset consists of 13 features of 506 houses and the median home value in $1000's.  You'll fit a model on the 13 features to predict the value of the houses.
+         </p>
+         <p>
+          You'll need to complete each of the following steps:
+         </p>
+         <p>
+          <strong>
+           1. Build a linear regression model
+          </strong>
+         </p>
+         <ul>
+          <li>
+           Create a regression model using scikit-learn's
+           <a href="http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             LinearRegression
+            </code>
+           </a>
+           and assign it to
+           <code>
+            model
+           </code>
+           .
+          </li>
+          <li>
+           Fit the model to the data.
+          </li>
+         </ul>
+         <p>
+          <strong>
+           2. Predict using the model
+          </strong>
+         </p>
+         <ul>
+          <li>
+           Predict the value of
+           <code>
+            sample_house
+           </code>
+           .
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="464518-quiz-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#464518-quiz-py" id="tab-464518-quiz-py" role="tab">
+            quiz.py
+           </a>
+           <a aria-controls="464518-solution-py" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#464518-solution-py" id="tab-464518-solution-py" role="tab">
+            solution.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-464518-quiz-py" class="tab-pane active show" id="464518-quiz-py" role="tabpanel">
+            <pre><code></code>from sklearn.linear_model import LinearRegression
+from sklearn.datasets import load_boston
+
+# Load the data from the boston house-prices dataset 
+boston_data = load_boston()
+x = boston_data['data']
+y = boston_data['target']
+
+# Make and fit the linear regression model
+# TODO: Fit the model and assign it to the model variable
+model = None
+
+# Make a prediction using the model
+sample_house = [[2.29690000e-01, 0.00000000e+00, 1.05900000e+01, 0.00000000e+00, 4.89000000e-01,
+                6.32600000e+00, 5.25000000e+01, 4.35490000e+00, 4.00000000e+00, 2.77000000e+02,
+                1.86000000e+01, 3.94870000e+02, 1.09700000e+01]]
+# TODO: Predict housing price for the sample_house
+prediction = None</pre>
+           </div>
+           <div aria-labelledby="tab-464518-solution-py" class="tab-pane" id="464518-solution-py" role="tabpanel">
+            <pre><code></code>from sklearn.linear_model import LinearRegression
+from sklearn.datasets import load_boston
+
+# Load the data from the boston house-prices dataset 
+boston_data = load_boston()
+x = boston_data['data']
+y = boston_data['target']
+
+# Make and fit the linear regression model
+# TODO: Fit the model and Assign it to the model variable
+model = LinearRegression()
+model.fit(x, y)
+
+# Make a prediction using the model
+sample_house = [[2.29690000e-01, 0.00000000e+00, 1.05900000e+01, 0.00000000e+00, 4.89000000e-01,
+                6.32600000e+00, 5.25000000e+01, 4.35490000e+00, 4.00000000e+00, 2.77000000e+02,
+                1.86000000e+01, 3.94870000e+02, 1.09700000e+01]]
+# TODO: Predict housing price for the sample_house
+prediction = model.predict(sample_house)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="18. Closed Form Solution.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('17. Multiple Linear Regression')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

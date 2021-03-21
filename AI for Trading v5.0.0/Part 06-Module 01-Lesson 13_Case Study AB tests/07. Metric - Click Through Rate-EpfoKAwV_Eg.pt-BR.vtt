@@ -1,0 +1,208 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.317 --> 00:00:01.739
+Como você viu na última seção,
+
+00:00:01.773 --> 00:00:04.653
+este conjunto de dados inclui
+ações de visualização e clique
+
+00:00:04.687 --> 00:00:06.835
+na página inicial
+do site da Audacity,
+
+00:00:06.869 --> 00:00:08.078
+dos usuários que viram
+
+00:00:08.112 --> 00:00:11.342
+as versões de controle
+e experimental do teste A/B.
+
+00:00:11.828 --> 00:00:14.048
+Nossa tarefa
+é analisar essas ações
+
+00:00:14.082 --> 00:00:16.730
+para ver se houve uma diferença
+significativa no desempenho
+
+00:00:16.764 --> 00:00:17.994
+para as duas versões.
+
+00:00:18.028 --> 00:00:19.258
+Para fazer isso,
+
+00:00:19.292 --> 00:00:22.110
+primeiro vamos calcular
+a taxa de cliques para cada grupo.
+
+00:00:22.144 --> 00:00:23.920
+Vamos começar
+com o grupo de controle.
+
+00:00:24.464 --> 00:00:27.805
+Podemos extrair todas as ações
+do grupo de controle assim.
+
+00:00:28.777 --> 00:00:30.689
+Agora,
+para calcular a taxa de cliques,
+
+00:00:30.723 --> 00:00:32.631
+dividiremos o número
+de usuários distintos
+
+00:00:32.665 --> 00:00:35.103
+que realmente clicam
+no botão "Explorar Cursos"
+
+00:00:35.137 --> 00:00:36.690
+pelo número total
+de usuários distintos
+
+00:00:36.724 --> 00:00:38.081
+que visualizaram a página.
+
+00:00:38.478 --> 00:00:41.477
+Isso nos dá uma taxa de cliques
+de cerca de 28%.
+
+00:00:42.178 --> 00:00:44.386
+Vamos fazer o mesmo
+para o grupo de experimento.
+
+00:00:45.132 --> 00:00:47.719
+Novamente, vamos pegar
+todas as ações de clique,
+
+00:00:47.753 --> 00:00:50.672
+pegar o número de usuários distintos
+e dividir esse número
+
+00:00:50.706 --> 00:00:53.704
+pelo número de usuários distintos
+que visualizaram a página.
+
+00:00:54.661 --> 00:00:57.551
+Isso nos dá uma taxa de cliques
+de cerca de 31%.
+
+00:00:58.558 --> 00:00:59.657
+Nesta amostra,
+
+00:00:59.691 --> 00:01:01.261
+a taxa de clique
+do grupo de experimento
+
+00:01:01.295 --> 00:01:04.793
+foi maior do que a taxa de clique
+do grupo controle em cerca de 3%.
+
+00:01:05.514 --> 00:01:07.944
+Agora que sabemos a diferença
+observada nessa amostra,
+
+00:01:07.978 --> 00:01:10.203
+temos que ver se a diferença
+é significativa,
+
+00:01:10.237 --> 00:01:11.855
+não apenas devido ao acaso.
+
+00:01:11.889 --> 00:01:14.034
+Vamos inicializar a amostra
+para simular
+
+00:01:14.068 --> 00:01:16.719
+a distribuição da amostragem
+para a diferença de proporções.
+
+00:01:17.603 --> 00:01:19.931
+Vamos dar uma olhada
+na distribuição de amostragem.
+
+00:01:20.825 --> 00:01:22.580
+Se você lembra
+da lição anterior,
+
+00:01:22.614 --> 00:01:24.887
+podemos calcular o valor P
+para a nossa estatística,
+
+00:01:24.921 --> 00:01:27.000
+que é a diferença observada
+nas proporções,
+
+00:01:27.240 --> 00:01:30.210
+ao simular a distribuição
+sob a hipótese nula
+
+00:01:30.669 --> 00:01:33.108
+e, então, encontrar a probabilidade
+de que a estatística
+
+00:01:33.142 --> 00:01:35.113
+veio dessa distribuição.
+
+00:01:35.147 --> 00:01:36.551
+Para simular a partir da nula,
+
+00:01:36.585 --> 00:01:39.223
+criaremos uma distribuição normal
+centrada em zero,
+
+00:01:39.257 --> 00:01:42.670
+com o mesmo desvio padrão
+da distribuição de amostragem
+
+00:01:42.704 --> 00:01:44.111
+que simulamos aqui.
+
+00:01:44.760 --> 00:01:46.549
+Podemos ver
+a distribuição nula aqui.
+
+00:01:47.137 --> 00:01:49.811
+E é aqui onde
+a estatística observada cai.
+
+00:01:51.167 --> 00:01:53.011
+Não podemos encontrar
+um valor P como este,
+
+00:01:53.936 --> 00:01:56.997
+pois são todos os valores nulos
+que são mais extremos
+
+00:01:57.031 --> 00:01:59.579
+do que a estatística
+a favor da alternativa.
+
+00:02:00.284 --> 00:02:03.120
+Com um valor P de aproximadamente
+metade da porcentagem,
+
+00:02:03.561 --> 00:02:05.164
+a diferença
+nas taxas de clique
+
+00:02:05.198 --> 00:02:06.876
+para os grupos de controle
+e experimento
+
+00:02:06.910 --> 00:02:08.594
+parece ser significativa.
+
+00:02:08.628 --> 00:02:10.518
+Podemos rejeitar
+a hipótese nula
+
+00:02:10.830 --> 00:02:12.177
+e, com base nesses resultados,
+
+00:02:12.211 --> 00:02:15.493
+parece que a Audacity deve lançar
+a nova versão da página inicial.
+

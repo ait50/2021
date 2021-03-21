@@ -1,0 +1,38 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.088 --> 00:00:03.118
+Olá, bem-vindo
+à seção sobre Naive Bayes,
+
+00:00:03.151 --> 00:00:05.294
+que é um algoritmo
+mais probabilístico
+
+00:00:05.327 --> 00:00:08.814
+que se baseia no conceito
+de probabilidade condicional.
+
+00:00:08.847 --> 00:00:11.645
+Esse algoritmo é fácil
+de ser implementado
+
+00:00:11.678 --> 00:00:13.253
+e rápido de ser treinado.
+
+00:00:13.286 --> 00:00:15.781
+Veremos uma das aplicações
+mais interessantes,
+
+00:00:15.814 --> 00:00:17.749
+o processamento
+da linguagem natural.
+
+00:00:17.782 --> 00:00:20.355
+Nas aulas e no laboratório,
+analisaremos texto,
+
+00:00:20.388 --> 00:00:21.963
+e-mails e discursos.
+

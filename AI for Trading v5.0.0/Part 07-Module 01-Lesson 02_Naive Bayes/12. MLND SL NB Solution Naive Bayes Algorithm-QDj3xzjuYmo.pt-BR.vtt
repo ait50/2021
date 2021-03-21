@@ -1,0 +1,92 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.436 --> 00:00:04.779
+Para fazer isso, dividimos cada um
+pela soma de ambos.
+
+00:00:04.812 --> 00:00:07.395
+Isso fará
+com que eles adicionem a 1.
+
+00:00:07.428 --> 00:00:08.700
+Para o primeiro,
+
+00:00:08.733 --> 00:00:13.043
+temos 1/12 dividido
+por 1/12 + 1/40,
+
+00:00:13.076 --> 00:00:15.884
+que é 10 dividido por 13.
+
+00:00:15.917 --> 00:00:20.516
+E, para o segundo, temos 1/40
+dividido por 1/12 + 1/40,
+
+00:00:20.549 --> 00:00:24.483
+que é 3/13. Prontinho.
+
+00:00:24.516 --> 00:00:28.419
+As respostas são 10/13 para Spam
+e 3/13 para Ham.
+
+00:00:28.452 --> 00:00:30.144
+Para este e-mail em especial,
+
+00:00:30.177 --> 00:00:32.996
+concluímos que é provável
+que ele seja Spam.
+
+00:00:33.725 --> 00:00:35.163
+O que acontece em geral?
+
+00:00:35.196 --> 00:00:37.571
+Podemos usar várias palavras
+como recursos
+
+00:00:37.604 --> 00:00:39.892
+para saber se o e-mail
+é Spam ou não -
+
+00:00:39.925 --> 00:00:42.331
+"easy", "money", "cheap" etc.
+
+00:00:42.364 --> 00:00:46.007
+O primeiro passo é mudar
+o evento e o condicional
+
+00:00:46.040 --> 00:00:47.706
+para conseguir isto,
+
+00:00:47.739 --> 00:00:49.404
+depois fazer
+a suposição ingênua
+
+00:00:49.437 --> 00:00:51.939
+de dividir isso
+em um produto de fatores simples
+
+00:00:51.972 --> 00:00:55.360
+que podemos calcular rapidamente
+observando os dados,
+
+00:00:55.393 --> 00:00:57.463
+isso tanto para Spam
+quanto para Ham,
+
+00:00:57.496 --> 00:00:59.935
+para obtermos os valores
+não adicionados a um.
+
+00:00:59.968 --> 00:01:01.671
+Agora normalizamos
+
+00:01:01.704 --> 00:01:05.846
+para obter as probabilidades finais
+de o e-mail ser Spam ou Ham.
+
+00:01:05.879 --> 00:01:09.048
+É isso. É assim que o algoritmo
+Naive Bayes funciona.
+

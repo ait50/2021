@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.320 --> 00:00:05.510
+Em k-means, você desenha centros do cluster aleatoriamente.
+
+00:00:05.510 --> 00:00:08.600
+Digamos que nosso palpite inicial seja aqui e aqui.
+
+00:00:08.600 --> 00:00:10.270
+Obviamente, estes não são os centros do cluster corretos.
+
+00:00:10.270 --> 00:00:11.300
+Você ainda não terminou.
+
+00:00:11.300 --> 00:00:13.970
+Mas k-means agora opera em duas etapas.
+
+00:00:13.970 --> 00:00:18.640
+A primeira é atribuir e a segunda é otimizar.
+
+00:00:18.640 --> 00:00:20.340
+Vamos falar sobre a atribuição.
+
+00:00:20.340 --> 00:00:25.010
+Para classes, no número um, quero clicar exatamente
+
+00:00:25.010 --> 00:00:30.030
+nas de ponto vermelho que você acredita estar mais próximas do centro um que do dois.
+

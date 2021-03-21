@@ -1,0 +1,198 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.431 --> 00:00:04.371
+Eis outro método para nos ajudar
+a aproximar um ponto de uma reta.
+
+00:00:04.404 --> 00:00:06.540
+É muito similar
+ao método absoluto,
+
+00:00:06.573 --> 00:00:08.408
+mas tem mais detalhes.
+
+00:00:08.441 --> 00:00:09.843
+É baseado nesta premissa:
+
+00:00:09.876 --> 00:00:12.312
+se temos um ponto próximo
+a uma reta,
+
+00:00:12.345 --> 00:00:16.216
+então a distância é pequena,
+e vamos mover a reta bem pouco.
+
+00:00:16.249 --> 00:00:18.451
+Mas se o ponto está
+longe da reta,
+
+00:00:18.485 --> 00:00:20.987
+queremos mover
+a reta bem mais.
+
+00:00:21.021 --> 00:00:24.257
+O método absoluto que aprendemos
+não tem esta propriedade,
+
+00:00:24.291 --> 00:00:28.461
+porque o método absoluto
+adiciona alfa à interseção de y w2,
+
+00:00:28.495 --> 00:00:31.231
+e p vezes alfa
+à inclinação w1.
+
+00:00:31.264 --> 00:00:32.566
+Isto não tem nada a ver
+
+00:00:32.599 --> 00:00:34.501
+com a distância
+do ponto para a reta,
+
+00:00:34.534 --> 00:00:38.071
+já que p é
+só uma distância horizontal.
+
+00:00:38.104 --> 00:00:41.174
+Vamos adicionar a distância vertical
+a esta fórmula.
+
+00:00:41.208 --> 00:00:44.845
+Vejamos a distância vertical
+entre o ponto e a reta.
+
+00:00:44.878 --> 00:00:48.748
+O ponto sobre a reta tem
+coordenadas, digamos, (p,q').
+
+00:00:48.782 --> 00:00:53.553
+A distância é (q-q'),
+porque "q'" é o valor na reta
+
+00:00:53.587 --> 00:00:56.356
+e "q" é o valor da coordenada
+no ponto.
+
+00:00:56.389 --> 00:00:58.158
+O que fazemos aqui é
+bem simples.
+
+00:00:58.191 --> 00:01:02.495
+Pegamos (q-q') e multiplicamos
+no que estamos adicionando
+
+00:01:02.529 --> 00:01:04.698
+para a interseção
+de y e a inclinação.
+
+00:01:04.731 --> 00:01:08.535
+Isto faz a reta subir um pouco
+e se mover nesta direção.
+
+00:01:08.568 --> 00:01:12.138
+Mas agora, se o ponto
+está longe ou perto da reta,
+
+00:01:12.172 --> 00:01:14.474
+isto afeta
+o quanto a reta se move.
+
+00:01:14.508 --> 00:01:18.178
+E aqui está a nova equação
+com um fator (q-q').
+
+00:01:18.211 --> 00:01:20.514
+Note que aqui conseguimos algo
+de graça.
+
+00:01:20.547 --> 00:01:23.683
+Se o ponto está sob a reta
+em vez de sobre a reta,
+
+00:01:23.717 --> 00:01:26.253
+então (q-q') é um valor
+negativo.
+
+00:01:26.286 --> 00:01:29.756
+Se este é o caso,
+subtraímos algo da inclinação,
+
+00:01:29.789 --> 00:01:32.592
+portanto girando a reta
+nesta direção,
+
+00:01:32.626 --> 00:01:34.027
+ainda na direção do ponto.
+
+00:01:34.060 --> 00:01:37.264
+Este método também cuida
+de pontos que estão sob a reta,
+
+00:01:37.297 --> 00:01:40.300
+e não precisamos de duas regras
+como no método absoluto.
+
+00:01:40.333 --> 00:01:42.702
+Só temos uma regra para ambos.
+
+00:01:42.736 --> 00:01:45.205
+Vamos esclarecer
+com um exemplo.
+
+00:01:45.238 --> 00:01:48.308
+Neste exemplo aqui,
+temos o ponto (5, 15).
+
+00:01:48.341 --> 00:01:50.877
+Note que esta distância
+será 2,
+
+00:01:50.911 --> 00:01:53.688
+porque a reta vai por (5, 13),
+
+00:01:53.721 --> 00:01:57.384
+pois 5x2+3 é 13.
+
+00:01:57.417 --> 00:01:58.852
+Para mudar um pouco isto,
+
+00:01:58.885 --> 00:02:01.421
+usaremos 0,01
+como a taxa de aprendizado.
+
+00:02:01.454 --> 00:02:05.292
+Então o método absoluto
+vai adicionar 0,01 à interseção de y
+
+00:02:05.325 --> 00:02:07.527
+e 0,05 à inclinação.
+
+00:02:07.561 --> 00:02:10.997
+Mas com o novo método,
+multiplicamos os dois números
+
+00:02:11.031 --> 00:02:14.134
+que adicionamos à inclinação
+e à interseção de y por 2.
+
+00:02:14.167 --> 00:02:17.637
+O que significa adicionar 0,1
+à inclinação
+
+00:02:17.671 --> 00:02:20.674
+e 0,02 à interseção de y.
+
+00:02:20.707 --> 00:02:26.413
+Então a equação da nova reta
+é y=(2,1)x+(3,02).
+
+00:02:26.446 --> 00:02:29.649
+Note que a reta vai estar
+mais próxima do ponto.
+
+00:02:29.683 --> 00:02:32.152
+Este é o método
+dos mínimos quadrados.
+

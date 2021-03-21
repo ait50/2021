@@ -1,0 +1,531 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.403 --> 00:00:04.546
+O próximo conceito pode ser aplicado
+à regressão e à classificação.
+
+00:00:04.579 --> 00:00:07.788
+Aqui, eu o explicarei
+usando um problema de classificação.
+
+00:00:07.821 --> 00:00:09.991
+Mas, como você verá,
+todos os argumentos
+
+00:00:10.024 --> 00:00:12.301
+também servem
+para os algoritmos de regressão.
+
+00:00:12.334 --> 00:00:14.089
+O conceito se chama
+"regularização".
+
+00:00:14.122 --> 00:00:16.233
+É uma técnica útil
+para melhorar os modelos
+
+00:00:16.282 --> 00:00:18.355
+e garantir que eles não gerem
+sobreajuste.
+
+00:00:18.388 --> 00:00:20.897
+Vamos ver alguns dados.
+Aqui estão.
+
+00:00:20.930 --> 00:00:22.558
+Vamos fazer duas cópias deles
+
+00:00:22.591 --> 00:00:24.964
+e olhar para dois modelos
+que os classificam.
+
+00:00:24.997 --> 00:00:26.200
+O 1º é uma linha,
+
+00:00:26.233 --> 00:00:29.442
+e o 2º é uma curva polinomial
+de grau superior.
+
+00:00:29.475 --> 00:00:31.452
+A pergunta é: qual é melhor?
+
+00:00:31.485 --> 00:00:34.081
+Ambos têm prós e contras,
+certo?
+
+00:00:34.114 --> 00:00:36.159
+O modelo da esquerda comete
+alguns erros.
+
+00:00:36.192 --> 00:00:39.884
+Podemos ver que há um ponto vermelho
+e um ponto azul no lado errado,
+
+00:00:39.917 --> 00:00:41.253
+mas é bem mais simples.
+
+00:00:41.286 --> 00:00:45.006
+E o modelo da direita não comete
+nenhum erro, mas é mais complicado.
+
+00:00:45.039 --> 00:00:46.496
+Então usaremos o da esquerda,
+
+00:00:46.529 --> 00:00:49.994
+pois o da direita gera sobreajuste
+e não generaliza bem.
+
+00:00:50.027 --> 00:00:52.489
+O problema é que,
+quando treinarmos o modelo,
+
+00:00:52.522 --> 00:00:56.016
+o modelo da direita parecerá
+mais plausível pela razão a seguir.
+
+00:00:56.049 --> 00:00:59.847
+Quando treinamos o modelo,
+ele pega um erro e o minimiza.
+
+00:00:59.880 --> 00:01:02.253
+Então o modelo da esquerda
+tem um erro pequeno,
+
+00:01:02.286 --> 00:01:04.338
+pois classifica erroneamente
+só 2 pontos,
+
+00:01:04.371 --> 00:01:06.610
+o que não deixa de ser
+um erro.
+
+00:01:06.643 --> 00:01:08.557
+O modelo da direita
+tem um erro mínimo,
+
+00:01:08.590 --> 00:01:11.490
+já que não classifica erroneamente
+nenhum ponto.
+
+00:01:11.523 --> 00:01:13.381
+Se o modelo
+conseguir minimizar erros,
+
+00:01:13.414 --> 00:01:16.795
+criará uma linha como a da direita,
+e não da esquerda.
+
+00:01:16.828 --> 00:01:19.851
+A pergunta é: como escolhemos
+a linha da esquerda?
+
+00:01:19.884 --> 00:01:21.040
+Aqui vai uma ideia.
+
+00:01:21.073 --> 00:01:23.964
+Vamos supor que a equação
+da linha da esquerda
+
+00:01:23.997 --> 00:01:28.153
+seja 3x1+4x2+5=0.
+
+00:01:28.186 --> 00:01:30.931
+A equação do polinômio
+será mais complexa,
+
+00:01:30.964 --> 00:01:35.989
+com termos de grau superior,
+como x1², x1x2, x2³ etc.
+
+00:01:36.022 --> 00:01:40.054
+A equação da esquerda
+é bem mais simples que a da direita.
+
+00:01:40.087 --> 00:01:43.859
+Tem menos coeficientes,
+que são 3, 4 e 5,
+
+00:01:43.892 --> 00:01:46.700
+enquanto a da direita
+tem muito mais.
+
+00:01:46.733 --> 00:01:50.322
+Se pudéssemos incrementar o erro
+por uma função desses números,
+
+00:01:50.355 --> 00:01:52.766
+seria muito útil,
+porque, de certo modo,
+
+00:01:52.799 --> 00:01:56.092
+a complexidade do modelo
+seria incorporada ao erro.
+
+00:01:56.125 --> 00:01:59.993
+Um modelo complexo tem um erro maior
+do que um modelo simples.
+
+00:02:00.026 --> 00:02:02.340
+Vamos fazer isso.
+Mostrarei os detalhes depois,
+
+00:02:02.373 --> 00:02:05.111
+mas a ideia é pegar
+este 3 e este 4.
+
+00:02:05.144 --> 00:02:08.811
+Vamos esquecer o termo constante,
+mas há uma explicação para isso.
+
+00:02:08.844 --> 00:02:11.617
+Se pegarmos o 3 e o 4
+e adicionarmos ao erro,
+
+00:02:11.650 --> 00:02:13.728
+teremos um erro
+ligeiramente maior.
+
+00:02:13.761 --> 00:02:17.064
+E se pegarmos estes coeficientes
+e adicionarmos a este erro?
+
+00:02:17.097 --> 00:02:18.487
+Temos um erro enorme.
+
+00:02:18.757 --> 00:02:21.204
+Agora vemos que o modelo da esquerda
+é melhor,
+
+00:02:21.237 --> 00:02:23.287
+porque tem um erro total
+menor.
+
+00:02:23.320 --> 00:02:26.812
+Nós levamos em consideração
+a complexidade do modelo
+
+00:02:26.845 --> 00:02:28.430
+quando calculamos o erro.
+
+00:02:28.463 --> 00:02:32.733
+Nesse sentido, o modelo mais simples
+é vantajoso em relação ao complexo.
+
+00:02:32.766 --> 00:02:35.358
+O modelo mais simples é melhor
+na generalização,
+
+00:02:35.391 --> 00:02:37.238
+e isso é o que queremos.
+
+00:02:37.271 --> 00:02:40.738
+Agora mostrarei melhor
+como pegar a complexidade do modelo
+
+00:02:40.771 --> 00:02:42.830
+e transformá-la
+em parte do erro.
+
+00:02:42.863 --> 00:02:46.053
+Resumindo, pegaremos
+estes coeficientes em destaque
+
+00:02:46.086 --> 00:02:48.334
+e, de algum modo,
+vamos adicioná-los ao erro.
+
+00:02:48.367 --> 00:02:51.390
+Este método se chama
+"regularização L1" e é bem simples.
+
+00:02:51.423 --> 00:02:52.964
+Veja como funciona.
+
+00:02:52.997 --> 00:02:55.774
+A regularização L1 pega
+o coeficiente
+
+00:02:55.807 --> 00:02:58.970
+e adiciona seus valores absolutos
+ao erro.
+
+00:02:59.003 --> 00:03:02.494
+Neste caso, adicionamos
+o valor absoluto de 2, que é 2,
+
+00:03:02.527 --> 00:03:05.649
+ao valor absoluto de -2,
+que também é 2, e assim por diante,
+
+00:03:05.682 --> 00:03:07.869
+e essa soma resulta em 21.
+
+00:03:07.902 --> 00:03:09.248
+No caso linear,
+
+00:03:09.281 --> 00:03:13.326
+vemos que adicionamos
+o valor absoluto de 3 e 4, que é 7.
+
+00:03:13.359 --> 00:03:15.236
+Como 7 é bem menor que 21,
+
+00:03:15.269 --> 00:03:19.035
+vemos que o modelo complexo
+fornece um erro muito maior.
+
+00:03:19.068 --> 00:03:20.587
+Isso é a regularização L1,
+
+00:03:20.620 --> 00:03:23.535
+e o 1 está vinculado
+ao valor absoluto.
+
+00:03:23.568 --> 00:03:25.151
+A regularização L2 é similar.
+
+00:03:25.184 --> 00:03:28.243
+Em vez de adicionar
+os valores absolutos,
+
+00:03:28.276 --> 00:03:30.871
+adicionamos
+o quadrado dos coeficientes.
+
+00:03:30.904 --> 00:03:35.131
+Então, no caso complexo,
+temos 2²+(-2)² e assim por diante,
+
+00:03:35.164 --> 00:03:36.857
+o que resulta em 85.
+
+00:03:36.890 --> 00:03:40.881
+No caso linear, temos 3²+4²,
+que é igual a 25,
+
+00:03:40.914 --> 00:03:43.179
+o que é bem menor do que 85.
+
+00:03:43.212 --> 00:03:47.109
+Então o modelo complexo é
+mais punido do que o modelo simples.
+
+00:03:47.142 --> 00:03:48.480
+Mas agora a pergunta é:
+
+00:03:48.513 --> 00:03:51.115
+e se punirmos o modelo complexo
+de modo insuficiente
+
+00:03:51.148 --> 00:03:53.137
+ou de modo excessivo?
+
+00:03:53.170 --> 00:03:55.893
+Alguns modelos, como
+o de um lançador de foguetes à Lua
+
+00:03:55.926 --> 00:03:57.120
+ou um modelo médico,
+
+00:03:57.153 --> 00:03:58.854
+não admitem muitos erros.
+
+00:03:58.887 --> 00:04:01.360
+Então aceitamos
+que sejam mais complexos.
+
+00:04:01.393 --> 00:04:03.831
+Outros modelos,
+como os que sugerem vídeos
+
+00:04:03.864 --> 00:04:06.502
+ou recomendam amigos em potencial
+numa rede social,
+
+00:04:06.535 --> 00:04:08.164
+admitem mais experimentação
+
+00:04:08.197 --> 00:04:11.060
+e precisam ser simplificados logo
+para rodar muitos dados.
+
+00:04:11.093 --> 00:04:12.919
+Então aceitamos
+que tenham erros.
+
+00:04:12.952 --> 00:04:15.331
+Em cada caso,
+temos que avaliar
+
+00:04:15.364 --> 00:04:18.774
+o grau de punição
+à complexidade de cada modelo.
+
+00:04:18.807 --> 00:04:20.669
+Podemos ajustar isso
+com um parâmetro,
+
+00:04:20.702 --> 00:04:22.862
+e esse parâmetro
+se chama "lambda".
+
+00:04:22.895 --> 00:04:26.595
+Usamos lambda para multiplicar
+a parte complexa do erro
+
+00:04:26.628 --> 00:04:27.959
+como explico a seguir.
+
+00:04:27.992 --> 00:04:29.450
+Vamos rever os dois modelos,
+
+00:04:29.483 --> 00:04:33.028
+lembrando que a parte amarela
+é o erro de classificação dos pontos
+
+00:04:33.061 --> 00:04:36.070
+e a parte verde é
+a complexidade do modelo,
+
+00:04:36.103 --> 00:04:39.024
+ou seja, os coeficientes
+e os polinômios.
+
+00:04:39.057 --> 00:04:40.649
+Usaremos um lambda pequeno.
+
+00:04:40.682 --> 00:04:44.052
+Pegamos o erro verde
+e multiplicamos pelo lambda pequeno,
+
+00:04:44.085 --> 00:04:45.891
+o que resulta num valor baixo.
+
+00:04:45.924 --> 00:04:48.165
+Portanto o modelo da direita
+vence de novo,
+
+00:04:48.198 --> 00:04:51.995
+pois a complexidade do erro é baixa
+e não afeta o resultado.
+
+00:04:52.028 --> 00:04:54.423
+Mas, se o lambda
+tiver um valor alto,
+
+00:04:54.456 --> 00:04:57.898
+multiplicaremos a complexidade
+do erro por um valor alto,
+
+00:04:57.931 --> 00:05:00.327
+o que punirá mais
+o modelo complexo.
+
+00:05:00.360 --> 00:05:02.430
+Então o modelo simples
+vencerá.
+
+00:05:02.463 --> 00:05:04.003
+Em suma,
+é isso que acontece.
+
+00:05:04.036 --> 00:05:07.202
+Com um lambda grande, punimos
+a complexidade em grande medida
+
+00:05:07.235 --> 00:05:09.087
+e escolhemos o modelo simples.
+
+00:05:09.120 --> 00:05:10.633
+Com um lambda pequeno,
+
+00:05:10.666 --> 00:05:12.804
+punimos a complexidade
+em pequena medida
+
+00:05:12.837 --> 00:05:15.798
+e admitimos ter
+um modelo mais complexo.
+
+00:05:15.831 --> 00:05:20.174
+A pergunta é: devemos usar
+a regularização L1 ou L2?
+
+00:05:20.207 --> 00:05:23.230
+Esta é uma tabela de dicas,
+com as vantagens de cada uma.
+
+00:05:23.263 --> 00:05:26.106
+A regularização L1 é ineficiente
+computacionalmente,
+
+00:05:26.139 --> 00:05:29.036
+embora pareça mais simples,
+por não ter números quadrados.
+
+00:05:29.069 --> 00:05:32.057
+Mas é difícil distinguir
+seus valores absolutos.
+
+00:05:32.090 --> 00:05:35.235
+E os quadrados da regularização L2
+têm ótimas derivadas,
+
+00:05:35.268 --> 00:05:37.998
+então é fácil usá-la
+em termos computacionais.
+
+00:05:38.031 --> 00:05:41.555
+A regularização L1 só é mais rápida
+do que a L2
+
+00:05:41.588 --> 00:05:43.626
+quando os dados são esparsos.
+
+00:05:43.659 --> 00:05:45.712
+Se tivermos
+1.000 colunas de dados,
+
+00:05:45.745 --> 00:05:48.210
+das quais só 10 são relevantes
+e o resto é 0,
+
+00:05:48.243 --> 00:05:49.885
+a L1 será mais rápida.
+
+00:05:49.918 --> 00:05:52.087
+A L2 é melhor
+para outputs não esparsos,
+
+00:05:52.120 --> 00:05:55.358
+que é quando os dados são mais bem
+distribuídos entre as colunas.
+
+00:05:55.391 --> 00:05:58.592
+A L1 tem a vantagem de prover
+seleção de características.
+
+00:05:58.625 --> 00:06:01.040
+Digamos que temos
+1.000 colunas de dados,
+
+00:06:01.073 --> 00:06:04.344
+mas só 10 são relevantes
+e o resto é ruído.
+
+00:06:04.377 --> 00:06:08.275
+A L1 detectará isso e converterá
+as colunas irrelevantes em 0.
+
+00:06:08.308 --> 00:06:10.427
+A L2, por sua vez,
+não fará isso.
+
+00:06:10.460 --> 00:06:12.713
+Tratará as colunas igualmente.
+
+00:06:12.746 --> 00:06:14.813
+Isso é regularização.
+

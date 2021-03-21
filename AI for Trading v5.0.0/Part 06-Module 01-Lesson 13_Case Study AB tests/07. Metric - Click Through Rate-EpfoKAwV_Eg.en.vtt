@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.860
+As you saw in the last section,
+
+00:00:01.860 --> 00:00:06.855
+this dataset includes view and click actions on the home page of Audacity's site,
+
+00:00:06.855 --> 00:00:11.905
+from users that were shown the control and experimental versions of the A/B test.
+
+00:00:11.904 --> 00:00:14.879
+Our task is to analyze these actions to see if there
+
+00:00:14.880 --> 00:00:18.285
+was a significant difference in performance for the two versions.
+
+00:00:18.285 --> 00:00:22.260
+To do this, let's first compute the click-through rate for each group.
+
+00:00:22.260 --> 00:00:24.090
+Let's start with the control group.
+
+00:00:24.089 --> 00:00:28.800
+We can extract all the actions from the control group like this.
+
+00:00:28.800 --> 00:00:30.730
+Now, to compute the click-through rate,
+
+00:00:30.730 --> 00:00:33.700
+we'll divide the number of unique users who actually click
+
+00:00:33.700 --> 00:00:38.609
+the Explore courses button by the total number of unique users who viewed the page.
+
+00:00:38.609 --> 00:00:42.255
+This gives us a click-through rate of about 28 percent.
+
+00:00:42.255 --> 00:00:44.935
+Let's do the same thing for the experiment group.
+
+00:00:44.935 --> 00:00:47.775
+Again, we'll take all the click actions,
+
+00:00:47.774 --> 00:00:49.515
+get the unique number of users,
+
+00:00:49.515 --> 00:00:54.755
+and divide that number by the number of unique users who viewed the page.
+
+00:00:54.755 --> 00:00:58.615
+That gives us a click-through rate of about 31 percent.
+
+00:00:58.615 --> 00:01:01.429
+So in this sample, the experiment group's click-through rate was
+
+00:01:01.429 --> 00:01:05.545
+higher than the control group's click-through rate by about 3 percent.
+
+00:01:05.545 --> 00:01:08.105
+Now that we know the observed difference in this sample,
+
+00:01:08.105 --> 00:01:11.960
+we have to see if this difference is significant and not just due to chance.
+
+00:01:11.959 --> 00:01:14.059
+Let's bootstrap the sample to simulate
+
+00:01:14.060 --> 00:01:17.180
+the sampling distribution for the difference in proportions.
+
+00:01:17.180 --> 00:01:20.490
+Let's take a look at our sampling distribution.
+
+00:01:20.489 --> 00:01:22.439
+If you remember from the previous lesson,
+
+00:01:22.439 --> 00:01:25.170
+we can compute the p-value for our statistic which is
+
+00:01:25.170 --> 00:01:28.170
+the observed difference in proportions by simulating
+
+00:01:28.170 --> 00:01:31.350
+the distribution under the null hypothesis and then
+
+00:01:31.349 --> 00:01:35.054
+finding the probability that our statistic came from this distribution.
+
+00:01:35.055 --> 00:01:36.645
+To simulate from the null,
+
+00:01:36.644 --> 00:01:39.344
+we'll create a normal distribution centered at zero,
+
+00:01:39.344 --> 00:01:44.530
+with the same standard deviation as our sampling distribution we simulated here.
+
+00:01:44.530 --> 00:01:47.105
+We could see the null distribution here.
+
+00:01:47.105 --> 00:01:51.055
+And this is where our observed statistic falls.
+
+00:01:51.055 --> 00:01:54.660
+We can't find the p-value like this as these are
+
+00:01:54.659 --> 00:02:00.015
+all the null values that are more extreme than our statistic in favor of our alternative.
+
+00:02:00.015 --> 00:02:03.530
+With a p-value of approximately a half of percent,
+
+00:02:03.530 --> 00:02:05.849
+the difference in click-through rates for the control and
+
+00:02:05.849 --> 00:02:08.754
+experiment groups does appear to be significant.
+
+00:02:08.754 --> 00:02:10.680
+We can reject the null hypothesis,
+
+00:02:10.680 --> 00:02:12.105
+and based on these results,
+
+00:02:12.104 --> 00:02:16.000
+it looks like Audacity should launch the new version of the home page.
+

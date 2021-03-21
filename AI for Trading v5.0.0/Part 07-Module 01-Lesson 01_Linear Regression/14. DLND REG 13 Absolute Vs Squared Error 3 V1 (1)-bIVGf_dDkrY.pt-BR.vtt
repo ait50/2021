@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.323 --> 00:00:04.095
+Desta vez, chegamos a uma solução,
+e a solução é B.
+
+00:00:04.128 --> 00:00:06.715
+Veja a razão,
+que é mais sutil.
+
+00:00:06.748 --> 00:00:10.089
+O erro quadrático médio é
+uma função quadrática,
+
+00:00:10.122 --> 00:00:13.587
+e a função quadrática tem
+seu valor mínimo no ponto médio.
+
+00:00:13.620 --> 00:00:17.690
+Aqui podemos ver
+que o erro da linha A seria aqui,
+
+00:00:17.723 --> 00:00:20.117
+o erro da linha C seria aqui
+
+00:00:20.150 --> 00:00:22.905
+e o erro da linha B seria
+mais ou menos por aqui.
+
+00:00:22.938 --> 00:00:25.306
+Então vemos
+que o menor erro quadrático médio
+
+00:00:25.339 --> 00:00:27.236
+é dado pela linha B.
+
+00:00:27.269 --> 00:00:28.619
+Veja o diagrama dos erros.
+
+00:00:28.652 --> 00:00:32.322
+Examine-os ou desenhe
+outro exemplo e calcule as áreas,
+
+00:00:32.355 --> 00:00:35.982
+para ver que a linha B fornece
+o menor erro quadrático médio.
+

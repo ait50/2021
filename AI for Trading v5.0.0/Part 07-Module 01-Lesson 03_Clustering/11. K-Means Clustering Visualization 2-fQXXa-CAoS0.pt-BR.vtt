@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.380 --> 00:00:03.210
+Uma das coisas que é imediatamente aparente assim que começo a atribuir meus
+
+00:00:03.210 --> 00:00:07.200
+centroides, com estas regiões coloridas, é como todos os pontos
+
+00:00:07.200 --> 00:00:10.790
+serão associados a um dos centroides, com um dos clusters.
+
+00:00:10.790 --> 00:00:14.120
+Então, você pode ver que o azul já está provavelmente em um formato satisfatório.
+
+00:00:15.140 --> 00:00:18.060
+Eu diria que foi um pouco de sorte minha o centroide
+
+00:00:18.060 --> 00:00:19.760
+inicial ter sido colocado nesse lugar.
+
+00:00:19.760 --> 00:00:22.950
+Parece que ele está bem próximo ao centro deste blob de dados.
+
+00:00:22.950 --> 00:00:25.960
+Com o vermelho e o verde, parece que eles estão meio que um acima do
+
+00:00:25.960 --> 00:00:28.680
+outro no mesmo cluster.
+
+00:00:28.680 --> 00:00:32.580
+Vamos observar como o k-means começa a resolver esse problema e
+
+00:00:32.580 --> 00:00:34.690
+alocar devidamente todos os clusters.
+
+00:00:34.690 --> 00:00:36.080
+Então, pressiono Go.
+
+00:00:36.080 --> 00:00:40.210
+Ele me revela explicitamente em que cluster cada um
+
+00:00:40.210 --> 00:00:41.720
+destes pontos estão.
+
+00:00:41.720 --> 00:00:44.940
+Então, temos alguns azuis que estão no cluster errado aqui.
+
+00:00:44.940 --> 00:00:47.150
+Depois, é claro, os vermelhos e os verdes.
+
+00:00:47.150 --> 00:00:51.170
+Esta é a etapa de associação em que todos os pontos são associados
+
+00:00:51.170 --> 00:00:52.850
+ao centroide mais próximo.
+
+00:00:52.850 --> 00:00:55.480
+E a próxima coisa que vou fazer é atualizar o centroide.
+
+00:00:55.480 --> 00:00:59.440
+Agora, os centroides serão movidos para o
+
+00:00:59.440 --> 00:01:02.570
+meio de todos os pontos associados.
+
+00:01:02.570 --> 00:01:05.519
+Particularmente, espero que este ponto verde seja
+
+00:01:05.519 --> 00:01:08.850
+movido para a direita, porque temos muitos pontos aqui.
+
+00:01:08.850 --> 00:01:10.030
+Então, vamos atualizar.
+
+00:01:10.030 --> 00:01:11.590
+Está começando a ficar bem melhor.
+
+00:01:11.590 --> 00:01:13.120
+Se deixássemos tudo como está,
+
+00:01:13.120 --> 00:01:15.920
+você poderia ver como o agrupamento estava antes.
+
+00:01:15.920 --> 00:01:20.210
+Agora, estes pontos que eram verdes estão prestes a ficar vermelhos.
+
+00:01:20.210 --> 00:01:22.090
+O mesmo acontece com alguns pontos azuis aqui.
+
+00:01:22.090 --> 00:01:26.360
+Você pode ver como em apenas uma etapa nesta condição inicial ruim,
+
+00:01:26.360 --> 00:01:29.460
+já começamos a capturar muito bem a estrutura nos dados.
+
+00:01:29.460 --> 00:01:31.030
+Bom, reatribuirei os pontos.
+
+00:01:31.030 --> 00:01:34.590
+Faça a iteração através disso novamente para reatribuir cada ponto ao centroide mais próximo.
+
+00:01:34.590 --> 00:01:37.080
+E agora as coisas estão começando a ficar muito consistente.
+
+00:01:37.080 --> 00:01:38.700
+Provavelmente, há apenas mais uma ou
+
+00:01:38.700 --> 00:01:41.900
+duas iterações antes de colocarmos o centroide bem no meio dos
+
+00:01:41.900 --> 00:01:45.840
+clusters. Então, eu atualizo e reatribuo os pontos.
+
+00:01:45.840 --> 00:01:47.810
+Nenhum ponto mudou; portanto,
+
+00:01:47.810 --> 00:01:51.070
+esse é o agrupamento final que seria atribuído pelo agrupamento k-means.
+
+00:01:51.070 --> 00:01:54.310
+Em três ou quatro etapas, usando este algoritmo, atribuí cada ponto
+
+00:01:54.310 --> 00:01:57.410
+a um cluster, e isso funcionou muito bem neste exemplo.
+

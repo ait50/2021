@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.230 --> 00:00:02.680
+Talvez o algoritmo mais básico para agrupamento, mas,
+
+00:00:02.680 --> 00:00:06.520
+de longe, o mais usado é o chamado K-MEANS.
+
+00:00:06.520 --> 00:00:10.030
+Vou usá-lo para trabalhar com você por todo algoritmo, com muitos,
+
+00:00:10.030 --> 00:00:11.690
+muitos testes para você.
+
+00:00:11.690 --> 00:00:13.170
+Há um espaço.
+
+00:00:13.170 --> 00:00:17.350
+Suponha que recebemos esse tipo de dados.
+
+00:00:17.350 --> 00:00:21.430
+A primeira pergunta é intuitiva. Quantos clusters você vê?
+
+00:00:21.430 --> 00:00:25.680
+Para falar a verdade, não existe uma única resposta; podem ser sete ou pode ser um,
+
+00:00:25.680 --> 00:00:28.460
+mas diga-me a resposta que parece fazer mais sentido.
+

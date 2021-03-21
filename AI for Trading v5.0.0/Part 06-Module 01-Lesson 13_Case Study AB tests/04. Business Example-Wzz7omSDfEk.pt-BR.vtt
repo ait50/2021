@@ -1,0 +1,117 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.142 --> 00:00:02.203
+ESTATÍSTICA PRÁTICA
+EXEMPLO DE EMPRESA
+
+00:00:03.563 --> 00:00:04.674
+Neste estudo de caso,
+
+00:00:04.708 --> 00:00:06.714
+você analisará os resultados
+do teste A/B
+
+00:00:06.748 --> 00:00:10.725
+para uma empresa de educação online
+chamada Audacity. Sacou?
+
+00:00:11.451 --> 00:00:13.592
+Ela oferece cursos
+sobre finanças.
+
+00:00:13.936 --> 00:00:16.118
+Vamos primeiro ver
+como um fluxo de usuário típico
+
+00:00:16.152 --> 00:00:18.442
+aparece no site da Audacity.
+
+00:00:18.772 --> 00:00:21.124
+Novos usuários entrariam
+na página inicial
+
+00:00:21.158 --> 00:00:24.928
+e, se estivessem interessados,
+clicariam em "Explorar Cursos".
+
+00:00:25.190 --> 00:00:26.945
+Ao navegar na lista de cursos,
+
+00:00:26.979 --> 00:00:28.738
+algum pode chamar a atenção
+
+00:00:28.772 --> 00:00:30.834
+e fazê-los clicar
+para saber mais.
+
+00:00:30.868 --> 00:00:33.047
+Uma vez na página
+de visão geral do curso,
+
+00:00:33.081 --> 00:00:35.024
+eles podem decidir
+se matricular.
+
+00:00:35.058 --> 00:00:37.894
+Depois da matrícula, torcemos
+para que concluam o curso.
+
+00:00:38.111 --> 00:00:40.955
+Nesse fluxo, normalmente chamado
+de funil de clientes,
+
+00:00:40.989 --> 00:00:44.897
+os usuários perdem o interesse
+e saem em diferentes estágios.
+
+00:00:44.931 --> 00:00:46.778
+Poucos chegam até o fim.
+
+00:00:46.812 --> 00:00:48.966
+Claro,
+este é um modelo simplista
+
+00:00:49.000 --> 00:00:51.994
+e não é como acontece com todas
+as experiências de usuários.
+
+00:00:52.028 --> 00:00:54.526
+Mas captura muito bem
+as principais etapas
+
+00:00:54.560 --> 00:00:57.218
+da exposição inicial
+à conclusão do curso,
+
+00:00:57.252 --> 00:00:59.345
+em ordem
+de probabilidade decrescente.
+
+00:00:59.728 --> 00:01:01.577
+Para aumentar
+o envolvimento dos alunos,
+
+00:01:01.611 --> 00:01:05.129
+a Audacity quer realizar testes A/B
+para testar as mudanças,
+
+00:01:05.482 --> 00:01:07.184
+em diferentes pontos
+desse funil.
+
+00:01:07.603 --> 00:01:08.803
+Neste estudo de caso,
+
+00:01:08.837 --> 00:01:10.492
+analisaremos os resultados
+
+00:01:10.526 --> 00:01:12.841
+para duas mudanças específicas
+que ela tem em mente
+
+00:01:12.875 --> 00:01:16.518
+e faremos uma recomendação
+sobre lançar cada mudança.
+

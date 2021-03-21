@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.079 --> 00:00:01.237
+Esse exemplo, agora, é fácil.
+
+00:00:01.237 --> 00:00:04.230
+Você pode ver que todos estes quatro aqui se ajustam ao verde.
+
+00:00:04.230 --> 00:00:09.800
+Na verdade, a linha de separação estará em algum lugar por aqui e, na verdade,
+
+00:00:09.800 --> 00:00:13.480
+depois da próxima iteração de otimização, com a atribuição desses pontos, dos quatro
+
+00:00:13.480 --> 00:00:16.059
+pontos deste centro do cluster e desses três pontos deste centro do cluster,
+
+00:00:16.059 --> 00:00:18.730
+você poderá ver que este centro do cluster se moverá
+
+00:00:18.730 --> 00:00:21.750
+diretamente para o centro destes quatro pontos.
+
+00:00:21.750 --> 00:00:24.950
+E este centro do cluster se moverá para o centro destes três pontos.
+
+00:00:24.950 --> 00:00:26.470
+Nós realmente alcançamos nosso resultado?
+
+00:00:26.470 --> 00:00:29.580
+Agora, presumimos os excedentes.
+
+00:00:29.580 --> 00:00:32.030
+Mas o que eu tenho com eles de atribuição e otimização
+
+00:00:32.030 --> 00:00:36.570
+iterativa moveu o centro do cluster diretamente para o que
+
+00:00:36.570 --> 00:00:41.890
+poderíamos dizer ser, na verdade, o centroid correto destas duas classes aqui.
+
+00:00:41.890 --> 00:00:43.990
+Isso é chamado de algoritmo K-Means.
+

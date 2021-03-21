@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.049 --> 00:00:02.000
+E se os dados forem assim,
+
+00:00:02.033 --> 00:00:05.006
+onde uma linha
+não abrange todos eles?
+
+00:00:05.039 --> 00:00:07.624
+Talvez fosse melhor
+ter uma curva ou um polinômio.
+
+00:00:07.657 --> 00:00:12.002
+Talvez uma equação
+como 2x³-8x² etc.
+
+00:00:12.557 --> 00:00:15.809
+A solução é usar um algoritmo
+parecido com a regressão linear.
+
+00:00:15.842 --> 00:00:18.250
+O que temos que fazer é,
+em vez de linhas,
+
+00:00:18.283 --> 00:00:20.980
+considerar
+polinômios de grau superior.
+
+00:00:21.013 --> 00:00:23.012
+Assim podemos usar mais pesos.
+
+00:00:23.045 --> 00:00:25.996
+Por exemplo, neste problema,
+poderíamos usar 4 pesos:
+
+00:00:26.029 --> 00:00:29.216
+w1, w2, w3 e w4.
+
+00:00:29.249 --> 00:00:31.684
+Mas o algoritmo se mantém
+o mesmo.
+
+00:00:31.717 --> 00:00:34.175
+Calculamos o erro absoluto
+ou quadrático médio
+
+00:00:34.208 --> 00:00:36.599
+e a derivada
+relacionada às 4 variáveis
+
+00:00:36.632 --> 00:00:39.289
+e usamos gradiente descendente
+para alterar os 4 pesos
+
+00:00:39.322 --> 00:00:41.243
+para minimizar o erro.
+
+00:00:41.276 --> 00:00:44.007
+Esse algoritmo é conhecido
+como "regressão polinomial".
+

@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.270 --> 00:00:01.780
+Eu diria que a resposta é sim.
+
+00:00:01.780 --> 00:00:07.520
+Você poderia fazer isso, de modo que os centros do cluster fiquem bem um acima do outro
+
+00:00:07.520 --> 00:00:10.180
+e a linha de separação se pareça com isto.
+
+00:00:10.180 --> 00:00:13.500
+E todos os pontos superiores estão associados ao centro do cluster superior
+
+00:00:13.500 --> 00:00:17.370
+e todos os pontos inferiores estão associados ao centro do cluster inferior.
+
+00:00:17.370 --> 00:00:19.815
+Certamente, é improvável ter uma
+
+00:00:19.815 --> 00:00:21.100
+inicialização como esta, mas,
+
+00:00:21.100 --> 00:00:26.600
+se acontecer, o algoritmo poderia acreditar que este é um cluster
+
+00:00:26.600 --> 00:00:28.350
+e este é outro cluster.
+
+00:00:28.350 --> 00:00:31.410
+E se o executarmos novamente e você inicializar de forma diferente,
+
+00:00:31.410 --> 00:00:33.120
+digamos que um centro do cluster esteja aqui,
+
+00:00:34.180 --> 00:00:35.960
+a linha de separação ficará assim.
+
+00:00:37.270 --> 00:00:40.190
+E as classes se resolveriam sozinhas automaticamente.
+
+00:00:40.190 --> 00:00:43.130
+É improvável, mas existe um mínimo local incorreto,
+
+00:00:43.130 --> 00:00:44.759
+mesmo no exemplo que mostrei a você aqui.
+
+00:00:46.220 --> 00:00:47.200
+Agora, como regra básica,
+
+00:00:47.200 --> 00:00:51.190
+quanto mais centros de cluster você tiver, mais logaritmos você encontrará.
+
+00:00:51.190 --> 00:00:56.170
+Mas eles existem e, como resultado, você é forçado a executar o algoritmo várias vezes
+
