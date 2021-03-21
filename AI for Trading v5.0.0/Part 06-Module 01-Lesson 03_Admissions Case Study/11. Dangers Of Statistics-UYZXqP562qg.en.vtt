@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.230 --> 00:00:04.049
+As you've seen in this example, on Simpson's paradox,
+
+00:00:04.049 --> 00:00:08.580
+the way you choose to look at your data can lead to completely different results.
+
+00:00:08.580 --> 00:00:11.699
+And often, you can majorly impact what people
+
+00:00:11.699 --> 00:00:15.869
+believe to be true with how you choose to communicate your findings.
+
+00:00:15.869 --> 00:00:18.419
+You can guess how people intentionally or
+
+00:00:18.420 --> 00:00:22.260
+unintentionally come to false conclusions with these choices.
+
+00:00:22.260 --> 00:00:24.960
+Next, you're going to walk through a similar example of
+
+00:00:24.960 --> 00:00:28.410
+Simpson's paradox on a full dataset in a Jupyter notebook.
+
