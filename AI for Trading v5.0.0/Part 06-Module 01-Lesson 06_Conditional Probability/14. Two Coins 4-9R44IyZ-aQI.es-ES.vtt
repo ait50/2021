@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Y la respuesta es deprimente
+
+00:00:02.000 --> 00:00:04.000
+Si de nuevo dibujas una tabla de verdad
+
+00:00:04.000 --> 00:00:07.000
+Vas a encontrar diferentes combinaciones
+
+00:00:07.000 --> 00:00:11.000
+Si ves la moneda 1
+
+00:00:11.000 --> 00:00:12.000
+Nunca verás la cruz
+
+00:00:12.000 --> 00:00:16.000
+En este caso de aquí la versión D tiene cruz, cruz
+
+00:00:16.000 --> 00:00:18.000
+Tenemos 0 de probabilidad
+
+00:00:18.000 --> 00:00:22.000
+Podemos trabajar aquí dibujando la probabilidad de la primera moneda con 0.5
+
+00:00:22.000 --> 00:00:25.000
+Pero la probabilidad de cruz dado la primera moneda
+
+00:00:25.000 --> 00:00:28.000
+da 0, por que la probabilidad de cara es 1
+
+00:00:28.000 --> 00:00:31.000
+Entonces 0.5 por 0 y 0
+
+00:00:31.000 --> 00:00:32.000
+Resulta en 0
+
+00:00:32.000 --> 00:00:35.000
+Entonces el único caso donde puedes cruz y cruz es
+
+00:00:35.000 --> 00:00:37.000
+Cuando dibujemos la moneda 2
+
+00:00:37.000 --> 00:00:40.000
+Y esta tiene una probabilidad de
+
+00:00:40.000 --> 00:00:44.000
+0.5 por la probabilidad de cruz
+
+00:00:44.000 --> 00:00:46.000
+Dado que hemos dibujado la segunda moneda
+
+00:00:46.000 --> 00:00:49.000
+Que es 0.4 por 0.4 de nuevo
+
+00:00:49.000 --> 00:00:52.000
+Que es lo mismo que 0.08
+
+00:00:52.000 --> 09:59:59.000
+Que resulta ser la respuesta correcta.
+

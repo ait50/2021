@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:02.000
+Questa non è domanda banale
+
+00:00:02.000 --> 00:00:05.000
+ed il modo giusto per rispondere è utilizzare la tabella della verità
+
+00:00:05.000 --> 00:00:06.000
+che ho disegnato qui
+
+00:00:06.000 --> 00:00:08.000
+ci sono 3 diversi eventi che si verificano.
+
+00:00:08.000 --> 00:00:11.000
+Abbiamo la scelta iniziale della moneta,
+
+00:00:11.000 --> 00:00:13.000
+che può restiruire la moneta 1 o la moneta 2 con la stessa probabilità
+
+00:00:13.000 --> 00:00:16.000
+quindi il lancio della moneta per la prima volta
+
+00:00:16.000 --> 00:00:17.000
+che ci restituisce testa o croce
+
+00:00:17.000 --> 00:00:20.000
+e quindi il lancio della mometa per la seconda volta
+
+00:00:20.000 --> 00:00:23.000
+Questi diversi casi possono essere riassunti dalla mia tabella della verità
+
+00:00:23.000 --> 00:00:26.000
+Ora io devo osservare solo i casi dove
+
+00:00:26.000 --> 00:00:29.000
+testa è seguita da croce
+
+00:00:29.000 --> 00:00:31.000
+Questo qui e quest'altro.
+
+00:00:31.000 --> 00:00:34.000
+Quindi calcoliamo la probabilità per questi 2 casi
+
+00:00:34.000 --> 00:00:37.000
+La probabilità di prendere la moneta 1 è 0.5
+
+00:00:37.000 --> 00:00:40.000
+per la moneta non truccata, otteniamo 0.5 per testa
+
+00:00:40.000 --> 00:00:43.000
+seguito da 0.5 per croce
+
+00:00:43.000 --> 00:00:46.000
+moltiplicati otteniamo 0.125
+
+00:00:46.000 --> 00:00:49.000
+Passiamo al secondo caso.
+
+00:00:49.000 --> 00:00:53.000
+C'è una probabilità di 0.5 di prendere la moneta 2
+
+00:00:53.000 --> 00:00:56.000
+Ora che questa restituisca testa ha probabilità 0.9
+
+00:00:56.000 --> 00:01:00.000
+e che restituisca croce di 0.1
+
+00:01:00.000 --> 00:01:05.000
+Quindi moltiplicando questi numeri otteniamo 0.045,
+
+00:01:05.000 --> 00:01:08.000
+un numero inferiore al precedente.
+
+00:01:08.000 --> 00:01:12.000
+Sommando questi 2 risultati otteniamo 0.17,
+
+00:01:12.000 --> 00:01:16.000
+che è la risposta corretta
+
+00:01:16.000 --> 00:01:18.000
+alla domanda qui sopra
+
+00:01:18.000 --> 00:01:20.000
+Questa non era assolutamente banale
+
+00:01:20.000 --> 09:59:59.000
+e sono sbalordito se avete ottenuto il risultato corretto.
+

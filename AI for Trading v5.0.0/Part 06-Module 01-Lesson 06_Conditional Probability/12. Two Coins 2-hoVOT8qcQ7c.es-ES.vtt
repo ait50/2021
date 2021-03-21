@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.056 --> 00:00:01.663
+Vamos a hacer una tabla de la verdad
+
+00:00:01.663 --> 00:00:04.265
+Vamos a escoger un evento seguido de un evento de giro
+
+00:00:04.265 --> 00:00:07.690
+Podemos escoger moneda 1 o moneda 2
+
+00:00:07.690 --> 00:00:10.631
+Hay una posibilidad de 0.5 de sacar cualquier moneda
+
+00:00:10.631 --> 00:00:12.693
+Y después podemos girar y obtener cara
+
+00:00:12.693 --> 00:00:15.057
+O cruz para la moneda que hemos escogido.
+
+00:00:15.057 --> 00:00:16.850
+¿Ahora cual es la probabilidad?
+
+00:00:16.850 --> 00:00:19.884
+Voy a comentar que escogimos 1 con 0.5
+
+00:00:19.884 --> 00:00:22.500
+Y una vez que escoja la moneda justa, se
+
+00:00:22.500 --> 00:00:26.201
+Que la probabilidad de cara es de nuevo 0.5
+
+00:00:26.201 --> 00:00:28.368
+Lo que resulta en 0.25
+
+00:00:28.368 --> 00:00:31.071
+Es lo mismo para escoger la moneda justa
+
+00:00:31.071 --> 00:00:33.641
+Y esperar una cruz
+
+00:00:33.641 --> 00:00:37.442
+Pero al escoger la moneda no justa con una posibilidad de 0.5
+
+00:00:37.442 --> 00:00:40.114
+Tenemos un 0.9 posibilidad de cara
+
+00:00:40.114 --> 00:00:44.837
+Así que 0.5 multiplicado 0.95 nos da 0.45
+
+00:00:44.837 --> 00:00:49.129
+Mientras que para la moneda injusta, la probabilidad de cruz es 0.1
+
+00:00:49.129 --> 00:00:54.744
+Multiplicado por la probabilidad de escogerla, que es de 0.5, nos da 0.05
+
+00:00:54.744 --> 00:00:57.746
+Ahora quiero preguntarte, ¿cuál es la probabilidad de tener cara?
+
+00:00:57.746 --> 00:01:01.412
+Vamos a encontrar que en 2 de los casos verdaderamente resulta cara
+
+00:01:01.412 --> 00:01:07.094
+Si sumas 0.25 y 0.45 obtenemos 0.7
+
+00:01:07.094 --> 00:01:10.584
+En este ejemplo es 0.7 la posibilidad
+
+00:01:10.584 --> 00:01:14.000
+De generar una cara
+

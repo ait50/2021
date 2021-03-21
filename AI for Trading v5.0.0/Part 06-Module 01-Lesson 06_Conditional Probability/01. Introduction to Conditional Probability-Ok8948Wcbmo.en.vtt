@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.950 --> 00:00:07.500
+In real life, events often depend on each other.
+
+00:00:07.500 --> 00:00:10.410
+Say you can be an early bird or night owl.
+
+00:00:10.410 --> 00:00:12.214
+And for the sake of simplicity,
+
+00:00:12.214 --> 00:00:15.379
+let's assume there's a 50 percent chance for each one.
+
+00:00:15.380 --> 00:00:20.580
+Now whether you decide to go for a run at 5:00 a.m. tomorrow is not entirely independent.
+
+00:00:20.579 --> 00:00:24.939
+I would argue that going for a run at 5:00 a.m. is not likely for most people.
+
+00:00:24.940 --> 00:00:30.140
+But it is certainly more likely for individuals who are actually awake at that hour.
+
+00:00:30.140 --> 00:00:31.385
+If you're an early bird,
+
+00:00:31.385 --> 00:00:34.023
+the probability might be a two percent chance,
+
+00:00:34.023 --> 00:00:35.135
+while if you're a night owl,
+
+00:00:35.134 --> 00:00:37.199
+the probability might be zero.
+
+00:00:37.200 --> 00:00:41.390
+You can think of these events as two consecutive coin flips.
+
+00:00:41.390 --> 00:00:44.850
+The first coin determines whether you're an early bird,
+
+00:00:44.850 --> 00:00:49.935
+and the second coin is only flipped given that you are an early bird,
+
+00:00:49.935 --> 00:00:52.585
+and it determines if you go for the run.
+
+00:00:52.585 --> 00:00:55.460
+We are no longer observing independent events,
+
+00:00:55.460 --> 00:00:57.020
+like we did in the last lesson,
+
+00:00:57.020 --> 00:01:02.105
+where the outcome of the first coin flip didn't affect the outcome of the second.
+
+00:01:02.104 --> 00:01:03.544
+Starting with this lesson,
+
+00:01:03.545 --> 00:01:06.320
+we're going to look at case studies where the outcome of the
+
+00:01:06.319 --> 00:01:09.139
+first does impact the outcome of the second.
+

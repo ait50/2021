@@ -1,0 +1,102 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.234 --> 00:00:02.367
+Esta não é uma questão,
+
+00:00:02.400 --> 00:00:05.467
+e a forma certa de resolvê-la
+é por meio da tabela-verdade,
+
+00:00:05.501 --> 00:00:06.701
+que desenhei aqui.
+
+00:00:06.734 --> 00:00:08.367
+Há três acontecimentos
+distintos.
+
+00:00:08.400 --> 00:00:10.167
+Houve a escolha inicial
+da moeda,
+
+00:00:10.200 --> 00:00:13.434
+que pode ter sido a 1 ou a 2,
+com probabilidades iguais,
+
+00:00:13.467 --> 00:00:17.334
+e a lançamos pela primeira vez,
+com cara ou coroa de resultado.
+
+00:00:17.367 --> 00:00:20.133
+Daí lançamos pela segunda vez
+com o segundo resultado.
+
+00:00:20.167 --> 00:00:23.434
+Esses oito casos diferentes
+resumem a tabela-verdade.
+
+00:00:23.467 --> 00:00:25.834
+Agora eu devo observar
+apenas os casos
+
+00:00:25.868 --> 00:00:28.534
+em que cara
+é seguido por coroa.
+
+00:00:28.567 --> 00:00:31.167
+Este aqui e este.
+
+00:00:31.200 --> 00:00:34.167
+Então calculamos a probabilidade
+para os dois casos.
+
+00:00:34.200 --> 00:00:37.033
+A probabilidade de escolher
+a moeda 1 é 0,5.
+
+00:00:37.067 --> 00:00:42.934
+Para a moeda justa, temos
+0,5 para cara e 0,5 para coroa,
+
+00:00:42.968 --> 00:00:46.634
+que, juntos,
+resultam em 0,125.
+
+00:00:46.667 --> 00:00:49.100
+No segundo caso,
+
+00:00:49.100 --> 00:00:53.267
+há uma chance de 0,5
+de escolher a moeda 2.
+
+00:00:53.267 --> 00:00:56.334
+Aqui, a chance de cara
+é 0,9,
+
+00:00:56.367 --> 00:01:00.133
+e de coroa é 0,1.
+
+00:01:00.167 --> 00:01:05.601
+Multiplicando esses dois,
+obtemos 0,045,
+
+00:01:05.634 --> 00:01:07.934
+um número menor
+do que o anterior.
+
+00:01:07.968 --> 00:01:12.300
+Somando ambos,
+o resultado é 0,17,
+
+00:01:12.334 --> 00:01:17.634
+que é a resposta certa
+para essa pergunta.
+
+00:01:17.667 --> 00:01:21.634
+Não foi nada trivial,
+e eu me espantaria
+
+00:01:21.667 --> 00:01:23.434
+se você tivesse acertado.
+

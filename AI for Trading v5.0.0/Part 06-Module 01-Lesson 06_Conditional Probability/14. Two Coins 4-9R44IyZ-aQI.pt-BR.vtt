@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.100 --> 00:00:02.234
+E a resposta é deprimente.
+
+00:00:02.267 --> 00:00:04.734
+Se você desenhar de novo
+a tabela-verdade,
+
+00:00:04.767 --> 00:00:07.400
+vai descobrir, pelas
+diferentes combinações,
+
+00:00:07.434 --> 00:00:12.234
+que se você escolheu a moeda 1,
+coroa nunca aparecerá.
+
+00:00:12.267 --> 00:00:17.501
+Então esse caso, com coroa
+e coroa, tem zero probabilidade.
+
+00:00:17.534 --> 00:00:22.067
+Podemos ver que a probabilidade
+de escolher a moeda 1 é 0,5,
+
+00:00:22.100 --> 00:00:26.367
+mas a probabilidade de coroa
+na primeira moeda é zero,
+
+00:00:26.400 --> 00:00:28.467
+já que a probabilidade de cara
+é 1.
+
+00:00:28.500 --> 00:00:32.067
+Então 0,5 vezes 0 vezes 0
+é igual a 0.
+
+00:00:32.100 --> 00:00:34.834
+O único caso em que veremos
+coroa duas vezes
+
+00:00:34.868 --> 00:00:37.834
+será quando você pegar
+a moeda 2,
+
+00:00:37.868 --> 00:00:40.534
+E a probabilidade é de 0,5
+
+00:00:40.567 --> 00:00:45.734
+multiplicado pela chance de coroa,
+considerando a escolha da moeda 2,
+
+00:00:45.767 --> 00:00:49.467
+que é 0,4 vezes 0,4 de novo.
+
+00:00:49.501 --> 00:00:54.434
+O resultado é 0,08,
+que seria a resposta certa.
+

@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.056 --> 00:00:01.663
+E costruiamo la tabella della verità.
+
+00:00:01.663 --> 00:00:04.265
+Avete l'eveto scelta della moneta, seguito dal lancio
+
+00:00:04.265 --> 00:00:07.690
+Possiamo prendere la moneta 1 o la moneta 2
+
+00:00:07.690 --> 00:00:10.631
+C'è una proabilità dello 0.5 per ogni moneta.
+
+00:00:10.631 --> 00:00:12.693
+Quindi possiamo lanciare la moneta ed ottenere testa
+
+00:00:12.693 --> 00:00:15.057
+o croce per la moneta che abbiamo scelto
+
+00:00:15.057 --> 00:00:16.850
+Ora quali sono le probabilità
+
+00:00:16.850 --> 00:00:19.884
+Io direi prendere 1 è 0.5
+
+00:00:19.884 --> 00:00:22.500
+ed una volta che ho preso la moneta non truccata
+
+00:00:22.500 --> 00:00:26.201
+so che la proabilità che esca testa è, nuovamente, 0.5
+
+00:00:26.201 --> 00:00:28.368
+che fa si che otteniamo 0.25
+
+00:00:28.368 --> 00:00:31.071
+Lo stesso vale per prendere la moneta non truccata
+
+00:00:31.071 --> 00:00:33.641
+e ottnere croce
+
+00:00:33.641 --> 00:00:37.442
+ma appena prendiamo la moneta truccata con porobailità 0.5
+
+00:00:37.442 --> 00:00:40.114
+abbiamo una proabbilità di 0.9 di ottenere testa
+
+00:00:40.114 --> 00:00:44.837
+quindi 0.5 moltiplicato 0.9 ci da 0.45
+
+00:00:44.837 --> 00:00:49.129
+mentre per la moneta truccata, la probabilità di ottenere croce è 0.1
+
+00:00:49.129 --> 00:00:54.744
+moltiplicata per la probabilità di essere scelta di 0.5 otteniamo 0.05
+
+00:00:54.744 --> 00:00:57.746
+ora quando vi chiedo qual'è la probabilità di ottenere testa
+
+00:00:57.746 --> 00:01:01.412
+troveremo che 2 di quest casi infatti danno come risultato testa
+
+00:01:01.412 --> 00:01:07.094
+così se sommiamo 0.25 e 0.45 otteniamo 0.7
+
+00:01:07.094 --> 00:01:10.584
+Quindi 0.7 è la probabilità
+
+00:01:10.584 --> 00:01:14.000
+di ottenere testa
+

@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:02.834
+Desta vez, temos uma sacola,
+
+00:00:02.868 --> 00:00:04.701
+e nessa sacola há duas moedas:
+
+00:00:04.734 --> 00:00:06.901
+a moeda 1 e a moeda 2.
+
+00:00:06.934 --> 00:00:10.701
+Antecipadamente, sabemos
+que a moeda 1 não é viciada,
+
+00:00:10.734 --> 00:00:15.467
+então o P para a moeda 1
+aparecer cara é 0,5.
+
+00:00:15.501 --> 00:00:19.100
+Enquanto a moeda 2
+é viciada, ou seja,
+
+00:00:19.133 --> 00:00:23.133
+o P para a moeda 2
+aparecer cara é 0,9.
+
+00:00:23.167 --> 00:00:26.434
+Rapidamente, responda
+os próximos números
+
+00:00:26.467 --> 00:00:31.033
+da probabilidade de aparecer
+coroa para as moedas 1 e 2.
+

@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.067 --> 00:00:04.200
+É claro que, na realidade,
+não sabemos se a pessoa tem câncer,
+
+00:00:04.234 --> 00:00:07.634
+mas podemos fazer um exame,
+como um exame de sangue.
+
+00:00:07.667 --> 00:00:11.567
+O resultado do exame pode ser
+positivo ou negativo,
+
+00:00:11.601 --> 00:00:14.667
+mas, como qualquer bom teste,
+ele me responde
+
+00:00:14.701 --> 00:00:17.000
+o que eu quero saber:
+
+00:00:17.033 --> 00:00:19.200
+se a pessoa tem câncer
+ou não.
+
+00:00:19.233 --> 00:00:23.300
+Digamos que,
+se a pessoa tem câncer,
+
+00:00:23.334 --> 00:00:26.801
+o teste dá positivo,
+com probabilidade de 0,9.
+
+00:00:26.834 --> 00:00:30.868
+Isso sugere que,
+se a pessoa tiver câncer,
+
+00:00:30.901 --> 00:00:34.000
+o resultado negativo
+terá probabilidade de 0,1,
+
+00:00:34.033 --> 00:00:36.968
+pois a soma de ambos
+precisa ser 1.
+
+00:00:37.000 --> 00:00:41.534
+Eu acabei de dar a vocês
+uma notação um tanto difícil
+
+00:00:41.567 --> 00:00:44.868
+que diz que
+o resultado do teste
+
+00:00:44.901 --> 00:00:48.868
+depende do fato de a pessoa
+ter câncer ou não.
+
+00:00:48.901 --> 00:00:53.100
+Isso é mais complicado
+do que tudo que falamos até agora.
+
+00:00:53.133 --> 00:00:57.334
+Chamamos isso
+de probabilidade condicional.
+
+00:00:57.367 --> 00:01:01.767
+E o meio de entendê-la
+é uma notação bem estranha,
+
+00:01:01.801 --> 00:01:03.634
+com uma barra no meio.
+
+00:01:03.667 --> 00:01:07.834
+A barra diz qual é a probabilidade
+do evento à esquerda,
+
+00:01:07.868 --> 00:01:10.934
+considerando que nossa suposição
+seja de que o evento à direita
+
+00:01:10.968 --> 00:01:12.133
+seja a realidade.
+
+00:01:12.200 --> 00:01:15.934
+Na verdade, não sabemos
+se a pessoa tem câncer ou não,
+
+00:01:15.968 --> 00:01:20.934
+e, mais tarde, vamos saber
+se o paciente tem a doença
+
+00:01:20.968 --> 00:01:23.400
+considerando
+um conjunto de informações.
+
+00:01:23.434 --> 00:01:27.601
+Mas, por ora, vamos supor
+que temos habilidades divinas
+
+00:01:27.634 --> 00:01:31.100
+para dizer com certeza
+que o paciente tem câncer
+
+00:01:31.133 --> 00:01:34.834
+e que podemos determinar
+o resultado do exame.
+
+00:01:34.868 --> 00:01:38.100
+Esse não é um exame
+exatamente determinista.
+
+00:01:38.133 --> 00:01:39.901
+Pode haver erros,
+
+00:01:39.934 --> 00:01:43.167
+mas só há erros
+em 10% dos casos,
+
+00:01:43.200 --> 00:01:45.767
+como ilustrado por esse 0,1.
+
+00:01:45.800 --> 00:01:51.100
+Acontece que não especificamos
+totalmente o exame.
+
+00:01:51.133 --> 00:01:55.400
+Ele também pode ser aplicado
+em uma situação
+
+00:01:55.434 --> 00:01:57.567
+na qual a pessoa
+não está doente.
+
+00:01:57.601 --> 00:02:02.067
+Então este símbolo indica
+que o paciente não tem câncer.
+
+00:02:02.100 --> 00:02:07.200
+Agora a probabilidade do teste
+ter resultado positivo,
+
+00:02:07.234 --> 00:02:09.834
+um falso resultado positivo,
+
+00:02:09.868 --> 00:02:11.601
+quando não há câncer,
+
+00:02:11.634 --> 00:02:13.167
+é de 0,2.
+
+00:02:13.200 --> 00:02:16.033
+Agora você vai responder
+qual é a probabilidade
+
+00:02:16.067 --> 00:02:17.601
+de um resultado negativo,
+
+00:02:17.634 --> 00:02:21.968
+caso tenhamos certeza
+de que a pessoa não está doente.
+
+00:02:22.000 --> 00:02:23.934
+Me dê essa resposta.
+

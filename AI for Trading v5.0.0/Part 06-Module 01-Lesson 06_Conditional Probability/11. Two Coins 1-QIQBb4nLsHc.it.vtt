@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.184 --> 00:00:02.649
+Questa volta, abbiamo una borsa
+
+00:00:02.649 --> 00:00:06.386
+e nella borsa ci sono 2 monete, moneta 1 e moneta 2
+
+00:00:06.417 --> 00:00:10.358
+E a priori, sappiamo che una moneta non è truccata
+
+00:00:10.358 --> 00:00:15.057
+Quindi P della moneta 1 di risultare testa è 0.5
+
+00:00:15.057 --> 00:00:19.589
+mentre la moneta 2 è truccata, in modo che P della moneta 2
+
+00:00:19.589 --> 00:00:22.993
+di risultare testa è 0.9
+
+00:00:22.993 --> 00:00:26.275
+Velocemente, datemi i seguenti numeri
+
+00:00:26.275 --> 00:00:28.542
+relativi alla proabilità di risultare croce
+
+00:00:28.542 --> 00:00:31.296
+per la moneta 1 e la moneta 2.
+

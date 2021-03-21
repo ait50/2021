@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.234 --> 00:00:02.968
+Colocando tudo isso
+em notação matemática,
+
+00:00:03.001 --> 00:00:06.367
+obtemos a probabilidade
+de a pessoa ter câncer,
+
+00:00:06.400 --> 00:00:10.434
+e daí vem a probabilidade
+de não ser câncer.
+
+00:00:10.467 --> 00:00:13.634
+E eu tenho duas
+probabilidades condicionais
+
+00:00:13.667 --> 00:00:15.667
+de o exame dar positivo.
+
+00:00:15.701 --> 00:00:18.534
+Se for câncer,
+podemos prever a partir daí
+
+00:00:18.567 --> 00:00:21.200
+probabilidade
+de o exame ser negativo.
+
+00:00:21.234 --> 00:00:24.200
+E a probabilidade
+de o exame dar positivo
+
+00:00:24.234 --> 00:00:26.133
+pode estar livre do câncer,
+
+00:00:26.167 --> 00:00:28.234
+o que completa a probabilidade
+
+00:00:28.267 --> 00:00:31.167
+de um resultado negativo
+em caso de não haver câncer.
+
+00:00:31.200 --> 00:00:34.501
+Esses casos
+são fáceis de inferir
+
+00:00:34.534 --> 00:00:37.701
+pela regra do 1-...
+
+00:00:37.734 --> 00:00:40.767
+Quando lemos isto,
+você completa a probabilidade
+
+00:00:40.834 --> 00:00:44.501
+de um resultado positivo
+do teste
+
+00:00:44.534 --> 00:00:48.133
+como sendo a soma
+do resultado positivo
+
+00:00:48.167 --> 00:00:52.100
+vezes a probabilidade
+do câncer,
+
+00:00:52.167 --> 00:00:56.367
+que é a entrada da tabela-verdade
+para a combinação de P e C,
+
+00:00:56.400 --> 00:00:59.434
+mais o mesmo dado
+que não temos a doença.
+
+00:00:59.467 --> 00:01:02.167
+Essa notação é confusa
+e complicada.
+
+00:01:02.200 --> 00:01:04.601
+Se nos aprofundamos
+em probabilidade,
+
+00:01:04.634 --> 00:01:08.267
+isto é chamado
+de probabilidade total,
+
+00:01:08.300 --> 00:01:12.968
+mas é útil saber
+que é algo bastante intuitivo.
+
+00:01:13.001 --> 00:01:15.801
+Para desenvolver a intuição,
+eu vou passar
+
+00:01:15.834 --> 00:01:18.234
+outro exercício
+exatamente desse tipo.
+

@@ -1,0 +1,81 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.133 --> 00:00:01.734
+Vamos usar a tabela-verdade.
+
+00:00:01.767 --> 00:00:04.567
+Você tem uma escolha
+seguida de um lançamento.
+
+00:00:04.601 --> 00:00:07.701
+Podemos escolher a moeda 1
+ou a moeda 2.
+
+00:00:07.734 --> 00:00:10.767
+Existe uma chance de 0,5
+para cada moeda.
+
+00:00:10.801 --> 00:00:15.300
+Então, podemos lançar a moeda
+e aparecer cara ou coroa.
+
+00:00:15.334 --> 00:00:17.167
+Quais são as probabilidades?
+
+00:00:17.200 --> 00:00:20.434
+Eu diria que seria escolher
+1 em 0,59,
+
+00:00:20.467 --> 00:00:24.534
+e escolhendo a moeda justa,
+sei que a probabilidade de cara
+
+00:00:24.567 --> 00:00:28.734
+é novamente, 0,5,
+o que transforma em 0,25.
+
+00:00:28.767 --> 00:00:33.734
+O mesmo vale para escolher
+a moeda justa e esperar coroa.
+
+00:00:33.767 --> 00:00:38.001
+Mas escolhendo a moeda viciada,
+com 0,5 de chance,
+
+00:00:38.033 --> 00:00:40.601
+temos 0,9 de chance
+de aparecer cara.
+
+00:00:40.634 --> 00:00:45.100
+Então, 0,5 vezes 0,95
+é igual a 0,45.
+
+00:00:45.133 --> 00:00:49.534
+Quanto à moeda viciada,
+a probabilidade de coroa é 0,1,
+
+00:00:49.567 --> 00:00:52.901
+multiplicando pela probabilidade
+de escolher em 0,5
+
+00:00:52.934 --> 00:00:54.667
+é igual a 0,05.
+
+00:00:54.701 --> 00:00:57.734
+Quando perguntarem qual é
+a probabilidade de cara,
+
+00:00:57.767 --> 00:01:01.767
+vamos ver que, em dois casos,
+cara realmente aparece,
+
+00:01:01.801 --> 00:01:07.434
+então se somar 0,25 com 0,45
+vai obter 0,7.
+
+00:01:07.467 --> 00:01:13.133
+Este exemplo tem uma chance
+de 0,7 de tirarmos cara.
+

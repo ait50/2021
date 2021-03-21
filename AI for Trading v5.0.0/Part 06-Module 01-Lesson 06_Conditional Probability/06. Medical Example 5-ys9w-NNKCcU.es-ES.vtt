@@ -1,0 +1,13 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:06.000
+Y la respuesta es 0.18 que es multiplicando la probabilidad de no tener cáncer, que es 0.9
+
+00:00:06.000 --> 00:00:12.000
+Con la probabilidad de tener un resultado positivo para un paciente que no tiene cáncer 0.2
+
+00:00:12.000 --> 09:59:59.000
+Multiplicamos 0.9 con 0.2 que me da 0.18
+

@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Poniendo todo esto en notación matemática
+
+00:00:02.000 --> 00:00:06.000
+Hemos dado la probabilidad de tener cáncer
+
+00:00:06.000 --> 00:00:10.000
+Y de aquí, esta sigue la probabilidad de no tener cáncer.
+
+00:00:10.000 --> 00:00:13.000
+Y esta me da 2 condiciones probabilisticas
+
+00:00:13.000 --> 00:00:15.000
+De que la prueba sea positiva
+
+00:00:15.000 --> 00:00:18.000
+Si tenemos cáncer, podemos predecir cual es la probabilidad
+
+00:00:18.000 --> 00:00:21.000
+De la prueba sea negativa teniendo cáncer.
+
+00:00:21.000 --> 00:00:26.000
+Y la probabilidad de la prueba sea positiva cuando sea libre de cáncer
+
+00:00:26.000 --> 00:00:28.000
+El cual puede completar la probabilidad de
+
+00:00:28.000 --> 00:00:31.000
+Una resultado negativo en la prueba dado el caso de ser libre de cáncer.
+
+00:00:31.000 --> 00:00:33.000
+Entonces estas cosas son fácilmente inferidas
+
+00:00:33.000 --> 00:00:37.000
+Por la regla de 1 menos.
+
+00:00:37.000 --> 00:00:39.000
+Entonces cuando leemos esto,
+
+00:00:39.000 --> 00:00:43.000
+Completas la probabilidad de obtener un resultado de prueba positivo
+
+00:00:43.000 --> 00:00:46.000
+Como la suma de
+
+00:00:46.000 --> 00:00:49.000
+Un resultado positivo de prueba dado cáncer
+
+00:00:49.000 --> 00:00:52.000
+Multiplicado por la probabilidad de cáncer,
+
+00:00:52.000 --> 00:00:55.000
+Que en nuestra tabla de la verdad es la combinación de P y C
+
+00:00:55.000 --> 00:00:59.000
+Más la misma que puede ser completa de cáncer.
+
+00:00:59.000 --> 00:01:02.000
+Ahora con esta notación es confuso y complicado
+
+00:01:02.000 --> 00:01:05.000
+Si metemos esa probabilidad profunda, que llamamos
+
+00:01:05.000 --> 00:01:08.000
+Probabilidad total
+
+00:01:08.000 --> 00:01:11.000
+Pero es útil saber que esto es
+
+00:01:11.000 --> 00:01:13.000
+Muy pero muy intuitivo
+
+00:01:13.000 --> 00:01:16.000
+Y para lo siguiente desarrollar una ecuación que nos de
+
+00:01:16.000 --> 09:59:59.000
+Otro ejercicio de exactamente el mismo tipo.
+

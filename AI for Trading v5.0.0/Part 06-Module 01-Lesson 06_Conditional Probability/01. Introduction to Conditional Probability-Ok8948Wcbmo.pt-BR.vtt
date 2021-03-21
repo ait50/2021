@@ -1,0 +1,104 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.234 --> 00:00:02.834
+Probabilidade Condicional
+
+00:00:04.000 --> 00:00:07.701
+Na vida real, eventos costumam
+depender uns dos outros.
+
+00:00:07.734 --> 00:00:09.567
+Digamos que você pode ser
+um madrugador
+
+00:00:09.601 --> 00:00:10.901
+ou um notívago.
+
+00:00:10.934 --> 00:00:13.067
+Para simplificar,
+vamos supor
+
+00:00:13.100 --> 00:00:15.467
+que há 50% de chance
+para cada opção.
+
+00:00:15.501 --> 00:00:18.467
+Se você decide sair para correr
+às 5h da manhã,
+
+00:00:18.501 --> 00:00:20.767
+isso não é
+totalmente independente.
+
+00:00:20.801 --> 00:00:23.267
+Eu diria que
+sair para correr às 5h
+
+00:00:23.300 --> 00:00:25.267
+não é provável
+para a maioria das pessoas.
+
+00:00:25.300 --> 00:00:27.834
+Mas certamente é mais provável
+para pessoas
+
+00:00:27.868 --> 00:00:30.267
+que estão acordadas
+a essa hora.
+
+00:00:30.300 --> 00:00:31.701
+Se você acorda cedo,
+
+00:00:31.734 --> 00:00:34.033
+a probabilidade
+deve ser de 2%.
+
+00:00:34.067 --> 00:00:37.467
+E, se você é notívago,
+a probabilidade pode ser zero.
+
+00:00:37.501 --> 00:00:39.067
+Você pode pensar
+nesses eventos
+
+00:00:39.100 --> 00:00:41.701
+como dois lançamentos
+consecutivos de moeda.
+
+00:00:41.734 --> 00:00:45.133
+A primeira moeda determina
+se você acorda cedo
+
+00:00:45.167 --> 00:00:50.133
+e a segunda só é lançada
+considerando essa característica,
+
+00:00:50.167 --> 00:00:52.968
+para determinar
+se você vai sair para correr.
+
+00:00:53.000 --> 00:00:55.701
+Não estamos mais observando
+eventos independentes,
+
+00:00:55.734 --> 00:00:57.400
+como fizemos na última aula,
+
+00:00:57.434 --> 00:00:59.567
+quando o primeiro
+lançamento de moeda
+
+00:00:59.601 --> 00:01:01.868
+não afetava
+o resultado do segundo.
+
+00:01:01.901 --> 00:01:05.434
+A partir desta aula,
+veremos estudos de caso
+
+00:01:05.467 --> 00:01:09.467
+em que o resultado do primeiro
+impacta o resultado do segundo.
+

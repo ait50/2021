@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Esta es una pregunta no trivial
+
+00:00:02.000 --> 00:00:05.000
+Y la forma correcta de hacer esto es a través de la tabla de la verdad
+
+00:00:05.000 --> 00:00:06.000
+Que acabo de dibujar aquí
+
+00:00:06.000 --> 00:00:08.000
+Hay 3 cosas que realmente suceden
+
+00:00:08.000 --> 00:00:11.000
+Hemos escogido inicialmente una moneda
+
+00:00:11.000 --> 00:00:13.000
+Que se puede tomar moneda 1 o moneda 2 con la misma probabilidad
+
+00:00:13.000 --> 00:00:16.000
+Y después la giramos por primera vez
+
+00:00:16.000 --> 00:00:17.000
+Y se puede obtener una cara o una cruz
+
+00:00:17.000 --> 00:00:20.000
+Y después la giramos por segunda vez con el segundo resultado
+
+00:00:20.000 --> 00:00:23.000
+Entonces para los diferentes casos resumimos mi tabla de la verdad
+
+00:00:23.000 --> 00:00:26.000
+Ahora necesito observar solo el caso donde
+
+00:00:26.000 --> 00:00:29.000
+Cara es seguido de una cruz
+
+00:00:29.000 --> 00:00:31.000
+Este de aquí y de acá
+
+00:00:31.000 --> 00:00:34.000
+Entonces calculamos la probabilidad de estos dos casos
+
+00:00:34.000 --> 00:00:37.000
+La probabilidad de escoger la moneda 1 es 0.5
+
+00:00:37.000 --> 00:00:40.000
+Para la moneda justa obtenemos 0.5 para la cara
+
+00:00:40.000 --> 00:00:43.000
+Seguido de 0.5 para la cruz
+
+00:00:43.000 --> 00:00:46.000
+Obtenemos de ambos 0.125
+
+00:00:46.000 --> 00:00:49.000
+Vamos haciendo lo mismo para el segundo caso
+
+00:00:49.000 --> 00:00:53.000
+Hay un 0.5 de posibilidad de tomar la moneda 2
+
+00:00:53.000 --> 00:00:56.000
+Ahora resulta ser que obtener cara es 0.9
+
+00:00:56.000 --> 00:01:00.000
+Resulta ser que obtener cruz es 0.1
+
+00:01:00.000 --> 00:01:05.000
+Entonces al multiplicarlos juntos, nos da 0.045
+
+00:01:05.000 --> 00:01:08.000
+Un número menor que este de aquí arriba
+
+00:01:08.000 --> 00:01:12.000
+Al sumar estas 2 cosas juntas nos da en 0.17
+
+00:01:12.000 --> 00:01:16.000
+Que es la respuesta correcta
+
+00:01:16.000 --> 00:01:18.000
+Para la pregunta de aquí
+
+00:01:18.000 --> 00:01:20.000
+Esta fue realmente no trivial
+
+00:01:20.000 --> 09:59:59.000
+Y estaré impresionado si lo obtuviste correctamente
+

@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:02.000
+E la risposta è deprimente
+
+00:00:02.000 --> 00:00:04.000
+Se, nuovamente, disegnate la tabella della verità
+
+00:00:04.000 --> 00:00:07.000
+trovate, per le diverse combinazioni,
+
+00:00:07.000 --> 00:00:11.000
+che se estrate la moneta 1,
+
+00:00:11.000 --> 00:00:12.000
+non vedrete mai croce.
+
+00:00:12.000 --> 00:00:16.000
+Quindi in questo caso qui, dove in effetti abbiamo croce, croce
+
+00:00:16.000 --> 00:00:18.000
+abbiamo 0 probabilità.
+
+00:00:18.000 --> 00:00:22.000
+Possiamo ricavarlo. La probabilità di estrarre la moneta 1 è 0.5
+
+00:00:22.000 --> 00:00:25.000
+ma la proabbilità di ottenere croce data moneta 1
+
+00:00:25.000 --> 00:00:28.000
+deve essere 0, perchè la probabilità di avere testa è 1,
+
+00:00:28.000 --> 00:00:31.000
+quindi 0.5 per 0 per 0,
+
+00:00:31.000 --> 00:00:32.000
+che è 0
+
+00:00:32.000 --> 00:00:35.000
+Quindi l'unico caso in cui possiamo ottenere croce/croce è
+
+00:00:35.000 --> 00:00:37.000
+quando estraiamo la moneta 2
+
+00:00:37.000 --> 00:00:40.000
+è questo ha una probabilità di
+
+00:00:40.000 --> 00:00:44.000
+0.5 moltiplicata la probabilità di croce
+
+00:00:44.000 --> 00:00:46.000
+dato che estraiamo la seconda moneta
+
+00:00:46.000 --> 00:00:49.000
+che è 0.4 per 0.4 di nuovo,
+
+00:00:49.000 --> 00:00:52.000
+che equivale a 0.08
+
+00:00:52.000 --> 09:59:59.000
+Che sarebbe stata la risposta corretta.
+

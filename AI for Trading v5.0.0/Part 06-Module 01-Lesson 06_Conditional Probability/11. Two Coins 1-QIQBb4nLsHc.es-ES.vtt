@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.184 --> 00:00:02.649
+Ahora aquí, tenemos una bolsa
+
+00:00:02.649 --> 00:00:06.386
+Y en la bolsa hay 2 monedas, moneda 1 y moneda 2
+
+00:00:06.417 --> 00:00:10.358
+Y por adelantado sabemos que la moneda 1 es justa
+
+00:00:10.358 --> 00:00:15.057
+Entonces P para la moneda 1 para obtener cara es de 0.5
+
+00:00:15.057 --> 00:00:19.589
+Mientras que la moneda 2 está cargada, esto quiere decir que P para la moneda 2
+
+00:00:19.589 --> 00:00:22.993
+Resulta que da cara con 0.9
+
+00:00:22.993 --> 00:00:26.275
+Rápidamente, dame los siguientes números
+
+00:00:26.275 --> 00:00:28.542
+De la probabilidad de que salga cruz
+
+00:00:28.542 --> 00:00:31.296
+Para la moneda 1 y para la moneda 2
+

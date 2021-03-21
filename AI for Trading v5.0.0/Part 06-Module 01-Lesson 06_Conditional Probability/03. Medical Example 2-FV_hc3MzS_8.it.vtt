@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:04.000
+Ovviamente, nella realtà, non sappiamo se una persona è malata di cancro
+
+00:00:04.000 --> 00:00:07.000
+ma possiamo eseguire degli esami come quello del sangue.
+
+00:00:07.000 --> 00:00:14.000
+Il risultato degli esami può essere positivo o negativo, ma come ogni buon test,
+
+00:00:14.000 --> 00:00:19.000
+Mi dice qualcosa riguardo quello che realmente mi interessa, se una persona ha o meno il cancro.
+
+00:00:19.000 --> 00:00:27.000
+Diciamo, che se una persona è malata di cancro, il test risulterò positivo con una probabilità di 0.9,
+
+00:00:27.000 --> 00:00:34.000
+e questo implica che se una persona ha il cancro, l'esito negativo avrà 0,1 probabilità di uscire.
+
+00:00:34.000 --> 00:00:37.000
+e questo perché queste due cose devono avere somma 1.
+
+00:00:37.000 --> 00:00:46.000
+Vi ho appena mostrato una notazione abbastanza complicata che dice che il risultato del test dipende
+
+00:00:46.000 --> 00:00:49.000
+dal fatto che la persona abbia o meno il cancro
+
+00:00:49.000 --> 00:00:53.000
+Questo è più complicato di ogni altra cosa di cui abbiamo parlato sino ad ora
+
+00:00:53.000 --> 00:00:58.000
+Chiamiamo questa cosa qui sopra una probabilità condizionata,
+
+00:00:58.000 --> 00:01:02.000
+e il modo per interpretare questa notazione, molto divertente
+
+00:01:02.000 --> 00:01:08.000
+in cui vi è barra nel mezzo, è che la barra ci dice qual è la probabilità dell'elemento a sinistra
+
+00:01:08.000 --> 00:01:12.000
+data la assunzione che siamo nel caso indicato dall'elemento a destra.
+
+00:01:12.000 --> 00:01:18.000
+Ora, in realtà, non sappiamo se la persona abbia o meno il cancro, e più avanti in questa unità
+
+00:01:18.000 --> 00:01:23.000
+ragioneremo sul fatto che una persona abbia o meno il cancro dato un certo insieme di dati
+
+00:01:23.000 --> 00:01:27.000
+ma per ora, assumeremo di avere capacità divine.
+
+00:01:27.000 --> 00:01:31.000
+possiamo dire con assoluta certezza che una persona ha il cancro,
+
+00:01:31.000 --> 00:01:35.000
+e possiamo determinare quale sia il risultato del test.
+
+00:01:35.000 --> 00:01:40.000
+Questo è un test che non è esattamente deterministico -- produce degli errori,
+
+00:01:40.000 --> 00:01:46.000
+ma solo nel 10% dei casi, come illustrato dallo 0.1 quaggiù
+
+00:01:46.000 --> 00:01:51.000
+Ora, si scopre, che io non specificato pienamente il test.
+
+00:01:51.000 --> 00:01:57.000
+Lo stesso test potrebbe essere applicato anche a una situazione in cui la persona non ha il cancro.
+
+00:01:57.000 --> 00:02:02.000
+Così questa piccola cosa qui è la mia abbreviazione per il concetto di non avere il cancro.
+
+00:02:02.000 --> 00:02:10.000
+E ora, lasciate che vi dia la probabilità quando il test mi dà un risultato positivo - un falso risultato positivo
+
+00:02:10.000 --> 00:02:13.000
+Quando non non c'è nessun cancro, è 0,2.
+
+00:02:13.000 --> 00:02:18.000
+Ora potete dirmi qual è la probabilità di un esito negativo nel caso
+
+00:02:18.000 --> 09:59:59.000
+in cui noi sappiamo che per certo che la persona non ha il cancro; quindi per favore rispondete.
+

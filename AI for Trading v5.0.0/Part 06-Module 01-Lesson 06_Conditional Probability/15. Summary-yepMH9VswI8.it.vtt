@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Quindi ci sono lezioni importanti in quello che abbiamo appena imparato
+
+00:00:03.000 --> 00:00:07.000
+e il concetto chiave affrontato è la probabilità condizionale
+
+00:00:07.000 --> 00:00:10.000
+Abbiamo detto che il risultato di una variabile come test
+
+00:00:10.000 --> 00:00:14.000
+in relatà non è come il lancio casuale di una moneta,
+
+00:00:14.000 --> 00:00:16.000
+ma dipende da qualcos'altro,
+
+00:00:16.000 --> 00:00:17.000
+come una malattia
+
+00:00:17.000 --> 00:00:19.000
+Quando noi osserviamo questo
+
+00:00:19.000 --> 00:00:20.000
+siamo in grado di predire
+
+00:00:20.000 --> 00:00:23.000
+qual è la probabilità del risultato di un test
+
+00:00:23.000 --> 00:00:26.000
+anche se non sappiamo se la persona sia o meno malata
+
+00:00:26.000 --> 00:00:29.000
+e facciamo questo utilizzando la tabella della verità
+
+00:00:29.000 --> 00:00:30.000
+e nella tabella della verità
+
+00:00:30.000 --> 00:00:33.000
+noi sommiamo line multiplicate.
+
+00:00:33.000 --> 00:00:36.000
+Per esempio, moltiplichiamo la probabilità di un risultato di un test
+
+00:00:36.000 --> 00:00:39.000
+condizionata da questa variabile sconosciuta,
+
+00:00:39.000 --> 00:00:41.000
+Se la persona è malata
+
+00:00:41.000 --> 00:00:44.000
+moltiplicata per la probabilità che la malattia sia presente.
+
+00:00:44.000 --> 00:00:47.000
+Poi abbiamo aggiunto una seconda riga della tabella di verità,
+
+00:00:47.000 --> 00:00:49.000
+dove la nostra variabile non osservata malattia
+
+00:00:49.000 --> 00:00:52.000
+ha preso il valore opposto non (not) malata.
+
+00:00:52.000 --> 00:00:54.000
+Scritto in questo modo, sembra davvero sgraziato,
+
+00:00:54.000 --> 00:00:58.000
+ma questo è effettivamente quello che abbiamo fatto quando abbiamo utilizzato la tabella della verità.
+
+00:00:58.000 --> 00:01:02.000
+Così ora capiamo che certi lanci di moneta
+
+00:01:02.000 --> 00:01:06.000
+dipendono altri lanci di moneta,
+
+00:01:06.000 --> 00:01:10.000
+quindi, se Dio, per esempio, lancia la moneta per decidere se prenderemo una malattia o meno,
+
+00:01:10.000 --> 00:01:14.000
+allora anche l'esame medico
+
+00:01:14.000 --> 00:01:16.000
+ha un risultato casuale,
+
+00:01:16.000 --> 00:01:20.000
+ma la sua probabilità dipende realmente dalla presenza o meno della malattia.
+
+00:01:20.000 --> 00:01:24.000
+Dobbiamo considerare questo quando facciamo inferenza probabilistica.
+
+00:01:24.000 --> 00:01:26.000
+Nella prossima unità,
+
+00:01:26.000 --> 00:01:29.000
+andremo ad affrontare il problema reale.
+
+00:01:29.000 --> 00:01:34.000
+Diciamo che ci interessa veramente se abbiamo una malattia come il cancro o no.
+
+00:01:34.000 --> 00:01:36.000
+Quale pensate sia la probabilità,
+
+00:01:36.000 --> 00:01:39.000
+dato che il nostro medico
+
+00:01:39.000 --> 00:01:41.000
+appena ci ha dato un risultato positivo di un esame?
+
+00:01:41.000 --> 00:01:43.000
+E posso dirvi,
+
+00:01:43.000 --> 00:01:47.000
+che avrete una sorpresa.
+

@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+Por supuesto en realidad no sabemos cuando una persona sufre de cáncer
+
+00:00:04.000 --> 00:00:07.000
+Pero podemos hacer una prueba como es la prueba de sangre.
+
+00:00:07.000 --> 00:00:14.000
+El resultado de esta prueba de sangre puede ser positiva o negativa, pero como en cualquiera buena prueba
+
+00:00:14.000 --> 00:00:19.000
+Este me dice algo sobre lo que realmente me interesa -- si la persona tiene cáncer o no.
+
+00:00:19.000 --> 00:00:27.000
+Vamos a decir, que si la persona tiene cáncer, la prueba resulta ser positiva con una probabilidad de 0.9
+
+00:00:27.000 --> 00:00:34.000
+Eso implica que la persona que tiene cáncer, tiene una probabilidad de tener un resultado negativo de 0.1
+
+00:00:34.000 --> 00:00:37.000
+Y eso es por que estas dos cosas tienen que sumar 1.
+
+00:00:37.000 --> 00:00:46.000
+Te he dicho una notación un tanto complicada que dice que el resultado de la prueba depende
+
+00:00:46.000 --> 00:00:49.000
+Si la persona tiene cáncer o no.
+
+00:00:49.000 --> 00:00:53.000
+Esto ha sido más complicado que todo lo demás que hemos hablado hasta ahorita.
+
+00:00:53.000 --> 00:00:58.000
+Vamos a llamar a esta cosa de aquí una probabilidad condicional.
+
+00:00:58.000 --> 00:01:02.000
+Y la forma de entender esto es mediante una notación graciosa
+
+00:01:02.000 --> 00:01:08.000
+Hay una barra en medio y la barra dice que cual es la probabilidad de la cosa que está en la izquierda
+
+00:01:08.000 --> 00:01:12.000
+Dada que asumimos que la cosa que esta a la derecha realmente sea el caso.
+
+00:01:12.000 --> 00:01:18.000
+Ahora en realidad, no sabemos si la persona tiene cáncer o no y en una unidad después
+
+00:01:18.000 --> 00:01:23.000
+Vamos a explicar una razón si la persona tiene un cáncer dado un conjunto de datos.
+
+00:01:23.000 --> 00:01:27.000
+Pero por ahora vamos a asumir que tenemos capacidades tipo Dios
+
+00:01:27.000 --> 00:01:31.000
+Podemos decir con absoluta certeza que la persona tiene cáncer
+
+00:01:31.000 --> 00:01:35.000
+Y podemos determinar cual es el resultado de la prueba
+
+00:01:35.000 --> 00:01:40.000
+Esta prueba no es exactamente deterministica -- que genera errores
+
+00:01:40.000 --> 00:01:46.000
+Pero sólo hace un error en un 10% de los casos, como se ilustra aquí abajo de 0.1
+
+00:01:46.000 --> 00:01:51.000
+Ahora resulta ser, que no he especificado del todo la prueba.
+
+00:01:51.000 --> 00:01:57.000
+La misma prueba también aplica para la situación donde la persona no tiene cáncer
+
+00:01:57.000 --> 00:02:02.000
+Esta pequeña cosa de aquí es mi atajo para cuando no tiene cáncer
+
+00:02:02.000 --> 00:02:10.000
+Y por ahora, vamos a asumir que la probabilidad de la prueba me da un resultado positivo -- que es un resultado negativo
+
+00:02:10.000 --> 00:02:13.000
+Cuando no se tiene cáncer de 0.2
+
+00:02:13.000 --> 00:02:18.000
+Ahora me puedes decir cual es la probabilidad de un resultado negativo en caso
+
+00:02:18.000 --> 09:59:59.000
+De cuando sabemos que la persona de hecho no tiene cáncer, así que por favor dímelo
+
