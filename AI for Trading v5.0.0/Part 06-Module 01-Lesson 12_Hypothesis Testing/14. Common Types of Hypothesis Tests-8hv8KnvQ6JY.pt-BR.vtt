@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.667 --> 00:00:02.334
+Agora que você
+se familiarizou
+
+00:00:02.367 --> 00:00:04.934
+com a configuração
+de testes de hipóteses,
+
+00:00:04.968 --> 00:00:08.334
+vamos aos testes mais comuns
+que vemos na prática.
+
+00:00:08.367 --> 00:00:12.634
+É comum testar a média
+ou proporção de uma população
+
+00:00:12.667 --> 00:00:14.667
+como igual a algum valor.
+
+00:00:14.701 --> 00:00:16.767
+Por exemplo, em finanças,
+
+00:00:16.801 --> 00:00:20.868
+podemos perguntar se é esperado
+um retorno maior do que 6%
+
+00:00:20.901 --> 00:00:22.400
+em um investimento.
+
+00:00:22.433 --> 00:00:25.534
+Podemos configurar o teste
+de hipóteses da seguinte forma:
+
+00:00:25.567 --> 00:00:29.601
+na nula, você ganha
+6% ou menos,
+
+00:00:29.634 --> 00:00:33.067
+e na alternativa,
+você obtém mais de 6%.
+
+00:00:33.100 --> 00:00:35.067
+Outro teste de hipóteses comum
+
+00:00:35.100 --> 00:00:37.801
+é perguntar qual de duas
+campanhas de marketing
+
+00:00:37.834 --> 00:00:40.067
+pode aumentar o tráfego
+de um site.
+
+00:00:40.100 --> 00:00:43.767
+No caso, a configuração de nulas
+ou alternativas seria esta:
+
+00:00:43.801 --> 00:00:47.767
+a nula sugere que a proporção
+de pessoas que visitam o site
+
+00:00:47.801 --> 00:00:50.334
+é a mesma em cada campanha.
+
+00:00:50.367 --> 00:00:53.934
+A alternativa é que
+uma campanha aumenta o tráfego.
+
+00:00:53.967 --> 00:00:56.801
+Então a proporção de tráfego
+é diferente
+
+00:00:56.834 --> 00:00:58.868
+de uma página
+para a seguinte.
+
+00:00:58.901 --> 00:01:01.467
+Se quisermos mesmo saber
+se a campanha nova
+
+00:01:01.501 --> 00:01:03.267
+é melhor que a antiga,
+
+00:01:03.300 --> 00:01:06.667
+podemos usar um teste de hipóteses
+unilateral como este,
+
+00:01:06.700 --> 00:01:10.167
+no qual o "maior que" sugere
+que o número de pessoas
+
+00:01:10.200 --> 00:01:13.801
+que visitam o site seria maior
+na nova campanha.
+
+00:01:13.834 --> 00:01:18.534
+Você pode usar álgebra para mudar
+essa lógica e deixá-la assim.
+
+00:01:18.567 --> 00:01:22.734
+Veja que todas as hipóteses
+dizem respeito a parâmetros,
+
+00:01:22.767 --> 00:01:25.001
+não a estatísticas.
+
+00:01:25.033 --> 00:01:27.067
+Esse é sempre o caso.
+
+00:01:27.100 --> 00:01:30.100
+Não é necessário testar hipóteses
+em estatísticas,
+
+00:01:30.133 --> 00:01:33.167
+pois os valores são exatos
+nos conjuntos de dados.
+
+00:01:33.267 --> 00:01:36.033
+Nossas perguntas
+são sobre a população total,
+
+00:01:36.067 --> 00:01:37.801
+assim como nossas hipóteses.
+

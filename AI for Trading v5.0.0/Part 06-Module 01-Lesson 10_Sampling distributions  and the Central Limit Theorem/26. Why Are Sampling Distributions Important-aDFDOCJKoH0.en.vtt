@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.379 --> 00:00:07.540
+In this lesson, you've looked a lot at sampling distributions.
+
+00:00:07.540 --> 00:00:11.339
+We might still not understand the use of this idea in practice.
+
+00:00:11.339 --> 00:00:12.919
+In the next lessons,
+
+00:00:12.919 --> 00:00:14.884
+you're going to learn more about inference.
+
+00:00:14.884 --> 00:00:19.234
+Specifically, you'll be learning about Confidence Intervals and Hypothesis Testing.
+
+00:00:19.234 --> 00:00:21.407
+When looking at these techniques online,
+
+00:00:21.407 --> 00:00:23.149
+you might find a lot of formulas and
+
+00:00:23.149 --> 00:00:26.959
+built-in calculators for computing the final results for these techniques.
+
+00:00:26.960 --> 00:00:31.850
+However, these built-in calculators hide the assumptions and potential biases.
+
+00:00:31.850 --> 00:00:35.329
+With your new understanding of sampling distributions and bootstrapping,
+
+00:00:35.329 --> 00:00:38.899
+you're ready to tackle not only using the built-in techniques,
+
+00:00:38.899 --> 00:00:43.320
+but to extend these techniques to a multitude of other situations.
+

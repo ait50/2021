@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.860 --> 00:00:06.044
+In this lesson, you'll be learning about confidence intervals.
+
+00:00:06.044 --> 00:00:10.589
+When we try to estimate a population parameter based on a sample statistic,
+
+00:00:10.589 --> 00:00:12.615
+this is like fishing with a fishing pole.
+
+00:00:12.615 --> 00:00:14.884
+And there's nothing wrong with fishing this way.
+
+00:00:14.884 --> 00:00:16.789
+It's a perfectly good way to fish.
+
+00:00:16.789 --> 00:00:22.644
+However, you'd be much more likely to catch a fish if you cast an entire net.
+
+00:00:22.644 --> 00:00:25.489
+How much more likely are you that you'll catch a fish?
+
+00:00:25.489 --> 00:00:28.219
+Well, that depends on the size of the net.
+
+00:00:28.219 --> 00:00:33.469
+The larger the net, the more confident you can be that you'll actually capture a fish.
+
+00:00:33.469 --> 00:00:37.935
+This net is much more likely to catch a fish than the smaller net.
+
+00:00:37.935 --> 00:00:41.655
+Though this example isn't exactly the same as building a confidence interval,
+
+00:00:41.655 --> 00:00:43.500
+because we consider a parameter to be
+
+00:00:43.500 --> 00:00:47.155
+a non-moving number and not a moving fish amongst water.
+
+00:00:47.155 --> 00:00:52.170
+This idea that providing an interval and not just a single estimate will help us
+
+00:00:52.170 --> 00:00:54.060
+gain confidence in our ability to capture
+
+00:00:54.060 --> 00:00:57.750
+a population parameter is at the core of confidence intervals.
+
+00:00:57.750 --> 00:00:59.460
+And the wider our interval,
+
+00:00:59.460 --> 00:01:03.450
+the more confident we can be that we capture our parameter of interest.
+
+00:01:03.450 --> 00:01:05.010
+Let's take a closer look.
+

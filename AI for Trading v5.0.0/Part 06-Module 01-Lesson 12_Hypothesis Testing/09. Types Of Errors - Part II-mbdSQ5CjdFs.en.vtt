@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.960 --> 00:00:06.919
+From the quizzes, you've now been introduced to two types of errors.
+
+00:00:06.919 --> 00:00:09.214
+Type one and type two errors.
+
+00:00:09.214 --> 00:00:12.484
+Correctly setting up the null and alternative hypotheses
+
+00:00:12.484 --> 00:00:15.320
+is important for exactly this reason.
+
+00:00:15.320 --> 00:00:18.740
+They define the importance of the errors that we're making.
+
+00:00:18.739 --> 00:00:20.539
+In the previous example,
+
+00:00:20.539 --> 00:00:24.155
+a type one error is one where we decided that an individual is guilty,
+
+00:00:24.155 --> 00:00:26.270
+but they're actually innocent.
+
+00:00:26.269 --> 00:00:28.399
+The definition of a type one error is
+
+00:00:28.399 --> 00:00:31.339
+an error where the alternative hypothesis is chosen,
+
+00:00:31.339 --> 00:00:34.344
+but the null hypothesis is actually true.
+
+00:00:34.344 --> 00:00:36.109
+You might also hear this called,
+
+00:00:36.109 --> 00:00:40.655
+a false-positive, and it is frequently denoted with a symbol alpha.
+
+00:00:40.655 --> 00:00:45.429
+Type one errors are considered the worse of the two possible errors.
+
+00:00:45.429 --> 00:00:47.670
+The other type of error that might occur,
+
+00:00:47.670 --> 00:00:50.545
+is that we might set a guilty individual free.
+
+00:00:50.545 --> 00:00:52.325
+This is a type two error.
+
+00:00:52.325 --> 00:00:57.065
+By definition, a type two error is when the null hypothesis is chosen,
+
+00:00:57.064 --> 00:00:59.449
+and the alternative is actually true.
+
+00:00:59.450 --> 00:01:03.640
+What we can see in this example is that there are two potential extremes.
+
+00:01:03.640 --> 00:01:08.585
+The jury might decide that they never want to commit a type one error, in which case,
+
+00:01:08.584 --> 00:01:10.234
+regardless of the evidence,
+
+00:01:10.234 --> 00:01:12.799
+they just always set everyone as innocent,
+
+00:01:12.799 --> 00:01:16.484
+and then they're going to commit many more type two errors.
+
+00:01:16.484 --> 00:01:20.480
+Alternatively, if the jury just decided that everyone was guilty,
+
+00:01:20.480 --> 00:01:22.400
+then they would never commit a type two error,
+
+00:01:22.400 --> 00:01:25.070
+but they would commit many more type one errors.
+
+00:01:25.069 --> 00:01:29.189
+Because of this relationship between type one and type two errors,
+
+00:01:29.189 --> 00:01:31.549
+professionals frequently just set
+
+00:01:31.549 --> 00:01:34.954
+a threshold for how many type one errors they're willing to commit.
+
+00:01:34.954 --> 00:01:38.135
+And then, they try to keep the type two errors
+
+00:01:38.135 --> 00:01:41.465
+as low as possible while still meeting this threshold.
+
+00:01:41.465 --> 00:01:45.381
+Common type one error rates are one percent from medical field,
+
+00:01:45.381 --> 00:01:49.739
+while they're five percent for research journals and other business applications.
+
+00:01:49.739 --> 00:01:53.420
+But really, this rate should be contingent on your application.
+
+00:01:53.420 --> 00:01:54.956
+In the next concept,
+
+00:01:54.956 --> 00:01:56.865
+you will see one application where
+
+00:01:56.864 --> 00:02:01.069
+neither five percent nor a one percent error rate makes very much sense.
+

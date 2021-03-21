@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.740 --> 00:00:06.349
+You've already learned a ton about how to build,
+
+00:00:06.349 --> 00:00:09.500
+interpret, and use confidence intervals in practice.
+
+00:00:09.500 --> 00:00:13.099
+This video is just a reminder on the types of conclusions we
+
+00:00:13.099 --> 00:00:17.254
+can make with confidence intervals and the types of conclusions we cannot make,
+
+00:00:17.254 --> 00:00:19.085
+which are commonly confused.
+
+00:00:19.085 --> 00:00:21.080
+When we build confidence intervals,
+
+00:00:21.079 --> 00:00:22.474
+they're aimed at parameters.
+
+00:00:22.475 --> 00:00:26.995
+That is, they're aimed at a single numeric value in our population.
+
+00:00:26.995 --> 00:00:29.570
+These values include the population mean,
+
+00:00:29.570 --> 00:00:31.484
+or the population standard deviation,
+
+00:00:31.484 --> 00:00:34.370
+potentially the difference in two population means,
+
+00:00:34.369 --> 00:00:37.849
+or any other numeric summary in the population.
+
+00:00:37.850 --> 00:00:41.060
+Notice that confidence intervals do not allow us to say something
+
+00:00:41.060 --> 00:00:45.380
+specific about any individual in our population.
+
+00:00:45.380 --> 00:00:48.679
+More advanced techniques in Machine Learning do aim at
+
+00:00:48.679 --> 00:00:52.369
+giving us information about every individual in a population,
+
+00:00:52.369 --> 00:00:57.070
+but commonly, confidence intervals are not aimed at solving these types of problems.
+
+00:00:57.070 --> 00:00:59.869
+Confidence intervals are commonly aimed at
+
+00:00:59.869 --> 00:01:03.000
+telling you about aggregate values in a population.
+

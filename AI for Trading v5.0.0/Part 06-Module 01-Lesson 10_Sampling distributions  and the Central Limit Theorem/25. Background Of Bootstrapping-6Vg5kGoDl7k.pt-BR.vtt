@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.026 --> 00:00:03.280
+A HISTÓRIA DO BOOTSTRAPPING
+
+00:00:03.326 --> 00:00:05.960
+Se a amostragem bootstrap
+parece maravilhosa,
+
+00:00:06.006 --> 00:00:07.480
+é porque ela é,
+
+00:00:07.526 --> 00:00:12.752
+mas a aplicação dela
+vai além desses casos de uso.
+
+00:00:12.798 --> 00:00:16.847
+A técnica foi utilizada
+para o aprendizado de máquina.
+
+00:00:16.893 --> 00:00:19.863
+Há mais informações sobre isso
+nas anotações.
+
+00:00:19.909 --> 00:00:24.269
+Essa técnica foi creditada
+a Bradley Efron, em 1979,
+
+00:00:24.315 --> 00:00:26.549
+um estatístico
+nascido no Minnesota.
+
+00:00:26.595 --> 00:00:29.742
+O nome bootstrapping
+foi dado à técnica
+
+00:00:29.788 --> 00:00:32.469
+porque a forma
+como ela funciona
+
+00:00:32.515 --> 00:00:36.245
+é parecida com a ideia de poder
+andar sobre areia movediça
+
+00:00:36.291 --> 00:00:41.717
+e ser capaz de sair
+em segurança sozinho.
+
+00:00:41.763 --> 00:00:44.617
+A forma como inferimos
+sobre um parâmetro populacional,
+
+00:00:44.663 --> 00:00:48.363
+realizando amostragem repetida
+da amostra existente,
+
+00:00:48.409 --> 00:00:50.308
+é tão maravilhosa quanto.
+
+00:00:50.354 --> 00:00:54.651
+Nós ganhamos confiança
+sobre onde o parâmetro pode existir
+
+00:00:54.697 --> 00:00:57.827
+sem precisar coletar
+nenhum dado adicional.
+
+00:00:57.873 --> 00:01:01.596
+É um conceito incrível que vem
+deixando pessoas perplexas há anos.
+

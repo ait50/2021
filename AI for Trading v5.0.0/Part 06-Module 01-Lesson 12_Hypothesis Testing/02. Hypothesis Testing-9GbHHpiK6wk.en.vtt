@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.890 --> 00:00:07.415
+Academic and industry professionals have questions about,
+
+00:00:07.415 --> 00:00:09.439
+well, just about everything.
+
+00:00:09.439 --> 00:00:13.164
+As data analysts, we try to help them answer these questions.
+
+00:00:13.164 --> 00:00:17.750
+But first, we need to translate the questions into what are known as hypothesis.
+
+00:00:17.750 --> 00:00:20.809
+Then, we need to be able to collect data to
+
+00:00:20.809 --> 00:00:24.309
+justify which hypothesis are likely to be true.
+
+00:00:24.309 --> 00:00:26.689
+As an example, just the other day,
+
+00:00:26.690 --> 00:00:28.234
+I was in a debate with a friend,
+
+00:00:28.234 --> 00:00:31.339
+about what the most popular ice cream flavor in the world is?
+
+00:00:31.339 --> 00:00:34.271
+Where I assumed, the most popular was chocolate,
+
+00:00:34.271 --> 00:00:36.560
+and they were sure it was vanilla.
+
+00:00:36.560 --> 00:00:38.420
+In this case, we could generate
+
+00:00:38.420 --> 00:00:41.899
+hypothesis where the most favorite ice cream is chocolate,
+
+00:00:41.899 --> 00:00:46.960
+and collect data to see if this hypothesis is actually supported by the data.
+
+00:00:46.960 --> 00:00:50.870
+But how can we truly know this unless we talk to everyone?
+
+00:00:50.869 --> 00:00:53.424
+How do we know if our conclusions are reliable?
+
+00:00:53.424 --> 00:00:54.679
+Well, it turns out,
+
+00:00:54.679 --> 00:00:56.494
+you can use hypothesis testing,
+
+00:00:56.494 --> 00:00:59.745
+or confidence intervals which you just saw in the last lesson,
+
+00:00:59.746 --> 00:01:01.940
+to draw conclusions about a population,
+
+00:01:01.939 --> 00:01:04.879
+only using sample data.
+
+00:01:04.879 --> 00:01:08.074
+Not all hypothesis testing is this straightforward.
+
+00:01:08.075 --> 00:01:11.000
+Within medical studies, say I wanted to test if
+
+00:01:11.000 --> 00:01:14.120
+a cancer drug is effective at helping patients.
+
+00:01:14.120 --> 00:01:17.090
+Well now, the hypothesis could go lots of different ways.
+
+00:01:17.090 --> 00:01:19.670
+Is the drug helpful if it makes patients feel better?
+
+00:01:19.670 --> 00:01:21.530
+Is it helpful if they live longer?
+
+00:01:21.530 --> 00:01:24.140
+Is it helpful if it reduces the tumor sizes?
+
+00:01:24.140 --> 00:01:26.930
+In this lesson, you will learn about how to
+
+00:01:26.930 --> 00:01:30.320
+set up and evaluate the results of hypothesis testing.
+
+00:01:30.319 --> 00:01:34.399
+Hypothesis testing is all about helping businesses make
+
+00:01:34.400 --> 00:01:39.000
+better and more informed database decisions. So let's get started.
+

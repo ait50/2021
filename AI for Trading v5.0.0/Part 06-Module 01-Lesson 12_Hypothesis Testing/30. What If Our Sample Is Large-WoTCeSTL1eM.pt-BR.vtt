@@ -1,0 +1,153 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.334 --> 00:00:02.901
+Estatística Prática
+E Se a Amostra For Muito Grande?
+
+00:00:02.934 --> 00:00:05.968
+Ao realizar um teste de hipóteses,
+você tem controle
+
+00:00:06.001 --> 00:00:07.634
+sobre dois componentes.
+
+00:00:07.667 --> 00:00:11.200
+Primeiro você deve se perguntar
+se sua amostra representa
+
+00:00:11.234 --> 00:00:13.267
+o interesse da sua população.
+
+00:00:13.300 --> 00:00:16.367
+Existem meios de assegurar
+que todos da população
+
+00:00:16.400 --> 00:00:19.667
+sejam representados corretamente
+na amostra?
+
+00:00:19.701 --> 00:00:25.234
+Se sua amostra não é representativa,
+suas conclusões estão incorretas.
+
+00:00:25.267 --> 00:00:28.801
+Segundo: você deve saber o impacto
+do tamanho da sua amostra
+
+00:00:28.834 --> 00:00:31.334
+e o papel que ele tem
+no resultado.
+
+00:00:31.367 --> 00:00:35.000
+Se o tamanho da amostra cresce,
+mesmo as menores diferenças
+
+00:00:35.033 --> 00:00:37.367
+entre os dois grupos
+serão notadas
+
+00:00:37.400 --> 00:00:39.234
+e significativas
+estatisticamente.
+
+00:00:39.267 --> 00:00:42.601
+Com amostras muito grandes
+ficando cada vez mais frequentes,
+
+00:00:42.634 --> 00:00:44.200
+como parte do mundo dos dados,
+
+00:00:44.234 --> 00:00:46.734
+vemos grande mudança
+nas técnicas,
+
+00:00:46.767 --> 00:00:50.400
+que fogem dos testes de hipóteses
+exatamente por isso.
+
+00:00:50.434 --> 00:00:55.100
+Imagine que queremos saber qual tipo
+de café vai vender melhor.
+
+00:00:55.133 --> 00:00:58.901
+Em média, talvez o tipo 1
+venda melhor que o tipo 2.
+
+00:00:58.934 --> 00:01:03.634
+Contudo, há centenas, milhares,
+talvez milhões de pessoas
+
+00:01:03.667 --> 00:01:06.200
+que ainda preferem
+um tipo diferente.
+
+00:01:06.234 --> 00:01:10.033
+Um teste de hipóteses só nos diz
+que, em média, o tipo 1
+
+00:01:10.067 --> 00:01:11.901
+vende melhor que o tipo 2,
+
+00:01:11.934 --> 00:01:15.100
+mas com amostras maiores,
+podemos ir mais longe.
+
+00:01:15.133 --> 00:01:19.334
+Discutir médias exclui
+toda uma parte da população
+
+00:01:19.367 --> 00:01:21.067
+que prefere o tipo 2
+
+00:01:21.100 --> 00:01:23.300
+ou que não gosta
+de nenhum dos dois,
+
+00:01:23.334 --> 00:01:25.267
+mas prefere outro tipo.
+
+00:01:25.300 --> 00:01:27.767
+Com amostras maiores,
+podemos ir mais longe.
+
+00:01:27.801 --> 00:01:30.100
+Mais longe do que
+um teste de hipóteses.
+
+00:01:30.133 --> 00:01:32.667
+E é isso que mais gente
+vem descobrindo.
+
+00:01:32.701 --> 00:01:36.400
+Usando aprendizado de máquina,
+individualiza-se uma abordagem,
+
+00:01:36.434 --> 00:01:40.033
+então talvez vendamos 20 tipos
+de café e saberemos de qual tipo
+
+00:01:40.067 --> 00:01:42.701
+cada pessoa da população
+prefere.
+
+00:01:42.734 --> 00:01:46.968
+Grandes amostras se provam
+prejudiciais a testes de hipóteses,
+
+00:01:47.001 --> 00:01:50.167
+mas são espetaculares
+para abordagens individuais
+
+00:01:50.200 --> 00:01:53.400
+que usam técnicas
+de aprendizado de máquina.
+
+00:01:53.434 --> 00:01:56.801
+Vamos ver duas técnicas
+de aprendizado de máquina
+
+00:01:56.834 --> 00:01:59.033
+nas últimas aulas deste curso.
+

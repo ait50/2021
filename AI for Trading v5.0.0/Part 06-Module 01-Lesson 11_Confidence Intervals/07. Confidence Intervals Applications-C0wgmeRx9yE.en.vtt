@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.889 --> 00:00:04.269
+In the previous concepts,
+
+00:00:04.269 --> 00:00:07.750
+you saw how we could build confidence intervals for different parameters,
+
+00:00:07.750 --> 00:00:10.259
+like the mean or difference in means.
+
+00:00:10.259 --> 00:00:12.519
+So what are some of the scenarios for which we would
+
+00:00:12.519 --> 00:00:15.205
+want to build a confidence interval for the difference in means?
+
+00:00:15.205 --> 00:00:17.890
+Well, we could look at the effectiveness of
+
+00:00:17.890 --> 00:00:22.615
+different drugs by comparing two groups who take two different drugs,
+
+00:00:22.614 --> 00:00:27.454
+or comparing a group that takes a drug to a group that did not take a drug at all.
+
+00:00:27.454 --> 00:00:32.259
+This type of testing is common for any of the health conditions around the world.
+
+00:00:32.259 --> 00:00:35.829
+Another use case specific to learning could be to implement
+
+00:00:35.829 --> 00:00:41.649
+two different ways of teaching the same topic and see which way improves retention.
+
+00:00:41.649 --> 00:00:44.460
+One of the most common use cases for comparing
+
+00:00:44.460 --> 00:00:47.655
+two groups in this way is known as A/B testing,
+
+00:00:47.655 --> 00:00:50.579
+where we compared different webpages to one another to
+
+00:00:50.579 --> 00:00:54.559
+determine which web designs drive the largest amount of traffic.
+
+00:00:54.560 --> 00:00:58.240
+The last topic will be covered in more detail in a later lesson,
+
+00:00:58.240 --> 00:01:01.679
+as it's the key to survival for many online companies.
+

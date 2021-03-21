@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.899 --> 00:00:07.209
+So you saw earlier that hypothesis tests and confidence intervals are pretty similar.
+
+00:00:07.209 --> 00:00:11.339
+But you might be surprised just how similar these two techniques are.
+
+00:00:11.339 --> 00:00:13.109
+It turns out that if you are to do
+
+00:00:13.109 --> 00:00:17.189
+a hypothesis test that contains a not equal in alternative hypothesis,
+
+00:00:17.190 --> 00:00:20.596
+your conclusions are identical to a confidence interval,
+
+00:00:20.596 --> 00:00:23.250
+as long as 100 minus your confidence interval level
+
+00:00:23.250 --> 00:00:26.655
+is the same as the type one error rate in your hypothesis test.
+
+00:00:26.655 --> 00:00:30.743
+That is, if you build a 95 percent confidence interval,
+
+00:00:30.742 --> 00:00:31.979
+this is the same as doing
+
+00:00:31.980 --> 00:00:35.924
+a two-sided hypothesis test with a five percent type one error rate,
+
+00:00:35.924 --> 00:00:39.000
+and building a 99 percent confidence interval will provide
+
+00:00:39.000 --> 00:00:42.909
+the same results as a hypothesis test with a one percent type one error rate.
+
+00:00:42.909 --> 00:00:46.469
+With this in mind, many academic journals are moving away
+
+00:00:46.469 --> 00:00:50.789
+from hypothesis tests as they find the results are often misinterpreted.
+
+00:00:50.789 --> 00:00:53.504
+Instead, more and more confidence intervals and
+
+00:00:53.505 --> 00:00:58.135
+other statistics like effect size or machine learning techniques are being used.
+
+00:00:58.134 --> 00:01:00.809
+There is more information on effect sizes as well as
+
+00:01:00.810 --> 00:01:03.705
+a link to a free course in the Udacity Nanodegree,
+
+00:01:03.704 --> 00:01:06.000
+link in instructor notes below.
+

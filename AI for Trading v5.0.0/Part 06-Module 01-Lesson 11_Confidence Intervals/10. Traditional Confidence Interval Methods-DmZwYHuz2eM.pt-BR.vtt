@@ -1,0 +1,96 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.924
+MÉTODOS TRADICIONAIS
+DE INTERVALO DE CONFIANÇA
+
+00:00:02.970 --> 00:00:06.080
+A forma como construímos
+intervalos de confiança até agora
+
+00:00:06.126 --> 00:00:10.006
+se baseia nas distribuições
+bootstrap e amostrais.
+
+00:00:10.052 --> 00:00:13.917
+Esse é um método muito eficaz
+para intervalos de confiança
+
+00:00:13.963 --> 00:00:17.141
+em qualquer parâmetro
+que desejarmos.
+
+00:00:17.187 --> 00:00:20.787
+Porém, ao fazer um curso
+de estatística em outro lugar,
+
+00:00:20.833 --> 00:00:24.043
+podemos não entender
+por que essa notação é diferente
+
+00:00:24.089 --> 00:00:26.188
+das vistas em outros cursos.
+
+00:00:26.234 --> 00:00:28.348
+Podemos ter visto
+equações como esta
+
+00:00:28.394 --> 00:00:31.784
+para captar a média
+da população ou a proporção.
+
+00:00:31.830 --> 00:00:34.803
+Da mesma forma, podemos ter visto
+equações como estas
+
+00:00:34.849 --> 00:00:36.680
+para captar
+a diferença das médias
+
+00:00:36.726 --> 00:00:39.431
+ou a diferença das proporções.
+
+00:00:39.477 --> 00:00:42.568
+Essas fórmulas possuem
+suposições subjacentes
+
+00:00:42.614 --> 00:00:44.946
+que podem ou não
+ser verdadeiras.
+
+00:00:44.992 --> 00:00:48.394
+Se acreditamos
+que os dados representam
+
+00:00:48.440 --> 00:00:50.482
+a população de interesse,
+
+00:00:50.528 --> 00:00:52.947
+o método de bootstrap
+deve fornecer
+
+00:00:52.993 --> 00:00:54.499
+a melhor representação
+
+00:00:54.545 --> 00:00:56.858
+de onde os parâmetros
+podem estar.
+
+00:00:56.904 --> 00:00:59.659
+Porém, com amostras
+grandes o suficiente,
+
+00:00:59.705 --> 00:01:02.976
+essas fórmulas devem fornecer
+resultados parecidos
+
+00:01:03.022 --> 00:01:05.632
+com aquele que vimos
+com os métodos de bootstrap.
+
+00:01:05.678 --> 00:01:08.697
+No próximo conceito,
+veremos alguns exemplos.
+

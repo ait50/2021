@@ -1,0 +1,203 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:02.667
+Estatística Prática
+
+00:00:02.967 --> 00:00:06.467
+No vídeo anterior, você viu
+dois métodos para escolher
+
+00:00:06.500 --> 00:00:08.533
+entre hipóteses competitivas.
+
+00:00:08.567 --> 00:00:13.533
+No segundo método, perguntamos:
+se a hipótese nula for verdadeira,
+
+00:00:13.567 --> 00:00:17.233
+qual é a probabilidade de obter
+a estatística que vimos nos dados
+
+00:00:17.267 --> 00:00:20.833
+ou mais um extremo em favor
+da hipótese alternativa?
+
+00:00:20.867 --> 00:00:24.267
+Essa probabilidade é o que
+chamamos de valor P.
+
+00:00:24.300 --> 00:00:28.033
+Encontrá-lo envolve uma mistura
+de ideias que você já conhece:
+
+00:00:28.067 --> 00:00:31.800
+distribuição de amostragem
+e probabilidade condicional.
+
+00:00:31.833 --> 00:00:35.767
+Imagine que temos uma nula
+cuja população média é zero.
+
+00:00:35.800 --> 00:00:37.433
+Coletamos amostras de dados
+
+00:00:37.500 --> 00:00:40.033
+e vemos que a média
+das amostras é cinco
+
+00:00:40.066 --> 00:00:42.600
+e que a amostra
+do desvio padrão é dois.
+
+00:00:42.633 --> 00:00:45.667
+Supondo que a distribuição
+de amostragem da sua estatística
+
+00:00:45.700 --> 00:00:47.367
+segue a hipótese nula,
+
+00:00:47.400 --> 00:00:51.700
+qual é a probabilidade de observar
+o valor real da estatística
+
+00:00:51.733 --> 00:00:54.400
+dos seus dados
+nessa distribuição?
+
+00:00:54.433 --> 00:00:57.200
+Se você quer saber a probabilidade
+de a média da população
+
+00:00:57.233 --> 00:00:59.067
+ser maior do que zero,
+
+00:00:59.100 --> 00:01:01.567
+você pode atualizar a hipótese.
+
+00:01:01.600 --> 00:01:05.800
+Valores como 6, 7 e 10,
+todos caem aqui
+
+00:01:05.833 --> 00:01:10.000
+e são mais do que uma indicação
+de que a alternativa é real,
+
+00:01:10.033 --> 00:01:12.500
+de que a média da população
+é maior do que zero.
+
+00:01:12.533 --> 00:01:15.400
+Além disso, qual é a probabilidade
+que você ter observado algo
+
+00:01:15.433 --> 00:01:18.367
+mais favorável
+à hipótese alternativa?
+
+00:01:18.400 --> 00:01:23.100
+Essa região sombreada fornece
+essa probabilidade, o valor P.
+
+00:01:23.133 --> 00:01:27.900
+Veja que o valor P é dependente
+da sua hipótese alternativa,
+
+00:01:27.933 --> 00:01:31.433
+pois determina o que é
+considerado mais extremo.
+
+00:01:31.467 --> 00:01:35.167
+Se a sua hipótese alternativa é que
+seu parâmetro é maior que zero,
+
+00:01:35.200 --> 00:01:38.567
+então sombreamos mais do que
+a estatística, como mostrado.
+
+00:01:38.600 --> 00:01:41.567
+Contudo, se mudamos nossa
+alternativa conhecida
+
+00:01:41.600 --> 00:01:43.067
+para que fique assim,
+
+00:01:43.100 --> 00:01:45.700
+então sombreamos à esquerda
+de nossa estatística.
+
+00:01:45.733 --> 00:01:48.667
+O sombreamento do valor P
+agora ficaria assim.
+
+00:01:48.700 --> 00:01:52.533
+Veja que isso criaria uma
+probabilidade bem grande nesse caso,
+
+00:01:52.566 --> 00:01:55.300
+pois quase toda a distribuição
+está sombreada.
+
+00:01:55.333 --> 00:01:57.900
+E se você tem um sinal de diferente
+na alternativa,
+
+00:01:57.933 --> 00:02:01.567
+o seu sombreamento está associado
+a extremos que estão distantes
+
+00:02:01.600 --> 00:02:03.633
+da nula
+em qualquer direção.
+
+00:02:03.667 --> 00:02:07.800
+Nesses casos, só nos importam
+as estatísticas que estão longe
+
+00:02:07.833 --> 00:02:09.667
+da nula em qualquer direção.
+
+00:02:09.700 --> 00:02:13.133
+Terminamos marcando dos dois lados
+e sombreando para longe
+
+00:02:13.167 --> 00:02:16.033
+da hipótese nula
+para achar nosso valor P.
+
+00:02:16.067 --> 00:02:19.033
+Entender esse conceito
+costuma levar um tempo.
+
+00:02:19.067 --> 00:02:21.367
+E são duas partes para entender.
+
+00:02:21.400 --> 00:02:25.933
+Primeiro você deve conceitualizar
+totalmente a definição de valor P,
+
+00:02:25.967 --> 00:02:28.767
+que é a probabilidade condicional
+dos seus dados
+
+00:02:28.800 --> 00:02:31.733
+considerando que a hipótese nula
+é verdadeira.
+
+00:02:31.767 --> 00:02:34.533
+Então precisa entender
+o que calcular,
+
+00:02:34.567 --> 00:02:37.867
+o que é visualmente resumido
+por estas três imagens.
+
+00:02:37.900 --> 00:02:41.067
+Você vai ganhar prática com ambos
+antes de seguir em frente
+
+00:02:41.100 --> 00:02:43.933
+e aplicar as ideias de valor P
+para tomar decisões.
+

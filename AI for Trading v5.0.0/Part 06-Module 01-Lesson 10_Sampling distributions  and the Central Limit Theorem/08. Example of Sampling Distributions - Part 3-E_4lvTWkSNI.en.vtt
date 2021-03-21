@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.419 --> 00:00:07.429
+So you probably notice that though our sample is still five students,
+
+00:00:07.429 --> 00:00:09.969
+our statistic changed, because we chose
+
+00:00:09.970 --> 00:00:13.380
+five different students than were chosen in the first sample.
+
+00:00:13.380 --> 00:00:17.425
+We could select all possible combinations of five cups,
+
+00:00:17.425 --> 00:00:22.774
+and we could recompute the proportion of coffee drinkers for each of these samples.
+
+00:00:22.774 --> 00:00:28.269
+If we were to look at how these statistics change from one sample to the next, that is,
+
+00:00:28.269 --> 00:00:34.240
+if we looked at the distribution of the proportions across all samples of size five,
+
+00:00:34.240 --> 00:00:36.539
+this is what is known as the sampling distribution.
+

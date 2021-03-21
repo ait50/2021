@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:02.501
+Estatística Prática
+Conclusões sobre Teste de Hipóteses
+
+00:00:02.534 --> 00:00:06.767
+Quando se toma decisões sobre
+escolher a nula ou a alternativa,
+
+00:00:06.801 --> 00:00:10.534
+você pode ver certos profissionais,
+estatísticos, especialmente,
+
+00:00:10.567 --> 00:00:12.968
+sentirem medo
+e falarem coisas como:
+
+00:00:13.001 --> 00:00:17.067
+"seguindo os dados, aceitamos
+a hipótese nula como verdadeira"
+
+00:00:17.100 --> 00:00:20.200
+ou "com base nos dados,
+aceitamos a alternativa".
+
+00:00:20.234 --> 00:00:24.133
+Lembre-se: quando configuramos
+as hipóteses nulas e alternativas,
+
+00:00:24.167 --> 00:00:26.968
+automaticamente configuramos
+a nula como verdadeira
+
+00:00:27.001 --> 00:00:28.801
+antes de coletarmos dados.
+
+00:00:28.834 --> 00:00:32.267
+Portanto,
+essa declaração é padrão.
+
+00:00:32.300 --> 00:00:36.300
+Não é que não tenhamos certeza
+sobre qual delas escolher,
+
+00:00:36.333 --> 00:00:38.167
+e daí escolhemos uma.
+
+00:00:38.200 --> 00:00:41.033
+Em vez disso, você escolhe
+a nula por padrão.
+
+00:00:41.067 --> 00:00:43.067
+Voltando ao exemplo judicial,
+
+00:00:43.100 --> 00:00:46.067
+todos são inocentes
+até se provar o contrário.
+
+00:00:46.100 --> 00:00:50.734
+Você não escolhe um inocente
+por padrão. Todos são inocentes.
+
+00:00:50.767 --> 00:00:53.834
+Portanto, no teste de hipóteses,
+dizemos que, baseados em dados,
+
+00:00:53.868 --> 00:00:56.601
+temos provas para rejeitar
+a hipótese nula
+
+00:00:56.634 --> 00:01:00.501
+ou, em alternativa, se não temos
+provas o bastante para rejeitá-la,
+
+00:01:00.534 --> 00:01:04.701
+dizemos que, com base nos dados,
+falhamos em rejeitar a nula.
+
+00:01:04.734 --> 00:01:08.001
+Muita gente só se importa
+em tomar a decisão certa,
+
+00:01:08.033 --> 00:01:10.734
+então essa distinção
+parece bobagem.
+
+00:01:10.767 --> 00:01:14.133
+Mas isso reforça que a nula
+tem mais chances de ser escolhida
+
+00:01:14.167 --> 00:01:16.267
+se você começa
+acreditando na declaração.
+

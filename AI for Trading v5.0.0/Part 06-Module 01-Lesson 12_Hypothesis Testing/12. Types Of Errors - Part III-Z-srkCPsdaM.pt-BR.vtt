@@ -1,0 +1,158 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:02.434
+ESTATÍSTICA PRÁTICA
+TIPOS DE ERROS - PARTE 3
+
+00:00:03.001 --> 00:00:05.300
+Espero que você esteja
+mais confiante
+
+00:00:05.334 --> 00:00:09.033
+para identificar hipóteses
+e tipos de erros que pode cometer.
+
+00:00:09.066 --> 00:00:11.734
+Neste vídeo, vamos ver
+mais um exemplo
+
+00:00:11.767 --> 00:00:13.634
+de iteração
+com essas ideias.
+
+00:00:13.667 --> 00:00:17.167
+Esse exemplo me ajudou
+a ligar todos os pontos
+
+00:00:17.200 --> 00:00:20.100
+do teste de hipóteses
+e dos erros do tipo 1 e 2.
+
+00:00:20.133 --> 00:00:22.100
+Espero que faça o mesmo
+por você.
+
+00:00:22.133 --> 00:00:24.601
+Imagine-se como o dono
+de uma loja de paraquedismo.
+
+00:00:24.634 --> 00:00:26.767
+Parte do seu trabalho
+é verificar
+
+00:00:26.801 --> 00:00:29.167
+se os paraquedas
+funcionam bem.
+
+00:00:29.200 --> 00:00:31.300
+Existem
+dois resultados possíveis:
+
+00:00:31.334 --> 00:00:34.033
+ou eles funcionam ou não.
+
+00:00:34.067 --> 00:00:37.701
+Você pode determinar isso
+como duas hipóteses potenciais.
+
+00:00:37.734 --> 00:00:40.400
+Você sabe que há
+quatro resultados potenciais
+
+00:00:40.434 --> 00:00:43.033
+para cada combinação
+de paraquedas.
+
+00:00:43.067 --> 00:00:47.701
+Primeiro você verifica
+cada paraquedas e toma uma decisão:
+
+00:00:47.734 --> 00:00:50.834
+ou ele funciona
+ou não funciona.
+
+00:00:50.867 --> 00:00:54.133
+Se decidir que funciona,
+você o põe na prateleira
+
+00:00:54.167 --> 00:00:55.834
+para uso dos paraquedistas.
+
+00:00:55.868 --> 00:00:58.234
+Se não, você o descarta.
+
+00:00:58.300 --> 00:01:01.133
+Agora há duas
+verdades possíveis.
+
+00:01:01.166 --> 00:01:04.634
+Ou o paraquedas funciona de fato
+ou não.
+
+00:01:04.667 --> 00:01:06.567
+Para o paraquedas
+que descartamos,
+
+00:01:06.601 --> 00:01:08.701
+se ele não funciona, ótimo,
+
+00:01:08.734 --> 00:01:12.000
+mas, se ele funciona,
+provavelmente perdemos $ 30.
+
+00:01:12.033 --> 00:01:15.100
+Já os paraquedas
+que estão na prateleira,
+
+00:01:15.133 --> 00:01:17.868
+se funcionam serão usados
+pelos paraquedistas
+
+00:01:17.901 --> 00:01:20.834
+para pular de um avião
+e pousar em segurança.
+
+00:01:20.868 --> 00:01:25.834
+Mas, se não funcionam, cometemos
+o pior tipo de erro possível.
+
+00:01:25.868 --> 00:01:29.000
+Esse claramente é o erro tipo 1
+neste exemplo.
+
+00:01:29.033 --> 00:01:32.000
+O outro tipo de erro
+é o erro tipo 2.
+
+00:01:32.033 --> 00:01:35.300
+Isso nos ajuda a alinhar nossas
+hipóteses nulas e alternativas
+
+00:01:35.334 --> 00:01:36.734
+para que fiquem assim
+
+00:01:36.767 --> 00:01:38.767
+Sabemos que a porcentagem
+do erro tipo 1
+
+00:01:38.801 --> 00:01:42.267
+é a escolha da alternativa
+quando a nula é verdadeira.
+
+00:01:42.300 --> 00:01:45.033
+Isso ajuda a criar a porcentagem
+adequada de erros tipo 1:
+
+00:01:45.067 --> 00:01:48.734
+de 1% a 5%
+é um índice alto demais.
+
+00:01:48.767 --> 00:01:53.567
+Cometer cinco ou mesmo só um
+desses erros a cada 100 pessoas
+
+00:01:53.601 --> 00:01:55.133
+seria inaceitável.
+

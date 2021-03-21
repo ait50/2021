@@ -1,0 +1,125 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.467 --> 00:00:02.834
+ESTATÍSTICA PRÁTICA
+TESTE DE HIPÓTESES
+
+00:00:03.968 --> 00:00:07.667
+Profissionais acadêmicos
+e da indústria fazem perguntas
+
+00:00:07.701 --> 00:00:09.834
+sobre basicamente tudo.
+
+00:00:09.868 --> 00:00:13.300
+Como analistas de dados,
+tentamos ajudá-los a respondê-las.
+
+00:00:13.334 --> 00:00:17.868
+Mas, antes, precisamos traduzi-las
+para o que chamamos de hipóteses.
+
+00:00:17.901 --> 00:00:22.767
+Então devemos coletar dados
+para justificar quais hipóteses
+
+00:00:22.801 --> 00:00:24.601
+podem ser verdadeiras.
+
+00:00:24.634 --> 00:00:28.467
+Como exemplo, outro dia eu estava
+debatendo com um amigo
+
+00:00:28.501 --> 00:00:31.667
+sobre qual é o sabor de sorvete
+mais popular do mundo.
+
+00:00:31.701 --> 00:00:36.467
+Eu acreditava que era chocolate,
+e ele, que era baunilha.
+
+00:00:36.501 --> 00:00:39.567
+Nesse caso, podíamos gerar
+uma hipótese,
+
+00:00:39.600 --> 00:00:42.167
+de que o sabor mais popular
+era chocolate,
+
+00:00:42.200 --> 00:00:44.734
+e coletar dados para saber
+se essa hipótese
+
+00:00:44.767 --> 00:00:47.067
+era realmente sustentada
+pelos dados.
+
+00:00:47.100 --> 00:00:50.901
+Mas como poderíamos saber
+sem falar com todas as pessoas?
+
+00:00:50.934 --> 00:00:53.701
+Como saber se nossas conclusões
+eram confiáveis?
+
+00:00:53.767 --> 00:00:56.734
+Acontece que pode-se usar
+testes de hipóteses
+
+00:00:56.767 --> 00:00:59.734
+ou intervalos de confiança,
+vistos na última aula,
+
+00:00:59.767 --> 00:01:02.234
+para tirar conclusões
+sobre uma população
+
+00:01:02.267 --> 00:01:05.133
+usando apenas
+dados de amostra.
+
+00:01:05.167 --> 00:01:08.534
+Nem todo teste de hipóteses
+é simples como esse.
+
+00:01:08.567 --> 00:01:11.033
+Em estudos médicos,
+digamos que eu queira saber
+
+00:01:11.067 --> 00:01:14.100
+se um remédio para câncer
+é bom para os pacientes.
+
+00:01:14.133 --> 00:01:17.133
+Agora a hipótese
+pode seguir vários caminhos.
+
+00:01:17.167 --> 00:01:19.767
+O remédio ajuda porque faz
+os pacientes se sentirem bem?
+
+00:01:19.801 --> 00:01:24.334
+Ou viverem mais?
+Reduz o tamanho do tumor?
+
+00:01:24.367 --> 00:01:28.601
+Nesta aula, você vai aprender
+a configurar e avaliar
+
+00:01:28.634 --> 00:01:30.701
+o resultado
+de um teste de hipóteses.
+
+00:01:30.734 --> 00:01:35.400
+O teste de hipóteses ajuda empresas
+a tomarem decisões melhores
+
+00:01:35.434 --> 00:01:37.701
+baseadas
+em mais informações.
+
+00:01:37.734 --> 00:01:38.833
+Vamos começar.
+

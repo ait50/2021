@@ -1,0 +1,110 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.278 --> 00:00:03.400
+Agora que vimos como utilizar
+as distribuições amostrais
+
+00:00:03.446 --> 00:00:06.319
+para construir intervalos
+de confiança de um parâmetro,
+
+00:00:06.365 --> 00:00:08.562
+veremos como fazer
+algo parecido
+
+00:00:08.608 --> 00:00:11.169
+para estimar a diferença
+entre dois parâmetros.
+
+00:00:11.215 --> 00:00:13.113
+Aqui há uma pergunta:
+
+00:00:13.159 --> 00:00:15.569
+qual é a diferença
+das alturas médias
+
+00:00:15.615 --> 00:00:18.793
+entre aqueles que bebem café
+e os que não bebem?
+
+00:00:18.839 --> 00:00:21.722
+Existem diferenças
+entre as médias de altura?
+
+00:00:21.768 --> 00:00:23.666
+Para o intervalo
+de confiança
+
+00:00:23.712 --> 00:00:26.424
+da diferença da altura média
+dos dois grupos,
+
+00:00:26.470 --> 00:00:29.001
+podemos fazer algo parecido
+com o que já fizemos,
+
+00:00:29.047 --> 00:00:32.729
+mas, para cada iteração
+para obter a média de cada grupo,
+
+00:00:32.775 --> 00:00:34.995
+também obteremos
+a diferença.
+
+00:00:36.923 --> 00:00:38.997
+Agora podemos iterar
+esse processo
+
+00:00:39.043 --> 00:00:42.581
+inúmeras vezes e utilizar
+as diferenças resultantes
+
+00:00:42.627 --> 00:00:45.682
+para construir um intervalo
+da diferença da média.
+
+00:00:45.728 --> 00:00:47.971
+Aqui eu preparei
+uma lista de diferença
+
+00:00:48.017 --> 00:00:50.539
+e vamos anexar
+as diferenças nela.
+
+00:00:50.585 --> 00:00:53.555
+Podemos alocar a diferença
+na média dos dois grupos
+
+00:00:53.601 --> 00:00:57.170
+e podemos cortar a parte
+de baixo e de cima em 2,5%
+
+00:00:57.216 --> 00:00:59.738
+para construir um intervalo
+de confiança de 95%,
+
+00:00:59.784 --> 00:01:03.499
+no qual acreditamos que a diferença
+da média dos grupos está.
+
+00:01:04.187 --> 00:01:07.873
+Vemos que o intervalo de confiança
+não contém zero.
+
+00:01:07.919 --> 00:01:10.801
+Dessa forma, isso sugere
+que há uma diferença
+
+00:01:10.847 --> 00:01:12.416
+na média da população.
+
+00:01:12.462 --> 00:01:14.745
+Posteriormente,
+sugeriríamos que, em média,
+
+00:01:14.791 --> 00:01:18.137
+quem bebe café é mais alto
+do que quem não bebe.
+

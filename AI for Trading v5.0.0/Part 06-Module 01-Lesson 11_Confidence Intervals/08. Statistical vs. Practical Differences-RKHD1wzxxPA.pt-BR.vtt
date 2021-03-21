@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.027 --> 00:00:02.730
+ESTATÍSTICA
+VERSUS DIFERENÇAS PRÁTICAS
+
+00:00:03.491 --> 00:00:07.522
+Já vimos algumas aplicações
+dos intervalos de confiança
+
+00:00:07.568 --> 00:00:11.729
+e a abordagem bootstrap
+para criar os intervalos.
+
+00:00:11.775 --> 00:00:13.629
+Vimos que criar um intervalo
+
+00:00:13.675 --> 00:00:16.254
+para as diferenças
+entre as médias de dois grupos,
+
+00:00:16.300 --> 00:00:18.945
+em vez de comparar
+duas estimativas de valores,
+
+00:00:18.991 --> 00:00:21.412
+é importante para garantir
+que as diferenças
+
+00:00:21.458 --> 00:00:23.794
+não ocorrem aleatoriamente,
+
+00:00:23.840 --> 00:00:26.572
+mas estejam associadas
+à amostra que foi escolhida.
+
+00:00:26.618 --> 00:00:29.437
+Os intervalos de confiança
+são muito úteis,
+
+00:00:29.483 --> 00:00:33.478
+mas problemas podem surgir
+ao utilizá-los exclusivamente
+
+00:00:33.524 --> 00:00:35.598
+para tomar decisões.
+
+00:00:35.644 --> 00:00:40.622
+Isso nos leva à ideia de praticidade
+e significância estatística.
+
+00:00:40.668 --> 00:00:43.687
+Vejamos um exemplo
+para ilustrar a diferença
+
+00:00:43.733 --> 00:00:45.607
+entre os dois termos.
+
+00:00:45.653 --> 00:00:48.128
+Imagine que tenho um negócio
+como passeador de cães
+
+00:00:48.174 --> 00:00:49.991
+e quero anunciar na internet.
+
+00:00:50.037 --> 00:00:52.118
+Eu quero saber
+qual desses dois anúncios
+
+00:00:52.164 --> 00:00:55.447
+ajudaria a gerar
+mais interesse no meu negócio.
+
+00:00:55.493 --> 00:00:59.846
+Eu envio cada anúncio para a mesma
+quantidade de usuários
+
+00:00:59.892 --> 00:01:01.761
+e construo
+um intervalo de confiança
+
+00:01:01.807 --> 00:01:04.959
+que sugere que mais pessoas
+clicarão neste anúncio.
+
+00:01:05.005 --> 00:01:06.631
+Baseado no intervalo,
+
+00:01:06.677 --> 00:01:08.471
+a evidência estatística
+
+00:01:08.517 --> 00:01:11.534
+sugere que o segundo anúncio
+é melhor.
+
+00:01:11.580 --> 00:01:13.991
+A evidência obtida
+do intervalo de confiança
+
+00:01:14.037 --> 00:01:17.398
+é apenas isto:
+uma significância estatística.
+
+00:01:17.444 --> 00:01:20.895
+Digamos que os dois anúncios
+gerem interesse suficiente
+
+00:01:20.941 --> 00:01:23.977
+para receber mais cachorros
+do que eu possa cuidar,
+
+00:01:24.023 --> 00:01:27.111
+e que o segundo anúncio
+seja muito mais caro
+
+00:01:27.157 --> 00:01:29.255
+e demore muito tempo
+para ser criado.
+
+00:01:29.301 --> 00:01:33.389
+Se um amigo seu resolve criar
+uma campanha parecida
+
+00:01:33.435 --> 00:01:36.201
+para abrir o próprio negócio
+de passeio com cães,
+
+00:01:36.247 --> 00:01:38.646
+qual tipo de anúncio
+você recomendaria?
+
+00:01:38.692 --> 00:01:41.992
+Nesse caso, sugeriríamos algo
+como o primeiro anúncio,
+
+00:01:42.038 --> 00:01:45.590
+mesmo tendo provado estatisticamente
+que o segundo é melhor.
+
+00:01:45.636 --> 00:01:49.678
+O primeiro anúncio gera
+interesse suficiente no negócio,
+
+00:01:49.724 --> 00:01:52.647
+é mais barato
+e exige menos tempo.
+
+00:01:52.693 --> 00:01:55.399
+Sua sugestão para utilizar
+o primeiro anúncio
+
+00:01:55.445 --> 00:01:59.151
+é um exemplo
+da significância prática.
+
+00:01:59.197 --> 00:02:01.574
+A significância prática
+leva em consideração
+
+00:02:01.620 --> 00:02:03.878
+aspectos adicionais
+do nosso mundo,
+
+00:02:03.924 --> 00:02:05.679
+não só os números.
+
+00:02:05.725 --> 00:02:08.444
+Ela é muito importante
+na hora de tomar decisões.
+

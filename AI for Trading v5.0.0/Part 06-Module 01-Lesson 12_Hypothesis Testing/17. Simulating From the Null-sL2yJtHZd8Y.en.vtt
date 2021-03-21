@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.310
+Consider the same example as earlier,
+
+00:00:02.310 --> 00:00:07.214
+where we asked if the mean height for all coffee drinkers was greater than 70 inches.
+
+00:00:07.214 --> 00:00:11.875
+We could again set up a null and alternative hypotheses like these.
+
+00:00:11.875 --> 00:00:14.400
+A second approach that is commonly done for making
+
+00:00:14.400 --> 00:00:17.865
+decisions in hypothesis testing is the following,
+
+00:00:17.864 --> 00:00:22.829
+we assume that the null is true and we know what the sampling distribution would look
+
+00:00:22.829 --> 00:00:28.559
+like if we were to simulate from the closest value under the null to the alternative.
+
+00:00:28.559 --> 00:00:30.809
+That is, this value of 70.
+
+00:00:30.809 --> 00:00:36.659
+That's the closest value under this hypothesis to our alternative hypothesis.
+
+00:00:36.659 --> 00:00:41.759
+We could use the standard deviation of the sampling distribution to determine what
+
+00:00:41.759 --> 00:00:47.199
+the sampling distribution would look like if it came from the null hypothesis.
+
+00:00:47.200 --> 00:00:50.445
+We'll simulate from a normal distribution in this case.
+
+00:00:50.445 --> 00:00:53.460
+I'm going to pull over the code that we used before to
+
+00:00:53.460 --> 00:00:56.835
+get the standard deviation of our sampling distribution.
+
+00:00:56.835 --> 00:01:02.765
+So the standard deviation of our sampling distribution is equal to 0.2658.
+
+00:01:02.765 --> 00:01:05.239
+And we know that if it came from
+
+00:01:05.239 --> 00:01:10.534
+this null hypothesized value of 70 what it would look like.
+
+00:01:10.534 --> 00:01:12.125
+By the central limit theorem,
+
+00:01:12.125 --> 00:01:15.674
+we know that it would follow a normal distribution.
+
+00:01:15.674 --> 00:01:18.780
+Now, from the NumPy documentation on normal distributions,
+
+00:01:18.780 --> 00:01:23.010
+we see we can simulate draws from the normal using the hypothesized mean at
+
+00:01:23.010 --> 00:01:27.844
+70 and the standard deviation of our sampling distribution in the following way.
+
+00:01:27.844 --> 00:01:33.810
+So here, the loc tells us that the mean of 70 will go in this value,
+
+00:01:33.810 --> 00:01:37.325
+and the scale is the standard deviation that we want to use.
+
+00:01:37.325 --> 00:01:40.155
+So that's the standard deviation of our sampling distribution.
+
+00:01:40.155 --> 00:01:41.655
+And we can simulate, say,
+
+00:01:41.655 --> 00:01:43.765
+10,000 values from that.
+
+00:01:43.765 --> 00:01:49.530
+Each of the simulated draws here represents a possible mean from the null hypothesis.
+
+00:01:49.530 --> 00:01:54.864
+We can now ask the question of where the sample mean falls in this distribution.
+
+00:01:54.864 --> 00:01:57.569
+If we go back and look at what our sample mean was,
+
+00:01:57.569 --> 00:02:01.924
+we can see that it falls far below this distribution from the norm.
+
+00:02:01.924 --> 00:02:06.000
+If our sample mean were to fall closer to the center value of 70,
+
+00:02:06.000 --> 00:02:10.110
+it would be a value that we would expect from the null hypothesis and therefore,
+
+00:02:10.110 --> 00:02:12.405
+we think the null is more likely to be true.
+
+00:02:12.405 --> 00:02:16.134
+In this case, with our sample means so far out in the tail,
+
+00:02:16.134 --> 00:02:21.439
+it's far enough that we don't think it probably came from this null hypothesized value.
+

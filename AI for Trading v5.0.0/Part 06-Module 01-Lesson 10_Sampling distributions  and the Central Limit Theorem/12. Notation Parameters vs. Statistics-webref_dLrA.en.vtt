@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.990 --> 00:00:04.535
+There are common ways to notate
+
+00:00:04.535 --> 00:00:08.675
+parameters that are different than the way we notate statistics.
+
+00:00:08.675 --> 00:00:12.589
+In general, parameters are notated with Greek symbols,
+
+00:00:12.589 --> 00:00:14.869
+where statistics are either notated by
+
+00:00:14.869 --> 00:00:19.309
+lower case letters or the same Greek symbol with a hat on it.
+
+00:00:19.309 --> 00:00:25.309
+Here, this symbol called mu represents the mean of a population,
+
+00:00:25.309 --> 00:00:29.039
+while these represent the mean of a sample.
+
+00:00:29.039 --> 00:00:31.399
+Similarly, this Greek symbol called
+
+00:00:31.399 --> 00:00:35.123
+sigma represents the standard deviation of a population,
+
+00:00:35.124 --> 00:00:40.179
+while either of these can be used to represent the standard deviation of a sample.
+
+00:00:40.179 --> 00:00:42.409
+This same pattern continues.
+
+00:00:42.409 --> 00:00:45.875
+Here, you can see common parameters and statistics.
+
+00:00:45.875 --> 00:00:49.460
+You can see the parameter and statistic values for
+
+00:00:49.460 --> 00:00:53.480
+not only the mean and standard deviation but also for the variance,
+
+00:00:53.479 --> 00:00:57.274
+proportions, and the values of coefficients and regression.
+
+00:00:57.274 --> 00:01:01.729
+You'll see all of these in later lessons in the statistics class.
+
+00:01:01.729 --> 00:01:05.509
+This notation will be consistently used throughout these lessons,
+
+00:01:05.510 --> 00:01:07.310
+as well as beyond this course,
+
+00:01:07.310 --> 00:01:11.000
+in books, blogs, and other use cases.
+

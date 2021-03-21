@@ -1,0 +1,801 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: More Hypothesis Testing Practice
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Hypothesis Testing
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Hypothesis Testing.html">
+       02. Hypothesis Testing
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Setting Up Hypothesis Tests - Part I.html">
+       03. Setting Up Hypothesis Tests - Part I
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Setting Up Hypotheses.html">
+       04. Setting Up Hypotheses
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Setting Up Hypothesis Tests - Part II.html">
+       05. Setting Up Hypothesis Tests - Part II
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Setting Up Hypothesis Tests.html">
+       06. Quiz: Setting Up Hypothesis Tests
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Types of Errors - Part I.html">
+       07. Types of Errors - Part I
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Quiz Types of Errors - Part I.html">
+       08. Quiz: Types of Errors - Part I
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Types of Errors - Part II.html">
+       09. Types of Errors - Part II
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Quiz Types of Errors - Part II(a).html">
+       10. Quiz: Types of Errors - Part II(a)
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz Types of Errors - Part II(b).html">
+       11. Quiz: Types of Errors - Part II(b)
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Types of Errors - Part III.html">
+       12. Types of Errors - Part III
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Quiz Types of Errors - Part III.html">
+       13. Quiz: Types of Errors - Part III
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Common Types of Hypothesis Tests.html">
+       14. Common Types of Hypothesis Tests
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Quiz More Hypothesis Testing Practice.html">
+       15. Quiz: More Hypothesis Testing Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="16. How Do We Choose Between Hypotheses.html">
+       16. How Do We Choose Between Hypotheses?
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Video Simulating from the Null.html">
+       17. Video: Simulating from the Null
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Notebook + Quiz Simulating from the Null.html">
+       18. Notebook + Quiz: Simulating from the Null
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Solution Notebook Simulating from the Null.html">
+       19. Solution Notebook: Simulating from the Null
+      </a>
+     </li>
+     <li class="">
+      <a href="20. What is a p-value Anyway.html">
+       20. What is a p-value Anyway?
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Video Calculating the p-value.html">
+       21. Video: Calculating the p-value
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Quiz What is a p-value Anyway.html">
+       22. Quiz: What is a p-value Anyway?
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Calculating a p-value.html">
+       23. Quiz: Calculating a p-value
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Quiz Calculating another p-value.html">
+       24. Quiz: Calculating another p-value
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Connecting Errors and P-Values.html">
+       25. Connecting Errors and P-Values
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Conclusions in Hypothesis Testing.html">
+       26. Conclusions in Hypothesis Testing
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Quiz Connecting Errors and P-Values.html">
+       27. Quiz: Connecting Errors and P-Values
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Notebook + Quiz Drawing Conclusions.html">
+       28. Notebook + Quiz: Drawing Conclusions
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Solution Notebook Drawing Conclusions.html">
+       29. Solution Notebook: Drawing Conclusions
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Other Things to Consider - Impact of Large Sample Size.html">
+       30. Other Things to Consider - Impact of Large Sample Size
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Other Things to Consider - What If We Test More Than Once.html">
+       31. Other Things to Consider - What If We Test More Than Once?
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Other Things to Consider - How Do CIs and HTs Compare.html">
+       32. Other Things to Consider - How Do CIs and HTs Compare?
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Notebook + Quiz Impact of Sample Size.html">
+       33. Notebook + Quiz: Impact of Sample Size
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Solution Notebook Impact of Sample Size.html">
+       34. Solution Notebook: Impact of Sample Size
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Notebook + Quiz Multiple Tests.html">
+       35. Notebook + Quiz: Multiple Tests
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Solution Notebook Multiple tests.html">
+       36. Solution Notebook: Multiple tests
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Hypothesis Testing Conclusion.html">
+       37. Hypothesis Testing Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="38. Quiz + Text Recap.html">
+       38. Quiz + Text: Recap
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          15. Quiz: More Hypothesis Testing Practice
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="more-hypothesis-testing-practice">
+          More Hypothesis Testing Practice
+         </h3>
+         <p>
+          Using the following questions, you will build your intuition for common hypothesis test techniques, and what you are really testing when setting up your hypotheses.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             When conducting hypothesis tests, we write our tests to understand
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1542670810846" name="784411" type="radio" value="a1542670810846"/>
+           <label for="a1542670810846">
+            <p>
+             statistics
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542670862143" name="784411" type="radio" value="a1542670862143"/>
+           <label for="a1542670862143">
+            <p>
+             sample statistics
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542670866945" name="784411" type="radio" value="a1542670866945"/>
+           <label for="a1542670866945">
+            <p>
+             data
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542670872073" name="784411" type="radio" value="a1542670872073"/>
+           <label for="a1542670872073">
+            <p>
+             population parameters
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          population parameters
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Which of the below represents how you would set up a hypothesis test to test if the average return of portfolio 1
+          <span class="mathquill ud-math">
+           \mu_1
+          </span>
+          is greater than the average return of portfolio 2
+          <span class="mathquill ud-math">
+           \mu_2
+          </span>
+          ?
+         </p>
+         <p>
+          a.
+          <span class="mathquill ud-math">
+           H_0: \mu_1 &gt; \mu_2
+          </span>
+          <span class="mathquill ud-math">
+           H_1: \mu_1 \leq \mu_2
+          </span>
+          <br/>
+          <br/>
+          <br>
+           b.
+           <span class="mathquill ud-math">
+            H_0: \mu_1 = \mu_2
+           </span>
+           <span class="mathquill ud-math">
+            H_1: \mu_1 \leq \mu_2
+           </span>
+           <br/>
+           <br/>
+           <br>
+            c.
+            <span class="mathquill ud-math">
+             H_0: \mu_1 \leq \mu_2
+            </span>
+            <span class="mathquill ud-math">
+             H_1: \mu_1 &gt; \mu_2
+            </span>
+            <br/>
+            <br/>
+            <br>
+             d.
+             <span class="mathquill ud-math">
+              H_0: \mu_1 = \mu_2
+             </span>
+             <span class="mathquill ud-math">
+              H_1: \mu_1 \neq \mu_2
+             </span>
+             <br/>
+             <br/>
+             <br>
+              e. None of the above
+             </br>
+            </br>
+           </br>
+          </br>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Using the above, which is the appropriate set up for the null and alternative hypotheses?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1542747822351" name="784836" type="radio" value="a1542747822351"/>
+           <label for="a1542747822351">
+            <p>
+             a
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542747851551" name="784836" type="radio" value="a1542747851551"/>
+           <label for="a1542747851551">
+            <p>
+             b
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542747853562" name="784836" type="radio" value="a1542747853562"/>
+           <label for="a1542747853562">
+            <p>
+             c
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542747854968" name="784836" type="radio" value="a1542747854968"/>
+           <label for="a1542747854968">
+            <p>
+             d
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542747858237" name="784836" type="radio" value="a1542747858237"/>
+           <label for="a1542747858237">
+            <p>
+             e
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          c
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Which of the below represents how you would set up a hypothesis test to test if the average length of Chinook fish
+          <span class="mathquill ud-math">
+           \mu_1
+          </span>
+          is different than the average length of Coho fish
+          <span class="mathquill ud-math">
+           \mu_2
+          </span>
+          ?
+         </p>
+         <p>
+          a.
+          <span class="mathquill ud-math">
+           H_0: \mu_1 &gt; \mu_2
+          </span>
+          <span class="mathquill ud-math">
+           H_1: \mu_1 \leq \mu_2
+          </span>
+          <br/>
+          <br/>
+          <br>
+           b.
+           <span class="mathquill ud-math">
+            H_0: \mu_1 = \mu_2
+           </span>
+           <span class="mathquill ud-math">
+            H_1: \mu_1 \leq \mu_2
+           </span>
+           <br/>
+           <br/>
+           <br>
+            c.
+            <span class="mathquill ud-math">
+             H_0: \mu_1 \leq \mu_2
+            </span>
+            <span class="mathquill ud-math">
+             H_1: \mu_1 &gt; \mu_2
+            </span>
+            <br/>
+            <br/>
+            <br>
+             d.
+             <span class="mathquill ud-math">
+              H_0: \mu_1 = \mu_2
+             </span>
+             <span class="mathquill ud-math">
+              H_1: \mu_1 \neq \mu_2
+             </span>
+             <br/>
+             <br/>
+             <br>
+              e. None of the above
+             </br>
+            </br>
+           </br>
+          </br>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Using the above, which is the appropriate set up for the null and alternative hypotheses?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1542748391331" name="784840" type="radio" value="a1542748391331"/>
+           <label for="a1542748391331">
+            <p>
+             a
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542748402590" name="784840" type="radio" value="a1542748402590"/>
+           <label for="a1542748402590">
+            <p>
+             b
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542748404400" name="784840" type="radio" value="a1542748404400"/>
+           <label for="a1542748404400">
+            <p>
+             c
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542748405878" name="784840" type="radio" value="a1542748405878"/>
+           <label for="a1542748405878">
+            <p>
+             d
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542748407332" name="784840" type="radio" value="a1542748407332"/>
+           <label for="a1542748407332">
+            <p>
+             e
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          d
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Given what you know about hypothesis testing and the notation used so far in the statistics content, which of the below values would not be tested in a hypothesis?
+         </p>
+         <p>
+          a.
+          <span class="mathquill ud-math">
+           \pi_1 - \pi_2
+          </span>
+          <br/>
+          <br/>
+          <br>
+           b.
+           <span class="mathquill ud-math">
+            \mu_1
+           </span>
+           <br/>
+           <br/>
+           <br>
+            c.
+            <span class="mathquill ud-math">
+             \pi_1 + \pi_2/\pi_3
+            </span>
+            <br/>
+            <br/>
+            <br>
+             d.
+             <span class="mathquill ud-math">
+              \bar{x}_1
+             </span>
+             <br/>
+             <br/>
+             <br>
+              e.
+              <span class="mathquill ud-math">
+               \sigma_1/\sigma_2
+              </span>
+              <br/>
+              <br/>
+             </br>
+            </br>
+           </br>
+          </br>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Using the above, identify which letter is attached to an item that would not be appropriate to perform a hypothesis test on:
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1542751020895" name="784842" type="radio" value="a1542751020895"/>
+           <label for="a1542751020895">
+            <p>
+             a
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542751216055" name="784842" type="radio" value="a1542751216055"/>
+           <label for="a1542751216055">
+            <p>
+             b
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542751218541" name="784842" type="radio" value="a1542751218541"/>
+           <label for="a1542751218541">
+            <p>
+             c
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542751220118" name="784842" type="radio" value="a1542751220118"/>
+           <label for="a1542751220118">
+            <p>
+             d
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1542751222829" name="784842" type="radio" value="a1542751222829"/>
+           <label for="a1542751222829">
+            <p>
+             e
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          d
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="16. How Do We Choose Between Hypotheses.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('15. Quiz: More Hypothesis Testing Practice')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.053 --> 00:00:03.315
+DAS DISTRIBUIÇÕES AMOSTRAIS
+AOS INTERVALOS DE CONFIANÇA
+
+00:00:03.361 --> 00:00:07.019
+Na aula anterior, vimos como
+utilizar distribuições amostrais
+
+00:00:07.065 --> 00:00:10.292
+e bootstrap para entender
+os valores de uma estatística
+
+00:00:10.338 --> 00:00:11.514
+que seja possível.
+
+00:00:11.560 --> 00:00:16.627
+Podemos utilizar as distribuições
+para entender os possíveis valores
+
+00:00:16.673 --> 00:00:18.435
+de um parâmetro.
+
+00:00:18.481 --> 00:00:22.754
+No mundo real, geralmente
+não sabemos o valor do parâmetro,
+
+00:00:22.800 --> 00:00:27.209
+pois a população de interesse
+tende a ser "todos no mundo"
+
+00:00:27.255 --> 00:00:29.992
+ou "todas as transações
+passadas, presentes e futuras
+
+00:00:30.038 --> 00:00:31.313
+de uma empresa".
+
+00:00:31.359 --> 00:00:34.865
+Não temos todas as informações
+que gostaríamos
+
+00:00:34.911 --> 00:00:36.793
+sobre essas populações.
+
+00:00:36.839 --> 00:00:38.801
+Agora a pergunta é a seguinte:
+
+00:00:38.847 --> 00:00:42.137
+como utilizar o que sabemos
+sobre distribuições amostrais
+
+00:00:42.183 --> 00:00:44.879
+para inferir algo
+sobre os parâmetros
+
+00:00:44.925 --> 00:00:47.017
+das grandes populações?
+
+00:00:47.063 --> 00:00:49.977
+E é aqui que começa
+a ficar interessante.
+
+00:00:50.023 --> 00:00:53.544
+Imagine que esta distribuição
+seja a amostral
+
+00:00:53.590 --> 00:00:55.177
+de algumas estatísticas,
+
+00:00:55.223 --> 00:00:57.033
+qualquer estatística
+de interesse.
+
+00:00:57.079 --> 00:00:59.849
+Podemos utilizar
+essa distribuição amostral
+
+00:00:59.895 --> 00:01:01.505
+para construir um intervalo
+
+00:01:01.551 --> 00:01:03.313
+para nosso parâmetro
+de interesse.
+
+00:01:03.359 --> 00:01:05.874
+Se quisermos um intervalo
+igual a 95%,
+
+00:01:05.920 --> 00:01:08.537
+podemos cortar 2,5% daqui
+
+00:01:08.583 --> 00:01:11.425
+e mais 2,5% daqui.
+
+00:01:11.471 --> 00:01:13.754
+Esses valores darão o alcance
+
+00:01:13.800 --> 00:01:16.113
+no qual acreditamos
+que o parâmetro estaria,
+
+00:01:16.159 --> 00:01:19.377
+com 95% de confiança.
+
+00:01:19.423 --> 00:01:23.609
+Como opção, se quiséssemos
+um intervalo de confiança de 99%,
+
+00:01:23.655 --> 00:01:27.409
+cortaríamos 0,5%
+de cada lado,
+
+00:01:27.455 --> 00:01:30.275
+e esses valores
+nos forneceriam o alcance
+
+00:01:30.321 --> 00:01:32.402
+no qual achamos
+que o parâmetro estaria,
+
+00:01:32.448 --> 00:01:34.612
+com 99% de confiança.
+

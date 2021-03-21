@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.570 --> 00:00:05.875
+You now have gained some intuition for how the Central Limit Theorem works.
+
+00:00:05.875 --> 00:00:09.214
+But it doesn't work for all sampling distributions.
+
+00:00:09.214 --> 00:00:14.785
+Sure, a mean and proportion are normally distributed with large enough sample sizes.
+
+00:00:14.785 --> 00:00:17.699
+But what does it mean for a sample size to be large enough?
+
+00:00:17.699 --> 00:00:20.214
+Is a sample size of 10 large enough?
+
+00:00:20.214 --> 00:00:23.160
+Or 30? Or 100?
+
+00:00:23.160 --> 00:00:28.759
+You might memorize a list of statistics for which the Central Limit Theorem applies.
+
+00:00:28.760 --> 00:00:31.755
+It applies for the mean, and for proportions,
+
+00:00:31.754 --> 00:00:33.935
+and applies for the difference in means,
+
+00:00:33.935 --> 00:00:35.925
+and difference in proportions.
+
+00:00:35.924 --> 00:00:37.699
+However, the Central Limit Theorem doesn't
+
+00:00:37.700 --> 00:00:40.175
+apply to the sampling distribution for the variance,
+
+00:00:40.174 --> 00:00:42.539
+or for the correlation coefficient.
+
+00:00:42.539 --> 00:00:46.329
+It doesn't apply for the sampling distribution of the maximum value in a data set.
+
+00:00:46.329 --> 00:00:48.929
+With all the data being collected in the world,
+
+00:00:48.929 --> 00:00:52.280
+and tons of compute power available at our fingertips,
+
+00:00:52.280 --> 00:00:56.524
+the Central Limit Theorem is still useful for some sampling distributions.
+
+00:00:56.524 --> 00:00:58.640
+But instead of relying on this theorem,
+
+00:00:58.640 --> 00:01:03.210
+what if we just simulated whatever sampling distribution we were interested in instead?
+

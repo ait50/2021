@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.270 --> 00:00:06.615
+You've learned about the types of errors that are possible on hypothesis testing.
+
+00:00:06.615 --> 00:00:08.820
+And you've learned about how we can create
+
+00:00:08.820 --> 00:00:11.995
+a threshold for how often we allow these to happen.
+
+00:00:11.994 --> 00:00:16.594
+But consider if we run 20 of the exact same types of hypothesis tests.
+
+00:00:16.594 --> 00:00:19.474
+Even if the null is actually true,
+
+00:00:19.475 --> 00:00:21.679
+if we have a five percent type one error rate,
+
+00:00:21.679 --> 00:00:26.320
+we can expect one of these to have results where we choose the alternative.
+
+00:00:26.320 --> 00:00:31.199
+Often, researchers all over the world are performing very similar studies.
+
+00:00:31.199 --> 00:00:34.054
+So when one researcher comes up with significant results,
+
+00:00:34.054 --> 00:00:37.189
+how can we be sure that they are one of these type one errors?
+
+00:00:37.189 --> 00:00:40.549
+Well, the hard part is we can't really know in many cases.
+
+00:00:40.549 --> 00:00:43.399
+And that's a problem. But there are a few methods that
+
+00:00:43.399 --> 00:00:46.695
+statisticians have come up with to assist with this problem.
+
+00:00:46.695 --> 00:00:51.674
+One of the most conservative and common approaches is known as the Bonferroni Correction.
+
+00:00:51.674 --> 00:00:55.519
+This simple correction says that if you're performing m-tests,
+
+00:00:55.520 --> 00:00:57.830
+you should divide your type one error rate by
+
+00:00:57.829 --> 00:01:01.894
+m to assure that you actually maintain the error rate here.
+
+00:01:01.895 --> 00:01:03.050
+So if you really want to have
+
+00:01:03.049 --> 00:01:07.280
+a five percent type one error rate and you're performing 10 hypothesis test,
+
+00:01:07.280 --> 00:01:12.980
+your new threshold is actually 0.5 percent for choosing the alternative hypothesis.
+
+00:01:12.980 --> 00:01:15.560
+This is just one popular correction method.
+
+00:01:15.560 --> 00:01:18.454
+But other methods include the Tukey correction.
+
+00:01:18.454 --> 00:01:19.993
+And in the biomedical field,
+
+00:01:19.993 --> 00:01:22.480
+they commonly use a method called Q-Values.
+
+00:01:22.480 --> 00:01:25.460
+More on these methods is provided in the instructor notes below.
+

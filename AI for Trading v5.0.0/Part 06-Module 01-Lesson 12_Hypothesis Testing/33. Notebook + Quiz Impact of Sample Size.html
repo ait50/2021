@@ -1,0 +1,1133 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Notebook + Quiz: Impact of Sample Size
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Hypothesis Testing
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Hypothesis Testing.html">
+       02. Hypothesis Testing
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Setting Up Hypothesis Tests - Part I.html">
+       03. Setting Up Hypothesis Tests - Part I
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Setting Up Hypotheses.html">
+       04. Setting Up Hypotheses
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Setting Up Hypothesis Tests - Part II.html">
+       05. Setting Up Hypothesis Tests - Part II
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Setting Up Hypothesis Tests.html">
+       06. Quiz: Setting Up Hypothesis Tests
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Types of Errors - Part I.html">
+       07. Types of Errors - Part I
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Quiz Types of Errors - Part I.html">
+       08. Quiz: Types of Errors - Part I
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Types of Errors - Part II.html">
+       09. Types of Errors - Part II
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Quiz Types of Errors - Part II(a).html">
+       10. Quiz: Types of Errors - Part II(a)
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz Types of Errors - Part II(b).html">
+       11. Quiz: Types of Errors - Part II(b)
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Types of Errors - Part III.html">
+       12. Types of Errors - Part III
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Quiz Types of Errors - Part III.html">
+       13. Quiz: Types of Errors - Part III
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Common Types of Hypothesis Tests.html">
+       14. Common Types of Hypothesis Tests
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Quiz More Hypothesis Testing Practice.html">
+       15. Quiz: More Hypothesis Testing Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="16. How Do We Choose Between Hypotheses.html">
+       16. How Do We Choose Between Hypotheses?
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Video Simulating from the Null.html">
+       17. Video: Simulating from the Null
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Notebook + Quiz Simulating from the Null.html">
+       18. Notebook + Quiz: Simulating from the Null
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Solution Notebook Simulating from the Null.html">
+       19. Solution Notebook: Simulating from the Null
+      </a>
+     </li>
+     <li class="">
+      <a href="20. What is a p-value Anyway.html">
+       20. What is a p-value Anyway?
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Video Calculating the p-value.html">
+       21. Video: Calculating the p-value
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Quiz What is a p-value Anyway.html">
+       22. Quiz: What is a p-value Anyway?
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Quiz Calculating a p-value.html">
+       23. Quiz: Calculating a p-value
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Quiz Calculating another p-value.html">
+       24. Quiz: Calculating another p-value
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Connecting Errors and P-Values.html">
+       25. Connecting Errors and P-Values
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Conclusions in Hypothesis Testing.html">
+       26. Conclusions in Hypothesis Testing
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Quiz Connecting Errors and P-Values.html">
+       27. Quiz: Connecting Errors and P-Values
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Notebook + Quiz Drawing Conclusions.html">
+       28. Notebook + Quiz: Drawing Conclusions
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Solution Notebook Drawing Conclusions.html">
+       29. Solution Notebook: Drawing Conclusions
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Other Things to Consider - Impact of Large Sample Size.html">
+       30. Other Things to Consider - Impact of Large Sample Size
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Other Things to Consider - What If We Test More Than Once.html">
+       31. Other Things to Consider - What If We Test More Than Once?
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Other Things to Consider - How Do CIs and HTs Compare.html">
+       32. Other Things to Consider - How Do CIs and HTs Compare?
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Notebook + Quiz Impact of Sample Size.html">
+       33. Notebook + Quiz: Impact of Sample Size
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Solution Notebook Impact of Sample Size.html">
+       34. Solution Notebook: Impact of Sample Size
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Notebook + Quiz Multiple Tests.html">
+       35. Notebook + Quiz: Multiple Tests
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Solution Notebook Multiple tests.html">
+       36. Solution Notebook: Multiple tests
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Hypothesis Testing Conclusion.html">
+       37. Hypothesis Testing Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="38. Quiz + Text Recap.html">
+       38. Quiz + Text: Recap
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          33. Notebook + Quiz: Impact of Sample Size
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Use the first statement in the notebook above to set up the null and alternative hypotheses.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           Null
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Alternative
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Hypotheses
+            </p>
+           </th>
+           <th>
+            <p>
+             Statement
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             The mean height of everyone in the population is equal to 67.60 inches.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             The mean height of everyone in the sample is equal to 67.60 inches.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             The mean height of everyone in the sample is not equal to 67.60 inches.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             The mean height of everyone in the population is equal to 0 inches.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             The mean height of everyone in the population is different from 67.60 inches.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Hypotheses
+             </p>
+            </th>
+            <th>
+             <p>
+              Statement
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              The mean height of everyone in the population is equal to 67.60 inches.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Null
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              The mean height of everyone in the population is different from 67.60 inches.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Alternative
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Use the information from question 2 in the notebook to match each description to the correct value.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           The population mean
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The population standard deviation
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The sample mean
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The standard deviation of the sampling distribution for the mean of 5 values
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The shape of the sampling distribution for the mean of 5 values
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Description
+            </p>
+           </th>
+           <th>
+            <p>
+             Value
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             doesn't look normally distributed
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             67.88
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             looks normally distributed
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             1.4
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2.84
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             3.12
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             67.60
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Description
+             </p>
+            </th>
+            <th>
+             <p>
+              Value
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              67.88
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The sample mean
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              looks normally distributed
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The shape of the sampling distribution for the mean of 5 values
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              1.4
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The standard deviation of the sampling distribution for the mean of 5 values
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              3.12
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The population standard deviation
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              67.60
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The population mean
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             The p-value that you obtain using the null from part 1 and the sample mean and sampling distribution standard deviation for a sample mean of size 5 from part 2 is:
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1509409319036" name="440740" type="radio" value="a1509409319036"/>
+           <label for="a1509409319036">
+            <p>
+             Greater than 0.50
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1509410149689" name="440740" type="radio" value="a1509410149689"/>
+           <label for="a1509410149689">
+            <p>
+             Between 0.50 and 0.05
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1509410183219" name="440740" type="radio" value="a1509410183219"/>
+           <label for="a1509410183219">
+            <p>
+             Less than 0.05
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1509410188056" name="440740" type="radio" value="a1509410188056"/>
+           <label for="a1509410188056">
+            <p>
+             We cannot know.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          Greater than 0.50
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Based on the p-value retrieved using the sample of size 5 and any reasonable type I error rate (say 5%),
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1509412165570" name="440741" type="radio" value="a1509412165570"/>
+           <label for="a1509412165570">
+            <p>
+             We have statistically significant evidence to suggest the population mean is not equal to 67.60 inches. (Reject the null)
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1509412222611" name="440741" type="radio" value="a1509412222611"/>
+           <label for="a1509412222611">
+            <p>
+             We do not have statistically significant evidence to suggest the population mean is different from 67.60 inches. (Fail to reject the null)
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1509412271034" name="440741" type="radio" value="a1509412271034"/>
+           <label for="a1509412271034">
+            <p>
+             We do not have enough data to draw any sort of conclusion.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          We do not have statistically significant evidence to suggest the population mean is different from 67.60 inches. (Fail to reject the null)
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Use your new sampling distribution to match each of the following values to the corresponding statement.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           The p-value associated with your hypothesis test.
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The conclusion for your hypothesis at alpha of 0.1 level.
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The standard deviation of the sampling distribution for the mean of 300 draws.
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The value of the sample mean used.
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Description
+            </p>
+           </th>
+           <th>
+            <p>
+             Value
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Reject the null - we have evidence the population mean isn't 67.60 inches.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.0
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             No change.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             No change.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.18
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Fail to reject the null - we do not have evidence the population mean is different from 67.60 inches.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             (population standard deviation)/sqrt(5)
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Description
+             </p>
+            </th>
+            <th>
+             <p>
+              Value
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Reject the null - we have evidence the population mean isn't 67.60 inches.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The conclusion for your hypothesis at alpha of 0.1 level.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.0
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The p-value associated with your hypothesis test.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              No change.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The value of the sample mean used.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              No change.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The value of the sample mean used.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.18
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The standard deviation of the sampling distribution for the mean of 300 draws.
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             In this concept the big takeaway is:
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1509416363087" name="440749" type="radio" value="a1509416363087"/>
+           <label for="a1509416363087">
+            <p>
+             Statistics are confusing.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1509416381114" name="440749" type="radio" value="a1509416381114"/>
+           <label for="a1509416381114">
+            <p>
+             Even the smallest of differences between a sample mean and a hypothesized population mean are significant when we have large sample sizes.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1509416413472" name="440749" type="radio" value="a1509416413472"/>
+           <label for="a1509416413472">
+            <p>
+             With large sample sizes, we can do anything we want!
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1509416428954" name="440749" type="radio" value="a1509416428954"/>
+           <label for="a1509416428954">
+            <p>
+             Sampling distributions are the distribution of a sample statistic, and the distribution of a sample mean has a standard deviation of the population divided by the square root of the sample size.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          Even the smallest of differences between a sample mean and a hypothesized population mean are significant when we have large sample sizes.
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="34. Solution Notebook Impact of Sample Size.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('33. Notebook + Quiz: Impact of Sample Size')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

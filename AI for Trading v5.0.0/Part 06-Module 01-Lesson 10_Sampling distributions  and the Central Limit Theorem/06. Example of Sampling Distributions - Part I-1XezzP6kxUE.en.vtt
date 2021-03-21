@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.370 --> 00:00:07.216
+In this video, we'll be defining the term Sampling Distribution,
+
+00:00:07.216 --> 00:00:11.440
+and looking at an example of one specific sampling distribution.
+
+00:00:11.439 --> 00:00:15.894
+A sampling distribution is the distribution of a statistic.
+
+00:00:15.894 --> 00:00:17.739
+This could be any statistic,
+
+00:00:17.739 --> 00:00:19.349
+but what does it really mean,
+
+00:00:19.350 --> 00:00:22.225
+to look at the distribution of a statistic?
+
+00:00:22.225 --> 00:00:26.480
+Consider again the coffee drinking habits of all Udacity students.
+
+00:00:26.480 --> 00:00:29.786
+Let's say, each of these cups represents a student,
+
+00:00:29.786 --> 00:00:33.600
+and a green cup represents a student that drinks coffee,
+
+00:00:33.600 --> 00:00:37.905
+while a red cup represents a student that doesn't drink coffee.
+
+00:00:37.905 --> 00:00:42.120
+And even though there are more students than we represent here,
+
+00:00:42.119 --> 00:00:45.449
+pretend that this represents all Udacity students.
+
+00:00:45.450 --> 00:00:50.910
+If we were to select this group of students to ask about their coffee drinking habits,
+
+00:00:50.909 --> 00:00:52.469
+what would our population,
+
+00:00:52.469 --> 00:00:55.479
+parameter, sample and statistic be?
+
+00:00:55.479 --> 00:00:58.084
+Use the quiz below to answer.
+
+00:00:58.085 --> 00:01:02.000
+You may want to pause the screen here to return and check your answers.
+

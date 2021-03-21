@@ -1,0 +1,135 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.083 --> 00:00:04.331
+Vejamos um exemplo de construção
+de intervalo de confiança.
+
+00:00:04.377 --> 00:00:07.154
+Especificamente,
+veremos a variação da altura
+
+00:00:07.200 --> 00:00:10.192
+observando quem bebe café
+e a idade deles.
+
+00:00:10.238 --> 00:00:13.992
+Temos dois conjuntos de dados,
+que eu rotulei com "coffee_full"
+
+00:00:14.038 --> 00:00:16.415
+e "coffee_red",
+para a redução do café.
+
+00:00:16.461 --> 00:00:20.055
+O segundo é
+um subconjunto do primeiro.
+
+00:00:20.101 --> 00:00:23.772
+O CSV está nos recursos
+para você poder acompanhar,
+
+00:00:23.818 --> 00:00:26.894
+além da área de trabalho
+do próximo conceito.
+
+00:00:26.940 --> 00:00:31.964
+Configurei a semente para seguir
+exatamente os meus passos.
+
+00:00:32.010 --> 00:00:33.868
+O conjunto maior de dados
+
+00:00:33.914 --> 00:00:36.420
+é de todos os indivíduos
+da população.
+
+00:00:36.466 --> 00:00:40.366
+E o menor é uma amostra aleatória
+que selecionamos.
+
+00:00:40.412 --> 00:00:43.732
+No mundo real, não teríamos
+todas as informações
+
+00:00:43.778 --> 00:00:45.042
+no conjunto completo,
+
+00:00:45.088 --> 00:00:48.730
+mas ele será útil para
+alguns exemplos que veremos.
+
+00:00:48.776 --> 00:00:52.526
+Vamos fazer a estatística
+sobre os que bebem café.
+
+00:00:52.572 --> 00:00:57.305
+Aproximadamente 57%
+pessoas bebem café,
+
+00:00:57.351 --> 00:00:59.945
+e a altura média
+dessas pessoas
+
+00:00:59.991 --> 00:01:03.354
+é de aproximadamente 1,74m.
+
+00:01:03.400 --> 00:01:07.569
+Realizaremos o bootstrap para
+construir um intervalo de confiança.
+
+00:01:07.615 --> 00:01:10.626
+Não temos os dados da população
+para trabalharmos,
+
+00:01:10.672 --> 00:01:13.610
+então não podemos usá-los
+para construir o intervalo.
+
+00:01:14.698 --> 00:01:18.689
+Ao cortar a parte de baixo
+e de cima em 2,5%,
+
+00:01:18.735 --> 00:01:22.850
+construímos uma porção mediana
+igual a 95%.
+
+00:01:22.896 --> 00:01:25.145
+Podemos interpretar
+os valores como limites
+
+00:01:25.191 --> 00:01:28.141
+nos quais acreditamos
+que a altura média
+
+00:01:28.187 --> 00:01:31.773
+dos que bebem café está,
+com 95% de confiança.
+
+00:01:31.819 --> 00:01:35.102
+Com altura entre 1,72m
+
+00:01:35.148 --> 00:01:39.487
+e 1,75m.
+
+00:01:40.551 --> 00:01:43.974
+Vejamos qual era
+a média da população.
+
+00:01:45.295 --> 00:01:48.729
+Parece que acertamos ao utilizar
+o intervalo de confiança,
+
+00:01:48.775 --> 00:01:51.170
+mas esse nem sempre é o caso.
+Sua vez.
+
+00:01:51.216 --> 00:01:53.506
+Use o bloco de anotações
+e os prompts
+
+00:01:53.552 --> 00:01:55.644
+para responder
+as questões a seguir.
+

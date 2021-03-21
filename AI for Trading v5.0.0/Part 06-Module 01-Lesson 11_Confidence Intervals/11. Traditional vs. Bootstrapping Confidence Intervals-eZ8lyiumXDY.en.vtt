@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.654
+In this video, we're going to do a quick comparison
+
+00:00:02.654 --> 00:00:05.384
+of the traditional approaches for building confidence intervals,
+
+00:00:05.384 --> 00:00:07.424
+which are actually built in the Python,
+
+00:00:07.424 --> 00:00:11.429
+and the approaches you've already seen using bootstrapping in this lesson.
+
+00:00:11.429 --> 00:00:13.140
+There are lots of different names for
+
+00:00:13.140 --> 00:00:16.125
+hypothesis tests and the way that we build confidence intervals.
+
+00:00:16.125 --> 00:00:17.969
+Like a one sample T- test,
+
+00:00:17.969 --> 00:00:20.024
+which is used for the population mean,
+
+00:00:20.024 --> 00:00:21.584
+or two sample T- test,
+
+00:00:21.585 --> 00:00:23.760
+which is used for comparing two means.
+
+00:00:23.760 --> 00:00:28.935
+There is also a paired T- test often used for comparing an individual to themselves,
+
+00:00:28.934 --> 00:00:32.804
+or a Z- test, or a chi-square test, or an F-test.
+
+00:00:32.804 --> 00:00:35.070
+There are so many hypothesis tests which are
+
+00:00:35.070 --> 00:00:37.710
+linked to the way that we create the confidence intervals.
+
+00:00:37.710 --> 00:00:42.375
+And the bootstrapping approach can actually be used in place of any of these.
+
+00:00:42.375 --> 00:00:45.770
+In this video, we will illustrate this by example.
+
+00:00:45.770 --> 00:00:48.505
+First, let's read in our data and the libraries.
+
+00:00:48.505 --> 00:00:51.575
+I've also set the seed so you can follow along.
+
+00:00:51.575 --> 00:00:54.905
+Next, let's look at a confidence interval for the difference in means.
+
+00:00:54.905 --> 00:00:57.980
+Here's the bootstrap approach that you did in an earlier quiz.
+
+00:00:57.979 --> 00:01:01.140
+While that runs, I'm going to go look at StackOverflow
+
+00:01:01.140 --> 00:01:04.629
+for a post that could be helpful for finding the difference in means.
+
+00:01:04.629 --> 00:01:07.269
+By finding confidence interval for a T-test,
+
+00:01:07.269 --> 00:01:09.030
+difference in comparison in means,
+
+00:01:09.030 --> 00:01:11.349
+I came across the stack overflow post.
+
+00:01:11.349 --> 00:01:12.584
+If we scroll down,
+
+00:01:12.584 --> 00:01:14.789
+you can see that this is the documentation that
+
+00:01:14.790 --> 00:01:17.480
+they used to get their confidence interval.
+
+00:01:17.480 --> 00:01:19.015
+So we already read in Numpy,
+
+00:01:19.015 --> 00:01:20.430
+I'm going to pull this part out.
+
+00:01:20.430 --> 00:01:25.517
+And here, you can see they're just setting up some random data to work with.
+
+00:01:25.516 --> 00:01:30.979
+So let's actually pull that. We don't need it.
+
+00:01:30.980 --> 00:01:33.719
+We want our data to be a comparison of
+
+00:01:33.719 --> 00:01:36.670
+those who drink coffee and the heights who don't drink coffee.
+
+00:01:36.670 --> 00:01:39.540
+So we just want the heights of each of those groups,
+
+00:01:39.540 --> 00:01:43.688
+so actually, it's going to look a lot like this.
+
+00:01:43.688 --> 00:01:45.600
+But instead of a bootstrap sample,
+
+00:01:45.599 --> 00:01:48.254
+we just want it from our original sample set.
+
+00:01:48.254 --> 00:01:53.079
+And this print statement will only work in 2.7.
+
+00:01:53.079 --> 00:01:56.609
+Notice that intervals for the bootstrapping method and the built
+
+00:01:56.609 --> 00:02:00.230
+in using the traditional method are nearly identical.
+

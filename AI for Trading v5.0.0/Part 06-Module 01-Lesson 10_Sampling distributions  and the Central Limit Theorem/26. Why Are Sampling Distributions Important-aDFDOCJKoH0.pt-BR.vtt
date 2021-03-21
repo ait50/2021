@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.021 --> 00:00:03.389
+POR QUE AS DISTRIBUIÇÕES
+AMOSTRAIS SÃO IMPORTANTES?
+
+00:00:04.013 --> 00:00:07.500
+Nesta aula, observamos
+as distribuições amostrais,
+
+00:00:07.546 --> 00:00:11.348
+mas você pode não ter entendido
+a utilização dessa ideia.
+
+00:00:11.394 --> 00:00:12.875
+Nas próximas aulas,
+
+00:00:12.921 --> 00:00:14.868
+falaremos mais
+sobre inferência.
+
+00:00:14.914 --> 00:00:17.708
+Especificamente, veremos
+os Intervalos de Confiança
+
+00:00:17.754 --> 00:00:19.364
+e o Teste de Hipótese.
+
+00:00:19.410 --> 00:00:21.439
+Ao observar essas técnicas
+na internet,
+
+00:00:21.485 --> 00:00:24.045
+existem muitas fórmulas
+embutidas em calculadoras
+
+00:00:24.091 --> 00:00:26.885
+que computam os resultados
+dessas técnicas,
+
+00:00:26.931 --> 00:00:31.818
+porém, essas calculadoras ocultam
+premissas e vieses em potencial.
+
+00:00:31.864 --> 00:00:35.281
+Ao compreender distribuições
+amostrais e bootstrap,
+
+00:00:35.327 --> 00:00:38.922
+já podemos abordar
+as técnicas embutidas
+
+00:00:38.968 --> 00:00:43.114
+e estendê-las
+para várias outras situações.
+

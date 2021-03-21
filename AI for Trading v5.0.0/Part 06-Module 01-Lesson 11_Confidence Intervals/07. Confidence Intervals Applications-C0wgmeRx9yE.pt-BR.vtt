@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.760
+APLICAÇÕES
+DO INTERVALO DE CONFIANÇA
+
+00:00:02.806 --> 00:00:06.304
+Nos conceitos anteriores,
+construímos intervalos de confiança
+
+00:00:06.350 --> 00:00:07.785
+para diferentes parâmetros,
+
+00:00:07.831 --> 00:00:10.365
+como para a média
+ou para a diferença das médias.
+
+00:00:10.411 --> 00:00:13.849
+Para quais situações construiríamos
+um intervalo de confiança
+
+00:00:13.895 --> 00:00:16.146
+para a diferença das médias?
+
+00:00:16.192 --> 00:00:19.006
+Podemos observar a eficácia
+de diferentes medicamentos
+
+00:00:19.052 --> 00:00:22.460
+comparando dois grupos
+que usam medicamentos diferentes
+
+00:00:22.506 --> 00:00:24.939
+ou comparando um grupo
+que usa um medicamento
+
+00:00:24.985 --> 00:00:27.275
+com um grupo
+que não usa nenhum.
+
+00:00:27.321 --> 00:00:32.058
+Esse tipo de teste é comum
+para qualquer condição de saúde.
+
+00:00:32.104 --> 00:00:34.765
+Outro caso de uso,
+especificamente de aprendizagem,
+
+00:00:34.811 --> 00:00:37.251
+seria a observação
+de duas formas diferentes
+
+00:00:37.297 --> 00:00:41.915
+de lecionar o mesmo assunto,
+para ver qual é mais eficaz.
+
+00:00:41.961 --> 00:00:45.146
+Um dos casos de uso mais comum
+para comparar dois grupos
+
+00:00:45.192 --> 00:00:47.700
+é o que chamamos
+de teste A/B,
+
+00:00:47.746 --> 00:00:50.444
+com o qual comparamos
+páginas diferentes da internet
+
+00:00:50.490 --> 00:00:54.314
+para determinar qual design
+recebe mais tráfego.
+
+00:00:54.360 --> 00:00:56.939
+Isso será tratado
+em mais detalhes
+
+00:00:56.985 --> 00:00:58.308
+em outra lição,
+
+00:00:58.354 --> 00:01:01.561
+pois é fundamental
+para muitas empresas online.
+

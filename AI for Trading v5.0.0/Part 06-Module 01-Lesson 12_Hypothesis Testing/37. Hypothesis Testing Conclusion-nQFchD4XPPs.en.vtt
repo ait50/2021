@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.060 --> 00:00:06.060
+You now have learned how to set up a null and alternative hypothesis.
+
+00:00:06.059 --> 00:00:08.339
+You have determined type one and type two errors.
+
+00:00:08.339 --> 00:00:12.721
+And you can calculate which hypothesis you should choose based on error threshold.
+
+00:00:12.721 --> 00:00:15.809
+You also have learned about some of the dangers of the conclusions
+
+00:00:15.810 --> 00:00:19.240
+that you might make when having a really large sample size,
+
+00:00:19.239 --> 00:00:23.009
+or if you were to perform more than one hypothesis tests.
+
+00:00:23.010 --> 00:00:25.740
+Finally, you learned how confidence intervals and
+
+00:00:25.739 --> 00:00:29.164
+hypothesis tests are highly related to one another.
+
+00:00:29.164 --> 00:00:32.549
+The ideas associated with hypothesis tests are central to
+
+00:00:32.549 --> 00:00:36.195
+A/B testing and making database business decisions.
+
+00:00:36.195 --> 00:00:37.844
+In the next lesson,
+
+00:00:37.844 --> 00:00:41.000
+you will take a hands-on approach to applying these ideas.
+

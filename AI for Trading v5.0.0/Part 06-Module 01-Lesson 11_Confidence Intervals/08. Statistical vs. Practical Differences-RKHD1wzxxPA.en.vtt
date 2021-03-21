@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.589 --> 00:00:07.655
+You're now been introduced to a few different applications for confidence intervals,
+
+00:00:07.655 --> 00:00:11.855
+as well as a bootstrapping approach to creating these confidence intervals.
+
+00:00:11.855 --> 00:00:16.024
+We found that creating a confidence interval for the differences in means of two groups,
+
+00:00:16.024 --> 00:00:18.934
+rather than just comparing two point value estimates,
+
+00:00:18.934 --> 00:00:22.129
+is important to assure that the differences are not just
+
+00:00:22.129 --> 00:00:26.184
+occurring due to the randomness associated with the sample that was chosen.
+
+00:00:26.184 --> 00:00:29.535
+Confidence intervals are certainly useful.
+
+00:00:29.535 --> 00:00:31.410
+But there are issues that can arise when
+
+00:00:31.410 --> 00:00:35.390
+exclusively using confidence intervals to make decisions.
+
+00:00:35.390 --> 00:00:41.009
+This brings up the ideas of Practical and Statistical Significance.
+
+00:00:41.009 --> 00:00:45.729
+Let's consider an example to illustrate the difference between these two terms.
+
+00:00:45.729 --> 00:00:50.049
+Imagine that I own a dog walking business and I'm advertising online.
+
+00:00:50.049 --> 00:00:52.409
+I would like to know which of these two ads would
+
+00:00:52.409 --> 00:00:55.629
+help me generate the most interest in my business.
+
+00:00:55.630 --> 00:00:58.200
+I send out each ad to the same number of
+
+00:00:58.200 --> 00:01:01.650
+randomly selected users and I build the confidence interval,
+
+00:01:01.649 --> 00:01:04.664
+that suggests that more people click this ad.
+
+00:01:04.665 --> 00:01:06.789
+Based on my confidence interval,
+
+00:01:06.789 --> 00:01:11.700
+I have statistical evidence to suggest that the second ad is better.
+
+00:01:11.700 --> 00:01:17.700
+This evidence we get from the confidence interval is just this, Statistical Significance.
+
+00:01:17.700 --> 00:01:19.814
+Let's say that both ads generate
+
+00:01:19.814 --> 00:01:23.804
+enough interest to achieve more dogs than I can even handle watching.
+
+00:01:23.805 --> 00:01:29.470
+And that the second ad is much more expensive and time-consuming to create.
+
+00:01:29.469 --> 00:01:32.039
+If a friend of yours decides that they would like to build
+
+00:01:32.040 --> 00:01:35.910
+a similar ad campaign to start their own dog walking business,
+
+00:01:35.909 --> 00:01:38.549
+which type of ad would you recommend to them?
+
+00:01:38.549 --> 00:01:41.920
+In this case, you might suggest something like the first ad,
+
+00:01:41.920 --> 00:01:45.695
+even though you statistically prove that the second ad was better.
+
+00:01:45.694 --> 00:01:48.929
+The first ad will generate enough interest in
+
+00:01:48.930 --> 00:01:52.705
+their business and be less expensive and time intensive.
+
+00:01:52.704 --> 00:01:58.950
+Your suggestion for them to use the first ad is an example of Practical Significance.
+
+00:01:58.950 --> 00:02:00.990
+Practical significance takes into
+
+00:02:00.989 --> 00:02:04.004
+consideration additional aspects and the world around us,
+
+00:02:04.004 --> 00:02:05.819
+rather than just the numbers.
+
+00:02:05.819 --> 00:02:08.310
+And it's critically important to making your decisions.
+

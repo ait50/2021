@@ -1,0 +1,156 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.334 --> 00:00:02.467
+ESTATÍSTICA PRÁTICA
+
+00:00:02.901 --> 00:00:07.001
+Pelos testes, você foi apresentado
+a dois tipos de erros:
+
+00:00:07.033 --> 00:00:09.400
+tipo 1 e tipo 2.
+
+00:00:09.434 --> 00:00:12.434
+Configurar corretamente
+hipóteses nulas e alternativas
+
+00:00:12.467 --> 00:00:15.234
+é importante por este motivo:
+
+00:00:15.267 --> 00:00:18.868
+elas definem a importância
+dos erros que cometemos.
+
+00:00:18.901 --> 00:00:21.400
+No exemplo anterior,
+um erro do tipo 1
+
+00:00:21.434 --> 00:00:24.234
+é aquele no qual decidimos
+que uma pessoa é culpada,
+
+00:00:24.267 --> 00:00:26.267
+mas ela é inocente.
+
+00:00:26.300 --> 00:00:28.234
+A definição do erro tipo 1
+
+00:00:28.267 --> 00:00:31.501
+é o erro em que é escolhida
+a hipótese alternativa,
+
+00:00:31.534 --> 00:00:34.400
+mas a hipótese nula
+é a verdadeira.
+
+00:00:34.433 --> 00:00:37.901
+Também pode ouvir falar disso
+como um falso positivo.
+
+00:00:37.934 --> 00:00:41.001
+Frequentemente, é denotado
+com um símbolo alfa.
+
+00:00:41.033 --> 00:00:45.601
+Erros do tipo 1 são considerados
+os piores entre os dois possíveis.
+
+00:00:45.634 --> 00:00:48.001
+O outro tipo de erro
+que pode ocorrer
+
+00:00:48.033 --> 00:00:50.701
+é libertarmos
+uma pessoa culpada.
+
+00:00:50.734 --> 00:00:52.667
+É um erro do tipo 2.
+
+00:00:52.701 --> 00:00:54.934
+Por definição,
+um erro do tipo 2
+
+00:00:54.968 --> 00:00:57.267
+ocorre quando
+a hipótese nula é escolhida
+
+00:00:57.300 --> 00:00:59.601
+e a alternativa é verdadeira.
+
+00:00:59.634 --> 00:01:03.634
+O que vemos nesse exemplo
+são dois extremos em potencial:
+
+00:01:03.667 --> 00:01:07.868
+o júri pode decidir nunca cometer
+um erro do tipo 1.
+
+00:01:07.901 --> 00:01:10.467
+Nesse caso,
+independentemente das provas,
+
+00:01:10.501 --> 00:01:13.200
+eles sempre decidem
+que todos são inocentes.
+
+00:01:13.234 --> 00:01:16.667
+Mas assim cometem
+muito mais erros do tipo 2.
+
+00:01:16.701 --> 00:01:20.701
+Em alternativa, se o júri decidisse
+que todos são culpados,
+
+00:01:20.734 --> 00:01:23.100
+nunca cometeriam
+erros do tipo 2,
+
+00:01:23.133 --> 00:01:25.734
+mas cometeriam muito mais
+erros do tipo 1.
+
+00:01:25.767 --> 00:01:29.234
+Por conta dessa relação
+entre erros do tipo 1 e tipo 2,
+
+00:01:29.267 --> 00:01:32.267
+profissionais frequentemente
+estabelecem um limite
+
+00:01:32.300 --> 00:01:35.334
+para quantos erros tipo 1
+estão dispostos a cometer.
+
+00:01:35.367 --> 00:01:39.668
+Então tentam minimizar
+a quantidade de erros do tipo 2
+
+00:01:39.701 --> 00:01:41.767
+enquanto se mantêm
+nesse limite.
+
+00:01:41.801 --> 00:01:44.000
+Porcentagens comuns
+de erros do tipo 1
+
+00:01:44.033 --> 00:01:45.601
+são 1% na área médica
+
+00:01:45.634 --> 00:01:50.000
+e 5% em publicações de pesquisas
+e outros aplicativos comerciais.
+
+00:01:50.033 --> 00:01:53.734
+Mas essa taxa deve ser contingente
+no seu aplicativo.
+
+00:01:53.767 --> 00:01:56.801
+No próximo conceito,
+veremos um aplicativo
+
+00:01:56.834 --> 00:02:01.033
+em que porcentagens de 5% ou de 1%
+não fazem muito sentido.
+

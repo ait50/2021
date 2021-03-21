@@ -1,0 +1,101 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.267 --> 00:00:03.000
+Estatística Prática
+Conectando Erros e Valores P
+
+00:00:03.033 --> 00:00:06.533
+No último vídeo, vimos que
+um valor P é a probabilidade
+
+00:00:06.566 --> 00:00:10.800
+de obter dados ou valores
+mais extremos da hipótese nula.
+
+00:00:10.833 --> 00:00:14.500
+Como isso se conecta à tomada
+de decisões e aos tipos de erros
+
+00:00:14.533 --> 00:00:16.033
+que podemos cometer?
+
+00:00:16.067 --> 00:00:20.200
+Se o valor P é baixo, isso sugere
+que é menos provável
+
+00:00:20.233 --> 00:00:22.767
+observar
+nossa estatística da nula.
+
+00:00:22.800 --> 00:00:25.667
+E mais provável que ela venha
+da alternativa.
+
+00:00:25.700 --> 00:00:28.400
+Mas quanto o valor P
+deve ser baixo
+
+00:00:28.433 --> 00:00:31.467
+para descartarmos
+a hipótese nula?
+
+00:00:31.500 --> 00:00:36.167
+Isso depende da sua disposição
+para cometer certos erros.
+
+00:00:36.200 --> 00:00:39.100
+Se você pode cometer
+5% de erros,
+
+00:00:39.133 --> 00:00:42.033
+quando você escolhe
+a alternativa incorretamente,
+
+00:00:42.067 --> 00:00:45.033
+o seu valor P deve ser
+menor que esse limite
+
+00:00:45.067 --> 00:00:47.333
+para escolher a alternativa.
+
+00:00:47.366 --> 00:00:52.233
+Mas se sua probabilidade de obter
+dados da nula for, digamos, de 8%,
+
+00:00:52.267 --> 00:00:55.900
+é o suficiente para permanecer
+com a nula com um limite
+
+00:00:55.933 --> 00:00:58.033
+de 5% de erros.
+
+00:00:58.067 --> 00:01:02.367
+A regra é que se o valor P é menor
+que a porcentagem de um erro tipo 1,
+
+00:01:02.400 --> 00:01:04.900
+profissionais dizem
+que rejeitamos a nula.
+
+00:01:04.933 --> 00:01:07.600
+Ou seja,
+escolhemos a alternativa.
+
+00:01:07.633 --> 00:01:10.933
+Se o valor P é maior que
+a porcentagem do erro tipo 1,
+
+00:01:10.967 --> 00:01:15.967
+não rejeitamos a nula.
+Ela é mantida como nossa decisão.
+
+00:01:16.000 --> 00:01:19.367
+O que é mesmo verdade?
+Não se tem certeza na prática.
+
+00:01:19.400 --> 00:01:22.000
+Mas temos um banco de dados
+para nos ajudar.
+

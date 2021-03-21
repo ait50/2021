@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.820 --> 00:00:04.525
+When conducting a hypothesis test,
+
+00:00:04.525 --> 00:00:07.544
+there are really two components that you have control over.
+
+00:00:07.544 --> 00:00:09.745
+First, you should be asking yourself,
+
+00:00:09.744 --> 00:00:13.404
+is my sample representative of my population of interest?
+
+00:00:13.404 --> 00:00:15.459
+Are there ways to assure that everyone in
+
+00:00:15.460 --> 00:00:19.519
+my population is accurately represented in my sample?
+
+00:00:19.519 --> 00:00:22.059
+If your sample isn't representative,
+
+00:00:22.059 --> 00:00:25.390
+then your conclusions are likely to be incorrect.
+
+00:00:25.390 --> 00:00:28.929
+Second, you should know the impact of your sample size,
+
+00:00:28.929 --> 00:00:31.179
+and the role that it plays on your results.
+
+00:00:31.179 --> 00:00:33.320
+As your sample size increases,
+
+00:00:33.320 --> 00:00:35.259
+even the smallest differences between
+
+00:00:35.259 --> 00:00:38.875
+the two groups will appear as notable and statistically significant.
+
+00:00:38.875 --> 00:00:42.520
+With the really large sample sizes that are becoming more frequent,
+
+00:00:42.520 --> 00:00:44.080
+as a part of the data world,
+
+00:00:44.079 --> 00:00:46.719
+we are seeing a large change in techniques
+
+00:00:46.719 --> 00:00:50.469
+away from hypothesis tests for exactly this reason.
+
+00:00:50.469 --> 00:00:55.030
+Imagine we are interested in which of two coffee types will sell better on the shelf,
+
+00:00:55.030 --> 00:00:58.935
+and on average, maybe type one sells better than type two.
+
+00:00:58.935 --> 00:01:01.539
+However, there are hundreds, thousands,
+
+00:01:01.539 --> 00:01:06.204
+maybe even millions of individuals who still prefer a different type.
+
+00:01:06.204 --> 00:01:08.709
+A hypothesis test just tells us that,
+
+00:01:08.709 --> 00:01:11.529
+on average, type one will sell more than type two.
+
+00:01:11.530 --> 00:01:13.359
+But with large sample sizes,
+
+00:01:13.359 --> 00:01:15.159
+we should do better than this.
+
+00:01:15.159 --> 00:01:20.754
+Discussing averages leaves out an entire part of the population who preferred type two,
+
+00:01:20.754 --> 00:01:23.049
+or maybe did not care for either of these types,
+
+00:01:23.049 --> 00:01:24.759
+but like a different type.
+
+00:01:24.760 --> 00:01:26.410
+But with large sample sizes,
+
+00:01:26.409 --> 00:01:27.634
+we can do better than this.
+
+00:01:27.635 --> 00:01:29.650
+We can do better than hypothesis testing.
+
+00:01:29.650 --> 00:01:32.380
+And this is what more and more people are finding out.
+
+00:01:32.379 --> 00:01:36.054
+Using machine learning, we can individualize an approach.
+
+00:01:36.055 --> 00:01:39.100
+So maybe, we sell twenty types of coffee and we know
+
+00:01:39.099 --> 00:01:42.444
+what type every member in our population wants.
+
+00:01:42.444 --> 00:01:46.994
+So these large sample sizes prove to be pretty detrimental to a hypothesis test,
+
+00:01:46.995 --> 00:01:48.925
+but they are spectacular for
+
+00:01:48.924 --> 00:01:52.825
+individual-aimed approaches using machine learning techniques.
+
+00:01:52.825 --> 00:01:55.290
+We will get a glimpse of two of
+
+00:01:55.290 --> 00:01:59.000
+these machine learning techniques in the last lessons of this class.
+

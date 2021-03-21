@@ -1,0 +1,51 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:03.334
+Após configurar as hipóteses
+nulas e alternativas,
+
+00:00:03.367 --> 00:00:05.467
+precisamos dos dados
+para entender
+
+00:00:05.501 --> 00:00:08.868
+qual hipótese
+acreditamos ser mais provável.
+
+00:00:08.901 --> 00:00:12.501
+Existem duas abordagens
+para escolher uma dessas hipóteses.
+
+00:00:12.534 --> 00:00:15.601
+Uma é a abordagem que vimos
+que usa intervalos de confiança,
+
+00:00:15.634 --> 00:00:18.767
+em que simulamos a distribuição
+de amostragem de nossa estatística
+
+00:00:18.801 --> 00:00:22.734
+e podemos ver se nossa hipótese
+é consistente com o que vimos
+
+00:00:22.767 --> 00:00:24.501
+na distribuição de amostragem.
+
+00:00:24.534 --> 00:00:27.501
+A segunda forma
+de escolher uma hipótese
+
+00:00:27.534 --> 00:00:30.968
+é simular o que acreditamos
+ser possível na nula,
+
+00:00:31.000 --> 00:00:34.701
+e então verificar se os dados
+são consistentes com isso.
+
+00:00:34.734 --> 00:00:37.968
+É o que profissionais tendem a fazer
+em testes de hipóteses.
+

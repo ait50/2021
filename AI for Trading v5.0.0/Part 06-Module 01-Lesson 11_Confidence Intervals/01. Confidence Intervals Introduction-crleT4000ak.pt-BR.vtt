@@ -1,0 +1,96 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.044 --> 00:00:02.908
+INTRODUÇÃO
+AOS INTERVALOS DE CONFIANÇA
+
+00:00:02.954 --> 00:00:05.964
+Nesta aula, veremos
+os intervalos de confiança.
+
+00:00:06.010 --> 00:00:08.676
+Quando tentamos estimar
+um parâmetro populacional
+
+00:00:08.722 --> 00:00:10.509
+em uma estatística amostral,
+
+00:00:10.555 --> 00:00:12.820
+isso é o mesmo que pescar
+com uma vara.
+
+00:00:12.866 --> 00:00:14.832
+Não há nada de errado
+com isso.
+
+00:00:14.878 --> 00:00:16.833
+É uma boa maneira
+de se pescar.
+
+00:00:16.879 --> 00:00:20.361
+Porém, há muito mais chance
+de pegar um peixe
+
+00:00:20.407 --> 00:00:22.504
+quando lançamos uma rede.
+
+00:00:22.550 --> 00:00:25.537
+Quanto isso aumenta
+a chance de pesca?
+
+00:00:25.583 --> 00:00:28.033
+Tudo depende
+do tamanho da rede.
+
+00:00:28.079 --> 00:00:31.136
+Quanto maior ela for,
+teremos mais confiança
+
+00:00:31.182 --> 00:00:33.128
+de pegar um peixe.
+
+00:00:33.174 --> 00:00:37.920
+Esta rede tem mais chance de pescar
+do que uma menor.
+
+00:00:37.966 --> 00:00:41.632
+Embora o exemplo não seja
+como um intervalo de confiança,
+
+00:00:41.678 --> 00:00:44.688
+pois consideramos um parâmetro
+como um número imóvel
+
+00:00:44.734 --> 00:00:47.207
+e não como um peixe
+que se movimenta na água,
+
+00:00:47.253 --> 00:00:51.481
+a ideia de fornecer um intervalo
+e não somente uma estimativa
+
+00:00:51.527 --> 00:00:53.424
+para nos ajudará
+a ganhar confiança
+
+00:00:53.470 --> 00:00:55.408
+para captar
+um parâmetro populacional
+
+00:00:55.454 --> 00:00:57.912
+está na essência
+dos intervalos de confiança.
+
+00:00:57.958 --> 00:01:00.993
+Quanto maior for o intervalo,
+mais confiança teremos
+
+00:01:01.039 --> 00:01:03.383
+em capturar
+o parâmetro de interesse.
+
+00:01:03.429 --> 00:01:04.897
+Vejamos isso melhor.
+

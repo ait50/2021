@@ -1,0 +1,80 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.124 --> 00:00:03.619
+DOIS TEOREMAS ÚTEIS:
+LEI DOS GRANDES NÚMEROS
+
+00:00:03.665 --> 00:00:09.017
+Dois teoremas matemáticos são
+comuns nas distribuições amostrais:
+
+00:00:09.063 --> 00:00:12.083
+a Lei dos Grandes Números
+e o Teorema Central do Limite.
+
+00:00:12.129 --> 00:00:15.233
+Primeiro vejamos
+a Lei dos Grandes Números.
+
+00:00:15.279 --> 00:00:17.090
+Esse teorema
+faz muito sentido
+
+00:00:17.136 --> 00:00:20.217
+e nos diz se escolhemos
+a estatística correta.
+
+00:00:20.263 --> 00:00:21.994
+Para estimar um parâmetro,
+
+00:00:22.040 --> 00:00:24.003
+quanto maior
+for o tamanho da amostra,
+
+00:00:24.049 --> 00:00:26.657
+mais próxima a estatística
+estará do parâmetro.
+
+00:00:26.703 --> 00:00:28.298
+Isso faz sentido, não faz?
+
+00:00:28.344 --> 00:00:30.818
+Se quisermos saber
+a média de uma população
+
+00:00:30.864 --> 00:00:33.226
+e estimarmos
+com a média amostral,
+
+00:00:33.272 --> 00:00:35.262
+quanto maior
+for o tamanho da amostra,
+
+00:00:35.308 --> 00:00:37.277
+melhor será a média dela
+
+00:00:37.323 --> 00:00:39.638
+ao estimar
+a média da população.
+
+00:00:39.684 --> 00:00:42.266
+Mas você pensa:
+"O que torna uma estatística
+
+00:00:42.342 --> 00:00:44.797
+adequada
+para estimar um parâmetro?"
+
+00:00:44.843 --> 00:00:47.495
+Há diversas formas
+de estimar parâmetros.
+
+00:00:47.541 --> 00:00:49.358
+Nas anotações,
+
+00:00:49.404 --> 00:00:52.685
+incluí links
+para os métodos mais populares.
+

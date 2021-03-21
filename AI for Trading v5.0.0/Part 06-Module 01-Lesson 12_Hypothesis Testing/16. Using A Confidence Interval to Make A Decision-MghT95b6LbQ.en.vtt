@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.330
+I have attached the data for this example in the Resources tab.
+
+00:00:03.330 --> 00:00:07.375
+And you also can find it in the works pace on the next concept of our work through.
+
+00:00:07.375 --> 00:00:11.634
+This is the same coffee data you saw in the previous lesson on confidence intervals.
+
+00:00:11.634 --> 00:00:14.574
+So you might already have it saved on your local as well.
+
+00:00:14.574 --> 00:00:16.739
+What if we wanted to ask the question of if
+
+00:00:16.739 --> 00:00:20.759
+the average height for all coffee drinkers is greater than 70 inches.
+
+00:00:20.760 --> 00:00:24.350
+We could set up our known alternative hypothesis in the following way.
+
+00:00:24.350 --> 00:00:26.609
+Here, we have that the average height of
+
+00:00:26.609 --> 00:00:30.129
+all coffee drinkers is less than or equal to 70 in the null
+
+00:00:30.129 --> 00:00:31.799
+while in this statement we have that
+
+00:00:31.800 --> 00:00:34.829
+the average height is greater than 70 in the alternative.
+
+00:00:34.829 --> 00:00:37.574
+Notice, we are always testing a parameter.
+
+00:00:37.575 --> 00:00:41.969
+So I'm using new here to represent the mean of all coffee drinkers.
+
+00:00:41.969 --> 00:00:44.339
+Based on what we just did with confidence intervals,
+
+00:00:44.340 --> 00:00:48.885
+you can imagine a very intuitive approach for determining if the null is possible,
+
+00:00:48.884 --> 00:00:54.674
+is just to bootstrap a sample set of data and compute the sample mean again and again.
+
+00:00:54.674 --> 00:00:58.919
+And build the sampling distribution and corresponding confidence interval to
+
+00:00:58.920 --> 00:01:00.870
+determine what are the reasonable values for
+
+00:01:00.869 --> 00:01:04.075
+the population mean with some level of confidence.
+
+00:01:04.075 --> 00:01:05.990
+Let's put this to practice,
+
+00:01:05.989 --> 00:01:08.984
+imagine from our dataset we achieve this sample.
+
+00:01:08.984 --> 00:01:12.359
+Then we can bootstrap this in the following way.
+
+00:01:12.359 --> 00:01:18.560
+Now, let's bootstrap a number of times and compute the mean for each bootstrap sample.
+
+00:01:18.560 --> 00:01:22.245
+Here, we have our bootstrap sample, and here,
+
+00:01:22.245 --> 00:01:24.810
+I've created an empty vector of means that we're
+
+00:01:24.810 --> 00:01:28.775
+going to append each of our bootstrap means into.
+
+00:01:28.775 --> 00:01:33.105
+Now, we have all of our means and we can create our confidence interval.
+
+00:01:33.105 --> 00:01:36.008
+Here, I have the lower bound,
+
+00:01:36.007 --> 00:01:37.935
+and here is the upper bound.
+
+00:01:37.935 --> 00:01:42.200
+Additionally, we might choose to plot those. Here's what it looks like.
+

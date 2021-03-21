@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.259 --> 00:00:06.199
+The way we've been building confidence intervals thus far is
+
+00:00:06.200 --> 00:00:10.070
+based on bootstrapping and our knowledge of sampling distributions.
+
+00:00:10.070 --> 00:00:12.919
+This is an extremely effective method for building
+
+00:00:12.919 --> 00:00:17.230
+confidence intervals for essentially any parameters we might be interested in.
+
+00:00:17.230 --> 00:00:20.839
+However, if you've taken a statistics course elsewhere,
+
+00:00:20.839 --> 00:00:22.370
+you might be confused as to why
+
+00:00:22.370 --> 00:00:26.445
+this notation is different than what you've done in those other courses.
+
+00:00:26.445 --> 00:00:31.879
+You might have seen equations like these for capturing a population mean or proportion.
+
+00:00:31.879 --> 00:00:35.149
+Similarly, you might have seen equations like these for
+
+00:00:35.149 --> 00:00:39.159
+capturing the difference in means or the difference in proportions.
+
+00:00:39.159 --> 00:00:44.884
+All of these formulas have underlying assumptions that may or may not be true.
+
+00:00:44.884 --> 00:00:50.344
+If you truly believe that your data are representative of your population of interest,
+
+00:00:50.344 --> 00:00:53.045
+the bootstrapping method should provide
+
+00:00:53.045 --> 00:00:56.899
+a better representation for where the parameter is likely to be.
+
+00:00:56.899 --> 00:00:59.494
+However, with large enough sample sizes,
+
+00:00:59.494 --> 00:01:01.519
+these formulas should provide
+
+00:01:01.520 --> 00:01:05.555
+very similar results to those that we've seen in bootstrapping methods.
+
+00:01:05.555 --> 00:01:09.000
+In the next concept, we'll take a look at a few examples.
+

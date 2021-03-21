@@ -1,0 +1,126 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.056 --> 00:00:04.664
+Usamos bootstrapping para simular
+a distribuição amostral
+
+00:00:04.710 --> 00:00:06.368
+para qualquer estatística.
+
+00:00:06.414 --> 00:00:09.702
+Pode ser que leve tempo
+para entender isso,
+
+00:00:09.748 --> 00:00:11.302
+então me acompanhe.
+
+00:00:11.348 --> 00:00:15.166
+Na estatística inferencial,
+utilizamos a estatística
+
+00:00:15.212 --> 00:00:19.237
+para dizer algo sobre o parâmetro
+da população correspondente.
+
+00:00:19.283 --> 00:00:23.789
+Imagine tratar a amostra
+como se fosse toda a população.
+
+00:00:23.835 --> 00:00:28.902
+Embora os 21 copos representem
+uma amostra dos alunos da Udacity,
+
+00:00:28.948 --> 00:00:32.952
+imagine encará-los como se fossem
+todos os alunos.
+
+00:00:32.998 --> 00:00:34.872
+Se esses 21 indivíduos
+
+00:00:34.918 --> 00:00:37.792
+representassem a população,
+
+00:00:37.838 --> 00:00:40.038
+poderíamos obter
+amostras bootstrap dela,
+
+00:00:40.084 --> 00:00:42.678
+para entender se a proporção
+dos que bebem café
+
+00:00:42.724 --> 00:00:45.191
+pode mudar de uma amostra
+para outra.
+
+00:00:45.237 --> 00:00:49.111
+Eu configurei um array
+com 21 uns e zeros
+
+00:00:49.157 --> 00:00:52.295
+para representar os copos
+da imagem anterior.
+
+00:00:52.341 --> 00:00:55.127
+Também configurei a semente,
+caso você queira seguir
+
+00:00:55.173 --> 00:00:56.903
+e obter os mesmos
+resultados.
+
+00:00:56.949 --> 00:00:59.519
+Podemos calcular a proporção
+dos que bebem café
+
+00:00:59.565 --> 00:01:00.952
+na amostra original.
+
+00:01:00.998 --> 00:01:04.375
+Vamos obter nossa primeira
+amostra bootstrap
+
+00:01:04.421 --> 00:01:07.192
+do mesmo tamanho
+da amostra original
+
+00:01:07.238 --> 00:01:09.952
+e calcular a proporção
+dos que bebem café.
+
+00:01:09.998 --> 00:01:13.152
+Perceba que a proporção
+não é igual à original,
+
+00:01:13.198 --> 00:01:16.592
+pois não obtemos amostra
+somente das observações originais,
+
+00:01:16.638 --> 00:01:19.936
+mas fazemos isso
+com substituição.
+
+00:01:19.982 --> 00:01:23.623
+Podemos criar um loop
+para realizar a mesma amostragem
+
+00:01:23.669 --> 00:01:25.008
+10 mil vezes,
+
+00:01:25.054 --> 00:01:27.527
+para ver
+como a proporção mudará.
+
+00:01:27.573 --> 00:01:31.763
+Vamos fazer o gráfico para observar
+a distribuição da amostra.
+
+00:01:31.809 --> 00:01:33.872
+Utilize os resultados
+da distribuição
+
+00:01:33.918 --> 00:01:36.422
+para responder às perguntas
+no próximo conceito.
+

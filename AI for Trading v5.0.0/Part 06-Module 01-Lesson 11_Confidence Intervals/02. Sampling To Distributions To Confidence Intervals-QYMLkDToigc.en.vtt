@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.430 --> 00:00:04.679
+In the previous lesson,
+
+00:00:04.679 --> 00:00:07.259
+you saw how we can do sampling distributions and
+
+00:00:07.259 --> 00:00:11.669
+bootstrapping to understand the values of a statistic that are possible.
+
+00:00:11.669 --> 00:00:14.714
+It turns out that we can use these sampling distributions
+
+00:00:14.714 --> 00:00:18.381
+to understand the most likely values for a parameter as well.
+
+00:00:18.381 --> 00:00:19.730
+In the real world,
+
+00:00:19.730 --> 00:00:23.880
+we don't usually know the value of a parameter as our populations of
+
+00:00:23.879 --> 00:00:28.469
+interest tend to be things like everyone in the world or all the past,
+
+00:00:28.469 --> 00:00:31.324
+present, and future transactions of a company.
+
+00:00:31.324 --> 00:00:37.045
+We just don't have all the information we might like to about these populations.
+
+00:00:37.045 --> 00:00:38.804
+So now, the question is,
+
+00:00:38.804 --> 00:00:42.960
+how do we use what we do know about sampling distributions to infer
+
+00:00:42.960 --> 00:00:47.185
+something about these parameters for these large populations?
+
+00:00:47.185 --> 00:00:50.179
+And here is where the interesting part starts.
+
+00:00:50.179 --> 00:00:55.064
+Imagine this distribution here is the sampling distribution for some statistic,
+
+00:00:55.064 --> 00:00:56.909
+any statistic of interest.
+
+00:00:56.909 --> 00:00:59.939
+We can actually use this sampling distribution
+
+00:00:59.939 --> 00:01:03.460
+to build a confidence interval for our parameter of interest.
+
+00:01:03.460 --> 00:01:06.015
+If we want a 95 percent confidence interval,
+
+00:01:06.015 --> 00:01:08.159
+we could cut off two and a half percent from
+
+00:01:08.159 --> 00:01:11.174
+here and another two and a half percent from up here.
+
+00:01:11.174 --> 00:01:16.079
+These values would then give the range where we believe the parameter would be,
+
+00:01:16.079 --> 00:01:19.378
+with 95 percent confidence.
+
+00:01:19.378 --> 00:01:23.704
+If alternatively, we wanted a 99 percent confidence interval,
+
+00:01:23.704 --> 00:01:27.454
+we would cut off a half a percent from each side,
+
+00:01:27.454 --> 00:01:30.769
+and these values would then give the range where we
+
+00:01:30.769 --> 00:01:35.000
+believe the parameter to be with 99 percent confidence.
+

@@ -1,0 +1,155 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.122 --> 00:00:02.432
+Neste vídeo, vamos comparar
+
+00:00:02.478 --> 00:00:05.265
+a construção tradicional
+dos intervalos de confiança,
+
+00:00:05.311 --> 00:00:07.368
+que são feitos no Python,
+
+00:00:07.414 --> 00:00:11.216
+com as abordagens
+já vistas no bootstrap.
+
+00:00:11.262 --> 00:00:14.128
+Há muitos nomes diferentes
+para testes de hipótese
+
+00:00:14.174 --> 00:00:16.264
+que buscam
+os intervalos de confiança:
+
+00:00:16.310 --> 00:00:19.992
+o teste T de amostra única,
+que é utilizado para a média,
+
+00:00:20.038 --> 00:00:23.709
+ou o teste T de duas amostras,
+utilizado para comparar médias.
+
+00:00:23.755 --> 00:00:25.981
+Existe também
+o teste T pareado,
+
+00:00:26.027 --> 00:00:28.980
+utilizado para comparar
+o indivíduo a ele mesmo,
+
+00:00:29.026 --> 00:00:32.548
+o teste Z, o teste qui-quadrado,
+o teste F...
+
+00:00:32.594 --> 00:00:34.468
+São tantos testes de hipótese,
+
+00:00:34.514 --> 00:00:37.823
+e eles têm relação com a forma
+como criamos os intervalos.
+
+00:00:37.869 --> 00:00:40.238
+A abordagem bootstrap
+pode ser utilizada
+
+00:00:40.284 --> 00:00:42.222
+no lugar de todos eles.
+
+00:00:42.268 --> 00:00:45.654
+Neste vídeo, ilustraremos isso
+com um exemplo.
+
+00:00:45.700 --> 00:00:48.495
+Vamos adicionar os dados
+nas nossas bibliotecas.
+
+00:00:48.541 --> 00:00:51.476
+Eu configurei a semente
+para você acompanhar.
+
+00:00:51.522 --> 00:00:54.703
+Vamos observar o intervalo
+de confiança da diferença de médias.
+
+00:00:54.749 --> 00:00:58.284
+Esta é a abordagem bootstrap
+que fizemos em um questionário.
+
+00:00:58.330 --> 00:01:01.156
+Enquanto isso, vou procurar
+no transbordamento de pilha
+
+00:01:01.202 --> 00:01:02.523
+uma postagem útil
+
+00:01:02.569 --> 00:01:04.699
+sobre encontrar a diferença
+entre médias.
+
+00:01:04.745 --> 00:01:07.283
+Ao encontrar o intervalo
+de um teste T,
+
+00:01:07.329 --> 00:01:08.987
+a diferença entre as médias,
+
+00:01:09.033 --> 00:01:11.340
+eu encontrei esta postagem.
+
+00:01:11.386 --> 00:01:12.515
+Mais abaixo,
+
+00:01:12.561 --> 00:01:17.611
+vemos que esta é a documentação
+utilizada para obter o intervalo.
+
+00:01:17.657 --> 00:01:20.659
+Já adicionamos um NumPy,
+então vou retirar essa parte.
+
+00:01:20.705 --> 00:01:25.429
+Vemos que estão configurando
+dados aleatórios.
+
+00:01:25.475 --> 00:01:30.845
+Vamos tirar isso.
+Não precisamos disso.
+
+00:01:30.891 --> 00:01:33.445
+Queremos que nossos dados
+sejam uma comparação
+
+00:01:33.491 --> 00:01:36.725
+entre aqueles que bebem café
+e a altura dos que não bebem.
+
+00:01:36.771 --> 00:01:39.864
+Queremos a altura
+dos dois grupos.
+
+00:01:39.910 --> 00:01:43.895
+Na verdade,
+ficará desta forma.
+
+00:01:43.941 --> 00:01:48.512
+Em vez de uma amostra bootstrap,
+queremos nosso conjunto de amostra.
+
+00:01:48.558 --> 00:01:52.809
+Esta instrução "print"
+só funcionará em 2.7.
+
+00:01:52.855 --> 00:01:55.650
+Os intervalos
+do método bootstrap
+
+00:01:55.696 --> 00:01:58.762
+e do embutido, utilizando
+o método tradicional,
+
+00:01:58.808 --> 00:02:00.000
+são quase idênticos.
+

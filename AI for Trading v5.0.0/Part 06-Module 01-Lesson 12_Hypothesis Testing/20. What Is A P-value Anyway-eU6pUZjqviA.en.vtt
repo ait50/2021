@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.679 --> 00:00:03.950
+In the previous video,
+
+00:00:03.950 --> 00:00:08.246
+you saw two methods for how we might choose between competing hypotheses.
+
+00:00:08.246 --> 00:00:09.589
+In the second method,
+
+00:00:09.589 --> 00:00:13.035
+we ask the question if the null hypothesis is true,
+
+00:00:13.035 --> 00:00:16.039
+what is the probability of obtaining the statistic we observed in
+
+00:00:16.039 --> 00:00:20.674
+our data or one more extreme in favor of the alternative hypothesis?
+
+00:00:20.675 --> 00:00:23.585
+This probability is what is called a P-value.
+
+00:00:23.585 --> 00:00:27.740
+Finding the P-value involves a mix of ideas that you've learned about,
+
+00:00:27.739 --> 00:00:31.779
+sampling distributions and conditional probability.
+
+00:00:31.780 --> 00:00:35.350
+Imagine we have a null that a population mean is equal to zero.
+
+00:00:35.350 --> 00:00:38.510
+Then we collect sample data and we find the sample mean
+
+00:00:38.509 --> 00:00:42.259
+to be five and the sample standard deviation to be two.
+
+00:00:42.259 --> 00:00:47.121
+Assuming the sampling distribution of your statistic follows the null hypothesis.
+
+00:00:47.121 --> 00:00:49.310
+What is the probability of observing
+
+00:00:49.310 --> 00:00:54.525
+the actual value of the statistic from your data in this distribution?
+
+00:00:54.524 --> 00:00:56.030
+If we want to know the probability that
+
+00:00:56.030 --> 00:00:58.655
+the population mean is actually greater than zero,
+
+00:00:58.655 --> 00:01:00.995
+you could update the hypothesis.
+
+00:01:00.994 --> 00:01:03.018
+Values like 6, 7,
+
+00:01:03.018 --> 00:01:09.510
+10 all fall out here and are even more of an indication that the alternative is true,
+
+00:01:09.510 --> 00:01:12.260
+that our population mean is greater than zero.
+
+00:01:12.260 --> 00:01:14.719
+Additionally, what is the probability you observed
+
+00:01:14.719 --> 00:01:18.084
+something even more in favor of the alternative hypothesis?
+
+00:01:18.084 --> 00:01:22.879
+This shaded region here provides that probability, the P-value.
+
+00:01:22.879 --> 00:01:25.909
+Notice the P-value is dependent on
+
+00:01:25.909 --> 00:01:31.079
+your alternative hypothesis as it determines what is considered more extreme.
+
+00:01:31.079 --> 00:01:34.984
+If your alternative hypothesis is that your parameter is greater than zero,
+
+00:01:34.984 --> 00:01:38.359
+then we shade greater than the statistic as shown here.
+
+00:01:38.359 --> 00:01:42.515
+However, if we change our null and alternative to look like this,
+
+00:01:42.515 --> 00:01:45.144
+then we shade to the left of our statistic.
+
+00:01:45.144 --> 00:01:48.500
+Our shading for the P-value would now look like this.
+
+00:01:48.500 --> 00:01:51.500
+Notice that this would create a very large probability in
+
+00:01:51.500 --> 00:01:54.754
+this case as almost the entire distribution is shaded.
+
+00:01:54.754 --> 00:01:57.304
+And if you have a not equal sign in the alternative,
+
+00:01:57.305 --> 00:02:00.012
+then your shading is associated with extremes that
+
+00:02:00.012 --> 00:02:03.194
+are just far from the null in either direction.
+
+00:02:03.194 --> 00:02:05.359
+In these cases, we just care about
+
+00:02:05.359 --> 00:02:09.104
+statistics that are far from the null in either direction.
+
+00:02:09.104 --> 00:02:11.929
+So we end up marking on both sides and
+
+00:02:11.930 --> 00:02:15.730
+shading away from the null hypothesis to find our P-value.
+
+00:02:15.729 --> 00:02:18.484
+This often takes people a while to wrap their heads around.
+
+00:02:18.485 --> 00:02:21.075
+And there are two parts to understand.
+
+00:02:21.074 --> 00:02:25.424
+First, you have to fully conceptualize the definition of a P-value,
+
+00:02:25.425 --> 00:02:31.040
+which is the conditional probability of your data given that the null hypothesis is true.
+
+00:02:31.039 --> 00:02:34.069
+Then, you need to figure out what to compute,
+
+00:02:34.069 --> 00:02:37.534
+which is visually summarized by these three images.
+
+00:02:37.534 --> 00:02:40.460
+You will get some practice with both of these before moving
+
+00:02:40.460 --> 00:02:44.000
+on and applying the ideas of P-value to make decisions.
+

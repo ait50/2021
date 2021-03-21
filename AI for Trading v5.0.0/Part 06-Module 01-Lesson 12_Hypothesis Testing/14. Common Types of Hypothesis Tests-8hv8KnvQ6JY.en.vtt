@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.764
+Now that you've had a chance to gain some familiarity with setting up hypothesis test,
+
+00:00:04.764 --> 00:00:08.417
+let's look at some of the most common tests that are done in practice.
+
+00:00:08.417 --> 00:00:10.989
+One common test is to test the mean or
+
+00:00:10.990 --> 00:00:14.675
+proportion of a population being equal to some value.
+
+00:00:14.675 --> 00:00:16.870
+For example, in finance,
+
+00:00:16.870 --> 00:00:17.964
+we could have the question of,
+
+00:00:17.964 --> 00:00:22.280
+if you can expect a return greater than six percent on an investment.
+
+00:00:22.280 --> 00:00:25.377
+So we could set up the hypothesis test in the following way,
+
+00:00:25.376 --> 00:00:29.519
+where the null is that you earn less than or equal to six percent,
+
+00:00:29.519 --> 00:00:33.079
+and the alternative is that you earn greater than six percent.
+
+00:00:33.079 --> 00:00:36.265
+Another common hypothesis test is to ask which of
+
+00:00:36.265 --> 00:00:39.804
+two marketing campaigns might drive more traffic to our website?
+
+00:00:39.804 --> 00:00:43.295
+In which case, we could set up a null and alternative that looks like this,
+
+00:00:43.295 --> 00:00:46.690
+where the null suggests that the proportion of individuals that click
+
+00:00:46.689 --> 00:00:50.229
+through to our page is the same for each campaign,
+
+00:00:50.229 --> 00:00:53.694
+and the alternative is that one page drives more traffic.
+
+00:00:53.695 --> 00:00:58.840
+In which case, the proportion of traffic is different from one page to the next.
+
+00:00:58.840 --> 00:01:03.070
+If we really wanted to test if a new campaign was better than an old campaign,
+
+00:01:03.070 --> 00:01:06.310
+we might use a one sided hypothesis test like this one,
+
+00:01:06.310 --> 00:01:07.840
+where the greater than here,
+
+00:01:07.840 --> 00:01:10.420
+suggests that the proportion of individuals that travel
+
+00:01:10.420 --> 00:01:13.674
+to our site will be higher for the new campaign.
+
+00:01:13.674 --> 00:01:18.429
+You can do some algebra to change the exact same logic to look like this.
+
+00:01:18.430 --> 00:01:22.660
+Notice that all of these hypothesis tests are regarding parameters.
+
+00:01:22.659 --> 00:01:24.939
+They are not about statistics.
+
+00:01:24.939 --> 00:01:26.840
+This is always the case.
+
+00:01:26.840 --> 00:01:28.990
+There is no need to do hypothesis testing on
+
+00:01:28.989 --> 00:01:33.034
+statistics as they are exact values in our data set.
+
+00:01:33.034 --> 00:01:36.549
+Our questions are about the entire population and therefore,
+
+00:01:36.549 --> 00:01:38.000
+so are our hypotheses.
+

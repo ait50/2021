@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.047 --> 00:00:03.718
+INTERPRETAÇÃO DE INTERVALOS:
+O QUE PODEMOS E NÃO PODEMOS DIZER?
+
+00:00:03.764 --> 00:00:07.053
+Já vimos muito sobre como
+construir, interpretar
+
+00:00:07.099 --> 00:00:09.542
+e utilizar
+os intervalos de confiança.
+
+00:00:09.588 --> 00:00:13.725
+Este vídeo relembra os tipos
+de conclusões que podemos obter
+
+00:00:13.771 --> 00:00:17.277
+com intervalos de confiança
+e também os que não podemos,
+
+00:00:17.323 --> 00:00:19.126
+que geralmente se confundem.
+
+00:00:19.172 --> 00:00:22.518
+Os intervalos de confiança
+concentram-se nos parâmetros,
+
+00:00:22.564 --> 00:00:27.006
+ou seja, em um valor numérico
+único da população.
+
+00:00:27.052 --> 00:00:29.590
+Esses valores incluem
+a média da população,
+
+00:00:29.636 --> 00:00:31.710
+o desvio padrão
+da população,
+
+00:00:31.756 --> 00:00:34.373
+potencialmente a diferença
+entre duas médias
+
+00:00:34.419 --> 00:00:37.679
+ou qualquer outro
+sumário numérico da população.
+
+00:00:37.725 --> 00:00:41.975
+Os intervalos de confiança
+não permitem dizer algo específico
+
+00:00:42.021 --> 00:00:45.072
+sobre algum indivíduo
+da população.
+
+00:00:45.118 --> 00:00:47.758
+Técnicas mais avançadas
+do aprendizado de máquina
+
+00:00:47.804 --> 00:00:52.399
+se concentram em fornecer
+informações sobre os indivíduos,
+
+00:00:52.445 --> 00:00:56.823
+mas os intervalos de confiança
+não resolvem esse tipo de problema.
+
+00:00:56.869 --> 00:00:59.589
+Os intervalos
+geralmente informam
+
+00:00:59.635 --> 00:01:03.118
+os valores agregados
+de uma população.
+

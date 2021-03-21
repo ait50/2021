@@ -1,0 +1,114 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.616
+ESTATÍSTICA PRÁTICA
+
+00:00:02.662 --> 00:00:05.408
+Neste vídeo, mostraremos
+mais alguns termos
+
+00:00:05.454 --> 00:00:07.417
+associados
+aos intervalos de confiança
+
+00:00:07.463 --> 00:00:09.896
+e algumas relações
+que podemos esperar
+
+00:00:09.942 --> 00:00:13.064
+entre o que acontece
+com as entradas de um intervalo
+
+00:00:13.110 --> 00:00:16.344
+e como isso afeta o intervalo
+obtido como resultado.
+
+00:00:16.390 --> 00:00:18.592
+Há alguns termos
+que devemos ver
+
+00:00:18.638 --> 00:00:21.415
+que servem para qualquer
+intervalo de confiança.
+
+00:00:21.461 --> 00:00:25.390
+Na literatura, frequentemente vemos
+termos como "margem de erro"
+
+00:00:25.436 --> 00:00:27.432
+e "largura
+do intervalo de confiança".
+
+00:00:27.478 --> 00:00:31.991
+Uma forma comum de ver
+resultados políticos é a seguinte.
+
+00:00:32.037 --> 00:00:35.079
+O candidato A
+tem 34% dos votos,
+
+00:00:35.125 --> 00:00:39.983
+com 3% de margem de erro,
+e o candidato B tem 22% dos votos,
+
+00:00:40.029 --> 00:00:41.642
+com 3% de margem de erro.
+
+00:00:41.688 --> 00:00:44.380
+Em uma pequena impressão,
+veríamos algo assim:
+
+00:00:44.426 --> 00:00:47.975
+"Os números têm um
+intervalo de confiança de 95%."
+
+00:00:48.021 --> 00:00:53.818
+Na amostra, cada candidato tem,
+respectivamente, 34% e 22%,
+
+00:00:53.864 --> 00:00:57.018
+e os 3% são chamados
+de margem de erro.
+
+00:00:57.064 --> 00:00:59.411
+Para construir
+um intervalo de confiança,
+
+00:00:59.457 --> 00:01:02.163
+nós adicionamos
+e subtraímos esse valor.
+
+00:01:02.209 --> 00:01:04.906
+O intervalo de confiança
+para a proporção real
+
+00:01:04.952 --> 00:01:10.498
+controlada pelo candidato A
+vai de 31% a 37%.
+
+00:01:10.544 --> 00:01:14.683
+Para o candidato B,
+seria de 19% a 25%.
+
+00:01:14.729 --> 00:01:19.051
+Se a largura desse intervalo
+estiver acima do desejado,
+
+00:01:19.097 --> 00:01:22.226
+podemos coletar
+uma amostra maior.
+
+00:01:22.272 --> 00:01:26.347
+Devido à Lei dos Grandes Números,
+quanto maior for a amostra,
+
+00:01:26.393 --> 00:01:30.483
+melhores serão as estimativas
+de aproximação do parâmetro
+
+00:01:30.529 --> 00:01:33.292
+e, dessa forma,
+diminuirá o nosso intervalo.
+

@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.470 --> 00:00:06.894
+When making a decision about whether you're choosing the null or alternative hypothesis,
+
+00:00:06.894 --> 00:00:10.390
+you might see certain professionals, specifically statisticians,
+
+00:00:10.390 --> 00:00:12.955
+cringe, with concluding remarks like,
+
+00:00:12.955 --> 00:00:14.714
+"So based on the data,
+
+00:00:14.714 --> 00:00:17.620
+we accepted the null hypothesis to be true," or,
+
+00:00:17.620 --> 00:00:20.109
+"Based on the data, we accepted the alternative."
+
+00:00:20.109 --> 00:00:23.964
+Remember, when setting up our null and alternative hypotheses,
+
+00:00:23.964 --> 00:00:28.750
+we automatically set the null to be true before any data were collected.
+
+00:00:28.750 --> 00:00:32.189
+Therefore, this statement is a default.
+
+00:00:32.189 --> 00:00:38.019
+It isn't like we're uncertain about what hypothesis we'll choose and then we choose one,
+
+00:00:38.020 --> 00:00:40.875
+rather, you are by default choosing the null.
+
+00:00:40.875 --> 00:00:43.000
+Going back to the judicial example,
+
+00:00:43.000 --> 00:00:45.960
+everyone is innocent until proven guilty.
+
+00:00:45.960 --> 00:00:47.950
+You don't choose someone as innocent.
+
+00:00:47.950 --> 00:00:50.570
+By default, everyone is innocent.
+
+00:00:50.570 --> 00:00:52.119
+Therefore, in hypothesis testing,
+
+00:00:52.119 --> 00:00:53.679
+we say, "Based on the data,
+
+00:00:53.679 --> 00:00:57.429
+we have evidence to reject the null hypothesis," or alternatively,
+
+00:00:57.429 --> 00:01:00.894
+if we don't have enough evidence to reject the null, we say,
+
+00:01:00.895 --> 00:01:04.719
+"Based on the data, we fail to reject the null hypothesis."
+
+00:01:04.719 --> 00:01:07.844
+Many people will only care about making the right decision.
+
+00:01:07.844 --> 00:01:10.450
+So this distinction might seem just a bit picky.
+
+00:01:10.450 --> 00:01:13.359
+But it stresses that the null is much more likely to be
+
+00:01:13.359 --> 00:01:16.170
+chosen as you start with the statement being true.
+

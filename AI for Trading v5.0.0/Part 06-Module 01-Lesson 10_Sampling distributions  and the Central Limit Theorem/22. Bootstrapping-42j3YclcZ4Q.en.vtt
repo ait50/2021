@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:02.274
+So in the last video,
+
+00:00:02.274 --> 00:00:05.094
+we talked about how relying on mathematical theorems,
+
+00:00:05.094 --> 00:00:07.359
+like the central limit theorem leads to
+
+00:00:07.360 --> 00:00:11.560
+gaps in whether we've achieved a large enough sample size or,
+
+00:00:11.560 --> 00:00:14.185
+which statistics the theorem applies to,
+
+00:00:14.185 --> 00:00:19.359
+and that instead of relying on theorems we could simulate the sampling distribution.
+
+00:00:19.359 --> 00:00:22.210
+This introduces a technique known as bootstrapping.
+
+00:00:22.210 --> 00:00:26.800
+Bootstrapping in statistics, means sampling with replacement.
+
+00:00:26.800 --> 00:00:30.370
+If we want to bootstrap sample five individuals from this group,
+
+00:00:30.370 --> 00:00:33.329
+we could randomly sample these five here.
+
+00:00:33.329 --> 00:00:35.570
+However, in bootstrap sampling,
+
+00:00:35.570 --> 00:00:37.750
+we are sampling with replacement.
+
+00:00:37.750 --> 00:00:40.710
+So we could actually end up sampling these four,
+
+00:00:40.710 --> 00:00:43.990
+and this one might end up being sampled again.
+
+00:00:43.990 --> 00:00:45.774
+We could look at this a bit slower.
+
+00:00:45.774 --> 00:00:49.420
+In sampling, we might end up choosing this individual.
+
+00:00:49.420 --> 00:00:52.285
+And immediately after choosing it as a part of the sample,
+
+00:00:52.284 --> 00:00:55.589
+it goes back to potentially be chosen again.
+
+00:00:55.590 --> 00:00:58.115
+It is possible, though unlikely,
+
+00:00:58.115 --> 00:01:03.745
+in bootstrap sampling to choose the same individual for every random draw.
+
+00:01:03.744 --> 00:01:09.280
+We could end up choosing this individual or any of these five times in a row.
+
+00:01:09.280 --> 00:01:11.534
+After a little more practice with this,
+
+00:01:11.534 --> 00:01:15.500
+you'll be ready to apply bootstrapping to simulate sampling distributions.
+

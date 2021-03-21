@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.169
+Let's work together through an example of building a confidence interval.
+
+00:00:04.169 --> 00:00:06.570
+Specifically, we'll be looking at how heights
+
+00:00:06.570 --> 00:00:10.224
+range based on coffee drinking habits and based on age.
+
+00:00:10.224 --> 00:00:12.285
+Here, I have two datasets,
+
+00:00:12.285 --> 00:00:14.009
+which I have labeled coffee full,
+
+00:00:14.009 --> 00:00:16.359
+and coffee red for coffee reduced.
+
+00:00:16.359 --> 00:00:19.919
+Notice that the second is just a subset of the first.
+
+00:00:19.920 --> 00:00:23.804
+The csv is linked in the resources so you can follow along,
+
+00:00:23.804 --> 00:00:26.980
+as well as a workspace on the next concept.
+
+00:00:26.980 --> 00:00:32.005
+I set the seed, which you can do to follow exactly my steps.
+
+00:00:32.005 --> 00:00:36.450
+Consider that the larger dataset is all of the individuals in our population.
+
+00:00:36.450 --> 00:00:40.290
+While the smaller dataset is just a random sample that we selected.
+
+00:00:40.289 --> 00:00:44.969
+In the real world, we wouldn't necessarily have all the information in the full dataset,
+
+00:00:44.969 --> 00:00:48.570
+but it will be useful for some of the examples we'll be working through.
+
+00:00:48.570 --> 00:00:52.494
+Let's calculate some statistics about the individuals who drink coffee in our sample.
+
+00:00:52.494 --> 00:00:54.929
+We can see that we have approximately 57 percent
+
+00:00:54.929 --> 00:00:57.369
+of individuals that drink coffee in our sample,
+
+00:00:57.369 --> 00:01:03.449
+and we can see the average height of these individuals is approximately 68.52 inches.
+
+00:01:03.450 --> 00:01:07.480
+Now, let's boot strap from the sample to build a confidence interval.
+
+00:01:07.480 --> 00:01:10.903
+Remember, we don't have the population data to work with.
+
+00:01:10.903 --> 00:01:14.045
+So, we cannot use that to build the interval.
+
+00:01:14.045 --> 00:01:18.689
+By cutting off the bottom two and a half and the top two and a half percent,
+
+00:01:18.689 --> 00:01:22.454
+we built 95 percent in the middle portion.
+
+00:01:22.454 --> 00:01:25.840
+We can interpret these values as the bounds where we believe
+
+00:01:25.840 --> 00:01:29.545
+the mean height of all coffee drinkers in the population to be,
+
+00:01:29.545 --> 00:01:31.570
+with 95 percent confidence,
+
+00:01:31.569 --> 00:01:39.894
+between 68.06 and 68.97 inches tall.
+
+00:01:39.894 --> 00:01:44.424
+Let's go back and see what the population mean actually was.
+
+00:01:44.424 --> 00:01:48.704
+Looks like in this case, we were successful using our confidence interval.
+
+00:01:48.704 --> 00:01:51.269
+But that's not always the case. Your turn.
+
+00:01:51.269 --> 00:01:55.509
+Use the notebook and prompts in the next concept to answer the quiz question that follow.
+

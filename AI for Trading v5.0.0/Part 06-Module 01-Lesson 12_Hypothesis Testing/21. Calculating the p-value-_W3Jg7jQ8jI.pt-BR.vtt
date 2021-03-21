@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:03.601
+No útlimo vídeo de programação,
+você viu como podemos simular
+
+00:00:03.634 --> 00:00:05.567
+desenhos da hipótese nula,
+
+00:00:05.601 --> 00:00:09.100
+e que se nossa estatística estivesse
+no grosso da distribuição,
+
+00:00:09.133 --> 00:00:13.200
+isso sugeriria que a estatística
+provavelmente seria da nula.
+
+00:00:13.234 --> 00:00:17.701
+Contudo, se a estatística estava
+longe do grosso da distribuição,
+
+00:00:17.734 --> 00:00:23.434
+isso sugere que a nula provavelmente
+não geraria nossa estatística.
+
+00:00:23.467 --> 00:00:26.334
+Então você viu que podemos calcular
+valores P nos baseando
+
+00:00:26.367 --> 00:00:30.300
+na região sombreada, começando
+pelo valor da estatística observada
+
+00:00:30.334 --> 00:00:33.001
+ao longo da ponta
+da distribuição,
+
+00:00:33.033 --> 00:00:36.667
+na qual a região sombreada
+é dependente da alternativa.
+
+00:00:36.701 --> 00:00:40.267
+Baseando-nos no vídeo anterior,
+você simulou valores
+
+00:00:40.300 --> 00:00:43.667
+da distribuição
+de amostragem da nula assim.
+
+00:00:43.701 --> 00:00:46.033
+Imagine que temos
+a hipótese alternativa
+
+00:00:46.067 --> 00:00:48.667
+de que a média da população
+é mais alta do que 1,77m.
+
+00:00:48.701 --> 00:00:51.534
+Podemos calcular o valor P
+como a proporção
+
+00:00:51.567 --> 00:00:55.400
+dos desenhos simulados
+maiores que a média de amostragem.
+
+00:00:56.133 --> 00:00:59.701
+Aqui vemos que isso nos dá
+um valor P igual a 1.
+
+00:00:59.734 --> 00:01:02.734
+Lembre-se de que valores P altos
+sugerem que nós não devemos
+
+00:01:02.767 --> 00:01:04.901
+nos afastar da hipótese nula.
+
+00:01:04.934 --> 00:01:10.467
+Nesse caso, a sugestão é ficar
+com a média menor que 1,77m.
+
+00:01:10.501 --> 00:01:14.767
+Aqui calculamos valores nulos
+maiores que a média de amostragem.
+
+00:01:14.801 --> 00:01:18.634
+Uma vez que é igual a 1,
+nosso valor P é alto e,
+
+00:01:18.667 --> 00:01:21.501
+portanto, não nos afastaremos
+da hipótese nula.
+
+00:01:21.534 --> 00:01:26.834
+Isso sugere que a média da população
+é menor ou igual a 1,77m.
+
+00:01:27.033 --> 00:01:30.567
+Se nossas novas hipóteses
+alternativas e nulas
+
+00:01:30.601 --> 00:01:34.501
+são assim, vamos calcular
+nosso valor P de modo distinto.
+
+00:01:34.534 --> 00:01:37.400
+Aqui, como a alternativa
+é menor que 1,77m,
+
+00:01:37.434 --> 00:01:41.634
+vamos olhar para a região sombreada
+à esquerda da estatística.
+
+00:01:41.667 --> 00:01:44.267
+Isso vai mudar o valor P
+para o seguinte.
+
+00:01:44.300 --> 00:01:47.667
+Agora que o valor P é zero,
+isso sugere que nós rejeitamos
+
+00:01:47.700 --> 00:01:50.801
+a hipótese nula
+em favor da alternativa,
+
+00:01:50.834 --> 00:01:55.501
+sugerindo que a média da população
+é menor que 1,77m.
+
+00:01:55.534 --> 00:01:58.234
+Se essas eram nossas hipóteses
+nula e alternativa,
+
+00:01:58.267 --> 00:02:01.968
+queremos agora olhar para os valores
+que são mais extremos
+
+00:02:02.001 --> 00:02:04.901
+que a média da amostra
+em qualquer direção,
+
+00:02:04.934 --> 00:02:06.467
+para longe da hipótese nula.
+
+00:02:06.501 --> 00:02:08.634
+Isso se parece
+com esta equação.
+
+00:02:08.667 --> 00:02:12.734
+Vamos ver onde esses valores
+caem no histograma acima.
+
+00:02:12.767 --> 00:02:16.567
+Você vê que se fôssemos sombrear
+partes mais extremas dessas regiões.
+
+00:02:16.601 --> 00:02:19.734
+essencialmente, não há
+pontos de dados de hipóteses
+
+00:02:19.767 --> 00:02:21.667
+que caiam para fora delas.
+
+00:02:21.701 --> 00:02:23.767
+Novamente,
+teríamos provas para sugerir
+
+00:02:23.801 --> 00:02:27.968
+que o valor hipotético nulo não
+gerou nossa estatística de amostra.
+

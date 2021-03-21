@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.060
+Once we set up our null and alternative hypotheses,
+
+00:00:03.060 --> 00:00:05.040
+we need used data to figure out
+
+00:00:05.040 --> 00:00:08.765
+which hypothesis we actually think is more likely to be true.
+
+00:00:08.765 --> 00:00:12.780
+And there are two ways we might approach choosing one of these hypotheses.
+
+00:00:12.779 --> 00:00:15.419
+One is the approach that we saw using confidence intervals,
+
+00:00:15.419 --> 00:00:18.640
+where we simulate the sampling distribution of our statistic,
+
+00:00:18.640 --> 00:00:21.060
+and then we could see if our hypothesis is
+
+00:00:21.059 --> 00:00:24.419
+consistent with what we observe in the sampling distribution.
+
+00:00:24.420 --> 00:00:26.340
+The second way we could approach choosing
+
+00:00:26.339 --> 00:00:29.190
+a hypothesis is simulating what we believe to be
+
+00:00:29.190 --> 00:00:35.100
+possible under the null and then seeing if our data is actually consistent with that.
+
+00:00:35.100 --> 00:00:38.000
+This is what professionals tend to do in a hypothesis testing.
+

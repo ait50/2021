@@ -1,0 +1,117 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:02.667
+Estatística Prática
+E Se Fizermos Mais de Um Teste?
+
+00:00:03.234 --> 00:00:05.434
+Você aprendeu sobre
+tipos de erros possíveis
+
+00:00:05.467 --> 00:00:07.033
+em um teste de hipóteses.
+
+00:00:07.067 --> 00:00:11.968
+E sobre criar um limite
+para a frequência desses erros.
+
+00:00:12.000 --> 00:00:16.334
+Mas considerando que executamos
+20 vezes o mesmo teste,
+
+00:00:17.033 --> 00:00:19.567
+mesmo que a nula
+seja verdadeira,
+
+00:00:19.601 --> 00:00:21.901
+se tivermos uma
+porcentagem de erro de 5%,
+
+00:00:21.934 --> 00:00:24.267
+poderemos esperar
+que um deles tenha resultados
+
+00:00:24.300 --> 00:00:26.434
+no qual se escolha a alternativa.
+
+00:00:26.467 --> 00:00:28.801
+Com frequência, pesquisadores
+do mundo todo
+
+00:00:28.834 --> 00:00:31.234
+fazem estudos
+bem semelhantes,
+
+00:00:31.267 --> 00:00:34.033
+e, quando um pesquisador
+obtém resultados significativos,
+
+00:00:34.067 --> 00:00:37.234
+como saber
+se é um erro do tipo 1?
+
+00:00:37.267 --> 00:00:40.634
+O difícil é que, em muitos casos,
+não dá para saber,
+
+00:00:40.667 --> 00:00:42.167
+o que é um problema.
+
+00:00:42.200 --> 00:00:44.901
+Mas há alguns métodos
+criados por estatísticos
+
+00:00:44.934 --> 00:00:46.767
+que nos auxiliam
+com esse problema.
+
+00:00:46.801 --> 00:00:49.567
+Uma das abordagens mais comuns
+e mais conservadoras
+
+00:00:49.601 --> 00:00:51.901
+é conhecido como
+o Teste de Bonferroni.
+
+00:00:51.934 --> 00:00:55.667
+Essa correção simples
+diz que se você faz M testes,
+
+00:00:55.701 --> 00:00:59.133
+deve dividir a porcentagem de erro
+por M para assegurar
+
+00:00:59.167 --> 00:01:01.968
+que vai manter
+a porcentagem de erros aqui.
+
+00:01:02.000 --> 00:01:05.133
+Se você quer manter a porcentagem
+em 5% de erros
+
+00:01:05.167 --> 00:01:07.601
+e vai fazer
+10 testes de hipóteses,
+
+00:01:07.634 --> 00:01:12.934
+seu limite novo é de 0,5% para
+escolher a hipótese alternativa.
+
+00:01:12.968 --> 00:01:15.767
+Esse é apenas um método popular
+de correção.
+
+00:01:15.801 --> 00:01:20.033
+Outros incluem o Teste de Tukey
+e, no campo biomédico,
+
+00:01:20.067 --> 00:01:22.501
+costuma ser usado um método
+chamado Teste Q.
+
+00:01:22.534 --> 00:01:25.400
+Saiba mais sobre eles
+nas notas abaixo.
+

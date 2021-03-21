@@ -1,0 +1,141 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:03.367
+Eu anexei os dados deste exemplo
+à aba de recursos,
+
+00:00:03.400 --> 00:00:05.601
+e você pode vê-los
+na área de trabalho
+
+00:00:05.634 --> 00:00:07.467
+do próximo conceito
+que veremos.
+
+00:00:07.501 --> 00:00:10.300
+São os mesmos dados sobre café
+da aula anterior,
+
+00:00:10.334 --> 00:00:12.067
+sobre intervalos de confiança,
+
+00:00:12.100 --> 00:00:14.400
+então você pode
+já tê-los salvos.
+
+00:00:14.434 --> 00:00:18.801
+E se quisermos saber se a altura
+média de todos que tomam café
+
+00:00:18.834 --> 00:00:20.767
+é maior que 1,77m?
+
+00:00:20.801 --> 00:00:23.300
+Podemos configurar
+a hipótese alternativa que temos
+
+00:00:23.334 --> 00:00:24.567
+da seguinte forma:
+
+00:00:24.601 --> 00:00:27.767
+aqui sabemos que a altura média
+de quem toma café
+
+00:00:27.801 --> 00:00:29.934
+é menor ou igual a 1,77m
+na nula,
+
+00:00:29.968 --> 00:00:34.853
+enquanto nesta declaração
+é maior que 1,77m na alternativa.
+
+00:00:34.920 --> 00:00:37.767
+Veja que estamos sempre
+testando um parâmetro.
+
+00:00:37.801 --> 00:00:40.400
+Estou usando um novo aqui
+para representar a média
+
+00:00:40.434 --> 00:00:42.133
+de todos que tomam café.
+
+00:00:42.167 --> 00:00:44.501
+Baseado no que vimos
+nos intervalos de confiança,
+
+00:00:44.534 --> 00:00:49.100
+imagine que uma abordagem intuitiva
+para dizer se a nula é possível
+
+00:00:49.133 --> 00:00:52.634
+serve apenas para inicializar
+uma amostra de conjunto de dados
+
+00:00:52.667 --> 00:00:55.000
+e calcular a média
+da amostra repetidamente.
+
+00:00:55.033 --> 00:00:57.100
+E para construir
+a distribuição da amostra
+
+00:00:57.133 --> 00:00:59.267
+e o intervalo de confiança
+correspondente,
+
+00:00:59.300 --> 00:01:00.968
+para definir
+os valores razoáveis
+
+00:01:01.001 --> 00:01:04.133
+da média da população
+com algum nível de confiança.
+
+00:01:04.167 --> 00:01:06.033
+Vamos à prática.
+
+00:01:06.066 --> 00:01:09.400
+Imagine que obtivemos essa amostra
+do conjunto de dados.
+
+00:01:09.434 --> 00:01:12.534
+Então podemos inicializar
+da seguinte maneira.
+
+00:01:12.567 --> 00:01:15.300
+Agora vamos inicializar
+algumas vezes
+
+00:01:15.334 --> 00:01:19.133
+e calcular a média para cada
+amostra de inicialização.
+
+00:01:19.167 --> 00:01:21.734
+Aqui está a amostra
+de inicialização
+
+00:01:21.767 --> 00:01:24.634
+e aqui eu criei
+um vetor vazio da média,
+
+00:01:24.667 --> 00:01:28.934
+ao qual vamos anexar
+cada média de inicialização.
+
+00:01:28.968 --> 00:01:33.367
+Agora temos todas as médias
+para criar o intervalo de confiança.
+
+00:01:33.400 --> 00:01:35.935
+Aqui está o limite inferior
+
+00:01:35.968 --> 00:01:38.267
+e aqui, o limite superior.
+
+00:01:38.300 --> 00:01:42.634
+Além disso, podemos optar
+por traçá-los. Eles ficam assim.
+

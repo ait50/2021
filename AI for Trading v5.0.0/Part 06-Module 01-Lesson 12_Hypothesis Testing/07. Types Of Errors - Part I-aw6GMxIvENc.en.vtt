@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.319 --> 00:00:06.240
+Now that you've had some practice with setting up hypotheses,
+
+00:00:06.240 --> 00:00:08.070
+you might be asking yourself,
+
+00:00:08.070 --> 00:00:10.515
+why does all this null and alternative stuff really matter?
+
+00:00:10.515 --> 00:00:12.589
+Well, it actually matters a lot.
+
+00:00:12.589 --> 00:00:15.714
+Let's consider again the judicial example from before.
+
+00:00:15.714 --> 00:00:20.550
+There are four potential reality decision combos that could be made.
+
+00:00:20.550 --> 00:00:24.000
+In order to look at each one of these outcomes,
+
+00:00:24.000 --> 00:00:27.570
+consider this grid where we have the truth of whether or not
+
+00:00:27.570 --> 00:00:31.414
+someone is innocent or guilty represented by this axis,
+
+00:00:31.414 --> 00:00:34.409
+and then the decision made by the jury
+
+00:00:34.409 --> 00:00:38.429
+represented as either innocent or guilty on this axis here.
+
+00:00:38.429 --> 00:00:41.144
+This creates a grid of four potential outcomes.
+
+00:00:41.145 --> 00:00:44.910
+In this corner, the truth is that an individual is innocent,
+
+00:00:44.909 --> 00:00:48.046
+and the jury also believes that individual to be innocent.
+
+00:00:48.046 --> 00:00:49.154
+While in this corner,
+
+00:00:49.155 --> 00:00:51.780
+the truth is that the individual is guilty,
+
+00:00:51.780 --> 00:00:53.969
+and the jury believes them to be guilty.
+
+00:00:53.969 --> 00:00:56.100
+In either of these other two,
+
+00:00:56.100 --> 00:01:01.215
+the jury has made a mistake as the truth doesn't match the jury decision.
+
+00:01:01.215 --> 00:01:05.814
+This provides us with two potential errors that are possible in hypothesis testing.
+
+00:01:05.814 --> 00:01:08.769
+The first error that is possible is that the jury might
+
+00:01:08.769 --> 00:01:12.310
+consider an individual innocent when they are truly guilty.
+
+00:01:12.310 --> 00:01:14.640
+This error sets guilty people free.
+
+00:01:14.640 --> 00:01:16.959
+The second type of error is that the jury considers
+
+00:01:16.959 --> 00:01:20.254
+an individual guilty when the truth is that they're innocent.
+
+00:01:20.254 --> 00:01:22.199
+This error punishes innocent people.
+

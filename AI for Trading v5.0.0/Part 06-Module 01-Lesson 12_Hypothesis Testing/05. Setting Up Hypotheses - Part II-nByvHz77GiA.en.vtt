@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.140 --> 00:00:04.320
+In the previous video,
+
+00:00:04.320 --> 00:00:05.940
+you were introduced to the terms of
+
+00:00:05.940 --> 00:00:08.820
+the null and alternative hypotheses and
+
+00:00:08.820 --> 00:00:12.769
+came up with a few guidelines for setting these up as shown here.
+
+00:00:12.769 --> 00:00:15.539
+You also saw how the claim of innocent until
+
+00:00:15.539 --> 00:00:18.989
+proven guilty relates to the null and alternative hypotheses.
+
+00:00:18.989 --> 00:00:22.804
+In this video, I want to provide a second example.
+
+00:00:22.804 --> 00:00:26.989
+Imagine you create a new web page layout and we'd like
+
+00:00:26.989 --> 00:00:31.169
+to know if this new page drives more traffic than the existing page.
+
+00:00:31.170 --> 00:00:33.500
+We could set this up to specifically ask,
+
+00:00:33.500 --> 00:00:36.289
+"Does the average web traffic increase
+
+00:00:36.289 --> 00:00:39.560
+with the new web page as compared to the existing page?"
+
+00:00:39.560 --> 00:00:42.020
+Before we even implement this test,
+
+00:00:42.020 --> 00:00:44.555
+we might hope that the new page is better.
+
+00:00:44.554 --> 00:00:46.689
+That's why we built it after all.
+
+00:00:46.689 --> 00:00:48.594
+But we need to prove this.
+
+00:00:48.594 --> 00:00:51.170
+This is an indication that the new page being
+
+00:00:51.170 --> 00:00:55.700
+better than the existing page belongs in the alternative hypothesis.
+
+00:00:55.700 --> 00:00:59.390
+Therefore, the null would be that the average web traffic is the
+
+00:00:59.390 --> 00:01:03.965
+same for each of these groups or that the old page is actually better.
+
+00:01:03.965 --> 00:01:06.920
+Mathematically, we could set this up in this way,
+
+00:01:06.920 --> 00:01:08.540
+where the average traffic for
+
+00:01:08.540 --> 00:01:12.815
+the existing page is equal to the average traffic for the new page.
+
+00:01:12.814 --> 00:01:15.274
+Then, the alternative would look like this,
+
+00:01:15.275 --> 00:01:17.900
+where the average traffic for the new page is
+
+00:01:17.900 --> 00:01:21.140
+greater than the average traffic for the existing page.
+
+00:01:21.140 --> 00:01:25.730
+And again, we can collect data to see which hypothesis is supported.
+
+00:01:25.730 --> 00:01:31.070
+Here, our guidelines served very useful in defining the null and alternative hypotheses.
+
+00:01:31.069 --> 00:01:36.769
+Setting up hypothesis tests can be tricky because there isn't really one right answer.
+
+00:01:36.769 --> 00:01:38.179
+In the following concepts,
+
+00:01:38.180 --> 00:01:41.840
+you will see why this really matters for our decision-making process.
+
+00:01:41.840 --> 00:01:44.420
+For now, use this example along with
+
+00:01:44.420 --> 00:01:48.000
+these four guidelines to get some practice setting up hypotheses.
+

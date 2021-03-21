@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.149 --> 00:00:04.230
+In the last video,
+
+00:00:04.230 --> 00:00:06.890
+we saw that a p-value is the probability of obtaining
+
+00:00:06.889 --> 00:00:10.709
+our data or more extreme values from the null hypothesis.
+
+00:00:10.710 --> 00:00:15.755
+So how does this connect to making decisions and the types of errors that we can make?
+
+00:00:15.755 --> 00:00:18.185
+If the p-value is really small,
+
+00:00:18.184 --> 00:00:22.474
+this suggests it's less likely to observe our statistic from the null.
+
+00:00:22.475 --> 00:00:25.505
+And it's more likely that it came from the alternative.
+
+00:00:25.504 --> 00:00:27.980
+But how small does the p-value need to be
+
+00:00:27.980 --> 00:00:31.080
+before we no longer stay with the null hypothesis?
+
+00:00:31.079 --> 00:00:36.045
+Well, I guess that depends on how willing you are to make certain types of errors.
+
+00:00:36.045 --> 00:00:39.065
+If you are willing to commit five percent of errors,
+
+00:00:39.064 --> 00:00:41.585
+where you choose the alternative incorrectly,
+
+00:00:41.585 --> 00:00:43.789
+then your p-value needs to be smaller than
+
+00:00:43.789 --> 00:00:47.085
+this threshold in order to choose the alternative.
+
+00:00:47.085 --> 00:00:50.719
+However, if your probability of getting the data from the null is, say,
+
+00:00:50.719 --> 00:00:52.265
+an eight percent chance,
+
+00:00:52.265 --> 00:00:54.710
+this is enough of a chance that you would stay with
+
+00:00:54.710 --> 00:00:57.905
+the null under a five percent type one error threshold.
+
+00:00:57.905 --> 00:01:02.183
+The fast rule is that if our p-value is less than a type one error rate,
+
+00:01:02.183 --> 00:01:04.524
+then professionals say we reject the null.
+
+00:01:04.525 --> 00:01:07.660
+That is, we choose the alternative hypothesis.
+
+00:01:07.659 --> 00:01:10.474
+If the p-value is greater than our type one error rate,
+
+00:01:10.474 --> 00:01:12.459
+then we fail to reject the null.
+
+00:01:12.459 --> 00:01:15.564
+That is, we stay with the null hypothesis as our decision.
+
+00:01:15.564 --> 00:01:17.259
+What's actually true?
+
+00:01:17.260 --> 00:01:19.115
+We can't really be sure in practice,
+
+00:01:19.114 --> 00:01:22.039
+but we now have a database way to make our decisions.
+

@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.310 --> 00:00:05.884
+If bootstrap sampling seems pretty amazing,
+
+00:00:05.884 --> 00:00:07.475
+that's because it kind of is.
+
+00:00:07.474 --> 00:00:12.664
+But the application of bootstrap sampling actually goes beyond even the use cases here.
+
+00:00:12.664 --> 00:00:17.024
+Bootstrapping techniques have been used for leading machine learning algorithms.
+
+00:00:17.024 --> 00:00:20.224
+More on this as provided in the instructor notes below.
+
+00:00:20.225 --> 00:00:24.285
+This technique is credited to Bradley Efron in 1979,
+
+00:00:24.285 --> 00:00:26.638
+a Minnesota born statistician.
+
+00:00:26.638 --> 00:00:29.690
+The name bootstrapping was given to the technique
+
+00:00:29.690 --> 00:00:33.350
+because of the amazement and how well it works is similar to
+
+00:00:33.350 --> 00:00:36.829
+the idea of being able to walk into quicksand and pull
+
+00:00:36.829 --> 00:00:41.644
+yourself out of the quicksand to safety by your own bootstraps.
+
+00:00:41.645 --> 00:00:45.410
+The way we can draw inference about a population parameter by only
+
+00:00:45.409 --> 00:00:50.364
+performing repeated sampling within our existing sample is just as amazing.
+
+00:00:50.365 --> 00:00:53.929
+We actually gain confidence about where parameter is likely
+
+00:00:53.929 --> 00:00:58.189
+to exist without having to collect any additional data.
+
+00:00:58.189 --> 00:01:02.000
+This is an amazing concept and it's wowed people for years.
+

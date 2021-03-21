@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.310
+Now that you've seen how you can use
+
+00:00:02.310 --> 00:00:06.240
+sampling distributions to build confidence intervals for a single parameter,
+
+00:00:06.240 --> 00:00:07.980
+let's take a look at how we might do something
+
+00:00:07.980 --> 00:00:10.925
+similar to estimate the difference in two parameters.
+
+00:00:10.925 --> 00:00:13.125
+Here, we might have a question.
+
+00:00:13.125 --> 00:00:15.779
+What is the difference in average heights for
+
+00:00:15.779 --> 00:00:19.050
+those who drink coffee versus those who do not?
+
+00:00:19.050 --> 00:00:21.719
+Do we have evidence of a difference in the average height?
+
+00:00:21.719 --> 00:00:23.820
+In order to build a confidence interval for
+
+00:00:23.820 --> 00:00:26.574
+the difference in the average heights for these two groups,
+
+00:00:26.574 --> 00:00:28.960
+we can do something similar to what you've already done.
+
+00:00:28.960 --> 00:00:32.640
+But for each iteration of taking the mean for each group,
+
+00:00:32.640 --> 00:00:36.995
+we're also going to take the difference.
+
+00:00:36.994 --> 00:00:40.909
+Now, we can iterate this process some large number of times and
+
+00:00:40.909 --> 00:00:42.769
+use the resulting differences to
+
+00:00:42.770 --> 00:00:45.540
+build the confidence interval for the difference in the means.
+
+00:00:45.539 --> 00:00:50.575
+Here, I've set up a difference list and we'll append the differences into it.
+
+00:00:50.575 --> 00:00:53.810
+We could again plot the difference in the means of the two groups and we
+
+00:00:53.810 --> 00:00:57.245
+could cut off the bottom two and a half and top two and a half percent,
+
+00:00:57.244 --> 00:01:00.109
+to build the 95 percent confidence interval for where
+
+00:01:00.109 --> 00:01:03.664
+we believed the difference in the means of the two groups to exist.
+
+00:01:03.664 --> 00:01:07.760
+In this case, you saw that our confidence interval doesn't contain zero.
+
+00:01:07.760 --> 00:01:12.410
+And therefore, this would suggest that there is a difference in the population means.
+
+00:01:12.409 --> 00:01:14.914
+Further, we would suggest that on average,
+
+00:01:14.915 --> 00:01:18.310
+coffee drinkers are actually taller than non-coffee drinkers.
+

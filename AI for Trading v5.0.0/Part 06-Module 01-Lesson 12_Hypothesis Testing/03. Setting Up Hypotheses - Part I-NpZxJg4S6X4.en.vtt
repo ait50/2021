@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.929 --> 00:00:04.790
+When performing hypothesis testing,
+
+00:00:04.790 --> 00:00:10.899
+the first thing we need to do is translate a question into two competing hypotheses.
+
+00:00:10.898 --> 00:00:13.414
+One of these hypotheses is called the Null,
+
+00:00:13.414 --> 00:00:15.404
+and it's associated with the symbol,
+
+00:00:15.404 --> 00:00:20.210
+and the other is called the Alternative and it's commonly notated in this way.
+
+00:00:20.210 --> 00:00:23.719
+Setting up these hypotheses can be a bit subjective,
+
+00:00:23.719 --> 00:00:26.404
+but here are a few general rules that will go through.
+
+00:00:26.405 --> 00:00:32.789
+The null hypothesis is the condition we believe to be true before we collect any data.
+
+00:00:32.789 --> 00:00:36.019
+Mathematically, the null hypothesis is commonly
+
+00:00:36.020 --> 00:00:40.790
+a statement of two groups being equal or of an effect being zero.
+
+00:00:40.789 --> 00:00:42.890
+The null and the alternative hypotheses should be
+
+00:00:42.890 --> 00:00:46.299
+competing and non overlapping hypotheses.
+
+00:00:46.299 --> 00:00:48.859
+The alternative hypothesis is often
+
+00:00:48.859 --> 00:00:53.185
+associated with what you want or what you want to prove to be true.
+
+00:00:53.185 --> 00:00:56.150
+Mathematically, the null hypothesis tends to hold
+
+00:00:56.149 --> 00:00:59.449
+an equal sign while the alternative holds a greater than,
+
+00:00:59.450 --> 00:01:02.435
+less than, or not equal to sign.
+
+00:01:02.435 --> 00:01:06.394
+We will go through a couple of examples to connect these ideas to.
+
+00:01:06.394 --> 00:01:11.399
+In the US judicial system we say "Innocent until proven guilty."
+
+00:01:11.400 --> 00:01:14.675
+This is actually a setup for a hypothesis test.
+
+00:01:14.674 --> 00:01:16.379
+In a judicial case,
+
+00:01:16.379 --> 00:01:21.304
+every individual is either innocent or guilty of an act.
+
+00:01:21.305 --> 00:01:24.200
+This statement of "Innocent until proven
+
+00:01:24.200 --> 00:01:27.935
+guilty" is a statement that says "We believe everyone to be
+
+00:01:27.935 --> 00:01:36.415
+innocent initially" that is the null hypothesis for every individual is innocent.
+
+00:01:36.415 --> 00:01:40.700
+It is this statement we believe to be true before we collect any data.
+
+00:01:40.700 --> 00:01:46.600
+Therefore, the competing alternative hypothesis is that an individual is guilty.
+
+00:01:46.599 --> 00:01:53.059
+We then collect evidence or data and use this data to see which hypothesis is supported.
+

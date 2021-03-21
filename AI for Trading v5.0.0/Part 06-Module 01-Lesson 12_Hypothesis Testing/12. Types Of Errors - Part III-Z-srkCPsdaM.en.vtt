@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.800 --> 00:00:05.275
+Hopefully, you're starting to feel more comfortable
+
+00:00:05.275 --> 00:00:08.830
+identifying hypotheses and the types of errors that you can make.
+
+00:00:08.830 --> 00:00:13.775
+In this video, we'll go through one more example to iterate on these ideas.
+
+00:00:13.775 --> 00:00:16.375
+This example is one that really helped me connect
+
+00:00:16.375 --> 00:00:20.199
+all the dots of hypotheses testing and type I and type II errors.
+
+00:00:20.199 --> 00:00:22.265
+I hope it does the same for you.
+
+00:00:22.265 --> 00:00:24.160
+Imagine you own a skydiving shop.
+
+00:00:24.160 --> 00:00:25.750
+And as a part of your job,
+
+00:00:25.750 --> 00:00:28.954
+you must check parachutes to assure they worked correctly.
+
+00:00:28.954 --> 00:00:31.038
+There are two potential outcomes,
+
+00:00:31.039 --> 00:00:33.945
+either a parachute works or it doesn't.
+
+00:00:33.945 --> 00:00:37.545
+You can create these as our two potential hypotheses.
+
+00:00:37.545 --> 00:00:43.359
+You know that there are four potential outcomes for each skydiver-parachute combination.
+
+00:00:43.359 --> 00:00:47.659
+First, you check each parachute to make a decision.
+
+00:00:47.659 --> 00:00:51.009
+Either the parachute works or it doesn't.
+
+00:00:51.009 --> 00:00:52.614
+If you determine that it works,
+
+00:00:52.615 --> 00:00:55.690
+you put it on the shelf for skydivers to use.
+
+00:00:55.689 --> 00:00:58.129
+If it doesn't, you throw it out.
+
+00:00:58.130 --> 00:01:00.913
+Now, there are two possible truths,
+
+00:01:00.912 --> 00:01:04.569
+either the parachute actually works or it doesn't.
+
+00:01:04.569 --> 00:01:07.494
+For the parachute that we threw out, if it doesn't work,
+
+00:01:07.495 --> 00:01:09.594
+that's great, but if it did,
+
+00:01:09.594 --> 00:01:12.155
+then we probably lost like 30 bucks.
+
+00:01:12.155 --> 00:01:15.236
+Now, for the parachute we put on the shelf,
+
+00:01:15.236 --> 00:01:17.649
+if it works, then the skydiver uses it
+
+00:01:17.650 --> 00:01:20.795
+to jump out of a plane and land safely on the ground.
+
+00:01:20.795 --> 00:01:22.379
+However, if it doesn't,
+
+00:01:22.379 --> 00:01:25.909
+we clearly just committed the worst type of error possible.
+
+00:01:25.909 --> 00:01:28.854
+This should clearly be the type I error in this example.
+
+00:01:28.855 --> 00:01:32.090
+So, the other type of error is the type II error.
+
+00:01:32.090 --> 00:01:36.359
+This helps us align our null and alternative hypotheses to look like this.
+
+00:01:36.359 --> 00:01:38.769
+As we know that type I error rate should be
+
+00:01:38.769 --> 00:01:41.869
+choosing the alternative when the null is true.
+
+00:01:41.870 --> 00:01:45.189
+And it helps us align an appropriate type I error rate as
+
+00:01:45.189 --> 00:01:48.685
+one or five percent as entirely too high.
+
+00:01:48.685 --> 00:01:51.909
+Committing five or even one of these errors out
+
+00:01:51.909 --> 00:01:56.000
+of every 100 individuals would just be unacceptable.
+

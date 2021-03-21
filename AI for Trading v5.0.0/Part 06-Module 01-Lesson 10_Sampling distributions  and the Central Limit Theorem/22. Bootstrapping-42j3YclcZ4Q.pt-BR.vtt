@@ -1,0 +1,111 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.929 --> 00:00:02.327
+No vídeo anterior,
+
+00:00:02.373 --> 00:00:05.130
+falamos sobre como depender
+de teoremas matemáticos,
+
+00:00:05.176 --> 00:00:07.961
+como o Teorema Central do Limite,
+deixa brechas
+
+00:00:08.007 --> 00:00:10.632
+sobre o tamanho da amostra
+
+00:00:10.678 --> 00:00:14.368
+e a quais estatísticas
+o teorema se aplica.
+
+00:00:14.414 --> 00:00:16.529
+Assim, em vez de confiar
+em teoremas,
+
+00:00:16.575 --> 00:00:19.032
+podemos simular
+a distribuição amostral.
+
+00:00:19.078 --> 00:00:22.232
+Isso apresenta uma técnica
+conhecida como bootstrapping.
+
+00:00:22.278 --> 00:00:24.088
+Bootstrapping, na estatística,
+
+00:00:24.134 --> 00:00:26.640
+significa amostragem
+com substituição.
+
+00:00:26.686 --> 00:00:30.392
+Para aplicar o bootstrap
+em cinco indivíduos deste grupo,
+
+00:00:30.438 --> 00:00:33.272
+podemos criar uma
+amostragem aleatória dos cinco.
+
+00:00:33.318 --> 00:00:35.689
+Porém,
+ao aplicar o bootstrap,
+
+00:00:35.735 --> 00:00:37.744
+criamos amostragem
+com substituição.
+
+00:00:37.790 --> 00:00:40.768
+Podemos pegar como amostra
+estes quatro,
+
+00:00:40.814 --> 00:00:43.784
+e este pode ser pego
+como amostra novamente.
+
+00:00:43.830 --> 00:00:45.984
+Vamos observar isso
+mais devagar.
+
+00:00:46.030 --> 00:00:49.384
+Na amostragem, podemos
+escolher este indivíduo
+
+00:00:49.430 --> 00:00:52.193
+e, logo após selecioná-lo
+como parte da amostra,
+
+00:00:52.239 --> 00:00:55.560
+ele pode ser escolhido
+novamente como amostra.
+
+00:00:55.606 --> 00:00:58.127
+É possível,
+embora não seja provável,
+
+00:00:58.173 --> 00:01:01.632
+na amostra do bootstrap,
+escolher o mesmo indivíduo
+
+00:01:01.678 --> 00:01:03.776
+para cada
+retirada aleatória.
+
+00:01:03.822 --> 00:01:07.391
+Podemos escolher este indivíduo
+ou qualquer outro
+
+00:01:07.437 --> 00:01:09.537
+cinco vezes seguidas.
+
+00:01:09.583 --> 00:01:11.552
+Após um pouco de prática,
+
+00:01:11.598 --> 00:01:13.368
+podemos aplicar
+o bootstrapping
+
+00:01:13.414 --> 00:01:15.373
+para simular
+distribuições amostrais.
+

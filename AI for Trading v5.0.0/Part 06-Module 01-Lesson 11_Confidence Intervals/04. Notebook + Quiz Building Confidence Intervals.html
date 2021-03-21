@@ -1,0 +1,859 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Notebook + Quiz: Building Confidence Intervals
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Confidence Intervals
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Video Introduction.html">
+       01. Video: Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Video From Sampling Distributions to Confidence Intervals.html">
+       02. Video: From Sampling Distributions to Confidence Intervals
+      </a>
+     </li>
+     <li class="">
+      <a href="03. ScreenCast Sampling Distributions and Confidence Intervals.html">
+       03. ScreenCast: Sampling Distributions and Confidence Intervals
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Notebook + Quiz Building Confidence Intervals.html">
+       04. Notebook + Quiz: Building Confidence Intervals
+      </a>
+     </li>
+     <li class="">
+      <a href="05. ScreenCast Difference In Means.html">
+       05. ScreenCast: Difference In Means
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Notebook + Quiz Difference in Means.html">
+       06. Notebook + Quiz: Difference in Means
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Video Confidence Interval Applications.html">
+       07. Video: Confidence Interval Applications
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Video Statistical vs. Practical Significance.html">
+       08. Video: Statistical vs. Practical Significance
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Statistical vs. Practical Significance.html">
+       09. Statistical vs. Practical Significance
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Video Traditional Confidence Intervals.html">
+       10. Video: Traditional Confidence Intervals
+      </a>
+     </li>
+     <li class="">
+      <a href="11. ScreenCast Traditional Confidence Interval Methods.html">
+       11. ScreenCast: Traditional Confidence Interval Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Video Other Language Associated with Confidence Intervals.html">
+       12. Video: Other Language Associated with Confidence Intervals
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Other Language Associated with Confidence Intervals.html">
+       13. Other Language Associated with Confidence Intervals
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Video Correct Interpretations of Confidence Intervals.html">
+       14. Video: Correct Interpretations of Confidence Intervals
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Correct Interpretations of Confidence Intervals.html">
+       15. Correct Interpretations of Confidence Intervals
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Video Confidence Intervals &amp; Hypothesis Tests.html">
+       16. Video: Confidence Intervals &amp; Hypothesis Tests
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Text Recap + Next Steps.html">
+       17. Text: Recap + Next Steps
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Notebook + Quiz: Building Confidence Intervals
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="confidence-intervals-for-the-population-mean">
+          Confidence Intervals for the Population Mean
+         </h3>
+         <p>
+          In the previous video, you saw how we could build a confidence interval for the population mean.  To get some practice, you will do the same process to create a confidence interval for the population mean height of non-coffee drinkers.  Additionally, there are some quiz questions available below the python notebook to assure your results are accurate.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <h3 id="question-1">
+           Question 1
+          </h3>
+          <p>
+           Use the results for the first two questions to match the following descriptions to the correct values.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           Proportion of sample that drinks coffee
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Proportion of sample that does not drink coffee
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Average height for sample members that drink coffee
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Average height for sample members that do not drink coffee
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Description
+            </p>
+           </th>
+           <th>
+            <p>
+             Value
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.595
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             67.58
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.405
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             66.78
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.400
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             68.12
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.600
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Description
+             </p>
+            </th>
+            <th>
+             <p>
+              Value
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.595
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Proportion of sample that drinks coffee
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.405
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Proportion of sample that does not drink coffee
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              66.78
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Average height for sample members that do not drink coffee
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              68.12
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Average height for sample members that drink coffee
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Did the proportion of coffee drinkers in your bootstrap sample exactly match the proportion in the original sample?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1509053299633" name="440040" type="radio" value="a1509053299633"/>
+           <label for="a1509053299633">
+            <p>
+             Yes
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1509054315343" name="440040" type="radio" value="a1509054315343"/>
+           <label for="a1509054315343">
+            <p>
+             No
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          No
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <h3 id="question-3">
+           Question 3
+          </h3>
+          <p>
+           Use your answers to the final questions in the notebook to match each value to its corresponding description.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           What is the lower bound of your 95% confidence interval for the mean height of those who do not drink coffee in your population?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What is the upper bound of your 95% confidence interval for the mean height of those who do not drink coffee in your population?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What is the value for the mean height of those who do not drink coffee in your population?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Did your interval capture the true mean height for the non-coffee drinkers?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Was the sample mean height for non-coffee drinkers the same as the population mean height for non-coffee drinkers?
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Description
+            </p>
+           </th>
+           <th>
+            <p>
+             Value
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             66.44
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             No
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Yes
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             65.99
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Yes
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             67.58
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             No
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Description
+             </p>
+            </th>
+            <th>
+             <p>
+              Value
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              66.44
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What is the value for the mean height of those who do not drink coffee in your population?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              No
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Was the sample mean height for non-coffee drinkers the same as the population mean height for non-coffee drinkers?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Yes
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Did your interval capture the true mean height for the non-coffee drinkers?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              65.99
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What is the lower bound of your 95% confidence interval for the mean height of those who do not drink coffee in your population?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Yes
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Did your interval capture the true mean height for the non-coffee drinkers?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              67.58
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What is the upper bound of your 95% confidence interval for the mean height of those who do not drink coffee in your population?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              No
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Was the sample mean height for non-coffee drinkers the same as the population mean height for non-coffee drinkers?
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What percentage would we cut off of
+             <code>
+              each
+             </code>
+             tail if we wanted to build a 98% confidence interval?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1510000440952" name="457377" type="radio" value="a1510000440952"/>
+           <label for="a1510000440952">
+            <p>
+             0.5%
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1510000484645" name="457377" type="radio" value="a1510000484645"/>
+           <label for="a1510000484645">
+            <p>
+             1%
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1510000488816" name="457377" type="radio" value="a1510000488816"/>
+           <label for="a1510000488816">
+            <p>
+             2%
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1510000493790" name="457377" type="radio" value="a1510000493790"/>
+           <label for="a1510000493790">
+            <p>
+             2.5%
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          1%
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. ScreenCast Difference In Means.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Notebook + Quiz: Building Confidence Intervals')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

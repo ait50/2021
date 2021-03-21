@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.790 --> 00:00:08.469
+The second theorem is one of the most popular theorems in all of statistics.
+
+00:00:08.470 --> 00:00:13.605
+And it pertains specifically to the sample mean and sample proportions statistics.
+
+00:00:13.605 --> 00:00:15.384
+The central limit theorem states,
+
+00:00:15.384 --> 00:00:17.469
+that with a large enough sample size,
+
+00:00:17.469 --> 00:00:21.684
+the sampling distribution of the mean will be normally distributed,
+
+00:00:21.684 --> 00:00:26.308
+since a proportion is like a mean of zero and one data values,
+
+00:00:26.309 --> 00:00:28.780
+it also abides by the central limit theorem.
+
+00:00:28.780 --> 00:00:30.920
+To give you some practice with this,
+
+00:00:30.920 --> 00:00:34.000
+work through the notebook and quiz questions that follow.
+
