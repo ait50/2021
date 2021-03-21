@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: hr
+
+00:00:00.000 --> 00:00:02.000
+Objasnimo pojam ispravnog novčića.
+
+00:00:02.000 --> 00:00:08.000
+Vjerojatnost da novčić padne na stranu gdje je glava označena je slovom p.
+
+00:00:08.000 --> 00:00:12.000
+Ovo znači vjerojatnost da novčić padne na glavu.
+
+00:00:12.000 --> 00:00:17.000
+Kod ispravnog je novčića ta vjerojatnost 50%.
+
+00:00:17.000 --> 00:00:22.000
+Odnosno, novčić bi trebao pasti na glavu u polovici slučajeva kada se baca.
+
+00:00:22.000 --> 00:00:24.000
+Kod računanja vjerojatnosti često zapisujemo 0.5
+
+00:00:24.000 --> 00:00:27.000
+što je pola od 1.
+
+00:00:27.000 --> 00:00:29.000
+Vjerojatnost od 1 znači da se događaj pojavljuje svaki put.
+
+00:00:29.000 --> 00:00:33.000
+Vjerojatnost od 0.5 znači da se pojavljuje u polovini slučajeva.
+
+00:00:33.000 --> 00:00:35.000
+Što mislite
+
+00:00:35.000 --> 09:59:59.000
+kolika je vjerojatnost pojavljivanja pisam u slučaju ovog novčića[br]?
+

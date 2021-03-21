@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.734 --> 00:00:02.534
+RESUMO DE PROBABILIDADE
+
+00:00:03.234 --> 00:00:05.801
+Agora você tem
+noções de probabilidade.
+
+00:00:05.834 --> 00:00:07.000
+Bom trabalho.
+
+00:00:07.033 --> 00:00:09.901
+Vamos resumir
+o que abordamos nesta aula.
+
+00:00:09.934 --> 00:00:12.100
+Você aprendeu
+a probabilidade de um evento
+
+00:00:12.133 --> 00:00:14.234
+como o resultado
+de um lançamento de moeda.
+
+00:00:14.300 --> 00:00:16.701
+Você aprendeu que
+a probabilidade do evento oposto
+
+00:00:16.734 --> 00:00:19.501
+é 1 menos a probabilidade
+desse evento.
+
+00:00:19.534 --> 00:00:22.901
+E você aprendeu probabilidade
+de eventos compostos,
+
+00:00:22.934 --> 00:00:27.133
+no formato PxPxP,
+e assim por diante.
+
+00:00:27.200 --> 00:00:28.534
+Essa regra é verdadeira
+
+00:00:28.601 --> 00:00:30.601
+porque os eventos
+que observamos até agora
+
+00:00:30.634 --> 00:00:32.300
+são independentes uns dos outros.
+
+00:00:32.334 --> 00:00:34.400
+Ou seja, o resultado de um
+
+00:00:34.434 --> 00:00:36.834
+não afeta o do outro,
+
+00:00:36.901 --> 00:00:38.734
+o que também é o caso
+na aula seguinte,
+
+00:00:38.801 --> 00:00:40.501
+de distribuição binominal.
+
+00:00:40.534 --> 00:00:41.534
+No entanto,
+
+00:00:41.601 --> 00:00:44.100
+se queremos a probabilidade
+de eventos dependentes,
+
+00:00:44.133 --> 00:00:47.601
+como a de chover amanhã
+considerando que choveu hoje,
+
+00:00:47.634 --> 00:00:49.234
+essa regra não se aplica.
+
+00:00:49.300 --> 00:00:52.200
+Eventos dependentes,
+em que o futuro
+
+00:00:52.234 --> 00:00:54.000
+depende do que já aconteceu,
+
+00:00:54.033 --> 00:00:56.033
+estão no centro
+dos seguintes tópicos
+
+00:00:56.100 --> 00:00:58.501
+sobre probabilidade condicional
+e teorema de Bayes.
+

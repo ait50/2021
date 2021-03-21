@@ -1,0 +1,104 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:01.434
+Foi uma pergunta capciosa.
+
+00:00:01.501 --> 00:00:03.000
+Não dá para saber a resposta
+
+00:00:03.033 --> 00:00:04.934
+sem noções de probabilidade.
+
+00:00:05.000 --> 00:00:07.400
+Mas a resposta é 0,25.
+
+00:00:07.434 --> 00:00:12.133
+Vou derivar para você
+usando uma tabela-verdade.
+
+00:00:12.200 --> 00:00:15.901
+Em uma tabela-verdade,
+você escreve todo resultado possível
+
+00:00:15.934 --> 00:00:18.501
+do experimento
+que você conduziu.
+
+00:00:18.534 --> 00:00:20.133
+Houve dois lançamentos.
+
+00:00:20.200 --> 00:00:22.133
+Lançamentos 1 e 2,
+
+00:00:22.200 --> 00:00:24.634
+e cada um tinha
+como resultados possíveis
+
+00:00:24.701 --> 00:00:26.901
+cara-cara, cara-coroa...
+
+00:00:27.934 --> 00:00:30.701
+coroa-cara e coroa-coroa.
+
+00:00:30.734 --> 00:00:32.300
+Nesta tabela,
+
+00:00:32.334 --> 00:00:36.934
+vemos todos os resultados possíveis
+desses lançamentos.
+
+00:00:37.000 --> 00:00:38.834
+Eles são quatro.
+
+00:00:38.901 --> 00:00:41.934
+E eu diria que, como cara e coroa
+têm a mesma probabilidade,
+
+00:00:42.701 --> 00:00:45.100
+os quatro resultados
+são igualmente prováveis.
+
+00:00:45.133 --> 00:00:49.300
+E, como sabemos que a soma
+das probabilidades tem que dar 1,
+
+00:00:49.334 --> 00:00:52.534
+descobrimos que cada resultado
+tem 1/4 de chance,
+
+00:00:52.601 --> 00:00:54.434
+ou 0,25.
+
+00:00:54.501 --> 00:00:56.434
+Outra forma de analisar é:
+
+00:00:56.501 --> 00:00:59.234
+a probabilidade de duas caras
+em sequência
+
+00:00:59.300 --> 00:01:01.133
+é o produto...
+
+00:01:01.200 --> 00:01:04.934
+A probabilidade de o primeiro
+resultado ser cara
+
+00:01:05.000 --> 00:01:09.000
+multiplicada pela probabilidade
+de o segundo resultado ser cara.
+
+00:01:09.033 --> 00:01:11.000
+O primeiro é 0,5...
+
+00:01:11.734 --> 00:01:15.033
+assim como o segundo.
+
+00:01:16.000 --> 00:01:18.634
+E, multiplicando
+os dois números,
+
+00:01:18.701 --> 00:01:21.701
+dá 0,25, ou 1/4.
+

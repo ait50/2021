@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: hr
+
+00:00:00.000 --> 00:00:02.000
+Sad ću vam postaviti mali izazov.
+
+00:00:02.000 --> 00:00:05.000
+Dat ću vam neispravan novčić.
+
+00:00:05.000 --> 00:00:10.000
+Za taj je novčić vjerojatnost pojavljivanja glave 0,6.
+
+00:00:10.000 --> 00:00:14.000
+To mijenja sve brojeve koje imamo sada u tablici,
+
+00:00:14.000 --> 00:00:17.000
+ali možete primijeniti istu metodu tablice istine
+
+00:00:17.000 --> 00:00:21.000
+kako biste došli do odgovora koika je vjerojatnost da dva puta zaredom dobijete glavu
+
+00:00:21.000 --> 00:00:26.000
+pod pretpostavkom da je vjerojatnost dobivanja glave 0,6?
+
+00:00:26.000 --> 00:00:29.000
+Želim da to napravite u koracima,
+
+00:00:29.000 --> 00:00:31.000
+pa umjesto da vam postavim to pitanje direktno,
+
+00:00:31.000 --> 00:00:35.000
+pitam vas kolika je vjerojatnost pojavljivanja pisma?
+

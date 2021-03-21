@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:08.000
+E questa risposta è complessa. La ricaveremo usando la tabella della verità
+
+00:00:08.000 --> 00:00:14.000
+Il primo lancio può restituire testa o croce, lo stesso per il secondo, testa, croce, testa, croce
+
+00:00:14.000 --> 00:00:19.000
+e lo stesso per il terzo e se guardate questo noterete che ogni possibile combinazione è rappresentata.
+
+00:00:19.000 --> 00:00:21.000
+Per esempio, queste sono testa, croce, croce.
+
+00:00:21.000 --> 00:00:27.000
+Ora ognuno dei possibili risultati ha la stessa probabilità di un ottavo, perchè abbiamo 8 casi.
+
+00:00:27.000 --> 00:00:33.000
+Quindi 8 x 1/8 ha come somma 1. In quanti casi abbaimo esatamente una H (testa)?
+
+00:00:33.000 --> 00:00:37.000
+Si verifica che è vero in soli 3 casi.
+
+00:00:37.000 --> 00:00:44.000
+H (testa) può essere nella prima posizione, nella seconda posizione o nella terza posizione
+
+00:00:44.000 --> 00:00:49.000
+Quindi 3 di 8 casi hanno una sola H (testa)
+
+00:00:49.000 --> 00:00:58.000
+A ognuno di questi casi è associata un probabilità, di conseguenza le sommiamo per ottenere un totale di 3/8
+
+00:00:58.000 --> 09:59:59.000
+Che equivale a 0.375
+

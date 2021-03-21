@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:02.000
+e la risposta è 1.
+
+00:00:02.000 --> 00:00:05.000
+Per comprendere ciò, consideriamo che noi sappiamo che la probabilità che esca croce è 0
+
+00:00:05.000 --> 00:00:07.000
+Tutte le proabilità sono a favore di testa.
+
+00:00:07.000 --> 00:00:09.000
+1 * 1 = 1
+
+00:00:09.000 --> 00:00:11.000
+1 * 0 = 0
+
+00:00:11.000 --> 00:00:13.000
+0 * 1 = 0
+
+00:00:13.000 --> 00:00:14.000
+e 0 * 0 = 0
+
+00:00:14.000 --> 00:00:18.000
+Ed è facile verificare che tutte queste hanno somma 1
+
+00:00:18.000 --> 09:59:59.000
+La nostra (H,H) è proprio 1
+

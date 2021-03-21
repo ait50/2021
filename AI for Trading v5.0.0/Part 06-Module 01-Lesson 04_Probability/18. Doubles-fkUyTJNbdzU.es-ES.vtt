@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+Y de nuevo podemos resolver esto mediante una tabla de la verdad
+
+00:00:04.000 --> 00:00:08.000
+Ahora una tabla de la verdad tiene 36 diferentes entradas
+
+00:00:08.000 --> 00:00:12.000
+Seis para el primer tiro por seis del segundo tiro,
+
+00:00:12.000 --> 00:00:16.000
+Y con el espacio por debajo de la tabla, dibujamos 36 diferentes entradas.
+
+00:00:16.000 --> 00:00:24.000
+Así que déjame dibujarlas de cualquier manera, uno - uno, dos - dos y así hasta llegar a seis - seis
+
+00:00:24.000 --> 00:00:31.000
+Así que para cada uno de éstos, la probabilidad es de 1/6 para el primero multiplicado por 1/6 del segundo
+
+00:00:31.000 --> 00:00:36.000
+Lo que me da 1/36 y la misma lógica aplica para todos.
+
+00:00:36.000 --> 00:00:43.000
+Así que para estos seis resultados, tengo 1/36 de oportunidad de que este resultado se materalice
+
+00:00:43.000 --> 00:00:47.000
+Sumándolos todos me da 1/6, ¿por qué?
+
+00:00:47.000 --> 00:01:01.000
+Por que obtuve 6 veces de 36 y puedo fácilmente obtener 1/6 que es lo mismo que 0.16667
+
+00:01:01.000 --> 00:01:04.000
+¿Así que 1/6 de veces puedes obtener un doble?
+
+00:01:04.000 --> 00:01:07.000
+Ahora cuando juegues un juego como backgammon, que se juega con dos dados
+
+00:01:07.000 --> 00:01:14.000
+Tal vez no se sienta así, de que puedas obtener un doble cada 1/6 de los movimientos
+
+00:01:14.000 --> 09:59:59.000
+Pero es verdad -- esta es la probabilidad correcta.
+

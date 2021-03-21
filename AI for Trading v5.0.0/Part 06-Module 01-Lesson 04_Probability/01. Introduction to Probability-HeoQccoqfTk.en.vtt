@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.399 --> 00:00:08.099
+Statistics and probability are different but strongly related fields of mathematics.
+
+00:00:08.099 --> 00:00:10.410
+In probability, we make predictions about
+
+00:00:10.410 --> 00:00:14.230
+future events based on models or causes that we assume
+
+00:00:14.230 --> 00:00:17.219
+whereas in statistics we analyze the data from
+
+00:00:17.219 --> 00:00:21.799
+the past events to infer what those models or causes could be.
+
+00:00:21.800 --> 00:00:24.885
+There's almost an opposite relation between these two.
+
+00:00:24.885 --> 00:00:28.665
+In one, you're predicting data and in the other,
+
+00:00:28.664 --> 00:00:30.734
+you're using data to predict.
+
+00:00:30.734 --> 00:00:35.759
+Although not all topics and both fields require an understanding of the other,
+
+00:00:35.759 --> 00:00:37.754
+you'll need a good understanding in probability
+
+00:00:37.755 --> 00:00:40.260
+for the foundation you'll be building in statistics.
+
+00:00:40.259 --> 00:00:44.000
+With that in mind, let's get started with the basics of probability.
+

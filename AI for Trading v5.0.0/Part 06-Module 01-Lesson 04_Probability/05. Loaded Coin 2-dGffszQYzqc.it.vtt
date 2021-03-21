@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:02.000
+E, si, la risposta è zero.
+
+00:00:02.000 --> 00:00:05.000
+E qui troviamo una piccola legge che vogliamo evidenziare,
+
+00:00:05.000 --> 00:00:09.000
+ossia la probabilità che esca testa più la probabilità che esca croce
+
+00:00:09.000 --> 00:00:11.000
+è uguale ad 1
+
+00:00:11.000 --> 00:00:16.000
+e la ragione per cui è valida è che la moneta può essere o testa o croce
+
+00:00:16.000 --> 00:00:18.000
+non ci sono altre possibilità.
+
+00:00:18.000 --> 00:00:22.000
+Quindi non importa quello che accade, se guardo a testa e croce insieme
+
+00:00:22.000 --> 00:00:26.000
+la probabilità che una delle due esca è 1,
+
+00:00:26.000 --> 00:00:28.000
+perchè noi sappiamo quello che accadrà
+
+00:00:28.000 --> 00:00:30.000
+Quindi possiamo usare questa legge
+
+00:00:30.000 --> 09:59:59.000
+per calcolare la probabilità che esca croce per altri esempi
+

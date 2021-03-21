@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: hr
+
+00:00:00.000 --> 00:00:03.000
+To je zeznuto pitanje i ne možete znati odgovor
+
+00:00:03.000 --> 00:00:05.000
+ako prije niste vidjeli vjerojatnosti.
+
+00:00:05.000 --> 00:00:08.000
+Odgovor je 0,25.
+
+00:00:08.000 --> 00:00:12.000
+Doći ću do tog broja koristeći se tzv. tablicom istine.
+
+00:00:12.000 --> 00:00:16.000
+U tablici istine ispišete svaki mogući ishod
+
+00:00:16.000 --> 00:00:18.000
+ekperimenta kojeg provodite.
+
+00:00:18.000 --> 00:00:23.000
+Imali smo dva bacnja novčiča - bacanje 1 i bacanje 2. Svaki je imao moguće ishode: glava, glava;
+
+00:00:23.000 --> 00:00:31.000
+glava, pismo; pismo glava i pismo pismo.
+
+00:00:31.000 --> 00:00:37.000
+Kada pogledamo u tablicu, vidimo sve moguće ishode ta dva bacanja novčića.
+
+00:00:37.000 --> 00:00:39.000
+Ima ih 4, i rekao bih,
+
+00:00:39.000 --> 00:00:42.000
+s obzirom da i pismo i glava imaju jednaku vjerojatnost pojavljivanja,
+
+00:00:42.000 --> 00:00:45.000
+da je svaki od ova 4 ishoda jednako vjerojatan.
+
+00:00:45.000 --> 00:00:49.000
+Pošto znamo da zbroj vjerojatnosti svih mogućih ishoda iznosi 1,
+
+00:00:49.000 --> 00:00:54.000
+svaki pojedini ishod ima 0,25 vjerojatnosti pojavljivanja, odnosno 1/4.
+
+00:00:54.000 --> 00:00:59.000
+Drugi način na koji možemo doći do toga je da izračunamo umnožak vjerojatnosti
+
+00:00:59.000 --> 00:01:01.000
+dobivanja glave koju potom opet slijedi dobivanje glave.
+
+00:01:01.000 --> 00:01:05.000
+Kolika je vjerojatnost da prvo bacanje bude glava
+
+00:01:05.000 --> 00:01:09.000
+pomnoženo s vjerojatnošću da drugo bude glava?
+
+00:01:09.000 --> 00:01:16.000
+Prvo je 0,5, isto kao i drugo.
+
+00:01:16.000 --> 09:59:59.000
+Ako to pomnožite, dobijete 0,25, odnosno četvrtinu.
+

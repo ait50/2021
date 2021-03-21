@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Questa era una domanda complicata, e non potevate certamente conoscere la risposta
+
+00:00:03.000 --> 00:00:05.000
+se non avete mai studiato proabilità prima,
+
+00:00:05.000 --> 00:00:08.000
+ma la risposta è 0.25
+
+00:00:08.000 --> 00:00:12.000
+E vi spiegherò come ricavare la soluzione utilizzando una cosa chiamata tabella della verità
+
+00:00:12.000 --> 00:00:16.000
+Nella tabella della verità, voi riportate ogni possibile risultato
+
+00:00:16.000 --> 00:00:18.000
+dell'esperimento che voi state conducendo
+
+00:00:18.000 --> 00:00:23.000
+Ci sono due lanci di moneta-- lancio 1 e lancio2-- e ognuno
+
+00:00:23.000 --> 00:00:31.000
+ha un possibile risultato: testa, testa; testa, croce; croce, testa; e croce, croce
+
+00:00:31.000 --> 00:00:37.000
+quando noi osserviamo questa tabella, potete vedere ogni possibile risultato di questi due lanci
+
+00:00:37.000 --> 00:00:39.000
+Ci sono quattro possibili risultati
+
+00:00:39.000 --> 00:00:42.000
+E direi che siccome testa e croce sono ugualmente probabili,
+
+00:00:42.000 --> 00:00:45.000
+ognuno di questi risultati è ugualmente probabile.
+
+00:00:45.000 --> 00:00:49.000
+Visto che sappiamo che la somma delle probabilità di tutti i risultati è uguale a 1,
+
+00:00:49.000 --> 00:00:54.000
+deduciamo che ogni risultato ha una proabilità di un quarto, o 0,25.
+
+00:00:54.000 --> 00:00:59.000
+Un altro modo rappresentare questo risultato è che la probabilità di testa seguita da testa
+
+00:00:59.000 --> 00:01:01.000
+è il prodotto.
+
+00:01:01.000 --> 00:01:05.000
+Quali sono le probabilità che il primo risultato sia testa
+
+00:01:05.000 --> 00:01:09.000
+moltiplicato per la probabilità che il secondo risultato sia testa?
+
+00:01:09.000 --> 00:01:16.000
+Il primo è 0.5, così pure il secondo.
+
+00:01:16.000 --> 09:59:59.000
+se moltiplichiamo questi due numeri, il risultato è 0.25, o, un quarto.
+

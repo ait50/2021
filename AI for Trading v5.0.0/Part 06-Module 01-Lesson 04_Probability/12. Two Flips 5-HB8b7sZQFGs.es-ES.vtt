@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Y la respuesta es 1.
+
+00:00:02.000 --> 00:00:05.000
+Al ver esto, sabemos que la probabilidad de cruz es 0.
+
+00:00:05.000 --> 00:00:07.000
+Todas las probabilidades van hacia las caras.
+
+00:00:07.000 --> 00:00:09.000
+1*1 = 1
+
+00:00:09.000 --> 00:00:11.000
+1*0 = 0
+
+00:00:11.000 --> 00:00:13.000
+0*1 = 0
+
+00:00:13.000 --> 00:00:14.000
+Y 0*0 = 0
+
+00:00:14.000 --> 00:00:18.000
+Y es fácil verificar que todas estas cosas terminando sumando 1.
+
+00:00:18.000 --> 09:59:59.000
+Nuestro (H,H) es sólo 1.
+

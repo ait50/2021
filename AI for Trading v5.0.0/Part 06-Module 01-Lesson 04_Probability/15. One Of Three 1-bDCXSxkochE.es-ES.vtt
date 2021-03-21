@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:08.000
+Y la respuesta es difícil. Voy a deducirlo mediante una tabla de la verdad. Ahora son 8 posibles casos.
+
+00:00:08.000 --> 00:00:14.000
+Giro uno puede dar cara o cruz, lo mismo para el giro 2 cara, cruz, cara, cruz
+
+00:00:14.000 --> 00:00:19.000
+Y lo mismo para el giro tres y si observas cada posible combinación está representada
+
+00:00:19.000 --> 00:00:21.000
+Por ejemplo aquí hay cara, cruz, cruz
+
+00:00:21.000 --> 00:00:27.000
+Ahora para cada uno de los resultados tiene la misma probabilidad de un octavo, por que son ocho casos.
+
+00:00:27.000 --> 00:00:33.000
+Así que 8 * 1/8 da igual a 1. En ¿cuántos casos tenemos exactamente una h?
+
+00:00:33.000 --> 00:00:37.000
+Resulta ser que es verdadero para tres casos.
+
+00:00:37.000 --> 00:00:44.000
+La H puede ser en la primera posición, en la segunda posición o en la tercera posición.
+
+00:00:44.000 --> 00:00:49.000
+Así que tres de ocho casos puede tener una simple H.
+
+00:00:49.000 --> 00:00:58.000
+Cada uno de estos casos lleva esa probabilidad así que sumando esos casos lleva un total de 3/8 de probabilidad.
+
+00:00:58.000 --> 09:59:59.000
+Que es lo mismo a 0.375
+

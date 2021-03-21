@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: hr
+
+00:00:00.000 --> 00:00:04.000
+Ponovno možemo dobiti odgovor na to ako pogledamo u tablici istine.
+
+00:00:04.000 --> 00:00:08.000
+Sada ćemo u tablici imati 36 različitih mogućih ishoda,
+
+00:00:08.000 --> 00:00:12.000
+šest za prvo bacanje kocke, šest za drugo.
+
+00:00:12.000 --> 00:00:16.000
+U ovoj tablici nema dovoljno mjesta za upisati svih 36 mogućnih ishoda.
+
+00:00:16.000 --> 00:00:24.000
+Zato ću upisati samo one koji su nam zbilja bitni, 1 -1, 2 - 2 i tako do 6 - 6.
+
+00:00:24.000 --> 00:00:31.000
+Znači svaki od tih ishoda ima 1/6 za pojavljivanje u prvom bacanju, pomnoženo s 1/6 u drugom
+
+00:00:31.000 --> 00:00:36.000
+što nam daje 1/36. Ista ta logika vrijedi za sve.
+
+00:00:36.000 --> 00:00:43.000
+Dakle za svih ovih 6 ishoda, šansa je 1/36 za svaki da će se ostvariti.
+
+00:00:43.000 --> 00:00:47.000
+Zbrajanjem svih njih dobijamo 1/6. Zašto?
+
+00:00:47.000 --> 00:01:01.000
+Zato jer imam 6*1/36 i to onda mogu pojednostaviti kao 1/6 što je isto kao 0,16667.
+
+00:01:01.000 --> 00:01:04.000
+Znači šestinu ćete puta dobiti duple brojeve.
+
+00:01:04.000 --> 00:01:07.000
+Kada igrate igru poput backgammona, koja se igra s dvije kocke,
+
+00:01:07.000 --> 00:01:14.000
+možda se ne čini tako. Mogao bih se zakleti da ne dobivam duple brojeve 1/6 puta,
+
+00:01:14.000 --> 00:01:18.000
+ali to je zapravo točno - to je točna vjerojatnost.
+

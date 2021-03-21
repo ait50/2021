@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: hr
+
+00:00:00.000 --> 00:00:08.000
+I odgovor je malo kompliciran. Izvest ćemo ga pomoću tablice istine. Sada imamo osam mogućih ishoda.
+
+00:00:08.000 --> 00:00:14.000
+Prvo bacanje može ispasti bilo pismo, bilo glava; isto vrijedi za drugo bacanje; glava, psmo, glava, pismo;
+
+00:00:14.000 --> 00:00:19.000
+i isto za treće bacanje i ako promotrite, vidjet ćete da su ispisani svi mogući ishodi.
+
+00:00:19.000 --> 00:00:21.000
+Na primjer ovo je glava, pismo, pismo.
+
+00:00:21.000 --> 00:00:27.000
+Svaki od ovih ishoda ima jednaku vjerojatnost pojavljivanja, koja iznosi 1/8 jer ima osam slučajeva.
+
+00:00:27.000 --> 00:00:33.000
+8*1/8 je 1. U koliko od tih osam slučajeva imamo točno jednu glavu?
+
+00:00:33.000 --> 00:00:37.000
+Ispada da je to slučaj za samo tri ishoda.
+
+00:00:37.000 --> 00:00:44.000
+Glava može biti na prvoj, drugoj ili trećoj poziciji.
+
+00:00:44.000 --> 00:00:49.000
+Znači u 3 od 8 slučajeva imamo jednu glavu.
+
+00:00:49.000 --> 00:00:58.000
+Svaki od njih ima određenu vjerojatnost i zbroj ovih gdje imamo jednu glavu u ishodu iznosi 3/8.
+
+00:00:58.000 --> 09:59:59.000
+Odnosno 0,375.
+

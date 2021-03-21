@@ -1,0 +1,363 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Text: Recap + Next Steps
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Probability
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction to Probability.html">
+       01. Introduction to Probability
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Flipping Coins.html">
+       02. Flipping Coins
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Fair Coin.html">
+       03. Fair Coin
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Loaded Coin 1.html">
+       04. Loaded Coin 1
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Loaded Coin 2.html">
+       05. Loaded Coin 2
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Loaded Coin 3.html">
+       06. Loaded Coin 3
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Complementary Outcomes.html">
+       07. Complementary Outcomes
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Two Flips 1.html">
+       08. Two Flips 1
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Two Flips 2.html">
+       09. Two Flips 2
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Two Flips 3.html">
+       10. Two Flips 3
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Two Flips 4.html">
+       11. Two Flips 4
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Two Flips 5.html">
+       12. Two Flips 5
+      </a>
+     </li>
+     <li class="">
+      <a href="13. One Head 1.html">
+       13. One Head 1
+      </a>
+     </li>
+     <li class="">
+      <a href="14. One Head 2.html">
+       14. One Head 2
+      </a>
+     </li>
+     <li class="">
+      <a href="15. One Of Three 1.html">
+       15. One Of Three 1
+      </a>
+     </li>
+     <li class="">
+      <a href="16. One Of Three 2.html">
+       16. One Of Three 2
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Even Roll.html">
+       17. Even Roll
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Doubles.html">
+       18. Doubles
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Probability Conclusion.html">
+       19. Probability Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Text Recap + Next Steps.html">
+       20. Text: Recap + Next Steps
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          20. Text: Recap + Next Steps
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="probability">
+          Probability
+         </h3>
+         <p>
+          Here you learned some fundamental rules of probability. Using notation, we could say that the outcome of a coin flip could either be
+          <strong>
+           T
+          </strong>
+          or
+          <strong>
+           H
+          </strong>
+          for the event that the coin flips tails or heads, respectively.
+         </p>
+         <p>
+          Then the following rules are true:
+         </p>
+         <ol>
+          <li>
+           <span class="mathquill ud-math">
+            \bold{P(H)} = 0.5
+           </span>
+           <br/>
+           <br/>
+          </li>
+          <li>
+           <span class="mathquill ud-math">
+            \bold{1 - P(H) = P(\text{not H})} = 0.5
+           </span>
+           <br/>
+           <br>
+            where
+            <span class="mathquill ud-math">
+             \bold{\text{not H}}
+            </span>
+            is the event of anything other than heads.  Since, there are only two possible outcomes, we have that
+            <span class="mathquill ud-math">
+             \bold{P(\text{not H}) = P(T)} = 0.5.
+            </span>
+            In later concepts, you will see this with the following notation:
+            <span class="mathquill ud-math">
+             \bold{\lnot H}
+            </span>
+            .
+            <br/>
+            <br/>
+           </br>
+          </li>
+          <li>
+           Across multiple coin flips, we have the probability of seeing
+           <strong>
+            n
+           </strong>
+           heads as
+           <span class="mathquill ud-math">
+            \bold{P(H)^n}
+           </span>
+           .  This is because these events are independent.
+          </li>
+         </ol>
+         <p>
+          We can get two generic rules from this:
+         </p>
+         <ol>
+          <li>
+           The probability of any event must be between 0 and 1, inclusive.
+           <br/>
+           <br/>
+          </li>
+          <li>
+           The probability of the complement event is 1 minus the probability of an event.  That is the probability of all other possible events is 1 minus the probability an event itself.  Therefore, the sum of all possible events is equal to 1.
+           <br/>
+           <br/>
+          </li>
+          <li>
+           If our events are independent, then the probability of the string of possible events is the product of those events.  That is the probability of one event
+           <strong>
+            AND
+           </strong>
+           the next
+           <strong>
+            AND
+           </strong>
+           the next event, is the product of those events.
+          </li>
+         </ol>
+         <h3 id="looking-ahead">
+          Looking Ahead
+         </h3>
+         <p>
+          You will be working with the
+          <strong>
+           Binomial Distribution
+          </strong>
+          , which creates a function for working with coin flip events like the first events in this lesson.  These events are independent, and the above rules will hold.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('20. Text: Recap + Next Steps')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

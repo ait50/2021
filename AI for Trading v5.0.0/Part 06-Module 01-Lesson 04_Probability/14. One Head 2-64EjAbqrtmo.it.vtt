@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:04.000
+E, si sono il secondo e terzo caso.
+
+00:00:04.000 --> 00:00:07.000
+I casi estremi relativi a testa, testa e croce, croce non soddisfano questa condizione
+
+00:00:07.000 --> 00:00:14.000
+Quinidi il trucco ora è di prendere le probabilità di 0.25 associate a questi due casi
+
+00:00:14.000 --> 00:00:21.000
+e sommarle assieme, che ci da 0.25 + 0.25 = 0.50
+
+00:00:21.000 --> 09:59:59.000
+Questo è il numero corretto per la nostra domanda.
+

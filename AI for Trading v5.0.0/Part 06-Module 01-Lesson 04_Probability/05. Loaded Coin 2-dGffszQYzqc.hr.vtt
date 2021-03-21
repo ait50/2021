@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: hr
+
+00:00:00.000 --> 00:00:02.000
+I da, odgovor je 0.
+
+00:00:02.000 --> 00:00:05.000
+I tu se srusrećemo s pravilom koje bih htio istaknuti da
+
+00:00:05.000 --> 00:00:09.000
+vjerojatnost da novčić padne na glavu plus vjerojatnost da padne na pismo
+
+00:00:09.000 --> 00:00:11.000
+iznosi 1.
+
+00:00:11.000 --> 00:00:16.000
+Razlog tome je što novčić mora pasti bilo na glavu bilo na pismo.
+
+00:00:16.000 --> 00:00:18.000
+Nema drugih mogućnosti.
+
+00:00:18.000 --> 00:00:22.000
+Znači bez obzira kako novčić padne, ako promatram zbroj vjerojatnosti,
+
+00:00:22.000 --> 00:00:26.000
+vjerojatnost da dobijem jedno od toga, pismo ili glavu je 1,
+
+00:00:26.000 --> 00:00:28.000
+zato što znamo da će se jedno od toga dogoditi.
+
+00:00:28.000 --> 00:00:30.000
+Stoga možemo upotrijebiti tu zakonitost
+
+00:00:30.000 --> 09:59:59.000
+kako bi izračunali vjerojatnost da novčić padne na pismo u drugim primjerima.
+

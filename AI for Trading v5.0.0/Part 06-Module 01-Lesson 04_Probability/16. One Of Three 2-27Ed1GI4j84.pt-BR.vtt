@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:01.934
+E minha resposta é 0,288.
+
+00:00:03.033 --> 00:00:04.334
+Como cheguei a isso?
+
+00:00:04.400 --> 00:00:06.801
+Vejamos os três
+casos críticos.
+
+00:00:06.834 --> 00:00:11.601
+Cara-coroa-coroa
+é 0,6 da cara
+
+00:00:11.634 --> 00:00:15.834
+vezes 0,4 da coroa
+
+00:00:15.901 --> 00:00:19.033
+vezes 0,4 da coroa de novo,
+
+00:00:19.100 --> 00:00:22.901
+o que dá 0,096.
+
+00:00:22.934 --> 00:00:26.501
+Este caso aqui embaixo
+tem a mesma probabilidade,
+
+00:00:26.534 --> 00:00:28.701
+pois só está em outra ordem.
+
+00:00:28.734 --> 00:00:34.133
+0,4 vezes 0,6...
+
+00:00:34.200 --> 00:00:36.000
+vezes 0,4.
+
+00:00:36.033 --> 00:00:39.601
+Sabemos que a ordem dos fatores
+não altera o produto.
+
+00:00:39.634 --> 00:00:43.934
+Então temos o mesmo 0,096.
+
+00:00:44.000 --> 00:00:45.334
+Da mesma forma,
+
+00:00:45.400 --> 00:00:50.334
+a terceira ocorrência
+também dá 0,096.
+
+00:00:50.400 --> 00:00:54.834
+Somando estes três 0,096,
+
+00:00:54.901 --> 00:00:57.701
+dá 0,288.
+
+00:00:57.734 --> 00:00:59.901
+Não tive que preencher
+a tabela-verdade toda,
+
+00:00:59.934 --> 00:01:02.901
+o que talvez você tenha feito
+na derivação.
+
+00:01:02.934 --> 00:01:05.434
+Basta preencher
+o que me interessa
+
+00:01:05.501 --> 00:01:07.534
+para chegar
+ao resultado certo.
+

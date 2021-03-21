@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.359 --> 00:00:05.939
+You now have a basic understanding of probability. Great job!
+
+00:00:05.940 --> 00:00:09.824
+Let's quickly summarize what was covered in this lesson.
+
+00:00:09.824 --> 00:00:12.059
+You learned about the probability of an event.
+
+00:00:12.060 --> 00:00:14.245
+Such as the outcome of a coin flip.
+
+00:00:14.244 --> 00:00:15.599
+You learned that the probability of
+
+00:00:15.599 --> 00:00:19.769
+the opposite event is one minus the probability of this event.
+
+00:00:19.769 --> 00:00:22.890
+And you learned about the probability of a composite event,
+
+00:00:22.890 --> 00:00:27.375
+which was in the form of P times P times P and so on.
+
+00:00:27.375 --> 00:00:29.634
+This rule is true because the events we've
+
+00:00:29.635 --> 00:00:32.325
+observed so far are independent of one another,
+
+00:00:32.325 --> 00:00:36.910
+which means the outcome of one event doesn't affect the outcome of another,
+
+00:00:36.909 --> 00:00:40.649
+which is also the case in the next lesson on binomial distributions.
+
+00:00:40.649 --> 00:00:44.189
+However, if we're looking at the probability of dependent events,
+
+00:00:44.189 --> 00:00:49.170
+say the probability of rain tomorrow given that it rained today, this rule doesn't hold.
+
+00:00:49.170 --> 00:00:52.704
+Dependent events where the outcomes of later events depend
+
+00:00:52.704 --> 00:00:56.234
+on what has already happened are at the heart of the following topics,
+
+00:00:56.234 --> 00:00:58.439
+unconditional probability and Bayes Rule.
+

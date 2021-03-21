@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Esa fue una pregunta complicada y puede ser que no sepas realmente la respuesta
+
+00:00:03.000 --> 00:00:05.000
+Si nunca haz visto probabilidad antes
+
+00:00:05.000 --> 00:00:08.000
+Pero la respuesta es 0.25
+
+00:00:08.000 --> 00:00:12.000
+Voy a deducirlo para ti usando algo llamado tabla de la verdad.
+
+00:00:12.000 --> 00:00:16.000
+En una tabla de la verdad, vas a dibujar cualquier resultado posible
+
+00:00:16.000 --> 00:00:18.000
+Del experimento que estés conduciendo.
+
+00:00:18.000 --> 00:00:23.000
+Ahí fueron dos giros de moneda -- giro 1 y giro 2 -- y cada uno de ellos tuvo
+
+00:00:23.000 --> 00:00:31.000
+Una posible salida de cara, cara; cara, cruz; cruz, cara; y cruz,cruz
+
+00:00:31.000 --> 00:00:37.000
+Entonces cuando observamos la tabla, podrás ver cada posible salida de estos dos giros.
+
+00:00:37.000 --> 00:00:39.000
+Sucede que puede haber 4 de ellos.
+
+00:00:39.000 --> 00:00:42.000
+Y quiero argumentar que cara y cruz son igualmente probables
+
+00:00:42.000 --> 00:00:45.000
+Cada una de las salidas es igualmente posible.
+
+00:00:45.000 --> 00:00:49.000
+Como sabemos que la probabilidad de todas las salidas debe sumar 1
+
+00:00:49.000 --> 00:00:54.000
+Encontramos que cada una de las salidas tiene una posibilidad de un cuarto o 0.25.
+
+00:00:54.000 --> 00:00:59.000
+Otra forma de verlo es que la probabilidad de una cara seguido de otra cara
+
+00:00:59.000 --> 00:01:01.000
+Es el producto.
+
+00:01:01.000 --> 00:01:05.000
+¿Cuál es la posibilidad de obtener en la primera salida una cara
+
+00:01:05.000 --> 00:01:09.000
+multiplicada por la probabilidad de la segunda salida que sea una cara?
+
+00:01:09.000 --> 00:01:16.000
+El primero es 0.5, así como el segundo.
+
+00:01:16.000 --> 09:59:59.000
+Si multiplicas estos dos números, es 0.25 o un cuarto.
+

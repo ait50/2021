@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:07.000
+E la mia risposta è 0,288. Come l'ho ottenuta? Esaminiamo questi tre casi critici.
+
+00:00:07.000 --> 00:00:23.000
+H T T è 0,6 per H moltiplicato 0,4 per T e un altro 0,4 per la seconda T e questo mi da 0,096
+
+00:00:23.000 --> 00:00:29.000
+Ora si verifica che questo caso qui ha lo stessa probabilità perchè tutto quello che facciamo e ordinare
+
+00:00:29.000 --> 00:00:40.000
+0,4 x 0,6 x 0,4 e noi sappiamo che nella moltiplicazione l'ordine non ha importanza,
+
+00:00:40.000 --> 00:00:50.000
+quindi otteniamo lo stesso 0,096, e seguendo la stessa logica anche il terzo mi da 0,096
+
+00:00:50.000 --> 00:00:58.000
+Quindi sommando questi 0,096 assieme,mi da 0,288
+
+00:00:58.000 --> 00:01:03.000
+Io non ho riempito l'intera tabella della verità, come potete aver fatto voi nello sviluppo
+
+00:01:03.000 --> 00:01:07.000
+Ho riempito solo i casi che mi interessavano, eppure ottengo il risultato corretto
+

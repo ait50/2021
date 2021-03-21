@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Y no sorprendente es 1.
+
+00:00:03.000 --> 00:00:07.000
+Esto es que la tabla de la verdad siempre tiene una probabilidad sumada igual a 1
+
+00:00:07.000 --> 00:00:09.000
+Por que considera todas las posibles salidas,
+
+00:00:09.000 --> 00:00:11.000
+Y todas las salidas posibles tienen una probabilidad de 1
+
+00:00:11.000 --> 00:00:14.000
+Así que lo acabamos de checar y asegurar que es correcto.
+
+00:00:14.000 --> 00:00:20.000
+Leyendo de esta tabla, encontramos que la probabilidad de (H,H) es 0.36.
+
+00:00:20.000 --> 00:00:22.000
+Y puedes hacer lo mismo aquí.
+
+00:00:22.000 --> 00:00:27.000
+0.6 * 0.6 = 0.36
+
+00:00:27.000 --> 09:59:59.000
+Así que esta es la respuesta correcta.
+

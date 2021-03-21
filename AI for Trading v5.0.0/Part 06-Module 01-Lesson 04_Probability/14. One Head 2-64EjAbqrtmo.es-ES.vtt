@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+Y sí, es el segundo y tercer caso.
+
+00:00:04.000 --> 00:00:07.000
+Los casos extremos de cara, cara y cruz,cruz no satisfacen dicha condición.
+
+00:00:07.000 --> 00:00:14.000
+Así que el truco ahora es tomar la probabilidad de 0.25 de ambos casos
+
+00:00:14.000 --> 00:00:21.000
+Y vamos a sumarlos, lo que nos da 0.25 + 0.25 = 0.5
+
+00:00:21.000 --> 09:59:59.000
+Este es el número correcto para esta petición.
+

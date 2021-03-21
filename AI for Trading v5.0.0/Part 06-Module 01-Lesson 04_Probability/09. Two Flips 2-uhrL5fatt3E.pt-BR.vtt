@@ -1,0 +1,54 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:01.734
+Agora vou desafiá-lo
+
+00:00:01.801 --> 00:00:04.701
+com uma moeda viciada
+que lancei duas vezes.
+
+00:00:04.734 --> 00:00:06.334
+Quanto a esta moeda,
+
+00:00:06.400 --> 00:00:10.300
+estimo que a probabilidade
+de cara seja 0,6.
+
+00:00:10.334 --> 00:00:13.934
+Isso muda todos os números
+da tabela,
+
+00:00:14.000 --> 00:00:16.934
+mas você pode aplicar
+o mesmo método de tabela-verdade
+
+00:00:17.000 --> 00:00:18.300
+para chegar à resposta
+
+00:00:18.334 --> 00:00:21.000
+de qual é a probabilidade
+de ver duas caras seguidas,
+
+00:00:21.033 --> 00:00:22.734
+partindo da premissa
+
+00:00:22.801 --> 00:00:26.100
+que a probabilidade de cara
+é 0,6.
+
+00:00:26.133 --> 00:00:28.934
+E quero fazer isso em passos.
+
+00:00:29.000 --> 00:00:31.133
+Em vez de fazer a pergunta
+diretamente,
+
+00:00:31.200 --> 00:00:32.701
+vou ajudá-lo a derivá-la,
+
+00:00:32.734 --> 00:00:35.601
+perguntando antes
+qual é a probabilidade de coroa.
+

@@ -1,0 +1,75 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:02.200
+E a resposta é traiçoeira.
+
+00:00:02.234 --> 00:00:04.601
+Vamos derivá-la
+da tabela-verdade.
+
+00:00:04.634 --> 00:00:07.901
+Agora há oito resultados
+possíveis.
+
+00:00:07.934 --> 00:00:10.434
+O primeiro lançamento
+pode ser cara ou coroa,
+
+00:00:10.501 --> 00:00:13.701
+o segundo também,
+cara, coroa, cara, coroa,
+
+00:00:13.734 --> 00:00:15.434
+e o terceiro também.
+
+00:00:15.501 --> 00:00:18.534
+Veja que toda combinação possível
+está representada.
+
+00:00:18.601 --> 00:00:20.934
+Por exemplo, cara-coroa-coroa.
+
+00:00:21.000 --> 00:00:24.934
+Todo resultado tem
+a mesma probabilidade: um oitavo.
+
+00:00:25.000 --> 00:00:26.400
+São oito possibilidades.
+
+00:00:26.434 --> 00:00:28.634
+1/8 vezes 8 = 1.
+
+00:00:29.901 --> 00:00:33.100
+Em quantos casos
+temos exatamente uma cara?
+
+00:00:33.133 --> 00:00:37.033
+No final das contas,
+em apenas três casos.
+
+00:00:37.100 --> 00:00:40.634
+A cara pode sair no primeiro,
+no segundo...
+
+00:00:42.300 --> 00:00:44.300
+e no terceiro lançamento.
+
+00:00:44.334 --> 00:00:48.834
+Então três de oito casos
+só têm uma cara.
+
+00:00:48.901 --> 00:00:51.834
+Cada um dos três
+tem 1/8 de probabilidade.
+
+00:00:51.901 --> 00:00:53.734
+Somando esses casos,
+
+00:00:53.801 --> 00:00:58.200
+dá um total de 3/8 de probabilidade,
+
+00:00:58.234 --> 00:01:01.601
+ou 0,375.
+

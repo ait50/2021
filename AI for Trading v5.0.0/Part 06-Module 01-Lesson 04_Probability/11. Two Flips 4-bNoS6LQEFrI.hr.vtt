@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: hr
+
+00:00:00.000 --> 00:00:03.000
+I ne iznenađuje da je odgovor 1.
+
+00:00:03.000 --> 00:00:07.000
+Zbroj Ishoda u tablici istine je uvijek 1
+
+00:00:07.000 --> 00:00:09.000
+jer ona sadrži sve moguće ishode,
+
+00:00:09.000 --> 00:00:11.000
+a svi mogući ishodi skupa imaju vjerojatnost 1.
+
+00:00:11.000 --> 00:00:14.000
+Provjerimo samo to da se uvjerimo da je točno.
+
+00:00:14.000 --> 00:00:20.000
+Iščitavanjem iz ove tablice, vidimo da vjerojatnost glava, glava (H,H) iznosi 0,36.
+
+00:00:20.000 --> 00:00:22.000
+Isto to možete napraviti ovdje.
+
+00:00:22.000 --> 00:00:27.000
+0,6*0,6 = 0,36.
+
+00:00:27.000 --> 09:59:59.000
+To je, znači, točan odgovor.
+

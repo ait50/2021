@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: hr
+
+00:00:00.000 --> 00:00:07.000
+Moje je odgovor 0,288. kako sam došao do toga? Pogledajmo sva tri slučaja.
+
+00:00:07.000 --> 00:00:23.000
+H T T je 0,6 za H, pomnoženo s 0,4 za pismo i opet pomnoženo s 0,4 za iduće pismo i to mi daje 0,096.
+
+00:00:23.000 --> 00:00:29.000
+Ispada da ovaj ishod ima istu vjerojatnost jer smo samo
+
+00:00:29.000 --> 00:00:40.000
+napisali drugim redom 0,40,60,4, a znamo da redosljed množenja ne utječe na iznos umnoška.
+
+00:00:40.000 --> 00:00:50.000
+Tako opet dobijete 0,096 i istom logikom, u slučaju trećeg ishoda je opet 0,096.
+
+00:00:50.000 --> 00:00:58.000
+Kada zbrojim ta tri iznosa od po 0,096 dobijem 0,288.
+
+00:00:58.000 --> 00:01:03.000
+Nije mi bilo potrfebno ispisati cijelu tablicu istine, što vi možda jeste u međuvremenu.
+
+00:01:03.000 --> 00:01:07.000
+Trebam izračunati samo one slučajeve koji su mi bitni da dođem do rezultata.
+

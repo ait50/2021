@@ -1,0 +1,32 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:03.634
+Sim, no segundo
+e no terceiro casos.
+
+00:00:03.701 --> 00:00:06.133
+Os casos extremos,
+cara-cara e coroa-coroa,
+
+00:00:06.200 --> 00:00:07.834
+não satisfazem essa condição.
+
+00:00:07.901 --> 00:00:09.834
+Agora o truque é...
+
+00:00:09.901 --> 00:00:14.000
+pegar a probabilidade de 0,25
+desses dois casos
+
+00:00:14.033 --> 00:00:15.400
+e somá-las,
+
+00:00:15.434 --> 00:00:20.934
+o que dá 0,25+0,25 = 0,5,
+
+00:00:21.000 --> 00:00:23.934
+que é a resposta certa
+à pergunta.
+
