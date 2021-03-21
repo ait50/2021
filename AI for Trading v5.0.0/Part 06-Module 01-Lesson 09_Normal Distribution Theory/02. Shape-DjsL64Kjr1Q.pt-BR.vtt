@@ -1,0 +1,108 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.041 --> 00:00:01.256
+Outra coisa interessante
+
+00:00:01.306 --> 00:00:03.932
+é que as coisas caem
+de forma diferente
+
+00:00:03.982 --> 00:00:05.261
+conforme se sai de 10.
+
+00:00:05.311 --> 00:00:08.879
+11, 12, 13, 14,
+até chegar a 20.
+
+00:00:08.929 --> 00:00:11.587
+Nós temos uma curva
+mais ou menos assim.
+
+00:00:11.637 --> 00:00:13.595
+Essa curva é chamada de sino
+
+00:00:13.645 --> 00:00:17.124
+porque é plausível pensar nela
+como um sino de igreja
+
+00:00:17.174 --> 00:00:20.446
+que se move para lá e para cá
+enquanto toca.
+
+00:00:20.496 --> 00:00:22.326
+Então fiz um experimento
+relacionado.
+
+00:00:22.376 --> 00:00:25.988
+Programei um software para lançar
+uma moeda mil vezes.
+
+00:00:26.038 --> 00:00:29.588
+Se você fez as unidades facultativas
+sobre programação,
+
+00:00:29.638 --> 00:00:33.124
+também escreveu um software
+que lança uma moeda mil vezes.
+
+00:00:33.174 --> 00:00:36.264
+Depois verifiquei
+a frequência empírica,
+
+00:00:36.314 --> 00:00:40.353
+que é a mesma que a soma
+de caras dividida por 1 mil.
+
+00:00:40.403 --> 00:00:42.533
+Essa vai de 0 a 1.
+
+00:00:42.583 --> 00:00:44.522
+Eu chamei isso
+de "experimento".
+
+00:00:44.572 --> 00:00:48.841
+Lancei uma moeda mil vezes
+e obtive um número único:
+
+00:00:48.891 --> 00:00:52.462
+a relação entre caras
+e o total de lançamentos.
+
+00:00:52.512 --> 00:00:55.204
+Idealmente seria 0,5,
+
+00:00:55.254 --> 00:00:57.673
+mas frequentemente
+só se aproxima de 0,5.
+
+00:00:57.723 --> 00:01:00.797
+Eu repeti o experimento
+mil vezes,
+
+00:01:00.847 --> 00:01:05.342
+ou seja, obtive mil amostras
+desta relação aqui.
+
+00:01:05.392 --> 00:01:07.960
+Fazendo isso,
+obtenho várias médias.
+
+00:01:08.010 --> 00:01:10.786
+Projetando-as no gráfico,
+vejo uma curva.
+
+00:01:10.836 --> 00:01:12.830
+Que forma você acha
+que ela tem?
+
+00:01:12.880 --> 00:01:17.219
+Esta, esta, esta ou esta?
+
+00:01:17.269 --> 00:01:19.211
+Centradas em 0,5.
+
+00:01:19.261 --> 00:01:21.050
+Qual delas você acha que é?
+

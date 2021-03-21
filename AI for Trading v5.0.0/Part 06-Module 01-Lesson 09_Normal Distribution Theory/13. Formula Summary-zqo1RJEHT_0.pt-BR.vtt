@@ -1,0 +1,114 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.050 --> 00:00:02.511
+Aqui está
+nossa distribuição normal outra vez.
+
+00:00:02.561 --> 00:00:05.570
+Vou escrever "exp",
+de exponencial.
+
+00:00:05.620 --> 00:00:09.213
+{-1/2(x-Âµ)²/ÏƒÂ²}.
+
+00:00:09.263 --> 00:00:13.001
+Para quem não está acostumado,
+isto é bem confuso.
+
+00:00:13.051 --> 00:00:15.865
+Quando você trabalha com estatística
+por muitos anos, como eu,
+
+00:00:15.915 --> 00:00:18.953
+você é capaz de acordar à noite
+e recitar esta fórmula.
+
+00:00:19.003 --> 00:00:22.895
+É tão normal
+quando acordar e tomar café da manhã
+
+00:00:22.945 --> 00:00:24.763
+ou uma cerveja após o jantar.
+
+00:00:24.813 --> 00:00:27.493
+Mas não é a complexidade
+que eu quero que te atinja.
+
+00:00:27.543 --> 00:00:30.540
+Eu quero que você entenda
+a construção da fórmula.
+
+00:00:30.590 --> 00:00:34.627
+Que entenda o termo quadrático
+de penalização de desvios
+
+00:00:34.677 --> 00:00:37.988
+da média esperada
+desta expressão.
+
+00:00:38.038 --> 00:00:41.819
+E a potenciação
+que põe tudo de volta nas curvas.
+
+00:00:41.869 --> 00:00:43.674
+Basicamente,
+é isso que acontece.
+
+00:00:43.724 --> 00:00:47.146
+Podemos tirar valores
+dessa distribuição normal,
+
+00:00:47.196 --> 00:00:50.295
+assim como dos lançamentos
+de moeda.
+
+00:00:50.345 --> 00:00:52.003
+A forma de ler isto é:
+
+00:00:52.053 --> 00:00:55.226
+qualquer valor x
+tem esta probabilidade aqui.
+
+00:00:55.276 --> 00:00:57.072
+Isto nada mais é do que...
+
+00:00:57.122 --> 00:00:58.744
+uma notação
+da probabilidade de x
+
+00:00:58.794 --> 00:01:02.317
+para uma distribuição normal
+com Âµ e ÏƒÂ².
+
+00:01:02.367 --> 00:01:04.421
+Então um valor x
+
+00:01:05.046 --> 00:01:09.041
+tem uma barra duas vezes mais alta
+do que um valor x',
+
+00:01:09.091 --> 00:01:12.850
+mas duas vezes mais probabilidade
+de ser tirado.
+
+00:01:12.900 --> 00:01:16.950
+Claro que a distribuição normal tem
+um espaço contínuo de resultados,
+
+00:01:17.000 --> 00:01:19.857
+e claro que aqui há
+diferentes resultados
+
+00:01:20.007 --> 00:01:21.674
+até a probabilidade 0.
+
+00:01:21.724 --> 00:01:26.996
+Mas, em essência,
+podemos pensar na altura disto aqui
+
+00:01:27.046 --> 00:01:31.950
+como proporcional à probabilidade
+de este valor ser tirado.
+

@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+Para entender la solución, es útil dibujar la función exponencial
+
+00:00:04.000 --> 00:00:10.000
+e⁰ es 1 y después aumenta exponencialmente a números muy largos
+
+00:00:10.000 --> 00:00:14.000
+Si alguna vez haz escuchado de Ray Kurzweil que habla del futuro de la sociedad
+
+00:00:14.000 --> 00:00:18.000
+Haz visto estas curvas -- todo va para arriba exponencialmente
+
+00:00:18.000 --> 00:00:20.000
+Cualquier cosa es exponencial
+
+00:00:20.000 --> 00:00:22.000
+Y además si regresas en el tiempo a valores negativos,
+
+00:00:22.000 --> 00:00:24.000
+Esto disminuye lentamente a 0
+
+00:00:24.000 --> 00:00:28.000
+Por supuesto, esto no es nada excitante, entonces nunca hablamos de exponenciales en espacios negativos
+
+00:00:28.000 --> 00:00:33.000
+Sin embargo, resulta ser que todos los argumentos de exponencial son mejores en 0
+
+00:00:33.000 --> 00:00:36.000
+De otra forma son negativos, porque la exponencial es monótona --
+
+00:00:36.000 --> 00:00:40.000
+Este argumento es largo, el valor exponencial es el más largo
+
+00:00:40.000 --> 00:00:44.000
+Este debería ser optimizado donde esta cosa termina en el mas largo
+
+00:00:44.000 --> 00:00:46.000
+¿Y cual es el caso?
+
+00:00:46.000 --> 09:59:59.000
+Bueno, es exactamente donde µ golpea 0
+

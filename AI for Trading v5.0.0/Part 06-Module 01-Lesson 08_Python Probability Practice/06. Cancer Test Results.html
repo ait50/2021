@@ -1,0 +1,747 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Cancer Test Results
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Python Probability Practice
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Simulating Coin Flips.html">
+       02. Simulating Coin Flips
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Probability Quiz.html">
+       03. Probability Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Simulating Many Coin Flips.html">
+       04. Simulating Many Coin Flips
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Binomial Distributions Quiz.html">
+       05. Binomial Distributions Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Cancer Test Results.html">
+       06. Cancer Test Results
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Conditional Probability &amp; Bayes Rule Quiz.html">
+       07. Conditional Probability &amp; Bayes Rule Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Conclusion.html">
+       08. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Cancer Test Results
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="cancer-test-results">
+          Cancer Test Results
+         </h1>
+         <p>
+          In this section, you'll find a simulated dataset on cancer test results for patients and whether they really have cancer. Explore
+          <code>
+           cancer_test_data.csv
+          </code>
+          in the Jupyter notebook to answer the following questions.
+         </p>
+         <ul>
+          <li>
+           <p>
+            How many patients are there in total?
+           </p>
+          </li>
+          <li>
+           <p>
+            How many patients have cancer?
+           </p>
+          </li>
+          <li>
+           <p>
+            How many patients do not have cancer?
+           </p>
+          </li>
+          <li>
+           <p>
+            What proportion of patients have cancer?
+           </p>
+          </li>
+          <li>
+           <p>
+            What proportion of patients don't have cancer?
+           </p>
+          </li>
+          <li>
+           <p>
+            What proportion of patients with cancer test positive?
+           </p>
+          </li>
+          <li>
+           <p>
+            What proportion of patients with cancer test negative?
+           </p>
+          </li>
+          <li>
+           <p>
+            What proportion of patients without cancer test positive?
+           </p>
+          </li>
+          <li>
+           <p>
+            What proportion of patients without cancer test negative?
+           </p>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Match the correct answer for each of the following questions.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           How many patients are there in total?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           How many patients have cancer?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           How many patients do not have cancer?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What proportion of patients have cancer?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What proportion of patients don't have cancer?
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Question
+            </p>
+           </th>
+           <th>
+            <p>
+             Answer
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.105
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.895
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             1739
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.562
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.234
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2914
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             306
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             589
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2608
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Question
+             </p>
+            </th>
+            <th>
+             <p>
+              Answer
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.105
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What proportion of patients have cancer?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.895
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What proportion of patients don't have cancer?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2914
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               How many patients are there in total?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              306
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               How many patients have cancer?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2608
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               How many patients do not have cancer?
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Match the correct answer for each of the following questions.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           What proportion of patients with cancer test positive?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What proportion of patients with cancer test negative?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What proportion of patients without cancer test positive?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What proportion of patients without cancer test negative?
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Question
+            </p>
+           </th>
+           <th>
+            <p>
+             Answer
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.796
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.095
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.204
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.563
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.905
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.123
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.372
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Question
+             </p>
+            </th>
+            <th>
+             <p>
+              Answer
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.796
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What proportion of patients without cancer test negative?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.095
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What proportion of patients with cancer test negative?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.204
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What proportion of patients without cancer test positive?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.905
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What proportion of patients with cancer test positive?
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. Conditional Probability &amp; Bayes Rule Quiz.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Cancer Test Results')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

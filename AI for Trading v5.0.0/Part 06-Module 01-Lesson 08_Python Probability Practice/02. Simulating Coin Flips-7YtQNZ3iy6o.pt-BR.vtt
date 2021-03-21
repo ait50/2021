@@ -1,0 +1,209 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.261 --> 00:00:03.039
+NumPy tem um módulo
+para amostragem aleatória
+
+00:00:03.089 --> 00:00:06.078
+que facilita a simulação
+de eventos aleatórios,
+
+00:00:06.128 --> 00:00:07.998
+como lançamentos de moeda,
+no Python.
+
+00:00:08.048 --> 00:00:10.393
+Vamos começar
+com um exemplo simples:
+
+00:00:10.443 --> 00:00:12.823
+simular um único lançamento
+de moeda.
+
+00:00:12.873 --> 00:00:16.531
+Para tanto, usaremos
+uma função chamada "randint".
+
+00:00:16.581 --> 00:00:20.169
+Ela gera tantos números inteiros
+quanto especificarmos,
+
+00:00:20.219 --> 00:00:22.234
+menores ou iguais
+ao limite mínimo
+
+00:00:22.284 --> 00:00:24.689
+e maiores
+do que o limite máximo.
+
+00:00:24.739 --> 00:00:26.218
+Podemos usar esses inteiros
+
+00:00:26.268 --> 00:00:28.303
+para representar
+resultados de eventos,
+
+00:00:28.353 --> 00:00:30.821
+como lançamentos de moeda.
+Vamos experimentar.
+
+00:00:30.871 --> 00:00:32.556
+Chamamos essa função
+a partir do módulo
+
+00:00:32.606 --> 00:00:35.246
+de amostra aleatória
+do NumPy. Assim.
+
+00:00:35.296 --> 00:00:39.788
+Vamos usar "0" para cara
+e "1" para coroa.
+
+00:00:39.838 --> 00:00:43.750
+Essa função produzirá
+aleatoriamente 0 ou 1.
+
+00:00:43.800 --> 00:00:45.758
+O limite mínimo será 0,
+
+00:00:45.808 --> 00:00:49.770
+e o máximo será 2,
+pois é excludente.
+
+00:00:49.820 --> 00:00:52.787
+Como o limite mínimo é 0,
+ele já é o padrão.
+
+00:00:52.837 --> 00:00:54.600
+Não precisamos digitá-lo.
+
+00:00:54.650 --> 00:00:56.966
+Se executarmos a célula
+repetidamente,
+
+00:00:57.016 --> 00:01:00.819
+o resultado sempre será
+0 ou 1.
+
+00:01:00.869 --> 00:01:05.458
+Ou podemos especificar um tamanho
+para retornarem mais eventos.
+
+00:01:05.508 --> 00:01:09.553
+Legal. Temos o resultado
+de 10 mil lançamentos de moeda.
+
+00:01:09.603 --> 00:01:13.895
+A média dos resultados produzidos
+deve ser muito próxima a 0,5,
+
+00:01:13.945 --> 00:01:16.324
+já que, neste momento,
+a probabilidade é a mesma
+
+00:01:16.374 --> 00:01:18.458
+de dar 0 ou 1.
+
+00:01:18.508 --> 00:01:20.727
+Mas e se quisermos lançar
+uma moeda viciada,
+
+00:01:20.777 --> 00:01:23.622
+com maior chance de dar cara?
+
+00:01:23.672 --> 00:01:27.858
+Há outra função para isso,
+chamada "random.choice".
+
+00:01:27.908 --> 00:01:29.828
+Essa função
+é um pouco diferente.
+
+00:01:29.878 --> 00:01:32.088
+Ela escolhe aleatoriamente
+um número de valores
+
+00:01:32.138 --> 00:01:34.136
+de um array que você fornece.
+
+00:01:34.186 --> 00:01:37.353
+E você pode informar
+uma série de probabilidades
+
+00:01:37.403 --> 00:01:40.185
+para cada valor do array.
+
+00:01:40.235 --> 00:01:41.676
+Vamos chamar "random.choice"
+
+00:01:41.726 --> 00:01:46.497
+e informar o array
+de resultados possíveis: 0 e 1.
+
+00:01:46.547 --> 00:01:48.569
+Se não especificarmos
+as probabilidades,
+
+00:01:48.619 --> 00:01:50.729
+ela nos retorna cada valor,
+
+00:01:50.779 --> 00:01:53.554
+com a mesma probabilidade
+por padrão.
+
+00:01:53.604 --> 00:01:57.156
+Podemos fazer assim,
+como no exemplo acima.
+
+00:01:57.206 --> 00:02:00.314
+E a média é muito próxima
+a 0,5 novamente.
+
+00:02:00.364 --> 00:02:01.825
+Para fazer uma moeda viciada,
+
+00:02:01.875 --> 00:02:05.963
+podemos especificar o parâmetro P
+com um array de probabilidades.
+
+00:02:06.013 --> 00:02:09.685
+Digamos que 0,8 para cara
+e 0,2 para coroa.
+
+00:02:09.735 --> 00:02:13.070
+Agora perceba que a média
+é próxima a 0,2,
+
+00:02:13.120 --> 00:02:16.076
+o que faz sentido,
+pois o 0, ou cara,
+
+00:02:16.126 --> 00:02:18.500
+deve ser escolhido
+80% das vezes.
+
+00:02:18.550 --> 00:02:21.834
+Você deve ter percebido
+que as médias dos resultados
+
+00:02:21.884 --> 00:02:24.956
+nem sempre refletem
+a probabilidade real com perfeição.
+
+00:02:25.006 --> 00:02:26.777
+Contudo, elas tendem a refletir
+
+00:02:26.827 --> 00:02:29.265
+a real probabilidade
+com mais precisão
+
+00:02:29.315 --> 00:02:31.637
+conforme aumentamos
+o número de lançamentos.
+
+00:02:31.687 --> 00:02:33.553
+Você verá mais sobre isso
+em breve.
+

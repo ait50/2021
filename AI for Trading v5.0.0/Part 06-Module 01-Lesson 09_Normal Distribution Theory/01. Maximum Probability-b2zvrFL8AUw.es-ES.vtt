@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:06.000
+Lo que vas a ver es una de las partes transformativas de la estadística moderna
+
+00:00:06.000 --> 00:00:09.000
+Y esta usa cosas como si nunca lo hubiéramos visto.
+
+00:00:09.000 --> 00:00:16.000
+Empezamos con la distribución binomial, que ya estás familiarizado de la unidad pasada
+
+00:00:16.000 --> 00:00:21.000
+Y después nos movemos al Teorema de Límite Central, que básicamente significa
+
+00:00:21.000 --> 00:00:24.000
+Que tomamos un número de giros de moneda al infinito
+
+00:00:24.000 --> 00:00:30.000
+De esto, llegamos a la distribución normal que es la base de muchas cosas en estadística --
+
+00:00:30.000 --> 00:00:35.000
+Todas las pruebas y resultados de confianza son definidos de la distribución normal
+
+00:00:35.000 --> 00:00:40.000
+Y la razón de porque esto importa, es porque mucho de lo que hemos hecho en giros de moneda donde son un o dos giros
+
+00:00:40.000 --> 00:00:45.000
+Pero en experimentos de estadística, con frecuencia tienes 1000 pacientes o 1000 puntos de datos
+
+00:00:45.000 --> 00:00:48.000
+Y esto empieza a aproximarse a la distribución normal
+
+00:00:48.000 --> 00:00:51.000
+Que de la distribución binomial, por ser más practica.
+
+00:00:51.000 --> 00:01:01.000
+Entonces vamos a empezar -- cuando empecemos usando nuestra fórmula para distribuciones binomiales
+
+00:01:01.000 --> 00:01:05.000
+Donde N es el número de giros de moneda, k es que tan seguido resulta cara
+
+00:01:05.000 --> 00:01:10.000
+Y p que es la probabilidad de que la moneda salga cara, usualmente 0.5
+
+00:01:10.000 --> 00:01:16.000
+Y quiero graficar para arreglar está función de aquí . K puede ir de 0 hasta 20
+
+00:01:16.000 --> 00:01:21.000
+En lugar de dejarte calcular esta cosa de aquí para todos los diferentes valores de k,
+
+00:01:21.000 --> 00:01:24.000
+Te voy a pedir una pregunta diferente -- supón que tienes una moneda
+
+00:01:24.000 --> 00:01:32.000
+Cual piensas que este valor toma el máximo valor, donde el valor de k maximiza nuestra operación
+
+00:01:32.000 --> 00:01:36.000
+Se que no lo podrás saber esto pero con algo de pensamiento
+
+00:01:36.000 --> 09:59:59.000
+Considero que llegarás a la respuesta correcta.
+

@@ -1,0 +1,30 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.489
+Acabei de programar
+e executar o experimento,
+
+00:00:02.539 --> 00:00:05.028
+e a resposta é 10.
+
+00:00:05.078 --> 00:00:08.464
+E a resposta é 10 porque...
+
+00:00:08.514 --> 00:00:12.098
+o número de combinações
+com 10 positivos e 10 negativos
+
+00:00:12.148 --> 00:00:16.064
+na nossa lista de 20 é maior
+do que qualquer outro número.
+
+00:00:16.114 --> 00:00:18.434
+Então este termo aqui
+é maximizado
+
+00:00:18.484 --> 00:00:21.541
+quando "K" é a metade de "N",
+ou seja, 10.
+

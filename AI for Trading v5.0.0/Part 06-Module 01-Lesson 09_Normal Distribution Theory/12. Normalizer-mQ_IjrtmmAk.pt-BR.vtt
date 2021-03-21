@@ -1,0 +1,114 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.050 --> 00:00:01.050
+Temos uma função f(x)
+
+00:00:01.100 --> 00:00:03.918
+que assume o valor 1
+quando x=Âµ
+
+00:00:03.968 --> 00:00:08.114
+e vai a 0 quando a x=infinito.
+
+00:00:08.164 --> 00:00:10.577
+Então fica
+como uma curva de sino.
+
+00:00:10.627 --> 00:00:15.156
+Pode não parecer muito,
+mas o que importa é a intenção.
+
+00:00:15.206 --> 00:00:18.813
+Isto aqui, que eu considero
+uma fórmula relativamente simples,
+
+00:00:18.863 --> 00:00:23.506
+descreve o limite de fazer
+infinitos lançamentos de moeda.
+
+00:00:23.556 --> 00:00:27.554
+E descreve o limite
+de calcular uma média
+
+00:00:27.604 --> 00:00:29.745
+de qualquer série
+de experimentos.
+
+00:00:29.795 --> 00:00:31.876
+É um resultado poderosíssimo.
+
+00:00:31.926 --> 00:00:33.588
+Não importa o que você faça.
+
+00:00:33.638 --> 00:00:36.362
+Ao levar N
+a números muito grandes,
+
+00:00:36.412 --> 00:00:37.985
+você obtém
+uma curva de sino.
+
+00:00:38.035 --> 00:00:39.272
+Tem uma falha aqui.
+
+00:00:39.322 --> 00:00:42.093
+Vou falar sobre ela
+sem entrar em detalhes.
+
+00:00:42.143 --> 00:00:46.243
+A soma da área sob a curva
+nem sempre é 1.
+
+00:00:46.293 --> 00:00:50.916
+A propósito, sem demonstrar,
+a soma é raiz de 2*pi*ÏƒÂ².
+
+00:00:50.966 --> 00:00:55.235
+Isso importa por motivos teóricos
+muito profundos,
+
+00:00:55.285 --> 00:00:58.640
+mas nosso desejo
+é que essa área some 1,
+
+00:00:58.690 --> 00:01:02.243
+assim como queremos
+que os lançamentos da moeda
+
+00:01:02.293 --> 00:01:03.381
+somem 1.
+
+00:01:03.431 --> 00:01:06.135
+Então a verdadeira
+distribuição normal é normalizada
+
+00:01:06.185 --> 00:01:08.105
+pelo inverso disto aqui:
+
+00:01:08.155 --> 00:01:12.515
+1/(raiz de 2*pi*ÏƒÂ²).
+
+00:01:12.565 --> 00:01:14.896
+Esta é a distribuição normal
+
+00:01:14.946 --> 00:01:19.419
+de qualquer valor x
+indexado pelo parâmetro Âµ
+
+00:01:19.469 --> 00:01:20.639
+e ÏƒÂ².
+
+00:01:20.689 --> 00:01:24.456
+Isso aqui
+é matemática profunda.
+
+00:01:24.506 --> 00:01:28.453
+Agora vamos aplicar isto
+para você ter uma ideia
+
+00:01:28.503 --> 00:01:31.400
+de como a distribuição normal
+é na prática.
+

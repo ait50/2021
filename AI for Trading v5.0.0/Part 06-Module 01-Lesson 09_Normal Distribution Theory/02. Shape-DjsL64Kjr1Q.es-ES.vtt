@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+La otra cosa interesante es que estas cosas bajan en una forma interesante
+
+00:00:04.000 --> 00:00:09.000
+Como se desvía de 10, 11, 12, 13, 14 hasta 0 o 20
+
+00:00:09.000 --> 00:00:12.000
+Obviamente tenemos una curva que parece algo así
+
+00:00:12.000 --> 00:00:17.000
+Esta cuerva es a veces llamada la curva de la campana, por que es un tanto factible pensarla como campana de la iglesia --
+
+00:00:17.000 --> 00:00:21.000
+Que se mueve de la izquierda a derecha y suena la campana
+
+00:00:21.000 --> 00:00:26.000
+Hice un experimento relacionado -- compre un pedazo de software que gira la moneda 1000 veces
+
+00:00:26.000 --> 00:00:32.000
+Y si hiciste la última unidad opcional de programación, escribiste un pedazo de programación
+
+00:00:32.000 --> 00:00:36.000
+Para girar la moneda 1000 veces y observamos la frecuencia empírica
+
+00:00:36.000 --> 00:00:42.000
+Que es la misma que la cantidad de caras, dividida por 1000, pero esta escala entre 0 y 1
+
+00:00:42.000 --> 00:00:49.000
+Llamo esto un experimento -- giro la moneda 1000 veces, donde lo que sale es un solo número
+
+00:00:49.000 --> 00:00:52.000
+Que es la relación de caras con el número total de experimentos
+
+00:00:52.000 --> 00:00:58.000
+Esto debe ser 0.5 en el caso ideal, pero es un poco menos de 0.5
+
+00:00:58.000 --> 00:01:02.000
+Repito este experimento 1000 veces y esto significa
+
+00:01:02.000 --> 00:01:08.000
+Que obtengo 1000 muestras de este radio de aquí. Cuando lo hago, obtengo una gran cantidad de medias
+
+00:01:08.000 --> 00:01:11.000
+Cuando corro un histograma como este, voy a ver una curva
+
+00:01:11.000 --> 00:01:15.000
+Que forma piensan que tiene la cuerva -- va a ser como esto, va a ser como esto
+
+00:01:15.000 --> 00:01:19.000
+Como esto o como esto, todos están enfocados en 0.5
+
+00:01:19.000 --> 09:59:59.000
+¿Cuál piensas que es?
+

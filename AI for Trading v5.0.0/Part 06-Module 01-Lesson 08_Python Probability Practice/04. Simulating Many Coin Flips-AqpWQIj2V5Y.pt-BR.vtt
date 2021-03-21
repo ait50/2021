@@ -1,0 +1,174 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.117 --> 00:00:03.054
+Até agora simulamos
+resultados de eventos
+
+00:00:03.104 --> 00:00:04.697
+gerando números aleatórios
+
+00:00:04.747 --> 00:00:08.604
+com as funções "random.randint"
+e "random.choice" do NumPy.
+
+00:00:08.654 --> 00:00:10.724
+No entanto,
+existe uma função melhor
+
+00:00:10.774 --> 00:00:13.144
+para simular
+experimentos binominais maiores,
+
+00:00:13.194 --> 00:00:14.527
+como lançamentos de moeda.
+
+00:00:14.577 --> 00:00:18.462
+Esta é a função
+"random.binomial",
+
+00:00:18.512 --> 00:00:21.195
+que simula
+um número N de eventos,
+
+00:00:21.245 --> 00:00:24.527
+cada um com uma probabilidade P
+de sucesso.
+
+00:00:24.577 --> 00:00:29.111
+"Sucesso" representa um
+dos dois resultados possíveis.
+
+00:00:29.161 --> 00:00:32.090
+Qualquer resultado
+pode corresponder a "sucesso".
+
+00:00:32.140 --> 00:00:35.933
+Por exemplo: se o evento
+for lançar uma moeda 10 vezes,
+
+00:00:35.983 --> 00:00:38.612
+podemos dizer que sucesso
+será o número de caras.
+
+00:00:38.662 --> 00:00:41.181
+"N" será o número
+de lançamentos.
+
+00:00:41.231 --> 00:00:42.859
+Neste caso, 10.
+
+00:00:42.909 --> 00:00:46.086
+E "P" será a probabilidade
+de dar cara em cada lançamento,
+
+00:00:46.136 --> 00:00:47.997
+que é 0,5.
+
+00:00:48.047 --> 00:00:49.210
+Para testar,
+
+00:00:49.260 --> 00:00:53.861
+vamos dizer que N é igual a 10
+e P é igual a 0,5.
+
+00:00:53.911 --> 00:00:58.834
+Veja que só um inteiro
+é retornado, em vez de 10.
+
+00:00:58.884 --> 00:01:02.513
+Como a função
+é para resultados binominais,
+
+00:01:02.563 --> 00:01:06.927
+ela simplifica a saída,
+retornando só os sucessos.
+
+00:01:06.977 --> 00:01:10.620
+Neste caso, 4.
+Esse é o número de caras.
+
+00:01:10.670 --> 00:01:13.575
+Podemos executar a simulação
+muitas vezes.
+
+00:01:13.625 --> 00:01:15.935
+Vamos executar 20 vezes.
+
+00:01:15.985 --> 00:01:19.374
+Cada número do array
+representa o número de caras
+
+00:01:19.424 --> 00:01:23.107
+resultante de cada teste
+de 10 lançamentos.
+
+00:01:23.157 --> 00:01:26.312
+Este é o número de caras
+nos primeiros 10 lançamentos.
+
+00:01:26.362 --> 00:01:29.236
+Este é o número
+nos 10 lançamentos subsequentes,
+
+00:01:29.286 --> 00:01:34.014
+e assim por diante,
+em 20 séries de lançamentos.
+
+00:01:34.064 --> 00:01:36.924
+Vamos encontrar a média de caras
+desses testes.
+
+00:01:36.974 --> 00:01:38.502
+Como é uma moeda não viciada,
+
+00:01:38.552 --> 00:01:41.128
+espera-se que a média
+seja próxima a 5.
+
+00:01:41.178 --> 00:01:43.851
+Veja que o número
+está um pouco distante,
+
+00:01:43.901 --> 00:01:46.536
+provavelmente
+porque só fizemos 20 testes.
+
+00:01:46.586 --> 00:01:49.841
+Vejamos o que acontece
+aumentando o número.
+
+00:01:49.891 --> 00:01:51.497
+Como são eventos aleatórios,
+
+00:01:51.547 --> 00:01:53.572
+não é garantido
+que toda simulação
+
+00:01:53.622 --> 00:01:56.335
+terá a média de 5 caras.
+
+00:01:56.385 --> 00:01:59.097
+Contudo, conforme aumentamos
+o número de testes,
+
+00:01:59.147 --> 00:02:03.315
+a simulação reflete mais fielmente
+a neutralidade da moeda.
+
+00:02:03.365 --> 00:02:07.139
+Com 10 mil testes, a média
+é muito mais próxima a 5 caras.
+
+00:02:07.189 --> 00:02:08.614
+Vamos usar "matplotlib"
+
+00:02:08.664 --> 00:02:11.944
+para fazer um histograma
+dos resultados da simulação.
+
+00:02:12.885 --> 00:02:17.253
+Como esperado, a distribuição
+se centraliza em 5 caras.
+

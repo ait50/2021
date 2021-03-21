@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Acabo de programar y corrí el experimento
+
+00:00:03.000 --> 00:00:05.000
+Y la respuesta fue 10
+
+00:00:05.000 --> 00:00:11.000
+La razón por que la respuesta es 10 es por que el número de combinaciones para colocar 10 positivos
+
+00:00:11.000 --> 00:00:16.000
+Y 10 negativos en nuestra lista de 20 es que es mayor que cualquier otro número
+
+00:00:16.000 --> 09:59:59.000
+El término de aquí se maximiza cuando k es exactamente la mitad de N -- entonces 10.
+

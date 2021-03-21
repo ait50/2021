@@ -1,0 +1,363 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Central Limit Theorem
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Normal Distribution Theory
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Maximum Probability.html">
+       01. Maximum Probability
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Shape.html">
+       02. Shape
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Better Formula.html">
+       03. Better Formula
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Quadratics.html">
+       04. Quadratics
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quadratics 2.html">
+       05. Quadratics 2
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quadratics 3.html">
+       06. Quadratics 3
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Quadratics 4.html">
+       07. Quadratics 4
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Maximum.html">
+       08. Maximum
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Maximum Value.html">
+       09. Maximum Value
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Minimum.html">
+       10. Minimum
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Minimum Value.html">
+       11. Minimum Value
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Normalizer.html">
+       12. Normalizer
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Formula Summary.html">
+       13. Formula Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Central Limit Theorem.html">
+       14. Central Limit Theorem
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Summary.html">
+       15. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          14. Central Limit Theorem
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Central Limit Theorem
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Question:
+          </h4>
+          <video controls="">
+           <source src="14. Central Limit Theorem-9I8ysrRlmbA.mp4" type="video/mp4"/>
+           <track default="false" kind="subtitles" label="ja" src="14. Central Limit Theorem-9I8ysrRlmbA.ja.vtt" srclang="ja"/>
+           <track default="true" kind="subtitles" label="en" src="14. Central Limit Theorem-9I8ysrRlmbA.en.vtt" srclang="en"/>
+           <track default="false" kind="subtitles" label="pt-BR" src="14. Central Limit Theorem-9I8ysrRlmbA.pt-BR.vtt" srclang="pt-BR"/>
+           <track default="false" kind="subtitles" label="es-MX" src="14. Central Limit Theorem-9I8ysrRlmbA.es-MX.vtt" srclang="es-MX"/>
+           <track default="false" kind="subtitles" label="ar" src="14. Central Limit Theorem-9I8ysrRlmbA.ar.vtt" srclang="ar"/>
+           <track default="false" kind="subtitles" label="zh-CN" src="14. Central Limit Theorem-9I8ysrRlmbA.zh-CN.vtt" srclang="zh-CN"/>
+          </video>
+         </div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div style="display: block;">
+           <div style="position: relative;">
+            <img alt="" src="img/48684686.gif" style="width: 100%; max-height: 100%"/>
+            <div style="
+    position: absolute; top: 47.2972972972973%; left: 28.773072747014115%; width: 0%; height: 0%;
+  ">
+             <input aria-label="Empty" id="0" name="group1" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 60.810810810810814%; left: 28.338762214983714%; width: 0%; height: 0%;
+  ">
+             <input aria-label="Empty" id="1" name="group1" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 74.5173745173745%; left: 27.68729641693811%; width: 0%; height: 0%;
+  ">
+             <input aria-label="Empty" id="2" name="group1" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 47.2972972972973%; left: 44.842562432138976%; width: 0%; height: 0%;
+  ">
+             <input aria-label="Empty" id="3" name="group2" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 61.196911196911195%; left: 44.299674267100976%; width: 0%; height: 0%;
+  ">
+             <input aria-label="Empty" id="4" name="group2" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 74.9034749034749%; left: 44.08251900108577%; width: 0%; height: 0%;
+  ">
+             <input aria-label="Empty" id="5" name="group2" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 46.13899613899614%; left: 75.1357220412595%; width: 0%; height: 0%;
+  ">
+             <input aria-label="Empty" id="6" name="group3" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 59.45945945945946%; left: 73.9413680781759%; width: 0%; height: 0%;
+  ">
+             <input aria-label="Empty" id="7" name="group3" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 73.74517374517374%; left: 72.9641693811075%; width: 0%; height: 0%;
+  ">
+             <input aria-label="Empty" id="8" name="group3" type="radio"/>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <details>
+           <summary>
+            <strong>
+             Solution:
+            </strong>
+           </summary>
+           <div>
+            <video controls="">
+             <source src="14. Central Limit Theorem-36KLIHioAvA.mp4" type="video/mp4"/>
+             <track default="false" kind="subtitles" label="pt-PT" src="14. Central Limit Theorem-36KLIHioAvA.pt-PT.vtt" srclang="pt-PT"/>
+             <track default="false" kind="subtitles" label="pl" src="14. Central Limit Theorem-36KLIHioAvA.pl.vtt" srclang="pl"/>
+             <track default="true" kind="subtitles" label="en" src="14. Central Limit Theorem-36KLIHioAvA.en.vtt" srclang="en"/>
+             <track default="false" kind="subtitles" label="pt-BR" src="14. Central Limit Theorem-36KLIHioAvA.pt-BR.vtt" srclang="pt-BR"/>
+             <track default="false" kind="subtitles" label="ja" src="14. Central Limit Theorem-36KLIHioAvA.ja.vtt" srclang="ja"/>
+             <track default="false" kind="subtitles" label="es-ES" src="14. Central Limit Theorem-36KLIHioAvA.es-ES.vtt" srclang="es-ES"/>
+             <track default="false" kind="subtitles" label="zh-CN" src="14. Central Limit Theorem-36KLIHioAvA.zh-CN.vtt" srclang="zh-CN"/>
+             <track default="false" kind="subtitles" label="ar" src="14. Central Limit Theorem-36KLIHioAvA.ar.vtt" srclang="ar"/>
+            </video>
+           </div>
+          </details>
+         </div>
+        </div>
+        <div class="jumbotron" style="margin-top: 50px; margin-bottom: 50px;">
+         <h3>
+          INSTRUCTOR NOTE:
+         </h3>
+         <p>
+          To clarify:
+          <br/>
+          <br>
+           For 1 coin flip: What is the formula for figuring out the probability of the flip being heads?
+           <br/>
+           <br>
+            For many coin flips: What is the formula for figuring out the probability of a given number of flips being heads?
+            <br/>
+            <br>
+             For infinitely many flips: What is the formula for figuring out the probability of a given proportion of flips being heads?
+             <br/>
+            </br>
+           </br>
+          </br>
+         </p>
+         <p>
+          For formula 2: sigma^2=p(1-p)/N
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="15. Summary.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('14. Central Limit Theorem')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

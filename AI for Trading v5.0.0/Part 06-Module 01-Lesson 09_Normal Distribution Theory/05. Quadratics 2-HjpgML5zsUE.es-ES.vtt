@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+La siguiente cosa que voy a hacer es dividirlo por σ²
+
+00:00:03.000 --> 00:00:07.000
+Sin decirte por que estoy haciendo esto, quiero que veas cual es el efecto
+
+00:00:07.000 --> 00:00:12.000
+Supón σ² = 4, so significa que tiene una varianza de 4 y una desviación estándar de 2
+
+00:00:12.000 --> 00:00:18.000
+Te he dado una función cuadrática cuando no se divide por σ²
+
+00:00:18.000 --> 00:00:20.000
+Es lo mismo que decir σ² = 1
+
+00:00:20.000 --> 00:00:24.000
+Lo que quiero saber es si nueva versión donde σ² = 4
+
+00:00:24.000 --> 00:00:28.000
+Hace este cuadrático más ancho o si lo hace más estrecho
+
+00:00:28.000 --> 00:00:31.000
+Asumiendo que es nuestra nueva función f(x)
+
+00:00:31.000 --> 09:59:59.000
+Entonces elige uno de estas dos o tal vez se mantenga igual. Entonces escoge la tercera.
+

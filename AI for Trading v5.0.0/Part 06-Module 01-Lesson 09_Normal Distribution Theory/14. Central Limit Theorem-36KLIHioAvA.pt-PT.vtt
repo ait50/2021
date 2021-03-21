@@ -1,0 +1,35 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.470 --> 00:00:02.590
+Como já devem ter adivinhado, 
+esta é a probabilidade
+
+00:00:02.590 --> 00:00:05.010
+para um único lançamento da moeda. 
+Esta é a fórmula que
+
+00:00:05.010 --> 00:00:08.340
+podemos usar para várias moedas,
+e à medida que
+
+00:00:08.340 --> 00:00:10.720
+chegamos a números muito grandes, 
+a fórmula de Gauss é geralmente
+
+00:00:10.720 --> 00:00:14.330
+uma boa aproximação para o resultado 
+de vários lançamentos de moedas.
+
+00:00:14.330 --> 00:00:16.370
+Tenho de avisar, se 
+o lançamento é entre zero
+
+00:00:16.370 --> 00:00:17.710
+e um, então a média é sempre
+
+00:00:17.710 --> 00:00:20.960
+positiva. A fórmula pode assumir valores 
+negativos, mas isto é uma aproximação.
+

@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.099 --> 00:00:01.999
+O que você vai ver agora
+
+00:00:02.049 --> 00:00:04.594
+é uma das partes
+mais transformadoras
+
+00:00:04.644 --> 00:00:06.456
+da estatística moderna.
+
+00:00:06.506 --> 00:00:09.300
+Inclui coisas que você
+nunca deve ter visto antes.
+
+00:00:09.350 --> 00:00:10.556
+Começamos...
+
+00:00:11.319 --> 00:00:14.384
+com a distribuição binominal,
+que você já conhece
+
+00:00:14.434 --> 00:00:16.492
+das aulas anteriores,
+
+00:00:16.542 --> 00:00:19.853
+e depois passamos
+para o teorema central do limite,
+
+00:00:19.903 --> 00:00:21.038
+que significa basicamente
+
+00:00:21.088 --> 00:00:24.029
+alavancar o número de lançamentos
+ao infinito.
+
+00:00:24.079 --> 00:00:27.188
+Depois passamos
+à distribuição normal,
+
+00:00:27.238 --> 00:00:30.579
+base de grande parte
+da estatística.
+
+00:00:30.629 --> 00:00:32.721
+Todos os testes
+e intervalos de confiança
+
+00:00:32.771 --> 00:00:34.651
+são definidos
+via distribuição normal.
+
+00:00:34.701 --> 00:00:36.446
+E isso importa porque...
+
+00:00:36.496 --> 00:00:39.408
+nossos experimentos com moedas
+envolviam um ou dois lançamentos,
+
+00:00:39.458 --> 00:00:41.188
+mas, em experimentos
+estatísticos,
+
+00:00:41.238 --> 00:00:44.708
+é comum termos mil pacientes,
+mil pontos amostrais.
+
+00:00:44.758 --> 00:00:46.646
+E começar
+a distribuição normal
+
+00:00:46.696 --> 00:00:49.523
+como aproximação
+da distribuição binominal
+
+00:00:49.573 --> 00:00:51.099
+é muito mais prático.
+
+00:00:51.149 --> 00:00:52.541
+Então mãos à obra.
+
+00:00:54.937 --> 00:00:59.212
+Vamos começar com nossa fórmula
+já bem estabelecida
+
+00:00:59.262 --> 00:01:00.697
+de distribuições binominais,
+
+00:01:00.747 --> 00:01:02.620
+em que "N"
+é o número de lançamentos,
+
+00:01:02.670 --> 00:01:05.241
+"K" é a frequência de caras
+
+00:01:05.291 --> 00:01:08.955
+e "P" é a probabilidade
+de dar cara,
+
+00:01:09.005 --> 00:01:10.381
+que geralmente é 0,5.
+
+00:01:10.431 --> 00:01:13.819
+Faremos um gráfico
+para representar essa função.
+
+00:01:13.869 --> 00:01:16.626
+"K" vai de 0 a 20.
+
+00:01:16.676 --> 00:01:20.950
+Em vez de pedir que você calcule
+para todo valor de "K",
+
+00:01:21.000 --> 00:01:22.428
+farei uma pergunta diferente.
+
+00:01:22.478 --> 00:01:24.366
+No caso
+de uma moeda não viciada,
+
+00:01:24.416 --> 00:01:28.593
+qual valor você acha
+que maximiza a expressão?
+
+00:01:28.643 --> 00:01:31.925
+Que valor de "K"
+maximiza nossa expressão?
+
+00:01:31.975 --> 00:01:35.020
+Sei que você não tem
+como saber,
+
+00:01:35.070 --> 00:01:36.325
+mas, se pensar bem,
+
+00:01:36.375 --> 00:01:38.807
+você chegará
+na resposta correta.
+

@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+Voy a definir por ti una distribución normal con una media específica
+
+00:00:04.000 --> 00:00:06.000
+Llamada comúnmente µ, letra griega µ
+
+00:00:06.000 --> 00:00:09.000
+Y la varianza llamada σ²
+
+00:00:09.000 --> 00:00:12.000
+Sabemos la varianza de la expresión cuadrática
+
+00:00:12.000 --> 00:00:17.000
+De forma natural usamos µ y σ². Vamos haciendo esto
+
+00:00:17.000 --> 00:00:23.000
+El primer elemento para cualquier salida x que escribimos es la diferencia cuadrática
+
+00:00:23.000 --> 00:00:26.000
+Entre esta salida x y µ
+
+00:00:26.000 --> 00:00:29.000
+Este es un efecto de una función en x. Que se observa como esto
+
+00:00:29.000 --> 00:00:33.000
+Hay cuatro posibles hipótesis de como la función se mira
+
+00:00:33.000 --> 00:00:36.000
+En cada caso es µ el de la derecha en algún lado
+
+00:00:36.000 --> 00:00:40.000
+El eje horizontal es x y estamos graficando f(x)
+
+00:00:40.000 --> 00:00:42.000
+El primero que doy es una función triangular
+
+00:00:42.000 --> 00:00:44.000
+La segunda es una función cuadrática
+
+00:00:44.000 --> 00:00:46.000
+La tercera es una función cuadrática negativa
+
+00:00:46.000 --> 00:00:49.000
+Y la cuarta es una función cuadrática que no toca µ
+
+00:00:49.000 --> 09:59:59.000
+Entonces ¿cuál es tu opinión que mejor describe a esta fórmula de aquí?
+

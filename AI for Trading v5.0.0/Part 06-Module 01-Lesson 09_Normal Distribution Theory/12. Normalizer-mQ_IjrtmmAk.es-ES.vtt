@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+Tenemos una función f que asume el valor de 1 cuando x = µ
+
+00:00:04.000 --> 00:00:08.000
+Que va a cero cuando x va a ±∞
+
+00:00:08.000 --> 00:00:11.000
+Sucede que esto se ve como una curva de la campana
+
+00:00:11.000 --> 00:00:14.000
+De hecho de que se observe como una curva de campana, no es enteramente obvio
+
+00:00:14.000 --> 00:00:16.000
+Pero toma mi palabra como lo es
+
+00:00:16.000 --> 00:00:19.000
+Esto -- lo que consideramos como una fórmula relativamente simple --
+
+00:00:19.000 --> 00:00:24.000
+Describe el límite de hacer infinitamente muchos giros de moneda
+
+00:00:24.000 --> 00:00:30.000
+De hecho, esto describe el límite calculado de la media sobre un conjunto de experimentos
+
+00:00:30.000 --> 00:00:32.000
+Este es un resultado muy poderoso
+
+00:00:32.000 --> 00:00:38.000
+No importa que hagas, cuando llevas n a un número largo, btienes una curva de la campana como esta
+
+00:00:38.000 --> 00:00:42.000
+Hay una falla aquí y te voy a decir sobre esta falla sin ir mucho a los detalles
+
+00:00:42.000 --> 00:00:46.000
+Esto es porque bajo la curva no siempre suma igual a 1
+
+00:00:46.000 --> 00:00:51.000
+De hecho, sin probarlo, suma a √2πσ²
+
+00:00:51.000 --> 00:00:55.000
+La razón de por que esto importa, es enterrado profundamente en la teoría de probabilidad
+
+00:00:55.000 --> 00:01:00.000
+Pero resulta ser que queremos que estas áreas sumen 1 por mucho que queramos
+
+00:01:00.000 --> 00:01:04.000
+Un giro de moneda y su complemento que sume 1
+
+00:01:04.000 --> 00:01:13.000
+La verdadera distribución normal está normalizada, justo por la inversa de esta cosa de aquí -- 1/√2πσ²
+
+00:01:13.000 --> 00:01:21.000
+Entonces esta es la distribución normal para cualquier valor de x indexado por el parámetro de µ y σ²
+
+00:01:21.000 --> 00:01:24.000
+Entonces esta es una pieza muy profunda de matemáticas
+
+00:01:24.000 --> 09:59:59.000
+Ahora vamos a aplicarlo un poco para ti, para practicar como la distribución normal se observa en la vida real.
+

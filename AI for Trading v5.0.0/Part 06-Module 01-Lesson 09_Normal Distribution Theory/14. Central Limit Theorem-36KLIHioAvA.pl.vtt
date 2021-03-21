@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pl
+
+00:00:00.470 --> 00:00:02.590
+Jestem pewien, iż zgadłeś, że jest to prawdopodobieństwo
+
+00:00:02.590 --> 00:00:05.007
+pojedynczego rzutu monetą. To jest wzór,
+
+00:00:05.010 --> 00:00:08.340
+który możemy użyć dla wielu rzutów monetą.
+
+00:00:08.507 --> 00:00:10.720
+Gdy zbliżamy się do bardzo dużych liczb,
+rozkład Gaussa jest
+
+00:00:10.720 --> 00:00:14.330
+zwykle dobrym oszacowaniem wyniku dla
+wielu rzutów.
+
+00:00:14.330 --> 00:00:16.370
+Muszę Cię ostrzec, jeśli wynik rzutu jest
+
+00:00:16.370 --> 00:00:17.710
+0 lub 1, średnia zawsze jest
+
+00:00:17.710 --> 00:00:20.960
+dodatnia. Ta funkcja może osiągnąć ujemne
+wartości, ale jest to przybliżenie.
+

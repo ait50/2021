@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.470 --> 00:00:02.590
+Estoy seguro que tu ya has adivinado que esta es la probabilidad
+
+00:00:02.590 --> 00:00:05.010
+de cuando lanzas una moneda. Esta es la formula que nosotros
+
+00:00:05.010 --> 00:00:07.990
+podemos usar para el lanzamiento de multiples monedas
+
+00:00:07.990 --> 00:00:10.720
+y como resulta en números muy grandes, la gaussiana es frequentemente una
+
+00:00:10.720 --> 00:00:14.160
+buena aproximación para el resultado de muchos lanzamientos de moneda.
+
+00:00:14.160 --> 00:00:16.370
+Te debo advertir, si la probabilidad es de cero a uno
+
+00:00:16.370 --> 00:00:17.710
+entonces el promedio sera siempre positivo
+
+00:00:17.710 --> 00:00:20.960
+Esto puede asumir valores negativos, pero es una aproximación.
+
