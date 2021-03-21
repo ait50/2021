@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.889
+In Kalman filters, we iterate measurement and motion
+
+00:00:04.889 --> 00:00:09.480
+is often called the measurement update and it's often called prediction.
+
+00:00:09.480 --> 00:00:12.150
+And the update will use Bayes rule,
+
+00:00:12.150 --> 00:00:16.850
+which is nothing else but a product or a multiplication.
+
+00:00:16.850 --> 00:00:27.400
+In this update, we use total probability which is a convolution or simply an addition.
+
+00:00:27.399 --> 00:00:35.460
+Let's talk first about the measurement cycle and then the prediction cycle using
+
+00:00:35.460 --> 00:00:43.799
+our great Gaussians for implementing those steps.
+
+00:00:43.799 --> 00:00:46.259
+Suppose you're localizing another vehicle
+
+00:00:46.259 --> 00:00:49.460
+and you have a prior distribution that looks as follows;
+
+00:00:49.460 --> 00:00:54.990
+it is a very wide Gaussian with the mean over here.
+
+00:00:54.990 --> 00:00:57.990
+And now say we get a measurement that tells us
+
+00:00:57.990 --> 00:01:01.350
+something about the localization vehicle and it comes in like
+
+00:01:01.350 --> 00:01:04.320
+this: it has a mean over here
+
+00:01:04.319 --> 00:01:10.704
+called mu and this example has a much smaller covariance for the measurement.
+
+00:01:10.704 --> 00:01:14.500
+This is an example in our prior we were fairly uncertain about
+
+00:01:14.500 --> 00:01:20.109
+location but the measurement told us quite a bit as to where the vehicle is.
+
+00:01:20.109 --> 00:01:24.040
+Here's a quiz for you with the new mean of
+
+00:01:24.040 --> 00:01:31.490
+the subsequent Gaussian B over here,
+
+00:01:31.489 --> 00:01:35.879
+over here, or over here.
+

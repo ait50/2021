@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.754
+So, I'd like to take my students onto a little journey to Stanford
+
+00:00:04.754 --> 00:00:10.495
+and show them our self-driving car that uses sensors to sense the environment.
+
+00:00:10.494 --> 00:00:15.109
+So let me dive into the class very much right now.
+
+00:00:15.109 --> 00:00:16.914
+Through our last class,
+
+00:00:16.914 --> 00:00:18.855
+we talked about localization.
+
+00:00:18.855 --> 00:00:22.230
+We had a robot that lived in an environment and that it could
+
+00:00:22.230 --> 00:00:26.594
+use its sensors to determine where in the environment it is.
+
+00:00:26.594 --> 00:00:34.515
+So, here you can see the Google self-driving car using a roadmap localizing itself.
+
+00:00:34.515 --> 00:00:38.564
+But in addition what's shown here in red are measurements of other vehicles.
+
+00:00:38.564 --> 00:00:44.420
+The car uses lasers and radars to track other vehicles.
+
+00:00:44.420 --> 00:00:47.200
+Today, we're going to talk about how to find other cars.
+
+00:00:47.200 --> 00:00:52.780
+The reason why we'd like to find other cars is because we wouldn't want to run into them.
+
+00:00:52.780 --> 00:00:56.020
+So, we have to understand how to interpret sensor data to make
+
+00:00:56.020 --> 00:01:00.240
+assessments not just where these other cars are as in the localization case,
+
+00:01:00.240 --> 00:01:03.310
+but also how fast they're moving,
+
+00:01:03.310 --> 00:01:07.615
+so that we can drive in a way that avoids collisions within the future.
+
+00:01:07.614 --> 00:01:09.549
+That's important not just for cars,
+
+00:01:09.549 --> 00:01:15.719
+it matters for pedestrians and bicyclists and understanding where the cars
+
+00:01:15.719 --> 00:01:18.750
+are and making prediction where they're going to move is absolutely
+
+00:01:18.750 --> 00:01:22.840
+essential for safe driving in the Google car potrait.
+
+00:01:22.840 --> 00:01:25.799
+So in this class, we'll talk about tracking.
+
+00:01:25.799 --> 00:01:29.000
+The technique I'd like to teach you is called the Kalman Filter.
+
+00:01:29.000 --> 00:01:34.605
+This is an insanely popular technique for estimating the state of a system.
+
+00:01:34.605 --> 00:01:38.070
+It's actually very similar to the probabilistic localization method we
+
+00:01:38.069 --> 00:01:41.889
+talked in the previous class, Monte Carlo localization.
+
+00:01:41.890 --> 00:01:45.310
+The primary differences are that Kalman Filters
+
+00:01:45.310 --> 00:01:48.579
+estimate a continuous state whereas in Monte Carlo localization,
+
+00:01:48.579 --> 00:01:52.109
+we are forced to chop the word in the discrete places.
+
+00:01:52.109 --> 00:01:55.435
+As a result, the Kalman Filter happens to give us
+
+00:01:55.435 --> 00:02:00.109
+a uni-modal distribution and I'll tell you in a second what that means,
+
+00:02:00.109 --> 00:02:04.569
+whereas Monte Carlo was fine with multi-modal distributions.
+
+00:02:04.569 --> 00:02:06.729
+Both of these techniques are applicable to
+
+00:02:06.730 --> 00:02:09.685
+robot localization and tracking other vehicles.
+
+00:02:09.685 --> 00:02:11.610
+Consider the car down here.
+
+00:02:11.610 --> 00:02:14.045
+Let's assume it seizes measurement,
+
+00:02:14.044 --> 00:02:18.169
+an object here, here,
+
+00:02:18.169 --> 00:02:23.604
+here, and here for the time is t equals zero,
+
+00:02:23.604 --> 00:02:25.644
+t equals one, two and three.
+
+00:02:25.645 --> 00:02:30.710
+Where would you assume the object would be a t equals four?
+

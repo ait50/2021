@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:01.000 --> 00:00:04.000
+Bienvenidos a mi segunda clase de filtros 'Kalman'.
+
+00:00:04.000 --> 00:00:08.000
+Quiero llevarlos a un pequeña excurción por donde todo comenzó - la Universidad de Stanford.
+
+00:00:08.000 --> 00:00:11.000
+Detrás de mí está Vale, el Centro de Investigación de Stanford.
+
+00:00:11.000 --> 00:00:14.000
+Entremos.
+
+00:00:14.000 --> 00:00:17.000
+Este es Junior, el automóvil autonomo más reciente de Stanford.
+
+00:00:17.000 --> 00:00:20.000
+Es el descendiente de Stanley, a quien usted lo puede encontrar
+
+00:00:20.000 --> 00:00:23.000
+en el Museo Nacional de Historia Americana en Washington, D.C.
+
+00:00:23.000 --> 00:00:27.000
+Déjame que te cuente algo sobre el equipo que está en este coche que hace que sea autónomo.
+
+00:00:27.000 --> 00:00:30.000
+Esta cosa que está girando aquí es un telémetro láser.
+
+00:00:30.000 --> 00:00:34.000
+que toma escaneos de distancia 10 veces por segundo, aproximadamente un millón de puntos de datos.
+
+00:00:34.000 --> 00:00:39.000
+Va a ser realmente importante para la clase de filtro-Kalman que les estoy enseñando hoy.
+
+00:00:39.000 --> 00:00:42.000
+Su función principal es detectar otros coches para que no choquemos con ellos.
+
+00:00:42.000 --> 00:00:46.000
+También hay una cámara en la parte superior. Hay un sistema de cámaras estéreo por aquí.
+
+00:00:46.000 --> 00:00:50.000
+En la parte trasera hay antenas para un GPS - sistema de ubicación global -
+
+00:00:50.000 --> 00:00:53.000
+que nos permite estimar donde está el vehículo en el mundo.
+
+00:00:53.000 --> 00:00:57.000
+Este es un sistema complementario a la clase de localización que las acabo de enseñar.
+
+00:00:57.000 --> 00:01:00.000
+Esta es la información que viene del láser.
+
+00:01:00.000 --> 00:01:03.000
+Este es el coche aparcado en el garaje en este mismo momento. Vemos la pared de atras.
+
+00:01:03.000 --> 00:01:07.000
+Estas son todas medidas de distancia que indican cuan lejos están las cosas,
+
+00:01:07.000 --> 09:59:59.000
+y son esenciales como entrada(datos) para el filtro-Kalman sobre el cual vamos a aprender hoy.
+

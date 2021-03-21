@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.194
+You remember our Markov model,
+
+00:00:03.194 --> 00:00:06.334
+where the word was divided into discrete grids,
+
+00:00:06.334 --> 00:00:09.195
+and we assigned to each grid to the probability.
+
+00:00:09.195 --> 00:00:14.285
+Such a representation of probability of a space is called a histogram,
+
+00:00:14.285 --> 00:00:19.269
+and that it divides the continuous space into discrete,
+
+00:00:19.269 --> 00:00:21.234
+into finally many grid cells,
+
+00:00:21.234 --> 00:00:23.730
+and approximates the posterior distribution
+
+00:00:23.730 --> 00:00:26.885
+by a histogram over the original distribution,
+
+00:00:26.885 --> 00:00:31.140
+and the histogram is a mere approximation to this continuous distribution.
+
+00:00:31.140 --> 00:00:36.115
+In Kalman Filters, the distribution is given by what's called a Gaussian.
+
+00:00:36.115 --> 00:00:39.329
+Gaussian is a continuous function over the space of
+
+00:00:39.329 --> 00:00:44.250
+locations and the area underneath sums up to 1.
+
+00:00:44.250 --> 00:00:50.545
+So, use Gaussian again and if you call the space x,
+
+00:00:50.545 --> 00:00:55.380
+then the Gaussian is characterized by two parameters, the mean,
+
+00:00:55.380 --> 00:00:58.719
+often abbreviated with the Greek letter Mu,
+
+00:00:58.719 --> 00:01:01.070
+and the width of the Gaussian,
+
+00:01:01.070 --> 00:01:02.969
+often called the variance.
+
+00:01:02.969 --> 00:01:09.969
+For reasons I don't wanna go into is often written as a quadratic variable, Sigma square.
+
+00:01:09.969 --> 00:01:12.840
+So, any Gaussian in 1D,
+
+00:01:12.840 --> 00:01:15.870
+which means the parameter space over here is one-dimensional,
+
+00:01:15.870 --> 00:01:19.780
+is characterized by Mu and Sigma square.
+
+00:01:19.780 --> 00:01:23.640
+So, rather than estimating the entire distribution as a histogram,
+
+00:01:23.640 --> 00:01:28.105
+our task in common phases is to maintain a Mu and a Sigma square
+
+00:01:28.105 --> 00:01:33.655
+as our best estimate of the location of the object we are trying to find.
+
+00:01:33.655 --> 00:01:38.250
+The exact formula is an exponential of
+
+00:01:38.250 --> 00:01:44.230
+a quadratic function where we take the exponent of this complicated expression over here.
+
+00:01:44.230 --> 00:01:48.320
+The quadratic difference of our query point x,
+
+00:01:48.319 --> 00:01:50.399
+relative to the mean Mu,
+
+00:01:50.400 --> 00:01:52.755
+divided by Sigma square,
+
+00:01:52.754 --> 00:01:55.034
+multiply by minus a half.
+
+00:01:55.034 --> 00:01:57.929
+Now if x equals Mu,
+
+00:01:57.930 --> 00:02:00.635
+then the numerator becomes 0,
+
+00:02:00.635 --> 00:02:04.204
+and if x of 0, which is one.
+
+00:02:04.204 --> 00:02:08.284
+It turns out we have to normalize this by a constant,
+
+00:02:08.284 --> 00:02:11.625
+1 over the square root of 2 Pi Sigma square.
+
+00:02:11.625 --> 00:02:14.175
+But for everything we talk about today,
+
+00:02:14.175 --> 00:02:16.560
+this constant won't matter, so we can ignore it.
+
+00:02:16.560 --> 00:02:20.814
+What matters is we have an exponential of a quadratic function over here.
+
+00:02:20.814 --> 00:02:24.085
+So, let me draw you a couple of functions
+
+00:02:24.085 --> 00:02:28.599
+and you tell me which one you believe are Gaussian.
+

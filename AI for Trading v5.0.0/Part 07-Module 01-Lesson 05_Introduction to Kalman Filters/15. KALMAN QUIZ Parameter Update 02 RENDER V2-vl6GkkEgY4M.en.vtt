@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.209
+The answer for the new mean is just the one in the middle,
+
+00:00:03.209 --> 00:00:05.794
+and the reason is both weights over here are equivalent.
+
+00:00:05.794 --> 00:00:10.419
+So, we can take the mean between MU and NU, which is 11.
+
+00:00:10.419 --> 00:00:14.849
+Then the sigma square is two.
+
+00:00:14.849 --> 00:00:18.280
+If you take one over four plus one over four,
+
+00:00:18.280 --> 00:00:20.755
+then we get one over two.
+
+00:00:20.754 --> 00:00:24.649
+So, one over one over two equals two,
+
+00:00:24.649 --> 00:00:30.279
+which means the new variance term is half the size of the previous variance terms.
+

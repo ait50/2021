@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:01.000 --> 00:00:04.000
+Benvindo à minha segunda aula sobre filtros de Kalman.
+
+00:00:04.000 --> 00:00:08.000
+Vou levar-te a dar uma voltinha no sítio onde tudo começou -- a Universidade de Stanford.
+
+00:00:08.000 --> 00:00:11.000
+Atrás de mim está Vale, o Centro de Investigação de Stanford.
+
+00:00:11.000 --> 00:00:14.000
+Vamos entrar.
+
+00:00:14.000 --> 00:00:17.000
+Este é o Junior, o mais recente carro sem condutor de Stanford.
+
+00:00:17.000 --> 00:00:20.000
+É o filho do Stanley, que podes encontrar
+
+00:00:20.000 --> 00:00:23.000
+no Museu Nacional de História Americana, em Washington D.C.
+
+00:00:23.000 --> 00:00:27.000
+Deixa-me informar-te sobre o equipamento presente neste carro que o torna autónomo.
+
+00:00:27.000 --> 00:00:30.000
+Esta coisa rotativa no tejadilho é um medidor de distâncias com laser
+
+00:00:30.000 --> 00:00:34.000
+que faz medidas 10 vezes por segundo, fornecendo cerca de 1 milhão de pontos.
+
+00:00:34.000 --> 00:00:39.000
+Será muito importante para a aula de filtros de Kalman que te vou ensinar hoje.
+
+00:00:39.000 --> 00:00:42.000
+A sua tarefa mais importante é topar os outros carros, para evitar chocar com eles.
+
+00:00:42.000 --> 00:00:46.000
+Também há uma câmara no tejadilho. E uma câmara estereo aqui.
+
+00:00:46.000 --> 00:00:50.000
+Na traseira há antenas de GPS -- Sistema de Posicionamento Global --
+
+00:00:50.000 --> 00:00:53.000
+que nos permitem estimar a posição do carro na superfície terrestre.
+
+00:00:53.000 --> 00:00:57.000
+Este sistema é suplementar relativamente às técnicas de localização que te ensinei na aula.
+
+00:00:57.000 --> 00:01:00.000
+Estes são os dados obtidos com o laser.
+
+00:01:00.000 --> 00:01:03.000
+Isto é o carro parqueado na garagem, neste instante. Vemos aqui a parede traseira.
+
+00:01:03.000 --> 00:01:07.000
+Isto são medidas de distâncias que te dizem quão longe estão os objectos,
+
+00:01:07.000 --> 09:59:59.000
+e elas são entradas essenciais no filtro de Kalman que vamos estudar hoje.
+

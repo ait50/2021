@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.500 --> 00:00:04.470
+Now, here's a question that's really, really hard.
+
+00:00:04.469 --> 00:00:07.214
+When we graph the new Gaussian.
+
+00:00:07.214 --> 00:00:10.539
+Graph one is very wide.
+
+00:00:10.730 --> 00:00:13.460
+It's very peaky.
+
+00:00:13.460 --> 00:00:18.730
+So if I were to measure where the peak of the new Gaussian is,
+
+00:00:18.730 --> 00:00:21.504
+this will be a very narrow and skinny Gaussian.
+
+00:00:21.504 --> 00:00:25.035
+This would be one that was width is in between the two Gaussian,
+
+00:00:25.035 --> 00:00:29.004
+and this is one is even wider than the two original Gaussians.
+
+00:00:29.004 --> 00:00:33.189
+Which one do you believe is the correct posterior after multiplying these two Gaussians?
+
+00:00:33.189 --> 00:00:35.314
+This is an insanely hard question,
+
+00:00:35.314 --> 00:00:37.599
+I'd like you to take your chances here,
+
+00:00:37.600 --> 00:00:40.670
+and explain me the answer in just a second.
+

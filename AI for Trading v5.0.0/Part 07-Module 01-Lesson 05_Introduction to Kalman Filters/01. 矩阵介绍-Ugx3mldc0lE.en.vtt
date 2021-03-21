@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.485
+In this next unit,
+
+00:00:01.485 --> 00:00:03.690
+I really want to take you to a world of
+
+00:00:03.690 --> 00:00:08.005
+amazing tools that we use to build self-driving cars.
+
+00:00:08.005 --> 00:00:09.998
+And these tools are called matrices,
+
+00:00:09.997 --> 00:00:12.285
+linear algebra or vectors.
+
+00:00:12.285 --> 00:00:14.820
+And they might look a bit scary at first,
+
+00:00:14.820 --> 00:00:16.754
+but they're very, very intuitive.
+
+00:00:16.754 --> 00:00:20.250
+In my experience, many students struggle with those tools.
+
+00:00:20.250 --> 00:00:24.699
+So my team has put together hopefully a very comprehensive introduction to those tools.
+
+00:00:24.699 --> 00:00:26.759
+If you're familiar, you're going to breeze through it.
+
+00:00:26.760 --> 00:00:29.715
+But hopefully you'll learn and demystify
+
+00:00:29.714 --> 00:00:34.734
+all these cryptic things that you find in Wikipedia when you google Kalman filters.
+
+00:00:34.734 --> 00:00:38.000
+So join us and learn about matrices.
+

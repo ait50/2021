@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.395
+So, now we understand a lot about the 1D-Kalman Filter.
+
+00:00:03.395 --> 00:00:08.359
+You've programmed one, you understand how to incorporate measurements,
+
+00:00:08.359 --> 00:00:10.099
+you understand how to incorporate motion,
+
+00:00:10.099 --> 00:00:13.379
+and you really implement something that's actually really cool.
+
+00:00:13.380 --> 00:00:17.969
+Which is a full common filter for the 1D case.
+
+00:00:17.969 --> 00:00:20.474
+Now in reality, we often have many Ds,
+
+00:00:20.475 --> 00:00:22.330
+and then things become more involved.
+
+00:00:22.329 --> 00:00:26.399
+So, I'm going to just tell you how things work with an example,
+
+00:00:26.399 --> 00:00:31.279
+and why it's great to estimate in higher-dimensional state spaces.
+
+00:00:31.280 --> 00:00:34.899
+Suppose you have a two-dimensional state space of x and y,
+
+00:00:34.899 --> 00:00:36.390
+like a camera image,
+
+00:00:36.390 --> 00:00:40.490
+or in our case we might have a car that uses
+
+00:00:40.490 --> 00:00:46.075
+a radar to detect the location of a vehicle over time.
+
+00:00:46.075 --> 00:00:50.810
+Then what the 2D-Kalman filter affords to a something really amazing.
+
+00:00:50.810 --> 00:00:52.755
+And here's how it goes.
+
+00:00:52.755 --> 00:00:56.015
+Suppose at time t equals zero,
+
+00:00:56.015 --> 00:01:00.100
+you observe the object of interest to be at this coordinate.
+
+00:01:00.100 --> 00:01:03.704
+This might be another current traffic for the Google self-driving car.
+
+00:01:03.704 --> 00:01:07.295
+One time-step later you see it over here.
+
+00:01:07.295 --> 00:01:10.609
+Another time-step later you see it right over here.
+
+00:01:10.609 --> 00:01:16.885
+Where would you now expect at time t equals three the object to be?
+
+00:01:16.885 --> 00:01:19.960
+Let me give you three different places.
+
+00:01:22.219 --> 00:01:24.804
+And the answer is here.
+
+00:01:24.805 --> 00:01:30.480
+What the Kalman Filter does for you if you do estimation in higher dimensional spaces,
+
+00:01:30.480 --> 00:01:34.079
+is to not just go onto x and y spaces,
+
+00:01:34.079 --> 00:01:39.370
+but allows you to implicitly figure about the velocity of the object is,
+
+00:01:39.370 --> 00:01:44.520
+and then uses velocity estimate to make a really good prediction about the future.
+
+00:01:44.519 --> 00:01:49.479
+Now, notice the sensor itself only sees position.
+
+00:01:49.480 --> 00:01:51.490
+It never sees the actual velocity,
+
+00:01:51.489 --> 00:01:54.519
+the velocity is inferred from seeing multiple positions.
+
+00:01:54.519 --> 00:01:58.089
+So, one of the most amazing things about Kalman Filters in tracking
+
+00:01:58.090 --> 00:02:02.010
+applications is that it's able to figure out,
+
+00:02:02.010 --> 00:02:04.130
+even though it never directly measures it,
+
+00:02:04.129 --> 00:02:06.379
+the velocity of the object,
+
+00:02:06.379 --> 00:02:09.004
+and from there is able to make predictions
+
+00:02:09.004 --> 00:02:11.969
+about future locations that incorporate velocity.
+
+00:02:11.969 --> 00:02:14.400
+That is just really really really great.
+
+00:02:14.400 --> 00:02:16.760
+And it's one of the reasons why Kalman filters are
+
+00:02:16.759 --> 00:02:20.884
+such a popular algorithm in artificial intelligence,
+
+00:02:20.884 --> 00:02:23.679
+and in control theory at large.
+

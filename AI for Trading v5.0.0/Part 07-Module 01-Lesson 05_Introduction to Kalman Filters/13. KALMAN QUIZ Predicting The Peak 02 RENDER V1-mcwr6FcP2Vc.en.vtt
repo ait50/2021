@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.710 --> 00:00:05.205
+And very surprisingly, the resulting Gaussian
+
+00:00:05.205 --> 00:00:09.464
+is more certain than the two-component Gaussians.
+
+00:00:09.464 --> 00:00:15.434
+That is the covariance is smaller than either of the two covariances in the installation.
+
+00:00:15.435 --> 00:00:20.100
+Intuitively speaking, this is the case because we actually gain information.
+
+00:00:20.100 --> 00:00:25.545
+The two Gaussians together with high information content in either Gaussian installation.
+
+00:00:25.545 --> 00:00:27.840
+So it look like something like this.
+
+00:00:27.839 --> 00:00:31.004
+And it is completely non-obvious.
+
+00:00:31.004 --> 00:00:33.390
+You might have to take this with faith,
+
+00:00:33.390 --> 00:00:36.799
+but I can actually prove it to you.
+

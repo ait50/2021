@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.940
+Suppose we multiply two Gaussians,
+
+00:00:02.940 --> 00:00:08.505
+as in Bayes rule, a prior and a measurement probability.
+
+00:00:08.505 --> 00:00:12.300
+The prior has a mean of Mu and a variance of Sigma square,
+
+00:00:12.300 --> 00:00:15.185
+and the measurement has a mean of Nu,
+
+00:00:15.185 --> 00:00:17.290
+and a covariance of r-square.
+
+00:00:17.290 --> 00:00:20.200
+Then, the new mean, Mu prime,
+
+00:00:20.200 --> 00:00:23.400
+is the weighted sum of the old means.
+
+00:00:23.400 --> 00:00:25.905
+The Mu is weighted by r-square,
+
+00:00:25.905 --> 00:00:28.995
+Mu is weighted by Sigma square,
+
+00:00:28.995 --> 00:00:32.775
+normalized by the sum of the weighting factors.
+
+00:00:32.775 --> 00:00:34.845
+The new variance term,
+
+00:00:34.845 --> 00:00:40.500
+I want to write Sigma square prime here for the new one after the update,
+
+00:00:40.600 --> 00:00:45.125
+is given by this equation over here.
+
+00:00:45.125 --> 00:00:47.595
+So, let's put this into action.
+
+00:00:47.595 --> 00:00:49.840
+We have a weighted mean over here.
+
+00:00:49.840 --> 00:00:55.250
+Clearly, the prior Gaussian has a much higher uncertainty therefore
+
+00:00:55.250 --> 00:01:01.550
+Sigma square is larger and that means the nu is weighted much much larger than the Mu.
+
+00:01:01.550 --> 00:01:04.635
+So, the mean will be closer to the nu than the mu,
+
+00:01:04.635 --> 00:01:07.130
+which means it will be somewhere over here.
+
+00:01:07.130 --> 00:01:11.825
+Interestingly enough, the variance term is unaffected by the actual means,
+
+00:01:11.825 --> 00:01:13.875
+it just uses the previous variances.
+
+00:01:13.875 --> 00:01:17.240
+It comes up with a new one that's even peak here,
+
+00:01:17.240 --> 00:01:20.435
+so the result might look like this.
+
+00:01:20.435 --> 00:01:25.915
+So, this is the common situation for the measurement update step where this is the prior,
+
+00:01:25.915 --> 00:01:30.505
+this is the measurement probability and this is the posterior.
+
+00:01:30.505 --> 00:01:35.145
+So, let's practice these equations with a simple quiz.
+
+00:01:35.145 --> 00:01:42.350
+So, here are our equations again and suppose I use the following Gaussians.
+
+00:01:42.350 --> 00:01:46.910
+These are Gaussian with equal variance, but different means.
+
+00:01:46.910 --> 00:01:49.015
+They might look as follows.
+
+00:01:49.015 --> 00:01:54.920
+Compute for me the new mean after the update and the new sigma square.
+
