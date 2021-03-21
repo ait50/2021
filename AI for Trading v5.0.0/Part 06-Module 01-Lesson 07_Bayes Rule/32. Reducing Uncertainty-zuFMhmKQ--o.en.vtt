@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.940
+Let's talk a bit more about why uncertainty is so
+
+00:00:02.940 --> 00:00:06.009
+important in the field of robotics and self-driving cars.
+
+00:00:06.009 --> 00:00:08.632
+We know that measurements like the speed, the direction,
+
+00:00:08.632 --> 00:00:13.324
+and the location of a car are challenging to measure and we can't measure them perfectly.
+
+00:00:13.324 --> 00:00:16.074
+There's some uncertainty in each of these measurements.
+
+00:00:16.074 --> 00:00:19.480
+We also know that many of these measurements affect one another.
+
+00:00:19.480 --> 00:00:22.830
+For example, if we are uncertain about the location of a car,
+
+00:00:22.829 --> 00:00:25.409
+we can reduce that uncertainty by collecting data
+
+00:00:25.410 --> 00:00:28.054
+about the car's surroundings and its movement.
+
+00:00:28.053 --> 00:00:31.754
+Self-driving cars measure all of these things from a car's speed,
+
+00:00:31.754 --> 00:00:35.129
+to the scenery and objects that surround it, with sensors.
+
+00:00:35.130 --> 00:00:37.380
+And though these sensor measurements aren't perfect,
+
+00:00:37.380 --> 00:00:39.885
+when the information they provide is combined
+
+00:00:39.884 --> 00:00:43.049
+using conditional probability and something called Bayes rule,
+
+00:00:43.049 --> 00:00:46.349
+they can form a reliable representation of a car's position,
+
+00:00:46.350 --> 00:00:48.590
+its movement and its environment.
+
+00:00:48.590 --> 00:00:50.050
+Let's take a look at Bayes Rule.
+

@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Vamos a hacer el ejemplo del cáncer de mi unidad pasada
+
+00:00:03.000 --> 00:00:07.000
+Hay un cáncer específico que ocurre en 1% de la población,
+
+00:00:07.000 --> 00:00:10.000
+Y una prueba para este cáncer tiene un 90% de posibilidad
+
+00:00:10.000 --> 00:00:14.000
+De ser positivo si llegas a tener este cáncer, C
+
+00:00:14.000 --> 00:00:19.000
+Esto usualmente se le llama sensibilidad
+
+00:00:19.000 --> 00:00:22.000
+Pero esta prueba en ocasiones es positiva
+
+00:00:22.000 --> 00:00:24.000
+A pesar de que no tengas C
+
+00:00:24.000 --> 00:00:27.000
+Vamos a decir que con otro 90% de posibilidad
+
+00:00:27.000 --> 00:00:31.000
+De dar negativo si no tenemos C
+
+00:00:31.000 --> 00:00:39.000
+Eso usualmente se le llama especificad
+
+00:00:39.000 --> 00:00:41.000
+Así que esta es mi pregunta
+
+00:00:41.000 --> 00:00:44.000
+Sin tener más síntomas, te practicas la prueba
+
+00:00:44.000 --> 00:00:47.000
+Y la prueba resulta ser positiva
+
+00:00:47.000 --> 00:00:50.000
+¿Cuál piensas que es la probabilidad de tener
+
+00:00:50.000 --> 00:00:52.000
+Este tipo específico de cáncer?
+
+00:00:52.000 --> 00:00:55.000
+Para contestar esto, vamos a dibujar un diagrama
+
+00:00:55.000 --> 00:00:57.000
+Supón que están todas las personas
+
+00:00:57.000 --> 00:01:00.000
+Y algunas de ellas, exactamente 1%, tienen cáncer
+
+00:01:00.000 --> 00:01:03.000
+99% están libres de cáncer
+
+00:01:03.000 --> 00:01:06.000
+Sabemos que hay una prueba
+
+00:01:06.000 --> 00:01:08.000
+Que si tienes cáncer
+
+00:01:08.000 --> 00:01:12.000
+Va a diagnosticar correctamente con un 90% de posibilidad
+
+00:01:12.000 --> 00:01:17.000
+Así que si dibujamos un área donde la prueba de positivo
+
+00:01:17.000 --> 00:01:20.000
+Cáncer y prueba positiva
+
+00:01:20.000 --> 00:01:23.000
+Entonces esta área de aquí
+
+00:01:23.000 --> 00:01:26.000
+Es 90% del círculo de cáncer
+
+00:01:26.000 --> 00:01:27.000
+Sin embargo esto no es del todo cierto
+
+00:01:27.000 --> 00:01:30.000
+La prueba nos mando positivo
+
+00:01:30.000 --> 00:01:34.000
+A pesar de que la persona no tenga cáncer
+
+00:01:34.000 --> 00:01:36.000
+De hecho en nuestro caso
+
+00:01:36.000 --> 00:01:38.000
+Esto sucede en 10% de todos los casos
+
+00:01:38.000 --> 00:01:41.000
+Así que tenemos que agregar más área
+
+00:01:41.000 --> 00:01:44.000
+Porque es tan grande como el 10% de esta área larga
+
+00:01:44.000 --> 00:01:48.000
+Es tan grande como el 10% de esta área larga
+
+00:01:48.000 --> 00:01:50.000
+Donde la prueba pueda dar positivo
+
+00:01:50.000 --> 00:01:54.000
+Pero la persona no tiene cáncer
+
+00:01:54.000 --> 00:01:58.000
+Así que esta área azul es 10% de la toda esta área de aquí
+
+00:01:58.000 --> 00:02:01.000
+Menos el círculo pequeño de cáncer
+
+00:02:01.000 --> 00:02:06.000
+Y claramente, toda área por fuera de estos círculos
+
+00:02:06.000 --> 00:02:10.000
+Corresponde a una situación de no cáncer
+
+00:02:10.000 --> 00:02:12.000
+Y la prueba es negativa
+
+00:02:12.000 --> 00:02:14.000
+Así que te voy a preguntar de nuevo
+
+00:02:14.000 --> 00:02:17.000
+Supón que obtenemos una prueba positiva
+
+00:02:17.000 --> 00:02:18.000
+¿Cuál piensas
+
+00:02:18.000 --> 00:02:22.000
+que sería una probabilidad de cáncer
+
+00:02:22.000 --> 00:02:24.000
+de 1%
+
+00:02:24.000 --> 00:02:27.000
+de sensibilidad y especificad de 90% ?
+
+00:02:27.000 --> 00:02:31.000
+¿Piensas que tu nueva posibilidad son
+
+00:02:31.000 --> 00:02:32.000
+90%
+
+00:02:32.000 --> 00:02:34.000
+o 8%
+
+00:02:34.000 --> 09:59:59.000
+o sólo 1%?
+

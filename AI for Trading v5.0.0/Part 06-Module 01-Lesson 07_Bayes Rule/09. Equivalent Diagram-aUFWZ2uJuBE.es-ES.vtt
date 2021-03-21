@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Ahora este mismo algoritmo funciona si la prueba da negativo
+
+00:00:05.000 --> 00:00:09.000
+Vamos a practicar esto en un segundo. [br]Supón que tu prueba da negativo
+
+00:00:09.000 --> 00:00:11.000
+Puedes hacer la misma pregunta
+
+00:00:11.000 --> 00:00:17.000
+Ahora, ¿cual es la probabilidad de tener cáncer o no? Pero ahora todos los positivos aquí se convierten en negativos
+
+00:00:17.000 --> 00:00:24.000
+La suma es la probabilidad total de los resultados de la prueba negativa y ahora dividimos por este resultado
+
+00:00:24.000 --> 00:00:30.000
+Ahora tienes la probabilidad posterior del cáncer y del no cáncer asumiendo que tienes
+
+00:00:30.000 --> 00:00:34.000
+Un resultado de prueba negativo, que resulta ser mucho mucho más favorable
+
+00:00:34.000 --> 00:00:37.000
+Para ti por que ninguno de nosotros quiere tener cáncer
+
+00:00:37.000 --> 00:00:43.000
+Así que observa esto por un rato y vamos a hacer los cálculos para el caso negativo
+
+00:00:43.000 --> 00:00:46.000
+Usando los mismo números que te di antes
+
+00:00:46.000 --> 09:59:59.000
+Y con el paso a paso en esta vez te puede realmente guiar a través del proceso.
+

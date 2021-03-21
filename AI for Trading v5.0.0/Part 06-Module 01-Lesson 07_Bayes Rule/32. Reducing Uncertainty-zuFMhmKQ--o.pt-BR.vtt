@@ -1,0 +1,78 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.267 --> 00:00:03.601
+Vamos falar mais sobre por que
+a incerteza é tão importante
+
+00:00:03.635 --> 00:00:05.834
+no campo da robótica
+e dos carros autônomos.
+
+00:00:06.133 --> 00:00:08.534
+Sabemos que medidas
+como velocidade, direção
+
+00:00:08.568 --> 00:00:11.100
+e localização de um carro
+são difíceis de mensurar
+
+00:00:11.400 --> 00:00:13.400
+e não há como medi-las
+perfeitamente.
+
+00:00:13.434 --> 00:00:15.868
+Há algumas incertezas
+em cada uma dessas medidas.
+
+00:00:16.234 --> 00:00:19.300
+Também sabemos que muitas
+afetam umas às outras.
+
+00:00:19.667 --> 00:00:22.868
+Por exemplo, se não temos certeza
+sobre a localização de um carro,
+
+00:00:22.902 --> 00:00:25.567
+podemos reduzir essa incerteza
+ao coletar dados
+
+00:00:25.601 --> 00:00:27.968
+sobre os arredores do carro
+e seu movimento.
+
+00:00:28.567 --> 00:00:30.834
+Os carros autônomos
+medem tudo isso,
+
+00:00:30.868 --> 00:00:33.834
+da velocidade de um carro à paisagem
+e aos objetos que o cercam,
+
+00:00:33.868 --> 00:00:35.100
+com sensores.
+
+00:00:35.134 --> 00:00:37.400
+Embora não sejam
+medidas perfeitas,
+
+00:00:37.434 --> 00:00:39.834
+quando a informação fornecida
+é combinada
+
+00:00:39.868 --> 00:00:43.167
+usando a probabilidade condicional
+e o Teorema de Bayes,
+
+00:00:43.201 --> 00:00:46.334
+pode formar uma representação
+confiável da posição de um carro,
+
+00:00:46.368 --> 00:00:48.267
+seu movimento e ambiente.
+
+00:00:48.301 --> 00:00:50.267
+Vamos dar uma olhada
+no Teorema de Bayes.
+

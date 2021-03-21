@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Así que esta es la esencia de la regla Bayesiana
+
+00:00:02.000 --> 00:00:04.000
+Que voy a darte en un segundo
+
+00:00:04.000 --> 00:00:06.000
+Hay un tipo de anterioridad, que significa
+
+00:00:06.000 --> 00:00:09.000
+es la probabilidad anterior a correr una prueba
+
+00:00:09.000 --> 00:00:12.000
+Y después obtienes algo de evidencia de la prueba misma
+
+00:00:12.000 --> 00:00:17.000
+Y esto te lleva a lo que se llama probabilidad posterior
+
+00:00:17.000 --> 00:00:19.000
+Ahora esto no es realmente una operación de suma
+
+00:00:19.000 --> 00:00:20.000
+De hecho, en realidad
+
+00:00:20.000 --> 00:00:22.000
+Es más como una multiplicación
+
+00:00:22.000 --> 00:00:25.000
+Pero semánticamente lo que hace la regla Bayesiana es
+
+00:00:25.000 --> 00:00:28.000
+Incorporar algo de evidencia de
+
+00:00:28.000 --> 00:00:32.000
+La prueba en nuestra probabilidad previa
+
+00:00:32.000 --> 00:00:35.000
+Para llevar a una probabilidad posterior
+
+00:00:35.000 --> 00:00:36.000
+Déjame hacerlo más específico
+
+00:00:36.000 --> 00:00:39.000
+En nuestro ejemplo del cáncer, sabemos que
+
+00:00:39.000 --> 00:00:42.000
+La probabilidad previa de cáncer es 0.01
+
+00:00:42.000 --> 00:00:45.000
+Que es lo mismo que 1%
+
+00:00:45.000 --> 00:00:48.000
+La probabilidad posterior de cáncer dado
+
+00:00:48.000 --> 00:00:50.000
+Que nuestra prueba es positiva
+
+00:00:50.000 --> 00:00:52.000
+Abreviado aquí como positivo
+
+00:00:52.000 --> 00:00:55.000
+Es el producto del previo
+
+00:00:55.000 --> 00:00:59.000
+veces nuestra prueba de sensibilidad, que es
+
+00:00:59.000 --> 00:01:02.000
+¿Cuál es la posibilidad de que el resultado sea positivo
+
+00:01:02.000 --> 00:01:03.000
+dado que tuve cáncer?
+
+00:01:03.000 --> 00:01:04.000
+Y como podrás recordar
+
+00:01:04.000 --> 00:01:08.000
+Esto es 0.9 o 90%
+
+00:01:08.000 --> 00:01:10.000
+Ahora sólo para advertirte, esto no es del todo correcto
+
+00:01:10.000 --> 00:01:13.000
+Para hacer esto correcto, también tenemos que calcular
+
+00:01:13.000 --> 00:01:17.000
+La posterior de una opción de no tener cáncer
+
+00:01:17.000 --> 00:01:22.000
+Que es no tener cáncer dado una prueba positiva
+
+00:01:22.000 --> 00:01:29.000
+Y al usar la posterior, sabemos que P de no C es 0.99
+
+00:01:29.000 --> 00:01:31.000
+Es menos P de C
+
+00:01:31.000 --> 00:01:34.000
+Veces la probabilidad de obtener un resultado positivo
+
+00:01:34.000 --> 00:01:36.000
+Dado que no C
+
+00:01:36.000 --> 00:01:38.000
+Hay que darse cuenta que estas dos preguntas son las mismas
+
+00:01:38.000 --> 00:01:40.000
+Pero intercambio C por no C
+
+00:01:40.000 --> 00:01:42.000
+Y esta de aquí toma un momento para calcular
+
+00:01:42.000 --> 00:01:45.000
+Sabemos que nuestra prueba nos da un resultado negativo
+
+00:01:45.000 --> 00:01:49.000
+Si es libre de cáncer tenemos una posibilidad de 0.9
+
+00:01:49.000 --> 00:01:52.000
+Como resultado, nos da un resultado positivo
+
+00:01:52.000 --> 00:01:55.000
+En el caso de libre de cáncer con un 10% de posibilidad.
+
+00:01:55.000 --> 00:01:59.000
+Lo que es interesante es acerca de la ecuación correcta
+
+00:01:59.000 --> 00:02:04.000
+Excepto que las probabilidades no suman 1
+
+00:02:04.000 --> 00:02:07.000
+Ahora te voy a pedir que calcules esos
+
+00:02:07.000 --> 00:02:10.000
+Así que dame los números exactos
+
+00:02:10.000 --> 00:02:13.000
+Para la primera expresión
+
+00:02:13.000 --> 00:02:16.000
+Y la segunda expresión escrita aquí
+
+00:02:16.000 --> 09:59:59.000
+Usando nuestro ejemplo de ahí
+

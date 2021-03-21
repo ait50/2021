@@ -1,0 +1,16 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Y la respuesta es 0.01
+
+00:00:02.000 --> 00:00:04.000
+P(C) = 0.1
+
+00:00:04.000 --> 00:00:07.000
+y P(Neg │C) es también 0.1
+
+00:00:07.000 --> 09:59:59.000
+Entonces si multiplicas esos dos te da 0.01.
+

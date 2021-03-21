@@ -1,0 +1,98 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.234 --> 00:00:01.968
+Agora devo dizer:
+se aprendeu isso,
+
+00:00:02.002 --> 00:00:03.634
+está realizando
+algo significativo
+
+00:00:03.668 --> 00:00:05.334
+com estatística
+e probabilidade.
+
+00:00:05.368 --> 00:00:09.033
+Isso não é nada trivial
+e é muito útil.
+
+00:00:09.334 --> 00:00:13.067
+Então vou praticar com você
+usando um segundo exemplo.
+
+00:00:13.501 --> 00:00:15.601
+Neste caso, você é um robô.
+
+00:00:16.000 --> 00:00:19.601
+Este robô vive em um mundo
+de exatamente dois lugares.
+
+00:00:20.000 --> 00:00:25.267
+Existe um lugar vermelho
+e um lugar verde, R e G.
+
+00:00:25.767 --> 00:00:29.801
+Eu disse inicialmente que esse robô
+não tem ideia de onde está,
+
+00:00:30.200 --> 00:00:32.734
+então a probabilidade anterior
+para qualquer lugar,
+
+00:00:32.768 --> 00:00:35.334
+vermelho ou verde, é de 0,5.
+
+00:00:35.834 --> 00:00:38.400
+Ele também tem
+um sensor ocular,
+
+00:00:38.434 --> 00:00:40.601
+mas o sensor parece
+pouco confiável.
+
+00:00:41.734 --> 00:00:44.434
+Assim a probabilidade
+de ver vermelho
+
+00:00:44.968 --> 00:00:47.567
+na célula da grade vermelha
+é de 0,8.
+
+00:00:48.167 --> 00:00:50.667
+E a probabilidade
+de ver verde
+
+00:00:51.701 --> 00:00:54.667
+na célula verde
+também é de 0,8.
+
+00:00:55.234 --> 00:00:57.868
+Agora suponha que o robô
+veja o vermelho.
+
+00:00:58.234 --> 00:01:00.067
+Quais são
+as probabilidades posteriores
+
+00:01:00.400 --> 00:01:04.667
+de que o robô esteja
+na célula vermelha,
+
+00:01:05.901 --> 00:01:08.667
+já que apenas viu vermelho.
+E, inversamente,
+
+00:01:09.067 --> 00:01:11.968
+qual é a probabilidade de estar
+na célula verde,
+
+00:01:12.200 --> 00:01:14.334
+apesar
+de ter visto vermelho.
+
+00:01:14.368 --> 00:01:17.001
+Você pode aplicar o Teorema de Bayes
+e descobrir.
+

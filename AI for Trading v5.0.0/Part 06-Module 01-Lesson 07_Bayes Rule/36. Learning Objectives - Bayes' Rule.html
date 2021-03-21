@@ -1,0 +1,827 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Learning Objectives - Bayes' Rule
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Bayes Rule
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Bayes Rule.html">
+       01. Bayes Rule
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Cancer Test.html">
+       02. Cancer Test
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Prior And Posterior.html">
+       03. Prior And Posterior
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Normalizing 1.html">
+       04. Normalizing 1
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Normalizing 2.html">
+       05. Normalizing 2
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Normalizing 3.html">
+       06. Normalizing 3
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Total Probability.html">
+       07. Total Probability
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Bayes Rule Diagram.html">
+       08. Bayes Rule Diagram
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Equivalent Diagram.html">
+       09. Equivalent Diagram
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Cancer Probabilities.html">
+       10. Cancer Probabilities
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Probability Given Test.html">
+       11. Probability Given Test
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Normalizer.html">
+       12. Normalizer
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Normalizing Probability.html">
+       13. Normalizing Probability
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Disease Test 1.html">
+       14. Disease Test 1
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Disease Test 2.html">
+       15. Disease Test 2
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Disease Test 3.html">
+       16. Disease Test 3
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Disease Test 4.html">
+       17. Disease Test 4
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Disease Test 5.html">
+       18. Disease Test 5
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Disease Test 6.html">
+       19. Disease Test 6
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Bayes Rule Summary.html">
+       20. Bayes Rule Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Robot Sensing 1.html">
+       21. Robot Sensing 1
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Robot Sensing 2.html">
+       22. Robot Sensing 2
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Robot Sensing 3.html">
+       23. Robot Sensing 3
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Robot Sensing 4.html">
+       24. Robot Sensing 4
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Robot Sensing 5.html">
+       25. Robot Sensing 5
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Robot Sensing 6.html">
+       26. Robot Sensing 6
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Robot Sensing 7.html">
+       27. Robot Sensing 7
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Robot Sensing 8.html">
+       28. Robot Sensing 8
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Generalizing.html">
+       29. Generalizing
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Sebastian At Home.html">
+       30. Sebastian At Home
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Learning Objectives - Conditional Probability.html">
+       31. Learning Objectives - Conditional Probability
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Reducing Uncertainty.html">
+       32. Reducing Uncertainty
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Bayes' Rule and Robotics.html">
+       33. Bayes' Rule and Robotics
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Learning from Sensor Data.html">
+       34. Learning from Sensor Data
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Using Sensor Data.html">
+       35. Using Sensor Data
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Learning Objectives - Bayes' Rule.html">
+       36. Learning Objectives - Bayes' Rule
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Bayes Rule Conclusion.html">
+       37. Bayes Rule Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          36. Learning Objectives - Bayes' Rule
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="learning-objectives---bayes-rule">
+          Learning Objectives - Bayes' Rule
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The following questions will help you review what you learned in the Bayes' Rule lesson.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="prior-knowledge">
+          Prior knowledge
+         </h3>
+         <p>
+          <strong>
+           For questions 1-3, assume you already have the following knowledge
+          </strong>
+          :
+         </p>
+         <p>
+          You’re interested in finding out the probability of a car stopping if it sees a
+          <em>
+           yellow
+          </em>
+          traffic light.
+         </p>
+         <ul>
+          <li>
+           <p>
+            Past data tells you that the probability of a car stopping at a traffic light intersection is
+            <span class="mathquill ud-math">
+             P(S) = 0.40
+            </span>
+            .
+           </p>
+          </li>
+          <li>
+           <p>
+            You also know that the past probability of a traffic light being yellow (as opposed to red or green) is
+            <span class="mathquill ud-math">
+             P(Y) = 0.10
+            </span>
+            .
+           </p>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Car stopping at a yellow light" class="img img-fluid" src="img/screen-shot-2017-08-02-at-4.57.01-pm.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Car stopping at a yellow light
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Traffic Light q1
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             When a car is stopped at an intersection, data shows that 12% of the time the light is yellow. So if we know a car is stopped, there's a 12% chance the light is yellow. This is called a
+             <em>
+              conditional probability
+             </em>
+             .
+            </p>
+            <p>
+             Given P(S) and P(Y) above, how would you represent this conditional probability in notation?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501205087553" name="352476" type="radio" value="a1501205087553"/>
+           <label for="a1501205087553">
+            <p>
+             P(S|Y) = 0.12
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205208596" name="352476" type="radio" value="a1501205208596"/>
+           <label for="a1501205208596">
+            <p>
+             P(S) = 0.12
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205220196" name="352476" type="radio" value="a1501205220196"/>
+           <label for="a1501205220196">
+            <p>
+             P(Y|S) = 0.12
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205348531" name="352476" type="radio" value="a1501205348531"/>
+           <label for="a1501205348531">
+            <p>
+             P(Y,S) = 0.12
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          P(Y|S) = 0.12
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Traffic Light q2
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Using what you know from question 1, answer the following: if the traffic light is yellow, what is the chance that the car will stop?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501205676465" name="352477" type="radio" value="a1501205676465"/>
+           <label for="a1501205676465">
+            <p>
+             0.04
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205679478" name="352477" type="radio" value="a1501205679478"/>
+           <label for="a1501205679478">
+            <p>
+             0.33
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205687122" name="352477" type="radio" value="a1501205687122"/>
+           <label for="a1501205687122">
+            <p>
+             0.40
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205694825" name="352477" type="radio" value="a1501205694825"/>
+           <label for="a1501205694825">
+            <p>
+             0.48
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205722004" name="352477" type="radio" value="a1501205722004"/>
+           <label for="a1501205722004">
+            <p>
+             0.50
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205725639" name="352477" type="radio" value="a1501205725639"/>
+           <label for="a1501205725639">
+            <p>
+             0.52
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          0.48
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Traffic Light q3
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Knowing that a car stopping at an intersection and the presence of a yellow traffic light are related events, what are P(S) and P(Y) known as?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501206083765" name="352478" type="radio" value="a1501206083765"/>
+           <label for="a1501206083765">
+            <p>
+             Posterior probabilities
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501206294159" name="352478" type="radio" value="a1501206294159"/>
+           <label for="a1501206294159">
+            <p>
+             Past probabilities
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501206298641" name="352478" type="radio" value="a1501206298641"/>
+           <label for="a1501206298641">
+            <p>
+             Prior probabilities
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501206305385" name="352478" type="radio" value="a1501206305385"/>
+           <label for="a1501206305385">
+            <p>
+             Total probabilities
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          Prior probabilities
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="questions-4-and-5-are-different-scenarios">
+          Questions 4 and 5 are different scenarios.
+         </h3>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           Prior knowledge for question 4:
+          </strong>
+         </p>
+         <p>
+          On a four-lane highway, cars are either going fast or not fast. Faster cars should go in the leftmost lanes.
+         </p>
+         <ul>
+          <li>
+           <p>
+            At any given time, 20% of cars are in the left-most lane.
+           </p>
+          </li>
+          <li>
+           <p>
+            Overall, 40% of cars on the highway are classified as going fast.
+           </p>
+          </li>
+          <li>
+           <p>
+            Out of all the cars in the leftmost lane, 90% are going fast.
+           </p>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Bayes q2
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Given the above information, if a car is going fast, what is the probability that it will be in the leftmost lane?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501207155576" name="352480" type="radio" value="a1501207155576"/>
+           <label for="a1501207155576">
+            <p>
+             0.125
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501207184220" name="352480" type="radio" value="a1501207184220"/>
+           <label for="a1501207184220">
+            <p>
+             0.25
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501207191438" name="352480" type="radio" value="a1501207191438"/>
+           <label for="a1501207191438">
+            <p>
+             0.45
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501207193943" name="352480" type="radio" value="a1501207193943"/>
+           <label for="a1501207193943">
+            <p>
+             0.55
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          0.45
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Bayes' rule is not only used to incorporate sensor data into an estimate; it’s also often used to incorporate test data into a medical diagnosis.
+         </p>
+         <p>
+          <strong>
+           Prior knowledge for question 5:
+          </strong>
+         </p>
+         <ul>
+          <li>
+           1% of all people have cancer.
+          </li>
+          <li>
+           90% of people who have cancer test positive when given a cancer-detecting blood test, meaning the test detects cancer 90% of the time.
+          </li>
+          <li>
+           5% of people will have false positives, meaning that 5% of the time, this test will produce a positive result when people
+           <em>
+            do not
+           </em>
+           have cancer.
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Bayes q3
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Given the above data, what is the probability that a person has cancer if they have a positive cancer-test result? (Note: answers are rounded to the nearest 4th decimal place).
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501208084691" name="352485" type="radio" value="a1501208084691"/>
+           <label for="a1501208084691">
+            <p>
+             0.1125
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501208101776" name="352485" type="radio" value="a1501208101776"/>
+           <label for="a1501208101776">
+            <p>
+             0.1538
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501208108511" name="352485" type="radio" value="a1501208108511"/>
+           <label for="a1501208108511">
+            <p>
+             0.2687
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501208112575" name="352485" type="radio" value="a1501208112575"/>
+           <label for="a1501208112575">
+            <p>
+             0.8924
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          0.1538
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="37. Bayes Rule Conclusion.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('36. Learning Objectives - Bayes&#x27; Rule')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

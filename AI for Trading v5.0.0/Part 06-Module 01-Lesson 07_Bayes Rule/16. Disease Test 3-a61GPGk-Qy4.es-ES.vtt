@@ -1,0 +1,13 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Y la respuesta es 0.45
+
+00:00:02.000 --> 00:00:07.000
+P(¬C) es 0.9 y P(Neg | ¬C) es 0.5
+
+00:00:07.000 --> 09:59:59.000
+Entonces 0.9 * 0.5 = 0.45
+

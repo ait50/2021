@@ -1,0 +1,72 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.203 --> 00:00:02.928
+Isso é aproximadamente 0,0011,
+
+00:00:03.291 --> 00:00:07.748
+que obtemos ao dividir 0,001
+
+00:00:08.665 --> 00:00:11.209
+pelo normalizador 0,892,
+
+00:00:11.360 --> 00:00:14.382
+e a probabilidade posterior
+de estar livre de câncer
+
+00:00:14.484 --> 00:00:18.855
+após o teste é
+de aproximadamente 0,9989.
+
+00:00:19.544 --> 00:00:23.394
+Isso é obtido ao dividir
+esta probabilidade aqui
+
+00:00:23.885 --> 00:00:26.419
+pelo normalizador
+e, sem surpresas,
+
+00:00:26.485 --> 00:00:28.923
+estes dois valores
+de fato somam 1.
+
+00:00:29.078 --> 00:00:32.730
+O que é notável sobre esse resultado
+é o seu significado.
+
+00:00:32.865 --> 00:00:36.200
+Antes do teste, tínhamos
+1% de chance de ter câncer.
+
+00:00:36.766 --> 00:00:40.133
+Agora temos cerca de 0,9%
+de chance de ter câncer.
+
+00:00:41.016 --> 00:00:45.666
+Assim a probabilidade de câncer
+caiu cerca de 1! para 9.
+
+00:00:45.833 --> 00:00:48.792
+Então o teste realmente
+nos ajudou a ter confiança
+
+00:00:48.858 --> 00:00:50.399
+de que estamos
+livres de câncer.
+
+00:00:50.635 --> 00:00:54.507
+Por outro lado, antes a chance
+de estarmos livres de câncer era 99%
+
+00:00:54.690 --> 00:00:57.545
+e agora é 99,89%.
+
+00:00:58.214 --> 00:01:00.055
+Assim todos os números
+estão trabalhando
+
+00:01:00.126 --> 00:01:02.091
+exatamente
+do jeito que esperamos.
+

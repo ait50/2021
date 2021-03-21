@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+En la regla de Bayes, tenemos una variable oculta que nos importa--si tienen cáncer o no.
+
+00:00:04.000 --> 00:00:08.000
+Pero nosotros no podemos medir directamente y en su lugar tenemos una prueba.
+
+00:00:08.000 --> 00:00:14.000
+Tenemos un previo de forma frecuente esta variable es true y la prueba generalmente se caracteriza
+
+00:00:14.000 --> 00:00:17.000
+por la frecuencia con que dice positivo cuando la variable es true
+
+00:00:17.000 --> 00:00:22.000
+y con qué frecuencia es negativa y la variable es falsa.
+
+00:00:22.000 --> 00:00:27.000
+Regla de Bayes toma un previo, se multiplica en la medición,
+
+00:00:27.000 --> 00:00:31.000
+que en este caso suponemos que la medida positiva para darnos una nueva variable
+
+00:00:31.000 --> 00:00:36.000
+y hace lo mismo para todos los medida real, dada la suposición opuesta sobre
+
+00:00:36.000 --> 00:00:41.000
+nuestra variable oculta de cáncer y esa multiplicación nos da a este chico aquí.
+
+00:00:41.000 --> 00:00:47.000
+Sumamos las dos cosas y luego nos da una nueva variable y luego
+
+00:00:47.000 --> 00:00:55.000
+dividimos estos chicos para llegar de la mejor estimación de la c variable oculta el resultado de nuestra prueba.
+
+00:00:55.000 --> 00:00:59.000
+Y en este ejemplo, utilicé el ejemplo positivo es el resultado de la prueba
+
+00:00:59.000 --> 00:01:01.000
+pero podría hacer lo mismo con un ejemplo negativo.
+
+00:01:01.000 --> 00:01:04.000
+Esto fue exactamente igual que en nuestro esquema de principio.
+
+00:01:04.000 --> 00:01:09.000
+Hubo un previo de nuestro caso, tenemos esta variable específica para ser verdad.
+
+00:01:09.000 --> 00:01:17.000
+Hemos notado dentro de esta previa, puede cubrir la región al que se aplica el resultado de nuestro prueba.
+
+00:01:17.000 --> 00:01:22.000
+Notamos que prueba resultado también se aplican cuando no se cumple la condición.
+
+00:01:22.000 --> 00:01:28.000
+Así, esta expresión aquí y esta expresión aquí corresponden exactamente
+
+00:01:28.000 --> 00:01:31.000
+a la zona roja sobre el área verde aquí y aquí.
+
+00:01:31.000 --> 00:01:35.000
+Pero luego nos dimos cuenta de que estas dos áreas no agregue hasta 1.
+
+00:01:35.000 --> 00:01:39.000
+La razón es que muchas cosas fuera, por lo que calculamos el área total
+
+00:01:39.000 --> 00:01:44.000
+que fue esta expresión aquí, PPO.
+
+00:01:44.000 --> 00:01:50.000
+Y luego normalizaron estas dos cosas aquí por el área total para obtener el área relativo
+
+00:01:50.000 --> 00:01:56.000
+se asigna la cosa roja versus lo verde y en este momento, simplemente dividiendo por el área total
+
+00:01:56.000 --> 09:59:59.000
+en esta región aquí; así, para deshacerse de cualquiera de los otros casos.
+

@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:09.000
+El número aquí es 0.001 y es el producto de mi previo al cáncer que es 0.01
+
+00:00:09.000 --> 00:00:17.000
+Y la probabilidad de obtener un resultado negativo en el caso de cáncer, que es justo de 0.1
+
+00:00:17.000 --> 00:00:24.000
+Si multiplicamos estas dos cosas juntas, obtengo 0.001.[br]La probabilidad aquí es de 0.891
+
+00:00:24.000 --> 00:00:31.000
+Y cuando multiplico el de probabilidad previa de no tener cáncer que es de 0.99
+
+00:00:31.000 --> 00:00:35.000
+Con la probabilidad de ver un resultado negativo en el caso de no tener cáncer
+
+00:00:35.000 --> 00:00:39.000
+Y este de aquí es 0.9
+
+00:00:39.000 --> 09:59:59.000
+Así que multiplicamos 0.99 con 0.9, obtengo 0.891
+

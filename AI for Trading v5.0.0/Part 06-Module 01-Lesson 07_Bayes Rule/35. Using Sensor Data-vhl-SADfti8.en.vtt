@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.930
+Once we gather sensor data about the car's surroundings and its movement,
+
+00:00:03.930 --> 00:00:08.285
+we can then use this information to improve our initial location prediction.
+
+00:00:08.285 --> 00:00:12.810
+For example, say we sense lane markers and specific terrain, and we say, hmm.
+
+00:00:12.810 --> 00:00:14.250
+Actually, we know from
+
+00:00:14.250 --> 00:00:18.839
+previously collected data that if we sense landlines close to the sides of the car,
+
+00:00:18.839 --> 00:00:22.225
+the car is probably located in the center of the lane.
+
+00:00:22.225 --> 00:00:25.535
+We also know that if we sense that our tires are pointing to the right,
+
+00:00:25.535 --> 00:00:28.774
+we're probably on a curved section of the road.
+
+00:00:28.774 --> 00:00:29.939
+So this sensor data,
+
+00:00:29.940 --> 00:00:33.105
+combined with what we already know about the road and the car,
+
+00:00:33.104 --> 00:00:37.674
+gives us more information about where our location is most likely to be.
+
+00:00:37.674 --> 00:00:39.479
+So using the sensor information,
+
+00:00:39.479 --> 00:00:43.814
+we can improve our initial prediction and better estimate our car's location.
+
+00:00:43.814 --> 00:00:47.504
+Bayes rule gives us a mathematical way to correct our measurements,
+
+00:00:47.505 --> 00:00:52.640
+and let's us move from an uncertain prior belief to something more and more probable.
+
+00:00:52.640 --> 00:00:55.369
+You'll see Bayes rule come up again and again in robotics.
+
+00:00:55.369 --> 00:00:59.349
+And in this lesson, you'll gain a greater understanding of Bayes rule.
+

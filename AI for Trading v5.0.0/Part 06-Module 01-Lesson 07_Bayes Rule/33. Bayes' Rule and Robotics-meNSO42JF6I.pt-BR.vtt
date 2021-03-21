@@ -1,0 +1,62 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.534 --> 00:00:03.334
+O Teorema de Bayes é extremamente
+importante na robótica
+
+00:00:03.567 --> 00:00:05.767
+e pode ser descrito
+em uma única frase.
+
+00:00:05.801 --> 00:00:07.534
+Dada uma previsão inicial,
+
+00:00:07.568 --> 00:00:09.467
+se reunirmos dados adicionais
+relacionados,
+
+00:00:09.501 --> 00:00:11.734
+dados dos quais
+a previsão inicial depende,
+
+00:00:11.768 --> 00:00:13.701
+podemos melhorar
+essa previsão.
+
+00:00:13.735 --> 00:00:16.200
+Por exemplo, digamos
+que nossa previsão inicial,
+
+00:00:16.234 --> 00:00:17.901
+também conhecida
+como crença anterior,
+
+00:00:17.935 --> 00:00:20.767
+é uma estimativa da localização
+de um carro em uma estrada.
+
+00:00:20.801 --> 00:00:22.234
+Pode ser a localização dada
+
+00:00:22.268 --> 00:00:24.434
+por um sinal de GPS
+levemente impreciso.
+
+00:00:24.801 --> 00:00:26.901
+Então usamos sensores
+para coletar dados
+
+00:00:26.935 --> 00:00:29.334
+sobre os arredores do carro
+e como ele está se movendo.
+
+00:00:29.368 --> 00:00:31.133
+Como acha
+que os dados do sensor
+
+00:00:31.167 --> 00:00:33.467
+podem ajudar a melhorar
+a previsão de localização?
+

@@ -1,0 +1,56 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.267 --> 00:00:01.367
+E a resposta é:
+
+00:00:01.834 --> 00:00:04.033
+a anterior não é afetada
+pela mensuração.
+
+00:00:04.634 --> 00:00:06.634
+A probabilidade de 0
+está no vermelho,
+
+00:00:06.868 --> 00:00:08.901
+e a probabilidade de 1
+no verde,
+
+00:00:08.935 --> 00:00:11.067
+apesar do fato de que ele vê
+tudo vermelho.
+
+00:00:11.667 --> 00:00:14.734
+Para isso, você encontra
+a "joint" de ver o vermelho
+
+00:00:14.768 --> 00:00:18.467
+e ver o vermelho é 0x0,8,
+que dá 0.
+
+00:00:18.767 --> 00:00:20.501
+É a mesma "joint"
+para verde,
+
+00:00:20.868 --> 00:00:23.634
+1x0,2.
+
+00:00:25.767 --> 00:00:27.934
+Então você precisa normalizar
+0 e 0,2.
+
+00:00:28.334 --> 00:00:30.200
+A soma disso é 0,2.
+
+00:00:30.701 --> 00:00:33.968
+Então dividir 0 por 0,2
+nos dá 0,
+
+00:00:34.434 --> 00:00:37.267
+e 0,2 dividido por 0,2 dá 1.
+
+00:00:37.534 --> 00:00:39.267
+São exatamente
+estes números.
+

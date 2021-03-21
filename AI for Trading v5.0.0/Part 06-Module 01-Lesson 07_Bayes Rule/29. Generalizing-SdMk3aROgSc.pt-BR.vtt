@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:01.601
+Então, o que você aprendeu?
+
+00:00:01.801 --> 00:00:03.133
+No Teorema de Bayes,
+
+00:00:03.334 --> 00:00:07.001
+haverá mais do que apenas 2 causas
+subjacentes de câncer/sem câncer.
+
+00:00:07.035 --> 00:00:09.200
+Pode haver 3, 4 ou 5,
+qualquer número.
+
+00:00:09.534 --> 00:00:11.334
+Podemos aplicar exatamente
+a mesma matemática,
+
+00:00:11.367 --> 00:00:13.601
+mas temos que acompanhar
+mais valores.
+
+00:00:13.934 --> 00:00:18.767
+Na verdade, o robô também pode ter
+mais de 2 resultados de teste.
+
+00:00:19.200 --> 00:00:20.567
+Aqui
+temos vermelho ou verde,
+
+00:00:20.601 --> 00:00:22.701
+mas poderia ser vermelho,
+verde ou azul.
+
+00:00:22.735 --> 00:00:25.300
+E isso significa
+que a probabilidade de mensuração
+
+00:00:25.334 --> 00:00:27.834
+será mais elaborada.
+Preciso dar mais informações,
+
+00:00:28.100 --> 00:00:31.067
+mas a matemática permanece
+exatamente igual.
+
+00:00:31.101 --> 00:00:33.834
+Agora podemos lidar
+com problemas maiores
+
+00:00:34.200 --> 00:00:36.634
+que têm muitas causas ocultas
+possíveis
+
+00:00:36.668 --> 00:00:38.634
+de onde o robô pode estar.
+
+00:00:39.200 --> 00:00:40.834
+E ainda podemos aplicar
+o Teorema de Bayes
+
+00:00:40.868 --> 00:00:42.434
+para encontrar
+todos esses números.
+
+00:00:42.468 --> 00:00:45.000
+Deixe-me passar
+um teste final.
+

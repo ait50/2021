@@ -1,0 +1,102 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:01.933
+Quando reunimos
+os dados de sensores
+
+00:00:01.967 --> 00:00:04.033
+sobre os arredores do carro
+e seu movimento,
+
+00:00:04.067 --> 00:00:06.367
+podemos usar essas informações
+para melhorar
+
+00:00:06.400 --> 00:00:08.100
+a previsão
+da localização inicial.
+
+00:00:08.133 --> 00:00:10.300
+Por exemplo, se detectamos
+marcadores de faixa
+
+00:00:10.333 --> 00:00:12.867
+e um terreno específico,
+pensamos...
+
+00:00:13.067 --> 00:00:15.967
+Na verdade, sabemos
+pelos dados coletados
+
+00:00:16.000 --> 00:00:18.900
+que, se vimos as faixas fixas
+próximas às laterais do carro,
+
+00:00:19.133 --> 00:00:21.733
+o carro provavelmente
+está no centro da pista.
+
+00:00:22.467 --> 00:00:23.667
+Também sabemos
+que se percebemos
+
+00:00:23.700 --> 00:00:25.700
+que os pneus estão apontando
+para a direita,
+
+00:00:25.733 --> 00:00:28.400
+provavelmente estamos
+em uma curva.
+
+00:00:28.867 --> 00:00:30.067
+Então os dados
+desses sensores
+
+00:00:30.100 --> 00:00:33.133
+combinados ao que já sabemos
+sobre a estrada e o carro
+
+00:00:33.333 --> 00:00:34.633
+nos dão mais informações
+
+00:00:34.667 --> 00:00:37.300
+sobre a localização
+mais provável.
+
+00:00:37.767 --> 00:00:39.500
+Usando a informação do sensor,
+
+00:00:39.700 --> 00:00:41.467
+podemos melhorar a previsão inicial
+
+00:00:41.500 --> 00:00:43.700
+e estimar melhor
+a localização.
+
+00:00:44.333 --> 00:00:46.367
+O Teorema de Bayes fornece
+uma forma matemática
+
+00:00:46.400 --> 00:00:47.633
+de corrigir nossas medições
+
+00:00:47.667 --> 00:00:50.433
+e nos permite passar
+de uma crença anterior incerta
+
+00:00:50.467 --> 00:00:52.533
+para algo mais provável.
+
+00:00:52.867 --> 00:00:55.533
+Você verá o Teorema de Bayes
+algumas vezes na robótica.
+
+00:00:55.567 --> 00:00:57.700
+Nesta lição, você ganhará
+uma compreensão maior
+
+00:00:57.733 --> 00:00:58.900
+do teorema.
+

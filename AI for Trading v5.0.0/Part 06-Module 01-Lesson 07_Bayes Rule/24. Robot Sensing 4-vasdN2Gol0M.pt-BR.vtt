@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:02.001
+Agora
+vou dificultar sua vida.
+
+00:00:02.400 --> 00:00:06.000
+Suponha que há 3 lugares
+no mundo, não apenas 2.
+
+00:00:06.701 --> 00:00:08.300
+Há um vermelho
+e dois verdes.
+
+00:00:08.801 --> 00:00:11.834
+E para simplificar,
+chamaremos de A, B e C.
+
+00:00:12.367 --> 00:00:16.734
+Vamos assumir que todos eles têm
+a mesma probabilidade anterior
+
+00:00:16.768 --> 00:00:20.133
+de 1/3 ou 0,333
+e assim por diante.
+
+00:00:20.467 --> 00:00:23.367
+Vamos dizer
+que o robô vê vermelho
+
+00:00:23.701 --> 00:00:26.801
+e, como antes,
+a probabilidade de ver vermelho
+
+00:00:27.001 --> 00:00:29.334
+na célula A é 0,9.
+
+00:00:29.368 --> 00:00:34.801
+A probabilidade de ver verde
+na célula B é 0,9.
+
+00:00:35.234 --> 00:00:39.334
+A probabilidade de ver verde
+na célula C também é 0,9.
+
+00:00:39.634 --> 00:00:43.133
+Então o que eu mudei
+é que dei a variável oculta,
+
+00:00:43.400 --> 00:00:45.701
+mais ou menos como a variável
+câncer/sem câncer.
+
+00:00:45.735 --> 00:00:49.734
+Três estados. Não são apenas 2,
+como antes, A ou B.
+
+00:00:50.000 --> 00:00:52.534
+Agora é A, B ou C.
+
+00:00:52.901 --> 00:00:54.601
+Vamos resolver
+este problema juntos,
+
+00:00:54.635 --> 00:00:57.534
+porque segue exatamente
+a mesma receita de antes,
+
+00:00:57.834 --> 00:00:59.367
+mesmo que não seja
+muito óbvio.
+
+00:00:59.667 --> 00:01:01.001
+Deixe-me perguntar:
+
+00:01:01.035 --> 00:01:04.067
+qual é a "joint"
+de estar na célula A
+
+00:01:04.701 --> 00:01:07.434
+depois de ter visto
+a cor vermelha?
+
+00:01:07.834 --> 00:01:09.501
+Esta é a "joint" de antes.
+

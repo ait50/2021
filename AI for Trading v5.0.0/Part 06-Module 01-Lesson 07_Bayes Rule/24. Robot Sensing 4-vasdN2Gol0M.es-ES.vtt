@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Ahora voy a hacer un corazón en V
+
+00:00:03.000 --> 00:00:06.000
+Supón que hay 3 lugares en el mundo, no sólo 2
+
+00:00:06.000 --> 00:00:08.000
+Ahí hay 1 rojo y 2 verdes
+
+00:00:08.000 --> 00:00:12.000
+Y por simplicidad, vamos a llamarlos A, B y C
+
+00:00:12.000 --> 00:00:15.000
+Vamos a asumir que todos ellos
+
+00:00:15.000 --> 00:00:20.000
+Tienen la misma probabilidad previa de 1/3 o 0.333 y así sucesivamente
+
+00:00:20.000 --> 00:00:23.000
+Vamos a decir que el robot ve rojo
+
+00:00:23.000 --> 00:00:26.000
+Y como antes, la probabilidad de ver rojo
+
+00:00:26.000 --> 00:00:30.000
+En la celda A es 0.9
+
+00:00:30.000 --> 00:00:33.000
+La probabilidad de ver verde en celda B
+
+00:00:33.000 --> 00:00:35.000
+0.9
+
+00:00:35.000 --> 00:00:38.000
+La probabilidad de ver verde en celda C
+
+00:00:38.000 --> 00:00:39.000
+Es también 0.9
+
+00:00:39.000 --> 00:00:41.000
+Entonces lo que he cambiado es
+
+00:00:41.000 --> 00:00:43.000
+Que he dado la variable oculta,
+
+00:00:43.000 --> 00:00:45.000
+Como la variable cáncer o no cáncer
+
+00:00:45.000 --> 00:00:46.000
+3 estados
+
+00:00:46.000 --> 00:00:50.000
+No sólo 2 como antes de A o B
+
+00:00:50.000 --> 00:00:52.000
+Ahora es A, B o C
+
+00:00:52.000 --> 00:00:54.000
+Vamos a resolver el problema juntos
+
+00:00:54.000 --> 00:00:57.000
+Por que sigue exactamente la misma receta que antes
+
+00:00:57.000 --> 00:00:59.000
+Incluso aunque no se vea obvia
+
+00:00:59.000 --> 00:01:01.000
+Así déjame preguntarte
+
+00:01:01.000 --> 00:01:04.000
+¿Cuál es la unión de estar en la celda A
+
+00:01:04.000 --> 00:01:08.000
+Después de haber visto el color rojo?
+
+00:01:08.000 --> 09:59:59.000
+Esta es la unión como lo era antes
+

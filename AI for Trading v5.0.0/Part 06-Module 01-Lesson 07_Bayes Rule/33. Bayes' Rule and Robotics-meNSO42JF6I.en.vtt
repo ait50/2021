@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.639
+Bayes rule is extremely important in robotics and it can be described in one sentence.
+
+00:00:05.639 --> 00:00:07.274
+Given an initial prediction,
+
+00:00:07.275 --> 00:00:09.449
+if we gather additional related data,
+
+00:00:09.449 --> 00:00:11.669
+data that our initial prediction depends on,
+
+00:00:11.669 --> 00:00:13.710
+we can improve that prediction.
+
+00:00:13.710 --> 00:00:17.760
+For example, let's say our initial prediction also known as a prior belief,
+
+00:00:17.760 --> 00:00:20.655
+is an estimate of a car's location on a road.
+
+00:00:20.655 --> 00:00:24.730
+This might be the location given by a slightly inaccurate GPS signal.
+
+00:00:24.730 --> 00:00:26.670
+Then, we use sensors to gather data
+
+00:00:26.670 --> 00:00:29.490
+about the car's surroundings and how the car is moving.
+
+00:00:29.489 --> 00:00:33.420
+How do you think this sensor data can help us improve our initial location prediction?
+

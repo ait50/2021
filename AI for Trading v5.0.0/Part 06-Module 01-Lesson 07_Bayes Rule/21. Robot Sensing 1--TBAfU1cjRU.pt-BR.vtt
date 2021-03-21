@@ -1,0 +1,41 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:02.234
+Neste exemplo,
+temos números engraçados.
+
+00:00:03.033 --> 00:00:07.601
+A posterior para vermelho é 0,8
+e para o verde é 0,2.
+
+00:00:08.001 --> 00:00:10.434
+E tudo tem a ver
+com o fato de que, no início,
+
+00:00:10.468 --> 00:00:11.968
+o robô não fazia ideia
+de onde estava.
+
+00:00:12.002 --> 00:00:16.801
+A "joint" para o vermelho
+após ver vermelho é de 0,4.
+
+00:00:17.200 --> 00:00:19.234
+O mesmo para verde é 0,1.
+
+00:00:20.234 --> 00:00:24.534
+0,4+0,1=0,5.
+
+00:00:25.267 --> 00:00:28.234
+Se você normalizou 0,4,
+dividindo por 0,5
+
+00:00:28.268 --> 00:00:29.400
+você obtém 0,8.
+
+00:00:29.434 --> 00:00:33.567
+E se normalizou 0,1 por 0,5,
+obtém 0,2.
+

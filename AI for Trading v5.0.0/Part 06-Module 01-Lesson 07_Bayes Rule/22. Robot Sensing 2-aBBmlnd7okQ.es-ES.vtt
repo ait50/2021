@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:01.000
+Y la respuesta es
+
+00:00:01.000 --> 00:00:04.000
+El previo no esta siendo afectado por la medición
+
+00:00:04.000 --> 00:00:07.000
+Entonces la probabilidad es de 0 para rojo
+
+00:00:07.000 --> 00:00:09.000
+Y la probabilidad es de 1 para verde
+
+00:00:09.000 --> 00:00:12.000
+A pesar de que de hecho todo es rojo
+
+00:00:12.000 --> 00:00:15.000
+Para ver esto, tienes que encontrar la unión de ver rojo y ver rojo
+
+00:00:15.000 --> 00:00:18.000
+Es 0 por 0.8 que da 0
+
+00:00:18.000 --> 00:00:21.000
+Es lo mismo para la unión de verde que es
+
+00:00:21.000 --> 00:00:25.000
+1 por 0.2
+
+00:00:25.000 --> 00:00:28.000
+Entonces tienes que normalizar 0 y 0.2
+
+00:00:28.000 --> 00:00:31.000
+La suma de esos da 0.2
+
+00:00:31.000 --> 00:00:34.000
+Entonces dividimos 0 por 0.2 que nos da 0
+
+00:00:34.000 --> 00:00:37.000
+Y 0.2 dividido por 0.2 nos da 1
+
+00:00:37.000 --> 09:59:59.000
+Esos son los números exactos aquí
+

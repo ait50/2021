@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Ahora, yo diría que si llegamos a esto, no encuentras cualquier inmediata
+
+00:00:03.000 --> 00:00:05.000
+significativo sobre estadística y probabilidad.
+
+00:00:05.000 --> 00:00:09.000
+Esto es totalmente no trivial, pero resulta muy útil.
+
+00:00:09.000 --> 00:00:16.000
+Por lo tanto, voy a practicar esto con usted mediante un segundo ejemplo. En este caso, eres un robot.
+
+00:00:16.000 --> 00:00:26.000
+Este robot vive en un mundo de exactamente dos lugares. Hay un rojo y un lugar verde, R y G.
+
+00:00:26.000 --> 00:00:30.000
+Ahora, digo al principio, este robot tiene ninguna pista donde es,
+
+00:00:30.000 --> 00:00:36.000
+por lo tanto la probabilidad previa para en su lugar, rojo o verde, es de 0,5.
+
+00:00:36.000 --> 00:00:41.000
+También posee un sensor como puede ver a través de sus ojos, pero su sensor parece ser algo poco fiables.
+
+00:00:41.000 --> 00:00:48.000
+Por lo tanto, la probabilidad de ver la roja en la celda de la cuadrícula roja es 0,8,
+
+00:00:48.000 --> 00:00:55.000
+y también es la probabilidad de ver verde en la celda verde 0,8.
+
+00:00:55.000 --> 00:00:58.000
+Ahora, supongo que el robot ve rojo.
+
+00:00:58.000 --> 00:01:07.000
+¿Cuáles son ahora las probabilidades posteriores que el robot está en los eritrocitos dado que sólo vio la roja
+
+00:01:07.000 --> 00:01:14.000
+y por el contrario, ¿cuál es la probabilidad de que se trata en la celda verde aunque vio la roja.
+
+00:01:14.000 --> 09:59:59.000
+Ahora, puede aplicar la regla de Bayes y averiguar.
+

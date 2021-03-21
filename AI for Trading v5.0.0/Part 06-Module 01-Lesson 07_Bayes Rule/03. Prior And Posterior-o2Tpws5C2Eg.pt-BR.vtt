@@ -1,0 +1,174 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:02.567
+Então esta é a essência
+do Teorema de Bayes,
+
+00:00:02.601 --> 00:00:04.067
+que darei a seguir.
+
+00:00:04.267 --> 00:00:05.734
+Existe uma ideia anterior,
+
+00:00:05.767 --> 00:00:09.100
+que é a probabilidade
+antes de executar um teste,
+
+00:00:09.701 --> 00:00:12.501
+e então você obtém evidências
+com o próprio teste,
+
+00:00:12.968 --> 00:00:16.567
+e tudo isso leva ao que se chama
+de probabilidade posterior.
+
+00:00:16.868 --> 00:00:19.033
+Isso não é
+uma operação de adição.
+
+00:00:19.067 --> 00:00:20.701
+De fato, na realidade,
+
+00:00:20.734 --> 00:00:22.067
+é mais
+como uma multiplicação,
+
+00:00:22.300 --> 00:00:24.901
+mas, semanticamente,
+o que o Teorema de Bayes faz
+
+00:00:25.400 --> 00:00:29.067
+é incorporar
+algumas evidências do teste
+
+00:00:30.133 --> 00:00:31.667
+em sua probabilidade anterior
+
+00:00:31.701 --> 00:00:33.934
+para chegar
+a uma probabilidade posterior.
+
+00:00:34.734 --> 00:00:36.267
+Vamos ver isso na prática.
+
+00:00:36.567 --> 00:00:37.968
+No nosso exemplo de câncer,
+
+00:00:38.267 --> 00:00:42.667
+sabemos que a probabilidade anterior
+de câncer é de 0,01,
+
+00:00:42.968 --> 00:00:44.434
+que é o mesmo que 1%.
+
+00:00:44.767 --> 00:00:47.734
+A probabilidade posterior
+de câncer,
+
+00:00:48.000 --> 00:00:51.834
+já que nosso teste é positivo,
+abreviado aqui como "POS",
+
+00:00:52.167 --> 00:00:57.200
+é o produto anterior
+vezes a sensibilidade do teste,
+
+00:00:57.868 --> 00:01:01.234
+que é: qual é a chance
+de um resultado positivo
+
+00:01:01.601 --> 00:01:03.267
+já que eu tenho câncer?
+
+00:01:03.300 --> 00:01:07.667
+E você deve se lembrar,
+que foi 0,9 ou 90%.
+
+00:01:08.133 --> 00:01:10.334
+Só para avisá-lo,
+isto não está correto.
+
+00:01:10.667 --> 00:01:13.334
+Para ficar,
+também temos que calcular
+
+00:01:13.934 --> 00:01:16.767
+a posterior para a opção
+"sem câncer",
+
+00:01:17.968 --> 00:01:21.133
+que é "sem câncer"
+com um teste positivo.
+
+00:01:21.701 --> 00:01:24.300
+E usando a anterior
+
+00:01:24.334 --> 00:01:28.000
+sabemos que o P de "sem C"
+é 0,99.
+
+00:01:28.868 --> 00:01:30.467
+É 1 menos P(C)
+
+00:01:30.667 --> 00:01:33.434
+vezes a probabilidade de receber
+um resultado positivo do exame
+
+00:01:33.701 --> 00:01:35.067
+dando "sem C".
+
+00:01:36.133 --> 00:01:38.067
+Perceba que estas duas equações
+são iguais,
+
+00:01:38.100 --> 00:01:40.267
+mas troquei C por "sem C".
+
+00:01:40.467 --> 00:01:42.734
+E este aqui demora um pouquinho
+para calcular.
+
+00:01:42.767 --> 00:01:44.968
+Sabemos que o teste dá
+um resultado negativo
+
+00:01:45.000 --> 00:01:48.267
+se estiver livre de câncer,
+0,9 de chance.
+
+00:01:48.300 --> 00:01:51.634
+Como resultado,
+isso nos dá um resultado positivo
+
+00:01:52.033 --> 00:01:54.934
+na opção "livre de câncer",
+com 10% de chance.
+
+00:01:55.267 --> 00:01:59.033
+Agora o interessante é que esta
+quase é a equação exata,
+
+00:01:59.234 --> 00:02:02.567
+mas as probabilidades
+não somam 1.
+
+00:02:03.934 --> 00:02:06.567
+Para ver, vou pedir
+para você calcular isso,
+
+00:02:06.968 --> 00:02:09.501
+então me dê os números exatos
+
+00:02:10.033 --> 00:02:11.868
+para a primeira expressão
+
+00:02:12.667 --> 00:02:15.300
+e para a segunda expressão
+escritas aqui,
+
+00:02:16.100 --> 00:02:18.534
+usando o nosso exemplo
+lá de cima.
+

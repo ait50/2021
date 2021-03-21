@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Bueno decimos que tenemos esta situación donde
+
+00:00:03.000 --> 00:00:09.000
+El previo P(C), una prueba con cierta sensibilidad (Pos/C) y una cierta especificad (Neg/&gt;C)
+
+00:00:09.000 --> 00:00:13.000
+Cuando recibes un resultado de una prueba positiva, lo que tienes que hacer es
+
+00:00:13.000 --> 00:00:19.000
+Tomar tu prior P(C) multiplicarlo por la probabilidad del resultado de la prueba, dado C,
+
+00:00:19.000 --> 00:00:24.000
+Y lo multiplicas por la probabilidad del resultado de la prueba dado (Neg/&gt;C)
+
+00:00:24.000 --> 00:00:28.000
+Entonces esto es la rama para considerar que tienes cáncer
+
+00:00:28.000 --> 00:00:31.000
+Esta es la rama de la consideración de no tener cáncer
+
+00:00:31.000 --> 00:00:33.000
+Cuando terminas con esto, llegas a un número
+
+00:00:33.000 --> 00:00:37.000
+Que combinas con la hipótesis de cáncer con el resultado de la prueba.
+
+00:00:37.000 --> 00:00:42.000
+Observa la hipótesis del cáncer y la hipótesis de no cáncer
+
+00:00:42.000 --> 00:00:49.000
+Ahora lo que haces es sumar esos de arriba y normalmente no suman uno
+
+00:00:49.000 --> 00:00:53.000
+Obtienes una cierta cantidad que resulta ser la probabilidad total
+
+00:00:53.000 --> 00:00:56.000
+De la prueba cuando en este caso es positivo
+
+00:00:56.000 --> 00:01:03.000
+Y todo lo que tienes que hacer siguiente es dividir o normalizar esta cosa de aquí por
+
+00:01:03.000 --> 00:01:06.000
+La suma de aquí y de lo mismo en el lado derecho.
+
+00:01:06.000 --> 00:01:13.000
+El divisor es el mismo para ambos casos, por que esta es tu rama de cáncer, la rama de no cáncer
+
+00:01:13.000 --> 00:01:16.000
+Pero el resultado no depende de la variable cáncer más.
+
+00:01:16.000 --> 00:01:19.000
+Lo que obtienes es la deseada probabilidad posterior
+
+00:01:19.000 --> 00:01:24.000
+Y estos suma 1 si hiciste todo de forma correcta, como se muestra aquí
+
+00:01:24.000 --> 09:59:59.000
+Este es el algoritmo de la regla de Bayes.
+

@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.334 --> 00:00:03.167
+Bem, já falamos
+que temos uma situação
+
+00:00:03.767 --> 00:00:08.133
+com uma anterior,
+um teste com certa sensibilidade
+
+00:00:08.167 --> 00:00:09.868
+e uma certa especificidade.
+
+00:00:09.902 --> 00:00:13.100
+Quando você recebe, digamos,
+um teste de resultado positivo,
+
+00:00:13.134 --> 00:00:14.968
+você deve pegar a anterior,
+
+00:00:15.002 --> 00:00:19.267
+multiplicá-la pela probabilidade
+do resultado ser "com câncer",
+
+00:00:19.601 --> 00:00:21.901
+e multiplicá-la
+pela probabilidade
+
+00:00:21.935 --> 00:00:24.234
+do resultado
+ser "sem câncer".
+
+00:00:24.268 --> 00:00:27.834
+Então esta é a sua derivada
+considerando que você tem câncer.
+
+00:00:28.434 --> 00:00:31.601
+E esta é a derivada considerando
+que está livre do câncer.
+
+00:00:31.635 --> 00:00:33.667
+Ao terminar,
+chega a um número
+
+00:00:33.701 --> 00:00:37.534
+que agora combina a hipótese
+de câncer com o resultado do exame.
+
+00:00:37.568 --> 00:00:41.501
+Olhe para a hipótese "com câncer"
+e para a hipótese "sem câncer".
+
+00:00:42.868 --> 00:00:45.501
+Agora você precisa
+adicionar isso,
+
+00:00:45.535 --> 00:00:49.501
+e normalmente
+essa soma não dá 1.
+
+00:00:49.535 --> 00:00:50.968
+Você obtém
+um determinado número
+
+00:00:51.002 --> 00:00:53.133
+que passa a ser
+a probabilidade total
+
+00:00:53.334 --> 00:00:56.434
+do que o teste é positivo,
+como realmente foi.
+
+00:00:56.468 --> 00:01:01.200
+E em seguida você divide,
+ou normaliza, isto aqui
+
+00:01:02.601 --> 00:01:05.934
+pela soma aqui.
+E faz o mesmo no lado direito.
+
+00:01:06.234 --> 00:01:08.968
+O divisor é o mesmo
+para os dois casos,
+
+00:01:09.002 --> 00:01:11.200
+porque esta é a derivada
+"com câncer"
+
+00:01:11.234 --> 00:01:12.868
+e esta é a "sem câncer",
+
+00:01:12.902 --> 00:01:15.601
+mas esta pontuação
+não depende da variável "câncer".
+
+00:01:15.635 --> 00:01:17.340
+O resultado que você obtém
+
+00:01:17.374 --> 00:01:19.801
+é a probabilidade posterior
+desejada,
+
+00:01:19.835 --> 00:01:22.534
+cuja soma agora é 1,
+se você fez tudo certo,
+
+00:01:22.568 --> 00:01:23.667
+como mostrado aqui.
+
+00:01:23.701 --> 00:01:26.000
+Este é o algoritmo
+para o Teorema de Bayes.
+

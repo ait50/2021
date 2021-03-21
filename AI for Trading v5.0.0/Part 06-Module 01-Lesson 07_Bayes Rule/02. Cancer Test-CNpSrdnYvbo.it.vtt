@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Utilizziamo l'esempio sul cancro dall'ultima unità
+
+00:00:03.000 --> 00:00:07.000
+C'è un cancro specifico che si presenta nell'1% della popolazione
+
+00:00:07.000 --> 00:00:10.000
+ed il test per questo tipo di cancro ha il 90% delle possibilità
+
+00:00:10.000 --> 00:00:14.000
+di risultare positivo se è presente questo cancro, C.
+
+00:00:14.000 --> 00:00:19.000
+Questa è generalmente chiamata sensitività.
+
+00:00:19.000 --> 00:00:22.000
+Ma il test a volte è positivo,
+
+00:00:22.000 --> 00:00:24.000
+anche se non avete il cancro
+
+00:00:24.000 --> 00:00:27.000
+Diciamo che con un'altra probabilità del 90%
+
+00:00:27.000 --> 00:00:31.000
+è negativo se non abbimo C.
+
+00:00:31.000 --> 00:00:39.000
+Questa è generalmente chiamata la specificità.
+
+00:00:39.000 --> 00:00:41.000
+quindi ecco la mia domanda.
+
+00:00:41.000 --> 00:00:44.000
+Senza ulteriori sintomi, voi fate il test,
+
+00:00:44.000 --> 00:00:47.000
+ed il test risulta positivo.
+
+00:00:47.000 --> 00:00:50.000
+Quale pensate sia a probabilità di avere
+
+00:00:50.000 --> 00:00:52.000
+quello specifico tipo di cancro?
+
+00:00:52.000 --> 00:00:55.000
+Per rispoendere a ciò, disegnamo un diagramma.
+
+00:00:55.000 --> 00:00:57.000
+Supponiamo che questi siano tutte e persone,
+
+00:00:57.000 --> 00:01:00.000
+e alcune di esse, esattamente l'1% ha il cancro.
+
+00:01:00.000 --> 00:01:03.000
+99% non c'è l'ha
+
+00:01:03.000 --> 00:01:06.000
+Sappiamo che c'è un test
+
+00:01:06.000 --> 00:01:08.000
+che se ha il cancro,
+
+00:01:08.000 --> 00:01:12.000
+fa una diagnosi corretta con una probabilità del 90%.
+
+00:01:12.000 --> 00:01:17.000
+Quindi se disegnamo area dove il test è positivo,
+
+00:01:17.000 --> 00:01:20.000
+cancro e test posiivo,
+
+00:01:20.000 --> 00:01:23.000
+allora questa area qui
+
+00:01:23.000 --> 00:01:26.000
+è il 90% del cerchio relativo al cancro.
+
+00:01:26.000 --> 00:01:27.000
+Comunque, questo non è interamente vero.
+
+00:01:27.000 --> 00:01:30.000
+Il test può risultare positivo
+
+00:01:30.000 --> 00:01:34.000
+anche se la persona non ha il cancro.
+
+00:01:34.000 --> 00:01:36.000
+Infatti, nel nostro caso,
+
+00:01:36.000 --> 00:01:38.000
+si verifica nel 10% dei casi.
+
+00:01:38.000 --> 00:01:41.000
+Quindi dobbiamo aggiungere un'ulteriore area
+
+00:01:41.000 --> 00:01:44.000
+grande quanto grande quanto il 10% di questa area
+
+00:01:44.000 --> 00:01:48.000
+che sia grande quando il 10% di questa grande area
+
+00:01:48.000 --> 00:01:50.000
+dove il test può essere positivo,
+
+00:01:50.000 --> 00:01:54.000
+ma la persona non ha il cancro.
+
+00:01:54.000 --> 00:01:58.000
+Quindi questa area blue è il 10% di tutta quest'area qui
+
+00:01:58.000 --> 00:02:01.000
+meno il piccolo cerchio relativo al cancro.
+
+00:02:01.000 --> 00:02:06.000
+e chiaramente, tutta l'area esterna a questi cerchi
+
+00:02:06.000 --> 00:02:10.000
+corrisponde ad una situazione di niente cancro
+
+00:02:10.000 --> 00:02:12.000
+e test negativo.
+
+00:02:12.000 --> 00:02:14.000
+Quindi lasciate che vi chieda nuovamente.
+
+00:02:14.000 --> 00:02:17.000
+Supponiamo di ottenere un risultato positivo,
+
+00:02:17.000 --> 00:02:18.000
+cosa pensate?
+
+00:02:18.000 --> 00:02:22.000
+La probablità a priori di avere il cancro
+
+00:02:22.000 --> 00:02:24.000
+dell'1%
+
+00:02:24.000 --> 00:02:27.000
+una sensitività ed una specificità del 90%,
+
+00:02:27.000 --> 00:02:31.000
+Pensate che le vostre nuove probabilità ora siano
+
+00:02:31.000 --> 00:02:32.000
+90%
+
+00:02:32.000 --> 00:02:34.000
+8%
+
+00:02:34.000 --> 09:59:59.000
+o appena 1%?
+

@@ -1,0 +1,161 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.234 --> 00:00:03.067
+Vamos usar o exemplo do câncer
+da última unidade.
+
+00:00:03.100 --> 00:00:07.167
+Digamos que há um câncer específico
+que ocorre em 1% da população.
+
+00:00:07.200 --> 00:00:11.067
+No exame para essa doença,
+há 90% de chance
+
+00:00:11.100 --> 00:00:14.767
+de resultado positivo
+para pessoas com esse câncer, "C".
+
+00:00:14.801 --> 00:00:18.834
+Isso normalmente é chamado
+de sensibilidade do teste.
+
+00:00:18.868 --> 00:00:23.968
+Mas, às vezes, o exame dá positivo
+mesmo que você não tenha "C".
+
+00:00:24.001 --> 00:00:27.334
+Digamos que há outros
+90% de chance
+
+00:00:27.400 --> 00:00:30.767
+de você não ter "C",
+
+00:00:30.801 --> 00:00:34.100
+o que é chamado
+
+00:00:34.133 --> 00:00:39.200
+de especificidade.
+
+00:00:39.434 --> 00:00:44.133
+A pergunta é: sem maiores sintomas,
+você faz o exame
+
+00:00:44.167 --> 00:00:47.400
+e o resultado é positivo.
+
+00:00:47.434 --> 00:00:52.067
+Qual será a probabilidade de ter
+esse tipo específico de câncer?
+
+00:00:52.100 --> 00:00:54.901
+Para responder, vamos
+desenhar um diagrama.
+
+00:00:54.934 --> 00:00:57.100
+Vamos imaginar que esta
+seja a população,
+
+00:00:57.133 --> 00:00:59.868
+e parte dela, exatamente 1%,
+tem câncer.
+
+00:00:59.901 --> 00:01:03.167
+99% das pessoas não têm.
+
+00:01:03.200 --> 00:01:05.634
+Sabemos que há um exame
+
+00:01:05.667 --> 00:01:08.300
+que, se você tem câncer,
+
+00:01:08.334 --> 00:01:12.033
+diagnostica corretamente,
+com 90% de chance.
+
+00:01:12.067 --> 00:01:16.667
+Então se desenhamos a área
+em que o exame dá positivo,
+
+00:01:16.700 --> 00:01:20.701
+câncer e exame positivo,
+
+00:01:20.734 --> 00:01:25.567
+esta área aqui é 90%
+do círculo do câncer.
+
+00:01:25.601 --> 00:01:27.434
+Contudo, essa não é
+toda a verdade.
+
+00:01:27.467 --> 00:01:30.000
+Há exames que dão positivo
+
+00:01:30.067 --> 00:01:33.901
+mesmo sem a pessoa ter câncer.
+
+00:01:33.934 --> 00:01:38.000
+No nosso caso, ocorre
+em 10% de todos os casos.
+
+00:01:38.033 --> 00:01:41.501
+Então temos que adicionar
+mais espaço,
+
+00:01:41.534 --> 00:01:44.467
+porque em mais de 10%
+desta área grande...
+
+00:01:44.501 --> 00:01:50.300
+Em mais de 10% desta área grande,
+o exame pode dar positivo
+
+00:01:50.334 --> 00:01:53.567
+sem a pessoa ter a doença.
+
+00:01:53.601 --> 00:01:59.001
+Esta área azul equivale a 10%
+de todo este espaço
+
+00:01:59.033 --> 00:02:02.000
+menos o círculo pequeno
+que simboliza o câncer.
+
+00:02:02.033 --> 00:02:05.801
+E toda a área
+fora desses círculos
+
+00:02:05.834 --> 00:02:09.667
+corresponde a situações
+em que não há câncer
+
+00:02:09.701 --> 00:02:11.901
+e o resultado é negativo.
+
+00:02:11.934 --> 00:02:16.501
+Vou perguntar de novo: imagine
+que temos um exame positivo.
+
+00:02:17.200 --> 00:02:18.667
+O que você acha?
+
+00:02:18.701 --> 00:02:23.701
+Uma possibilidade anterior
+de câncer, 1%,
+
+00:02:23.734 --> 00:02:27.667
+a sensibilidade
+e a especificidade de 90%.
+
+00:02:27.701 --> 00:02:31.033
+Você acha que agora
+as novas chances
+
+00:02:31.100 --> 00:02:33.868
+são de 90%, 8%
+
+00:02:33.901 --> 00:02:36.734
+ou de apenas 1%?
+

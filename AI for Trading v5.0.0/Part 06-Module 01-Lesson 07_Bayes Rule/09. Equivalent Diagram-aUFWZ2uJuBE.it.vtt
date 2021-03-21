@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:05.000
+Ora, lo steso algoritmo funziona anche se il vostro test da risultato negativo
+
+00:00:05.000 --> 00:00:09.000
+Faremo pratica su questo in 1 secondo. Supponete che ul vostro test risulti negativo
+
+00:00:09.000 --> 00:00:11.000
+Potete ancora porvi la stessa domanda:
+
+00:00:11.000 --> 00:00:17.000
+Qual è la mia probabilità di avere o meno il cancro? Ma ora tutte i positivi qui diventano negativi
+
+00:00:17.000 --> 00:00:24.000
+La somma è la proabilità totale relativa la test risultante negativo e ora possiamo dividerlo per questo valore
+
+00:00:24.000 --> 00:00:30.000
+ora ottenete la probailità a posteriori per cancro e not cancro assumendo che avete
+
+00:00:30.000 --> 00:00:34.000
+un risultato del test negativo, il quale è ovviamente molto, molto più favorevole
+
+00:00:34.000 --> 00:00:37.000
+per voi perché nessuno di noi vuole aver il cancro.
+
+00:00:37.000 --> 00:00:43.000
+Quindi, guardate questo per un po' ed ora svolgiamo i calcoli relativi al caso negativo
+
+00:00:43.000 --> 00:00:46.000
+usando gli stessi numeri che vi ho dato prima
+
+00:00:46.000 --> 09:59:59.000
+e lo faro passo per passo questa volta così che possa realmente guidarvi nel processo
+

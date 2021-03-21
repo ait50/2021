@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Y obtuve 0.0217 y esto es realmente una cosa pequeña
+
+00:00:05.000 --> 00:00:10.000
+Y la forma como llegué aquí es escoger cuando estoy en casa por la probabilidad de que llueva cuando estoy en casa
+
+00:00:10.000 --> 00:00:16.000
+Normalizandolo usando el mismo número de un año mas el calculo de la misma
+
+00:00:16.000 --> 00:00:23.000
+Probabilidad de estar fuera que es 0.6 por la probabilidad de que estoy fuera y llueve que es de 0.3
+
+00:00:23.000 --> 00:00:32.000
+Y el resultado es 0.0217 o mejor de 2% -- ¿si obtuviste esto?
+
+00:00:32.000 --> 00:00:36.000
+Si es así, ahora entiendes algo que es realmente interesante -- aquí vamos
+
+00:00:36.000 --> 00:00:43.000
+A mirar una variable escondida, entender como una prueba puede darte información de regreso
+
+00:00:43.000 --> 00:00:49.000
+Acerca de esta variable escondida y es realmente interesante por que nos permite aplicar el mismo esquema
+
+00:00:49.000 --> 00:00:54.000
+Para mucho problemas prácticos en el mundo -- felicidades!
+
+00:00:54.000 --> 00:01:01.000
+En nuestra siguiente unidad, que es opcional, quiero que programes todo esto para que puedas probar la misma cosa
+
+00:01:01.000 --> 00:01:07.000
+En una interface de programación y que escribas software para implementar cosas como una regla de Bayes
+
+00:01:07.000 --> 09:59:59.000
+Pero no te apures, esto es opcional. Si no sabes como programar, sólo sáltate la siguiente unidad
+
