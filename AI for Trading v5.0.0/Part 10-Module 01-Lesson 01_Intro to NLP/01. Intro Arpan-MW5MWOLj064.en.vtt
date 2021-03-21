@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.865
+Our first section will be taught by Arpan Chakraborty.
+
+00:00:02.865 --> 00:00:05.610
+Arpan has a Ph.D. in Computer Science and for several years,
+
+00:00:05.610 --> 00:00:08.460
+has taught at Udacity and at Georgia Tech. Hi Arpan.
+
+00:00:08.460 --> 00:00:10.560
+Hi Luis. Hello everyone.
+
+00:00:10.560 --> 00:00:14.519
+I'm glad to get you started on your journey through Natural Language Processing.
+
+00:00:14.519 --> 00:00:17.489
+Everything in NLP starts with raw text typically,
+
+00:00:17.489 --> 00:00:21.070
+produced by humans like you and me, and Luis here.
+
+00:00:21.070 --> 00:00:25.230
+This text is first processed using some simple transformations such as,
+
+00:00:25.230 --> 00:00:27.300
+splitting it into individual words,
+
+00:00:27.300 --> 00:00:29.955
+reducing verbs to their root form, et cetera.
+
+00:00:29.954 --> 00:00:35.129
+You need to do this before performing any other analysis or training complex models.
+
+00:00:35.130 --> 00:00:37.710
+This stage may sound simple but you have to be
+
+00:00:37.710 --> 00:00:40.230
+careful about how you process your raw text.
+
+00:00:40.229 --> 00:00:46.119
+It may affect the results you obtain further down the line. Ready? Let's do it.
+

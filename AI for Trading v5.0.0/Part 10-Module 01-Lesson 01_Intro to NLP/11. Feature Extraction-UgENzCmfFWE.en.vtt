@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.890
+Okay. We now have clean normalized text.
+
+00:00:03.890 --> 00:00:07.700
+Can we feed this into a statistical or a machine learning model?
+
+00:00:07.700 --> 00:00:09.685
+Not quite. Let's see why.
+
+00:00:09.685 --> 00:00:14.125
+Text data is represented on modern computers using an encoding
+
+00:00:14.125 --> 00:00:19.115
+such as ASCII or Unicode that maps every character to a number.
+
+00:00:19.114 --> 00:00:24.329
+Computer store and transmit these values as binary, zeros and ones.
+
+00:00:24.329 --> 00:00:27.445
+These numbers also have an implicit ordering.
+
+00:00:27.445 --> 00:00:31.435
+65 is less than 66 which is less than 67.
+
+00:00:31.434 --> 00:00:33.615
+But does that mean A is less than B,
+
+00:00:33.615 --> 00:00:35.765
+and B is less and C?
+
+00:00:35.765 --> 00:00:39.390
+No. In fact, that would be an incorrect assumption to
+
+00:00:39.390 --> 00:00:43.814
+make and might mislead our natural language processing algorithms.
+
+00:00:43.814 --> 00:00:48.070
+Moreover, individual characters don't carry much meaning at all.
+
+00:00:48.070 --> 00:00:50.850
+It is words that we should be concerned with,
+
+00:00:50.850 --> 00:00:54.689
+but computers don't have a standard representation for words.
+
+00:00:54.689 --> 00:00:58.619
+Yes, internally they are just sequences of ASCII or Unicode
+
+00:00:58.619 --> 00:01:04.409
+values but they don't quite capture the meanings or relationships between words.
+
+00:01:04.409 --> 00:01:09.149
+Compare this with how an image is represented in computer memory.
+
+00:01:09.150 --> 00:01:14.580
+Each pixel value contains the relative intensity of light at that spot in the image.
+
+00:01:14.579 --> 00:01:16.045
+For a color image,
+
+00:01:16.046 --> 00:01:19.215
+we keep one value per primary color;
+
+00:01:19.215 --> 00:01:20.844
+red, green, and blue.
+
+00:01:20.844 --> 00:01:23.420
+These values carry relevant information.
+
+00:01:23.420 --> 00:01:27.549
+Two pixels with similar values are perceptually similar.
+
+00:01:27.549 --> 00:01:32.099
+Therefore, it makes sense to directly use pixel values in a numerical model.
+
+00:01:32.099 --> 00:01:37.379
+Yes, some feature engineering may be necessary such as edge detection or filtering,
+
+00:01:37.379 --> 00:01:39.974
+but pixels are a good starting point.
+
+00:01:39.974 --> 00:01:41.594
+So the question is,
+
+00:01:41.594 --> 00:01:44.549
+how do we come up with a similar representation for
+
+00:01:44.549 --> 00:01:49.019
+text data that we can use as features for modeling?
+
+00:01:49.019 --> 00:01:52.109
+The answer again depends on what kind of model you're
+
+00:01:52.109 --> 00:01:56.099
+using and what task you're trying to accomplish.
+
+00:01:56.099 --> 00:01:59.655
+If you want to use a graph based model to extract insights,
+
+00:01:59.655 --> 00:02:01.760
+you may want to represent your words as
+
+00:02:01.760 --> 00:02:06.660
+symbolic nodes with relationships between them like WordNet.
+
+00:02:06.659 --> 00:02:09.164
+For statistical models however,
+
+00:02:09.164 --> 00:02:12.929
+you need some sort of numerical representation.
+
+00:02:12.930 --> 00:02:16.349
+Even then, you have to think about the end goal.
+
+00:02:16.349 --> 00:02:19.283
+If you're trying to perform a document level task,
+
+00:02:19.283 --> 00:02:22.215
+such as spam detection or sentiment analysis,
+
+00:02:22.215 --> 00:02:28.229
+you may want to use a per document representations such as bag-of-words or doc2vec.
+
+00:02:28.229 --> 00:02:31.439
+If you want to work with individual words and phrases
+
+00:02:31.439 --> 00:02:34.685
+such as for text generation or machine translation,
+
+00:02:34.685 --> 00:02:39.979
+you'll need a word level representation such as word2vec or glove.
+
+00:02:39.979 --> 00:02:43.447
+There are many ways of representing textual information,
+
+00:02:43.448 --> 00:02:48.000
+and it is only through practice that you can learn what you need for each problem.
+

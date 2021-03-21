@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.320 --> 00:00:05.309
+So, I've just described a computer vision pipeline that takes in a sequence of
+
+00:00:05.309 --> 00:00:07.378
+images and through a series of steps can
+
+00:00:07.378 --> 00:00:10.455
+recognize different facial expressions and emotions.
+
+00:00:10.455 --> 00:00:12.804
+But it still seems kind of mysterious.
+
+00:00:12.804 --> 00:00:15.300
+Can you talk a bit about how exactly a model like
+
+00:00:15.300 --> 00:00:18.535
+this can be trained to recognize different facial expressions?
+
+00:00:18.535 --> 00:00:23.300
+Sure. The process is similar to the pipeline you just described.
+
+00:00:23.300 --> 00:00:28.710
+We have 45 facial muscles that drive thousands of different expressions on our face.
+
+00:00:28.710 --> 00:00:31.109
+But let's take a specific example.
+
+00:00:31.109 --> 00:00:37.795
+Let's say we are training an algorithm to discriminate between a smile and a smirk.
+
+00:00:37.795 --> 00:00:41.840
+We collect tens of thousands of examples of people smiling – the more diverse,
+
+00:00:41.840 --> 00:00:46.600
+the better – and then tens of thousands of examples of people smirking.
+
+00:00:46.600 --> 00:00:51.384
+We feed those prerecorded images along with their labels to the system.
+
+00:00:51.384 --> 00:00:55.780
+The algorithm then looks for visual differences between the two expressions.
+
+00:00:55.780 --> 00:00:57.509
+For instance, when you smile,
+
+00:00:57.509 --> 00:00:58.634
+your teeth might show,
+
+00:00:58.634 --> 00:01:00.879
+but that's not the case with a smirk.
+
+00:01:00.880 --> 00:01:04.049
+So, you give the model lots of examples of smiles and
+
+00:01:04.049 --> 00:01:08.125
+smirks and other facial expressions until it learns to recognize them.
+
+00:01:08.125 --> 00:01:09.620
+It sounds like how a baby learns,
+
+00:01:09.620 --> 00:01:11.284
+by lots of examples.
+
+00:01:11.284 --> 00:01:12.487
+Exactly.
+
+00:01:12.486 --> 00:01:14.369
+And similar to how humans learn,
+
+00:01:14.370 --> 00:01:16.230
+at the beginning of the training phase,
+
+00:01:16.230 --> 00:01:18.810
+the model typically performs very badly,
+
+00:01:18.810 --> 00:01:22.349
+but then it monitors the errors it makes and uses those to
+
+00:01:22.349 --> 00:01:26.353
+improve the performance each time it sees more images.
+
+00:01:26.353 --> 00:01:29.670
+After many iterations, the model converges on
+
+00:01:29.670 --> 00:01:33.765
+the right set of parameters once the error rate becomes acceptable,
+
+00:01:33.765 --> 00:01:37.545
+and that's when we consider the model to be fully trained.
+
+00:01:37.545 --> 00:01:41.871
+Now, this is a very high-level view of how to train any machine learning model,
+
+00:01:41.871 --> 00:01:43.828
+and the details will vary based on the type of
+
+00:01:43.828 --> 00:01:46.949
+model you use and the training algorithm you choose.
+
+00:01:46.950 --> 00:01:52.265
+For instance, you can use a convolutional neural network trained using gradient descent.
+
+00:01:52.265 --> 00:01:57.480
+Next, let's see how this computer vision pipeline works in a real-time application.
+

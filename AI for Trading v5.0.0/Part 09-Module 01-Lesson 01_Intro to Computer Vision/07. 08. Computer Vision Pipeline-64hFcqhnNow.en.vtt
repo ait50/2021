@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.540 --> 00:00:03.850
+Let me walk you through a sequence of steps that you
+
+00:00:03.850 --> 00:00:07.169
+need to analyze facial expressions and emotions.
+
+00:00:07.168 --> 00:00:12.085
+Other computer vision tasks have different desired outputs and corresponding algorithms,
+
+00:00:12.085 --> 00:00:14.894
+but they use a similar overall pipeline.
+
+00:00:14.894 --> 00:00:19.629
+First off, a computer receives visual input from an imaging device like a camera.
+
+00:00:19.629 --> 00:00:23.254
+This is typically captured as a sequence of images or frames.
+
+00:00:23.254 --> 00:00:24.730
+Each frame is then sent through
+
+00:00:24.730 --> 00:00:29.050
+some preprocessing steps that enhance the quality and detail of the image.
+
+00:00:29.050 --> 00:00:33.814
+You may also perform other transformations here such as changing from color to grayscale.
+
+00:00:33.814 --> 00:00:37.539
+Next, to these images are analyzed and our software recognizes
+
+00:00:37.539 --> 00:00:41.844
+certain facial features of interest like the curve of the mouth and shape of the eyes,
+
+00:00:41.844 --> 00:00:47.228
+and then data about these features is fed into a so-called trained model that from
+
+00:00:47.228 --> 00:00:50.019
+previously known data can recognize patterns in
+
+00:00:50.020 --> 00:00:54.234
+these facial expressions and finally identify a certain emotion.
+
+00:00:54.234 --> 00:00:57.759
+It does so with a certain probability that's reported back.
+
+00:00:57.759 --> 00:00:59.950
+Finally, having recognized an emotion,
+
+00:00:59.950 --> 00:01:02.859
+an application can then act on this and interact
+
+00:01:02.859 --> 00:01:06.010
+with a human in a way that takes their emotional state into account.
+

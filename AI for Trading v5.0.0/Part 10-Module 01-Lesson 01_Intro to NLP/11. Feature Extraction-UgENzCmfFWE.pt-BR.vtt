@@ -1,0 +1,209 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.206 --> 00:00:03.649
+Muito bem. Temos um texto
+normalizado e limpo.
+
+00:00:03.682 --> 00:00:06.073
+Podemos passar isso
+para um modelo estatístico
+
+00:00:06.106 --> 00:00:09.801
+ou de aprendizado de máquina?
+Não. Vejamos por quê.
+
+00:00:09.834 --> 00:00:12.783
+Os dados de texto são representados
+nos computadores
+
+00:00:12.816 --> 00:00:16.202
+usando uma codificação,
+como a ASCII ou a Unicode,
+
+00:00:16.235 --> 00:00:19.416
+que mapeia todos os caracteres
+para um número.
+
+00:00:19.449 --> 00:00:22.144
+Os computadores armazenam
+e transmitem esses valores
+
+00:00:22.177 --> 00:00:24.475
+de forma binária -
+zeros e uns.
+
+00:00:24.508 --> 00:00:27.427
+Esses números também têm
+uma ordem implícita.
+
+00:00:27.460 --> 00:00:31.528
+65 é menor que 66,
+que é menor que 67.
+
+00:00:31.561 --> 00:00:33.591
+Isso significa
+que A é menor que B,
+
+00:00:33.624 --> 00:00:35.798
+e que B é menor e C?
+
+00:00:35.831 --> 00:00:39.732
+Não. Na verdade, isso seria
+uma suposição incorreta
+
+00:00:39.765 --> 00:00:43.900
+e poderia enganar os algoritmos
+de processamento de linguagem.
+
+00:00:43.933 --> 00:00:47.851
+Além disso, caracteres individuais
+não têm muito significado.
+
+00:00:47.884 --> 00:00:50.854
+Nós devemos nos preocupar
+com as palavras,
+
+00:00:50.887 --> 00:00:54.707
+mas os computadores não têm
+uma representação padrão para elas.
+
+00:00:54.740 --> 00:00:59.356
+Internamente, elas são sequências
+de valores ASCII ou Unicode,
+
+00:00:59.389 --> 00:01:04.133
+mas isso não capta os significados
+ou as relações entre as palavras.
+
+00:01:04.166 --> 00:01:07.229
+Compare isso com a forma
+como uma imagem é representada
+
+00:01:07.262 --> 00:01:09.019
+na memória do computador.
+
+00:01:09.052 --> 00:01:12.588
+Cada valor de pixel
+contém a intensidade relativa da luz
+
+00:01:12.621 --> 00:01:14.755
+naquele ponto da imagem.
+
+00:01:14.788 --> 00:01:18.941
+Para uma imagem colorida,
+mantemos um valor por cor primária:
+
+00:01:18.974 --> 00:01:20.772
+vermelho, verde e azul.
+
+00:01:20.805 --> 00:01:23.491
+Esses valores carregam
+informações relevantes.
+
+00:01:23.524 --> 00:01:27.411
+Dois pixels com valores semelhantes
+serão perceptivelmente semelhantes.
+
+00:01:27.444 --> 00:01:32.236
+Portanto, faz sentido usar valores
+de pixel em um modelo numérico.
+
+00:01:32.269 --> 00:01:35.131
+Alguns recursos de engenharia
+podem ser necessários,
+
+00:01:35.164 --> 00:01:37.380
+como a detecção de borda
+ou a filtragem,
+
+00:01:37.413 --> 00:01:40.228
+mas os pixels
+são um bom ponto de partida.
+
+00:01:40.261 --> 00:01:41.636
+Então a questão é:
+
+00:01:41.669 --> 00:01:45.508
+como criar uma representação
+semelhante para dados de texto
+
+00:01:45.541 --> 00:01:48.860
+que possa ser usada
+como recurso para modelagem?
+
+00:01:48.893 --> 00:01:52.835
+A resposta depende do tipo
+de modelo que estamos usando
+
+00:01:52.868 --> 00:01:55.942
+e da tarefa
+que tentaremos realizar.
+
+00:01:55.975 --> 00:01:59.557
+Se quisermos usar um modelo
+de gráfico para extrair insights,
+
+00:01:59.590 --> 00:02:03.166
+podemos representar as palavras
+como nós simbólicos
+
+00:02:03.199 --> 00:02:06.997
+com relações entre elas,
+como no WordNet.
+
+00:02:07.030 --> 00:02:09.150
+Para modelos estatísticos,
+no entanto,
+
+00:02:09.183 --> 00:02:12.781
+precisamos de algum tipo
+de representação numérica.
+
+00:02:12.814 --> 00:02:16.150
+Mesmo assim, temos que pensar
+no objetivo final.
+
+00:02:16.183 --> 00:02:19.157
+Se quisermos realizar uma tarefa
+no nível do documento,
+
+00:02:19.190 --> 00:02:22.285
+como a detecção de spam
+ou a análise de sentimentos,
+
+00:02:22.318 --> 00:02:25.439
+talvez seja melhor usar
+uma representação por documento,
+
+00:02:25.472 --> 00:02:28.414
+como o saco de palavras
+ou o Doc2Vec.
+
+00:02:28.447 --> 00:02:31.541
+Se quisermos trabalhar
+com palavras e frases individuais,
+
+00:02:31.574 --> 00:02:34.670
+como para geração de texto
+ou para a tradução automática,
+
+00:02:34.703 --> 00:02:37.590
+precisaremos de uma representação
+em nível de palavra,
+
+00:02:37.623 --> 00:02:39.901
+como Word2Vec ou GloVe.
+
+00:02:39.934 --> 00:02:43.246
+Existem muitas maneiras
+de representar a informação textual,
+
+00:02:43.279 --> 00:02:45.190
+e é somente com a prática
+
+00:02:45.223 --> 00:02:48.396
+que aprenderemos o que será
+necessário para cada problema.
+

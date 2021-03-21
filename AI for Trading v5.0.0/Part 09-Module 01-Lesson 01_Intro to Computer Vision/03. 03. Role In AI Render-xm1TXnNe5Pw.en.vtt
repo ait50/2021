@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.390 --> 00:00:06.409
+Some of you are probably wondering how vision fits into artificial intelligence.
+
+00:00:06.410 --> 00:00:08.710
+Why do AI systems need to see?
+
+00:00:08.710 --> 00:00:10.300
+Why do they need vision?
+
+00:00:10.300 --> 00:00:13.480
+Well, the basis of any AI system is that it can: one,
+
+00:00:13.480 --> 00:00:15.519
+perceive its environment and two,
+
+00:00:15.519 --> 00:00:18.054
+take actions based on those perceptions.
+
+00:00:18.053 --> 00:00:23.375
+And as we noted previously vision is a central part of how we perceive the world.
+
+00:00:23.375 --> 00:00:27.804
+One example of an AI system we're working on Udacity is a self-driving car.
+
+00:00:27.803 --> 00:00:30.834
+The car sees the world through cameras and sensors
+
+00:00:30.835 --> 00:00:34.640
+and then uses that input to safely navigate roads by itself.
+
+00:00:34.640 --> 00:00:38.189
+Computer vision is used to analyze camera images and
+
+00:00:38.189 --> 00:00:42.085
+intelligently identify objects like other cars or pedestrians.
+
+00:00:42.085 --> 00:00:44.789
+It's also used to recognize where the car is on
+
+00:00:44.789 --> 00:00:48.274
+the road and in the world based on the car's surroundings.
+
+00:00:48.274 --> 00:00:53.310
+So, self-driving cars and many other AI systems need vision to build a physical model
+
+00:00:53.310 --> 00:00:59.000
+of the world just like humans do to identify physical surroundings and respond to them.
+

@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.630 --> 00:00:04.089
+Today I'm with Dr. Rana el Kaliouby,
+
+00:00:04.089 --> 00:00:06.580
+Co-founder and CEO at Affectiva,
+
+00:00:06.580 --> 00:00:11.195
+a company that uses computer vision to build systems that are emotionally intelligent.
+
+00:00:11.195 --> 00:00:16.268
+Rana, I've been talking to our students about the role vision plays at a basic level in
+
+00:00:16.268 --> 00:00:19.299
+AI systems by helping to recognize objects and
+
+00:00:19.300 --> 00:00:24.309
+behavior but your work is in recognizing and responding to human emotion.
+
+00:00:24.309 --> 00:00:27.219
+What do you think makes this such important work?
+
+00:00:27.219 --> 00:00:29.199
+When we think of human intelligence,
+
+00:00:29.199 --> 00:00:32.170
+we tend to think of cognitive intelligence or IQ,
+
+00:00:32.170 --> 00:00:34.179
+but having emotional intelligence,
+
+00:00:34.179 --> 00:00:37.118
+which is the ability to empathize and read emotions,
+
+00:00:37.118 --> 00:00:40.060
+is central to how we all interact with the world.
+
+00:00:40.060 --> 00:00:41.725
+So the question becomes,
+
+00:00:41.725 --> 00:00:45.880
+how can we build systems that are artificially emotionally intelligent?
+
+00:00:45.880 --> 00:00:49.570
+Right. And this is the challenge we work on at Affectiva.
+
+00:00:49.570 --> 00:00:52.359
+We use computer vision and machine learning to
+
+00:00:52.359 --> 00:00:55.579
+recognize emotions as they manifest on your face.
+
+00:00:55.579 --> 00:00:58.149
+Can you tell what I'm feeling right now?
+
+00:00:58.149 --> 00:01:00.649
+Maybe a combination of surprise,
+
+00:01:00.649 --> 00:01:02.280
+a little bit of horror?
+
+00:01:02.280 --> 00:01:05.262
+Yeah, definitely happy surprise.
+
+00:01:05.262 --> 00:01:08.739
+So Affectiva software can recognize emotion just like you can?
+
+00:01:08.739 --> 00:01:12.573
+Yes, by observing your facial features,
+
+00:01:12.573 --> 00:01:15.593
+so how your eyebrows and your mouth and your cheeks move.
+
+00:01:15.593 --> 00:01:17.318
+And once a computer app, you know,
+
+00:01:17.319 --> 00:01:19.504
+or other application can recognize emotions,
+
+00:01:19.504 --> 00:01:21.864
+it can respond to them in real time.
+
+00:01:21.864 --> 00:01:24.969
+And this creates a lot of opportunity for improving and
+
+00:01:24.968 --> 00:01:28.429
+personalizing how we and machines interact with each other.
+

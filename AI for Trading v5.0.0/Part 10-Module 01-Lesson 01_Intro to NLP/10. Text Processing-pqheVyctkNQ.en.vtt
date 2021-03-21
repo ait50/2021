@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.600
+Let's take a closer look at text processing.
+
+00:00:03.600 --> 00:00:06.233
+The first question that comes to mind is,
+
+00:00:06.232 --> 00:00:08.550
+why do we need to process text?
+
+00:00:08.550 --> 00:00:10.740
+Why can we not feed it in directly?
+
+00:00:10.740 --> 00:00:16.125
+To understand that, think about where we get this text to begin with.
+
+00:00:16.125 --> 00:00:20.295
+Websites are a common source of textual information.
+
+00:00:20.295 --> 00:00:26.345
+Here's a portion of a sample web page from Wikipedia and the corresponding HTML markup,
+
+00:00:26.344 --> 00:00:28.489
+which serves as our raw input.
+
+00:00:28.489 --> 00:00:31.494
+For the purpose of natural language processing,
+
+00:00:31.495 --> 00:00:36.245
+you would typically want to get rid of all or most of the HTML tags,
+
+00:00:36.244 --> 00:00:38.984
+and retain only plain text.
+
+00:00:38.984 --> 00:00:44.894
+You can also remove or set aside any URLs or other items not relevant to your task.
+
+00:00:44.895 --> 00:00:50.440
+The Web is probably the most common and fastest growing source of textual content.
+
+00:00:50.439 --> 00:00:53.064
+But you may also need to consume PDFs,
+
+00:00:53.064 --> 00:00:55.704
+Word documents or other file formats.
+
+00:00:55.704 --> 00:00:58.000
+Or your raw input may even come from
+
+00:00:58.000 --> 00:01:02.679
+a speech recognition system or from a book scan using OCR.
+
+00:01:02.679 --> 00:01:07.305
+Some knowledge of the source medium can help you properly handle the input.
+
+00:01:07.305 --> 00:01:11.650
+In the end, your goal is to extract plain text that is free of
+
+00:01:11.650 --> 00:01:17.185
+any source specific markers or constructs that are not relevant to your task.
+
+00:01:17.185 --> 00:01:19.359
+Once you have obtained plain text,
+
+00:01:19.359 --> 00:01:22.000
+some further processing may be necessary.
+
+00:01:22.000 --> 00:01:26.840
+For instance, capitalization doesn't usually change the meaning of a word.
+
+00:01:26.840 --> 00:01:32.030
+We can convert all the words to the same case so that they're not treated differently.
+
+00:01:32.030 --> 00:01:35.799
+Punctuation marks that we use to indicate pauses, etc.
+
+00:01:35.799 --> 00:01:37.664
+can also be removed.
+
+00:01:37.665 --> 00:01:41.245
+Some common words in a language often help provide structure,
+
+00:01:41.245 --> 00:01:43.350
+but don't add much meaning.
+
+00:01:43.349 --> 00:01:45.429
+For example, a, and,
+
+00:01:45.430 --> 00:01:48.370
+the, of, are, and so on.
+
+00:01:48.370 --> 00:01:51.640
+Sometimes it's best to remove them if that helps
+
+00:01:51.640 --> 00:01:56.000
+reduce the complexity of the procedures you want to apply later.
+

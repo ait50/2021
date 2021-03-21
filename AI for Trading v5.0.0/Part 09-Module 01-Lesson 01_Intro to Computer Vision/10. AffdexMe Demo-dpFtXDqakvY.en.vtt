@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.409 --> 00:00:05.205
+The best way to understand how emotion AI works is by example.
+
+00:00:05.205 --> 00:00:06.964
+Would you like to see a live demo?
+
+00:00:06.964 --> 00:00:08.365
+Sure. Why not?
+
+00:00:08.365 --> 00:00:11.419
+Everyone wants their computers to understand them better.
+
+00:00:11.419 --> 00:00:13.394
+All right, so here's the demo.
+
+00:00:13.394 --> 00:00:16.260
+Basically, what's happening here is that the algorithm is
+
+00:00:16.260 --> 00:00:19.890
+looking for faces and it's detecting your face by,
+
+00:00:19.890 --> 00:00:25.989
+you know, drawing this bounding box around your different facial features.
+
+00:00:25.989 --> 00:00:28.620
+And then it's tracking the movement of your facial features,
+
+00:00:28.620 --> 00:00:29.875
+like your eyebrows, your mouth,
+
+00:00:29.875 --> 00:00:31.079
+your nose over time.
+
+00:00:31.079 --> 00:00:32.338
+That's what these dots are for?
+
+00:00:32.338 --> 00:00:37.199
+Exactly, and it's mapping it into a probability score for each emotion.
+
+00:00:37.200 --> 00:00:41.409
+So let's give this a try.
+
+00:00:41.408 --> 00:00:43.310
+For instance, yeah, let's try smiling.
+
+00:00:43.310 --> 00:00:44.489
+Smile.
+
+00:00:44.488 --> 00:00:51.030
+We can see that the probability score of the joy classifier goes up.
+
+00:00:51.030 --> 00:00:54.240
+Let's try sadness.
+
+00:00:54.240 --> 00:00:59.195
+It's also mapping your most dominant emotion into an emoji,
+
+00:00:59.195 --> 00:01:01.515
+so you can experiment with, you know,
+
+00:01:01.515 --> 00:01:03.219
+eliciting a bunch of different emojis.
+
+00:01:03.219 --> 00:01:04.579
+Yeah, that's interesting.
+
+00:01:04.578 --> 00:01:07.589
+It also detects the presence of glasses and gender.
+
+00:01:07.590 --> 00:01:09.618
+So it's identified us both as female.
+
+00:01:09.618 --> 00:01:13.659
+And looks quite a lot like me too.
+
+00:01:13.659 --> 00:01:17.000
+Well, I'm excited for our students to try out this technology.
+

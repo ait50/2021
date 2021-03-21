@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.569
+Structured languages are easy to parse and understand for
+
+00:00:03.569 --> 00:00:09.134
+computers because they are defined by a strict set of rules or grammar.
+
+00:00:09.134 --> 00:00:13.214
+There are standard forms of expressing such grammars and algorithms,
+
+00:00:13.214 --> 00:00:18.510
+that can parse properly formed statements to understand exactly what is meant.
+
+00:00:18.510 --> 00:00:22.165
+When a statement doesn't match the prescribed grammar,
+
+00:00:22.164 --> 00:00:26.683
+a typical computer doesn't try to guess the meaning, it simply gives up.
+
+00:00:26.684 --> 00:00:32.810
+Such violations of grammatical rules are reported as syntax errors.
+

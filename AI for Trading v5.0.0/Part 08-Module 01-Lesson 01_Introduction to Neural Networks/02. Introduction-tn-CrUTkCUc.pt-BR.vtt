@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:02.133
+Vamos começar
+com duas perguntas:
+
+00:00:02.167 --> 00:00:04.868
+o que é Deep Learning?
+Para que ela é utilizada?
+
+00:00:04.902 --> 00:00:08.234
+A resposta da segunda é:
+para tudo.
+
+00:00:08.268 --> 00:00:10.334
+Aplicações recentes incluem
+
+00:00:10.368 --> 00:00:14.300
+derrotar humanos em jogos
+como Go e Jeopardy,
+
+00:00:14.334 --> 00:00:16.267
+detectar e-mails spam,
+
+00:00:16.301 --> 00:00:18.133
+prever valores de ações,
+
+00:00:18.167 --> 00:00:20.367
+reconhecer imagens
+em uma foto
+
+00:00:20.401 --> 00:00:22.167
+e até mesmo
+diagnosticar doenças
+
+00:00:22.201 --> 00:00:24.567
+com maior precisão
+do que os médicos.
+
+00:00:24.601 --> 00:00:28.033
+Uma das mais notórias
+aplicações do Deep Learning
+
+00:00:28.067 --> 00:00:30.133
+é nos carros autônomos.
+
+00:00:30.167 --> 00:00:31.934
+Qual é a essência
+do Deep Learning?
+
+00:00:31.968 --> 00:00:35.067
+São objetos maravilhosos
+chamados de redes neurais,
+
+00:00:35.101 --> 00:00:38.734
+que imitam
+o funcionamento cerebral
+
+00:00:38.768 --> 00:00:41.334
+com neurônios definidos
+como bits de informações.
+
+00:00:41.368 --> 00:00:42.968
+Isso parece assustador,
+não é?
+
+00:00:43.002 --> 00:00:45.501
+A primeira vez que eu ouvi falar
+sobre rede neural,
+
+00:00:45.535 --> 00:00:47.400
+esta imagem veio
+à minha mente,
+
+00:00:47.434 --> 00:00:50.767
+um robô assustador
+com cérebro artificial.
+
+00:00:50.801 --> 00:00:52.934
+Mas eu aprendi mais
+sobre o assunto
+
+00:00:52.968 --> 00:00:56.200
+e percebi que é
+muito pior do que isso.
+
+00:00:56.234 --> 00:00:58.200
+É assim que é
+uma rede neural.
+
+00:00:58.234 --> 00:01:01.767
+Na verdade, esta é
+uma rede neural profunda.
+
+00:01:01.801 --> 00:01:05.267
+Ela tem muitos nós,
+limites, camadas,
+
+00:01:05.301 --> 00:01:08.701
+informações passando pelos nós
+e saindo. É bem complicado!
+
+00:01:08.735 --> 00:01:11.534
+Mas, após observar
+as redes neurais,
+
+00:01:11.568 --> 00:01:14.534
+eu percebi que são
+bem mais simples do que isso.
+
+00:01:14.568 --> 00:01:16.100
+Quando eu penso no assunto,
+
+00:01:16.134 --> 00:01:18.734
+esta é a imagem
+que vem à minha mente:
+
+00:01:18.768 --> 00:01:20.701
+a de uma criança
+brincando na areia
+
+00:01:20.735 --> 00:01:22.467
+com conchas
+vermelhas e azuis
+
+00:01:22.501 --> 00:01:23.901
+e nós temos que testá-las.
+
+00:01:23.935 --> 00:01:27.334
+Trace uma linha para separar
+as vermelhas das azuis.
+
+00:01:27.368 --> 00:01:29.400
+E a criança traça
+esta linha.
+
+00:01:29.434 --> 00:01:32.167
+É isso que a rede neural faz.
+
+00:01:32.201 --> 00:01:35.100
+A partir de dados na forma
+de pontos vermelhos e azuis,
+
+00:01:35.134 --> 00:01:38.834
+a rede neural procura pela
+melhor linha para separá-los.
+
+00:01:38.868 --> 00:01:41.601
+E, se os dados forem
+mais complicados, como estes,
+
+00:01:41.635 --> 00:01:44.367
+então nós precisaremos
+de um algoritmo mais complicado.
+
+00:01:44.401 --> 00:01:46.634
+A rede neural profunda
+encontrará
+
+00:01:46.668 --> 00:01:49.567
+limites mais complexos
+para separar os pontos.
+
+00:01:49.601 --> 00:01:50.868
+Pensando nisso,
+
+00:01:50.902 --> 00:01:53.234
+vamos aprender sobre
+redes neurais.
+

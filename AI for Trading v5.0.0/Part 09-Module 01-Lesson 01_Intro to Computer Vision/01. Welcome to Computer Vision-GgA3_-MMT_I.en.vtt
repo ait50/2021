@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.920 --> 00:00:04.410
+One of the most fundamental ways we learn about
+
+00:00:04.410 --> 00:00:07.642
+our world and environment is through our sense of sight.
+
+00:00:07.642 --> 00:00:10.724
+Our ability to see permeates our very being.
+
+00:00:10.724 --> 00:00:14.384
+It has come to define, not only how we see the physical world,
+
+00:00:14.384 --> 00:00:17.039
+but also how we see the abstract.
+
+00:00:17.039 --> 00:00:21.629
+We speak of a company or an entrepreneur having a vision; we may say,
+
+00:00:21.629 --> 00:00:22.829
+"I see what you mean",
+
+00:00:22.829 --> 00:00:27.274
+to a colleague or send on the,"I see what you did there, Jeff".
+
+00:00:27.274 --> 00:00:29.460
+Our ability to see, our vision,
+
+00:00:29.460 --> 00:00:33.710
+in a very real sense determines how we interact with the world.
+
+00:00:33.710 --> 00:00:36.600
+Computer Vision strives to give a similar ability to
+
+00:00:36.600 --> 00:00:40.770
+a machine and if you want to build an agent that uses vision to extract,
+
+00:00:40.770 --> 00:00:45.493
+analyze and understand useful information then you're in the right place.
+
+00:00:45.493 --> 00:00:47.340
+We have Cezanne Camacho,
+
+00:00:47.340 --> 00:00:50.189
+a resident expert in the subject to help you learn
+
+00:00:50.189 --> 00:00:53.524
+about Computer Vision and its fascinating applications.
+
+00:00:53.524 --> 00:00:55.890
+Hey everyone. I'm Cezanne and I'm excited to
+
+00:00:55.890 --> 00:00:58.929
+guide you through some important Computer Vision topics.
+
+00:00:58.929 --> 00:01:03.164
+Computer Vision is a fascinating set of techniques, inspired by mathematics,
+
+00:01:03.164 --> 00:01:05.534
+statistics and probability theory
+
+00:01:05.534 --> 00:01:08.098
+and in this lesson we'll be learning about the basics of
+
+00:01:08.099 --> 00:01:10.814
+Computer Vision and about the role it plays in
+
+00:01:10.813 --> 00:01:14.000
+artificial intelligence systems. Let's get started.
+

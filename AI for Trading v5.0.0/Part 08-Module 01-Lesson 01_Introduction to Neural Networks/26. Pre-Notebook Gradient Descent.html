@@ -1,0 +1,467 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Pre-Notebook: Gradient Descent
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Introduction to Neural Networks
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Instructor.html">
+       01. Instructor
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Introduction.html">
+       02. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Classification Problems 1.html">
+       03. Classification Problems 1
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Classification Problems 2.html">
+       04. Classification Problems 2
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Linear Boundaries.html">
+       05. Linear Boundaries
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Higher Dimensions.html">
+       06. Higher Dimensions
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Perceptrons.html">
+       07. Perceptrons
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Why Neural Networks.html">
+       08. Why "Neural Networks"?
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Perceptrons as Logical Operators.html">
+       09. Perceptrons as Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Perceptron Trick.html">
+       10. Perceptron Trick
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Perceptron Algorithm.html">
+       11. Perceptron Algorithm
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Non-Linear Regions.html">
+       12. Non-Linear Regions
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Error Functions.html">
+       13. Error Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Log-loss Error Function.html">
+       14. Log-loss Error Function
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Discrete vs Continuous.html">
+       15. Discrete vs Continuous
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Softmax.html">
+       16. Softmax
+      </a>
+     </li>
+     <li class="">
+      <a href="17. One-Hot Encoding.html">
+       17. One-Hot Encoding
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Maximum Likelihood.html">
+       18. Maximum Likelihood
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Maximizing Probabilities.html">
+       19. Maximizing Probabilities
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Cross-Entropy 1.html">
+       20. Cross-Entropy 1
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Cross-Entropy 2.html">
+       21. Cross-Entropy 2
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Multi-Class Cross Entropy.html">
+       22. Multi-Class Cross Entropy
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Logistic Regression.html">
+       23. Logistic Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Gradient Descent.html">
+       24. Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Logistic Regression Algorithm.html">
+       25. Logistic Regression Algorithm
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Pre-Notebook Gradient Descent.html">
+       26. Pre-Notebook: Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Notebook Gradient Descent.html">
+       27. Notebook: Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Perceptron vs Gradient Descent.html">
+       28. Perceptron vs Gradient Descent
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Continuous Perceptrons.html">
+       29. Continuous Perceptrons
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Non-linear Data.html">
+       30. Non-linear Data
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Non-Linear Models.html">
+       31. Non-Linear Models
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Neural Network Architecture.html">
+       32. Neural Network Architecture
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Feedforward.html">
+       33. Feedforward
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Backpropagation.html">
+       34. Backpropagation
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Pre-Notebook Analyzing Student Data.html">
+       35. Pre-Notebook: Analyzing Student Data
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Notebook Analyzing Student Data.html">
+       36. Notebook: Analyzing Student Data
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Outro.html">
+       37. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          26. Pre-Notebook: Gradient Descent
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="implementing-gradient-descent">
+          Implementing Gradient Descent
+         </h1>
+         <p>
+          In the following notebook, you'll be able to implement the gradient descent algorithm on the following sample dataset with two classes.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Red and blue data points with some overlap." class="img img-fluid" src="img/screen-shot-2018-09-10-at-7.38.39-pm.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Red and blue data points with some overlap.
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="workspace">
+          Workspace
+         </h1>
+         <p>
+          To open this notebook, you have two options:
+         </p>
+         <blockquote>
+          <ul>
+           <li>
+            Go to the next page in the classroom (recommended)
+           </li>
+           <li>
+            Clone the repo from
+            <a href="https://github.com/udacity/deep-learning-v2-pytorch" rel="noopener noreferrer" target="_blank">
+             Github
+            </a>
+            and open the notebook
+            <strong>
+             GradientDescent.ipynb
+            </strong>
+            in the
+            <strong>
+             intro-neural-networks &gt; gradient-descent
+            </strong>
+            folder. You can either download the repository via the command line with
+            <code>
+             git clone https://github.com/udacity/deep-learning-v2-pytorch.git
+            </code>
+            , or download it as an archive file from
+            <a href="https://github.com/udacity/deep-learning-v2-pytorch/archive/master.zip" rel="noopener noreferrer" target="_blank">
+             this link
+            </a>
+            .
+           </li>
+          </ul>
+         </blockquote>
+         <h1 id="instructions">
+          Instructions
+         </h1>
+         <p>
+          In this notebook, you'll be implementing the functions that build the gradient descent algorithm, namely:
+         </p>
+         <ul>
+          <li>
+           <code>
+            sigmoid
+           </code>
+           : The sigmoid activation function.
+          </li>
+          <li>
+           <code>
+            output_formula
+           </code>
+           : The formula for the prediction.
+          </li>
+          <li>
+           <code>
+            error_formula
+           </code>
+           : The formula for the error at a point.
+          </li>
+          <li>
+           <code>
+            update_weights
+           </code>
+           : The function that updates the parameters with one gradient descent step.
+          </li>
+         </ul>
+         <p>
+          When you implement them, run the
+          <code>
+           train
+          </code>
+          function and this will graph the several of the lines that are drawn in successive gradient descent steps. It will also graph the error function, and you can see it decreasing as the number of epochs grows.
+         </p>
+         <p>
+          This is a self-assessed lab. If you need any help or want to check your answers, feel free to check out the solutions notebook in the same folder, or by clicking
+          <a href="https://github.com/udacity/deep-learning-v2-pytorch/blob/master/intro-neural-networks/gradient-descent/GradientDescentSolutions.ipynb" rel="noopener noreferrer" target="_blank">
+           here
+          </a>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="27. Notebook Gradient Descent.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('26. Pre-Notebook: Gradient Descent')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

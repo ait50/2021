@@ -1,0 +1,675 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   [Preview] Project: Mimic Me!
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Intro to Computer Vision
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Welcome to Computer Vision.html">
+       01. Welcome to Computer Vision
+      </a>
+     </li>
+     <li class="">
+      <a href="02. What is Vision.html">
+       02. What is Vision?
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Role in AI.html">
+       03. Role in AI
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Computer Vision Applications.html">
+       04. Computer Vision Applications
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Emotional Intelligence.html">
+       05. Emotional Intelligence
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Vision-based Emotion AI.html">
+       06. Vision-based Emotion AI
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Computer Vision Pipeline.html">
+       07. Computer Vision Pipeline
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Quiz Pipeline Steps.html">
+       08. Quiz: Pipeline Steps
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Training a Model.html">
+       09. Training a Model
+      </a>
+     </li>
+     <li class="">
+      <a href="10. AffdexMe Demo.html">
+       10. AffdexMe Demo
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Emotion as a Service.html">
+       11. Emotion as a Service
+      </a>
+     </li>
+     <li class="">
+      <a href="12. [Preview] Project Mimic Me!.html">
+       12. [Preview] Project: Mimic Me!
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. [Preview] Project: Mimic Me!
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="overview">
+          Overview
+         </h2>
+         <p>
+          In this project, you will learn to track faces in a video and identify facial expressions using Affectiva. As a fun visualization, you will tag each face with an appropriate emoji next to it. You will then turn this into a game where the player needs to mimic a random emoji displayed by the computer!
+         </p>
+         <p>
+          <em>
+           Ready?
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/arpan-shocked.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+         <h2 id="getting-started">
+          Getting Started
+         </h2>
+         <p>
+          Clone the
+          <a href="https://github.com/udacity/AIND-CV-Mimic" rel="noopener noreferrer" target="_blank">
+           AIND-CV-Mimic
+          </a>
+          repo on GitHub, and follow the instructions below.
+         </p>
+         <p>
+          We’ll be using
+          <a href="http://www.affectiva.com/" rel="noopener noreferrer" target="_blank">
+           Affectiva
+          </a>
+          ’s Emotion-as-a-Service API for this project. Visit their
+          <a href="http://developer.affectiva.com/" rel="noopener noreferrer" target="_blank">
+           Developer Portal
+          </a>
+          and try out some of the sample apps. Affectiva makes it really easy to extract detailed information about faces in an image or video stream. To get a sense for what information you can obtain, check out the
+          <a href="http://developer.affectiva.com/metrics/" rel="noopener noreferrer" target="_blank">
+           Metrics
+          </a>
+          page.
+         </p>
+         <h3 id="project-files">
+          Project files
+         </h3>
+         <p>
+          To start working on the project, open the following files in your favorite text editor:
+         </p>
+         <ul>
+          <li>
+           <strong>
+            mimic.js
+           </strong>
+           : Javascript file with code that connects to the Affectiva API and processes results.
+          </li>
+          <li>
+           <strong>
+            index.html
+           </strong>
+           : Dynamic webpage that displays the video feed and results.
+          </li>
+          <li>
+           <strong>
+            mimic.css
+           </strong>
+           : Stylesheet file that defines the layout and presentation for HTML elements.
+          </li>
+         </ul>
+         <p>
+          <em>
+           You only need to implement the TODOs in mimic.js to complete the project. But feel free to modify the HTML and/or CSS file to change the look and feel of your game!
+          </em>
+         </p>
+         <p>
+          There are two additional files provided for serving your project as a local web application - you do not need to make any changes to them:
+         </p>
+         <ul>
+          <li>
+           <strong>
+            serve.py
+           </strong>
+           : A lightweight Python webserver required to serve the webpage over HTTPS, so that we can access the webcam feed.
+          </li>
+          <li>
+           <strong>
+            generate-pemfile.sh
+           </strong>
+           : A shell script you’ll need to run once to generate an SSL certificate for the webserver.
+          </li>
+         </ul>
+         <h3 id="serving-locally-over-https">
+          Serving locally over HTTPS
+         </h3>
+         <p>
+          In order to access the webcam stream, modern browsers require you to serve your web app over HTTPS. To run locally, you will need to general an SSL certificate (this is a one-time step):
+         </p>
+         <ul>
+          <li>
+           Open a terminal or command-prompt, and ensure you are inside the
+           <code>
+            AIND-CV-Mimic/
+           </code>
+           directory.
+          </li>
+          <li>
+           Run the following shell script:
+           <code>
+            generate-pemfile.sh
+           </code>
+          </li>
+         </ul>
+         <p>
+          This creates an SSL certificate file named
+          <code>
+           my-ssl-cert.pem
+          </code>
+          that is used to serve over https.
+         </p>
+         <p>
+          Now you can launch the server using:
+         </p>
+         <pre><code>python serve.py</code></pre>
+         <p>
+          <em>
+           Note: The
+           <code>
+            serve.py
+           </code>
+           script uses Python 3.
+          </em>
+         </p>
+         <p>
+          Alternately, you can put your HTML, JS and CSS files on an online platform (such as
+          <a href="https://jsfiddle.net/" rel="noopener noreferrer" target="_blank">
+           JSFiddle
+          </a>
+          ) and develop your project there.
+         </p>
+         <h3 id="running-and-implementing-the-game">
+          Running and implementing the game
+         </h3>
+         <p>
+          Open a web browser and go to:
+          <a href="https://localhost:4443/" rel="noopener noreferrer" target="_blank">
+           https://localhost:4443/
+          </a>
+         </p>
+         <ul>
+          <li>
+           Hit the Start button to initiate face tracking. You may have to give permission for the app to access your webcam.
+          </li>
+          <li>
+           Hit the Stop button to stop tracking and Reset to reset the detector (in case it becomes stuck or unstable).
+          </li>
+          <li>
+           Modify the Javascript code to implement TODOs as indicated in inline comments. Then refresh the page in your browser (
+           <em>
+            you may need to do a "hard-refresh" for the changes to show up, e.g.
+            <code>
+             Cmd+Shift+R
+            </code>
+            on a Mac), or use an auto-reload solution.
+           </em>
+          </li>
+          <li>
+           When you’re done, you can shutdown the server by pressing
+           <code>
+            Ctrl+C
+           </code>
+           at the terminal.
+          </li>
+         </ul>
+         <p>
+          <em>
+           Note: Your browser may notify you that your connection is not secure - that is because the SSL certificate you just created is not signed by an SSL Certificate Authority‎. This is okay, because we are using it only as a workaround to access the webcam. You can suppress the warning or choose "Proceed Anyway" to open the page.
+          </em>
+         </p>
+         <p>
+          As you work on your code, you may have to refer to resources in Affectiva's
+          <a href="https://affectiva.readme.io/docs/getting-started-with-the-emotion-sdk-for-javascript" rel="noopener noreferrer" target="_blank">
+           JS SDK documentation
+          </a>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+         <h2 id="tasks">
+          Tasks
+         </h2>
+         <p>
+          The starter code sends frames from your webcam to Affectiva’s cloud-based API and fetches the results. You can see several metrics being reported, including emotions, expressions and the dominant emoji!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/arpan-happy-results.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="1-display-feature-points">
+          1. Display Feature Points
+         </h3>
+         <p>
+          Your first task is to display the feature points on top of the webcam image that are returned along with the metrics. To do this, open up mimic.js, and scroll down to the
+          <code>
+           drawFeaturePoints()
+          </code>
+          function near the bottom:
+         </p>
+         <pre><code class="javascript language-javascript">function drawFeaturePoints(canvas, img, face) {
+    ...
+}</code></pre>
+         <p>
+          It accepts three parameters:
+          <code>
+           canvas
+          </code>
+          (HTML DOM element to draw on),
+          <code>
+           img
+          </code>
+          (image frame that was processed), and
+          <code>
+           face
+          </code>
+          (an object with all the detected feature points and metrics for a face). The most important object to consider here is
+          <code>
+           face
+          </code>
+          - you can even print it to the Javascript console using
+          <code>
+           console.log()
+          </code>
+          to see what it contains (tip: the console in your web browser maybe under Developer Tools; in Chrome you can open it using
+          <code>
+           Cmd+Option+J
+          </code>
+          ).
+         </p>
+         <p>
+          Implement the
+          <code>
+           drawFeaturePoints()
+          </code>
+          function as per instructions and save the file. To run your code, stop the face tracking app using the Stop button (if you haven’t done so already), refresh the page and hit Start again.
+         </p>
+         <p>
+          Your output should look something like this:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/arpan-happy-features.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="2-show-dominant-emoji">
+          2. Show Dominant Emoji
+         </h3>
+         <p>
+          In addition to feature points and metrics that capture facial expressions and emotions, the Affectiva API also reports back what emoji best represents the current emotional state of a face. This is referred to as the
+          <em>
+           dominant emoji
+          </em>
+          . In mimic.js, scroll down to the
+          <code>
+           drawEmoji()
+          </code>
+          function:
+         </p>
+         <pre><code class="javascript language-javascript">function drawEmoji(canvas, img, face) {
+    ...
+}</code></pre>
+         <p>
+          It has the same interface as
+          <code>
+           drawFeaturePoints()
+          </code>
+          , accepting the same
+          <code>
+           canvas
+          </code>
+          ,
+          <code>
+           img
+          </code>
+          and
+          <code>
+           face
+          </code>
+          objects. Implement it as per given instructions. You can access the dominant emoji as:
+          <code>
+           face.emojis.dominantEmoji
+          </code>
+         </p>
+         <p>
+          Your output should now look like:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/arpan-happy-emoji.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Note that the emoji should be located close to the face, so you may want to use one of the facial feature points from the step above as the anchor point (or a combination of them). You can also try varying the size of the emoji based on how big the detected face is (you can compute this, for instance, by looking at the distance between two opposing feature points).
+         </p>
+         <h3 id="3-implement-mimic-me">
+          3. Implement Mimic Me!
+         </h3>
+         <p>
+          Now it's your turn to implement the game mechanics and make it as fun as possible! Scroll down to the bottom of mimic.js for more instructions. Feel free to modify the HTML and/or CSS files to change the look and feel of the game as well.
+         </p>
+         <p>
+          In this game, the computer should display an emoji at random, and the goal of the human player would be to mimic that emoji as best as they can. The computer should continually monitor the player’s face, and as soon as they are able to mimic the face (or optionally after some timeout), the game should move on to the next random emoji.
+         </p>
+         <p>
+          Affectiva's SDK can recognize 13 different emojis. The unicode values for these emojis are provided as a list in mimic.js:
+         </p>
+         <pre><code class="javascript language-javascript">// Unicode values for all emojis Affectiva can detect
+var emojis = [ 128528, 9786, ..., 128561 ];</code></pre>
+         <p>
+          Each value corresponds to an HTML entity, e.g.
+          <code>
+           &amp;#128527;
+          </code>
+          for a smirk: 😏
+         </p>
+         <p>
+          To display a desired emoji as the next target for the player, you can use
+          <code>
+           setTargetEmoji()
+          </code>
+          , passing in the respective value. The dominant emoji returned by Affectiva is supplied in a Javascript string. In order to reliably compare it with the desired emoji code, you will need to convert it to unicode using
+          <code>
+           toUnicode()
+          </code>
+          . Both of these are provided as utility functions.
+         </p>
+         <p>
+          Some things to keep in mind:
+         </p>
+         <ul>
+          <li>
+           You can keep track of how many emojis the player is able to mimic in a certain amount of time (say, 1 minute) and give them a score based on that, or show a set number of emojis in a sequence and see how many they are able to mimic within a timeout for each.
+          </li>
+          <li>
+           Remember to give the API some time to warm up and find the face before you start showing the emojis.
+          </li>
+          <li>
+           Provide some audio/visual feedback whenever the player is able to mimic an emoji successfully.
+          </li>
+          <li>
+           You may want to limit the possible emojis to a small set that you know that the system can recognize reliably (or ones that you can actually express!).
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+         <h2 id="extensions">
+          Extensions
+         </h2>
+         <p>
+          Sky’s the limit on where you can take this project! Feel free to share with your friends and family. You can host it online to make it available to everyone.
+         </p>
+         <p>
+          Some ideas for extensions:
+         </p>
+         <ul>
+          <li>
+           Make it a 2 player game, like Guitar Hero, where you compete with someone to mimic as many emojis as you can out of a streaming sequence of them.
+          </li>
+          <li>
+           Pair a stream of emojis with a script and have the player read the script, interspersed with emotional expressions that are checked by the computer. Great for some acting practice!
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. [Preview] Project: Mimic Me!')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
